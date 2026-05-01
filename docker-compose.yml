@@ -1,7 +1,7 @@
 services:
 
   # ─────────────────────────────────────────────────────────────
-  # PostgreSQL 15 — single instance, three logical databases:
+  # PostgreSQL 18 — single instance, three logical databases:
   #   belpro   → FastAPI application data (init.sql schema)
   #   n8n      → n8n uses its own schema within belpro DB (no extra DB needed)
   #   evolution → Evolution API tables (created by create_extra_dbs.sh)
@@ -14,7 +14,7 @@ services:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
     volumes:
-      - postgres_data:/var/lib/postgresql/data
+      - postgres_data:/var/lib/postgresql    # PG18: mount parent dir, not /data subdir
       - ./db/create_extra_dbs.sh:/docker-entrypoint-initdb.d/00_extra_dbs.sh:ro
       - ./db/init.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
     healthcheck:
@@ -85,18 +85,17 @@ services:
       WHISPER_MODEL: ${WHISPER_MODEL:-medium}
       WHISPER_LANGUAGE: ${WHISPER_LANGUAGE:-sl}
     volumes:
-      # Model files cached here so they survive container rebuilds
       - whisper_models:/root/.cache/huggingface
 
   # ─────────────────────────────────────────────────────────────
   # FastAPI — Backend API + PDF generation
-  # Dashboard API: http://localhost:8000  (http://localhost:8000/docs for Swagger)
+  # Dashboard API: http://localhost:8100  (http://localhost:8100/docs for Swagger)
   # ─────────────────────────────────────────────────────────────
   api:
     build: ./api
     restart: unless-stopped
     ports:
-      - "8000:8000"
+      - "8100:8000"
     environment:
       DATABASE_URL: ${DATABASE_URL}
       EMSO_ENCRYPTION_KEY: ${EMSO_ENCRYPTION_KEY}
@@ -106,7 +105,6 @@ services:
       NGO_ADDRESS: ${NGO_ADDRESS}
       GMAIL_ADDRESS: ${GMAIL_ADDRESS}
       GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
-      # Internal service URLs — not user-configurable
       WHISPER_SERVICE_URL: http://whisper:8001
       EVOLUTION_API_URL: http://evolution-api:8080
       EVOLUTION_API_KEY: ${EVOLUTION_API_KEY}
@@ -138,23 +136,21 @@ services:
 
   # ─────────────────────────────────────────────────────────────
   # Evolution API — WhatsApp gateway (volunteer messaging)
-  # API: http://localhost:8080
+  # API: http://localhost:8180
   # ─────────────────────────────────────────────────────────────
   evolution-api:
     image: atendai/evolution-api:latest
     restart: unless-stopped
     ports:
-      - "8080:8080"
+      - "8180:8080"
     environment:
-      SERVER_URL: ${EVOLUTION_SERVER_URL:-http://localhost:8080}
+      SERVER_URL: ${EVOLUTION_SERVER_URL:-http://localhost:8180}
       AUTHENTICATION_API_KEY: ${EVOLUTION_API_KEY}
       AUTHENTICATION_EXPOSE_IN_FETCH_INSTANCES: "false"
-      # Postgres storage for instances / message history
       DATABASE_ENABLED: "true"
       DATABASE_PROVIDER: postgresql
       DATABASE_CONNECTION_URI: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/evolution
       DATABASE_CONNECTION_CLIENT_NAME: evolution_belpro
-      # Redis queue
       CACHE_REDIS_ENABLED: "true"
       CACHE_REDIS_URI: redis://redis:6379/0
       CACHE_REDIS_PREFIX_KEY: evo

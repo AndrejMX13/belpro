@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belpro — Upravljanje prostovoljcev</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #1a5276;
+      color: #fff;
+      padding: 1rem 1.5rem;
+    }
+
+    header h1 { font-size: 1.25rem; font-weight: 600; }
+    header p  { font-size: 0.85rem; opacity: 0.75; margin-top: 0.2rem; }
+
+    main {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,.1);
+      padding: 2rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+    }
+
+    .card h2 { font-size: 1.1rem; margin-bottom: 0.75rem; color: #1a5276; }
+    .card p  { font-size: 0.9rem; color: #666; line-height: 1.6; }
+
+    .status {
+      margin-top: 1.5rem;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .status.ok      { background: #d4edda; color: #155724; }
+    .status.loading { background: #fff3cd; color: #856404; }
+    .status.error   { background: #f8d7da; color: #721c24; }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.78rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Belpro</h1>
+  <p>Beleženje prostovoljskega dela</p>
+</header>
+
+<main>
+  <div class="card">
+    <h2>Upravljalna plošča</h2>
+    <p>Dobrodošli v sistemu Belpro za beleženje prostovoljskega dela.</p>
+    <div id="api-status" class="status loading">Preverjam povezavo z API…</div>
+  </div>
+</main>
+
+<footer>Belpro v0.1 &mdash; interno orodje</footer>
+
+<script>
+  (async () => {
+    const el = document.getElementById('api-status');
+    try {
+      const res = await fetch('/api/health');
+      const data = await res.json();
+      if (data.status === 'ok') {
+        el.textContent = 'API: povezan ✓';
+        el.className = 'status ok';
+      } else {
+        throw new Error('unexpected status');
+      }
+    } catch {
+      el.textContent = 'API: napaka pri povezavi';
+      el.className = 'status error';
+    }
+  })();
+</script>
+
+</body>
+</html>

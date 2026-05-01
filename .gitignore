@@ -13,6 +13,10 @@
 *.pem
 *.p12
 *.pfx
+.mcp.json
+
+# Temporary files, no need for commit
+temp/
 
 # -----------------------------------------------------------------------------
 # Python
@@ -60,6 +64,7 @@ htmlcov/
 # n8n
 # -----------------------------------------------------------------------------
 n8n/credentials/
+!n8n/credentials/README.md
 # Keep workflows and README, ignore any local overrides
 n8n/.n8n/
 
@@ -88,7 +93,7 @@ api/db/versions/*.pyc
 .vscode/
 # Exception: share launch configs and recommended extensions if desired
 # !.vscode/launch.json
-# !.vscode/extensions.json
+!.vscode/extensions.json
 
 # -----------------------------------------------------------------------------
 # Windows

@@ -156,9 +156,9 @@ docker compose logs -f
 
 # Access points:
 # Dashboard:   http://localhost:80
-# FastAPI docs: http://localhost:8000/docs
+# FastAPI docs: http://localhost:8100/docs
 # n8n:         http://localhost:5678
-# Evolution API: http://localhost:8080
+# Evolution API: http://localhost:8180
 ```
 
 ---
@@ -170,6 +170,14 @@ docker compose logs -f
 3. Add/update Pydantic schemas before writing route logic.
 4. Update the relevant n8n workflow JSON if the flow changes.
 5. Keep `SPEC.md` up to date if behaviour changes materially.
+
+---
+
+## n8n Workflows
+- All workflow creation and validation must use n8n-mcp tools — never write workflow JSON by hand
+- Before working on any n8n workflow, read the n8n skills in .claude/skills/
+- n8n API connection is configured in .mcp.json (URL: http://localhost:5678, key added after first container run)
+- Workflows are exported as JSON and committed to n8n/workflows/ — one file per logical flow
 
 ---
 

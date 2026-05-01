@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell([System.IO.File]::ReadAllText\\(\"d:\\\\Andrej\\\\vsCode-workspace\\\\BelPro\\\\SPEC.md\", [System.Text.Encoding]::UTF8\\))",
+      "Bash(git add *)"
+    ]
+  }
+}

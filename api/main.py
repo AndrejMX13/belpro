@@ -1,0 +1,25 @@
+"""Belpro FastAPI application entry point."""
+from __future__ import annotations
+
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI(
+    title="Belpro API",
+    description="Volunteer diary management API for Slovenian NGOs.",
+    version="0.1.0",
+)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost", "http://localhost:80"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+@app.get("/api/health")
+async def health() -> dict[str, str]:
+    """Health check — returns ok when the service is up."""
+    return {"status": "ok"}
