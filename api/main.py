@@ -3,6 +3,10 @@ from __future__ import annotations
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from sqlalchemy import text
+
+from db.session import AsyncSessionLocal
+from routers.volunteers import router as volunteers_router
 
 app = FastAPI(
     title="Belpro API",
@@ -17,6 +21,15 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.include_router(volunteers_router, prefix="/api")
+
+
+@app.on_event("startup")
+async def verify_db_connection() -> None:
+    """Fail fast if the database is unreachable on startup."""
+    async with AsyncSessionLocal() as session:
+        await session.execute(text("SELECT 1"))
 
 
 @app.get("/api/health")
