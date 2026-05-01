@@ -1,0 +1,122 @@
+# =============================================================================
+# Belpro — .gitignore
+# Stack: Python, FastAPI, Docker, n8n, PostgreSQL, nginx (Windows/WSL2 dev)
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Secrets & environment — NEVER commit these
+# -----------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.key
+*.pem
+*.p12
+*.pfx
+
+# -----------------------------------------------------------------------------
+# Python
+# -----------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+parts/
+var/
+sdist/
+develop-eggs/
+.installed.cfg
+lib/
+lib64/
+*.so
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+.pyright/
+
+# Linting / formatting
+.ruff_cache/
+
+# -----------------------------------------------------------------------------
+# n8n
+# -----------------------------------------------------------------------------
+n8n/credentials/
+# Keep workflows and README, ignore any local overrides
+n8n/.n8n/
+
+# -----------------------------------------------------------------------------
+# Docker
+# -----------------------------------------------------------------------------
+# Ignore local volume data (postgres data, whisper model cache, etc.)
+volumes/
+docker-volumes/
+postgres-data/
+whisper-cache/
+
+# -----------------------------------------------------------------------------
+# Generated files
+# -----------------------------------------------------------------------------
+# PDF reports and uploaded photos are runtime data, not source
+api/storage/photos/
+api/storage/reports/
+
+# Alembic — keep migrations, ignore auto-generated temp files
+api/db/versions/*.pyc
+
+# -----------------------------------------------------------------------------
+# VS Code
+# -----------------------------------------------------------------------------
+.vscode/
+# Exception: share launch configs and recommended extensions if desired
+# !.vscode/launch.json
+# !.vscode/extensions.json
+
+# -----------------------------------------------------------------------------
+# Windows
+# -----------------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# -----------------------------------------------------------------------------
+# WSL2 / Linux
+# -----------------------------------------------------------------------------
+*~
+.fuse_hidden*
+.Trash-*
+.nfs*
+
+# -----------------------------------------------------------------------------
+# macOS (in case anyone else ever touches this)
+# -----------------------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# -----------------------------------------------------------------------------
+# Logs
+# -----------------------------------------------------------------------------
+*.log
+logs/
+npm-debug.log*

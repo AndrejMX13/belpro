@@ -1,0 +1,179 @@
+services:
+
+  # ─────────────────────────────────────────────────────────────
+  # PostgreSQL 15 — single instance, three logical databases:
+  #   belpro   → FastAPI application data (init.sql schema)
+  #   n8n      → n8n uses its own schema within belpro DB (no extra DB needed)
+  #   evolution → Evolution API tables (created by create_extra_dbs.sh)
+  # ─────────────────────────────────────────────────────────────
+  postgres:
+    image: postgres:18.3
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/create_extra_dbs.sh:/docker-entrypoint-initdb.d/00_extra_dbs.sh:ro
+      - ./db/init.sql:/docker-entrypoint-initdb.d/01_schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─────────────────────────────────────────────────────────────
+  # Redis 7 — Evolution API in-memory queue / cache
+  # ─────────────────────────────────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    command: redis-server --appendonly yes
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─────────────────────────────────────────────────────────────
+  # n8n — Workflow engine (all business logic orchestration)
+  # Dashboard: http://localhost:5678
+  # ─────────────────────────────────────────────────────────────
+  n8n:
+    image: n8nio/n8n:latest
+    restart: unless-stopped
+    ports:
+      - "5678:5678"
+    environment:
+      # Postgres backend — uses 'n8n' schema within the belpro database
+      DB_TYPE: postgresdb
+      DB_POSTGRESDB_HOST: postgres
+      DB_POSTGRESDB_PORT: "5432"
+      DB_POSTGRESDB_DATABASE: ${POSTGRES_DB}
+      DB_POSTGRESDB_USER: ${POSTGRES_USER}
+      DB_POSTGRESDB_PASSWORD: ${POSTGRES_PASSWORD}
+      DB_POSTGRESDB_SCHEMA: n8n
+      # Auth
+      N8N_BASIC_AUTH_ACTIVE: "true"
+      N8N_BASIC_AUTH_USER: ${N8N_BASIC_AUTH_USER}
+      N8N_BASIC_AUTH_PASSWORD: ${N8N_BASIC_AUTH_PASSWORD}
+      # Webhook URL must be reachable by Evolution API
+      N8N_HOST: ${N8N_HOST:-localhost}
+      N8N_PORT: "5678"
+      N8N_PROTOCOL: ${N8N_PROTOCOL:-http}
+      WEBHOOK_URL: ${N8N_WEBHOOK_URL}
+      GENERIC_TIMEZONE: Europe/Ljubljana
+      TZ: Europe/Ljubljana
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./n8n/workflows:/home/node/workflows:ro
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────────────────────
+  # Faster-Whisper — Local CPU speech-to-text (Slovenian)
+  # Internal only — not exposed outside the stack
+  # ─────────────────────────────────────────────────────────────
+  whisper:
+    build: ./whisper
+    restart: unless-stopped
+    environment:
+      WHISPER_MODEL: ${WHISPER_MODEL:-medium}
+      WHISPER_LANGUAGE: ${WHISPER_LANGUAGE:-sl}
+    volumes:
+      # Model files cached here so they survive container rebuilds
+      - whisper_models:/root/.cache/huggingface
+
+  # ─────────────────────────────────────────────────────────────
+  # FastAPI — Backend API + PDF generation
+  # Dashboard API: http://localhost:8000  (http://localhost:8000/docs for Swagger)
+  # ─────────────────────────────────────────────────────────────
+  api:
+    build: ./api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      EMSO_ENCRYPTION_KEY: ${EMSO_ENCRYPTION_KEY}
+      API_SECRET_KEY: ${API_SECRET_KEY}
+      MANAGER_PASSWORD: ${MANAGER_PASSWORD}
+      NGO_NAME: ${NGO_NAME}
+      NGO_ADDRESS: ${NGO_ADDRESS}
+      GMAIL_ADDRESS: ${GMAIL_ADDRESS}
+      GMAIL_APP_PASSWORD: ${GMAIL_APP_PASSWORD}
+      # Internal service URLs — not user-configurable
+      WHISPER_SERVICE_URL: http://whisper:8001
+      EVOLUTION_API_URL: http://evolution-api:8080
+      EVOLUTION_API_KEY: ${EVOLUTION_API_KEY}
+      EVOLUTION_INSTANCE_NAME: ${EVOLUTION_INSTANCE_NAME}
+      TZ: Europe/Ljubljana
+    volumes:
+      - api_photos:/app/photos
+      - api_pdfs:/app/pdfs
+    depends_on:
+      postgres:
+        condition: service_healthy
+      whisper:
+        condition: service_started
+
+  # ─────────────────────────────────────────────────────────────
+  # nginx — Reverse proxy + static manager dashboard
+  # Dashboard: http://localhost:80
+  # ─────────────────────────────────────────────────────────────
+  frontend:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+      - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf:ro
+    depends_on:
+      - api
+
+  # ─────────────────────────────────────────────────────────────
+  # Evolution API — WhatsApp gateway (volunteer messaging)
+  # API: http://localhost:8080
+  # ─────────────────────────────────────────────────────────────
+  evolution-api:
+    image: atendai/evolution-api:latest
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      SERVER_URL: ${EVOLUTION_SERVER_URL:-http://localhost:8080}
+      AUTHENTICATION_API_KEY: ${EVOLUTION_API_KEY}
+      AUTHENTICATION_EXPOSE_IN_FETCH_INSTANCES: "false"
+      # Postgres storage for instances / message history
+      DATABASE_ENABLED: "true"
+      DATABASE_PROVIDER: postgresql
+      DATABASE_CONNECTION_URI: postgresql://${POSTGRES_USER}:${POSTGRES_PASSWORD}@postgres:5432/evolution
+      DATABASE_CONNECTION_CLIENT_NAME: evolution_belpro
+      # Redis queue
+      CACHE_REDIS_ENABLED: "true"
+      CACHE_REDIS_URI: redis://redis:6379/0
+      CACHE_REDIS_PREFIX_KEY: evo
+      LOG_LEVEL: ERROR
+      LOG_COLOR: "false"
+      TZ: Europe/Ljubljana
+    volumes:
+      - evolution_instances:/evolution/instances
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+
+volumes:
+  postgres_data:
+  redis_data:
+  n8n_data:
+  whisper_models:
+  api_photos:
+  api_pdfs:
+  evolution_instances:

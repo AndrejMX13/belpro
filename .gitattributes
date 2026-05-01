@@ -1,0 +1,49 @@
+# =============================================================================
+# Belpro — .gitattributes
+# Enforce LF line endings everywhere — this is a Linux-target project
+# developed on Windows/WSL2. Prevents CRLF sneaking into shell scripts
+# and Python files, which will break inside Docker containers.
+# =============================================================================
+
+# Default: normalise to LF on commit
+* text=auto eol=lf
+
+# -----------------------------------------------------------------------------
+# Source code — always LF
+# -----------------------------------------------------------------------------
+*.py        text eol=lf
+*.js        text eol=lf
+*.html      text eol=lf
+*.css       text eol=lf
+*.json      text eol=lf
+*.yaml      text eol=lf
+*.yml       text eol=lf
+*.toml      text eol=lf
+*.ini       text eol=lf
+*.cfg       text eol=lf
+*.md        text eol=lf
+*.txt       text eol=lf
+*.sql       text eol=lf
+*.env       text eol=lf
+*.env.*     text eol=lf
+
+# Shell scripts — must be LF or they will fail in Docker/WSL2
+*.sh        text eol=lf
+
+# nginx config
+*.conf      text eol=lf
+
+# -----------------------------------------------------------------------------
+# Binary files — do not touch line endings
+# -----------------------------------------------------------------------------
+*.png       binary
+*.jpg       binary
+*.jpeg      binary
+*.gif       binary
+*.ico       binary
+*.pdf       binary
+*.zip       binary
+*.gz        binary
+*.tar       binary
+*.whl       binary
+*.pyc       binary
