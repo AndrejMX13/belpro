@@ -164,6 +164,8 @@ function route() {
   const hash = location.hash || '#volunteers';
   if (hash.startsWith('#volunteers/')) {
     renderDetail(hash.slice('#volunteers/'.length));
+  } else if (hash === '#settings') {
+    renderSettings();
   } else {
     renderList();
   }
@@ -685,6 +687,155 @@ function fmtHours(h) {
 function fmtDatetime(iso) {
   if (!iso) return '—';
   return new Date(iso).toLocaleDateString('sl-SI', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+// ===== Settings page =====
+async function renderSettings() {
+  $('topbar-title').textContent = 'Nastavitve';
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  document.querySelector('[data-page="settings"]')?.classList.add('active');
+
+  setHtml($('main-content'), `<div style="padding:2.5rem;text-align:center"><span class="spinner"></span></div>`);
+
+  let manager;
+  try {
+    manager = await API.managers.me();
+  } catch (err) {
+    setHtml($('main-content'), `<p class="form-error" style="margin:2rem">Napaka: ${esc(err.message)}</p>`);
+    return;
+  }
+
+  const card = 'background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem';
+  const h2   = 'font-size:1rem;font-weight:600;margin:0 0 1.25rem';
+
+  setHtml($('main-content'), `
+    <div class="page-header">
+      <h1 class="page-title">Nastavitve</h1>
+    </div>
+
+    <div style="${card}">
+      <h2 style="${h2}">Podatki upravljalca</h2>
+      <div class="form-row">
+        <div class="field"><label>Ime</label>
+          <input id="s-first-name" type="text" value="${esc(manager.first_name)}" required maxlength="100"></div>
+        <div class="field"><label>Priimek</label>
+          <input id="s-last-name" type="text" value="${esc(manager.last_name)}" required maxlength="100"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>E-pošta</label>
+          <input id="s-email" type="email" value="${esc(manager.email)}" required maxlength="255"></div>
+        <div class="field"><label>Telefon</label>
+          <input id="s-phone" type="tel" value="${esc(manager.phone)}" required maxlength="30">
+          <div class="form-hint">Telefonska številka bo potrebna za WhatsApp obvestila.</div></div>
+      </div>
+      <div id="s-manager-error" class="form-error" style="display:none"></div>
+      <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-manager-save">Shrani</button></div>
+    </div>
+
+    <div style="${card}">
+      <h2 style="${h2}">Podatki organizacije</h2>
+      <div class="field"><label>Naziv organizacije</label>
+        <input id="s-ngo-name" type="text" value="${esc(manager.ngo_name)}" required maxlength="200"></div>
+      <div class="field"><label>Ulica in hišna številka</label>
+        <input id="s-ngo-street" type="text" value="${esc(manager.ngo_street)}" required maxlength="255"></div>
+      <div class="form-row">
+        <div class="field"><label>Poštna številka</label>
+          <input id="s-ngo-postal" type="text" value="${esc(manager.ngo_postal_code)}" required pattern="\\d{4}" maxlength="4"></div>
+        <div class="field"><label>Kraj</label>
+          <input id="s-ngo-city" type="text" value="${esc(manager.ngo_city)}" required maxlength="100"></div>
+      </div>
+      <div id="s-ngo-error" class="form-error" style="display:none"></div>
+      <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-ngo-save">Shrani</button></div>
+    </div>
+
+    <div style="${card}">
+      <h2 style="${h2}">Sprememba gesla</h2>
+      <div class="field"><label>Trenutno geslo</label>
+        <input id="s-cur-pass" type="password" autocomplete="current-password"></div>
+      <div class="form-row">
+        <div class="field"><label>Novo geslo</label>
+          <input id="s-new-pass" type="password" autocomplete="new-password" minlength="8">
+          <div class="form-hint">Vsaj 8 znakov.</div></div>
+        <div class="field"><label>Ponovi novo geslo</label>
+          <input id="s-new-pass2" type="password" autocomplete="new-password"></div>
+      </div>
+      <div id="s-pass-error" class="form-error" style="display:none"></div>
+      <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-pass-save">Shrani</button></div>
+    </div>
+  `);
+
+  function showErr(id, msg) {
+    const el = $(id);
+    el.textContent = msg;
+    el.style.display = msg ? '' : 'none';
+  }
+
+  $('s-manager-save').addEventListener('click', async () => {
+    showErr('s-manager-error', '');
+    const payload = {
+      first_name: $('s-first-name').value.trim(),
+      last_name:  $('s-last-name').value.trim(),
+      email:      $('s-email').value.trim(),
+      phone:      $('s-phone').value.trim(),
+    };
+    if (!payload.first_name || !payload.last_name || !payload.email || !payload.phone) {
+      showErr('s-manager-error', 'Vsa polja so obvezna.'); return;
+    }
+    try {
+      await API.managers.update(payload);
+      toast('Podatki upravljalca so bili shranjeni.');
+    } catch (err) {
+      showErr('s-manager-error', err.message);
+    }
+  });
+
+  $('s-ngo-save').addEventListener('click', async () => {
+    showErr('s-ngo-error', '');
+    const payload = {
+      ngo_name:        $('s-ngo-name').value.trim(),
+      ngo_street:      $('s-ngo-street').value.trim(),
+      ngo_postal_code: $('s-ngo-postal').value.trim(),
+      ngo_city:        $('s-ngo-city').value.trim(),
+    };
+    if (Object.values(payload).some(v => !v)) {
+      showErr('s-ngo-error', 'Vsa polja so obvezna.'); return;
+    }
+    if (!/^\d{4}$/.test(payload.ngo_postal_code)) {
+      showErr('s-ngo-error', 'Poštna številka mora biti 4-mestna številka.'); return;
+    }
+    try {
+      await API.managers.update(payload);
+      toast('Podatki organizacije so bili shranjeni.');
+    } catch (err) {
+      showErr('s-ngo-error', err.message);
+    }
+  });
+
+  $('s-pass-save').addEventListener('click', async () => {
+    showErr('s-pass-error', '');
+    const cur  = $('s-cur-pass').value;
+    const nw   = $('s-new-pass').value;
+    const nw2  = $('s-new-pass2').value;
+    if (!cur || !nw || !nw2) {
+      showErr('s-pass-error', 'Vsa polja so obvezna.'); return;
+    }
+    if (nw.length < 8) {
+      showErr('s-pass-error', 'Novo geslo mora imeti vsaj 8 znakov.'); return;
+    }
+    if (nw !== nw2) {
+      showErr('s-pass-error', 'Novi gesli se ne ujemata.'); return;
+    }
+    try {
+      await API.managers.changePassword({ current_password: cur, new_password: nw });
+      API.setPassword(nw);
+      $('s-cur-pass').value = '';
+      $('s-new-pass').value = '';
+      $('s-new-pass2').value = '';
+      toast('Geslo je bilo uspešno spremenjeno.');
+    } catch (err) {
+      showErr('s-pass-error', err.message);
+    }
+  });
 }
 
 // ===== Init =====

@@ -27,10 +27,6 @@ class Settings(BaseSettings):
     api_secret_key: str
     manager_password: str
 
-    # ── NGO identity (used in PDFs and manager profile defaults) ─────────────
-    ngo_name: str = ""
-    ngo_address: str = ""
-
     # ── Gmail (outgoing email) ────────────────────────────────────────────────
     gmail_address: str = ""
     gmail_app_password: str = ""

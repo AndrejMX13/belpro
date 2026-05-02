@@ -5,7 +5,7 @@ import uuid
 from datetime import datetime
 from typing import TYPE_CHECKING
 
-from sqlalchemy import DateTime, String, text
+from sqlalchemy import DateTime, String, Text, text
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -31,6 +31,7 @@ class Manager(Base):
     ngo_street: Mapped[str] = mapped_column(String(255))
     ngo_postal_code: Mapped[str] = mapped_column(String(4))
     ngo_city: Mapped[str] = mapped_column(String(100))
+    password_hash: Mapped[str | None] = mapped_column(Text(), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=text("NOW()")
     )

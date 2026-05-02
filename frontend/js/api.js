@@ -55,8 +55,10 @@ const API = (() => {
     health: () => request('/health'),
 
     managers: {
-      me:    ()     => request('/managers/me'),
-      setup: (data) => request('/managers', { method: 'POST', body: JSON.stringify(data) }),
+      me:             ()     => request('/managers/me'),
+      setup:          (data) => request('/managers',                    { method: 'POST',  body: JSON.stringify(data) }),
+      update:         (data) => request('/managers/me',                 { method: 'PATCH', body: JSON.stringify(data) }),
+      changePassword: (data) => request('/managers/me/change-password', { method: 'POST',  body: JSON.stringify(data) }),
     },
 
     volunteers: {

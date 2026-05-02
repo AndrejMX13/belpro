@@ -5,7 +5,7 @@ import uuid
 from datetime import datetime
 from typing import Annotated
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, model_validator
 
 
 class ManagerCreate(BaseModel):
@@ -19,6 +19,26 @@ class ManagerCreate(BaseModel):
     ngo_street: Annotated[str, Field(min_length=1, max_length=255)]
     ngo_postal_code: Annotated[str, Field(pattern=r"^\d{4}$")]
     ngo_city: Annotated[str, Field(min_length=1, max_length=100)]
+
+
+class ManagerUpdate(BaseModel):
+    """Partial update — all fields optional.  Only provided fields are written."""
+
+    first_name: Annotated[str, Field(min_length=1, max_length=100)] | None = None
+    last_name: Annotated[str, Field(min_length=1, max_length=100)] | None = None
+    phone: Annotated[str, Field(min_length=1, max_length=30)] | None = None
+    email: EmailStr | None = None
+    ngo_name: Annotated[str, Field(min_length=1, max_length=200)] | None = None
+    ngo_street: Annotated[str, Field(min_length=1, max_length=255)] | None = None
+    ngo_postal_code: Annotated[str, Field(pattern=r"^\d{4}$")] | None = None
+    ngo_city: Annotated[str, Field(min_length=1, max_length=100)] | None = None
+
+
+class PasswordChangeRequest(BaseModel):
+    """Payload for the change-password endpoint."""
+
+    current_password: str
+    new_password: Annotated[str, Field(min_length=8)]
 
 
 class ManagerResponse(BaseModel):
