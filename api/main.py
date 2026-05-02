@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 
 from db.session import AsyncSessionLocal
+from routers.managers import router as managers_router
 from routers.volunteers import router as volunteers_router
 
 app = FastAPI(
@@ -22,6 +23,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(managers_router, prefix="/api")
 app.include_router(volunteers_router, prefix="/api")
 
 

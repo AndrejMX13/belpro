@@ -24,6 +24,18 @@ class LogEntryBrief(BaseModel):
     activity_description: str
 
 
+class EmsoCheckRequest(BaseModel):
+    """Plaintext EMŠO submitted for duplicate check before creating a volunteer."""
+
+    emso: Annotated[str, Field(min_length=13, max_length=13, pattern=r"^\d{13}$")]
+
+
+class EmsoCheckResponse(BaseModel):
+    """Result of an EMŠO duplicate check."""
+
+    exists: bool
+
+
 class VolunteerCreate(BaseModel):
     """Fields required to register a new volunteer."""
 
@@ -61,6 +73,7 @@ class VolunteerResponse(BaseModel):
     active: bool
     registered_at: datetime
     manager_id: uuid.UUID
+    hours_this_month: float = 0.0
 
 
 class VolunteerDetailResponse(VolunteerResponse):

@@ -37,6 +37,8 @@ class Volunteer(Base):
     city: Mapped[str] = mapped_column(String(100))
     # Stores AES-256-GCM ciphertext (base64-encoded). Encryption handled in services/encryption.py.
     emso: Mapped[str] = mapped_column(Text)
+    # HMAC-SHA256 of plaintext EMŠO — deterministic, used for uniqueness enforcement.
+    emso_hash: Mapped[str | None] = mapped_column(String(64), unique=True, nullable=True)
     phone: Mapped[str] = mapped_column(String(30), unique=True)
     email: Mapped[str | None] = mapped_column(String(255))
     active: Mapped[bool] = mapped_column(Boolean, server_default=text("TRUE"))

@@ -17,6 +17,8 @@ Security constraints
 from __future__ import annotations
 
 import base64
+import hashlib
+import hmac as _hmac
 import os
 
 from cryptography.hazmat.primitives.ciphers.aead import AESGCM
@@ -30,7 +32,9 @@ def load_key(b64_key: str) -> bytes:
     Raises ValueError if the decoded key is not exactly 32 bytes.
     Call once at startup so misconfiguration is caught before any request.
     """
-    key = base64.b64decode(b64_key)
+    # Add missing base64 padding if the value was stored without it.
+    padded = b64_key + "=" * (-len(b64_key) % 4)
+    key = base64.b64decode(padded)
     if len(key) != 32:
         raise ValueError(
             f"EMSO_ENCRYPTION_KEY must decode to exactly 32 bytes, got {len(key)}"
@@ -58,6 +62,15 @@ def decrypt_emso(ciphertext_b64: str, key: bytes) -> str:
     raw = base64.b64decode(ciphertext_b64)
     nonce, ct = raw[:_NONCE_BYTES], raw[_NONCE_BYTES:]
     return AESGCM(key).decrypt(nonce, ct, None).decode("utf-8")
+
+
+def hash_emso(plaintext: str, key: bytes) -> str:
+    """Return HMAC-SHA256 hex digest of plaintext EMŠO.
+
+    Deterministic (unlike encrypt_emso which uses a random nonce), so it can be
+    stored in a unique DB column for duplicate detection without exposing the value.
+    """
+    return _hmac.new(key, plaintext.encode("utf-8"), hashlib.sha256).hexdigest()
 
 
 def mask_emso(plaintext: str) -> str:

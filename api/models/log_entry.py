@@ -63,7 +63,8 @@ class LogEntry(Base):
     location: Mapped[str | None] = mapped_column(String(255))
     status: Mapped[EntryStatus] = mapped_column(
         # create_type=False — the 'entry_status' enum already exists via init.sql
-        SAEnum(EntryStatus, name="entry_status", create_type=False),
+        # values_callable — use .value ("approved") not .name ("APPROVED") for DB binding
+        SAEnum(EntryStatus, name="entry_status", create_type=False, values_callable=lambda objs: [e.value for e in objs]),
         server_default="pending_volunteer",
     )
     photo_path: Mapped[str | None] = mapped_column(String(500))

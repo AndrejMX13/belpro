@@ -7,7 +7,13 @@
       "Bash(git push *)",
       "Bash(python -c ' *)",
       "Bash(docker compose *)",
-      "Bash(curl -s http://localhost:8100/api/health)"
+      "Bash(curl -s http://localhost:8100/api/health)",
+      "mcp__serena__initial_instructions",
+      "mcp__serena__check_onboarding_performed",
+      "mcp__serena__get_symbols_overview",
+      "mcp__serena__find_symbol",
+      "Bash(curl -s http://localhost:8100/openapi.json)",
+      "Bash(python3 -c \"import json,sys; paths=json.load\\(sys.stdin\\)['paths']; [print\\(m.upper\\(\\), p\\) for p,methods in paths.items\\(\\) for m in methods if 'volunteer' in p.lower\\(\\)]\")"
     ]
   }
 }

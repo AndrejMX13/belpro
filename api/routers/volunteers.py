@@ -1,11 +1,12 @@
 """Volunteers CRUD router."""
 from __future__ import annotations
 
+import calendar
 import uuid
 from datetime import date
 from typing import Annotated, Literal
 
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Depends, HTTPException, Query, Response, status
 from sqlalchemy import func, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
@@ -14,16 +15,18 @@ from sqlalchemy.orm import selectinload
 from core.auth import require_manager
 from core.settings import Settings, get_settings
 from db.session import get_db
-from models.log_entry import LogEntry
+from models.log_entry import EntryStatus, LogEntry
 from models.manager import Manager
 from models.volunteer import Volunteer
 from schemas.volunteer import (
+    EmsoCheckRequest,
+    EmsoCheckResponse,
     VolunteerCreate,
     VolunteerDetailResponse,
     VolunteerListResponse,
     VolunteerResponse,
 )
-from services.encryption import decrypt_emso, encrypt_emso, load_key, mask_emso
+from services.encryption import decrypt_emso, encrypt_emso, hash_emso, load_key, mask_emso
 
 router = APIRouter(prefix="/volunteers", tags=["volunteers"])
 
@@ -31,18 +34,53 @@ router = APIRouter(prefix="/volunteers", tags=["volunteers"])
 _SORTABLE = frozenset({"last_name", "first_name", "registered_at", "city"})
 
 
-def _to_response(volunteer: Volunteer, key: bytes) -> VolunteerResponse:
+def _to_response(volunteer: Volunteer, key: bytes, hours_this_month: float = 0.0) -> VolunteerResponse:
     """Decrypt EMŠO, mask it, and build a VolunteerResponse from an ORM object."""
     masked = mask_emso(decrypt_emso(volunteer.emso, key))
-    return VolunteerResponse.model_validate(volunteer, update={"emso_masked": masked})
+    return VolunteerResponse(
+        id=volunteer.id,
+        first_name=volunteer.first_name,
+        last_name=volunteer.last_name,
+        street=volunteer.street,
+        postal_code=volunteer.postal_code,
+        city=volunteer.city,
+        emso_masked=masked,
+        phone=volunteer.phone,
+        email=volunteer.email,
+        active=volunteer.active,
+        registered_at=volunteer.registered_at,
+        manager_id=volunteer.manager_id,
+        hours_this_month=hours_this_month,
+    )
 
 
 def _to_detail_response(volunteer: Volunteer, key: bytes) -> VolunteerDetailResponse:
-    """Same as _to_response but includes sorted log_entries."""
+    """Same as _to_response but includes sorted log_entries and computed hours for the current month."""
     masked = mask_emso(decrypt_emso(volunteer.emso, key))
-    # Sort entries newest-first in Python (entries are already loaded via selectinload).
     volunteer.log_entries.sort(key=lambda e: e.entry_date, reverse=True)
-    return VolunteerDetailResponse.model_validate(volunteer, update={"emso_masked": masked})
+    today = date.today()
+    hours_this_month = float(sum(
+        e.hours for e in volunteer.log_entries
+        if e.status == EntryStatus.APPROVED
+        and e.entry_date.year == today.year
+        and e.entry_date.month == today.month
+    ))
+    return VolunteerDetailResponse(
+        id=volunteer.id,
+        first_name=volunteer.first_name,
+        last_name=volunteer.last_name,
+        street=volunteer.street,
+        postal_code=volunteer.postal_code,
+        city=volunteer.city,
+        emso_masked=masked,
+        phone=volunteer.phone,
+        email=volunteer.email,
+        active=volunteer.active,
+        registered_at=volunteer.registered_at,
+        manager_id=volunteer.manager_id,
+        hours_this_month=hours_this_month,
+        log_entries=volunteer.log_entries,
+    )
 
 
 @router.get("", response_model=VolunteerListResponse)
@@ -59,7 +97,23 @@ async def list_volunteers(
     settings: Annotated[Settings, Depends(get_settings)] = ...,
 ) -> VolunteerListResponse:
     """List volunteers with optional filters, sorting, and pagination."""
-    stmt = select(Volunteer)
+    today = date.today()
+    first_day = today.replace(day=1)
+    last_day = today.replace(day=calendar.monthrange(today.year, today.month)[1])
+
+    hours_subq = (
+        select(func.coalesce(func.sum(LogEntry.hours), 0))
+        .where(
+            LogEntry.volunteer_id == Volunteer.id,
+            LogEntry.status == EntryStatus.APPROVED,
+            LogEntry.entry_date >= first_day,
+            LogEntry.entry_date <= last_day,
+        )
+        .correlate(Volunteer)
+        .scalar_subquery()
+    )
+
+    stmt = select(Volunteer, hours_subq.label("hours_this_month"))
     count_stmt = select(func.count()).select_from(Volunteer)
 
     if active is not None:
@@ -80,13 +134,32 @@ async def list_volunteers(
     stmt = stmt.offset(offset).limit(limit)
 
     total = (await db.execute(count_stmt)).scalar_one()
-    volunteers = (await db.execute(stmt)).scalars().all()
+    rows = (await db.execute(stmt)).all()
 
     key = load_key(settings.emso_encryption_key)
     return VolunteerListResponse(
-        items=[_to_response(v, key) for v in volunteers],
+        items=[_to_response(v, key, float(h)) for v, h in rows],
         total=total,
     )
+
+
+@router.post(
+    "/check-emso",
+    response_model=EmsoCheckResponse,
+    dependencies=[Depends(require_manager)],
+)
+async def check_emso(
+    payload: EmsoCheckRequest,
+    settings: Annotated[Settings, Depends(get_settings)] = ...,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> EmsoCheckResponse:
+    """Check whether an EMŠO is already registered.  Used by the frontend before form submit."""
+    key = load_key(settings.emso_encryption_key)
+    emso_h = hash_emso(payload.emso, key)
+    existing = (
+        await db.execute(select(Volunteer).where(Volunteer.emso_hash == emso_h))
+    ).scalar_one_or_none()
+    return EmsoCheckResponse(exists=existing is not None)
 
 
 @router.post(
@@ -110,6 +183,17 @@ async def create_volunteer(
         )
 
     key = load_key(settings.emso_encryption_key)
+
+    emso_h = hash_emso(payload.emso, key)
+    existing = (
+        await db.execute(select(Volunteer).where(Volunteer.emso_hash == emso_h))
+    ).scalar_one_or_none()
+    if existing is not None:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Prostovoljec s tem EMŠO-jem že obstaja.",
+        )
+
     volunteer = Volunteer(
         first_name=payload.first_name,
         last_name=payload.last_name,
@@ -117,6 +201,7 @@ async def create_volunteer(
         postal_code=payload.postal_code,
         city=payload.city,
         emso=encrypt_emso(payload.emso, key),
+        emso_hash=emso_h,
         phone=payload.phone,
         email=str(payload.email) if payload.email else None,
         manager_id=manager.id,
@@ -129,7 +214,7 @@ async def create_volunteer(
         await db.rollback()
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
-            detail="A volunteer with this phone number already exists.",
+            detail="Prostovoljec s to telefonsko številko že obstaja.",
         )
     return _to_response(volunteer, key)
 
@@ -157,6 +242,35 @@ async def deactivate_volunteer(
 
     key = load_key(settings.emso_encryption_key)
     return _to_response(volunteer, key)
+
+
+@router.delete(
+    "/{volunteer_id}",
+    status_code=status.HTTP_204_NO_CONTENT,
+    dependencies=[Depends(require_manager)],
+)
+async def delete_volunteer(
+    volunteer_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> Response:
+    """Hard-delete a volunteer only if they have zero log entries."""
+    volunteer = (
+        await db.execute(
+            select(Volunteer)
+            .where(Volunteer.id == volunteer_id)
+            .options(selectinload(Volunteer.log_entries))
+        )
+    ).scalar_one_or_none()
+    if volunteer is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+    if volunteer.log_entries:
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Prostovoljca z vnosi ni mogoče izbrisati. Namesto tega ga deaktivirajte.",
+        )
+    await db.delete(volunteer)
+    await db.commit()
+    return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
 @router.get("/{volunteer_id}", response_model=VolunteerDetailResponse)
