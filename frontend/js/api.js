@@ -76,5 +76,17 @@ const API = (() => {
       deactivate: (id)   => request('/volunteers/' + id + '/deactivate', { method: 'PATCH' }),
       delete:     (id)   => request('/volunteers/' + id, { method: 'DELETE' }),
     },
+
+    logEntries: {
+      list: (params = {}) => {
+        const q = new URLSearchParams();
+        for (const [k, v] of Object.entries(params)) {
+          if (v !== null && v !== undefined && v !== '') q.set(k, String(v));
+        }
+        return request('/log-entries?' + q);
+      },
+      approve: (id) => request('/log-entries/' + id + '/approve', { method: 'PATCH' }),
+      reject:  (id) => request('/log-entries/' + id + '/reject',  { method: 'PATCH' }),
+    },
   };
 })();

@@ -164,6 +164,8 @@ function route() {
   const hash = location.hash || '#volunteers';
   if (hash.startsWith('#volunteers/')) {
     renderDetail(hash.slice('#volunteers/'.length));
+  } else if (hash === '#approvals') {
+    renderApprovals();
   } else if (hash === '#settings') {
     renderSettings();
   } else {
@@ -186,6 +188,13 @@ const state = {
   },
   total: 0,
   items: [],
+};
+
+const approvalsState = {
+  filter: { status: 'pending_manager', sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  total: 0,
+  items: [],
+  volunteerMap: new Map(),
 };
 
 // ===== Lookup tables =====
@@ -836,6 +845,205 @@ async function renderSettings() {
       showErr('s-pass-error', err.message);
     }
   });
+}
+
+// ===== Approvals page =====
+function approvalsSortTh(label, col) {
+  const active = approvalsState.filter.sort_by === col ? ' sort-active' : '';
+  const arrow  = approvalsState.filter.sort_by === col
+    ? (approvalsState.filter.sort_dir === 'asc' ? '↑' : '↓')
+    : '↕';
+  return `<th class="sortable${active}" data-sort="${col}">${esc(label)} <span class="sort-arrow">${arrow}</span></th>`;
+}
+
+function renderApprovalsThead() {
+  return `
+    ${approvalsSortTh('Datum', 'entry_date')}
+    <th>Prostovoljec</th>
+    <th>Opis dela</th>
+    ${approvalsSortTh('Ure', 'hours')}
+    <th>Lokacija</th>
+    <th>Status</th>
+    <th>Dejanja</th>
+  `;
+}
+
+function renderApprovalsTable() {
+  const tbody = $('approvals-body');
+  if (!tbody) return;
+
+  const { items, filter, volunteerMap } = approvalsState;
+
+  if (!items.length) {
+    const msg = filter.status === 'pending_manager'
+      ? 'Ni čakajočih vnosov.'
+      : 'Ni vnosov, ki ustrezajo filtru.';
+    setHtml(tbody, `<tr class="empty-row"><td colspan="7">${msg}</td></tr>`);
+    return;
+  }
+
+  tbody.innerHTML = items.map(e => {
+    const name = volunteerMap.get(e.volunteer_id) || 'Neznano';
+    const desc = e.activity_description.length > 60
+      ? esc(e.activity_description.slice(0, 60)) + '…'
+      : esc(e.activity_description);
+    const actions = e.status === 'pending_manager'
+      ? `<button class="btn btn-sm btn-primary" data-action="approve" data-id="${e.id}">Odobri</button>
+         <button class="btn btn-sm btn-danger"  data-action="reject"  data-id="${e.id}" style="margin-left:0.4rem">Zavrni</button>`
+      : '';
+    return `
+      <tr>
+        <td>${esc(e.entry_date)}</td>
+        <td><a href="#volunteers/${e.volunteer_id}" style="color:var(--accent);text-decoration:none">${esc(name)}</a></td>
+        <td>${desc}</td>
+        <td style="text-align:right">${fmtHours(e.hours)}</td>
+        <td>${e.location ? esc(e.location) : '—'}</td>
+        <td>${statusBadge(e.status)}</td>
+        <td class="td-actions">${actions}</td>
+      </tr>`;
+  }).join('');
+}
+
+function renderApprovalsPagination() {
+  const { filter, total } = approvalsState;
+  const from    = total === 0 ? 0 : filter.offset + 1;
+  const to      = Math.min(filter.offset + filter.limit, total);
+  const info    = $('a-pg-info');
+  const prevBtn = $('a-prev-btn');
+  const nextBtn = $('a-next-btn');
+  if (info)    info.textContent = total > 0 ? `Prikazujem ${from}–${to} od ${total}` : 'Ni rezultatov';
+  if (prevBtn) prevBtn.disabled = filter.offset === 0;
+  if (nextBtn) nextBtn.disabled = filter.offset + filter.limit >= total;
+}
+
+async function loadApprovals() {
+  const tbody = $('approvals-body');
+  if (!tbody) return;
+
+  const { filter } = approvalsState;
+  const params = {
+    sort_by:  filter.sort_by,
+    sort_dir: filter.sort_dir,
+    offset:   filter.offset,
+    limit:    filter.limit,
+  };
+  if (filter.status) params.status = filter.status;
+
+  try {
+    const data = await API.logEntries.list(params);
+    approvalsState.total = data.total;
+    approvalsState.items = data.items;
+    const head = $('approvals-head');
+    if (head) setHtml(head, renderApprovalsThead());
+    renderApprovalsTable();
+    renderApprovalsPagination();
+  } catch (err) {
+    setHtml(tbody, `<tr class="empty-row"><td colspan="7">Napaka: ${esc(err.message)}</td></tr>`);
+  }
+}
+
+async function renderApprovals() {
+  $('topbar-title').textContent = 'Odobritve';
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  document.querySelector('[data-page="approvals"]')?.classList.add('active');
+
+  setHtml($('main-content'), `<div style="padding:2.5rem;text-align:center"><span class="spinner"></span></div>`);
+
+  try {
+    const volData = await API.volunteers.list({ limit: 200 });
+    approvalsState.volunteerMap = new Map(volData.items.map(v => [v.id, v.first_name + ' ' + v.last_name]));
+  } catch {
+    approvalsState.volunteerMap = new Map();
+  }
+
+  const statusOpt = (val, label) => {
+    const sel = approvalsState.filter.status === val ? ' selected' : '';
+    return `<option value="${val}"${sel}>${label}</option>`;
+  };
+
+  setHtml($('main-content'), `
+    <div class="page-header">
+      <h1 class="page-title">Odobritve</h1>
+    </div>
+
+    <div class="filter-bar">
+      <select id="a-status">
+        ${statusOpt('pending_manager', 'Čaka odobritev')}
+        ${statusOpt('approved',        'Odobreno')}
+        ${statusOpt('rejected',        'Zavrnjeno')}
+        ${statusOpt('',               'Vsi')}
+      </select>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="approvals-table">
+        <thead><tr id="approvals-head">${renderApprovalsThead()}</tr></thead>
+        <tbody id="approvals-body"><tr class="loading-row"><td colspan="7">Nalaganje…</td></tr></tbody>
+      </table>
+    </div>
+
+    <div class="pagination">
+      <span id="a-pg-info"></span>
+      <div class="pagination-btns">
+        <button id="a-prev-btn" disabled>← Prejšnja</button>
+        <button id="a-next-btn" disabled>Naslednja →</button>
+      </div>
+    </div>
+  `);
+
+  $('a-status').addEventListener('change', () => {
+    approvalsState.filter.status = $('a-status').value;
+    approvalsState.filter.offset = 0;
+    loadApprovals();
+  });
+
+  $('a-prev-btn').addEventListener('click', () => {
+    approvalsState.filter.offset = Math.max(0, approvalsState.filter.offset - approvalsState.filter.limit);
+    loadApprovals();
+  });
+
+  $('a-next-btn').addEventListener('click', () => {
+    approvalsState.filter.offset += approvalsState.filter.limit;
+    loadApprovals();
+  });
+
+  $('approvals-table').addEventListener('click', async (e) => {
+    const th = e.target.closest('th[data-sort]');
+    if (th) {
+      const col = th.dataset.sort;
+      if (approvalsState.filter.sort_by === col) {
+        approvalsState.filter.sort_dir = approvalsState.filter.sort_dir === 'asc' ? 'desc' : 'asc';
+      } else {
+        approvalsState.filter.sort_by  = col;
+        approvalsState.filter.sort_dir = 'asc';
+      }
+      approvalsState.filter.offset = 0;
+      await loadApprovals();
+      return;
+    }
+
+    const btn = e.target.closest('[data-action]');
+    if (!btn) return;
+    const { action, id } = btn.dataset;
+    btn.disabled = true;
+    btn.textContent = '…';
+    try {
+      if (action === 'approve') {
+        await API.logEntries.approve(id);
+        toast('Vnos odobren.');
+      } else if (action === 'reject') {
+        await API.logEntries.reject(id);
+        toast('Vnos zavrnjen.', 'error');
+      }
+      await loadApprovals();
+    } catch (err) {
+      toast('Napaka: ' + err.message, 'error');
+      btn.disabled = false;
+      btn.textContent = action === 'approve' ? 'Odobri' : 'Zavrni';
+    }
+  });
+
+  await loadApprovals();
 }
 
 // ===== Init =====
