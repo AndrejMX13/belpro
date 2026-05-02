@@ -35,8 +35,8 @@
 - Any Linux host with Docker and Docker Compose installed.
 - Minimum recommended: 2 CPU cores, 4GB RAM (Whisper `medium` model requires ~2GB).
 - For `large-v3` Whisper model: 8GB RAM recommended.
-- No public IP required for basic operation — Evolution API connects outbound to WhatsApp servers.
-- A public domain/IP is required only if the NGO wants webhooks reachable from outside the local network.
+- **No public IP or open inbound port is required for WhatsApp connectivity.** Evolution API works like a WhatsApp Web client: it makes an outbound connection to WhatsApp servers, so it passes through a standard NAT/firewall with no port-forwarding needed. When a WhatsApp message arrives, Evolution API receives it over that outbound connection and fires an internal webhook to n8n — both services run in the same Docker network, so the webhook never leaves the host. The system is fully functional on a private LAN or behind a corporate firewall.
+- A public domain/IP is only needed if the manager dashboard must be reachable from outside the local network (e.g. manager works remotely). For a single on-site deployment this is not required.
 
 ---
 

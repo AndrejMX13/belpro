@@ -175,7 +175,8 @@ window.addEventListener('hashchange', route);
 const state = {
   filter: {
     active: true,
-    city: '',
+    search_by: 'last_name',
+    search_q: '',
     sort_by: 'last_name',
     sort_dir: 'asc',
     offset: 0,
@@ -210,7 +211,8 @@ async function renderList() {
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
   document.querySelector('[data-page="volunteers"]')?.classList.add('active');
 
-  const activeOpt = (v) => state.filter.active === v ? ' selected' : '';
+  const activeOpt   = (v) => state.filter.active    === v ? ' selected' : '';
+  const searchByOpt = (v) => state.filter.search_by === v ? ' selected' : '';
 
   setHtml($('main-content'), `
     <div class="page-header">
@@ -223,20 +225,22 @@ async function renderList() {
         <option value="true"${activeOpt(true)}>Aktivni</option>
         <option value="false"${activeOpt(false)}>Neaktivni</option>
       </select>
-      <input type="text" id="f-city" placeholder="Iskanje po mestu…"
-             value="${esc(state.filter.city)}" style="flex:1;min-width:130px;max-width:220px" />
+      <select id="f-search-by">
+        <option value="last_name"${searchByOpt('last_name')}>Priimek</option>
+        <option value="first_name"${searchByOpt('first_name')}>Ime</option>
+        <option value="name"${searchByOpt('name')}>Ime ali priimek</option>
+        <option value="city"${searchByOpt('city')}>Mesto</option>
+        <option value="phone"${searchByOpt('phone')}>Telefon</option>
+      </select>
+      <input type="text" id="f-search-q" placeholder="Iskanje…"
+             value="${esc(state.filter.search_q)}" style="flex:1;min-width:130px;max-width:220px" />
       <button class="btn btn-primary btn-sm" id="f-search">Išči</button>
       <button class="btn btn-ghost btn-sm" id="f-reset">Ponastavi</button>
     </div>
     <div class="table-wrapper">
-      <table>
-        <thead><tr>
-          ${sortTh('Ime in priimek', 'last_name')}
-          <th>Telefon</th>
-          ${sortTh('Mesto', 'city')}
-          <th>Ure ta mesec</th>
-          <th>Status</th>
-          <th>Akcije</th>
+      <table id="volunteers-table">
+        <thead><tr id="volunteers-head">
+          ${renderThead()}
         </tr></thead>
         <tbody id="volunteers-body">
           <tr class="loading-row"><td colspan="6"><span class="spinner"></span></td></tr>
@@ -253,9 +257,10 @@ async function renderList() {
   `);
 
   $('add-btn').addEventListener('click', openAddModal);
+  $('f-active').addEventListener('change', applyFilters);
   $('f-search').addEventListener('click', applyFilters);
   $('f-reset').addEventListener('click', resetFilters);
-  $('f-city').addEventListener('keydown', e => { if (e.key === 'Enter') applyFilters(); });
+  $('f-search-q').addEventListener('keydown', e => { if (e.key === 'Enter') applyFilters(); });
   $('prev-btn').addEventListener('click', () => {
     state.filter.offset = Math.max(0, state.filter.offset - state.filter.limit);
     loadVolunteers();
@@ -265,21 +270,32 @@ async function renderList() {
     loadVolunteers();
   });
 
-  document.querySelectorAll('th[data-sort]').forEach(th => {
-    th.addEventListener('click', () => {
-      const col = th.dataset.sort;
-      if (state.filter.sort_by === col) {
-        state.filter.sort_dir = state.filter.sort_dir === 'asc' ? 'desc' : 'asc';
-      } else {
-        state.filter.sort_by = col;
-        state.filter.sort_dir = 'asc';
-      }
-      state.filter.offset = 0;
-      loadVolunteers();
-    });
+  $('volunteers-table').addEventListener('click', (e) => {
+    const th = e.target.closest('th[data-sort]');
+    if (!th) return;
+    const col = th.dataset.sort;
+    if (state.filter.sort_by === col) {
+      state.filter.sort_dir = state.filter.sort_dir === 'asc' ? 'desc' : 'asc';
+    } else {
+      state.filter.sort_by = col;
+      state.filter.sort_dir = 'asc';
+    }
+    state.filter.offset = 0;
+    loadVolunteers();
   });
 
   await loadVolunteers();
+}
+
+function renderThead() {
+  return `
+    ${sortTh('Ime in priimek', 'last_name')}
+    ${sortTh('Telefon', 'phone')}
+    ${sortTh('Mesto', 'city')}
+    <th>Ure ta mesec</th>
+    ${sortTh('Status', 'active')}
+    <th>Akcije</th>
+  `;
 }
 
 function sortTh(label, col) {
@@ -296,7 +312,10 @@ async function loadVolunteers() {
 
   const params = {};
   if (state.filter.active !== '') params.active = state.filter.active;
-  if (state.filter.city) params.city = state.filter.city;
+  if (state.filter.search_q) {
+    params.search_by = state.filter.search_by;
+    params.search_q  = state.filter.search_q;
+  }
   params.sort_by  = state.filter.sort_by;
   params.sort_dir = state.filter.sort_dir;
   params.offset   = state.filter.offset;
@@ -306,6 +325,8 @@ async function loadVolunteers() {
     const data = await API.volunteers.list(params);
     state.total = data.total;
     state.items = data.items;
+    const head = $('volunteers-head');
+    if (head) setHtml(head, renderThead());
     renderTable(data.items);
     renderPagination();
   } catch (err) {
@@ -332,8 +353,11 @@ function renderTable(items) {
             ? '<span class="badge badge-active">Aktiven</span>'
             : '<span class="badge badge-inactive">Neaktiven</span>'}</td>
       <td class="td-actions" data-stop>
-        ${v.active ? `<button class="btn btn-danger btn-sm deactivate-btn"
-            data-id="${v.id}" data-name="${esc(v.first_name + ' ' + v.last_name)}">Deaktiviraj</button>` : ''}
+        ${v.active
+          ? `<button class="btn btn-danger btn-sm deactivate-btn"
+                data-id="${v.id}" data-name="${esc(v.first_name + ' ' + v.last_name)}">Deaktiviraj</button>`
+          : `<button class="btn btn-secondary btn-sm activate-btn"
+                data-id="${v.id}" data-name="${esc(v.first_name + ' ' + v.last_name)}">Aktiviraj</button>`}
       </td>
     </tr>
   `).join('');
@@ -363,6 +387,25 @@ function renderTable(items) {
       }
     });
   });
+
+  tbody.querySelectorAll('.activate-btn').forEach(btn => {
+    btn.addEventListener('click', async (e) => {
+      e.stopPropagation();
+      const { id, name } = btn.dataset;
+      if (!confirm(`Aktiviraj prostovoljca ${name}?\n\nTa oseba bo spet lahko beležila delo.`)) return;
+      btn.disabled = true;
+      btn.textContent = '…';
+      try {
+        await API.volunteers.activate(id);
+        toast(`${name} je bil aktiviran.`);
+        await loadVolunteers();
+      } catch (err) {
+        toast('Napaka: ' + err.message, 'error');
+        btn.disabled = false;
+        btn.textContent = 'Aktiviraj';
+      }
+    });
+  });
 }
 
 function renderPagination() {
@@ -378,16 +421,18 @@ function renderPagination() {
 
 function applyFilters() {
   const v = $('f-active')?.value;
-  state.filter.active = v === 'true' ? true : v === 'false' ? false : '';
-  state.filter.city   = $('f-city')?.value.trim() || '';
-  state.filter.offset = 0;
+  state.filter.active    = v === 'true' ? true : v === 'false' ? false : '';
+  state.filter.search_by = $('f-search-by')?.value || 'last_name';
+  state.filter.search_q  = $('f-search-q')?.value.trim() || '';
+  state.filter.offset    = 0;
   loadVolunteers();
 }
 
 function resetFilters() {
-  state.filter.active  = true;
-  state.filter.city    = '';
-  state.filter.offset  = 0;
+  state.filter.active    = true;
+  state.filter.search_by = 'last_name';
+  state.filter.search_q  = '';
+  state.filter.offset    = 0;
   state.filter.sort_by = 'last_name';
   state.filter.sort_dir = 'asc';
   renderList();

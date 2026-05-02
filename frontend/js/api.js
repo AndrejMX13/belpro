@@ -70,6 +70,7 @@ const API = (() => {
       checkEmso:  (emso) => request('/volunteers/check-emso', { method: 'POST', body: JSON.stringify({ emso }) }),
       create:     (data) => request('/volunteers', { method: 'POST', body: JSON.stringify(data) }),
       get:        (id)   => request('/volunteers/' + id),
+      activate:   (id)   => request('/volunteers/' + id + '/activate',   { method: 'PATCH' }),
       deactivate: (id)   => request('/volunteers/' + id + '/deactivate', { method: 'PATCH' }),
       delete:     (id)   => request('/volunteers/' + id, { method: 'DELETE' }),
     },

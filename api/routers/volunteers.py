@@ -7,7 +7,7 @@ from datetime import date
 from typing import Annotated, Literal
 
 from fastapi import APIRouter, Depends, HTTPException, Query, Response, status
-from sqlalchemy import func, select
+from sqlalchemy import func, or_, select
 from sqlalchemy.exc import IntegrityError
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
@@ -86,10 +86,11 @@ def _to_detail_response(volunteer: Volunteer, key: bytes) -> VolunteerDetailResp
 @router.get("", response_model=VolunteerListResponse)
 async def list_volunteers(
     active: bool | None = Query(default=None, description="True=active only, False=inactive, omit=all"),
-    city: str | None = Query(default=None, description="Case-insensitive partial match"),
+    search_by: Literal["first_name", "last_name", "name", "city", "phone"] | None = Query(default=None),
+    search_q: str | None = Query(default=None, description="Case-insensitive partial match"),
     registered_after: date | None = Query(default=None),
     registered_before: date | None = Query(default=None),
-    sort_by: Literal["last_name", "first_name", "registered_at", "city"] = Query(default="last_name"),
+    sort_by: Literal["last_name", "first_name", "registered_at", "city", "phone", "active"] = Query(default="last_name"),
     sort_dir: Literal["asc", "desc"] = Query(default="asc"),
     offset: int = Query(default=0, ge=0),
     limit: int = Query(default=50, ge=1, le=200),
@@ -119,9 +120,20 @@ async def list_volunteers(
     if active is not None:
         stmt = stmt.where(Volunteer.active == active)
         count_stmt = count_stmt.where(Volunteer.active == active)
-    if city:
-        stmt = stmt.where(Volunteer.city.ilike(f"%{city}%"))
-        count_stmt = count_stmt.where(Volunteer.city.ilike(f"%{city}%"))
+    if search_by and search_q:
+        q = f"%{search_q}%"
+        _SEARCH_COL = {
+            "first_name": Volunteer.first_name,
+            "last_name":  Volunteer.last_name,
+            "city":       Volunteer.city,
+            "phone":      Volunteer.phone,
+        }
+        if search_by == "name":
+            cond = or_(Volunteer.first_name.ilike(q), Volunteer.last_name.ilike(q))
+        else:
+            cond = _SEARCH_COL[search_by].ilike(q)
+        stmt = stmt.where(cond)
+        count_stmt = count_stmt.where(cond)
     if registered_after:
         stmt = stmt.where(Volunteer.registered_at >= registered_after)
         count_stmt = count_stmt.where(Volunteer.registered_at >= registered_after)
@@ -216,6 +228,31 @@ async def create_volunteer(
             status_code=status.HTTP_409_CONFLICT,
             detail="Prostovoljec s to telefonsko številko že obstaja.",
         )
+    return _to_response(volunteer, key)
+
+
+@router.patch(
+    "/{volunteer_id}/activate",
+    response_model=VolunteerResponse,
+    dependencies=[Depends(require_manager)],
+)
+async def activate_volunteer(
+    volunteer_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+    settings: Annotated[Settings, Depends(get_settings)] = ...,
+) -> VolunteerResponse:
+    """Re-activate a previously deactivated volunteer."""
+    volunteer = (
+        await db.execute(select(Volunteer).where(Volunteer.id == volunteer_id))
+    ).scalar_one_or_none()
+    if volunteer is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+
+    volunteer.active = True
+    await db.commit()
+    await db.refresh(volunteer)
+
+    key = load_key(settings.emso_encryption_key)
     return _to_response(volunteer, key)
 
 
