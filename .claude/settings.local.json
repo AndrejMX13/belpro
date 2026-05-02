@@ -14,7 +14,12 @@
       "mcp__serena__find_symbol",
       "Bash(curl -s http://localhost:8100/openapi.json)",
       "Bash(python3 -c \"import json,sys; paths=json.load\\(sys.stdin\\)['paths']; [print\\(m.upper\\(\\), p\\) for p,methods in paths.items\\(\\) for m in methods if 'volunteer' in p.lower\\(\\)]\")",
-      "Bash(Get-ChildItem -Path \"d:\\\\Andrej\\\\vsCode-workspace\\\\BelPro\\\\frontend\\\\\" -Recurse -Filter \"*.html\" | Select-Object -ExpandProperty FullName)"
+      "Bash(Get-ChildItem -Path \"d:\\\\Andrej\\\\vsCode-workspace\\\\BelPro\\\\frontend\\\\\" -Recurse -Filter \"*.html\" | Select-Object -ExpandProperty FullName)",
+      "Bash(Get-ChildItem -Path \"d:\\\\Andrej\\\\vsCode-workspace\\\\BelPro\" -Recurse -Directory -Depth 3)",
+      "Bash(Select-Object FullName)",
+      "Bash(Head -30)",
+      "Bash(Get-ChildItem -Path \"d:\\\\Andrej\\\\vsCode-workspace\\\\BelPro\\\\api\\\\models\" -File)",
+      "Bash(Select-Object Name)"
     ]
   }
 }
