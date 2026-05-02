@@ -25,6 +25,7 @@ from sqlalchemy.orm import Mapped, mapped_column, relationship
 from .base import Base
 
 if TYPE_CHECKING:
+    from .log_entry_photo import LogEntryPhoto
     from .volunteer import Volunteer
 
 
@@ -67,10 +68,6 @@ class LogEntry(Base):
         SAEnum(EntryStatus, name="entry_status", create_type=False, values_callable=lambda objs: [e.value for e in objs]),
         server_default="pending_volunteer",
     )
-    photo_path: Mapped[str | None] = mapped_column(String(500))
-    photo_exif_timestamp: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
-    photo_exif_lat: Mapped[Decimal | None] = mapped_column(Numeric(10, 7))
-    photo_exif_lon: Mapped[Decimal | None] = mapped_column(Numeric(10, 7))
     volunteer_confirmed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     manager_approved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     created_at: Mapped[datetime] = mapped_column(
@@ -83,4 +80,7 @@ class LogEntry(Base):
 
     volunteer: Mapped[Volunteer] = relationship(
         "Volunteer", back_populates="log_entries", lazy="select"
+    )
+    photos: Mapped[list[LogEntryPhoto]] = relationship(
+        "LogEntryPhoto", back_populates="log_entry", lazy="selectin", cascade="all, delete-orphan"
     )

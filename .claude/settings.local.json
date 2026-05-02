@@ -19,7 +19,14 @@
       "Bash(Select-Object FullName)",
       "Bash(Head -30)",
       "Bash(Get-ChildItem -Path \"d:\\\\Andrej\\\\vsCode-workspace\\\\BelPro\\\\api\\\\models\" -File)",
-      "Bash(Select-Object Name)"
+      "Bash(Select-Object Name)",
+      "Bash(wsl --exec bash -c \"cd /mnt/d/Andrej/vsCode-workspace/BelPro && docker compose up -d --build api 2>&1 | tail -15\")",
+      "Bash(wsl --exec bash -c \"curl -s -o /dev/null -w '%{http_code}' -u manager:$\\(grep MANAGER_PASSWORD /mnt/d/Andrej/vsCode-workspace/BelPro/.env)",
+      "Bash(wsl --exec bash -c \"curl -s -o /dev/null -w '%{http_code}' 'http://localhost:8100/api/log-entries?search_q=test&limit=1'\")",
+      "Bash(wsl --exec bash -c \"cd /mnt/d/Andrej/vsCode-workspace/BelPro && docker compose up -d --build api 2>&1 | tail -8\")",
+      "Bash(wsl --exec bash -c \"cd /mnt/d/Andrej/vsCode-workspace/BelPro && docker compose up -d --build api 2>&1 | tail -6\")",
+      "Bash(wsl --exec bash -c \"docker compose -f /mnt/d/Andrej/vsCode-workspace/BelPro/docker-compose.yml exec api alembic upgrade head 2>&1\")",
+      "Bash(wsl --exec bash -c \"docker logs --tail=30 belpro-api-1 2>&1\")"
     ]
   }
 }

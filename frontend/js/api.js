@@ -78,6 +78,46 @@ const API = (() => {
     },
 
     logEntries: {
+      get:    (id)       => request('/log-entries/' + id),
+      update: (id, data) => request('/log-entries/' + id, { method: 'PATCH', body: JSON.stringify(data) }),
+
+      uploadPhoto: (entryId, formData) => {
+        const headers = {};
+        if (_creds) headers['Authorization'] = 'Basic ' + _creds;
+        return fetch(BASE + '/log-entries/' + entryId + '/photos', {
+          method: 'POST', body: formData, headers,
+        }).then(async res => {
+          if (res.status === 401) {
+            clear();
+            window.dispatchEvent(new CustomEvent('belpro:unauthorized'));
+            const err = new Error('Seja je potekla. Prijavite se znova.');
+            err.status = 401;
+            throw err;
+          }
+          if (!res.ok) {
+            let detail = 'HTTP ' + res.status;
+            try { detail = (await res.json()).detail || detail; } catch { /* empty */ }
+            const err = new Error(detail);
+            err.status = res.status;
+            throw err;
+          }
+          return res.json();
+        });
+      },
+
+      photoUrl: async (entryId, photoId) => {
+        const headers = {};
+        if (_creds) headers['Authorization'] = 'Basic ' + _creds;
+        const res = await fetch(
+          BASE + '/log-entries/' + entryId + '/photos/' + photoId + '/file',
+          { headers }
+        );
+        if (!res.ok) return null;
+        return URL.createObjectURL(await res.blob());
+      },
+
+      deletePhoto: (entryId, photoId) =>
+        request('/log-entries/' + entryId + '/photos/' + photoId, { method: 'DELETE' }),
       list: (params = {}) => {
         const q = new URLSearchParams();
         for (const [k, v] of Object.entries(params)) {

@@ -164,6 +164,8 @@ function route() {
   const hash = location.hash || '#volunteers';
   if (hash.startsWith('#volunteers/')) {
     renderDetail(hash.slice('#volunteers/'.length));
+  } else if (hash.startsWith('#approvals/')) {
+    renderLogEntryDetail(hash.slice('#approvals/'.length));
   } else if (hash === '#approvals') {
     renderApprovals();
   } else if (hash === '#settings') {
@@ -190,8 +192,15 @@ const state = {
   items: [],
 };
 
+// Blob URLs created for photo thumbnails — revoked on navigation to prevent memory leaks.
+const _photoObjectUrls = [];
+function revokePhotoUrls() {
+  _photoObjectUrls.forEach(u => URL.revokeObjectURL(u));
+  _photoObjectUrls.length = 0;
+}
+
 const approvalsState = {
-  filter: { status: 'pending_manager', sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  filter: { status: 'pending_manager', search_q: '', date_from: null, date_to: null, sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 },
   total: 0,
   items: [],
   volunteerMap: new Map(),
@@ -689,6 +698,11 @@ function esc(str) {
     .replace(/"/g, '&quot;');
 }
 
+function fmtDateShort(isoDate) {
+  if (!isoDate) return '';
+  return new Date(isoDate + 'T00:00:00').toLocaleDateString('sl-SI', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
 function fmtHours(h) {
   return Number(h).toFixed(1) + ' h';
 }
@@ -860,9 +874,9 @@ function renderApprovalsThead() {
   return `
     ${approvalsSortTh('Datum', 'entry_date')}
     <th>Prostovoljec</th>
-    <th>Opis dela</th>
+    ${approvalsSortTh('Opis dela', 'activity_description')}
     ${approvalsSortTh('Ure', 'hours')}
-    <th>Lokacija</th>
+    ${approvalsSortTh('Lokacija', 'location')}
     <th>Status</th>
     <th>Dejanja</th>
   `;
@@ -892,14 +906,14 @@ function renderApprovalsTable() {
          <button class="btn btn-sm btn-danger"  data-action="reject"  data-id="${e.id}" style="margin-left:0.4rem">Zavrni</button>`
       : '';
     return `
-      <tr>
+      <tr data-id="${e.id}" style="cursor:pointer">
         <td>${esc(e.entry_date)}</td>
-        <td><a href="#volunteers/${e.volunteer_id}" style="color:var(--accent);text-decoration:none">${esc(name)}</a></td>
+        <td data-stop><a href="#volunteers/${e.volunteer_id}" style="color:var(--accent);text-decoration:none">${esc(name)}</a></td>
         <td>${desc}</td>
         <td style="text-align:right">${fmtHours(e.hours)}</td>
         <td>${e.location ? esc(e.location) : '—'}</td>
         <td>${statusBadge(e.status)}</td>
-        <td class="td-actions">${actions}</td>
+        <td class="td-actions" data-stop>${actions}</td>
       </tr>`;
   }).join('');
 }
@@ -927,7 +941,10 @@ async function loadApprovals() {
     offset:   filter.offset,
     limit:    filter.limit,
   };
-  if (filter.status) params.status = filter.status;
+  if (filter.status)    params.status    = filter.status;
+  if (filter.search_q)  params.search_q  = filter.search_q;
+  if (filter.date_from) params.date_from = filter.date_from;
+  if (filter.date_to)   params.date_to   = filter.date_to;
 
   try {
     const data = await API.logEntries.list(params);
@@ -973,6 +990,14 @@ async function renderApprovals() {
         ${statusOpt('rejected',        'Zavrnjeno')}
         ${statusOpt('',               'Vsi')}
       </select>
+      <label for="a-date-from" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Od:</label>
+      <input type="date" id="a-date-from" value="${approvalsState.filter.date_from || ''}" />
+      <label for="a-date-to" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Do:</label>
+      <input type="date" id="a-date-to" value="${approvalsState.filter.date_to || ''}" />
+      <input type="text" id="a-search-q" placeholder="Iskanje po opisu ali lokaciji…"
+             value="${esc(approvalsState.filter.search_q)}" style="flex:1;min-width:130px;max-width:280px" />
+      <button class="btn btn-primary btn-sm" id="a-search">Išči</button>
+      <button class="btn btn-ghost btn-sm" id="a-reset">Ponastavi</button>
     </div>
 
     <div class="table-wrapper">
@@ -993,6 +1018,37 @@ async function renderApprovals() {
 
   $('a-status').addEventListener('change', () => {
     approvalsState.filter.status = $('a-status').value;
+    approvalsState.filter.offset = 0;
+    loadApprovals();
+  });
+
+  function applyApprovalsSearch() {
+    approvalsState.filter.search_q = $('a-search-q')?.value.trim() || '';
+    approvalsState.filter.offset = 0;
+    loadApprovals();
+  }
+
+  $('a-search').addEventListener('click', applyApprovalsSearch);
+  $('a-search-q').addEventListener('keydown', e => { if (e.key === 'Enter') applyApprovalsSearch(); });
+
+  $('a-date-from').addEventListener('change', () => {
+    approvalsState.filter.date_from = $('a-date-from').value || null;
+    approvalsState.filter.offset = 0;
+    loadApprovals();
+  });
+  $('a-date-to').addEventListener('change', () => {
+    approvalsState.filter.date_to = $('a-date-to').value || null;
+    approvalsState.filter.offset = 0;
+    loadApprovals();
+  });
+
+  $('a-reset').addEventListener('click', () => {
+    approvalsState.filter.search_q = '';
+    approvalsState.filter.date_from = null;
+    approvalsState.filter.date_to   = null;
+    $('a-search-q').value  = '';
+    $('a-date-from').value = '';
+    $('a-date-to').value   = '';
     approvalsState.filter.offset = 0;
     loadApprovals();
   });
@@ -1022,6 +1078,12 @@ async function renderApprovals() {
       return;
     }
 
+    const row = e.target.closest('tr[data-id]');
+    if (row && !e.target.closest('[data-stop]')) {
+      location.hash = '#approvals/' + row.dataset.id;
+      return;
+    }
+
     const btn = e.target.closest('[data-action]');
     if (!btn) return;
     const { action, id } = btn.dataset;
@@ -1044,6 +1106,264 @@ async function renderApprovals() {
   });
 
   await loadApprovals();
+}
+
+// ===== Log entry detail =====
+async function renderLogEntryDetail(id) {
+  revokePhotoUrls();
+  $('topbar-title').textContent = 'Vnos';
+  document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+  document.querySelector('[data-page="approvals"]')?.classList.add('active');
+  setHtml($('main-content'), `<div style="padding:2.5rem;text-align:center"><span class="spinner"></span></div>`);
+
+  let entry, volName;
+  try {
+    entry = await API.logEntries.get(id);
+    const vol = await API.volunteers.get(entry.volunteer_id);
+    volName = vol.first_name + ' ' + vol.last_name;
+  } catch (err) {
+    setHtml($('main-content'), `<p style="color:var(--danger);padding:1rem">Napaka: ${esc(err.message)}</p>`);
+    return;
+  }
+
+  const BLANK      = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
+  const editable   = entry.status !== 'approved';
+  const canApprove = entry.status === 'pending_manager';
+  const tileStyle  = 'position:relative;width:130px;height:130px;background:var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer;flex-shrink:0';
+  const delStyle   = 'position:absolute;top:4px;right:4px;width:26px;height:26px;background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:18px;line-height:26px;text-align:center;padding:0';
+  const phStyle    = 'width:130px;height:130px;background:var(--border);border-radius:var(--radius);opacity:0.35;flex-shrink:0';
+
+  const photoTiles = entry.photos.length > 0
+    ? entry.photos.map(p => `
+        <div class="photo-tile" data-photo-id="${p.id}" style="${tileStyle}">
+          <img data-photo-id="${p.id}" src="${BLANK}" alt="Fotografija"
+               style="width:100%;height:100%;object-fit:cover;display:block" />
+          ${editable ? `<button class="photo-del-btn" data-photo-id="${p.id}" style="${delStyle}" title="Izbriši">×</button>` : ''}
+        </div>`).join('')
+    : `<div data-placeholder style="${phStyle}"></div><div data-placeholder style="${phStyle}"></div>`;
+
+  const addTile = editable ? `
+    <label for="photo-upload"
+           style="width:130px;height:130px;border:2px dashed var(--border);border-radius:var(--radius);display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--text-muted);font-size:2.5rem;flex-shrink:0"
+           title="Dodaj fotografijo">+</label>
+    <input type="file" id="photo-upload" accept="image/*" multiple style="display:none" />` : '';
+
+  setHtml($('main-content'), `
+    <button class="back-link" id="back-btn">← Nazaj na odobritve</button>
+
+    <div class="detail-header">
+      <div>
+        <div class="detail-name">${esc(entry.entry_date)}</div>
+        <div style="margin-top:0.4rem">${statusBadge(entry.status)}</div>
+      </div>
+      ${canApprove ? `
+        <div style="display:flex;gap:0.5rem;align-items:center">
+          <button class="btn btn-primary btn-sm" id="approve-btn">Odobri</button>
+          <button class="btn btn-danger btn-sm"  id="reject-btn">Zavrni</button>
+        </div>` : ''}
+    </div>
+
+    <div class="detail-info-grid">
+      <div class="info-item">
+        <div class="info-label">Prostovoljec</div>
+        <div class="info-value"><a href="#volunteers/${entry.volunteer_id}" style="color:var(--accent)">${esc(volName)}</a></div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Ure</div>
+        <div class="info-value" id="d-hours-display">${fmtHours(entry.hours)}</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Lokacija</div>
+        <div class="info-value">${entry.location ? esc(entry.location) : '—'}</div>
+      </div>
+      <div class="info-item">
+        <div class="info-label">Ustvarjeno</div>
+        <div class="info-value">${fmtDatetime(entry.created_at)}</div>
+      </div>
+      ${entry.manager_approved_at ? `
+        <div class="info-item">
+          <div class="info-label">${entry.status === 'approved' ? 'Odobreno' : 'Zavrnjeno'}</div>
+          <div class="info-value">${fmtDatetime(entry.manager_approved_at)}</div>
+        </div>` : ''}
+    </div>
+
+    <p class="section-title">Opis dela</p>
+    <div id="d-desc-display" style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;white-space:pre-wrap;line-height:1.6;margin-bottom:1.5rem">${esc(entry.activity_description)}</div>
+
+    ${entry.raw_transcript ? `
+      <p class="section-title">Prepis (glasovni vnos)</p>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1rem;white-space:pre-wrap;line-height:1.6;color:var(--text-muted);font-size:0.88rem;margin-bottom:1.5rem">${esc(entry.raw_transcript)}</div>
+    ` : ''}
+
+    <p class="section-title">Fotografije</p>
+    <div id="photo-grid" style="display:flex;flex-wrap:wrap;gap:0.75rem;margin-bottom:1.5rem">
+      ${photoTiles}${addTile}
+    </div>
+
+    ${editable ? `
+      <p class="section-title">Uredi vnos</p>
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem">
+        <div class="field">
+          <label>Opis dela</label>
+          <textarea id="d-desc" rows="4" style="width:100%;resize:vertical">${esc(entry.activity_description)}</textarea>
+        </div>
+        <div class="field" style="max-width:160px">
+          <label>Ure</label>
+          <input type="number" id="d-hours" value="${entry.hours}" min="0.5" max="24" step="0.5" />
+        </div>
+        <div id="d-edit-error" class="form-error" hidden></div>
+        <div class="form-actions">
+          <button class="btn btn-primary btn-sm" id="d-save-btn">Shrani spremembe</button>
+        </div>
+      </div>
+    ` : ''}
+  `);
+
+  // Load photo blobs asynchronously — non-blocking
+  entry.photos.forEach(async (p) => {
+    const img = document.querySelector(`img[data-photo-id="${p.id}"]`);
+    if (!img) return;
+    const url = await API.logEntries.photoUrl(entry.id, p.id);
+    if (url) { _photoObjectUrls.push(url); img.src = url; }
+  });
+
+  // Photo grid click: delete or enlarge
+  const grid = $('photo-grid');
+  grid?.addEventListener('click', async (e) => {
+    const delBtn = e.target.closest('.photo-del-btn');
+    if (delBtn) {
+      e.stopPropagation();
+      if (!editable) return;
+      const pid = delBtn.dataset.photoId;
+      if (!confirm('Izbriši fotografijo?')) return;
+      delBtn.disabled = true;
+      try {
+        await API.logEntries.deletePhoto(entry.id, pid);
+        grid.querySelector(`[data-photo-id="${pid}"]`)?.remove();
+        entry.photos = entry.photos.filter(p => p.id !== pid);
+        if (entry.photos.length === 0) {
+          const ph = `<div data-placeholder style="${phStyle}"></div>`;
+          const addLabel = grid.querySelector('label[for="photo-upload"]');
+          addLabel
+            ? addLabel.insertAdjacentHTML('beforebegin', ph + ph)
+            : grid.insertAdjacentHTML('afterbegin', ph + ph);
+        }
+        toast('Fotografija izbrisana.');
+      } catch (err) {
+        toast('Napaka: ' + err.message, 'error');
+        delBtn.disabled = false;
+      }
+      return;
+    }
+
+    const tile = e.target.closest('.photo-tile');
+    if (tile) {
+      const img = tile.querySelector('img');
+      if (img?.src.startsWith('blob:')) {
+        openModal('Fotografija', `<img src="${img.src}" style="max-width:100%;max-height:75vh;display:block;margin:auto;border-radius:var(--radius)" />`);
+      }
+    }
+  });
+
+  // Upload
+  $('photo-upload')?.addEventListener('change', async (e) => {
+    const files = Array.from(e.target.files || []);
+    if (!files.length) return;
+    const addLabel = grid?.querySelector('label[for="photo-upload"]');
+    for (const file of files) {
+      const fd = new FormData();
+      fd.append('file', file);
+      try {
+        const photo = await API.logEntries.uploadPhoto(entry.id, fd);
+        entry.photos.push(photo);
+        grid?.querySelectorAll('[data-placeholder]').forEach(el => el.remove());
+        const tileHtml = `
+          <div class="photo-tile" data-photo-id="${photo.id}" style="${tileStyle}">
+            <img data-photo-id="${photo.id}" src="${BLANK}" alt="Fotografija"
+                 style="width:100%;height:100%;object-fit:cover;display:block" />
+            <button class="photo-del-btn" data-photo-id="${photo.id}" style="${delStyle}" title="Izbriši">×</button>
+          </div>`;
+        addLabel
+          ? addLabel.insertAdjacentHTML('beforebegin', tileHtml)
+          : grid?.insertAdjacentHTML('beforeend', tileHtml);
+        const url = await API.logEntries.photoUrl(entry.id, photo.id);
+        if (url) {
+          _photoObjectUrls.push(url);
+          const img = document.querySelector(`img[data-photo-id="${photo.id}"]`);
+          if (img) img.src = url;
+        }
+        toast('Fotografija naložena.');
+      } catch (err) {
+        toast('Napaka: ' + err.message, 'error');
+      }
+    }
+    e.target.value = '';
+  });
+
+  $('back-btn').addEventListener('click', () => {
+    revokePhotoUrls();
+    history.pushState(null, '', '#approvals');
+    renderApprovals();
+  });
+
+  if (canApprove) {
+    const doAction = async (action) => {
+      const btn = $(action === 'approve' ? 'approve-btn' : 'reject-btn');
+      btn.disabled = true;
+      btn.textContent = '…';
+      try {
+        if (action === 'approve') {
+          await API.logEntries.approve(entry.id);
+          toast('Vnos odobren.');
+        } else {
+          await API.logEntries.reject(entry.id);
+          toast('Vnos zavrnjen.', 'error');
+        }
+        revokePhotoUrls();
+        history.pushState(null, '', '#approvals');
+        renderApprovals();
+      } catch (err) {
+        toast('Napaka: ' + err.message, 'error');
+        btn.disabled = false;
+        btn.textContent = action === 'approve' ? 'Odobri' : 'Zavrni';
+      }
+    };
+    $('approve-btn').addEventListener('click', () => doAction('approve'));
+    $('reject-btn').addEventListener('click',  () => doAction('reject'));
+  }
+
+  if (editable) {
+    $('d-save-btn').addEventListener('click', async () => {
+      const desc  = $('d-desc').value.trim();
+      const hours = parseFloat($('d-hours').value);
+      const errEl = $('d-edit-error');
+      if (!desc) {
+        errEl.textContent = 'Opis dela ne sme biti prazen.';
+        errEl.hidden = false;
+        return;
+      }
+      if (isNaN(hours) || hours < 0.5 || hours > 24) {
+        errEl.textContent = 'Ure morajo biti med 0.5 in 24.';
+        errEl.hidden = false;
+        return;
+      }
+      errEl.hidden = true;
+      $('d-save-btn').disabled = true;
+      $('d-save-btn').textContent = 'Shranjevanje…';
+      try {
+        const updated = await API.logEntries.update(entry.id, { activity_description: desc, hours });
+        entry = updated;
+        $('d-desc-display').textContent = updated.activity_description;
+        $('d-hours-display').textContent = fmtHours(updated.hours);
+        toast('Vnos posodobljen.');
+      } catch (err) {
+        errEl.textContent = err.message;
+        errEl.hidden = false;
+      }
+      $('d-save-btn').disabled = false;
+      $('d-save-btn').textContent = 'Shrani spremembe';
+    });
+  }
 }
 
 // ===== Init =====
