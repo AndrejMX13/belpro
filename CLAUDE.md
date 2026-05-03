@@ -185,6 +185,8 @@ docker compose logs -f
 
 ## What NOT to do
 
+- **Do not use `glob` or `grep` for initial discovery or architectural mapping.** This is strictly forbidden due to token budget constraints. Use the Graphify index instead.
+- **Fallback only:** Use `glob` or `grep` ONLY for non-code assets (e.g., searching .csv, .env, or raw logs) or if the Graphify index fails to locate a specific text string.
 - Do not build multi-tenant features. Out of scope for v1.
 - Do not add a frontend JavaScript framework (React, Vue, etc.) — plain JS only.
 - Do not store photos in cloud storage. Local filesystem only.
@@ -193,11 +195,13 @@ docker compose logs -f
 - Do not use `root` user in Docker containers.
 - Do not skip Alembic migrations for schema changes.
 
-## graphify
+## graphify & serena
 
-This project has a graphify knowledge graph at graphify-out/.
+This project uses a Graphify knowledge graph (`graphify-out/`) for mapping and Serena for semantic symbol navigation.
 
 Rules:
-- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
-- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
-- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)
+- **Primary Discovery:** You MUST use the Graphify index to locate files and understand dependencies before calling other search tools.
+- **Strategic Orientation:** Before answering architecture or codebase questions, read `graphify-out/GRAPH_REPORT.md` to identify "god nodes" and community structures.
+- **Navigation:** If `graphify-out/wiki/index.md` exists, navigate it to understand the codebase instead of reading raw files.
+- **Precision with Serena:** Once the target modules are identified via Graphify, use Serena’s semantic tools (e.g., `find_symbol`) for precise symbol-level execution and cross-referencing.
+- **Maintenance:** After modifying code files, run `graphify update .` to keep the graph current (this is AST-only and has no API cost).
