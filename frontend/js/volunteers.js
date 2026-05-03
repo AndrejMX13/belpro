@@ -960,7 +960,7 @@ async function loadApprovals() {
 }
 
 async function renderApprovals() {
-  $('topbar-title').textContent = 'Odobritve';
+  $('topbar-title').textContent = 'Dnevniki';
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
   document.querySelector('[data-page="approvals"]')?.classList.add('active');
 
@@ -980,7 +980,10 @@ async function renderApprovals() {
 
   setHtml($('main-content'), `
     <div class="page-header">
-      <h1 class="page-title">Odobritve</h1>
+      <div>
+        <h1 class="page-title">Dnevniki</h1>
+        <p class="page-subtitle">Dnevniški zapisi</p>
+      </div>
     </div>
 
     <div class="filter-bar">
@@ -1149,7 +1152,7 @@ async function renderLogEntryDetail(id) {
     <input type="file" id="photo-upload" accept="image/*" multiple style="display:none" />` : '';
 
   setHtml($('main-content'), `
-    <button class="back-link" id="back-btn">← Nazaj na odobritve</button>
+    <button class="back-link" id="back-btn">← Nazaj na dnevnike</button>
 
     <div class="detail-header">
       <div>

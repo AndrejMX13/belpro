@@ -22,7 +22,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN useradd -m appuser && chown -R appuser /app
+RUN useradd -m appuser && \
+    mkdir -p /app/photos /app/pdfs && \
+    chown -R appuser /app
 USER appuser
 
 EXPOSE 8000
