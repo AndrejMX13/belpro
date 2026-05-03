@@ -63,8 +63,9 @@ Evolution API  ─────────────────────�
 | street | VARCHAR | Street name and house number |
 | postal_code | VARCHAR(4) | Slovenian 4-digit postal code |
 | city | VARCHAR | |
-| emso | VARCHAR(13) | EMŠO — encrypted at rest |
-| phone | VARCHAR | WhatsApp number (international format) |
+| emso | TEXT | EMŠO — AES-256-GCM encrypted at rest (base64-encoded ciphertext) |
+| emso_hash | VARCHAR(64) | HMAC-SHA256 of plaintext EMŠO — deterministic, used for uniqueness enforcement; nullable |
+| phone | VARCHAR | WhatsApp number (international format, unique) |
 | email | VARCHAR | For monthly PDF delivery |
 | registered_at | TIMESTAMP | |
 | active | BOOLEAN | Soft delete / deactivation |
@@ -74,11 +75,16 @@ Evolution API  ─────────────────────�
 | Field | Type | Notes |
 |-------|------|-------|
 | id | UUID PK | |
-| name | VARCHAR | |
-| phone | VARCHAR | WhatsApp number |
-| email | VARCHAR | |
+| first_name | VARCHAR | |
+| last_name | VARCHAR | |
+| phone | VARCHAR | WhatsApp number (unique) |
+| email | VARCHAR | (unique) |
 | ngo_name | VARCHAR | Name of the NGO |
-| ngo_address | TEXT | |
+| ngo_street | VARCHAR | Street name and house number |
+| ngo_postal_code | VARCHAR(4) | Slovenian 4-digit postal code |
+| ngo_city | VARCHAR | |
+| password_hash | TEXT | bcrypt hash; nullable until first setup |
+| created_at | TIMESTAMP | |
 
 ### `log_entries`
 | Field | Type | Notes |
@@ -91,12 +97,23 @@ Evolution API  ─────────────────────�
 | hours | NUMERIC(4,1) | Extracted from transcript |
 | location | VARCHAR | Extracted or inferred |
 | status | ENUM | `pending_volunteer`, `pending_manager`, `approved`, `rejected` |
-| photo_path | VARCHAR | Relative path to stored photo (nullable) |
-| photo_exif_timestamp | TIMESTAMP | Extracted from photo EXIF (nullable) |
-| photo_exif_location | POINT | GPS from EXIF (nullable) |
 | volunteer_confirmed_at | TIMESTAMP | |
 | manager_approved_at | TIMESTAMP | |
 | created_at | TIMESTAMP | |
+| updated_at | TIMESTAMP | Maintained by DB trigger `trg_entries_updated_at` |
+
+Photos are stored in a separate `log_entry_photos` table (see below) — multiple photos per entry are supported.
+
+### `log_entry_photos`
+| Field | Type | Notes |
+|-------|------|-------|
+| id | UUID PK | |
+| log_entry_id | FK → log_entries | CASCADE DELETE |
+| photo_path | VARCHAR(500) | Relative path to stored photo |
+| photo_exif_timestamp | TIMESTAMP | Extracted from photo EXIF (nullable) |
+| photo_exif_lat | NUMERIC(10,7) | GPS latitude from EXIF (nullable) |
+| photo_exif_lon | NUMERIC(10,7) | GPS longitude from EXIF (nullable) |
+| uploaded_at | TIMESTAMP | |
 
 ### `monthly_reports`
 | Field | Type | Notes |
@@ -199,7 +216,7 @@ Served by nginx, backed by FastAPI. Mobile-friendly responsive design. Accessibl
 - Date range filter independent of calendar month
 - Export filtered results to CSV
 
-#### 5.4 Analytics
+#### 5.4 Analytics *(planned — not yet implemented)*
 - Total hours logged this month (all volunteers)
 - Hours per volunteer (bar chart)
 - Monthly trend (line chart, last 6 months)
@@ -215,9 +232,10 @@ Served by nginx, backed by FastAPI. Mobile-friendly responsive design. Accessibl
 - Trigger email send manually if needed
 
 #### 5.6 Settings
-- Manager profile (name, phone, email, NGO name/address)
-- Gmail SMTP configuration (or OAuth token setup)
-- Volunteer agreement template (text, used in PDF header)
+- Manager profile (first name, last name, phone, email, NGO name, NGO address)
+- Password change
+- Gmail SMTP configuration (or OAuth token setup) *(planned)*
+- Volunteer agreement template (text, used in PDF header) *(planned)*
 
 ---
 
@@ -296,25 +314,31 @@ belpro/
 │   ├── Dockerfile
 │   ├── requirements.txt
 │   ├── main.py                        # FastAPI app entry point
+│   ├── core/
+│   │   ├── auth.py                    # HTTP Basic Auth dependency
+│   │   └── settings.py                # Pydantic BaseSettings (env vars)
 │   ├── routers/
 │   │   ├── volunteers.py
-│   │   ├── entries.py
-│   │   ├── reports.py
-│   │   ├── analytics.py
-│   │   └── settings.py
-│   ├── models/                        # SQLAlchemy models
-│   ├── schemas/                       # Pydantic schemas
+│   │   ├── log_entries.py             # Entries + photo upload/EXIF inline
+│   │   ├── managers.py                # Manager profile + password setup
+│   │   └── reports.py
+│   ├── models/                        # SQLAlchemy ORM models
+│   ├── schemas/                       # Pydantic request/response schemas
 │   ├── services/
-│   │   ├── pdf_generator.py           # WeasyPrint PDF generation
-│   │   └── exif_extractor.py          # Photo EXIF parsing
+│   │   ├── report_pdf.py              # WeasyPrint PDF generation
+│   │   ├── encryption.py              # AES-256-GCM EMŠO encrypt/decrypt/hash
+│   │   └── password.py                # bcrypt password hashing
 │   └── db/
-│       └── migrations/                # Alembic migrations
+│       └── migrations/                # Alembic migrations (versions/ subdir)
 │
 ├── frontend/
-│   ├── index.html                     # Single-page app or simple MPA
+│   ├── index.html                     # Single-page app (client-side routing)
 │   ├── css/
-│   ├── js/
-│   └── templates/                     # Jinja2 or plain HTML templates
+│   │   └── main.css
+│   └── js/
+│       ├── api.js                     # Centralised fetch wrapper / API base URL
+│       ├── volunteers.js              # Volunteers, approvals, log, settings views
+│       └── reports.js                 # Reports view
 │
 ├── nginx/
 │   └── nginx.conf
