@@ -162,7 +162,30 @@ document.querySelectorAll('.nav-item[data-page]').forEach(link => {
 // ===== Router =====
 function route() {
   const hash = location.hash || '#volunteers';
-  if (hash.startsWith('#volunteers/')) {
+  if (/^#volunteers\/[^\/]+\/log\/[^\/]+$/.test(hash)) {
+    const parts = hash.split('/');
+    renderLogEntryDetail(parts[3], {
+      backHash: `#volunteers/${parts[1]}`,
+      backLabel: '← Nazaj na prostovoljca',
+      backNav: 'volunteers',
+      goBack: () => renderDetail(parts[1]),
+    });
+  } else if (/^#approvals\/volunteer\/[^\/]+$/.test(hash)) {
+    renderDetail(hash.split('/')[2], {
+      backHash:  '#approvals',
+      backLabel: '← Nazaj na dnevnike',
+      goBack:    renderApprovals,
+    });
+  } else if (/^#approvals\/[^\/]+\/volunteer\/[^\/]+$/.test(hash)) {
+    const parts = hash.split('/');
+    const entryId = parts[1];
+    const volId   = parts[3];
+    renderDetail(volId, {
+      backHash:  `#approvals/${entryId}`,
+      backLabel: '← Nazaj na vnos',
+      goBack:    () => renderLogEntryDetail(entryId),
+    });
+  } else if (hash.startsWith('#volunteers/')) {
     renderDetail(hash.slice('#volunteers/'.length));
   } else if (hash.startsWith('#approvals/')) {
     renderLogEntryDetail(hash.slice('#approvals/'.length));
@@ -205,6 +228,14 @@ const approvalsState = {
   items: [],
   volunteerMap: new Map(),
 };
+
+const volunteerLogState = {
+  volunteerId: null,
+  filter: { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  total: 0,
+  items: [],
+};
+
 
 // ===== Lookup tables =====
 const STATUS_LABEL = {
@@ -569,27 +600,28 @@ async function submitAddVolunteer(e) {
 }
 
 // ===== Volunteer detail =====
-async function renderDetail(id) {
+async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Nazaj na seznam', goBack = null } = {}) {
   $('topbar-title').textContent = 'Prostovoljec';
   setHtml($('main-content'), `<div style="padding:2.5rem;text-align:center"><span class="spinner"></span></div>`);
+
+  if (volunteerLogState.volunteerId !== id) {
+    volunteerLogState.volunteerId = id;
+    volunteerLogState.filter = { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 };
+    volunteerLogState.total = 0;
+    volunteerLogState.items = [];
+  }
 
   try {
     const v = await API.volunteers.get(id);
     const initials = (v.first_name[0] + v.last_name[0]).toUpperCase();
 
-    const entriesRows = v.log_entries.length === 0
-      ? '<tr class="empty-row"><td colspan="5">Ni vnosov.</td></tr>'
-      : v.log_entries.map(e => `
-          <tr style="cursor:default">
-            <td>${esc(e.entry_date)}</td>
-            <td>${fmtHours(e.hours)}</td>
-            <td>${e.location ? esc(e.location) : '—'}</td>
-            <td>${esc(e.activity_description)}</td>
-            <td>${statusBadge(e.status)}</td>
-          </tr>`).join('');
+    const statusOpt = (val, label) => {
+      const sel = volunteerLogState.filter.status === val ? ' selected' : '';
+      return `<option value="${val}"${sel}>${label}</option>`;
+    };
 
     setHtml($('main-content'), `
-      <button class="back-link" id="back-btn">← Nazaj na seznam</button>
+      <button class="back-link" id="back-btn">${backLabel}</button>
 
       <div class="detail-header">
         <div class="detail-avatar">${initials}</div>
@@ -631,19 +663,44 @@ async function renderDetail(id) {
       ` : ''}
 
       <p class="section-title">Dnevnik dela</p>
+
+      <div class="filter-bar">
+        <select id="vlog-status">
+          ${statusOpt('', 'Vsi statusi')}
+          ${statusOpt('pending_volunteer', 'Čaka prostovoljca')}
+          ${statusOpt('pending_manager', 'Čaka odobritev')}
+          ${statusOpt('approved', 'Odobreno')}
+          ${statusOpt('rejected', 'Zavrnjeno')}
+        </select>
+        <label for="vlog-date-from" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Od:</label>
+        <input type="date" id="vlog-date-from" value="${volunteerLogState.filter.date_from || ''}" />
+        <label for="vlog-date-to" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Do:</label>
+        <input type="date" id="vlog-date-to" value="${volunteerLogState.filter.date_to || ''}" />
+        <input type="text" id="vlog-search-q" placeholder="Iskanje po opisu ali lokaciji…"
+               value="${esc(volunteerLogState.filter.search_q)}" style="flex:1;min-width:130px;max-width:280px" />
+        <button class="btn btn-primary btn-sm" id="vlog-search">Išči</button>
+        <button class="btn btn-ghost btn-sm" id="vlog-reset">Ponastavi</button>
+      </div>
+
       <div class="table-wrapper">
-        <table>
-          <thead><tr>
-            <th>Datum</th><th>Ure</th><th>Lokacija</th><th>Opis</th><th>Status</th>
-          </tr></thead>
-          <tbody>${entriesRows}</tbody>
+        <table id="vlog-table">
+          <thead><tr id="vlog-head">${renderVolunteerLogThead()}</tr></thead>
+          <tbody id="vlog-body"><tr class="loading-row"><td colspan="5">Nalaganje…</td></tr></tbody>
         </table>
+      </div>
+
+      <div class="pagination">
+        <span id="vlog-pg-info"></span>
+        <div class="pagination-btns">
+          <button id="vlog-prev-btn" disabled>← Prejšnja</button>
+          <button id="vlog-next-btn" disabled>Naslednja →</button>
+        </div>
       </div>
     `);
 
     $('back-btn').addEventListener('click', () => {
-      history.pushState(null, '', '#volunteers');
-      renderList();
+      history.pushState(null, '', backHash);
+      (goBack || renderList)();
     });
 
     const deleteBtn = $('delete-btn');
@@ -665,6 +722,78 @@ async function renderDetail(id) {
         }
       });
     }
+
+    $('vlog-status').addEventListener('change', () => {
+      volunteerLogState.filter.status = $('vlog-status').value;
+      volunteerLogState.filter.offset = 0;
+      loadVolunteerLog();
+    });
+
+    function applyVolLogSearch() {
+      volunteerLogState.filter.search_q = $('vlog-search-q')?.value.trim() || '';
+      volunteerLogState.filter.offset = 0;
+      loadVolunteerLog();
+    }
+
+    $('vlog-search').addEventListener('click', applyVolLogSearch);
+    $('vlog-search-q').addEventListener('keydown', e => { if (e.key === 'Enter') applyVolLogSearch(); });
+
+    $('vlog-date-from').addEventListener('change', () => {
+      volunteerLogState.filter.date_from = $('vlog-date-from').value || null;
+      volunteerLogState.filter.offset = 0;
+      loadVolunteerLog();
+    });
+    $('vlog-date-to').addEventListener('change', () => {
+      volunteerLogState.filter.date_to = $('vlog-date-to').value || null;
+      volunteerLogState.filter.offset = 0;
+      loadVolunteerLog();
+    });
+
+    $('vlog-reset').addEventListener('click', () => {
+      volunteerLogState.filter.search_q = '';
+      volunteerLogState.filter.date_from = null;
+      volunteerLogState.filter.date_to   = null;
+      volunteerLogState.filter.status    = '';
+      $('vlog-search-q').value  = '';
+      $('vlog-date-from').value = '';
+      $('vlog-date-to').value   = '';
+      $('vlog-status').value    = '';
+      volunteerLogState.filter.offset = 0;
+      loadVolunteerLog();
+    });
+
+    $('vlog-prev-btn').addEventListener('click', () => {
+      volunteerLogState.filter.offset = Math.max(0, volunteerLogState.filter.offset - volunteerLogState.filter.limit);
+      loadVolunteerLog();
+    });
+
+    $('vlog-next-btn').addEventListener('click', () => {
+      volunteerLogState.filter.offset += volunteerLogState.filter.limit;
+      loadVolunteerLog();
+    });
+
+    $('vlog-table').addEventListener('click', async (e) => {
+      const th = e.target.closest('th[data-sort]');
+      if (th) {
+        const col = th.dataset.sort;
+        if (volunteerLogState.filter.sort_by === col) {
+          volunteerLogState.filter.sort_dir = volunteerLogState.filter.sort_dir === 'asc' ? 'desc' : 'asc';
+        } else {
+          volunteerLogState.filter.sort_by  = col;
+          volunteerLogState.filter.sort_dir = 'asc';
+        }
+        volunteerLogState.filter.offset = 0;
+        await loadVolunteerLog();
+        return;
+      }
+
+      const row = e.target.closest('tr[data-id]');
+      if (row) {
+        location.hash = `#volunteers/${id}/log/${row.dataset.id}`;
+      }
+    });
+
+    await loadVolunteerLog();
 
   } catch (err) {
     setHtml($('main-content'), `<p style="color:var(--danger);padding:1rem">Napaka: ${esc(err.message)}</p>`);
@@ -908,7 +1037,7 @@ function renderApprovalsTable() {
     return `
       <tr data-id="${e.id}" style="cursor:pointer">
         <td>${esc(e.entry_date)}</td>
-        <td data-stop><a href="#volunteers/${e.volunteer_id}" style="color:var(--accent);text-decoration:none">${esc(name)}</a></td>
+        <td data-stop><a href="#approvals/volunteer/${e.volunteer_id}" style="color:var(--accent);text-decoration:none">${esc(name)}</a></td>
         <td>${desc}</td>
         <td style="text-align:right">${fmtHours(e.hours)}</td>
         <td>${e.location ? esc(e.location) : '—'}</td>
@@ -956,6 +1085,94 @@ async function loadApprovals() {
     renderApprovalsPagination();
   } catch (err) {
     setHtml(tbody, `<tr class="empty-row"><td colspan="7">Napaka: ${esc(err.message)}</td></tr>`);
+  }
+}
+
+// ===== Volunteer Log (detail page) =====
+
+function volLogSortTh(label, col) {
+  const active = volunteerLogState.filter.sort_by === col ? ' sort-active' : '';
+  const arrow  = volunteerLogState.filter.sort_by === col
+    ? (volunteerLogState.filter.sort_dir === 'asc' ? '↑' : '↓')
+    : '↕';
+  return `<th class="sortable${active}" data-sort="${col}">${esc(label)} <span class="sort-arrow">${arrow}</span></th>`;
+}
+
+function renderVolunteerLogThead() {
+  return `
+    ${volLogSortTh('Datum', 'entry_date')}
+    ${volLogSortTh('Opis dela', 'activity_description')}
+    ${volLogSortTh('Ure', 'hours')}
+    ${volLogSortTh('Lokacija', 'location')}
+    <th>Status</th>
+  `;
+}
+
+function renderVolunteerLogTable() {
+  const tbody = $('vlog-body');
+  if (!tbody) return;
+
+  const { items } = volunteerLogState;
+
+  if (!items.length) {
+    setHtml(tbody, `<tr class="empty-row"><td colspan="5">Ni vnosov, ki ustrezajo filtru.</td></tr>`);
+    return;
+  }
+
+  tbody.innerHTML = items.map(e => {
+    const desc = e.activity_description.length > 60
+      ? esc(e.activity_description.slice(0, 60)) + '…'
+      : esc(e.activity_description);
+    return `
+      <tr data-id="${e.id}" style="cursor:pointer">
+        <td>${esc(e.entry_date)}</td>
+        <td>${desc}</td>
+        <td style="text-align:right">${fmtHours(e.hours)}</td>
+        <td>${e.location ? esc(e.location) : '—'}</td>
+        <td>${statusBadge(e.status)}</td>
+      </tr>`;
+  }).join('');
+}
+
+function renderVolunteerLogPagination() {
+  const { filter, total } = volunteerLogState;
+  const from    = total === 0 ? 0 : filter.offset + 1;
+  const to      = Math.min(filter.offset + filter.limit, total);
+  const info    = $('vlog-pg-info');
+  const prevBtn = $('vlog-prev-btn');
+  const nextBtn = $('vlog-next-btn');
+  if (info)    info.textContent = total > 0 ? `Prikazujem ${from}–${to} od ${total}` : 'Ni rezultatov';
+  if (prevBtn) prevBtn.disabled = filter.offset === 0;
+  if (nextBtn) nextBtn.disabled = filter.offset + filter.limit >= total;
+}
+
+async function loadVolunteerLog() {
+  const tbody = $('vlog-body');
+  if (!tbody) return;
+
+  const { volunteerId, filter } = volunteerLogState;
+  const params = {
+    volunteer_id: volunteerId,
+    sort_by:      filter.sort_by,
+    sort_dir:     filter.sort_dir,
+    offset:       filter.offset,
+    limit:        filter.limit,
+  };
+  if (filter.status)    params.status    = filter.status;
+  if (filter.search_q)  params.search_q  = filter.search_q;
+  if (filter.date_from) params.date_from = filter.date_from;
+  if (filter.date_to)   params.date_to   = filter.date_to;
+
+  try {
+    const data = await API.logEntries.list(params);
+    volunteerLogState.total = data.total;
+    volunteerLogState.items = data.items;
+    const head = $('vlog-head');
+    if (head) setHtml(head, renderVolunteerLogThead());
+    renderVolunteerLogTable();
+    renderVolunteerLogPagination();
+  } catch (err) {
+    setHtml(tbody, `<tr class="empty-row"><td colspan="5">Napaka: ${esc(err.message)}</td></tr>`);
   }
 }
 
@@ -1112,11 +1329,11 @@ async function renderApprovals() {
 }
 
 // ===== Log entry detail =====
-async function renderLogEntryDetail(id) {
+async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '← Nazaj na dnevnike', backNav = 'approvals', goBack = null } = {}) {
   revokePhotoUrls();
   $('topbar-title').textContent = 'Vnos';
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
-  document.querySelector('[data-page="approvals"]')?.classList.add('active');
+  document.querySelector(`[data-page="${backNav}"]`)?.classList.add('active');
   setHtml($('main-content'), `<div style="padding:2.5rem;text-align:center"><span class="spinner"></span></div>`);
 
   let entry, volName;
@@ -1152,7 +1369,7 @@ async function renderLogEntryDetail(id) {
     <input type="file" id="photo-upload" accept="image/*" multiple style="display:none" />` : '';
 
   setHtml($('main-content'), `
-    <button class="back-link" id="back-btn">← Nazaj na dnevnike</button>
+    <button class="back-link" id="back-btn">${backLabel}</button>
 
     <div class="detail-header">
       <div>
@@ -1169,7 +1386,7 @@ async function renderLogEntryDetail(id) {
     <div class="detail-info-grid">
       <div class="info-item">
         <div class="info-label">Prostovoljec</div>
-        <div class="info-value"><a href="#volunteers/${entry.volunteer_id}" style="color:var(--accent)">${esc(volName)}</a></div>
+        <div class="info-value"><a href="${backNav === 'approvals' ? `#approvals/${id}/volunteer/${entry.volunteer_id}` : `#volunteers/${entry.volunteer_id}`}" style="color:var(--accent)">${esc(volName)}</a></div>
       </div>
       <div class="info-item">
         <div class="info-label">Ure</div>
@@ -1305,8 +1522,8 @@ async function renderLogEntryDetail(id) {
 
   $('back-btn').addEventListener('click', () => {
     revokePhotoUrls();
-    history.pushState(null, '', '#approvals');
-    renderApprovals();
+    history.pushState(null, '', backHash);
+    (goBack || renderApprovals)();
   });
 
   if (canApprove) {
@@ -1323,8 +1540,8 @@ async function renderLogEntryDetail(id) {
           toast('Vnos zavrnjen.', 'error');
         }
         revokePhotoUrls();
-        history.pushState(null, '', '#approvals');
-        renderApprovals();
+        history.pushState(null, '', backHash);
+        (goBack || renderApprovals)();
       } catch (err) {
         toast('Napaka: ' + err.message, 'error');
         btn.disabled = false;

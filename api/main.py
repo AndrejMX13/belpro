@@ -13,7 +13,7 @@ from routers.volunteers import router as volunteers_router
 app = FastAPI(
     title="Belpro API",
     description="Volunteer diary management API for Slovenian NGOs.",
-    version="0.1.0",
+    version="0.4.1",
 )
 
 app.add_middleware(
