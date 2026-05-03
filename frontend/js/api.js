@@ -19,21 +19,27 @@ const API = (() => {
     sessionStorage.removeItem('bpCreds');
   }
 
-  async function request(path, opts = {}) {
-    const headers = { 'Content-Type': 'application/json' };
+  function _authHeaders(extra = {}) {
+    const headers = { ...extra };
     if (_creds) headers['Authorization'] = 'Basic ' + _creds;
+    return headers;
+  }
+
+  function _handleUnauthorized() {
+    clear();
+    window.dispatchEvent(new CustomEvent('belpro:unauthorized'));
+    const err = new Error('Seja je potekla. Prijavite se znova.');
+    err.status = 401;
+    return err;
+  }
+
+  async function request(path, opts = {}) {
+    const headers = _authHeaders({ 'Content-Type': 'application/json' });
     Object.assign(headers, opts.headers || {});
 
     const res = await fetch(BASE + path, { ...opts, headers });
 
-    if (res.status === 401) {
-      clear();
-      window.dispatchEvent(new CustomEvent('belpro:unauthorized'));
-      const err = new Error('Seja je potekla. Prijavite se znova.');
-      err.status = 401;
-      throw err;
-    }
-
+    if (res.status === 401) throw _handleUnauthorized();
     if (res.status === 204) return null;
 
     if (!res.ok) {
@@ -45,6 +51,29 @@ const API = (() => {
     }
 
     return res.json();
+  }
+
+  async function downloadRequest(path, opts = {}) {
+    const headers = _authHeaders();
+    Object.assign(headers, opts.headers || {});
+
+    const res = await fetch(BASE + path, { ...opts, headers });
+
+    if (res.status === 401) throw _handleUnauthorized();
+
+    if (!res.ok) {
+      let detail = 'HTTP ' + res.status;
+      try { detail = (await res.json()).detail || detail; } catch { /* empty */ }
+      const err = new Error(detail);
+      err.status = res.status;
+      throw err;
+    }
+
+    const blob = await res.blob();
+    const disposition = res.headers.get('Content-Disposition') || '';
+    const match = disposition.match(/filename="?([^"]+)"?/);
+    const filename = match ? match[1] : 'porocilo.pdf';
+    return { blob, filename };
   }
 
   return {
@@ -135,7 +164,7 @@ const API = (() => {
       exportPdf: (year, month, volunteerId = null) => {
         const q = new URLSearchParams({ year, month });
         if (volunteerId) q.set('volunteer_id', volunteerId);
-        return request('/reports/monthly/pdf?' + q, { method: 'POST' });
+        return downloadRequest('/reports/monthly/pdf?' + q, { method: 'POST' });
       },
     },
   };

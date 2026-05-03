@@ -142,13 +142,17 @@ function renderReportsTable(data) {
 
 async function exportReportPdf(volunteerId) {
   try {
-    await API.reports.exportPdf(reportsState.year, reportsState.month, volunteerId);
+    const { blob, filename } = await API.reports.exportPdf(reportsState.year, reportsState.month, volunteerId);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
   } catch (err) {
-    if (err.status === 501) {
-      toast('Izvoz PDF bo na voljo v prihodnji različici.', 'info');
-    } else {
-      toast('Napaka: ' + err.message, 'error');
-    }
+    toast('Napaka pri izvozu: ' + err.message, 'error');
   }
 }
 
