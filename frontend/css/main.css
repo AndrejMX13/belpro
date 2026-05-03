@@ -369,6 +369,41 @@ tbody td {
 .pagination-btns button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
 .pagination-btns button:disabled { opacity: .4; cursor: default; }
 
+/* ===== Reports page ===== */
+.reports-period {
+  margin: 0 0 1rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.num-cell {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+tfoot .totals-row td {
+  border-top: 2px solid var(--border);
+  padding-top: 0.6rem;
+  background: var(--bg);
+}
+
+.empty-state {
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-muted);
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  color: var(--text);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
 /* ===== Badges ===== */
 .badge {
   display: inline-block;

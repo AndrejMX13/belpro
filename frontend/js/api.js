@@ -128,5 +128,15 @@ const API = (() => {
       approve: (id) => request('/log-entries/' + id + '/approve', { method: 'PATCH' }),
       reject:  (id) => request('/log-entries/' + id + '/reject',  { method: 'PATCH' }),
     },
+
+    reports: {
+      monthly: (year, month, withEntriesOnly = false) =>
+        request(`/reports/monthly?year=${year}&month=${month}&with_entries_only=${withEntriesOnly}`),
+      exportPdf: (year, month, volunteerId = null) => {
+        const q = new URLSearchParams({ year, month });
+        if (volunteerId) q.set('volunteer_id', volunteerId);
+        return request('/reports/monthly/pdf?' + q, { method: 'POST' });
+      },
+    },
   };
 })();

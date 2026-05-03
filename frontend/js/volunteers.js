@@ -191,6 +191,14 @@ function route() {
     renderLogEntryDetail(hash.slice('#approvals/'.length));
   } else if (hash === '#approvals') {
     renderApprovals();
+  } else if (/^#reports\/volunteer\/[^\/]+$/.test(hash)) {
+    renderDetail(hash.split('/')[2], {
+      backHash:  '#reports',
+      backLabel: '← Nazaj na poročila',
+      goBack:    renderReports,
+    });
+  } else if (hash === '#reports') {
+    renderReports();
   } else if (hash === '#settings') {
     renderSettings();
   } else {

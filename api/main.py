@@ -8,6 +8,7 @@ from sqlalchemy import text
 from db.session import AsyncSessionLocal
 from routers.log_entries import router as log_entries_router
 from routers.managers import router as managers_router
+from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
 
 app = FastAPI(
@@ -26,6 +27,7 @@ app.add_middleware(
 
 app.include_router(log_entries_router, prefix="/api")
 app.include_router(managers_router, prefix="/api")
+app.include_router(reports_router, prefix="/api")
 app.include_router(volunteers_router, prefix="/api")
 
 
