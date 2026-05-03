@@ -141,6 +141,8 @@ GMAIL_APP_PASSWORD=...     # Or OAuth token path
 
 **Environment:** Windows 10 + WSL2 (Ubuntu) + Docker Desktop. All shell commands, scripts, and paths assume WSL2 Linux context. Do not use Windows-style paths (`C:\...`). Docker Compose runs via WSL2 terminal.
 
+**Python on the host:** Python 3.14 is installed and accessible as `python` (not `python3`). Use `python` for all host-side scripts. Docker containers use their own Python environment.
+
 ```bash
 # Copy and fill in environment
 cp .env.example .env
