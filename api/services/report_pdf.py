@@ -53,11 +53,14 @@ class NGOInfo:
     city: str
     phone: str | None = None
     email: str | None = None
+    ngo_davcna: str | None = None
 
 
 def _ngo_header_html(ngo: NGOInfo) -> str:
     """Render the NGO header block as an HTML string."""
     contact_parts = [f"{_esc(ngo.street)}, {_esc(ngo.postal_code)} {_esc(ngo.city)}"]
+    if ngo.ngo_davcna:
+        contact_parts.append(f"Davčna št.: {_esc(ngo.ngo_davcna)}")
     if ngo.phone:
         contact_parts.append(f"Tel: {_esc(ngo.phone)}")
     if ngo.email:

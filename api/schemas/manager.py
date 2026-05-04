@@ -19,6 +19,7 @@ class ManagerCreate(BaseModel):
     ngo_street: Annotated[str, Field(min_length=1, max_length=255)]
     ngo_postal_code: Annotated[str, Field(pattern=r"^\d{4}$")]
     ngo_city: Annotated[str, Field(min_length=1, max_length=100)]
+    ngo_davcna: Annotated[str, Field(pattern=r"^\d{8}$")] | None = None
 
 
 class ManagerUpdate(BaseModel):
@@ -32,6 +33,7 @@ class ManagerUpdate(BaseModel):
     ngo_street: Annotated[str, Field(min_length=1, max_length=255)] | None = None
     ngo_postal_code: Annotated[str, Field(pattern=r"^\d{4}$")] | None = None
     ngo_city: Annotated[str, Field(min_length=1, max_length=100)] | None = None
+    ngo_davcna: Annotated[str, Field(pattern=r"^\d{8}$")] | None = None
     report_whatsapp: bool | None = None
     report_email: bool | None = None
     default_report_whatsapp: bool | None = None
@@ -65,6 +67,7 @@ class ManagerResponse(BaseModel):
     ngo_street: str
     ngo_postal_code: str
     ngo_city: str
+    ngo_davcna: str | None = None
     created_at: datetime
     report_whatsapp: bool
     report_email: bool

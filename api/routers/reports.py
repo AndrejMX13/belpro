@@ -127,6 +127,7 @@ async def generate_monthly_pdf(
         city=manager.ngo_city,
         phone=manager.phone,
         email=manager.email,
+        ngo_davcna=manager.ngo_davcna,
     )
 
     if volunteer_id:
@@ -191,6 +192,7 @@ async def send_monthly_reports(
         city=manager.ngo_city,
         phone=manager.phone,
         email=manager.email,
+        ngo_davcna=manager.ngo_davcna,
     )
 
     volunteers: list[Volunteer] = list(

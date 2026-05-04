@@ -1009,6 +1009,11 @@ async function renderSettings() {
           <input id="s-ngo-city" type="text" value="${esc(manager.ngo_city)}" required maxlength="100"></div>
       </div>
       <div class="field" style="margin-top:0.75rem">
+        <label>Davčna številka organizacije</label>
+        <input id="s-ngo-davcna" type="text" inputmode="numeric" value="${esc(manager.ngo_davcna || '')}" maxlength="8" placeholder="12345678" style="max-width:10rem">
+        <div class="form-hint">8 številk brez presledkov ali črk.</div>
+      </div>
+      <div class="field" style="margin-top:0.75rem">
         <label>Mobilna številka za BelPro</label>
         <input id="s-ngo-wa-phone" type="tel" value="${esc(manager.ngo_whatsapp_phone || '')}" maxlength="30" placeholder="+38640...">
         <div class="form-hint">Telefonska številka, ki je povezana z WhatsApp botom (Evolution API).</div>
@@ -1133,6 +1138,7 @@ async function renderSettings() {
       ngo_street:         $('s-ngo-street').value.trim(),
       ngo_postal_code:    $('s-ngo-postal').value.trim(),
       ngo_city:           $('s-ngo-city').value.trim(),
+      ngo_davcna:         $('s-ngo-davcna').value.trim() || null,
       ngo_whatsapp_phone: $('s-ngo-wa-phone').value.trim() || null,
     };
     if (!payload.ngo_name || !payload.ngo_street || !payload.ngo_postal_code || !payload.ngo_city) {
@@ -1140,6 +1146,9 @@ async function renderSettings() {
     }
     if (!/^\d{4}$/.test(payload.ngo_postal_code)) {
       showErr('s-ngo-error', 'Poštna številka mora biti 4-mestna številka.'); return;
+    }
+    if (payload.ngo_davcna && !/^\d{8}$/.test(payload.ngo_davcna)) {
+      showErr('s-ngo-error', 'Davčna številka mora vsebovati natanko 8 številk.'); return;
     }
     try {
       await API.managers.update(payload);

@@ -31,6 +31,7 @@ class Manager(Base):
     ngo_street: Mapped[str] = mapped_column(String(255))
     ngo_postal_code: Mapped[str] = mapped_column(String(4))
     ngo_city: Mapped[str] = mapped_column(String(100))
+    ngo_davcna: Mapped[str | None] = mapped_column(String(8), nullable=True)
     password_hash: Mapped[str | None] = mapped_column(Text(), nullable=True)
     report_whatsapp: Mapped[bool] = mapped_column(Boolean, server_default=text("FALSE"))
     report_email: Mapped[bool] = mapped_column(Boolean, server_default=text("TRUE"))
