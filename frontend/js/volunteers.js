@@ -498,7 +498,48 @@ function resetFilters() {
 }
 
 // ===== Add volunteer modal =====
-function openAddModal() {
+function wireReportPrefs(masterEl, emailEl, waEl, errEl, onSave) {
+  const saveBtn = errEl.parentElement.querySelector('button');
+
+  masterEl.addEventListener('change', () => {
+    if (masterEl.checked) {
+      emailEl.checked = true;
+      waEl.checked = false;
+    } else {
+      emailEl.checked = false;
+      waEl.checked = false;
+    }
+  });
+
+  function syncMaster() { masterEl.checked = emailEl.checked || waEl.checked; }
+  emailEl.addEventListener('change', syncMaster);
+  waEl.addEventListener('change', syncMaster);
+
+  if (saveBtn) {
+    saveBtn.addEventListener('click', async () => {
+      errEl.style.display = 'none';
+      saveBtn.disabled = true;
+      try {
+        await onSave(waEl.checked, emailEl.checked);
+      } catch (err) {
+        errEl.textContent = err.message;
+        errEl.style.display = '';
+      } finally {
+        saveBtn.disabled = false;
+      }
+    });
+  }
+}
+
+async function openAddModal() {
+  let defWa = false;
+  let defEmail = true;
+  try {
+    const mgr = await API.managers.me();
+    defWa    = mgr.default_report_whatsapp;
+    defEmail = mgr.default_report_email;
+  } catch { /* use hardcoded defaults if fetch fails */ }
+
   openModal('Dodaj prostovoljca', `
     <form id="add-form" novalidate>
       <div class="form-row">
@@ -523,6 +564,21 @@ function openAddModal() {
         <div class="field"><label>Telefon *</label><input type="tel" name="phone" required placeholder="+386 41 123 456" /></div>
         <div class="field"><label>E-pošta</label><input type="email" name="email" /></div>
       </div>
+      <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border)">
+        <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+          <input type="checkbox" id="add-rp-master" ${(defEmail || defWa) ? 'checked' : ''}>
+          <span>Pošiljanje mesečnih poročil</span>
+        </label>
+        <div id="add-rp-sub" style="margin-left:1.5rem;margin-top:0.5rem;display:flex;flex-direction:column;gap:0.4rem">
+          <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+            <input type="checkbox" id="add-rp-email" ${defEmail ? 'checked' : ''}> E-pošta
+          </label>
+          <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+            <input type="checkbox" id="add-rp-whatsapp" ${defWa ? 'checked' : ''}> WhatsApp
+          </label>
+        </div>
+        <div id="add-rp-error" class="form-error" style="display:none"></div>
+      </div>
       <div id="add-error" class="form-error" hidden></div>
       <div class="form-actions">
         <button type="button" class="btn btn-ghost" id="cancel-add">Prekliči</button>
@@ -530,6 +586,19 @@ function openAddModal() {
       </div>
     </form>
   `);
+
+  // Wire master/sub checkbox logic (no save button — values read on form submit)
+  const masterEl = $('add-rp-master');
+  const emailEl  = $('add-rp-email');
+  const waEl     = $('add-rp-whatsapp');
+
+  masterEl.addEventListener('change', () => {
+    if (masterEl.checked) { emailEl.checked = true; waEl.checked = false; }
+    else { emailEl.checked = false; waEl.checked = false; }
+  });
+  function syncAddMaster() { masterEl.checked = emailEl.checked || waEl.checked; }
+  emailEl.addEventListener('change', syncAddMaster);
+  waEl.addEventListener('change', syncAddMaster);
 
   $('cancel-add').addEventListener('click', closeModal);
   $('add-form').addEventListener('submit', submitAddVolunteer);
@@ -552,6 +621,9 @@ async function submitAddVolunteer(e) {
 
   const data = Object.fromEntries(new FormData(form));
   if (!data.email) delete data.email;
+  // FormData omits unchecked checkboxes — read them explicitly
+  data.report_email    = $('add-rp-email')?.checked ?? true;
+  data.report_whatsapp = $('add-rp-whatsapp')?.checked ?? false;
 
   // 1. Hard block — EMŠO duplicate (check server-side before anything else)
   errEl.hidden = true;
@@ -663,6 +735,26 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
         </div>
       </div>
 
+      <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.25rem;margin-bottom:1.5rem">
+        <p class="section-title" style="margin-top:0">Mesečna poročila</p>
+        <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+          <input type="checkbox" id="rp-master" ${(v.report_email || v.report_whatsapp) ? 'checked' : ''}>
+          <span>Pošiljanje mesečnih poročil</span>
+        </label>
+        <div id="rp-sub" style="margin-left:1.5rem;margin-top:0.5rem;display:flex;flex-direction:column;gap:0.4rem">
+          <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+            <input type="checkbox" id="rp-email" ${v.report_email ? 'checked' : ''}> E-pošta
+          </label>
+          <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+            <input type="checkbox" id="rp-whatsapp" ${v.report_whatsapp ? 'checked' : ''}> WhatsApp
+          </label>
+        </div>
+        <div id="rp-error" class="form-error" style="display:none"></div>
+        <div class="form-actions" style="margin-top:0.75rem">
+          <button class="btn btn-primary btn-sm" id="rp-save">Shrani</button>
+        </div>
+      </div>
+
       ${v.log_entries.length === 0 ? `
         <div style="margin:0 0 1.5rem">
           <button class="btn btn-danger btn-sm" id="delete-btn">Izbriši prostovoljca</button>
@@ -730,6 +822,16 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
         }
       });
     }
+
+    // Report preferences card
+    wireReportPrefs(
+      $('rp-master'), $('rp-email'), $('rp-whatsapp'),
+      $('rp-error'),
+      async (wa, email) => {
+        await API.volunteers.update(id, { report_whatsapp: wa, report_email: email });
+        toast('Nastavitve poročil so bile shranjene.');
+      }
+    );
 
     $('vlog-status').addEventListener('change', () => {
       volunteerLogState.filter.status = $('vlog-status').value;
@@ -909,6 +1011,44 @@ async function renderSettings() {
     </div>
 
     <div style="${card}">
+      <h2 style="${h2}">Moja mesečna poročila</h2>
+      <p class="form-hint">Kako želite prejemati mesečno konsolidirano poročilo?</p>
+      <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+        <input type="checkbox" id="s-my-rp-master" ${(manager.report_email || manager.report_whatsapp) ? 'checked' : ''}>
+        <span>Pošiljanje mesečnih poročil</span>
+      </label>
+      <div id="s-my-rp-sub" style="margin-left:1.5rem;margin-top:0.5rem;display:flex;flex-direction:column;gap:0.4rem">
+        <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+          <input type="checkbox" id="s-my-rp-email" ${manager.report_email ? 'checked' : ''}> E-pošta
+        </label>
+        <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+          <input type="checkbox" id="s-my-rp-whatsapp" ${manager.report_whatsapp ? 'checked' : ''}> WhatsApp
+        </label>
+      </div>
+      <div id="s-my-rp-error" class="form-error" style="display:none"></div>
+      <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-my-rp-save">Shrani</button></div>
+    </div>
+
+    <div style="${card}">
+      <h2 style="${h2}">Privzete nastavitve poročil za prostovoljce</h2>
+      <p class="form-hint">Te nastavitve se uporabijo pri registraciji novega prostovoljca.</p>
+      <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+        <input type="checkbox" id="s-def-rp-master" ${(manager.default_report_email || manager.default_report_whatsapp) ? 'checked' : ''}>
+        <span>Pošiljanje mesečnih poročil</span>
+      </label>
+      <div id="s-def-rp-sub" style="margin-left:1.5rem;margin-top:0.5rem;display:flex;flex-direction:column;gap:0.4rem">
+        <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+          <input type="checkbox" id="s-def-rp-email" ${manager.default_report_email ? 'checked' : ''}> E-pošta
+        </label>
+        <label class="checkbox-label" style="display:flex;align-items:center;gap:0.5rem;cursor:pointer">
+          <input type="checkbox" id="s-def-rp-whatsapp" ${manager.default_report_whatsapp ? 'checked' : ''}> WhatsApp
+        </label>
+      </div>
+      <div id="s-def-rp-error" class="form-error" style="display:none"></div>
+      <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-def-rp-save">Shrani</button></div>
+    </div>
+
+    <div style="${card}">
       <h2 style="${h2}">Sprememba gesla</h2>
       <div class="field"><label>Trenutno geslo</label>
         <input id="s-cur-pass" type="password" autocomplete="current-password"></div>
@@ -996,6 +1136,24 @@ async function renderSettings() {
       showErr('s-pass-error', err.message);
     }
   });
+
+  wireReportPrefs(
+    $('s-my-rp-master'), $('s-my-rp-email'), $('s-my-rp-whatsapp'),
+    $('s-my-rp-error'),
+    async (wa, email) => {
+      await API.managers.update({ report_whatsapp: wa, report_email: email });
+      toast('Nastavitve mojih poročil so bile shranjene.');
+    }
+  );
+
+  wireReportPrefs(
+    $('s-def-rp-master'), $('s-def-rp-email'), $('s-def-rp-whatsapp'),
+    $('s-def-rp-error'),
+    async (wa, email) => {
+      await API.managers.update({ default_report_whatsapp: wa, default_report_email: email });
+      toast('Privzete nastavitve poročil so bile shranjene.');
+    }
+  );
 }
 
 // ===== Approvals page =====

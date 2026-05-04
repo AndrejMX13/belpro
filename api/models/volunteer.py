@@ -42,6 +42,8 @@ class Volunteer(Base):
     phone: Mapped[str] = mapped_column(String(30), unique=True)
     email: Mapped[str | None] = mapped_column(String(255))
     active: Mapped[bool] = mapped_column(Boolean, server_default=text("TRUE"))
+    report_whatsapp: Mapped[bool] = mapped_column(Boolean, server_default=text("FALSE"))
+    report_email: Mapped[bool] = mapped_column(Boolean, server_default=text("TRUE"))
     registered_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=text("NOW()")
     )

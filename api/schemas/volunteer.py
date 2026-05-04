@@ -49,6 +49,8 @@ class VolunteerCreate(BaseModel):
     emso: Annotated[str, Field(min_length=13, max_length=13, pattern=r"^\d{13}$")]
     phone: Annotated[str, Field(min_length=1, max_length=30)]
     email: EmailStr | None = None
+    report_whatsapp: bool = False
+    report_email: bool = True
 
 
 class VolunteerResponse(BaseModel):
@@ -74,6 +76,8 @@ class VolunteerResponse(BaseModel):
     registered_at: datetime
     manager_id: uuid.UUID
     hours_this_month: float = 0.0
+    report_whatsapp: bool
+    report_email: bool
 
 
 class VolunteerDetailResponse(VolunteerResponse):
@@ -87,3 +91,10 @@ class VolunteerListResponse(BaseModel):
 
     items: list[VolunteerResponse]
     total: int
+
+
+class VolunteerUpdate(BaseModel):
+    """Fields that can be updated on an existing volunteer."""
+
+    report_whatsapp: bool | None = None
+    report_email: bool | None = None

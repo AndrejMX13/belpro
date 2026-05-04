@@ -103,6 +103,7 @@ const API = (() => {
       get:        (id)   => request('/volunteers/' + id),
       activate:   (id)   => request('/volunteers/' + id + '/activate',   { method: 'PATCH' }),
       deactivate: (id)   => request('/volunteers/' + id + '/deactivate', { method: 'PATCH' }),
+      update:     (id, data) => request('/volunteers/' + id, { method: 'PATCH', body: JSON.stringify(data) }),
       delete:     (id)   => request('/volunteers/' + id, { method: 'DELETE' }),
     },
 

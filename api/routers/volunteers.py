@@ -25,6 +25,7 @@ from schemas.volunteer import (
     VolunteerDetailResponse,
     VolunteerListResponse,
     VolunteerResponse,
+    VolunteerUpdate,
 )
 from services.encryption import decrypt_emso, encrypt_emso, hash_emso, load_key, mask_emso
 
@@ -51,6 +52,8 @@ def _to_response(volunteer: Volunteer, key: bytes, hours_this_month: float = 0.0
         registered_at=volunteer.registered_at,
         manager_id=volunteer.manager_id,
         hours_this_month=hours_this_month,
+        report_whatsapp=volunteer.report_whatsapp,
+        report_email=volunteer.report_email,
     )
 
 
@@ -79,6 +82,8 @@ def _to_detail_response(volunteer: Volunteer, key: bytes) -> VolunteerDetailResp
         registered_at=volunteer.registered_at,
         manager_id=volunteer.manager_id,
         hours_this_month=hours_this_month,
+        report_whatsapp=volunteer.report_whatsapp,
+        report_email=volunteer.report_email,
         log_entries=volunteer.log_entries,
     )
 
@@ -329,3 +334,28 @@ async def get_volunteer(
 
     key = load_key(settings.emso_encryption_key)
     return _to_detail_response(volunteer, key)
+
+
+@router.patch("/{volunteer_id}", response_model=VolunteerResponse)
+async def update_volunteer(
+    volunteer_id: uuid.UUID,
+    payload: VolunteerUpdate,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+    settings: Annotated[Settings, Depends(get_settings)] = ...,
+    _manager: Annotated[Manager, Depends(require_manager)] = ...,
+) -> VolunteerResponse:
+    """Update mutable fields on a volunteer (report channel preferences)."""
+    volunteer = (
+        await db.execute(select(Volunteer).where(Volunteer.id == volunteer_id))
+    ).scalar_one_or_none()
+    if volunteer is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+
+    for field, value in payload.model_dump(exclude_none=True).items():
+        setattr(volunteer, field, value)
+
+    await db.commit()
+    await db.refresh(volunteer)
+
+    key = load_key(settings.emso_encryption_key)
+    return _to_response(volunteer, key)
