@@ -59,10 +59,41 @@ Evolution API  ─────────────────────�
 
 ## Installation
 
+### Quick start — setup wizard
+
+The fastest way to get BelPro running is the interactive setup wizard. It handles `.env` creation, secret generation, service startup, and DB migrations in one go.
+
+```bash
+git clone https://github.com/AndrejMX13/belpro.git
+cd belpro
+bash scripts/setup.sh
+```
+
+The wizard will:
+
+1. Verify Docker and Docker Compose are available.
+2. Create `.env` from `.env.example` (or keep an existing one).
+3. Prompt for passwords: PostgreSQL, manager dashboard, n8n, and Gmail SMTP (optional — can be skipped and added later).
+4. Auto-generate all cryptographic secrets (`EMSO_ENCRYPTION_KEY`, `API_SECRET_KEY`, `EVOLUTION_API_KEY`).
+5. Start all Docker services (`docker compose up -d --build`).
+6. Wait for PostgreSQL and the API to become healthy.
+7. Run Alembic database migrations automatically.
+8. Print a checklist of the remaining manual steps (n8n workflow import, WhatsApp setup).
+
+> **Note:** The wizard prints instructions in Slovenian — this is intentional, as the primary users of BelPro are Slovenian NGOs.
+
+After the wizard completes, continue from [WhatsApp setup](#whatsapp-setup) below.
+
+---
+
+### Manual installation (alternative)
+
+Use this if you prefer step-by-step control or are re-deploying on an existing environment.
+
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-org/belpro.git
+git clone https://github.com/AndrejMX13/belpro.git
 cd belpro
 ```
 
@@ -98,8 +129,7 @@ Minimum required values in `.env`:
 | `N8N_BASIC_AUTH_PASSWORD` | n8n UI login password |
 | `N8N_WEBHOOK_URL` | `http://localhost:5678/` for local; public URL if remote |
 | `EVOLUTION_API_KEY` | Generated above |
-| `GMAIL_ADDRESS` | Dedicated NGO Gmail address |
-| `GMAIL_APP_PASSWORD` | [Gmail App Password](https://myaccount.google.com/apppasswords) (not your account password) |
+| `SMTP_PASSWORD` | Gmail App Password (no spaces) — see [Gmail App Passwords](https://myaccount.google.com/apppasswords) |
 
 ### 3. Start all services
 
@@ -239,6 +269,16 @@ belpro/
 ```
 
 Full system specification: [SPEC.md](SPEC.md)
+
+---
+
+## AI-assisted development
+
+This project was developed with the help of the following tools, whose configuration and output files are committed to the repository:
+
+- **[Claude Code](https://code.claude.com/docs/en/quickstart)** — Anthropic's AI coding assistant, used for implementation, workflow automation, and debugging throughout the project.
+- **[Serena](https://github.com/oraios/serena)** — MCP server for semantic code navigation (symbol search, cross-referencing). Configuration lives in `.claude/`.
+- **[Graphify](https://github.com/safishamsi/graphify)** — AST-based knowledge graph generator for codebase mapping. Output lives in `graphify-out/`.
 
 ---
 

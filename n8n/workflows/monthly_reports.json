@@ -15,7 +15,7 @@
       "id": "trigger-schedule",
       "name": "28. v mesecu ob 07:00",
       "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1.2,
+      "typeVersion": 1.3,
       "position": [200, 300],
       "parameters": {
         "rule": {
@@ -40,11 +40,11 @@
       "id": "http-send",
       "name": "Pošlji Mesečna Poročila",
       "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
+      "typeVersion": 4.4,
       "position": [460, 380],
       "parameters": {
         "method": "POST",
-        "url": "http://api:8100/api/reports/send-monthly",
+        "url": "http://api:8000/api/reports/send-monthly",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpBasicAuth",
         "options": {
@@ -57,10 +57,13 @@
       },
       "credentials": {
         "httpBasicAuth": {
-          "id": "",
+          "id": "UqZlwzClZfiYKanN",
           "name": "BelPro API (Basic Auth)"
         }
       },
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000,
       "continueOnFail": false
     },
     {
