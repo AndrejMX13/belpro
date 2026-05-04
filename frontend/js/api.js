@@ -159,6 +159,13 @@ const API = (() => {
       reject:  (id) => request('/log-entries/' + id + '/reject',  { method: 'PATCH' }),
     },
 
+    analytics: {
+      summary: (year, month) => {
+        const q = new URLSearchParams({ year, month });
+        return request('/analytics/summary?' + q);
+      },
+    },
+
     reports: {
       monthly: (year, month, withEntriesOnly = false) =>
         request(`/reports/monthly?year=${year}&month=${month}&with_entries_only=${withEntriesOnly}`),

@@ -6,6 +6,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
 
 from db.session import AsyncSessionLocal
+from routers.analytics import router as analytics_router
 from routers.log_entries import router as log_entries_router
 from routers.managers import router as managers_router
 from routers.reports import router as reports_router
@@ -25,6 +26,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+app.include_router(analytics_router, prefix="/api")
 app.include_router(log_entries_router, prefix="/api")
 app.include_router(managers_router, prefix="/api")
 app.include_router(reports_router, prefix="/api")

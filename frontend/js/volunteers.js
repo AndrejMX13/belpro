@@ -199,6 +199,8 @@ function route() {
     });
   } else if (hash === '#reports') {
     renderReports();
+  } else if (hash === '#analytics') {
+    renderAnalytics();
   } else if (hash === '#settings') {
     renderSettings();
   } else {
