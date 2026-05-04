@@ -20,7 +20,7 @@ from models.manager import Manager
 from models.volunteer import Volunteer
 from schemas.report import MonthlyReportSummary, VolunteerMonthlySummary
 from services.email import SmtpNotConfiguredError, send_email
-from services.report_pdf import render_summary_pdf, render_volunteer_pdf
+from services.report_pdf import NGOInfo, render_summary_pdf, render_volunteer_pdf
 
 router = APIRouter(prefix="/reports", tags=["reports"])
 
@@ -116,6 +116,19 @@ async def generate_monthly_pdf(
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
 ) -> StreamingResponse:
     """Generate a monthly PDF report for one volunteer or all active volunteers."""
+    manager = (await db.execute(select(Manager))).scalar_one_or_none()
+    if manager is None:
+        raise HTTPException(status_code=503, detail="Upravljalec ni konfiguriran.")
+
+    ngo = NGOInfo(
+        name=manager.ngo_name,
+        street=manager.ngo_street,
+        postal_code=manager.ngo_postal_code,
+        city=manager.ngo_city,
+        phone=manager.phone,
+        email=manager.email,
+    )
+
     if volunteer_id:
         vol = (
             await db.execute(select(Volunteer).where(Volunteer.id == volunteer_id))
@@ -134,11 +147,11 @@ async def generate_monthly_pdf(
             .order_by(LogEntry.entry_date)
         )
         entries = (await db.execute(entries_stmt)).scalars().all()
-        pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, year, month, entries)
+        pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, year, month, entries, ngo=ngo)
         filename = f"porocilo_{vol.last_name}_{vol.first_name}_{year}_{month:02d}.pdf"
     else:
         items = await _summary_items(db, year, month)
-        pdf_bytes = render_summary_pdf(year, month, items)
+        pdf_bytes = render_summary_pdf(year, month, items, ngo=ngo)
         filename = f"porocilo_{year}_{month:02d}.pdf"
 
     return StreamingResponse(
@@ -170,6 +183,15 @@ async def send_monthly_reports(
     manager = (await db.execute(select(Manager))).scalar_one_or_none()
     if manager is None:
         raise HTTPException(status_code=503, detail="Upravljalec ni konfiguriran.")
+
+    ngo = NGOInfo(
+        name=manager.ngo_name,
+        street=manager.ngo_street,
+        postal_code=manager.ngo_postal_code,
+        city=manager.ngo_city,
+        phone=manager.phone,
+        email=manager.email,
+    )
 
     volunteers: list[Volunteer] = list(
         (await db.execute(select(Volunteer).where(Volunteer.active.is_(True)))).scalars().all()
@@ -204,7 +226,7 @@ async def send_monthly_reports(
             skipped_no_email.append(f"{vol.first_name} {vol.last_name}")
             continue
 
-        pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, y, m, entries)
+        pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, y, m, entries, ngo=ngo)
         filename = f"porocilo_{vol.last_name}_{vol.first_name}_{y}_{m:02d}.pdf"
         subject = f"BelPro — mesečno poročilo {m:02d}/{y}"
         body = (
@@ -236,7 +258,7 @@ async def send_monthly_reports(
     manager_sent = False
     if manager.report_email and manager.email:
         items = await _summary_items(db, y, m)
-        consolidated_bytes = render_summary_pdf(y, m, items)
+        consolidated_bytes = render_summary_pdf(y, m, items, ngo=ngo)
         consolidated_filename = f"porocilo_skupno_{y}_{m:02d}.pdf"
         manager_subject = f"BelPro — skupno mesečno poročilo {m:02d}/{y}"
         manager_body = (

@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import html
+from dataclasses import dataclass
 from datetime import date, datetime
 from decimal import Decimal
 
@@ -24,6 +25,9 @@ tbody tr:nth-child(even) td { background: #f8fafc; }
 .num { text-align: right; white-space: nowrap; }
 tfoot td { font-weight: bold; border-top: 2px solid #1e40af; padding: 7px 8px; font-size: 9pt; }
 .footer { margin-top: 2em; font-size: 8pt; color: #9ca3af; text-align: right; }
+.ngo-header { margin-bottom: 1.8em; padding-bottom: 0.8em; border-bottom: 2px solid #1e40af; }
+.ngo-name { font-size: 13pt; font-weight: bold; color: #1e3a8a; }
+.ngo-contact { font-size: 9pt; color: #555; margin-top: 0.3em; line-height: 1.6; }
 """
 
 
@@ -39,12 +43,41 @@ def _generated_line() -> str:
     return datetime.now().strftime("%-d. %-m. %Y %H:%M")
 
 
+@dataclass
+class NGOInfo:
+    """NGO identity shown in every PDF header."""
+
+    name: str
+    street: str
+    postal_code: str
+    city: str
+    phone: str | None = None
+    email: str | None = None
+
+
+def _ngo_header_html(ngo: NGOInfo) -> str:
+    """Render the NGO header block as an HTML string."""
+    contact_parts = [f"{_esc(ngo.street)}, {_esc(ngo.postal_code)} {_esc(ngo.city)}"]
+    if ngo.phone:
+        contact_parts.append(f"Tel: {_esc(ngo.phone)}")
+    if ngo.email:
+        contact_parts.append(f"E-pošta: {_esc(ngo.email)}")
+    contact = "<br>".join(contact_parts)
+    return (
+        f"<div class='ngo-header'>"
+        f"<div class='ngo-name'>{_esc(ngo.name)}</div>"
+        f"<div class='ngo-contact'>{contact}</div>"
+        f"</div>"
+    )
+
+
 def render_volunteer_pdf(
     first_name: str,
     last_name: str,
     year: int,
     month: int,
     entries: list,
+    ngo: NGOInfo | None = None,
 ) -> bytes:
     """Render a single-volunteer monthly report PDF and return raw bytes."""
     month_label = f"{_SL_MONTHS[month]} {year}"
@@ -60,10 +93,13 @@ def render_volunteer_pdf(
         for e in entries
     )
 
+    header = _ngo_header_html(ngo) if ngo else ""
+
     doc = f"""<!DOCTYPE html>
 <html lang="sl">
 <head><meta charset="utf-8"><style>{_BASE_CSS}</style></head>
 <body>
+  {header}
   <h1>Poročilo o prostovoljskem delu</h1>
   <p class="meta">
     <strong>Prostovoljec:</strong> {_esc(last_name)} {_esc(first_name)}<br>
@@ -89,7 +125,7 @@ def render_volunteer_pdf(
     return HTML(string=doc).write_pdf()
 
 
-def render_summary_pdf(year: int, month: int, items: list) -> bytes:
+def render_summary_pdf(year: int, month: int, items: list, ngo: NGOInfo | None = None) -> bytes:
     """Render an all-volunteer summary PDF and return raw bytes."""
     month_label = f"{_SL_MONTHS[month]} {year}"
     total_hours = sum((i.total_hours for i in items), Decimal("0"))
@@ -104,10 +140,13 @@ def render_summary_pdf(year: int, month: int, items: list) -> bytes:
         for i in items
     )
 
+    header = _ngo_header_html(ngo) if ngo else ""
+
     doc = f"""<!DOCTYPE html>
 <html lang="sl">
 <head><meta charset="utf-8"><style>{_BASE_CSS}</style></head>
 <body>
+  {header}
   <h1>Mesečno poročilo o prostovoljskem delu</h1>
   <p class="meta"><strong>Obdobje:</strong> {month_label}</p>
   <table>
