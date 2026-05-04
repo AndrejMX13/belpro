@@ -69,6 +69,8 @@ Evolution API  ─────────────────────�
 | email | VARCHAR | For monthly PDF delivery |
 | registered_at | TIMESTAMP | |
 | active | BOOLEAN | Soft delete / deactivation |
+| report_whatsapp | BOOLEAN | Send monthly PDF to volunteer via WhatsApp; default FALSE |
+| report_email | BOOLEAN | Send monthly PDF to volunteer via email; default TRUE |
 | manager_id | FK → managers | |
 
 ### `managers`
@@ -84,6 +86,10 @@ Evolution API  ─────────────────────�
 | ngo_postal_code | VARCHAR(4) | Slovenian 4-digit postal code |
 | ngo_city | VARCHAR | |
 | password_hash | TEXT | bcrypt hash; nullable until first setup |
+| report_whatsapp | BOOLEAN | Manager receives consolidated report via WhatsApp; default FALSE |
+| report_email | BOOLEAN | Manager receives consolidated report via email; default TRUE |
+| default_report_whatsapp | BOOLEAN | Default WhatsApp flag applied to newly registered volunteers; default FALSE |
+| default_report_email | BOOLEAN | Default email flag applied to newly registered volunteers; default TRUE |
 | created_at | TIMESTAMP | |
 
 ### `log_entries`
@@ -201,7 +207,8 @@ Served by nginx, backed by FastAPI. Mobile-friendly responsive design. Accessibl
 - List of all volunteers (first name, last name, phone, email, active status, total hours this month)
 - Filters: active / inactive / all, registration date range, city
 - Sorting: by any column (name, hours, registration date)
-- Add new volunteer form (first name, last name, street, postal code, city, EMŠO, phone, email)
+- Add new volunteer form (first name, last name, street, postal code, city, EMŠO, phone, email, report channel checkboxes)
+- Per-volunteer report channel toggles: WhatsApp and/or email (editable inline; defaults come from manager's global defaults)
 - Deactivate volunteer (soft delete)
 - View individual volunteer history
 
@@ -216,15 +223,18 @@ Served by nginx, backed by FastAPI. Mobile-friendly responsive design. Accessibl
 - Date range filter independent of calendar month
 - Export filtered results to CSV
 
-#### 5.4 Analytics *(planned — not yet implemented)*
-- Total hours logged this month (all volunteers)
-- Hours per volunteer (bar chart)
-- Monthly trend (line chart, last 6 months)
-- Hours per location (bar chart) — useful for site-level reporting
-- Number of active volunteers
-- Entries pending / approved / rejected counts
-- Export any chart/view to PDF (print-friendly layout)
-- Export underlying data to CSV or XLSX
+#### 5.4 Analytics
+Served by `GET /api/analytics/summary` (auth: manager). Optional `year`/`month` query params; defaults to current calendar month. All counts and hour totals are scoped to the selected month.
+
+- KPI tiles: total approved hours, active volunteer count, entries pending / approved / rejected, volunteers with no entries that month
+- Hours per volunteer — horizontal bar chart; only volunteers with at least one entry (any status) in the selected month are shown
+- Hours per location — vertical bar chart (approved entries only, non-empty location)
+- Monthly trend — line chart covering the 6 calendar months ending at the selected month
+- Year / month selector to navigate to any past period
+- Print-friendly layout (`@media print` hides nav, filters, and export button)
+- Export underlying data to CSV (BOM-prefixed for correct Excel UTF-8 rendering)
+
+Charts rendered client-side with **Chart.js v4** (CDN, no build step).
 
 #### 5.5 Reports
 - Generate monthly PDF reports on demand (per volunteer or consolidated)
@@ -234,6 +244,8 @@ Served by nginx, backed by FastAPI. Mobile-friendly responsive design. Accessibl
 #### 5.6 Settings
 - Manager profile (first name, last name, phone, email, NGO name, NGO address)
 - Password change
+- Manager report channel: checkboxes controlling whether the manager receives the consolidated monthly report via WhatsApp and/or email
+- Global volunteer report defaults: checkboxes that set the initial `report_whatsapp` / `report_email` values for newly registered volunteers
 - Gmail SMTP configuration (or OAuth token setup) *(planned)*
 - Volunteer agreement template (text, used in PDF header) *(planned)*
 
@@ -321,15 +333,16 @@ belpro/
 │   │   ├── volunteers.py
 │   │   ├── log_entries.py             # Entries + photo upload/EXIF inline
 │   │   ├── managers.py                # Manager profile + password setup
-│   │   └── reports.py
+│   │   ├── reports.py
+│   │   └── analytics.py               # Aggregated analytics summary endpoint
 │   ├── models/                        # SQLAlchemy ORM models
-│   ├── schemas/                       # Pydantic request/response schemas
+│   ├── schemas/                       # Pydantic request/response schemas (analytics.py, volunteers.py, …)
 │   ├── services/
 │   │   ├── report_pdf.py              # WeasyPrint PDF generation
 │   │   ├── encryption.py              # AES-256-GCM EMŠO encrypt/decrypt/hash
 │   │   └── password.py                # bcrypt password hashing
 │   └── db/
-│       └── migrations/                # Alembic migrations (versions/ subdir)
+│       └── migrations/                # Alembic migrations (versions/ subdir; current head: 005_report_prefs)
 │
 ├── frontend/
 │   ├── index.html                     # Single-page app (client-side routing)
@@ -337,8 +350,9 @@ belpro/
 │   │   └── main.css
 │   └── js/
 │       ├── api.js                     # Centralised fetch wrapper / API base URL
-│       ├── volunteers.js              # Volunteers, approvals, log, settings views
-│       └── reports.js                 # Reports view
+│       ├── volunteers.js              # Volunteers, approvals, log, settings views; client-side router
+│       ├── reports.js                 # Reports view
+│       └── analytics.js              # Analytics page (charts via Chart.js v4 CDN)
 │
 ├── nginx/
 │   └── nginx.conf
