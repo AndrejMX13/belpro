@@ -961,9 +961,9 @@ async function renderSettings() {
 
   setHtml($('main-content'), `<div style="padding:2.5rem;text-align:center"><span class="spinner"></span></div>`);
 
-  let manager;
+  let manager, configInfo;
   try {
-    manager = await API.managers.me();
+    [manager, configInfo] = await Promise.all([API.managers.me(), API.managers.configInfo()]);
   } catch (err) {
     setHtml($('main-content'), `<p class="form-error" style="margin:2rem">Napaka: ${esc(err.message)}</p>`);
     return;
@@ -1008,8 +1008,43 @@ async function renderSettings() {
         <div class="field"><label>Kraj</label>
           <input id="s-ngo-city" type="text" value="${esc(manager.ngo_city)}" required maxlength="100"></div>
       </div>
+      <div class="field" style="margin-top:0.75rem">
+        <label>Mobilna številka za BelPro</label>
+        <input id="s-ngo-wa-phone" type="tel" value="${esc(manager.ngo_whatsapp_phone || '')}" maxlength="30" placeholder="+38640...">
+        <div class="form-hint">Telefonska številka, ki je povezana z WhatsApp botom (Evolution API).</div>
+      </div>
+      <div style="margin-top:0.5rem">
+        <a id="s-evo-api-link" href="${esc(configInfo.evolution_api_admin_url)}" target="_blank" rel="noopener noreferrer"
+           class="btn btn-secondary btn-sm">Odpri nastavitve povezave telefonske številke ↗</a>
+      </div>
       <div id="s-ngo-error" class="form-error" style="display:none"></div>
       <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-ngo-save">Shrani</button></div>
+    </div>
+
+    <div style="${card}">
+      <h2 style="${h2}">E-poštna integracija</h2>
+      <div class="form-row">
+        <div class="field"><label>SMTP strežnik</label>
+          <input id="s-smtp-host" type="text" value="${esc(configInfo.smtp_host)}" maxlength="255" placeholder="smtp.gmail.com"></div>
+        <div class="field"><label>Vrata</label>
+          <input id="s-smtp-port" type="number" value="${configInfo.smtp_port || 587}" min="1" max="65535" style="max-width:7rem"></div>
+      </div>
+      <div class="form-row">
+        <div class="field"><label>Uporabniško ime (e-naslov)</label>
+          <input id="s-smtp-user" type="email" value="${esc(configInfo.smtp_user)}" maxlength="255" placeholder="ngo@example.com"></div>
+        <div class="field"><label>Ime pošiljatelja</label>
+          <input id="s-smtp-from" type="text" value="${esc(configInfo.smtp_from_name)}" maxlength="100" placeholder="${esc(manager.ngo_name)}"></div>
+      </div>
+      <div style="margin-top:0.25rem;margin-bottom:0.75rem">
+        ${configInfo.smtp_configured
+          ? '<span style="color:var(--success,#16a34a);font-size:0.85rem">✓ E-pošta je konfigurirana</span>'
+          : '<span style="color:var(--text-muted,#6b7280);font-size:0.85rem">Ni konfigurirano — geslo nastavite v <code>.env</code> (SMTP_PASSWORD)</span>'}
+      </div>
+      <div class="form-hint" style="margin-bottom:0.75rem">Geslo SMTP ostane v <code>.env</code> datoteki in se ne shranjuje v bazi.
+        Za Gmail uporabite <a href="https://accounts.google.com/AccountChooser?continue=https://myaccount.google.com/apppasswords" target="_blank" rel="noopener noreferrer">geslo aplikacije ↗</a>
+        (odpre izbiro Google računa, nato gesla aplikacij).</div>
+      <div id="s-smtp-error" class="form-error" style="display:none"></div>
+      <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-smtp-save">Shrani</button></div>
     </div>
 
     <div style="${card}">
@@ -1094,22 +1129,45 @@ async function renderSettings() {
   $('s-ngo-save').addEventListener('click', async () => {
     showErr('s-ngo-error', '');
     const payload = {
-      ngo_name:        $('s-ngo-name').value.trim(),
-      ngo_street:      $('s-ngo-street').value.trim(),
-      ngo_postal_code: $('s-ngo-postal').value.trim(),
-      ngo_city:        $('s-ngo-city').value.trim(),
+      ngo_name:           $('s-ngo-name').value.trim(),
+      ngo_street:         $('s-ngo-street').value.trim(),
+      ngo_postal_code:    $('s-ngo-postal').value.trim(),
+      ngo_city:           $('s-ngo-city').value.trim(),
+      ngo_whatsapp_phone: $('s-ngo-wa-phone').value.trim() || null,
     };
-    if (Object.values(payload).some(v => !v)) {
-      showErr('s-ngo-error', 'Vsa polja so obvezna.'); return;
+    if (!payload.ngo_name || !payload.ngo_street || !payload.ngo_postal_code || !payload.ngo_city) {
+      showErr('s-ngo-error', 'Polja naziv, ulica, poštna številka in kraj so obvezna.'); return;
     }
     if (!/^\d{4}$/.test(payload.ngo_postal_code)) {
       showErr('s-ngo-error', 'Poštna številka mora biti 4-mestna številka.'); return;
     }
     try {
       await API.managers.update(payload);
+      const evoLink = $('s-evo-api-link');
+      if (evoLink) evoLink.href = configInfo.evolution_api_admin_url;
       toast('Podatki organizacije so bili shranjeni.');
     } catch (err) {
       showErr('s-ngo-error', err.message);
+    }
+  });
+
+  $('s-smtp-save').addEventListener('click', async () => {
+    showErr('s-smtp-error', '');
+    const port = parseInt($('s-smtp-port').value, 10);
+    if ($('s-smtp-host').value.trim() && (isNaN(port) || port < 1 || port > 65535)) {
+      showErr('s-smtp-error', 'Vrata morajo biti številka med 1 in 65535.'); return;
+    }
+    const payload = {
+      smtp_host:      $('s-smtp-host').value.trim() || null,
+      smtp_port:      isNaN(port) ? null : port,
+      smtp_user:      $('s-smtp-user').value.trim() || null,
+      smtp_from_name: $('s-smtp-from').value.trim() || null,
+    };
+    try {
+      await API.managers.update(payload);
+      toast('Nastavitve e-pošte so bile shranjene.');
+    } catch (err) {
+      showErr('s-smtp-error', err.message);
     }
   });
 

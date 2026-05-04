@@ -5,7 +5,7 @@ import uuid
 from datetime import datetime
 from typing import TYPE_CHECKING
 
-from sqlalchemy import Boolean, DateTime, String, Text, text
+from sqlalchemy import Boolean, DateTime, Integer, String, Text, text
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
@@ -36,6 +36,12 @@ class Manager(Base):
     report_email: Mapped[bool] = mapped_column(Boolean, server_default=text("TRUE"))
     default_report_whatsapp: Mapped[bool] = mapped_column(Boolean, server_default=text("FALSE"))
     default_report_email: Mapped[bool] = mapped_column(Boolean, server_default=text("TRUE"))
+    ngo_whatsapp_phone: Mapped[str | None] = mapped_column(String(30), nullable=True)
+    smtp_host: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    smtp_port: Mapped[int | None] = mapped_column(Integer, nullable=True)
+    smtp_user: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    smtp_from_name: Mapped[str | None] = mapped_column(String(100), nullable=True)
+    evolution_api_admin_url: Mapped[str | None] = mapped_column(String(255), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=text("NOW()")
     )

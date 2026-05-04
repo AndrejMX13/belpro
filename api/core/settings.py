@@ -27,9 +27,10 @@ class Settings(BaseSettings):
     api_secret_key: str
     manager_password: str
 
-    # ── Gmail (outgoing email) ────────────────────────────────────────────────
-    gmail_address: str = ""
-    gmail_app_password: str = ""
+    # ── SMTP (outgoing email) ─────────────────────────────────────────────────
+    # smtp_host, smtp_port, smtp_user, smtp_from_name are stored in DB and
+    # configurable from the Settings UI.  Only the password stays here.
+    smtp_password: str = ""
 
     # ── Internal service URLs ─────────────────────────────────────────────────
     whisper_service_url: str = "http://whisper:8001"

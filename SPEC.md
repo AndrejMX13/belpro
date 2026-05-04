@@ -32,7 +32,7 @@ Evolution API  ─────────────────────�
         │                                    │
         ├──► FastAPI + Web Dashboard ◄────────┘
         │
-        └──► Gmail (SMTP/OAuth) for email delivery
+        └──► SMTP (any provider) for email delivery
 ```
 
 ### Components
@@ -44,7 +44,7 @@ Evolution API  ─────────────────────�
 | Transcription | Faster-Whisper (CPU, local) | Voice note → text |
 | Database | PostgreSQL (self-hosted) | All persistent data |
 | Dashboard | FastAPI + HTML/JS/CSS (nginx) | Manager web UI |
-| Email | Gmail (n8n Gmail node) | Monthly PDFs, notifications |
+| Email | Generic SMTP (n8n Send Email node) | Monthly PDFs, notifications |
 | PDF generation | Python (WeasyPrint or ReportLab) | Monthly summary documents |
 | Containerisation | Docker Compose | All services |
 
@@ -90,6 +90,12 @@ Evolution API  ─────────────────────�
 | report_email | BOOLEAN | Manager receives consolidated report via email; default TRUE |
 | default_report_whatsapp | BOOLEAN | Default WhatsApp flag applied to newly registered volunteers; default FALSE |
 | default_report_email | BOOLEAN | Default email flag applied to newly registered volunteers; default TRUE |
+| ngo_whatsapp_phone | VARCHAR(30) | Dedicated bot phone number linked to Evolution API (nullable) |
+| smtp_host | VARCHAR | SMTP server hostname, e.g. smtp.gmail.com (nullable, set via UI) |
+| smtp_port | INTEGER | SMTP port, default 587 (nullable, set via UI) |
+| smtp_user | VARCHAR | SMTP login / from-address (nullable, set via UI) |
+| smtp_from_name | VARCHAR | Display name for outgoing emails (nullable, set via UI) |
+| evolution_api_admin_url | VARCHAR | URL of Evolution API admin UI used for the settings link (nullable) |
 | created_at | TIMESTAMP | |
 
 ### `log_entries`
@@ -246,7 +252,7 @@ Charts rendered client-side with **Chart.js v4** (CDN, no build step).
 - Password change
 - Manager report channel: checkboxes controlling whether the manager receives the consolidated monthly report via WhatsApp and/or email
 - Global volunteer report defaults: checkboxes that set the initial `report_whatsapp` / `report_email` values for newly registered volunteers
-- Gmail SMTP configuration (or OAuth token setup) *(planned)*
+- SMTP configuration (host, port, user, from-name editable in UI; password stays in `.env`; works with Gmail, Yahoo, Proton, or any SMTP server)
 - Volunteer agreement template (text, used in PDF header) *(planned)*
 
 ---
@@ -283,8 +289,9 @@ Contents:
 
 ## 7. Email
 
-- n8n Gmail node used for all outgoing email.
-- NGO configures Gmail account (or SMTP credentials) during setup.
+- n8n Send Email (SMTP) node used for all outgoing email.
+- Works with any SMTP provider: Gmail (smtp.gmail.com:587 + App Password), Yahoo, Proton, or institutional servers.
+- SMTP host, port, login, and from-name are configured via the Settings UI and stored in the `managers` table. The password stays in `.env` as `SMTP_PASSWORD`.
 - Emails sent: monthly PDF delivery, entry approval/rejection notifications (optional fallback if WhatsApp fails).
 
 ---
@@ -342,7 +349,7 @@ belpro/
 │   │   ├── encryption.py              # AES-256-GCM EMŠO encrypt/decrypt/hash
 │   │   └── password.py                # bcrypt password hashing
 │   └── db/
-│       └── migrations/                # Alembic migrations (versions/ subdir; current head: 005_report_prefs)
+│       └── migrations/                # Alembic migrations (versions/ subdir; current head: 006_whatsapp_and_smtp_config)
 │
 ├── frontend/
 │   ├── index.html                     # Single-page app (client-side routing)

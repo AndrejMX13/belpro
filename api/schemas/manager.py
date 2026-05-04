@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import uuid
 from datetime import datetime
-from typing import Annotated
+from typing import Annotated, Optional
 
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, model_validator
 
@@ -36,6 +36,12 @@ class ManagerUpdate(BaseModel):
     report_email: bool | None = None
     default_report_whatsapp: bool | None = None
     default_report_email: bool | None = None
+    ngo_whatsapp_phone: Optional[str] = None
+    smtp_host: Optional[str] = None
+    smtp_port: Optional[int] = None
+    smtp_user: Optional[str] = None
+    smtp_from_name: Optional[str] = None
+    evolution_api_admin_url: Optional[str] = None
 
 
 class PasswordChangeRequest(BaseModel):
@@ -64,3 +70,9 @@ class ManagerResponse(BaseModel):
     report_email: bool
     default_report_whatsapp: bool
     default_report_email: bool
+    ngo_whatsapp_phone: Optional[str] = None
+    smtp_host: Optional[str] = None
+    smtp_port: Optional[int] = None
+    smtp_user: Optional[str] = None
+    smtp_from_name: Optional[str] = None
+    evolution_api_admin_url: Optional[str] = None

@@ -82,6 +82,26 @@ async def update_manager(
     return manager
 
 
+@router.get("/me/config-info", dependencies=[Depends(require_manager)])
+async def get_config_info(
+    db: Annotated[AsyncSession, Depends(get_db)],
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> dict:
+    """Return non-secret config status for the settings UI."""
+    manager = (await db.execute(select(Manager).limit(1))).scalar_one_or_none()
+    if manager is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manager not configured.")
+    smtp_configured = bool(manager.smtp_host and manager.smtp_user and settings.smtp_password)
+    return {
+        "smtp_host": manager.smtp_host or "",
+        "smtp_port": manager.smtp_port or 587,
+        "smtp_user": manager.smtp_user or "",
+        "smtp_from_name": manager.smtp_from_name or "",
+        "smtp_configured": smtp_configured,
+        "evolution_api_admin_url": manager.evolution_api_admin_url or "http://localhost:8180/manager/login",
+    }
+
+
 @router.post(
     "/me/change-password",
     status_code=status.HTTP_204_NO_CONTENT,

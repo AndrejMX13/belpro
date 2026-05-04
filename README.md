@@ -138,7 +138,7 @@ After logging in, go to **Settings** to set the manager name, phone number, NGO 
 
 ### 6. Link the WhatsApp number
 
-Open the Evolution API manager at **http://localhost:8180**.
+Open the Evolution API manager at **http://localhost:8180/manager/**.
 
 1. Log in with your `EVOLUTION_API_KEY`.
 2. Create an instance named `belpro` (must match `EVOLUTION_INSTANCE_NAME` in `.env`).
@@ -164,7 +164,7 @@ Open n8n at **http://localhost:5678** and log in with `N8N_BASIC_AUTH_USER` / `N
 | http://localhost:80 | Manager dashboard |
 | http://localhost:8100/docs | FastAPI Swagger UI |
 | http://localhost:5678 | n8n workflow editor |
-| http://localhost:8180 | Evolution API (WhatsApp gateway) |
+| http://localhost:8180/manager/ | Evolution API (WhatsApp gateway) |
 
 ---
 
