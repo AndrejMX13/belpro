@@ -1,12 +1,12 @@
 # Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-04)
 
 ## Corpus Check
-- 42 files · ~74,270 words
+- 43 files · ~76,344 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 467 nodes · 1185 edges · 35 communities detected
-- Extraction: 53% EXTRACTED · 47% INFERRED · 0% AMBIGUOUS · INFERRED: 558 edges (avg confidence: 0.54)
+- 491 nodes · 1360 edges · 35 communities detected
+- Extraction: 47% EXTRACTED · 53% INFERRED · 0% AMBIGUOUS · INFERRED: 719 edges (avg confidence: 0.53)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -47,16 +47,16 @@
 - [[_COMMUNITY_Community 34|Community 34]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `EntryStatus` - 76 edges
-2. `Volunteer` - 55 edges
-3. `LogEntry` - 49 edges
-4. `Manager` - 37 edges
+1. `EntryStatus` - 91 edges
+2. `Volunteer` - 70 edges
+3. `LogEntry` - 64 edges
+4. `Manager` - 54 edges
 5. `Settings` - 33 edges
-6. `GRAPH_REPORT.md Knowledge Graph Report` - 33 edges
-7. `$()` - 31 edges
-8. `VolunteerResponse` - 26 edges
-9. `EmsoCheckResponse` - 25 edges
-10. `VolunteerDetailResponse` - 25 edges
+6. `LogEntryPhoto` - 33 edges
+7. `GRAPH_REPORT.md Knowledge Graph Report` - 33 edges
+8. `$()` - 31 edges
+9. `LogEntryListResponse` - 27 edges
+10. `LogEntryCreate` - 26 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `EntryStatus` --uses--> `Pydantic schemas for the Volunteer entity.`  [INFERRED]
@@ -73,12 +73,12 @@
 ## Communities
 
 ### Community 0 - "Community 0"
-Cohesion: 0.11
-Nodes (57): Base, Base, SQLAlchemy declarative base shared by all ORM models., Declarative base — import and subclass in every model., DeclarativeBase, SQLAlchemy ORM models — import all to ensure they register with Base.metadata., approve_log_entry(), create_log_entry() (+49 more)
+Cohesion: 0.12
+Nodes (68): Base, Base, SQLAlchemy declarative base shared by all ORM models., Declarative base — import and subclass in every model., DeclarativeBase, Raised when the manager has not configured SMTP., SmtpNotConfiguredError, Exception (+60 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.12
-Nodes (57): BaseSettings, decrypt_emso(), encrypt_emso(), hash_emso(), load_key(), mask_emso(), AES-256-GCM encryption service for sensitive fields (EMŠO).  Usage ----- key = l, Decode and validate a base64-encoded 32-byte AES-256 key.      Raises ValueError (+49 more)
+Cohesion: 0.11
+Nodes (66): Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, FastAPI dependency — rejects requests without the correct manager password., require_manager(), BaseModel, BaseSettings, decrypt_emso(), encrypt_emso(), hash_emso() (+58 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.11
@@ -93,24 +93,24 @@ Cohesion: 0.06
 Nodes (41): Graphify Section in CLAUDE.md, Community: API Entry Point 5 nodes cohesion 0.33, Community: Auth and Volunteer Management 43 nodes cohesion 0.14, Community: Config and Migrations Setup 14 nodes cohesion 0.15, Community: Database Session Layer 3 nodes cohesion 0.5, Community: EMSO Hash Migration 1 node cohesion 0.5, Community: Frontend API Client cohesion 1.0 thin, Community: Frontend Dashboard UI 37 nodes cohesion 0.16 (+33 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.15
-Nodes (25): Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, FastAPI dependency — rejects requests without the correct manager password., require_manager(), Manager, ManagerCreate, ManagerResponse, ManagerUpdate, PasswordChangeRequest (+17 more)
+Cohesion: 0.11
+Nodes (28): Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port, send_email(), MonthlyReportSummary, _esc(), _fmt_date(), _generated_line(), PDF rendering for monthly volunteer reports using WeasyPrint. (+20 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.15
-Nodes (20): MonthlyReportSummary, _esc(), _fmt_date(), _generated_line(), PDF rendering for monthly volunteer reports using WeasyPrint., Render a single-volunteer monthly report PDF and return raw bytes., Render an all-volunteer summary PDF and return raw bytes., render_summary_pdf() (+12 more)
+Nodes (23): get_photo_file(), ManagerCreate, ManagerResponse, ManagerUpdate, PasswordChangeRequest, Pydantic schemas for the Manager entity., Fields required for first-time manager setup., Partial update — all fields optional.  Only provided fields are written. (+15 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.27
 Nodes (18): body(), border(), borders(), cell(), complianceTable(), componentTable(), coverPage(), featureTable() (+10 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.24
-Nodes (16): analytics_summary(), AnalyticsSummary, HoursPerLocation, HoursPerVolunteer, MonthlyTrendPoint, _preceding_months(), Pydantic schemas for the analytics summary endpoint., Per-volunteer approved hours for a given month. (+8 more)
-
-### Community 9 - "Community 9"
 Cohesion: 0.15
 Nodes (14): _do_run_migrations(), _get_url(), Alembic environment — async SQLAlchemy / asyncpg configuration., Read DATABASE_URL from settings (env / .env file)., Run migrations without a live DB connection (generates SQL script)., Inner helper called inside the async connection context., Create an async engine and run migrations inside it., Run migrations against a live database. (+6 more)
+
+### Community 9 - "Community 9"
+Cohesion: 0.3
+Nodes (13): analytics_summary(), AnalyticsSummary, HoursPerLocation, HoursPerVolunteer, MonthlyTrendPoint, _preceding_months(), Pydantic schemas for the analytics summary endpoint., Per-volunteer approved hours for a given month. (+5 more)
 
 ### Community 10 - "Community 10"
 Cohesion: 0.27
@@ -213,7 +213,7 @@ Cohesion: 1.0
 Nodes (1): Rationale: Vanilla JS chosen — no framework overhead for NGO tool
 
 ## Knowledge Gaps
-- **120 isolated node(s):** `Belpro FastAPI application entry point.`, `Fail fast if the database is unreachable on startup.`, `Health check — returns ok when the service is up.`, `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc` (+115 more)
+- **123 isolated node(s):** `Belpro FastAPI application entry point.`, `Fail fast if the database is unreachable on startup.`, `Health check — returns ok when the service is up.`, `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc` (+118 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 20`** (2 nodes): `Rationale: Single-tenant — out of scope for v1 to support multi-NGO SaaS`, `Single-Tenant Architecture (one NGO per deployment)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -249,17 +249,17 @@ Nodes (1): Rationale: Vanilla JS chosen — no framework overhead for NGO tool
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `EntryStatus` connect `Community 0` to `Community 8`, `Community 1`, `Community 6`?**
-  _High betweenness centrality (0.074) - this node is a cross-community bridge._
-- **Why does `Volunteer` connect `Community 0` to `Community 8`, `Community 1`, `Community 5`, `Community 6`?**
-  _High betweenness centrality (0.043) - this node is a cross-community bridge._
-- **Why does `Settings` connect `Community 1` to `Community 0`, `Community 9`, `Community 5`?**
-  _High betweenness centrality (0.040) - this node is a cross-community bridge._
-- **Are the 73 inferred relationships involving `EntryStatus` (e.g. with `Pydantic schemas for the analytics summary endpoint.` and `Return aggregated analytics data scoped to the given month.      Defaults to t`) actually correct?**
-  _`EntryStatus` has 73 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 52 inferred relationships involving `Volunteer` (e.g. with `Manager` and `Pydantic schemas for the Manager entity.`) actually correct?**
-  _`Volunteer` has 52 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 46 inferred relationships involving `LogEntry` (e.g. with `Volunteer` and `Registered volunteer.  Soft-deleted via active=False — never hard-deleted.`) actually correct?**
-  _`LogEntry` has 46 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 34 inferred relationships involving `Manager` (e.g. with `Base` and `Volunteer`) actually correct?**
-  _`Manager` has 34 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `EntryStatus` connect `Community 0` to `Community 9`, `Community 5`, `Community 6`, `Community 1`?**
+  _High betweenness centrality (0.073) - this node is a cross-community bridge._
+- **Why does `Volunteer` connect `Community 0` to `Community 1`, `Community 5`, `Community 6`, `Community 9`?**
+  _High betweenness centrality (0.039) - this node is a cross-community bridge._
+- **Why does `Manager` connect `Community 1` to `Community 0`, `Community 5`, `Community 6`?**
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+- **Are the 88 inferred relationships involving `EntryStatus` (e.g. with `Pydantic schemas for the analytics summary endpoint.` and `Return aggregated analytics data scoped to the given month.      Defaults to t`) actually correct?**
+  _`EntryStatus` has 88 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 67 inferred relationships involving `Volunteer` (e.g. with `Manager` and `Pydantic schemas for the Manager entity.`) actually correct?**
+  _`Volunteer` has 67 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 61 inferred relationships involving `LogEntry` (e.g. with `Volunteer` and `Registered volunteer.  Soft-deleted via active=False — never hard-deleted.`) actually correct?**
+  _`LogEntry` has 61 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 51 inferred relationships involving `Manager` (e.g. with `Base` and `Volunteer`) actually correct?**
+  _`Manager` has 51 INFERRED edges - model-reasoned connections that need verification._
