@@ -170,11 +170,13 @@ After logging in, go to **Settings** to set the manager name, phone number, NGO 
 
 Open the Evolution API manager at **http://localhost:8180/manager/**.
 
-1. Log in with your `EVOLUTION_API_KEY`.
+1. Log in with your `AUTHENTICATION_API_KEY`.
 2. Create an instance named `belpro` (must match `EVOLUTION_INSTANCE_NAME` in `.env`).
 3. Scan the QR code with the dedicated WhatsApp phone.
 
 The instance status should change to `open` (connected). The phone must stay connected for the bot to receive messages.
+
+> **Known issue:** The dashboard QR modal does not render the QR image, and `CONFIG_SESSION_PHONE_VERSION` must be set in `docker-compose.yml` or WhatsApp will reject the connection entirely. If the QR does not appear or the instance never connects, see **[EVOLUTION_QR_TROUBLESHOOTING.md](EVOLUTION_QR_TROUBLESHOOTING.md)** for the full diagnosis and all required commands.
 
 ### 7. Configure n8n workflows
 
