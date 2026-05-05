@@ -150,7 +150,7 @@ $('hamburger').addEventListener('click', () => _sidebar.classList.toggle('open')
 document.addEventListener('click', (e) => {
   if (_sidebar.classList.contains('open')
       && !_sidebar.contains(e.target)
-      && e.target !== $('hamburger')) {
+      && !e.target.closest('#hamburger')) {
     _sidebar.classList.remove('open');
   }
 });

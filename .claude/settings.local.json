@@ -28,5 +28,9 @@
       "Bash(wsl --exec bash -c \"docker compose -f /mnt/d/Andrej/vsCode-workspace/BelPro/docker-compose.yml exec api alembic upgrade head 2>&1\")",
       "Bash(wsl --exec bash -c \"docker logs --tail=30 belpro-api-1 2>&1\")"
     ]
-  }
+  },
+  "enabledMcpjsonServers": [
+    "n8n-mcp"
+  ],
+  "enableAllProjectMcpServers": true
 }
