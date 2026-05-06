@@ -442,3 +442,55 @@ async def reject_log_entry(
     await db.refresh(entry)
     await _notify_volunteer_email(db, entry, approved=False)
     return LogEntryResponse.model_validate(entry)
+
+
+@router.post(
+    "/{entry_id}/confirm",
+    response_model=LogEntryResponse,
+    dependencies=[Depends(require_manager)],
+)
+async def confirm_log_entry(
+    entry_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> LogEntryResponse:
+    """Volunteer confirmed the entry. Transitions pending_volunteer → pending_manager."""
+    entry = (
+        await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
+    ).scalar_one_or_none()
+    if entry is None:
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+    if entry.status != EntryStatus.PENDING_VOLUNTEER:
+        raise HTTPException(
+            status_code=http_status.HTTP_409_CONFLICT,
+            detail=f"Vnos ni v statusu pending_volunteer (trenutni status: {entry.status.value}).",
+        )
+    entry.status = EntryStatus.PENDING_MANAGER
+    entry.volunteer_confirmed_at = datetime.now(UTC)
+    await db.commit()
+    await db.refresh(entry)
+    return LogEntryResponse.model_validate(entry)
+
+
+@router.delete(
+    "/{entry_id}",
+    status_code=http_status.HTTP_204_NO_CONTENT,
+    response_model=None,
+    dependencies=[Depends(require_manager)],
+)
+async def delete_log_entry(
+    entry_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> None:
+    """Delete a pending_volunteer entry (cancelled or corrected by volunteer)."""
+    entry = (
+        await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
+    ).scalar_one_or_none()
+    if entry is None:
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+    if entry.status != EntryStatus.PENDING_VOLUNTEER:
+        raise HTTPException(
+            status_code=http_status.HTTP_409_CONFLICT,
+            detail=f"Samo vnosi v statusu pending_volunteer so lahko izbrisani (trenutni status: {entry.status.value}).",
+        )
+    await db.delete(entry)
+    await db.commit()
