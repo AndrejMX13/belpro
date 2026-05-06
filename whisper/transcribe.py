@@ -2,6 +2,7 @@
 
 Exposes a single endpoint:
   POST /transcribe   — body: raw audio bytes (ogg/mp3/wav)
+                            OR JSON {"audio_base64": "<base64-encoded audio>"}
                        response: plain-text transcript (UTF-8)
 
 Configured via environment variables:
@@ -10,6 +11,8 @@ Configured via environment variables:
 """
 from __future__ import annotations
 
+import base64
+import json
 import os
 import tempfile
 from http.server import BaseHTTPRequestHandler, HTTPServer
@@ -35,7 +38,11 @@ class _Handler(BaseHTTPRequestHandler):
             return
 
         length = int(self.headers.get("Content-Length", 0))
-        audio = self.rfile.read(length)
+        raw = self.rfile.read(length)
+        if "application/json" in self.headers.get("Content-Type", ""):
+            audio = base64.b64decode(json.loads(raw)["audio_base64"])
+        else:
+            audio = raw
 
         with tempfile.NamedTemporaryFile(suffix=".ogg", delete=False) as tmp:
             tmp.write(audio)

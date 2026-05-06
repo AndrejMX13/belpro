@@ -85,7 +85,7 @@ services:
       WHISPER_MODEL: ${WHISPER_MODEL:-medium}
       WHISPER_LANGUAGE: ${WHISPER_LANGUAGE:-sl}
     volumes:
-      - whisper_models:/root/.cache/huggingface
+      - whisper_models:/home/appuser/.cache/huggingface
 
   # ─────────────────────────────────────────────────────────────
   # FastAPI — Backend API + PDF generation
@@ -136,7 +136,7 @@ services:
   # API: http://localhost:8180
   # ─────────────────────────────────────────────────────────────
   evolution-api:
-    image: atendai/evolution-api:latest
+    image: evoapicloud/evolution-api:v2.3.7
     restart: unless-stopped
     ports:
       - "8180:8080"
@@ -152,6 +152,9 @@ services:
       CACHE_REDIS_URI: redis://redis:6379/0
       CACHE_REDIS_PREFIX_KEY: evo
       CONFIG_SESSION_PHONE_VERSION: "2.3000.1035194821"
+      WPP_LID_MODE: "false"
+      DATABASE_SAVE_DATA_CONTACTS: "true"
+      DATABASE_SAVE_IS_ON_WHATSAPP: "true"
       LOG_LEVEL: DEBUG
       LOG_BAILEYS: debug
       LOG_COLOR: "false"
