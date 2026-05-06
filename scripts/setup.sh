@@ -169,9 +169,12 @@ if [[ "${SKIP_ENV_GENERATION:-false}" == "false" ]]; then
   set_env "API_SECRET_KEY" "$(gen_hex32)"
   ok "API_SECRET_KEY generiran."
 
-  info "Generiram EVOLUTION_API_KEY..."
-  set_env "EVOLUTION_API_KEY" "$(gen_hex24)"
-  ok "EVOLUTION_API_KEY generiran."
+  info "Generiram AUTHENTICATION_API_KEY (za dostop do Evolution API strežnika)..."
+  set_env "AUTHENTICATION_API_KEY" "$(gen_hex24)"
+  ok "AUTHENTICATION_API_KEY generiran."
+
+  warn "EVOLUTION_API_KEY (ključ instance) je treba vnesti ročno po ustvaritvi instance v Evolution API."
+  warn "Pustite privzeto vrednost — po namestitvi sledite navodilom za WhatsApp nastavitev."
 
 fi  # end SKIP_ENV_GENERATION
 
@@ -228,7 +231,13 @@ echo "      - Uporabniško ime: manager"
 echo "      - Geslo: vrednost MANAGER_PASSWORD iz .env"
 echo "   d) Aktivirajte delovni tok 'BelPro — Mesečna Poročila'"
 echo ""
-warn "WhatsApp (Evolution API) ni konfiguriran — to naredite, ko dobite telefonsko številko."
+warn "WhatsApp (Evolution API) ni konfiguriran — to naredite, ko dobite telefonsko številko:"
+echo "   a) Odprite Evolution API: http://localhost:8180/manager/"
+echo "      Prijavite se z AUTHENTICATION_API_KEY iz .env"
+echo "   b) Ustvarite instanco z imenom 'belpro'"
+echo "   c) Kopirajte ključ instance → vpišite v .env kot EVOLUTION_API_KEY"
+echo "   d) Zaženite: docker compose restart api"
+echo "   e) Skenirajte QR kodo s telefonom (glejte EVOLUTION_QR_TROUBLESHOOTING.md)"
 
 # ── SMTP reminder ──────────────────────────────────────────────────────────
 heading "9. E-poštna integracija"
