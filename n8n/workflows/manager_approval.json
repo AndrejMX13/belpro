@@ -1,0 +1,410 @@
+﻿{
+    "name":  "BelPro — Odobritev Upravljalca",
+    "nodes":  [
+                  {
+                      "id":  "exec_trigger",
+                      "name":  "Execute Workflow Trigger",
+                      "parameters":  {
+                                         "workflowInputs":  {
+                                                                "values":  [
+                                                                               {
+                                                                                   "name":  "entry_id",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "action",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "manager_phone",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "manager_remoteJid",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "volunteer_name",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "volunteer_remoteJid",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "entry_date",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "hours",
+                                                                                   "type":  "number"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "activity_description",
+                                                                                   "type":  "string"
+                                                                               },
+                                                                               {
+                                                                                   "name":  "location",
+                                                                                   "type":  "string"
+                                                                               }
+                                                                           ]
+                                                            }
+                                     },
+                      "type":  "n8n-nodes-base.executeWorkflowTrigger",
+                      "position":  [
+                                       240,
+                                       300
+                                   ],
+                      "typeVersion":  1.1
+                  },
+                  {
+                      "id":  "manual_trigger",
+                      "name":  "Manual Trigger",
+                      "parameters":  {
+
+                                     },
+                      "type":  "n8n-nodes-base.manualTrigger",
+                      "position":  [
+                                       240,
+                                       500
+                                   ],
+                      "typeVersion":  1
+                  },
+                  {
+                      "id":  "code_parse_action",
+                      "name":  "Code: Parse Action",
+                      "parameters":  {
+                                         "jsCode":  "const data = $input.first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || \u0027\u0027;\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || \u0027\u0027,\n  manager_remoteJid: data.manager_remoteJid || \u0027\u0027,\n  volunteer_name: data.volunteer_name || \u0027\u0027,\n  volunteer_remoteJid: data.volunteer_remoteJid || \u0027\u0027,\n  entry_date: data.entry_date || \u0027\u0027,\n  hours: data.hours || 0,\n  activity_description: data.activity_description || \u0027\u0027,\n  location: data.location || \u0027\u0027\n};\n\nif (!entry_id || !action) {\n  throw new Error(\u0027Missing required fields: entry_id and action\u0027);\n}\n\nreturn [{json: payload}];"
+                                     },
+                      "type":  "n8n-nodes-base.code",
+                      "position":  [
+                                       500,
+                                       400
+                                   ],
+                      "typeVersion":  2
+                  },
+                  {
+                      "id":  "switch_action",
+                      "name":  "Switch: Action",
+                      "parameters":  {
+                                         "rules":  {
+                                                       "values":  [
+                                                                      {
+                                                                          "outputKey":  "Odobri",
+                                                                          "renameOutput":  true,
+                                                                          "conditions":  {
+                                                                                             "conditions":  [
+                                                                                                                {
+                                                                                                                    "operator":  {
+                                                                                                                                     "operation":  "equals",
+                                                                                                                                     "name":  "filter.operator.equals",
+                                                                                                                                     "type":  "string"
+                                                                                                                                 },
+                                                                                                                    "rightValue":  "odobri",
+                                                                                                                    "id":  "r1c1",
+                                                                                                                    "leftValue":  "={{ $json.action }}"
+                                                                                                                }
+                                                                                                            ],
+                                                                                             "options":  {
+                                                                                                             "typeValidation":  "strict",
+                                                                                                             "leftValue":  "",
+                                                                                                             "caseSensitive":  true
+                                                                                                         },
+                                                                                             "combinator":  "and"
+                                                                                         }
+                                                                      },
+                                                                      {
+                                                                          "outputKey":  "Zavrni",
+                                                                          "renameOutput":  true,
+                                                                          "conditions":  {
+                                                                                             "conditions":  [
+                                                                                                                {
+                                                                                                                    "operator":  {
+                                                                                                                                     "operation":  "equals",
+                                                                                                                                     "name":  "filter.operator.equals",
+                                                                                                                                     "type":  "string"
+                                                                                                                                 },
+                                                                                                                    "rightValue":  "zavrni",
+                                                                                                                    "id":  "r2c1",
+                                                                                                                    "leftValue":  "={{ $json.action }}"
+                                                                                                                }
+                                                                                                            ],
+                                                                                             "options":  {
+                                                                                                             "typeValidation":  "strict",
+                                                                                                             "leftValue":  "",
+                                                                                                             "caseSensitive":  true
+                                                                                                         },
+                                                                                             "combinator":  "and"
+                                                                                         }
+                                                                      }
+                                                                  ]
+                                                   },
+                                         "options":  {
+
+                                                     },
+                                         "mode":  "rules"
+                                     },
+                      "type":  "n8n-nodes-base.switch",
+                      "position":  [
+                                       760,
+                                       400
+                                   ],
+                      "typeVersion":  3
+                  },
+                  {
+                      "id":  "http_approve",
+                      "name":  "HTTP: PATCH /approve",
+                      "parameters":  {
+                                         "authentication":  "genericCredentialType",
+                                         "sendBody":  false,
+                                         "genericAuthType":  "httpBasicAuth",
+                                         "method":  "PATCH",
+                                         "options":  {
+
+                                                     },
+                                         "url":  "={{ \u0027http://api:8000/api/log-entries/\u0027 + $json.entry_id + \u0027/approve\u0027 }}"
+                                     },
+                      "credentials":  {
+                                          "httpBasicAuth":  {
+                                                                "id":  "UqZlwzClZfiYKanN",
+                                                                "name":  "BelPro API (Basic Auth)"
+                                                            }
+                                      },
+                      "type":  "n8n-nodes-base.httpRequest",
+                      "position":  [
+                                       1020,
+                                       240
+                                   ],
+                      "typeVersion":  4
+                  },
+                  {
+                      "id":  "http_reject",
+                      "name":  "HTTP: PATCH /reject",
+                      "parameters":  {
+                                         "authentication":  "genericCredentialType",
+                                         "sendBody":  false,
+                                         "genericAuthType":  "httpBasicAuth",
+                                         "method":  "PATCH",
+                                         "options":  {
+
+                                                     },
+                                         "url":  "={{ \u0027http://api:8000/api/log-entries/\u0027 + $json.entry_id + \u0027/reject\u0027 }}"
+                                     },
+                      "credentials":  {
+                                          "httpBasicAuth":  {
+                                                                "id":  "UqZlwzClZfiYKanN",
+                                                                "name":  "BelPro API (Basic Auth)"
+                                                            }
+                                      },
+                      "type":  "n8n-nodes-base.httpRequest",
+                      "position":  [
+                                       1020,
+                                       560
+                                   ],
+                      "typeVersion":  4
+                  },
+                  {
+                      "id":  "code_vol_msg",
+                      "name":  "Code: Build Volunteer Msg",
+                      "parameters":  {
+                                         "jsCode":  "// $input is the API response from approve/reject — use payload for action info\nconst payload = $(\u0027Code: Parse Action\u0027).first().json;\nconst isApproved = payload.action === \u0027odobri\u0027;\n\nlet volMsg;\nif (isApproved) {\n  volMsg = \\Vaš vnos z dne ${payload.entry_date} je bil odobren. ✅\n📝 ${payload.activity_description}, ${payload.hours} ur\\;\n} else {\n  volMsg = \\Vaš vnos z dne ${payload.entry_date} je bil zavrnjen. ❌\nUpravljalec vas bo kontaktiral za podrobnosti.\\;\n}\n\nreturn [{\n  json: {\n    ...payload,\n    action: isApproved ? \u0027approved\u0027 : \u0027rejected\u0027,\n    volMsg,\n    volunteerJid: payload.volunteer_remoteJid\n  }\n}];"
+                                     },
+                      "type":  "n8n-nodes-base.code",
+                      "position":  [
+                                       1280,
+                                       400
+                                   ],
+                      "typeVersion":  2
+                  },
+                  {
+                      "id":  "http_wa_volunteer",
+                      "name":  "HTTP: WA Notify Volunteer",
+                      "parameters":  {
+                                         "bodyParameters":  {
+                                                                "parameters":  [
+                                                                                   {
+                                                                                       "value":  "={{ $json.volunteerJid }}",
+                                                                                       "name":  "number"
+                                                                                   },
+                                                                                   {
+                                                                                       "value":  "={{ $json.volMsg }}",
+                                                                                       "name":  "text"
+                                                                                   }
+                                                                               ]
+                                                            },
+                                         "method":  "POST",
+                                         "authentication":  "genericCredentialType",
+                                         "contentType":  "json",
+                                         "url":  "http://evolution-api:8080/message/sendText/belpro",
+                                         "options":  {
+
+                                                     },
+                                         "sendBody":  true,
+                                         "genericAuthType":  "httpHeaderAuth"
+                                     },
+                      "credentials":  {
+                                          "httpHeaderAuth":  {
+                                                                 "id":  "QXGVac2NwnJcQf9V",
+                                                                 "name":  "BelPro Evolution API"
+                                                             }
+                                      },
+                      "type":  "n8n-nodes-base.httpRequest",
+                      "position":  [
+                                       1540,
+                                       400
+                                   ],
+                      "typeVersion":  4
+                  },
+                  {
+                      "id":  "code_mgr_confirm",
+                      "name":  "Code: Build Manager Confirm",
+                      "parameters":  {
+                                         "jsCode":  "const payload = $(\u0027Code: Parse Action\u0027).first().json;\nconst actionLabel = payload.action === \u0027odobri\u0027 ? \u0027odobren\u0027 : \u0027zavrnjen\u0027;\nconst mgrMsg = \\Vnos za ${payload.volunteer_name} je bil ${actionLabel}.\\;\n\nreturn [{\n  json: {\n    managerJid: payload.manager_remoteJid,\n    mgrMsg\n  }\n}];"
+                                     },
+                      "type":  "n8n-nodes-base.code",
+                      "position":  [
+                                       1800,
+                                       400
+                                   ],
+                      "typeVersion":  2
+                  },
+                  {
+                      "id":  "http_wa_manager",
+                      "name":  "HTTP: WA Confirm to Manager",
+                      "parameters":  {
+                                         "bodyParameters":  {
+                                                                "parameters":  [
+                                                                                   {
+                                                                                       "value":  "={{ $json.managerJid }}",
+                                                                                       "name":  "number"
+                                                                                   },
+                                                                                   {
+                                                                                       "value":  "={{ $json.mgrMsg }}",
+                                                                                       "name":  "text"
+                                                                                   }
+                                                                               ]
+                                                            },
+                                         "method":  "POST",
+                                         "authentication":  "genericCredentialType",
+                                         "contentType":  "json",
+                                         "url":  "http://evolution-api:8080/message/sendText/belpro",
+                                         "options":  {
+
+                                                     },
+                                         "sendBody":  true,
+                                         "genericAuthType":  "httpHeaderAuth"
+                                     },
+                      "credentials":  {
+                                          "httpHeaderAuth":  {
+                                                                 "id":  "QXGVac2NwnJcQf9V",
+                                                                 "name":  "BelPro Evolution API"
+                                                             }
+                                      },
+                      "type":  "n8n-nodes-base.httpRequest",
+                      "position":  [
+                                       2060,
+                                       400
+                                   ],
+                      "typeVersion":  4
+                  }
+              ],
+    "connections":  {
+                        "Switch: Action":  {
+                                               "main":  [
+                                                            [
+                                                                {
+                                                                    "node":  "HTTP: PATCH /approve",
+                                                                    "type":  "main",
+                                                                    "index":  0
+                                                                }
+                                                            ],
+                                                            [
+                                                                {
+                                                                    "node":  "HTTP: PATCH /reject",
+                                                                    "type":  "main",
+                                                                    "index":  0
+                                                                }
+                                                            ]
+                                                        ]
+                                           },
+                        "HTTP: PATCH /reject":  {
+                                                    "main":  [
+                                                                 {
+                                                                     "node":  "Code: Build Volunteer Msg",
+                                                                     "type":  "main",
+                                                                     "index":  0
+                                                                 }
+                                                             ]
+                                                },
+                        "HTTP: PATCH /approve":  {
+                                                     "main":  [
+                                                                  {
+                                                                      "node":  "Code: Build Volunteer Msg",
+                                                                      "type":  "main",
+                                                                      "index":  0
+                                                                  }
+                                                              ]
+                                                 },
+                        "HTTP: WA Notify Volunteer":  {
+                                                          "main":  [
+                                                                       {
+                                                                           "node":  "Code: Build Manager Confirm",
+                                                                           "type":  "main",
+                                                                           "index":  0
+                                                                       }
+                                                                   ]
+                                                      },
+                        "Code: Parse Action":  {
+                                                   "main":  [
+                                                                {
+                                                                    "node":  "Switch: Action",
+                                                                    "type":  "main",
+                                                                    "index":  0
+                                                                }
+                                                            ]
+                                               },
+                        "Code: Build Manager Confirm":  {
+                                                            "main":  [
+                                                                         {
+                                                                             "node":  "HTTP: WA Confirm to Manager",
+                                                                             "type":  "main",
+                                                                             "index":  0
+                                                                         }
+                                                                     ]
+                                                        },
+                        "Manual Trigger":  {
+                                               "main":  [
+                                                            {
+                                                                "node":  "Code: Parse Action",
+                                                                "type":  "main",
+                                                                "index":  0
+                                                            }
+                                                        ]
+                                           },
+                        "Code: Build Volunteer Msg":  {
+                                                          "main":  [
+                                                                       {
+                                                                           "node":  "HTTP: WA Notify Volunteer",
+                                                                           "type":  "main",
+                                                                           "index":  0
+                                                                       }
+                                                                   ]
+                                                      },
+                        "Execute Workflow Trigger":  {
+                                                         "main":  [
+                                                                      {
+                                                                          "node":  "Code: Parse Action",
+                                                                          "type":  "main",
+                                                                          "index":  0
+                                                                      }
+                                                                  ]
+                                                     }
+                    },
+    "settings":  {
+                     "saveManualExecutions":  true,
+                     "executionOrder":  "v1",
+                     "saveDataErrorExecution":  "all",
+                     "saveDataSuccessExecution":  "all",
+                     "saveExecutionProgress":  true
+                 }
+}
