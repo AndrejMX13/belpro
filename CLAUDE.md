@@ -186,8 +186,7 @@ docker compose logs -f
 
 ## What NOT to do
 
-- **Do not use `glob` or `grep` for initial discovery or architectural mapping.** This is strictly forbidden due to token budget constraints. Use the Graphify index instead.
-- **Fallback only:** Use `glob` or `grep` ONLY for non-code assets (e.g., searching .csv, .env, or raw logs) or if the Graphify index fails to locate a specific text string.
+- **Don't start with `glob` or `grep` for discovery.** Check `graphify-out/wiki/index.md` first to identify relevant communities and files. Once you know the target area, use Serena `find_symbol` for code or `grep` for non-code assets (logs, config, raw text). Plain `grep` is fine for targeted searches — just don't use it as a substitute for orientation.
 - Do not build multi-tenant features. Out of scope for v1.
 - Do not add a frontend JavaScript framework (React, Vue, etc.) — plain JS only.
 - Do not store photos in cloud storage. Local filesystem only.
@@ -198,11 +197,17 @@ docker compose logs -f
 
 ## graphify & serena
 
-This project uses a Graphify knowledge graph (`graphify-out/`) for mapping and Serena for semantic symbol navigation.
+This project uses a Graphify knowledge graph (`graphify-out/`) for orientation and Serena for precise symbol navigation. Think of them as complementary, not competing:
 
-Rules:
-- **Primary Discovery:** You MUST use the Graphify index to locate files and understand dependencies before calling other search tools.
-- **Strategic Orientation:** Before answering architecture or codebase questions, read `graphify-out/GRAPH_REPORT.md` to identify "god nodes" and community structures.
-- **Navigation:** If `graphify-out/wiki/index.md` exists, navigate it to understand the codebase instead of reading raw files.
-- **Precision with Serena:** Once the target modules are identified via Graphify, use Serena’s semantic tools (e.g., `find_symbol`) for precise symbol-level execution and cross-referencing.
-- **Maintenance:** After modifying code files, run `graphify update .` to keep the graph current (this is AST-only and has no API cost).
+| Tool | Best for | Not for |
+|------|----------|---------|
+| **Graphify wiki** (`graphify-out/wiki/index.md`) | "Which parts of the codebase handle X?" — identifies relevant communities and files in seconds | Understanding logic, reading actual code |
+| **Graphify report** (`graphify-out/GRAPH_REPORT.md`) | God nodes, surprising connections, architectural overview | Finding specific function definitions |
+| **Serena** (`find_symbol`, `find_referencing_symbols`) | "Where is X defined?", "Who calls Y?", precise symbol navigation | High-level orientation, architectural mapping |
+
+### Workflow
+
+1. **Orient** — If `graphify-out/wiki/index.md` exists, read it first to identify which communities are relevant to your question. This tells you *where* to look, not what the code does.
+2. **Locate** — Use Serena `find_symbol` to find specific functions, classes, or methods within the identified files.
+3. **Read** — Read the actual source files to understand logic. The graph tells you which files matter; it does not replace reading them.
+4. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost).
