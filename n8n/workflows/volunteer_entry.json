@@ -499,7 +499,7 @@
         80
       ],
       "parameters": {
-        "jsCode": "const entryResp = $input.first().json;\nconst up = $('Code: Pripravi Prostovoljca').first().json;\nconst phone = up.phone;\nconst remoteJid = up.remoteJid;\nconst entry_id = entryResp.id;\nconst sd = $getWorkflowStaticData('global');\nsd[phone] = {\n  entry_id,\n  entry_date: up.entry_date,\n  hours: up.hours,\n  activity_description: up.activity_description,\n  location: up.location,\n  volunteer_name: up.volunteer_name,\n  remoteJid\n};\nconst d = up.entry_date ? new Date(up.entry_date) : new Date();\nconst dateStr = d.toLocaleDateString('sl-SI', {day:'2-digit',month:'2-digit',year:'numeric'});\nconst locStr = up.location ? ` v ${up.location}` : '';\nconst msg = `Zabeležili smo vaš vnos:\\n📅 ${dateStr}\\n⏱ ${up.hours} ur\\n📍${locStr}\\n📝 ${up.activity_description}\\n\\nAli je vse pravilno?\\n1 - Potrdi\\n2 - Popravi\\n3 - Prekliči`;\nreturn [{json: {phone, remoteJid, text: msg}}];"
+        "jsCode": "const entryResp = $input.first().json;\nconst up = $('Code: Pripravi Prostovoljca').first().json;\nconst phone = up.phone;\nconst remoteJid = up.remoteJid;\nconst entry_id = entryResp.id;\nconst sd = $getWorkflowStaticData('global');\nsd[phone] = {\n  entry_id,\n  volunteer_id: up.volunteer_id,\n  entry_date: up.entry_date,\n  hours: up.hours,\n  activity_description: up.activity_description,\n  location: up.location,\n  volunteer_name: up.volunteer_name,\n  remoteJid\n};\nconst d = up.entry_date ? new Date(up.entry_date) : new Date();\nconst dateStr = d.toLocaleDateString('sl-SI', {day:'2-digit',month:'2-digit',year:'numeric'});\nconst locStr = up.location ? ` v ${up.location}` : '';\nconst msg = `Zabeležili smo vaš vnos:\\n📅 ${dateStr}\\n⏱ ${up.hours} ur\\n📍${locStr}\\n📝 ${up.activity_description}\\n\\nAli je vse pravilno?\\n1 - Potrdi\\n2 - Popravi\\n3 - Prekliči`;\nreturn [{json: {phone, remoteJid, text: msg}}];"
       }
     },
     {
@@ -906,7 +906,7 @@
         300
       ],
       "parameters": {
-        "jsCode": "const inp = $input.first().json;\nconst sd = $getWorkflowStaticData(\"global\");\nconst state = sd[inp.phone] || {};\nif (state.mode === \"editing\") {\n  return [{json: {...inp, mode: \"editing\", entry_id: state.entry_id,\n    volunteer_name: state.volunteer_name, old_remoteJid: state.remoteJid}}];\n}\nreturn [{json: {...inp, mode: \"new\"}}];"
+        "jsCode": "const inp = $input.first().json;\nconst sd = $getWorkflowStaticData(\"global\");\nconst state = sd[inp.phone] || {};\nif (state.mode === \"editing\") {\n  return [{json: {...inp, mode: \"editing\", entry_id: state.entry_id,\n    volunteer_id: state.volunteer_id, volunteer_name: state.volunteer_name, old_remoteJid: state.remoteJid}}];\n}\nreturn [{json: {...inp, mode: \"new\"}}];"
       }
     },
     {
@@ -985,7 +985,7 @@
         300
       ],
       "parameters": {
-        "jsCode": "function parseHours(text) {\n  const numM = text.match(/(\\d+(?:[.,]\\d+)?)\\s*(?:uro|uri|ure|ur\\b)/i);\n  if (numM) return parseFloat(numM[1].replace(\",\", \".\"));\n  const words = {\n    \"ena\": 1, \"eno\": 1, \"eni\": 1, \"dve\": 2, \"dva\": 2, \"dveh\": 2,\n    \"tri\": 3, \"treh\": 3, \"štiri\": 4, \"štirih\": 4, \"pet\": 5, \"petih\": 5,\n    \"šest\": 6, \"šestih\": 6, \"sedem\": 7, \"sedmih\": 7, \"osem\": 8, \"osmih\": 8,\n    \"devet\": 9, \"devetih\": 9, \"deset\": 10, \"desetih\": 10,\n    \"enajst\": 11, \"enajstih\": 11, \"dvanajst\": 12, \"dvanajstih\": 12,\n    \"trinajst\": 13, \"štirinajst\": 14, \"petnajst\": 15, \"šestnajst\": 16,\n    \"sedemnajst\": 17, \"osemnajst\": 18, \"devetnajst\": 19, \"dvajset\": 20,\n    \"enaindvajset\": 21, \"dvaindvajset\": 22, \"triindvajset\": 23,\n  };\n  const tl = text.toLowerCase();\n  const wordM = tl.match(/(\\w+)\\s*ur/i);\n  if (wordM && words[wordM[1]] !== undefined) return words[wordM[1]];\n  return 1.0;\n}\nfunction extractLocation(text) {\n  const locKraj = text.match(/\\bkraj\\s*[,;:]?\\s*([A-Za-zŠŽČĆĐšžčćđ][^\\.,!?\\n]{0,50})/i);\n  if (locKraj) return locKraj[1].trim().replace(/\\s*(?:uro|uri|ure|ur\\b).*/i, \"\").trim();\n  const locM = text.match(/\\b(?:v|pri|na)\\s+([A-ZŠŽČĆĐ][a-zšžčćđ]+(?:\\s+[A-ZŠŽČĆĐ][a-zšžčćđ]+)*)/);\n  return locM ? locM[1] : null;\n}\nfunction extractDate(text) {\n  const today = new Date();\n  let entryDate = new Date(today);\n  const tl = text.toLowerCase();\n  if (tl.includes(\"včeraj\") || tl.includes(\"vceraj\")) {\n    entryDate.setDate(today.getDate() - 1);\n  } else {\n    const days = [{n:\"ponedeljek\",d:1},{n:\"torku\",d:2},{n:\"torek\",d:2},{n:\"sredo\",d:3},{n:\"sredi\",d:3},{n:\"četrtek\",d:4},{n:\"cetrtek\",d:4},{n:\"petek\",d:5},{n:\"soboto\",d:6},{n:\"nedeljo\",d:0}];\n    for (const {n, d} of days) {\n      if (tl.includes(n)) { const diff = ((today.getDay()-d)+7)%7||7; entryDate=new Date(today); entryDate.setDate(today.getDate()-diff); break; }\n    }\n    const dm = text.match(/\\b(\\d{1,2})[.\\s]+(\\d{1,2})\\. /);\n    if (dm) entryDate = new Date(today.getFullYear(), parseInt(dm[2])-1, parseInt(dm[1]));\n  }\n  return entryDate.toISOString().split(\"T\")[0];\n}\nconst inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.old_remoteJid || inp.remoteJid;\nconst text = inp.text || \"\";\nconst hours = parseHours(text);\nconst location = extractLocation(text);\nconst entry_date = extractDate(text);\nlet activity = text.replace(/(\\d+(?:[.,]\\d+)?)\\s*(?:uro|uri|ure|ur\\b)/gi,\"\")\n  .replace(/\\b(danes|včeraj|vceraj|ponedeljek|torek|torku|sredo|sredi|četrtek|cetrtek|petek|soboto|nedeljo)\\b/gi,\"\")\n  .replace(/\\s{2,}/g,\" \").trim() || text.trim();\nreturn [{json: {phone, remoteJid, entry_id: inp.entry_id, entry_date, hours, activity_description: activity, location, volunteer_name: inp.volunteer_name, raw_transcript: null}}];"
+        "jsCode": "function parseHours(text) {\n  const numM = text.match(/(\\d+(?:[.,]\\d+)?)\\s*(?:uro|uri|ure|ur\\b)/i);\n  if (numM) return parseFloat(numM[1].replace(\",\", \".\"));\n  const words = {\n    \"ena\": 1, \"eno\": 1, \"eni\": 1, \"dve\": 2, \"dva\": 2, \"dveh\": 2,\n    \"tri\": 3, \"treh\": 3, \"štiri\": 4, \"štirih\": 4, \"pet\": 5, \"petih\": 5,\n    \"šest\": 6, \"šestih\": 6, \"sedem\": 7, \"sedmih\": 7, \"osem\": 8, \"osmih\": 8,\n    \"devet\": 9, \"devetih\": 9, \"deset\": 10, \"desetih\": 10,\n    \"enajst\": 11, \"enajstih\": 11, \"dvanajst\": 12, \"dvanajstih\": 12,\n    \"trinajst\": 13, \"štirinajst\": 14, \"petnajst\": 15, \"šestnajst\": 16,\n    \"sedemnajst\": 17, \"osemnajst\": 18, \"devetnajst\": 19, \"dvajset\": 20,\n    \"enaindvajset\": 21, \"dvaindvajset\": 22, \"triindvajset\": 23,\n  };\n  const tl = text.toLowerCase();\n  const wordM = tl.match(/(\\w+)\\s*ur/i);\n  if (wordM && words[wordM[1]] !== undefined) return words[wordM[1]];\n  return 1.0;\n}\nfunction extractLocation(text) {\n  const locKraj = text.match(/\\bkraj\\s*[,;:]?\\s*([A-Za-zŠŽČĆĐšžčćđ][^\\.,!?\\n]{0,50})/i);\n  if (locKraj) return locKraj[1].trim().replace(/\\s*(?:uro|uri|ure|ur\\b).*/i, \"\").trim();\n  const locM = text.match(/\\b(?:v|pri|na)\\s+([A-ZŠŽČĆĐ][a-zšžčćđ]+(?:\\s+[A-ZŠŽČĆĐ][a-zšžčćđ]+)*)/);\n  return locM ? locM[1] : null;\n}\nfunction extractDate(text) {\n  const today = new Date();\n  let entryDate = new Date(today);\n  const tl = text.toLowerCase();\n  if (tl.includes(\"včeraj\") || tl.includes(\"vceraj\")) {\n    entryDate.setDate(today.getDate() - 1);\n  } else {\n    const days = [{n:\"ponedeljek\",d:1},{n:\"torku\",d:2},{n:\"torek\",d:2},{n:\"sredo\",d:3},{n:\"sredi\",d:3},{n:\"četrtek\",d:4},{n:\"cetrtek\",d:4},{n:\"petek\",d:5},{n:\"soboto\",d:6},{n:\"nedeljo\",d:0}];\n    for (const {n, d} of days) {\n      if (tl.includes(n)) { const diff = ((today.getDay()-d)+7)%7||7; entryDate=new Date(today); entryDate.setDate(today.getDate()-diff); break; }\n    }\n    const dm = text.match(/\\b(\\d{1,2})[.\\s]+(\\d{1,2})\\. /);\n    if (dm) entryDate = new Date(today.getFullYear(), parseInt(dm[2])-1, parseInt(dm[1]));\n  }\n  return entryDate.toISOString().split(\"T\")[0];\n}\nconst inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.old_remoteJid || inp.remoteJid;\nconst text = inp.text || \"\";\nconst hours = parseHours(text);\nconst location = extractLocation(text);\nconst entry_date = extractDate(text);\nlet activity = text.replace(/(\\d+(?:[.,]\\d+)?)\\s*(?:uro|uri|ure|ur\\b)/gi,\"\")\n  .replace(/\\b(danes|včeraj|vceraj|ponedeljek|torek|torku|sredo|sredi|četrtek|cetrtek|petek|soboto|nedeljo)\\b/gi,\"\")\n  .replace(/\\s{2,}/g,\" \").trim() || text.trim();\nreturn [{json: {phone, remoteJid, entry_id: inp.entry_id, volunteer_id: inp.volunteer_id, entry_date, hours, activity_description: activity, location, volunteer_name: inp.volunteer_name, raw_transcript: null}}];"
       }
     },
     {
@@ -1082,27 +1082,27 @@
           "parameters": [
             {
               "name": "volunteer_id",
-              "value": "={{ $json.volunteer_id }}"
+              "value": "={{ $(\"Code: Procesiraj Popravek\").first().json.volunteer_id }}"
             },
             {
               "name": "entry_date",
-              "value": "={{ $json.entry_date }}"
+              "value": "={{ $(\"Code: Procesiraj Popravek\").first().json.entry_date }}"
             },
             {
               "name": "activity_description",
-              "value": "={{ $json.activity_description }}"
+              "value": "={{ $(\"Code: Procesiraj Popravek\").first().json.activity_description }}"
             },
             {
               "name": "hours",
-              "value": "={{ $json.hours }}"
+              "value": "={{ $(\"Code: Procesiraj Popravek\").first().json.hours }}"
             },
             {
               "name": "location",
-              "value": "={{ $json.location }}"
+              "value": "={{ $(\"Code: Procesiraj Popravek\").first().json.location }}"
             },
             {
               "name": "raw_transcript",
-              "value": "={{ $json.raw_transcript }}"
+              "value": "={{ $(\"Code: Procesiraj Popravek\").first().json.raw_transcript }}"
             },
             {
               "name": "status",
