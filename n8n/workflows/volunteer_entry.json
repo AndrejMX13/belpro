@@ -614,7 +614,7 @@
         440
       ],
       "parameters": {
-        "jsCode": "const st = $input.first().json;\nconst phone = st.phone;\nconst remoteJid = st.remoteJid;\nconst sd = $getWorkflowStaticData('global');\ndelete sd[phone];\nreturn [{json: {\n  phone,\n  remoteJid,\n  entry_date: st.entry_date,\n  hours: st.hours,\n  activity_description: st.activity_description,\n  location: st.location,\n  volunteer_name: st.volunteer_name\n}}];"
+        "jsCode": "const st = $(\"Nalozi Stanje\").first().json;\nconst phone = st.phone;\nconst remoteJid = st.remoteJid;\nconst sd = $getWorkflowStaticData('global');\ndelete sd[phone];\nreturn [{json: {\n  phone,\n  remoteJid,\n  entry_date: st.entry_date,\n  hours: st.hours,\n  activity_description: st.activity_description,\n  location: st.location,\n  volunteer_name: st.volunteer_name\n}}];"
       }
     },
     {
