@@ -12,7 +12,7 @@ RUN pip install --no-cache-dir \
 
 COPY transcribe.py .
 
-RUN useradd -m appuser && chown -R appuser /app
+RUN useradd -m -u 1000 appuser && chown -R appuser /app
 USER appuser
 
 EXPOSE 8001

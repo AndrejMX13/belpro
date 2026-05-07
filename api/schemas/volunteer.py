@@ -6,9 +6,17 @@ from datetime import date, datetime
 from decimal import Decimal
 from typing import Annotated
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
 
 from models.log_entry import EntryStatus
+
+
+def _normalise_phone(raw: str) -> str:
+    """Strip whitespace and leading ``+``, return bare E.164 digits."""
+    cleaned = raw.replace(" ", "").replace("\t", "").replace("-", "").replace(".", "")
+    if cleaned.startswith("+"):
+        cleaned = cleaned[1:]
+    return cleaned
 
 
 class LogEntryBrief(BaseModel):
@@ -51,6 +59,11 @@ class VolunteerCreate(BaseModel):
     email: EmailStr | None = None
     report_whatsapp: bool = False
     report_email: bool = True
+
+    @field_validator("phone", mode="after")
+    @classmethod
+    def _normalise_phone_field(cls, v: str) -> str:
+        return _normalise_phone(v)
 
 
 class VolunteerResponse(BaseModel):
@@ -96,5 +109,13 @@ class VolunteerListResponse(BaseModel):
 class VolunteerUpdate(BaseModel):
     """Fields that can be updated on an existing volunteer."""
 
+    phone: Annotated[str, Field(min_length=1, max_length=30)] | None = None
     report_whatsapp: bool | None = None
     report_email: bool | None = None
+
+    @field_validator("phone", mode="after")
+    @classmethod
+    def _normalise_phone_field(cls, v: str | None) -> str | None:
+        if v is None:
+            return None
+        return _normalise_phone(v)
