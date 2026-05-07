@@ -56,6 +56,7 @@ belpro/
 - Every function/endpoint must have a docstring.
 - Keep functions small and single-purpose.
 - No premature optimisation.
+- **ASCII-only identifiers.** Slovenian characters (č, š, ž, ć, đ) must never appear in variable names, function names, node names, file names, or any code identifiers. They are allowed exclusively in user-facing text (messages, labels, templates, PDF content). Use `c`, `s`, `z`, `c`, `d` instead.
 
 ### Python
 - Type hints everywhere.

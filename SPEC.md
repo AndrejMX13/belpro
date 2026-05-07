@@ -196,7 +196,11 @@ Manager rejects  → entry status `rejected`, volunteer notified with
 - Manager decides whether to approve without photo.
 - No automated re-prompting for missing photos.
 
-### 4.3 Volunteer language
+### 4.3 Sent-message visibility on linked phone
+
+All messages the bot sends via Evolution API are sent *from* the instance's WhatsApp number and therefore appear in that number's chat history on any linked phone. This is WhatsApp protocol behavior — unavoidable when using a phone-linked API. The instance should use a dedicated phone number, not the manager's personal phone.
+
+### 4.4 Volunteer language
 - Slovenian only (all bot messages in Slovenian).
 - Whisper configured for `sl` (Slovenian) language hint, with fallback to auto-detect.
 - Dialect normalisation handled by the n8n AI node (Claude / OpenAI call) that cleans the transcript.

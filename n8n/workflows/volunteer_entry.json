@@ -153,7 +153,7 @@
     },
     {
       "id": "loadstate11",
-      "name": "Naloži Stanje",
+      "name": "Nalozi Stanje",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
@@ -761,42 +761,6 @@
       }
     },
     {
-      "id": "http_brisi_popravi",
-      "name": "HTTP: Briši Popravi",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        1800,
-        560
-      ],
-      "parameters": {
-        "method": "DELETE",
-        "url": "=http://api:8000/api/log-entries/{{ $json.entry_id }}",
-        "authentication": "genericCredentialType",
-        "genericAuthType": "httpBasicAuth",
-        "options": {}
-      },
-      "credentials": {
-        "httpBasicAuth": {
-          "id": "UqZlwzClZfiYKanN",
-          "name": "BelPro API (Basic Auth)"
-        }
-      }
-    },
-    {
-      "id": "code_clear_popravi",
-      "name": "Code: Clear State Popravi",
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        2060,
-        560
-      ],
-      "parameters": {
-        "jsCode": "const st = $input.first().json;\nconst phone = st.phone;\nconst remoteJid = st.remoteJid;\nconst sd = $getWorkflowStaticData('global');\ndelete sd[phone];\nreturn [{json: {phone, remoteJid}}];"
-      }
-    },
-    {
       "id": "http_wa_popravi",
       "name": "HTTP: WA Popravi",
       "type": "n8n-nodes-base.httpRequest",
@@ -820,7 +784,7 @@
             },
             {
               "name": "text",
-              "value": "Vnos je bil zavržen. Pošljite glasovno sporočilo ali besedilo s popravkom."
+              "value": "={{ $json.text }}"
             }
           ]
         },
@@ -835,7 +799,7 @@
     },
     {
       "id": "http_brisi_preklic",
-      "name": "HTTP: Briši Prekliči",
+      "name": "HTTP: Brisi Preklici",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
@@ -858,7 +822,7 @@
     },
     {
       "id": "code_clear_preklic",
-      "name": "Code: Clear State Prekliči",
+      "name": "Code: Clear State Preklici",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
@@ -866,12 +830,12 @@
         700
       ],
       "parameters": {
-        "jsCode": "const st = $input.first().json;\nconst phone = st.phone;\nconst remoteJid = st.remoteJid;\nconst sd = $getWorkflowStaticData('global');\ndelete sd[phone];\nreturn [{json: {phone, remoteJid}}];"
+        "jsCode": "const st = $(\"Nalozi Stanje\").first().json;\nconst phone = st.phone;\nconst remoteJid = st.remoteJid;\nconst sd = $getWorkflowStaticData(\"global\");\ndelete sd[phone];\nreturn [{json: {phone, remoteJid}}];"
       }
     },
     {
       "id": "http_wa_preklic",
-      "name": "HTTP: WA Prekliči",
+      "name": "HTTP: WA Preklici",
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
@@ -918,6 +882,241 @@
       "parameters": {
         "jsCode": "const d = $input.first().json;\nreturn [{ json: { mediaBody: JSON.stringify({ message: { key: d.messageKey, message: d.messageData } }) } }];"
       }
+    },
+    {
+      "id": "code_pripravi_popravek",
+      "name": "Code: Pripravi Popravek",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1800,
+        560
+      ],
+      "parameters": {
+        "jsCode": "const st = $(\"Nalozi Stanje\").first().json;\nconst phone = st.phone;\nconst remoteJid = st.remoteJid;\nconst sd = $getWorkflowStaticData(\"global\");\nconst state = sd[phone] || {};\nstate.mode = \"editing\";\nsd[phone] = state;\nconst d = st.entry_date ? new Date(st.entry_date) : new Date();\nconst dateStr = d.toLocaleDateString(\"sl-SI\", {day:\"2-digit\",month:\"2-digit\",year:\"numeric\"});\nconst locStr = st.location ? \" v \" + st.location : \"\";\nconst msg = \"Popravite vaš vnos:\\n📅 \" + dateStr + \"\\n⏱ \" + st.hours + \" ur\\n📍\" + locStr + \"\\n📝 \" + st.activity_description + \"\\n\\nPošljite popravljeno besedilo.\";\nreturn [{json: {phone, remoteJid, text: msg}}];"
+      }
+    },
+    {
+      "id": "code_preveri_nacin",
+      "name": "Code: Preveri Nacin",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1280,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const inp = $input.first().json;\nconst sd = $getWorkflowStaticData(\"global\");\nconst state = sd[inp.phone] || {};\nif (state.mode === \"editing\") {\n  return [{json: {...inp, mode: \"editing\", entry_id: state.entry_id,\n    volunteer_name: state.volunteer_name, old_remoteJid: state.remoteJid}}];\n}\nreturn [{json: {...inp, mode: \"new\"}}];"
+      }
+    },
+    {
+      "id": "switch_je_v_urejanju",
+      "name": "Je v urejanju?",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [
+        1540,
+        300
+      ],
+      "parameters": {
+        "mode": "rules",
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "edt1",
+                    "leftValue": "={{ $json.mode }}",
+                    "rightValue": "editing",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Urejanje"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict"
+                },
+                "combinator": "and",
+                "conditions": [
+                  {
+                    "id": "edt2",
+                    "leftValue": "={{ $json.mode }}",
+                    "rightValue": "new",
+                    "operator": {
+                      "type": "string",
+                      "operation": "equals",
+                      "name": "filter.operator.equals"
+                    }
+                  }
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Novo Besedilo"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "code_procesiraj_popravek",
+      "name": "Code: Procesiraj Popravek",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1800,
+        300
+      ],
+      "parameters": {
+        "jsCode": "function parseHours(text) {\n  const numM = text.match(/(\\d+(?:[.,]\\d+)?)\\s*(?:uro|uri|ure|ur\\b)/i);\n  if (numM) return parseFloat(numM[1].replace(\",\", \".\"));\n  const words = {\n    \"ena\": 1, \"eno\": 1, \"eni\": 1, \"dve\": 2, \"dva\": 2, \"dveh\": 2,\n    \"tri\": 3, \"treh\": 3, \"štiri\": 4, \"štirih\": 4, \"pet\": 5, \"petih\": 5,\n    \"šest\": 6, \"šestih\": 6, \"sedem\": 7, \"sedmih\": 7, \"osem\": 8, \"osmih\": 8,\n    \"devet\": 9, \"devetih\": 9, \"deset\": 10, \"desetih\": 10,\n    \"enajst\": 11, \"enajstih\": 11, \"dvanajst\": 12, \"dvanajstih\": 12,\n    \"trinajst\": 13, \"štirinajst\": 14, \"petnajst\": 15, \"šestnajst\": 16,\n    \"sedemnajst\": 17, \"osemnajst\": 18, \"devetnajst\": 19, \"dvajset\": 20,\n    \"enaindvajset\": 21, \"dvaindvajset\": 22, \"triindvajset\": 23,\n  };\n  const tl = text.toLowerCase();\n  const wordM = tl.match(/(\\w+)\\s*ur/i);\n  if (wordM && words[wordM[1]] !== undefined) return words[wordM[1]];\n  return 1.0;\n}\nfunction extractLocation(text) {\n  const locKraj = text.match(/\\bkraj\\s*[,;:]?\\s*([A-Za-zŠŽČĆĐšžčćđ][^\\.,!?\\n]{0,50})/i);\n  if (locKraj) return locKraj[1].trim().replace(/\\s*(?:uro|uri|ure|ur\\b).*/i, \"\").trim();\n  const locM = text.match(/\\b(?:v|pri|na)\\s+([A-ZŠŽČĆĐ][a-zšžčćđ]+(?:\\s+[A-ZŠŽČĆĐ][a-zšžčćđ]+)*)/);\n  return locM ? locM[1] : null;\n}\nfunction extractDate(text) {\n  const today = new Date();\n  let entryDate = new Date(today);\n  const tl = text.toLowerCase();\n  if (tl.includes(\"včeraj\") || tl.includes(\"vceraj\")) {\n    entryDate.setDate(today.getDate() - 1);\n  } else {\n    const days = [{n:\"ponedeljek\",d:1},{n:\"torku\",d:2},{n:\"torek\",d:2},{n:\"sredo\",d:3},{n:\"sredi\",d:3},{n:\"četrtek\",d:4},{n:\"cetrtek\",d:4},{n:\"petek\",d:5},{n:\"soboto\",d:6},{n:\"nedeljo\",d:0}];\n    for (const {n, d} of days) {\n      if (tl.includes(n)) { const diff = ((today.getDay()-d)+7)%7||7; entryDate=new Date(today); entryDate.setDate(today.getDate()-diff); break; }\n    }\n    const dm = text.match(/\\b(\\d{1,2})[.\\s]+(\\d{1,2})\\. /);\n    if (dm) entryDate = new Date(today.getFullYear(), parseInt(dm[2])-1, parseInt(dm[1]));\n  }\n  return entryDate.toISOString().split(\"T\")[0];\n}\nconst inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.old_remoteJid || inp.remoteJid;\nconst text = inp.text || \"\";\nconst hours = parseHours(text);\nconst location = extractLocation(text);\nconst entry_date = extractDate(text);\nlet activity = text.replace(/(\\d+(?:[.,]\\d+)?)\\s*(?:uro|uri|ure|ur\\b)/gi,\"\")\n  .replace(/\\b(danes|včeraj|vceraj|ponedeljek|torek|torku|sredo|sredi|četrtek|cetrtek|petek|soboto|nedeljo)\\b/gi,\"\")\n  .replace(/\\s{2,}/g,\" \").trim() || text.trim();\nreturn [{json: {phone, remoteJid, entry_id: inp.entry_id, entry_date, hours, activity_description: activity, location, volunteer_name: inp.volunteer_name, raw_transcript: null}}];"
+      }
+    },
+    {
+      "id": "http_brisi_stari_vnos",
+      "name": "HTTP: Brisi Stari Vnos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2060,
+        300
+      ],
+      "parameters": {
+        "method": "DELETE",
+        "url": "=http://api:8000/api/log-entries/{{ $json.entry_id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "UqZlwzClZfiYKanN",
+          "name": "BelPro API (Basic Auth)"
+        }
+      }
+    },
+    {
+      "id": "code_shrani_popravek",
+      "name": "Code: Shrani Stanje Popravek",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2580,
+        300
+      ],
+      "parameters": {
+        "jsCode": "const entryResp = $input.first().json;\nconst up = $(\"Code: Procesiraj Popravek\").first().json;\nconst phone = up.phone;\nconst remoteJid = up.remoteJid;\nconst entry_id = entryResp.id;\nconst sd = $getWorkflowStaticData(\"global\");\nsd[phone] = {\n  entry_id,\n  volunteer_id: up.volunteer_id,\n  entry_date: up.entry_date,\n  hours: up.hours,\n  activity_description: up.activity_description,\n  location: up.location,\n  volunteer_name: up.volunteer_name,\n  remoteJid\n};\nconst d = up.entry_date ? new Date(up.entry_date) : new Date();\nconst dateStr = d.toLocaleDateString(\"sl-SI\", {day:\"2-digit\",month:\"2-digit\",year:\"numeric\"});\nconst locStr = up.location ? \" v \" + up.location : \"\";\nconst msg = \"Zabeležili smo vaš vnos:\\n📅 \" + dateStr + \"\\n⏱ \" + up.hours + \" ur\\n📍\" + locStr + \"\\n📝 \" + up.activity_description + \"\\n\\nAli je vse pravilno?\\n1 - Potrdi\\n2 - Popravi\\n3 - Prekliči\";\nreturn [{json: {phone, remoteJid, text: msg}}];"
+      }
+    },
+    {
+      "id": "http_wa_potrditev_popravek",
+      "name": "HTTP: WA Potrditev Popravek",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2840,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $json.remoteJid }}"
+            },
+            {
+              "name": "text",
+              "value": "={{ $json.text }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "QXGVac2NwnJcQf9V",
+          "name": "BelPro Evolution API"
+        }
+      }
+    },
+    {
+      "id": "http_ustvari_nov_vnos",
+      "name": "HTTP: Ustvari Nov Vnos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2320,
+        300
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://api:8000/api/log-entries",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {},
+        "sendBody": true,
+        "contentType": "json",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "volunteer_id",
+              "value": "={{ $json.volunteer_id }}"
+            },
+            {
+              "name": "entry_date",
+              "value": "={{ $json.entry_date }}"
+            },
+            {
+              "name": "activity_description",
+              "value": "={{ $json.activity_description }}"
+            },
+            {
+              "name": "hours",
+              "value": "={{ $json.hours }}"
+            },
+            {
+              "name": "location",
+              "value": "={{ $json.location }}"
+            },
+            {
+              "name": "raw_transcript",
+              "value": "={{ $json.raw_transcript }}"
+            },
+            {
+              "name": "status",
+              "value": "pending_volunteer"
+            }
+          ]
+        }
+      },
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "UqZlwzClZfiYKanN",
+          "name": "BelPro API (Basic Auth)"
+        }
+      }
     }
   ],
   "connections": {
@@ -954,14 +1153,14 @@
         ],
         [
           {
-            "node": "Text Extract",
+            "node": "Code: Preveri Nacin",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "Naloži Stanje",
+            "node": "Nalozi Stanje",
             "type": "main",
             "index": 0
           }
@@ -1063,7 +1262,7 @@
         ]
       ]
     },
-    "Naloži Stanje": {
+    "Nalozi Stanje": {
       "main": [
         [
           {
@@ -1103,14 +1302,14 @@
         ],
         [
           {
-            "node": "HTTP: Briši Popravi",
+            "node": "Code: Pripravi Popravek",
             "type": "main",
             "index": 0
           }
         ],
         [
           {
-            "node": "HTTP: Briši Prekliči",
+            "node": "HTTP: Brisi Preklici",
             "type": "main",
             "index": 0
           }
@@ -1184,44 +1383,22 @@
         ]
       ]
     },
-    "HTTP: Briši Popravi": {
+    "HTTP: Brisi Preklici": {
       "main": [
         [
           {
-            "node": "Code: Clear State Popravi",
+            "node": "Code: Clear State Preklici",
             "type": "main",
             "index": 0
           }
         ]
       ]
     },
-    "Code: Clear State Popravi": {
+    "Code: Clear State Preklici": {
       "main": [
         [
           {
-            "node": "HTTP: WA Popravi",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "HTTP: Briši Prekliči": {
-      "main": [
-        [
-          {
-            "node": "Code: Clear State Prekliči",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code: Clear State Prekliči": {
-      "main": [
-        [
-          {
-            "node": "HTTP: WA Prekliči",
+            "node": "HTTP: WA Preklici",
             "type": "main",
             "index": 0
           }
@@ -1233,6 +1410,90 @@
         [
           {
             "node": "HTTP: Fetch Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Pripravi Popravek": {
+      "main": [
+        [
+          {
+            "node": "HTTP: WA Popravi",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Preveri Nacin": {
+      "main": [
+        [
+          {
+            "node": "Je v urejanju?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Je v urejanju?": {
+      "main": [
+        [
+          {
+            "node": "Code: Procesiraj Popravek",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Text Extract",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Procesiraj Popravek": {
+      "main": [
+        [
+          {
+            "node": "HTTP: Brisi Stari Vnos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP: Brisi Stari Vnos": {
+      "main": [
+        [
+          {
+            "node": "HTTP: Ustvari Nov Vnos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP: Ustvari Nov Vnos": {
+      "main": [
+        [
+          {
+            "node": "Code: Shrani Stanje Popravek",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Shrani Stanje Popravek": {
+      "main": [
+        [
+          {
+            "node": "HTTP: WA Potrditev Popravek",
             "type": "main",
             "index": 0
           }
