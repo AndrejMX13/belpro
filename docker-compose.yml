@@ -43,7 +43,7 @@ services:
   # Dashboard: http://localhost:5678
   # ─────────────────────────────────────────────────────────────
   n8n:
-    image: n8nio/n8n:latest
+    image: n8nio/n8n:2.18.5
     restart: unless-stopped
     ports:
       - "5678:5678"
