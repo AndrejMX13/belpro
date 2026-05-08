@@ -1,4 +1,14 @@
-# Belpro — Beleženje Prostovoljstva
+# BelPro — Beleženje Prostovoljstva
+
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)](#)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![nginx](https://img.shields.io/badge/nginx-Reverse_Proxy-009639?logo=nginx&logoColor=white)](https://nginx.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-7-FF4438?logo=redis&logoColor=white)](https://redis.io/)
+[![n8n](https://img.shields.io/badge/n8n-Workflow_Engine-EA4B71?logo=n8n&logoColor=white)](https://n8n.io/)
+[![Whisper](https://img.shields.io/badge/Whisper-Faster_Whisper-412991?logo=openai&logoColor=white)](#)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
 Self-hosted system for Slovenian NGOs that automates the *Dnevnik prostovoljskega dela* (Volunteer Work Diary) required by Slovenian law for volunteers receiving the Work Activity Allowance (*Dodatek za delovno aktivnost*).
 
