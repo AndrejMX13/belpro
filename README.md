@@ -8,6 +8,7 @@
 [![Redis](https://img.shields.io/badge/Redis-7-FF4438?logo=redis&logoColor=white)](https://redis.io/)
 [![n8n](https://img.shields.io/badge/n8n-Workflow_Engine-EA4B71?logo=n8n&logoColor=white)](https://n8n.io/)
 [![Whisper](https://img.shields.io/badge/Whisper-Faster_Whisper-412991?logo=openai&logoColor=white)](#)
+[![Evolution API](https://img.shields.io/badge/Evolution_API-WhatsApp_Gateway-25D366?logo=whatsapp&logoColor=white)](https://github.com/EvolutionAPI/evolution-api)
 [![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
 
 Self-hosted system for Slovenian NGOs that automates the *Dnevnik prostovoljskega dela* (Volunteer Work Diary) required by Slovenian law for volunteers receiving the Work Activity Allowance (*Dodatek za delovno aktivnost*).
