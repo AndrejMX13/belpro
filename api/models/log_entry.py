@@ -70,6 +70,7 @@ class LogEntry(Base):
     )
     volunteer_confirmed_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     manager_approved_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
+    manager_notified_at: Mapped[datetime | None] = mapped_column(DateTime(timezone=True))
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=text("NOW()")
     )

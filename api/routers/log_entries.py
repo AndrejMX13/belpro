@@ -410,6 +410,7 @@ async def approve_log_entry(
         )
     entry.status = EntryStatus.APPROVED
     entry.manager_approved_at = datetime.now(UTC)
+    entry.manager_notified_at = None
     await db.commit()
     await db.refresh(entry)
     await _notify_volunteer_email(db, entry, approved=True)
@@ -438,9 +439,40 @@ async def reject_log_entry(
         )
     entry.status = EntryStatus.REJECTED
     entry.manager_approved_at = datetime.now(UTC)
+    entry.manager_notified_at = None
     await db.commit()
     await db.refresh(entry)
     await _notify_volunteer_email(db, entry, approved=False)
+    return LogEntryResponse.model_validate(entry)
+
+
+@router.patch(
+    "/{entry_id}/notify",
+    response_model=LogEntryResponse,
+    dependencies=[Depends(require_manager)],
+)
+async def notify_log_entry(
+    entry_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> LogEntryResponse:
+    """Mark a pending_manager entry as notified (sets manager_notified_at).
+
+    Only one entry should have manager_notified_at set at a time.
+    The caller (n8n) must check no other entry is already notified before calling this.
+    """
+    entry = (
+        await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
+    ).scalar_one_or_none()
+    if entry is None:
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+    if entry.status != EntryStatus.PENDING_MANAGER:
+        raise HTTPException(
+            status_code=http_status.HTTP_409_CONFLICT,
+            detail=f"Vnos ni v statusu pending_manager (trenutni status: {entry.status.value}).",
+        )
+    entry.manager_notified_at = datetime.now(UTC)
+    await db.commit()
+    await db.refresh(entry)
     return LogEntryResponse.model_validate(entry)
 
 

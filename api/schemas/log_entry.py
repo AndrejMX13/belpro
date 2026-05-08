@@ -41,6 +41,7 @@ class LogEntryResponse(BaseModel):
     photos: list[PhotoResponse] = []
     volunteer_confirmed_at: datetime | None
     manager_approved_at: datetime | None
+    manager_notified_at: datetime | None
     created_at: datetime
     updated_at: datetime
 
