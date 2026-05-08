@@ -85,7 +85,8 @@ Evolution API  ─────────────────────�
 | ngo_street | VARCHAR | Street name and house number |
 | ngo_postal_code | VARCHAR(4) | Slovenian 4-digit postal code |
 | ngo_city | VARCHAR | |
-| password_hash | TEXT | bcrypt hash; nullable until first setup |
+| ngo_davcna | VARCHAR(8) | Slovenian tax number (davčna številka); nullable |
+| password_hash | TEXT | scrypt hash; nullable until first setup via UI |
 | report_whatsapp | BOOLEAN | Manager receives consolidated report via WhatsApp; default FALSE |
 | report_email | BOOLEAN | Manager receives consolidated report via email; default TRUE |
 | default_report_whatsapp | BOOLEAN | Default WhatsApp flag applied to newly registered volunteers; default FALSE |
@@ -111,6 +112,7 @@ Evolution API  ─────────────────────�
 | status | ENUM | `pending_volunteer`, `pending_manager`, `approved`, `rejected` |
 | volunteer_confirmed_at | TIMESTAMP | |
 | manager_approved_at | TIMESTAMP | |
+| manager_notified_at | TIMESTAMP | When manager was last notified; only one entry set at a time |
 | created_at | TIMESTAMP | |
 | updated_at | TIMESTAMP | Maintained by DB trigger `trg_entries_updated_at` |
 

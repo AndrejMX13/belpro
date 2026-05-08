@@ -1,5 +1,5 @@
 -- =============================================================================
--- Belpro — Initial Database Schema
+-- BelPro — Initial Database Schema
 -- Database: belpro
 -- Runs at container init time as 01_schema.sql (after 00_extra_dbs.sh).
 --
@@ -33,20 +33,33 @@ CREATE TYPE entry_status AS ENUM (
 -- One manager per deployment (single-tenant).
 -- =============================================================================
 CREATE TABLE managers (
-    id                  UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
-    first_name          VARCHAR(100) NOT NULL,
-    last_name           VARCHAR(100) NOT NULL,
-    phone               VARCHAR(30)  NOT NULL UNIQUE,   -- WhatsApp number, international format
-    email               VARCHAR(255) NOT NULL UNIQUE,
-    ngo_name            VARCHAR(255) NOT NULL,
-    ngo_street          VARCHAR(255) NOT NULL,
-    ngo_postal_code     VARCHAR(4)   NOT NULL,          -- 4-digit Slovenian postal code
-    ngo_city            VARCHAR(100) NOT NULL,
-    created_at          TIMESTAMPTZ  NOT NULL DEFAULT NOW()
+    id                      UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
+    first_name              VARCHAR(100) NOT NULL,
+    last_name               VARCHAR(100) NOT NULL,
+    phone                   VARCHAR(30)  NOT NULL UNIQUE,   -- WhatsApp number, international format
+    email                   VARCHAR(255) NOT NULL UNIQUE,
+    ngo_name                VARCHAR(255) NOT NULL,
+    ngo_street              VARCHAR(255) NOT NULL,
+    ngo_postal_code         VARCHAR(4)   NOT NULL,          -- 4-digit Slovenian postal code
+    ngo_city                VARCHAR(100) NOT NULL,
+    ngo_davcna              VARCHAR(8),                     -- Slovenian 8-digit tax number (nullable)
+    password_hash           TEXT,                           -- scrypt hash; nullable until first password setup via UI
+    report_whatsapp         BOOLEAN      NOT NULL DEFAULT FALSE,  -- Manager receives consolidated report via WhatsApp
+    report_email            BOOLEAN      NOT NULL DEFAULT TRUE,   -- Manager receives consolidated report via email
+    default_report_whatsapp BOOLEAN      NOT NULL DEFAULT FALSE,  -- Default for newly registered volunteers
+    default_report_email    BOOLEAN      NOT NULL DEFAULT TRUE,   -- Default for newly registered volunteers
+    ngo_whatsapp_phone      VARCHAR(30),                    -- Dedicated bot phone number linked to Evolution API
+    smtp_host               VARCHAR(255),                   -- SMTP server hostname, e.g. smtp.gmail.com
+    smtp_port               INTEGER      DEFAULT 587,       -- SMTP port
+    smtp_user               VARCHAR(255),                   -- SMTP login / from-address
+    smtp_from_name          VARCHAR(100),                   -- Display name for outgoing emails
+    evolution_api_admin_url VARCHAR(255),                   -- URL of Evolution API admin UI (for settings link)
+    created_at              TIMESTAMPTZ  NOT NULL DEFAULT NOW()
 );
 
 COMMENT ON TABLE managers IS 'Single NGO manager per deployment. One row expected.';
 COMMENT ON COLUMN managers.phone IS 'WhatsApp number in international format, e.g. +38641123456';
+COMMENT ON COLUMN managers.password_hash IS 'NULL means fall back to MANAGER_PASSWORD env var for dashboard login.';
 
 -- =============================================================================
 -- TABLE: volunteers
@@ -59,9 +72,12 @@ CREATE TABLE volunteers (
     postal_code         VARCHAR(4)   NOT NULL,          -- 4-digit Slovenian postal code
     city                VARCHAR(100) NOT NULL,
     emso                TEXT         NOT NULL,          -- EMŠO — AES-256 encrypted at application level
+    emso_hash           VARCHAR(64)  UNIQUE,            -- HMAC-SHA256 of plaintext EMŠO for uniqueness enforcement
     phone               VARCHAR(30)  NOT NULL UNIQUE,   -- WhatsApp number, international format
     email               VARCHAR(255),                   -- For monthly PDF delivery (nullable)
     active              BOOLEAN      NOT NULL DEFAULT TRUE,
+    report_whatsapp     BOOLEAN      NOT NULL DEFAULT FALSE,  -- Send monthly PDF via WhatsApp
+    report_email        BOOLEAN      NOT NULL DEFAULT TRUE,   -- Send monthly PDF via email
     registered_at       TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
     manager_id          UUID         NOT NULL REFERENCES managers(id) ON DELETE RESTRICT
 );
@@ -92,15 +108,10 @@ CREATE TABLE log_entries (
     -- Workflow status
     status                  entry_status    NOT NULL DEFAULT 'pending_volunteer',
 
-    -- Photo evidence (all nullable — photo is optional)
-    photo_path              VARCHAR(500),               -- Relative path within api_photos volume
-    photo_exif_timestamp    TIMESTAMPTZ,                -- Extracted from EXIF data
-    photo_exif_lat          NUMERIC(10,7),              -- GPS latitude from EXIF
-    photo_exif_lon          NUMERIC(10,7),              -- GPS longitude from EXIF
-
     -- Audit timestamps
     volunteer_confirmed_at  TIMESTAMPTZ,
     manager_approved_at     TIMESTAMPTZ,
+    manager_notified_at     TIMESTAMPTZ,                -- When manager was last notified about this entry
     created_at              TIMESTAMPTZ     NOT NULL DEFAULT NOW(),
     updated_at              TIMESTAMPTZ     NOT NULL DEFAULT NOW()
 );
@@ -108,13 +119,14 @@ CREATE TABLE log_entries (
 COMMENT ON TABLE log_entries IS 'Individual volunteer work diary entries. Core audit trail.';
 COMMENT ON COLUMN log_entries.entry_date IS 'The date work was performed, not when it was submitted.';
 COMMENT ON COLUMN log_entries.raw_transcript IS 'Original Whisper output preserved for audit. May contain dialect/errors.';
-COMMENT ON COLUMN log_entries.photo_path IS 'Relative path within the api_photos Docker volume. Null if no photo submitted.';
+COMMENT ON COLUMN log_entries.manager_notified_at IS 'Set when manager is notified. Only one entry should have this set at a time.';
 
-CREATE INDEX idx_entries_volunteer    ON log_entries(volunteer_id);
-CREATE INDEX idx_entries_status       ON log_entries(status);
-CREATE INDEX idx_entries_date         ON log_entries(entry_date);
-CREATE INDEX idx_entries_location     ON log_entries(location);
-CREATE INDEX idx_entries_created      ON log_entries(created_at);
+CREATE INDEX idx_entries_volunteer         ON log_entries(volunteer_id);
+CREATE INDEX idx_entries_status            ON log_entries(status);
+CREATE INDEX idx_entries_date              ON log_entries(entry_date);
+CREATE INDEX idx_entries_location          ON log_entries(location);
+CREATE INDEX idx_entries_created           ON log_entries(created_at);
+CREATE INDEX idx_entries_manager_notified  ON log_entries(manager_notified_at);
 
 -- Composite: most common dashboard query — volunteer + month
 CREATE INDEX idx_entries_vol_date     ON log_entries(volunteer_id, entry_date);
@@ -131,6 +143,25 @@ $$ LANGUAGE plpgsql;
 CREATE TRIGGER trg_entries_updated_at
     BEFORE UPDATE ON log_entries
     FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+
+-- =============================================================================
+-- TABLE: log_entry_photos
+-- Multiple photos per entry.  Replaces the old single-photo columns on log_entries.
+-- =============================================================================
+CREATE TABLE log_entry_photos (
+    id                      UUID            PRIMARY KEY DEFAULT gen_random_uuid(),
+    log_entry_id            UUID            NOT NULL REFERENCES log_entries(id) ON DELETE CASCADE,
+    photo_path              VARCHAR(500)    NOT NULL,    -- Relative path within api_photos volume
+    photo_exif_timestamp    TIMESTAMPTZ,                 -- Extracted from EXIF data
+    photo_exif_lat          NUMERIC(10,7),               -- GPS latitude from EXIF
+    photo_exif_lon          NUMERIC(10,7),               -- GPS longitude from EXIF
+    uploaded_at             TIMESTAMPTZ     NOT NULL DEFAULT NOW()
+);
+
+COMMENT ON TABLE log_entry_photos IS 'One photo per row. Multiple photos per log entry supported.';
+COMMENT ON COLUMN log_entry_photos.photo_path IS 'Relative path within the api_photos Docker volume.';
+
+CREATE INDEX idx_photos_entry ON log_entry_photos(log_entry_id);
 
 -- =============================================================================
 -- TABLE: monthly_reports
