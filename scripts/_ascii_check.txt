@@ -1,2 +1,0 @@
-'Naloži Stanje'
-'HTTP: Briši Popravi'
