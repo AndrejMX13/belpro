@@ -1,410 +1,358 @@
-﻿{
-    "name":  "BelPro — Odobritev Upravljalca",
-    "nodes":  [
-                  {
-                      "id":  "exec_trigger",
-                      "name":  "Execute Workflow Trigger",
-                      "parameters":  {
-                                         "workflowInputs":  {
-                                                                "values":  [
-                                                                               {
-                                                                                   "name":  "entry_id",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "action",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "manager_phone",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "manager_remoteJid",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "volunteer_name",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "volunteer_remoteJid",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "entry_date",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "hours",
-                                                                                   "type":  "number"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "activity_description",
-                                                                                   "type":  "string"
-                                                                               },
-                                                                               {
-                                                                                   "name":  "location",
-                                                                                   "type":  "string"
-                                                                               }
-                                                                           ]
-                                                            }
-                                     },
-                      "type":  "n8n-nodes-base.executeWorkflowTrigger",
-                      "position":  [
-                                       240,
-                                       300
-                                   ],
-                      "typeVersion":  1.1
-                  },
-                  {
-                      "id":  "manual_trigger",
-                      "name":  "Manual Trigger",
-                      "parameters":  {
-
-                                     },
-                      "type":  "n8n-nodes-base.manualTrigger",
-                      "position":  [
-                                       240,
-                                       500
-                                   ],
-                      "typeVersion":  1
-                  },
-                  {
-                      "id":  "code_parse_action",
-                      "name":  "Code: Parse Action",
-                      "parameters":  {
-                                         "jsCode":  "const data = $input.first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || \u0027\u0027;\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || \u0027\u0027,\n  manager_remoteJid: data.manager_remoteJid || \u0027\u0027,\n  volunteer_name: data.volunteer_name || \u0027\u0027,\n  volunteer_remoteJid: data.volunteer_remoteJid || \u0027\u0027,\n  entry_date: data.entry_date || \u0027\u0027,\n  hours: data.hours || 0,\n  activity_description: data.activity_description || \u0027\u0027,\n  location: data.location || \u0027\u0027\n};\n\nif (!entry_id || !action) {\n  throw new Error(\u0027Missing required fields: entry_id and action\u0027);\n}\n\nreturn [{json: payload}];"
-                                     },
-                      "type":  "n8n-nodes-base.code",
-                      "position":  [
-                                       500,
-                                       400
-                                   ],
-                      "typeVersion":  2
-                  },
-                  {
-                      "id":  "switch_action",
-                      "name":  "Switch: Action",
-                      "parameters":  {
-                                         "rules":  {
-                                                       "values":  [
-                                                                      {
-                                                                          "outputKey":  "Odobri",
-                                                                          "renameOutput":  true,
-                                                                          "conditions":  {
-                                                                                             "conditions":  [
-                                                                                                                {
-                                                                                                                    "operator":  {
-                                                                                                                                     "operation":  "equals",
-                                                                                                                                     "name":  "filter.operator.equals",
-                                                                                                                                     "type":  "string"
-                                                                                                                                 },
-                                                                                                                    "rightValue":  "odobri",
-                                                                                                                    "id":  "r1c1",
-                                                                                                                    "leftValue":  "={{ $json.action }}"
-                                                                                                                }
-                                                                                                            ],
-                                                                                             "options":  {
-                                                                                                             "typeValidation":  "strict",
-                                                                                                             "leftValue":  "",
-                                                                                                             "caseSensitive":  true
-                                                                                                         },
-                                                                                             "combinator":  "and"
-                                                                                         }
-                                                                      },
-                                                                      {
-                                                                          "outputKey":  "Zavrni",
-                                                                          "renameOutput":  true,
-                                                                          "conditions":  {
-                                                                                             "conditions":  [
-                                                                                                                {
-                                                                                                                    "operator":  {
-                                                                                                                                     "operation":  "equals",
-                                                                                                                                     "name":  "filter.operator.equals",
-                                                                                                                                     "type":  "string"
-                                                                                                                                 },
-                                                                                                                    "rightValue":  "zavrni",
-                                                                                                                    "id":  "r2c1",
-                                                                                                                    "leftValue":  "={{ $json.action }}"
-                                                                                                                }
-                                                                                                            ],
-                                                                                             "options":  {
-                                                                                                             "typeValidation":  "strict",
-                                                                                                             "leftValue":  "",
-                                                                                                             "caseSensitive":  true
-                                                                                                         },
-                                                                                             "combinator":  "and"
-                                                                                         }
-                                                                      }
-                                                                  ]
-                                                   },
-                                         "options":  {
-
-                                                     },
-                                         "mode":  "rules"
-                                     },
-                      "type":  "n8n-nodes-base.switch",
-                      "position":  [
-                                       760,
-                                       400
-                                   ],
-                      "typeVersion":  3
-                  },
-                  {
-                      "id":  "http_approve",
-                      "name":  "HTTP: PATCH /approve",
-                      "parameters":  {
-                                         "authentication":  "genericCredentialType",
-                                         "sendBody":  false,
-                                         "genericAuthType":  "httpBasicAuth",
-                                         "method":  "PATCH",
-                                         "options":  {
-
-                                                     },
-                                         "url":  "={{ \u0027http://api:8000/api/log-entries/\u0027 + $json.entry_id + \u0027/approve\u0027 }}"
-                                     },
-                      "credentials":  {
-                                          "httpBasicAuth":  {
-                                                                "id":  "UqZlwzClZfiYKanN",
-                                                                "name":  "BelPro API (Basic Auth)"
-                                                            }
-                                      },
-                      "type":  "n8n-nodes-base.httpRequest",
-                      "position":  [
-                                       1020,
-                                       240
-                                   ],
-                      "typeVersion":  4
-                  },
-                  {
-                      "id":  "http_reject",
-                      "name":  "HTTP: PATCH /reject",
-                      "parameters":  {
-                                         "authentication":  "genericCredentialType",
-                                         "sendBody":  false,
-                                         "genericAuthType":  "httpBasicAuth",
-                                         "method":  "PATCH",
-                                         "options":  {
-
-                                                     },
-                                         "url":  "={{ \u0027http://api:8000/api/log-entries/\u0027 + $json.entry_id + \u0027/reject\u0027 }}"
-                                     },
-                      "credentials":  {
-                                          "httpBasicAuth":  {
-                                                                "id":  "UqZlwzClZfiYKanN",
-                                                                "name":  "BelPro API (Basic Auth)"
-                                                            }
-                                      },
-                      "type":  "n8n-nodes-base.httpRequest",
-                      "position":  [
-                                       1020,
-                                       560
-                                   ],
-                      "typeVersion":  4
-                  },
-                  {
-                      "id":  "code_vol_msg",
-                      "name":  "Code: Build Volunteer Msg",
-                      "parameters":  {
-                                         "jsCode":  "// $input is the API response from approve/reject — use payload for action info\nconst payload = $(\u0027Code: Parse Action\u0027).first().json;\nconst isApproved = payload.action === \u0027odobri\u0027;\n\nlet volMsg;\nif (isApproved) {\n  volMsg = \\Vaš vnos z dne ${payload.entry_date} je bil odobren. ✅\n📝 ${payload.activity_description}, ${payload.hours} ur\\;\n} else {\n  volMsg = \\Vaš vnos z dne ${payload.entry_date} je bil zavrnjen. ❌\nUpravljalec vas bo kontaktiral za podrobnosti.\\;\n}\n\nreturn [{\n  json: {\n    ...payload,\n    action: isApproved ? \u0027approved\u0027 : \u0027rejected\u0027,\n    volMsg,\n    volunteerJid: payload.volunteer_remoteJid\n  }\n}];"
-                                     },
-                      "type":  "n8n-nodes-base.code",
-                      "position":  [
-                                       1280,
-                                       400
-                                   ],
-                      "typeVersion":  2
-                  },
-                  {
-                      "id":  "http_wa_volunteer",
-                      "name":  "HTTP: WA Notify Volunteer",
-                      "parameters":  {
-                                         "bodyParameters":  {
-                                                                "parameters":  [
-                                                                                   {
-                                                                                       "value":  "={{ $json.volunteerJid }}",
-                                                                                       "name":  "number"
-                                                                                   },
-                                                                                   {
-                                                                                       "value":  "={{ $json.volMsg }}",
-                                                                                       "name":  "text"
-                                                                                   }
-                                                                               ]
-                                                            },
-                                         "method":  "POST",
-                                         "authentication":  "genericCredentialType",
-                                         "contentType":  "json",
-                                         "url":  "http://evolution-api:8080/message/sendText/belpro",
-                                         "options":  {
-
-                                                     },
-                                         "sendBody":  true,
-                                         "genericAuthType":  "httpHeaderAuth"
-                                     },
-                      "credentials":  {
-                                          "httpHeaderAuth":  {
-                                                                 "id":  "QXGVac2NwnJcQf9V",
-                                                                 "name":  "BelPro Evolution API"
-                                                             }
-                                      },
-                      "type":  "n8n-nodes-base.httpRequest",
-                      "position":  [
-                                       1540,
-                                       400
-                                   ],
-                      "typeVersion":  4
-                  },
-                  {
-                      "id":  "code_mgr_confirm",
-                      "name":  "Code: Build Manager Confirm",
-                      "parameters":  {
-                                         "jsCode":  "const payload = $(\u0027Code: Parse Action\u0027).first().json;\nconst actionLabel = payload.action === \u0027odobri\u0027 ? \u0027odobren\u0027 : \u0027zavrnjen\u0027;\nconst mgrMsg = \\Vnos za ${payload.volunteer_name} je bil ${actionLabel}.\\;\n\nreturn [{\n  json: {\n    managerJid: payload.manager_remoteJid,\n    mgrMsg\n  }\n}];"
-                                     },
-                      "type":  "n8n-nodes-base.code",
-                      "position":  [
-                                       1800,
-                                       400
-                                   ],
-                      "typeVersion":  2
-                  },
-                  {
-                      "id":  "http_wa_manager",
-                      "name":  "HTTP: WA Confirm to Manager",
-                      "parameters":  {
-                                         "bodyParameters":  {
-                                                                "parameters":  [
-                                                                                   {
-                                                                                       "value":  "={{ $json.managerJid }}",
-                                                                                       "name":  "number"
-                                                                                   },
-                                                                                   {
-                                                                                       "value":  "={{ $json.mgrMsg }}",
-                                                                                       "name":  "text"
-                                                                                   }
-                                                                               ]
-                                                            },
-                                         "method":  "POST",
-                                         "authentication":  "genericCredentialType",
-                                         "contentType":  "json",
-                                         "url":  "http://evolution-api:8080/message/sendText/belpro",
-                                         "options":  {
-
-                                                     },
-                                         "sendBody":  true,
-                                         "genericAuthType":  "httpHeaderAuth"
-                                     },
-                      "credentials":  {
-                                          "httpHeaderAuth":  {
-                                                                 "id":  "QXGVac2NwnJcQf9V",
-                                                                 "name":  "BelPro Evolution API"
-                                                             }
-                                      },
-                      "type":  "n8n-nodes-base.httpRequest",
-                      "position":  [
-                                       2060,
-                                       400
-                                   ],
-                      "typeVersion":  4
-                  }
-              ],
-    "connections":  {
-                        "Switch: Action":  {
-                                               "main":  [
-                                                            [
-                                                                {
-                                                                    "node":  "HTTP: PATCH /approve",
-                                                                    "type":  "main",
-                                                                    "index":  0
-                                                                }
-                                                            ],
-                                                            [
-                                                                {
-                                                                    "node":  "HTTP: PATCH /reject",
-                                                                    "type":  "main",
-                                                                    "index":  0
-                                                                }
-                                                            ]
-                                                        ]
-                                           },
-                        "HTTP: PATCH /reject":  {
-                                                    "main":  [
-                                                                 {
-                                                                     "node":  "Code: Build Volunteer Msg",
-                                                                     "type":  "main",
-                                                                     "index":  0
-                                                                 }
-                                                             ]
-                                                },
-                        "HTTP: PATCH /approve":  {
-                                                     "main":  [
-                                                                  {
-                                                                      "node":  "Code: Build Volunteer Msg",
-                                                                      "type":  "main",
-                                                                      "index":  0
-                                                                  }
-                                                              ]
-                                                 },
-                        "HTTP: WA Notify Volunteer":  {
-                                                          "main":  [
-                                                                       {
-                                                                           "node":  "Code: Build Manager Confirm",
-                                                                           "type":  "main",
-                                                                           "index":  0
-                                                                       }
-                                                                   ]
-                                                      },
-                        "Code: Parse Action":  {
-                                                   "main":  [
-                                                                {
-                                                                    "node":  "Switch: Action",
-                                                                    "type":  "main",
-                                                                    "index":  0
-                                                                }
-                                                            ]
-                                               },
-                        "Code: Build Manager Confirm":  {
-                                                            "main":  [
-                                                                         {
-                                                                             "node":  "HTTP: WA Confirm to Manager",
-                                                                             "type":  "main",
-                                                                             "index":  0
-                                                                         }
-                                                                     ]
-                                                        },
-                        "Manual Trigger":  {
-                                               "main":  [
-                                                            {
-                                                                "node":  "Code: Parse Action",
-                                                                "type":  "main",
-                                                                "index":  0
-                                                            }
-                                                        ]
-                                           },
-                        "Code: Build Volunteer Msg":  {
-                                                          "main":  [
-                                                                       {
-                                                                           "node":  "HTTP: WA Notify Volunteer",
-                                                                           "type":  "main",
-                                                                           "index":  0
-                                                                       }
-                                                                   ]
-                                                      },
-                        "Execute Workflow Trigger":  {
-                                                         "main":  [
-                                                                      {
-                                                                          "node":  "Code: Parse Action",
-                                                                          "type":  "main",
-                                                                          "index":  0
-                                                                      }
-                                                                  ]
-                                                     }
-                    },
-    "settings":  {
-                     "saveManualExecutions":  true,
-                     "executionOrder":  "v1",
-                     "saveDataErrorExecution":  "all",
-                     "saveDataSuccessExecution":  "all",
-                     "saveExecutionProgress":  true
-                 }
+{
+  "name": "BelPro - Odobritev Upravljalca",
+  "nodes": [
+    {
+      "parameters": {
+        "workflowInputs": {
+          "values": [
+            {"name": "entry_id"},
+            {"name": "action"},
+            {"name": "manager_phone"},
+            {"name": "manager_remoteJid"},
+            {"name": "volunteer_name"},
+            {"name": "volunteer_remoteJid"},
+            {"name": "entry_date"},
+            {"name": "hours", "type": "number"},
+            {"name": "activity_description"},
+            {"name": "location"}
+          ]
+        }
+      },
+      "id": "exec_trigger",
+      "name": "Execute Workflow Trigger",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1.1,
+      "position": [240, 304]
+    },
+    {
+      "parameters": {},
+      "id": "manual_trigger",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 512]
+    },
+    {
+      "parameters": {
+        "jsCode": "const data = $input.first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || '';\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || '',\n  manager_remoteJid: data.manager_remoteJid || '',\n  volunteer_name: data.volunteer_name || '',\n  volunteer_remoteJid: data.volunteer_remoteJid || '',\n  entry_date: data.entry_date || '',\n  hours: data.hours || 0,\n  activity_description: data.activity_description || '',\n  location: data.location || ''\n};\n\nif (!entry_id || !action) {\n  throw new Error('Missing required fields: entry_id and action');\n}\n\nreturn [{json: payload}];"
+      },
+      "id": "code_parse_action",
+      "name": "Code: Parse Action",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [512, 400]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {"caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 1},
+                "combinator": "and",
+                "conditions": [
+                  {"id": "r1c1", "leftValue": "={{ $json.action }}", "rightValue": "odobri", "operator": {"type": "string", "operation": "equals", "name": "filter.operator.equals"}}
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Odobri"
+            },
+            {
+              "conditions": {
+                "options": {"caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 1},
+                "combinator": "and",
+                "conditions": [
+                  {"id": "r2c1", "leftValue": "={{ $json.action }}", "rightValue": "zavrni", "operator": {"type": "string", "operation": "equals", "name": "filter.operator.equals"}}
+                ]
+              },
+              "renameOutput": true,
+              "outputKey": "Zavrni"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "switch_action",
+      "name": "Switch: Action",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [768, 400]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id + '/approve' }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_approve",
+      "name": "HTTP: PATCH /approve",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1024, 240],
+      "credentials": {"httpBasicAuth": {"id": "UqZlwzClZfiYKanN", "name": "BelPro API (Basic Auth)"}}
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id + '/reject' }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_reject",
+      "name": "HTTP: PATCH /reject",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1024, 560],
+      "credentials": {"httpBasicAuth": {"id": "UqZlwzClZfiYKanN", "name": "BelPro API (Basic Auth)"}}
+    },
+    {
+      "parameters": {
+        "jsCode": "// $input is the API response from approve/reject - use payload for action info\nconst payload = $('Code: Parse Action').first().json;\nconst isApproved = payload.action === 'odobri';\n\nlet volMsg;\nif (isApproved) {\n  volMsg = `Vaš vnos z dne ${payload.entry_date} je bil odobren. ✅\\n📝 ${payload.activity_description}, ${payload.hours} ur`;\n} else {\n  volMsg = `Vaš vnos z dne ${payload.entry_date} je bil zavrnjen. ❌\\nUpravljalec vas bo kontaktiral za podrobnosti.`;\n}\n\nreturn [{\n  json: {\n    ...payload,\n    action: isApproved ? 'approved' : 'rejected',\n    volMsg,\n    volunteerJid: payload.volunteer_remoteJid\n  }\n}];"
+      },
+      "id": "code_vol_msg",
+      "name": "Code: Build Volunteer Msg",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1280, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "number", "value": "={{ $json.volunteerJid }}"},
+            {"name": "text", "value": "={{ $json.volMsg }}"}
+          ]
+        },
+        "options": {}
+      },
+      "id": "http_wa_volunteer",
+      "name": "HTTP: WA Notify Volunteer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [1552, 400],
+      "credentials": {"httpHeaderAuth": {"id": "QXGVac2NwnJcQf9V", "name": "BelPro Evolution API"}}
+    },
+    {
+      "parameters": {
+        "jsCode": "const payload = $('Code: Parse Action').first().json;\nconst actionLabel = payload.action === 'odobri' ? 'odobren' : 'zavrnjen';\nconst mgrMsg = `Vnos za ${payload.volunteer_name} je bil ${actionLabel}.`;\n\nreturn [{\n  json: {\n    managerJid: payload.manager_remoteJid,\n    mgrMsg\n  }\n}];"
+      },
+      "id": "code_mgr_confirm",
+      "name": "Code: Build Manager Confirm",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1808, 400]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "number", "value": "={{ $json.managerJid }}"},
+            {"name": "text", "value": "={{ $json.mgrMsg }}"}
+          ]
+        },
+        "options": {}
+      },
+      "id": "http_wa_manager",
+      "name": "HTTP: WA Confirm to Manager",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2064, 400],
+      "credentials": {"httpHeaderAuth": {"id": "QXGVac2NwnJcQf9V", "name": "BelPro Evolution API"}}
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://api:8000/api/log-entries?status=pending_manager&sort_by=created_at&sort_dir=asc",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_get_pending",
+      "name": "HTTP: GET Pending Entries",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [2320, 400],
+      "credentials": {"httpBasicAuth": {"id": "UqZlwzClZfiYKanN", "name": "BelPro API (Basic Auth)"}}
+    },
+    {
+      "parameters": {
+        "jsCode": "const response = $input.first().json;\nconst items = response.items || [];\n\nconst alreadyNotified = items.filter(e => e.manager_notified_at);\nif (alreadyNotified.length > 0) {\n  return [{json: {shouldNotify: false, reason: 'already_notified'}}];\n}\n\nconst unnotified = items.filter(e => !e.manager_notified_at);\nif (unnotified.length === 0) {\n  return [{json: {shouldNotify: false, reason: 'no_entries'}}];\n}\n\nconst entry = unnotified[0];\nreturn [{\n  json: {\n    shouldNotify: true,\n    entry_id: entry.id,\n    volunteer_id: entry.volunteer_id,\n    entry_date: entry.entry_date,\n    hours: entry.hours,\n    activity_description: entry.activity_description || '',\n    location: entry.location || '',\n    unnotified_count: unnotified.length\n  }\n}];"
+      },
+      "id": "code_check_next",
+      "name": "Code: Check Next Entry",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [2576, 400]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {"caseSensitive": true, "leftValue": "", "typeValidation": "strict", "version": 1},
+          "combinator": "and",
+          "conditions": [
+            {"id": "cond1", "leftValue": "={{ $json.shouldNotify }}", "rightValue": true, "operator": {"type": "boolean", "operation": "equals"}}
+          ]
+        }
+      },
+      "id": "if_should_notify",
+      "name": "IF: Should Notify?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [2832, 400]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id + '/notify' }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_patch_notify",
+      "name": "HTTP: PATCH /notify",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [3088, 320],
+      "credentials": {"httpBasicAuth": {"id": "UqZlwzClZfiYKanN", "name": "BelPro API (Basic Auth)"}}
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ 'http://api:8000/api/volunteers/' + $('Code: Check Next Entry').first().json.volunteer_id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_get_volunteer",
+      "name": "HTTP: GET Volunteer",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [3344, 320],
+      "credentials": {"httpBasicAuth": {"id": "UqZlwzClZfiYKanN", "name": "BelPro API (Basic Auth)"}}
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://api:8000/api/managers/me",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_get_manager",
+      "name": "HTTP: GET Manager",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [3600, 320],
+      "credentials": {"httpBasicAuth": {"id": "UqZlwzClZfiYKanN", "name": "BelPro API (Basic Auth)"}}
+    },
+    {
+      "parameters": {
+        "jsCode": "const checkData = $('Code: Check Next Entry').first().json;\nconst manager = $input.first().json;\nconst volunteer = $('HTTP: GET Volunteer').first().json;\n\nconst mgrJid = (manager.phone || '').replace(/[^0-9]/g, '') + '@s.whatsapp.net';\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\n\nconst d = new Date(checkData.entry_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = checkData.unnotified_count > 1 ? `\\n\\nV vrsti: ${checkData.unnotified_count - 1} vnos(ov)` : '';\n\nconst mgrMsg = `Nov vnos caka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${checkData.hours} ur\\n📝 ${checkData.activity_description}\\n📍 ${checkData.location || 'ni navedeno'}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\n\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
+      },
+      "id": "code_build_next_msg",
+      "name": "Code: Build Next Msg",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [3856, 320]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {"name": "number", "value": "={{ $json.phone }}"},
+            {"name": "text", "value": "={{ $json.text }}"}
+          ]
+        },
+        "options": {"timeout": 10000}
+      },
+      "id": "http_wa_next",
+      "name": "HTTP: WA Next Notification",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [4112, 320],
+      "credentials": {"httpHeaderAuth": {"id": "QXGVac2NwnJcQf9V", "name": "BelPro Evolution API"}}
+    }
+  ],
+  "connections": {
+    "Execute Workflow Trigger": {
+      "main": [[{"node": "Code: Parse Action", "type": "main", "index": 0}]]
+    },
+    "Manual Trigger": {
+      "main": [[{"node": "Code: Parse Action", "type": "main", "index": 0}]]
+    },
+    "Code: Parse Action": {
+      "main": [[{"node": "Switch: Action", "type": "main", "index": 0}]]
+    },
+    "Switch: Action": {
+      "main": [
+        [{"node": "HTTP: PATCH /approve", "type": "main", "index": 0}],
+        [{"node": "HTTP: PATCH /reject", "type": "main", "index": 0}]
+      ]
+    },
+    "HTTP: PATCH /approve": {
+      "main": [[{"node": "Code: Build Volunteer Msg", "type": "main", "index": 0}]]
+    },
+    "HTTP: PATCH /reject": {
+      "main": [[{"node": "Code: Build Volunteer Msg", "type": "main", "index": 0}]]
+    },
+    "Code: Build Volunteer Msg": {
+      "main": [[{"node": "HTTP: WA Notify Volunteer", "type": "main", "index": 0}]]
+    },
+    "HTTP: WA Notify Volunteer": {
+      "main": [[{"node": "Code: Build Manager Confirm", "type": "main", "index": 0}]]
+    },
+    "Code: Build Manager Confirm": {
+      "main": [[{"node": "HTTP: WA Confirm to Manager", "type": "main", "index": 0}]]
+    },
+    "HTTP: WA Confirm to Manager": {
+      "main": [[{"node": "HTTP: GET Pending Entries", "type": "main", "index": 0}]]
+    },
+    "HTTP: GET Pending Entries": {
+      "main": [[{"node": "Code: Check Next Entry", "type": "main", "index": 0}]]
+    },
+    "Code: Check Next Entry": {
+      "main": [[{"node": "IF: Should Notify?", "type": "main", "index": 0}]]
+    },
+    "IF: Should Notify?": {
+      "main": [[{"node": "HTTP: PATCH /notify", "type": "main", "index": 0}]]
+    },
+    "HTTP: PATCH /notify": {
+      "main": [[{"node": "HTTP: GET Volunteer", "type": "main", "index": 0}]]
+    },
+    "HTTP: GET Volunteer": {
+      "main": [[{"node": "HTTP: GET Manager", "type": "main", "index": 0}]]
+    },
+    "HTTP: GET Manager": {
+      "main": [[{"node": "Code: Build Next Msg", "type": "main", "index": 0}]]
+    },
+    "Code: Build Next Msg": {
+      "main": [[{"node": "HTTP: WA Next Notification", "type": "main", "index": 0}]]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true,
+    "saveExecutionProgress": true,
+    "binaryMode": "separate"
+  }
 }
