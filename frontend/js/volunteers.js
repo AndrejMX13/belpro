@@ -813,7 +813,7 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
       openModal('Nov vnos', `
         <form id="add-entry-form" novalidate>
           <div class="field" style="max-width:200px">
-            <label>Dan opravljenega dela *</label>
+            <label>Datum dela *</label>
             <input type="date" id="ae-work-date" value="${today}" required />
           </div>
           <div class="field" style="max-width:160px">
@@ -844,7 +844,7 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
         const errEl    = $('ae-error');
 
         if (!workDate) {
-          errEl.textContent = 'Dan opravljenega dela je obvezen.';
+          errEl.textContent = 'Datum dela je obvezen.';
           errEl.hidden = false;
           return;
         }
@@ -1320,7 +1320,7 @@ function approvalsSortTh(label, col) {
 
 function renderApprovalsThead() {
   return `
-    ${approvalsSortTh('Dan opravljenega dela', 'work_date')}
+    ${approvalsSortTh('Datum dela', 'work_date')}
     <th>Prostovoljec</th>
     ${approvalsSortTh('Opis dela', 'activity_description')}
     ${approvalsSortTh('Ure', 'hours')}
@@ -1421,7 +1421,7 @@ function volLogSortTh(label, col) {
 
 function renderVolunteerLogThead() {
   return `
-    ${volLogSortTh('Dan opravljenega dela', 'work_date')}
+    ${volLogSortTh('Datum dela', 'work_date')}
     ${volLogSortTh('Opis dela', 'activity_description')}
     ${volLogSortTh('Ure', 'hours')}
     ${volLogSortTh('Lokacija', 'location')}
@@ -1708,6 +1708,10 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
 
     <div class="detail-info-grid">
       <div class="info-item">
+        <div class="info-label">Datum dela</div>
+        <div class="info-value">${esc(entry.work_date)}</div>
+      </div>
+      <div class="info-item">
         <div class="info-label">Prostovoljec</div>
         <div class="info-value"><a href="${backNav === 'approvals' ? `#approvals/${id}/volunteer/${entry.volunteer_id}` : `#volunteers/${entry.volunteer_id}`}" style="color:var(--accent)">${esc(volName)}</a></div>
       </div>
@@ -1755,7 +1759,7 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
           <input type="number" id="d-hours" value="${entry.hours}" min="0.5" max="24" step="0.5" />
         </div>
         <div class="field" style="max-width:200px">
-          <label>Dan opravljenega dela</label>
+          <label>Datum dela</label>
           <input type="date" id="d-work-date" value="${entry.work_date}" />
         </div>
         <div class="field">
