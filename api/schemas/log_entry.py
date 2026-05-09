@@ -15,7 +15,7 @@ class LogEntryCreate(BaseModel):
     """Fields required to create a new log entry."""
 
     volunteer_id: uuid.UUID
-    entry_date: date
+    work_date: date
     activity_description: Annotated[str, Field(min_length=1)]
     hours: Annotated[Decimal, Field(ge=Decimal("0.5"), le=Decimal("24.0"))]
     location: str | None = None
@@ -32,7 +32,7 @@ class LogEntryResponse(BaseModel):
 
     id: uuid.UUID
     volunteer_id: uuid.UUID
-    entry_date: date
+    work_date: date
     activity_description: str
     raw_transcript: str | None
     hours: Decimal
@@ -66,6 +66,7 @@ class LogEntryUpdate(BaseModel):
     activity_description: Annotated[str, Field(min_length=1)] | None = None
     hours: Annotated[Decimal, Field(ge=Decimal("0.5"), le=Decimal("24.0"))] | None = None
     location: str | None = None
+    work_date: date | None = None
 
 
 class LogEntryListResponse(BaseModel):

@@ -45,10 +45,10 @@ class LogEntry(Base):
     __table_args__ = (
         Index("idx_entries_volunteer", "volunteer_id"),
         Index("idx_entries_status", "status"),
-        Index("idx_entries_date", "entry_date"),
+        Index("idx_entries_work_date", "work_date"),
         Index("idx_entries_location", "location"),
         Index("idx_entries_created", "created_at"),
-        Index("idx_entries_vol_date", "volunteer_id", "entry_date"),
+        Index("idx_entries_vol_work_date", "volunteer_id", "work_date"),
     )
 
     id: Mapped[uuid.UUID] = mapped_column(
@@ -57,7 +57,7 @@ class LogEntry(Base):
     volunteer_id: Mapped[uuid.UUID] = mapped_column(
         UUID(as_uuid=True), ForeignKey("volunteers.id", ondelete="RESTRICT")
     )
-    entry_date: Mapped[date] = mapped_column(Date)
+    work_date: Mapped[date] = mapped_column(Date)
     activity_description: Mapped[str] = mapped_column(Text)
     raw_transcript: Mapped[str | None] = mapped_column(Text)
     hours: Mapped[Decimal] = mapped_column(Numeric(4, 1))
