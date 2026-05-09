@@ -701,17 +701,19 @@ n8n_validate_workflow({
 **Use when**: Retrieving workflow details
 
 **Modes**:
-- `full` (default) - Complete workflow JSON
+- `full` (default) - Complete workflow JSON with all node parameters. **Avoid for large workflows (>15 nodes)** — the payload can exceed context limits.
 - `details` - Full + execution stats
-- `structure` - Nodes + connections only
+- `structure` - Nodes + connections only. **Use this for exploring large workflows.** Returns every node name, type, position, and all connections without parameter bloat. Perfect for finding specific nodes, understanding topology, or checking connections.
 - `minimal` - ID, name, active, tags
 
-```javascript
-// Full workflow
-n8n_get_workflow({id: "workflow-id"})
+**Always default to `structure` when your goal is to find a node or understand workflow topology.** Use `full` only when you need to read or edit specific node parameters.
 
-// Just structure
+```javascript
+// FOR LARGE WORKFLOWS — find nodes without the bloat
 n8n_get_workflow({id: "workflow-id", mode: "structure"})
+
+// Full workflow — use sparingly, only when you need parameters
+n8n_get_workflow({id: "workflow-id"})
 
 // Minimal metadata
 n8n_get_workflow({id: "workflow-id", mode: "minimal"})
@@ -832,6 +834,7 @@ update → update → update → ... (56s avg between edits)
 - Specify **sourceOutput** for AI connections
 - Clean stale connections after node renames/deletions
 - Use `n8n_deploy_template` for quick starts
+- Use `mode="structure"` for n8n_get_workflow when exploring large workflows — find nodes instantly without parameter bloat
 - Activate workflows via API when ready
 
 ### Don't

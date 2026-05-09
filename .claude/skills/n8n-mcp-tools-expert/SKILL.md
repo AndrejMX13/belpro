@@ -180,7 +180,29 @@ get_node({nodeType: "nodes-base.slack", detail: "standard"})
 2. `get_node({mode: "docs"})` - for readable documentation
 3. `get_node({mode: "search_properties", propertyQuery: "auth"})` - for specific property
 
-### Mistake 3: Not Using Validation Profiles
+### Mistake 3: Using n8n_get_workflow mode="full" for Large Workflows
+
+**Problem**: Hunting for a node in a 30-60+ node workflow with `mode="full"` returns massive parameter payloads that can overflow context limits. Finding a single node name takes minutes of scrolling.
+
+```javascript
+// WRONG — 58-node workflow, every parameter bloated
+n8n_get_workflow({id: "Lw6qRiO9ozSr6EeW"})
+
+// CORRECT — node names, types, and connections in one clean response
+n8n_get_workflow({id: "Lw6qRiO9ozSr6EeW", mode: "structure"})
+```
+
+**Rule: if your goal is to find a node or understand topology, always start with `structure`.** Use `full` only when you need to read or edit specific node parameters.
+
+| Goal | Mode |
+|------|------|
+| Find a node by name | `structure` |
+| Understand topology/connections | `structure` |
+| Read/edit node parameters | `full` |
+| Debug execution stats | `details` |
+| Quick metadata check | `minimal` |
+
+### Mistake 4: Not Using Validation Profiles
 
 **Problem**: Too many false positives OR missing real errors
 
