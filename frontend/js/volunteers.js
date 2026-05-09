@@ -1809,18 +1809,17 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
       errEl.hidden = true;
       $('d-save-btn').disabled = true;
       $('d-save-btn').textContent = 'Shranjevanje…';
+      const location = $('d-location').value.trim() || null;
       try {
-        const updated = await API.logEntries.update(entry.id, { activity_description: desc, hours });
-        entry = updated;
-        $('d-desc-display').textContent = updated.activity_description;
-        $('d-hours-display').textContent = fmtHours(updated.hours);
+        await API.logEntries.update(entry.id, { activity_description: desc, hours, location });
         toast('Vnos posodobljen.');
+        await renderLogEntryDetail(id, { backHash, backLabel, backNav, goBack });
       } catch (err) {
         errEl.textContent = err.message;
         errEl.hidden = false;
+        $('d-save-btn').disabled = false;
+        $('d-save-btn').textContent = 'Shrani spremembe';
       }
-      $('d-save-btn').disabled = false;
-      $('d-save-btn').textContent = 'Shrani spremembe';
     });
   }
 }
