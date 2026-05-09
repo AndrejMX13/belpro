@@ -90,7 +90,7 @@ Each NGO runs its own independent Belpro instance. Volunteers interact exclusive
 |-------|------|-------|
 | id | UUID PK | |
 | volunteer_id | FK → volunteers | |
-| entry_date | DATE | Date of the work, not submission |
+| work_date | DATE | Date of the work, not submission |
 | activity_description | TEXT | Cleaned/normalised text |
 | raw_transcript | TEXT | Original Whisper output |
 | hours | NUMERIC(4,1) | Extracted from transcript |
@@ -141,7 +141,7 @@ Volunteer sends:
 n8n extracts from transcript:
   - activity_description
   - hours (look for "uro", "uri", "ure", "ur" etc.)
-  - entry_date (look for "danes", "včeraj", day names, explicit dates)
+  - work_date (look for "danes", "včeraj", day names, explicit dates)
   - location (if mentioned)
 
 n8n sends volunteer a confirmation message:

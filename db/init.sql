@@ -99,7 +99,7 @@ CREATE TABLE log_entries (
     volunteer_id            UUID            NOT NULL REFERENCES volunteers(id) ON DELETE RESTRICT,
 
     -- Work details (extracted by AI from voice/text)
-    entry_date              DATE            NOT NULL,   -- Date of the work, not submission date
+    work_date               DATE            NOT NULL,   -- Date the work was performed, not submission date
     activity_description    TEXT            NOT NULL,   -- Cleaned/normalised description
     raw_transcript          TEXT,                       -- Original Whisper output, kept for audit
     hours                   NUMERIC(4,1)    NOT NULL,
@@ -117,19 +117,19 @@ CREATE TABLE log_entries (
 );
 
 COMMENT ON TABLE log_entries IS 'Individual volunteer work diary entries. Core audit trail.';
-COMMENT ON COLUMN log_entries.entry_date IS 'The date work was performed, not when it was submitted.';
+COMMENT ON COLUMN log_entries.work_date IS 'The date work was performed, not when it was submitted.';
 COMMENT ON COLUMN log_entries.raw_transcript IS 'Original Whisper output preserved for audit. May contain dialect/errors.';
 COMMENT ON COLUMN log_entries.manager_notified_at IS 'Set when manager is notified. Only one entry should have this set at a time.';
 
 CREATE INDEX idx_entries_volunteer         ON log_entries(volunteer_id);
 CREATE INDEX idx_entries_status            ON log_entries(status);
-CREATE INDEX idx_entries_date              ON log_entries(entry_date);
+CREATE INDEX idx_entries_work_date              ON log_entries(work_date);
 CREATE INDEX idx_entries_location          ON log_entries(location);
 CREATE INDEX idx_entries_created           ON log_entries(created_at);
 CREATE INDEX idx_entries_manager_notified  ON log_entries(manager_notified_at);
 
 -- Composite: most common dashboard query — volunteer + month
-CREATE INDEX idx_entries_vol_date     ON log_entries(volunteer_id, entry_date);
+CREATE INDEX idx_entries_vol_work_date     ON log_entries(volunteer_id, work_date);
 
 -- Auto-update updated_at on row change
 CREATE OR REPLACE FUNCTION set_updated_at()

@@ -62,7 +62,7 @@ def main() -> None:
             "activity_description": entry["activity_description"],
             "location": entry.get("location") or "",
             "volunteer_name": f"{volunteer['first_name']} {volunteer['last_name']}",
-            "entry_date": entry["entry_date"],
+            "work_date": entry["work_date"],
             "manager_phone": manager_phone,
         }
         print(json.dumps(manual_json, indent=2, ensure_ascii=False))
