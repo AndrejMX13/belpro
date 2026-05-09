@@ -187,7 +187,7 @@ docker compose logs -f
 
 ## What NOT to do
 
-- **Don't start with `glob` or `grep` for discovery.** Check `graphify-out/wiki/index.md` first to identify relevant communities and files. Once you know the target area, use Serena `find_symbol` for code or `grep` for non-code assets (logs, config, raw text). Plain `grep` is fine for targeted searches — just don't use it as a substitute for orientation.
+- **Don't start with `glob` or `grep` for discovery.** If `graphify-out/wiki/index.md` exists, read it first to identify relevant communities and files. Once you know the target area, use Serena `find_symbol` for code or `grep` for non-code assets (logs, config, raw text). Use `grep` only for targeted lookups once you know the file area — never as a substitute for orientation.
 - Do not build multi-tenant features. Out of scope for v1.
 - Do not add a frontend JavaScript framework (React, Vue, etc.) — plain JS only.
 - Do not store photos in cloud storage. Local filesystem only.
@@ -209,6 +209,6 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
 ### Workflow
 
 1. **Orient** — If `graphify-out/wiki/index.md` exists, read it first to identify which communities are relevant to your question. This tells you *where* to look, not what the code does.
-2. **Locate** — Use Serena `find_symbol` to find specific functions, classes, or methods within the identified files.
+2. **Locate** — Use Serena `find_symbol` to find specific functions, classes, or methods within the identified files, or `find_referencing_symbols` to trace callers.
 3. **Read** — Read the actual source files to understand logic. The graph tells you which files matter; it does not replace reading them.
 4. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost).
