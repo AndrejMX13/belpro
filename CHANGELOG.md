@@ -6,6 +6,30 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.1] — 2026-05-09
+
+### Added
+- `work_date` (dan opravljenega dela) is now editable in the entry detail form — blocked for approved entries.
+- "Dodaj vnos" button on the volunteer detail page: managers can create log entries directly from the dashboard (starts as `pending_manager`, no volunteer confirmation step).
+- Two-column date display in approvals list and volunteer log list: "Dan opravljenega dela" (`work_date`) and "Dan vnosa" (`created_at`), both sortable.
+- `location` field added to the log entry edit form; changes are saved and the detail view refreshes immediately.
+- Alembic migration 009: `entry_date` → `work_date` rename with index renames, fully reversible via `downgrade()`.
+- Date range filter in both log lists now has a `Dan vnosa` toggle checkbox — unchecked filters by `Datum dela` (default), checked filters by submission date.
+
+### Changed
+- Renamed `entry_date` → `work_date` throughout the stack (DB column, ORM model, Pydantic schemas, all routers, PDF service, n8n workflows, frontend JS, scripts, `init.sql`, `SPEC.md`) to clearly separate "when work was performed" from `created_at` (submission timestamp).
+- Docker base images (`python:3.11-slim`, `redis:7-alpine`, `nginx:alpine`) pinned to exact digests for reproducible builds.
+
+### Fixed
+- `LogEntryBrief` schema in volunteer detail response was missing the `work_date` field rename, causing serialisation failures on the volunteer detail page.
+- Downgrade operations in migration 009 reordered: column rename now happens before index renames to avoid inconsistent state on partial failure.
+- `Datum dela` was missing as a labeled field in the log entry detail info grid (was only shown as the unlabeled page header).
+- Date column header label shortened to `Datum dela` across all lists and forms (was `Dan opravljenega dela`).
+- After creating a new entry from the volunteer detail page, navigation now returns to the volunteer detail page instead of opening the new entry detail.
+- All dates now displayed in `yyyy-mm-dd` format consistently throughout the dashboard.
+
+---
+
 ## [0.8.2] — 2026-05-08
 
 ### Removed
