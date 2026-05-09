@@ -233,7 +233,7 @@ function revokePhotoUrls() {
 }
 
 const approvalsState = {
-  filter: { status: 'pending_manager', search_q: '', date_from: null, date_to: null, sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  filter: { status: 'pending_manager', search_q: '', date_from: null, date_to: null, date_field: 'work_date', sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 },
   total: 0,
   items: [],
   volunteerMap: new Map(),
@@ -241,7 +241,7 @@ const approvalsState = {
 
 const volunteerLogState = {
   volunteerId: null,
-  filter: { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  filter: { status: '', search_q: '', date_from: null, date_to: null, date_field: 'work_date', sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 },
   total: 0,
   items: [],
 };
@@ -688,7 +688,7 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
 
   if (volunteerLogState.volunteerId !== id) {
     volunteerLogState.volunteerId = id;
-    volunteerLogState.filter = { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 };
+    volunteerLogState.filter = { status: '', search_q: '', date_from: null, date_to: null, date_field: 'work_date', sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 };
     volunteerLogState.total = 0;
     volunteerLogState.items = [];
   }
@@ -777,6 +777,10 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
           ${statusOpt('approved', 'Odobreno')}
           ${statusOpt('rejected', 'Zavrnjeno')}
         </select>
+        <label style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center;display:flex;align-items:center;gap:0.3rem;cursor:pointer">
+          <input type="checkbox" id="vlog-date-field-cb" ${volunteerLogState.filter.date_field === 'created_at' ? 'checked' : ''} />
+          Dan vnosa
+        </label>
         <label for="vlog-date-from" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Od:</label>
         <input type="date" id="vlog-date-from" value="${volunteerLogState.filter.date_from || ''}" />
         <label for="vlog-date-to" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Do:</label>
@@ -934,6 +938,11 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
     $('vlog-search').addEventListener('click', applyVolLogSearch);
     $('vlog-search-q').addEventListener('keydown', e => { if (e.key === 'Enter') applyVolLogSearch(); });
 
+    $('vlog-date-field-cb').addEventListener('change', () => {
+      volunteerLogState.filter.date_field = $('vlog-date-field-cb').checked ? 'created_at' : 'work_date';
+      volunteerLogState.filter.offset = 0;
+      loadVolunteerLog();
+    });
     $('vlog-date-from').addEventListener('change', () => {
       volunteerLogState.filter.date_from = $('vlog-date-from').value || null;
       volunteerLogState.filter.offset = 0;
@@ -946,14 +955,16 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
     });
 
     $('vlog-reset').addEventListener('click', () => {
-      volunteerLogState.filter.search_q = '';
+      volunteerLogState.filter.search_q  = '';
       volunteerLogState.filter.date_from = null;
       volunteerLogState.filter.date_to   = null;
+      volunteerLogState.filter.date_field = 'work_date';
       volunteerLogState.filter.status    = '';
-      $('vlog-search-q').value  = '';
-      $('vlog-date-from').value = '';
-      $('vlog-date-to').value   = '';
-      $('vlog-status').value    = '';
+      $('vlog-search-q').value        = '';
+      $('vlog-date-from').value       = '';
+      $('vlog-date-to').value         = '';
+      $('vlog-status').value          = '';
+      $('vlog-date-field-cb').checked = false;
       volunteerLogState.filter.offset = 0;
       loadVolunteerLog();
     });
@@ -1395,6 +1406,7 @@ async function loadApprovals() {
   if (filter.search_q)  params.search_q  = filter.search_q;
   if (filter.date_from) params.date_from = filter.date_from;
   if (filter.date_to)   params.date_to   = filter.date_to;
+  if (filter.date_from || filter.date_to) params.date_field = filter.date_field;
 
   try {
     const data = await API.logEntries.list(params);
@@ -1485,6 +1497,7 @@ async function loadVolunteerLog() {
   if (filter.search_q)  params.search_q  = filter.search_q;
   if (filter.date_from) params.date_from = filter.date_from;
   if (filter.date_to)   params.date_to   = filter.date_to;
+  if (filter.date_from || filter.date_to) params.date_field = filter.date_field;
 
   try {
     const data = await API.logEntries.list(params);
@@ -1533,6 +1546,10 @@ async function renderApprovals() {
         ${statusOpt('rejected',        'Zavrnjeno')}
         ${statusOpt('',               'Vsi')}
       </select>
+      <label style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center;display:flex;align-items:center;gap:0.3rem;cursor:pointer">
+        <input type="checkbox" id="a-date-field-cb" ${approvalsState.filter.date_field === 'created_at' ? 'checked' : ''} />
+        Dan vnosa
+      </label>
       <label for="a-date-from" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Od:</label>
       <input type="date" id="a-date-from" value="${approvalsState.filter.date_from || ''}" />
       <label for="a-date-to" style="font-size:0.8rem;color:var(--text-muted);white-space:nowrap;align-self:center">Do:</label>
@@ -1574,6 +1591,11 @@ async function renderApprovals() {
   $('a-search').addEventListener('click', applyApprovalsSearch);
   $('a-search-q').addEventListener('keydown', e => { if (e.key === 'Enter') applyApprovalsSearch(); });
 
+  $('a-date-field-cb').addEventListener('change', () => {
+    approvalsState.filter.date_field = $('a-date-field-cb').checked ? 'created_at' : 'work_date';
+    approvalsState.filter.offset = 0;
+    loadApprovals();
+  });
   $('a-date-from').addEventListener('change', () => {
     approvalsState.filter.date_from = $('a-date-from').value || null;
     approvalsState.filter.offset = 0;
@@ -1586,12 +1608,14 @@ async function renderApprovals() {
   });
 
   $('a-reset').addEventListener('click', () => {
-    approvalsState.filter.search_q = '';
+    approvalsState.filter.search_q  = '';
     approvalsState.filter.date_from = null;
     approvalsState.filter.date_to   = null;
-    $('a-search-q').value  = '';
-    $('a-date-from').value = '';
-    $('a-date-to').value   = '';
+    approvalsState.filter.date_field = 'work_date';
+    $('a-search-q').value       = '';
+    $('a-date-from').value      = '';
+    $('a-date-to').value        = '';
+    $('a-date-field-cb').checked = false;
     approvalsState.filter.offset = 0;
     loadApprovals();
   });

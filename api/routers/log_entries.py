@@ -144,6 +144,7 @@ async def list_log_entries(
     status: EntryStatus | None = Query(default=None),
     date_from: date | None = Query(default=None),
     date_to: date | None = Query(default=None),
+    date_field: Literal["work_date", "created_at"] = Query(default="work_date"),
     search_q: str | None = Query(default=None, max_length=200),
     sort_by: Literal["work_date", "hours", "created_at", "status", "activity_description", "location"] = Query(default="work_date"),
     sort_dir: Literal["asc", "desc"] = Query(default="desc"),
@@ -161,12 +162,13 @@ async def list_log_entries(
     if status is not None:
         stmt = stmt.where(LogEntry.status == status)
         count_stmt = count_stmt.where(LogEntry.status == status)
+    date_col = LogEntry.work_date if date_field == "work_date" else LogEntry.created_at
     if date_from is not None:
-        stmt = stmt.where(LogEntry.work_date >= date_from)
-        count_stmt = count_stmt.where(LogEntry.work_date >= date_from)
+        stmt = stmt.where(date_col >= date_from)
+        count_stmt = count_stmt.where(date_col >= date_from)
     if date_to is not None:
-        stmt = stmt.where(LogEntry.work_date <= date_to)
-        count_stmt = count_stmt.where(LogEntry.work_date <= date_to)
+        stmt = stmt.where(date_col <= date_to)
+        count_stmt = count_stmt.where(date_col <= date_to)
     if search_q is not None:
         pattern = f"%{search_q}%"
         search_filter = or_(
