@@ -45,19 +45,9 @@ async def test_create_volunteer_duplicate_emso_returns_409(
     await volunteer_factory(emso="1234567890123")
     r = await client.post("/api/volunteers", json=_VALID_PAYLOAD, headers=auth)
     assert r.status_code == 409
-
-
-async def test_create_volunteer_duplicate_phone_returns_409(
-    client: AsyncClient, auth: dict, volunteer_factory
-) -> None:
-    # Note: phone uniqueness is enforced by a DB constraint (IntegrityError path).
-    # In the savepoint-based test session the IntegrityError rolls back the outer
-    # transaction, making full 409 coverage impossible without a real commit.
-    # We verify that a duplicate EMSO (which uses an explicit SELECT check) returns 409
-    # and trust the IntegrityError path works in production.
-    await volunteer_factory(emso="1234567890123")
-    r = await client.post("/api/volunteers", json=_VALID_PAYLOAD, headers=auth)
-    assert r.status_code == 409
+# Phone uniqueness is enforced by IntegrityError, which rolls back the
+# savepoint before the 409 response can be returned. Not testable via HTTP
+# in this isolation setup.
 
 
 async def test_create_volunteer_missing_required_field_returns_422(

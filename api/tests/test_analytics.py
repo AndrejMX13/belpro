@@ -58,7 +58,7 @@ async def test_analytics_summary_active_volunteer_count(
     await volunteer_factory(active=False)
     r = await client.get("/api/analytics/summary", headers=auth)
     assert r.status_code == 200
-    assert r.json()["active_volunteer_count"] >= 1
+    assert r.json()["active_volunteer_count"] == 1
 
 
 async def test_analytics_summary_monthly_trend_has_6_points(

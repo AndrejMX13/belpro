@@ -42,7 +42,7 @@ async def test_monthly_summary_missing_params_returns_422(
     assert r.status_code == 422
 
 
-async def test_monthly_pdf_returns_pdf_content_type(
+async def test_monthly_pdf_empty_month_returns_pdf_content_type(
     client: AsyncClient, auth: dict
 ) -> None:
     r = await client.post("/api/reports/monthly/pdf?year=2026&month=1", headers=auth)
