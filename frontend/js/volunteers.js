@@ -877,13 +877,8 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
           });
           closeModal();
           toast('Vnos ustvarjen.');
-          history.pushState(null, '', `#volunteers/${id}/log/${entry.id}`);
-          renderLogEntryDetail(entry.id, {
-            backHash:  `#volunteers/${id}`,
-            backLabel: '← Nazaj na prostovoljca',
-            backNav:   'volunteers',
-            goBack:    () => renderDetail(id),
-          });
+          history.pushState(null, '', `#volunteers/${id}`);
+          renderDetail(id);
         } catch (err) {
           errEl.textContent = err.message;
           errEl.hidden = false;
