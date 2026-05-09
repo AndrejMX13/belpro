@@ -9,6 +9,7 @@
 .env
 .env.local
 .env.*.local
+api/.env.test
 *.key
 *.pem
 *.p12
