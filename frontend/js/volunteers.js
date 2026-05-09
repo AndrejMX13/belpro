@@ -1040,7 +1040,7 @@ function fmtHours(h) {
 
 function fmtDatetime(iso) {
   if (!iso) return '—';
-  return new Date(iso).toLocaleDateString('sl-SI', { year: 'numeric', month: 'long', day: 'numeric' });
+  return iso.slice(0, 10);
 }
 
 // ===== Settings page =====
