@@ -27,7 +27,7 @@ services:
   # Redis 7 — Evolution API in-memory queue / cache
   # ─────────────────────────────────────────────────────────────
   redis:
-    image: redis:7-alpine
+    image: redis:7-alpine@sha256:ee64a64eaab618d88051c3ade8f6352d11531fcf79d9a4818b9b183d8c1d18ba  # redis:7-alpine 2026-05-09
     restart: unless-stopped
     command: redis-server --appendonly yes
     volumes:
@@ -121,7 +121,7 @@ services:
   # Dashboard: http://localhost:80
   # ─────────────────────────────────────────────────────────────
   frontend:
-    image: nginx:alpine
+    image: nginx:alpine@sha256:5616878291a2eed594aee8db4dade5878cf7edcb475e59193904b198d9b830de  # nginx:alpine 2026-05-09
     restart: unless-stopped
     ports:
       - "80:80"
