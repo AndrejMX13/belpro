@@ -1670,6 +1670,10 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
           <label>Ure</label>
           <input type="number" id="d-hours" value="${entry.hours}" min="0.5" max="24" step="0.5" />
         </div>
+        <div class="field" style="max-width:200px">
+          <label>Dan opravljenega dela</label>
+          <input type="date" id="d-work-date" value="${entry.work_date}" />
+        </div>
         <div class="field">
           <label>Lokacija</label>
           <input type="text" id="d-location" value="${esc(entry.location || '')}" placeholder="Npr. Dom starejših Trnovo" />
@@ -1797,9 +1801,10 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
 
   if (editable) {
     $('d-save-btn').addEventListener('click', async () => {
-      const desc  = $('d-desc').value.trim();
-      const hours = parseFloat($('d-hours').value);
-      const errEl = $('d-edit-error');
+      const desc     = $('d-desc').value.trim();
+      const hours    = parseFloat($('d-hours').value);
+      const workDate = $('d-work-date').value;
+      const errEl    = $('d-edit-error');
       if (!desc) {
         errEl.textContent = 'Opis dela ne sme biti prazen.';
         errEl.hidden = false;
@@ -1810,12 +1815,17 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
         errEl.hidden = false;
         return;
       }
+      if (!workDate) {
+        errEl.textContent = 'Dan opravljenega dela je obvezen.';
+        errEl.hidden = false;
+        return;
+      }
       errEl.hidden = true;
       $('d-save-btn').disabled = true;
       $('d-save-btn').textContent = 'Shranjevanje…';
       const location = $('d-location').value.trim() || null;
       try {
-        await API.logEntries.update(entry.id, { activity_description: desc, hours, location });
+        await API.logEntries.update(entry.id, { activity_description: desc, hours, location, work_date: workDate });
         toast('Vnos posodobljen.');
         await renderLogEntryDetail(id, { backHash, backLabel, backNav, goBack });
       } catch (err) {
