@@ -264,6 +264,7 @@ async def update_log_entry(
         entry.activity_description = payload.activity_description
     if payload.hours is not None:
         entry.hours = payload.hours
+    # location is nullable, so model_fields_set distinguishes "not sent" from "explicitly cleared to null"
     if 'location' in payload.model_fields_set:
         entry.location = payload.location
     await db.commit()
