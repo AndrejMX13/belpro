@@ -34,6 +34,7 @@ def _get(url: str) -> dict:
 
 
 def main() -> None:
+    sys.stdout.reconfigure(encoding="utf-8")
     load_dotenv()
 
     parser = argparse.ArgumentParser(description="List pending log entries for n8n manual trigger")

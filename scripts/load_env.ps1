@@ -9,6 +9,8 @@ if (-not (Test-Path $envFile)) {
     exit 1
 }
 
+[System.Environment]::SetEnvironmentVariable("PYTHONUTF8", "1")
+
 $count = 0
 foreach ($line in Get-Content $envFile) {
     if ($line -match '^\s*([^#][^=]*)=(.*)') {
