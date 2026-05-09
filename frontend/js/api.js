@@ -110,6 +110,7 @@ const API = (() => {
 
     logEntries: {
       get:    (id)       => request('/log-entries/' + id),
+      create: (payload)  => request('/log-entries', { method: 'POST', body: JSON.stringify(payload) }),
       update: (id, data) => request('/log-entries/' + id, { method: 'PATCH', body: JSON.stringify(data) }),
 
       uploadPhoto: (entryId, formData) => {

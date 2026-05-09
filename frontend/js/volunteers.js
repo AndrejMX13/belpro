@@ -765,6 +765,9 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
       ` : ''}
 
       <p class="section-title">Dnevnik dela</p>
+      <div style="margin-bottom:1rem">
+        <button class="btn btn-primary btn-sm" id="add-entry-btn">+ Dodaj vnos</button>
+      </div>
 
       <div class="filter-bar">
         <select id="vlog-status">
@@ -803,6 +806,87 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
     $('back-btn').addEventListener('click', () => {
       history.pushState(null, '', backHash);
       (goBack || renderList)();
+    });
+
+    $('add-entry-btn').addEventListener('click', () => {
+      const today = new Date().toISOString().slice(0, 10);
+      openModal('Nov vnos', `
+        <form id="add-entry-form" novalidate>
+          <div class="field" style="max-width:200px">
+            <label>Dan opravljenega dela *</label>
+            <input type="date" id="ae-work-date" value="${today}" required />
+          </div>
+          <div class="field" style="max-width:160px">
+            <label>Ure *</label>
+            <input type="number" id="ae-hours" min="0.5" max="24" step="0.5" placeholder="npr. 4" required />
+          </div>
+          <div class="field">
+            <label>Opis dela *</label>
+            <textarea id="ae-desc" rows="4" style="width:100%;resize:vertical" required></textarea>
+          </div>
+          <div class="field">
+            <label>Lokacija</label>
+            <input type="text" id="ae-location" placeholder="Npr. Dom starejših Trnovo" />
+          </div>
+          <div id="ae-error" class="form-error" hidden></div>
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="ae-submit">Shrani vnos</button>
+          </div>
+        </form>
+      `);
+
+      $('add-entry-form').addEventListener('submit', async (e) => {
+        e.preventDefault();
+        const workDate = $('ae-work-date').value;
+        const hours    = parseFloat($('ae-hours').value);
+        const desc     = $('ae-desc').value.trim();
+        const location = $('ae-location').value.trim() || null;
+        const errEl    = $('ae-error');
+
+        if (!workDate) {
+          errEl.textContent = 'Dan opravljenega dela je obvezen.';
+          errEl.hidden = false;
+          return;
+        }
+        if (isNaN(hours) || hours < 0.5 || hours > 24) {
+          errEl.textContent = 'Ure morajo biti med 0.5 in 24.';
+          errEl.hidden = false;
+          return;
+        }
+        if (!desc) {
+          errEl.textContent = 'Opis dela ne sme biti prazen.';
+          errEl.hidden = false;
+          return;
+        }
+
+        errEl.hidden = true;
+        $('ae-submit').disabled = true;
+        $('ae-submit').textContent = 'Shranjevanje…';
+
+        try {
+          const entry = await API.logEntries.create({
+            volunteer_id: id,
+            work_date:    workDate,
+            hours,
+            activity_description: desc,
+            location,
+          });
+          closeModal();
+          toast('Vnos ustvarjen.');
+          history.pushState(null, '', `#volunteers/${id}/log/${entry.id}`);
+          renderLogEntryDetail(entry.id, {
+            backHash:  `#volunteers/${id}`,
+            backLabel: '← Nazaj na prostovoljca',
+            backNav:   'volunteers',
+            goBack:    () => renderDetail(id),
+          });
+        } catch (err) {
+          errEl.textContent = err.message;
+          errEl.hidden = false;
+          $('ae-submit').disabled = false;
+          $('ae-submit').textContent = 'Shrani vnos';
+        }
+      });
     });
 
     const deleteBtn = $('delete-btn');
