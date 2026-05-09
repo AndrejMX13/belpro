@@ -233,7 +233,7 @@ function revokePhotoUrls() {
 }
 
 const approvalsState = {
-  filter: { status: 'pending_manager', search_q: '', date_from: null, date_to: null, sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  filter: { status: 'pending_manager', search_q: '', date_from: null, date_to: null, sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 },
   total: 0,
   items: [],
   volunteerMap: new Map(),
@@ -241,7 +241,7 @@ const approvalsState = {
 
 const volunteerLogState = {
   volunteerId: null,
-  filter: { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 },
+  filter: { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 },
   total: 0,
   items: [],
 };
@@ -688,7 +688,7 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
 
   if (volunteerLogState.volunteerId !== id) {
     volunteerLogState.volunteerId = id;
-    volunteerLogState.filter = { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'entry_date', sort_dir: 'desc', offset: 0, limit: 20 };
+    volunteerLogState.filter = { status: '', search_q: '', date_from: null, date_to: null, sort_by: 'work_date', sort_dir: 'desc', offset: 0, limit: 20 };
     volunteerLogState.total = 0;
     volunteerLogState.items = [];
   }
@@ -787,7 +787,7 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
       <div class="table-wrapper">
         <table id="vlog-table">
           <thead><tr id="vlog-head">${renderVolunteerLogThead()}</tr></thead>
-          <tbody id="vlog-body"><tr class="loading-row"><td colspan="5">Nalaganje…</td></tr></tbody>
+          <tbody id="vlog-body"><tr class="loading-row"><td colspan="6">Nalaganje…</td></tr></tbody>
         </table>
       </div>
 
@@ -1236,11 +1236,12 @@ function approvalsSortTh(label, col) {
 
 function renderApprovalsThead() {
   return `
-    ${approvalsSortTh('Datum', 'entry_date')}
+    ${approvalsSortTh('Dan opravljenega dela', 'work_date')}
     <th>Prostovoljec</th>
     ${approvalsSortTh('Opis dela', 'activity_description')}
     ${approvalsSortTh('Ure', 'hours')}
     ${approvalsSortTh('Lokacija', 'location')}
+    ${approvalsSortTh('Dan vnosa', 'created_at')}
     <th>Status</th>
     <th>Dejanja</th>
   `;
@@ -1256,7 +1257,7 @@ function renderApprovalsTable() {
     const msg = filter.status === 'pending_manager'
       ? 'Ni čakajočih vnosov.'
       : 'Ni vnosov, ki ustrezajo filtru.';
-    setHtml(tbody, `<tr class="empty-row"><td colspan="7">${msg}</td></tr>`);
+    setHtml(tbody, `<tr class="empty-row"><td colspan="8">${msg}</td></tr>`);
     return;
   }
 
@@ -1271,11 +1272,12 @@ function renderApprovalsTable() {
       : '';
     return `
       <tr data-id="${e.id}" style="cursor:pointer">
-        <td>${esc(e.entry_date)}</td>
+        <td>${esc(e.work_date)}</td>
         <td data-stop><a href="#approvals/volunteer/${e.volunteer_id}" style="color:var(--accent);text-decoration:none">${esc(name)}</a></td>
         <td>${desc}</td>
         <td style="text-align:right">${fmtHours(e.hours)}</td>
         <td>${e.location ? esc(e.location) : '—'}</td>
+        <td>${e.created_at.slice(0, 10)}</td>
         <td>${statusBadge(e.status)}</td>
         <td class="td-actions" data-stop>${actions}</td>
       </tr>`;
@@ -1335,10 +1337,11 @@ function volLogSortTh(label, col) {
 
 function renderVolunteerLogThead() {
   return `
-    ${volLogSortTh('Datum', 'entry_date')}
+    ${volLogSortTh('Dan opravljenega dela', 'work_date')}
     ${volLogSortTh('Opis dela', 'activity_description')}
     ${volLogSortTh('Ure', 'hours')}
     ${volLogSortTh('Lokacija', 'location')}
+    ${volLogSortTh('Dan vnosa', 'created_at')}
     <th>Status</th>
   `;
 }
@@ -1350,7 +1353,7 @@ function renderVolunteerLogTable() {
   const { items } = volunteerLogState;
 
   if (!items.length) {
-    setHtml(tbody, `<tr class="empty-row"><td colspan="5">Ni vnosov, ki ustrezajo filtru.</td></tr>`);
+    setHtml(tbody, `<tr class="empty-row"><td colspan="6">Ni vnosov, ki ustrezajo filtru.</td></tr>`);
     return;
   }
 
@@ -1360,10 +1363,11 @@ function renderVolunteerLogTable() {
       : esc(e.activity_description);
     return `
       <tr data-id="${e.id}" style="cursor:pointer">
-        <td>${esc(e.entry_date)}</td>
+        <td>${esc(e.work_date)}</td>
         <td>${desc}</td>
         <td style="text-align:right">${fmtHours(e.hours)}</td>
         <td>${e.location ? esc(e.location) : '—'}</td>
+        <td>${e.created_at.slice(0, 10)}</td>
         <td>${statusBadge(e.status)}</td>
       </tr>`;
   }).join('');
@@ -1608,7 +1612,7 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
 
     <div class="detail-header">
       <div>
-        <div class="detail-name">${esc(entry.entry_date)}</div>
+        <div class="detail-name">${esc(entry.work_date)}</div>
         <div style="margin-top:0.4rem">${statusBadge(entry.status)}</div>
       </div>
       ${canApprove ? `
