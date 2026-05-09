@@ -1666,6 +1666,10 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
           <label>Ure</label>
           <input type="number" id="d-hours" value="${entry.hours}" min="0.5" max="24" step="0.5" />
         </div>
+        <div class="field">
+          <label>Lokacija</label>
+          <input type="text" id="d-location" value="${esc(entry.location || '')}" placeholder="Npr. Dom starejših Trnovo" />
+        </div>
         <div id="d-edit-error" class="form-error" hidden></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="d-save-btn">Shrani spremembe</button>
