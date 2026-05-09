@@ -249,7 +249,7 @@ async def update_log_entry(
     payload: LogEntryUpdate,
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
 ) -> LogEntryResponse:
-    """Update activity_description and/or hours. Blocked once the entry is approved."""
+    """Update activity_description, hours, and/or location. Blocked once the entry is approved."""
     entry = (
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
@@ -264,6 +264,8 @@ async def update_log_entry(
         entry.activity_description = payload.activity_description
     if payload.hours is not None:
         entry.hours = payload.hours
+    if 'location' in payload.model_fields_set:
+        entry.location = payload.location
     await db.commit()
     await db.refresh(entry)
     return LogEntryResponse.model_validate(entry)
