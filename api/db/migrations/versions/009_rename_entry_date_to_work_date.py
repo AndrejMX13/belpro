@@ -1,5 +1,8 @@
 """Rename entry_date to work_date in log_entries.
 
+'work_date' is clearer than 'entry_date' and prevents confusion with
+'created_at' (submission timestamp). Also renames associated indexes.
+
 Revision ID: 009
 Revises: 008
 Create Date: 2026-05-09
@@ -25,6 +28,6 @@ def upgrade() -> None:
 
 def downgrade() -> None:
     """Reverse rename: work_date back to entry_date and restore index names."""
-    op.execute("ALTER INDEX idx_entries_vol_work_date RENAME TO idx_entries_vol_date")
-    op.execute("ALTER INDEX idx_entries_work_date RENAME TO idx_entries_date")
     op.alter_column("log_entries", "work_date", new_column_name="entry_date")
+    op.execute("ALTER INDEX idx_entries_work_date RENAME TO idx_entries_date")
+    op.execute("ALTER INDEX idx_entries_vol_work_date RENAME TO idx_entries_vol_date")
