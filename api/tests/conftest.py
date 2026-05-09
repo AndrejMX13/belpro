@@ -6,11 +6,15 @@ load_dotenv(Path(__file__).parent.parent / ".env.test", override=True)
 
 # ── stdlib / third-party ──────────────────────────────────────────────────────
 import base64
+import itertools
 import subprocess
 import sys
+import uuid
 from decimal import Decimal
 from datetime import date
 from typing import AsyncGenerator
+
+_volunteer_seq = itertools.count(1)
 
 import pytest
 import pytest_asyncio
@@ -58,19 +62,21 @@ async def engine():
     # Seed the single manager row (committed — visible to all tests).
     async with AsyncSession(eng) as session:
         async with session.begin():
-            session.add(
-                Manager(
-                    first_name="Test",
-                    last_name="Manager",
-                    phone="+38641000000",
-                    email="test@belpro.si",
-                    ngo_name="Test NGO d.o.o.",
-                    ngo_street="Testna ulica 1",
-                    ngo_postal_code="1000",
-                    ngo_city="Ljubljana",
-                    password_hash=hash_password(_TEST_PASS),
+            existing = (await session.execute(select(Manager).limit(1))).scalar_one_or_none()
+            if existing is None:
+                session.add(
+                    Manager(
+                        first_name="Test",
+                        last_name="Manager",
+                        phone="+38641000000",
+                        email="test@belpro.si",
+                        ngo_name="Test NGO d.o.o.",
+                        ngo_street="Testna ulica 1",
+                        ngo_postal_code="1000",
+                        ngo_city="Ljubljana",
+                        password_hash=hash_password(_TEST_PASS),
+                    )
                 )
-            )
 
     yield eng
 
@@ -121,7 +127,7 @@ async def client(db_session: AsyncSession) -> AsyncGenerator[AsyncClient, None]:
 @pytest.fixture
 def auth() -> dict[str, str]:
     """HTTP Basic Auth header for the seeded manager."""
-    creds = base64.b64encode(f"admin:{_TEST_PASS}".encode()).decode()
+    creds = base64.b64encode(f"manager:{_TEST_PASS}".encode()).decode()
     return {"Authorization": f"Basic {creds}"}
 
 
@@ -139,20 +145,23 @@ async def volunteer_factory(db_session: AsyncSession):
     async def _make(
         first_name: str = "Ana",
         last_name: str = "Novak",
-        emso: str = "1234567890123",
-        phone: str = "+38641111111",
+        emso: str | None = None,
+        phone: str | None = None,
         active: bool = True,
         **overrides,
     ) -> Volunteer:
+        seq = next(_volunteer_seq)
+        resolved_emso = emso if emso is not None else f"{seq:013d}"
+        resolved_phone = phone if phone is not None else f"+3864{seq:07d}"
         v = Volunteer(
             first_name=first_name,
             last_name=last_name,
             street="Testna 1",
             postal_code="1000",
             city="Ljubljana",
-            emso=encrypt_emso(emso, key),
-            emso_hash=hash_emso(emso, key),
-            phone=phone,
+            emso=encrypt_emso(resolved_emso, key),
+            emso_hash=hash_emso(resolved_emso, key),
+            phone=resolved_phone,
             active=active,
             manager_id=manager.id,
             **overrides,
@@ -171,7 +180,7 @@ async def log_entry_factory(db_session: AsyncSession):
     """
 
     async def _make(
-        volunteer_id,
+        volunteer_id: uuid.UUID,
         work_date: date = date(2026, 1, 15),
         activity_description: str = "Testno delo",
         hours: Decimal = Decimal("2.0"),
