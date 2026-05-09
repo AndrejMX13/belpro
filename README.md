@@ -279,6 +279,7 @@ This project was developed with the help of the following tools, whose configura
 - **[Claude Code](https://code.claude.com/docs/en/quickstart)** — Anthropic's AI coding assistant, used for implementation, workflow automation, and debugging throughout the project.
 - **[Serena](https://github.com/oraios/serena)** — MCP server for semantic code navigation (symbol search, cross-referencing). Configuration lives in `.claude/`.
 - **[Graphify](https://github.com/safishamsi/graphify)** — AST-based knowledge graph generator for codebase mapping. Output lives in `graphify-out/`.
+- **[Superpowers](https://github.com/obra/superpowers)** — Claude Code plugin providing structured development workflows (brainstorming, planning, subagent-driven execution, code review). Configuration lives in `.claude/`.
 
 ---
 
