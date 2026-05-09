@@ -88,7 +88,7 @@ def render_volunteer_pdf(
 
     rows = "".join(
         f"<tr>"
-        f"<td class='num'>{_fmt_date(e.entry_date)}</td>"
+        f"<td class='num'>{_fmt_date(e.work_date)}</td>"
         f"<td>{_esc(e.activity_description)}</td>"
         f"<td>{_esc(e.location)}</td>"
         f"<td class='num'>{float(e.hours):.1f}</td>"

@@ -60,13 +60,13 @@ def _to_response(volunteer: Volunteer, key: bytes, hours_this_month: float = 0.0
 def _to_detail_response(volunteer: Volunteer, key: bytes) -> VolunteerDetailResponse:
     """Same as _to_response but includes sorted log_entries and computed hours for the current month."""
     masked = mask_emso(decrypt_emso(volunteer.emso, key))
-    volunteer.log_entries.sort(key=lambda e: e.entry_date, reverse=True)
+    volunteer.log_entries.sort(key=lambda e: e.work_date, reverse=True)
     today = date.today()
     hours_this_month = float(sum(
         e.hours for e in volunteer.log_entries
         if e.status == EntryStatus.APPROVED
-        and e.entry_date.year == today.year
-        and e.entry_date.month == today.month
+        and e.work_date.year == today.year
+        and e.work_date.month == today.month
     ))
     return VolunteerDetailResponse(
         id=volunteer.id,
@@ -112,8 +112,8 @@ async def list_volunteers(
         .where(
             LogEntry.volunteer_id == Volunteer.id,
             LogEntry.status == EntryStatus.APPROVED,
-            LogEntry.entry_date >= first_day,
-            LogEntry.entry_date <= last_day,
+            LogEntry.work_date >= first_day,
+            LogEntry.work_date <= last_day,
         )
         .correlate(Volunteer)
         .scalar_subquery()

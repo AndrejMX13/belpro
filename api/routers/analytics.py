@@ -49,8 +49,8 @@ async def analytics_summary(
         await db.execute(
             select(LogEntry.status, func.count().label("cnt"))
             .where(
-                func.extract("year", LogEntry.entry_date) == y,
-                func.extract("month", LogEntry.entry_date) == m,
+                func.extract("year", LogEntry.work_date) == y,
+                func.extract("month", LogEntry.work_date) == m,
                 LogEntry.status.in_(
                     [EntryStatus.PENDING_MANAGER, EntryStatus.APPROVED, EntryStatus.REJECTED]
                 ),
@@ -72,8 +72,8 @@ async def analytics_summary(
             .outerjoin(
                 LogEntry,
                 (LogEntry.volunteer_id == Volunteer.id)
-                & (func.extract("year", LogEntry.entry_date) == y)
-                & (func.extract("month", LogEntry.entry_date) == m)
+                & (func.extract("year", LogEntry.work_date) == y)
+                & (func.extract("month", LogEntry.work_date) == m)
                 & (LogEntry.status == EntryStatus.APPROVED),
             )
             .where(Volunteer.active.is_(True))
@@ -81,8 +81,8 @@ async def analytics_summary(
                 select(LogEntry.id)
                 .where(
                     LogEntry.volunteer_id == Volunteer.id,
-                    func.extract("year", LogEntry.entry_date) == y,
-                    func.extract("month", LogEntry.entry_date) == m,
+                    func.extract("year", LogEntry.work_date) == y,
+                    func.extract("month", LogEntry.work_date) == m,
                 )
                 .correlate(Volunteer)
                 .exists()
@@ -112,8 +112,8 @@ async def analytics_summary(
                 func.sum(LogEntry.hours).label("total_hours"),
             )
             .where(
-                func.extract("year", LogEntry.entry_date) == y,
-                func.extract("month", LogEntry.entry_date) == m,
+                func.extract("year", LogEntry.work_date) == y,
+                func.extract("month", LogEntry.work_date) == m,
                 LogEntry.status == EntryStatus.APPROVED,
                 LogEntry.location.isnot(None),
                 LogEntry.location != "",
@@ -134,14 +134,14 @@ async def analytics_summary(
     trend_rows = (
         await db.execute(
             select(
-                func.extract("year", LogEntry.entry_date).label("ty"),
-                func.extract("month", LogEntry.entry_date).label("tm"),
+                func.extract("year", LogEntry.work_date).label("ty"),
+                func.extract("month", LogEntry.work_date).label("tm"),
                 func.sum(LogEntry.hours).label("total_hours"),
             )
             .where(
                 LogEntry.status == EntryStatus.APPROVED,
-                LogEntry.entry_date >= date(first_y, first_m, 1),
-                LogEntry.entry_date <= date(y, m, last_day),
+                LogEntry.work_date >= date(first_y, first_m, 1),
+                LogEntry.work_date <= date(y, m, last_day),
             )
             .group_by("ty", "tm")
             .order_by("ty", "tm")

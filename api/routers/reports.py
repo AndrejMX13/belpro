@@ -47,8 +47,8 @@ async def monthly_summary(
             select(LogEntry.id)
             .where(
                 LogEntry.volunteer_id == Volunteer.id,
-                func.extract("year", LogEntry.entry_date) == year,
-                func.extract("month", LogEntry.entry_date) == month,
+                func.extract("year", LogEntry.work_date) == year,
+                func.extract("month", LogEntry.work_date) == month,
             )
             .correlate(Volunteer)
             .exists()
@@ -87,8 +87,8 @@ async def _summary_items(
         .outerjoin(
             LogEntry,
             (LogEntry.volunteer_id == Volunteer.id)
-            & (func.extract("year", LogEntry.entry_date) == year)
-            & (func.extract("month", LogEntry.entry_date) == month)
+            & (func.extract("year", LogEntry.work_date) == year)
+            & (func.extract("month", LogEntry.work_date) == month)
             & (LogEntry.status == EntryStatus.APPROVED),
         )
         .where(Volunteer.active.is_(True))
@@ -141,11 +141,11 @@ async def generate_monthly_pdf(
             select(LogEntry)
             .where(
                 LogEntry.volunteer_id == volunteer_id,
-                func.extract("year", LogEntry.entry_date) == year,
-                func.extract("month", LogEntry.entry_date) == month,
+                func.extract("year", LogEntry.work_date) == year,
+                func.extract("month", LogEntry.work_date) == month,
                 LogEntry.status == EntryStatus.APPROVED,
             )
-            .order_by(LogEntry.entry_date)
+            .order_by(LogEntry.work_date)
         )
         entries = (await db.execute(entries_stmt)).scalars().all()
         pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, year, month, entries, ngo=ngo)
@@ -210,8 +210,8 @@ async def send_monthly_reports(
                 await db.execute(
                     select(LogEntry).where(
                         LogEntry.volunteer_id == vol.id,
-                        func.extract("year", LogEntry.entry_date) == y,
-                        func.extract("month", LogEntry.entry_date) == m,
+                        func.extract("year", LogEntry.work_date) == y,
+                        func.extract("month", LogEntry.work_date) == m,
                         LogEntry.status == EntryStatus.APPROVED,
                     )
                 )
