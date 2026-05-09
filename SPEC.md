@@ -445,3 +445,12 @@ python scripts/list_pending_entries.py
 # 8. Switch back for the next volunteer test:
 .\scripts\switch_manager_phone.ps1 volunteer
 ```
+
+### Manual trigger nodes in n8n
+
+The testing workflow relies on two manual trigger nodes in the n8n workflows:
+
+| Workflow | Node Name | What it does |
+|----------|-----------|--------------|
+| **BelPro — Vnos Prostovoljcev** | `Manual: Poslji Obvestilo Upravljalcu` | Sends the manager approval notification for pending entries |
+| **BelPro — Odobritev Upravljalca** | `Manual Trigger` | Fires the manager approval flow (simulates manager replying to the notification) |
