@@ -59,7 +59,7 @@ async def _notify_volunteer_email(
         body = (
             f"<p>Spoštovani/-a {vol.first_name},</p>"
             f"<p>vaša prijava prostovoljskega dela z dne "
-            f"<strong>{entry.entry_date}</strong> je bila <strong>{action}</strong> s strani upravljalca.</p>"
+            f"<strong>{entry.work_date}</strong> je bila <strong>{action}</strong> s strani upravljalca.</p>"
             + (
                 ""
                 if approved
@@ -145,7 +145,7 @@ async def list_log_entries(
     date_from: date | None = Query(default=None),
     date_to: date | None = Query(default=None),
     search_q: str | None = Query(default=None, max_length=200),
-    sort_by: Literal["entry_date", "hours", "created_at", "status", "activity_description", "location"] = Query(default="entry_date"),
+    sort_by: Literal["work_date", "hours", "created_at", "status", "activity_description", "location"] = Query(default="work_date"),
     sort_dir: Literal["asc", "desc"] = Query(default="desc"),
     offset: int = Query(default=0, ge=0),
     limit: int = Query(default=50, ge=1, le=200),
@@ -162,11 +162,11 @@ async def list_log_entries(
         stmt = stmt.where(LogEntry.status == status)
         count_stmt = count_stmt.where(LogEntry.status == status)
     if date_from is not None:
-        stmt = stmt.where(LogEntry.entry_date >= date_from)
-        count_stmt = count_stmt.where(LogEntry.entry_date >= date_from)
+        stmt = stmt.where(LogEntry.work_date >= date_from)
+        count_stmt = count_stmt.where(LogEntry.work_date >= date_from)
     if date_to is not None:
-        stmt = stmt.where(LogEntry.entry_date <= date_to)
-        count_stmt = count_stmt.where(LogEntry.entry_date <= date_to)
+        stmt = stmt.where(LogEntry.work_date <= date_to)
+        count_stmt = count_stmt.where(LogEntry.work_date <= date_to)
     if search_q is not None:
         pattern = f"%{search_q}%"
         search_filter = or_(
@@ -226,7 +226,7 @@ async def create_log_entry(
 
     entry = LogEntry(
         volunteer_id=payload.volunteer_id,
-        entry_date=payload.entry_date,
+        work_date=payload.work_date,
         activity_description=payload.activity_description,
         hours=payload.hours,
         location=payload.location,
@@ -249,7 +249,7 @@ async def update_log_entry(
     payload: LogEntryUpdate,
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
 ) -> LogEntryResponse:
-    """Update activity_description, hours, and/or location. Blocked once the entry is approved."""
+    """Update activity_description, hours, location, and/or work_date. Blocked once approved."""
     entry = (
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
@@ -267,6 +267,8 @@ async def update_log_entry(
     # location is nullable, so model_fields_set distinguishes "not sent" from "explicitly cleared to null"
     if 'location' in payload.model_fields_set:
         entry.location = payload.location
+    if payload.work_date is not None:
+        entry.work_date = payload.work_date
     await db.commit()
     await db.refresh(entry)
     return LogEntryResponse.model_validate(entry)
