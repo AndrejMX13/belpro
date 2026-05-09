@@ -296,7 +296,11 @@ Contents:
 ## 7. Email
 
 - n8n Send Email (SMTP) node used for all outgoing email.
-- Works with any SMTP provider: Gmail (smtp.gmail.com:587 + App Password), Yahoo, Proton, or institutional servers.
+- Works with **any** SMTP provider. The system is provider-agnostic — configuration lives in the Settings UI. Examples:
+  - **Gmail:** smtp.gmail.com:587 with an [App Password](https://myaccount.google.com/apppasswords)
+  - **Yahoo Mail:** smtp.mail.yahoo.com:587
+  - **Proton Mail:** Proton Mail Bridge (local SMTP)
+  - **Institutional / self-hosted:** any standards-compliant SMTP server
 - SMTP host, port, login, and from-name are configured via the Settings UI and stored in the `managers` table. The password stays in `.env` as `SMTP_PASSWORD`.
 - Emails sent: monthly PDF delivery, entry approval/rejection notifications (optional fallback if WhatsApp fails).
 
@@ -373,7 +377,9 @@ belpro/
 ├── scripts/
 │   ├── setup.sh                       # Initial setup wizard
 │   ├── backup.sh                      # DB + photo backup
-│   └── restore.sh
+│   ├── restore.sh
+│   ├── list_pending_entries.py        # Print pending entries as JSON for n8n manual trigger
+│   └── switch_manager_phone.ps1      # Toggle manager phone between real/dummy for testing
 │
 └── db/
     └── init.sql                       # Initial schema
@@ -402,3 +408,54 @@ belpro/
 - Integration with IRSD / government systems
 - Automatic face detection in photos
 - Volunteer self-registration via WhatsApp
+
+---
+
+## 12. Testing Utilities
+
+Two scripts in `scripts/` reduce the phone count needed for end-to-end testing from three to two (or one, with a dual-SIM phone).
+
+**Without these scripts,** testing the full flow requires three WhatsApp numbers:
+1. A dedicated phone running Evolution API (the bot) — always separate
+2. A volunteer phone to send messages
+3. A manager phone to receive approval notifications
+
+**With these scripts,** the volunteer and manager roles can share a single phone (and SIM), cutting the requirement to two phones total. If your phone supports dual SIM, you can go down to one — the second SIM runs the bot, the first SIM handles both volunteer and manager roles.
+
+### `switch_manager_phone.ps1`
+Toggles the manager's phone number in the database between a real number and a dummy number.
+
+```
+.\scripts\switch_manager_phone.ps1 volunteer   # set manager phone to dummy → your phone acts as volunteer
+.\scripts\switch_manager_phone.ps1 manager     # set manager phone to real → your phone acts as manager
+```
+
+Uses environment variables `TEST_MANAGER_PHONE` (your real number) and `TEST_VOLUNTEER_PHONE` (a dummy placeholder), plus `MANAGER_PASSWORD` for API auth. See `.env.example` for configuration.
+
+When the manager phone is set to the dummy number, the manager approval notification goes nowhere, and you can test the volunteer flow in isolation. When switched back, your phone receives manager notifications.
+
+### `list_pending_entries.py`
+Prints all `pending_manager` entries as JSON objects ready to paste into the n8n manual trigger node.
+
+```
+python scripts/list_pending_entries.py          # entries not yet notified
+python scripts/list_pending_entries.py --all    # include already-notified entries
+```
+
+Requires `MANAGER_PASSWORD` in the environment. Reads from the FastAPI backend at `BELPRO_API_URL` (defaults to `http://localhost:8100/api`).
+
+### Typical testing workflow
+
+```
+# 1. Volunteer sends a voice note via WhatsApp → n8n processes it
+# 2. Volunteer confirms (Potrdi) → entry moves to pending_manager
+# 3. Dump the pending entry:
+python scripts/list_pending_entries.py
+# 4. Copy the JSON output into the n8n manual trigger node
+# 5. Execute the n8n manual trigger → manager approval message sends
+# 6. Switch phone to manager mode to receive the notification:
+.\scripts\switch_manager_phone.ps1 manager
+# 7. Reply Approve/Odori in WhatsApp → flow completes
+# 8. Switch back for the next volunteer test:
+.\scripts\switch_manager_phone.ps1 volunteer
+```
