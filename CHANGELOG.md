@@ -6,6 +6,23 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.2] — 2026-05-09
+
+### Added
+- Full automated test suite: 57 pytest tests covering all API endpoints (health, managers, volunteers, log entries, reports, analytics). Real PostgreSQL only — no mocks.
+- `api/tests/conftest.py`: session-scoped engine fixture (Alembic migrations on `belpro_test`), function-scoped SAVEPOINT isolation, `AsyncClient` with dependency override, `volunteer_factory` and `log_entry_factory` helpers.
+- `scripts/test_backup_restore.sh`: standalone smoke test for backup/restore cycle (seeds data → backup → drop DB → restore → verify).
+- `api/requirements-test.txt` and `api/pyproject.toml` with pytest configuration.
+- `api/.env.test` (gitignored) for test database URL and secrets.
+
+### Changed
+- All 9 Alembic migrations made idempotent (`IF NOT EXISTS` guards throughout) so the test session can run `stamp base → upgrade head` against a database that already has schema from `init.sql`.
+
+### Fixed
+- Version drift: `main.py` had been stuck at `0.8.2` since before the 0.9.x work; corrected to `0.9.2`.
+
+---
+
 ## [0.9.1] — 2026-05-09
 
 ### Added

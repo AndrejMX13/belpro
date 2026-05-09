@@ -463,3 +463,41 @@ The testing workflow relies on two manual trigger nodes in the n8n workflows:
 |----------|-----------|--------------|
 | **BelPro — Vnos Prostovoljcev** | `Manual: Poslji Obvestilo Upravljalcu` | Sends the manager approval notification for pending entries |
 | **BelPro — Odobritev Upravljalca** | `Manual Trigger` | Fires the manager approval flow (simulates manager replying to the notification) |
+
+---
+
+## 13. Automated Test Suite
+
+A pytest-based regression safety net for the FastAPI backend. Scope: all API endpoints, happy path + key error cases. n8n workflow tests are excluded (structural changes pending).
+
+### Infrastructure
+
+- **Test database:** `belpro_test` — a second database on the existing `postgres` Docker container, reachable at `localhost:5432` from WSL2. Production `DATABASE_URL` is never touched.
+- **Configuration:** `api/.env.test` (gitignored) points pytest at `belpro_test` and supplies test-only secrets.
+- **Isolation:** Every test runs inside a SQLAlchemy SAVEPOINT. All writes are rolled back on teardown — no data leaks between tests.
+- **No mocks, ever.** All tests hit a real PostgreSQL database.
+
+### Running
+
+```bash
+# From the api/ directory on the WSL2 host (not inside the container):
+cd api
+python -m pytest tests/ -v
+```
+
+Requires the `postgres` Docker container to be running and `belpro_test` to exist (created automatically on first run by the session-scoped engine fixture).
+
+### Test files
+
+| File | Coverage |
+|------|----------|
+| `tests/test_health.py` | `GET /api/health` |
+| `tests/test_managers.py` | Manager profile, single-manager constraint, auth |
+| `tests/test_volunteers.py` | Full volunteers CRUD, deactivate/activate, EMŠO duplicate detection |
+| `tests/test_log_entries.py` | Full log entries CRUD, status machine (approve/reject/confirm), photo validation |
+| `tests/test_reports.py` | Report generation, PDF content-type, 404 on unknown volunteer |
+| `tests/test_analytics.py` | Summary shape, approved-only hour counts, 6-point monthly trend |
+
+### Backup/restore smoke test
+
+`scripts/test_backup_restore.sh` — run manually, not part of the default pytest suite. Seeds known data, runs `backup.sh`, drops the `belpro` database, restores via `restore.sh`, and asserts the seeded records are present.
