@@ -19,21 +19,7 @@ Each NGO runs its own independent Belpro instance. Volunteers interact exclusive
 
 ## 2. Architecture Overview
 
-```
-Volunteer (WhatsApp)
-        │
-        ▼
-Evolution API  ──────────────────────────────┐
-        │                                    │
-        ▼                                    │
-  n8n Workflow ◄── Faster-Whisper (local)    │
-        │                                    │
-        ├──► PostgreSQL (self-hosted)         │
-        │                                    │
-        ├──► FastAPI + Web Dashboard ◄────────┘
-        │
-        └──► SMTP (any provider) for email delivery
-```
+![BelPro Architecture](docs/images/architecture.svg)
 
 ### Components
 

@@ -19,21 +19,7 @@ Volunteers log work via **WhatsApp** (voice notes, photos, or text). A manager r
 
 ## How it works
 
-```
-Volunteer (WhatsApp)
-        │
-        ▼
-Evolution API  ──────────────────────────────┐
-        │                                    │
-        ▼                                    │
-  n8n Workflow ◄── Faster-Whisper (local)    │
-        │                                    │
-        ├──► PostgreSQL                       │
-        │                                    │
-        ├──► FastAPI + Web Dashboard ◄────────┘
-        │
-        └──► Gmail (monthly PDFs, notifications)
-```
+![BelPro Architecture](docs/images/architecture.svg)
 
 1. Volunteer sends a voice note, photo, or text message to the NGO's WhatsApp number.
 2. n8n transcribes audio via Faster-Whisper (local, CPU, Slovenian), extracts date/hours/location/activity, and sends the volunteer a confirmation summary with Potrdi / Popravi / Prekliči buttons.

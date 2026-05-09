@@ -24,6 +24,7 @@ belpro/
 ├── frontend/                  # Manager web dashboard (HTML/CSS/JS)
 ├── nginx/                     # Reverse proxy config
 ├── scripts/                   # setup.sh, backup.sh, restore.sh
+├── docs/images/               # Project images (architecture diagrams, etc.)
 └── db/                        # init.sql, Alembic migrations
 ```
 
