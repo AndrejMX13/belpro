@@ -280,6 +280,7 @@ This project was developed with the help of the following tools, whose configura
 - **[Serena](https://github.com/oraios/serena)** — MCP server for semantic code navigation (symbol search, cross-referencing). Configuration lives in `.claude/`.
 - **[Graphify](https://github.com/safishamsi/graphify)** — AST-based knowledge graph generator for codebase mapping. Output lives in `graphify-out/`.
 - **[Superpowers](https://github.com/obra/superpowers)** — Claude Code plugin providing structured development workflows (brainstorming, planning, subagent-driven execution, code review). Configuration lives in `.claude/`.
+- **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp)** — MCP server for managing n8n workflows directly from Claude Code. Used throughout to create, update, and validate workflows without touching JSON by hand.
 
 ---
 
