@@ -23,7 +23,7 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Add password_hash to managers."""
-    op.add_column("managers", sa.Column("password_hash", sa.Text(), nullable=True))
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS password_hash TEXT")
 
 
 def downgrade() -> None:

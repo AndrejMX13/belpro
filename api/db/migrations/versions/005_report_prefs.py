@@ -29,60 +29,12 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Add report preference columns to managers and volunteers."""
-    op.add_column(
-        "managers",
-        sa.Column(
-            "report_whatsapp",
-            sa.Boolean(),
-            nullable=False,
-            server_default=sa.text("FALSE"),
-        ),
-    )
-    op.add_column(
-        "managers",
-        sa.Column(
-            "report_email",
-            sa.Boolean(),
-            nullable=False,
-            server_default=sa.text("TRUE"),
-        ),
-    )
-    op.add_column(
-        "managers",
-        sa.Column(
-            "default_report_whatsapp",
-            sa.Boolean(),
-            nullable=False,
-            server_default=sa.text("FALSE"),
-        ),
-    )
-    op.add_column(
-        "managers",
-        sa.Column(
-            "default_report_email",
-            sa.Boolean(),
-            nullable=False,
-            server_default=sa.text("TRUE"),
-        ),
-    )
-    op.add_column(
-        "volunteers",
-        sa.Column(
-            "report_whatsapp",
-            sa.Boolean(),
-            nullable=False,
-            server_default=sa.text("FALSE"),
-        ),
-    )
-    op.add_column(
-        "volunteers",
-        sa.Column(
-            "report_email",
-            sa.Boolean(),
-            nullable=False,
-            server_default=sa.text("TRUE"),
-        ),
-    )
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS report_whatsapp BOOLEAN NOT NULL DEFAULT FALSE")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS report_email BOOLEAN NOT NULL DEFAULT TRUE")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS default_report_whatsapp BOOLEAN NOT NULL DEFAULT FALSE")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS default_report_email BOOLEAN NOT NULL DEFAULT TRUE")
+    op.execute("ALTER TABLE volunteers ADD COLUMN IF NOT EXISTS report_whatsapp BOOLEAN NOT NULL DEFAULT FALSE")
+    op.execute("ALTER TABLE volunteers ADD COLUMN IF NOT EXISTS report_email BOOLEAN NOT NULL DEFAULT TRUE")
 
 
 def downgrade() -> None:

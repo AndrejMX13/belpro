@@ -21,9 +21,33 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Rename entry_date to work_date and update index names."""
-    op.alter_column("log_entries", "entry_date", new_column_name="work_date")
-    op.execute("ALTER INDEX idx_entries_date RENAME TO idx_entries_work_date")
-    op.execute("ALTER INDEX idx_entries_vol_date RENAME TO idx_entries_vol_work_date")
+    op.execute("""
+        DO $$
+        BEGIN
+            IF EXISTS (
+                SELECT 1 FROM information_schema.columns
+                WHERE table_name = 'log_entries' AND column_name = 'entry_date'
+            ) THEN
+                ALTER TABLE log_entries RENAME COLUMN entry_date TO work_date;
+            END IF;
+        END$$
+    """)
+    op.execute("""
+        DO $$
+        BEGIN
+            IF EXISTS (SELECT 1 FROM pg_indexes WHERE indexname = 'idx_entries_date') THEN
+                ALTER INDEX idx_entries_date RENAME TO idx_entries_work_date;
+            END IF;
+        END$$
+    """)
+    op.execute("""
+        DO $$
+        BEGIN
+            IF EXISTS (SELECT 1 FROM pg_indexes WHERE indexname = 'idx_entries_vol_date') THEN
+                ALTER INDEX idx_entries_vol_date RENAME TO idx_entries_vol_work_date;
+            END IF;
+        END$$
+    """)
 
 
 def downgrade() -> None:

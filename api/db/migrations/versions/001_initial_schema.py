@@ -29,90 +29,100 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    """Create the full Belpro schema from scratch."""
+    """Create the full Belpro schema from scratch (idempotent — safe to re-run)."""
     # ── entry_status enum ────────────────────────────────────────────────────
     op.execute("""
-        CREATE TYPE entry_status AS ENUM (
-            'pending_volunteer',
-            'pending_manager',
-            'approved',
-            'rejected'
-        )
+        DO $$
+        BEGIN
+            IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'entry_status') THEN
+                CREATE TYPE entry_status AS ENUM (
+                    'pending_volunteer',
+                    'pending_manager',
+                    'approved',
+                    'rejected'
+                );
+            END IF;
+        END$$
     """)
 
     # ── managers ─────────────────────────────────────────────────────────────
-    op.create_table(
-        "managers",
-        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True,
-                  server_default=sa.text("gen_random_uuid()")),
-        sa.Column("first_name", sa.String(100), nullable=False),
-        sa.Column("last_name", sa.String(100), nullable=False),
-        sa.Column("phone", sa.String(30), nullable=False, unique=True),
-        sa.Column("email", sa.String(255), nullable=False, unique=True),
-        sa.Column("ngo_name", sa.String(255), nullable=False),
-        sa.Column("ngo_street", sa.String(255), nullable=False),
-        sa.Column("ngo_postal_code", sa.String(4), nullable=False),
-        sa.Column("ngo_city", sa.String(100), nullable=False),
-        sa.Column("created_at", sa.DateTime(timezone=True), nullable=False,
-                  server_default=sa.text("NOW()")),
-    )
+    op.execute("""
+        CREATE TABLE IF NOT EXISTS managers (
+            id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+            first_name VARCHAR(100) NOT NULL,
+            last_name VARCHAR(100) NOT NULL,
+            phone VARCHAR(30) NOT NULL UNIQUE,
+            email VARCHAR(255) NOT NULL UNIQUE,
+            ngo_name VARCHAR(255) NOT NULL,
+            ngo_street VARCHAR(255) NOT NULL,
+            ngo_postal_code VARCHAR(4) NOT NULL,
+            ngo_city VARCHAR(100) NOT NULL,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        )
+    """)
 
     # ── volunteers ───────────────────────────────────────────────────────────
-    op.create_table(
-        "volunteers",
-        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True,
-                  server_default=sa.text("gen_random_uuid()")),
-        sa.Column("first_name", sa.String(100), nullable=False),
-        sa.Column("last_name", sa.String(100), nullable=False),
-        sa.Column("street", sa.String(255), nullable=False),
-        sa.Column("postal_code", sa.String(4), nullable=False),
-        sa.Column("city", sa.String(100), nullable=False),
-        sa.Column("emso", sa.Text(), nullable=False),
-        sa.Column("phone", sa.String(30), nullable=False, unique=True),
-        sa.Column("email", sa.String(255)),
-        sa.Column("active", sa.Boolean(), nullable=False, server_default=sa.text("TRUE")),
-        sa.Column("registered_at", sa.DateTime(timezone=True), nullable=False,
-                  server_default=sa.text("NOW()")),
-        sa.Column("manager_id", postgresql.UUID(as_uuid=True),
-                  sa.ForeignKey("managers.id", ondelete="RESTRICT"), nullable=False),
-    )
-    op.create_index("idx_volunteers_manager", "volunteers", ["manager_id"])
-    op.create_index("idx_volunteers_active", "volunteers", ["active"])
-    op.create_index("idx_volunteers_phone", "volunteers", ["phone"])
+    op.execute("""
+        CREATE TABLE IF NOT EXISTS volunteers (
+            id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+            first_name VARCHAR(100) NOT NULL,
+            last_name VARCHAR(100) NOT NULL,
+            street VARCHAR(255) NOT NULL,
+            postal_code VARCHAR(4) NOT NULL,
+            city VARCHAR(100) NOT NULL,
+            emso TEXT NOT NULL,
+            phone VARCHAR(30) NOT NULL UNIQUE,
+            email VARCHAR(255),
+            active BOOLEAN NOT NULL DEFAULT TRUE,
+            registered_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+            manager_id UUID NOT NULL REFERENCES managers(id) ON DELETE RESTRICT
+        )
+    """)
+    op.execute("CREATE INDEX IF NOT EXISTS idx_volunteers_manager ON volunteers (manager_id)")
+    op.execute("CREATE INDEX IF NOT EXISTS idx_volunteers_active ON volunteers (active)")
+    op.execute("CREATE INDEX IF NOT EXISTS idx_volunteers_phone ON volunteers (phone)")
 
     # ── log_entries ──────────────────────────────────────────────────────────
-    op.create_table(
-        "log_entries",
-        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True,
-                  server_default=sa.text("gen_random_uuid()")),
-        sa.Column("volunteer_id", postgresql.UUID(as_uuid=True),
-                  sa.ForeignKey("volunteers.id", ondelete="RESTRICT"), nullable=False),
-        sa.Column("entry_date", sa.Date(), nullable=False),
-        sa.Column("activity_description", sa.Text(), nullable=False),
-        sa.Column("raw_transcript", sa.Text()),
-        sa.Column("hours", sa.Numeric(4, 1), nullable=False),
-        sa.Column("location", sa.String(255)),
-        sa.Column("status",
-                  sa.Enum("pending_volunteer", "pending_manager", "approved", "rejected",
-                          name="entry_status", create_type=False),
-                  nullable=False, server_default="pending_volunteer"),
-        sa.Column("photo_path", sa.String(500)),
-        sa.Column("photo_exif_timestamp", sa.DateTime(timezone=True)),
-        sa.Column("photo_exif_lat", sa.Numeric(10, 7)),
-        sa.Column("photo_exif_lon", sa.Numeric(10, 7)),
-        sa.Column("volunteer_confirmed_at", sa.DateTime(timezone=True)),
-        sa.Column("manager_approved_at", sa.DateTime(timezone=True)),
-        sa.Column("created_at", sa.DateTime(timezone=True), nullable=False,
-                  server_default=sa.text("NOW()")),
-        sa.Column("updated_at", sa.DateTime(timezone=True), nullable=False,
-                  server_default=sa.text("NOW()")),
-    )
-    op.create_index("idx_entries_volunteer", "log_entries", ["volunteer_id"])
-    op.create_index("idx_entries_status", "log_entries", ["status"])
-    op.create_index("idx_entries_date", "log_entries", ["entry_date"])
-    op.create_index("idx_entries_location", "log_entries", ["location"])
-    op.create_index("idx_entries_created", "log_entries", ["created_at"])
-    op.create_index("idx_entries_vol_date", "log_entries", ["volunteer_id", "entry_date"])
+    op.execute("""
+        CREATE TABLE IF NOT EXISTS log_entries (
+            id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+            volunteer_id UUID NOT NULL REFERENCES volunteers(id) ON DELETE RESTRICT,
+            entry_date DATE NOT NULL,
+            activity_description TEXT NOT NULL,
+            raw_transcript TEXT,
+            hours NUMERIC(4, 1) NOT NULL,
+            location VARCHAR(255),
+            status entry_status NOT NULL DEFAULT 'pending_volunteer',
+            photo_path VARCHAR(500),
+            photo_exif_timestamp TIMESTAMPTZ,
+            photo_exif_lat NUMERIC(10, 7),
+            photo_exif_lon NUMERIC(10, 7),
+            volunteer_confirmed_at TIMESTAMPTZ,
+            manager_approved_at TIMESTAMPTZ,
+            created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+            updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        )
+    """)
+    op.execute("CREATE INDEX IF NOT EXISTS idx_entries_volunteer ON log_entries (volunteer_id)")
+    op.execute("CREATE INDEX IF NOT EXISTS idx_entries_status ON log_entries (status)")
+    op.execute("""
+        DO $$
+        BEGIN
+            IF EXISTS (
+                SELECT 1 FROM information_schema.columns
+                WHERE table_name = 'log_entries' AND column_name = 'entry_date'
+            ) THEN
+                IF NOT EXISTS (SELECT 1 FROM pg_indexes WHERE indexname = 'idx_entries_date') THEN
+                    CREATE INDEX idx_entries_date ON log_entries (entry_date);
+                END IF;
+                IF NOT EXISTS (SELECT 1 FROM pg_indexes WHERE indexname = 'idx_entries_vol_date') THEN
+                    CREATE INDEX idx_entries_vol_date ON log_entries (volunteer_id, entry_date);
+                END IF;
+            END IF;
+        END$$
+    """)
+    op.execute("CREATE INDEX IF NOT EXISTS idx_entries_location ON log_entries (location)")
+    op.execute("CREATE INDEX IF NOT EXISTS idx_entries_created ON log_entries (created_at)")
 
     op.execute("""
         CREATE OR REPLACE FUNCTION set_updated_at()
@@ -124,35 +134,40 @@ def upgrade() -> None:
         $$ LANGUAGE plpgsql
     """)
     op.execute("""
-        CREATE TRIGGER trg_entries_updated_at
-            BEFORE UPDATE ON log_entries
-            FOR EACH ROW EXECUTE FUNCTION set_updated_at()
+        DO $$
+        BEGIN
+            IF NOT EXISTS (
+                SELECT 1 FROM pg_trigger WHERE tgname = 'trg_entries_updated_at'
+            ) THEN
+                CREATE TRIGGER trg_entries_updated_at
+                    BEFORE UPDATE ON log_entries
+                    FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+            END IF;
+        END$$
     """)
 
     # ── monthly_reports ──────────────────────────────────────────────────────
-    op.create_table(
-        "monthly_reports",
-        sa.Column("id", postgresql.UUID(as_uuid=True), primary_key=True,
-                  server_default=sa.text("gen_random_uuid()")),
-        sa.Column("volunteer_id", postgresql.UUID(as_uuid=True),
-                  sa.ForeignKey("volunteers.id", ondelete="RESTRICT")),
-        sa.Column("period_year", sa.SmallInteger(), nullable=False),
-        sa.Column("period_month", sa.SmallInteger(), nullable=False),
-        sa.Column("pdf_path", sa.String(500), nullable=False),
-        sa.Column("generated_at", sa.DateTime(timezone=True), nullable=False,
-                  server_default=sa.text("NOW()")),
-        sa.Column("sent_at", sa.DateTime(timezone=True)),
-        sa.CheckConstraint("period_month BETWEEN 1 AND 12", name="ck_reports_month"),
-    )
-    op.create_index("idx_reports_volunteer", "monthly_reports", ["volunteer_id"])
-    op.create_index("idx_reports_period", "monthly_reports", ["period_year", "period_month"])
     op.execute("""
-        CREATE UNIQUE INDEX idx_reports_unique_vol_period
+        CREATE TABLE IF NOT EXISTS monthly_reports (
+            id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+            volunteer_id UUID REFERENCES volunteers(id) ON DELETE RESTRICT,
+            period_year SMALLINT NOT NULL,
+            period_month SMALLINT NOT NULL,
+            pdf_path VARCHAR(500) NOT NULL,
+            generated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+            sent_at TIMESTAMPTZ,
+            CONSTRAINT ck_reports_month CHECK (period_month BETWEEN 1 AND 12)
+        )
+    """)
+    op.execute("CREATE INDEX IF NOT EXISTS idx_reports_volunteer ON monthly_reports (volunteer_id)")
+    op.execute("CREATE INDEX IF NOT EXISTS idx_reports_period ON monthly_reports (period_year, period_month)")
+    op.execute("""
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_reports_unique_vol_period
             ON monthly_reports(volunteer_id, period_year, period_month)
             WHERE volunteer_id IS NOT NULL
     """)
     op.execute("""
-        CREATE UNIQUE INDEX idx_reports_unique_consolidated_period
+        CREATE UNIQUE INDEX IF NOT EXISTS idx_reports_unique_consolidated_period
             ON monthly_reports(period_year, period_month)
             WHERE volunteer_id IS NULL
     """)

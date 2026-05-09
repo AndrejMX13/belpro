@@ -29,15 +29,12 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Add WhatsApp bot number and SMTP config columns to managers."""
-    op.add_column("managers", sa.Column("ngo_whatsapp_phone", sa.String(30), nullable=True))
-    op.add_column("managers", sa.Column("smtp_host", sa.String(255), nullable=True))
-    op.add_column(
-        "managers",
-        sa.Column("smtp_port", sa.Integer(), nullable=True, server_default=sa.text("587")),
-    )
-    op.add_column("managers", sa.Column("smtp_user", sa.String(255), nullable=True))
-    op.add_column("managers", sa.Column("smtp_from_name", sa.String(100), nullable=True))
-    op.add_column("managers", sa.Column("evolution_api_admin_url", sa.String(255), nullable=True))
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS ngo_whatsapp_phone VARCHAR(30)")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS smtp_host VARCHAR(255)")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS smtp_port INTEGER DEFAULT 587")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS smtp_user VARCHAR(255)")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS smtp_from_name VARCHAR(100)")
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS evolution_api_admin_url VARCHAR(255)")
 
 
 def downgrade() -> None:

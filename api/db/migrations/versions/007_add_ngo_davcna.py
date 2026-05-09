@@ -23,7 +23,7 @@ depends_on = None
 
 def upgrade() -> None:
     """Add ngo_davcna column to managers."""
-    op.add_column("managers", sa.Column("ngo_davcna", sa.String(8), nullable=True))
+    op.execute("ALTER TABLE managers ADD COLUMN IF NOT EXISTS ngo_davcna VARCHAR(8)")
 
 
 def downgrade() -> None:

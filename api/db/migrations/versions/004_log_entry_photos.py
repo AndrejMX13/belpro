@@ -25,37 +25,25 @@ depends_on: Union[str, Sequence[str], None] = None
 
 def upgrade() -> None:
     """Create log_entry_photos; drop single-photo columns from log_entries."""
-    op.create_table(
-        "log_entry_photos",
-        sa.Column(
-            "id",
-            postgresql.UUID(as_uuid=True),
-            primary_key=True,
-            server_default=sa.text("gen_random_uuid()"),
-        ),
-        sa.Column(
-            "log_entry_id",
-            postgresql.UUID(as_uuid=True),
-            sa.ForeignKey("log_entries.id", ondelete="CASCADE"),
-            nullable=False,
-        ),
-        sa.Column("photo_path", sa.String(500), nullable=False),
-        sa.Column("photo_exif_timestamp", sa.DateTime(timezone=True), nullable=True),
-        sa.Column("photo_exif_lat", sa.Numeric(10, 7), nullable=True),
-        sa.Column("photo_exif_lon", sa.Numeric(10, 7), nullable=True),
-        sa.Column(
-            "uploaded_at",
-            sa.DateTime(timezone=True),
-            nullable=False,
-            server_default=sa.text("NOW()"),
-        ),
-    )
-    op.create_index("idx_photos_entry", "log_entry_photos", ["log_entry_id"])
+    op.execute("""
+        CREATE TABLE IF NOT EXISTS log_entry_photos (
+            id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+            log_entry_id UUID NOT NULL REFERENCES log_entries(id) ON DELETE CASCADE,
+            photo_path VARCHAR(500) NOT NULL,
+            photo_exif_timestamp TIMESTAMPTZ,
+            photo_exif_lat NUMERIC(10, 7),
+            photo_exif_lon NUMERIC(10, 7),
+            uploaded_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+        )
+    """)
+    op.execute("""
+        CREATE INDEX IF NOT EXISTS idx_photos_entry ON log_entry_photos (log_entry_id)
+    """)
 
-    op.drop_column("log_entries", "photo_path")
-    op.drop_column("log_entries", "photo_exif_timestamp")
-    op.drop_column("log_entries", "photo_exif_lat")
-    op.drop_column("log_entries", "photo_exif_lon")
+    op.execute("ALTER TABLE log_entries DROP COLUMN IF EXISTS photo_path")
+    op.execute("ALTER TABLE log_entries DROP COLUMN IF EXISTS photo_exif_timestamp")
+    op.execute("ALTER TABLE log_entries DROP COLUMN IF EXISTS photo_exif_lat")
+    op.execute("ALTER TABLE log_entries DROP COLUMN IF EXISTS photo_exif_lon")
 
 
 def downgrade() -> None:

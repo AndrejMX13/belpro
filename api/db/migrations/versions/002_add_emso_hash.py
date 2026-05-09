@@ -22,8 +22,17 @@ depends_on: Union[str, Sequence[str], None] = None
 
 
 def upgrade() -> None:
-    op.add_column("volunteers", sa.Column("emso_hash", sa.String(64), nullable=True))
-    op.create_unique_constraint("uq_volunteers_emso_hash", "volunteers", ["emso_hash"])
+    op.execute("ALTER TABLE volunteers ADD COLUMN IF NOT EXISTS emso_hash VARCHAR(64)")
+    op.execute("""
+        DO $$
+        BEGIN
+            IF NOT EXISTS (
+                SELECT 1 FROM pg_constraint WHERE conname = 'uq_volunteers_emso_hash'
+            ) THEN
+                ALTER TABLE volunteers ADD CONSTRAINT uq_volunteers_emso_hash UNIQUE (emso_hash);
+            END IF;
+        END$$
+    """)
 
 
 def downgrade() -> None:

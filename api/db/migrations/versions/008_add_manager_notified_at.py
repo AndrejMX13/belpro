@@ -20,11 +20,8 @@ depends_on = None
 
 
 def upgrade() -> None:
-    op.add_column(
-        "log_entries",
-        sa.Column("manager_notified_at", sa.DateTime(timezone=True), nullable=True),
-    )
-    op.create_index("idx_entries_manager_notified", "log_entries", ["manager_notified_at"])
+    op.execute("ALTER TABLE log_entries ADD COLUMN IF NOT EXISTS manager_notified_at TIMESTAMPTZ")
+    op.execute("CREATE INDEX IF NOT EXISTS idx_entries_manager_notified ON log_entries (manager_notified_at)")
 
 
 def downgrade() -> None:

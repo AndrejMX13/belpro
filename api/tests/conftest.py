@@ -53,6 +53,13 @@ async def engine():
     eng = create_async_engine(settings.database_url, poolclass=NullPool, echo=False)
 
     # Alembic reads DATABASE_URL from the environment (already overridden by load_dotenv above).
+    # Stamp to base first so migrations always run from scratch (idempotent migrations
+    # handle existing objects gracefully).
+    subprocess.run(
+        [sys.executable, "-m", "alembic", "stamp", "base"],
+        check=True,
+        cwd=str(Path(__file__).parent.parent),  # api/ directory
+    )
     subprocess.run(
         [sys.executable, "-m", "alembic", "upgrade", "head"],
         check=True,
