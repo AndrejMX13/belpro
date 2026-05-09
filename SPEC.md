@@ -408,6 +408,13 @@ Two scripts in `scripts/` reduce the phone count needed for end-to-end testing f
 
 **With these scripts,** the volunteer and manager roles can share a single phone (and SIM), cutting the requirement to two phones total. If your phone supports dual SIM, you can go down to one — the second SIM runs the bot, the first SIM handles both volunteer and manager roles.
 
+### `load_env.ps1`
+Loads all variables from `.env` into the current PowerShell session. Run once per session before using the other scripts.
+
+```
+. .\scripts\load_env.ps1
+```
+
 ### `switch_manager_phone.ps1`
 Toggles the manager's phone number in the database between a real number and a dummy number.
 
@@ -433,6 +440,8 @@ Requires `MANAGER_PASSWORD` in the environment. Reads from the FastAPI backend a
 ### Typical testing workflow
 
 ```
+# 0. Load environment variables (once per session):
+. .\scripts\load_env.ps1
 # 1. Volunteer sends a voice note via WhatsApp → n8n processes it
 # 2. Volunteer confirms (Potrdi) → entry moves to pending_manager
 # 3. Dump the pending entry:
