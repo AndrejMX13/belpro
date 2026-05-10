@@ -25,7 +25,7 @@ Three independent edit zones on the detail page header area:
 |------|--------|----------------------|
 | Name | `first_name`, `last_name` | Two text inputs side by side |
 | Phone | `phone` | One tel input |
-| Email | `email` | One email input |
+| Email | `email` | One text input (not `type="email"` — no browser format enforcement) |
 
 Each zone renders as: current value(s) as plain text + a small pencil button to the right. Clicking the pencil replaces the text with input(s) and reveals Save / Cancel buttons below the input(s). The pencil is hidden while the zone is in edit mode.
 
@@ -41,7 +41,7 @@ Concurrent edits across zones are allowed — each zone manages its own state in
 
 - Phone already taken (DB unique constraint) → backend returns 409 → show "Ta telefonska številka je že registrirana." inline.
 - Empty required field → prevent Save client-side, show inline validation message.
-- Email: optional field. Submitting an empty email input clears the value (frontend sends `""`, backend converts `""` → `None`). Submitting a non-empty value must pass email format validation client-side before the PATCH is sent.
+- Email: optional field. Submitting an empty email input clears the value (frontend sends `""`, backend converts `""` → `None`). No format validation — an email address is either present or null; correctness is verified when it is actually used.
 - Generic network error → show error inline.
 
 ---
@@ -56,11 +56,11 @@ Add four new optional fields:
 first_name: str | None = None        # min_length=1 if provided
 last_name: str | None = None         # min_length=1 if provided
 phone: str | None = None             # min_length=1 if provided
-email: str | None = None             # validated as email if non-empty; empty string stored as None
+email: str | None = None             # empty string coerced to None; no format validation
 ```
 
 `first_name`, `last_name`, and `phone` must not be empty strings if provided — use `min_length=1` or a validator.
-`email` uses `str | None` (not `EmailStr`) so an empty string can arrive and be coerced to `None` before the DB write. Add a validator: if the value is a non-empty string, validate it as an email address.
+`email` accepts any non-empty string as-is. An empty string is coerced to `None` before the DB write. No format validation — correctness is verified when the address is actually used.
 
 **File:** `api/routers/volunteers.py` — `update_volunteer`
 
