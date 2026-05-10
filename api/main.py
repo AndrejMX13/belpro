@@ -15,6 +15,8 @@ from routers.managers import router as managers_router
 from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
 
+__version__ = "0.9.4"
+
 
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
@@ -27,7 +29,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
 app = FastAPI(
     title="BelPro API",
     description="Volunteer diary management API for Slovenian NGOs.",
-    version="0.9.3",
+    version=__version__,
     lifespan=lifespan,
 )
 

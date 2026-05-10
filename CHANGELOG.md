@@ -6,6 +6,19 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.4] — 2026-05-10
+
+### Added
+- `tests/workflow/` — n8n workflow integration test suite (4 scenarios: happy-path confirm, edit, cancel, unknown volunteer). Tests post real WhatsApp payloads to the n8n webhook and assert DB state via the FastAPI API. No mocking — real Evolution, real PostgreSQL.
+- `tests/workflow/conftest.py`: session-scoped `api_client`/`n8n_client` (httpx), function-scoped `test_volunteer` factory with direct-SQL teardown via `docker compose exec postgres psql`.
+- `tests/workflow/helpers.py`: `make_text_payload`, `make_response_payload`, `post_to_webhook`, and three polling utilities (`poll_for_entry`, `poll_for_entry_status`, `poll_for_entry_gone`).
+- Root-level `pyproject.toml` with `asyncio_mode = auto` and session event-loop scope for pytest-asyncio.
+
+### Changed
+- `api/main.py`: version string extracted to `__version__ = "0.9.4"` module constant; `FastAPI(version=__version__)` now references it instead of a bare literal.
+
+---
+
 ## [0.9.3] — 2026-05-10
 
 ### Added

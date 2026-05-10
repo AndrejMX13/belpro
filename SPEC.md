@@ -502,3 +502,47 @@ Requires the `postgres` Docker container to be running and `belpro_test` to exis
 ### Backup/restore smoke test
 
 `scripts/test_backup_restore.sh` — run manually, not part of the default pytest suite. Seeds known data, runs `backup.sh`, drops the `belpro` database, restores via `restore.sh`, and asserts the seeded records are present.
+
+---
+
+## 14. Workflow Integration Tests
+
+A separate pytest suite that drives the `volunteer_entry` n8n workflow end-to-end. Unlike the API tests (which use in-process ASGITransport against a test DB), these tests run against the **full live Docker stack** — real n8n, real Evolution API, real PostgreSQL — by posting WhatsApp-shaped HTTP payloads to the n8n webhook and asserting DB state via the FastAPI API.
+
+### Prerequisites
+
+- `docker compose up -d` (full stack running)
+- `volunteer_entry` workflow is **active** in n8n (not in test/listen mode)
+- `MANAGER_PASSWORD` set in `.env`
+- A real WhatsApp number reachable via the Evolution instance (test phone numbers used in payloads will receive real messages)
+
+### Running
+
+```powershell
+# From the project root on the Windows host:
+python -m pytest tests/workflow/ -v
+```
+
+### Test files
+
+| File | Purpose |
+|------|---------|
+| `tests/workflow/conftest.py` | Session-scoped `api_client`/`n8n_client` (httpx); function-scoped `test_volunteer` fixture with direct-SQL teardown |
+| `tests/workflow/helpers.py` | WhatsApp payload builders (`make_text_payload`, `make_response_payload`), `post_to_webhook`, polling utilities |
+| `tests/workflow/test_volunteer_entry.py` | 4 integration scenarios (see below) |
+
+### Scenarios
+
+| Test | What it covers |
+|------|---------------|
+| `test_happy_path_text_confirm` | Volunteer sends text entry → confirms ("1") → entry reaches `pending_manager` |
+| `test_edit_path` | Volunteer sends text → edits ("2") → sends corrected text → confirms → original entry deleted, corrected entry reaches `pending_manager` |
+| `test_cancel_path` | Volunteer sends text → cancels ("3") → entry deleted from DB |
+| `test_unknown_volunteer_creates_no_entry` | Message from unregistered phone → no log entry created |
+
+### Design notes
+
+- **No mocking.** Evolution sends real WhatsApp messages; the DB is the real production database. Use a dedicated test phone number.
+- **Polling, not fixed waits.** Each turn polls the FastAPI API until the expected DB state appears, with a 20 s timeout. A 2 s inter-turn sleep is applied between conversation turns to let n8n persist static-data state after creating the DB row (n8n writes state after the HTTP call returns).
+- **Teardown via direct SQL.** `DELETE /api/volunteers/{id}` blocks if any log entries exist; `DELETE /api/log-entries/{id}` only accepts `pending_volunteer` entries. The fixture cleans up via `docker compose exec postgres psql` to bypass API restrictions.
+- **Audio path not covered.** Whisper transcription tests require a real audio file and significant latency. Test separately when working on the transcription service.
