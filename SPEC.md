@@ -207,6 +207,7 @@ Served by nginx, backed by FastAPI. Mobile-friendly responsive design. Accessibl
 - Sorting: by any column (name, hours, registration date)
 - Add new volunteer form (first name, last name, street, postal code, city, EMŠO, phone, email, report channel checkboxes)
 - Per-volunteer report channel toggles: WhatsApp and/or email (editable inline; defaults come from manager's global defaults)
+- Per-volunteer inline editing of contact fields: first name + last name (one edit zone), phone, email — each with its own pencil toggle and Save/Cancel; EMŠO and registration date are read-only
 - Deactivate volunteer (soft delete)
 - View individual volunteer history
 

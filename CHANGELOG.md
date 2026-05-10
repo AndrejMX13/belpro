@@ -6,6 +6,20 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.3] — 2026-05-10
+
+### Added
+- Inline editing of `first_name`, `last_name`, `phone`, and `email` on the volunteer detail page. Each field group has its own pencil toggle with Save/Cancel — no modal, no page reload, in-place DOM update on success.
+- `api/tests/test_volunteer_update_schema.py`: 10 unit tests for the extended `VolunteerUpdate` schema (no DB required).
+
+### Changed
+- `VolunteerUpdate` schema now accepts `first_name`, `last_name`, and `email` in addition to the existing `phone` and report-preference fields. Email is stored as a plain string (no format validation); an empty string is coerced to `null`.
+
+### Fixed
+- `PATCH /volunteers/{id}` now returns HTTP 409 with a Slovenian error message when a duplicate phone number is submitted (previously caused an unhandled 500).
+
+---
+
 ## [0.9.2] — 2026-05-09
 
 ### Added
