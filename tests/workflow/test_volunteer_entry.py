@@ -140,3 +140,35 @@ async def test_cancel_path(
 
     # Workflow deletes the entry.
     await poll_for_entry_gone(api_client, entry_id)
+
+
+@pytest.mark.asyncio
+async def test_unknown_volunteer_creates_no_entry(
+    api_client: httpx.AsyncClient,
+    n8n_client: httpx.AsyncClient,
+):
+    """
+    A message from an unregistered phone must not create any log entry.
+    The workflow sends a 'not registered' WA message (untestable without
+    Evolution mocking) but the DB effect is fully assertable.
+    """
+    # A phone guaranteed not to exist as a volunteer.
+    unknown_phone = "38640000000"
+
+    r = await api_client.get("/api/log-entries", params={"limit": 1})
+    r.raise_for_status()
+    count_before = r.json()["total"]
+
+    await post_to_webhook(n8n_client, make_text_payload(unknown_phone, _ENTRY_TEXT))
+
+    # Fixed wait: the workflow has no DB side-effect to poll for,
+    # so we wait long enough for the workflow to complete then assert count unchanged.
+    await asyncio.sleep(8)
+
+    r = await api_client.get("/api/log-entries", params={"limit": 1})
+    r.raise_for_status()
+    count_after = r.json()["total"]
+
+    assert count_after == count_before, (
+        f"Expected no new entries, but count went from {count_before} to {count_after}"
+    )
