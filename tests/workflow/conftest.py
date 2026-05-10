@@ -90,12 +90,12 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
     # Can't use DELETE /api/log-entries/{id} — only works for pending_volunteer status.
     # Direct SQL is the only reliable approach for integration test cleanup.
     vol_id = volunteer["id"]
+    # log_entry_photos has ON DELETE CASCADE from log_entries, so deleting
+    # entries is enough — photos are removed automatically.
     result = subprocess.run(
         [
             "docker", "compose", "exec", "-T", "postgres",
             "psql", "-U", "belpro", "-d", "belpro", "-c",
-            f"DELETE FROM log_entry_photos WHERE entry_id IN "
-            f"(SELECT id FROM log_entries WHERE volunteer_id = '{vol_id}'); "
             f"DELETE FROM log_entries WHERE volunteer_id = '{vol_id}'; "
             f"DELETE FROM volunteers WHERE id = '{vol_id}';",
         ],
