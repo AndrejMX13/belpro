@@ -354,8 +354,15 @@ async def update_volunteer(
     for field, value in payload.model_dump(exclude_none=True).items():
         setattr(volunteer, field, value)
 
-    await db.commit()
-    await db.refresh(volunteer)
+    try:
+        await db.commit()
+        await db.refresh(volunteer)
+    except IntegrityError:
+        await db.rollback()
+        raise HTTPException(
+            status_code=status.HTTP_409_CONFLICT,
+            detail="Ta telefonska številka je že registrirana.",
+        )
 
     key = load_key(settings.emso_encryption_key)
     return _to_response(volunteer, key)
