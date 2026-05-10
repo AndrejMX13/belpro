@@ -27,7 +27,7 @@ from tests.workflow.helpers import (
 )
 
 # A text message the Text Extract node can parse.
-# Yields: hours=2.0, date=today, location="Mariboru", activity contains "razdelitev hrane"
+# Yields: hours=2.0, date=today, activity contains "razdelitev hrane"
 _ENTRY_TEXT = "Danes sem delal 2 uri razdelitev hrane v Mariboru"
 
 

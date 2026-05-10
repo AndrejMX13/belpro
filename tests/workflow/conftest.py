@@ -1,7 +1,7 @@
 import asyncio
 import base64
-import itertools
 import os
+import random
 import subprocess
 from pathlib import Path
 from typing import AsyncGenerator
@@ -16,8 +16,6 @@ load_dotenv(Path(__file__).parent.parent.parent / ".env", override=False)
 _API_BASE = "http://localhost:8100"
 _N8N_BASE = "http://localhost:5678"
 _WEBHOOK_PATH = "/webhook/volunteer-message"
-
-_phone_seq = itertools.count(1)
 
 
 def _manager_password() -> str:
@@ -65,17 +63,18 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
     Creates a volunteer with a unique phone, yields the volunteer dict,
     deletes it (and cascade-deletes entries) on teardown.
     """
-    seq = next(_phone_seq)
-    # Range 38640900001–38640999999 — unlikely to match the real manager phone.
-    phone = f"38640900{seq:03d}"
+    # Random phone in range 38640900000–38640909999.
+    # Random enough across sessions; well outside real Slovenian mobile ranges.
+    phone = f"3864090{random.randint(0, 9999):04d}"
+    emso = f"{random.randint(10**12, 10**13 - 1):013d}"
 
     payload = {
         "first_name": "Test",
-        "last_name": f"Prostovoljec{seq}",
+        "last_name": "Prostovoljec",
         "street": "Testna ulica 1",
         "postal_code": "1000",
         "city": "Ljubljana",
-        "emso": f"{seq:013d}",
+        "emso": emso,
         "phone": phone,
         "report_whatsapp": True,
         "report_email": False,
@@ -91,7 +90,7 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
     # Can't use DELETE /api/log-entries/{id} — only works for pending_volunteer status.
     # Direct SQL is the only reliable approach for integration test cleanup.
     vol_id = volunteer["id"]
-    subprocess.run(
+    result = subprocess.run(
         [
             "docker", "compose", "exec", "-T", "postgres",
             "psql", "-U", "belpro", "-d", "belpro", "-c",
@@ -103,3 +102,5 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
         capture_output=True,
         cwd=str(Path(__file__).parent.parent.parent),
     )
+    if result.returncode != 0:
+        print(f"\n[conftest teardown] DB cleanup failed for volunteer {vol_id}:\n{result.stderr.decode()}")
