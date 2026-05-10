@@ -886,7 +886,7 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
           exitEdit();
           toast('Podatki so bili shranjeni.');
         } catch (e) {
-          errEl.textContent = e.message;
+          errEl.textContent = e?.message || String(e) || 'Napaka pri shranjevanju.';
         } finally {
           saveEl.disabled    = false;
           saveEl.textContent = 'Shrani';
