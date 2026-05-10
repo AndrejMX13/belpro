@@ -112,3 +112,31 @@ async def test_edit_path(
     await post_to_webhook(n8n_client, make_response_payload(phone, "confirm"))
     confirmed = await poll_for_entry_status(api_client, corrected_id, "pending_manager")
     assert confirmed["id"] == corrected_id
+
+
+@pytest.mark.asyncio
+async def test_cancel_path(
+    api_client: httpx.AsyncClient,
+    n8n_client: httpx.AsyncClient,
+    test_volunteer: dict,
+):
+    """
+    Volunteer sends entry and cancels it. Entry must be deleted from the DB.
+    """
+    phone = test_volunteer["phone"]
+    volunteer_id = test_volunteer["id"]
+
+    # Turn 1: send entry.
+    await post_to_webhook(n8n_client, make_text_payload(phone, _ENTRY_TEXT))
+    entry = await poll_for_entry(api_client, volunteer_id)
+    assert entry["status"] == "pending_volunteer"
+    entry_id = entry["id"]
+
+    # Wait for n8n to persist static state before sending next turn.
+    await asyncio.sleep(2)
+
+    # Turn 2: volunteer replies "3" (Prekliči / cancel).
+    await post_to_webhook(n8n_client, make_response_payload(phone, "cancel"))
+
+    # Workflow deletes the entry.
+    await poll_for_entry_gone(api_client, entry_id)
