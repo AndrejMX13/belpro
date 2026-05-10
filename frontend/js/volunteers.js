@@ -706,10 +706,38 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
       <button class="back-link" id="back-btn">${backLabel}</button>
 
       <div class="detail-header">
-        <div class="detail-avatar">${initials}</div>
+        <div class="detail-avatar" id="vol-avatar">${initials}</div>
         <div>
-          <div class="detail-name">${esc(v.first_name + ' ' + v.last_name)}</div>
-          <div class="detail-meta">${esc(v.phone)}${v.email ? ' · ' + esc(v.email) : ''}</div>
+          <div class="detail-name" style="display:flex;align-items:center;gap:0.4rem;flex-wrap:wrap">
+            <span id="vol-name-text">${esc(v.first_name + ' ' + v.last_name)}</span>
+            <button class="btn btn-ghost btn-sm" id="vol-name-pencil" title="Uredi ime" style="padding:0.1rem 0.4rem;font-size:0.85rem">✏</button>
+            <span id="vol-name-inputs" style="display:none;align-items:center;gap:0.3rem;flex-wrap:wrap">
+              <input type="text" id="vol-fname" value="${esc(v.first_name)}" maxlength="100" style="width:7rem">
+              <input type="text" id="vol-lname" value="${esc(v.last_name)}" maxlength="100" style="width:9rem">
+              <button class="btn btn-primary btn-sm" id="vol-name-save">Shrani</button>
+              <button class="btn btn-ghost btn-sm" id="vol-name-cancel">Prekliči</button>
+              <span id="vol-name-err" class="form-error" style="width:100%;font-size:0.75rem"></span>
+            </span>
+          </div>
+          <div class="detail-meta" style="display:flex;align-items:center;gap:0.3rem;flex-wrap:wrap;margin-top:0.2rem">
+            <span id="vol-phone-text">${esc(v.phone)}</span>
+            <button class="btn btn-ghost btn-sm" id="vol-phone-pencil" title="Uredi telefon" style="padding:0.1rem 0.4rem;font-size:0.85rem">✏</button>
+            <span id="vol-phone-inputs" style="display:none;align-items:center;gap:0.3rem;flex-wrap:wrap">
+              <input type="text" id="vol-phone-inp" value="${esc(v.phone)}" maxlength="30" style="width:12rem">
+              <button class="btn btn-primary btn-sm" id="vol-phone-save">Shrani</button>
+              <button class="btn btn-ghost btn-sm" id="vol-phone-cancel">Prekliči</button>
+              <span id="vol-phone-err" class="form-error" style="width:100%;font-size:0.75rem"></span>
+            </span>
+            <span id="vol-email-sep">${v.email ? ' · ' : ''}</span>
+            <span id="vol-email-text">${v.email ? esc(v.email) : ''}</span>
+            <button class="btn btn-ghost btn-sm" id="vol-email-pencil" title="Uredi e-pošto" style="padding:0.1rem 0.4rem;font-size:0.85rem">✏</button>
+            <span id="vol-email-inputs" style="display:none;align-items:center;gap:0.3rem;flex-wrap:wrap">
+              <input type="text" id="vol-email-inp" value="${v.email ? esc(v.email) : ''}" maxlength="255" style="width:14rem" placeholder="E-poštni naslov (neobvezno)">
+              <button class="btn btn-primary btn-sm" id="vol-email-save">Shrani</button>
+              <button class="btn btn-ghost btn-sm" id="vol-email-cancel">Prekliči</button>
+              <span id="vol-email-err" class="form-error" style="width:100%;font-size:0.75rem"></span>
+            </span>
+          </div>
           <div style="margin-top:0.4rem">
             ${v.active
               ? '<span class="badge badge-active">Aktiven</span>'
@@ -810,6 +838,111 @@ async function renderDetail(id, { backHash = '#volunteers', backLabel = '← Naz
     $('back-btn').addEventListener('click', () => {
       history.pushState(null, '', backHash);
       (goBack || renderList)();
+    });
+
+    function wireInlineEdit({ pencilId, inputsId, textId, saveId, cancelId, errId, validate, getPayload, onSuccess }) {
+      const pencilEl = $(pencilId);
+      const inputsEl = $(inputsId);
+      const textEl   = $(textId);
+      const saveEl   = $(saveId);
+      const cancelEl = $(cancelId);
+      const errEl    = $(errId);
+
+      const inputs = Array.from(inputsEl.querySelectorAll('input'));
+      let savedValues = [];
+
+      function enterEdit() {
+        savedValues            = inputs.map(inp => inp.value);
+        textEl.hidden          = true;
+        pencilEl.hidden        = true;
+        inputsEl.style.display = 'flex';
+        errEl.textContent      = '';
+        inputs[0].focus();
+      }
+
+      function exitEdit() {
+        inputsEl.style.display = 'none';
+        textEl.hidden          = false;
+        pencilEl.hidden        = false;
+        errEl.textContent      = '';
+      }
+
+      pencilEl.addEventListener('click', enterEdit);
+
+      // Restore values typed but not saved so the zone reopens clean.
+      cancelEl.addEventListener('click', () => {
+        inputs.forEach((inp, i) => { inp.value = savedValues[i]; });
+        exitEdit();
+      });
+
+      saveEl.addEventListener('click', async () => {
+        const validationErr = validate ? validate() : null;
+        if (validationErr) { errEl.textContent = validationErr; return; }
+        saveEl.disabled    = true;
+        saveEl.textContent = 'Shranjevanje…';
+        try {
+          await API.volunteers.update(id, getPayload());
+          onSuccess();
+          exitEdit();
+          toast('Podatki so bili shranjeni.');
+        } catch (e) {
+          errEl.textContent = e.message;
+        } finally {
+          saveEl.disabled    = false;
+          saveEl.textContent = 'Shrani';
+        }
+      });
+    }
+
+    // Name zone
+    wireInlineEdit({
+      pencilId: 'vol-name-pencil', inputsId: 'vol-name-inputs',
+      textId:   'vol-name-text',   saveId:   'vol-name-save',
+      cancelId: 'vol-name-cancel', errId:    'vol-name-err',
+      validate: () => {
+        if (!$('vol-fname').value.trim()) return 'Ime ne sme biti prazno.';
+        if (!$('vol-lname').value.trim()) return 'Priimek ne sme biti prazen.';
+        return null;
+      },
+      getPayload: () => ({
+        first_name: $('vol-fname').value.trim(),
+        last_name:  $('vol-lname').value.trim(),
+      }),
+      onSuccess: () => {
+        const fn = $('vol-fname').value.trim();
+        const ln = $('vol-lname').value.trim();
+        $('vol-name-text').textContent = fn + ' ' + ln;
+        $('vol-avatar').textContent    = (fn[0] + ln[0]).toUpperCase();
+      },
+    });
+
+    // Phone zone
+    wireInlineEdit({
+      pencilId: 'vol-phone-pencil', inputsId: 'vol-phone-inputs',
+      textId:   'vol-phone-text',   saveId:   'vol-phone-save',
+      cancelId: 'vol-phone-cancel', errId:    'vol-phone-err',
+      validate: () => {
+        if (!$('vol-phone-inp').value.trim()) return 'Telefonska številka ne sme biti prazna.';
+        return null;
+      },
+      getPayload: () => ({ phone: $('vol-phone-inp').value.trim() }),
+      onSuccess: () => {
+        $('vol-phone-text').textContent = $('vol-phone-inp').value.trim();
+      },
+    });
+
+    // Email zone
+    wireInlineEdit({
+      pencilId: 'vol-email-pencil', inputsId: 'vol-email-inputs',
+      textId:   'vol-email-text',   saveId:   'vol-email-save',
+      cancelId: 'vol-email-cancel', errId:    'vol-email-err',
+      validate: null,
+      getPayload: () => ({ email: $('vol-email-inp').value.trim() }),
+      onSuccess: () => {
+        const val = $('vol-email-inp').value.trim();
+        $('vol-email-text').textContent = val;
+        $('vol-email-sep').textContent  = val ? ' · ' : '';
+      },
     });
 
     $('add-entry-btn').addEventListener('click', () => {
