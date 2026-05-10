@@ -2,6 +2,7 @@ import asyncio
 import base64
 import itertools
 import os
+import subprocess
 from pathlib import Path
 from typing import AsyncGenerator
 
@@ -85,5 +86,20 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
 
     yield volunteer
 
-    # Teardown: delete volunteer (cascades to log entries).
-    await api_client.delete(f"/api/volunteers/{volunteer['id']}")
+    # Teardown: clean up via direct DB access.
+    # Can't use DELETE /api/volunteers/{id} — it blocks if any log entries exist.
+    # Can't use DELETE /api/log-entries/{id} — only works for pending_volunteer status.
+    # Direct SQL is the only reliable approach for integration test cleanup.
+    vol_id = volunteer["id"]
+    subprocess.run(
+        [
+            "docker", "compose", "exec", "-T", "db",
+            "psql", "-U", "belpro", "-d", "belpro", "-c",
+            f"DELETE FROM log_entry_photos WHERE entry_id IN "
+            f"(SELECT id FROM log_entries WHERE volunteer_id = '{vol_id}'); "
+            f"DELETE FROM log_entries WHERE volunteer_id = '{vol_id}'; "
+            f"DELETE FROM volunteers WHERE id = '{vol_id}';",
+        ],
+        capture_output=True,
+        cwd=str(Path(__file__).parent.parent.parent),
+    )
