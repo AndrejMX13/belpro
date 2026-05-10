@@ -141,7 +141,7 @@ GMAIL_APP_PASSWORD=...     # Or OAuth token path
 
 ## Local Development
 
-**Environment:** Windows 10 + WSL2 (Ubuntu) + Docker Desktop. All shell commands, scripts, and paths assume WSL2 Linux context. Do not use Windows-style paths (`C:\...`). Docker Compose runs via WSL2 terminal.
+**Environment:** Windows 10 + WSL2 (Ubuntu) + Docker Desktop. Docker Compose runs via Docker Desktop (WSL2 backend).
 
 **Python on the host:** Python 3.14 is installed and accessible as `python` (not `python3`). Use `python` for all host-side scripts. Docker containers use their own Python environment.
 
@@ -164,6 +164,23 @@ docker compose logs -f
 # n8n:         http://localhost:5678
 # Evolution API: http://localhost:8180
 ```
+
+---
+
+## Tooling & Shell Conventions
+
+- **Use PowerShell (not Bash) for `docker compose` commands.** The Bash tool cannot reach `/mnt/d/` — the WSL2 D: mount is not available in that shell context. Always use the PowerShell tool with Windows paths (`d:\Andrej\vsCode-workspace\BelPro`).
+- **Rebuild after code changes:** `docker compose up -d --build <svc>` — never `docker compose restart`, which skips the build.
+- **pytest path inside the API container:** `docker compose exec api pytest tests/ -v` — the path is `tests/`, not `api/tests/`. The Dockerfile uses `api/` as build context, so `api/tests/` on the host becomes `tests/` at `/app/tests/` inside the container.
+- **Git remote is named `central`**, not `origin`. Use `git push central <branch>`.
+- **Serena `replace_symbol_body` corrupts decorated functions and module-level strings.** Use the Edit tool for all in-place code edits instead.
+
+### Known packaging pins
+
+These must be explicit in `requirements.txt` — transitive resolution gets them wrong:
+
+- `email-validator` — required alongside `pydantic[email]`; omitting it causes an import error at runtime.
+- `pydyf==0.10.0` — required alongside `weasyprint==62.3`; a newer `pydyf` breaks PDF generation silently.
 
 ---
 

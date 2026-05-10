@@ -1,6 +1,9 @@
 """Belpro FastAPI application entry point."""
 from __future__ import annotations
 
+from contextlib import asynccontextmanager
+from typing import AsyncGenerator
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy import text
@@ -12,10 +15,20 @@ from routers.managers import router as managers_router
 from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
 
+
+@asynccontextmanager
+async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
+    """Fail fast if the database is unreachable on startup."""
+    async with AsyncSessionLocal() as session:
+        await session.execute(text("SELECT 1"))
+    yield
+
+
 app = FastAPI(
     title="BelPro API",
     description="Volunteer diary management API for Slovenian NGOs.",
     version="0.9.3",
+    lifespan=lifespan,
 )
 
 app.add_middleware(
@@ -31,13 +44,6 @@ app.include_router(log_entries_router, prefix="/api")
 app.include_router(managers_router, prefix="/api")
 app.include_router(reports_router, prefix="/api")
 app.include_router(volunteers_router, prefix="/api")
-
-
-@app.on_event("startup")
-async def verify_db_connection() -> None:
-    """Fail fast if the database is unreachable on startup."""
-    async with AsyncSessionLocal() as session:
-        await session.execute(text("SELECT 1"))
 
 
 @app.get("/api/health")
