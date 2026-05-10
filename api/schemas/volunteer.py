@@ -109,13 +109,25 @@ class VolunteerListResponse(BaseModel):
 class VolunteerUpdate(BaseModel):
     """Fields that can be updated on an existing volunteer."""
 
+    first_name: Annotated[str, Field(min_length=1, max_length=100)] | None = None
+    last_name: Annotated[str, Field(min_length=1, max_length=100)] | None = None
     phone: Annotated[str, Field(min_length=1, max_length=30)] | None = None
+    email: str | None = None
     report_whatsapp: bool | None = None
     report_email: bool | None = None
 
     @field_validator("phone", mode="after")
     @classmethod
     def _normalise_phone_field(cls, v: str | None) -> str | None:
+        """Normalise phone to bare E.164 digits, pass through None."""
         if v is None:
             return None
         return _normalise_phone(v)
+
+    @field_validator("email", mode="before")
+    @classmethod
+    def _coerce_empty_email(cls, v: object) -> object:
+        """Treat empty string as absent — store None rather than ''."""
+        if v == "":
+            return None
+        return v
