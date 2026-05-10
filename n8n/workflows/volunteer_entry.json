@@ -1333,7 +1333,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const data = $('Code: Check Pending (Manual)').first().json;\nconst mgrPhoneRaw = data.manager_phone || '';\nconst mgrPhone = mgrPhoneRaw.replace(/[^0-9]/g, '');\nconst mgrJid = mgrPhone + '@s.whatsapp.net';\n\nlet work_date = data.work_date || '2000-01-01';\nif (/^\\d{2}\\.\\d{2}\\.\\d{4}$/.test(work_date)) {\n  const parts = work_date.split('.');\n  work_date = `${parts[2]}-${parts[1]}-${parts[0]}`;\n}\n\nconst d = new Date(work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst mgrMsg = `Nov vnos caka na odobritev:\\n\\n👤 ${data.volunteer_name||'Prostovoljec'}\\n📅 ${dateStr} — ${data.hours} ur\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
+        "jsCode": "const data = $('Code: Check Pending (Manual)').first().json;\nconst mgrPhoneRaw = data.manager_phone || '';\nconst mgrPhone = mgrPhoneRaw.replace(/[^0-9]/g, '');\nconst mgrJid = mgrPhone + '@s.whatsapp.net';\n\nlet work_date = data.work_date || '2000-01-01';\nif (/^\\d{2}\\.\\d{2}\\.\\d{4}$/.test(work_date)) {\n  const parts = work_date.split('.');\n  work_date = `${parts[2]}-${parts[1]}-${parts[0]}`;\n}\n\nconst d = new Date(work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${data.volunteer_name||'Prostovoljec'}\\n📅 ${dateStr} — ${data.hours} ur\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
       },
       "id": "code_build_man",
       "name": "Code: Build Msg (Manual)",
@@ -1562,7 +1562,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const data = $('Code: Check Entry').first().json;\nconst volunteer = $input.first().json;\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\n\nconst d = new Date(data.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = data.unnotified_count > 1 ? `\\n\\nV vrsti: ${data.unnotified_count - 1} vnos(ov)` : '';\n\nconst mgrMsg = `Nov vnos caka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${data.hours} ur\\n📝 ${data.activity_description}\\n📍 ${data.location || 'ni navedeno'}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: data.mgrJid, text: mgrMsg}}];"
+        "jsCode": "const data = $('Code: Check Entry').first().json;\nconst volunteer = $input.first().json;\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\n\nconst d = new Date(data.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = data.unnotified_count > 1 ? `\\n\\nV vrsti: ${data.unnotified_count - 1} vnos(ov)` : '';\n\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${data.hours} ur\\n📝 ${data.activity_description}\\n📍 ${data.location || 'ni navedeno'}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: data.mgrJid, text: mgrMsg}}];"
       },
       "id": "code_build_msg_auto",
       "name": "Code: Build Msg (Auto)",
