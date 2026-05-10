@@ -93,7 +93,7 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
     vol_id = volunteer["id"]
     subprocess.run(
         [
-            "docker", "compose", "exec", "-T", "db",
+            "docker", "compose", "exec", "-T", "postgres",
             "psql", "-U", "belpro", "-d", "belpro", "-c",
             f"DELETE FROM log_entry_photos WHERE entry_id IN "
             f"(SELECT id FROM log_entries WHERE volunteer_id = '{vol_id}'); "
