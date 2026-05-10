@@ -64,3 +64,51 @@ async def test_happy_path_text_confirm(
     # Workflow confirms the entry and notifies the manager.
     confirmed = await poll_for_entry_status(api_client, entry_id, "pending_manager")
     assert confirmed["id"] == entry_id
+
+
+@pytest.mark.asyncio
+async def test_edit_path(
+    api_client: httpx.AsyncClient,
+    n8n_client: httpx.AsyncClient,
+    test_volunteer: dict,
+):
+    """
+    Volunteer sends entry, chooses edit, sends corrected entry, then confirms.
+    Original entry is deleted; corrected entry reaches pending_manager.
+    """
+    phone = test_volunteer["phone"]
+    volunteer_id = test_volunteer["id"]
+
+    # Turn 1: send initial entry.
+    await post_to_webhook(n8n_client, make_text_payload(phone, _ENTRY_TEXT))
+    original = await poll_for_entry(api_client, volunteer_id)
+    assert original["status"] == "pending_volunteer"
+    original_id = original["id"]
+
+    # Wait for n8n to persist static state before sending next turn.
+    await asyncio.sleep(2)
+
+    # Turn 2: volunteer replies "2" (Popravi / edit).
+    await post_to_webhook(n8n_client, make_response_payload(phone, "edit"))
+
+    # Wait for n8n to update mode="editing" in static state.
+    await asyncio.sleep(2)
+
+    # Turn 3: volunteer sends the corrected entry (different hours).
+    corrected_text = "Danes sem delal 3 uri razdelitev hrane v Mariboru"
+    await post_to_webhook(n8n_client, make_text_payload(phone, corrected_text))
+
+    # Workflow deletes the original entry and creates a new one.
+    await poll_for_entry_gone(api_client, original_id)
+    corrected = await poll_for_entry(api_client, volunteer_id)
+    assert corrected["status"] == "pending_volunteer"
+    assert float(corrected["hours"]) == 3.0
+    corrected_id = corrected["id"]
+
+    # Wait for n8n to persist state for the corrected entry.
+    await asyncio.sleep(2)
+
+    # Turn 4: volunteer confirms the corrected entry.
+    await post_to_webhook(n8n_client, make_response_payload(phone, "confirm"))
+    confirmed = await poll_for_entry_status(api_client, corrected_id, "pending_manager")
+    assert confirmed["id"] == corrected_id
