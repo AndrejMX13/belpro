@@ -37,13 +37,20 @@ class EvolutionClient:
             return None, "unreachable"
 
         for item in instances:
-            inst = item.get("instance", {})
-            if inst.get("instanceName") != self._instance_name:
+            # v2.3.7 returns flat objects: {"name":..., "connectionStatus":..., "ownerJid":...}
+            # Earlier versions wrapped them under {"instance": {"instanceName":..., "status":..., "owner":...}}
+            inst = item.get("instance") or item
+            name = inst.get("instanceName") or inst.get("name") or item.get("name")
+            if name != self._instance_name:
                 continue
 
-            # "status" is standard in v2.3.x; "state" appears in some versions
-            state: str = inst.get("status") or inst.get("state") or "close"
-            owner: str | None = inst.get("owner")
+            state: str = (
+                inst.get("connectionStatus")
+                or inst.get("status")
+                or inst.get("state")
+                or "close"
+            )
+            owner: str | None = inst.get("ownerJid") or inst.get("owner")
 
             if not owner:
                 return None, state

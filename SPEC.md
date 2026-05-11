@@ -77,7 +77,7 @@ Each NGO runs its own independent Belpro instance. Volunteers interact exclusive
 | report_email | BOOLEAN | Manager receives consolidated report via email; default TRUE |
 | default_report_whatsapp | BOOLEAN | Default WhatsApp flag applied to newly registered volunteers; default FALSE |
 | default_report_email | BOOLEAN | Default email flag applied to newly registered volunteers; default TRUE |
-| ngo_whatsapp_phone | VARCHAR(30) | Dedicated bot phone number linked to Evolution API (nullable) |
+| ngo_whatsapp_phone | VARCHAR(30) | Dedicated bot phone number linked to Evolution API; digits-only, no `+` prefix (nullable). Seeded from `NGO_WHATSAPP_PHONE` in `.env` on first boot; auto-synced from Evolution API when connected. |
 | smtp_host | VARCHAR | SMTP server hostname, e.g. smtp.gmail.com (nullable, set via UI) |
 | smtp_port | INTEGER | SMTP port, default 587 (nullable, set via UI) |
 | smtp_user | VARCHAR | SMTP login / from-address (nullable, set via UI) |
@@ -246,6 +246,7 @@ Charts rendered client-side with **Chart.js v4** (CDN, no build step).
 - Manager report channel: checkboxes controlling whether the manager receives the consolidated monthly report via WhatsApp and/or email
 - Global volunteer report defaults: checkboxes that set the initial `report_whatsapp` / `report_email` values for newly registered volunteers
 - SMTP configuration (host, port, user, from-name editable in UI; password stays in `.env`; works with Gmail, Yahoo, Proton, or any SMTP server)
+- WhatsApp bot phone number — read-only when Evolution API is connected (number and state synced live from Evolution API on every settings page load; auto-written to DB and `.env` on change). Editable only when disconnected.
 - Volunteer agreement template (text, used in PDF header) *(planned)*
 
 ---

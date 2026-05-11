@@ -6,6 +6,29 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.5] — 2026-05-11
+
+### Added
+- `api/utils/phone.py`: `normalize_phone()` — strips `+`, spaces, dashes, parentheses; returns digits-only WhatsApp-native number or `None` for invalid input.
+- `api/utils/env_writer.py`: `write_env_key()` — safely updates or appends a key in `.env`; non-fatal on failure (logs warning, returns bool).
+- `api/services/evolution.py`: `EvolutionClient.get_connected_phone()` — queries `fetchInstances`, returns `(phone, state)` tuple; handles unreachable API, `@lid` JIDs, and both flat (v2.3.7) and nested (pre-v2.3) response formats.
+- `api/schemas/manager.py`: `ConfigInfoResponse` — typed response for the settings config endpoint, including `wa_phone`, `wa_state`, `wa_synced`, `wa_env_write_ok`.
+- Settings page: connection state badge ("Povezano"/"Odklopljeno"/etc.), read-only phone field when connected, auto-sync toast, `.env` write failure warning.
+- `curl`, `wget`, `iputils-ping` added to `api/Dockerfile` and `whisper/Dockerfile` for in-container debugging.
+- `docker-compose.yml`: `.env` bind-mounted into `api` container (`rw`) for `.env` write-back; `AUTHENTICATION_API_KEY` and `NGO_WHATSAPP_PHONE` env vars wired to `api` service.
+
+### Changed
+- `api/routers/managers.py`: `get_config_info` now queries Evolution API live on every settings page load; auto-syncs DB and `.env` when a different number is detected in "open" state.
+- `api/routers/managers.py`: `update_manager` writes `NGO_WHATSAPP_PHONE` back to `.env` after a successful phone number change.
+- `api/schemas/manager.py`: `ManagerUpdate.ngo_whatsapp_phone` normalised via `field_validator` (strips formatting, rejects too-short strings).
+- `api/main.py`: `lifespan` seeds `ngo_whatsapp_phone` from `.env` into DB on first boot if DB value is null.
+- Evolution API manager UI link corrected from `/manager/login` to `/manager`.
+
+### Fixed
+- `api/services/evolution.py`: Evolution API v2.3.7 `fetchInstances` returns flat objects (`name`, `connectionStatus`, `ownerJid`) — parser now handles both flat and legacy nested formats; previously always returned `wa_state: "close"`.
+
+---
+
 ## [0.9.4] — 2026-05-10
 
 ### Added

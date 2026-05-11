@@ -3,7 +3,7 @@ FROM python:3.11-slim@sha256:a5b427ace4900267d93db34138e512325c6fa6af84ad5e4ed5f
 
 WORKDIR /app
 
-# WeasyPrint system dependencies
+# WeasyPrint system dependencies + debug utilities
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libpango-1.0-0 \
     libpangoft2-1.0-0 \
@@ -16,6 +16,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libffi-dev \
     libjpeg-dev \
     libopenjp2-7 \
+    curl \
+    wget \
+    iputils-ping \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt requirements-test.txt ./

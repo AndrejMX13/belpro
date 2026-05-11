@@ -134,7 +134,7 @@ async def get_config_info(
         smtp_user=manager.smtp_user or "",
         smtp_from_name=manager.smtp_from_name or "",
         smtp_configured=smtp_configured,
-        evolution_api_admin_url=manager.evolution_api_admin_url or "http://localhost:8180/manager/login",
+        evolution_api_admin_url=manager.evolution_api_admin_url or "http://localhost:8180/manager",
         wa_phone=wa_phone,
         wa_state=wa_state,
         wa_synced=wa_synced,
