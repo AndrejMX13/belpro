@@ -1177,6 +1177,17 @@ function fmtDatetime(iso) {
 }
 
 // ===== Settings page =====
+function _waBadge(state) {
+  const map = {
+    open:            '<span style="color:var(--success,#16a34a);font-size:0.85rem">✓ Povezano</span>',
+    connecting:      '<span style="color:#d97706;font-size:0.85rem">⟳ Vzpostavljanje...</span>',
+    close:           '<span style="color:var(--text-muted,#6b7280);font-size:0.85rem">Ni povezano</span>',
+    unreachable:     '<span style="color:#dc2626;font-size:0.85rem">⚠ Evolution API nedosegljiv</span>',
+    lid_unsupported: '<span style="color:#d97706;font-size:0.85rem">⚠ @lid JID — nadgradite Evolution API</span>',
+  };
+  return map[state] || '';
+}
+
 async function renderSettings() {
   $('topbar-title').textContent = 'Nastavitve';
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
@@ -1190,6 +1201,10 @@ async function renderSettings() {
   } catch (err) {
     setHtml($('main-content'), `<p class="form-error" style="margin:2rem">Napaka: ${esc(err.message)}</p>`);
     return;
+  }
+
+  if (configInfo.wa_synced) {
+    toast('Številka WhatsApp bota je bila samodejno posodobljena.');
   }
 
   const card = 'background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem';
@@ -1238,12 +1253,23 @@ async function renderSettings() {
       </div>
       <div class="field" style="margin-top:0.75rem">
         <label>Mobilna številka za BelPro</label>
-        <input id="s-ngo-wa-phone" type="tel" value="${esc(manager.ngo_whatsapp_phone || '')}" maxlength="30" placeholder="+38640...">
-        <div class="form-hint">Telefonska številka, ki je povezana z WhatsApp botom (Evolution API).</div>
+        <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap">
+          <input id="s-ngo-wa-phone" type="tel"
+            value="${esc(configInfo.wa_phone ? '+' + configInfo.wa_phone : (manager.ngo_whatsapp_phone ? '+' + manager.ngo_whatsapp_phone : ''))}"
+            maxlength="30" placeholder="+38640..."
+            ${(configInfo.wa_state === 'open' || configInfo.wa_state === 'connecting') ? 'readonly' : ''}>
+          ${_waBadge(configInfo.wa_state)}
+        </div>
+        ${(configInfo.wa_state === 'open' || configInfo.wa_state === 'connecting')
+          ? '<div class="form-hint">Številko upravljate prek Evolution API — spremenite jo tam in nato osvežite to stran.</div>'
+          : '<div class="form-hint">Telefonska številka, ki je povezana z WhatsApp botom (Evolution API).</div>'}
+        ${!configInfo.wa_env_write_ok
+          ? '<div class="form-error" style="margin-top:0.25rem">Opozorilo: posodobitve datoteke .env ni bilo mogoče zapisati — preverite dovoljenja datoteke.</div>'
+          : ''}
       </div>
       <div style="margin-top:0.5rem">
         <a id="s-evo-api-link" href="${esc(configInfo.evolution_api_admin_url)}" target="_blank" rel="noopener noreferrer"
-           class="btn btn-secondary btn-sm">Odpri nastavitve povezave telefonske številke ↗</a>
+           class="btn btn-secondary btn-sm">Odpri nastavitve Evolution API ↗</a>
       </div>
       <div id="s-ngo-error" class="form-error" style="display:none"></div>
       <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-ngo-save">Shrani</button></div>
