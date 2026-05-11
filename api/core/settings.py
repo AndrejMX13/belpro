@@ -37,6 +37,8 @@ class Settings(BaseSettings):
     evolution_api_url: str = "http://evolution-api:8080"
     evolution_api_key: str = ""
     evolution_instance_name: str = "belpro"
+    authentication_api_key: str = ""
+    ngo_whatsapp_phone: str = ""
 
 
 @lru_cache
