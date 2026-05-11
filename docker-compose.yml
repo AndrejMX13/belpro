@@ -106,10 +106,13 @@ services:
       EVOLUTION_API_URL: http://evolution-api:8080
       EVOLUTION_API_KEY: ${EVOLUTION_API_KEY}
       EVOLUTION_INSTANCE_NAME: ${EVOLUTION_INSTANCE_NAME}
+      AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY}
+      NGO_WHATSAPP_PHONE: ${NGO_WHATSAPP_PHONE:-}
       TZ: Europe/Ljubljana
     volumes:
       - api_photos:/app/photos
       - api_pdfs:/app/pdfs
+      - ./.env:/app/.env:rw
     depends_on:
       postgres:
         condition: service_healthy
