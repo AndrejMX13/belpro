@@ -106,13 +106,13 @@ services:
       EVOLUTION_API_URL: http://evolution-api:8080
       EVOLUTION_API_KEY: ${EVOLUTION_API_KEY}
       EVOLUTION_INSTANCE_NAME: ${EVOLUTION_INSTANCE_NAME}
-      AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY}
-      NGO_WHATSAPP_PHONE: ${NGO_WHATSAPP_PHONE:-}
+      AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY}  # used by EvolutionClient (api/services/evolution.py) to call fetchInstances
+      NGO_WHATSAPP_PHONE: ${NGO_WHATSAPP_PHONE:-}         # seeds DB on first boot if set; kept in sync by api/main.py
       TZ: Europe/Ljubljana
     volumes:
       - api_photos:/app/photos
       - api_pdfs:/app/pdfs
-      - ./.env:/app/.env:rw
+      - ./.env:/app/.env:rw  # api writes NGO_WHATSAPP_PHONE back here after phone number changes
     depends_on:
       postgres:
         condition: service_healthy
