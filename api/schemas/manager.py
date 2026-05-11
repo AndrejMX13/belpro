@@ -79,3 +79,18 @@ class ManagerResponse(BaseModel):
     smtp_user: Optional[str] = None
     smtp_from_name: Optional[str] = None
     evolution_api_admin_url: Optional[str] = None
+
+
+class ConfigInfoResponse(BaseModel):
+    """Response schema for GET /managers/me/config-info."""
+
+    smtp_host: str
+    smtp_port: int
+    smtp_user: str
+    smtp_from_name: str
+    smtp_configured: bool
+    evolution_api_admin_url: str
+    wa_phone: str | None
+    wa_state: str  # "open" | "connecting" | "close" | "unreachable" | "lid_unsupported"
+    wa_synced: bool
+    wa_env_write_ok: bool

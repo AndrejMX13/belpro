@@ -1,4 +1,7 @@
 import base64
+from unittest.mock import patch, AsyncMock
+
+import pytest
 from httpx import AsyncClient
 from sqlalchemy import select
 
@@ -72,3 +75,80 @@ async def test_seed_whatsapp_phone_does_not_overwrite_existing_value(db_session)
 
     await db_session.refresh(manager)
     assert manager.ngo_whatsapp_phone == "38640111222"
+
+
+@pytest.mark.asyncio
+async def test_config_info_includes_wa_fields(client, auth):
+    with patch(
+        "routers.managers.EvolutionClient.get_connected_phone",
+        new=AsyncMock(return_value=(None, "unreachable")),
+    ):
+        resp = await client.get("/api/managers/me/config-info", headers=auth)
+    assert resp.status_code == 200
+    data = resp.json()
+    assert "wa_phone" in data
+    assert "wa_state" in data
+    assert "wa_synced" in data
+    assert "wa_env_write_ok" in data
+    assert data["wa_state"] == "unreachable"
+    assert data["wa_synced"] is False
+
+
+@pytest.mark.asyncio
+async def test_config_info_auto_syncs_when_evolution_reports_new_phone(
+    client, auth, db_session
+):
+    manager = (await db_session.execute(select(Manager).limit(1))).scalar_one()
+    manager.ngo_whatsapp_phone = None
+    await db_session.commit()
+
+    with patch(
+        "routers.managers.EvolutionClient.get_connected_phone",
+        new=AsyncMock(return_value=("38640111222", "open")),
+    ):
+        resp = await client.get("/api/managers/me/config-info", headers=auth)
+
+    assert resp.status_code == 200
+    data = resp.json()
+    assert data["wa_phone"] == "38640111222"
+    assert data["wa_state"] == "open"
+    assert data["wa_synced"] is True
+
+    await db_session.refresh(manager)
+    assert manager.ngo_whatsapp_phone == "38640111222"
+
+
+@pytest.mark.asyncio
+async def test_config_info_no_sync_when_phone_already_matches(
+    client, auth, db_session
+):
+    manager = (await db_session.execute(select(Manager).limit(1))).scalar_one()
+    manager.ngo_whatsapp_phone = "38640111222"
+    await db_session.commit()
+
+    with patch(
+        "routers.managers.EvolutionClient.get_connected_phone",
+        new=AsyncMock(return_value=("38640111222", "open")),
+    ):
+        resp = await client.get("/api/managers/me/config-info", headers=auth)
+
+    assert resp.json()["wa_synced"] is False
+
+
+@pytest.mark.asyncio
+async def test_config_info_shows_db_phone_when_disconnected(
+    client, auth, db_session
+):
+    manager = (await db_session.execute(select(Manager).limit(1))).scalar_one()
+    manager.ngo_whatsapp_phone = "38640999888"
+    await db_session.commit()
+
+    with patch(
+        "routers.managers.EvolutionClient.get_connected_phone",
+        new=AsyncMock(return_value=(None, "close")),
+    ):
+        resp = await client.get("/api/managers/me/config-info", headers=auth)
+
+    data = resp.json()
+    assert data["wa_phone"] == "38640999888"
+    assert data["wa_state"] == "close"
