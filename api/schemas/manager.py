@@ -5,7 +5,7 @@ import uuid
 from datetime import datetime
 from typing import Annotated, Optional
 
-from pydantic import BaseModel, ConfigDict, EmailStr, Field, model_validator
+from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, model_validator
 
 
 class ManagerCreate(BaseModel):
@@ -40,6 +40,19 @@ class ManagerUpdate(BaseModel):
     default_report_email: bool | None = None
     ngo_whatsapp_phone: Optional[str] = None
     smtp_host: Optional[str] = None
+
+    @field_validator("ngo_whatsapp_phone", mode="before")
+    @classmethod
+    def normalize_wa_phone(cls, v: str | None) -> str | None:
+        """Normalize to WhatsApp-native digits-only format; reject unparseable values."""
+        from utils.phone import normalize_phone
+
+        if v is None:
+            return None
+        normalized = normalize_phone(v)
+        if v and not normalized:
+            raise ValueError("Telefonska številka je prekratka ali neveljavna.")
+        return normalized
     smtp_port: Optional[int] = None
     smtp_user: Optional[str] = None
     smtp_from_name: Optional[str] = None

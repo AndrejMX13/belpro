@@ -152,3 +152,36 @@ async def test_config_info_shows_db_phone_when_disconnected(
     data = resp.json()
     assert data["wa_phone"] == "38640999888"
     assert data["wa_state"] == "close"
+
+
+@pytest.mark.asyncio
+async def test_update_manager_normalizes_whatsapp_phone(client, auth):
+    resp = await client.patch(
+        "/api/managers/me",
+        json={"ngo_whatsapp_phone": "+386 40 123 456"},
+        headers=auth,
+    )
+    assert resp.status_code == 200
+    assert resp.json()["ngo_whatsapp_phone"] == "38640123456"
+
+
+@pytest.mark.asyncio
+async def test_update_manager_rejects_too_short_phone(client, auth):
+    resp = await client.patch(
+        "/api/managers/me",
+        json={"ngo_whatsapp_phone": "+123"},
+        headers=auth,
+    )
+    assert resp.status_code == 422
+
+
+@pytest.mark.asyncio
+async def test_update_manager_empty_phone_not_stored_as_empty_string(client, auth):
+    # Empty string normalizes to None, which is excluded from the PATCH (no 422)
+    resp = await client.patch(
+        "/api/managers/me",
+        json={"ngo_whatsapp_phone": ""},
+        headers=auth,
+    )
+    assert resp.status_code == 200
+    assert resp.json()["ngo_whatsapp_phone"] != ""

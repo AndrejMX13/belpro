@@ -84,6 +84,10 @@ async def update_manager(
         setattr(manager, field, value)
 
     await db.commit()
+
+    if "ngo_whatsapp_phone" in payload.model_fields_set and manager.ngo_whatsapp_phone:
+        write_env_key("NGO_WHATSAPP_PHONE", manager.ngo_whatsapp_phone, Path(".env"))
+
     await db.refresh(manager)
     return manager
 
