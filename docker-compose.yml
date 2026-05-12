@@ -82,7 +82,7 @@ services:
     build: ./whisper
     restart: unless-stopped
     environment:
-      WHISPER_MODEL: ${WHISPER_MODEL:-medium}
+      WHISPER_MODEL: ${WHISPER_MODEL:-large-v3}
       WHISPER_LANGUAGE: ${WHISPER_LANGUAGE:-sl}
     volumes:
       - whisper_models:/home/appuser/.cache/huggingface

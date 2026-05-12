@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
 RUN pip install --no-cache-dir \
-    faster-whisper==1.1.1 \
+    faster-whisper \
     requests==2.32.3
 
 COPY transcribe.py .
