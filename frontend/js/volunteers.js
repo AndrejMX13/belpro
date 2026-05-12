@@ -1261,8 +1261,8 @@ async function renderSettings() {
           ${_waBadge(configInfo.wa_state)}
         </div>
         ${(configInfo.wa_state === 'open' || configInfo.wa_state === 'connecting')
-          ? '<div class="form-hint">Številko upravljate prek Evolution API — spremenite jo tam in nato osvežite to stran.</div>'
-          : '<div class="form-hint">Telefonska številka, ki je povezana z WhatsApp botom (Evolution API).</div>'}
+          ? '<div class="form-hint">Številko upravljate prek <a href="https://evoapicloud.com/" target="_blank" rel="noopener noreferrer"><img src="/images/evolution-api-logo.svg" alt="Evolution API" style="height:1.8em;vertical-align:middle;border-radius:3px;background:#111;padding:0 3px;"></a> — spremenite jo na spodnji povezavi in nato osvežite to stran.</div>'
+          : '<div class="form-hint">Telefonska številka, ki je povezana z WhatsApp botom (<a href="https://evoapicloud.com/" target="_blank" rel="noopener noreferrer"><img src="/images/evolution-api-logo.svg" alt="Evolution API" style="height:1.8em;vertical-align:middle;border-radius:3px;background:#111;padding:0 3px;"></a>).</div>'}
         ${!configInfo.wa_env_write_ok
           ? '<div class="form-error" style="margin-top:0.25rem">Opozorilo: posodobitve datoteke .env ni bilo mogoče zapisati — preverite dovoljenja datoteke.</div>'
           : ''}
