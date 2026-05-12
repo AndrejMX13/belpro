@@ -110,7 +110,7 @@ EVOLUTION_API_KEY=...
 EVOLUTION_INSTANCE_NAME=...
 
 # Whisper
-WHISPER_MODEL=medium       # or large-v3 if resources allow
+WHISPER_MODEL=large-v3     # recommended; medium if RAM is limited
 WHISPER_LANGUAGE=sl
 
 # FastAPI
@@ -169,7 +169,7 @@ docker compose logs -f
 
 ## Tooling & Shell Conventions
 
-- **Use PowerShell (not Bash) for `docker compose` commands.** The Bash tool cannot reach `/mnt/d/` — the WSL2 D: mount is not available in that shell context. Always use the PowerShell tool with Windows paths (`d:\Andrej\vsCode-workspace\BelPro`).
+- **Use the Bash tool for all commands** including `docker compose`. VS Code runs in WSL2 context; the working directory is `/mnt/d/Andrej/vsCode-workspace/BelPro`.
 - **Rebuild after code changes:** `docker compose up -d --build <svc>` — never `docker compose restart`, which skips the build.
 - **pytest path inside the API container:** `docker compose exec api pytest tests/ -v` — the path is `tests/`, not `api/tests/`. The Dockerfile uses `api/` as build context, so `api/tests/` on the host becomes `tests/` at `/app/tests/` inside the container.
 - **Git remote is named `central`**, not `origin`. Use `git push central <branch>`.
