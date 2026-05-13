@@ -128,7 +128,7 @@ GMAIL_APP_PASSWORD=...     # Or OAuth token path
 
 1. **Entry statuses flow one way:** `pending_volunteer` → `pending_manager` → `approved` or `rejected`. Never backwards.
 2. **Photo is optional.** Never block an entry because there's no photo. Manager decides.
-3. **Volunteer confirmation dialog has three buttons:** Potrdi, Popravi, Prekliči. No limit on correction attempts — the volunteer may re-submit as many times as needed before confirming. Prekliči discards the entry entirely.
+3. **Volunteer confirmation dialog has four options:** 1 Potrdi, 2 Popravi, 3 Dodaj slike, 4 Prekliči. No limit on correction attempts — the volunteer may re-submit as many times as needed before confirming. Prekliči discards the entry entirely. "Dodaj slike" enters a photo sub-mode (1 Potrdi, 3 Več slik, 4 Prekliči).
 4. **Manager is singular.** One manager per instance. No multi-user auth needed for v1.
 5. **Monthly report deadline:** 28th of each month (cron), covering the current month. Manager can trigger manually at any time.
 6. **Slovenian only.** All WhatsApp bot messages in Slovenian. Whisper language hint: `sl`.
@@ -199,6 +199,17 @@ These must be explicit in `requirements.txt` — transitive resolution gets them
 - Before working on any n8n workflow, read the n8n skills in .claude/skills/
 - n8n API connection is configured in .mcp.json (URL: http://localhost:5678, key added after first container run)
 - Workflows are exported as JSON and committed to n8n/workflows/ — one file per logical flow
+
+---
+
+## Project Memory
+
+This project uses a persistent memory system at `~/.claude/projects/<project>/memory/`. `MEMORY.md` is an index automatically loaded into every conversation, but individual memory files must be consulted actively.
+
+- **At the start of every session**, read `MEMORY.md` and the relevant individual memory files before taking any action. This is not optional — the same rule as graphify orientation.
+- **When patterns recur**, write them to memory — feedback (corrections/confirmations), project state, and user preferences. Link related memories with `[[name]]`.
+- **Never write code patterns, file paths, or architecture to memory** — those are derivable from the codebase. Memory is for behavioral feedback, project decisions, and user context.
+- **After every session that modifies code**, run `graphify update .`.
 
 ---
 

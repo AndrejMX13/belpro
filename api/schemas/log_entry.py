@@ -60,6 +60,13 @@ class PhotoResponse(BaseModel):
     uploaded_at: datetime
 
 
+class PhotoBase64Request(BaseModel):
+    """Base64-encoded photo upload — used by n8n workflows."""
+
+    image_base64: str
+    filename: str
+
+
 class LogEntryUpdate(BaseModel):
     """Editable fields — blocked once the entry is approved."""
 

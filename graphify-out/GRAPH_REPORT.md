@@ -1,12 +1,12 @@
-# Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-10)
+# Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-13)
 
 ## Corpus Check
-- 58 files · ~180,930 words
+- 70 files · ~215,781 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 833 nodes · 2084 edges · 84 communities detected
-- Extraction: 43% EXTRACTED · 57% INFERRED · 0% AMBIGUOUS · INFERRED: 1181 edges (avg confidence: 0.56)
+- 950 nodes · 2458 edges · 94 communities detected
+- Extraction: 41% EXTRACTED · 59% INFERRED · 0% AMBIGUOUS · INFERRED: 1461 edges (avg confidence: 0.56)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -94,18 +94,28 @@
 - [[_COMMUNITY_Community 81|Community 81]]
 - [[_COMMUNITY_Community 82|Community 82]]
 - [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+- [[_COMMUNITY_Community 91|Community 91]]
+- [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `EntryStatus` - 144 edges
-2. `Volunteer` - 98 edges
-3. `LogEntry` - 96 edges
-4. `Manager` - 83 edges
-5. `LogEntryPhoto` - 55 edges
-6. `LogEntryListResponse` - 53 edges
-7. `LogEntryCreate` - 52 edges
-8. `LogEntryResponse` - 52 edges
-9. `PhotoResponse` - 52 edges
-10. `LogEntryUpdate` - 52 edges
+1. `EntryStatus` - 160 edges
+2. `Volunteer` - 112 edges
+3. `LogEntry` - 110 edges
+4. `Manager` - 108 edges
+5. `LogEntryPhoto` - 70 edges
+6. `LogEntryListResponse` - 67 edges
+7. `LogEntryCreate` - 66 edges
+8. `LogEntryResponse` - 66 edges
+9. `PhotoResponse` - 66 edges
+10. `LogEntryUpdate` - 66 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Docker Compose Orchestration` --semantically_similar_to--> `Docker Compose Orkestracija`  [INFERRED] [semantically similar]
@@ -136,11 +146,11 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.09
-Nodes (113): Base, Base, SQLAlchemy declarative base shared by all ORM models., Declarative base — import and subclass in every model., AsyncClient with get_db dependency wired to the test session., HTTP Basic Auth header for the seeded manager., Returns an async callable that inserts a LogEntry row via flush., Run Alembic migrations against belpro_test, seed one Manager row.     Drops all (+105 more)
+Nodes (129): Base, Base, SQLAlchemy declarative base shared by all ORM models., Declarative base — import and subclass in every model., AsyncClient with get_db dependency wired to the test session., HTTP Basic Auth header for the seeded manager., Returns an async callable that inserts a LogEntry row via flush., Run Alembic migrations against belpro_test, seed one Manager row.     Drops all (+121 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.08
-Nodes (76): Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, FastAPI dependency — rejects requests without the correct manager password., require_manager(), BaseSettings, decrypt_emso(), encrypt_emso(), hash_emso(), load_key() (+68 more)
+Cohesion: 0.07
+Nodes (78): Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, FastAPI dependency — rejects requests without the correct manager password., require_manager(), BaseSettings, decrypt_emso(), encrypt_emso(), hash_emso(), load_key() (+70 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.05
@@ -151,20 +161,20 @@ Cohesion: 0.04
 Nodes (68): ASCII Check Results — non-ASCII chars found: Naloži Stanje, Briši Popravi, Feature Addition Checklist — SPEC.md → Alembic → Pydantic → n8n JSON → update SPEC.md, Address Fields Structured — street, postal_code (4-digit), city, ASCII-only Identifiers Rule — Slovenian characters forbidden in code identifiers, BelPro — Beleženje Prostovoljstva (self-hosted volunteer diary system), EMŠO Encryption — AES-256 at rest, never logged, Entry Status Flow — one-way: pending_volunteer → pending_manager → approved or rejected, Local Development Environment — Windows 10 + WSL2 + Docker Desktop (+60 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.11
-Nodes (53): _destroyCharts(), loadAnalytics(), renderAnalytics(), renderAnalyticsContent(), _renderCharts(), exportReportPdf(), fmtHours(), loadReports() (+45 more)
+Cohesion: 0.08
+Nodes (51): analytics_summary(), AnalyticsSummary, HoursPerLocation, HoursPerVolunteer, MonthlyTrendPoint, _preceding_months(), Pydantic schemas for the analytics summary endpoint., Per-volunteer approved hours for a given month. (+43 more)
 
 ### Community 5 - "Community 5"
+Cohesion: 0.11
+Nodes (54): _destroyCharts(), loadAnalytics(), renderAnalytics(), renderAnalyticsContent(), _renderCharts(), exportReportPdf(), fmtHours(), loadReports() (+46 more)
+
+### Community 6 - "Community 6"
 Cohesion: 0.12
 Nodes (44): Dashboard — Web UI and FastAPI Backend, Nadzorna plošča — Spl. vmesnik + API, Evolution API — WhatsApp Gateway, Evolution API — API Prehod, Gmail — Email Delivery via SMTP, Gmail — Pošiljanje e-pošte, Manager — Browser or Phone Access, Vodja — Brskalnik / Telefon (+36 more)
 
-### Community 6 - "Community 6"
+### Community 7 - "Community 7"
 Cohesion: 0.06
 Nodes (42): AI Dialect Normalisation (Whisper + n8n), CSD — Centre for Social Work, Deployment Requirement: Dedicated Gmail Account, Deployment Requirement: Dedicated WhatsApp Phone Number, Docker Compose (Containerisation), EMŠO Encryption (AES-256 at rest), Entry Status Flow (pending_volunteer → pending_manager → approved/rejected), Evolution API (+34 more)
-
-### Community 7 - "Community 7"
-Cohesion: 0.11
-Nodes (37): analytics_summary(), AnalyticsSummary, HoursPerLocation, HoursPerVolunteer, MonthlyTrendPoint, _preceding_months(), Pydantic schemas for the analytics summary endpoint., Per-volunteer approved hours for a given month. (+29 more)
 
 ### Community 8 - "Community 8"
 Cohesion: 0.06
@@ -175,100 +185,100 @@ Cohesion: 0.07
 Nodes (40): BelPro System Architecture, Docker Compose Orchestration, EMSO Encryption at Rest (AES-256), Evolution API WhatsApp Gateway, External Gmail Service, External WhatsApp Service, FastAPI Backend API, Frontend Manager Dashboard (+32 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.13
-Nodes (28): MonthlyReportSummary, _esc(), _fmt_date(), _generated_line(), _ngo_header_html(), NGOInfo, PDF rendering for monthly volunteer reports using WeasyPrint., Render an all-volunteer summary PDF and return raw bytes. (+20 more)
+Cohesion: 0.07
+Nodes (24): health(), lifespan(), Belpro FastAPI application entry point., Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null., Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null., Health check — returns ok when the service is up., seed_whatsapp_phone_from_env(), normalize_wa_phone() (+16 more)
 
 ### Community 11 - "Community 11"
+Cohesion: 0.13
+Nodes (29): MonthlyReportSummary, _esc(), _fmt_date(), _generated_line(), _ngo_header_html(), NGOInfo, PDF rendering for monthly volunteer reports using WeasyPrint., Render an all-volunteer summary PDF and return raw bytes. (+21 more)
+
+### Community 12 - "Community 12"
+Cohesion: 0.1
+Nodes (24): Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port, send_email(), Return (normalized_phone, state) for the configured instance.          States: ", Exception, approve_log_entry(), confirm_log_entry(), delete_log_entry() (+16 more)
+
+### Community 13 - "Community 13"
+Cohesion: 0.16
+Nodes (21): make_response_payload(), make_text_payload(), poll_for_entry(), poll_for_entry_gone(), poll_for_entry_status(), post_to_webhook(), Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError, Build a WhatsApp text-message webhook body for the given bare-digit phone. (+13 more)
+
+### Community 14 - "Community 14"
 Cohesion: 0.27
 Nodes (18): body(), border(), borders(), cell(), complianceTable(), componentTable(), coverPage(), featureTable() (+10 more)
 
-### Community 12 - "Community 12"
-Cohesion: 0.13
-Nodes (16): Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port, send_email(), Exception, approve_log_entry(), confirm_log_entry(), delete_log_entry(), delete_photo() (+8 more)
-
-### Community 13 - "Community 13"
+### Community 15 - "Community 15"
 Cohesion: 0.18
 Nodes (8): BaseHTTPRequestHandler, _Handler, Thin HTTP wrapper around Faster-Whisper for local speech-to-text.  Exposes a sin, Handle POST /transcribe requests., Transcribe the uploaded audio and return plain-text., Health check — GET /health returns 200 ok., Send a simple HTTP response., Route access logs to stdout.
 
-### Community 14 - "Community 14"
+### Community 16 - "Community 16"
 Cohesion: 0.21
 Nodes (11): _do_run_migrations(), _get_url(), Alembic environment — async SQLAlchemy / asyncpg configuration., Read DATABASE_URL from settings (env / .env file)., Run migrations without a live DB connection (generates SQL script)., Inner helper called inside the async connection context., Create an async engine and run migrations inside it., Run migrations against a live database. (+3 more)
 
-### Community 15 - "Community 15"
-Cohesion: 0.33
-Nodes (7): Glob/Grep Restriction — forbidden for initial codebase discovery, Graphify Primary Discovery Rule — use Graphify index before glob/grep, Graphify Update Maintenance — run graphify update . after code changes, Serena Semantic Symbol Navigation — precise symbol-level execution, 770 Inferred Edges — avg confidence 0.53, need verification, Graphify Knowledge Graph Report — 562 nodes, 1449 edges, 56 communities, AI-Assisted Development — Claude Code, Serena, Graphify used throughout
-
-### Community 16 - "Community 16"
-Cohesion: 0.33
-Nodes (5): health(), lifespan(), Belpro FastAPI application entry point., Fail fast if the database is unreachable on startup., Health check — returns ok when the service is up.
-
 ### Community 17 - "Community 17"
-Cohesion: 0.33
-Nodes (5): downgrade(), Initial schema — baseline migration reflecting db/init.sql.  Revision ID: 001 Re, Drop all Belpro tables and the entry_status enum., Create the full Belpro schema from scratch., upgrade()
+Cohesion: 0.28
+Nodes (8): api_client(), _auth_header(), _manager_password(), n8n_client(), Session-scoped AsyncClient against FastAPI. Skips all tests if unreachable., Session-scoped AsyncClient against n8n. Skips all tests if unreachable., Creates a volunteer with a unique phone, yields the volunteer dict,     deletes, test_volunteer()
 
 ### Community 18 - "Community 18"
 Cohesion: 0.33
-Nodes (5): downgrade(), Create log_entry_photos table; drop single-photo columns from log_entries.  Revi, Create log_entry_photos; drop single-photo columns from log_entries., Drop log_entry_photos; restore single-photo columns on log_entries., upgrade()
+Nodes (7): Glob/Grep Restriction — forbidden for initial codebase discovery, Graphify Primary Discovery Rule — use Graphify index before glob/grep, Graphify Update Maintenance — run graphify update . after code changes, Serena Semantic Symbol Navigation — precise symbol-level execution, 770 Inferred Edges — avg confidence 0.53, need verification, Graphify Knowledge Graph Report — 562 nodes, 1449 edges, 56 communities, AI-Assisted Development — Claude Code, Serena, Graphify used throughout
 
 ### Community 19 - "Community 19"
 Cohesion: 0.33
-Nodes (5): downgrade(), Add report channel preferences to managers and volunteers.  Revision ID: 005 Rev, Add report preference columns to managers and volunteers., Drop report preference columns from managers and volunteers., upgrade()
+Nodes (5): downgrade(), Initial schema — baseline migration reflecting db/init.sql.  Revision ID: 001 Re, Drop all Belpro tables and the entry_status enum., Create the full Belpro schema from scratch., upgrade()
 
 ### Community 20 - "Community 20"
 Cohesion: 0.33
-Nodes (5): downgrade(), Add WhatsApp bot number and SMTP config columns to managers.  Revision ID: 006 R, Add WhatsApp bot number and SMTP config columns to managers., Drop WhatsApp bot number and SMTP config columns from managers., upgrade()
+Nodes (5): downgrade(), Create log_entry_photos table; drop single-photo columns from log_entries.  Revi, Create log_entry_photos; drop single-photo columns from log_entries., Drop log_entry_photos; restore single-photo columns on log_entries., upgrade()
 
 ### Community 21 - "Community 21"
 Cohesion: 0.33
-Nodes (5): downgrade(), Add ngo_davcna column to managers.  Revision ID: 007 Revises: 006 Create Date: 2, Add ngo_davcna column to managers., Drop ngo_davcna column from managers., upgrade()
+Nodes (5): downgrade(), Add report channel preferences to managers and volunteers.  Revision ID: 005 Rev, Add report preference columns to managers and volunteers., Drop report preference columns from managers and volunteers., upgrade()
 
 ### Community 22 - "Community 22"
 Cohesion: 0.33
-Nodes (5): downgrade(), Rename entry_date to work_date in log_entries.  'work_date' is clearer than 'ent, Rename entry_date to work_date and update index names., Reverse rename: work_date back to entry_date and restore index names., upgrade()
+Nodes (5): downgrade(), Add WhatsApp bot number and SMTP config columns to managers.  Revision ID: 006 R, Add WhatsApp bot number and SMTP config columns to managers., Drop WhatsApp bot number and SMTP config columns from managers., upgrade()
 
 ### Community 23 - "Community 23"
-Cohesion: 0.4
-Nodes (0): 
+Cohesion: 0.33
+Nodes (5): downgrade(), Add ngo_davcna column to managers.  Revision ID: 007 Revises: 006 Create Date: 2, Add ngo_davcna column to managers., Drop ngo_davcna column from managers., upgrade()
 
 ### Community 24 - "Community 24"
+Cohesion: 0.33
+Nodes (5): downgrade(), Rename entry_date to work_date in log_entries.  'work_date' is clearer than 'ent, Rename entry_date to work_date and update index names., Reverse rename: work_date back to entry_date and restore index names., upgrade()
+
+### Community 25 - "Community 25"
 Cohesion: 0.6
 Nodes (4): _auth(), _get(), main(), Print pending_manager entries as JSON for the manual trigger node.  Usage:   pyt
 
-### Community 25 - "Community 25"
+### Community 26 - "Community 26"
 Cohesion: 0.5
 Nodes (3): get_db(), Async SQLAlchemy engine and session factory., FastAPI dependency — yields one async DB session per request.
 
-### Community 26 - "Community 26"
+### Community 27 - "Community 27"
 Cohesion: 0.5
 Nodes (1): Add emso_hash column for EMŠO uniqueness enforcement.  Revision ID: 002 Revises:
 
-### Community 27 - "Community 27"
+### Community 28 - "Community 28"
 Cohesion: 0.5
 Nodes (1): Add manager_notified_at column to log_entries.  Revision ID: 008 Revises: 007 Cr
 
-### Community 28 - "Community 28"
+### Community 29 - "Community 29"
 Cohesion: 0.67
 Nodes (2): Health endpoint must return 200 with status ok., test_health_returns_ok()
 
-### Community 29 - "Community 29"
+### Community 30 - "Community 30"
 Cohesion: 1.0
 Nodes (2): Rationale: Single-tenant — out of scope for v1 to support multi-NGO SaaS, Single-Tenant Architecture (one NGO per deployment)
 
-### Community 30 - "Community 30"
+### Community 31 - "Community 31"
 Cohesion: 1.0
 Nodes (2): No Skip Alembic Migrations — all schema changes via migrations, Project Directory Layout — docker-compose.yml, n8n/, whisper/, api/, frontend/, nginx/, scripts/, db/
 
-### Community 31 - "Community 31"
+### Community 32 - "Community 32"
 Cohesion: 1.0
 Nodes (2): Dashboard QR Modal Bug — base64 image received but not rendered (issue #1602), Related GitHub Issues — #1602, #2068, #2380
 
-### Community 32 - "Community 32"
-Cohesion: 1.0
-Nodes (2): POST /test/inject-entry — injects pending_manager entry and fires n8n webhook, Two-Phase Testing Strategy — Phase 1: volunteer flow via dashboard; Phase 2: manager WhatsApp
-
 ### Community 33 - "Community 33"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): POST /test/inject-entry — injects pending_manager entry and fires n8n webhook, Two-Phase Testing Strategy — Phase 1: volunteer flow via dashboard; Phase 2: manager WhatsApp
 
 ### Community 34 - "Community 34"
 Cohesion: 1.0
@@ -284,7 +294,7 @@ Nodes (0):
 
 ### Community 37 - "Community 37"
 Cohesion: 1.0
-Nodes (0): 
+Nodes (1): Normalize to WhatsApp-native digits-only format; reject unparseable values.
 
 ### Community 38 - "Community 38"
 Cohesion: 1.0
@@ -304,184 +314,222 @@ Nodes (0):
 
 ### Community 42 - "Community 42"
 Cohesion: 1.0
-Nodes (1): Fail fast if the database is unreachable on startup.
+Nodes (0): 
 
 ### Community 43 - "Community 43"
 Cohesion: 1.0
-Nodes (1): Health check — returns ok when the service is up.
+Nodes (0): 
 
 ### Community 44 - "Community 44"
 Cohesion: 1.0
-Nodes (1): Drop all Belpro tables and the entry_status enum.
+Nodes (0): 
 
 ### Community 45 - "Community 45"
 Cohesion: 1.0
-Nodes (1): Drop log_entry_photos; restore single-photo columns on log_entries.
+Nodes (0): 
 
 ### Community 46 - "Community 46"
 Cohesion: 1.0
-Nodes (1): Drop report preference columns from managers and volunteers.
+Nodes (0): 
 
 ### Community 47 - "Community 47"
 Cohesion: 1.0
-Nodes (1): Drop WhatsApp bot number and SMTP config columns from managers.
+Nodes (1): Fail fast if the database is unreachable on startup.
 
 ### Community 48 - "Community 48"
 Cohesion: 1.0
-Nodes (1): Reverse rename: work_date back to entry_date and restore index names.
+Nodes (1): Health check — returns ok when the service is up.
 
 ### Community 49 - "Community 49"
 Cohesion: 1.0
-Nodes (1): Rename non-ASCII node names to ASCII and fix all references.
+Nodes (1): Return a cached Settings instance (constructed once per process).
 
 ### Community 50 - "Community 50"
 Cohesion: 1.0
-Nodes (1): Deploy ASCII-renamed workflow to n8n.
+Nodes (1): Payload for the change-password endpoint.
 
 ### Community 51 - "Community 51"
 Cohesion: 1.0
-Nodes (1): Deploy fixed workflow to n8n instance.
+Nodes (1): Manager profile returned by the API.
 
 ### Community 52 - "Community 52"
 Cohesion: 1.0
-Nodes (1): Deploy popravi-fixed workflow to n8n.
+Nodes (1): Fail fast if the database is unreachable on startup.
 
 ### Community 53 - "Community 53"
 Cohesion: 1.0
-Nodes (1): Export volunteer_entry workflow from n8n to JSON file.
+Nodes (1): Health check — returns ok when the service is up.
 
 ### Community 54 - "Community 54"
 Cohesion: 1.0
-Nodes (1): Fix Code: Clear State Popravi and Preklici to read from Nalozi Stanje instead of
+Nodes (1): Drop all Belpro tables and the entry_status enum.
 
 ### Community 55 - "Community 55"
 Cohesion: 1.0
-Nodes (1): Fix Popravi flow: show transcript for editing instead of just discarding.
+Nodes (1): Drop log_entry_photos; restore single-photo columns on log_entries.
 
 ### Community 56 - "Community 56"
 Cohesion: 1.0
-Nodes (1): Patch volunteer_entry workflow: thread remoteJid + fix location regex.
+Nodes (1): Drop report preference columns from managers and volunteers.
 
 ### Community 57 - "Community 57"
 Cohesion: 1.0
-Nodes (1): Patch v2: @lid real-phone extraction + name-based volunteer fallback lookup.
+Nodes (1): Drop WhatsApp bot number and SMTP config columns from managers.
 
 ### Community 58 - "Community 58"
 Cohesion: 1.0
-Nodes (1): Patch v3: LID→real JID via findContacts, Slovenian word-hours parsing.
+Nodes (1): Reverse rename: work_date back to entry_date and restore index names.
 
 ### Community 59 - "Community 59"
 Cohesion: 1.0
-Nodes (1): Patch v4: Use remoteJidAlt from v2.3.7 webhook; remove unreliable findContacts l
+Nodes (1): Rename non-ASCII node names to ASCII and fix all references.
 
 ### Community 60 - "Community 60"
 Cohesion: 1.0
-Nodes (1): Patch v5: Remove pushName and name-based fallback — phone-only lookup is reliabl
+Nodes (1): Deploy ASCII-renamed workflow to n8n.
 
 ### Community 61 - "Community 61"
 Cohesion: 1.0
-Nodes (1): Return (width, height) of text string.
+Nodes (1): Deploy fixed workflow to n8n instance.
 
 ### Community 62 - "Community 62"
 Cohesion: 1.0
-Nodes (1): Dashed horizontal arrow (single line, for Manager connection).
+Nodes (1): Deploy popravi-fixed workflow to n8n.
 
 ### Community 63 - "Community 63"
 Cohesion: 1.0
-Nodes (1): Return (width, height) of text string.
+Nodes (1): Export volunteer_entry workflow from n8n to JSON file.
 
 ### Community 64 - "Community 64"
 Cohesion: 1.0
-Nodes (1): Dashed horizontal arrow (single line, for Vodja connection).
+Nodes (1): Fix Code: Clear State Popravi and Preklici to read from Nalozi Stanje instead of
 
 ### Community 65 - "Community 65"
 Cohesion: 1.0
-Nodes (1): Partial update — all fields optional.  Only provided fields are written.
+Nodes (1): Fix Popravi flow: show transcript for editing instead of just discarding.
 
 ### Community 66 - "Community 66"
 Cohesion: 1.0
-Nodes (1): Payload for the change-password endpoint.
+Nodes (1): Patch volunteer_entry workflow: thread remoteJid + fix location regex.
 
 ### Community 67 - "Community 67"
 Cohesion: 1.0
-Nodes (1): Manager profile returned by the API.
+Nodes (1): Patch v2: @lid real-phone extraction + name-based volunteer fallback lookup.
 
 ### Community 68 - "Community 68"
 Cohesion: 1.0
-Nodes (1): Render a single-volunteer monthly report PDF and return raw bytes.
+Nodes (1): Patch v3: LID→real JID via findContacts, Slovenian word-hours parsing.
 
 ### Community 69 - "Community 69"
 Cohesion: 1.0
-Nodes (1): Render an all-volunteer summary PDF and return raw bytes.
+Nodes (1): Patch v4: Use remoteJidAlt from v2.3.7 webhook; remove unreliable findContacts l
 
 ### Community 70 - "Community 70"
 Cohesion: 1.0
-Nodes (1): Handle POST /transcribe requests.
+Nodes (1): Patch v5: Remove pushName and name-based fallback — phone-only lookup is reliabl
 
 ### Community 71 - "Community 71"
 Cohesion: 1.0
-Nodes (1): Health check — GET /health returns 200 ok.
+Nodes (1): Return (width, height) of text string.
 
 ### Community 72 - "Community 72"
 Cohesion: 1.0
-Nodes (1): Send a simple HTTP response.
+Nodes (1): Dashed horizontal arrow (single line, for Manager connection).
 
 ### Community 73 - "Community 73"
 Cohesion: 1.0
-Nodes (1): Route access logs to stdout.
+Nodes (1): Return (width, height) of text string.
 
 ### Community 74 - "Community 74"
 Cohesion: 1.0
-Nodes (1): Return a cached Settings instance (constructed once per process).
+Nodes (1): Dashed horizontal arrow (single line, for Vodja connection).
 
 ### Community 75 - "Community 75"
 Cohesion: 1.0
-Nodes (1): Payload for the change-password endpoint.
+Nodes (1): Partial update — all fields optional.  Only provided fields are written.
 
 ### Community 76 - "Community 76"
 Cohesion: 1.0
-Nodes (1): Manager profile returned by the API.
+Nodes (1): Payload for the change-password endpoint.
 
 ### Community 77 - "Community 77"
 Cohesion: 1.0
-Nodes (1): Fail fast if the database is unreachable on startup.
+Nodes (1): Manager profile returned by the API.
 
 ### Community 78 - "Community 78"
 Cohesion: 1.0
-Nodes (1): Health check — returns ok when the service is up.
+Nodes (1): Render a single-volunteer monthly report PDF and return raw bytes.
 
 ### Community 79 - "Community 79"
 Cohesion: 1.0
-Nodes (1): Payload for the change-password endpoint.
+Nodes (1): Render an all-volunteer summary PDF and return raw bytes.
 
 ### Community 80 - "Community 80"
 Cohesion: 1.0
-Nodes (1): Manager profile returned by the API.
+Nodes (1): Handle POST /transcribe requests.
 
 ### Community 81 - "Community 81"
 Cohesion: 1.0
-Nodes (1): Rationale: Vanilla JS chosen — no framework overhead for NGO tool
+Nodes (1): Health check — GET /health returns 200 ok.
 
 ### Community 82 - "Community 82"
 Cohesion: 1.0
-Nodes (1): CLAUDE.md references SPEC.md for full project details
+Nodes (1): Send a simple HTTP response.
 
 ### Community 83 - "Community 83"
+Cohesion: 1.0
+Nodes (1): Route access logs to stdout.
+
+### Community 84 - "Community 84"
+Cohesion: 1.0
+Nodes (1): Return a cached Settings instance (constructed once per process).
+
+### Community 85 - "Community 85"
+Cohesion: 1.0
+Nodes (1): Payload for the change-password endpoint.
+
+### Community 86 - "Community 86"
+Cohesion: 1.0
+Nodes (1): Manager profile returned by the API.
+
+### Community 87 - "Community 87"
+Cohesion: 1.0
+Nodes (1): Fail fast if the database is unreachable on startup.
+
+### Community 88 - "Community 88"
+Cohesion: 1.0
+Nodes (1): Health check — returns ok when the service is up.
+
+### Community 89 - "Community 89"
+Cohesion: 1.0
+Nodes (1): Payload for the change-password endpoint.
+
+### Community 90 - "Community 90"
+Cohesion: 1.0
+Nodes (1): Manager profile returned by the API.
+
+### Community 91 - "Community 91"
+Cohesion: 1.0
+Nodes (1): Rationale: Vanilla JS chosen — no framework overhead for NGO tool
+
+### Community 92 - "Community 92"
+Cohesion: 1.0
+Nodes (1): CLAUDE.md references SPEC.md for full project details
+
+### Community 93 - "Community 93"
 Cohesion: 1.0
 Nodes (1): Maintenance Scripts — backup.sh, restore.sh, log tailing
 
 ## Knowledge Gaps
-- **240 isolated node(s):** `Belpro FastAPI application entry point.`, `Fail fast if the database is unreachable on startup.`, `Health check — returns ok when the service is up.`, `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc` (+235 more)
+- **262 isolated node(s):** `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc`, `Return a cached Settings instance (constructed once per process).`, `Async SQLAlchemy engine and session factory.`, `FastAPI dependency — yields one async DB session per request.` (+257 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 29`** (2 nodes): `Rationale: Single-tenant — out of scope for v1 to support multi-NGO SaaS`, `Single-Tenant Architecture (one NGO per deployment)`
+- **Thin community `Community 30`** (2 nodes): `Rationale: Single-tenant — out of scope for v1 to support multi-NGO SaaS`, `Single-Tenant Architecture (one NGO per deployment)`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 30`** (2 nodes): `No Skip Alembic Migrations — all schema changes via migrations`, `Project Directory Layout — docker-compose.yml, n8n/, whisper/, api/, frontend/, nginx/, scripts/, db/`
+- **Thin community `Community 31`** (2 nodes): `No Skip Alembic Migrations — all schema changes via migrations`, `Project Directory Layout — docker-compose.yml, n8n/, whisper/, api/, frontend/, nginx/, scripts/, db/`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (2 nodes): `Dashboard QR Modal Bug — base64 image received but not rendered (issue #1602)`, `Related GitHub Issues — #1602, #2068, #2380`
+- **Thin community `Community 32`** (2 nodes): `Dashboard QR Modal Bug — base64 image received but not rendered (issue #1602)`, `Related GitHub Issues — #1602, #2068, #2380`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 32`** (2 nodes): `POST /test/inject-entry — injects pending_manager entry and fires n8n webhook`, `Two-Phase Testing Strategy — Phase 1: volunteer flow via dashboard; Phase 2: manager WhatsApp`
-  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 33`** (1 nodes): `__init__.py`
+- **Thin community `Community 33`** (2 nodes): `POST /test/inject-entry — injects pending_manager entry and fires n8n webhook`, `Two-Phase Testing Strategy — Phase 1: volunteer flow via dashboard; Phase 2: manager WhatsApp`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 34`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -489,115 +537,135 @@ Nodes (1): Maintenance Scripts — backup.sh, restore.sh, log tailing
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 36`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 37`** (1 nodes): `__init__.py`
+- **Thin community `Community 37`** (1 nodes): `Normalize to WhatsApp-native digits-only format; reject unparseable values.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 38`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 39`** (1 nodes): `api.js`
+- **Thin community `Community 39`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 40`** (1 nodes): `load_env.ps1`
+- **Thin community `Community 40`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 41`** (1 nodes): `switch_manager_phone.ps1`
+- **Thin community `Community 41`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 42`** (1 nodes): `Fail fast if the database is unreachable on startup.`
+- **Thin community `Community 42`** (1 nodes): `api.js`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 43`** (1 nodes): `Health check — returns ok when the service is up.`
+- **Thin community `Community 43`** (1 nodes): `load_env.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 44`** (1 nodes): `Drop all Belpro tables and the entry_status enum.`
+- **Thin community `Community 44`** (1 nodes): `switch_manager_phone.ps1`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 45`** (1 nodes): `Drop log_entry_photos; restore single-photo columns on log_entries.`
+- **Thin community `Community 45`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 46`** (1 nodes): `Drop report preference columns from managers and volunteers.`
+- **Thin community `Community 46`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 47`** (1 nodes): `Drop WhatsApp bot number and SMTP config columns from managers.`
+- **Thin community `Community 47`** (1 nodes): `Fail fast if the database is unreachable on startup.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 48`** (1 nodes): `Reverse rename: work_date back to entry_date and restore index names.`
+- **Thin community `Community 48`** (1 nodes): `Health check — returns ok when the service is up.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 49`** (1 nodes): `Rename non-ASCII node names to ASCII and fix all references.`
+- **Thin community `Community 49`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 50`** (1 nodes): `Deploy ASCII-renamed workflow to n8n.`
+- **Thin community `Community 50`** (1 nodes): `Payload for the change-password endpoint.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 51`** (1 nodes): `Deploy fixed workflow to n8n instance.`
+- **Thin community `Community 51`** (1 nodes): `Manager profile returned by the API.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 52`** (1 nodes): `Deploy popravi-fixed workflow to n8n.`
+- **Thin community `Community 52`** (1 nodes): `Fail fast if the database is unreachable on startup.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 53`** (1 nodes): `Export volunteer_entry workflow from n8n to JSON file.`
+- **Thin community `Community 53`** (1 nodes): `Health check — returns ok when the service is up.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 54`** (1 nodes): `Fix Code: Clear State Popravi and Preklici to read from Nalozi Stanje instead of`
+- **Thin community `Community 54`** (1 nodes): `Drop all Belpro tables and the entry_status enum.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 55`** (1 nodes): `Fix Popravi flow: show transcript for editing instead of just discarding.`
+- **Thin community `Community 55`** (1 nodes): `Drop log_entry_photos; restore single-photo columns on log_entries.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 56`** (1 nodes): `Patch volunteer_entry workflow: thread remoteJid + fix location regex.`
+- **Thin community `Community 56`** (1 nodes): `Drop report preference columns from managers and volunteers.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 57`** (1 nodes): `Patch v2: @lid real-phone extraction + name-based volunteer fallback lookup.`
+- **Thin community `Community 57`** (1 nodes): `Drop WhatsApp bot number and SMTP config columns from managers.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 58`** (1 nodes): `Patch v3: LID→real JID via findContacts, Slovenian word-hours parsing.`
+- **Thin community `Community 58`** (1 nodes): `Reverse rename: work_date back to entry_date and restore index names.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 59`** (1 nodes): `Patch v4: Use remoteJidAlt from v2.3.7 webhook; remove unreliable findContacts l`
+- **Thin community `Community 59`** (1 nodes): `Rename non-ASCII node names to ASCII and fix all references.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 60`** (1 nodes): `Patch v5: Remove pushName and name-based fallback — phone-only lookup is reliabl`
+- **Thin community `Community 60`** (1 nodes): `Deploy ASCII-renamed workflow to n8n.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 61`** (1 nodes): `Return (width, height) of text string.`
+- **Thin community `Community 61`** (1 nodes): `Deploy fixed workflow to n8n instance.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 62`** (1 nodes): `Dashed horizontal arrow (single line, for Manager connection).`
+- **Thin community `Community 62`** (1 nodes): `Deploy popravi-fixed workflow to n8n.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 63`** (1 nodes): `Return (width, height) of text string.`
+- **Thin community `Community 63`** (1 nodes): `Export volunteer_entry workflow from n8n to JSON file.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 64`** (1 nodes): `Dashed horizontal arrow (single line, for Vodja connection).`
+- **Thin community `Community 64`** (1 nodes): `Fix Code: Clear State Popravi and Preklici to read from Nalozi Stanje instead of`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 65`** (1 nodes): `Partial update — all fields optional.  Only provided fields are written.`
+- **Thin community `Community 65`** (1 nodes): `Fix Popravi flow: show transcript for editing instead of just discarding.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 66`** (1 nodes): `Payload for the change-password endpoint.`
+- **Thin community `Community 66`** (1 nodes): `Patch volunteer_entry workflow: thread remoteJid + fix location regex.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 67`** (1 nodes): `Manager profile returned by the API.`
+- **Thin community `Community 67`** (1 nodes): `Patch v2: @lid real-phone extraction + name-based volunteer fallback lookup.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 68`** (1 nodes): `Render a single-volunteer monthly report PDF and return raw bytes.`
+- **Thin community `Community 68`** (1 nodes): `Patch v3: LID→real JID via findContacts, Slovenian word-hours parsing.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 69`** (1 nodes): `Render an all-volunteer summary PDF and return raw bytes.`
+- **Thin community `Community 69`** (1 nodes): `Patch v4: Use remoteJidAlt from v2.3.7 webhook; remove unreliable findContacts l`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 70`** (1 nodes): `Handle POST /transcribe requests.`
+- **Thin community `Community 70`** (1 nodes): `Patch v5: Remove pushName and name-based fallback — phone-only lookup is reliabl`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 71`** (1 nodes): `Health check — GET /health returns 200 ok.`
+- **Thin community `Community 71`** (1 nodes): `Return (width, height) of text string.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 72`** (1 nodes): `Send a simple HTTP response.`
+- **Thin community `Community 72`** (1 nodes): `Dashed horizontal arrow (single line, for Manager connection).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 73`** (1 nodes): `Route access logs to stdout.`
+- **Thin community `Community 73`** (1 nodes): `Return (width, height) of text string.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 74`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
+- **Thin community `Community 74`** (1 nodes): `Dashed horizontal arrow (single line, for Vodja connection).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 75`** (1 nodes): `Payload for the change-password endpoint.`
+- **Thin community `Community 75`** (1 nodes): `Partial update — all fields optional.  Only provided fields are written.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 76`** (1 nodes): `Manager profile returned by the API.`
+- **Thin community `Community 76`** (1 nodes): `Payload for the change-password endpoint.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 77`** (1 nodes): `Fail fast if the database is unreachable on startup.`
+- **Thin community `Community 77`** (1 nodes): `Manager profile returned by the API.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 78`** (1 nodes): `Health check — returns ok when the service is up.`
+- **Thin community `Community 78`** (1 nodes): `Render a single-volunteer monthly report PDF and return raw bytes.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 79`** (1 nodes): `Payload for the change-password endpoint.`
+- **Thin community `Community 79`** (1 nodes): `Render an all-volunteer summary PDF and return raw bytes.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 80`** (1 nodes): `Manager profile returned by the API.`
+- **Thin community `Community 80`** (1 nodes): `Handle POST /transcribe requests.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 81`** (1 nodes): `Rationale: Vanilla JS chosen — no framework overhead for NGO tool`
+- **Thin community `Community 81`** (1 nodes): `Health check — GET /health returns 200 ok.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 82`** (1 nodes): `CLAUDE.md references SPEC.md for full project details`
+- **Thin community `Community 82`** (1 nodes): `Send a simple HTTP response.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 83`** (1 nodes): `Maintenance Scripts — backup.sh, restore.sh, log tailing`
+- **Thin community `Community 83`** (1 nodes): `Route access logs to stdout.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 84`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 85`** (1 nodes): `Payload for the change-password endpoint.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 86`** (1 nodes): `Manager profile returned by the API.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 87`** (1 nodes): `Fail fast if the database is unreachable on startup.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 88`** (1 nodes): `Health check — returns ok when the service is up.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 89`** (1 nodes): `Payload for the change-password endpoint.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 90`** (1 nodes): `Manager profile returned by the API.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 91`** (1 nodes): `Rationale: Vanilla JS chosen — no framework overhead for NGO tool`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 92`** (1 nodes): `CLAUDE.md references SPEC.md for full project details`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 93`** (1 nodes): `Maintenance Scripts — backup.sh, restore.sh, log tailing`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `EntryStatus` connect `Community 0` to `Community 1`, `Community 2`, `Community 10`, `Community 7`?**
-  _High betweenness centrality (0.085) - this node is a cross-community bridge._
-- **Why does `Manager` connect `Community 0` to `Community 1`, `Community 10`, `Community 2`, `Community 7`?**
-  _High betweenness centrality (0.023) - this node is a cross-community bridge._
-- **Why does `Volunteer` connect `Community 0` to `Community 1`, `Community 10`, `Community 7`?**
-  _High betweenness centrality (0.022) - this node is a cross-community bridge._
-- **Are the 141 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
-  _`EntryStatus` has 141 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 95 inferred relationships involving `Volunteer` (e.g. with `EntryStatus` and `LogEntry`) actually correct?**
-  _`Volunteer` has 95 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 93 inferred relationships involving `LogEntry` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
-  _`LogEntry` has 93 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 80 inferred relationships involving `Manager` (e.g. with `Base` and `Volunteer`) actually correct?**
-  _`Manager` has 80 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `EntryStatus` connect `Community 0` to `Community 1`, `Community 2`, `Community 11`, `Community 4`?**
+  _High betweenness centrality (0.083) - this node is a cross-community bridge._
+- **Why does `Manager` connect `Community 0` to `Community 1`, `Community 2`, `Community 4`, `Community 10`, `Community 11`?**
+  _High betweenness centrality (0.052) - this node is a cross-community bridge._
+- **Why does `get_settings()` connect `Community 2` to `Community 1`, `Community 10`, `Community 11`, `Community 12`, `Community 16`?**
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Are the 157 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
+  _`EntryStatus` has 157 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 109 inferred relationships involving `Volunteer` (e.g. with `EntryStatus` and `LogEntry`) actually correct?**
+  _`Volunteer` has 109 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 107 inferred relationships involving `LogEntry` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
+  _`LogEntry` has 107 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 105 inferred relationships involving `Manager` (e.g. with `Belpro FastAPI application entry point.` and `Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.`) actually correct?**
+  _`Manager` has 105 INFERRED edges - model-reasoned connections that need verification._

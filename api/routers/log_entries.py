@@ -1,6 +1,7 @@
 """Log entries CRUD router — volunteer work diary entries."""
 from __future__ import annotations
 
+import base64 as b64
 import io
 import uuid
 from datetime import UTC, date, datetime
@@ -24,7 +25,7 @@ from models.log_entry_photo import LogEntryPhoto
 from models.manager import Manager
 from models.volunteer import Volunteer
 from schemas.log_entry import LogEntryCreate, LogEntryListResponse, LogEntryResponse, LogEntryUpdate
-from schemas.log_entry import PhotoResponse
+from schemas.log_entry import PhotoBase64Request, PhotoResponse
 from services.email import SmtpNotConfiguredError, send_email
 
 logger = logging.getLogger(__name__)
@@ -307,6 +308,64 @@ async def upload_photo(
         )
 
     content = await file.read()
+    photo_id = uuid.uuid4()
+    dir_path = _PHOTOS_ROOT / str(entry_id)
+    dir_path.mkdir(parents=True, exist_ok=True)
+    (dir_path / f"{photo_id}{ext}").write_bytes(content)
+
+    ts, lat, lon = _extract_exif(content)
+    photo = LogEntryPhoto(
+        id=photo_id,
+        log_entry_id=entry_id,
+        photo_path=f"{entry_id}/{photo_id}{ext}",
+        photo_exif_timestamp=ts,
+        photo_exif_lat=lat,
+        photo_exif_lon=lon,
+    )
+    db.add(photo)
+    await db.commit()
+    await db.refresh(photo)
+    return PhotoResponse.model_validate(photo)
+
+
+@router.post(
+    "/{entry_id}/photos/base64",
+    response_model=PhotoResponse,
+    status_code=http_status.HTTP_201_CREATED,
+    dependencies=[Depends(require_manager)],
+)
+async def upload_photo_base64(
+    entry_id: uuid.UUID,
+    body: PhotoBase64Request,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> PhotoResponse:
+    """Upload a photo from a base64-encoded string. Used by n8n workflows."""
+    entry = (
+        await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
+    ).scalar_one_or_none()
+    if entry is None:
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+    if entry.status == EntryStatus.APPROVED:
+        raise HTTPException(
+            status_code=http_status.HTTP_409_CONFLICT,
+            detail="Odobrenega vnosa ni mogoče urejati.",
+        )
+
+    ext = Path(body.filename or "").suffix.lower()
+    if ext not in _ALLOWED_EXTENSIONS:
+        raise HTTPException(
+            status_code=http_status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Nepodprt format. Dovoljeni: jpg, jpeg, png, webp, gif.",
+        )
+
+    try:
+        content = b64.b64decode(body.image_base64)
+    except Exception:
+        raise HTTPException(
+            status_code=http_status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail="Neveljaven base64 podatkovni niz.",
+        )
+
     photo_id = uuid.uuid4()
     dir_path = _PHOTOS_ROOT / str(entry_id)
     dir_path.mkdir(parents=True, exist_ok=True)
