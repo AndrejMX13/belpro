@@ -58,6 +58,7 @@ class PhotoResponse(BaseModel):
     photo_exif_lat: Decimal | None
     photo_exif_lon: Decimal | None
     uploaded_at: datetime
+    photo_count: int = 0
 
 
 class PhotoBase64Request(BaseModel):

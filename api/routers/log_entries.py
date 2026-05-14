@@ -341,7 +341,9 @@ async def upload_photo_base64(
 ) -> PhotoResponse:
     """Upload a photo from a base64-encoded string. Used by n8n workflows."""
     entry = (
-        await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
+        await db.execute(
+            select(LogEntry).where(LogEntry.id == entry_id).with_for_update()
+        )
     ).scalar_one_or_none()
     if entry is None:
         raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
@@ -383,7 +385,13 @@ async def upload_photo_base64(
     db.add(photo)
     await db.commit()
     await db.refresh(photo)
-    return PhotoResponse.model_validate(photo)
+    count_q = select(func.count()).select_from(LogEntryPhoto).where(
+        LogEntryPhoto.log_entry_id == entry_id
+    )
+    photo_count: int = (await db.execute(count_q)).scalar() or 0
+    resp = PhotoResponse.model_validate(photo)
+    resp.photo_count = photo_count
+    return resp
 
 
 @router.get(
