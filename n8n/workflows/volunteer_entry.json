@@ -524,27 +524,27 @@
             "parameters": [
               {
                 "name": "volunteer_id",
-                "value": "={{ $json.volunteer_id }}"
+                "value": "={{ $(\"Code: Preveri Star Vnos\").first().json.volunteer_id }}"
               },
               {
                 "name": "work_date",
-                "value": "={{ $json.work_date }}"
+                "value": "={{ $(\"Code: Preveri Star Vnos\").first().json.work_date }}"
               },
               {
                 "name": "activity_description",
-                "value": "={{ $json.activity_description }}"
+                "value": "={{ $(\"Code: Preveri Star Vnos\").first().json.activity_description }}"
               },
               {
                 "name": "hours",
-                "value": "={{ $json.hours }}"
+                "value": "={{ $(\"Code: Preveri Star Vnos\").first().json.hours }}"
               },
               {
                 "name": "location",
-                "value": "={{ $json.location }}"
+                "value": "={{ $(\"Code: Preveri Star Vnos\").first().json.location }}"
               },
               {
                 "name": "raw_transcript",
-                "value": "={{ $json.raw_transcript }}"
+                "value": "={{ $(\"Code: Preveri Star Vnos\").first().json.raw_transcript }}"
               },
               {
                 "name": "status",
@@ -1935,7 +1935,7 @@
         "parameters": {
           "mode": "runOnceForAllItems",
           "language": "javaScript",
-          "jsCode": "const up = $('Code: Pripravi Prostovoljca').first().json;\nconst phone = up.phone;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || {};\nconst old_entry_id = state.entry_id || null;\n\nreturn [{\n  json: {\n    volunteer_id: up.volunteer_id,\n    work_date: up.work_date,\n    hours: up.hours,\n    activity_description: up.activity_description,\n    location: up.location,\n    raw_transcript: up.raw_transcript,\n    volunteer_name: up.volunteer_name,\n    phone: phone,\n    remoteJid: up.remoteJid,\n    old_entry_id: old_entry_id\n  }\n}];"
+          "jsCode": "const up = $('Code: Pripravi Prostovoljca').first().json;\nconst phone = up.phone;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || {};\nconst old_entry_id = state.entry_id || \"\";\n\nreturn [{\n  json: {\n    volunteer_id: up.volunteer_id,\n    work_date: up.work_date,\n    hours: up.hours,\n    activity_description: up.activity_description,\n    location: up.location,\n    raw_transcript: up.raw_transcript,\n    volunteer_name: up.volunteer_name,\n    phone: phone,\n    remoteJid: up.remoteJid,\n    old_entry_id: old_entry_id\n  }\n}];"
         }
       },
       {
@@ -1985,14 +1985,17 @@
           "authentication": "genericCredentialType",
           "genericAuthType": "httpBasicAuth",
           "sendBody": false,
-          "options": {}
+          "options": {
+            "neverError": true
+          }
         },
         "credentials": {
           "httpBasicAuth": {
             "id": "UqZlwzClZfiYKanN",
             "name": "BelPro API (Basic Auth)"
           }
-        }
+        },
+        "continueOnFail": true
       }
     ],
     "connections": {
