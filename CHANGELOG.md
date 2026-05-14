@@ -6,6 +6,16 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.6] — 2026-05-14
+
+### Fixed
+- Photo dedup: sending multiple photos in one WhatsApp message no longer sends multiple identical "Sprejeto" confirmation menus. The API now serializes concurrent uploads with `SELECT ... FOR UPDATE` and returns `photo_count`; the n8n workflow only sends the menu when `photo_count === 1`.
+
+### Added
+- `scripts/graphify/` — pipeline recovery scripts for when graphify subagents return results via notifications instead of writing chunk files to disk. Four scripts: `check_cache.py`, `merge_semantic.py`, `merge_ast_semantic.py`, `build_graph.py`.
+
+---
+
 ## [0.9.5] — 2026-05-11
 
 ### Added
