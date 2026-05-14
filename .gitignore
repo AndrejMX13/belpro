@@ -136,6 +136,11 @@ graphify-out/graph.html
 graphify-out/.graphify_chunk_*.json
 .graphify_python
 .graphify_incremental.json
+.graphify_ast.json
+.graphify_cached.json
+.graphify_extract.json
+.graphify_semantic.json
+.graphify_uncached.txt
 
 # -----------------------------------------------------------------------------
 # Playwright
