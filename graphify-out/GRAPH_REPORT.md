@@ -1,7 +1,8 @@
 # Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-14)
 
 ## Corpus Check
-- Large corpus: 854 files · ~216,180 words. Semantic extraction will be expensive (many Claude tokens). Consider running on a subfolder, or use --no-semantic to run AST-only.
+- 0 files · ~0 words
+- Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
 - 442 nodes · 822 edges · 34 communities detected
