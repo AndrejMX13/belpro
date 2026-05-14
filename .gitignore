@@ -18,6 +18,7 @@ api/.env.test
 
 # Temporary files, no need for commit
 temp/
+OPEN_ISSUES.md
 
 # -----------------------------------------------------------------------------
 # Python
@@ -134,6 +135,7 @@ graphify-out/cache/
 graphify-out/graph.html
 graphify-out/.graphify_chunk_*.json
 .graphify_python
+.graphify_incremental.json
 
 # -----------------------------------------------------------------------------
 # Playwright
