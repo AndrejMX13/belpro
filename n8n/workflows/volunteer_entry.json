@@ -1765,7 +1765,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst phone = d.phone;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || {};\n\nif (state.photo_menu_sent) {\n  return [];\n}\n\nstate.photo_menu_sent = true;\nsd[phone] = state;\nreturn [{json: {phone: d.phone, remoteJid: d.remoteJid, text: \"Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči\"}}];"
+          "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// Only send confirmation menu for the first photo in a batch\nif (apiResp.photo_count !== 1) {\n  return [];\n}\n\nreturn [{json: {phone: d.phone, remoteJid: d.remoteJid, text: \"Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči\"}}];"
         },
         "id": "code_slika_prejeta",
         "name": "Code: Slika Prejeta",
