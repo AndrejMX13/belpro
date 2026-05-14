@@ -173,6 +173,7 @@ docker compose logs -f
 - **Rebuild after code changes:** `docker compose up -d --build <svc>` — never `docker compose restart`, which skips the build.
 - **pytest path inside the API container:** `docker compose exec api pytest tests/ -v` — the path is `tests/`, not `api/tests/`. The Dockerfile uses `api/` as build context, so `api/tests/` on the host becomes `tests/` at `/app/tests/` inside the container.
 - **Git remote is named `central`**, not `origin`. Use `git push central <branch>`.
+- **AI-assisted commits** must include the trailer `Co-Authored-By: AI Assistant <noreply@ai>`.
 - **Serena `replace_symbol_body` corrupts decorated functions and module-level strings.** Use the Edit tool for all in-place code edits instead.
 
 ### Known packaging pins
