@@ -67,7 +67,11 @@ Populate from the git log since the previous CHANGELOG entry:
 ```
 git log <previous-version-tag>..HEAD --oneline
 ```
-If no tag exists for the previous version, use the date of the previous CHANGELOG entry as a reference. Remove any empty sections (Added/Changed/Fixed/Removed) after populating.
+If no tag exists for the previous version:
+```
+git log --since="YYYY-MM-DD" --oneline
+```
+Use the date from the previous CHANGELOG section header as the `--since` value. Remove any empty sections (Added/Changed/Fixed/Removed) after populating.
 
 ### `SPEC.md`
 Read the file. Check whether any behaviour described there has changed with this bump. If yes, update it. If unsure, ask the user.
@@ -98,16 +102,16 @@ Read the file. Compare it against what changed in this bump:
    - Anthropic model → `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>` (use actual model name from context)
    - Third-party or unknown model → `Co-Authored-By: AI Assistant <noreply@ai>`
 4. **Wait for explicit confirmation before committing.**
-5. After approval, commit. Example (adapt to actual staged files):
-   ```
-   git add api/main.py CHANGELOG.md  # also add SPEC.md and/or README.md if updated
-   git commit -m "$(cat <<'EOF'
+5. After approval, commit using PowerShell (assign message to variable first):
+   ```powershell
+   $msg = @'
    chore: bump version to <version>
 
-   Co-Authored-By: <Model Name> <noreply@anthropic.com>
-   EOF
-   )"
+   Co-Authored-By: <Model Name> <email>
+   '@
+   git commit -m $msg
    ```
+   Stage all updated files before running this. Example: `git add api/main.py CHANGELOG.md  # also add SPEC.md and/or README.md if updated`
 6. After the commit, remind the user: "Push the branch when ready: `git push central main`"
 
 ---
@@ -131,6 +135,8 @@ Ask: "Do you want to tag this commit as `v<version>`?"
 ## Step 5 — GitHub release? (optional, only if Step 4 was yes)
 
 Ask: "Do you want to draft release notes for a GitHub release?"
+
+If Step 4 was skipped (no tag was created), note this: "GitHub releases are typically tied to a tag. Should we go back and create the tag first, or do you want to draft the notes now for later use?"
 
 - If **yes**:
   1. Ask: "What was the last version that had a GitHub release?" (user checks GitHub if unsure).
