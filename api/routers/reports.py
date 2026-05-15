@@ -20,7 +20,9 @@ from models.manager import Manager
 from models.volunteer import Volunteer
 from schemas.report import MonthlyReportSummary, VolunteerMonthlySummary
 from services.email import SmtpNotConfiguredError, send_email
+from services.evolution import EvolutionClient
 from services.report_pdf import NGOInfo, render_summary_pdf, render_volunteer_pdf
+from utils.phone import normalize_phone
 
 router = APIRouter(prefix="/reports", tags=["reports"])
 
@@ -151,7 +153,7 @@ async def generate_monthly_pdf(
         pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, year, month, entries, ngo=ngo)
         filename = f"porocilo_{vol.last_name}_{vol.first_name}_{year}_{month:02d}.pdf"
     else:
-        items = await _summary_items(db, year, month)
+        items = [i for i in await _summary_items(db, year, month) if i.entry_count > 0]
         pdf_bytes = render_summary_pdf(year, month, items, ngo=ngo)
         filename = f"porocilo_{year}_{month:02d}.pdf"
 
@@ -168,11 +170,12 @@ async def send_monthly_reports(
     month: int | None = Query(default=None, ge=1, le=12),
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
 ) -> JSONResponse:
-    """Generate monthly PDFs and send them via email.
+    """Generate monthly PDFs and deliver them via email and/or WhatsApp.
 
     Defaults to the current calendar month when year/month are omitted.
-    Sends per-volunteer PDFs to volunteers with report_email=True.
-    Sends consolidated PDF to the manager if manager.report_email=True.
+    Per-volunteer: sends via email if report_email=True and email is set;
+    sends via WhatsApp if report_whatsapp=True and phone is set.
+    Consolidated PDF to the manager via the same channel logic.
     Returns a JSON summary of what was sent.
     """
     today = date.today()
@@ -184,6 +187,12 @@ async def send_monthly_reports(
     manager = (await db.execute(select(Manager))).scalar_one_or_none()
     if manager is None:
         raise HTTPException(status_code=503, detail="Upravljalec ni konfiguriran.")
+
+    wa_client = EvolutionClient(
+        base_url=settings.evolution_api_url,
+        api_key=settings.authentication_api_key,
+        instance_name=settings.evolution_instance_name,
+    )
 
     ngo = NGOInfo(
         name=manager.ngo_name,
@@ -199,9 +208,10 @@ async def send_monthly_reports(
         (await db.execute(select(Volunteer).where(Volunteer.active.is_(True)))).scalars().all()
     )
 
-    sent_to_volunteers: list[str] = []
+    sent_via_email: list[str] = []
+    sent_via_whatsapp: list[str] = []
     skipped_no_entries: list[str] = []
-    skipped_no_email: list[str] = []
+    skipped_no_channel: list[str] = []
     errors: list[str] = []
 
     for vol in volunteers:
@@ -213,7 +223,7 @@ async def send_monthly_reports(
                         func.extract("year", LogEntry.work_date) == y,
                         func.extract("month", LogEntry.work_date) == m,
                         LogEntry.status == EntryStatus.APPROVED,
-                    )
+                    ).order_by(LogEntry.work_date)
                 )
             )
             .scalars()
@@ -224,77 +234,109 @@ async def send_monthly_reports(
             skipped_no_entries.append(f"{vol.first_name} {vol.last_name}")
             continue
 
-        if not vol.report_email or not vol.email:
-            skipped_no_email.append(f"{vol.first_name} {vol.last_name}")
+        will_email = bool(vol.report_email and vol.email)
+        will_whatsapp = bool(vol.report_whatsapp and vol.phone)
+
+        if not will_email and not will_whatsapp:
+            skipped_no_channel.append(f"{vol.first_name} {vol.last_name}")
             continue
 
         pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, y, m, entries, ngo=ngo)
         filename = f"porocilo_{vol.last_name}_{vol.first_name}_{y}_{m:02d}.pdf"
-        subject = f"BelPro — mesečno poročilo {m:02d}/{y}"
-        body = (
-            f"<p>Spoštovani/-a {vol.first_name},</p>"
-            f"<p>v priponki najdete mesečno poročilo za {m:02d}/{y}.</p>"
-            f"<p>Lep pozdrav,<br>{manager.ngo_name}</p>"
-        )
+        caption = f"BelPro — mesečno poročilo {m:02d}/{y}"
 
-        try:
-            await send_email(
-                smtp_host=manager.smtp_host,
-                smtp_port=manager.smtp_port,
-                smtp_user=manager.smtp_user,
-                smtp_from_name=manager.smtp_from_name,
-                smtp_password=settings.smtp_password,
-                to_address=vol.email,
-                subject=subject,
-                body_html=body,
-                attachment_bytes=pdf_bytes,
-                attachment_filename=filename,
+        if will_email:
+            body = (
+                f"<p>Spoštovani/-a {vol.first_name},</p>"
+                f"<p>v priponki najdete mesečno poročilo za {m:02d}/{y}.</p>"
+                f"<p>Lep pozdrav,<br>{manager.ngo_name}</p>"
             )
-            sent_to_volunteers.append(f"{vol.first_name} {vol.last_name} <{vol.email}>")
-        except SmtpNotConfiguredError as exc:
-            raise HTTPException(status_code=503, detail=str(exc)) from exc
-        except Exception as exc:  # noqa: BLE001
-            errors.append(f"{vol.first_name} {vol.last_name}: {exc}")
+            try:
+                await send_email(
+                    smtp_host=manager.smtp_host,
+                    smtp_port=manager.smtp_port,
+                    smtp_user=manager.smtp_user,
+                    smtp_from_name=manager.smtp_from_name,
+                    smtp_password=settings.smtp_password,
+                    to_address=vol.email,
+                    subject=caption,
+                    body_html=body,
+                    attachment_bytes=pdf_bytes,
+                    attachment_filename=filename,
+                )
+                sent_via_email.append(f"{vol.first_name} {vol.last_name} <{vol.email}>")
+            except SmtpNotConfiguredError as exc:
+                raise HTTPException(status_code=503, detail=str(exc)) from exc
+            except Exception as exc:  # noqa: BLE001
+                errors.append(f"{vol.first_name} {vol.last_name} (e-pošta): {exc}")
+
+        if will_whatsapp:
+            normalized = normalize_phone(vol.phone)
+            if normalized:
+                try:
+                    await wa_client.send_document(normalized, pdf_bytes, filename, caption)
+                    sent_via_whatsapp.append(f"{vol.first_name} {vol.last_name}")
+                except Exception as exc:  # noqa: BLE001
+                    errors.append(f"{vol.first_name} {vol.last_name} (WhatsApp): {exc}")
 
     # Consolidated PDF → manager
-    manager_sent = False
-    if manager.report_email and manager.email:
-        items = await _summary_items(db, y, m)
-        consolidated_bytes = render_summary_pdf(y, m, items, ngo=ngo)
+    manager_email_sent = False
+    manager_whatsapp_sent = False
+    manager_will_email = bool(manager.report_email and manager.email)
+    manager_will_whatsapp = bool(manager.report_whatsapp and manager.phone)
+
+    if manager_will_email or manager_will_whatsapp:
+        mgr_items = [i for i in await _summary_items(db, y, m) if i.entry_count > 0]
+        consolidated_bytes = render_summary_pdf(y, m, mgr_items, ngo=ngo)
         consolidated_filename = f"porocilo_skupno_{y}_{m:02d}.pdf"
-        manager_subject = f"BelPro — skupno mesečno poročilo {m:02d}/{y}"
-        manager_body = (
-            f"<p>Spoštovani/-a {manager.first_name},</p>"
-            f"<p>v priponki najdete skupno mesečno poročilo za {m:02d}/{y}.</p>"
-            f"<p>BelPro</p>"
-        )
-        try:
-            await send_email(
-                smtp_host=manager.smtp_host,
-                smtp_port=manager.smtp_port,
-                smtp_user=manager.smtp_user,
-                smtp_from_name=manager.smtp_from_name,
-                smtp_password=settings.smtp_password,
-                to_address=manager.email,
-                subject=manager_subject,
-                body_html=manager_body,
-                attachment_bytes=consolidated_bytes,
-                attachment_filename=consolidated_filename,
+        mgr_caption = f"BelPro — skupno mesečno poročilo {m:02d}/{y}"
+
+        if manager_will_email:
+            manager_body = (
+                f"<p>Spoštovani/-a {manager.first_name},</p>"
+                f"<p>v priponki najdete skupno mesečno poročilo za {m:02d}/{y}.</p>"
+                f"<p>BelPro</p>"
             )
-            manager_sent = True
-        except SmtpNotConfiguredError as exc:
-            raise HTTPException(status_code=503, detail=str(exc)) from exc
-        except Exception as exc:  # noqa: BLE001
-            errors.append(f"Upravljalec: {exc}")
+            try:
+                await send_email(
+                    smtp_host=manager.smtp_host,
+                    smtp_port=manager.smtp_port,
+                    smtp_user=manager.smtp_user,
+                    smtp_from_name=manager.smtp_from_name,
+                    smtp_password=settings.smtp_password,
+                    to_address=manager.email,
+                    subject=mgr_caption,
+                    body_html=manager_body,
+                    attachment_bytes=consolidated_bytes,
+                    attachment_filename=consolidated_filename,
+                )
+                manager_email_sent = True
+            except SmtpNotConfiguredError as exc:
+                raise HTTPException(status_code=503, detail=str(exc)) from exc
+            except Exception as exc:  # noqa: BLE001
+                errors.append(f"Upravljalec (e-pošta): {exc}")
+
+        if manager_will_whatsapp:
+            normalized_mgr = normalize_phone(manager.phone)
+            if normalized_mgr:
+                try:
+                    await wa_client.send_document(
+                        normalized_mgr, consolidated_bytes, consolidated_filename, mgr_caption
+                    )
+                    manager_whatsapp_sent = True
+                except Exception as exc:  # noqa: BLE001
+                    errors.append(f"Upravljalec (WhatsApp): {exc}")
 
     return JSONResponse(
         {
             "year": y,
             "month": m,
-            "sent_to_volunteers": sent_to_volunteers,
+            "sent_via_email": sent_via_email,
+            "sent_via_whatsapp": sent_via_whatsapp,
             "skipped_no_entries": skipped_no_entries,
-            "skipped_no_email": skipped_no_email,
-            "manager_sent": manager_sent,
+            "skipped_no_channel": skipped_no_channel,
+            "manager_email_sent": manager_email_sent,
+            "manager_whatsapp_sent": manager_whatsapp_sent,
             "errors": errors,
         }
     )

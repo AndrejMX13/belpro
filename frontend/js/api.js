@@ -176,6 +176,8 @@ const API = (() => {
         if (volunteerId) q.set('volunteer_id', volunteerId);
         return downloadRequest('/reports/monthly/pdf?' + q, { method: 'POST' });
       },
+      sendMonthly: (year, month) =>
+        request(`/reports/send-monthly?year=${year}&month=${month}`, { method: 'POST' }),
     },
   };
 })();

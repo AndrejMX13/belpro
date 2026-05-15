@@ -31,8 +31,12 @@ async function renderReports() {
   setHtml($('main-content'), `
     <div class="page-header">
       <h1 class="page-title">Poročila</h1>
-      <button class="btn btn-primary" id="export-all-btn">Izvozi vse (PDF)</button>
+      <div style="display:flex;gap:0.5rem;align-items:center">
+        <button class="btn btn-secondary" id="send-reports-btn">Pošlji poročila</button>
+        <button class="btn btn-primary" id="export-all-btn">Izvozi vse (PDF)</button>
+      </div>
     </div>
+    <div id="send-reports-result"></div>
     <div class="filter-bar">
       <label for="r-year">Leto:</label>
       <select id="r-year">${yearOptions.join('')}</select>
@@ -61,6 +65,7 @@ async function renderReports() {
     loadReports();
   });
   $('export-all-btn').addEventListener('click', () => exportReportPdf(null));
+  $('send-reports-btn').addEventListener('click', sendReports);
 
   await loadReports();
 }
@@ -153,6 +158,52 @@ async function exportReportPdf(volunteerId) {
     URL.revokeObjectURL(url);
   } catch (err) {
     toast('Napaka pri izvozu: ' + err.message, 'error');
+  }
+}
+
+async function sendReports() {
+  const btn = $('send-reports-btn');
+  const resultEl = $('send-reports-result');
+  if (!btn) return;
+
+  btn.disabled = true;
+  btn.textContent = 'Pošiljam…';
+  if (resultEl) setHtml(resultEl, '');
+
+  try {
+    const r = await API.reports.sendMonthly(reportsState.year, reportsState.month);
+
+    const lines = [];
+    if (r.sent_via_email.length)
+      lines.push(`E-pošta (${r.sent_via_email.length}): ${r.sent_via_email.map(esc).join(', ')}`);
+    if (r.sent_via_whatsapp.length)
+      lines.push(`WhatsApp (${r.sent_via_whatsapp.length}): ${r.sent_via_whatsapp.map(esc).join(', ')}`);
+    if (r.skipped_no_entries.length)
+      lines.push(`Brez vnosov: ${r.skipped_no_entries.map(esc).join(', ')}`);
+    if (r.skipped_no_channel.length)
+      lines.push(`Brez kanala: ${r.skipped_no_channel.map(esc).join(', ')}`);
+    const mgr = [];
+    if (r.manager_email_sent) mgr.push('e-pošta');
+    if (r.manager_whatsapp_sent) mgr.push('WhatsApp');
+    lines.push(`Upravljalec: ${mgr.length ? mgr.join(' + ') : 'preskočeno'}`);
+    if (r.errors.length)
+      lines.push(`Napake: ${r.errors.map(esc).join('; ')}`);
+
+    const hasErrors = r.errors.length > 0;
+    if (resultEl) {
+      setHtml(resultEl, `
+        <div style="margin:0.75rem 0;padding:0.75rem 1rem;border-radius:6px;font-size:0.85rem;line-height:1.6;
+                    background:${hasErrors ? 'var(--warning-bg,#fff8e1)' : 'var(--success-bg,#e8f5e9)'};
+                    border:1px solid ${hasErrors ? 'var(--warning-border,#ffe082)' : 'var(--success-border,#a5d6a7)'}">
+          ${lines.map(l => `<div>${l}</div>`).join('')}
+        </div>
+      `);
+    }
+  } catch (err) {
+    toast('Napaka pri pošiljanju: ' + esc(err.message), 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Pošlji poročila';
   }
 }
 

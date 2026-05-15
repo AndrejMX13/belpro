@@ -1,3 +1,4 @@
+import base64
 import logging
 
 import httpx
@@ -67,3 +68,26 @@ class EvolutionClient:
             return phone, state
 
         return None, "close"
+
+    async def send_document(
+        self,
+        phone: str,
+        pdf_bytes: bytes,
+        filename: str,
+        caption: str,
+    ) -> None:
+        """Send a PDF document to a WhatsApp number via Evolution API sendMedia."""
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            resp = await client.post(
+                f"{self._base_url}/message/sendMedia/{self._instance_name}",
+                headers={"apikey": self._api_key},
+                json={
+                    "number": phone,
+                    "mediatype": "document",
+                    "mimetype": "application/pdf",
+                    "media": base64.b64encode(pdf_bytes).decode(),
+                    "fileName": filename,
+                    "caption": caption,
+                },
+            )
+            resp.raise_for_status()
