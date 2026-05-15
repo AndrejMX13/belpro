@@ -183,6 +183,7 @@ Manager rejects  → entry status `rejected`, volunteer notified with
 - Manager sees photo flag in approval notification.
 - Manager decides whether to approve without photo.
 - No automated re-prompting for missing photos.
+- **WhatsApp EXIF stripping:** WhatsApp re-encodes images before delivery, removing all EXIF metadata. Photos sent via WhatsApp will have no GPS or timestamp in the DB. EXIF is preserved only when a photo is uploaded directly through the manager dashboard. The extraction and display code is in place; it activates automatically if data is present.
 
 ### 4.3 Sent-message visibility on linked phone
 

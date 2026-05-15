@@ -1829,6 +1829,17 @@ async function renderApprovals() {
   await loadApprovals();
 }
 
+function formatExifCaption(p) {
+  const parts = [];
+  if (p.photo_exif_lat != null && p.photo_exif_lon != null)
+    parts.push(`<a href="https://maps.google.com/?q=${p.photo_exif_lat},${p.photo_exif_lon}" target="_blank" rel="noopener noreferrer" style="color:var(--primary);text-decoration:none">Lokacija</a>`);
+  if (p.photo_exif_timestamp)
+    parts.push(p.photo_exif_timestamp.slice(0, 16).replace('T', ' '));
+  return parts.length
+    ? `<div style="font-size:0.7rem;color:var(--text-muted);max-width:130px;margin-top:3px;line-height:1.4">${parts.join('<br>')}</div>`
+    : '';
+}
+
 // ===== Log entry detail =====
 async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '← Nazaj na dnevnike', backNav = 'approvals', goBack = null } = {}) {
   revokePhotoUrls();
@@ -1850,16 +1861,18 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
   const BLANK      = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
   const editable   = entry.status !== 'approved';
   const canApprove = entry.status === 'pending_manager';
-  const tileStyle  = 'position:relative;width:130px;height:130px;background:var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer;flex-shrink:0';
+  const tileStyle  = 'position:relative;width:130px;height:130px;background:var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer';
   const delStyle   = 'position:absolute;top:4px;right:4px;width:26px;height:26px;background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:18px;line-height:26px;text-align:center;padding:0';
   const phStyle    = 'width:130px;height:130px;background:var(--border);border-radius:var(--radius);opacity:0.35;flex-shrink:0';
 
   const photoTiles = entry.photos.length > 0
     ? entry.photos.map(p => `
-        <div class="photo-tile" data-photo-id="${p.id}" style="${tileStyle}">
-          <img data-photo-id="${p.id}" src="${BLANK}" alt="Fotografija"
-               style="width:100%;height:100%;object-fit:cover;display:block" />
-          ${editable ? `<button class="photo-del-btn" data-photo-id="${p.id}" style="${delStyle}" title="Izbriši">×</button>` : ''}
+        <div data-photo-id="${p.id}" style="display:flex;flex-direction:column;flex-shrink:0">
+          <div class="photo-tile" style="${tileStyle}">
+            <img data-photo-id="${p.id}" src="${BLANK}" alt="Fotografija"
+                 style="width:100%;height:100%;object-fit:cover;display:block" />
+            ${editable ? `<button class="photo-del-btn" data-photo-id="${p.id}" style="${delStyle}" title="Izbriši">×</button>` : ''}
+          </div>${formatExifCaption(p)}
         </div>`).join('')
     : `<div data-placeholder style="${phStyle}"></div><div data-placeholder style="${phStyle}"></div>`;
 
@@ -2011,10 +2024,12 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
         entry.photos.push(photo);
         grid?.querySelectorAll('[data-placeholder]').forEach(el => el.remove());
         const tileHtml = `
-          <div class="photo-tile" data-photo-id="${photo.id}" style="${tileStyle}">
-            <img data-photo-id="${photo.id}" src="${BLANK}" alt="Fotografija"
-                 style="width:100%;height:100%;object-fit:cover;display:block" />
-            <button class="photo-del-btn" data-photo-id="${photo.id}" style="${delStyle}" title="Izbriši">×</button>
+          <div data-photo-id="${photo.id}" style="display:flex;flex-direction:column;flex-shrink:0">
+            <div class="photo-tile" style="${tileStyle}">
+              <img data-photo-id="${photo.id}" src="${BLANK}" alt="Fotografija"
+                   style="width:100%;height:100%;object-fit:cover;display:block" />
+              <button class="photo-del-btn" data-photo-id="${photo.id}" style="${delStyle}" title="Izbriši">×</button>
+            </div>${formatExifCaption(photo)}
           </div>`;
         addLabel
           ? addLabel.insertAdjacentHTML('beforebegin', tileHtml)
