@@ -26,63 +26,12 @@ from models.manager import Manager
 from models.volunteer import Volunteer
 from schemas.log_entry import LogEntryCreate, LogEntryListResponse, LogEntryResponse, LogEntryUpdate
 from schemas.log_entry import PhotoBase64Request, PhotoResponse
-from services.email import SmtpNotConfiguredError, send_email
 
 logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/log-entries", tags=["log-entries"])
 
 
-async def _notify_volunteer_email(
-    db: AsyncSession,
-    entry: LogEntry,
-    approved: bool,
-) -> None:
-    """Best-effort email notification to volunteer after approve/reject.
-
-    Silently skips if SMTP is not configured or volunteer has no email.
-    Never raises — email failures must not block the API response.
-    """
-    try:
-        vol = (
-            await db.execute(select(Volunteer).where(Volunteer.id == entry.volunteer_id))
-        ).scalar_one_or_none()
-        if not vol or not vol.email:
-            return
-
-        mgr = (await db.execute(select(Manager))).scalar_one_or_none()
-        if not mgr:
-            return
-
-        settings = get_settings()
-        action = "odobrena" if approved else "zavrnjena"
-        subject = f"BelPro — vaša prijava je bila {action}"
-        body = (
-            f"<p>Spoštovani/-a {vol.first_name},</p>"
-            f"<p>vaša prijava prostovoljskega dela z dne "
-            f"<strong>{entry.work_date}</strong> je bila <strong>{action}</strong> s strani upravljalca.</p>"
-            + (
-                ""
-                if approved
-                else "<p>Za podrobnosti stopite v stik z upravljalcem.</p>"
-            )
-            + f"<p>Lep pozdrav,<br>{mgr.ngo_name}</p>"
-        )
-
-        await send_email(
-            smtp_host=mgr.smtp_host,
-            smtp_port=mgr.smtp_port,
-            smtp_user=mgr.smtp_user,
-            smtp_from_name=mgr.smtp_from_name,
-            smtp_password=settings.smtp_password,
-            to_address=vol.email,
-            subject=subject,
-            body_html=body,
-        )
-    except SmtpNotConfiguredError:
-        logger.debug("SMTP ni konfiguriran — e-poštno obvestilo preskočeno.")
-    except Exception:
-        logger.exception("Napaka pri pošiljanju e-poštnega obvestila prostovoljcu.")
 
 
 _PHOTOS_ROOT = Path("/app/photos")
@@ -487,7 +436,6 @@ async def approve_log_entry(
     entry.manager_notified_at = None
     await db.commit()
     await db.refresh(entry)
-    await _notify_volunteer_email(db, entry, approved=True)
     return LogEntryResponse.model_validate(entry)
 
 
@@ -516,7 +464,6 @@ async def reject_log_entry(
     entry.manager_notified_at = None
     await db.commit()
     await db.refresh(entry)
-    await _notify_volunteer_email(db, entry, approved=False)
     return LogEntryResponse.model_validate(entry)
 
 
