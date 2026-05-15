@@ -6,6 +6,24 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.10.0-beta.1] — 2026-05-15
+
+### Added
+- Monthly reports can now be delivered via WhatsApp in addition to email. Per-volunteer and manager delivery channels are controlled by the existing `report_email` / `report_whatsapp` preference flags. (`api/routers/reports.py`, `api/services/evolution.py`)
+- "Pošlji poročila" button on the Reports page — triggers report delivery for the selected month directly from the dashboard without going through n8n. (`frontend/js/reports.js`, `frontend/js/api.js`)
+- Photo EXIF metadata (GPS coordinates and timestamp) extracted and displayed in the log entry detail view when present in the uploaded photo. (`api/routers/log_entries.py`, `frontend/js/log_entry_detail.js`)
+- EMŠO encryption unit tests: encrypt/decrypt roundtrip, nonce uniqueness, wrong-key rejection, hash determinism, and `mask_emso` boundary cases. (`api/tests/test_encryption.py`)
+- Three additional report tests covering the `with_entries_only` filter: excludes volunteers with no entries, includes any-status entries (not only approved), and the `false` default case. (`api/tests/test_reports.py`)
+
+### Changed
+- All Docker Compose services now have healthchecks. Dependency conditions tightened throughout: `api` waits for `whisper` healthy (not just started), `frontend` waits for `api` healthy. `whisper` gets `start_period: 120s` to survive large-v3 model loading on cold boot. (`docker-compose.yml`)
+- Consolidated summary PDF now excludes volunteers with zero approved entries for the selected month, both on manual export and on send. (`api/routers/reports.py`)
+
+### Fixed
+- Volunteer entries in per-volunteer PDFs sent via "Pošlji poročila" are now ordered by `work_date`. Previously order was undefined. (`api/routers/reports.py`)
+
+---
+
 ## [0.9.7] — 2026-05-15
 
 ### Removed

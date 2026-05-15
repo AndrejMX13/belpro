@@ -86,6 +86,11 @@ whisper-cache/
 api/storage/photos/
 api/storage/reports/
 
+# -----------------------------------------------------------------------------
+# Backups of test data
+# -----------------------------------------------------------------------------
+backups/
+
 # Alembic — keep migrations, ignore auto-generated temp files
 api/db/versions/*.pyc
 
