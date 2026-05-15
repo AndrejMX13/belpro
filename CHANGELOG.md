@@ -6,6 +6,17 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.9.7] — 2026-05-15
+
+### Removed
+- Email notification to volunteer on approve/reject. Since volunteers must have WhatsApp to participate in the workflow, the duplicate email adds no value. WhatsApp is now the sole notification channel for volunteers. (`api/routers/log_entries.py`)
+
+### Fixed
+- Hour parsing from Slovenian voice transcripts (`pet` through `dvanajst`): JavaScript `\w` is ASCII-only and silently failed to match words with diacritics (`šest`, `štiri`). Regex changed to `[^\s,.:!?]+`; diacritic variants (`šest`, `šestih`, `štiri`, `štirih`) added to the word dictionary; typo `stirib` corrected to `stirih`. Applies to three n8n Code nodes: `Code: Transcribe + Extract`, `Text Extract`, `Code: Procesiraj Popravek`.
+- Hours declension in all volunteer and manager WhatsApp messages now follows Slovenian grammar: `1 ura`, `2 uri`, `3/4 ure`, `5+ ur`. Previously all messages showed `X ur` regardless of count.
+
+---
+
 ## [0.9.6] — 2026-05-14
 
 ### Fixed

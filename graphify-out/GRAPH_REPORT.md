@@ -1,7 +1,7 @@
 # Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-15)
 
 ## Corpus Check
-- 74 files · ~212,621 words
+- 74 files · ~180,713 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -70,16 +70,16 @@
 10. `LogEntryUpdate` - 33 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Pydantic schemas for the Volunteer entity.` --uses--> `EntryStatus`  [INFERRED]
-  D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py → D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py
-- `Strip whitespace and leading ``+``, return bare E.164 digits.` --uses--> `EntryStatus`  [INFERRED]
-  D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py → D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py
-- `Compact log entry view — used inside VolunteerDetailResponse.` --uses--> `EntryStatus`  [INFERRED]
-  D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py → D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py
-- `Plaintext EMŠO submitted for duplicate check before creating a volunteer.` --uses--> `EntryStatus`  [INFERRED]
-  D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py → D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py
-- `Result of an EMŠO duplicate check.` --uses--> `EntryStatus`  [INFERRED]
-  D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py → D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py
+- `EntryStatus` --uses--> `Pydantic schemas for the Volunteer entity.`  [INFERRED]
+  D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py → D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py
+- `EntryStatus` --uses--> `Strip whitespace and leading ``+``, return bare E.164 digits.`  [INFERRED]
+  D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py → D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py
+- `EntryStatus` --uses--> `Compact log entry view — used inside VolunteerDetailResponse.`  [INFERRED]
+  D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py → D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py
+- `EntryStatus` --uses--> `Plaintext EMŠO submitted for duplicate check before creating a volunteer.`  [INFERRED]
+  D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py → D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py
+- `EntryStatus` --uses--> `Result of an EMŠO duplicate check.`  [INFERRED]
+  D:\Andrej\vsCode-workspace\BelPro\api\models\log_entry.py → D:\Andrej\vsCode-workspace\BelPro\api\schemas\volunteer.py
 
 ## Communities
 

@@ -19,7 +19,7 @@ from routers.managers import router as managers_router
 from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
 
-__version__ = "0.9.6"
+__version__ = "0.9.7"
 
 
 async def seed_whatsapp_phone_from_env(
