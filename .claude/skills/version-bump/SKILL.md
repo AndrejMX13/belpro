@@ -88,17 +88,19 @@ Read the file. Compare it against what changed in this bump:
    - **Untracked files that look like generated/local output** — suggest: "Should this be added to `.gitignore`?"
    - **Modified files not yet staged** — ask: "Was this intentionally left out?"
    - **`.env` variants** — never stage; warn the user if one appears untracked.
-3. Draft the commit message in this format and show it to the user:
+3. Draft the commit message and show it to the user:
    ```
    chore: bump version to <version>
 
-   Co-Authored-By: <Model Name> <noreply@anthropic.com>
+   Co-Authored-By: <Model Name> <email>
    ```
-   Determine `<Model Name>` from the current session context (e.g. `Claude Sonnet 4.6`). If the model is unknown or third-party, use `AI Assistant <noreply@ai>` instead.
+   Determine the trailer from the current session context:
+   - Anthropic model → `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>` (use actual model name from context)
+   - Third-party or unknown model → `Co-Authored-By: AI Assistant <noreply@ai>`
 4. **Wait for explicit confirmation before committing.**
 5. After approval, commit. Example (adapt to actual staged files):
    ```
-   git add api/main.py CHANGELOG.md
+   git add api/main.py CHANGELOG.md  # also add SPEC.md and/or README.md if updated
    git commit -m "$(cat <<'EOF'
    chore: bump version to <version>
 
