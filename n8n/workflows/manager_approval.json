@@ -1,7 +1,11 @@
 {
+  "updatedAt": "2026-05-10T12:06:54.717Z",
+  "createdAt": "2026-05-07T19:10:06.456Z",
   "id": "LCimvAZcQWegvzRk",
   "name": "BelPro — Odobritev Upravljalca",
+  "description": null,
   "active": true,
+  "isArchived": false,
   "nodes": [
     {
       "parameters": {
@@ -678,6 +682,8 @@
     "saveExecutionProgress": true,
     "binaryMode": "separate"
   },
+  "staticData": null,
+  "meta": null,
   "pinData": {
     "Manual Trigger": [
       {
@@ -687,7 +693,7 @@
           "manager_remoteJid": "38630369632@s.whatsapp.net",
           "volunteer_name": "Slavko Pridni",
           "volunteer_remoteJid": "38630369632@s.whatsapp.net",
-          "work_date": "07.05.2026",
+          "entry_date": "07.05.2026",
           "hours": 2,
           "activity_description": "Lezanje za sankom, dve uri, lasko",
           "location": "lasko",
@@ -696,5 +702,724 @@
       }
     ]
   },
-  "versionId": "f4f258a2-8524-4447-aae1-3d0991b130f7"
+  "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+  "activeVersionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+  "versionCounter": 51,
+  "triggerCount": 0,
+  "shared": [
+    {
+      "updatedAt": "2026-05-07T19:10:06.456Z",
+      "createdAt": "2026-05-07T19:10:06.456Z",
+      "role": "workflow:owner",
+      "workflowId": "LCimvAZcQWegvzRk",
+      "projectId": "has880SL8xAPbVNM",
+      "project": {
+        "updatedAt": "2026-05-01T18:37:36.096Z",
+        "createdAt": "2026-05-01T18:26:01.163Z",
+        "id": "has880SL8xAPbVNM",
+        "name": "Andrej Mejac <andrej.mejac.x13@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": {
+    "updatedAt": "2026-05-10T12:06:54.718Z",
+    "createdAt": "2026-05-10T12:06:54.718Z",
+    "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+    "workflowId": "LCimvAZcQWegvzRk",
+    "nodes": [
+      {
+        "parameters": {
+          "workflowInputs": {
+            "values": [
+              {
+                "name": "entry_id"
+              },
+              {
+                "name": "action"
+              },
+              {
+                "name": "manager_phone"
+              },
+              {
+                "name": "manager_remoteJid"
+              },
+              {
+                "name": "volunteer_name"
+              },
+              {
+                "name": "volunteer_remoteJid"
+              },
+              {
+                "name": "work_date"
+              },
+              {
+                "name": "hours",
+                "type": "number"
+              },
+              {
+                "name": "activity_description"
+              },
+              {
+                "name": "location"
+              }
+            ]
+          }
+        },
+        "id": "exec_trigger",
+        "name": "Execute Workflow Trigger",
+        "type": "n8n-nodes-base.executeWorkflowTrigger",
+        "typeVersion": 1.1,
+        "position": [
+          240,
+          304
+        ]
+      },
+      {
+        "parameters": {},
+        "id": "manual_trigger",
+        "name": "Manual Trigger",
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          240,
+          512
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const data = $input.first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || '';\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || '',\n  manager_remoteJid: data.manager_remoteJid || '',\n  volunteer_name: data.volunteer_name || '',\n  volunteer_remoteJid: data.volunteer_remoteJid || '',\n  work_date: data.work_date || '',\n  hours: data.hours || 0,\n  activity_description: data.activity_description || '',\n  location: data.location || ''\n};\n\nif (!entry_id || !action) {\n  throw new Error('Missing required fields: entry_id and action');\n}\n\nreturn [{json: payload}];"
+        },
+        "id": "code_parse_action",
+        "name": "Code: Parse Action",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          512,
+          400
+        ]
+      },
+      {
+        "parameters": {
+          "rules": {
+            "values": [
+              {
+                "conditions": {
+                  "options": {
+                    "caseSensitive": true,
+                    "leftValue": "",
+                    "typeValidation": "strict",
+                    "version": 1
+                  },
+                  "combinator": "and",
+                  "conditions": [
+                    {
+                      "id": "r1c1",
+                      "leftValue": "={{ $json.action }}",
+                      "rightValue": "odobri",
+                      "operator": {
+                        "type": "string",
+                        "operation": "equals",
+                        "name": "filter.operator.equals"
+                      }
+                    }
+                  ]
+                },
+                "renameOutput": true,
+                "outputKey": "Odobri"
+              },
+              {
+                "conditions": {
+                  "options": {
+                    "caseSensitive": true,
+                    "leftValue": "",
+                    "typeValidation": "strict",
+                    "version": 1
+                  },
+                  "combinator": "and",
+                  "conditions": [
+                    {
+                      "id": "r2c1",
+                      "leftValue": "={{ $json.action }}",
+                      "rightValue": "zavrni",
+                      "operator": {
+                        "type": "string",
+                        "operation": "equals",
+                        "name": "filter.operator.equals"
+                      }
+                    }
+                  ]
+                },
+                "renameOutput": true,
+                "outputKey": "Zavrni"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "id": "switch_action",
+        "name": "Switch: Action",
+        "type": "n8n-nodes-base.switch",
+        "typeVersion": 3,
+        "position": [
+          768,
+          400
+        ]
+      },
+      {
+        "parameters": {
+          "method": "PATCH",
+          "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id + '/approve' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "id": "http_approve",
+        "name": "HTTP: PATCH /approve",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          1024,
+          240
+        ],
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "PATCH",
+          "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id + '/reject' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "id": "http_reject",
+        "name": "HTTP: PATCH /reject",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          1024,
+          560
+        ],
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "jsCode": "// $input is the API response from approve/reject — use payload for action info\nconst payload = $('Code: Parse Action').first().json;\nconst isApproved = payload.action === 'odobri';\n\nlet volMsg;\nif (isApproved) {\n  volMsg = `Vaš vnos z dne ${payload.work_date} je bil odobren. ✅\\n📝 ${payload.activity_description}, ${payload.hours} ur`;\n} else {\n  volMsg = `Vaš vnos z dne ${payload.work_date} je bil zavrnjen. ❌\\nUpravljalec vas bo kontaktiral za podrobnosti.`;\n}\n\nreturn [{\n  json: {\n    ...payload,\n    action: isApproved ? 'approved' : 'rejected',\n    volMsg,\n    volunteerJid: payload.volunteer_remoteJid\n  }\n}];"
+        },
+        "id": "code_vol_msg",
+        "name": "Code: Build Volunteer Msg",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1280,
+          400
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "number",
+                "value": "={{ $json.volunteerJid }}"
+              },
+              {
+                "name": "text",
+                "value": "={{ $json.volMsg }}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "id": "http_wa_volunteer",
+        "name": "HTTP: WA Notify Volunteer",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          1552,
+          400
+        ],
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "QXGVac2NwnJcQf9V",
+            "name": "BelPro Evolution API"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "jsCode": "const payload = $('Code: Parse Action').first().json;\nconst actionLabel = payload.action === 'odobri' ? 'odobren' : 'zavrnjen';\nconst mgrMsg = `Vnos za ${payload.volunteer_name} je bil ${actionLabel}.`;\n\nreturn [{\n  json: {\n    managerJid: payload.manager_remoteJid,\n    mgrMsg\n  }\n}];"
+        },
+        "id": "code_mgr_confirm",
+        "name": "Code: Build Manager Confirm",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1808,
+          400
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "number",
+                "value": "={{ $json.managerJid }}"
+              },
+              {
+                "name": "text",
+                "value": "={{ $json.mgrMsg }}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "id": "http_wa_manager",
+        "name": "HTTP: WA Confirm to Manager",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          2064,
+          400
+        ],
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "QXGVac2NwnJcQf9V",
+            "name": "BelPro Evolution API"
+          }
+        }
+      },
+      {
+        "id": "http_wa_next",
+        "name": "HTTP: WA Next Notification",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          4112,
+          320
+        ],
+        "parameters": {
+          "method": "POST",
+          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "number",
+                "value": "={{ $json.phone }}"
+              },
+              {
+                "name": "text",
+                "value": "={{ $json.text }}"
+              }
+            ]
+          },
+          "options": {
+            "timeout": 10000
+          }
+        },
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "QXGVac2NwnJcQf9V",
+            "name": "BelPro Evolution API"
+          }
+        }
+      },
+      {
+        "id": "http_get_pending",
+        "name": "HTTP: GET Pending Entries",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          2320,
+          400
+        ],
+        "parameters": {
+          "method": "GET",
+          "url": "http://api:8000/api/log-entries?status=pending_manager&sort_by=created_at&sort_dir=asc",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "id": "code_check_next",
+        "name": "Code: Check Next Entry",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          2576,
+          400
+        ],
+        "parameters": {
+          "jsCode": "const response = $input.first().json;\nconst items = response.items || [];\n\nconst alreadyNotified = items.filter(e => e.manager_notified_at);\nif (alreadyNotified.length > 0) {\n  return [{json: {shouldNotify: false, reason: 'already_notified'}}];\n}\n\nconst unnotified = items.filter(e => !e.manager_notified_at);\nif (unnotified.length === 0) {\n  return [{json: {shouldNotify: false, reason: 'no_entries'}}];\n}\n\nconst entry = unnotified[0];\nreturn [{\n  json: {\n    shouldNotify: true,\n    entry_id: entry.id,\n    volunteer_id: entry.volunteer_id,\n    work_date: entry.work_date,\n    hours: entry.hours,\n    activity_description: entry.activity_description || '',\n    location: entry.location || '',\n    unnotified_count: unnotified.length\n  }\n}];"
+        }
+      },
+      {
+        "id": "if_should_notify",
+        "name": "IF: Should Notify?",
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2,
+        "position": [
+          2832,
+          400
+        ],
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 1
+            },
+            "combinator": "and",
+            "conditions": [
+              {
+                "id": "cond1",
+                "leftValue": "={{ $json.shouldNotify }}",
+                "rightValue": true,
+                "operator": {
+                  "type": "boolean",
+                  "operation": "equals"
+                }
+              }
+            ]
+          }
+        }
+      },
+      {
+        "id": "http_patch_notify",
+        "name": "HTTP: PATCH /notify",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          3088,
+          320
+        ],
+        "parameters": {
+          "method": "PATCH",
+          "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id + '/notify' }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "id": "http_get_volunteer",
+        "name": "HTTP: GET Volunteer",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          3344,
+          320
+        ],
+        "parameters": {
+          "method": "GET",
+          "url": "={{ 'http://api:8000/api/volunteers/' + $('Code: Check Next Entry').first().json.volunteer_id }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "id": "http_get_manager",
+        "name": "HTTP: GET Manager",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          3600,
+          320
+        ],
+        "parameters": {
+          "method": "GET",
+          "url": "http://api:8000/api/managers/me",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "id": "code_build_next_msg",
+        "name": "Code: Build Next Msg",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          3856,
+          320
+        ],
+        "parameters": {
+          "jsCode": "const checkData = $('Code: Check Next Entry').first().json;\nconst manager = $input.first().json;\nconst volunteer = $('HTTP: GET Volunteer').first().json;\n\nconst mgrJid = (manager.phone || '').replace(/[^0-9]/g, '') + '@s.whatsapp.net';\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\n\nconst d = new Date(checkData.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = checkData.unnotified_count > 1 ? `\\n\\nV vrsti: ${checkData.unnotified_count - 1} vnos(ov)` : '';\n\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${checkData.hours} ur\\n📝 ${checkData.activity_description}\\n📍 ${checkData.location || 'ni navedeno'}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\n\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
+        }
+      }
+    ],
+    "connections": {
+      "Execute Workflow Trigger": {
+        "main": [
+          [
+            {
+              "node": "Code: Parse Action",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Manual Trigger": {
+        "main": [
+          [
+            {
+              "node": "Code: Parse Action",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Parse Action": {
+        "main": [
+          [
+            {
+              "node": "Switch: Action",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Switch: Action": {
+        "main": [
+          [
+            {
+              "node": "HTTP: PATCH /approve",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
+              "node": "HTTP: PATCH /reject",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: PATCH /approve": {
+        "main": [
+          [
+            {
+              "node": "Code: Build Volunteer Msg",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: PATCH /reject": {
+        "main": [
+          [
+            {
+              "node": "Code: Build Volunteer Msg",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Build Volunteer Msg": {
+        "main": [
+          [
+            {
+              "node": "HTTP: WA Notify Volunteer",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: WA Notify Volunteer": {
+        "main": [
+          [
+            {
+              "node": "Code: Build Manager Confirm",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Build Manager Confirm": {
+        "main": [
+          [
+            {
+              "node": "HTTP: WA Confirm to Manager",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: WA Confirm to Manager": {
+        "main": [
+          [
+            {
+              "node": "HTTP: GET Pending Entries",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: GET Pending Entries": {
+        "main": [
+          [
+            {
+              "node": "Code: Check Next Entry",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Check Next Entry": {
+        "main": [
+          [
+            {
+              "node": "IF: Should Notify?",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "IF: Should Notify?": {
+        "main": [
+          [
+            {
+              "node": "HTTP: PATCH /notify",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: PATCH /notify": {
+        "main": [
+          [
+            {
+              "node": "HTTP: GET Volunteer",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: GET Volunteer": {
+        "main": [
+          [
+            {
+              "node": "HTTP: GET Manager",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: GET Manager": {
+        "main": [
+          [
+            {
+              "node": "Code: Build Next Msg",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Build Next Msg": {
+        "main": [
+          [
+            {
+              "node": "HTTP: WA Next Notification",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "authors": "Andrej Mejac",
+    "name": null,
+    "description": null,
+    "autosaved": false,
+    "workflowPublishHistory": [
+      {
+        "createdAt": "2026-05-10T12:06:54.744Z",
+        "id": 183,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-10T12:06:54.761Z",
+        "id": 184,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      }
+    ]
+  }
 }

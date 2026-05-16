@@ -72,35 +72,60 @@ def cmd_import(base_url: str, api_key: str) -> None:
 
 
 def cmd_export(base_url: str, api_key: str) -> None:
-    """Pull all workflows from n8n and write to n8n/workflows/."""
+    """Overwrite each repo workflow file with its current definition from n8n."""
+    files = sorted(p for p in WORKFLOWS_DIR.glob("*.json") if p.name != ".gitkeep")
+    if not files:
+        print("No workflow JSON files found in n8n/workflows/")
+        return
+
     status, data = api_request("GET", f"{base_url}/api/v1/workflows", api_key)
     if status != 200:
         print(f"ERROR: GET /api/v1/workflows returned HTTP {status}: {data}")
         sys.exit(1)
 
-    workflows = data.get("data", [])
-    if not workflows:
-        print("No workflows found in n8n.")
-        return
-
+    n8n_by_name = {wf["name"]: wf["id"] for wf in data.get("data", [])}
+    repo_names = set()
     count = 0
-    for wf in workflows:
-        wf_id = wf["id"]
-        name = wf["name"]
+
+    for path in files:
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            print(f"  x {path.name}: could not parse JSON ({exc})")
+            continue
+        name = payload.get("name", "")
+        repo_names.add(name)
+
+        if name not in n8n_by_name:
+            print(f"  ! {path.name}: workflow '{name}' not found in n8n - skipping")
+            continue
+
+        wf_id = n8n_by_name[name]
         status, full = api_request("GET", f"{base_url}/api/v1/workflows/{wf_id}", api_key)
         if status != 200:
-            print(f"  x {wf_id}: GET /{wf_id} returned HTTP {status}")
+            print(f"  x {path.name}: GET /{wf_id} returned HTTP {status}")
             continue
-        filename = make_filename(name) + ".json"
-        out_path = WORKFLOWS_DIR / filename
-        out_path.write_text(json.dumps(full, indent=2, ensure_ascii=False), encoding="utf-8")
-        print(f"  ok {filename}")
+
+        path.write_text(json.dumps(full, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"  ok {path.name} <- '{name}'")
         count += 1
 
-    print(f"\n{count} workflow(s) exported to n8n/workflows/")
+    extras = [name for name in n8n_by_name if name not in repo_names]
+    if extras:
+        print("\nWorkflows in n8n with no repo file (not exported):")
+        for name in extras:
+            print(f"  - {name}")
+
+    print(f"\n{count}/{len(files)} workflow(s) exported to n8n/workflows/")
 
 
 def main() -> None:
+    # Ensure stdout/stderr can emit UTF-8 on Windows consoles that default to cp1252.
+    if hasattr(sys.stdout, "reconfigure"):
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    if hasattr(sys.stderr, "reconfigure"):
+        sys.stderr.reconfigure(encoding="utf-8", errors="replace")
+
     if len(sys.argv) < 2 or sys.argv[1] not in ("import", "export"):
         print(__doc__)
         sys.exit(1)

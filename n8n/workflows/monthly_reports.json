@@ -1,22 +1,26 @@
 {
+  "updatedAt": "2026-05-04T18:43:12.885Z",
+  "createdAt": "2026-05-04T17:46:55.815Z",
+  "id": "db9cibXhzSyyZJc8",
   "name": "BelPro — Mesečna Poročila",
+  "description": null,
+  "active": true,
+  "isArchived": false,
   "nodes": [
     {
+      "parameters": {
+        "content": "## BelPro — Mesečna poročila\n\n**Samodejni zagon:** vsak 28. v mesecu ob 07:00 (Europe/Ljubljana).\n**Ročni zagon:** klik 'Execute workflow' v n8n UI ali prek upravitelja poročil v BelPro.\n\nWorkflow pokliče `POST /api/reports/send-monthly`, ki:\n- generira individualni PDF za vsakega aktivnega prostovoljca z odobrenimi vnosi\n- pošlje PDF prostovoljcem z `report_email = True`\n- generira in pošlje skupno poročilo upravljalcu, če ima `report_email = True`\n\n**Zahteva credential:** `BelPro API (Basic Auth)` tipa HTTP Basic Auth\n- Uporabniško ime: `manager`\n- Geslo: vrednost `MANAGER_PASSWORD` iz `.env`"
+      },
       "id": "sticky-1",
       "name": "Sticky Note",
       "type": "n8n-nodes-base.stickyNote",
       "typeVersion": 1,
-      "position": [200, 60],
-      "parameters": {
-        "content": "## BelPro — Mesečna poročila\n\n**Samodejni zagon:** vsak 28. v mesecu ob 07:00 (Europe/Ljubljana).\n**Ročni zagon:** klik 'Execute workflow' v n8n UI ali prek upravitelja poročil v BelPro.\n\nWorkflow pokliče `POST /api/reports/send-monthly`, ki:\n- generira individualni PDF za vsakega aktivnega prostovoljca z odobrenimi vnosi\n- pošlje PDF prostovoljcem z `report_email = True`\n- generira in pošlje skupno poročilo upravljalcu, če ima `report_email = True`\n\n**Zahteva credential:** `BelPro API (Basic Auth)` tipa HTTP Basic Auth\n- Uporabniško ime: `manager`\n- Geslo: vrednost `MANAGER_PASSWORD` iz `.env`"
-      }
+      "position": [
+        208,
+        64
+      ]
     },
     {
-      "id": "trigger-schedule",
-      "name": "28. v mesecu ob 07:00",
-      "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1.3,
-      "position": [200, 300],
       "parameters": {
         "rule": {
           "interval": [
@@ -26,22 +30,28 @@
             }
           ]
         }
-      }
+      },
+      "id": "trigger-schedule",
+      "name": "28. v mesecu ob 07:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.3,
+      "position": [
+        208,
+        304
+      ]
     },
     {
+      "parameters": {},
       "id": "trigger-manual",
       "name": "Ročni Zagon",
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
-      "position": [200, 460],
-      "parameters": {}
+      "position": [
+        208,
+        464
+      ]
     },
     {
-      "id": "http-send",
-      "name": "Pošlji Mesečna Poročila",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.4,
-      "position": [460, 380],
       "parameters": {
         "method": "POST",
         "url": "http://api:8000/api/reports/send-monthly",
@@ -55,26 +65,36 @@
           }
         }
       },
+      "id": "http-send",
+      "name": "Pošlji Mesečna Poročila",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        464,
+        384
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000,
       "credentials": {
         "httpBasicAuth": {
           "id": "UqZlwzClZfiYKanN",
           "name": "BelPro API (Basic Auth)"
         }
-      },
-      "retryOnFail": true,
-      "maxTries": 3,
-      "waitBetweenTries": 5000,
-      "continueOnFail": false
+      }
     },
     {
+      "parameters": {
+        "jsCode": "const result = $input.first().json;\nconst sent = result.sent_to_volunteers || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano prostovoljcem: ${sent.length}`,\n  `Upravljalec obveščen: ${result.manager_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez e-pošte): ${(result.skipped_no_email || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
+      },
       "id": "code-log",
       "name": "Zabeleži Rezultat",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
-      "position": [700, 380],
-      "parameters": {
-        "jsCode": "const result = $input.first().json;\nconst sent = result.sent_to_volunteers || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano prostovoljcem: ${sent.length}`,\n  `Upravljalec obveščen: ${result.manager_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez e-pošte): ${(result.skipped_no_email || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
-      }
+      "position": [
+        704,
+        384
+      ]
     }
   ],
   "connections": {
@@ -112,17 +132,189 @@
       ]
     }
   },
-  "active": false,
   "settings": {
     "executionOrder": "v1",
     "timezone": "Europe/Ljubljana",
-    "saveDataSuccessExecution": "none",
     "saveDataErrorExecution": "all",
-    "saveManualExecutions": true
+    "saveDataSuccessExecution": "none",
+    "saveManualExecutions": true,
+    "binaryMode": "separate"
   },
-  "tags": [
-    {
-      "name": "belpro"
+  "staticData": {
+    "node:28. v mesecu ob 07:00": {
+      "recurrenceRules": []
     }
-  ]
+  },
+  "meta": null,
+  "pinData": {},
+  "versionId": "01d5507d-124f-4c35-a8e0-e08608af8509",
+  "activeVersionId": "01d5507d-124f-4c35-a8e0-e08608af8509",
+  "versionCounter": 16,
+  "triggerCount": 1,
+  "shared": [
+    {
+      "updatedAt": "2026-05-04T17:46:55.815Z",
+      "createdAt": "2026-05-04T17:46:55.815Z",
+      "role": "workflow:owner",
+      "workflowId": "db9cibXhzSyyZJc8",
+      "projectId": "has880SL8xAPbVNM",
+      "project": {
+        "updatedAt": "2026-05-01T18:37:36.096Z",
+        "createdAt": "2026-05-01T18:26:01.163Z",
+        "id": "has880SL8xAPbVNM",
+        "name": "Andrej Mejac <andrej.mejac.x13@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": {
+    "updatedAt": "2026-05-04T18:40:07.795Z",
+    "createdAt": "2026-05-04T18:40:07.795Z",
+    "versionId": "01d5507d-124f-4c35-a8e0-e08608af8509",
+    "workflowId": "db9cibXhzSyyZJc8",
+    "nodes": [
+      {
+        "parameters": {
+          "content": "## BelPro — Mesečna poročila\n\n**Samodejni zagon:** vsak 28. v mesecu ob 07:00 (Europe/Ljubljana).\n**Ročni zagon:** klik 'Execute workflow' v n8n UI ali prek upravitelja poročil v BelPro.\n\nWorkflow pokliče `POST /api/reports/send-monthly`, ki:\n- generira individualni PDF za vsakega aktivnega prostovoljca z odobrenimi vnosi\n- pošlje PDF prostovoljcem z `report_email = True`\n- generira in pošlje skupno poročilo upravljalcu, če ima `report_email = True`\n\n**Zahteva credential:** `BelPro API (Basic Auth)` tipa HTTP Basic Auth\n- Uporabniško ime: `manager`\n- Geslo: vrednost `MANAGER_PASSWORD` iz `.env`"
+        },
+        "id": "sticky-1",
+        "name": "Sticky Note",
+        "type": "n8n-nodes-base.stickyNote",
+        "typeVersion": 1,
+        "position": [
+          208,
+          64
+        ]
+      },
+      {
+        "parameters": {
+          "rule": {
+            "interval": [
+              {
+                "field": "cronExpression",
+                "expression": "0 7 28 * *"
+              }
+            ]
+          }
+        },
+        "id": "trigger-schedule",
+        "name": "28. v mesecu ob 07:00",
+        "type": "n8n-nodes-base.scheduleTrigger",
+        "typeVersion": 1.3,
+        "position": [
+          208,
+          304
+        ]
+      },
+      {
+        "parameters": {},
+        "id": "trigger-manual",
+        "name": "Ročni Zagon",
+        "type": "n8n-nodes-base.manualTrigger",
+        "typeVersion": 1,
+        "position": [
+          208,
+          464
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://api:8000/api/reports/send-monthly",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {
+            "response": {
+              "response": {
+                "responseFormat": "json"
+              }
+            }
+          }
+        },
+        "id": "http-send",
+        "name": "Pošlji Mesečna Poročila",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.4,
+        "position": [
+          464,
+          384
+        ],
+        "retryOnFail": true,
+        "maxTries": 3,
+        "waitBetweenTries": 5000,
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "jsCode": "const result = $input.first().json;\nconst sent = result.sent_to_volunteers || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano prostovoljcem: ${sent.length}`,\n  `Upravljalec obveščen: ${result.manager_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez e-pošte): ${(result.skipped_no_email || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
+        },
+        "id": "code-log",
+        "name": "Zabeleži Rezultat",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          704,
+          384
+        ]
+      }
+    ],
+    "connections": {
+      "28. v mesecu ob 07:00": {
+        "main": [
+          [
+            {
+              "node": "Pošlji Mesečna Poročila",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Ročni Zagon": {
+        "main": [
+          [
+            {
+              "node": "Pošlji Mesečna Poročila",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Pošlji Mesečna Poročila": {
+        "main": [
+          [
+            {
+              "node": "Zabeleži Rezultat",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "authors": "Andrej Mejac",
+    "name": null,
+    "description": null,
+    "autosaved": false,
+    "workflowPublishHistory": [
+      {
+        "createdAt": "2026-05-04T18:43:12.968Z",
+        "id": 1,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "01d5507d-124f-4c35-a8e0-e08608af8509",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      }
+    ]
+  }
 }
