@@ -40,7 +40,7 @@ def make_filename(name: str) -> str:
     return slug
 
 
-def api_request(method: str, url: str, api_key: str, payload: dict | None = None):
+def api_request(method: str, url: str, api_key: str, payload: dict | None = None) -> tuple[int, dict]:
     """Make an authenticated request to the n8n API.
 
     Returns (status_code, response_dict).
