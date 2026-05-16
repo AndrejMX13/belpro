@@ -141,6 +141,9 @@ def cmd_import(base_url: str, api_key: str) -> None:
                 "POST", f"{base_url}/api/v1/workflows", api_key, filtered_payload
             )
             wf_id = resp.get("id")
+            if not wf_id:
+                print(f"  x {name}: created but response missing 'id' field")
+                continue
             action = "created"
 
         if upsert_status not in (200, 201):
@@ -154,7 +157,7 @@ def cmd_import(base_url: str, api_key: str) -> None:
             print(f"  ! {name}: {action} but activation failed (HTTP {act_status})")
         else:
             print(f"  ok {name}: {action} and activated")
-        ok += 1
+            ok += 1
 
     print(f"\n{ok}/{len(files)} workflow(s) imported successfully.")
 
