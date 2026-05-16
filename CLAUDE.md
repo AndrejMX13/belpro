@@ -143,7 +143,7 @@ GMAIL_APP_PASSWORD=...     # Or OAuth token path
 
 **Environment:** Windows 10 + WSL2 (Ubuntu) + Docker Desktop. Docker Compose runs via Docker Desktop (WSL2 backend).
 
-**Python on the host:** Two contexts — on Windows, Python 3.14 is a plain install accessible as `python`. In WSL2, Python 3.14.4 is managed by pyenv (initialized in `~/.bashrc`); both `python` and `python3` resolve to it. Host-side scripts run from WSL2 — use `python` or `python3` interchangeably. Docker containers use their own Python environment.
+**Python on the host:** Python 3.14 is installed on Windows and accessible as both `python` and `python3` (a shim at `~/.local/bin/python3` forwards to `python`). Docker containers use their own Python environment.
 
 ```bash
 # Copy and fill in environment
@@ -169,11 +169,15 @@ docker compose logs -f
 
 ## Tooling & Shell Conventions
 
-- **Use the Bash tool for all commands** including `docker compose`. VS Code runs in WSL2 context; the working directory is `/mnt/d/Andrej/vsCode-workspace/BelPro`.
+- **Use the Bash tool for all commands** including `docker compose`. The Bash tool runs Git Bash (MINGW64), not WSL2. VS Code runs as a Windows-local app; the working directory is `/d/Andrej/vsCode-workspace/BelPro` (Git Bash path format).
+- **Path format:** Git Bash uses `/c/` and `/d/` drive prefixes — not Windows backslashes, not `/mnt/`. Example: `C:\Users\Andrej` → `/c/Users/Andrej`.
+- **WSL2 bash** is installed but not usable as the Bash tool shell. For one-off WSL2 commands use PowerShell: `wsl bash -c 'command'`.
 - **Rebuild after code changes:** `docker compose up -d --build <svc>` — never `docker compose restart`, which skips the build.
 - **pytest path inside the API container:** `docker compose exec api pytest tests/ -v` — the path is `tests/`, not `api/tests/`. The Dockerfile uses `api/` as build context, so `api/tests/` on the host becomes `tests/` at `/app/tests/` inside the container.
 - **Git remote is named `central`**, not `origin`. Use `git push central <branch>`.
-- **AI-assisted commits** must include the trailer `Co-Authored-By: AI Assistant <noreply@ai>`.
+- **AI-assisted commits** must include a `Co-Authored-By` trailer. Use the actual model from session context:
+  - Anthropic model (Claude): `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>` (substitute the actual model name)
+  - Third-party or unknown model: `Co-Authored-By: AI Assistant <noreply@ai>`
 - **Serena `replace_symbol_body` corrupts decorated functions and module-level strings.** Use the Edit tool for all in-place code edits instead.
 
 ### Known packaging pins
