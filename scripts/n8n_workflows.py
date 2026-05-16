@@ -13,6 +13,7 @@ import sys
 import urllib.error
 import urllib.request
 
+REQUEST_TIMEOUT = 10
 PLACEHOLDER = "FILL_IN_AFTER_FIRST_N8N_RUN"
 SCRIPT_DIR = pathlib.Path(__file__).resolve().parent
 PROJECT_DIR = SCRIPT_DIR.parent
@@ -29,12 +30,12 @@ def load_env(env_path: pathlib.Path) -> dict:
             if not line or line.startswith("#") or "=" not in line:
                 continue
             key, _, value = line.partition("=")
-            env[key.strip()] = value.strip()
+            env[key.strip()] = value.strip().strip("'\"")
     return env
 
 
 def make_filename(name: str) -> str:
-    """Derive a safe filename slug from a workflow name."""
+    """Derive a safe filename slug from a workflow name (used by cmd_export)."""
     slug = name.lower().replace(" ", "_")
     slug = re.sub(r"[^a-z0-9_]", "", slug)
     return slug
@@ -52,13 +53,14 @@ def api_request(method: str, url: str, api_key: str, payload: dict | None = None
     req.add_header("Content-Type", "application/json")
     req.add_header("Accept", "application/json")
     try:
-        with urllib.request.urlopen(req, timeout=10) as resp:
+        with urllib.request.urlopen(req, timeout=REQUEST_TIMEOUT) as resp:
             return resp.status, json.loads(resp.read())
     except urllib.error.HTTPError as e:
+        raw = e.read()
         try:
-            body = json.loads(e.read())
+            body = json.loads(raw)
         except Exception:
-            body = {}
+            body = {"raw": raw.decode(errors="replace")}
         return e.code, body
     except urllib.error.URLError:
         print("ERROR: Cannot reach n8n. Is 'docker compose up' running?")
@@ -76,7 +78,7 @@ def cmd_export(base_url: str, api_key: str) -> None:
 def main() -> None:
     if len(sys.argv) < 2 or sys.argv[1] not in ("import", "export"):
         print(__doc__)
-        sys.exit(0)
+        sys.exit(1)
 
     if not ENV_FILE.exists():
         print(f"ERROR: .env not found at {ENV_FILE}")
