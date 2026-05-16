@@ -196,7 +196,7 @@ async def create_volunteer(
     if manager is None:
         raise HTTPException(
             status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-            detail="No manager configured — complete setup first.",
+            detail="Manjkajo nastavitve za upravljalca - najprej zaključite z instalacijo",
         )
 
     key = load_key(settings.emso_encryption_key)
@@ -251,7 +251,7 @@ async def activate_volunteer(
         await db.execute(select(Volunteer).where(Volunteer.id == volunteer_id))
     ).scalar_one_or_none()
     if volunteer is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ne najdem prostovoljca")
 
     volunteer.active = True
     await db.commit()
@@ -276,7 +276,7 @@ async def deactivate_volunteer(
         await db.execute(select(Volunteer).where(Volunteer.id == volunteer_id))
     ).scalar_one_or_none()
     if volunteer is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ne najdem prostovoljca")
 
     volunteer.active = False
     await db.commit()
@@ -304,7 +304,7 @@ async def delete_volunteer(
         )
     ).scalar_one_or_none()
     if volunteer is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ne najdem prostovoljca")
     if volunteer.log_entries:
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
@@ -330,7 +330,7 @@ async def get_volunteer(
         )
     ).scalar_one_or_none()
     if volunteer is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ne najdem prostovoljca")
 
     key = load_key(settings.emso_encryption_key)
     return _to_detail_response(volunteer, key)
@@ -349,7 +349,7 @@ async def update_volunteer(
         await db.execute(select(Volunteer).where(Volunteer.id == volunteer_id))
     ).scalar_one_or_none()
     if volunteer is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Volunteer not found")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Ne najdem prostovoljca")
 
     for field, value in payload.model_dump(exclude_none=True).items():
         setattr(volunteer, field, value)

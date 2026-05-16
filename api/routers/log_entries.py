@@ -147,7 +147,7 @@ async def get_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     return LogEntryResponse.model_validate(entry)
 
 
@@ -168,7 +168,7 @@ async def create_log_entry(
     if volunteer is None:
         raise HTTPException(
             status_code=http_status.HTTP_404_NOT_FOUND,
-            detail="Volunteer not found",
+            detail="Ne najdem prostovoljca",
         )
     if not volunteer.active:
         raise HTTPException(
@@ -206,7 +206,7 @@ async def update_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status == EntryStatus.APPROVED:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -242,7 +242,7 @@ async def upload_photo(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status == EntryStatus.APPROVED:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -295,7 +295,7 @@ async def upload_photo_base64(
         )
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status == EntryStatus.APPROVED:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -362,10 +362,10 @@ async def get_photo_file(
         )
     ).scalar_one_or_none()
     if photo is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Photo not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem slike")
     file_path = _PHOTOS_ROOT / photo.photo_path
     if not file_path.exists():
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Photo file not found on disk")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Datoteke s sliko ni na disku")
     return FileResponse(str(file_path))
 
 
@@ -384,7 +384,7 @@ async def delete_photo(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status == EntryStatus.APPROVED:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -399,7 +399,7 @@ async def delete_photo(
         )
     ).scalar_one_or_none()
     if photo is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Photo not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem slike")
 
     try:
         (_PHOTOS_ROOT / photo.photo_path).unlink(missing_ok=True)
@@ -425,7 +425,7 @@ async def approve_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status != EntryStatus.PENDING_MANAGER:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -453,7 +453,7 @@ async def reject_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status != EntryStatus.PENDING_MANAGER:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -485,7 +485,7 @@ async def notify_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status != EntryStatus.PENDING_MANAGER:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -511,7 +511,7 @@ async def confirm_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status != EntryStatus.PENDING_VOLUNTEER:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
@@ -539,7 +539,7 @@ async def delete_log_entry(
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
-        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Log entry not found")
+        raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
     if entry.status != EntryStatus.PENDING_VOLUNTEER:
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,

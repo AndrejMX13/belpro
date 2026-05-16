@@ -31,7 +31,7 @@ async def get_manager(
     """Return the single manager profile, or 404 if setup has not been completed."""
     manager = (await db.execute(select(Manager).limit(1))).scalar_one_or_none()
     if manager is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manager not configured.")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manjkajo nastavitve za upravljalca")
     return manager
 
 
@@ -50,7 +50,7 @@ async def create_manager(
     if existing is not None:
         raise HTTPException(
             status_code=status.HTTP_409_CONFLICT,
-            detail="Manager is already configured.",
+            detail="Nastavitve za upravljalca že obstajajo",
         )
     manager = Manager(
         first_name=payload.first_name,
@@ -76,7 +76,7 @@ async def update_manager(
     """Update manager and/or NGO fields.  Only provided (non-None) fields are written."""
     manager = (await db.execute(select(Manager).limit(1))).scalar_one_or_none()
     if manager is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manager not configured.")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manjkajo nastavitve za upravljalca")
 
     for field, value in payload.model_dump(exclude_none=True).items():
         if field == "email":
@@ -100,7 +100,7 @@ async def get_config_info(
     """Return config status for the settings UI; auto-syncs WhatsApp phone if connected."""
     manager = (await db.execute(select(Manager).limit(1))).scalar_one_or_none()
     if manager is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manager not configured.")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manjkajo nastavitve za upravljalca")
 
     client = EvolutionClient(
         base_url=settings.evolution_api_url,
@@ -155,7 +155,7 @@ async def change_password(
     """Change the manager password.  Verifies the current password before updating."""
     manager = (await db.execute(select(Manager).limit(1))).scalar_one_or_none()
     if manager is None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manager not configured.")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Manjkajo nastavitve za upravljalca")
 
     if manager.password_hash:
         current_ok = verify_password(payload.current_password, manager.password_hash)
