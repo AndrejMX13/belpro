@@ -159,7 +159,7 @@ def cmd_import(base_url: str, api_key: str) -> None:
             print(f"  ok {name}: {action} and activated")
             ok += 1
 
-    print(f"\n{ok}/{len(files)} workflow(s) imported successfully.")
+    print(f"\n{ok}/{len(files)} workflow(s) imported and activated successfully.")
 
 
 def cmd_export(base_url: str, api_key: str) -> None:

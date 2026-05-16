@@ -193,6 +193,7 @@ The three n8n workflows (`volunteer_entry`, `manager_approval`, `monthly_reports
 ```
 N8N_API_KEY=<your-key>
 ```
+`N8N_WEBHOOK_URL` defaults to `http://localhost:5678` — override in `.env` if your instance runs elsewhere.
 
 **Load workflows into n8n** (fresh install or after pulling updates from git):
 ```bash
