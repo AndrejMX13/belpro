@@ -1,3 +1,5 @@
+[Slovenščina](README_SL.md)
+
 # BelPro — Beleženje Prostovoljstva
 
 [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
@@ -164,26 +166,34 @@ After logging in, go to **Settings** to set the manager name, phone number, NGO 
 
 ## WhatsApp setup
 
-### 6. Link the WhatsApp number
+### 6. Create the Evolution API instance
 
 Open the Evolution API manager at **http://localhost:8180/manager/**.
 
 1. Log in with your `AUTHENTICATION_API_KEY`.
 2. Create an instance named `belpro` (must match `EVOLUTION_INSTANCE_NAME` in `.env`).
-3. Scan the QR code with the dedicated WhatsApp phone.
 
-The instance status should change to `open` (connected). The phone must stay connected for the bot to receive messages.
-
-> **Known issue:** The dashboard QR modal does not render the QR image, and `CONFIG_SESSION_PHONE_VERSION` must be set in `docker-compose.yml` or WhatsApp will reject the connection entirely. If the QR does not appear or the instance never connects, see **[EVOLUTION_QR_TROUBLESHOOTING.md](EVOLUTION_QR_TROUBLESHOOTING.md)** for the full diagnosis and all required commands.
+Do not scan the QR code yet — set up n8n first so workflows are active before WhatsApp goes live.
 
 ### 7. Configure n8n workflows
 
 Open n8n at **http://localhost:5678** and log in with `N8N_BASIC_AUTH_USER` / `N8N_BASIC_AUTH_PASSWORD`.
 
-1. Import the workflow files from `n8n/workflows/` (one per logical flow).
-2. Set up credentials as documented in `n8n/credentials/README.md`.
-3. Generate an n8n API key under **Settings → API**, and add it to `.env` as `N8N_API_KEY`.
+1. Generate an n8n API key under **Settings → API** and add it to `.env` as `N8N_API_KEY`.
+2. Import the workflow files from `n8n/workflows/`:
+   ```bash
+   ./scripts/n8n_workflows.py import
+   ```
+3. Set up credentials as documented in `n8n/credentials/README.md`.
 4. Activate all workflows.
+
+### 8. Connect WhatsApp
+
+Back in the Evolution API manager at **http://localhost:8180/manager/**, open the `belpro` instance and scan the QR code with the dedicated WhatsApp phone.
+
+The instance status should change to `open` (connected). The phone must stay connected for the bot to receive messages.
+
+> **Known issue:** The dashboard QR modal does not render the QR image, and `CONFIG_SESSION_PHONE_VERSION` must be set in `docker-compose.yml` or WhatsApp will reject the connection entirely. If the QR does not appear or the instance never connects, see **[EVOLUTION_QR_TROUBLESHOOTING.md](EVOLUTION_QR_TROUBLESHOOTING.md)** for the full diagnosis and all required commands.
 
 ### Workflow management
 

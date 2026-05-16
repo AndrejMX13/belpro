@@ -66,8 +66,9 @@ htmlcov/
 # -----------------------------------------------------------------------------
 # n8n
 # -----------------------------------------------------------------------------
-n8n/credentials/
+n8n/credentials/*
 !n8n/credentials/README.md
+!n8n/credentials/README_SL.md
 # Keep workflows and README, ignore any local overrides
 n8n/.n8n/
 

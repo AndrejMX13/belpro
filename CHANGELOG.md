@@ -6,6 +6,22 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.10.0-beta.2] — 2026-05-16
+
+### Added
+- Slovenian translations of `README.md`, `SPEC.md`, `EVOLUTION_QR_TROUBLESHOOTING.md`, and `n8n/credentials/README.md` (`*_SL.md` parallel files with language switcher links).
+- 7 specialist Claude Code skills added to `.claude/skills/`: `code-documenter`, `code-reviewer`, `database-optimizer`, `debugging-wizard`, `devops-engineer`, `secure-code-guardian`, `test-master`.
+
+### Changed
+- All Slovenian API error messages: previously English strings in `api/routers/volunteers.py`, `log_entries.py`, and `managers.py` translated to Slovenian.
+- `python3` replaced with `python` across all host-side scripts and docs (`scripts/setup.sh`, `scripts/test_backup_restore.sh`, `scripts/switch_manager_phone.sh`, `scripts/gen_diagrams.py`, `scripts/gen_diagrams_sl.py`, `api/core/settings.py`, `EVOLUTION_QR_TROUBLESHOOTING.md`, `README.md`, `CLAUDE.md`).
+- README installation order corrected: create Evolution API instance → configure and activate n8n workflows → scan WhatsApp QR. Previously n8n setup came after QR scan, meaning the first incoming message would hit inactive workflows.
+- `SPEC.md` section 4.4: removed incorrect claim that transcript normalisation uses a Claude/OpenAI LLM node. Actual implementation uses pattern matching in a plain n8n code node.
+- `SPEC.md` section 12: `load_env.sh` and `switch_manager_phone.sh` bash variants documented alongside their PowerShell equivalents.
+- `.gitignore`: `n8n/credentials/` pattern changed from directory-level ignore to `n8n/credentials/*` to allow `!` exceptions for both `README.md` and `README_SL.md`.
+
+---
+
 ## [0.10.0-beta.1] — 2026-05-15
 
 ### Added

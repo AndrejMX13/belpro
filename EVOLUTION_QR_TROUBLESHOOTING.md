@@ -1,3 +1,5 @@
+[Slovenščina](EVOLUTION_QR_TROUBLESHOOTING_SL.md)
+
 # Evolution API — WhatsApp QR Code Troubleshooting
 
 ## The Problem

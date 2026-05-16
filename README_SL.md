@@ -1,0 +1,327 @@
+[English](README.md)
+
+# BelPro — Beleženje Prostovoljstva
+
+[![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=black)](#)
+[![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![nginx](https://img.shields.io/badge/nginx-Reverse_Proxy-009639?logo=nginx&logoColor=white)](https://nginx.org/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-18-4169E1?logo=postgresql&logoColor=white)](https://www.postgresql.org/)
+[![Redis](https://img.shields.io/badge/Redis-7-FF4438?logo=redis&logoColor=white)](https://redis.io/)
+[![n8n](https://img.shields.io/badge/n8n-Workflow_Engine-EA4B71?logo=n8n&logoColor=white)](https://n8n.io/)
+[![Whisper](https://img.shields.io/badge/Whisper-Faster_Whisper-412991?logo=openai&logoColor=white)](#)
+[![Evolution API](https://img.shields.io/badge/Evolution_API-WhatsApp_Gateway-25D366?logo=whatsapp&logoColor=white)](https://github.com/EvolutionAPI/evolution-api)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+
+Sistem, ki deluje na vašem strežniku in slovenskim nevladnim organizacijam avtomatizira vodenje Dnevnika prostovoljskega dela, ki ga zakonodaja zahteva za prostovoljce, ki prejemajo dodatek za delovno aktivnost.
+
+Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali besedilo). Vodja pregleda in odobri vnose prek WhatsAppa in spletne nadzorne plošče. Mesečna poročila v PDF obliki se samodejno ustvarijo za predložitev lokalnemu CSD (Centru za Socialno Delo).
+
+---
+
+## Kako deluje
+
+![BelPro Arhitektura](docs/images/architecture.svg)
+
+1. Prostovoljec pošlje glasovno sporočilo, fotografijo ali tekstovno sporočilo na WhatsApp številko nevladne organizacije (NVO).
+
+2. n8n preko orodja Faster-Whisper (lokalno, na procesorju (CPU), v slovenščini) pretvori zvok v besedilo, izlušči datum, ure, lokacijo ter aktivnost in prostovoljcu v potrditev pošlje povzetek z gumbi Potrdi / Popravi / Prekliči.
+
+3. Po potrditvi se vnos premakne v stanje pending_manager (čaka na potrditev), vodja pa prejme WhatsApp obvestilo z gumboma Odobri / Zavrni.
+
+4. 28. dne v mesecu se samodejno ustvarijo PDF poročila in pošljejo po e-pošti — eno za vsakega prostovoljca (za predložitev na CSD) in zbirno poročilo za vodjo.
+
+---
+
+## Tehnološki sklad (Stack)
+
+| Storitev | Tehnologija | Vrata (Port) |
+|---------|-----------|------|
+| Zbirka podatkov | PostgreSQL 18 | interno |
+| Avtomatizacija procesov | n8n | 5678 |
+| Pretvorba govora v besedilo | Faster-Whisper (CPU) | interno |
+| Ozadje (Backend API) | FastAPI | 8100 |
+| Nadzorna plošča za vodje | nginx + HTML/JS/CSS | 80 |
+| WhatsApp vmesnik (Gateway) | Evolution API | 8180 |
+| Predpomnilnik / vrsta | Redis 7 | interno |
+
+---
+
+## Sistemske zahteve
+
+- Docker in Docker Compose (v2)
+- Najmanj 2 jedri procesorja (CPU) in 4 GB delovnega pomnilnika (RAM) (Whisper `medium` model)
+- Priporočljivo 8 GB RAM-a za `large-v3` Whisper model
+- Namenska WhatsApp telefonska številka (predplačniška SIM kartica je povsem v redu — nikoli ne uporabljajte osebne številke)
+- SMTP e-poštni račun za pošiljanje e-pošte (npr. Gmail z geslom za aplikacije)
+
+**Lokalni razvoj:** Windows 10 with WSL2 + Docker Desktop. Vsi spodnji ukazi se izvajajo znotraj WSL2 (Ubuntu).
+
+---
+
+## Namestitev
+
+### Hitri začetek — čarovnik za namestitev
+
+Najhitrejši način za zagon projekta BelPro je uporaba interaktivnega čarovnika za namestitev. Ta v enem koraku poskrbi za ustvarjanje datoteke `.env`, generiranje skrivnih ključev, zagon storitev in migracijo zbirke podatkov.
+
+```bash
+git clone https://github.com/AndrejMX13/belpro.git
+cd belpro
+bash scripts/setup.sh
+```
+
+Čarovnik bo:
+
+1. Preveril, ali sta na voljo Docker in Docker Compose.
+2. Ustvaril datoteko `.env` iz predloge `.env.example` (ali ohranil obstoječo).
+3. Pozval k vnosu gesel: za PostgreSQL, nadzorno ploščo, n8n in SMTP (izbirno — lahko preskočiš in dodaš kasneje).
+4. Samodejno generiral vse kriptografske ključe (`EMSO_ENCRYPTION_KEY`, `API_SECRET_KEY`, `EVOLUTION_API_KEY`).
+5. Zagnal vse Docker storitve (`docker compose up -d --build`).
+6. Počakal, da PostgreSQL in API postaneta aktivna in dostopna.
+7. Samodejno izvedel Alembic migracije zbirke podatkov.
+8. Izpisal seznam preostalih ročnih korakov (uvoz n8n procesov, nastavitev WhatsAppa).
+
+
+Po zaključku čarovnika nadaljuj s korakom [Nastavite WhatsAppa](#nastavite-whatsappa) spodaj.
+
+---
+
+### Ročna namestitev (alternativno)
+
+To možnost uporabi, če želiš imeti popoln nadzor nad vsakim korakom ali če sistem ponovno nameščaš v obstoječem okolju.
+
+### 1. Kloniranje repozitorija
+
+```bash
+git clone https://github.com/AndrejMX13/belpro.git
+cd belpro
+```
+
+### 2. Ustvarjanje in nastavljanje okoljske datoteke (.env)
+
+```bash
+cp .env.example .env
+```
+
+Uredi datoteko `.env` in izpolni vse vnose. Ključni ukazi za generiranje potrebnih ključev:
+
+```bash
+# Šifrirni ključ za EMŠO (32 bajtov, base64url)
+python -c "import secrets, base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
+
+# Skrivni ključ za API (API secret key)
+python -c "import secrets; print(secrets.token_hex(32))"
+
+# Ključ za Evolution API
+python -c "import secrets; print(secrets.token_hex(24))"
+```
+
+Minimalni zahtevani vnosi v datoteki `.env`:
+
+| Spremenljivka | Opis |
+|----------|-------------|
+| `POSTGRES_PASSWORD` | Močno geslo za PostgreSQL |
+| `DATABASE_URL` | Se mora ujemati s `POSTGRES_USER` / `POSTGRES_PASSWORD` |
+| `EMSO_ENCRYPTION_KEY` | Zgoraj generiran ključ — skrbno ga shrani; če ga izgubiš, EMŠO podatki ne bodo več čitljivi |
+| `API_SECRET_KEY` | Zgoraj generiran ključ |
+| `MANAGER_PASSWORD` | Začetno geslo za prijavo v nadzorno ploščo |
+| `N8N_BASIC_AUTH_USER` | Uporabniško ime za prijavo v n8n vmesnik |
+| `N8N_BASIC_AUTH_PASSWORD` | Geslo za prijavo v n8n vmesnik |
+| `N8N_WEBHOOK_URL` | `http://localhost:5678/` za lokalni razvoj; javni URL, če sistem teče na oddaljenem strežniku |
+| `AUTHENTICATION_API_KEY` | Ključ, ki ga določiš sam — globalni ključ za zaščito Evolution API strežnika (uporablja se za prijavo na `:8180/manager/`) |
+| `EVOLUTION_API_KEY` | Ključ na ravni instance — kopiraj ga s strani s podrobnostmi o instanci, ko v Evolution API-ju ustvariš instanco `belpro` |
+| `SMTP_PASSWORD` | Geslo za SMTP (brez presledkov). Za Gmail: ustvari [Geslo za aplikacijo](https://myaccount.google.com/apppasswords) |
+
+### 3. Zagon vseh storitev
+
+```bash
+docker compose up -d
+```
+
+Prvi zagon traja nekaj minut, ker Faster-Whisper prenaša model (~1.5 GB za različico `medium`).
+
+Preveri, ali vse storitve delujejo pravilno:
+
+```bash
+docker compose ps
+```
+
+Vse storitve morajo kazati status `running` ali `healthy`. Če prenos modela za `whisper` traja dlje časa, je to ob prvem zagonu povsem običajno.
+
+### 4. Izvedba migracij zbirke podatkov
+
+```bash
+docker compose exec api alembic upgrade head
+```
+
+### 5. Prijava v nadzorno ploščo
+
+V brskalniku odpri **http://localhost:80**.
+
+- Uporabniško ime: `admin` (fiksno)
+- Geslo: vrednost spremenljivke `MANAGER_PASSWORD` iz tvoje datoteke `.env`
+
+Po prijavi pojdi v **Nastavitve** in vnesi ime vodje, telefonsko številko, ime NVO in naslov. Ti podatki se bodo izpisali na ustvarjenih PDF poročilih.
+
+---
+
+## Nastavite WhatsAppa
+
+### 6. Ustvari instanco Evolution API
+
+Odpri upravitelja Evolution API na naslovu **http://localhost:8180/manager/**.
+
+1. Prijavi se s svojim ključem `AUTHENTICATION_API_KEY`.
+2. Ustvari instanco z imenom `belpro` (ime se mora ujemati z `EVOLUTION_INSTANCE_NAME` v datoteki `.env`).
+
+QR kode še ne skeniraj — najprej nastavi n8n, da bodo delovni procesi aktivni, preden WhatsApp začne delovati.
+
+### 7. Nastavitev n8n delovnih procesov
+
+Odpri n8n na naslovu **http://localhost:5678** in se prijavi z uporabniškim imenom `N8N_BASIC_AUTH_USER` in geslom `N8N_BASIC_AUTH_PASSWORD`.
+
+1. V n8n vmesniku pod **Settings → API** generiraj n8n API ključ in ga dodaj v `.env` kot `N8N_API_KEY`.
+2. Uvozi datoteke delovnih procesov iz mape `n8n/workflows/`:
+   ```bash
+   ./scripts/n8n_workflows.py import
+   ```
+3. Nastavi prijavne podatke (credentials), kot je opisano v datoteki `n8n/credentials/README.md`.
+4. Aktiviraj vse delovne procese.
+
+### 8. Poveži WhatsApp
+
+Vrni se v upravitelja Evolution API na naslovu **http://localhost:8180/manager/**, odpri instanco `belpro` in skeniraj QR kodo z namenskim WhatsApp telefonom.
+
+Status instance bi se moral spremeniti v `open` (connected). Telefon mora ostati povezan s spletom, da lahko bot prejema sporočila.
+
+> **Znana težava:** Nadzorna plošča včasih ne izriše QR kode v pojavnem oknu, poleg tega pa mora biti v datoteki `docker-compose.yml` nastavljena spremenljivka `CONFIG_SESSION_PHONE_VERSION`, sicer WhatsApp v celoti zavrne povezavo. Če se QR koda ne prikaže ali se instanca nikoli ne poveže, si oglej datoteko **[EVOLUTION_QR_TROUBLESHOOTING_SL.md](EVOLUTION_QR_TROUBLESHOOTING_SL.md)** za celotno diagnozo in vse potrebne ukaze.
+
+### Upravljanje delovnih procesov (Workflows)
+
+Trije n8n delovni procesi (`volunteer_entry`, `manager_approval`, `monthly_reports`) so shranjeni kot JSON datoteke v mapi `n8n/workflows/` in se nalagajo s skripto `scripts/n8n_workflows.py`.
+
+**Predpogoji:** Generiraj API ključ v n8n UI → Nastavitve → API in ga dodaj v `.env`:
+```
+N8N_API_KEY=<your-key>
+```
+Spremenljivka `N8N_WEBHOOK_URL` je privzeto nastavljena na `http://localhost:5678` — če tvoja instanca teče drugje, jo povozi v `.env`.
+
+**Nalaganje delovnih procesov v n8n** (pri sveži namestitvi ali po prenosu posodobitev iz gita):
+```bash
+./scripts/n8n_workflows.py import
+```
+
+**Izvoz delovnih procesov iz n8n nazaj v repozitorij** (po urejanju v n8n vmesniku):
+```bash
+./scripts/n8n_workflows.py export
+git add n8n/workflows/
+git commit -m "chore: update n8n workflow exports"
+```
+
+---
+
+## Dostopne točke (Access points)
+
+| URL | Kaj |
+|-----|------|
+| http://localhost:80 | Nadzorna plošča za vodje (Manager dashboard) |
+| http://localhost:8100/docs | FastAPI Swagger UI (dokumentacija API-ja) |
+| http://localhost:5678 | Urejevalnik delovnih procesov n8n |
+| http://localhost:8180/manager/ | Evolution API (WhatsApp vmesnik) |
+
+---
+
+## Vzdrževanje
+
+### Varnostno kopiranje (Backup)
+
+```bash
+bash scripts/backup.sh
+```
+
+Ustvari varnostno kopijo PostgreSQL zbirke podatkov ter shranjenih fotografij in PDF poročil.
+
+### Obnovitev podatkov (Restore)
+
+```bash
+bash scripts/restore.sh <backup-file>
+```
+
+### Spremljanje dnevniških zapisov storitev (Logs)
+
+```bash
+docker compose logs -f
+docker compose logs -f api
+docker compose logs -f n8n
+```
+
+### Ponovna izgradnja storitve po spremembi kode
+
+```bash
+docker compose up -d --build api
+docker compose up -d --build whisper
+```
+
+### Ponastavitev pozabljenega gesla za nadzorno ploščo
+
+Če si spremenil geslo preko nastavitev na nadzorni plošči in ga pozabil:
+
+```bash
+docker compose exec postgres psql -U belpro -d belpro \
+  -c "UPDATE managers SET password_hash = NULL;"
+```
+
+To ukaz izbriše shranjeno šifrirano geslo, sistem pa ob naslednji prijavi upošteva privzeto geslo `MANAGER_PASSWORD` iz datoteke `.env`.
+
+---
+
+## Varnostne opombe (Security notes)
+
+- **EMŠO** (enotna matična številka občana) je v zbirki podatkov šifrirana z algoritmom AES-256 (encrypted at rest). Nikoli je ne zapisujte v dnevniške zapise (logs) in je nikoli ne izpostavljajte v API odgovorih proti spletnemu vmesniku (frontend).
+- Fotografije se shranjujejo lokalno — nikoli v oblaku.
+- Kriptografski ključ `EMSO_ENCRYPTION_KEY` morate varnostno kopirati ločeno. Če ga izgubite, vsi shranjeni EMŠO podatki postanejo popolnoma nečitljivi.
+- Za odhodno pošto uporabite namenski e-poštni račun (npr. posebej v ta namen ustvarjen Gmail z geslom za aplikacije) in ne svojega osebnega računa.
+- Nikoli ne uporabljajte osebne WhatsApp številke — Evolution API v celoti prevzame upravljanje seje.
+- Datoteka `.env` je vključena v .gitignore in je ne smete nikoli objaviti (commitati) v repozitorij.
+
+---
+
+## Struktura projekta (Project layout)
+
+```
+belpro/
+├── docker-compose.yml
+├── .env.example
+├── n8n/workflows/          # Izvoženi n8n delovni procesi v JSON (objavljeni v repozitoriju)
+├── whisper/                # HTTP ovojnik (wrapper) za Faster-Whisper
+├── api/                    # FastAPI ozadje + generiranje PDF poročil
+├── frontend/               # Nadzorna plošča za vodje (HTML/CSS/JS)
+├── nginx/                  # Nastavitve povratnega posrednika (reverse proxy config)
+├── scripts/                # Skripte: setup.sh, backup.sh, restore.sh
+└── db/                     # init.sql + Alembic migracije
+```
+
+Celotna specifikacija sistema: [SPEC_SL.md](SPEC_SL.md)
+
+---
+
+## Razvoj s pomočjo umetne inteligence
+
+Ta projekt je bil razvit s pomočjo naslednjih orodij, katerih nastavitvene in izhodne datoteke so shranjene v repozitoriju:
+
+- **[Claude Code](https://code.claude.com/docs/en/quickstart)** — Anthropic's AI programerski pomočnik, uporabljen za implementacijo, avtomatizacijo delovnih procesov in iskanje hroščev skozi celoten projekt.
+- **[Serena](https://github.com/oraios/serena)** — MCP strežnik za semantično navigacijo po kodi (iskanje simbolov, navzkrižno sklicevanje). Nastavitve se nahajajo v mapi `.claude/`.
+- **[Graphify](https://github.com/safishamsi/graphify)** — Generator grafov znanja na podlagi AST za mapiranje kode. Izhodni podatki se nahajajo v mapi `graphify-out/`.
+- **[Superpowers](https://github.com/obra/superpowers)** — Vtičnik za Claude Code, ki omogoča strukturirane razvojne procese (brainstorming, načrtovanje, izvajanje s pod-agenti, pregled kode). Nastavitve se nahajajo v mapi `.claude/`.
+- **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp)** — MCP strežnik za upravljanje n8n delovnih procesov neposredno preko Claude Code. Uporabljen je bil za ustvarjanje, posodabljanje in preverjanje procesov brez ročnega urejanja JSON datotek.
+
+---
+
+## Izven obsega - različica v1
+
+- Večuporabniški / SaaS način (Multi-tenant)
+- Več vodij znotraj ene nevladne organizacije
+- Podpora za druge jezike (sistem podpira samo slovenščino)
+- Domorodna mobilna aplikacija (Mobile native app)
+- Integracija z IRSD (Inšpektorat RS za delo) ali drugimi vladnimi sistemi

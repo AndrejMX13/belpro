@@ -1,3 +1,5 @@
+[Slovenščina](SPEC_SL.md)
+
 # Belpro — System Specification
 *Beleženje Prostovoljstva* — Digital Volunteer Diary for Slovenian NGOs
 
@@ -192,7 +194,7 @@ All messages the bot sends via Evolution API are sent *from* the instance's What
 ### 4.4 Volunteer language
 - Slovenian only (all bot messages in Slovenian).
 - Whisper configured for `sl` (Slovenian) language hint, with fallback to auto-detect.
-- Dialect normalisation handled by the n8n AI node (Claude / OpenAI call) that cleans the transcript.
+- Transcript parsing (date, hours, location, activity) is handled by pattern matching in the n8n code node. No LLM normalisation step is implemented.
 
 ---
 
@@ -415,19 +417,30 @@ Two scripts in `scripts/` reduce the phone count needed for end-to-end testing f
 
 **With these scripts,** the volunteer and manager roles can share a single phone (and SIM), cutting the requirement to two phones total. If your phone supports dual SIM, you can go down to one — the second SIM runs the bot, the first SIM handles both volunteer and manager roles.
 
-### `load_env.ps1`
-Loads all variables from `.env` into the current PowerShell session. Run once per session before using the other scripts.
+### `load_env.ps1` / `load_env.sh`
+Loads all variables from `.env` into the current shell session. Run once per session before using the other scripts.
 
+PowerShell (Windows):
 ```
 . .\scripts\load_env.ps1
 ```
+Bash (Linux / WSL2):
+```bash
+source scripts/load_env.sh
+```
 
-### `switch_manager_phone.ps1`
+### `switch_manager_phone.ps1` / `switch_manager_phone.sh`
 Toggles the manager's phone number in the database between a real number and a dummy number.
 
+PowerShell (Windows):
 ```
 .\scripts\switch_manager_phone.ps1 volunteer   # set manager phone to dummy → your phone acts as volunteer
 .\scripts\switch_manager_phone.ps1 manager     # set manager phone to real → your phone acts as manager
+```
+Bash (Linux / WSL2):
+```bash
+bash scripts/switch_manager_phone.sh volunteer
+bash scripts/switch_manager_phone.sh manager
 ```
 
 Uses environment variables `TEST_MANAGER_PHONE` (your real number) and `TEST_VOLUNTEER_PHONE` (a dummy placeholder), plus `MANAGER_PASSWORD` for API auth. See `.env.example` for configuration.
@@ -446,6 +459,7 @@ Requires `MANAGER_PASSWORD` in the environment. Reads from the FastAPI backend a
 
 ### Typical testing workflow
 
+PowerShell (Windows):
 ```
 # 0. Load environment variables (once per session):
 . .\scripts\load_env.ps1
@@ -457,9 +471,20 @@ python scripts/list_pending_entries.py
 # 5. Execute the n8n manual trigger → manager approval message sends
 # 6. Switch phone to manager mode to receive the notification:
 .\scripts\switch_manager_phone.ps1 manager
-# 7. Reply Approve/Odori in WhatsApp → flow completes
+# 7. Reply Approve/Odobri in WhatsApp → flow completes
 # 8. Switch back for the next volunteer test:
 .\scripts\switch_manager_phone.ps1 volunteer
+```
+Bash (Linux / WSL2):
+```bash
+# 0. Load environment variables (once per session):
+source scripts/load_env.sh
+# 1–5. same as above
+# 6. Switch phone to manager mode:
+bash scripts/switch_manager_phone.sh manager
+# 7. Reply Odobri in WhatsApp → flow completes
+# 8. Switch back:
+bash scripts/switch_manager_phone.sh volunteer
 ```
 
 ### Manual trigger nodes in n8n
