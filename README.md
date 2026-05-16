@@ -185,6 +185,27 @@ Open n8n at **http://localhost:5678** and log in with `N8N_BASIC_AUTH_USER` / `N
 3. Generate an n8n API key under **Settings → API**, and add it to `.env` as `N8N_API_KEY`.
 4. Activate all workflows.
 
+### Workflow management
+
+The three n8n workflows (`volunteer_entry`, `manager_approval`, `monthly_reports`) are stored as JSON in `n8n/workflows/` and loaded with `scripts/n8n_workflows.py`.
+
+**Prerequisites:** Generate an API key in n8n UI → Settings → API and add it to `.env`:
+```
+N8N_API_KEY=<your-key>
+```
+
+**Load workflows into n8n** (fresh install or after pulling updates from git):
+```bash
+./scripts/n8n_workflows.py import
+```
+
+**Export workflows from n8n to the repository** (after editing in the n8n UI):
+```bash
+./scripts/n8n_workflows.py export
+git add n8n/workflows/
+git commit -m "chore: update n8n workflow exports"
+```
+
 ---
 
 ## Access points

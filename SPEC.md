@@ -323,6 +323,10 @@ belpro/
 │   │   ├── manager_approval.json      # Approval flow
 │   │   └── monthly_reports.json       # Cron → PDF → email
 │   └── credentials/                   # Gitignored, example provided
+
+> **Canonical workflow source:** `n8n/workflows/` is the source of truth for all workflow definitions.
+> On a fresh install, load them into n8n with `./scripts/n8n_workflows.py import`.
+> After editing a workflow in the n8n UI, export with `./scripts/n8n_workflows.py export` and commit the result.
 │
 ├── whisper/
 │   ├── Dockerfile
