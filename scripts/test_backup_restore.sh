@@ -31,7 +31,7 @@ VOLUNTEER_RESP=$(curl -sf -X POST "${API}/api/volunteers" \
     "phone": "+38641999888"
   }')
 
-VOLUNTEER_ID=$(echo "${VOLUNTEER_RESP}" | python3 -c "import sys,json; print(json.load(sys.stdin)['id'])")
+VOLUNTEER_ID=$(echo "${VOLUNTEER_RESP}" | python -c "import sys,json; print(json.load(sys.stdin)['id'])")
 echo "    Seeded volunteer: ${VOLUNTEER_ID}"
 
 # 3. Run backup
@@ -55,7 +55,7 @@ bash scripts/restore.sh "${SNAPSHOT}"
 
 # 7. Verify the seeded volunteer is present
 echo "[7] Verifying restore..."
-ITEMS=$(curl -sf "${API}/api/volunteers" ${AUTH} | python3 -c "import sys,json; print(json.load(sys.stdin)['total'])")
+ITEMS=$(curl -sf "${API}/api/volunteers" ${AUTH} | python -c "import sys,json; print(json.load(sys.stdin)['total'])")
 echo "    Volunteers after restore: ${ITEMS}"
 
 curl -sf "${API}/api/volunteers/${VOLUNTEER_ID}" ${AUTH} > /dev/null \

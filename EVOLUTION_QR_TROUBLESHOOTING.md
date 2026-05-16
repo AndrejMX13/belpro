@@ -95,7 +95,7 @@ The dashboard won't show the QR. Use this instead — it saves the QR as an HTML
 ```bash
 curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \
   http://localhost:8180/instance/connect/belpro \
-  | python3 /tmp/makeqr.py \
+  | python /tmp/makeqr.py \
   && cp /tmp/qr.html /path/to/BelPro/qr.html
 ```
 
@@ -122,7 +122,7 @@ Just re-run step 5 — no need to delete/recreate the instance:
 ```bash
 curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \
   http://localhost:8180/instance/connect/belpro \
-  | python3 /tmp/makeqr.py \
+  | python /tmp/makeqr.py \
   && cp /tmp/qr.html /mnt/d/Andrej/vsCode-workspace/BelPro/qr.html \
   && echo "Open qr.html in browser"
 ```

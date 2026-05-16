@@ -45,4 +45,4 @@ RESULT=$(curl -sf -X PATCH "$API_URL" \
     -H "Content-Type: application/json" \
     -d "{\"phone\":\"$PHONE\"}")
 
-echo "Done. Manager phone: $(echo "$RESULT" | python3 -c "import sys,json; print(json.load(sys.stdin)['phone'])")"
+echo "Done. Manager phone: $(echo "$RESULT" | python -c "import sys,json; print(json.load(sys.stdin)['phone'])")"

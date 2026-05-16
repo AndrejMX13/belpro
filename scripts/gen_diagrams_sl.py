@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 """Generates three architecture diagram PNGs for Belpro_Arhitektura_Sl.docx.
 
 Output: scripts/diagrams/fig1_arhitektura.png

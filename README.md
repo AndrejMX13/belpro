@@ -104,13 +104,13 @@ Edit `.env` and fill in every value. Key ones to generate:
 
 ```bash
 # EMSO encryption key (32 bytes, base64url)
-python3 -c "import secrets, base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
+python -c "import secrets, base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
 
 # API secret key
-python3 -c "import secrets; print(secrets.token_hex(32))"
+python -c "import secrets; print(secrets.token_hex(32))"
 
 # Evolution API key
-python3 -c "import secrets; print(secrets.token_hex(24))"
+python -c "import secrets; print(secrets.token_hex(24))"
 ```
 
 Minimum required values in `.env`:

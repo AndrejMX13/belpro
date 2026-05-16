@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # BelPro initial setup wizard.
 # Run once from the project root: ./scripts/setup.sh
-# Requires: docker, docker compose, python3 or openssl (for secret generation).
+# Requires: docker, docker compose, python or openssl (for secret generation).
 
 set -euo pipefail
 
@@ -22,8 +22,8 @@ die()     { echo -e "${RED}ERROR:${RESET} $*" >&2; exit 1; }
 
 # ── Helpers ────────────────────────────────────────────────────────────────
 gen_hex32() {
-  if command -v python3 &>/dev/null; then
-    python3 -c "import secrets; print(secrets.token_hex(32))"
+  if command -v python &>/dev/null; then
+    python -c "import secrets; print(secrets.token_hex(32))"
   else
     openssl rand -hex 32
   fi
@@ -31,16 +31,16 @@ gen_hex32() {
 
 gen_b64_key() {
   # 32-byte base64url-encoded key for AES-256 (EMSO_ENCRYPTION_KEY)
-  if command -v python3 &>/dev/null; then
-    python3 -c "import secrets,base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
+  if command -v python &>/dev/null; then
+    python -c "import secrets,base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
   else
     openssl rand -base64 32 | tr '+/' '-_' | tr -d '='
   fi
 }
 
 gen_hex24() {
-  if command -v python3 &>/dev/null; then
-    python3 -c "import secrets; print(secrets.token_hex(24))"
+  if command -v python &>/dev/null; then
+    python -c "import secrets; print(secrets.token_hex(24))"
   else
     openssl rand -hex 24
   fi
