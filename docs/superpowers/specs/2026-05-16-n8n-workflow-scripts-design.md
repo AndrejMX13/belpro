@@ -32,7 +32,7 @@ No other files added or changed by this feature.
 ./scripts/n8n_workflows.py          # prints usage and exits
 ```
 
-The script is executable (`chmod +x`) and uses `#!/usr/bin/env python3`.
+The script is executable (`chmod +x`) and uses `#!/usr/bin/env python`.
 
 ---
 
