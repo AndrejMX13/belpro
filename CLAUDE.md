@@ -177,7 +177,8 @@ docker compose logs -f
 - **Git remote is named `central`**, not `origin`. Use `git push central <branch>`.
 - **AI-assisted commits** must include a `Co-Authored-By` trailer. Use the actual model from session context:
   - Anthropic model (Claude): `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>` (substitute the actual model name)
-  - Third-party or unknown model: `Co-Authored-By: AI Assistant <noreply@ai>`
+  - Third-party model: `Co-Authored-By: <model name> <provider noreply email, or noreply@ai if unknown>`
+  - Unknown model: `Co-Authored-By: AI Assistant <noreply@ai>`
 - **Serena `replace_symbol_body` corrupts decorated functions and module-level strings.** Use the Edit tool for all in-place code edits instead.
 
 ### Known packaging pins
