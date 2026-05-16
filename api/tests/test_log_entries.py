@@ -241,6 +241,42 @@ async def test_delete_entry_not_found(client: AsyncClient, auth: dict) -> None:
     assert r.status_code == 404
 
 
+@pytest.mark.asyncio
+async def test_delete_entry_happy_path(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.PENDING_VOLUNTEER)
+    r = await client.delete(f"/api/log-entries/{e.id}", headers=auth)
+    assert r.status_code == 204
+    r2 = await client.get(f"/api/log-entries/{e.id}", headers=auth)
+    assert r2.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_delete_entry_wrong_status_returns_409(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.APPROVED)
+    r = await client.delete(f"/api/log-entries/{e.id}", headers=auth)
+    assert r.status_code == 409
+
+
+@pytest.mark.asyncio
+async def test_update_approved_entry_returns_409(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.APPROVED)
+    r = await client.patch(
+        f"/api/log-entries/{e.id}",
+        headers=auth,
+        json={"activity_description": "Nova vsebina"},
+    )
+    assert r.status_code == 409
+
+
 async def test_photo_upload_unsupported_extension_returns_400_or_422(
     client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
 ) -> None:

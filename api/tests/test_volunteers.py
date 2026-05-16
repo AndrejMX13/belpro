@@ -141,6 +141,27 @@ async def test_delete_volunteer_not_found(client: AsyncClient, auth: dict) -> No
     assert r.status_code == 404
 
 
+@pytest.mark.asyncio
+async def test_delete_volunteer_happy_path(
+    client: AsyncClient, auth: dict, volunteer_factory
+) -> None:
+    v = await volunteer_factory()
+    r = await client.delete(f"/api/volunteers/{v.id}", headers=auth)
+    assert r.status_code == 204
+    r2 = await client.get(f"/api/volunteers/{v.id}", headers=auth)
+    assert r2.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_delete_volunteer_with_entries_returns_409(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    await log_entry_factory(v.id)
+    r = await client.delete(f"/api/volunteers/{v.id}", headers=auth)
+    assert r.status_code == 409
+
+
 async def test_check_emso_not_registered(client: AsyncClient, auth: dict) -> None:
     r = await client.post(
         "/api/volunteers/check-emso",
