@@ -72,7 +72,32 @@ def cmd_import(base_url: str, api_key: str) -> None:
 
 
 def cmd_export(base_url: str, api_key: str) -> None:
-    pass
+    """Pull all workflows from n8n and write to n8n/workflows/."""
+    status, data = api_request("GET", f"{base_url}/api/v1/workflows", api_key)
+    if status != 200:
+        print(f"ERROR: GET /api/v1/workflows returned HTTP {status}: {data}")
+        sys.exit(1)
+
+    workflows = data.get("data", [])
+    if not workflows:
+        print("No workflows found in n8n.")
+        return
+
+    count = 0
+    for wf in workflows:
+        wf_id = wf["id"]
+        name = wf["name"]
+        status, full = api_request("GET", f"{base_url}/api/v1/workflows/{wf_id}", api_key)
+        if status != 200:
+            print(f"  x {wf_id}: GET /{wf_id} returned HTTP {status}")
+            continue
+        filename = make_filename(name) + ".json"
+        out_path = WORKFLOWS_DIR / filename
+        out_path.write_text(json.dumps(full, indent=2, ensure_ascii=False), encoding="utf-8")
+        print(f"  ok {filename}")
+        count += 1
+
+    print(f"\n{count} workflow(s) exported to n8n/workflows/")
 
 
 def main() -> None:
