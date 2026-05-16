@@ -60,7 +60,103 @@ def api_request(method: str, url: str, api_key: str, payload: dict | None = None
 
 
 def cmd_import(base_url: str, api_key: str) -> None:
-    pass
+    """Load each repo workflow file into n8n (upsert + activate)."""
+    files = sorted(p for p in WORKFLOWS_DIR.glob("*.json") if p.name != ".gitkeep")
+    if not files:
+        print("No workflow JSON files found in n8n/workflows/")
+        return
+
+    n8n_by_name: dict[str, str] = {}
+    cursor = None
+    while True:
+        url = f"{base_url}/api/v1/workflows"
+        if cursor:
+            url += f"?cursor={cursor}"
+        list_status, data = api_request("GET", url, api_key)
+        if list_status != 200:
+            print(f"ERROR: GET /api/v1/workflows returned HTTP {list_status}: {data}")
+            sys.exit(1)
+        for wf in data.get("data", []):
+            n8n_by_name[wf["name"]] = wf["id"]
+        cursor = data.get("nextCursor")
+        if not cursor:
+            break
+
+    ok = 0
+    # Fields to preserve when upserting (read-only fields are excluded)
+    allowed_top_level = {
+        "name",
+        "nodes",
+        "connections",
+        "settings",
+        "description",
+        "staticData",
+        "pinData",
+    }
+    # Valid settings keys (others are API-internal, read-only, or not accepted by the API)
+    allowed_settings = {
+        "executionOrder",
+        "saveDataErrorExecution",
+        "saveDataSuccessExecution",
+        "saveManualExecutions",
+        "saveExecutionProgress",
+        "timezone",
+    }
+
+    for path in files:
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except Exception as exc:
+            print(f"  x {path.name}: could not parse JSON ({exc})")
+            continue
+
+        name = payload.get("name", "")
+        if not name:
+            print(f"  ! {path.name}: missing or empty 'name' field - skipping")
+            continue
+
+        # Filter to only allowed fields
+        filtered_payload = {k: v for k, v in payload.items() if k in allowed_top_level}
+
+        # Clean up description: convert None to empty string
+        if "description" in filtered_payload and filtered_payload["description"] is None:
+            filtered_payload["description"] = ""
+
+        # Filter settings to only allowed keys
+        if "settings" in filtered_payload and isinstance(filtered_payload["settings"], dict):
+            filtered_payload["settings"] = {
+                k: v
+                for k, v in filtered_payload["settings"].items()
+                if k in allowed_settings
+            }
+
+        if name in n8n_by_name:
+            wf_id = n8n_by_name[name]
+            upsert_status, resp = api_request(
+                "PUT", f"{base_url}/api/v1/workflows/{wf_id}", api_key, filtered_payload
+            )
+            action = "updated"
+        else:
+            upsert_status, resp = api_request(
+                "POST", f"{base_url}/api/v1/workflows", api_key, filtered_payload
+            )
+            wf_id = resp.get("id")
+            action = "created"
+
+        if upsert_status not in (200, 201):
+            print(f"  x {name}: HTTP {upsert_status} - {resp}")
+            continue
+
+        act_status, _ = api_request(
+            "POST", f"{base_url}/api/v1/workflows/{wf_id}/activate", api_key
+        )
+        if act_status not in (200, 201):
+            print(f"  ! {name}: {action} but activation failed (HTTP {act_status})")
+        else:
+            print(f"  ok {name}: {action} and activated")
+        ok += 1
+
+    print(f"\n{ok}/{len(files)} workflow(s) imported successfully.")
 
 
 def cmd_export(base_url: str, api_key: str) -> None:
