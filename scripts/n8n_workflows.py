@@ -8,7 +8,6 @@ Usage:
 
 import json
 import pathlib
-import re
 import sys
 import urllib.error
 import urllib.request
@@ -32,13 +31,6 @@ def load_env(env_path: pathlib.Path) -> dict:
             key, _, value = line.partition("=")
             env[key.strip()] = value.strip().strip("'\"")
     return env
-
-
-def make_filename(name: str) -> str:
-    """Derive a safe filename slug from a workflow name (used by cmd_export)."""
-    slug = name.lower().replace(" ", "_")
-    slug = re.sub(r"[^a-z0-9_]", "", slug)
-    return slug
 
 
 def api_request(method: str, url: str, api_key: str, payload: dict | None = None) -> tuple[int, dict]:
@@ -78,12 +70,21 @@ def cmd_export(base_url: str, api_key: str) -> None:
         print("No workflow JSON files found in n8n/workflows/")
         return
 
-    status, data = api_request("GET", f"{base_url}/api/v1/workflows", api_key)
-    if status != 200:
-        print(f"ERROR: GET /api/v1/workflows returned HTTP {status}: {data}")
-        sys.exit(1)
-
-    n8n_by_name = {wf["name"]: wf["id"] for wf in data.get("data", [])}
+    n8n_by_name: dict[str, str] = {}
+    cursor = None
+    while True:
+        url = f"{base_url}/api/v1/workflows"
+        if cursor:
+            url += f"?cursor={cursor}"
+        list_status, data = api_request("GET", url, api_key)
+        if list_status != 200:
+            print(f"ERROR: GET /api/v1/workflows returned HTTP {list_status}: {data}")
+            sys.exit(1)
+        for wf in data.get("data", []):
+            n8n_by_name[wf["name"]] = wf["id"]
+        cursor = data.get("nextCursor")
+        if not cursor:
+            break
     repo_names = set()
     count = 0
 
@@ -94,6 +95,9 @@ def cmd_export(base_url: str, api_key: str) -> None:
             print(f"  x {path.name}: could not parse JSON ({exc})")
             continue
         name = payload.get("name", "")
+        if not name:
+            print(f"  ! {path.name}: missing or empty 'name' field - skipping")
+            continue
         repo_names.add(name)
 
         if name not in n8n_by_name:
@@ -101,9 +105,9 @@ def cmd_export(base_url: str, api_key: str) -> None:
             continue
 
         wf_id = n8n_by_name[name]
-        status, full = api_request("GET", f"{base_url}/api/v1/workflows/{wf_id}", api_key)
-        if status != 200:
-            print(f"  x {path.name}: GET /{wf_id} returned HTTP {status}")
+        fetch_status, full = api_request("GET", f"{base_url}/api/v1/workflows/{wf_id}", api_key)
+        if fetch_status != 200:
+            print(f"  x {path.name}: GET /{wf_id} returned HTTP {fetch_status}")
             continue
 
         path.write_text(json.dumps(full, indent=2, ensure_ascii=False), encoding="utf-8")
