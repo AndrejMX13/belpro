@@ -18,6 +18,7 @@ api/.env.test
 
 # Temporary files, no need for commit
 temp/
+# Local development issue tracker — not versioned
 OPEN_ISSUES.md
 
 # -----------------------------------------------------------------------------
