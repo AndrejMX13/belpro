@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 560" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#6B7280"/>
+    </marker>
+    <marker id="arr-green" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#25D366"/>
+    </marker>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.12"/>
+    </filter>
+
+    <linearGradient id="grad-volunteer" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#9CA3AF"/><stop offset="100%" stop-color="#6B7280"/>
+    </linearGradient>
+    <linearGradient id="grad-evo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2DD44C"/><stop offset="100%" stop-color="#1DA850"/>
+    </linearGradient>
+    <linearGradient id="grad-n8n" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#F7557F"/><stop offset="100%" stop-color="#EA4B71"/>
+    </linearGradient>
+    <linearGradient id="grad-whisper" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#6D28D9"/>
+    </linearGradient>
+    <linearGradient id="grad-pg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5B8DEF"/><stop offset="100%" stop-color="#3367D6"/>
+    </linearGradient>
+    <linearGradient id="grad-smtp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FBBF24"/><stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="grad-api" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14B8A6"/><stop offset="100%" stop-color="#0D9488"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="780" height="560" rx="12" fill="#FAFBFC" stroke="#E5E7EB" stroke-width="1"/>
+
+  <!-- ===== BOXES ===== -->
+
+  <!-- Volunteer (top center) -->
+  <rect x="260" y="24" width="260" height="46" rx="10" fill="url(#grad-volunteer)" filter="url(#shadow)"/>
+  <text x="390" y="42" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Prostovoljec</text>
+  <text x="390" y="58" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="11">WhatsApp</text>
+
+  <!-- Evolution API -->
+  <rect x="250" y="110" width="280" height="46" rx="10" fill="url(#grad-evo)" filter="url(#shadow)"/>
+  <text x="390" y="128" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">Evolution API</text>
+  <text x="390" y="144" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="11">WhatsApp vmesnik (Gateway)</text>
+
+  <!-- n8n Workflow -->
+  <rect x="270" y="206" width="240" height="46" rx="10" fill="url(#grad-n8n)" filter="url(#shadow)"/>
+  <text x="390" y="224" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">n8n Workflow</text>
+  <text x="390" y="240" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="11">Pogon delovnih procesov</text>
+
+  <!-- Faster-Whisper (left of n8n) -->
+  <rect x="44" y="206" width="186" height="46" rx="10" fill="url(#grad-whisper)" filter="url(#shadow)"/>
+  <text x="137" y="224" text-anchor="middle" fill="#fff" font-size="13" font-weight="600">Faster-Whisper</text>
+  <text x="137" y="240" text-anchor="middle" fill="rgba(255,255,255,0.8)" font-size="11">Pretvorba govora v besedilo (CPU)</text>
+
+  <!-- PostgreSQL -->
+  <rect x="124" y="326" width="180" height="46" rx="10" fill="url(#grad-pg)" filter="url(#shadow)"/>
+  <text x="214" y="344" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">PostgreSQL 18</text>
+  <text x="214" y="360" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="11">Zbirka podatkov</text>
+
+  <!-- SMTP / Email -->
+  <rect x="384" y="326" width="166" height="46" rx="10" fill="url(#grad-smtp)" filter="url(#shadow)"/>
+  <text x="467" y="344" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">SMTP</text>
+  <text x="467" y="360" text-anchor="middle" fill="rgba(255,255,255,0.9)" font-size="11">Dostava e-pošte</text>
+
+  <!-- FastAPI + Dashboard -->
+  <rect x="476" y="450" width="260" height="46" rx="10" fill="url(#grad-api)" filter="url(#shadow)"/>
+  <text x="606" y="468" text-anchor="middle" fill="#fff" font-size="14" font-weight="600">FastAPI + Spletna nadzorna plošča</text>
+  <text x="606" y="484" text-anchor="middle" fill="rgba(255,255,255,0.85)" font-size="11">Nadzorna plošča za vodje in API</text>
+
+  <!-- ===== ARROWS ===== -->
+
+  <!-- Volunteer → Evolution API -->
+  <line x1="390" y1="70" x2="390" y2="106" stroke="#6B7280" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Evolution API → n8n -->
+  <line x1="390" y1="156" x2="390" y2="202" stroke="#6B7280" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Faster-Whisper → n8n -->
+  <line x1="230" y1="229" x2="266" y2="229" stroke="#6B7280" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- n8n → PostgreSQL -->
+  <path d="M330,252 L330,290 L214,290 L214,322" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- n8n → SMTP -->
+  <path d="M450,252 L450,290 L467,290 L467,322" stroke="#6B7280" stroke-width="2" fill="none" marker-end="url(#arr)"/>
+
+  <!-- Evolution API → FastAPI (long right-side arrow) -->
+  <path d="M530,133 L660,133 L660,446" stroke="#25D366" stroke-width="2" stroke-dasharray="6,3" fill="none" marker-end="url(#arr-green)"/>
+
+  <!-- n8n → FastAPI (branch right then down) -->
+  <path d="M510,229 L660,229" stroke="#6B7280" stroke-width="2" fill="none"/>
+  <line x1="660" y1="229" x2="660" y2="446" stroke="#6B7280" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ===== LEGEND ===== -->
+  <rect x="16" y="470" width="240" height="70" rx="6" fill="#F9FAFB" stroke="#E5E7EB" stroke-width="1"/>
+  <text x="28" y="490" fill="#374151" font-size="11" font-weight="600">Legenda</text>
+  <line x1="28" y1="506" x2="60" y2="506" stroke="#6B7280" stroke-width="2"/>
+  <text x="66" y="510" fill="#6B7280" font-size="10">Podatki / klic API</text>
+  <line x1="28" y1="524" x2="60" y2="524" stroke="#25D366" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="66" y="528" fill="#6B7280" font-size="10">Sporočilo WhatsApp</text>
+</svg>

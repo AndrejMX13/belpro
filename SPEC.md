@@ -33,7 +33,7 @@ Each NGO runs its own independent Belpro instance. Volunteers interact exclusive
 | Database | PostgreSQL (self-hosted) | All persistent data |
 | Dashboard | FastAPI + HTML/JS/CSS (nginx) | Manager web UI |
 | Email | Generic SMTP (n8n Send Email node) | Monthly PDFs, notifications |
-| PDF generation | Python (WeasyPrint or ReportLab) | Monthly summary documents |
+| PDF generation | Python (WeasyPrint) | Monthly summary documents |
 | Containerisation | Docker Compose | All services |
 
 **Design principle:** Use existing n8n nodes and standard services wherever possible. Custom code only where no node exists.
@@ -560,7 +560,8 @@ python -m pytest tests/workflow/ -v
 |------|---------|
 | `tests/workflow/conftest.py` | Session-scoped `api_client`/`n8n_client` (httpx); function-scoped `test_volunteer` fixture with direct-SQL teardown |
 | `tests/workflow/helpers.py` | WhatsApp payload builders (`make_text_payload`, `make_response_payload`), `post_to_webhook`, polling utilities |
-| `tests/workflow/test_volunteer_entry.py` | 4 integration scenarios (see below) |
+| `tests/workflow/test_volunteer_entry.py` | 6 integration scenarios (see below) |
+| `tests/workflow/test_photo_upload.py` | Direct API tests for photo upload endpoint (bypasses n8n) |
 
 ### Scenarios
 
@@ -568,7 +569,9 @@ python -m pytest tests/workflow/ -v
 |------|---------------|
 | `test_happy_path_text_confirm` | Volunteer sends text entry → confirms ("1") → entry reaches `pending_manager` |
 | `test_edit_path` | Volunteer sends text → edits ("2") → sends corrected text → confirms → original entry deleted, corrected entry reaches `pending_manager` |
-| `test_cancel_path` | Volunteer sends text → cancels ("3") → entry deleted from DB |
+| `test_cancel_path` | Volunteer sends text → cancels ("4") → entry deleted from DB |
+| `test_add_photos_then_confirm` | Volunteer chooses "Dodaj slike" ("3") → confirms ("1") — entry reaches `pending_manager` without a photo |
+| `test_add_photos_then_cancel` | Volunteer chooses "Dodaj slike" ("3") → cancels ("4") from photo sub-menu — entry deleted |
 | `test_unknown_volunteer_creates_no_entry` | Message from unregistered phone → no log entry created |
 
 ### Design notes

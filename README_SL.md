@@ -21,7 +21,7 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 ## Kako deluje
 
-![BelPro Arhitektura](docs/images/architecture.svg)
+![BelPro Arhitektura](docs/images/architecture_sl.svg)
 
 1. Prostovoljec pošlje glasovno sporočilo, fotografijo ali tekstovno sporočilo na WhatsApp številko nevladne organizacije (NVO).
 
@@ -29,7 +29,7 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 3. Po potrditvi se vnos premakne v stanje pending_manager (čaka na potrditev), vodja pa prejme WhatsApp obvestilo z gumboma Odobri / Zavrni.
 
-4. 28. dne v mesecu se samodejno ustvarijo PDF poročila in pošljejo po e-pošti — eno za vsakega prostovoljca (za predložitev na CSD) in zbirno poročilo za vodjo.
+4. Vsakega 28. dne v mesecu se samodejno ustvarijo PDF poročila in pošljejo po e-pošti — eno za vsakega prostovoljca (za predložitev na CSD) in zbirno poročilo za vodjo.
 
 ---
 

@@ -21,7 +21,7 @@ Vsaka NVO poganja lastno, neodvisno instanco BelPro. Prostovoljci komunicirajo i
 
 ## 2. Pregled arhitekture
 
-![BelPro Arhitektura](docs/images/architecture.svg)
+![BelPro Arhitektura](docs/images/architecture_sl.svg)
 
 ### Komponente
 
@@ -33,7 +33,7 @@ Vsaka NVO poganja lastno, neodvisno instanco BelPro. Prostovoljci komunicirajo i
 | Zbirka podatkov | PostgreSQL (samogostovana) | Vsi trajni podatki |
 | Nadzorna plošča | FastAPI + HTML/JS/CSS (nginx) | Spletni vmesnik za vodje |
 | E-pošta | Splošni SMTP (n8n vozlišče Send Email) | Mesečni PDF-ji, obvestila |
-| Ustvarjanje PDF | Python (WeasyPrint ali ReportLab) | Mesečna zbirna dokumenta |
+| Ustvarjanje PDF | Python (WeasyPrint) | Mesečna zbirna dokumenta |
 | Vsebnikovanje | Docker Compose | Vse storitve |
 
 **Načrtovalsko načelo:** Kjer je mogoče, se uporabljajo obstoječa n8n vozlišča in standardne storitve. Lastna koda samo tam, kjer vozlišče ne obstaja.
@@ -560,7 +560,8 @@ python -m pytest tests/workflow/ -v
 |------|---------|
 | `tests/workflow/conftest.py` | `api_client`/`n8n_client` v obsegu seje (httpx); vstopna točka `test_volunteer` v obsegu funkcije z neposrednim čiščenjem SQL |
 | `tests/workflow/helpers.py` | Gradniki WhatsApp paketov (`make_text_payload`, `make_response_payload`), `post_to_webhook`, pripomočki za anketiranje |
-| `tests/workflow/test_volunteer_entry.py` | 4 integracijski scenariji (glej spodaj) |
+| `tests/workflow/test_volunteer_entry.py` | 6 integracijskih scenarijev (glej spodaj) |
+| `tests/workflow/test_photo_upload.py` | Neposredni testi API za nalaganje fotografij (mimo n8n) |
 
 ### Scenariji
 
@@ -568,7 +569,9 @@ python -m pytest tests/workflow/ -v
 |------|---------------|
 | `test_happy_path_text_confirm` | Prostovoljec pošlje besedilni vnos → potrdi ("1") → vnos doseže `pending_manager` |
 | `test_edit_path` | Prostovoljec pošlje besedilo → uredi ("2") → pošlje popravljeno besedilo → potrdi → izvirni vnos izbrisan, popravljeni vnos doseže `pending_manager` |
-| `test_cancel_path` | Prostovoljec pošlje besedilo → prekliče ("3") → vnos izbrisan iz zbirke |
+| `test_cancel_path` | Prostovoljec pošlje besedilo → prekliče ("4") → vnos izbrisan iz zbirke |
+| `test_add_photos_then_confirm` | Prostovoljec izbere "Dodaj slike" ("3") → potrdi ("1") — vnos doseže `pending_manager` brez fotografije |
+| `test_add_photos_then_cancel` | Prostovoljec izbere "Dodaj slike" ("3") → prekliče ("4") iz podmeni — vnos izbrisan |
 | `test_unknown_volunteer_creates_no_entry` | Sporočilo z neregistrirane številke → ni ustvarjenega dnevniškega zapisa |
 
 ### Opombe o zasnovi
