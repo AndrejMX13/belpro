@@ -135,10 +135,77 @@ async def test_cancel_path(
     # Wait for n8n to persist static state before sending next turn.
     await asyncio.sleep(2)
 
-    # Turn 2: volunteer replies "3" (Prekliči / cancel).
+    # Turn 2: volunteer replies "4" (Prekliči / cancel).
     await post_to_webhook(n8n_client, make_response_payload(phone, "cancel"))
 
     # Workflow deletes the entry.
+    await poll_for_entry_gone(api_client, entry_id)
+
+
+@pytest.mark.asyncio
+async def test_add_photos_then_confirm(
+    api_client: httpx.AsyncClient,
+    n8n_client: httpx.AsyncClient,
+    test_volunteer: dict,
+):
+    """
+    Volunteer chooses 'Dodaj slike' (3) then confirms (1) without uploading a photo.
+    Entry must reach pending_manager — photo sub-mode does not block confirmation.
+    """
+    phone = test_volunteer["phone"]
+    volunteer_id = test_volunteer["id"]
+
+    # Turn 1: send text entry.
+    await post_to_webhook(n8n_client, make_text_payload(phone, _ENTRY_TEXT))
+    entry = await poll_for_entry(api_client, volunteer_id)
+    assert entry["status"] == "pending_volunteer"
+    entry_id = entry["id"]
+
+    await asyncio.sleep(2)
+
+    # Turn 2: volunteer chooses "3" (Dodaj slike) — enters awaiting_photos mode.
+    await post_to_webhook(n8n_client, make_response_payload(phone, "add_photos"))
+
+    # Wait for n8n to persist mode=awaiting_photos in static state.
+    await asyncio.sleep(2)
+
+    # Turn 3: volunteer confirms ("1") while in photo sub-mode.
+    await post_to_webhook(n8n_client, make_response_payload(phone, "confirm"))
+
+    confirmed = await poll_for_entry_status(api_client, entry_id, "pending_manager")
+    assert confirmed["id"] == entry_id
+
+
+@pytest.mark.asyncio
+async def test_add_photos_then_cancel(
+    api_client: httpx.AsyncClient,
+    n8n_client: httpx.AsyncClient,
+    test_volunteer: dict,
+):
+    """
+    Volunteer chooses 'Dodaj slike' (3) then cancels (4) from the photo sub-menu.
+    Entry must be deleted — cancel works the same in both the main menu and photo sub-mode.
+    """
+    phone = test_volunteer["phone"]
+    volunteer_id = test_volunteer["id"]
+
+    # Turn 1: send text entry.
+    await post_to_webhook(n8n_client, make_text_payload(phone, _ENTRY_TEXT))
+    entry = await poll_for_entry(api_client, volunteer_id)
+    assert entry["status"] == "pending_volunteer"
+    entry_id = entry["id"]
+
+    await asyncio.sleep(2)
+
+    # Turn 2: volunteer chooses "3" (Dodaj slike).
+    await post_to_webhook(n8n_client, make_response_payload(phone, "add_photos"))
+
+    # Wait for n8n to persist mode=awaiting_photos in static state.
+    await asyncio.sleep(2)
+
+    # Turn 3: volunteer cancels ("4") from the photo sub-menu.
+    await post_to_webhook(n8n_client, make_response_payload(phone, "cancel"))
+
     await poll_for_entry_gone(api_client, entry_id)
 
 

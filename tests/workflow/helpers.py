@@ -32,9 +32,11 @@ def make_text_payload(phone: str, text: str) -> dict:
 def make_response_payload(phone: str, response_type: str) -> dict:
     """
     Build a volunteer response payload. response_type must be one of:
-    'confirm' (sends text "1"), 'edit' (sends "2"), 'cancel' (sends "3").
+    'confirm' (sends "1"), 'edit' (sends "2"), 'add_photos' (sends "3"), 'cancel' (sends "4").
+    Maps to the volunteer confirmation dialog: 1 Potrdi, 2 Popravi, 3 Dodaj slike, 4 Prekliči.
+    In the photo sub-menu "3" means Več slik and "4" means Prekliči — same numeric values.
     """
-    text_map = {"confirm": "1", "edit": "2", "cancel": "3"}
+    text_map = {"confirm": "1", "edit": "2", "add_photos": "3", "cancel": "4"}
     if response_type not in text_map:
         raise ValueError(f"response_type must be confirm/edit/cancel, got {response_type!r}")
     return make_text_payload(phone, text_map[response_type])
