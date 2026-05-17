@@ -2,6 +2,8 @@
 
 # Evolution API — Odpravljanje težav s QR kodo WhatsApp
 
+> **Stanje (2026-05-17):** Nadgrajeno na Evolution API v2.3.7. `CONFIG_SESSION_PHONE_VERSION` je še vedno prisoten in zahtevan v delujoči konfiguraciji. Vzroka #2 in #3 ter postopek ponovne vzpostavitve povezave (korak 5) ostajajo relevantni.
+
 ## Težava
 
 Po nastavitvi nove instance Evolution API z integracijo Baileys se QR koda ni nikoli pojavila. Simptomi:
@@ -32,7 +34,7 @@ environment:
   CONFIG_SESSION_PHONE_VERSION: "2.3000.1035194821"
 ```
 
-> **Opomba:** Ta spremenljivka je bila odstranjena v Evolution API v2.3.1+. Potrebna je samo za v2.2.x.
+> **Opomba:** Spremenljivka je še vedno prisotna in potrebna v v2.3.7 — ne odstranjuj je.
 
 ### 2. Napaka v uporabniškem vmesniku nadzorne plošče (ločena težava)
 
@@ -53,7 +55,7 @@ Popravljeno na `AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY}` v docker-comp
 
 ## Koraki namestitve (čista instanca od začetka)
 
-### 1. Preveri, da ima docker-compose.yml popravek različice
+### 1. Preveri, da ima docker-compose.yml pravilne okoljske spremenljivke
 
 ```yaml
 evolution-api:
@@ -160,6 +162,7 @@ EVOLUTION_SERVER_URL=http://localhost:8180
 
 ## Informacije o različici
 
-- Evolution API: `2.2.3` (slika: `atendai/evolution-api:latest` z dne 2026-05-05)
-- Popravek različice Baileys: `2.3000.1035194821`
+- Evolution API: `2.3.7` (slika: `evoapicloud/evolution-api:v2.3.7`)
+- Nadgrajeno iz `2.2.3` dne 2026-05-17; `CONFIG_SESSION_PHONE_VERSION` je še vedno zahtevan
+- Različica Baileys v uporabi: `2.3000.1035194821`
 - Povezane GitHub težave: [#1602](https://github.com/EvolutionAPI/evolution-api/issues/1602), [#2068](https://github.com/EvolutionAPI/evolution-api/issues/2068), [#2380](https://github.com/EvolutionAPI/evolution-api/issues/2380)

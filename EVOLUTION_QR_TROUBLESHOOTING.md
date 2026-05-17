@@ -2,6 +2,8 @@
 
 # Evolution API — WhatsApp QR Code Troubleshooting
 
+> **Status (2026-05-17):** Upgraded to Evolution API v2.3.7. `CONFIG_SESSION_PHONE_VERSION` is still present and required in the working config. Root Causes #2 and #3 and the reconnection procedure (step 5) remain relevant.
+
 ## The Problem
 
 After setting up a new Evolution API instance with Baileys integration, the QR code never appeared. Symptoms:
@@ -32,7 +34,7 @@ environment:
   CONFIG_SESSION_PHONE_VERSION: "2.3000.1035194821"
 ```
 
-> **Note:** This variable was removed in Evolution API v2.3.1+. Only needed for v2.2.x.
+> **Note:** Still present and required in v2.3.7 — do not remove it.
 
 ### 2. Dashboard UI bug (separate issue)
 
@@ -53,7 +55,7 @@ Fixed to `AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY}` in docker-compose.y
 
 ## Setup Steps (clean instance from scratch)
 
-### 1. Ensure docker-compose.yml has the version fix
+### 1. Ensure docker-compose.yml has the correct environment variables
 
 ```yaml
 evolution-api:
@@ -160,6 +162,7 @@ EVOLUTION_SERVER_URL=http://localhost:8180
 
 ## Version info
 
-- Evolution API: `2.2.3` (image: `atendai/evolution-api:latest` as of 2026-05-05)
-- Baileys version fix: `2.3000.1035194821`
+- Evolution API: `2.3.7` (image: `evoapicloud/evolution-api:v2.3.7`)
+- Upgraded from `2.2.3` on 2026-05-17; `CONFIG_SESSION_PHONE_VERSION` still required
+- Baileys version in use: `2.3000.1035194821`
 - Related GitHub issues: [#1602](https://github.com/EvolutionAPI/evolution-api/issues/1602), [#2068](https://github.com/EvolutionAPI/evolution-api/issues/2068), [#2380](https://github.com/EvolutionAPI/evolution-api/issues/2380)
