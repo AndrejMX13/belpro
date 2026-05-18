@@ -1,40 +1,45 @@
-# BelPro — Things Worth Considering
+# BelPro Roadmap
 
-Informal parking lot for ideas that are worth doing eventually but not right now.
-No deadlines, no commitments, no particular order.
+BelPro is a self-hosted system that helps Slovenian NGOs manage volunteer work diaries — collecting hours via WhatsApp, getting them approved, and generating the monthly reports required by law.
 
----
-
-## UI / Manager experience
-
-**Delivery failure indicator on volunteer detail page**
-If a message to a volunteer fails (wrong phone number, unrecognized contact, bad email address),
-surface a red banner or warning on their detail page in the dashboard. The manager can then fix
-the contact data directly from the UI rather than hunting through logs. Straightforward to implement
-once there's a reliable failure signal to consume.
-
-**n8n error reporting to UI**
-Right now n8n execution failures live in n8n's own logs. If the bot goes quiet — delivery failure,
-workflow error, Evolution API hiccup — the manager only notices when volunteers stop getting messages.
-Worth building a small feedback channel: n8n calls back to a `/api/errors` endpoint on failure,
-the dashboard shows a banner when something is actively broken. Needs some design work first
-(error schema, retention, what's worth showing vs. noise). More involved than the above.
+This page shows what's coming before the first stable release and what has already shipped. For the technical detail behind each item, see `OPEN_ISSUES.md`.
 
 ---
 
-## Evolution API
+## Coming up — v1.0
 
-**Phone number routing via API**
-`ngo_whatsapp_phone` is already stored in the DB and shown in the settings UI, but not yet used
-for anything functional — Evolution API had too many rough edges to rely on it. When they sort out
-the dashboard QR bug, button issues, and Baileys version handling, revisit whether the field can
-drive anything useful.
+### Reliability
+- Multiple volunteers can submit voice notes at the same time without stepping on each other
+- If a voice note isn't understood, the system guides the volunteer through fixing just the missing part — not re-recording everything
+- Daily backups run automatically — no cron jobs, no manual setup, works on any operating system
 
-**Version maintenance reminder**
-`CONFIG_SESSION_PHONE_VERSION` in docker-compose.yml needs to stay in sync with the current Baileys
-version (`baileys-version.json` on their repo). Meta occasionally forces old client versions off
-the network — when that happens the symptom is Baileys connecting and immediately failing with no
-QR generated. Worth checking after any Evolution API upgrade.
+### Manager experience
+- Dashboard shows a live health summary of all services — enough to diagnose a problem over the phone without opening Docker
+- Errors in message delivery or report generation show up as notifications in the dashboard
+- System upgrades handled by a single script — no missed steps
+
+### Security & data protection
+- Login sessions protected against script-based attacks on the local network
+- Photo uploads per entry are limited to a sensible maximum
+- Photos are automatically cleaned up after the legal retention period
+- EMŠO validated at entry — a bad number is caught immediately, not days later
+- A safe procedure exists for rotating the encryption key if ever needed
+- GDPR consent document generated for each volunteer, ready to print and sign
+
+### Polish
+- NGO logo appears on the dashboard and on all printed documents
+- Documentation includes screenshots, example conversations, and a sample report
 
 ---
 
+## Done
+
+- v0.10.0-beta — full volunteer entry flow via WhatsApp voice notes, manager approval dashboard, monthly PDF report generation and delivery, photo uploads with EXIF support, AES-256-GCM EMŠO encryption, backup and restore scripts, full automated test suite
+
+---
+
+## On the radar (post-1.0)
+
+- **WhatsApp phone number routing** — the NGO's WhatsApp number is already stored in settings but not yet used to drive anything; depends on Evolution API stabilising its multi-instance handling
+- **Active push notification** — alerting the manager when something breaks and nobody is logged into the dashboard; requires a notification channel that survives the app being down
+- **Manager signature and stamp on documents** — held until a real user asks for it
