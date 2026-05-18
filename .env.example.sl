@@ -82,6 +82,14 @@ EVOLUTION_SERVER_URL=http://localhost:8180
 NGO_WHATSAPP_PHONE=
 
 # -----------------------------------------------------------------------------
+# Nalaganje datotek
+# MAX_PHOTOS_PER_ENTRY: največ slik, ki jih prostovoljec lahko priloži enemu vnosu.
+# Bot zavrne vsako sliko, ki bi presegla to mejo.
+# Upravljalska nadzorna plošča te omejitve ne upošteva.
+# -----------------------------------------------------------------------------
+MAX_PHOTOS_PER_ENTRY=5
+
+# -----------------------------------------------------------------------------
 # Faster-Whisper (prepoznavanje govora)
 # WHISPER_MODEL: tiny/base/small/medium/large-v3
 #   medium = dober kompromis med hitrostjo in natančnostjo za slovenščino
