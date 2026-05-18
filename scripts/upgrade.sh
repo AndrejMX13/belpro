@@ -66,3 +66,36 @@ info "Prenašam $REMOTE/$BRANCH ..."
 git -C "$PROJECT_DIR" pull "$REMOTE" "$BRANCH" \
   || die "git pull ni uspel — razrešite konflikte in ponovite."
 ok "Koda je posodobljena."
+
+# ── Rebuild images ───────────────────────────────────────────────────────────
+heading "3. Posodabljanje in gradnja Docker slik"
+info "Prenašam posodobljene bazne slike ..."
+$COMPOSE pull --ignore-pull-failures 2>/dev/null || true
+info "Gradim slike po meri in ponovni zagon storitev ..."
+$COMPOSE up -d --build
+ok "Storitve so posodobljene."
+
+# ── Wait for PostgreSQL ──────────────────────────────────────────────────────
+heading "4. Čakanje na PostgreSQL"
+PG_USER="$(get_env POSTGRES_USER)"
+PG_DB="$(get_env POSTGRES_DB)"
+MAX_WAIT=60; ELAPSED=0
+until $COMPOSE exec -T postgres pg_isready -U "$PG_USER" -d "$PG_DB" &>/dev/null; do
+  if [[ $ELAPSED -ge $MAX_WAIT ]]; then
+    die "PostgreSQL ni bil pripravljen v ${MAX_WAIT}s. Preverite: $COMPOSE logs postgres"
+  fi
+  sleep 2; ELAPSED=$((ELAPSED + 2))
+done
+ok "PostgreSQL je pripravljen."
+
+# ── Wait for API ─────────────────────────────────────────────────────────────
+heading "5. Čakanje na API"
+ELAPSED=0
+until $COMPOSE exec -T api curl -sf http://localhost:8000/health &>/dev/null; do
+  if [[ $ELAPSED -ge 60 ]]; then
+    warn "API se ni odzval v 60s. Preverite: $COMPOSE logs api"
+    break
+  fi
+  sleep 3; ELAPSED=$((ELAPSED + 3))
+done
+ok "API je pripravljen."
