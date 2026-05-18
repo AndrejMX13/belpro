@@ -302,6 +302,8 @@ To restore if something goes wrong after rotation:
 bash scripts/rotate_emso_key.sh --restore
 ```
 
+> See [docs/emso_key_rotation.md](docs/emso_key_rotation.md) for the full procedure guide, including known issues encountered during the first live test.
+
 ---
 
 ## Security notes

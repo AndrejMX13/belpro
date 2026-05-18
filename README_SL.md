@@ -314,6 +314,8 @@ Obnovitev (če gre kaj narobe po rotaciji):
 bash scripts/rotate_emso_key.sh --restore
 ```
 
+> Celotna navodila za postopek, vključno z znanimi težavami iz prvega živega testa, so v [docs/emso_key_rotation_sl.md](docs/emso_key_rotation_sl.md).
+
 ---
 
 ## Varnostne opombe (Security notes)
