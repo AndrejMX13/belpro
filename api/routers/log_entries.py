@@ -137,6 +137,12 @@ async def list_log_entries(
     return LogEntryListResponse(items=list(rows), total=total)
 
 
+@router.get("/photo-limit")
+async def get_photo_limit() -> dict:
+    """Return the configured maximum photos per log entry. Used by n8n workflows."""
+    return {"max_photos": get_settings().max_photos_per_entry}
+
+
 @router.get("/{entry_id}", response_model=LogEntryResponse, dependencies=[Depends(require_manager)])
 async def get_log_entry(
     entry_id: uuid.UUID,

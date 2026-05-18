@@ -290,3 +290,9 @@ async def test_photo_upload_unsupported_extension_returns_400_or_422(
         headers=auth,
     )
     assert r.status_code in (400, 422)
+
+
+async def test_photo_limit_returns_default(client: AsyncClient) -> None:
+    r = await client.get("/api/log-entries/photo-limit")
+    assert r.status_code == 200
+    assert r.json() == {"max_photos": 5}

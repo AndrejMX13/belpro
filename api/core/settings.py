@@ -40,6 +40,9 @@ class Settings(BaseSettings):
     authentication_api_key: str = ""
     ngo_whatsapp_phone: str = ""
 
+    # ── Uploads ───────────────────────────────────────────────────────────────
+    max_photos_per_entry: int = 5
+
 
 @lru_cache
 def get_settings() -> Settings:
