@@ -9,6 +9,7 @@ from typing import Annotated
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator
 
 from models.log_entry import EntryStatus
+from utils.emso import emso_checksum_valid
 
 
 def _normalise_phone(raw: str) -> str:
@@ -59,6 +60,14 @@ class VolunteerCreate(BaseModel):
     email: EmailStr | None = None
     report_whatsapp: bool = False
     report_email: bool = True
+
+    @field_validator("emso", mode="after")
+    @classmethod
+    def _validate_emso_checksum(cls, v: str) -> str:
+        """Reject EMŠO numbers that fail the mod-11 checksum."""
+        if not emso_checksum_valid(v):
+            raise ValueError("EMŠO ima neveljavno kontrolno številko")
+        return v
 
     @field_validator("phone", mode="after")
     @classmethod

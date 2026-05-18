@@ -10,6 +10,7 @@ services:
     image: postgres:18.3
     restart: unless-stopped
     environment:
+      TZ: Europe/Ljubljana
       POSTGRES_DB: ${POSTGRES_DB}
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
@@ -29,6 +30,8 @@ services:
   redis:
     image: redis:7-alpine@sha256:ee64a64eaab618d88051c3ade8f6352d11531fcf79d9a4818b9b183d8c1d18ba  # redis:7-alpine 2026-05-09
     restart: unless-stopped
+    environment:
+      TZ: Europe/Ljubljana
     command: redis-server --appendonly yes
     volumes:
       - redis_data:/data
@@ -88,6 +91,7 @@ services:
     build: ./whisper
     restart: unless-stopped
     environment:
+      TZ: Europe/Ljubljana
       WHISPER_MODEL: ${WHISPER_MODEL:-large-v3}
       WHISPER_LANGUAGE: ${WHISPER_LANGUAGE:-sl}
     volumes:
@@ -124,7 +128,6 @@ services:
     volumes:
       - api_photos:/app/photos
       - api_pdfs:/app/pdfs
-      - ./.env:/app/.env:rw  # api writes NGO_WHATSAPP_PHONE back here after phone number changes
     depends_on:
       postgres:
         condition: service_healthy
@@ -144,6 +147,8 @@ services:
   frontend:
     image: nginx:alpine@sha256:5616878291a2eed594aee8db4dade5878cf7edcb475e59193904b198d9b830de  # nginx:alpine 2026-05-09
     restart: unless-stopped
+    environment:
+      TZ: Europe/Ljubljana
     ports:
       - "80:80"
     volumes:

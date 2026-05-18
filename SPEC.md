@@ -299,6 +299,7 @@ Contents:
 
 ## 8. GDPR & Privacy
 
+- EMŠO validated at entry using the mod-11 checksum algorithm (weights 7,6,5,4,3,2,7,6,5,4,3,2; remainder of 1 is rejected as no valid check digit exists). Invalid EMŠO is rejected at the API level before encryption or storage.
 - EMŠO stored encrypted at rest (PostgreSQL column encryption or application-level AES-256).
 - Photos stored locally on the server, not in cloud storage.
 - Photo EXIF data (timestamp, GPS) retained as audit trail.

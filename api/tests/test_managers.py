@@ -89,7 +89,6 @@ async def test_config_info_includes_wa_fields(client, auth):
     assert "wa_phone" in data
     assert "wa_state" in data
     assert "wa_synced" in data
-    assert "wa_env_write_ok" in data
     assert data["wa_state"] == "unreachable"
     assert data["wa_synced"] is False
 

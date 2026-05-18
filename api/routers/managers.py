@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import logging
 import secrets
-from pathlib import Path
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Response, status
@@ -17,7 +16,6 @@ from models.manager import Manager
 from schemas.manager import ConfigInfoResponse, ManagerCreate, ManagerResponse, ManagerUpdate, PasswordChangeRequest
 from services.evolution import EvolutionClient
 from services.password import hash_password, verify_password
-from utils.env_writer import write_env_key
 
 router = APIRouter(prefix="/managers", tags=["managers"])
 
@@ -85,9 +83,6 @@ async def update_manager(
 
     await db.commit()
 
-    if "ngo_whatsapp_phone" in payload.model_fields_set and manager.ngo_whatsapp_phone:
-        write_env_key("NGO_WHATSAPP_PHONE", manager.ngo_whatsapp_phone, Path(".env"))
-
     await db.refresh(manager)
     return manager
 
@@ -110,7 +105,6 @@ async def get_config_info(
     live_phone, wa_state = await client.get_connected_phone()
 
     wa_synced = False
-    wa_env_write_ok = True
 
     if wa_state == "open" and live_phone and live_phone != manager.ngo_whatsapp_phone:
         logger.info(
@@ -121,10 +115,6 @@ async def get_config_info(
         manager.ngo_whatsapp_phone = live_phone
         await db.commit()
         wa_synced = True
-        wa_env_write_ok = write_env_key("NGO_WHATSAPP_PHONE", live_phone, Path(".env"))
-        if not wa_env_write_ok:
-            logger.warning("Failed to write NGO_WHATSAPP_PHONE to .env after auto-sync")
-
     wa_phone = live_phone if wa_state == "open" else manager.ngo_whatsapp_phone
     smtp_configured = bool(manager.smtp_host and manager.smtp_user and settings.smtp_password)
 
@@ -138,7 +128,6 @@ async def get_config_info(
         wa_phone=wa_phone,
         wa_state=wa_state,
         wa_synced=wa_synced,
-        wa_env_write_ok=wa_env_write_ok,
     )
 
 

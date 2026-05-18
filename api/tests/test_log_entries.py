@@ -1,6 +1,8 @@
 import uuid
 from decimal import Decimal
 from datetime import date
+
+import pytest
 from httpx import AsyncClient
 
 from models.log_entry import EntryStatus

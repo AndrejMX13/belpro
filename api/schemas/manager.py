@@ -106,4 +106,3 @@ class ConfigInfoResponse(BaseModel):
     wa_phone: str | None
     wa_state: str  # "open" | "connecting" | "close" | "unreachable" | "lid_unsupported"
     wa_synced: bool
-    wa_env_write_ok: bool

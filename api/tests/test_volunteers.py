@@ -1,4 +1,6 @@
 import uuid
+
+import pytest
 from httpx import AsyncClient
 
 
@@ -8,7 +10,7 @@ _VALID_PAYLOAD = {
     "street": "Testna 1",
     "postal_code": "1000",
     "city": "Ljubljana",
-    "emso": "1234567890123",
+    "emso": "1234567890125",
     "phone": "+38641111111",
 }
 
@@ -42,7 +44,7 @@ async def test_create_volunteer_success(client: AsyncClient, auth: dict) -> None
 async def test_create_volunteer_duplicate_emso_returns_409(
     client: AsyncClient, auth: dict, volunteer_factory
 ) -> None:
-    await volunteer_factory(emso="1234567890123")
+    await volunteer_factory(emso="1234567890125")
     r = await client.post("/api/volunteers", json=_VALID_PAYLOAD, headers=auth)
     assert r.status_code == 409
 # Phone uniqueness is enforced by IntegrityError, which rolls back the
@@ -70,6 +72,14 @@ async def test_create_volunteer_invalid_emso_length_returns_422(
     client: AsyncClient, auth: dict
 ) -> None:
     payload = {**_VALID_PAYLOAD, "emso": "123"}
+    r = await client.post("/api/volunteers", json=payload, headers=auth)
+    assert r.status_code == 422
+
+
+async def test_create_volunteer_invalid_emso_checksum_returns_422(
+    client: AsyncClient, auth: dict
+) -> None:
+    payload = {**_VALID_PAYLOAD, "emso": "1234567890123"}  # valid format, bad checksum
     r = await client.post("/api/volunteers", json=payload, headers=auth)
     assert r.status_code == 422
 
@@ -175,10 +185,10 @@ async def test_check_emso_not_registered(client: AsyncClient, auth: dict) -> Non
 async def test_check_emso_already_registered(
     client: AsyncClient, auth: dict, volunteer_factory
 ) -> None:
-    await volunteer_factory(emso="1234567890123")
+    await volunteer_factory(emso="1234567890125")
     r = await client.post(
         "/api/volunteers/check-emso",
-        json={"emso": "1234567890123"},
+        json={"emso": "1234567890125"},
         headers=auth,
     )
     assert r.status_code == 200
