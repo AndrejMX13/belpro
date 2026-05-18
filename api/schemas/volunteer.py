@@ -66,7 +66,7 @@ class VolunteerCreate(BaseModel):
     def _validate_emso_checksum(cls, v: str) -> str:
         """Reject EMŠO numbers that fail the mod-11 checksum."""
         if not emso_checksum_valid(v):
-            raise ValueError("EMŠO ima neveljavno kontrolno številko")
+            raise ValueError("Vpisana EMŠO je neveljavna")
         return v
 
     @field_validator("phone", mode="after")

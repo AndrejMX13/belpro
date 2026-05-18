@@ -44,7 +44,14 @@ const API = (() => {
 
     if (!res.ok) {
       let detail = 'HTTP ' + res.status;
-      try { detail = (await res.json()).detail || detail; } catch { /* empty */ }
+      try {
+        const body = await res.json();
+        if (Array.isArray(body.detail)) {
+          detail = body.detail.map(e => String(e.msg).replace(/^Value error,\s*/i, '')).join('; ');
+        } else {
+          detail = body.detail || detail;
+        }
+      } catch { /* empty */ }
       const err = new Error(detail);
       err.status = res.status;
       throw err;
@@ -63,7 +70,14 @@ const API = (() => {
 
     if (!res.ok) {
       let detail = 'HTTP ' + res.status;
-      try { detail = (await res.json()).detail || detail; } catch { /* empty */ }
+      try {
+        const body = await res.json();
+        if (Array.isArray(body.detail)) {
+          detail = body.detail.map(e => String(e.msg).replace(/^Value error,\s*/i, '')).join('; ');
+        } else {
+          detail = body.detail || detail;
+        }
+      } catch { /* empty */ }
       const err = new Error(detail);
       err.status = res.status;
       throw err;
