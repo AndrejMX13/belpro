@@ -232,6 +232,14 @@ git commit -m "chore: update n8n workflow exports"
 
 ## Maintenance
 
+### Upgrade
+
+```bash
+bash scripts/upgrade.sh
+```
+
+Automatically: takes a backup, pulls the latest code (`git pull central main`), rebuilds Docker images, waits for PostgreSQL and API readiness, runs Alembic migrations, and prints a health check summary. Safe to run repeatedly.
+
 ### Backup
 
 ```bash
@@ -296,7 +304,7 @@ belpro/
 ├── api/                    # FastAPI backend + PDF generation
 ├── frontend/               # Manager dashboard (HTML/CSS/JS)
 ├── nginx/                  # Reverse proxy config
-├── scripts/                # setup.sh, backup.sh, restore.sh
+├── scripts/                # setup.sh, upgrade.sh, backup.sh, restore.sh
 └── db/                     # init.sql + Alembic migrations
 ```
 

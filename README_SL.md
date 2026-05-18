@@ -236,6 +236,22 @@ git commit -m "chore: update n8n workflow exports"
 
 ## Vzdrževanje
 
+### Nadgradnja sistema
+
+```bash
+bash scripts/upgrade.sh
+```
+
+Skripta samodejno:
+1. Naredi varnostno kopijo pred kakršno koli spremembo
+2. Prenese najnovejšo kodo (`git pull central main`)
+3. Posodobi in ponovno zgradi Docker slike
+4. Počaka, da sta PostgreSQL in API pripravljena
+5. Zažene Alembic migracije baze podatkov
+6. Preveri stanje sistema in izpiše povzetek
+
+Varno za večkratno izvajanje — zaženite vsakič, ko posodobite kodo iz repozitorija.
+
 ### Varnostno kopiranje (Backup)
 
 ```bash
@@ -301,7 +317,7 @@ belpro/
 ├── api/                    # FastAPI ozadje + generiranje PDF poročil
 ├── frontend/               # Nadzorna plošča za vodje (HTML/CSS/JS)
 ├── nginx/                  # Nastavitve povratnega posrednika (reverse proxy config)
-├── scripts/                # Skripte: setup.sh, backup.sh, restore.sh
+├── scripts/                # Skripte: setup.sh, upgrade.sh, backup.sh, restore.sh
 └── db/                     # init.sql + Alembic migracije
 ```
 
