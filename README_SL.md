@@ -292,6 +292,28 @@ docker compose exec postgres psql -U belpro -d belpro \
 
 To ukaz izbriše shranjeno šifrirano geslo, sistem pa ob naslednji prijavi upošteva privzeto geslo `MANAGER_PASSWORD` iz datoteke `.env`.
 
+### Rotacija ključa za šifriranje EMŠO
+
+**Enkratno orodje — samo v primeru nujne zamenjave šifrirnega ključa.**
+
+```bash
+bash scripts/rotate_emso_key.sh <STAR_KLJUC> <NOV_KLJUC>
+```
+
+`STAR_KLJUC` je trenutna vrednost `EMSO_ENCRYPTION_KEY` iz `.env`. `NOV_KLJUC` je nov ključ, ustvarjen z:
+
+```bash
+python3 -c "import secrets,base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
+```
+
+Skripta pred rotacijo **samodejno naredi polno varnostno kopijo** in **ciljno kopijo tabele prostovoljcev** (z vključenim starim ključem) v `/app/pdfs/temp/`. Po uspešni rotaciji vas vodi skozi posodobitev `.env` in ponovni zagon API vsebnika. Ko potrdite, da je vse v redu, ponudi brisanje zaupne varnostne kopije.
+
+Obnovitev (če gre kaj narobe po rotaciji):
+
+```bash
+bash scripts/rotate_emso_key.sh --restore
+```
+
 ---
 
 ## Varnostne opombe (Security notes)
@@ -317,7 +339,7 @@ belpro/
 ├── api/                    # FastAPI ozadje + generiranje PDF poročil
 ├── frontend/               # Nadzorna plošča za vodje (HTML/CSS/JS)
 ├── nginx/                  # Nastavitve povratnega posrednika (reverse proxy config)
-├── scripts/                # Skripte: setup.sh, upgrade.sh, backup.sh, restore.sh
+├── scripts/                # Skripte: setup.sh, upgrade.sh, backup.sh, restore.sh, rotate_emso_key.sh
 └── db/                     # init.sql + Alembic migracije
 ```
 

@@ -280,6 +280,28 @@ docker compose exec postgres psql -U belpro -d belpro \
 
 This clears the stored hash and falls back to `MANAGER_PASSWORD` in `.env` on next login.
 
+### EMŠO Key Rotation
+
+**Emergency tool — use only when the encryption key must be replaced.**
+
+```bash
+bash scripts/rotate_emso_key.sh <OLD_KEY> <NEW_KEY>
+```
+
+`OLD_KEY` is the current `EMSO_ENCRYPTION_KEY` from `.env`. Generate a new key with:
+
+```bash
+python3 -c "import secrets,base64; print(base64.urlsafe_b64encode(secrets.token_bytes(32)).decode())"
+```
+
+The script takes a full backup, creates a targeted backup of the volunteers table (including the old key) in `/app/pdfs/temp/`, re-encrypts all EMŠOs in a single atomic transaction, verifies a sample, then guides you through updating `.env` and restarting the api container. Once you confirm everything is green it offers to delete the sensitive backup file.
+
+To restore if something goes wrong after rotation:
+
+```bash
+bash scripts/rotate_emso_key.sh --restore
+```
+
 ---
 
 ## Security notes
@@ -304,7 +326,7 @@ belpro/
 ├── api/                    # FastAPI backend + PDF generation
 ├── frontend/               # Manager dashboard (HTML/CSS/JS)
 ├── nginx/                  # Reverse proxy config
-├── scripts/                # setup.sh, upgrade.sh, backup.sh, restore.sh
+├── scripts/                # setup.sh, upgrade.sh, backup.sh, restore.sh, rotate_emso_key.sh
 └── db/                     # init.sql + Alembic migrations
 ```
 
