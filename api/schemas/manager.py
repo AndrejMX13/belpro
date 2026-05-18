@@ -7,6 +7,8 @@ from typing import Annotated, Optional
 
 from pydantic import BaseModel, ConfigDict, EmailStr, Field, field_validator, model_validator
 
+from utils.tax_number import tax_number_valid
+
 
 class ManagerCreate(BaseModel):
     """Fields required for first-time manager setup."""
@@ -20,6 +22,14 @@ class ManagerCreate(BaseModel):
     ngo_postal_code: Annotated[str, Field(pattern=r"^\d{4}$")]
     ngo_city: Annotated[str, Field(min_length=1, max_length=100)]
     ngo_davcna: Annotated[str, Field(pattern=r"^\d{8}$")] | None = None
+
+    @field_validator("ngo_davcna", mode="after")
+    @classmethod
+    def _validate_davcna_checksum(cls, v: str | None) -> str | None:
+        """Reject tax numbers that fail the Modulus 11 check digit."""
+        if v is not None and not tax_number_valid(v):
+            raise ValueError("Davčna številka je neveljavna (napačna kontrolna številka)")
+        return v
 
 
 class ManagerUpdate(BaseModel):
@@ -35,6 +45,14 @@ class ManagerUpdate(BaseModel):
     ngo_city: Annotated[str, Field(min_length=1, max_length=100)] | None = None
     ngo_davcna: Annotated[str, Field(pattern=r"^\d{8}$")] | None = None
     report_whatsapp: bool | None = None
+
+    @field_validator("ngo_davcna", mode="after")
+    @classmethod
+    def _validate_davcna_checksum(cls, v: str | None) -> str | None:
+        """Reject tax numbers that fail the Modulus 11 check digit."""
+        if v is not None and not tax_number_valid(v):
+            raise ValueError("Davčna številka je neveljavna (napačna kontrolna številka)")
+        return v
     report_email: bool | None = None
     default_report_whatsapp: bool | None = None
     default_report_email: bool | None = None

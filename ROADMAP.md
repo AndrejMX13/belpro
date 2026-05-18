@@ -2,7 +2,7 @@
 
 BelPro is a self-hosted system that helps Slovenian NGOs manage volunteer work diaries — collecting hours via WhatsApp, getting them approved, and generating the monthly reports required by law.
 
-This page shows what's coming before the first stable release and what has already shipped. For the technical detail behind each item, see `OPEN_ISSUES.md`.
+This page shows what's coming before the first stable release and what has already shipped.
 
 ---
 
@@ -23,7 +23,7 @@ This page shows what's coming before the first stable release and what has alrea
 - Photo uploads per entry are limited to a sensible maximum
 - Photos are automatically cleaned up after the legal retention period
 - ✓ EMŠO validated at entry — a bad number is caught immediately, not days later
-- A safe procedure exists for rotating the encryption key if ever needed
+- ✓ A safe procedure exists for rotating the encryption key if ever needed
 - GDPR consent document generated for each volunteer, ready to print and sign
 
 ### Polish

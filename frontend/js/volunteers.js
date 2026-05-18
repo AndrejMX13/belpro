@@ -1,5 +1,17 @@
 'use strict';
 
+// ===== Validation helpers =====
+function _davcnaValid(digits) {
+  // Modulus 11 check digit algorithm for Slovenian tax number (davčna številka).
+  const weights = [8, 7, 6, 5, 4, 3, 2];
+  const total = weights.reduce((sum, w, i) => sum + w * parseInt(digits[i], 10), 0);
+  const remainder = total % 11;
+  let check = 11 - remainder;
+  if (check === 10) check = 0;
+  if (check === 11) check = 1;
+  return parseInt(digits[7], 10) === check;
+}
+
 // ===== DOM helpers =====
 function $(id) { return document.getElementById(id); }
 function setHtml(el, content) { el.innerHTML = content; }
@@ -1393,8 +1405,13 @@ async function renderSettings() {
     if (!/^\d{4}$/.test(payload.ngo_postal_code)) {
       showErr('s-ngo-error', 'Poštna številka mora biti 4-mestna številka.'); return;
     }
-    if (payload.ngo_davcna && !/^\d{8}$/.test(payload.ngo_davcna)) {
-      showErr('s-ngo-error', 'Davčna številka mora vsebovati natanko 8 številk.'); return;
+    if (payload.ngo_davcna) {
+      if (!/^\d{8}$/.test(payload.ngo_davcna)) {
+        showErr('s-ngo-error', 'Davčna številka mora vsebovati natanko 8 številk.'); return;
+      }
+      if (!_davcnaValid(payload.ngo_davcna)) {
+        showErr('s-ngo-error', 'Davčna številka je neveljavna (napačna kontrolna številka).'); return;
+      }
     }
     try {
       await API.managers.update(payload);
