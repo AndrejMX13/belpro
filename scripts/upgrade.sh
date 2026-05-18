@@ -59,8 +59,9 @@ ok "Varnostna kopija je shranjena."
 
 # ── Git pull ─────────────────────────────────────────────────────────────────
 heading "2. Prenos najnovejše kode"
-REMOTE="central"
+REMOTE="central"   # BelPro convention — remote is named 'central', not 'origin'
 BRANCH="$(git -C "$PROJECT_DIR" branch --show-current)"
+[[ -n "$BRANCH" ]] || die "Git je v odmaknjenem HEAD stanju (detached HEAD) — preverite vejo in ponovite."
 info "Prenašam $REMOTE/$BRANCH ..."
 git -C "$PROJECT_DIR" pull "$REMOTE" "$BRANCH" \
   || die "git pull ni uspel — razrešite konflikte in ponovite."
