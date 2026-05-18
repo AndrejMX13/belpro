@@ -50,3 +50,18 @@ if ! git -C "$PROJECT_DIR" diff --quiet HEAD 2>/dev/null; then
 else
   ok "Delovno drevo je čisto."
 fi
+
+# ── Backup ──────────────────────────────────────────────────────────────────
+heading "1. Varnostna kopija pred nadgradnjo"
+info "Zaganjam backup.sh ..."
+bash "$SCRIPT_DIR/backup.sh" || die "Varnostna kopija ni uspela — nadgradnja prekinjena."
+ok "Varnostna kopija je shranjena."
+
+# ── Git pull ─────────────────────────────────────────────────────────────────
+heading "2. Prenos najnovejše kode"
+REMOTE="central"
+BRANCH="$(git -C "$PROJECT_DIR" branch --show-current)"
+info "Prenašam $REMOTE/$BRANCH ..."
+git -C "$PROJECT_DIR" pull "$REMOTE" "$BRANCH" \
+  || die "git pull ni uspel — razrešite konflikte in ponovite."
+ok "Koda je posodobljena."
