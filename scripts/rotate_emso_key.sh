@@ -93,6 +93,8 @@ echo ""
 warn "PRED nadaljevanjem si zapišite trenutni stari ključ na varno mesto:"
 echo ""
 echo -e "  ${BOLD}EMSO_ENCRYPTION_KEY=${OLD_KEY}${RESET}"
+# Intentional: operator must write this down. Key also lands in terminal scrollback
+# and shell history — same accepted trade-off as the ps aux note in the header.
 echo ""
 warn "Brez starega ključa ne morete obnoviti podatkov, če gre kaj narobe."
 echo ""
@@ -144,14 +146,18 @@ echo ""
 echo -e "  ${BOLD}3.${RESET} Preveri, da se API uspešno zažene:"
 echo -e "     ${CYAN}docker compose logs api --tail 20${RESET}"
 echo ""
-echo -e "  ${BOLD}4.${RESET} Ko je vse zeleno, se vrni sem in potrdite brisanje varnostne kopije."
+echo -e "  ${BOLD}4.${RESET} Šele ko so koraki 1–3 zaključeni in API deluje brez napak,"
+echo -e "     se vrni sem in potrdi brisanje varnostne kopije."
 echo ""
 echo -e "  Varnostna kopija je shranjena na: ${CYAN}${BACKUP_FILE}${RESET}"
 echo -e "  Dostop: ${CYAN}docker compose exec api cat ${BACKUP_FILE}${RESET}"
 echo ""
 warn "Datoteka vsebuje stari šifrirni ključ in šifrirane podatke — je zaupna."
 echo ""
-read -r -p "  Je vse zeleno? Izbrišem varnostno kopijo? Vpišite 'DA' za brisanje: " cleanup
+warn "Preden odgovoriš 'DA': preveri, da si že posodobil .env, znova zagnal API vsebnik"
+warn "in da v logu ni napak. Varnostna kopija je edina pot nazaj."
+echo ""
+read -r -p "  Koraki 1–3 so zaključeni, API deluje. Izbrišem varnostno kopijo? Vpišite 'DA' za brisanje: " cleanup
 if [[ "$cleanup" == "DA" ]]; then
   $COMPOSE exec -T api rm -f "$BACKUP_FILE"
   $COMPOSE exec -T api rmdir /app/pdfs/temp 2>/dev/null || true
