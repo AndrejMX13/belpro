@@ -6,6 +6,9 @@
 # Restore: ./scripts/rotate_emso_key.sh --restore
 #
 # Both keys are base64url-encoded 32-byte AES-256 keys (EMSO_ENCRYPTION_KEY value).
+# Security: OLD_KEY and NEW_KEY are passed as positional arguments and are briefly
+# visible in process listings (ps aux). Acceptable for an interactive emergency tool;
+# do not use in automated pipelines.
 
 set -euo pipefail
 
@@ -40,10 +43,12 @@ command -v docker &>/dev/null || die "Docker ni nameščen."
 docker info &>/dev/null       || die "Docker daemon ne teče. Zaženite Docker Desktop."
 docker compose version &>/dev/null || die "Docker Compose ni na voljo."
 
-if ! $COMPOSE ps api 2>/dev/null | grep -q "running\|Up"; then
+if ! $COMPOSE ps --status running api 2>/dev/null | grep -q "api"; then
   die "API vsebnik ne teče. Zaženite stack: docker compose up -d"
 fi
 ok "Pogoji so izpolnjeni."
+
+[[ -t 0 ]] || die "Ta skript mora biti zagnan interaktivno (brez preusmeritve vhoda)."
 
 # ── Restore mode ───────────────────────────────────────────────────────────
 if [[ "${1:-}" == "--restore" ]]; then
