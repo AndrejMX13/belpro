@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-10T12:06:54.717Z",
+  "updatedAt": "2026-05-18T18:43:45.669Z",
   "createdAt": "2026-05-07T19:10:06.456Z",
   "id": "LCimvAZcQWegvzRk",
   "name": "BelPro — Odobritev Upravljalca",
-  "description": null,
+  "description": "",
   "active": true,
   "isArchived": false,
   "nodes": [
@@ -704,7 +704,7 @@
   },
   "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
   "activeVersionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-  "versionCounter": 51,
+  "versionCounter": 66,
   "triggerCount": 0,
   "shared": [
     {
@@ -1415,6 +1415,102 @@
       {
         "createdAt": "2026-05-10T12:06:54.761Z",
         "id": 184,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:19:51.169Z",
+        "id": 265,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:19:51.191Z",
+        "id": 266,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:21:51.427Z",
+        "id": 275,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:21:51.444Z",
+        "id": 276,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:21:51.484Z",
+        "id": 277,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:21:51.500Z",
+        "id": 278,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-18T18:43:45.723Z",
+        "id": 287,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-18T18:43:45.741Z",
+        "id": 288,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:19:51.092Z",
+        "id": 263,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-16T09:19:51.111Z",
+        "id": 264,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-18T18:43:45.808Z",
+        "id": 289,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-18T18:43:45.824Z",
+        "id": 290,
         "workflowId": "LCimvAZcQWegvzRk",
         "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
         "event": "activated",

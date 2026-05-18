@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-15T06:24:53.449Z",
+  "updatedAt": "2026-05-18T18:43:46.016Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -1991,6 +1991,139 @@
         }
       },
       "continueOnFail": true
+    },
+    {
+      "parameters": {
+        "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id }}",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpBasicAuth",
+        "options": {}
+      },
+      "id": "http_get_entry_photos",
+      "name": "HTTP: GET Entry Photos",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2100,
+        128
+      ],
+      "credentials": {
+        "httpBasicAuth": {
+          "id": "UqZlwzClZfiYKanN",
+          "name": "BelPro API (Basic Auth)"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://api:8000/api/log-entries/photo-limit",
+        "options": {}
+      },
+      "id": "http_get_photo_limit",
+      "name": "HTTP: GET Photo Limit",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        2340,
+        128
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const entryData = $('HTTP: GET Entry Photos').first().json;\nconst limitData = $('HTTP: GET Photo Limit').first().json;\nconst mediaData = $('Code: Build Image Media Body').first().json;\n\nconst currentCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst maxPhotos = limitData.max_photos || 5;\n\nreturn [{\n  json: {\n    phone: mediaData.phone,\n    remoteJid: mediaData.remoteJid,\n    entry_id: mediaData.entry_id,\n    current_count: currentCount,\n    max_photos: maxPhotos,\n    at_limit: currentCount >= maxPhotos\n  }\n}];"
+      },
+      "id": "code_check_photo_limit",
+      "name": "Code: Check Photo Limit",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2580,
+        128
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "cond_at_limit",
+              "leftValue": "={{ $json.at_limit }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals",
+                "name": "filter.operator.equals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "if_photo_limit",
+      "name": "IF: Photo Limit Reached",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        2820,
+        128
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const d = $input.first().json;\nconst msg = `Vnos že vsebuje ${d.current_count} od ${d.max_photos} dovoljenih slik. Nova slika ni bila dodana.\\n\\n1 - Potrdi vnos\\n4 - Prekliči`;\nreturn [{json: {remoteJid: d.remoteJid, text: msg}}];"
+      },
+      "id": "code_limit_reject_msg",
+      "name": "Code: Limit Reject Message",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3060,
+        280
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $json.remoteJid }}"
+            },
+            {
+              "name": "text",
+              "value": "={{ $json.text }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "http_wa_photo_limit",
+      "name": "HTTP: WA Photo Limit",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        3300,
+        280
+      ],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "QXGVac2NwnJcQf9V",
+          "name": "BelPro Evolution API"
+        }
+      }
     }
   ],
   "connections": {
@@ -2644,7 +2777,69 @@
       "main": [
         [
           {
+            "node": "HTTP: GET Entry Photos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP: GET Entry Photos": {
+      "main": [
+        [
+          {
+            "node": "HTTP: GET Photo Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP: GET Photo Limit": {
+      "main": [
+        [
+          {
+            "node": "Code: Check Photo Limit",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Check Photo Limit": {
+      "main": [
+        [
+          {
+            "node": "IF: Photo Limit Reached",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "IF: Photo Limit Reached": {
+      "main": [
+        [
+          {
+            "node": "Code: Limit Reject Message",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
             "node": "HTTP: Fetch Image",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Limit Reject Message": {
+      "main": [
+        [
+          {
+            "node": "HTTP: WA Photo Limit",
             "type": "main",
             "index": 0
           }
@@ -2788,9 +2983,9 @@
       }
     ]
   },
-  "versionId": "c3f28027-f418-49f4-bd43-970060159cf9",
-  "activeVersionId": "c3f28027-f418-49f4-bd43-970060159cf9",
-  "versionCounter": 711,
+  "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
+  "activeVersionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
+  "versionCounter": 742,
   "triggerCount": 1,
   "shared": [
     {
@@ -2813,9 +3008,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-15T06:15:57.562Z",
-    "createdAt": "2026-05-15T06:15:57.562Z",
-    "versionId": "c3f28027-f418-49f4-bd43-970060159cf9",
+    "updatedAt": "2026-05-18T18:43:46.019Z",
+    "createdAt": "2026-05-18T18:43:46.019Z",
+    "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -4802,6 +4997,139 @@
           }
         },
         "continueOnFail": true
+      },
+      {
+        "parameters": {
+          "url": "={{ 'http://api:8000/api/log-entries/' + $json.entry_id }}",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpBasicAuth",
+          "options": {}
+        },
+        "id": "http_get_entry_photos",
+        "name": "HTTP: GET Entry Photos",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2100,
+          128
+        ],
+        "credentials": {
+          "httpBasicAuth": {
+            "id": "UqZlwzClZfiYKanN",
+            "name": "BelPro API (Basic Auth)"
+          }
+        }
+      },
+      {
+        "parameters": {
+          "method": "GET",
+          "url": "http://api:8000/api/log-entries/photo-limit",
+          "options": {}
+        },
+        "id": "http_get_photo_limit",
+        "name": "HTTP: GET Photo Limit",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          2340,
+          128
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const entryData = $('HTTP: GET Entry Photos').first().json;\nconst limitData = $('HTTP: GET Photo Limit').first().json;\nconst mediaData = $('Code: Build Image Media Body').first().json;\n\nconst currentCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst maxPhotos = limitData.max_photos || 5;\n\nreturn [{\n  json: {\n    phone: mediaData.phone,\n    remoteJid: mediaData.remoteJid,\n    entry_id: mediaData.entry_id,\n    current_count: currentCount,\n    max_photos: maxPhotos,\n    at_limit: currentCount >= maxPhotos\n  }\n}];"
+        },
+        "id": "code_check_photo_limit",
+        "name": "Code: Check Photo Limit",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          2580,
+          128
+        ]
+      },
+      {
+        "parameters": {
+          "conditions": {
+            "options": {
+              "caseSensitive": true,
+              "leftValue": "",
+              "typeValidation": "strict",
+              "version": 1
+            },
+            "combinator": "and",
+            "conditions": [
+              {
+                "id": "cond_at_limit",
+                "leftValue": "={{ $json.at_limit }}",
+                "rightValue": true,
+                "operator": {
+                  "type": "boolean",
+                  "operation": "equals",
+                  "name": "filter.operator.equals"
+                }
+              }
+            ]
+          },
+          "options": {}
+        },
+        "id": "if_photo_limit",
+        "name": "IF: Photo Limit Reached",
+        "type": "n8n-nodes-base.if",
+        "typeVersion": 2,
+        "position": [
+          2820,
+          128
+        ]
+      },
+      {
+        "parameters": {
+          "jsCode": "const d = $input.first().json;\nconst msg = `Vnos že vsebuje ${d.current_count} od ${d.max_photos} dovoljenih slik. Nova slika ni bila dodana.\\n\\n1 - Potrdi vnos\\n4 - Prekliči`;\nreturn [{json: {remoteJid: d.remoteJid, text: msg}}];"
+        },
+        "id": "code_limit_reject_msg",
+        "name": "Code: Limit Reject Message",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          3060,
+          280
+        ]
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "authentication": "genericCredentialType",
+          "genericAuthType": "httpHeaderAuth",
+          "sendBody": true,
+          "bodyParameters": {
+            "parameters": [
+              {
+                "name": "number",
+                "value": "={{ $json.remoteJid }}"
+              },
+              {
+                "name": "text",
+                "value": "={{ $json.text }}"
+              }
+            ]
+          },
+          "options": {}
+        },
+        "id": "http_wa_photo_limit",
+        "name": "HTTP: WA Photo Limit",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.2,
+        "position": [
+          3300,
+          280
+        ],
+        "credentials": {
+          "httpHeaderAuth": {
+            "id": "QXGVac2NwnJcQf9V",
+            "name": "BelPro Evolution API"
+          }
+        }
       }
     ],
     "connections": {
@@ -5455,7 +5783,69 @@
         "main": [
           [
             {
+              "node": "HTTP: GET Entry Photos",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: GET Entry Photos": {
+        "main": [
+          [
+            {
+              "node": "HTTP: GET Photo Limit",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "HTTP: GET Photo Limit": {
+        "main": [
+          [
+            {
+              "node": "Code: Check Photo Limit",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Check Photo Limit": {
+        "main": [
+          [
+            {
+              "node": "IF: Photo Limit Reached",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "IF: Photo Limit Reached": {
+        "main": [
+          [
+            {
+              "node": "Code: Limit Reject Message",
+              "type": "main",
+              "index": 0
+            }
+          ],
+          [
+            {
               "node": "HTTP: Fetch Image",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code: Limit Reject Message": {
+        "main": [
+          [
+            {
+              "node": "HTTP: WA Photo Limit",
               "type": "main",
               "index": 0
             }
@@ -5575,18 +5965,34 @@
     "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-15T06:15:57.609Z",
-        "id": 261,
+        "createdAt": "2026-05-18T18:43:46.101Z",
+        "id": 295,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "c3f28027-f418-49f4-bd43-970060159cf9",
+        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-15T06:15:57.635Z",
-        "id": 262,
+        "createdAt": "2026-05-18T18:43:46.125Z",
+        "id": 296,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "c3f28027-f418-49f4-bd43-970060159cf9",
+        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-18T18:43:46.184Z",
+        "id": 297,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-18T18:43:46.217Z",
+        "id": 298,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }
