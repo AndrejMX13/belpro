@@ -238,7 +238,7 @@ git commit -m "chore: update n8n workflow exports"
 bash scripts/upgrade.sh
 ```
 
-Automatically: takes a backup, pulls the latest code (`git pull central main`), rebuilds Docker images, waits for PostgreSQL and API readiness, runs Alembic migrations, and prints a health check summary. Safe to run repeatedly.
+Automatically: takes a backup, pulls the latest code (`git pull`), rebuilds Docker images, waits for PostgreSQL and API readiness, runs Alembic migrations, and prints a health check summary. Safe to run repeatedly.
 
 ### Backup
 

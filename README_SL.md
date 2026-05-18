@@ -244,7 +244,7 @@ bash scripts/upgrade.sh
 
 Skripta samodejno:
 1. Naredi varnostno kopijo pred kakršno koli spremembo
-2. Prenese najnovejšo kodo (`git pull central main`)
+2. Prenese najnovejšo kodo (`git pull`)
 3. Posodobi in ponovno zgradi Docker slike
 4. Počaka, da sta PostgreSQL in API pripravljena
 5. Zažene Alembic migracije baze podatkov
