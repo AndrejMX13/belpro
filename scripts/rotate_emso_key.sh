@@ -63,7 +63,7 @@ if [[ "${1:-}" == "--restore" ]]; then
   [[ "$confirm" == "DA" ]] || die "Obnovitev prekinjena."
 
   info "Zaganjam obnovitev ..."
-  $COMPOSE exec -T api python /app/scripts/rotate_emso_key.py --restore "$BACKUP_FILE" \
+  $COMPOSE exec -T -e PYTHONPATH=/app api python /app/scripts/rotate_emso_key.py --restore "$BACKUP_FILE" \
     || die "Obnovitev ni uspela. Preverite zgornje napake."
   ok "Obnovitev uspešna."
   echo ""
@@ -117,6 +117,7 @@ heading "2. Ciljna varnostna kopija tabele prostovoljcev"
 BACKUP_FILE="/app/pdfs/temp/emso_rotation_$(date +%Y%m%d_%H%M%S).json"
 info "Shranjujem varnostno kopijo v $BACKUP_FILE ..."
 $COMPOSE exec -T \
+  -e PYTHONPATH=/app \
   -e OLD_EMSO_KEY="$OLD_KEY" \
   api python /app/scripts/rotate_emso_key.py --backup "$BACKUP_FILE" \
   || die "Ciljna varnostna kopija ni uspela — rotacija prekinjena."
@@ -126,6 +127,7 @@ ok "Ciljna varnostna kopija je shranjena."
 heading "3. Rotacija ključa"
 info "Zaganjam rotacijo znotraj API vsebnika ..."
 $COMPOSE exec -T \
+  -e PYTHONPATH=/app \
   -e OLD_EMSO_KEY="$OLD_KEY" \
   -e NEW_EMSO_KEY="$NEW_KEY" \
   api python /app/scripts/rotate_emso_key.py \

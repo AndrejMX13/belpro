@@ -32,8 +32,10 @@ def load_key(b64_key: str) -> bytes:
     Raises ValueError if the decoded key is not exactly 32 bytes.
     Call once at startup so misconfiguration is caught before any request.
     """
-    # Add missing base64 padding if the value was stored without it.
-    padded = b64_key + "=" * (-len(b64_key) % 4)
+    # Accept both standard base64 and base64url (- and _ variants).
+    # Add missing padding if the value was stored without it.
+    normalized = b64_key.replace("-", "+").replace("_", "/")
+    padded = normalized + "=" * (-len(normalized) % 4)
     key = base64.b64decode(padded)
     if len(key) != 32:
         raise ValueError(
