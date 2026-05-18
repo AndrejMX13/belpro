@@ -47,5 +47,6 @@ if ! git -C "$PROJECT_DIR" diff --quiet HEAD 2>/dev/null; then
   echo ""
   read -r -p "  Nadaljujem kljub temu? git pull lahko ne uspe pri konfliktih. [da/NE] " confirm
   [[ "$confirm" == "da" ]] || die "Nadgradnja prekinjena."
+else
+  ok "Delovno drevo je čisto."
 fi
-ok "Delovno drevo je čisto."
