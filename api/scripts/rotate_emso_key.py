@@ -26,7 +26,6 @@ from services.encryption import decrypt_emso, encrypt_emso, hash_emso, load_key
 from utils.emso import emso_checksum_valid
 
 SAMPLE_VERIFY_COUNT = 5
-TEMP_DIR = Path("/app/pdfs/temp")
 
 
 def _db_url() -> str:
@@ -38,6 +37,11 @@ async def cmd_backup(out_path: Path) -> None:
     old_b64 = os.environ.get("OLD_EMSO_KEY", "")
     if not old_b64:
         print("NAPAKA: OLD_EMSO_KEY ni nastavljen.", file=sys.stderr)
+        sys.exit(1)
+    try:
+        load_key(old_b64)  # validate format before writing backup
+    except ValueError as exc:
+        print(f"NAPAKA: OLD_EMSO_KEY je neveljaven: {exc}", file=sys.stderr)
         sys.exit(1)
 
     conn = await asyncpg.connect(_db_url())
@@ -54,8 +58,9 @@ async def cmd_backup(out_path: Path) -> None:
             ],
         }
         out_path.parent.mkdir(parents=True, exist_ok=True)
-        out_path.write_text(json.dumps(data, indent=2), encoding="utf-8")
-        out_path.chmod(0o600)
+        fd = os.open(str(out_path), os.O_WRONLY | os.O_CREAT | os.O_TRUNC, 0o600)
+        with os.fdopen(fd, "w", encoding="utf-8") as fh:
+            json.dump(data, fh, indent=2)
         print(f"Varnostna kopija shranjena: {out_path} ({len(rows)} zapisov)")
     finally:
         await conn.close()
@@ -69,7 +74,7 @@ async def cmd_restore(backup_path: Path) -> None:
 
     data = json.loads(backup_path.read_text(encoding="utf-8"))
     volunteers = data["volunteers"]
-    old_key_hint = data.get("old_key", "")
+    old_key_b64 = data.get("old_key", "")
 
     conn = await asyncpg.connect(_db_url())
     try:
@@ -83,9 +88,9 @@ async def cmd_restore(backup_path: Path) -> None:
                 )
         print(f"Obnovljenih {len(volunteers)} zapisov iz varnostne kopije.")
         print()
-        print("OPOMNIK: Stari ključ (za .env):")
-        print(f"  EMSO_ENCRYPTION_KEY={old_key_hint}")
-        print("Posodobite .env in znova zaženite API vsebnik.")
+        print("OPOMNIK: Posodobite EMSO_ENCRYPTION_KEY v .env na stari ključ.")
+        print(f"Stari ključ preberite iz varnostne kopije: {backup_path}")
+        print("Znova zaženite API vsebnik: docker compose up -d api")
     finally:
         await conn.close()
 
@@ -159,6 +164,14 @@ async def cmd_rotate(old_key: bytes, new_key: bytes) -> int:
             if decrypt_emso(row["emso"], new_key) != decrypted[vid]:
                 print(
                     f"NAPAKA: Preverjanje ni uspelo za prostovoljca {vid}!",
+                    file=sys.stderr,
+                )
+                print(
+                    "Baza podatkov je posodobljena z novim ključem, a preverjanje je spodletelo.",
+                    file=sys.stderr,
+                )
+                print(
+                    "Uporabite --restore za obnovitev iz varnostne kopije.",
                     file=sys.stderr,
                 )
                 sys.exit(1)
