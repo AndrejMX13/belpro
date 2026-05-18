@@ -104,6 +104,8 @@ cd belpro
 cp .env.example .env
 ```
 
+> Vsi komentarji v `.env.example` so v angleščini. Če ti je lažje, je na voljo tudi slovensko prevedena različica: `.env.example.sl` — vsebuje enake spremenljivke in vrednosti, le komentarji so v slovenščini.
+
 Uredi datoteko `.env` in izpolni vse vnose. Ključni ukazi za generiranje potrebnih ključev:
 
 ```bash
@@ -292,7 +294,8 @@ To ukaz izbriše shranjeno šifrirano geslo, sistem pa ob naslednji prijavi upo�
 ```
 belpro/
 ├── docker-compose.yml
-├── .env.example
+├── .env.example            # Predloga za konfiguracijo (komentarji v angleščini)
+├── .env.example.sl         # Ista predloga s komentarji v slovenščini
 ├── n8n/workflows/          # Izvoženi n8n delovni procesi v JSON (objavljeni v repozitoriju)
 ├── whisper/                # HTTP ovojnik (wrapper) za Faster-Whisper
 ├── api/                    # FastAPI ozadje + generiranje PDF poročil
