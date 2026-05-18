@@ -99,3 +99,22 @@ until $COMPOSE exec -T api curl -sf http://localhost:8000/health &>/dev/null; do
   sleep 3; ELAPSED=$((ELAPSED + 3))
 done
 ok "API je pripravljen."
+
+# ── Alembic migrations ───────────────────────────────────────────────────────
+heading "6. Migracije baze podatkov"
+$COMPOSE exec -T api alembic upgrade head
+ok "Migracije baze podatkov so dokončane."
+
+# ── Health check ─────────────────────────────────────────────────────────────
+heading "7. Preverjanje stanja sistema"
+HEALTH="$(curl -sf http://localhost:8100/api/health 2>/dev/null || echo '{"status":"nedosegljiv"}')"
+echo "  $HEALTH"
+ok "Preverjanje stanja je dokončano."
+
+# ── Summary ───────────────────────────────────────────────────────────────────
+heading "✓ Nadgradnja uspešno zaključena"
+echo ""
+echo -e "  ${BOLD}BelPro nadzorna plošča${RESET}  →  http://localhost:80"
+echo -e "  ${BOLD}FastAPI dokumentacija${RESET}    →  http://localhost:8100/docs"
+echo -e "  ${BOLD}n8n${RESET}                      →  http://localhost:5678"
+echo ""
