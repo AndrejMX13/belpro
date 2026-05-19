@@ -40,6 +40,12 @@ EMSO_ENCRYPTION_KEY=GENERATE_AND_PASTE_HERE
 API_SECRET_KEY=GENERATE_AND_PASTE_HERE
 MANAGER_PASSWORD=change_me_strong_password
 
+# SESSION_DURATION_HOURS: kako dolgo traja seja upravljalca (v urah).
+SESSION_DURATION_HOURS=24
+
+# COOKIE_SECURE: nastavi na True, ko strežnik deluje prek HTTPS.
+COOKIE_SECURE=False
+
 # -----------------------------------------------------------------------------
 # n8n
 # -----------------------------------------------------------------------------

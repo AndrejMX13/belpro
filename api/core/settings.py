@@ -43,6 +43,10 @@ class Settings(BaseSettings):
     # ── Uploads ───────────────────────────────────────────────────────────────
     max_photos_per_entry: int = 5
 
+    # ── Session ───────────────────────────────────────────────────────────────
+    session_duration_hours: int = 24
+    cookie_secure: bool = False
+
 
 @lru_cache
 def get_settings() -> Settings:
