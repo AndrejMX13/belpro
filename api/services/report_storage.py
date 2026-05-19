@@ -54,6 +54,9 @@ async def persist_report(
     row = (await db.execute(existing_stmt)).scalar_one_or_none()
 
     if row is not None:
+        old_path = Path(row.pdf_path)
+        if old_path != path:
+            old_path.unlink(missing_ok=True)
         row.pdf_path = str(path)
         row.sent_at = now
         row.generated_at = now

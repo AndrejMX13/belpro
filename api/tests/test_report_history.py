@@ -118,3 +118,7 @@ async def test_persist_report_consolidated_overwrites_on_resend(
         )
     )).scalars().all()
     assert len(all_rows) == 1
+
+    new_path = Path(row2.pdf_path)
+    assert new_path.exists()
+    assert new_path.read_bytes() == b"%PDF v2"
