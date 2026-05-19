@@ -196,6 +196,14 @@ All messages the bot sends via Evolution API are sent *from* the instance's What
 - Whisper configured for `sl` (Slovenian) language hint, with fallback to auto-detect.
 - Transcript parsing (date, hours, location, activity) is handled by pattern matching in the n8n code node. No LLM normalisation step is implemented.
 
+### 4.5 Whisper concurrency — design decision
+
+The Whisper service runs as a single-threaded HTTP server (Python `HTTPServer`). Concurrent transcription requests serialise — one runs, the rest wait in the OS TCP accept queue. This is a deliberate trade-off:
+
+- **Why single worker:** each worker loads its own model instance (~6 GB RAM for `large-v3`). Multiple workers multiply RAM linearly and risk OOM on typical VPS hardware — a harder failure mode than latency.
+- **Acceptable for single-NGO use:** realistic burst load is 2–4 simultaneous voice notes at end of shift. Worst-case wait is a few minutes; the volunteer still receives a response.
+- **If concurrency becomes a real problem:** the correct fix is a Redis-backed task queue with a single transcription worker, not `--workers N` on uvicorn. That enhancement is deferred to post-1.0 and will only be implemented if an actual deployment reports it as a problem.
+
 ---
 
 ## 5. Manager Dashboard (Web UI)
