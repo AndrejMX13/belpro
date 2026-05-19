@@ -37,7 +37,7 @@ def _open_image(data: bytes) -> Image.Image:
     """Open image bytes with Pillow. Raises ValueError for unsupported or corrupt input."""
     try:
         img = Image.open(io.BytesIO(data))
-        if img.format and img.format.upper() not in _ALLOWED_RASTER_FORMATS:
+        if img.format is None or img.format.upper() not in _ALLOWED_RASTER_FORMATS:
             raise ValueError(f"Nepodprta oblika datoteke: {img.format}")
         img.load()  # force full read to catch truncated files
         return img

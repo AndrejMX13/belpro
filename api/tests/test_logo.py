@@ -88,10 +88,15 @@ def test_save_overwrites_existing_logo(tmp_path, monkeypatch):
     monkeypatch.setattr(logo_mod, "LOGO_DIR", tmp_path / "logo")
     monkeypatch.setattr(logo_mod, "LOGO_PATH", tmp_path / "logo" / "logo.png")
 
-    logo_mod.save_logo(_png_1x1())
+    # First save: 1×1
+    buf1 = io.BytesIO()
+    Image.new("RGB", (1, 1)).save(buf1, format="PNG")
+    logo_mod.save_logo(buf1.getvalue())
 
-    logo_mod.save_logo(_png_1x1())
+    # Second save: 2×2 — verifies overwrite actually replaced the file
+    buf2 = io.BytesIO()
+    Image.new("RGB", (2, 2)).save(buf2, format="PNG")
+    logo_mod.save_logo(buf2.getvalue())
 
-    # Both saves must produce a valid PNG
-    assert logo_mod.LOGO_PATH.exists()
-    Image.open(logo_mod.LOGO_PATH).verify()
+    saved = Image.open(logo_mod.LOGO_PATH)
+    assert saved.size == (2, 2), "Second save must replace the first"
