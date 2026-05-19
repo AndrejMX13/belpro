@@ -103,3 +103,31 @@ async def test_with_entries_only_false_includes_all_active_volunteers(
     ids = [item["volunteer_id"] for item in r.json()["items"]]
     assert str(v1.id) in ids
     assert str(v2.id) in ids
+
+
+
+# ── logo in PDF header ────────────────────────────────────────────────────────
+
+def test_ngo_header_html_without_logo():
+    """_ngo_header_html must not include an img tag when logo_path is None."""
+    from services.report_pdf import NGOInfo, _ngo_header_html
+    ngo = NGOInfo(name="Test NGO", street="Testna 1", postal_code="1000", city="Ljubljana")
+    html = _ngo_header_html(ngo)
+    assert "<img" not in html
+
+
+def test_ngo_header_html_with_logo(tmp_path):
+    """_ngo_header_html must include an img tag with file:// src when logo_path is set."""
+    from services.report_pdf import NGOInfo, _ngo_header_html
+    logo = tmp_path / "logo.png"
+    logo.write_bytes(b"fake")  # content irrelevant — only the path is tested here
+    ngo = NGOInfo(
+        name="Test NGO",
+        street="Testna 1",
+        postal_code="1000",
+        city="Ljubljana",
+        logo_path=str(logo),
+    )
+    html = _ngo_header_html(ngo)
+    assert "<img" in html
+    assert f"file://{logo}" in html

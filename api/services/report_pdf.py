@@ -25,9 +25,10 @@ tbody tr:nth-child(even) td { background: #f8fafc; }
 .num { text-align: right; white-space: nowrap; }
 tfoot td { font-weight: bold; border-top: 2px solid #1e40af; padding: 7px 8px; font-size: 9pt; }
 .footer { margin-top: 2em; font-size: 8pt; color: #9ca3af; text-align: right; }
-.ngo-header { margin-bottom: 1.8em; padding-bottom: 0.8em; border-bottom: 2px solid #1e40af; }
+.ngo-header { margin-bottom: 1.8em; padding-bottom: 0.8em; border-bottom: 2px solid #1e40af; overflow: hidden; }
 .ngo-name { font-size: 13pt; font-weight: bold; color: #1e3a8a; }
 .ngo-contact { font-size: 9pt; color: #555; margin-top: 0.3em; line-height: 1.6; }
+.ngo-logo { max-height: 60px; max-width: 160px; object-fit: contain; float: right; margin-left: 1em; }
 """
 
 
@@ -54,6 +55,7 @@ class NGOInfo:
     phone: str | None = None
     email: str | None = None
     ngo_davcna: str | None = None
+    logo_path: str | None = None
 
 
 def _ngo_header_html(ngo: NGOInfo) -> str:
@@ -66,8 +68,14 @@ def _ngo_header_html(ngo: NGOInfo) -> str:
     if ngo.email:
         contact_parts.append(f"E-pošta: {_esc(ngo.email)}")
     contact = "<br>".join(contact_parts)
+    logo_html = (
+        f"<img class='ngo-logo' src='file://{_esc(ngo.logo_path)}'>"
+        if ngo.logo_path
+        else ""
+    )
     return (
         f"<div class='ngo-header'>"
+        f"{logo_html}"
         f"<div class='ngo-name'>{_esc(ngo.name)}</div>"
         f"<div class='ngo-contact'>{contact}</div>"
         f"</div>"

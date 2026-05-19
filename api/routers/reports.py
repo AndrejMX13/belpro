@@ -21,6 +21,7 @@ from models.volunteer import Volunteer
 from schemas.report import MonthlyReportSummary, VolunteerMonthlySummary
 from services.email import SmtpNotConfiguredError, send_email
 from services.evolution import EvolutionClient
+from services.logo import LOGO_PATH, logo_exists
 from services.report_pdf import NGOInfo, render_summary_pdf, render_volunteer_pdf
 from utils.phone import normalize_phone
 
@@ -130,6 +131,7 @@ async def generate_monthly_pdf(
         phone=manager.phone,
         email=manager.email,
         ngo_davcna=manager.ngo_davcna,
+        logo_path=str(LOGO_PATH) if logo_exists() else None,
     )
 
     if volunteer_id:
@@ -202,6 +204,7 @@ async def send_monthly_reports(
         phone=manager.phone,
         email=manager.email,
         ngo_davcna=manager.ngo_davcna,
+        logo_path=str(LOGO_PATH) if logo_exists() else None,
     )
 
     volunteers: list[Volunteer] = list(
