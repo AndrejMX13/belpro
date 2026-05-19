@@ -1500,7 +1500,7 @@ async function renderSettings() {
         // Logo exists — show thumbnail and delete button
         area.innerHTML = `
           <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:0.25rem">
-            <img id="s-logo-img" src="/api/logo" alt="Logotip" style="max-height:60px;max-width:160px;object-fit:contain;border:1px solid var(--border,#e2e8f0);border-radius:4px;padding:4px;background:#fff">
+            <img id="s-logo-img" src="/api/logo?t=${Date.now()}" alt="Logotip" style="max-height:60px;max-width:160px;object-fit:contain;border:1px solid var(--border,#e2e8f0);border-radius:4px;padding:4px;background:#fff">
             <button class="btn btn-secondary btn-sm" id="s-logo-delete">Odstrani</button>
           </div>
           <div class="form-hint" style="margin-top:0.4rem">Za zamenjavo logotipa ga najprej odstranite, nato naložite novega.</div>`;
@@ -1540,7 +1540,32 @@ async function renderSettings() {
         });
       }
     } catch (err) {
-      showErr('s-logo-error', 'Napaka pri nalaganju logotipa.');
+      const area = $('s-logo-area');
+      if (area) {
+        area.innerHTML = `
+          <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin-top:0.25rem">
+            <input type="file" id="s-logo-file" accept="image/jpeg,image/png,image/webp,image/gif,image/bmp,image/tiff" style="font-size:0.875rem">
+            <button class="btn btn-primary btn-sm" id="s-logo-upload">Naloži</button>
+          </div>
+          <div class="form-hint" style="margin-top:0.4rem">Podprte oblike: JPEG, PNG, WebP, GIF, BMP, TIFF.</div>`;
+        $('s-logo-upload').addEventListener('click', async () => {
+          showErr('s-logo-error', '');
+          const fileInput = $('s-logo-file');
+          if (!fileInput.files.length) {
+            showErr('s-logo-error', 'Izberite datoteko.'); return;
+          }
+          const formData = new FormData();
+          formData.append('file', fileInput.files[0]);
+          try {
+            await API.logo.upload(formData);
+            toast('Logotip je bil naložen.');
+            await _initLogoSection();
+          } catch (uploadErr) {
+            showErr('s-logo-error', uploadErr.message);
+          }
+        });
+      }
+      showErr('s-logo-error', 'Napaka pri preverjanju logotipa.');
     }
   }
 
