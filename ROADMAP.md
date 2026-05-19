@@ -15,11 +15,11 @@ This page shows what's coming before the first stable release and what has alrea
 ### Manager experience
 - Dashboard shows a live health summary of all services — enough to diagnose a problem over the phone without opening Docker
 - Errors in message delivery or report generation show up as notifications in the dashboard
-- System upgrades handled by a single script — no missed steps
+- ✓ System upgrades handled by a single script — no missed steps
 
 ### Security & data protection
 - ✓ Login sessions protected against script-based attacks on the local network
-- Photo uploads per entry are limited to a sensible maximum
+- ✓ Photo uploads per entry are limited to a sensible maximum
 - Photos are automatically cleaned up after the legal retention period
 - ✓ EMŠO validated at entry — a bad number is caught immediately, not days later
 - ✓ A safe procedure exists for rotating the encryption key if ever needed
