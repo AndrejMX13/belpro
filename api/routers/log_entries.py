@@ -255,6 +255,18 @@ async def upload_photo(
             detail="Odobrenega vnosa ni mogoče urejati.",
         )
 
+    max_photos = get_settings().max_photos_per_entry
+    existing_count = (
+        await db.execute(
+            select(func.count()).where(LogEntryPhoto.log_entry_id == entry_id)
+        )
+    ).scalar()
+    if existing_count >= max_photos:
+        raise HTTPException(
+            status_code=http_status.HTTP_409_CONFLICT,
+            detail=f"Vnos že vsebuje {existing_count} od {max_photos} dovoljenih slik. Nova slika ni bila dodana.",
+        )
+
     ext = Path(file.filename or "").suffix.lower()
     if ext not in _ALLOWED_EXTENSIONS:
         raise HTTPException(
@@ -306,6 +318,18 @@ async def upload_photo_base64(
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
             detail="Odobrenega vnosa ni mogoče urejati.",
+        )
+
+    max_photos = get_settings().max_photos_per_entry
+    existing_count = (
+        await db.execute(
+            select(func.count()).where(LogEntryPhoto.log_entry_id == entry_id)
+        )
+    ).scalar()
+    if existing_count >= max_photos:
+        raise HTTPException(
+            status_code=http_status.HTTP_409_CONFLICT,
+            detail=f"Vnos že vsebuje {existing_count} od {max_photos} dovoljenih slik. Nova slika ni bila dodana.",
         )
 
     ext = Path(body.filename or "").suffix.lower()
