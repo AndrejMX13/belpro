@@ -1629,7 +1629,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.remoteJid;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || null;\nif (!state || state.mode !== 'awaiting_photos') {\n  return [{json: {phone, remoteJid, has_active_photo_state: false, text: \"Najprej pošljite glasovno ali text sporočilo oziroma izberite 3. Dodaj slike v meniju\"}}];\n}\nreturn [{json: {\n  phone, remoteJid,\n  has_active_photo_state: true,\n  entry_id: state.entry_id,\n  messageKey: inp.messageKey,\n  messageData: inp.messageData\n}}];"
+        "jsCode": "const inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.remoteJid;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || null;\nif (!state || state.mode !== 'awaiting_photos') {\n  return [{json: {phone, remoteJid, has_active_photo_state: false, text: 'Slika je prejeta, a vnos ni v fazi dodajanja slik.\\n\\nČe imate odprt vnos, izberite:\\n1 - Potrdi\\n3 - Dodaj slike\\n4 - Prekliči'}}];\n}\nreturn [{json: {\n  phone, remoteJid,\n  has_active_photo_state: true,\n  entry_id: state.entry_id,\n  messageKey: inp.messageKey,\n  messageData: inp.messageData\n}}];"
       },
       "id": "code_preveri_slike",
       "name": "Code: Preveri Slike Stanje",
