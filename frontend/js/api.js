@@ -169,6 +169,14 @@ const API = (() => {
       },
       sendMonthly: (year, month) =>
         request(`/reports/send-monthly?year=${year}&month=${month}`, { method: 'POST' }),
+      history: (year = null, month = null) => {
+        const q = new URLSearchParams();
+        if (year != null) q.set('year', year);
+        if (month != null) q.set('month', month);
+        return request('/reports/history?' + q);
+      },
+      downloadHistoryPdf: (reportId) =>
+        downloadRequest('/reports/history/' + reportId + '/pdf'),
     },
 
     logo: {

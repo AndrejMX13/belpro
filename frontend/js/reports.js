@@ -50,6 +50,15 @@ async function renderReports() {
     <div id="reports-content">
       <div class="loading-row"><span class="spinner"></span></div>
     </div>
+    <div style="margin-top:2rem">
+      <button id="toggle-archive-btn" class="btn btn-ghost"
+              style="width:100%;text-align:left;padding:0.5rem 0;font-weight:600;border:none;border-bottom:1px solid var(--border);border-radius:0;cursor:pointer">
+        &#9660; Arhiv poro&#269;il
+      </button>
+      <div id="reports-archive" hidden>
+        <div class="loading-row"><span class="spinner"></span></div>
+      </div>
+    </div>
   `);
 
   $('r-year').addEventListener('change', () => {
@@ -68,6 +77,25 @@ async function renderReports() {
   $('send-reports-btn').addEventListener('click', sendReports);
 
   await loadReports();
+
+  let archiveLoaded = false;
+  $('toggle-archive-btn').addEventListener('click', () => {
+    const container = $('reports-archive');
+    const btn = $('toggle-archive-btn');
+    if (!container) return;
+    const isHidden = container.hasAttribute('hidden');
+    if (isHidden) {
+      container.removeAttribute('hidden');
+      btn.textContent = '▲ Arhiv poročil';
+      if (!archiveLoaded) {
+        archiveLoaded = true;
+        loadReportArchive();
+      }
+    } else {
+      container.setAttribute('hidden', '');
+      btn.textContent = '▼ Arhiv poročil';
+    }
+  });
 }
 
 async function loadReports() {
@@ -209,4 +237,72 @@ async function sendReports() {
 
 function fmtHours(h) {
   return Number(h).toFixed(1);
+}
+
+async function loadReportArchive() {
+  const container = $('reports-archive');
+  if (!container) return;
+
+  try {
+    const data = await API.reports.history();
+
+    if (data.items.length === 0) {
+      setHtml(container, '<p class="empty-state" style="padding:0.75rem 0">Ni shranjenih poročil.</p>');
+      return;
+    }
+
+    const rows = data.items.map(item => {
+      const period = `${SL_MONTHS[item.period_month]} ${item.period_year}`;
+      const name = item.volunteer_name || 'Skupno';
+      const sentAt = item.sent_at
+        ? new Date(item.sent_at).toLocaleDateString('sl-SI')
+        : '—';
+      return `
+        <tr>
+          <td>${esc(period)}</td>
+          <td>${esc(name)}</td>
+          <td>${esc(sentAt)}</td>
+          <td class="td-actions" data-stop>
+            <button class="btn btn-ghost btn-sm" data-archive-id="${esc(item.id)}">Prenesi</button>
+          </td>
+        </tr>
+      `;
+    }).join('');
+
+    setHtml(container, `
+      <div class="table-wrapper" style="margin-top:0.75rem">
+        <table>
+          <thead><tr>
+            <th>Obdobje</th>
+            <th>Prostovoljec</th>
+            <th>Poslano</th>
+            <th></th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    `);
+
+    container.querySelectorAll('[data-archive-id]').forEach(btn => {
+      btn.addEventListener('click', () => downloadHistoryPdf(btn.dataset.archiveId));
+    });
+  } catch (err) {
+    setHtml(container, `<p class="error-text" style="padding:0.75rem 0">Napaka pri nalaganju arhiva: ${esc(err.message)}</p>`);
+  }
+}
+
+async function downloadHistoryPdf(reportId) {
+  try {
+    const { blob, filename } = await API.reports.downloadHistoryPdf(reportId);
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  } catch (err) {
+    toast('Napaka pri prenosu: ' + esc(err.message), 'error');
+  }
 }
