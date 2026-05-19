@@ -292,7 +292,14 @@ async def upload_photo(
     db.add(photo)
     await db.commit()
     await db.refresh(photo)
-    return PhotoResponse.model_validate(photo)
+    count_q = select(func.count()).select_from(LogEntryPhoto).where(
+        LogEntryPhoto.log_entry_id == entry_id
+    )
+    photo_count_val: int = (await db.execute(count_q)).scalar() or 0
+    resp = PhotoResponse.model_validate(photo)
+    resp.photo_count = photo_count_val
+    resp.max_photos = get_settings().max_photos_per_entry
+    return resp
 
 
 @router.post(
@@ -370,6 +377,7 @@ async def upload_photo_base64(
     photo_count: int = (await db.execute(count_q)).scalar() or 0
     resp = PhotoResponse.model_validate(photo)
     resp.photo_count = photo_count
+    resp.max_photos = max_photos
     return resp
 
 

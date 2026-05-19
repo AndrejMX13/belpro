@@ -1764,7 +1764,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// API rejected the upload (limit exceeded or other error)\nif (!apiResp.id) {\n  const detail = apiResp.detail || 'Napaka pri nalaganju slike.';\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: detail + '\\n\\n1 - Potrdi vnos\\n4 - Prekliči'}}];\n}\n\n// Only send confirmation menu for the first photo in a batch\nif (apiResp.photo_count !== 1) {\n  return [];\n}\n\nreturn [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči'}}];\n"
+        "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// API rejected the upload (limit exceeded or other error)\nif (!apiResp.id) {\n  const detail = apiResp.detail || 'Napaka pri nalaganju slike.';\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: detail + '\\n\\n1 - Potrdi vnos\\n4 - Prekliči'}}];\n}\n\n// At limit — no more photos possible\nif (apiResp.photo_count >= apiResp.max_photos) {\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n\\n1 - Potrdi\\n4 - Prekliči'}}];\n}\n\n// First photo — send full menu\nif (apiResp.photo_count === 1) {\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči'}}];\n}\n\n// Subsequent photos within limit — volunteer still has the menu from photo 1\nreturn [];\n"
       },
       "id": "code_slika_prejeta",
       "name": "Code: Slika Prejeta",
