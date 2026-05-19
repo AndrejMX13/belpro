@@ -40,7 +40,10 @@ async def login(
 
 
 @router.post("/auth/logout", response_model=LoginResponse)
-async def logout(response: Response) -> LoginResponse:
+async def logout(
+    response: Response,
+    settings: Annotated[Settings, Depends(get_settings)],
+) -> LoginResponse:
     """Clear the session cookie."""
-    response.delete_cookie(key="belpro_session", samesite="strict")
+    response.delete_cookie(key="belpro_session", samesite="strict", secure=settings.cookie_secure)
     return LoginResponse(ok=True)
