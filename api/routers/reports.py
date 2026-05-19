@@ -26,6 +26,7 @@ from services.email import SmtpNotConfiguredError, send_email
 from services.evolution import EvolutionClient
 from services.logo import logo_src
 from services.report_pdf import NGOInfo, render_summary_pdf, render_volunteer_pdf
+from services.report_storage import persist_report
 from utils.phone import normalize_phone
 
 router = APIRouter(prefix="/reports", tags=["reports"])
@@ -250,6 +251,7 @@ async def send_monthly_reports(
         pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, y, m, entries, ngo=ngo)
         filename = f"porocilo_{vol.last_name}_{vol.first_name}_{y}_{m:02d}.pdf"
         caption = f"BelPro — mesečno poročilo {m:02d}/{y}"
+        await persist_report(db, y, m, filename, pdf_bytes, volunteer_id=vol.id)
 
         if will_email:
             body = (
@@ -296,6 +298,7 @@ async def send_monthly_reports(
         consolidated_bytes = render_summary_pdf(y, m, mgr_items, ngo=ngo)
         consolidated_filename = f"porocilo_skupno_{y}_{m:02d}.pdf"
         mgr_caption = f"BelPro — skupno mesečno poročilo {m:02d}/{y}"
+        await persist_report(db, y, m, consolidated_filename, consolidated_bytes, volunteer_id=None)
 
         if manager_will_email:
             manager_body = (

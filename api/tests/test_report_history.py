@@ -213,3 +213,129 @@ async def test_get_history_pdf_unknown_id_returns_404(
     """GET /reports/history/{id}/pdf returns 404 for a nonexistent report ID."""
     r = await client.get(f"/api/reports/history/{uuid.uuid4()}/pdf", headers=auth)
     assert r.status_code == 404
+
+
+from datetime import date
+from decimal import Decimal
+from unittest.mock import AsyncMock, MagicMock
+
+from models.log_entry import EntryStatus
+
+
+async def test_send_monthly_persists_volunteer_pdf(
+    client: AsyncClient,
+    auth: dict,
+    db_session: AsyncSession,
+    volunteer_factory,
+    log_entry_factory,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """send_monthly_reports must persist one MonthlyReport row per volunteer PDF."""
+    import services.report_storage as rs
+    monkeypatch.setattr(rs, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr("routers.reports.send_email", AsyncMock(return_value=None))
+    monkeypatch.setattr(
+        "routers.reports.EvolutionClient",
+        MagicMock(return_value=MagicMock(send_document=AsyncMock(return_value=None))),
+    )
+
+    v = await volunteer_factory(report_email=True, email="vol@test.si", report_whatsapp=False)
+    await log_entry_factory(
+        v.id, work_date=date(2026, 4, 10),
+        hours=Decimal("3.0"), status=EntryStatus.APPROVED,
+    )
+
+    r = await client.post("/api/reports/send-monthly?year=2026&month=4", headers=auth)
+    assert r.status_code == 200
+
+    rows = (await db_session.execute(
+        select(MonthlyReport).where(
+            MonthlyReport.period_year == 2026,
+            MonthlyReport.period_month == 4,
+            MonthlyReport.volunteer_id == v.id,
+        )
+    )).scalars().all()
+    assert len(rows) == 1, "Exactly one MonthlyReport row must exist for the volunteer"
+    assert Path(rows[0].pdf_path).exists(), "PDF file must exist on disk"
+    assert rows[0].sent_at is not None
+
+
+async def test_send_monthly_resend_overwrites_row(
+    client: AsyncClient,
+    auth: dict,
+    db_session: AsyncSession,
+    volunteer_factory,
+    log_entry_factory,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """Calling send_monthly_reports twice for the same month must overwrite, not create a second row."""
+    import services.report_storage as rs
+    monkeypatch.setattr(rs, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr("routers.reports.send_email", AsyncMock(return_value=None))
+    monkeypatch.setattr(
+        "routers.reports.EvolutionClient",
+        MagicMock(return_value=MagicMock(send_document=AsyncMock(return_value=None))),
+    )
+
+    v = await volunteer_factory(report_email=True, email="vol@test.si", report_whatsapp=False)
+    await log_entry_factory(
+        v.id, work_date=date(2026, 4, 10),
+        hours=Decimal("3.0"), status=EntryStatus.APPROVED,
+    )
+
+    await client.post("/api/reports/send-monthly?year=2026&month=4", headers=auth)
+    await client.post("/api/reports/send-monthly?year=2026&month=4", headers=auth)
+
+    rows = (await db_session.execute(
+        select(MonthlyReport).where(
+            MonthlyReport.period_year == 2026,
+            MonthlyReport.period_month == 4,
+            MonthlyReport.volunteer_id == v.id,
+        )
+    )).scalars().all()
+    assert len(rows) == 1, "Must have exactly one row after two sends — overwrite, not duplicate"
+
+
+async def test_send_monthly_persists_consolidated_pdf(
+    client: AsyncClient,
+    auth: dict,
+    db_session: AsyncSession,
+    volunteer_factory,
+    log_entry_factory,
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    """send_monthly_reports must persist a consolidated MonthlyReport row when manager has delivery enabled."""
+    import services.report_storage as rs
+    monkeypatch.setattr(rs, "REPORTS_DIR", tmp_path / "reports")
+    monkeypatch.setattr("routers.reports.send_email", AsyncMock(return_value=None))
+    monkeypatch.setattr(
+        "routers.reports.EvolutionClient",
+        MagicMock(return_value=MagicMock(send_document=AsyncMock(return_value=None))),
+    )
+
+    from models.manager import Manager
+    mgr = (await db_session.execute(select(Manager).limit(1))).scalar_one()
+    mgr.report_email = True
+    await db_session.flush()
+
+    v = await volunteer_factory(report_email=False, report_whatsapp=False)
+    await log_entry_factory(
+        v.id, work_date=date(2026, 4, 15),
+        hours=Decimal("2.0"), status=EntryStatus.APPROVED,
+    )
+
+    r = await client.post("/api/reports/send-monthly?year=2026&month=4", headers=auth)
+    assert r.status_code == 200
+
+    rows = (await db_session.execute(
+        select(MonthlyReport).where(
+            MonthlyReport.period_year == 2026,
+            MonthlyReport.period_month == 4,
+            MonthlyReport.volunteer_id.is_(None),
+        )
+    )).scalars().all()
+    assert len(rows) == 1, "Exactly one consolidated MonthlyReport row must exist"
+    assert Path(rows[0].pdf_path).exists()
