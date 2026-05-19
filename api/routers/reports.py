@@ -336,6 +336,8 @@ async def send_monthly_reports(
                 except Exception as exc:  # noqa: BLE001
                     errors.append(f"Upravljalec (WhatsApp): {exc}")
 
+    await db.commit()
+
     return JSONResponse(
         {
             "year": y,
