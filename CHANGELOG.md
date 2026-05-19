@@ -6,6 +6,31 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.10.1-beta.0] — 2026-05-19
+
+### Added
+- **ISS-005 — httpOnly cookie auth:** login/logout endpoints, secure session token helpers, `SESSION_DURATION_HOURS` and `COOKIE_SECURE` env vars. Dashboard replaces `sessionStorage` credential with a server-set httpOnly cookie. (`api/core/auth.py`, `api/routers/auth.py`, `frontend/js/api.js`)
+- **ISS-016 — NGO logo:** upload/replace/delete via `POST`/`DELETE /api/logo`; logo displayed as thumbnail in "Podatki organizacije" settings card; embedded as base64 data URI in all monthly PDF reports; shown in the sidebar above the BelPro brand on every page. (`api/services/logo.py`, `api/routers/logo.py`, `api/services/report_pdf.py`, `frontend/js/volunteers.js`, `frontend/index.html`)
+- Delete button for pending log entries — `DELETE /log-entries/{id}` now covers `pending_manager` state and cleans up associated photos from disk. (`api/routers/log_entries.py`)
+- `MAX_PHOTOS_PER_ENTRY` env variable (default `5`) enforced at API level; per-entry photo limit also checked in the n8n volunteer entry workflow. `GET /api/log-entries/photo-limit` exposes the configured limit to the frontend. (`api/routers/log_entries.py`, `api/core/settings.py`)
+- Slovenian tax number (davčna številka) Modulus 11 validation in manager settings. (`api/routers/managers.py`)
+- EMŠO encryption key rotation: `scripts/rotate_emso_key.py` (Python) + `scripts/rotate_emso_key.sh` (bash wrapper) with automatic backup, DB re-encryption, and operator guidance. Procedure guide added to `docs/` and referenced from both READMEs.
+- `scripts/upgrade.sh` — automated upgrade script: pre-flight checks, backup, `git pull`, Docker rebuild, Alembic migrations, health-check wait, summary. Procedure documented in both READMEs.
+- ISS-025 added to `OPEN_ISSUES.md`: Emergency SMS notifications via local router SMS gateway (depends on ISS-014 ops sidecar).
+
+### Changed
+- Auth: `require_manager` now accepts both httpOnly cookie sessions and the legacy API key header (dual-auth), keeping the n8n/script integration path working without changes.
+- Photo limit enforcement moved from n8n-only to API level; n8n workflow updated to read the limit from the API endpoint rather than a hardcoded value.
+
+### Fixed
+- Slovenian validation error messages now displayed in the frontend for API errors (previously raw JSON detail was shown).
+- Rate limiting, CORS hardening, timezone audit, and stale env var cleanup across API and Docker Compose config.
+- n8n volunteer entry workflow: correct cancel key (3→4); send confirm/cancel menu when photo limit is reached; include menu options in out-of-state photo reply; carry `mediaBody` through the photo-limit check.
+- `upgrade.sh`: auto-detects git remote instead of hardcoding `origin`.
+- EMŠO key rotation: `load_key()` now accepts both standard base64 and base64url-encoded keys.
+
+---
+
 ## [0.10.0-beta.2] — 2026-05-16
 
 ### Added
