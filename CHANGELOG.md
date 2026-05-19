@@ -6,6 +6,23 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.10.2-beta.0] — 2026-05-19
+
+### Added
+- ISS-024: `POST /api/reports/send-monthly` now persists each generated PDF to disk under
+  `/app/photos/reports/{year}/{month:02d}/`. Resending the same month overwrites — one record
+  per volunteer per month, one consolidated record per month.
+- ISS-024: `GET /api/reports/history` — list persisted report records, filterable by year/month.
+- ISS-024: `GET /api/reports/history/{id}/pdf` — stream a stored PDF; returns 404 if missing.
+- ISS-024: "Arhiv poročil" collapsible section on the reports page — table of past reports with
+  period, volunteer name, sent date, and download button.
+
+### Changed
+- Migration 010: two partial unique indexes on `monthly_reports` enforce one-row-per-period
+  invariant at the DB level (handles nullable `volunteer_id` correctly with partial WHERE clauses).
+
+---
+
 ## [0.10.1-beta.0] — 2026-05-19
 
 ### Added
