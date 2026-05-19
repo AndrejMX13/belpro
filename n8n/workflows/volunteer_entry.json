@@ -2031,7 +2031,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const entryData = $('HTTP: GET Entry Photos').first().json;\nconst limitData = $('HTTP: GET Photo Limit').first().json;\nconst mediaData = $('Code: Build Image Media Body').first().json;\n\nconst currentCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst maxPhotos = limitData.max_photos || 5;\n\nreturn [{\n  json: {\n    phone: mediaData.phone,\n    remoteJid: mediaData.remoteJid,\n    entry_id: mediaData.entry_id,\n    current_count: currentCount,\n    max_photos: maxPhotos,\n    at_limit: currentCount >= maxPhotos\n  }\n}];"
+        "jsCode": "const entryData = $('HTTP: GET Entry Photos').first().json;\nconst limitData = $('HTTP: GET Photo Limit').first().json;\nconst mediaData = $('Code: Build Image Media Body').first().json;\n\nconst currentCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst maxPhotos = limitData.max_photos || 5;\n\nreturn [{\n  json: {\n    phone: mediaData.phone,\n    remoteJid: mediaData.remoteJid,\n    entry_id: mediaData.entry_id,\n    current_count: currentCount,\n    max_photos: maxPhotos,\n    at_limit: currentCount >= maxPhotos,\n    mediaBody: mediaData.mediaBody\n  }\n}];\n"
       },
       "id": "code_check_photo_limit",
       "name": "Code: Check Photo Limit",

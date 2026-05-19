@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """Print pending_manager entries as JSON for the manual trigger node.
 
 Usage:
