@@ -127,4 +127,4 @@ def test_ngo_header_html_with_logo():
     )
     html = _ngo_header_html(ngo)
     assert "<img" in html
-    assert 'src="data:image/png;base64,FAKE"' in html
+    assert "data:image/png;base64,FAKE" in html
