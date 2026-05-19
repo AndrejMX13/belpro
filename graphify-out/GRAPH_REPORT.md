@@ -1,12 +1,12 @@
 # Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-19)
 
 ## Corpus Check
-- 80 files · ~222,182 words
+- 80 files · ~226,284 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 798 nodes · 2104 edges · 74 communities detected
-- Extraction: 42% EXTRACTED · 58% INFERRED · 0% AMBIGUOUS · INFERRED: 1228 edges (avg confidence: 0.57)
+- 800 nodes · 2111 edges · 74 communities detected
+- Extraction: 42% EXTRACTED · 58% INFERRED · 0% AMBIGUOUS · INFERRED: 1233 edges (avg confidence: 0.57)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -117,7 +117,7 @@ Nodes (102): Base, Base, Declarative base — import and subclass in every model
 
 ### Community 1 - "Community 1"
 Cohesion: 0.04
-Nodes (61): auth(), client(), db_session(), engine(), log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), volunteer_factory(), approve_log_entry() (+53 more)
+Nodes (63): auth(), client(), db_session(), engine(), log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), volunteer_factory(), approve_log_entry() (+55 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.06
@@ -501,7 +501,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `EntryStatus` connect `Community 0` to `Community 1`, `Community 10`, `Community 2`, `Community 5`?**
   _High betweenness centrality (0.143) - this node is a cross-community bridge._
 - **Why does `test_upload_photo_unknown_entry()` connect `Community 6` to `Community 1`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+  _High betweenness centrality (0.057) - this node is a cross-community bridge._
 - **Why does `Manager` connect `Community 0` to `Community 1`, `Community 2`, `Community 3`, `Community 5`?**
   _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **Are the 129 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**

@@ -1277,72 +1277,72 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L316",
-      "id": "log_entries_rationale_316",
       "community": 0,
-      "norm_label": "upload a photo from a base64-encoded string. used by n8n workflows."
+      "norm_label": "upload a photo from a base64-encoded string. used by n8n workflows.",
+      "id": "log_entries_rationale_316"
     },
     {
       "label": "Serve a photo file with authentication.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L393",
-      "id": "log_entries_rationale_393",
       "community": 0,
-      "norm_label": "serve a photo file with authentication."
+      "norm_label": "serve a photo file with authentication.",
+      "id": "log_entries_rationale_393"
     },
     {
       "label": "Delete a photo. Blocked if entry is approved.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L420",
-      "id": "log_entries_rationale_420",
       "community": 0,
-      "norm_label": "delete a photo. blocked if entry is approved."
+      "norm_label": "delete a photo. blocked if entry is approved.",
+      "id": "log_entries_rationale_420"
     },
     {
       "label": "Approve a pending_manager log entry.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L461",
-      "id": "log_entries_rationale_461",
       "community": 0,
-      "norm_label": "approve a pending_manager log entry."
+      "norm_label": "approve a pending_manager log entry.",
+      "id": "log_entries_rationale_461"
     },
     {
       "label": "Reject a pending_manager log entry.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L489",
-      "id": "log_entries_rationale_489",
       "community": 0,
-      "norm_label": "reject a pending_manager log entry."
+      "norm_label": "reject a pending_manager log entry.",
+      "id": "log_entries_rationale_489"
     },
     {
       "label": "Mark a pending_manager entry as notified (sets manager_notified_at).      Only",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L517",
-      "id": "log_entries_rationale_517",
       "community": 0,
-      "norm_label": "mark a pending_manager entry as notified (sets manager_notified_at).      only"
+      "norm_label": "mark a pending_manager entry as notified (sets manager_notified_at).      only",
+      "id": "log_entries_rationale_517"
     },
     {
       "label": "Volunteer confirmed the entry. Transitions pending_volunteer \u2192 pending_manager.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L547",
-      "id": "log_entries_rationale_547",
       "community": 0,
-      "norm_label": "volunteer confirmed the entry. transitions pending_volunteer \u2192 pending_manager."
+      "norm_label": "volunteer confirmed the entry. transitions pending_volunteer \u2192 pending_manager.",
+      "id": "log_entries_rationale_547"
     },
     {
       "label": "Delete a pending_volunteer entry (cancelled or corrected by volunteer).",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L575",
-      "id": "log_entries_rationale_575",
       "community": 0,
-      "norm_label": "delete a pending_volunteer entry (cancelled or corrected by volunteer)."
+      "norm_label": "delete a pending_volunteer entry (cancelled or corrected by volunteer).",
+      "id": "log_entries_rationale_575"
     },
     {
       "label": "managers.py",
@@ -1934,27 +1934,27 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\log_entry.py",
       "source_location": "L66",
-      "id": "log_entry_rationale_66",
       "community": 0,
-      "norm_label": "base64-encoded photo upload \u2014 used by n8n workflows."
+      "norm_label": "base64-encoded photo upload \u2014 used by n8n workflows.",
+      "id": "log_entry_rationale_66"
     },
     {
       "label": "Editable fields \u2014 blocked once the entry is approved.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\log_entry.py",
       "source_location": "L73",
-      "id": "log_entry_rationale_73",
       "community": 0,
-      "norm_label": "editable fields \u2014 blocked once the entry is approved."
+      "norm_label": "editable fields \u2014 blocked once the entry is approved.",
+      "id": "log_entry_rationale_73"
     },
     {
       "label": "Paginated log entry list.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\log_entry.py",
       "source_location": "L82",
-      "id": "log_entry_rationale_82",
       "community": 0,
-      "norm_label": "paginated log entry list."
+      "norm_label": "paginated log entry list.",
+      "id": "log_entry_rationale_82"
     },
     {
       "label": "manager.py",
@@ -2474,9 +2474,9 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L128",
-      "id": "rotate_emso_key_rationale_128",
       "community": 2,
-      "norm_label": "re-encrypt all emsos from old_key to new_key. returns count of rotated records."
+      "norm_label": "re-encrypt all emsos from old_key to new_key. returns count of rotated records.",
+      "id": "rotate_emso_key_rationale_128"
     },
     {
       "label": "email.py",
@@ -3517,25 +3517,43 @@
       "label": "test_delete_entry_happy_path()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L247",
+      "source_location": "L246",
       "id": "test_log_entries_test_delete_entry_happy_path",
       "community": 1,
       "norm_label": "test_delete_entry_happy_path()"
     },
     {
-      "label": "test_delete_entry_wrong_status_returns_409()",
+      "label": "test_delete_pending_manager_entry_succeeds()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L259",
-      "id": "test_log_entries_test_delete_entry_wrong_status_returns_409",
+      "source_location": "L257",
+      "id": "test_log_entries_test_delete_pending_manager_entry_succeeds",
       "community": 1,
-      "norm_label": "test_delete_entry_wrong_status_returns_409()"
+      "norm_label": "test_delete_pending_manager_entry_succeeds()"
+    },
+    {
+      "label": "test_delete_rejected_entry_returns_409()",
+      "file_type": "code",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L268",
+      "id": "test_log_entries_test_delete_rejected_entry_returns_409",
+      "community": 1,
+      "norm_label": "test_delete_rejected_entry_returns_409()"
+    },
+    {
+      "label": "test_delete_approved_entry_returns_409()",
+      "file_type": "code",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L277",
+      "id": "test_log_entries_test_delete_approved_entry_returns_409",
+      "community": 1,
+      "norm_label": "test_delete_approved_entry_returns_409()"
     },
     {
       "label": "test_update_approved_entry_returns_409()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L269",
+      "source_location": "L286",
       "id": "test_log_entries_test_update_approved_entry_returns_409",
       "community": 1,
       "norm_label": "test_update_approved_entry_returns_409()"
@@ -3544,7 +3562,7 @@
       "label": "test_photo_upload_unsupported_extension_returns_400_or_422()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L282",
+      "source_location": "L299",
       "id": "test_log_entries_test_photo_upload_unsupported_extension_returns_400_or_422",
       "community": 1,
       "norm_label": "test_photo_upload_unsupported_extension_returns_400_or_422()"
@@ -3553,7 +3571,7 @@
       "label": "test_photo_limit_returns_default()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L295",
+      "source_location": "L312",
       "id": "test_log_entries_test_photo_limit_returns_default",
       "community": 1,
       "norm_label": "test_photo_limit_returns_default()"
@@ -8046,8 +8064,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L258",
       "weight": 1.0,
-      "_src": "log_entries_upload_photo",
-      "_tgt": "settings_get_settings",
+      "_src": "settings_get_settings",
+      "_tgt": "log_entries_upload_photo",
       "source": "settings_get_settings",
       "target": "log_entries_upload_photo"
     },
@@ -8058,8 +8076,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L330",
       "weight": 1.0,
-      "_src": "log_entries_upload_photo_base64",
-      "_tgt": "settings_get_settings",
+      "_src": "settings_get_settings",
+      "_tgt": "log_entries_upload_photo_base64",
       "source": "settings_get_settings",
       "target": "log_entries_upload_photo_base64"
     },
@@ -9245,11 +9263,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_316",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_316",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_316",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_316"
     },
     {
       "relation": "uses",
@@ -9257,11 +9275,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_393",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_393",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_393",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_393"
     },
     {
       "relation": "uses",
@@ -9269,11 +9287,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_420",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_420",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_420",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_420"
     },
     {
       "relation": "uses",
@@ -9281,11 +9299,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_461",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_461",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_461",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_461"
     },
     {
       "relation": "uses",
@@ -9293,11 +9311,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_489",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_489",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_489",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_489"
     },
     {
       "relation": "uses",
@@ -9305,11 +9323,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_517",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_517",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_517",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_517"
     },
     {
       "relation": "uses",
@@ -9317,11 +9335,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_547",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_547",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_547",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_547"
     },
     {
       "relation": "uses",
@@ -9329,11 +9347,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_575",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entries_rationale_575",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entries_rationale_575",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_575"
     },
     {
       "relation": "uses",
@@ -9653,11 +9671,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\log_entry.py",
       "source_location": "L11",
       "weight": 0.8,
-      "_src": "log_entry_rationale_66",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entry_rationale_66",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entry_rationale_66",
-      "confidence_score": 0.5
+      "target": "log_entry_rationale_66"
     },
     {
       "relation": "uses",
@@ -9665,11 +9683,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\log_entry.py",
       "source_location": "L11",
       "weight": 0.8,
-      "_src": "log_entry_rationale_73",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entry_rationale_73",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entry_rationale_73",
-      "confidence_score": 0.5
+      "target": "log_entry_rationale_73"
     },
     {
       "relation": "uses",
@@ -9677,11 +9695,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\log_entry.py",
       "source_location": "L11",
       "weight": 0.8,
-      "_src": "log_entry_rationale_82",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "log_entry_rationale_82",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "log_entry_rationale_82",
-      "confidence_score": 0.5
+      "target": "log_entry_rationale_82"
     },
     {
       "relation": "uses",
@@ -10659,6 +10677,18 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
+      "source_location": "L596",
+      "weight": 1.0,
+      "_src": "log_entries_delete_log_entry",
+      "_tgt": "str",
+      "source": "str",
+      "target": "log_entries_delete_log_entry"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L59",
       "weight": 1.0,
@@ -10722,8 +10752,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L83",
       "weight": 1.0,
-      "_src": "rotate_emso_key_cmd_restore",
-      "_tgt": "str",
+      "_src": "str",
+      "_tgt": "rotate_emso_key_cmd_restore",
       "source": "str",
       "target": "rotate_emso_key_cmd_restore"
     },
@@ -11105,11 +11135,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_316",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_316",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_316",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_316"
     },
     {
       "relation": "uses",
@@ -11117,11 +11147,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_393",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_393",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_393",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_393"
     },
     {
       "relation": "uses",
@@ -11129,11 +11159,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_420",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_420",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_420",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_420"
     },
     {
       "relation": "uses",
@@ -11141,11 +11171,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_461",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_461",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_461",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_461"
     },
     {
       "relation": "uses",
@@ -11153,11 +11183,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_489",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_489",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_489",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_489"
     },
     {
       "relation": "uses",
@@ -11165,11 +11195,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_517",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_517",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_517",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_517"
     },
     {
       "relation": "uses",
@@ -11177,11 +11207,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_547",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_547",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_547",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_547"
     },
     {
       "relation": "uses",
@@ -11189,11 +11219,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "log_entries_rationale_575",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "log_entries_rationale_575",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "log_entries_rationale_575",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_575"
     },
     {
       "relation": "uses",
@@ -12197,11 +12227,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_316",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_316",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_316",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_316"
     },
     {
       "relation": "uses",
@@ -12209,11 +12239,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_393",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_393",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_393",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_393"
     },
     {
       "relation": "uses",
@@ -12221,11 +12251,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_420",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_420",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_420",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_420"
     },
     {
       "relation": "uses",
@@ -12233,11 +12263,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_461",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_461",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_461",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_461"
     },
     {
       "relation": "uses",
@@ -12245,11 +12275,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_489",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_489",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_489",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_489"
     },
     {
       "relation": "uses",
@@ -12257,11 +12287,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_517",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_517",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_517",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_517"
     },
     {
       "relation": "uses",
@@ -12269,11 +12299,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_547",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_547",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_547",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_547"
     },
     {
       "relation": "uses",
@@ -12281,11 +12311,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "log_entries_rationale_575",
-      "_tgt": "log_entry_photo_logentryphoto",
+      "_src": "log_entry_photo_logentryphoto",
+      "_tgt": "log_entries_rationale_575",
+      "confidence_score": 0.5,
       "source": "log_entry_photo_logentryphoto",
-      "target": "log_entries_rationale_575",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_575"
     },
     {
       "relation": "calls",
@@ -12725,11 +12755,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_316",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_316",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_316",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_316"
     },
     {
       "relation": "uses",
@@ -12737,11 +12767,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_393",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_393",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_393",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_393"
     },
     {
       "relation": "uses",
@@ -12749,11 +12779,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_420",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_420",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_420",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_420"
     },
     {
       "relation": "uses",
@@ -12761,11 +12791,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_461",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_461",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_461",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_461"
     },
     {
       "relation": "uses",
@@ -12773,11 +12803,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_489",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_489",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_489",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_489"
     },
     {
       "relation": "uses",
@@ -12785,11 +12815,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_517",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_517",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_517",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_517"
     },
     {
       "relation": "uses",
@@ -12797,11 +12827,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_547",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_547",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_547",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_547"
     },
     {
       "relation": "uses",
@@ -12809,11 +12839,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L25",
       "weight": 0.8,
-      "_src": "log_entries_rationale_575",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "log_entries_rationale_575",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "log_entries_rationale_575",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_575"
     },
     {
       "relation": "uses",
@@ -13817,11 +13847,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_316",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_316",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_316",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_316"
     },
     {
       "relation": "uses",
@@ -13829,11 +13859,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_393",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_393",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_393",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_393"
     },
     {
       "relation": "uses",
@@ -13841,11 +13871,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_420",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_420",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_420",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_420"
     },
     {
       "relation": "uses",
@@ -13853,11 +13883,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_461",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_461",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_461",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_461"
     },
     {
       "relation": "uses",
@@ -13865,11 +13895,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_489",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_489",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_489",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_489"
     },
     {
       "relation": "uses",
@@ -13877,11 +13907,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_517",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_517",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_517",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_517"
     },
     {
       "relation": "uses",
@@ -13889,11 +13919,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_547",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_547",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_547",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_547"
     },
     {
       "relation": "uses",
@@ -13901,11 +13931,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L26",
       "weight": 0.8,
-      "_src": "log_entries_rationale_575",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "log_entries_rationale_575",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "log_entries_rationale_575",
-      "confidence_score": 0.5
+      "target": "log_entries_rationale_575"
     },
     {
       "relation": "uses",
@@ -15739,9 +15769,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_316",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_316",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -15751,9 +15781,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_316",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_316",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -15763,9 +15793,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_316",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_316",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -15775,9 +15805,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_316",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_316",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -15787,9 +15817,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_316",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_316",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -15799,9 +15829,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_316",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_316",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -15811,9 +15841,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_393",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_393",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -15823,9 +15853,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_393",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_393",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -15835,9 +15865,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_393",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_393",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -15847,9 +15877,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_393",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_393",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -15859,9 +15889,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_393",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_393",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -15871,9 +15901,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_393",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_393",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -15883,9 +15913,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_420",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_420",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -15895,9 +15925,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_420",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_420",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -15907,9 +15937,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_420",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_420",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -15919,9 +15949,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_420",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_420",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -15931,9 +15961,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_420",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_420",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -15943,9 +15973,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_420",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_420",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -15955,9 +15985,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_461",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_461",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -15967,9 +15997,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_461",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_461",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -15979,9 +16009,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_461",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_461",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -15991,9 +16021,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_461",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_461",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -16003,9 +16033,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_461",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_461",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -16015,9 +16045,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_461",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_461",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -16027,9 +16057,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_489",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_489",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -16039,9 +16069,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_489",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_489",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -16051,9 +16081,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_489",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_489",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -16063,9 +16093,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_489",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_489",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -16075,9 +16105,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_489",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_489",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -16087,9 +16117,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_489",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_489",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -16099,9 +16129,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_517",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_517",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -16111,9 +16141,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_517",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_517",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -16123,9 +16153,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_517",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_517",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -16135,9 +16165,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_517",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_517",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -16147,9 +16177,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_517",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_517",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -16159,9 +16189,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_517",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_517",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -16171,9 +16201,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_547",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_547",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -16183,9 +16213,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_547",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_547",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -16195,9 +16225,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_547",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_547",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -16207,9 +16237,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_547",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_547",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -16219,9 +16249,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_547",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_547",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -16231,9 +16261,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_547",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_547",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "uses",
@@ -16243,9 +16273,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_575",
       "_tgt": "log_entry_logentrycreate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_575",
-      "target": "log_entry_logentrycreate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrycreate"
     },
     {
       "relation": "uses",
@@ -16255,9 +16285,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_575",
       "_tgt": "log_entry_logentrylistresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_575",
-      "target": "log_entry_logentrylistresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentrylistresponse"
     },
     {
       "relation": "uses",
@@ -16267,9 +16297,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_575",
       "_tgt": "log_entry_logentryresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_575",
-      "target": "log_entry_logentryresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryresponse"
     },
     {
       "relation": "uses",
@@ -16279,9 +16309,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_575",
       "_tgt": "log_entry_logentryupdate",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_575",
-      "target": "log_entry_logentryupdate",
-      "confidence_score": 0.5
+      "target": "log_entry_logentryupdate"
     },
     {
       "relation": "uses",
@@ -16291,9 +16321,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_575",
       "_tgt": "log_entry_photobase64request",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_575",
-      "target": "log_entry_photobase64request",
-      "confidence_score": 0.5
+      "target": "log_entry_photobase64request"
     },
     {
       "relation": "uses",
@@ -16303,9 +16333,9 @@
       "weight": 0.8,
       "_src": "log_entries_rationale_575",
       "_tgt": "log_entry_photoresponse",
+      "confidence_score": 0.5,
       "source": "log_entries_rationale_575",
-      "target": "log_entry_photoresponse",
-      "confidence_score": 0.5
+      "target": "log_entry_photoresponse"
     },
     {
       "relation": "contains",
@@ -19433,8 +19463,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_297",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_297",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_297"
@@ -19445,8 +19475,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_361",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_361",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_361"
@@ -19457,8 +19487,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_388",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_388",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_388"
@@ -19469,8 +19499,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_429",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_429",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_429"
@@ -19481,8 +19511,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_457",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_457",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_457"
@@ -19493,8 +19523,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_485",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_485",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_485"
@@ -19505,8 +19535,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_515",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_515",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_515"
@@ -19517,8 +19547,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_543",
-      "_tgt": "log_entry_logentrycreate",
+      "_src": "log_entry_logentrycreate",
+      "_tgt": "log_entries_rationale_543",
       "confidence_score": 0.5,
       "source": "log_entry_logentrycreate",
       "target": "log_entries_rationale_543"
@@ -19853,8 +19883,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_297",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_297",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_297"
@@ -19865,8 +19895,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_361",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_361",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_361"
@@ -19877,8 +19907,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_388",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_388",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_388"
@@ -19889,8 +19919,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_429",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_429",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_429"
@@ -19901,8 +19931,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_457",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_457",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_457"
@@ -19913,8 +19943,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_485",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_485",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_485"
@@ -19925,8 +19955,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_515",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_515",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_515"
@@ -19937,8 +19967,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_543",
-      "_tgt": "log_entry_logentryresponse",
+      "_src": "log_entry_logentryresponse",
+      "_tgt": "log_entries_rationale_543",
       "confidence_score": 0.5,
       "source": "log_entry_logentryresponse",
       "target": "log_entries_rationale_543"
@@ -20273,8 +20303,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_297",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_297",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_297"
@@ -20285,8 +20315,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_361",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_361",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_361"
@@ -20297,8 +20327,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_388",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_388",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_388"
@@ -20309,8 +20339,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_429",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_429",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_429"
@@ -20321,8 +20351,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_457",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_457",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_457"
@@ -20333,8 +20363,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_485",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_485",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_485"
@@ -20345,8 +20375,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_515",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_515",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_515"
@@ -20357,8 +20387,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_543",
-      "_tgt": "log_entry_photoresponse",
+      "_src": "log_entry_photoresponse",
+      "_tgt": "log_entries_rationale_543",
       "confidence_score": 0.5,
       "source": "log_entry_photoresponse",
       "target": "log_entries_rationale_543"
@@ -20693,8 +20723,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_297",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_297",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_297"
@@ -20705,8 +20735,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_361",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_361",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_361"
@@ -20717,8 +20747,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_388",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_388",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_388"
@@ -20729,8 +20759,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_429",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_429",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_429"
@@ -20741,8 +20771,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_457",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_457",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_457"
@@ -20753,8 +20783,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_485",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_485",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_485"
@@ -20765,8 +20795,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_515",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_515",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_515"
@@ -20777,8 +20807,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L28",
       "weight": 0.8,
-      "_src": "log_entries_rationale_543",
-      "_tgt": "log_entry_photobase64request",
+      "_src": "log_entry_photobase64request",
+      "_tgt": "log_entries_rationale_543",
       "confidence_score": 0.5,
       "source": "log_entry_photobase64request",
       "target": "log_entries_rationale_543"
@@ -21113,8 +21143,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_297",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_297",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_297"
@@ -21125,8 +21155,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_361",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_361",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_361"
@@ -21137,8 +21167,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_388",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_388",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_388"
@@ -21149,8 +21179,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_429",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_429",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_429"
@@ -21161,8 +21191,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_457",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_457",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_457"
@@ -21173,8 +21203,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_485",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_485",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_485"
@@ -21185,8 +21215,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_515",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_515",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_515"
@@ -21197,8 +21227,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_543",
-      "_tgt": "log_entry_logentryupdate",
+      "_src": "log_entry_logentryupdate",
+      "_tgt": "log_entries_rationale_543",
       "confidence_score": 0.5,
       "source": "log_entry_logentryupdate",
       "target": "log_entries_rationale_543"
@@ -21533,8 +21563,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_297",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_297",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_297"
@@ -21545,8 +21575,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_361",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_361",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_361"
@@ -21557,8 +21587,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_388",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_388",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_388"
@@ -21569,8 +21599,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_429",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_429",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_429"
@@ -21581,8 +21611,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_457",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_457",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_457"
@@ -21593,8 +21623,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_485",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_485",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_485"
@@ -21605,8 +21635,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_515",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_515",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_515"
@@ -21617,8 +21647,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L27",
       "weight": 0.8,
-      "_src": "log_entries_rationale_543",
-      "_tgt": "log_entry_logentrylistresponse",
+      "_src": "log_entry_logentrylistresponse",
+      "_tgt": "log_entries_rationale_543",
       "confidence_score": 0.5,
       "source": "log_entry_logentrylistresponse",
       "target": "log_entries_rationale_543"
@@ -24592,12 +24622,36 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L262",
+      "source_location": "L260",
       "weight": 1.0,
-      "_src": "conftest_volunteer_factory",
-      "_tgt": "test_log_entries_test_delete_entry_wrong_status_returns_409",
+      "_src": "test_log_entries_test_delete_pending_manager_entry_succeeds",
+      "_tgt": "conftest_volunteer_factory",
       "source": "conftest_volunteer_factory",
-      "target": "test_log_entries_test_delete_entry_wrong_status_returns_409"
+      "target": "test_log_entries_test_delete_pending_manager_entry_succeeds"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L271",
+      "weight": 1.0,
+      "_src": "test_log_entries_test_delete_rejected_entry_returns_409",
+      "_tgt": "conftest_volunteer_factory",
+      "source": "conftest_volunteer_factory",
+      "target": "test_log_entries_test_delete_rejected_entry_returns_409"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L280",
+      "weight": 1.0,
+      "_src": "test_log_entries_test_delete_approved_entry_returns_409",
+      "_tgt": "conftest_volunteer_factory",
+      "source": "conftest_volunteer_factory",
+      "target": "test_log_entries_test_delete_approved_entry_returns_409"
     },
     {
       "relation": "calls",
@@ -24976,12 +25030,36 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L263",
+      "source_location": "L261",
       "weight": 1.0,
-      "_src": "conftest_log_entry_factory",
-      "_tgt": "test_log_entries_test_delete_entry_wrong_status_returns_409",
+      "_src": "test_log_entries_test_delete_pending_manager_entry_succeeds",
+      "_tgt": "conftest_log_entry_factory",
       "source": "conftest_log_entry_factory",
-      "target": "test_log_entries_test_delete_entry_wrong_status_returns_409"
+      "target": "test_log_entries_test_delete_pending_manager_entry_succeeds"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L272",
+      "weight": 1.0,
+      "_src": "test_log_entries_test_delete_rejected_entry_returns_409",
+      "_tgt": "conftest_log_entry_factory",
+      "source": "conftest_log_entry_factory",
+      "target": "test_log_entries_test_delete_rejected_entry_returns_409"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L281",
+      "weight": 1.0,
+      "_src": "test_log_entries_test_delete_approved_entry_returns_409",
+      "_tgt": "conftest_log_entry_factory",
+      "source": "conftest_log_entry_factory",
+      "target": "test_log_entries_test_delete_approved_entry_returns_409"
     },
     {
       "relation": "calls",
@@ -25803,7 +25881,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L247",
+      "source_location": "L246",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
       "_tgt": "test_log_entries_test_delete_entry_happy_path",
@@ -25815,19 +25893,43 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L259",
+      "source_location": "L257",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
-      "_tgt": "test_log_entries_test_delete_entry_wrong_status_returns_409",
+      "_tgt": "test_log_entries_test_delete_pending_manager_entry_succeeds",
       "source": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
-      "target": "test_log_entries_test_delete_entry_wrong_status_returns_409",
+      "target": "test_log_entries_test_delete_pending_manager_entry_succeeds",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L269",
+      "source_location": "L268",
+      "weight": 1.0,
+      "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
+      "_tgt": "test_log_entries_test_delete_rejected_entry_returns_409",
+      "source": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
+      "target": "test_log_entries_test_delete_rejected_entry_returns_409",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L277",
+      "weight": 1.0,
+      "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
+      "_tgt": "test_log_entries_test_delete_approved_entry_returns_409",
+      "source": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
+      "target": "test_log_entries_test_delete_approved_entry_returns_409",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
+      "source_location": "L286",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
       "_tgt": "test_log_entries_test_update_approved_entry_returns_409",
@@ -25839,7 +25941,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L282",
+      "source_location": "L299",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
       "_tgt": "test_log_entries_test_photo_upload_unsupported_extension_returns_400_or_422",
@@ -25851,7 +25953,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py",
-      "source_location": "L295",
+      "source_location": "L312",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_log_entries_py",
       "_tgt": "test_log_entries_test_photo_limit_returns_default",
@@ -28827,7 +28929,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1905",
+      "source_location": "L1906",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_statusbadge",
@@ -29175,7 +29277,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1925",
+      "source_location": "L1930",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_fmthours",
@@ -29187,7 +29289,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1933",
+      "source_location": "L1938",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_fmtdatetime",
