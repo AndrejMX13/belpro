@@ -170,5 +170,29 @@ const API = (() => {
       sendMonthly: (year, month) =>
         request(`/reports/send-monthly?year=${year}&month=${month}`, { method: 'POST' }),
     },
+
+    logo: {
+      upload: (formData) => {
+        return fetch(BASE + '/logo', {
+          method: 'POST', body: formData,
+        }).then(async res => {
+          if (res.status === 401) {
+            window.dispatchEvent(new CustomEvent('belpro:unauthorized'));
+            const err = new Error('Seja je potekla. Prijavite se znova.');
+            err.status = 401;
+            throw err;
+          }
+          if (res.status === 204) return;
+          if (!res.ok) {
+            let detail = 'HTTP ' + res.status;
+            try { detail = (await res.json()).detail || detail; } catch { /* empty */ }
+            const err = new Error(detail);
+            err.status = res.status;
+            throw err;
+          }
+        });
+      },
+      delete: () => request('/logo', { method: 'DELETE' }),
+    },
   };
 })();

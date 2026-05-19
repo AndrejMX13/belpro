@@ -1279,6 +1279,11 @@ async function renderSettings() {
         <a id="s-evo-api-link" href="${esc(configInfo.evolution_api_admin_url)}" target="_blank" rel="noopener noreferrer"
            class="btn btn-secondary btn-sm">Odpri nastavitve Evolution API ↗</a>
       </div>
+      <div class="field" style="margin-top:0.75rem">
+        <label>Logotip organizacije</label>
+        <div id="s-logo-area"></div>
+        <div id="s-logo-error" class="form-error" style="display:none"></div>
+      </div>
       <div id="s-ngo-error" class="form-error" style="display:none"></div>
       <div class="form-actions"><button class="btn btn-primary btn-sm" id="s-ngo-save">Shrani</button></div>
     </div>
@@ -1484,6 +1489,62 @@ async function renderSettings() {
       toast('Privzete nastavitve poročil so bile shranjene.');
     }
   );
+
+  async function _initLogoSection() {
+    const area = $('s-logo-area');
+    if (!area) return;
+    showErr('s-logo-error', '');
+    try {
+      const res = await fetch('/api/logo');
+      if (res.ok) {
+        // Logo exists — show thumbnail and delete button
+        area.innerHTML = `
+          <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:0.25rem">
+            <img id="s-logo-img" src="/api/logo" alt="Logotip" style="max-height:60px;max-width:160px;object-fit:contain;border:1px solid var(--border,#e2e8f0);border-radius:4px;padding:4px;background:#fff">
+            <button class="btn btn-secondary btn-sm" id="s-logo-delete">Odstrani</button>
+          </div>
+          <div class="form-hint" style="margin-top:0.4rem">Za zamenjavo logotipa ga najprej odstranite, nato naložite novega.</div>`;
+        $('s-logo-delete').addEventListener('click', async () => {
+          showErr('s-logo-error', '');
+          try {
+            await API.logo.delete();
+            toast('Logotip je bil odstranjen.');
+            await _initLogoSection();
+          } catch (err) {
+            showErr('s-logo-error', err.message);
+          }
+        });
+      } else {
+        // No logo — show upload input and button
+        area.innerHTML = `
+          <div style="display:flex;align-items:center;gap:0.75rem;flex-wrap:wrap;margin-top:0.25rem">
+            <input type="file" id="s-logo-file" accept="image/jpeg,image/png,image/webp,image/gif,image/bmp,image/tiff" style="font-size:0.875rem">
+            <button class="btn btn-primary btn-sm" id="s-logo-upload">Naloži</button>
+          </div>
+          <div class="form-hint" style="margin-top:0.4rem">Podprte oblike: JPEG, PNG, WebP, GIF, BMP, TIFF.</div>`;
+        $('s-logo-upload').addEventListener('click', async () => {
+          showErr('s-logo-error', '');
+          const fileInput = $('s-logo-file');
+          if (!fileInput.files.length) {
+            showErr('s-logo-error', 'Izberite datoteko.'); return;
+          }
+          const formData = new FormData();
+          formData.append('file', fileInput.files[0]);
+          try {
+            await API.logo.upload(formData);
+            toast('Logotip je bil naložen.');
+            await _initLogoSection();
+          } catch (err) {
+            showErr('s-logo-error', err.message);
+          }
+        });
+      }
+    } catch (err) {
+      showErr('s-logo-error', 'Napaka pri nalaganju logotipa.');
+    }
+  }
+
+  _initLogoSection();
 }
 
 // ===== Approvals page =====
