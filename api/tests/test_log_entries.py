@@ -243,7 +243,6 @@ async def test_delete_entry_not_found(client: AsyncClient, auth: dict) -> None:
     assert r.status_code == 404
 
 
-@pytest.mark.asyncio
 async def test_delete_entry_happy_path(
     client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
 ) -> None:
@@ -255,8 +254,27 @@ async def test_delete_entry_happy_path(
     assert r2.status_code == 404
 
 
-@pytest.mark.asyncio
-async def test_delete_entry_wrong_status_returns_409(
+async def test_delete_pending_manager_entry_succeeds(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.PENDING_MANAGER)
+    r = await client.delete(f"/api/log-entries/{e.id}", headers=auth)
+    assert r.status_code == 204
+    r2 = await client.get(f"/api/log-entries/{e.id}", headers=auth)
+    assert r2.status_code == 404
+
+
+async def test_delete_rejected_entry_returns_409(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.REJECTED)
+    r = await client.delete(f"/api/log-entries/{e.id}", headers=auth)
+    assert r.status_code == 409
+
+
+async def test_delete_approved_entry_returns_409(
     client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
 ) -> None:
     v = await volunteer_factory()
@@ -265,7 +283,6 @@ async def test_delete_entry_wrong_status_returns_409(
     assert r.status_code == 409
 
 
-@pytest.mark.asyncio
 async def test_update_approved_entry_returns_409(
     client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
 ) -> None:

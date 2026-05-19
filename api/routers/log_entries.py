@@ -572,16 +572,30 @@ async def delete_log_entry(
     entry_id: uuid.UUID,
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
 ) -> None:
-    """Delete a pending_volunteer entry (cancelled or corrected by volunteer)."""
+    """Delete a pending_volunteer or pending_manager log entry and its associated photo files."""
     entry = (
         await db.execute(select(LogEntry).where(LogEntry.id == entry_id))
     ).scalar_one_or_none()
     if entry is None:
         raise HTTPException(status_code=http_status.HTTP_404_NOT_FOUND, detail="Ne najdem dnevniškega zapisa")
-    if entry.status != EntryStatus.PENDING_VOLUNTEER:
+    if entry.status not in (EntryStatus.PENDING_VOLUNTEER, EntryStatus.PENDING_MANAGER):
         raise HTTPException(
             status_code=http_status.HTTP_409_CONFLICT,
-            detail=f"Samo vnosi v statusu pending_volunteer so lahko izbrisani (trenutni status: {entry.status.value}).",
+            detail=f"Vnosa v statusu '{entry.status.value}' ni mogoče izbrisati.",
         )
+
+    photos = (
+        await db.execute(select(LogEntryPhoto).where(LogEntryPhoto.log_entry_id == entry_id))
+    ).scalars().all()
+    for photo in photos:
+        try:
+            (_PHOTOS_ROOT / photo.photo_path).unlink(missing_ok=True)
+        except Exception:
+            pass
+    try:
+        (_PHOTOS_ROOT / str(entry_id)).rmdir()
+    except Exception:
+        pass
+
     await db.delete(entry)
     await db.commit()
