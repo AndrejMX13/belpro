@@ -24,3 +24,9 @@ def test_verify_session_token_garbage() -> None:
 
 def test_verify_session_token_empty() -> None:
     assert _verify_session_token("", _SECRET, duration_hours=24) is False
+
+
+def test_verify_session_token_expired() -> None:
+    token = _make_session_token(_SECRET)
+    # duration_hours=-1 means max_age=-3600 seconds — token expired 1 hour ago
+    assert _verify_session_token(token, _SECRET, duration_hours=-1) is False

@@ -40,7 +40,7 @@ def _verify_session_token(token: str, secret_key: str, duration_hours: int) -> b
     try:
         s.loads(token, max_age=duration_hours * 3600)
         return True
-    except (BadSignature, SignatureExpired):
+    except (BadSignature, SignatureExpired):  # exhaustive: only load-failure subclasses raised by loads()
         return False
 
 
@@ -54,6 +54,7 @@ async def _verify_password(
 
     manager = (await db.execute(select(Manager).limit(1))).scalar_one_or_none()
 
+    # Empty string password_hash (not None) also falls through to env-var — intentional.
     if manager and manager.password_hash:
         return verify_password(password, manager.password_hash)
     return secrets.compare_digest(
