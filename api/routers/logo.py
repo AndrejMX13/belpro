@@ -7,10 +7,10 @@ from fastapi.responses import FileResponse
 from core.auth import require_manager
 from services.logo import LOGO_PATH, delete_logo, logo_exists, save_logo
 
-router = APIRouter(tags=["logo"])
+router = APIRouter(prefix="/logo", tags=["logo"])
 
 
-@router.get("/logo")
+@router.get("")
 async def get_logo() -> FileResponse:
     """Return the NGO logo as PNG, or 404 if none has been uploaded."""
     if not logo_exists():
@@ -18,7 +18,7 @@ async def get_logo() -> FileResponse:
     return FileResponse(str(LOGO_PATH), media_type="image/png")
 
 
-@router.post("/logo", status_code=status.HTTP_204_NO_CONTENT, dependencies=[Depends(require_manager)])
+@router.post("", status_code=status.HTTP_204_NO_CONTENT, response_model=None, dependencies=[Depends(require_manager)])
 async def upload_logo(file: UploadFile = File(...)) -> Response:
     """Upload or replace the NGO logo. Accepts JPEG, PNG, WebP, GIF, BMP, TIFF."""
     data = await file.read()
@@ -31,7 +31,7 @@ async def upload_logo(file: UploadFile = File(...)) -> Response:
     return Response(status_code=status.HTTP_204_NO_CONTENT)
 
 
-@router.delete("/logo", status_code=status.HTTP_204_NO_CONTENT, dependencies=[Depends(require_manager)])
+@router.delete("", status_code=status.HTTP_204_NO_CONTENT, response_model=None, dependencies=[Depends(require_manager)])
 async def remove_logo() -> Response:
     """Delete the current NGO logo."""
     if not logo_exists():
