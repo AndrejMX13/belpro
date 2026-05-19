@@ -8,8 +8,10 @@ from decimal import Decimal
 from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException, Query
-from fastapi.responses import JSONResponse, StreamingResponse
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
+from pathlib import Path
 from sqlalchemy import func, select
+from sqlalchemy.orm import selectinload
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.auth import require_manager
@@ -17,8 +19,9 @@ from core.settings import get_settings
 from db.session import get_db
 from models.log_entry import EntryStatus, LogEntry
 from models.manager import Manager
+from models.monthly_report import MonthlyReport
 from models.volunteer import Volunteer
-from schemas.report import MonthlyReportSummary, VolunteerMonthlySummary
+from schemas.report import MonthlyReportSummary, ReportHistoryItem, ReportHistoryList, VolunteerMonthlySummary
 from services.email import SmtpNotConfiguredError, send_email
 from services.evolution import EvolutionClient
 from services.logo import logo_src
@@ -343,3 +346,56 @@ async def send_monthly_reports(
             "errors": errors,
         }
     )
+
+
+@router.get("/history", response_model=ReportHistoryList, dependencies=[Depends(require_manager)])
+async def get_report_history(
+    year: int | None = Query(default=None, ge=2020, le=2099),
+    month: int | None = Query(default=None, ge=1, le=12),
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> ReportHistoryList:
+    """List persisted PDF reports, newest first. Optionally filter by year and/or month."""
+    stmt = (
+        select(MonthlyReport)
+        .options(selectinload(MonthlyReport.volunteer))
+        .order_by(MonthlyReport.generated_at.desc())
+    )
+    if year is not None:
+        stmt = stmt.where(MonthlyReport.period_year == year)
+    if month is not None:
+        stmt = stmt.where(MonthlyReport.period_month == month)
+    rows = (await db.execute(stmt)).scalars().all()
+    items = [
+        ReportHistoryItem(
+            id=r.id,
+            period_year=r.period_year,
+            period_month=r.period_month,
+            volunteer_id=r.volunteer_id,
+            volunteer_name=(
+                f"{r.volunteer.last_name} {r.volunteer.first_name}"
+                if r.volunteer else None
+            ),
+            generated_at=r.generated_at,
+            sent_at=r.sent_at,
+            filename=Path(r.pdf_path).name,
+        )
+        for r in rows
+    ]
+    return ReportHistoryList(items=items, total=len(items))
+
+
+@router.get("/history/{report_id}/pdf", response_model=None, dependencies=[Depends(require_manager)])
+async def download_history_pdf(
+    report_id: uuid.UUID,
+    db: Annotated[AsyncSession, Depends(get_db)] = ...,
+) -> FileResponse:
+    """Stream a previously generated PDF from disk. Returns 404 if the row or file is missing."""
+    row = (
+        await db.execute(select(MonthlyReport).where(MonthlyReport.id == report_id))
+    ).scalar_one_or_none()
+    if row is None:
+        raise HTTPException(status_code=404, detail="Porocilo ne obstaja.")
+    path = Path(row.pdf_path)
+    if not path.exists():
+        raise HTTPException(status_code=404, detail="PDF datoteka ni najdena na disku.")
+    return FileResponse(path=str(path), media_type="application/pdf", filename=path.name)
