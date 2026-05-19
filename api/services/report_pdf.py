@@ -69,7 +69,7 @@ def _ngo_header_html(ngo: NGOInfo) -> str:
         contact_parts.append(f"E-pošta: {_esc(ngo.email)}")
     contact = "<br>".join(contact_parts)
     logo_html = (
-        f"<img class='ngo-logo' src='file://{_esc(ngo.logo_path)}'>"
+        f"<img class='ngo-logo' src='{_esc(ngo.logo_path)}'>"
         if ngo.logo_path
         else ""
     )

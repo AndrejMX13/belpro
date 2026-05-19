@@ -43,3 +43,13 @@ def _open_image(data: bytes) -> Image.Image:
         return img
     except UnidentifiedImageError as exc:
         raise ValueError("Nepodprta ali poškodovana datoteka.") from exc
+
+
+def logo_src() -> str | None:
+    """Return a data URI for the NGO logo, or None if no logo is uploaded."""
+    if not LOGO_PATH.exists():
+        return None
+    import base64
+    data = LOGO_PATH.read_bytes()
+    encoded = base64.b64encode(data).decode()
+    return f"data:image/png;base64,{encoded}"

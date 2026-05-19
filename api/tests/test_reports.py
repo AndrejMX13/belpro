@@ -4,6 +4,7 @@ from datetime import date
 from httpx import AsyncClient
 
 from models.log_entry import EntryStatus
+from services.report_pdf import NGOInfo, _ngo_header_html
 
 
 async def test_monthly_summary_empty(client: AsyncClient, auth: dict) -> None:
@@ -110,24 +111,20 @@ async def test_with_entries_only_false_includes_all_active_volunteers(
 
 def test_ngo_header_html_without_logo():
     """_ngo_header_html must not include an img tag when logo_path is None."""
-    from services.report_pdf import NGOInfo, _ngo_header_html
     ngo = NGOInfo(name="Test NGO", street="Testna 1", postal_code="1000", city="Ljubljana")
     html = _ngo_header_html(ngo)
     assert "<img" not in html
 
 
-def test_ngo_header_html_with_logo(tmp_path):
-    """_ngo_header_html must include an img tag with file:// src when logo_path is set."""
-    from services.report_pdf import NGOInfo, _ngo_header_html
-    logo = tmp_path / "logo.png"
-    logo.write_bytes(b"fake")  # content irrelevant — only the path is tested here
+def test_ngo_header_html_with_logo():
+    """_ngo_header_html must include an img tag with data URI src when logo_path is set."""
     ngo = NGOInfo(
         name="Test NGO",
         street="Testna 1",
         postal_code="1000",
         city="Ljubljana",
-        logo_path=str(logo),
+        logo_path="data:image/png;base64,FAKE",
     )
     html = _ngo_header_html(ngo)
     assert "<img" in html
-    assert f"file://{logo}" in html
+    assert 'src="data:image/png;base64,FAKE"' in html
