@@ -15,6 +15,7 @@ from utils.phone import normalize_phone
 from routers.auth import router as auth_router
 from routers.analytics import router as analytics_router
 from routers.log_entries import router as log_entries_router
+from routers.logo import router as logo_router
 from routers.managers import router as managers_router
 from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
@@ -60,6 +61,7 @@ app = FastAPI(
 app.include_router(auth_router, prefix="/api")
 app.include_router(analytics_router, prefix="/api")
 app.include_router(log_entries_router, prefix="/api")
+app.include_router(logo_router, prefix="/api")
 app.include_router(managers_router, prefix="/api")
 app.include_router(reports_router, prefix="/api")
 app.include_router(volunteers_router, prefix="/api")

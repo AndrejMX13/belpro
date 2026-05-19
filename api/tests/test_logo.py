@@ -100,3 +100,70 @@ def test_save_overwrites_existing_logo(tmp_path, monkeypatch):
 
     saved = Image.open(logo_mod.LOGO_PATH)
     assert saved.size == (2, 2), "Second save must replace the first"
+
+
+# ── integration tests: logo endpoints ─────────────────────────────────────────
+
+@pytest.fixture(autouse=False)
+def _clean_logo():
+    """Delete logo before and after each endpoint test for isolation."""
+    from services import logo as logo_mod
+    logo_mod.LOGO_PATH.unlink(missing_ok=True)
+    yield
+    logo_mod.LOGO_PATH.unlink(missing_ok=True)
+
+
+@pytest.mark.asyncio
+async def test_get_logo_returns_404_when_absent(client, _clean_logo):
+    res = await client.get("/api/logo")
+    assert res.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_upload_logo_and_retrieve(client, auth, _clean_logo):
+    files = {"file": ("mylogo.png", _png_1x1(), "image/png")}
+    res = await client.post("/api/logo", files=files, headers=auth)
+    assert res.status_code == 204
+
+    res = await client.get("/api/logo")
+    assert res.status_code == 200
+    assert res.headers["content-type"].startswith("image/png")
+
+
+@pytest.mark.asyncio
+async def test_upload_logo_requires_auth(client, _clean_logo):
+    files = {"file": ("logo.png", _png_1x1(), "image/png")}
+    res = await client.post("/api/logo", files=files)
+    assert res.status_code == 401
+
+
+@pytest.mark.asyncio
+async def test_upload_invalid_logo_returns_422(client, auth, _clean_logo):
+    files = {"file": ("logo.png", b"not an image", "image/png")}
+    res = await client.post("/api/logo", files=files, headers=auth)
+    assert res.status_code == 422
+
+
+@pytest.mark.asyncio
+async def test_delete_logo(client, auth, _clean_logo):
+    # Upload first
+    files = {"file": ("logo.png", _png_1x1(), "image/png")}
+    await client.post("/api/logo", files=files, headers=auth)
+
+    res = await client.delete("/api/logo", headers=auth)
+    assert res.status_code == 204
+
+    res = await client.get("/api/logo")
+    assert res.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_delete_logo_when_absent_returns_404(client, auth, _clean_logo):
+    res = await client.delete("/api/logo", headers=auth)
+    assert res.status_code == 404
+
+
+@pytest.mark.asyncio
+async def test_delete_logo_requires_auth(client, _clean_logo):
+    res = await client.delete("/api/logo")
+    assert res.status_code == 401
