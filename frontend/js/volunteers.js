@@ -1875,6 +1875,7 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
   const BLANK      = 'data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=';
   const editable   = entry.status !== 'approved';
   const canApprove = entry.status === 'pending_manager';
+  const canDelete  = entry.status === 'pending_volunteer' || entry.status === 'pending_manager';
   const tileStyle  = 'position:relative;width:130px;height:130px;background:var(--border);border-radius:var(--radius);overflow:hidden;cursor:pointer';
   const delStyle   = 'position:absolute;top:4px;right:4px;width:26px;height:26px;background:rgba(0,0,0,0.55);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:18px;line-height:26px;text-align:center;padding:0';
   const phStyle    = 'width:130px;height:130px;background:var(--border);border-radius:var(--radius);opacity:0.35;flex-shrink:0';
@@ -1908,6 +1909,10 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
         <div style="display:flex;gap:0.5rem;align-items:center">
           <button class="btn btn-primary btn-sm" id="approve-btn">Odobri</button>
           <button class="btn btn-danger btn-sm"  id="reject-btn">Zavrni</button>
+          <button class="btn btn-danger btn-sm"  id="delete-entry-btn" style="margin-left:0.25rem">Izbriši</button>
+        </div>` : canDelete ? `
+        <div style="display:flex;gap:0.5rem;align-items:center">
+          <button class="btn btn-danger btn-sm" id="delete-entry-btn">Izbriši</button>
         </div>` : ''}
     </div>
 
@@ -2092,6 +2097,24 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
     };
     $('approve-btn').addEventListener('click', () => doAction('approve'));
     $('reject-btn').addEventListener('click',  () => doAction('reject'));
+  }
+
+  const delEntryBtn = $('delete-entry-btn');
+  if (delEntryBtn) {
+    delEntryBtn.addEventListener('click', async () => {
+      if (!confirm('Trajno izbriši ta vnos?\n\nTega dejanja ni mogoče razveljaviti.')) return;
+      delEntryBtn.disabled = true;
+      delEntryBtn.textContent = 'Brisanje…';
+      try {
+        await API.logEntries.deleteEntry(entry.id);
+        revokePhotoUrls();
+        goBack ? goBack() : (window.location.hash = backHash);
+      } catch (err) {
+        toast('Napaka pri brisanju: ' + err.message, 'error');
+        delEntryBtn.disabled = false;
+        delEntryBtn.textContent = 'Izbriši';
+      }
+    });
   }
 
   if (editable) {

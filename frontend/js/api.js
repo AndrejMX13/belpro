@@ -173,6 +173,7 @@ const API = (() => {
       },
       approve: (id) => request('/log-entries/' + id + '/approve', { method: 'PATCH' }),
       reject:  (id) => request('/log-entries/' + id + '/reject',  { method: 'PATCH' }),
+      deleteEntry: (id) => request('/log-entries/' + id, { method: 'DELETE' }),
     },
 
     analytics: {
