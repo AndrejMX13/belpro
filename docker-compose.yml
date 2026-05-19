@@ -124,6 +124,7 @@ services:
       EVOLUTION_INSTANCE_NAME: ${EVOLUTION_INSTANCE_NAME}
       AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY}  # used by EvolutionClient (api/services/evolution.py) to call fetchInstances
       NGO_WHATSAPP_PHONE: ${NGO_WHATSAPP_PHONE:-}         # seeds DB on first boot if set; kept in sync by api/main.py
+      MAX_PHOTOS_PER_ENTRY: ${MAX_PHOTOS_PER_ENTRY:-5}
       TZ: Europe/Ljubljana
     volumes:
       - api_photos:/app/photos
