@@ -2,31 +2,12 @@
 
 const API = (() => {
   const BASE = '/api';
-  let _creds = null;
-
-  function setPassword(password) {
-    _creds = btoa('manager:' + password);
-    sessionStorage.setItem('bpCreds', _creds);
-  }
-
-  function loadFromSession() {
-    _creds = sessionStorage.getItem('bpCreds');
-    return _creds !== null;
-  }
-
-  function clear() {
-    _creds = null;
-    sessionStorage.removeItem('bpCreds');
-  }
 
   function _authHeaders(extra = {}) {
-    const headers = { ...extra };
-    if (_creds) headers['Authorization'] = 'Basic ' + _creds;
-    return headers;
+    return { ...extra };
   }
 
   function _handleUnauthorized() {
-    clear();
     window.dispatchEvent(new CustomEvent('belpro:unauthorized'));
     const err = new Error('Seja je potekla. Prijavite se znova.');
     err.status = 401;
@@ -91,9 +72,10 @@ const API = (() => {
   }
 
   return {
-    setPassword,
-    loadFromSession,
-    clear,
+    auth: {
+      login:  (password) => request('/auth/login',  { method: 'POST', body: JSON.stringify({ password }) }),
+      logout: ()         => request('/auth/logout', { method: 'POST' }),
+    },
 
     health: () => request('/health'),
 
@@ -128,13 +110,10 @@ const API = (() => {
       update: (id, data) => request('/log-entries/' + id, { method: 'PATCH', body: JSON.stringify(data) }),
 
       uploadPhoto: (entryId, formData) => {
-        const headers = {};
-        if (_creds) headers['Authorization'] = 'Basic ' + _creds;
         return fetch(BASE + '/log-entries/' + entryId + '/photos', {
-          method: 'POST', body: formData, headers,
+          method: 'POST', body: formData,
         }).then(async res => {
           if (res.status === 401) {
-            clear();
             window.dispatchEvent(new CustomEvent('belpro:unauthorized'));
             const err = new Error('Seja je potekla. Prijavite se znova.');
             err.status = 401;
@@ -152,11 +131,8 @@ const API = (() => {
       },
 
       photoUrl: async (entryId, photoId) => {
-        const headers = {};
-        if (_creds) headers['Authorization'] = 'Basic ' + _creds;
         const res = await fetch(
-          BASE + '/log-entries/' + entryId + '/photos/' + photoId + '/file',
-          { headers }
+          BASE + '/log-entries/' + entryId + '/photos/' + photoId + '/file'
         );
         if (!res.ok) return null;
         return URL.createObjectURL(await res.blob());
