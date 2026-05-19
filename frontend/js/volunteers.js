@@ -49,19 +49,18 @@ function showApp() {
 
 $('login-form').addEventListener('submit', async (e) => {
   e.preventDefault();
-  API.setPassword($('login-password').value);
+  $('login-error').hidden = true;
   try {
-    await API.health();
+    await API.auth.login($('login-password').value);
     showApp();
     await checkManagerSetup();
   } catch {
-    API.clear();
     $('login-error').hidden = false;
   }
 });
 
-$('logout-btn').addEventListener('click', () => {
-  API.clear();
+$('logout-btn').addEventListener('click', async () => {
+  await API.auth.logout();
   showLogin();
 });
 
@@ -1459,7 +1458,6 @@ async function renderSettings() {
     }
     try {
       await API.managers.changePassword({ current_password: cur, new_password: nw });
-      API.setPassword(nw);
       $('s-cur-pass').value = '';
       $('s-new-pass').value = '';
       $('s-new-pass2').value = '';
@@ -2158,16 +2156,6 @@ async function renderLogEntryDetail(id, { backHash = '#approvals', backLabel = '
 
 // ===== Init =====
 (async function init() {
-  if (API.loadFromSession()) {
-    try {
-      await API.health();
-      showApp();
-      await checkManagerSetup();
-    } catch {
-      API.clear();
-      showLogin();
-    }
-  } else {
-    showLogin();
-  }
+  showApp();
+  await checkManagerSetup();
 }());
