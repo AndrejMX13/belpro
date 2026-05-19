@@ -316,6 +316,16 @@ bash scripts/rotate_emso_key.sh --restore
 
 > Celotna navodila za postopek, vključno z znanimi težavami iz prvega živega testa, so v [docs/emso_key_rotation_sl.md](docs/emso_key_rotation_sl.md).
 
+### Uveljavljanje sprememb v `.env`
+
+Spremenjene vrednosti v datoteki `.env` **ne začnejo veljati samodejno**. Prizadeti vsebnik mora biti **znova ustvarjen** — ne le znova zagnan — da Docker prebere novo okolje:
+
+```bash
+docker compose up -d <service>
+```
+
+Ukaz `docker compose restart <service>` **ne zadošča**: znova zažene obstoječi vsebnik, sprememb iz `.env` pa ne prebere.
+
 ---
 
 ## Varnostne opombe (Security notes)

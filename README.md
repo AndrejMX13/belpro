@@ -304,6 +304,16 @@ bash scripts/rotate_emso_key.sh --restore
 
 > See [docs/emso_key_rotation.md](docs/emso_key_rotation.md) for the full procedure guide, including known issues encountered during the first live test.
 
+### Applying `.env` changes
+
+Editing `.env` does **not** take effect automatically. The affected container must be **recreated** — not just restarted — so Docker picks up the new environment:
+
+```bash
+docker compose up -d <service>
+```
+
+`docker compose restart <service>` is not sufficient: it restarts the existing container without re-reading `.env`.
+
 ---
 
 ## Security notes
