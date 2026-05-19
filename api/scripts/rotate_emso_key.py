@@ -75,9 +75,38 @@ async def cmd_restore(backup_path: Path) -> None:
     data = json.loads(backup_path.read_text(encoding="utf-8"))
     volunteers = data["volunteers"]
     old_key_b64 = data.get("old_key", "")
+    backup_ids = {v["id"] for v in volunteers}
 
     conn = await asyncpg.connect(_db_url())
     try:
+        db_rows = await conn.fetch("SELECT id FROM volunteers ORDER BY id")
+        orphaned = {str(r["id"]) for r in db_rows} - backup_ids
+        if orphaned:
+            print(file=sys.stderr)
+            print("!! OPOZORILO: NEVARNOST IZGUBE PODATKOV !!", file=sys.stderr)
+            print(file=sys.stderr)
+            print(
+                f"V bazi je {len(orphaned)} prostovoljec/-cev, ki jih varnostna kopija ne vsebuje:",
+                file=sys.stderr,
+            )
+            for oid in sorted(orphaned):
+                print(f"  {oid}", file=sys.stderr)
+            print(file=sys.stderr)
+            print(
+                "Po obnovi bodo ti prostovoljci šifrirani z NOVIM ključem,",
+                file=sys.stderr,
+            )
+            print(
+                "sistem pa bo preklopil na STARI ključ — njihovi EMŠO zapisi bodo NEBERLJIVI.",
+                file=sys.stderr,
+            )
+            print(file=sys.stderr)
+            answer = input("  Razumem tveganje — nadaljujem kljub temu? Vpišite 'DA': ")
+            if answer.strip() != "DA":
+                print("Obnovitev prekinjena.")
+                sys.exit(0)
+            print(file=sys.stderr)
+
         async with conn.transaction():
             for v in volunteers:
                 await conn.execute(
