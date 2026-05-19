@@ -1,12 +1,12 @@
 # Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-19)
 
 ## Corpus Check
-- 86 files · ~239,360 words
+- 86 files · ~241,642 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 886 nodes · 2293 edges · 82 communities detected
-- Extraction: 42% EXTRACTED · 58% INFERRED · 0% AMBIGUOUS · INFERRED: 1335 edges (avg confidence: 0.58)
+- 889 nodes · 2299 edges · 82 communities detected
+- Extraction: 42% EXTRACTED · 58% INFERRED · 0% AMBIGUOUS · INFERRED: 1339 edges (avg confidence: 0.58)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -94,7 +94,7 @@
 - [[_COMMUNITY_Community 81|Community 81]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `EntryStatus` - 138 edges
+1. `EntryStatus` - 139 edges
 2. `Manager` - 102 edges
 3. `LogEntry` - 90 edges
 4. `Volunteer` - 81 edges
@@ -121,31 +121,31 @@
 
 ### Community 0 - "Community 0"
 Cohesion: 0.09
-Nodes (124): Base, Base, Declarative base — import and subclass in every model., AsyncClient with get_db dependency wired to the test session., HTTP Basic Auth header for the seeded manager., Returns an async callable that inserts a LogEntry row via flush., Run Alembic migrations against belpro_test, seed one Manager row.     Drops all, Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo (+116 more)
+Nodes (112): Base, Base, Declarative base — import and subclass in every model., AsyncClient with get_db dependency wired to the test session., HTTP Basic Auth header for the seeded manager., Returns an async callable that inserts a LogEntry row via flush., Run Alembic migrations against belpro_test, seed one Manager row.     Drops all, Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo (+104 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.04
-Nodes (65): auth(), client(), db_session(), engine(), log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), volunteer_factory(), approve_log_entry() (+57 more)
+Cohesion: 0.05
+Nodes (51): auth(), client(), db_session(), engine(), log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), volunteer_factory(), get_photo_limit() (+43 more)
 
 ### Community 2 - "Community 2"
+Cohesion: 0.07
+Nodes (55): Create a signed, self-expiring session token., Return True if the token signature is valid and not expired., Verify password against DB hash or env var fallback., Reject requests without a valid session cookie or Basic Auth credentials., BaseSettings, EvolutionClient, Async HTTP client for the Evolution API WhatsApp gateway., health() (+47 more)
+
+### Community 3 - "Community 3"
 Cohesion: 0.1
 Nodes (55): _destroyCharts(), loadAnalytics(), renderAnalytics(), renderAnalyticsContent(), _renderCharts(), exportReportPdf(), fmtHours(), loadReports() (+47 more)
 
-### Community 3 - "Community 3"
-Cohesion: 0.06
-Nodes (31): Return (normalized_phone, state) for the configured instance.          States: ", Exception, health(), lifespan(), Belpro FastAPI application entry point., Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null., Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null., Health check — returns ok when the service is up. (+23 more)
-
 ### Community 4 - "Community 4"
+Cohesion: 0.09
+Nodes (47): Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Raised when the manager has not configured SMTP., Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port, send_email(), SmtpNotConfiguredError, Send a PDF document to a WhatsApp number via Evolution API sendMedia., logo_src(), Return a data URI for the NGO logo, or None if no logo is uploaded. (+39 more)
+
+### Community 5 - "Community 5"
 Cohesion: 0.08
 Nodes (43): decrypt_emso(), encrypt_emso(), hash_emso(), load_key(), mask_emso(), AES-256-GCM encryption service for sensitive fields (EMŠO).  Usage ----- key = l, Decode and validate a base64-encoded 32-byte AES-256 key.      Raises ValueError, Encrypt EMŠO with AES-256-GCM.      Returns base64(nonce + ciphertext + auth_tag (+35 more)
 
-### Community 5 - "Community 5"
-Cohesion: 0.12
-Nodes (43): BaseModel, Unit tests for VolunteerUpdate schema — no DB required., test_accepts_email_string(), test_accepts_first_name(), test_accepts_last_name(), test_accepts_none_email(), test_all_none_produces_empty_dump(), test_coerces_empty_email_to_none() (+35 more)
-
 ### Community 6 - "Community 6"
 Cohesion: 0.12
-Nodes (40): BaseSettings, EvolutionClient, Async HTTP client for the Evolution API WhatsApp gateway., Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null., Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null., Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null., Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null., Health check — returns ok when the service is up. (+32 more)
+Nodes (43): BaseModel, Unit tests for VolunteerUpdate schema — no DB required., test_accepts_email_string(), test_accepts_first_name(), test_accepts_last_name(), test_accepts_none_email(), test_all_none_produces_empty_dump(), test_coerces_empty_email_to_none() (+35 more)
 
 ### Community 7 - "Community 7"
 Cohesion: 0.08
@@ -160,20 +160,20 @@ Cohesion: 0.1
 Nodes (34): Dashboard — Web UI and FastAPI Backend, Nadzorna plošča — Spl. vmesnik + API, Evolution API — WhatsApp Gateway, Evolution API — API Prehod, Gmail — Email Delivery via SMTP, Gmail — Pošiljanje e-pošte, Manager — Browser or Phone Access, Vodja — Brskalnik / Telefon (+26 more)
 
 ### Community 10 - "Community 10"
-Cohesion: 0.1
-Nodes (23): login(), LoginRequest, LoginResponse, logout(), _make_session_token(), Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, Response for login and logout endpoints., Verify manager password and set an httpOnly session cookie. (+15 more)
+Cohesion: 0.12
+Nodes (19): login(), LoginRequest, LoginResponse, logout(), _make_session_token(), Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, Response for login and logout endpoints., Verify manager password and set an httpOnly session cookie. (+11 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.13
-Nodes (20): Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port, send_email(), Send a PDF document to a WhatsApp number via Evolution API sendMedia., _esc(), _fmt_date(), _generated_line(), _ngo_header_html() (+12 more)
+Cohesion: 0.14
+Nodes (21): Return (normalized_phone, state) for the configured instance.          States: ", Exception, normalize_wa_phone(), normalize_phone(), Return digits-only WhatsApp-native phone number, or None for invalid input., _make_mock_http(), test_connected_returns_normalized_phone_and_open_state(), test_disconnected_returns_none_and_close_state() (+13 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.27
 Nodes (18): body(), border(), borders(), cell(), complianceTable(), componentTable(), coverPage(), featureTable() (+10 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.18
-Nodes (5): Slovenian tax number (davčna številka) validation utilities., Return True if value passes the Modulus 11 check digit algorithm.      Accepts b, tax_number_valid(), Tests for Slovenian tax number (davčna številka) validation., TestTaxNumberValid
+Cohesion: 0.17
+Nodes (6): _validate_davcna_checksum(), Slovenian tax number (davčna številka) validation utilities., Return True if value passes the Modulus 11 check digit algorithm.      Accepts b, tax_number_valid(), Tests for Slovenian tax number (davčna številka) validation., TestTaxNumberValid
 
 ### Community 14 - "Community 14"
 Cohesion: 0.3
@@ -448,7 +448,7 @@ Cohesion: 1.0
 Nodes (1): Return (normalized_phone, state) for the configured instance.          States: "
 
 ## Knowledge Gaps
-- **179 isolated node(s):** `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc`, `Return a cached Settings instance (constructed once per process).`, `Async SQLAlchemy engine and session factory.`, `FastAPI dependency — yields one async DB session per request.` (+174 more)
+- **180 isolated node(s):** `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc`, `Return a cached Settings instance (constructed once per process).`, `Async SQLAlchemy engine and session factory.`, `FastAPI dependency — yields one async DB session per request.` (+175 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 34`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -550,14 +550,14 @@ Nodes (1): Return (normalized_phone, state) for the configured instance.        
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `EntryStatus` connect `Community 0` to `Community 1`, `Community 11`, `Community 5`, `Community 14`?**
-  _High betweenness centrality (0.141) - this node is a cross-community bridge._
-- **Why does `Manager` connect `Community 0` to `Community 1`, `Community 3`, `Community 5`, `Community 6`, `Community 10`?**
+- **Why does `EntryStatus` connect `Community 0` to `Community 1`, `Community 4`, `Community 14`, `Community 6`?**
+  _High betweenness centrality (0.142) - this node is a cross-community bridge._
+- **Why does `Manager` connect `Community 2` to `Community 0`, `Community 1`, `Community 4`, `Community 6`, `Community 10`?**
   _High betweenness centrality (0.080) - this node is a cross-community bridge._
-- **Why does `send_monthly_reports()` connect `Community 11` to `Community 0`, `Community 1`, `Community 3`, `Community 6`, `Community 7`?**
-  _High betweenness centrality (0.064) - this node is a cross-community bridge._
-- **Are the 135 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
-  _`EntryStatus` has 135 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `send_monthly_reports()` connect `Community 4` to `Community 1`, `Community 2`, `Community 11`, `Community 7`?**
+  _High betweenness centrality (0.066) - this node is a cross-community bridge._
+- **Are the 136 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
+  _`EntryStatus` has 136 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 99 inferred relationships involving `Manager` (e.g. with `Belpro FastAPI application entry point.` and `Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.`) actually correct?**
   _`Manager` has 99 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 87 inferred relationships involving `LogEntry` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**

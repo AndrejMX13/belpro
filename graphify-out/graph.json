@@ -9,7 +9,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_main_py",
-      "community": 3,
+      "community": 2,
       "norm_label": "main.py"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L26",
       "id": "main_seed_whatsapp_phone_from_env",
-      "community": 3,
+      "community": 2,
       "norm_label": "seed_whatsapp_phone_from_env()"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L42",
       "id": "main_lifespan",
-      "community": 3,
+      "community": 2,
       "norm_label": "lifespan()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L71",
       "id": "main_health",
-      "community": 3,
+      "community": 2,
       "norm_label": "health()"
     },
     {
@@ -44,7 +44,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L1",
-      "community": 3,
+      "community": 2,
       "norm_label": "belpro fastapi application entry point.",
       "id": "main_rationale_1"
     },
@@ -53,7 +53,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L29",
-      "community": 3,
+      "community": 2,
       "norm_label": "seed ngo_whatsapp_phone from .env into db on first boot, if db value is null.",
       "id": "main_rationale_29"
     },
@@ -62,7 +62,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L43",
-      "community": 3,
+      "community": 2,
       "norm_label": "fail fast if db unreachable; seed whatsapp phone from .env if db null.",
       "id": "main_rationale_43"
     },
@@ -71,7 +71,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L72",
-      "community": 3,
+      "community": 2,
       "norm_label": "health check \u2014 returns ok when the service is up.",
       "id": "main_rationale_72"
     },
@@ -134,7 +134,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\auth.py",
       "source_location": "L30",
-      "community": 10,
+      "community": 2,
       "norm_label": "create a signed, self-expiring session token.",
       "id": "auth_rationale_30"
     },
@@ -143,7 +143,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\auth.py",
       "source_location": "L36",
-      "community": 10,
+      "community": 2,
       "norm_label": "return true if the token signature is valid and not expired.",
       "id": "auth_rationale_36"
     },
@@ -152,7 +152,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\auth.py",
       "source_location": "L52",
-      "community": 10,
+      "community": 2,
       "norm_label": "verify password against db hash or env var fallback.",
       "id": "auth_rationale_52"
     },
@@ -161,7 +161,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\auth.py",
       "source_location": "L72",
-      "community": 10,
+      "community": 2,
       "norm_label": "reject requests without a valid session cookie or basic auth credentials.",
       "id": "auth_rationale_72"
     },
@@ -180,7 +180,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\settings.py",
       "source_location": "L9",
       "id": "settings_settings",
-      "community": 6,
+      "community": 2,
       "norm_label": "settings"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "",
       "source_location": "",
       "id": "basesettings",
-      "community": 6,
+      "community": 2,
       "norm_label": "basesettings"
     },
     {
@@ -215,7 +215,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\settings.py",
       "source_location": "L10",
-      "community": 6,
+      "community": 2,
       "norm_label": "all configuration for the belpro api service.      values are read from the proc",
       "id": "settings_rationale_10"
     },
@@ -945,7 +945,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\models\\manager.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_models_manager_py",
-      "community": 0,
+      "community": 2,
       "norm_label": "manager.py"
     },
     {
@@ -954,7 +954,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\models\\manager.py",
       "source_location": "L18",
       "id": "manager_manager",
-      "community": 0,
+      "community": 2,
       "norm_label": "manager"
     },
     {
@@ -962,7 +962,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L1",
-      "community": 0,
+      "community": 2,
       "norm_label": "pydantic schemas for the manager entity.",
       "id": "manager_rationale_1"
     },
@@ -1233,7 +1233,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_routers_log_entries_py",
-      "community": 1,
+      "community": 0,
       "norm_label": "log_entries.py"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L41",
       "id": "log_entries_extract_exif",
-      "community": 1,
+      "community": 0,
       "norm_label": "_extract_exif()"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L147",
       "id": "log_entries_get_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "get_log_entry()"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L205",
       "id": "log_entries_update_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "update_log_entry()"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L241",
       "id": "log_entries_upload_photo",
-      "community": 1,
+      "community": 0,
       "norm_label": "upload_photo()"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L311",
       "id": "log_entries_upload_photo_base64",
-      "community": 1,
+      "community": 0,
       "norm_label": "upload_photo_base64()"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L388",
       "id": "log_entries_get_photo_file",
-      "community": 1,
+      "community": 0,
       "norm_label": "get_photo_file()"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L415",
       "id": "log_entries_delete_photo",
-      "community": 1,
+      "community": 0,
       "norm_label": "delete_photo()"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L457",
       "id": "log_entries_approve_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "approve_log_entry()"
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L485",
       "id": "log_entries_reject_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "reject_log_entry()"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L513",
       "id": "log_entries_notify_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "notify_log_entry()"
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L543",
       "id": "log_entries_confirm_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "confirm_log_entry()"
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\log_entries.py",
       "source_location": "L571",
       "id": "log_entries_delete_log_entry",
-      "community": 1,
+      "community": 0,
       "norm_label": "delete_log_entry()"
     },
     {
@@ -1521,7 +1521,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_routers_managers_py",
-      "community": 6,
+      "community": 2,
       "norm_label": "managers.py"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L26",
       "id": "managers_get_manager",
-      "community": 6,
+      "community": 2,
       "norm_label": "get_manager()"
     },
     {
@@ -1539,7 +1539,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L42",
       "id": "managers_create_manager",
-      "community": 6,
+      "community": 2,
       "norm_label": "create_manager()"
     },
     {
@@ -1548,7 +1548,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L70",
       "id": "managers_update_manager",
-      "community": 6,
+      "community": 2,
       "norm_label": "update_manager()"
     },
     {
@@ -1557,7 +1557,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L91",
       "id": "managers_get_config_info",
-      "community": 6,
+      "community": 2,
       "norm_label": "get_config_info()"
     },
     {
@@ -1566,7 +1566,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L139",
       "id": "managers_change_password",
-      "community": 6,
+      "community": 2,
       "norm_label": "change_password()"
     },
     {
@@ -1574,7 +1574,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L1",
-      "community": 6,
+      "community": 2,
       "norm_label": "managers router \u2014 single-manager setup and profile.",
       "id": "managers_rationale_1"
     },
@@ -1583,7 +1583,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L29",
-      "community": 6,
+      "community": 2,
       "norm_label": "return the single manager profile, or 404 if setup has not been completed.",
       "id": "managers_rationale_29"
     },
@@ -1592,7 +1592,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L46",
-      "community": 6,
+      "community": 2,
       "norm_label": "seed the manager profile (first-time setup). returns 409 if already configured.",
       "id": "managers_rationale_46"
     },
@@ -1601,7 +1601,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L74",
-      "community": 6,
+      "community": 2,
       "norm_label": "update manager and/or ngo fields.  only provided (non-none) fields are written.",
       "id": "managers_rationale_74"
     },
@@ -1610,7 +1610,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L95",
-      "community": 6,
+      "community": 2,
       "norm_label": "return config status for the settings ui; auto-syncs whatsapp phone if connected",
       "id": "managers_rationale_95"
     },
@@ -1619,7 +1619,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L144",
-      "community": 6,
+      "community": 2,
       "norm_label": "change the manager password.  verifies the current password before updating.",
       "id": "managers_rationale_144"
     },
@@ -1629,7 +1629,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_routers_reports_py",
-      "community": 11,
+      "community": 4,
       "norm_label": "reports.py"
     },
     {
@@ -1638,7 +1638,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L32",
       "id": "reports_monthly_summary",
-      "community": 11,
+      "community": 4,
       "norm_label": "monthly_summary()"
     },
     {
@@ -1647,7 +1647,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L78",
       "id": "reports_summary_items",
-      "community": 11,
+      "community": 4,
       "norm_label": "_summary_items()"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L115",
       "id": "reports_generate_monthly_pdf",
-      "community": 11,
+      "community": 4,
       "norm_label": "generate_monthly_pdf()"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L170",
       "id": "reports_send_monthly_reports",
-      "community": 11,
+      "community": 4,
       "norm_label": "send_monthly_reports()"
     },
     {
@@ -1673,7 +1673,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L1",
-      "community": 0,
+      "community": 4,
       "norm_label": "reports router \u2014 monthly aggregation and pdf export endpoints.",
       "id": "reports_rationale_1"
     },
@@ -1682,36 +1682,36 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L38",
-      "id": "reports_rationale_38",
-      "community": 0,
-      "norm_label": "return per-volunteer totals of approved entries for the given year/month."
+      "community": 4,
+      "norm_label": "return per-volunteer totals of approved entries for the given year/month.",
+      "id": "reports_rationale_38"
     },
     {
       "label": "Run the monthly aggregation query and return per-volunteer summaries.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L81",
-      "id": "reports_rationale_81",
-      "community": 0,
-      "norm_label": "run the monthly aggregation query and return per-volunteer summaries."
+      "community": 4,
+      "norm_label": "run the monthly aggregation query and return per-volunteer summaries.",
+      "id": "reports_rationale_81"
     },
     {
       "label": "Generate a monthly PDF report for one volunteer or all active volunteers.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L121",
-      "id": "reports_rationale_121",
-      "community": 0,
-      "norm_label": "generate a monthly pdf report for one volunteer or all active volunteers."
+      "community": 4,
+      "norm_label": "generate a monthly pdf report for one volunteer or all active volunteers.",
+      "id": "reports_rationale_121"
     },
     {
       "label": "Generate monthly PDFs and deliver them via email and/or WhatsApp.      Default",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L175",
-      "id": "reports_rationale_175",
-      "community": 0,
-      "norm_label": "generate monthly pdfs and deliver them via email and/or whatsapp.      default"
+      "community": 4,
+      "norm_label": "generate monthly pdfs and deliver them via email and/or whatsapp.      default",
+      "id": "reports_rationale_175"
     },
     {
       "label": "volunteers.py",
@@ -1719,7 +1719,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_routers_volunteers_py",
-      "community": 4,
+      "community": 5,
       "norm_label": "volunteers.py"
     },
     {
@@ -1728,7 +1728,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L38",
       "id": "volunteers_to_response",
-      "community": 4,
+      "community": 5,
       "norm_label": "_to_response()"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L60",
       "id": "volunteers_to_detail_response",
-      "community": 4,
+      "community": 5,
       "norm_label": "_to_detail_response()"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L92",
       "id": "volunteers_list_volunteers",
-      "community": 4,
+      "community": 5,
       "norm_label": "list_volunteers()"
     },
     {
@@ -1755,7 +1755,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L168",
       "id": "volunteers_check_emso",
-      "community": 4,
+      "community": 5,
       "norm_label": "check_emso()"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L188",
       "id": "volunteers_create_volunteer",
-      "community": 4,
+      "community": 5,
       "norm_label": "create_volunteer()"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L244",
       "id": "volunteers_activate_volunteer",
-      "community": 4,
+      "community": 5,
       "norm_label": "activate_volunteer()"
     },
     {
@@ -1782,7 +1782,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L269",
       "id": "volunteers_deactivate_volunteer",
-      "community": 4,
+      "community": 5,
       "norm_label": "deactivate_volunteer()"
     },
     {
@@ -1791,7 +1791,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L294",
       "id": "volunteers_delete_volunteer",
-      "community": 4,
+      "community": 5,
       "norm_label": "delete_volunteer()"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L319",
       "id": "volunteers_get_volunteer",
-      "community": 4,
+      "community": 5,
       "norm_label": "get_volunteer()"
     },
     {
@@ -1809,7 +1809,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L340",
       "id": "volunteers_update_volunteer",
-      "community": 4,
+      "community": 5,
       "norm_label": "update_volunteer()"
     },
     {
@@ -1817,7 +1817,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L1",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteers crud router.",
       "id": "volunteers_rationale_1"
     },
@@ -1826,7 +1826,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L39",
-      "community": 5,
+      "community": 6,
       "norm_label": "decrypt emso, mask it, and build a volunteerresponse from an orm object.",
       "id": "volunteers_rationale_39"
     },
@@ -1835,7 +1835,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L61",
-      "community": 5,
+      "community": 6,
       "norm_label": "same as _to_response but includes sorted log_entries and computed hours for the",
       "id": "volunteers_rationale_61"
     },
@@ -1844,7 +1844,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L105",
-      "community": 5,
+      "community": 6,
       "norm_label": "list volunteers with optional filters, sorting, and pagination.",
       "id": "volunteers_rationale_105"
     },
@@ -1853,7 +1853,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L173",
-      "community": 5,
+      "community": 6,
       "norm_label": "check whether an emso is already registered.  used by the frontend before form s",
       "id": "volunteers_rationale_173"
     },
@@ -1862,7 +1862,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L193",
-      "community": 5,
+      "community": 6,
       "norm_label": "register a new volunteer.  encrypts emso before storing.",
       "id": "volunteers_rationale_193"
     },
@@ -1871,7 +1871,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L249",
-      "community": 5,
+      "community": 6,
       "norm_label": "re-activate a previously deactivated volunteer.",
       "id": "volunteers_rationale_249"
     },
@@ -1880,7 +1880,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L274",
-      "community": 5,
+      "community": 6,
       "norm_label": "soft-delete a volunteer by setting active=false.",
       "id": "volunteers_rationale_274"
     },
@@ -1889,7 +1889,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L298",
-      "community": 5,
+      "community": 6,
       "norm_label": "hard-delete a volunteer only if they have zero log entries.",
       "id": "volunteers_rationale_298"
     },
@@ -1898,7 +1898,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L324",
-      "community": 5,
+      "community": 6,
       "norm_label": "get a single volunteer with full log entry history (newest first).",
       "id": "volunteers_rationale_324"
     },
@@ -1907,7 +1907,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py",
       "source_location": "L347",
-      "community": 5,
+      "community": 6,
       "norm_label": "update mutable fields on a volunteer (report channel preferences).",
       "id": "volunteers_rationale_347"
     },
@@ -1944,7 +1944,7 @@
       "source_file": "",
       "source_location": "",
       "id": "basemodel",
-      "community": 5,
+      "community": 6,
       "norm_label": "basemodel"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_schemas_manager_py",
-      "community": 6,
+      "community": 2,
       "norm_label": "manager.py"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L13",
       "id": "manager_managercreate",
-      "community": 6,
+      "community": 2,
       "norm_label": "managercreate"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L28",
       "id": "manager_validate_davcna_checksum",
-      "community": 6,
+      "community": 13,
       "norm_label": "_validate_davcna_checksum()"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L35",
       "id": "manager_managerupdate",
-      "community": 6,
+      "community": 2,
       "norm_label": "managerupdate"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L64",
       "id": "manager_normalize_wa_phone",
-      "community": 6,
+      "community": 11,
       "norm_label": "normalize_wa_phone()"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L80",
       "id": "manager_passwordchangerequest",
-      "community": 6,
+      "community": 2,
       "norm_label": "passwordchangerequest"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L87",
       "id": "manager_managerresponse",
-      "community": 6,
+      "community": 2,
       "norm_label": "managerresponse"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L115",
       "id": "manager_configinforesponse",
-      "community": 6,
+      "community": 2,
       "norm_label": "configinforesponse"
     },
     {
@@ -2249,7 +2249,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L14",
-      "community": 6,
+      "community": 2,
       "norm_label": "fields required for first-time manager setup.",
       "id": "manager_rationale_14"
     },
@@ -2267,7 +2267,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L36",
-      "community": 6,
+      "community": 2,
       "norm_label": "partial update \u2014 all fields optional.  only provided fields are written.",
       "id": "manager_rationale_36"
     },
@@ -2294,7 +2294,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L81",
-      "community": 6,
+      "community": 2,
       "norm_label": "payload for the change-password endpoint.",
       "id": "manager_rationale_81"
     },
@@ -2303,7 +2303,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L88",
-      "community": 6,
+      "community": 2,
       "norm_label": "manager profile returned by the api.",
       "id": "manager_rationale_88"
     },
@@ -2312,7 +2312,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\manager.py",
       "source_location": "L116",
-      "community": 6,
+      "community": 2,
       "norm_label": "response schema for get /managers/me/config-info.",
       "id": "manager_rationale_116"
     },
@@ -2322,7 +2322,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\report.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_schemas_report_py",
-      "community": 0,
+      "community": 4,
       "norm_label": "report.py"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\report.py",
       "source_location": "L10",
       "id": "report_volunteermonthlysummary",
-      "community": 0,
+      "community": 4,
       "norm_label": "volunteermonthlysummary"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\report.py",
       "source_location": "L20",
       "id": "report_monthlyreportsummary",
-      "community": 0,
+      "community": 4,
       "norm_label": "monthlyreportsummary"
     },
     {
@@ -2348,7 +2348,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\report.py",
       "source_location": "L1",
-      "community": 0,
+      "community": 4,
       "norm_label": "pydantic schemas for monthly report summaries.",
       "id": "report_rationale_1"
     },
@@ -2357,7 +2357,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\report.py",
       "source_location": "L11",
-      "community": 0,
+      "community": 4,
       "norm_label": "per-volunteer aggregated totals for a given month.",
       "id": "report_rationale_11"
     },
@@ -2366,7 +2366,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\report.py",
       "source_location": "L21",
-      "community": 0,
+      "community": 4,
       "norm_label": "aggregated monthly summary across all active volunteers.",
       "id": "report_rationale_21"
     },
@@ -2376,7 +2376,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_schemas_volunteer_py",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteer.py"
     },
     {
@@ -2385,7 +2385,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L15",
       "id": "volunteer_normalise_phone",
-      "community": 5,
+      "community": 6,
       "norm_label": "_normalise_phone()"
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L23",
       "id": "volunteer_logentrybrief",
-      "community": 5,
+      "community": 6,
       "norm_label": "logentrybrief"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L36",
       "id": "volunteer_emsocheckrequest",
-      "community": 5,
+      "community": 6,
       "norm_label": "emsocheckrequest"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L42",
       "id": "volunteer_emsocheckresponse",
-      "community": 5,
+      "community": 6,
       "norm_label": "emsocheckresponse"
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L48",
       "id": "volunteer_volunteercreate",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteercreate"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L74",
       "id": "volunteer_normalise_phone_field",
-      "community": 5,
+      "community": 6,
       "norm_label": "_normalise_phone_field()"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L78",
       "id": "volunteer_volunteerresponse",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteerresponse"
     },
     {
@@ -2457,7 +2457,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L105",
       "id": "volunteer_volunteerdetailresponse",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteerdetailresponse"
     },
     {
@@ -2466,7 +2466,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L111",
       "id": "volunteer_volunteerlistresponse",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteerlistresponse"
     },
     {
@@ -2475,7 +2475,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L118",
       "id": "volunteer_volunteerupdate",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteerupdate"
     },
     {
@@ -2484,7 +2484,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L138",
       "id": "volunteer_coerce_empty_email",
-      "community": 5,
+      "community": 6,
       "norm_label": "_coerce_empty_email()"
     },
     {
@@ -2492,7 +2492,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L1",
-      "community": 5,
+      "community": 6,
       "norm_label": "pydantic schemas for the volunteer entity.",
       "id": "volunteer_rationale_1"
     },
@@ -2501,7 +2501,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L16",
-      "community": 5,
+      "community": 6,
       "norm_label": "strip whitespace and leading ``+``, return bare e.164 digits.",
       "id": "volunteer_rationale_16"
     },
@@ -2510,7 +2510,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L24",
-      "community": 5,
+      "community": 6,
       "norm_label": "compact log entry view \u2014 used inside volunteerdetailresponse.",
       "id": "volunteer_rationale_24"
     },
@@ -2519,7 +2519,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L37",
-      "community": 5,
+      "community": 6,
       "norm_label": "plaintext emso submitted for duplicate check before creating a volunteer.",
       "id": "volunteer_rationale_37"
     },
@@ -2528,7 +2528,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L43",
-      "community": 5,
+      "community": 6,
       "norm_label": "result of an emso duplicate check.",
       "id": "volunteer_rationale_43"
     },
@@ -2537,7 +2537,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L49",
-      "community": 5,
+      "community": 6,
       "norm_label": "fields required to register a new volunteer.",
       "id": "volunteer_rationale_49"
     },
@@ -2555,7 +2555,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L79",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteer data returned to the manager dashboard.      emso_masked is computed",
       "id": "volunteer_rationale_79"
     },
@@ -2564,7 +2564,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L106",
-      "community": 5,
+      "community": 6,
       "norm_label": "volunteer with full entry history \u2014 returned by get /volunteers/{id}.",
       "id": "volunteer_rationale_106"
     },
@@ -2573,7 +2573,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L112",
-      "community": 5,
+      "community": 6,
       "norm_label": "paginated volunteer list.",
       "id": "volunteer_rationale_112"
     },
@@ -2582,7 +2582,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\volunteer.py",
       "source_location": "L119",
-      "community": 5,
+      "community": 6,
       "norm_label": "fields that can be updated on an existing volunteer.",
       "id": "volunteer_rationale_119"
     },
@@ -2619,7 +2619,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_scripts_rotate_emso_key_py",
-      "community": 4,
+      "community": 5,
       "norm_label": "rotate_emso_key.py"
     },
     {
@@ -2628,7 +2628,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L31",
       "id": "rotate_emso_key_db_url",
-      "community": 4,
+      "community": 5,
       "norm_label": "_db_url()"
     },
     {
@@ -2637,7 +2637,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L35",
       "id": "rotate_emso_key_cmd_backup",
-      "community": 4,
+      "community": 5,
       "norm_label": "cmd_backup()"
     },
     {
@@ -2646,7 +2646,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L69",
       "id": "rotate_emso_key_cmd_restore",
-      "community": 4,
+      "community": 5,
       "norm_label": "cmd_restore()"
     },
     {
@@ -2655,7 +2655,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L127",
       "id": "rotate_emso_key_cmd_rotate",
-      "community": 4,
+      "community": 5,
       "norm_label": "cmd_rotate()"
     },
     {
@@ -2664,7 +2664,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L218",
       "id": "rotate_emso_key_main",
-      "community": 4,
+      "community": 5,
       "norm_label": "main()"
     },
     {
@@ -2672,7 +2672,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L36",
-      "community": 4,
+      "community": 5,
       "norm_label": "dump volunteers table + old key to out_path as json.",
       "id": "rotate_emso_key_rationale_36"
     },
@@ -2681,7 +2681,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L70",
-      "community": 4,
+      "community": 5,
       "norm_label": "restore emso + emso_hash for all volunteers from backup_path.",
       "id": "rotate_emso_key_rationale_70"
     },
@@ -2690,7 +2690,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\scripts\\rotate_emso_key.py",
       "source_location": "L128",
-      "community": 4,
+      "community": 5,
       "norm_label": "re-encrypt all emsos from old_key to new_key. returns count of rotated records.",
       "id": "rotate_emso_key_rationale_128"
     },
@@ -2700,7 +2700,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\email.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_services_email_py",
-      "community": 11,
+      "community": 4,
       "norm_label": "email.py"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\email.py",
       "source_location": "L19",
       "id": "email_smtpnotconfigurederror",
-      "community": 0,
+      "community": 4,
       "norm_label": "smtpnotconfigurederror"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "",
       "source_location": "",
       "id": "exception",
-      "community": 3,
+      "community": 11,
       "norm_label": "exception"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\email.py",
       "source_location": "L23",
       "id": "email_send_email",
-      "community": 11,
+      "community": 4,
       "norm_label": "send_email()"
     },
     {
@@ -2735,7 +2735,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\email.py",
       "source_location": "L1",
-      "community": 11,
+      "community": 4,
       "norm_label": "async email sender backed by aiosmtplib.  reads smtp config from the manager row",
       "id": "email_rationale_1"
     },
@@ -2744,7 +2744,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\email.py",
       "source_location": "L20",
-      "community": 0,
+      "community": 4,
       "norm_label": "raised when the manager has not configured smtp.",
       "id": "email_rationale_20"
     },
@@ -2753,7 +2753,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\email.py",
       "source_location": "L36",
-      "community": 11,
+      "community": 4,
       "norm_label": "send an email via starttls smtp.      raises smtpnotconfigurederror if host/port",
       "id": "email_rationale_36"
     },
@@ -2763,7 +2763,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_services_encryption_py",
-      "community": 4,
+      "community": 5,
       "norm_label": "encryption.py"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L29",
       "id": "encryption_load_key",
-      "community": 4,
+      "community": 5,
       "norm_label": "load_key()"
     },
     {
@@ -2781,7 +2781,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L47",
       "id": "encryption_encrypt_emso",
-      "community": 4,
+      "community": 5,
       "norm_label": "encrypt_emso()"
     },
     {
@@ -2790,7 +2790,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L58",
       "id": "encryption_decrypt_emso",
-      "community": 4,
+      "community": 5,
       "norm_label": "decrypt_emso()"
     },
     {
@@ -2799,7 +2799,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L69",
       "id": "encryption_hash_emso",
-      "community": 4,
+      "community": 5,
       "norm_label": "hash_emso()"
     },
     {
@@ -2808,7 +2808,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L78",
       "id": "encryption_mask_emso",
-      "community": 4,
+      "community": 5,
       "norm_label": "mask_emso()"
     },
     {
@@ -2816,7 +2816,7 @@
       "file_type": "rationale",
       "source_file": "api\\services\\encryption.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 5,
       "norm_label": "aes-256-gcm encryption service for sensitive fields (emso).  usage ----- key = l",
       "id": "encryption_rationale_1"
     },
@@ -2825,7 +2825,7 @@
       "file_type": "rationale",
       "source_file": "api\\services\\encryption.py",
       "source_location": "L30",
-      "community": 4,
+      "community": 5,
       "norm_label": "decode and validate a base64-encoded 32-byte aes-256 key.      raises valueerror",
       "id": "encryption_rationale_30"
     },
@@ -2834,7 +2834,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L48",
-      "community": 4,
+      "community": 5,
       "norm_label": "encrypt emso with aes-256-gcm.      returns base64(nonce + ciphertext + auth_tag",
       "id": "encryption_rationale_48"
     },
@@ -2843,7 +2843,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L59",
-      "community": 4,
+      "community": 5,
       "norm_label": "decrypt emso ciphertext produced by encrypt_emso.      returns the plaintext str",
       "id": "encryption_rationale_59"
     },
@@ -2852,7 +2852,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L70",
-      "community": 4,
+      "community": 5,
       "norm_label": "return hmac-sha256 hex digest of plaintext emso.      deterministic (unlike encr",
       "id": "encryption_rationale_70"
     },
@@ -2861,7 +2861,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\encryption.py",
       "source_location": "L79",
-      "community": 4,
+      "community": 5,
       "norm_label": "return emso with all but the last 3 characters replaced by *.      used in all a",
       "id": "encryption_rationale_79"
     },
@@ -2871,7 +2871,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_services_evolution_py",
-      "community": 6,
+      "community": 2,
       "norm_label": "evolution.py"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L11",
       "id": "evolution_evolutionclient",
-      "community": 6,
+      "community": 2,
       "norm_label": "evolutionclient"
     },
     {
@@ -2889,7 +2889,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L14",
       "id": "evolution_evolutionclient_init",
-      "community": 6,
+      "community": 2,
       "norm_label": ".__init__()"
     },
     {
@@ -2898,7 +2898,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L19",
       "id": "evolution_evolutionclient_get_connected_phone",
-      "community": 3,
+      "community": 11,
       "norm_label": ".get_connected_phone()"
     },
     {
@@ -2907,7 +2907,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L72",
       "id": "evolution_evolutionclient_send_document",
-      "community": 11,
+      "community": 4,
       "norm_label": ".send_document()"
     },
     {
@@ -2915,7 +2915,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L12",
-      "community": 6,
+      "community": 2,
       "norm_label": "async http client for the evolution api whatsapp gateway.",
       "id": "evolution_rationale_12"
     },
@@ -2924,7 +2924,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L20",
-      "community": 3,
+      "community": 11,
       "norm_label": "return (normalized_phone, state) for the configured instance.          states: \"",
       "id": "evolution_rationale_20"
     },
@@ -2933,7 +2933,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\evolution.py",
       "source_location": "L79",
-      "community": 11,
+      "community": 4,
       "norm_label": "send a pdf document to a whatsapp number via evolution api sendmedia.",
       "id": "evolution_rationale_79"
     },
@@ -2983,6 +2983,15 @@
       "norm_label": "_open_image()"
     },
     {
+      "label": "logo_src()",
+      "file_type": "code",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\logo.py",
+      "source_location": "L48",
+      "id": "logo_logo_src",
+      "community": 4,
+      "norm_label": "logo_src()"
+    },
+    {
       "label": "Return True if a logo file is present on disk.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\logo.py",
@@ -3019,12 +3028,21 @@
       "id": "logo_rationale_37"
     },
     {
+      "label": "Return a data URI for the NGO logo, or None if no logo is uploaded.",
+      "file_type": "rationale",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\logo.py",
+      "source_location": "L49",
+      "id": "logo_rationale_49",
+      "community": 4,
+      "norm_label": "return a data uri for the ngo logo, or none if no logo is uploaded."
+    },
+    {
       "label": "report_pdf.py",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_services_report_pdf_py",
-      "community": 11,
+      "community": 4,
       "norm_label": "report_pdf.py"
     },
     {
@@ -3033,7 +3051,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L35",
       "id": "report_pdf_esc",
-      "community": 11,
+      "community": 4,
       "norm_label": "_esc()"
     },
     {
@@ -3042,7 +3060,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L39",
       "id": "report_pdf_fmt_date",
-      "community": 11,
+      "community": 4,
       "norm_label": "_fmt_date()"
     },
     {
@@ -3051,7 +3069,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L43",
       "id": "report_pdf_generated_line",
-      "community": 11,
+      "community": 4,
       "norm_label": "_generated_line()"
     },
     {
@@ -3060,7 +3078,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L48",
       "id": "report_pdf_ngoinfo",
-      "community": 0,
+      "community": 4,
       "norm_label": "ngoinfo"
     },
     {
@@ -3069,7 +3087,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L61",
       "id": "report_pdf_ngo_header_html",
-      "community": 11,
+      "community": 4,
       "norm_label": "_ngo_header_html()"
     },
     {
@@ -3078,7 +3096,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L85",
       "id": "report_pdf_render_volunteer_pdf",
-      "community": 11,
+      "community": 4,
       "norm_label": "render_volunteer_pdf()"
     },
     {
@@ -3087,7 +3105,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L139",
       "id": "report_pdf_render_summary_pdf",
-      "community": 11,
+      "community": 4,
       "norm_label": "render_summary_pdf()"
     },
     {
@@ -3095,7 +3113,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L1",
-      "community": 11,
+      "community": 4,
       "norm_label": "pdf rendering for monthly volunteer reports using weasyprint.",
       "id": "report_pdf_rationale_1"
     },
@@ -3104,36 +3122,36 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L49",
-      "id": "report_pdf_rationale_49",
-      "community": 0,
-      "norm_label": "ngo identity shown in every pdf header."
+      "community": 4,
+      "norm_label": "ngo identity shown in every pdf header.",
+      "id": "report_pdf_rationale_49"
     },
     {
       "label": "Render the NGO header block as an HTML string.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L62",
-      "id": "report_pdf_rationale_62",
-      "community": 11,
-      "norm_label": "render the ngo header block as an html string."
+      "community": 4,
+      "norm_label": "render the ngo header block as an html string.",
+      "id": "report_pdf_rationale_62"
     },
     {
       "label": "Render a single-volunteer monthly report PDF and return raw bytes.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L93",
-      "id": "report_pdf_rationale_93",
-      "community": 11,
-      "norm_label": "render a single-volunteer monthly report pdf and return raw bytes."
+      "community": 4,
+      "norm_label": "render a single-volunteer monthly report pdf and return raw bytes.",
+      "id": "report_pdf_rationale_93"
     },
     {
       "label": "Render an all-volunteer summary PDF and return raw bytes.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\report_pdf.py",
       "source_location": "L140",
-      "id": "report_pdf_rationale_140",
-      "community": 11,
-      "norm_label": "render an all-volunteer summary pdf and return raw bytes."
+      "community": 4,
+      "norm_label": "render an all-volunteer summary pdf and return raw bytes.",
+      "id": "report_pdf_rationale_140"
     },
     {
       "label": "__init__.py",
@@ -3474,7 +3492,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_tests_test_encryption_py",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_encryption.py"
     },
     {
@@ -3483,7 +3501,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L22",
       "id": "test_encryption_test_load_key_accepts_valid_32_byte_key",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_load_key_accepts_valid_32_byte_key()"
     },
     {
@@ -3492,7 +3510,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L27",
       "id": "test_encryption_test_load_key_rejects_short_key",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_load_key_rejects_short_key()"
     },
     {
@@ -3501,7 +3519,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L33",
       "id": "test_encryption_test_load_key_accepts_key_without_padding",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_load_key_accepts_key_without_padding()"
     },
     {
@@ -3510,7 +3528,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L42",
       "id": "test_encryption_test_roundtrip_restores_plaintext",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_roundtrip_restores_plaintext()"
     },
     {
@@ -3519,7 +3537,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L46",
       "id": "test_encryption_test_encrypt_produces_different_ciphertext_each_call",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_encrypt_produces_different_ciphertext_each_call()"
     },
     {
@@ -3528,7 +3546,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L51",
       "id": "test_encryption_test_decrypt_with_wrong_key_raises_invalid_tag",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_decrypt_with_wrong_key_raises_invalid_tag()"
     },
     {
@@ -3537,7 +3555,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L60",
       "id": "test_encryption_test_hash_is_deterministic",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_hash_is_deterministic()"
     },
     {
@@ -3546,7 +3564,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L64",
       "id": "test_encryption_test_different_emso_produces_different_hash",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_different_emso_produces_different_hash()"
     },
     {
@@ -3555,7 +3573,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L68",
       "id": "test_encryption_test_hash_differs_from_encryption",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_hash_differs_from_encryption()"
     },
     {
@@ -3564,7 +3582,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L75",
       "id": "test_encryption_test_mask_replaces_all_but_last_three_chars",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_mask_replaces_all_but_last_three_chars()"
     },
     {
@@ -3573,7 +3591,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L79",
       "id": "test_encryption_test_mask_length_preserved",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_mask_length_preserved()"
     },
     {
@@ -3582,7 +3600,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L83",
       "id": "test_encryption_test_mask_short_value_returned_unchanged",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_mask_short_value_returned_unchanged()"
     },
     {
@@ -3591,7 +3609,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L87",
       "id": "test_encryption_test_mask_exactly_three_chars_returned_unchanged",
-      "community": 4,
+      "community": 5,
       "norm_label": "test_mask_exactly_three_chars_returned_unchanged()"
     },
     {
@@ -3599,7 +3617,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_encryption.py",
       "source_location": "L1",
-      "community": 4,
+      "community": 5,
       "norm_label": "unit tests for the emso encryption service.  no database needed \u2014 pure crypto lo",
       "id": "test_encryption_rationale_1"
     },
@@ -3609,7 +3627,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_tests_test_evolution_service_py",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_evolution_service.py"
     },
     {
@@ -3618,7 +3636,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L36",
       "id": "test_evolution_service_make_mock_http",
-      "community": 3,
+      "community": 11,
       "norm_label": "_make_mock_http()"
     },
     {
@@ -3627,7 +3645,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L48",
       "id": "test_evolution_service_test_connected_returns_normalized_phone_and_open_state",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_connected_returns_normalized_phone_and_open_state()"
     },
     {
@@ -3636,7 +3654,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L56",
       "id": "test_evolution_service_test_disconnected_returns_none_and_close_state",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_disconnected_returns_none_and_close_state()"
     },
     {
@@ -3645,7 +3663,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L64",
       "id": "test_evolution_service_test_network_error_returns_unreachable",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_network_error_returns_unreachable()"
     },
     {
@@ -3654,7 +3672,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L72",
       "id": "test_evolution_service_test_lid_jid_returns_lid_unsupported",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_lid_jid_returns_lid_unsupported()"
     },
     {
@@ -3663,7 +3681,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_evolution_service.py",
       "source_location": "L80",
       "id": "test_evolution_service_test_instance_not_in_response_returns_close",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_instance_not_in_response_returns_close()"
     },
     {
@@ -4194,7 +4212,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_tests_test_managers_py",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_managers.py"
     },
     {
@@ -4203,7 +4221,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L11",
       "id": "test_managers_test_get_manager_returns_profile",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_get_manager_returns_profile()"
     },
     {
@@ -4212,7 +4230,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L20",
       "id": "test_managers_test_create_manager_returns_409_when_already_configured",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_create_manager_returns_409_when_already_configured()"
     },
     {
@@ -4221,7 +4239,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L37",
       "id": "test_managers_test_auth_wrong_password_returns_401",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_auth_wrong_password_returns_401()"
     },
     {
@@ -4230,7 +4248,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L43",
       "id": "test_managers_test_auth_missing_credentials_returns_401",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_auth_missing_credentials_returns_401()"
     },
     {
@@ -4239,7 +4257,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L48",
       "id": "test_managers_test_seed_whatsapp_phone_populates_null_db_field",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_seed_whatsapp_phone_populates_null_db_field()"
     },
     {
@@ -4248,7 +4266,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L64",
       "id": "test_managers_test_seed_whatsapp_phone_does_not_overwrite_existing_value",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_seed_whatsapp_phone_does_not_overwrite_existing_value()"
     },
     {
@@ -4257,7 +4275,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L81",
       "id": "test_managers_test_config_info_includes_wa_fields",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_config_info_includes_wa_fields()"
     },
     {
@@ -4266,7 +4284,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L97",
       "id": "test_managers_test_config_info_auto_syncs_when_evolution_reports_new_phone",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_config_info_auto_syncs_when_evolution_reports_new_phone()"
     },
     {
@@ -4275,7 +4293,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L121",
       "id": "test_managers_test_config_info_no_sync_when_phone_already_matches",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_config_info_no_sync_when_phone_already_matches()"
     },
     {
@@ -4284,7 +4302,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L138",
       "id": "test_managers_test_config_info_shows_db_phone_when_disconnected",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_config_info_shows_db_phone_when_disconnected()"
     },
     {
@@ -4293,7 +4311,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L157",
       "id": "test_managers_test_update_manager_normalizes_whatsapp_phone",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_update_manager_normalizes_whatsapp_phone()"
     },
     {
@@ -4302,7 +4320,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L168",
       "id": "test_managers_test_update_manager_rejects_too_short_phone",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_update_manager_rejects_too_short_phone()"
     },
     {
@@ -4311,7 +4329,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L178",
       "id": "test_managers_test_update_manager_empty_phone_not_stored_as_empty_string",
-      "community": 3,
+      "community": 2,
       "norm_label": "test_update_manager_empty_phone_not_stored_as_empty_string()"
     },
     {
@@ -4319,7 +4337,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L49",
-      "community": 3,
+      "community": 2,
       "norm_label": "seed_whatsapp_phone_from_env writes normalized phone to db when db value is null",
       "id": "test_managers_rationale_49"
     },
@@ -4328,7 +4346,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_managers.py",
       "source_location": "L65",
-      "community": 3,
+      "community": 2,
       "norm_label": "seed_whatsapp_phone_from_env leaves existing db value untouched.",
       "id": "test_managers_rationale_65"
     },
@@ -4338,7 +4356,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_tests_test_phone_utils_py",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_phone_utils.py"
     },
     {
@@ -4347,7 +4365,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L4",
       "id": "test_phone_utils_test_strips_plus_prefix",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_strips_plus_prefix()"
     },
     {
@@ -4356,7 +4374,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L8",
       "id": "test_phone_utils_test_strips_spaces",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_strips_spaces()"
     },
     {
@@ -4365,7 +4383,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L12",
       "id": "test_phone_utils_test_strips_dashes",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_strips_dashes()"
     },
     {
@@ -4374,7 +4392,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L16",
       "id": "test_phone_utils_test_strips_parentheses",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_strips_parentheses()"
     },
     {
@@ -4383,7 +4401,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L20",
       "id": "test_phone_utils_test_already_normalized",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_already_normalized()"
     },
     {
@@ -4392,7 +4410,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L24",
       "id": "test_phone_utils_test_none_returns_none",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_none_returns_none()"
     },
     {
@@ -4401,7 +4419,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L28",
       "id": "test_phone_utils_test_empty_string_returns_none",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_empty_string_returns_none()"
     },
     {
@@ -4410,7 +4428,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L32",
       "id": "test_phone_utils_test_whitespace_only_returns_none",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_whitespace_only_returns_none()"
     },
     {
@@ -4419,7 +4437,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L36",
       "id": "test_phone_utils_test_too_short_returns_none",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_too_short_returns_none()"
     },
     {
@@ -4428,7 +4446,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_phone_utils.py",
       "source_location": "L41",
       "id": "test_phone_utils_test_jid_phone_part",
-      "community": 3,
+      "community": 11,
       "norm_label": "test_jid_phone_part()"
     },
     {
@@ -4444,7 +4462,7 @@
       "label": "test_monthly_summary_empty()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L9",
+      "source_location": "L10",
       "id": "test_reports_test_monthly_summary_empty",
       "community": 1,
       "norm_label": "test_monthly_summary_empty()"
@@ -4453,7 +4471,7 @@
       "label": "test_monthly_summary_counts_only_approved_entries()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "id": "test_reports_test_monthly_summary_counts_only_approved_entries",
       "community": 1,
       "norm_label": "test_monthly_summary_counts_only_approved_entries()"
@@ -4462,7 +4480,7 @@
       "label": "test_monthly_summary_missing_params_returns_422()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L38",
+      "source_location": "L39",
       "id": "test_reports_test_monthly_summary_missing_params_returns_422",
       "community": 1,
       "norm_label": "test_monthly_summary_missing_params_returns_422()"
@@ -4471,7 +4489,7 @@
       "label": "test_monthly_pdf_empty_month_returns_pdf_content_type()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L45",
+      "source_location": "L46",
       "id": "test_reports_test_monthly_pdf_empty_month_returns_pdf_content_type",
       "community": 1,
       "norm_label": "test_monthly_pdf_empty_month_returns_pdf_content_type()"
@@ -4480,7 +4498,7 @@
       "label": "test_monthly_pdf_for_unknown_volunteer_returns_404()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L53",
+      "source_location": "L54",
       "id": "test_reports_test_monthly_pdf_for_unknown_volunteer_returns_404",
       "community": 1,
       "norm_label": "test_monthly_pdf_for_unknown_volunteer_returns_404()"
@@ -4489,7 +4507,7 @@
       "label": "test_with_entries_only_excludes_volunteers_with_no_entries()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L63",
+      "source_location": "L64",
       "id": "test_reports_test_with_entries_only_excludes_volunteers_with_no_entries",
       "community": 1,
       "norm_label": "test_with_entries_only_excludes_volunteers_with_no_entries()"
@@ -4498,7 +4516,7 @@
       "label": "test_with_entries_only_includes_any_status_not_only_approved()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "id": "test_reports_test_with_entries_only_includes_any_status_not_only_approved",
       "community": 1,
       "norm_label": "test_with_entries_only_includes_any_status_not_only_approved()"
@@ -4507,7 +4525,7 @@
       "label": "test_with_entries_only_false_includes_all_active_volunteers()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L93",
+      "source_location": "L94",
       "id": "test_reports_test_with_entries_only_false_includes_all_active_volunteers",
       "community": 1,
       "norm_label": "test_with_entries_only_false_includes_all_active_volunteers()"
@@ -4516,9 +4534,9 @@
       "label": "test_ngo_header_html_without_logo()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L111",
+      "source_location": "L112",
       "id": "test_reports_test_ngo_header_html_without_logo",
-      "community": 11,
+      "community": 4,
       "norm_label": "test_ngo_header_html_without_logo()"
     },
     {
@@ -4527,16 +4545,16 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L119",
       "id": "test_reports_test_ngo_header_html_with_logo",
-      "community": 1,
+      "community": 4,
       "norm_label": "test_ngo_header_html_with_logo()"
     },
     {
       "label": "_ngo_header_html must not include an img tag when logo_path is None.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L112",
-      "id": "test_reports_rationale_112",
-      "community": 11,
+      "source_location": "L113",
+      "id": "test_reports_rationale_113",
+      "community": 4,
       "norm_label": "_ngo_header_html must not include an img tag when logo_path is none."
     },
     {
@@ -4544,9 +4562,9 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L120",
-      "id": "test_reports_rationale_120",
-      "community": 1,
-      "norm_label": "_ngo_header_html must include an img tag with file:// src when logo_path is set."
+      "community": 4,
+      "norm_label": "_ngo_header_html must include an img tag with file:// src when logo_path is set.",
+      "id": "test_reports_rationale_120"
     },
     {
       "label": "test_tax_number.py",
@@ -4851,7 +4869,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_tests_test_volunteer_update_schema_py",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_volunteer_update_schema.py"
     },
     {
@@ -4860,7 +4878,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L8",
       "id": "test_volunteer_update_schema_test_accepts_first_name",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_accepts_first_name()"
     },
     {
@@ -4869,7 +4887,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L13",
       "id": "test_volunteer_update_schema_test_accepts_last_name",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_accepts_last_name()"
     },
     {
@@ -4878,7 +4896,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L18",
       "id": "test_volunteer_update_schema_test_rejects_empty_first_name",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_rejects_empty_first_name()"
     },
     {
@@ -4887,7 +4905,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L23",
       "id": "test_volunteer_update_schema_test_rejects_empty_last_name",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_rejects_empty_last_name()"
     },
     {
@@ -4896,7 +4914,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L28",
       "id": "test_volunteer_update_schema_test_accepts_email_string",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_accepts_email_string()"
     },
     {
@@ -4905,7 +4923,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L33",
       "id": "test_volunteer_update_schema_test_coerces_empty_email_to_none",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_coerces_empty_email_to_none()"
     },
     {
@@ -4914,7 +4932,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L38",
       "id": "test_volunteer_update_schema_test_accepts_none_email",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_accepts_none_email()"
     },
     {
@@ -4923,7 +4941,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L43",
       "id": "test_volunteer_update_schema_test_normalises_phone",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_normalises_phone()"
     },
     {
@@ -4932,7 +4950,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L48",
       "id": "test_volunteer_update_schema_test_all_none_produces_empty_dump",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_all_none_produces_empty_dump()"
     },
     {
@@ -4941,7 +4959,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L53",
       "id": "test_volunteer_update_schema_test_first_name_included_in_dump",
-      "community": 5,
+      "community": 6,
       "norm_label": "test_first_name_included_in_dump()"
     },
     {
@@ -4949,7 +4967,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteer_update_schema.py",
       "source_location": "L1",
-      "community": 5,
+      "community": 6,
       "norm_label": "unit tests for volunteerupdate schema \u2014 no db required.",
       "id": "test_volunteer_update_schema_rationale_1"
     },
@@ -5004,7 +5022,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\utils\\phone.py",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_api_utils_phone_py",
-      "community": 3,
+      "community": 11,
       "norm_label": "phone.py"
     },
     {
@@ -5013,7 +5031,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\utils\\phone.py",
       "source_location": "L4",
       "id": "phone_normalize_phone",
-      "community": 3,
+      "community": 11,
       "norm_label": "normalize_phone()"
     },
     {
@@ -5021,7 +5039,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\utils\\phone.py",
       "source_location": "L5",
-      "community": 3,
+      "community": 11,
       "norm_label": "return digits-only whatsapp-native phone number, or none for invalid input.",
       "id": "phone_rationale_5"
     },
@@ -5076,7 +5094,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_frontend_js_analytics_js",
-      "community": 2,
+      "community": 3,
       "norm_label": "analytics.js"
     },
     {
@@ -5085,7 +5103,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L13",
       "id": "analytics_renderanalytics",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderanalytics()"
     },
     {
@@ -5094,7 +5112,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L57",
       "id": "analytics_loadanalytics",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadanalytics()"
     },
     {
@@ -5103,7 +5121,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L71",
       "id": "analytics_renderanalyticscontent",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderanalyticscontent()"
     },
     {
@@ -5112,7 +5130,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L128",
       "id": "analytics_rendercharts",
-      "community": 2,
+      "community": 3,
       "norm_label": "_rendercharts()"
     },
     {
@@ -5121,7 +5139,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L195",
       "id": "analytics_destroycharts",
-      "community": 2,
+      "community": 3,
       "norm_label": "_destroycharts()"
     },
     {
@@ -5130,7 +5148,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js",
       "source_location": "L201",
       "id": "analytics_exportanalyticscsv",
-      "community": 2,
+      "community": 3,
       "norm_label": "exportanalyticscsv()"
     },
     {
@@ -5148,7 +5166,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_frontend_js_reports_js",
-      "community": 2,
+      "community": 3,
       "norm_label": "reports.js"
     },
     {
@@ -5157,7 +5175,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L16",
       "id": "reports_renderreports",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderreports()"
     },
     {
@@ -5166,7 +5184,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L73",
       "id": "reports_loadreports",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadreports()"
     },
     {
@@ -5175,7 +5193,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L85",
       "id": "reports_renderreportstable",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderreportstable()"
     },
     {
@@ -5184,7 +5202,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L148",
       "id": "reports_exportreportpdf",
-      "community": 2,
+      "community": 3,
       "norm_label": "exportreportpdf()"
     },
     {
@@ -5193,7 +5211,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L164",
       "id": "reports_sendreports",
-      "community": 2,
+      "community": 3,
       "norm_label": "sendreports()"
     },
     {
@@ -5202,7 +5220,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\reports.js",
       "source_location": "L210",
       "id": "reports_fmthours",
-      "community": 2,
+      "community": 3,
       "norm_label": "fmthours()"
     },
     {
@@ -5211,7 +5229,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1",
       "id": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
-      "community": 2,
+      "community": 3,
       "norm_label": "volunteers.js"
     },
     {
@@ -5220,7 +5238,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L4",
       "id": "volunteers_davcnavalid",
-      "community": 2,
+      "community": 3,
       "norm_label": "_davcnavalid()"
     },
     {
@@ -5229,7 +5247,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L16",
       "id": "volunteers",
-      "community": 2,
+      "community": 3,
       "norm_label": "$()"
     },
     {
@@ -5238,7 +5256,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L17",
       "id": "volunteers_sethtml",
-      "community": 2,
+      "community": 3,
       "norm_label": "sethtml()"
     },
     {
@@ -5247,7 +5265,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L18",
       "id": "volunteers_show",
-      "community": 2,
+      "community": 3,
       "norm_label": "show()"
     },
     {
@@ -5256,7 +5274,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L19",
       "id": "volunteers_hide",
-      "community": 2,
+      "community": 3,
       "norm_label": "hide()"
     },
     {
@@ -5265,7 +5283,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L22",
       "id": "volunteers_toast",
-      "community": 2,
+      "community": 3,
       "norm_label": "toast()"
     },
     {
@@ -5274,7 +5292,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L37",
       "id": "volunteers_showlogin",
-      "community": 2,
+      "community": 3,
       "norm_label": "showlogin()"
     },
     {
@@ -5283,7 +5301,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L45",
       "id": "volunteers_showapp",
-      "community": 2,
+      "community": 3,
       "norm_label": "showapp()"
     },
     {
@@ -5292,7 +5310,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L70",
       "id": "volunteers_checkmanagersetup",
-      "community": 2,
+      "community": 3,
       "norm_label": "checkmanagersetup()"
     },
     {
@@ -5301,7 +5319,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L83",
       "id": "volunteers_openmanagersetupmodal",
-      "community": 2,
+      "community": 3,
       "norm_label": "openmanagersetupmodal()"
     },
     {
@@ -5310,7 +5328,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L124",
       "id": "volunteers_submitmanagersetup",
-      "community": 2,
+      "community": 3,
       "norm_label": "submitmanagersetup()"
     },
     {
@@ -5319,7 +5337,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L174",
       "id": "volunteers_route",
-      "community": 2,
+      "community": 3,
       "norm_label": "route()"
     },
     {
@@ -5328,7 +5346,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L241",
       "id": "volunteers_revokephotourls",
-      "community": 2,
+      "community": 3,
       "norm_label": "revokephotourls()"
     },
     {
@@ -5337,7 +5355,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L276",
       "id": "volunteers_statusbadge",
-      "community": 2,
+      "community": 3,
       "norm_label": "statusbadge()"
     },
     {
@@ -5346,7 +5364,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L281",
       "id": "volunteers_renderlist",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderlist()"
     },
     {
@@ -5355,7 +5373,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L362",
       "id": "volunteers_renderthead",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderthead()"
     },
     {
@@ -5364,7 +5382,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L373",
       "id": "volunteers_sortth",
-      "community": 2,
+      "community": 3,
       "norm_label": "sortth()"
     },
     {
@@ -5373,7 +5391,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L381",
       "id": "volunteers_loadvolunteers",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadvolunteers()"
     },
     {
@@ -5382,7 +5400,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L409",
       "id": "volunteers_rendertable",
-      "community": 2,
+      "community": 3,
       "norm_label": "rendertable()"
     },
     {
@@ -5391,7 +5409,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L483",
       "id": "volunteers_renderpagination",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderpagination()"
     },
     {
@@ -5400,7 +5418,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L494",
       "id": "volunteers_applyfilters",
-      "community": 2,
+      "community": 3,
       "norm_label": "applyfilters()"
     },
     {
@@ -5409,7 +5427,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L503",
       "id": "volunteers_resetfilters",
-      "community": 2,
+      "community": 3,
       "norm_label": "resetfilters()"
     },
     {
@@ -5418,7 +5436,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L514",
       "id": "volunteers_wirereportprefs",
-      "community": 2,
+      "community": 3,
       "norm_label": "wirereportprefs()"
     },
     {
@@ -5427,7 +5445,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L547",
       "id": "volunteers_openaddmodal",
-      "community": 2,
+      "community": 3,
       "norm_label": "openaddmodal()"
     },
     {
@@ -5436,7 +5454,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L621",
       "id": "volunteers_submitaddvolunteer",
-      "community": 2,
+      "community": 3,
       "norm_label": "submitaddvolunteer()"
     },
     {
@@ -5445,7 +5463,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L696",
       "id": "volunteers_renderdetail",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderdetail()"
     },
     {
@@ -5454,7 +5472,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1150",
       "id": "volunteers_openmodal",
-      "community": 2,
+      "community": 3,
       "norm_label": "openmodal()"
     },
     {
@@ -5463,7 +5481,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1156",
       "id": "volunteers_closemodal",
-      "community": 2,
+      "community": 3,
       "norm_label": "closemodal()"
     },
     {
@@ -5472,7 +5490,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1167",
       "id": "volunteers_esc",
-      "community": 2,
+      "community": 3,
       "norm_label": "esc()"
     },
     {
@@ -5481,7 +5499,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1176",
       "id": "volunteers_fmtdateshort",
-      "community": 2,
+      "community": 3,
       "norm_label": "fmtdateshort()"
     },
     {
@@ -5490,7 +5508,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1181",
       "id": "volunteers_fmthours",
-      "community": 2,
+      "community": 3,
       "norm_label": "fmthours()"
     },
     {
@@ -5499,7 +5517,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1185",
       "id": "volunteers_fmtdatetime",
-      "community": 2,
+      "community": 3,
       "norm_label": "fmtdatetime()"
     },
     {
@@ -5508,7 +5526,7 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1191",
       "id": "volunteers_wabadge",
-      "community": 2,
+      "community": 3,
       "norm_label": "_wabadge()"
     },
     {
@@ -5517,124 +5535,124 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
       "source_location": "L1202",
       "id": "volunteers_rendersettings",
-      "community": 2,
+      "community": 3,
       "norm_label": "rendersettings()"
     },
     {
       "label": "approvalsSortTh()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1490",
+      "source_location": "L1576",
       "id": "volunteers_approvalssortth",
-      "community": 2,
+      "community": 3,
       "norm_label": "approvalssortth()"
     },
     {
       "label": "renderApprovalsThead()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1498",
+      "source_location": "L1584",
       "id": "volunteers_renderapprovalsthead",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderapprovalsthead()"
     },
     {
       "label": "renderApprovalsTable()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1511",
+      "source_location": "L1597",
       "id": "volunteers_renderapprovalstable",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderapprovalstable()"
     },
     {
       "label": "renderApprovalsPagination()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1548",
+      "source_location": "L1634",
       "id": "volunteers_renderapprovalspagination",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderapprovalspagination()"
     },
     {
       "label": "loadApprovals()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1560",
+      "source_location": "L1646",
       "id": "volunteers_loadapprovals",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadapprovals()"
     },
     {
       "label": "volLogSortTh()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1592",
+      "source_location": "L1678",
       "id": "volunteers_vollogsortth",
-      "community": 2,
+      "community": 3,
       "norm_label": "vollogsortth()"
     },
     {
       "label": "renderVolunteerLogThead()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1600",
+      "source_location": "L1686",
       "id": "volunteers_rendervolunteerlogthead",
-      "community": 2,
+      "community": 3,
       "norm_label": "rendervolunteerlogthead()"
     },
     {
       "label": "renderVolunteerLogTable()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1611",
+      "source_location": "L1697",
       "id": "volunteers_rendervolunteerlogtable",
-      "community": 2,
+      "community": 3,
       "norm_label": "rendervolunteerlogtable()"
     },
     {
       "label": "renderVolunteerLogPagination()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1638",
+      "source_location": "L1724",
       "id": "volunteers_rendervolunteerlogpagination",
-      "community": 2,
+      "community": 3,
       "norm_label": "rendervolunteerlogpagination()"
     },
     {
       "label": "loadVolunteerLog()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1650",
+      "source_location": "L1736",
       "id": "volunteers_loadvolunteerlog",
-      "community": 2,
+      "community": 3,
       "norm_label": "loadvolunteerlog()"
     },
     {
       "label": "renderApprovals()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1681",
+      "source_location": "L1767",
       "id": "volunteers_renderapprovals",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderapprovals()"
     },
     {
       "label": "formatExifCaption()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1844",
+      "source_location": "L1930",
       "id": "volunteers_formatexifcaption",
-      "community": 2,
+      "community": 3,
       "norm_label": "formatexifcaption()"
     },
     {
       "label": "renderLogEntryDetail()",
       "file_type": "code",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1856",
+      "source_location": "L1942",
       "id": "volunteers_renderlogentrydetail",
-      "community": 2,
+      "community": 3,
       "norm_label": "renderlogentrydetail()"
     },
     {
@@ -6799,11 +6817,20 @@
       "id": "transcribe_rationale_80"
     },
     {
+      "label": "_ngo_header_html must not include an img tag when logo_path is None.",
+      "file_type": "rationale",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
+      "source_location": "L112",
+      "community": 4,
+      "norm_label": "_ngo_header_html must not include an img tag when logo_path is none.",
+      "id": "test_reports_rationale_112"
+    },
+    {
       "label": "Return per-volunteer totals of approved entries for the given year/month.",
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L37",
-      "community": 0,
+      "community": 4,
       "norm_label": "return per-volunteer totals of approved entries for the given year/month.",
       "id": "reports_rationale_37"
     },
@@ -6812,7 +6839,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L80",
-      "community": 0,
+      "community": 4,
       "norm_label": "run the monthly aggregation query and return per-volunteer summaries.",
       "id": "reports_rationale_80"
     },
@@ -6821,7 +6848,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L120",
-      "community": 0,
+      "community": 4,
       "norm_label": "generate a monthly pdf report for one volunteer or all active volunteers.",
       "id": "reports_rationale_120"
     },
@@ -6830,7 +6857,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L173",
-      "community": 0,
+      "community": 4,
       "norm_label": "generate monthly pdfs and deliver them via email and/or whatsapp.      default",
       "id": "reports_rationale_173"
     },
@@ -6875,7 +6902,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L28",
-      "community": 6,
+      "community": 2,
       "norm_label": "seed ngo_whatsapp_phone from .env into db on first boot, if db value is null.",
       "id": "main_rationale_28"
     },
@@ -6884,7 +6911,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L42",
-      "community": 6,
+      "community": 2,
       "norm_label": "fail fast if db unreachable; seed whatsapp phone from .env if db null.",
       "id": "main_rationale_42"
     },
@@ -6893,7 +6920,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L70",
-      "community": 6,
+      "community": 2,
       "norm_label": "health check \u2014 returns ok when the service is up.",
       "id": "main_rationale_70"
     },
@@ -6902,7 +6929,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L27",
-      "community": 6,
+      "community": 2,
       "norm_label": "seed ngo_whatsapp_phone from .env into db on first boot, if db value is null.",
       "id": "main_rationale_27"
     },
@@ -6911,7 +6938,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L41",
-      "community": 6,
+      "community": 2,
       "norm_label": "fail fast if db unreachable; seed whatsapp phone from .env if db null.",
       "id": "main_rationale_41"
     },
@@ -6920,7 +6947,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L68",
-      "community": 6,
+      "community": 2,
       "norm_label": "health check \u2014 returns ok when the service is up.",
       "id": "main_rationale_68"
     },
@@ -7064,7 +7091,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py",
       "source_location": "L77",
-      "community": 6,
+      "community": 2,
       "norm_label": "health check \u2014 returns ok when the service is up.",
       "id": "main_rationale_77"
     },
@@ -7190,7 +7217,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L31",
-      "community": 6,
+      "community": 2,
       "norm_label": "return the single manager profile, or 404 if setup has not been completed.",
       "id": "managers_rationale_31"
     },
@@ -7199,7 +7226,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L48",
-      "community": 6,
+      "community": 2,
       "norm_label": "seed the manager profile (first-time setup). returns 409 if already configured.",
       "id": "managers_rationale_48"
     },
@@ -7208,7 +7235,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L76",
-      "community": 6,
+      "community": 2,
       "norm_label": "update manager and/or ngo fields.  only provided (non-none) fields are written.",
       "id": "managers_rationale_76"
     },
@@ -7217,7 +7244,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L100",
-      "community": 6,
+      "community": 2,
       "norm_label": "return config status for the settings ui; auto-syncs whatsapp phone if connected",
       "id": "managers_rationale_100"
     },
@@ -7226,7 +7253,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\managers.py",
       "source_location": "L155",
-      "community": 6,
+      "community": 2,
       "norm_label": "change the manager password.  verifies the current password before updating.",
       "id": "managers_rationale_155"
     },
@@ -7946,7 +7973,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L35",
-      "community": 0,
+      "community": 4,
       "norm_label": "return per-volunteer totals of approved entries for the given year/month.",
       "id": "reports_rationale_35"
     },
@@ -7955,7 +7982,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L78",
-      "community": 0,
+      "community": 4,
       "norm_label": "run the monthly aggregation query and return per-volunteer summaries.",
       "id": "reports_rationale_78"
     },
@@ -7964,7 +7991,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L118",
-      "community": 0,
+      "community": 4,
       "norm_label": "generate a monthly pdf report for one volunteer or all active volunteers.",
       "id": "reports_rationale_118"
     },
@@ -7973,7 +8000,7 @@
       "file_type": "rationale",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L171",
-      "community": 0,
+      "community": 4,
       "norm_label": "generate monthly pdfs and send them via email.      defaults to the current ca",
       "id": "reports_rationale_171"
     },
@@ -10601,11 +10628,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_38",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "reports_rationale_38",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "reports_rationale_38",
-      "confidence_score": 0.5
+      "target": "reports_rationale_38"
     },
     {
       "relation": "uses",
@@ -10613,11 +10640,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_81",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "reports_rationale_81",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "reports_rationale_81",
-      "confidence_score": 0.5
+      "target": "reports_rationale_81"
     },
     {
       "relation": "uses",
@@ -10625,11 +10652,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_121",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "reports_rationale_121",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "reports_rationale_121",
-      "confidence_score": 0.5
+      "target": "reports_rationale_121"
     },
     {
       "relation": "uses",
@@ -10637,11 +10664,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_175",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "reports_rationale_175",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "reports_rationale_175",
-      "confidence_score": 0.5
+      "target": "reports_rationale_175"
     },
     {
       "relation": "uses",
@@ -11249,10 +11276,10 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L6",
       "weight": 0.8,
-      "_src": "test_reports_rationale_112",
+      "_src": "test_reports_rationale_113",
       "_tgt": "log_entry_entrystatus",
       "source": "log_entry_entrystatus",
-      "target": "test_reports_rationale_112",
+      "target": "test_reports_rationale_113",
       "confidence_score": 0.5
     },
     {
@@ -11261,11 +11288,23 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L6",
       "weight": 0.8,
-      "_src": "test_reports_rationale_120",
-      "_tgt": "log_entry_entrystatus",
+      "_src": "log_entry_entrystatus",
+      "_tgt": "test_reports_rationale_120",
+      "confidence_score": 0.5,
       "source": "log_entry_entrystatus",
-      "target": "test_reports_rationale_120",
-      "confidence_score": 0.5
+      "target": "test_reports_rationale_120"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
+      "source_location": "L6",
+      "weight": 0.8,
+      "_src": "log_entry_entrystatus",
+      "_tgt": "test_reports_rationale_112",
+      "confidence_score": 0.5,
+      "source": "log_entry_entrystatus",
+      "target": "test_reports_rationale_112"
     },
     {
       "relation": "uses",
@@ -12040,18 +12079,6 @@
       "confidence": "INFERRED",
       "confidence_score": 0.8,
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
-      "source_location": "L134",
-      "weight": 1.0,
-      "_src": "reports_generate_monthly_pdf",
-      "_tgt": "str",
-      "source": "str",
-      "target": "reports_generate_monthly_pdf"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
-      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L255",
       "weight": 1.0,
       "_src": "str",
@@ -12231,18 +12258,6 @@
       "relation": "calls",
       "confidence": "INFERRED",
       "confidence_score": 0.8,
-      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L129",
-      "weight": 1.0,
-      "_src": "test_reports_test_ngo_header_html_with_logo",
-      "_tgt": "str",
-      "source": "str",
-      "target": "test_reports_test_ngo_header_html_with_logo"
-    },
-    {
-      "relation": "calls",
-      "confidence": "INFERRED",
-      "confidence_score": 0.8,
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_volunteers.py",
       "source_location": "L83",
       "weight": 1.0,
@@ -12286,6 +12301,30 @@
       "_tgt": "transcribe_handler_respond",
       "source": "str",
       "target": "transcribe_handler_respond"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_src": "str",
+      "_tgt": "reports_generate_monthly_pdf",
+      "source": "str",
+      "target": "reports_generate_monthly_pdf"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "_src": "str",
+      "_tgt": "test_reports_test_ngo_header_html_with_logo",
+      "source": "str",
+      "target": "test_reports_test_ngo_header_html_with_logo"
     },
     {
       "relation": "inherits",
@@ -12593,11 +12632,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_38",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "reports_rationale_38",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "reports_rationale_38",
-      "confidence_score": 0.5
+      "target": "reports_rationale_38"
     },
     {
       "relation": "uses",
@@ -12605,11 +12644,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_81",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "reports_rationale_81",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "reports_rationale_81",
-      "confidence_score": 0.5
+      "target": "reports_rationale_81"
     },
     {
       "relation": "uses",
@@ -12617,11 +12656,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_121",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "reports_rationale_121",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "reports_rationale_121",
-      "confidence_score": 0.5
+      "target": "reports_rationale_121"
     },
     {
       "relation": "uses",
@@ -12629,11 +12668,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L18",
       "weight": 0.8,
-      "_src": "reports_rationale_175",
-      "_tgt": "log_entry_logentry",
+      "_src": "log_entry_logentry",
+      "_tgt": "reports_rationale_175",
+      "confidence_score": 0.5,
       "source": "log_entry_logentry",
-      "target": "reports_rationale_175",
-      "confidence_score": 0.5
+      "target": "reports_rationale_175"
     },
     {
       "relation": "uses",
@@ -14333,11 +14372,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L19",
       "weight": 0.8,
-      "_src": "reports_rationale_38",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "reports_rationale_38",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "reports_rationale_38",
-      "confidence_score": 0.5
+      "target": "reports_rationale_38"
     },
     {
       "relation": "uses",
@@ -14345,11 +14384,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L19",
       "weight": 0.8,
-      "_src": "reports_rationale_81",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "reports_rationale_81",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "reports_rationale_81",
-      "confidence_score": 0.5
+      "target": "reports_rationale_81"
     },
     {
       "relation": "uses",
@@ -14357,11 +14396,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L19",
       "weight": 0.8,
-      "_src": "reports_rationale_121",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "reports_rationale_121",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "reports_rationale_121",
-      "confidence_score": 0.5
+      "target": "reports_rationale_121"
     },
     {
       "relation": "uses",
@@ -14369,11 +14408,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L19",
       "weight": 0.8,
-      "_src": "reports_rationale_175",
-      "_tgt": "manager_manager",
+      "_src": "manager_manager",
+      "_tgt": "reports_rationale_175",
+      "confidence_score": 0.5,
       "source": "manager_manager",
-      "target": "reports_rationale_175",
-      "confidence_score": 0.5
+      "target": "reports_rationale_175"
     },
     {
       "relation": "uses",
@@ -15449,11 +15488,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L20",
       "weight": 0.8,
-      "_src": "reports_rationale_38",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "reports_rationale_38",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "reports_rationale_38",
-      "confidence_score": 0.5
+      "target": "reports_rationale_38"
     },
     {
       "relation": "uses",
@@ -15461,11 +15500,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L20",
       "weight": 0.8,
-      "_src": "reports_rationale_81",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "reports_rationale_81",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "reports_rationale_81",
-      "confidence_score": 0.5
+      "target": "reports_rationale_81"
     },
     {
       "relation": "uses",
@@ -15473,11 +15512,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L20",
       "weight": 0.8,
-      "_src": "reports_rationale_121",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "reports_rationale_121",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "reports_rationale_121",
-      "confidence_score": 0.5
+      "target": "reports_rationale_121"
     },
     {
       "relation": "uses",
@@ -15485,11 +15524,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L20",
       "weight": 0.8,
-      "_src": "reports_rationale_175",
-      "_tgt": "volunteer_volunteer",
+      "_src": "volunteer_volunteer",
+      "_tgt": "reports_rationale_175",
+      "confidence_score": 0.5,
       "source": "volunteer_volunteer",
-      "target": "reports_rationale_175",
-      "confidence_score": 0.5
+      "target": "reports_rationale_175"
     },
     {
       "relation": "uses",
@@ -18919,9 +18958,9 @@
       "source_location": "L134",
       "weight": 1.0,
       "_src": "reports_generate_monthly_pdf",
-      "_tgt": "logo_logo_exists",
+      "_tgt": "logo_logo_src",
       "source": "reports_generate_monthly_pdf",
-      "target": "logo_logo_exists"
+      "target": "logo_logo_src"
     },
     {
       "relation": "calls",
@@ -18946,6 +18985,18 @@
       "_tgt": "report_pdf_render_summary_pdf",
       "source": "reports_generate_monthly_pdf",
       "target": "report_pdf_render_summary_pdf"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
+      "source_location": "L134",
+      "weight": 1.0,
+      "_src": "reports_generate_monthly_pdf",
+      "_tgt": "logo_logo_exists",
+      "source": "reports_generate_monthly_pdf",
+      "target": "logo_logo_exists"
     },
     {
       "relation": "rationale_for",
@@ -18991,9 +19042,9 @@
       "source_location": "L207",
       "weight": 1.0,
       "_src": "reports_send_monthly_reports",
-      "_tgt": "logo_logo_exists",
+      "_tgt": "logo_logo_src",
       "source": "reports_send_monthly_reports",
-      "target": "logo_logo_exists"
+      "target": "logo_logo_src"
     },
     {
       "relation": "calls",
@@ -19054,6 +19105,18 @@
       "_tgt": "report_pdf_render_summary_pdf",
       "source": "reports_send_monthly_reports",
       "target": "report_pdf_render_summary_pdf"
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
+      "source_location": "L207",
+      "weight": 1.0,
+      "_src": "reports_send_monthly_reports",
+      "_tgt": "logo_logo_exists",
+      "source": "reports_send_monthly_reports",
+      "target": "logo_logo_exists"
     },
     {
       "relation": "uses",
@@ -19123,9 +19186,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_38",
       "_tgt": "report_monthlyreportsummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_38",
-      "target": "report_monthlyreportsummary",
-      "confidence_score": 0.5
+      "target": "report_monthlyreportsummary"
     },
     {
       "relation": "uses",
@@ -19135,9 +19198,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_38",
       "_tgt": "report_volunteermonthlysummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_38",
-      "target": "report_volunteermonthlysummary",
-      "confidence_score": 0.5
+      "target": "report_volunteermonthlysummary"
     },
     {
       "relation": "uses",
@@ -19147,9 +19210,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_38",
       "_tgt": "email_smtpnotconfigurederror",
+      "confidence_score": 0.5,
       "source": "reports_rationale_38",
-      "target": "email_smtpnotconfigurederror",
-      "confidence_score": 0.5
+      "target": "email_smtpnotconfigurederror"
     },
     {
       "relation": "uses",
@@ -19159,9 +19222,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_38",
       "_tgt": "evolution_evolutionclient",
+      "confidence_score": 0.5,
       "source": "reports_rationale_38",
-      "target": "evolution_evolutionclient",
-      "confidence_score": 0.5
+      "target": "evolution_evolutionclient"
     },
     {
       "relation": "uses",
@@ -19171,9 +19234,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_38",
       "_tgt": "report_pdf_ngoinfo",
+      "confidence_score": 0.5,
       "source": "reports_rationale_38",
-      "target": "report_pdf_ngoinfo",
-      "confidence_score": 0.5
+      "target": "report_pdf_ngoinfo"
     },
     {
       "relation": "uses",
@@ -19183,9 +19246,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_81",
       "_tgt": "report_monthlyreportsummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_81",
-      "target": "report_monthlyreportsummary",
-      "confidence_score": 0.5
+      "target": "report_monthlyreportsummary"
     },
     {
       "relation": "uses",
@@ -19195,9 +19258,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_81",
       "_tgt": "report_volunteermonthlysummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_81",
-      "target": "report_volunteermonthlysummary",
-      "confidence_score": 0.5
+      "target": "report_volunteermonthlysummary"
     },
     {
       "relation": "uses",
@@ -19207,9 +19270,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_81",
       "_tgt": "email_smtpnotconfigurederror",
+      "confidence_score": 0.5,
       "source": "reports_rationale_81",
-      "target": "email_smtpnotconfigurederror",
-      "confidence_score": 0.5
+      "target": "email_smtpnotconfigurederror"
     },
     {
       "relation": "uses",
@@ -19219,9 +19282,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_81",
       "_tgt": "evolution_evolutionclient",
+      "confidence_score": 0.5,
       "source": "reports_rationale_81",
-      "target": "evolution_evolutionclient",
-      "confidence_score": 0.5
+      "target": "evolution_evolutionclient"
     },
     {
       "relation": "uses",
@@ -19231,9 +19294,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_81",
       "_tgt": "report_pdf_ngoinfo",
+      "confidence_score": 0.5,
       "source": "reports_rationale_81",
-      "target": "report_pdf_ngoinfo",
-      "confidence_score": 0.5
+      "target": "report_pdf_ngoinfo"
     },
     {
       "relation": "uses",
@@ -19243,9 +19306,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_121",
       "_tgt": "report_monthlyreportsummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_121",
-      "target": "report_monthlyreportsummary",
-      "confidence_score": 0.5
+      "target": "report_monthlyreportsummary"
     },
     {
       "relation": "uses",
@@ -19255,9 +19318,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_121",
       "_tgt": "report_volunteermonthlysummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_121",
-      "target": "report_volunteermonthlysummary",
-      "confidence_score": 0.5
+      "target": "report_volunteermonthlysummary"
     },
     {
       "relation": "uses",
@@ -19267,9 +19330,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_121",
       "_tgt": "email_smtpnotconfigurederror",
+      "confidence_score": 0.5,
       "source": "reports_rationale_121",
-      "target": "email_smtpnotconfigurederror",
-      "confidence_score": 0.5
+      "target": "email_smtpnotconfigurederror"
     },
     {
       "relation": "uses",
@@ -19279,9 +19342,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_121",
       "_tgt": "evolution_evolutionclient",
+      "confidence_score": 0.5,
       "source": "reports_rationale_121",
-      "target": "evolution_evolutionclient",
-      "confidence_score": 0.5
+      "target": "evolution_evolutionclient"
     },
     {
       "relation": "uses",
@@ -19291,9 +19354,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_121",
       "_tgt": "report_pdf_ngoinfo",
+      "confidence_score": 0.5,
       "source": "reports_rationale_121",
-      "target": "report_pdf_ngoinfo",
-      "confidence_score": 0.5
+      "target": "report_pdf_ngoinfo"
     },
     {
       "relation": "uses",
@@ -19303,9 +19366,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_175",
       "_tgt": "report_monthlyreportsummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_175",
-      "target": "report_monthlyreportsummary",
-      "confidence_score": 0.5
+      "target": "report_monthlyreportsummary"
     },
     {
       "relation": "uses",
@@ -19315,9 +19378,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_175",
       "_tgt": "report_volunteermonthlysummary",
+      "confidence_score": 0.5,
       "source": "reports_rationale_175",
-      "target": "report_volunteermonthlysummary",
-      "confidence_score": 0.5
+      "target": "report_volunteermonthlysummary"
     },
     {
       "relation": "uses",
@@ -19327,9 +19390,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_175",
       "_tgt": "email_smtpnotconfigurederror",
+      "confidence_score": 0.5,
       "source": "reports_rationale_175",
-      "target": "email_smtpnotconfigurederror",
-      "confidence_score": 0.5
+      "target": "email_smtpnotconfigurederror"
     },
     {
       "relation": "uses",
@@ -19339,9 +19402,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_175",
       "_tgt": "evolution_evolutionclient",
+      "confidence_score": 0.5,
       "source": "reports_rationale_175",
-      "target": "evolution_evolutionclient",
-      "confidence_score": 0.5
+      "target": "evolution_evolutionclient"
     },
     {
       "relation": "uses",
@@ -19351,9 +19414,9 @@
       "weight": 0.8,
       "_src": "reports_rationale_175",
       "_tgt": "report_pdf_ngoinfo",
+      "confidence_score": 0.5,
       "source": "reports_rationale_175",
-      "target": "report_pdf_ngoinfo",
-      "confidence_score": 0.5
+      "target": "report_pdf_ngoinfo"
     },
     {
       "relation": "contains",
@@ -24389,8 +24452,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_37",
-      "_tgt": "report_volunteermonthlysummary",
+      "_src": "report_volunteermonthlysummary",
+      "_tgt": "reports_rationale_37",
       "confidence_score": 0.5,
       "source": "report_volunteermonthlysummary",
       "target": "reports_rationale_37"
@@ -24401,8 +24464,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_80",
-      "_tgt": "report_volunteermonthlysummary",
+      "_src": "report_volunteermonthlysummary",
+      "_tgt": "reports_rationale_80",
       "confidence_score": 0.5,
       "source": "report_volunteermonthlysummary",
       "target": "reports_rationale_80"
@@ -24413,8 +24476,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_120",
-      "_tgt": "report_volunteermonthlysummary",
+      "_src": "report_volunteermonthlysummary",
+      "_tgt": "reports_rationale_120",
       "confidence_score": 0.5,
       "source": "report_volunteermonthlysummary",
       "target": "reports_rationale_120"
@@ -24425,8 +24488,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_173",
-      "_tgt": "report_volunteermonthlysummary",
+      "_src": "report_volunteermonthlysummary",
+      "_tgt": "reports_rationale_173",
       "confidence_score": 0.5,
       "source": "report_volunteermonthlysummary",
       "target": "reports_rationale_173"
@@ -24497,8 +24560,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_37",
-      "_tgt": "report_monthlyreportsummary",
+      "_src": "report_monthlyreportsummary",
+      "_tgt": "reports_rationale_37",
       "confidence_score": 0.5,
       "source": "report_monthlyreportsummary",
       "target": "reports_rationale_37"
@@ -24509,8 +24572,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_80",
-      "_tgt": "report_monthlyreportsummary",
+      "_src": "report_monthlyreportsummary",
+      "_tgt": "reports_rationale_80",
       "confidence_score": 0.5,
       "source": "report_monthlyreportsummary",
       "target": "reports_rationale_80"
@@ -24521,8 +24584,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_120",
-      "_tgt": "report_monthlyreportsummary",
+      "_src": "report_monthlyreportsummary",
+      "_tgt": "reports_rationale_120",
       "confidence_score": 0.5,
       "source": "report_monthlyreportsummary",
       "target": "reports_rationale_120"
@@ -24533,8 +24596,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L21",
       "weight": 0.8,
-      "_src": "reports_rationale_173",
-      "_tgt": "report_monthlyreportsummary",
+      "_src": "report_monthlyreportsummary",
+      "_tgt": "reports_rationale_173",
       "confidence_score": 0.5,
       "source": "report_monthlyreportsummary",
       "target": "reports_rationale_173"
@@ -25337,8 +25400,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L22",
       "weight": 0.8,
-      "_src": "reports_rationale_37",
-      "_tgt": "email_smtpnotconfigurederror",
+      "_src": "email_smtpnotconfigurederror",
+      "_tgt": "reports_rationale_37",
       "confidence_score": 0.5,
       "source": "email_smtpnotconfigurederror",
       "target": "reports_rationale_37"
@@ -25349,8 +25412,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L22",
       "weight": 0.8,
-      "_src": "reports_rationale_80",
-      "_tgt": "email_smtpnotconfigurederror",
+      "_src": "email_smtpnotconfigurederror",
+      "_tgt": "reports_rationale_80",
       "confidence_score": 0.5,
       "source": "email_smtpnotconfigurederror",
       "target": "reports_rationale_80"
@@ -25361,8 +25424,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L22",
       "weight": 0.8,
-      "_src": "reports_rationale_120",
-      "_tgt": "email_smtpnotconfigurederror",
+      "_src": "email_smtpnotconfigurederror",
+      "_tgt": "reports_rationale_120",
       "confidence_score": 0.5,
       "source": "email_smtpnotconfigurederror",
       "target": "reports_rationale_120"
@@ -25373,8 +25436,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L22",
       "weight": 0.8,
-      "_src": "reports_rationale_173",
-      "_tgt": "email_smtpnotconfigurederror",
+      "_src": "email_smtpnotconfigurederror",
+      "_tgt": "reports_rationale_173",
       "confidence_score": 0.5,
       "source": "email_smtpnotconfigurederror",
       "target": "reports_rationale_173"
@@ -25865,8 +25928,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "reports_rationale_37",
-      "_tgt": "evolution_evolutionclient",
+      "_src": "evolution_evolutionclient",
+      "_tgt": "reports_rationale_37",
       "confidence_score": 0.5,
       "source": "evolution_evolutionclient",
       "target": "reports_rationale_37"
@@ -25877,8 +25940,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "reports_rationale_80",
-      "_tgt": "evolution_evolutionclient",
+      "_src": "evolution_evolutionclient",
+      "_tgt": "reports_rationale_80",
       "confidence_score": 0.5,
       "source": "evolution_evolutionclient",
       "target": "reports_rationale_80"
@@ -25889,8 +25952,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "reports_rationale_120",
-      "_tgt": "evolution_evolutionclient",
+      "_src": "evolution_evolutionclient",
+      "_tgt": "reports_rationale_120",
       "confidence_score": 0.5,
       "source": "evolution_evolutionclient",
       "target": "reports_rationale_120"
@@ -25901,8 +25964,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L23",
       "weight": 0.8,
-      "_src": "reports_rationale_173",
-      "_tgt": "evolution_evolutionclient",
+      "_src": "evolution_evolutionclient",
+      "_tgt": "reports_rationale_173",
       "confidence_score": 0.5,
       "source": "evolution_evolutionclient",
       "target": "reports_rationale_173"
@@ -26112,6 +26175,18 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\logo.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "d_andrej_vscode_workspace_belpro_api_services_logo_py",
+      "_tgt": "logo_logo_src",
+      "source": "d_andrej_vscode_workspace_belpro_api_services_logo_py",
+      "target": "logo_logo_src",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\logo.py",
@@ -26289,6 +26364,18 @@
       "_tgt": "logo_open_image",
       "source": "logo_open_image",
       "target": "logo_rationale_37",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\logo.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_src": "logo_rationale_49",
+      "_tgt": "logo_logo_src",
+      "source": "logo_logo_src",
+      "target": "logo_rationale_49",
       "confidence_score": 1.0
     },
     {
@@ -26475,12 +26562,12 @@
       "relation": "uses",
       "confidence": "INFERRED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L121",
+      "source_location": "L7",
       "weight": 0.8,
-      "_src": "test_reports_rationale_112",
+      "_src": "test_reports_rationale_113",
       "_tgt": "report_pdf_ngoinfo",
       "source": "report_pdf_ngoinfo",
-      "target": "test_reports_rationale_112",
+      "target": "test_reports_rationale_113",
       "confidence_score": 0.5
     },
     {
@@ -26489,11 +26576,11 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L121",
       "weight": 0.8,
-      "_src": "test_reports_rationale_120",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "test_reports_rationale_120",
+      "confidence_score": 0.5,
       "source": "report_pdf_ngoinfo",
-      "target": "test_reports_rationale_120",
-      "confidence_score": 0.5
+      "target": "test_reports_rationale_120"
     },
     {
       "relation": "calls",
@@ -26502,8 +26589,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L114",
       "weight": 1.0,
-      "_src": "test_reports_test_ngo_header_html_without_logo",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "test_reports_test_ngo_header_html_without_logo",
       "source": "report_pdf_ngoinfo",
       "target": "test_reports_test_ngo_header_html_without_logo"
     },
@@ -26514,10 +26601,22 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L124",
       "weight": 1.0,
-      "_src": "test_reports_test_ngo_header_html_with_logo",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "test_reports_test_ngo_header_html_with_logo",
       "source": "report_pdf_ngoinfo",
       "target": "test_reports_test_ngo_header_html_with_logo"
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
+      "source_location": "L121",
+      "weight": 0.8,
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "test_reports_rationale_112",
+      "confidence_score": 0.5,
+      "source": "report_pdf_ngoinfo",
+      "target": "test_reports_rationale_112"
     },
     {
       "relation": "uses",
@@ -26525,8 +26624,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "reports_rationale_37",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "reports_rationale_37",
       "confidence_score": 0.5,
       "source": "report_pdf_ngoinfo",
       "target": "reports_rationale_37"
@@ -26537,8 +26636,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "reports_rationale_80",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "reports_rationale_80",
       "confidence_score": 0.5,
       "source": "report_pdf_ngoinfo",
       "target": "reports_rationale_80"
@@ -26549,8 +26648,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "reports_rationale_120",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "reports_rationale_120",
       "confidence_score": 0.5,
       "source": "report_pdf_ngoinfo",
       "target": "reports_rationale_120"
@@ -26561,8 +26660,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py",
       "source_location": "L24",
       "weight": 0.8,
-      "_src": "reports_rationale_173",
-      "_tgt": "report_pdf_ngoinfo",
+      "_src": "report_pdf_ngoinfo",
+      "_tgt": "reports_rationale_173",
       "confidence_score": 0.5,
       "source": "report_pdf_ngoinfo",
       "target": "reports_rationale_173"
@@ -26658,8 +26757,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L115",
       "weight": 1.0,
-      "_src": "test_reports_test_ngo_header_html_without_logo",
-      "_tgt": "report_pdf_ngo_header_html",
+      "_src": "report_pdf_ngo_header_html",
+      "_tgt": "test_reports_test_ngo_header_html_without_logo",
       "source": "report_pdf_ngo_header_html",
       "target": "test_reports_test_ngo_header_html_without_logo"
     },
@@ -26670,8 +26769,8 @@
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
       "source_location": "L131",
       "weight": 1.0,
-      "_src": "test_reports_test_ngo_header_html_with_logo",
-      "_tgt": "report_pdf_ngo_header_html",
+      "_src": "report_pdf_ngo_header_html",
+      "_tgt": "test_reports_test_ngo_header_html_with_logo",
       "source": "report_pdf_ngo_header_html",
       "target": "test_reports_test_ngo_header_html_with_logo"
     },
@@ -29295,7 +29394,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L9",
+      "source_location": "L10",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_monthly_summary_empty",
@@ -29307,7 +29406,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L19",
+      "source_location": "L20",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_monthly_summary_counts_only_approved_entries",
@@ -29319,7 +29418,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L38",
+      "source_location": "L39",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_monthly_summary_missing_params_returns_422",
@@ -29331,7 +29430,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_monthly_pdf_empty_month_returns_pdf_content_type",
@@ -29343,7 +29442,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L53",
+      "source_location": "L54",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_monthly_pdf_for_unknown_volunteer_returns_404",
@@ -29355,7 +29454,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L63",
+      "source_location": "L64",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_with_entries_only_excludes_volunteers_with_no_entries",
@@ -29367,7 +29466,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L79",
+      "source_location": "L80",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_with_entries_only_includes_any_status_not_only_approved",
@@ -29379,7 +29478,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L93",
+      "source_location": "L94",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_with_entries_only_false_includes_all_active_volunteers",
@@ -29391,7 +29490,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L111",
+      "source_location": "L112",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_api_tests_test_reports_py",
       "_tgt": "test_reports_test_ngo_header_html_without_logo",
@@ -29415,12 +29514,12 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_reports.py",
-      "source_location": "L112",
+      "source_location": "L113",
       "weight": 1.0,
-      "_src": "test_reports_rationale_112",
+      "_src": "test_reports_rationale_113",
       "_tgt": "test_reports_test_ngo_header_html_without_logo",
       "source": "test_reports_test_ngo_header_html_without_logo",
-      "target": "test_reports_rationale_112",
+      "target": "test_reports_rationale_113",
       "confidence_score": 1.0
     },
     {
@@ -31023,7 +31122,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1490",
+      "source_location": "L1576",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_approvalssortth",
@@ -31035,7 +31134,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1498",
+      "source_location": "L1584",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_renderapprovalsthead",
@@ -31047,7 +31146,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1511",
+      "source_location": "L1597",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_renderapprovalstable",
@@ -31059,7 +31158,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1548",
+      "source_location": "L1634",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_renderapprovalspagination",
@@ -31071,7 +31170,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1560",
+      "source_location": "L1646",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_loadapprovals",
@@ -31083,7 +31182,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1592",
+      "source_location": "L1678",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_vollogsortth",
@@ -31095,7 +31194,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1600",
+      "source_location": "L1686",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_rendervolunteerlogthead",
@@ -31107,7 +31206,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1611",
+      "source_location": "L1697",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_rendervolunteerlogtable",
@@ -31119,7 +31218,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1638",
+      "source_location": "L1724",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_rendervolunteerlogpagination",
@@ -31131,7 +31230,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1650",
+      "source_location": "L1736",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_loadvolunteerlog",
@@ -31143,7 +31242,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1681",
+      "source_location": "L1767",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_renderapprovals",
@@ -31155,7 +31254,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1844",
+      "source_location": "L1930",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_formatexifcaption",
@@ -31167,7 +31266,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1856",
+      "source_location": "L1942",
       "weight": 1.0,
       "_src": "d_andrej_vscode_workspace_belpro_frontend_js_volunteers_js",
       "_tgt": "volunteers_renderlogentrydetail",
@@ -31371,7 +31470,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1512",
+      "source_location": "L1598",
       "weight": 1.0,
       "_src": "volunteers_renderapprovalstable",
       "_tgt": "volunteers",
@@ -31383,7 +31482,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1552",
+      "source_location": "L1638",
       "weight": 1.0,
       "_src": "volunteers_renderapprovalspagination",
       "_tgt": "volunteers",
@@ -31395,7 +31494,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1561",
+      "source_location": "L1647",
       "weight": 1.0,
       "_src": "volunteers_loadapprovals",
       "_tgt": "volunteers",
@@ -31407,7 +31506,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1612",
+      "source_location": "L1698",
       "weight": 1.0,
       "_src": "volunteers_rendervolunteerlogtable",
       "_tgt": "volunteers",
@@ -31419,7 +31518,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1642",
+      "source_location": "L1728",
       "weight": 1.0,
       "_src": "volunteers_rendervolunteerlogpagination",
       "_tgt": "volunteers",
@@ -31431,7 +31530,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1651",
+      "source_location": "L1737",
       "weight": 1.0,
       "_src": "volunteers_loadvolunteerlog",
       "_tgt": "volunteers",
@@ -31443,7 +31542,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1682",
+      "source_location": "L1768",
       "weight": 1.0,
       "_src": "volunteers_renderapprovals",
       "_tgt": "volunteers",
@@ -31455,7 +31554,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1858",
+      "source_location": "L1944",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers",
@@ -31563,7 +31662,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1521",
+      "source_location": "L1607",
       "weight": 1.0,
       "_src": "volunteers_renderapprovalstable",
       "_tgt": "volunteers_sethtml",
@@ -31575,7 +31674,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1582",
+      "source_location": "L1668",
       "weight": 1.0,
       "_src": "volunteers_loadapprovals",
       "_tgt": "volunteers_sethtml",
@@ -31587,7 +31686,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1618",
+      "source_location": "L1704",
       "weight": 1.0,
       "_src": "volunteers_rendervolunteerlogtable",
       "_tgt": "volunteers_sethtml",
@@ -31599,7 +31698,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1673",
+      "source_location": "L1759",
       "weight": 1.0,
       "_src": "volunteers_loadvolunteerlog",
       "_tgt": "volunteers_sethtml",
@@ -31611,7 +31710,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1686",
+      "source_location": "L1772",
       "weight": 1.0,
       "_src": "volunteers_renderapprovals",
       "_tgt": "volunteers_sethtml",
@@ -31623,7 +31722,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1861",
+      "source_location": "L1947",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_sethtml",
@@ -31863,7 +31962,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1857",
+      "source_location": "L1943",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_revokephotourls",
@@ -31887,7 +31986,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1904",
+      "source_location": "L1990",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_statusbadge",
@@ -32055,7 +32154,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1470",
+      "source_location": "L1475",
       "weight": 1.0,
       "_src": "volunteers_rendersettings",
       "_tgt": "volunteers_wirereportprefs",
@@ -32163,7 +32262,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1495",
+      "source_location": "L1581",
       "weight": 1.0,
       "_src": "volunteers_approvalssortth",
       "_tgt": "volunteers_esc",
@@ -32175,7 +32274,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1586",
+      "source_location": "L1672",
       "weight": 1.0,
       "_src": "volunteers_loadapprovals",
       "_tgt": "volunteers_esc",
@@ -32187,7 +32286,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1597",
+      "source_location": "L1683",
       "weight": 1.0,
       "_src": "volunteers_vollogsortth",
       "_tgt": "volunteers_esc",
@@ -32199,7 +32298,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1677",
+      "source_location": "L1763",
       "weight": 1.0,
       "_src": "volunteers_loadvolunteerlog",
       "_tgt": "volunteers_esc",
@@ -32211,7 +32310,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1724",
+      "source_location": "L1810",
       "weight": 1.0,
       "_src": "volunteers_renderapprovals",
       "_tgt": "volunteers_esc",
@@ -32223,7 +32322,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1869",
+      "source_location": "L1955",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_esc",
@@ -32235,7 +32334,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1928",
+      "source_location": "L2014",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_fmthours",
@@ -32247,7 +32346,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1936",
+      "source_location": "L2022",
       "weight": 1.0,
       "_src": "volunteers_renderlogentrydetail",
       "_tgt": "volunteers_fmtdatetime",
@@ -32271,7 +32370,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1500",
+      "source_location": "L1586",
       "weight": 1.0,
       "_src": "volunteers_renderapprovalsthead",
       "_tgt": "volunteers_approvalssortth",
@@ -32283,7 +32382,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1582",
+      "source_location": "L1668",
       "weight": 1.0,
       "_src": "volunteers_loadapprovals",
       "_tgt": "volunteers_renderapprovalsthead",
@@ -32295,7 +32394,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1731",
+      "source_location": "L1817",
       "weight": 1.0,
       "_src": "volunteers_renderapprovals",
       "_tgt": "volunteers_renderapprovalsthead",
@@ -32307,7 +32406,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1583",
+      "source_location": "L1669",
       "weight": 1.0,
       "_src": "volunteers_loadapprovals",
       "_tgt": "volunteers_renderapprovalstable",
@@ -32319,7 +32418,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1584",
+      "source_location": "L1670",
       "weight": 1.0,
       "_src": "volunteers_loadapprovals",
       "_tgt": "volunteers_renderapprovalspagination",
@@ -32331,7 +32430,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1841",
+      "source_location": "L1927",
       "weight": 1.0,
       "_src": "volunteers_renderapprovals",
       "_tgt": "volunteers_loadapprovals",
@@ -32343,7 +32442,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1602",
+      "source_location": "L1688",
       "weight": 1.0,
       "_src": "volunteers_rendervolunteerlogthead",
       "_tgt": "volunteers_vollogsortth",
@@ -32355,7 +32454,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1673",
+      "source_location": "L1759",
       "weight": 1.0,
       "_src": "volunteers_loadvolunteerlog",
       "_tgt": "volunteers_rendervolunteerlogthead",
@@ -32367,7 +32466,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1674",
+      "source_location": "L1760",
       "weight": 1.0,
       "_src": "volunteers_loadvolunteerlog",
       "_tgt": "volunteers_rendervolunteerlogtable",
@@ -32379,7 +32478,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js",
-      "source_location": "L1675",
+      "source_location": "L1761",
       "weight": 1.0,
       "_src": "volunteers_loadvolunteerlog",
       "_tgt": "volunteers_rendervolunteerlogpagination",
