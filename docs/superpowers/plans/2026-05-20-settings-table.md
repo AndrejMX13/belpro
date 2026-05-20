@@ -602,7 +602,7 @@ async def update_admin_settings(
             await db.execute(select(AppSetting).where(AppSetting.name == name))
         ).scalar_one_or_none()
         if row is None:
-            db.add(AppSetting(name=name, type="int", value=value))
+            db.add(AppSetting(name=name, value_type="int", value=value))
         else:
             row.value = value
 

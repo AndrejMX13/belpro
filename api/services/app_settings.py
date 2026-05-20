@@ -29,9 +29,18 @@ class AppSettings:
     # correct Python type, falling back to the env default when the row is absent.
 
     def _int(self, name: str, default: int) -> int:
-        """Resolve an integer setting: DB value first, env default fallback."""
+        """Resolve an integer setting: DB value first, env default fallback.
+
+        Falls back to default if the stored value cannot be parsed as int
+        (e.g. manual DB edit) to avoid locking out the manager on corrupt config.
+        """
         raw = self._db.get(name)
-        return int(raw) if raw is not None else default
+        if raw is None:
+            return default
+        try:
+            return int(raw)
+        except ValueError:
+            return default
 
     def _bool(self, name: str, default: bool) -> bool:
         """Resolve a boolean setting: 'true'/'1'/'yes' → True, else False."""
