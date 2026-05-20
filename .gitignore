@@ -81,6 +81,9 @@ docker-volumes/
 postgres-data/
 whisper-cache/
 
+# Runtime data — bind-mounted into containers, not source files
+data/logo/logo.png
+
 # -----------------------------------------------------------------------------
 # Generated files
 # -----------------------------------------------------------------------------

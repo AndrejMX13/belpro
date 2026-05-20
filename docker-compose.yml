@@ -130,6 +130,7 @@ services:
       TZ: Europe/Ljubljana
     volumes:
       - api_photos:/app/photos
+      - ./data/logo:/app/photos/logo
       - api_pdfs:/app/pdfs
     depends_on:
       postgres:
