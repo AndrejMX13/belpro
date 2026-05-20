@@ -186,3 +186,71 @@ async def test_patch_admin_settings_requires_auth(client: AsyncClient) -> None:
         "/api/admin/settings", json={"max_photos_per_entry": 5}
     )
     assert r.status_code == 401
+
+
+# ── Integration: route handlers read tunables from DB ────────────────────────
+
+
+async def test_photo_upload_respects_db_max_photos_setting(
+    client: AsyncClient,
+    auth: dict,
+    db_session,
+    volunteer_factory,
+    log_entry_factory,
+) -> None:
+    """upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in DB."""
+    import io
+    from models.app_setting import AppSetting
+    from sqlalchemy import select
+
+    # Patch max_photos_per_entry to 1 via the admin API
+    r_patch = await client.patch(
+        "/api/admin/settings", headers=auth, json={"max_photos_per_entry": 1}
+    )
+    assert r_patch.status_code == 200
+    assert r_patch.json()["max_photos_per_entry"] == 1
+
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id)
+
+    # First photo upload — should succeed
+    fake_image = b"\xff\xd8\xff\xe0" + b"\x00" * 100  # minimal JPEG magic bytes
+    r1 = await client.post(
+        f"/api/log-entries/{e.id}/photos",
+        headers=auth,
+        files={"file": ("photo1.jpg", io.BytesIO(fake_image), "image/jpeg")},
+    )
+    assert r1.status_code == 201, f"First upload failed: {r1.text}"
+
+    # Second photo upload — should be rejected (limit is 1)
+    r2 = await client.post(
+        f"/api/log-entries/{e.id}/photos",
+        headers=auth,
+        files={"file": ("photo2.jpg", io.BytesIO(fake_image), "image/jpeg")},
+    )
+    assert r2.status_code == 409, f"Expected 409 but got {r2.status_code}: {r2.text}"
+    assert "1" in r2.json()["detail"]
+
+
+async def test_login_cookie_max_age_reflects_db_session_duration(
+    client: AsyncClient,
+    auth: dict,
+) -> None:
+    """Login sets a cookie whose max_age matches the session_duration_hours DB setting."""
+    # Patch session_duration_hours to 2 via the admin API
+    r_patch = await client.patch(
+        "/api/admin/settings", headers=auth, json={"session_duration_hours": 2}
+    )
+    assert r_patch.status_code == 200
+    assert r_patch.json()["session_duration_hours"] == 2
+
+    # Login and inspect the Set-Cookie header for max-age
+    r = await client.post("/api/auth/login", json={"password": "testpass123"})
+    assert r.status_code == 200
+    assert "belpro_session" in r.cookies
+
+    set_cookie = r.headers.get("set-cookie", "")
+    # max-age=7200 (2 hours * 3600 seconds)
+    assert "max-age=7200" in set_cookie.lower(), (
+        f"Expected max-age=7200 in Set-Cookie, got: {set_cookie}"
+    )

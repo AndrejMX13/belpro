@@ -310,7 +310,8 @@ async def test_photo_upload_unsupported_extension_returns_400_or_422(
 
 
 async def test_photo_limit_returns_default(client: AsyncClient) -> None:
-    from core.settings import get_settings
+    """GET /photo-limit returns the DB-seeded default (5), not the raw env value."""
     r = await client.get("/api/log-entries/photo-limit")
     assert r.status_code == 200
-    assert r.json() == {"max_photos": get_settings().max_photos_per_entry}
+    # The migration seeds max_photos_per_entry = 5; the endpoint now reads from DB.
+    assert r.json() == {"max_photos": 5}

@@ -7,9 +7,9 @@ from fastapi import APIRouter, Depends, HTTPException, Response, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.auth import _make_session_token, _verify_password
-from core.settings import Settings, get_settings
 from db.session import get_db
 from schemas.auth import LoginRequest, LoginResponse
+from services.app_settings import AppSettings, get_app_settings
 
 router = APIRouter(tags=["auth"])
 
@@ -18,7 +18,7 @@ router = APIRouter(tags=["auth"])
 async def login(
     body: LoginRequest,
     response: Response,
-    settings: Annotated[Settings, Depends(get_settings)],
+    settings: Annotated[AppSettings, Depends(get_app_settings)],
     db: Annotated[AsyncSession, Depends(get_db)],
 ) -> LoginResponse:
     """Verify manager password and set an httpOnly session cookie."""
@@ -42,7 +42,7 @@ async def login(
 @router.post("/auth/logout", response_model=LoginResponse)
 async def logout(
     response: Response,
-    settings: Annotated[Settings, Depends(get_settings)],
+    settings: Annotated[AppSettings, Depends(get_app_settings)],
 ) -> LoginResponse:
     """Clear the session cookie."""
     response.delete_cookie(key="belpro_session", samesite="strict", secure=settings.cookie_secure)

@@ -18,8 +18,8 @@ from sqlalchemy.ext.asyncio import AsyncSession
 import logging
 
 from core.auth import require_manager
-from core.settings import get_settings
 from db.session import get_db
+from services.app_settings import AppSettings, get_app_settings
 from models.log_entry import EntryStatus, LogEntry
 from models.log_entry_photo import LogEntryPhoto
 from models.manager import Manager
@@ -138,9 +138,11 @@ async def list_log_entries(
 
 
 @router.get("/photo-limit")
-async def get_photo_limit() -> dict:
+async def get_photo_limit(
+    settings: Annotated[AppSettings, Depends(get_app_settings)],
+) -> dict:
     """Return the configured maximum photos per log entry. Used by n8n workflows."""
-    return {"max_photos": get_settings().max_photos_per_entry}
+    return {"max_photos": settings.max_photos_per_entry}
 
 
 @router.get("/{entry_id}", response_model=LogEntryResponse, dependencies=[Depends(require_manager)])
@@ -242,6 +244,7 @@ async def upload_photo(
     entry_id: uuid.UUID,
     file: UploadFile = File(...),
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
+    settings: Annotated[AppSettings, Depends(get_app_settings)] = ...,
 ) -> PhotoResponse:
     """Upload a photo for a log entry. Blocked if entry is approved."""
     entry = (
@@ -255,7 +258,7 @@ async def upload_photo(
             detail="Odobrenega vnosa ni mogoče urejati.",
         )
 
-    max_photos = get_settings().max_photos_per_entry
+    max_photos = settings.max_photos_per_entry
     existing_count = (
         await db.execute(
             select(func.count()).where(LogEntryPhoto.log_entry_id == entry_id)
@@ -298,7 +301,7 @@ async def upload_photo(
     photo_count_val: int = (await db.execute(count_q)).scalar() or 0
     resp = PhotoResponse.model_validate(photo)
     resp.photo_count = photo_count_val
-    resp.max_photos = get_settings().max_photos_per_entry
+    resp.max_photos = settings.max_photos_per_entry
     return resp
 
 
@@ -312,6 +315,7 @@ async def upload_photo_base64(
     entry_id: uuid.UUID,
     body: PhotoBase64Request,
     db: Annotated[AsyncSession, Depends(get_db)] = ...,
+    settings: Annotated[AppSettings, Depends(get_app_settings)] = ...,
 ) -> PhotoResponse:
     """Upload a photo from a base64-encoded string. Used by n8n workflows."""
     entry = (
@@ -327,7 +331,7 @@ async def upload_photo_base64(
             detail="Odobrenega vnosa ni mogoče urejati.",
         )
 
-    max_photos = get_settings().max_photos_per_entry
+    max_photos = settings.max_photos_per_entry
     existing_count = (
         await db.execute(
             select(func.count()).where(LogEntryPhoto.log_entry_id == entry_id)
