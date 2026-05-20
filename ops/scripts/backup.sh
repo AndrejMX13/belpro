@@ -21,12 +21,13 @@ mkdir -p "${BACKUP_DIR}"
 
 # PostgreSQL dump
 echo "[backup] Dumping database..."
-if ! PGPASSWORD="${POSTGRES_PASSWORD}" pg_dump \
+PGPASSWORD="${POSTGRES_PASSWORD}" pg_dump \
     -h "${POSTGRES_HOST}" \
     -U "${POSTGRES_USER}" \
     -d "${POSTGRES_DB}" \
-    -f "${BACKUP_DIR}/db.sql"; then
-  report_error "pg_dump failed" "exit code $?"
+    -f "${BACKUP_DIR}/db.sql" || PG_RC=$?
+if [ "${PG_RC:-0}" -ne 0 ]; then
+  report_error "pg_dump failed" "exit code ${PG_RC}"
   rm -rf "${BACKUP_DIR}"
   exit 1
 fi
