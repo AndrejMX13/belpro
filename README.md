@@ -41,7 +41,8 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 - **Reports** — Generate and download monthly PDFs on demand (per volunteer or consolidated); send reports by email on demand or let the automated cron handle delivery on the 28th; Arhiv poročil section for browsing and downloading all previously generated reports
 - **Settings** — Manager profile, password, SMTP configuration, WhatsApp bot phone display, report delivery defaults for new volunteers
 - **GDPR compliance** — Generate and download the volunteer consent agreement (*Dogovor o prostovoljstvu*) as a ready-to-print PDF, with optional additional clauses
-- **System administration** — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration
+- **System administration** — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration; live health widget showing all service states (PostgreSQL, Whisper, n8n, WhatsApp, disk, last entry heartbeat) refreshed every 30 s
+- **Error log (Dnevnik napak)** — Operational errors from background jobs (nightly backup, photo cleanup) shown with per-error acknowledge; nav badge tracks unacknowledged count
 
 ---
 
@@ -56,6 +57,7 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 | Manager dashboard | nginx + HTML/JS/CSS | 80 |
 | WhatsApp gateway | Evolution API | 8180 |
 | Cache/queue | Redis 7 | internal |
+| Ops sidecar | Alpine/Python | internal |
 
 ---
 
@@ -263,6 +265,8 @@ bash scripts/backup.sh
 
 Backs up the PostgreSQL database and stored photos/PDFs.
 
+Backups also run **automatically every night at 02:00** via the `ops` sidecar container — no host-level cron configuration needed. Backup failures are reported to the Dnevnik napak error log visible in the dashboard. Retention is controlled by `BACKUP_RETENTION_DAYS` in `.env` (default: 30 days).
+
 ### Restore
 
 ```bash
@@ -352,6 +356,7 @@ belpro/
 ├── whisper/                # Faster-Whisper HTTP wrapper
 ├── api/                    # FastAPI backend + PDF generation
 ├── frontend/               # Manager dashboard (HTML/CSS/JS)
+├── ops/                    # Ops sidecar: automated backup, photo cleanup, error reporting
 ├── nginx/                  # Reverse proxy config
 ├── scripts/                # setup.sh, upgrade.sh, backup.sh, restore.sh, rotate_emso_key.sh
 └── db/                     # init.sql + Alembic migrations

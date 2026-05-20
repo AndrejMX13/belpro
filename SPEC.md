@@ -35,6 +35,7 @@ Each NGO runs its own independent Belpro instance. Volunteers interact exclusive
 | Email | Generic SMTP (n8n Send Email node) | Monthly PDFs, notifications |
 | PDF generation | Python (WeasyPrint) | Monthly summary documents |
 | Containerisation | Docker Compose | All services |
+| Ops sidecar | Alpine/Python (Docker) | Automated backup, photo cleanup, error reporting |
 
 **Design principle:** Use existing n8n nodes and standard services wherever possible. Custom code only where no node exists.
 
@@ -137,6 +138,19 @@ Photos are stored in a separate `log_entry_photos` table (see below) — multipl
 | value | TEXT | Stored value (nullable — falls back to env default when absent) |
 
 Seeded on first migration with three rows: `max_photos_per_entry` (default `5`), `photo_retention_days` (default `730`), `session_duration_hours` (default `24`). All runtime-tunable values live here rather than being hardcoded or read exclusively from `.env`. See `AppSettings` service and `GET/PATCH /api/admin/settings`.
+
+### `error_log`
+| Field | Type | Notes |
+|-------|------|-------|
+| id | UUID PK | gen_random_uuid() |
+| service | TEXT | Service name that recorded the error (e.g. `ops/backup`) |
+| operation | TEXT | Operation within the service (e.g. `pg_dump`) |
+| message | TEXT | Short human-readable error description |
+| detail | TEXT | Optional additional context (nullable) |
+| acknowledged | BOOLEAN | Default false; toggled by manager via dashboard |
+| created_at | TIMESTAMPTZ | NOT NULL DEFAULT now() |
+
+Written by internal services (ops sidecar scripts) via `POST /api/errors` authenticated with `X-Internal-Key: {API_SECRET_KEY}`. Unacknowledged error count shown as a nav badge on the Dnevnik napak page.
 
 ---
 
@@ -280,6 +294,17 @@ Runtime-tunable operational settings. Changes take effect immediately without a 
 
 Values are stored in the `settings` table via the `AppSettings` service and exposed through `GET/PATCH /api/admin/settings`. The service falls back to `.env` defaults when a DB row is absent, so the system works correctly before any value is explicitly set.
 
+The page also shows a **live system health widget** — a summary of all service states (PostgreSQL response time, Whisper, n8n, WhatsApp connection, disk free space, last heartbeat entry) refreshed every 30 seconds via `GET /api/health/detailed`. The `/api/health` endpoint remains separate (simple up/down, used by Docker healthcheck) and is never blocked by the detailed check.
+
+#### 5.8 Dnevnik napak (App Log)
+
+Operational error log — errors recorded by background services (ops sidecar backup, photo cleanup) and any other service using the `POST /api/errors` internal endpoint.
+
+- Default view: unacknowledged errors only; toggled via checkbox to show all
+- Per-row **Potrdi** button marks an error as acknowledged (`PATCH /api/errors/{id}/acknowledge`)
+- Nav badge on the Dnevnik napak link shows the unacknowledged count; hidden when zero; refreshed every 60 seconds
+- Errors written via `POST /api/errors` (internal key auth); read and acknowledged via `GET/PATCH /api/errors` (manager auth)
+
 ---
 
 ## 6. Monthly PDF Reports
@@ -376,9 +401,11 @@ belpro/
 │   │   ├── managers.py                # Manager profile + password setup
 │   │   ├── reports.py
 │   │   ├── analytics.py               # Aggregated analytics summary endpoint
-│   │   └── admin.py                   # GET/PATCH /api/admin/settings
+│   │   ├── admin.py                   # GET/PATCH /api/admin/settings
+│   │   └── errors.py                  # POST /api/errors (internal key), GET/PATCH /api/errors (manager)
 │   ├── models/                        # SQLAlchemy ORM models
-│   │   └── app_setting.py             # AppSetting ORM model (settings table)
+│   │   ├── app_setting.py             # AppSetting ORM model (settings table)
+│   │   └── error_log.py               # ErrorLog ORM model (error_log table)
 │   ├── schemas/                       # Pydantic request/response schemas (analytics.py, volunteers.py, …)
 │   ├── services/
 │   │   ├── report_pdf.py              # WeasyPrint PDF generation
@@ -386,7 +413,7 @@ belpro/
 │   │   ├── password.py                # bcrypt password hashing
 │   │   └── app_settings.py            # AppSettings: DB-first, env-fallback config authority
 │   └── db/
-│       └── migrations/                # Alembic migrations (versions/ subdir; current head: 006_whatsapp_and_smtp_config)
+│       └── migrations/                # Alembic migrations (versions/ subdir; current head: 013_error_log_table)
 │
 ├── frontend/
 │   ├── index.html                     # Single-page app (client-side routing)
@@ -397,7 +424,17 @@ belpro/
 │       ├── volunteers.js              # Volunteers, approvals, log, settings views; client-side router
 │       ├── reports.js                 # Reports view (includes Arhiv poročil archive section)
 │       ├── analytics.js              # Analytics page (charts via Chart.js v4 CDN)
-│       └── admin.js                   # Administracija page (runtime settings)
+│       ├── admin.js                   # Administracija page (runtime settings + health widget)
+│       └── errors.js                  # Health widget, Dnevnik napak page, nav badge
+│
+├── ops/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── entrypoint.sh
+│   ├── crontab
+│   └── scripts/
+│       ├── backup.sh                  # DB + photo backup; reports failures via POST /api/errors
+│       └── photo_cleanup.py           # Deletes photos past retention window; reports failures via POST /api/errors
 │
 ├── nginx/
 │   └── nginx.conf
@@ -420,7 +457,8 @@ belpro/
 - Single Docker Compose stack.
 - Target: any Linux host (local dev machine, VPS, on-premise server).
 - **Local development:** Windows 10 with WSL2 + Docker Desktop. All `docker compose` commands and shell scripts run inside WSL2 (Ubuntu). Do not assume native Windows paths or tooling.
-- Services: `postgres`, `n8n`, `whisper`, `api`, `frontend` (nginx), `evolution-api`.
+- Services: `postgres`, `n8n`, `whisper`, `api`, `frontend` (nginx), `evolution-api`, `ops`.
+- The `ops` sidecar (Alpine/Python) runs two scheduled jobs: daily DB + photo backup at 02:00 (configurable via `BACKUP_RETENTION_DAYS`), and nightly photo cleanup at 03:00 using the `photo_retention_days` setting. Job failures are reported via `POST /api/errors` and appear in the Dnevnik napak dashboard page.
 - All configuration via `.env` file.
 - `setup.sh` guides initial configuration (manager credentials, Gmail, WhatsApp number linking).
 - No Kubernetes, no cloud-specific dependencies.
@@ -563,6 +601,7 @@ Requires the `postgres` Docker container to be running and `belpro_test` to exis
 | `tests/test_reports.py` | Report generation, PDF content-type, 404 on unknown volunteer |
 | `tests/test_analytics.py` | Summary shape, approved-only hour counts, 6-point monthly trend |
 | `tests/test_app_settings.py` | `settings` table seeding, `AppSettings` service unit tests, `GET/PATCH /api/admin/settings`, route-level enforcement (photo limit, session cookie) |
+| `tests/test_errors.py` | `POST /api/errors` (internal key auth), `GET /api/errors` with unacknowledged filter, `PATCH /api/errors/{id}/acknowledge`, unacknowledged count |
 
 ### Backup/restore smoke test
 

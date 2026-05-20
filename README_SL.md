@@ -44,7 +44,8 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 - **Poročila** — Ustvarjanje in prenos mesečnih PDF-jev na zahtevo (po prostovoljcu ali zbirno); pošiljanje poročil po e-pošti na zahtevo ali samodejno prek cron opravila 28. v mesecu; razdelek Arhiv poročil za pregled in prenos vseh predhodno ustvarjenih poročil
 - **Nastavitve** — Profil vodje, geslo, nastavitev SMTP, prikaz telefonske številke WhatsApp bota, privzeti kanal dostave poročil za nove prostovoljce
 - **Skladnost z GDPR** — Ustvarjanje in prenos dogovora o prostovoljstvu (*Dogovor o prostovoljstvu*) kot PDF pripravljen za tisk, z možnostjo dodatnih klavzul
-- **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje
+- **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje; živi pripomoček za stanje sistema z vsemi storitvami (PostgreSQL, Whisper, n8n, WhatsApp, disk, zadnji vnos) z osvežitvijo vsakih 30 s
+- **Dnevnik napak** — Operacijske napake opravil v ozadju (nočno varnostno kopiranje, čiščenje fotografij) z možnostjo potrditve vsake napake; oznaka v navigacijski vrstici prikazuje število nepotrjenih
 
 ---
 
@@ -59,6 +60,7 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 | Nadzorna plošča za vodje | nginx + HTML/JS/CSS | 80 |
 | WhatsApp vmesnik (Gateway) | Evolution API | 8180 |
 | Predpomnilnik / vrsta | Redis 7 | interno |
+| Operacijski spremljevalnik | Alpine/Python | interno |
 
 ---
 
@@ -275,6 +277,8 @@ bash scripts/backup.sh
 
 Ustvari varnostno kopijo PostgreSQL zbirke podatkov ter shranjenih fotografij in PDF poročil.
 
+Varnostne kopije se ustvarijo **samodejno vsako noč ob 02:00** prek vsebnika `ops` — brez potrebe po konfiguraciji cron opravil na gostitelju. Napake pri varnostnem kopiranju se zabeležijo v Dnevnik napak, vidnem na nadzorni plošči. Čas hrambe kopij je določen s spremenljivko `BACKUP_RETENTION_DAYS` v `.env` (privzeto: 30 dni).
+
 ### Obnovitev podatkov (Restore)
 
 ```bash
@@ -365,6 +369,7 @@ belpro/
 ├── whisper/                # HTTP ovojnik (wrapper) za Faster-Whisper
 ├── api/                    # FastAPI ozadje + generiranje PDF poročil
 ├── frontend/               # Nadzorna plošča za vodje (HTML/CSS/JS)
+├── ops/                    # Operacijski spremljevalnik: samodejno varnostno kopiranje, čiščenje fotografij, javljanje napak
 ├── nginx/                  # Nastavitve povratnega posrednika (reverse proxy config)
 ├── scripts/                # Skripte: setup.sh, upgrade.sh, backup.sh, restore.sh, rotate_emso_key.sh
 └── db/                     # init.sql + Alembic migracije

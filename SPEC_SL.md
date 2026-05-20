@@ -35,6 +35,7 @@ Vsaka NVO poganja lastno, neodvisno instanco BelPro. Prostovoljci komunicirajo i
 | E-pošta | Splošni SMTP (n8n vozlišče Send Email) | Mesečni PDF-ji, obvestila |
 | Ustvarjanje PDF | Python (WeasyPrint) | Mesečna zbirna dokumenta |
 | Vsebnikovanje | Docker Compose | Vse storitve |
+| Operacijski spremljevalnik | Alpine/Python (Docker) | Samodejno varnostno kopiranje, čiščenje fotografij, javljanje napak |
 
 **Načrtovalsko načelo:** Kjer je mogoče, se uporabljajo obstoječa n8n vozlišča in standardne storitve. Lastna koda samo tam, kjer vozlišče ne obstaja.
 
@@ -137,6 +138,19 @@ Fotografije so shranjene v ločeni tabeli `log_entry_photos` (glej spodaj) — p
 | value | TEXT | Shranjena vrednost (nullable — pri odsotnosti se uporabi privzeta vrednost iz `.env`) |
 
 Ob prvi migraciji se vnese s tremi vrsticami: `max_photos_per_entry` (privzeto `5`), `photo_retention_days` (privzeto `730`), `session_duration_hours` (privzeto `24`). Vse vrednosti, nastavljive med delovanjem, so shranjene tukaj in ne hardcoded ali brane izključno iz `.env`. Glejte storitev `AppSettings` in `GET/PATCH /api/admin/settings`.
+
+### `error_log`
+| Polje | Tip | Opomba |
+|-------|------|-------|
+| id | UUID PK | gen_random_uuid() |
+| service | TEXT | Ime storitve, ki je zabeležila napako (npr. `ops/backup`) |
+| operation | TEXT | Operacija znotraj storitve (npr. `pg_dump`) |
+| message | TEXT | Kratko besedilo napake |
+| detail | TEXT | Izbirni dodatni kontekst (nullable) |
+| acknowledged | BOOLEAN | Privzeto false; vodja potrdi prek nadzorne plošče |
+| created_at | TIMESTAMPTZ | NOT NULL DEFAULT now() |
+
+Vnose piše notranja storitev (skripte operacijskega spremljevalnika) prek `POST /api/errors` z overovanjem `X-Internal-Key: {API_SECRET_KEY}`. Število nepotrjenih napak je prikazano kot oznaka v navigacijski vrstici na strani Dnevnik napak.
 
 ---
 
@@ -272,6 +286,17 @@ Vrednosti, nastavljive med delovanjem sistema. Spremembe stopijo v veljavo takoj
 
 Vrednosti so shranjene v tabeli `settings` prek storitve `AppSettings` in dostopne prek `GET/PATCH /api/admin/settings`. Storitev ob odsotnosti vrstice v zbirki podatkov privzame vrednosti iz `.env`, tako da sistem pravilno deluje pred izrecno nastavitvijo katere koli vrednosti.
 
+Stran prav tako prikazuje **živi pripomoček za stanje sistema** — povzetek stanj vseh storitev (odzivni čas PostgreSQL, Whisper, n8n, povezava WhatsApp, prosto mesto na disku, zadnji zapis v dnevniku) z osvežitvijo vsakih 30 sekund prek `GET /api/health/detailed`. Končna točka `/api/health` ostane ločena (preprost status deluje/ne deluje za Dockerjev zdravstveni pregled) in nikoli ni blokirana s podrobnim pregledom.
+
+#### 5.8 Dnevnik napak
+
+Dnevnik operacijskih napak — napake, ki jih zabeležijo storitve v ozadju (varnostno kopiranje in čiščenje fotografij operacijskega spremljevalnika) in katera koli druga storitev, ki uporablja notranjo končno točko `POST /api/errors`.
+
+- Privzeti prikaz: samo nepotrjene napake; preklopljivo s potrditvenim poljem za prikaz vseh
+- Gumb **Potrdi** pri vsaki vrstici označi napako kot potrjeno (`PATCH /api/errors/{id}/acknowledge`)
+- Oznaka v navigacijski vrstici na povezavi Dnevnik napak prikazuje število nepotrjenih napak; skrita, ko je število nič; osvežuje se vsakih 60 sekund
+- Napake se zapisujejo prek `POST /api/errors` (overovitev z notranjim ključem); branje in potrjevanje prek `GET/PATCH /api/errors` (overovitev vodje)
+
 ---
 
 ## 6. Mesečna PDF poročila
@@ -367,9 +392,11 @@ belpro/
 │   │   ├── managers.py                # Profil vodje + nastavitev gesla
 │   │   ├── reports.py
 │   │   ├── analytics.py               # Zbirna analitična končna točka
-│   │   └── admin.py                   # GET/PATCH /api/admin/settings
+│   │   ├── admin.py                   # GET/PATCH /api/admin/settings
+│   │   └── errors.py                  # POST /api/errors (notranji ključ), GET/PATCH /api/errors (vodja)
 │   ├── models/                        # SQLAlchemy ORM modeli
-│   │   └── app_setting.py             # ORM model AppSetting (tabela settings)
+│   │   ├── app_setting.py             # ORM model AppSetting (tabela settings)
+│   │   └── error_log.py               # ORM model ErrorLog (tabela error_log)
 │   ├── schemas/                       # Pydantic sheme zahtev/odgovorov
 │   ├── services/
 │   │   ├── report_pdf.py              # Ustvarjanje PDF z WeasyPrint
@@ -377,7 +404,7 @@ belpro/
 │   │   ├── password.py                # Zgoščevanje gesel z bcrypt
 │   │   └── app_settings.py            # AppSettings: konfiguracija s prednostjo zbirke podatkov in rezervo na .env
 │   └── db/
-│       └── migrations/                # Alembic migracije (podmapy versions/; trenutna glava: 006_whatsapp_and_smtp_config)
+│       └── migrations/                # Alembic migracije (podmapa versions/; trenutna glava: 013_error_log_table)
 │
 ├── frontend/
 │   ├── index.html                     # Enostranska aplikacija (usmerjanje na strani odjemalca)
@@ -388,7 +415,17 @@ belpro/
 │       ├── volunteers.js              # Pogledi prostovoljcev, odobritev, dnevnika, nastavitev; usmerjevalnik
 │       ├── reports.js                 # Pogled poročil (vključuje razdelek Arhiv poročil)
 │       ├── analytics.js              # Stran analitike (grafikoni prek Chart.js v4 CDN)
-│       └── admin.js                   # Stran Administracija (sistemske nastavitve)
+│       ├── admin.js                   # Stran Administracija (sistemske nastavitve + pripomoček za stanje)
+│       └── errors.js                  # Pripomoček za stanje sistema, stran Dnevnik napak, oznaka v navigaciji
+│
+├── ops/
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   ├── entrypoint.sh
+│   ├── crontab
+│   └── scripts/
+│       ├── backup.sh                  # Varnostno kopiranje zbirke in fotografij; napake javlja prek POST /api/errors
+│       └── photo_cleanup.py           # Briše fotografije po preteku roka hrambe; napake javlja prek POST /api/errors
 │
 ├── nginx/
 │   └── nginx.conf
@@ -411,7 +448,8 @@ belpro/
 - En sam sklad Docker Compose.
 - Cilj: kateri koli Linux gostitelj (lokalni razvojni stroj, VPS, strežnik na lokaciji).
 - **Lokalni razvoj:** Windows 10 z WSL2 + Docker Desktop. Vsi ukazi `docker compose` in lupinske skripte se izvajajo znotraj WSL2 (Ubuntu). Ne predpostavljajte izvornih Windows poti ali orodij.
-- Storitve: `postgres`, `n8n`, `whisper`, `api`, `frontend` (nginx), `evolution-api`.
+- Storitve: `postgres`, `n8n`, `whisper`, `api`, `frontend` (nginx), `evolution-api`, `ops`.
+- Operacijski spremljevalnik `ops` (Alpine/Python) poganja dve načrtovani opravili: dnevno varnostno kopiranje zbirke podatkov in fotografij ob 02:00 (nastavljivo prek `BACKUP_RETENTION_DAYS`) ter nočno čiščenje fotografij ob 03:00 po nastavitvi `photo_retention_days`. Napake pri izvedbi opravil so javljene prek `POST /api/errors` in prikazane na strani Dnevnik napak nadzorne plošče.
 - Vsa konfiguracija prek datoteke `.env`.
 - `setup.sh` vodi začetno konfiguracijo (poverilnice vodje, Gmail, vezava WhatsApp številke).
 - Brez Kubernetesa, brez odvisnosti od oblačnih ponudnikov.
@@ -554,6 +592,7 @@ Zahteva, da Docker vsebnik `postgres` teče in da `belpro_test` obstaja (samodej
 | `tests/test_reports.py` | Ustvarjanje poročil, vrsta vsebine PDF, 404 za neznanega prostovoljca |
 | `tests/test_analytics.py` | Oblika povzetka, štetje ur samo za odobrene, 6-točkovni mesečni trend |
 | `tests/test_app_settings.py` | Vnos podatkov v tabelo `settings`, enotni testi storitve `AppSettings`, `GET/PATCH /api/admin/settings`, uveljavljanje na ravni poti (omejitev fotografij, piškotek seje) |
+| `tests/test_errors.py` | `POST /api/errors` (overovitev z notranjim ključem), `GET /api/errors` s filtrom nepotrjenih, `PATCH /api/errors/{id}/acknowledge`, štetje nepotrjenih |
 
 ### Dimni test varnostnega kopiranja in obnovitve
 
