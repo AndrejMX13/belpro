@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import pytest
+from httpx import AsyncClient
 from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
@@ -114,8 +115,6 @@ def test_appsettings_str_helper_falls_back_to_default() -> None:
 
 # ── Integration tests for GET/PATCH /api/admin/settings ──────────────────────
 
-from httpx import AsyncClient
-
 
 async def test_get_admin_settings_returns_seeded_defaults(
     client: AsyncClient, auth: dict
@@ -153,9 +152,10 @@ async def test_patch_admin_settings_get_reflects_change(
     client: AsyncClient, auth: dict
 ) -> None:
     """Subsequent GET reflects a PATCHed value."""
-    await client.patch(
+    r_patch = await client.patch(
         "/api/admin/settings", headers=auth, json={"session_duration_hours": 48}
     )
+    assert r_patch.status_code == 200
     r = await client.get("/api/admin/settings", headers=auth)
     assert r.json()["session_duration_hours"] == 48
 
