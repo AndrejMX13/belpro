@@ -308,7 +308,6 @@ async function renderList() {
       <h1 class="page-title">Prostovoljci</h1>
       <button class="btn btn-primary" id="add-btn">+ Dodaj prostovoljca</button>
     </div>
-    ${healthWidgetHTML()}
     <div class="filter-bar">
       <select id="f-active">
         <option value=""${activeOpt('')}>Vsi</option>
@@ -375,7 +374,6 @@ async function renderList() {
   });
 
   await loadVolunteers();
-  startHealthWidget();
 }
 
 function renderThead() {

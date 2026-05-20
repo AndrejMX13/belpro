@@ -14,6 +14,7 @@ async function renderAdmin() {
     <div class="page-header">
       <h1 class="page-title">Administracija</h1>
     </div>
+    ${healthWidgetHTML()}
     <div style="${card}">
       <h2 style="${h2}">Sistemske nastavitve</h2>
       <div id="admin-settings-loading" style="padding:1rem;text-align:center">
@@ -108,4 +109,6 @@ async function renderAdmin() {
       btn.textContent = 'Shrani';
     }
   });
+
+  startHealthWidget();
 }
