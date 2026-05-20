@@ -75,6 +75,7 @@ class ManagerUpdate(BaseModel):
     smtp_user: Optional[str] = None
     smtp_from_name: Optional[str] = None
     evolution_api_admin_url: Optional[str] = None
+    gdpr_additional_clauses: str | None = None
 
 
 class PasswordChangeRequest(BaseModel):
@@ -110,6 +111,7 @@ class ManagerResponse(BaseModel):
     smtp_user: Optional[str] = None
     smtp_from_name: Optional[str] = None
     evolution_api_admin_url: Optional[str] = None
+    gdpr_additional_clauses: str | None = None
 
 
 class ConfigInfoResponse(BaseModel):

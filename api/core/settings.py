@@ -42,6 +42,7 @@ class Settings(BaseSettings):
 
     # ── Uploads ───────────────────────────────────────────────────────────────
     max_photos_per_entry: int = 5
+    photo_retention_days: int = 730
 
     # ── Session ───────────────────────────────────────────────────────────────
     session_duration_hours: int = 24
