@@ -221,6 +221,7 @@ This project uses a persistent memory system at `~/.claude/projects/<project>/me
 
 ## What NOT to do
 
+- **Do not commit `OPEN_ISSUES.md`** — it is gitignored, local-only tracking. Never `git add` it.
 - **Don't start with `glob` or `grep` for discovery.** If `graphify-out/wiki/index.md` exists, read it first to identify relevant communities and files. Once you know the target area, use Serena `find_symbol` for code or `grep` for non-code assets (logs, config, raw text). Use `grep` only for targeted lookups once you know the file area — never as a substitute for orientation.
 - Do not build multi-tenant features. Out of scope for v1.
 - Do not add a frontend JavaScript framework (React, Vue, etc.) — plain JS only.
