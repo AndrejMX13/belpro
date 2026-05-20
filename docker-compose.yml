@@ -145,6 +145,33 @@ services:
       start_period: 30s
 
   # ─────────────────────────────────────────────────────────────
+  # Ops sidecar — automated backups, photo retention cleanup
+  # ─────────────────────────────────────────────────────────────
+  ops:
+    build: ./ops
+    restart: unless-stopped
+    environment:
+      TZ: Europe/Ljubljana
+      DATABASE_URL: ${DATABASE_URL}
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_HOST: postgres
+      API_URL: http://api:8000
+      API_SECRET_KEY: ${API_SECRET_KEY}
+      PHOTO_RETENTION_DAYS: ${PHOTO_RETENTION_DAYS:-730}
+      BACKUP_RETENTION_DAYS: ${BACKUP_RETENTION_DAYS:-30}
+    volumes:
+      - api_photos:/app/photos:ro
+      - api_pdfs:/app/pdfs:ro
+      - backups:/backups
+    depends_on:
+      api:
+        condition: service_healthy
+      postgres:
+        condition: service_healthy
+
+  # ─────────────────────────────────────────────────────────────
   # nginx — Reverse proxy + static manager dashboard
   # Dashboard: http://localhost:80
   # ─────────────────────────────────────────────────────────────
@@ -212,3 +239,4 @@ volumes:
   api_photos:
   api_pdfs:
   evolution_instances:
+  backups:
