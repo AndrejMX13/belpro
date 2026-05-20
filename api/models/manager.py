@@ -43,6 +43,7 @@ class Manager(Base):
     smtp_user: Mapped[str | None] = mapped_column(String(255), nullable=True)
     smtp_from_name: Mapped[str | None] = mapped_column(String(100), nullable=True)
     evolution_api_admin_url: Mapped[str | None] = mapped_column(String(255), nullable=True)
+    gdpr_additional_clauses: Mapped[str | None] = mapped_column(Text(), nullable=True)
     created_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=text("NOW()")
     )
