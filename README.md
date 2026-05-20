@@ -378,6 +378,12 @@ This project was developed with the help of the following tools, whose configura
 
 ---
 
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for what's planned before v1.0 and what has already shipped.
+
+---
+
 ## Out of scope (v1)
 
 - Multi-tenant / SaaS mode

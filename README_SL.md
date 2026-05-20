@@ -391,6 +391,12 @@ Ta projekt je bil razvit s pomočjo naslednjih orodij, katerih nastavitvene in i
 
 ---
 
+## Roadmap
+
+See [ROADMAP.md](ROADMAP.md) for what's planned before v1.0 and what has already shipped.
+
+---
+
 ## Izven obsega - različica v1
 
 - Večuporabniški / SaaS način (Multi-tenant)
