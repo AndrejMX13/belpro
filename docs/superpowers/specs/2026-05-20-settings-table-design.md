@@ -79,9 +79,25 @@ class AppSettings:
         self._env = env
         self._db = db_overrides
 
+    # Typed helpers — all values are stored as TEXT in the DB; each helper
+    # converts to the appropriate Python type, with env fallback when missing.
+
     def _int(self, name: str, default: int) -> int:
         raw = self._db.get(name)
         return int(raw) if raw is not None else default
+
+    def _bool(self, name: str, default: bool) -> bool:
+        raw = self._db.get(name)
+        return raw.lower() in ("true", "1", "yes") if raw is not None else default
+
+    def _str(self, name: str, default: str | None) -> str | None:
+        raw = self._db.get(name)
+        return raw if raw is not None else default
+
+    # New DB-tunable settings always get a typed property using the appropriate
+    # helper above. The type column in the DB is a hint for the admin UI
+    # (what control to render); the Python layer derives the type from the
+    # property definition, not from the DB column.
 
     @property
     def max_photos_per_entry(self) -> int:
