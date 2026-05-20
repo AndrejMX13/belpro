@@ -15,6 +15,7 @@ This page shows what's coming before the first stable release and what has alrea
 - ✓ Dashboard shows a live health summary of all services — enough to diagnose a problem over the phone without opening Docker
 - ✓ Errors in message delivery or report generation show up as notifications in the dashboard
 - ✓ System upgrades handled by a single script — no missed steps
+- Emergency SMS alert when something breaks and nobody is logged into the dashboard — sent via the router's built-in SIM gateway, independent of the WAN connection (ISS-025; depends on ISS-014 ✓)
 
 ### Security & data protection
 - ✓ Login sessions protected against script-based attacks on the local network
@@ -25,7 +26,7 @@ This page shows what's coming before the first stable release and what has alrea
 - ✓ A safe procedure exists for rotating the encryption key if ever needed
 - ✓ GDPR consent document generated for each volunteer, ready to print and sign
 
-### System architecure
+### System architecture
 - ✓ Central service for loading configuration settings related to the application
 
 ### Polish
@@ -35,6 +36,8 @@ This page shows what's coming before the first stable release and what has alrea
 ---
 
 ## Done
+
+- v0.11.0-beta — ops sidecar (automated nightly backup + photo cleanup), error log with dashboard notifications, live health widget on the admin page, GDPR consent PDF, settings table with runtime-tunable config, n8n photo confirmation fixes
 
 - v0.10.0-beta — full volunteer entry flow via WhatsApp voice notes, manager approval dashboard, monthly PDF report generation and delivery, photo uploads with EXIF support, AES-256-GCM EMŠO encryption, backup and restore scripts, full automated test suite
 
