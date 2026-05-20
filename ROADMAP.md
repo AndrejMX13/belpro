@@ -9,7 +9,6 @@ This page shows what's coming before the first stable release and what has alrea
 ## Coming up — v1.0
 
 ### Reliability
-- If a voice note isn't understood, the system guides the volunteer through fixing just the missing part — not re-recording everything
 - Daily backups run automatically — no cron jobs, no manual setup, works on any operating system
 
 ### Manager experience
@@ -49,3 +48,5 @@ This page shows what's coming before the first stable release and what has alrea
 - **WhatsApp phone number routing** — the NGO's WhatsApp number is already stored in settings but not yet used to drive anything; depends on Evolution API stabilising its multi-instance handling
 - **Active push notification** — alerting the manager when something breaks and nobody is logged into the dashboard; requires a notification channel that survives the app being down
 - **Manager signature and stamp on documents** — held until a real user asks for it
+- **Conversation state table** — replace in-workflow JS state management with a persistent `conversation_state` DB table; prerequisite for ISS-018 (partial extraction recovery) and eventual workflow decomposition into focused sub-workflows
+- **Incomplete voice note recovery (ISS-018)** — when extraction misses a field, prompt the volunteer for just that piece rather than re-recording everything; requires conversation state table first
