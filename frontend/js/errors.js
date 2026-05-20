@@ -92,7 +92,7 @@ async function refreshErrorBadge() {
 
 // ── App log page ──────────────────────────────────────────────────────────────
 
-let _applogUnackedOnly = false;
+let _applogUnackedOnly = true;
 
 async function loadAppLog() {
   const list = document.getElementById('applog-list');
@@ -131,10 +131,10 @@ window.acknowledgeError = async function(id) {
 };
 
 function initAppLogPage() {
-  _applogUnackedOnly = false;
+  _applogUnackedOnly = true;
   const filter = document.getElementById('applog-filter-unacked');
   if (filter) {
-    filter.checked = false;
+    filter.checked = true;
     filter.addEventListener('change', () => {
       _applogUnackedOnly = filter.checked;
       loadAppLog();
@@ -170,7 +170,7 @@ function renderAppLog() {
     <div class="page-header">
       <h1 class="page-title">Dnevnik napak</h1>
       <label style="display:flex;align-items:center;gap:0.5rem;font-size:0.9rem">
-        <input type="checkbox" id="applog-filter-unacked"> Samo nepotrjene
+        <input type="checkbox" id="applog-filter-unacked" checked> Samo nepotrjene
       </label>
     </div>
     <div id="applog-list"></div>
