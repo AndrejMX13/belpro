@@ -179,6 +179,10 @@ const API = (() => {
         downloadRequest('/reports/history/' + reportId + '/pdf'),
     },
 
+    documents: {
+      consentPdf: () => downloadRequest('/documents/consent-pdf'),
+    },
+
     logo: {
       upload: (formData) => {
         return fetch(BASE + '/logo', {

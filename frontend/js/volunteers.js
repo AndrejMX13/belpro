@@ -214,6 +214,8 @@ function route() {
     renderAnalytics();
   } else if (hash === '#settings') {
     renderSettings();
+  } else if (hash === '#documents') {
+    renderDocuments();
   } else {
     renderList();
   }
