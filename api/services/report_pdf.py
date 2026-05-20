@@ -13,7 +13,7 @@ _SL_MONTHS = [
     'Julij', 'Avgust', 'September', 'Oktober', 'November', 'December',
 ]
 
-_BASE_CSS = """
+BASE_CSS = """
 @page { margin: 2cm; size: A4; }
 body { font-family: 'DejaVu Sans', Arial, sans-serif; font-size: 10pt; color: #1a1a2e; margin: 0; }
 h1 { font-size: 16pt; margin-bottom: 0.2em; color: #1e3a8a; }
@@ -58,7 +58,7 @@ class NGOInfo:
     logo_path: str | None = None
 
 
-def _ngo_header_html(ngo: NGOInfo) -> str:
+def ngo_header_html(ngo: NGOInfo) -> str:
     """Render the NGO header block as an HTML string."""
     contact_parts = [f"{_esc(ngo.street)}, {_esc(ngo.postal_code)} {_esc(ngo.city)}"]
     if ngo.ngo_davcna:
@@ -104,11 +104,11 @@ def render_volunteer_pdf(
         for e in entries
     )
 
-    header = _ngo_header_html(ngo) if ngo else ""
+    header = ngo_header_html(ngo) if ngo else ""
 
     doc = f"""<!DOCTYPE html>
 <html lang="sl">
-<head><meta charset="utf-8"><style>{_BASE_CSS}</style></head>
+<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>
 <body>
   {header}
   <h1>Poročilo o prostovoljskem delu</h1>
@@ -151,11 +151,11 @@ def render_summary_pdf(year: int, month: int, items: list, ngo: NGOInfo | None =
         for i in items
     )
 
-    header = _ngo_header_html(ngo) if ngo else ""
+    header = ngo_header_html(ngo) if ngo else ""
 
     doc = f"""<!DOCTYPE html>
 <html lang="sl">
-<head><meta charset="utf-8"><style>{_BASE_CSS}</style></head>
+<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>
 <body>
   {header}
   <h1>Mesečno poročilo o prostovoljskem delu</h1>
