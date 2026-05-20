@@ -26,6 +26,9 @@ This page shows what's coming before the first stable release and what has alrea
 - ✓ A safe procedure exists for rotating the encryption key if ever needed
 - ✓ GDPR consent document generated for each volunteer, ready to print and sign
 
+### System architecure
+- ✓ Central service for loading configuration settings related to the application
+
 ### Polish
 - ✓ NGO logo appears on the dashboard and on all printed documents
 - Documentation includes screenshots, example conversations, and a sample report
