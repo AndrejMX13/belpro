@@ -42,9 +42,15 @@ function showLogin() {
   setTimeout(() => $('login-password').focus(), 50);
 }
 
+let _badgeInterval = null;
+
 function showApp() {
   hide($('login-screen'));
   show($('app'));
+  startHealthWidget();
+  refreshErrorBadge();
+  if (_badgeInterval) clearInterval(_badgeInterval);
+  _badgeInterval = setInterval(refreshErrorBadge, 60_000);
 }
 
 $('login-form').addEventListener('submit', async (e) => {
@@ -61,6 +67,8 @@ $('login-form').addEventListener('submit', async (e) => {
 
 $('logout-btn').addEventListener('click', async () => {
   await API.auth.logout();
+  stopHealthWidget();
+  if (_badgeInterval) { clearInterval(_badgeInterval); _badgeInterval = null; }
   showLogin();
 });
 
@@ -218,6 +226,8 @@ function route() {
     renderDocuments();
   } else if (hash === '#admin') {
     renderAdmin();
+  } else if (hash === '#applog') {
+    renderAppLog();
   } else {
     renderList();
   }
@@ -295,6 +305,7 @@ async function renderList() {
       <h1 class="page-title">Prostovoljci</h1>
       <button class="btn btn-primary" id="add-btn">+ Dodaj prostovoljca</button>
     </div>
+    ${healthWidgetHTML()}
     <div class="filter-bar">
       <select id="f-active">
         <option value=""${activeOpt('')}>Vsi</option>
@@ -361,6 +372,7 @@ async function renderList() {
   });
 
   await loadVolunteers();
+  loadHealthWidget();
 }
 
 function renderThead() {

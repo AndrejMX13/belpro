@@ -77,7 +77,10 @@ const API = (() => {
       logout: ()         => request('/auth/logout', { method: 'POST' }),
     },
 
-    health: () => request('/health'),
+    health: {
+      basic:    () => request('/health'),
+      detailed: () => request('/health/detailed'),
+    },
 
     managers: {
       me:             ()     => request('/managers/me'),
@@ -186,6 +189,12 @@ const API = (() => {
     admin: {
       getSettings:    ()     => request('/admin/settings'),
       updateSettings: (body) => request('/admin/settings', { method: 'PATCH', body: JSON.stringify(body) }),
+    },
+
+    errors: {
+      list:             (unacknowledgedOnly = false) => request('/errors' + (unacknowledgedOnly ? '?unacknowledged=true' : '')),
+      unacknowledgedCount: () => request('/errors/unacknowledged-count'),
+      acknowledge:      (id) => request('/errors/' + id + '/acknowledge', { method: 'PATCH' }),
     },
 
     logo: {
