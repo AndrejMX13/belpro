@@ -98,6 +98,16 @@ Skript bo izbrisal datoteko ciljne varnostne kopije iz `/app/pdfs/temp/`. Ta dat
 
 ---
 
+## Varnostne kopije ustvarjene pred rotacijo
+
+Vsaka varnostna kopija baze podatkov, ustvarjena pred rotacijo ključa, vsebuje EMŠO podatke šifrirane s **starim** ključem. Če obnovite takšno kopijo po tem, ko ste stari ključ zavrglo, bo obnova baze uspela, a aplikacija ne bo mogla dešifrirati nobenega EMŠO — vsi zapisi prostovoljcev bodo neberljivi.
+
+**Pravilo:** Stari `EMSO_ENCRYPTION_KEY` hranite na varnem mestu vsaj toliko dni, kolikor znaša vaša doba hrambe varnostnih kopij (`BACKUP_RETENTION_DAYS`, privzeto 30 dni). Stari ključ trajno izbrišite šele, ko so vse varnostne kopije iz časa pred rotacijo že potekle.
+
+Za ugotovitev, kateri ključ zahteva določena varnostna kopija, preverite datoteko `manifest.txt` v mapi varnostne kopije. Vsebuje polje `EMSO key prefix` — prvih 8 znakov `EMSO_ENCRYPTION_KEY`, ki je bil aktiven ob ustvarjanju kopije. Primerjajte ga s shranjenimi ključi, da poiščete pravega.
+
+---
+
 ## Če gre kaj narobe
 
 Če rotacija spodleti na pol poti, baza podatkov ni spremenjena — Python skript uporablja transakcijo vse ali nič. Vaš stari ključ še vedno deluje. Preprosto odpravite težavo in zaženite znova.
