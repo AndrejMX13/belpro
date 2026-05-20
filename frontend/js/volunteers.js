@@ -47,7 +47,9 @@ let _badgeInterval = null;
 function showApp() {
   hide($('login-screen'));
   show($('app'));
-  startHealthWidget();
+  // Re-fetch logo — onload/onerror may have fired while #app was hidden or API was starting up
+  const logoImg = document.querySelector('#sidebar-ngo-logo-wrap img');
+  if (logoImg) logoImg.src = `/api/logo?t=${Date.now()}`;
   refreshErrorBadge();
   if (_badgeInterval) clearInterval(_badgeInterval);
   _badgeInterval = setInterval(refreshErrorBadge, 60_000);
@@ -373,7 +375,7 @@ async function renderList() {
   });
 
   await loadVolunteers();
-  loadHealthWidget();
+  startHealthWidget();
 }
 
 function renderThead() {
