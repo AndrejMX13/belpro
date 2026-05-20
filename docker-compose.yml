@@ -164,7 +164,7 @@ services:
     volumes:
       - api_photos:/app/photos:ro
       - api_pdfs:/app/pdfs:ro
-      - backups:/backups
+      - ./backups:/backups
     depends_on:
       api:
         condition: service_healthy
@@ -239,4 +239,3 @@ volumes:
   api_photos:
   api_pdfs:
   evolution_instances:
-  backups:

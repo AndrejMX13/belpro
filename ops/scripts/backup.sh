@@ -25,7 +25,8 @@ PGPASSWORD="${POSTGRES_PASSWORD}" pg_dump \
     -h "${POSTGRES_HOST}" \
     -U "${POSTGRES_USER}" \
     -d "${POSTGRES_DB}" \
-    -f "${BACKUP_DIR}/db.sql" || PG_RC=$?
+    --format=custom \
+    -f "${BACKUP_DIR}/belpro.pgdump" || PG_RC=$?
 if [ "${PG_RC:-0}" -ne 0 ]; then
   report_error "pg_dump failed" "exit code ${PG_RC}"
   rm -rf "${BACKUP_DIR}"
@@ -36,21 +37,23 @@ fi
 echo "[backup] Archiving photos..."
 if ! tar -czf "${BACKUP_DIR}/photos.tar.gz" -C /app photos 2>/dev/null; then
   echo "[backup] Warning: photos archive failed (directory may be empty)"
+  report_error "photos archive failed" "tar returned non-zero; directory may be empty"
 fi
 
 # PDFs archive
 echo "[backup] Archiving PDFs..."
 if ! tar -czf "${BACKUP_DIR}/pdfs.tar.gz" -C /app pdfs 2>/dev/null; then
   echo "[backup] Warning: PDFs archive failed (directory may be empty)"
+  report_error "PDFs archive failed" "tar returned non-zero; directory may be empty"
 fi
-
-# Compress DB dump
-gzip "${BACKUP_DIR}/db.sql"
 
 echo "[backup] Backup complete: ${BACKUP_DIR}"
 
 # Prune old backups
 echo "[backup] Pruning backups older than ${RETENTION_DAYS} days..."
-find /backups -maxdepth 1 -type d -mtime "+${RETENTION_DAYS}" -exec rm -rf {} + || true
+find /backups -maxdepth 1 -type d -mtime "+${RETENTION_DAYS}" -exec rm -rf {} + || {
+  echo "[backup] Warning: pruning old backups failed"
+  report_error "backup pruning failed" "find/rm returned non-zero"
+}
 
 echo "[backup] Done."
