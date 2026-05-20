@@ -19,6 +19,7 @@ from routers.logo import router as logo_router
 from routers.managers import router as managers_router
 from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
+from routers.documents import router as documents_router
 
 __version__ = "0.10.2-beta.0"
 
@@ -65,6 +66,7 @@ app.include_router(logo_router, prefix="/api")
 app.include_router(managers_router, prefix="/api")
 app.include_router(reports_router, prefix="/api")
 app.include_router(volunteers_router, prefix="/api")
+app.include_router(documents_router, prefix="/api")
 
 
 @app.get("/api/health")
