@@ -12,6 +12,7 @@ from core.settings import Settings, get_settings
 from db.session import AsyncSessionLocal
 from models.manager import Manager
 from utils.phone import normalize_phone
+from routers.admin import router as admin_router
 from routers.auth import router as auth_router
 from routers.analytics import router as analytics_router
 from routers.log_entries import router as log_entries_router
@@ -59,6 +60,7 @@ app = FastAPI(
     lifespan=lifespan,
 )
 
+app.include_router(admin_router, prefix="/api")
 app.include_router(auth_router, prefix="/api")
 app.include_router(analytics_router, prefix="/api")
 app.include_router(log_entries_router, prefix="/api")

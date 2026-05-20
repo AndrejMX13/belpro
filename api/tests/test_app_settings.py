@@ -110,3 +110,79 @@ def test_appsettings_str_helper_falls_back_to_default() -> None:
     s = AppSettings(env, {})
     assert s._str("missing", "default") == "default"
     assert s._str("missing", None) is None
+
+
+# ── Integration tests for GET/PATCH /api/admin/settings ──────────────────────
+
+from httpx import AsyncClient
+
+
+async def test_get_admin_settings_returns_seeded_defaults(
+    client: AsyncClient, auth: dict
+) -> None:
+    """GET /api/admin/settings returns the seeded default values."""
+    r = await client.get("/api/admin/settings", headers=auth)
+    assert r.status_code == 200
+    data = r.json()
+    assert data["max_photos_per_entry"] == 5
+    assert data["photo_retention_days"] == 730
+    assert data["session_duration_hours"] == 24
+
+
+async def test_get_admin_settings_requires_auth(client: AsyncClient) -> None:
+    """Unauthenticated request is rejected."""
+    r = await client.get("/api/admin/settings")
+    assert r.status_code == 401
+
+
+async def test_patch_admin_settings_updates_single_field(
+    client: AsyncClient, auth: dict
+) -> None:
+    """PATCH updates a single field; others are unchanged."""
+    r = await client.patch(
+        "/api/admin/settings", headers=auth, json={"max_photos_per_entry": 10}
+    )
+    assert r.status_code == 200
+    data = r.json()
+    assert data["max_photos_per_entry"] == 10
+    assert data["photo_retention_days"] == 730   # unchanged
+    assert data["session_duration_hours"] == 24  # unchanged
+
+
+async def test_patch_admin_settings_get_reflects_change(
+    client: AsyncClient, auth: dict
+) -> None:
+    """Subsequent GET reflects a PATCHed value."""
+    await client.patch(
+        "/api/admin/settings", headers=auth, json={"session_duration_hours": 48}
+    )
+    r = await client.get("/api/admin/settings", headers=auth)
+    assert r.json()["session_duration_hours"] == 48
+
+
+async def test_patch_admin_settings_rejects_zero(
+    client: AsyncClient, auth: dict
+) -> None:
+    """PATCH rejects zero (ge=1 constraint)."""
+    r = await client.patch(
+        "/api/admin/settings", headers=auth, json={"max_photos_per_entry": 0}
+    )
+    assert r.status_code == 422
+
+
+async def test_patch_admin_settings_rejects_negative(
+    client: AsyncClient, auth: dict
+) -> None:
+    """PATCH rejects negative values."""
+    r = await client.patch(
+        "/api/admin/settings", headers=auth, json={"photo_retention_days": -1}
+    )
+    assert r.status_code == 422
+
+
+async def test_patch_admin_settings_requires_auth(client: AsyncClient) -> None:
+    """Unauthenticated PATCH is rejected."""
+    r = await client.patch(
+        "/api/admin/settings", json={"max_photos_per_entry": 5}
+    )
+    assert r.status_code == 401
