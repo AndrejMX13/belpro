@@ -180,6 +180,7 @@ document.querySelectorAll('.nav-item[data-page]').forEach(link => {
 
 // ===== Router =====
 function route() {
+  stopHealthWidget();
   const hash = location.hash || '#volunteers';
   if (/^#volunteers\/[^\/]+\/log\/[^\/]+$/.test(hash)) {
     const parts = hash.split('/');
