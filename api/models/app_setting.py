@@ -19,5 +19,5 @@ class AppSetting(Base):
         UUID(as_uuid=True), primary_key=True, server_default=text("gen_random_uuid()")
     )
     name: Mapped[str] = mapped_column(Text, unique=True, nullable=False)
-    type: Mapped[str] = mapped_column(Text, nullable=False)
+    value_type: Mapped[str] = mapped_column("type", Text, nullable=False)
     value: Mapped[str | None] = mapped_column(Text, nullable=True)
