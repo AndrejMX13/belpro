@@ -128,6 +128,16 @@ Photos are stored in a separate `log_entry_photos` table (see below) — multipl
 | generated_at | TIMESTAMP | |
 | sent_at | TIMESTAMP | nullable |
 
+### `settings`
+| Field | Type | Notes |
+|-------|------|-------|
+| id | UUID PK | |
+| name | TEXT | Setting key (unique, not null) |
+| type | TEXT | Value type hint: `'int'`, `'bool'`, `'text'`, `'json'` |
+| value | TEXT | Stored value (nullable — falls back to env default when absent) |
+
+Seeded on first migration with three rows: `max_photos_per_entry` (default `5`), `photo_retention_days` (default `730`), `session_duration_hours` (default `24`). All runtime-tunable values live here rather than being hardcoded or read exclusively from `.env`. See `AppSettings` service and `GET/PATCH /api/admin/settings`.
+
 ---
 
 ## 4. WhatsApp Flow (Volunteer)
@@ -250,6 +260,7 @@ Charts rendered client-side with **Chart.js v4** (CDN, no build step).
 - Generate monthly PDF reports on demand (per volunteer or consolidated)
 - View previously generated PDFs
 - Trigger email send manually if needed
+- **Arhiv poročil** — collapsible section listing all previously generated PDFs across all periods, with download links; toggled inline on the same page
 
 #### 5.6 Settings
 - Manager profile (first name, last name, phone, email, NGO name, NGO address)
@@ -259,6 +270,15 @@ Charts rendered client-side with **Chart.js v4** (CDN, no build step).
 - SMTP configuration (host, port, user, from-name editable in UI; password stays in `.env`; works with Gmail, Yahoo, Proton, or any SMTP server)
 - WhatsApp bot phone number — read-only when Evolution API is connected (number and state synced live from Evolution API on every settings page load; auto-written to DB and `.env` on change). Editable only when disconnected.
 - Volunteer agreement template (text, used in PDF header) *(planned)*
+
+#### 5.7 Administracija (System Administration)
+Runtime-tunable operational settings. Changes take effect immediately without a container restart.
+
+- **Največje število fotografij na vnos** (`max_photos_per_entry`) — maximum photos a volunteer may attach to a single entry; enforced at the API level on upload
+- **Hranjenje fotografij (dni)** (`photo_retention_days`) — retention window for stored photos; used by the scheduled cleanup job
+- **Trajanje seje (ure)** (`session_duration_hours`) — manager session cookie lifetime
+
+Values are stored in the `settings` table via the `AppSettings` service and exposed through `GET/PATCH /api/admin/settings`. The service falls back to `.env` defaults when a DB row is absent, so the system works correctly before any value is explicitly set.
 
 ---
 
@@ -355,13 +375,16 @@ belpro/
 │   │   ├── log_entries.py             # Entries + photo upload/EXIF inline
 │   │   ├── managers.py                # Manager profile + password setup
 │   │   ├── reports.py
-│   │   └── analytics.py               # Aggregated analytics summary endpoint
+│   │   ├── analytics.py               # Aggregated analytics summary endpoint
+│   │   └── admin.py                   # GET/PATCH /api/admin/settings
 │   ├── models/                        # SQLAlchemy ORM models
+│   │   └── app_setting.py             # AppSetting ORM model (settings table)
 │   ├── schemas/                       # Pydantic request/response schemas (analytics.py, volunteers.py, …)
 │   ├── services/
 │   │   ├── report_pdf.py              # WeasyPrint PDF generation
 │   │   ├── encryption.py              # AES-256-GCM EMŠO encrypt/decrypt/hash
-│   │   └── password.py                # bcrypt password hashing
+│   │   ├── password.py                # bcrypt password hashing
+│   │   └── app_settings.py            # AppSettings: DB-first, env-fallback config authority
 │   └── db/
 │       └── migrations/                # Alembic migrations (versions/ subdir; current head: 006_whatsapp_and_smtp_config)
 │
@@ -372,8 +395,9 @@ belpro/
 │   └── js/
 │       ├── api.js                     # Centralised fetch wrapper / API base URL
 │       ├── volunteers.js              # Volunteers, approvals, log, settings views; client-side router
-│       ├── reports.js                 # Reports view
-│       └── analytics.js              # Analytics page (charts via Chart.js v4 CDN)
+│       ├── reports.js                 # Reports view (includes Arhiv poročil archive section)
+│       ├── analytics.js              # Analytics page (charts via Chart.js v4 CDN)
+│       └── admin.js                   # Administracija page (runtime settings)
 │
 ├── nginx/
 │   └── nginx.conf
@@ -538,6 +562,7 @@ Requires the `postgres` Docker container to be running and `belpro_test` to exis
 | `tests/test_log_entries.py` | Full log entries CRUD, status machine (approve/reject/confirm), photo validation |
 | `tests/test_reports.py` | Report generation, PDF content-type, 404 on unknown volunteer |
 | `tests/test_analytics.py` | Summary shape, approved-only hour counts, 6-point monthly trend |
+| `tests/test_app_settings.py` | `settings` table seeding, `AppSettings` service unit tests, `GET/PATCH /api/admin/settings`, route-level enforcement (photo limit, session cookie) |
 
 ### Backup/restore smoke test
 

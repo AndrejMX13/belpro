@@ -33,6 +33,21 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 ---
 
+## Nadzorna plošča za vodje
+
+Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za upravljanje celotnega življenjskega cikla prostovoljcev.
+
+- **Prostovoljci** — Registracija, urejanje, aktivacija/deaktivacija prostovoljcev; pregled zgodovine posameznega prostovoljca; preklopniki za kanal poročil (WhatsApp / e-pošta)
+- **Čakajoče odobritve** — Odobritev ali zavrnitev vnosov z enim klikom; sličice fotografij prikazane neposredno v seznamu; dodajanje in odstranjevanje fotografij iz pogleda za odobritev
+- **Dnevnik in zgodovina** — Celoten seznam vnosov z možnostjo iskanja za vsa obdobja; filtriranje po prostovoljcu, mesecu, statusu ali lokaciji; izvoz v CSV
+- **Analitika** — KPI ploščice (ure, aktivni prostovoljci, število vnosov); grafikoni ur po prostovoljcu in po lokaciji; trend za 6 mesecev; izbirnik leta/meseca; izvoz v CSV; tiskalniku prijazna postavitev
+- **Poročila** — Ustvarjanje in prenos mesečnih PDF-jev na zahtevo (po prostovoljcu ali zbirno); pošiljanje poročil po e-pošti na zahtevo ali samodejno prek cron opravila 28. v mesecu; razdelek Arhiv poročil za pregled in prenos vseh predhodno ustvarjenih poročil
+- **Nastavitve** — Profil vodje, geslo, nastavitev SMTP, prikaz telefonske številke WhatsApp bota, privzeti kanal dostave poročil za nove prostovoljce
+- **Skladnost z GDPR** — Ustvarjanje in prenos dogovora o prostovoljstvu (*Dogovor o prostovoljstvu*) kot PDF pripravljen za tisk, z možnostjo dodatnih klavzul
+- **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje
+
+---
+
 ## Tehnološki sklad (Stack)
 
 | Storitev | Tehnologija | Vrata (Port) |

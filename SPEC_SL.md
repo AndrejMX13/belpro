@@ -128,6 +128,16 @@ Fotografije so shranjene v ločeni tabeli `log_entry_photos` (glej spodaj) — p
 | generated_at | TIMESTAMP | |
 | sent_at | TIMESTAMP | nullable |
 
+### `settings`
+| Polje | Tip | Opomba |
+|-------|------|-------|
+| id | UUID PK | |
+| name | TEXT | Ključ nastavitve (edinstven, ne sme biti null) |
+| type | TEXT | Namig tipa vrednosti: `'int'`, `'bool'`, `'text'`, `'json'` |
+| value | TEXT | Shranjena vrednost (nullable — pri odsotnosti se uporabi privzeta vrednost iz `.env`) |
+
+Ob prvi migraciji se vnese s tremi vrsticami: `max_photos_per_entry` (privzeto `5`), `photo_retention_days` (privzeto `730`), `session_duration_hours` (privzeto `24`). Vse vrednosti, nastavljive med delovanjem, so shranjene tukaj in ne hardcoded ali brane izključno iz `.env`. Glejte storitev `AppSettings` in `GET/PATCH /api/admin/settings`.
+
 ---
 
 ## 4. WhatsApp tok (prostovoljec)
@@ -242,6 +252,7 @@ Grafikoni so upodobljeni na strani odjemalca z **Chart.js v4** (CDN, brez koraka
 - Ustvarjanje mesečnih PDF poročil na zahtevo (po prostovoljcu ali zbirno)
 - Pregled predhodno ustvarjenih PDF-jev
 - Ročno sprožanje pošiljanja po e-pošti, kadar je to potrebno
+- **Arhiv poročil** — zložljivi razdelek s seznamom vseh predhodno ustvarjenih PDF-jev za vsa obdobja z možnostjo prenosa; preklopnik je vgrajen na isti strani
 
 #### 5.6 Nastavitve
 - Profil vodje (ime, priimek, telefon, e-pošta, ime NVO, naslov NVO)
@@ -251,6 +262,15 @@ Grafikoni so upodobljeni na strani odjemalca z **Chart.js v4** (CDN, brez koraka
 - Nastavitev SMTP (gostitelj, vrata, prijava in prikazno ime so urejljivi v vmesniku; geslo ostane v `.env` kot `SMTP_PASSWORD`; deluje z Gmail, Yahoo, Proton ali katerim koli SMTP strežnikom)
 - Telefonska številka WhatsApp bota — samo za branje, kadar je Evolution API povezan (številka in stanje se ob vsakem nalaganju strani z nastavitvami sinhronizirata v živo z Evolution API; ob spremembi se samodejno zapišeta v zbirko podatkov in `.env`). Spreminjane možno le pri prekinitvi povezave.
 - Predloga dogovora o prostovoljstvu (besedilo, uporabljeno v glavi PDF) *(načrtovano)*
+
+#### 5.7 Administracija (sistemske nastavitve)
+Vrednosti, nastavljive med delovanjem sistema. Spremembe stopijo v veljavo takoj, brez ponovnega zagona vsebnika.
+
+- **Največje število fotografij na vnos** (`max_photos_per_entry`) — največje število fotografij, ki jih prostovoljec lahko priloži posamičnemu vnosu; uveljavljeno na ravni API ob nalaganju
+- **Hranjenje fotografij (dni)** (`photo_retention_days`) — čas hrambe shranjenih fotografij; uporablja ga načrtovano opravilo za čiščenje
+- **Trajanje seje (ure)** (`session_duration_hours`) — trajanje piškotka seje vodje
+
+Vrednosti so shranjene v tabeli `settings` prek storitve `AppSettings` in dostopne prek `GET/PATCH /api/admin/settings`. Storitev ob odsotnosti vrstice v zbirki podatkov privzame vrednosti iz `.env`, tako da sistem pravilno deluje pred izrecno nastavitvijo katere koli vrednosti.
 
 ---
 
@@ -346,13 +366,16 @@ belpro/
 │   │   ├── log_entries.py             # Vnosi + nalaganje fotografij/EXIF
 │   │   ├── managers.py                # Profil vodje + nastavitev gesla
 │   │   ├── reports.py
-│   │   └── analytics.py               # Zbirna analitična končna točka
+│   │   ├── analytics.py               # Zbirna analitična končna točka
+│   │   └── admin.py                   # GET/PATCH /api/admin/settings
 │   ├── models/                        # SQLAlchemy ORM modeli
+│   │   └── app_setting.py             # ORM model AppSetting (tabela settings)
 │   ├── schemas/                       # Pydantic sheme zahtev/odgovorov
 │   ├── services/
 │   │   ├── report_pdf.py              # Ustvarjanje PDF z WeasyPrint
 │   │   ├── encryption.py              # AES-256-GCM šifriranje/dešifriranje/zgoščevanje EMŠO
-│   │   └── password.py                # Zgoščevanje gesel z bcrypt
+│   │   ├── password.py                # Zgoščevanje gesel z bcrypt
+│   │   └── app_settings.py            # AppSettings: konfiguracija s prednostjo zbirke podatkov in rezervo na .env
 │   └── db/
 │       └── migrations/                # Alembic migracije (podmapy versions/; trenutna glava: 006_whatsapp_and_smtp_config)
 │
@@ -363,8 +386,9 @@ belpro/
 │   └── js/
 │       ├── api.js                     # Centraliziran ovojnik fetch / osnovni URL API
 │       ├── volunteers.js              # Pogledi prostovoljcev, odobritev, dnevnika, nastavitev; usmerjevalnik
-│       ├── reports.js                 # Pogled poročil
-│       └── analytics.js              # Stran analitike (grafikoni prek Chart.js v4 CDN)
+│       ├── reports.js                 # Pogled poročil (vključuje razdelek Arhiv poročil)
+│       ├── analytics.js              # Stran analitike (grafikoni prek Chart.js v4 CDN)
+│       └── admin.js                   # Stran Administracija (sistemske nastavitve)
 │
 ├── nginx/
 │   └── nginx.conf
@@ -529,6 +553,7 @@ Zahteva, da Docker vsebnik `postgres` teče in da `belpro_test` obstaja (samodej
 | `tests/test_log_entries.py` | Celoten CRUD dnevniških zapisov, stroj stanj (odobri/zavrni/potrdi), preverjanje fotografij |
 | `tests/test_reports.py` | Ustvarjanje poročil, vrsta vsebine PDF, 404 za neznanega prostovoljca |
 | `tests/test_analytics.py` | Oblika povzetka, štetje ur samo za odobrene, 6-točkovni mesečni trend |
+| `tests/test_app_settings.py` | Vnos podatkov v tabelo `settings`, enotni testi storitve `AppSettings`, `GET/PATCH /api/admin/settings`, uveljavljanje na ravni poti (omejitev fotografij, piškotek seje) |
 
 ### Dimni test varnostnega kopiranja in obnovitve
 
