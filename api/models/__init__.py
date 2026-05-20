@@ -1,6 +1,7 @@
 """SQLAlchemy ORM models — import all to ensure they register with Base.metadata."""
 from .base import Base
 from .app_setting import AppSetting
+from .error_log import ErrorLog
 from .log_entry import EntryStatus, LogEntry
 from .log_entry_photo import LogEntryPhoto
 from .manager import Manager
@@ -11,6 +12,7 @@ __all__ = [
     "AppSetting",
     "Base",
     "EntryStatus",
+    "ErrorLog",
     "LogEntry",
     "LogEntryPhoto",
     "Manager",
