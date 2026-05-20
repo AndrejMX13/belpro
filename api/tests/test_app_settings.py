@@ -200,8 +200,6 @@ async def test_photo_upload_respects_db_max_photos_setting(
 ) -> None:
     """upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in DB."""
     import io
-    from models.app_setting import AppSetting
-    from sqlalchemy import select
 
     # Patch max_photos_per_entry to 1 via the admin API
     r_patch = await client.patch(
