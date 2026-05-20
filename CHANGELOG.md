@@ -6,6 +6,30 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.11.0-beta.0] — 2026-05-20
+
+### Added
+- **ISS-004 — Error log:** `error_log` DB table (migration 013); `POST /api/errors` (internal `X-Internal-Key` auth) for background services to report failures; `GET /api/errors` with `?unacknowledged=true` filter; `PATCH /api/errors/{id}/acknowledge`; `GET /api/errors/unacknowledged-count` for the nav badge. 9 pytest tests. (`api/routers/errors.py`, `api/models/error_log.py`, `api/schemas/error_log.py`, `api/tests/test_errors.py`)
+- **ISS-014 — Ops sidecar:** new `ops` Docker service (Alpine/Python, non-root `ops` user, internal crond) with automated DB + photo backup at 02:00 daily. Backup failures reported via `POST /api/errors`. Retention controlled by `BACKUP_RETENTION_DAYS` (default 30 days). (`ops/Dockerfile`, `ops/scripts/backup.sh`, `ops/crontab`)
+- **ISS-007 — Photo cleanup:** nightly photo retention job at 03:00 in the ops sidecar. Deletes photos from disk and DB for approved entries past the `photo_retention_days` setting window. Failures reported via `POST /api/errors`. (`ops/scripts/photo_cleanup.py`)
+- **ISS-012 — Health widget:** `GET /api/health/detailed` endpoint with per-service status (PostgreSQL response time, Whisper, n8n, WhatsApp connection state, disk free space, last heartbeat entry). Live health widget on the Administracija page refreshes every 30 s. (`api/main.py`, `frontend/js/errors.js`, `frontend/js/admin.js`)
+- **Dnevnik napak page:** operational error log in the dashboard — lists errors from background services, defaults to unacknowledged-only, per-row Potrdi button. Nav badge on the link shows unacknowledged count, hidden when zero, refreshed every 60 s. (`frontend/js/errors.js`, `frontend/index.html`, `frontend/css/main.css`)
+- **ISS-026 — Settings table:** `settings` DB table (migrations 007–012); `AppSettings` service with DB-first, env-fallback config authority; `GET/PATCH /api/admin/settings`; Administracija page for runtime-tunable settings (photo limit, photo retention, session duration) without a container restart. (`api/models/app_setting.py`, `api/services/app_settings.py`, `api/routers/admin.py`, `frontend/js/admin.js`, `api/tests/test_app_settings.py`)
+- **ISS-015 — GDPR consent PDF:** `GET /api/documents/consent-pdf?volunteer_id=` generates and streams a volunteer agreement PDF ready to print and sign; Dokumenti tab on the volunteer detail page; optional `gdpr_additional_clauses` field on the manager record. (`api/services/consent_pdf.py`, `api/routers/documents.py`, `frontend/js/volunteers.js`)
+- **ISS-027 — Photo confirmation fixes (n8n):** every photo upload now sends an individual "Sprejeto" confirmation; duplicate messages for multi-photo batches suppressed; limit-reached confirmation sent correctly on the final accepted photo.
+
+### Changed
+- Health widget moved from the volunteers (main) page to the Administracija page.
+- `backups` Docker volume added; ops sidecar writes all backups to `/backups`.
+- `PHOTO_RETENTION_DAYS` and `BACKUP_RETENTION_DAYS` added to `.env.example`.
+
+### Fixed
+- Logo re-fetched in `showApp()` to recover from `onerror` firing while `#app` was hidden during a container rebuild.
+- Health widget `setInterval` stopped on every `route()` navigation to prevent duplicate polling timers accumulating across page changes.
+- `pg_dump` exit code captured correctly in `backup.sh` (`|| PG_RC=$?` pattern) — previously `$?` was always `0` inside the `if !` block.
+
+---
+
 ## [0.10.2-beta.0] — 2026-05-19
 
 ### Added
