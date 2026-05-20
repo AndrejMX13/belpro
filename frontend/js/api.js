@@ -183,6 +183,11 @@ const API = (() => {
       consentPdf: () => downloadRequest('/documents/consent-pdf'),
     },
 
+    admin: {
+      getSettings:    ()     => request('/admin/settings'),
+      updateSettings: (body) => request('/admin/settings', { method: 'PATCH', body: JSON.stringify(body) }),
+    },
+
     logo: {
       upload: (formData) => {
         return fetch(BASE + '/logo', {

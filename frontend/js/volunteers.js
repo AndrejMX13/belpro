@@ -216,6 +216,8 @@ function route() {
     renderSettings();
   } else if (hash === '#documents') {
     renderDocuments();
+  } else if (hash === '#admin') {
+    renderAdmin();
   } else {
     renderList();
   }
