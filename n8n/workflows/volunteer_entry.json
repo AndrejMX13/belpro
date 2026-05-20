@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-18T18:43:46.016Z",
+  "updatedAt": "2026-05-19T18:25:20.681Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -419,8 +419,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1600,
-        -112
+        1504,
+        -240
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -438,8 +438,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1824,
-        -112
+        1680,
+        -240
       ]
     },
     {
@@ -472,8 +472,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        2064,
-        -112
+        1856,
+        -240
       ]
     },
     {
@@ -502,8 +502,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2352,
-        336
+        2032,
+        -96
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -558,8 +558,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2320,
-        -288
+        2304,
+        -352
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -577,8 +577,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2608,
-        -288
+        2592,
+        -352
       ]
     },
     {
@@ -607,8 +607,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2848,
-        -288
+        2832,
+        -352
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -720,7 +720,7 @@
       "typeVersion": 4.2,
       "position": [
         2352,
-        624
+        672
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -742,7 +742,7 @@
       "typeVersion": 4.2,
       "position": [
         2592,
-        624
+        672
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -782,7 +782,7 @@
       "typeVersion": 2,
       "position": [
         2832,
-        624
+        672
       ]
     },
     {
@@ -848,7 +848,7 @@
       "typeVersion": 4.2,
       "position": [
         2352,
-        768
+        816
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1044,8 +1044,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1824,
-        96
+        1792,
+        48
       ]
     },
     {
@@ -1061,8 +1061,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2064,
-        128
+        1968,
+        80
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1081,7 +1081,7 @@
       "typeVersion": 2,
       "position": [
         2608,
-        64
+        -16
       ]
     },
     {
@@ -1111,7 +1111,7 @@
       "typeVersion": 4.2,
       "position": [
         2848,
-        64
+        -16
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1166,8 +1166,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2352,
-        64
+        2368,
+        -16
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1244,7 +1244,7 @@
       "typeVersion": 1,
       "position": [
         1184,
-        1024
+        1088
       ]
     },
     {
@@ -1273,8 +1273,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        1440,
-        1024
+        1488,
+        1088
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1764,15 +1764,15 @@
     },
     {
       "parameters": {
-        "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// API rejected the upload (limit exceeded or other error)\nif (!apiResp.id) {\n  const detail = apiResp.detail || 'Napaka pri nalaganju slike.';\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: detail + '\\n\\n1 - Potrdi vnos\\n4 - Prekliči'}}];\n}\n\n// At limit — no more photos possible\nif (apiResp.photo_count >= apiResp.max_photos) {\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n\\n1 - Potrdi\\n4 - Prekliči'}}];\n}\n\n// First photo — send full menu\nif (apiResp.photo_count === 1) {\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči'}}];\n}\n\n// Subsequent photos within limit — volunteer still has the menu from photo 1\nreturn [];\n"
+        "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// API rejected the upload (limit exceeded or other error)\nif (!apiResp.id) {\n  const detail = apiResp.detail || 'Napaka pri nalaganju slike.';\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: detail + '\\n\\n1 - Potrdi vnos\\n4 - Prekliči'}}];\n}\n\n// Only send confirmation menu for the first photo in a batch\nif (apiResp.photo_count !== 1) {\n  return [];\n}\n\nreturn [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči'}}];\n"
       },
       "id": "code_slika_prejeta",
       "name": "Code: Slika Prejeta",
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2352,
-        480
+        2368,
+        528
       ]
     },
     {
@@ -1802,7 +1802,7 @@
       "typeVersion": 4.2,
       "position": [
         2592,
-        480
+        528
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1937,7 +1937,7 @@
       "typeVersion": 2,
       "position": [
         2064,
-        80
+        -256
       ]
     },
     {
@@ -1969,8 +1969,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        2352,
-        -80
+        2368,
+        -208
       ]
     },
     {
@@ -1986,8 +1986,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2352,
-        192
+        2368,
+        240
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -2009,8 +2009,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2100,
-        128
+        2112,
+        160
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -2021,7 +2021,6 @@
     },
     {
       "parameters": {
-        "method": "GET",
         "url": "http://api:8000/api/log-entries/photo-limit",
         "options": {}
       },
@@ -2030,8 +2029,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2340,
-        128
+        2368,
+        112
       ]
     },
     {
@@ -2043,8 +2042,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2580,
-        128
+        2608,
+        192
       ]
     },
     {
@@ -2077,8 +2076,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        2820,
-        128
+        2768,
+        192
       ]
     },
     {
@@ -2090,8 +2089,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3060,
-        280
+        2976,
+        176
       ]
     },
     {
@@ -2120,8 +2119,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3300,
-        280
+        3200,
+        -80
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -2988,9 +2987,9 @@
       }
     ]
   },
-  "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
-  "activeVersionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
-  "versionCounter": 742,
+  "versionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
+  "activeVersionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
+  "versionCounter": 847,
   "triggerCount": 1,
   "shared": [
     {
@@ -3013,9 +3012,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-18T18:43:46.019Z",
-    "createdAt": "2026-05-18T18:43:46.019Z",
-    "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
+    "updatedAt": "2026-05-19T18:25:38.162Z",
+    "createdAt": "2026-05-19T18:25:20.683Z",
+    "versionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -3430,8 +3429,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1600,
-          -112
+          1504,
+          -240
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3449,8 +3448,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1824,
-          -112
+          1680,
+          -240
         ]
       },
       {
@@ -3483,8 +3482,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          2064,
-          -112
+          1856,
+          -240
         ]
       },
       {
@@ -3513,8 +3512,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2352,
-          336
+          2032,
+          -96
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3569,8 +3568,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2320,
-          -288
+          2304,
+          -352
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3588,8 +3587,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2608,
-          -288
+          2592,
+          -352
         ]
       },
       {
@@ -3618,8 +3617,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2848,
-          -288
+          2832,
+          -352
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3731,7 +3730,7 @@
         "typeVersion": 4.2,
         "position": [
           2352,
-          624
+          672
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3753,7 +3752,7 @@
         "typeVersion": 4.2,
         "position": [
           2592,
-          624
+          672
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3793,7 +3792,7 @@
         "typeVersion": 2,
         "position": [
           2832,
-          624
+          672
         ]
       },
       {
@@ -3859,7 +3858,7 @@
         "typeVersion": 4.2,
         "position": [
           2352,
-          768
+          816
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4055,8 +4054,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1824,
-          96
+          1792,
+          48
         ]
       },
       {
@@ -4072,8 +4071,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2064,
-          128
+          1968,
+          80
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4092,7 +4091,7 @@
         "typeVersion": 2,
         "position": [
           2608,
-          64
+          -16
         ]
       },
       {
@@ -4122,7 +4121,7 @@
         "typeVersion": 4.2,
         "position": [
           2848,
-          64
+          -16
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4177,8 +4176,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2352,
-          64
+          2368,
+          -16
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4255,7 +4254,7 @@
         "typeVersion": 1,
         "position": [
           1184,
-          1024
+          1088
         ]
       },
       {
@@ -4284,8 +4283,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          1440,
-          1024
+          1488,
+          1088
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4640,7 +4639,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.remoteJid;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || null;\nif (!state || state.mode !== 'awaiting_photos') {\n  return [{json: {phone, remoteJid, has_active_photo_state: false, text: \"Najprej pošljite glasovno ali text sporočilo oziroma izberite 3. Dodaj slike v meniju\"}}];\n}\nreturn [{json: {\n  phone, remoteJid,\n  has_active_photo_state: true,\n  entry_id: state.entry_id,\n  messageKey: inp.messageKey,\n  messageData: inp.messageData\n}}];"
+          "jsCode": "const inp = $input.first().json;\nconst phone = inp.phone;\nconst remoteJid = inp.remoteJid;\nconst sd = $getWorkflowStaticData('global');\nconst state = sd[phone] || null;\nif (!state || state.mode !== 'awaiting_photos') {\n  return [{json: {phone, remoteJid, has_active_photo_state: false, text: 'Slika je prejeta, a vnos ni v fazi dodajanja slik.\\n\\nČe imate odprt vnos, izberite:\\n1 - Potrdi\\n3 - Dodaj slike\\n4 - Prekliči'}}];\n}\nreturn [{json: {\n  phone, remoteJid,\n  has_active_photo_state: true,\n  entry_id: state.entry_id,\n  messageKey: inp.messageKey,\n  messageData: inp.messageData\n}}];"
         },
         "id": "code_preveri_slike",
         "name": "Code: Preveri Slike Stanje",
@@ -4775,15 +4774,15 @@
       },
       {
         "parameters": {
-          "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// Only send confirmation menu for the first photo in a batch\nif (apiResp.photo_count !== 1) {\n  return [];\n}\n\nreturn [{json: {phone: d.phone, remoteJid: d.remoteJid, text: \"Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči\"}}];"
+          "jsCode": "const d = $('Code: Pripravi Upload Slike').first().json;\nconst apiResp = $input.first().json;\n\n// API rejected the upload (limit exceeded or other error)\nif (!apiResp.id) {\n  const detail = apiResp.detail || 'Napaka pri nalaganju slike.';\n  return [{json: {phone: d.phone, remoteJid: d.remoteJid, text: detail + '\\n\\n1 - Potrdi vnos\\n4 - Prekliči'}}];\n}\n\n// Only send confirmation menu for the first photo in a batch\nif (apiResp.photo_count !== 1) {\n  return [];\n}\n\nreturn [{json: {phone: d.phone, remoteJid: d.remoteJid, text: 'Sprejeto.\\n1 - Potrdi\\n3 - Več slik\\n4 - Prekliči'}}];\n"
         },
         "id": "code_slika_prejeta",
         "name": "Code: Slika Prejeta",
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2352,
-          480
+          2368,
+          528
         ]
       },
       {
@@ -4813,7 +4812,7 @@
         "typeVersion": 4.2,
         "position": [
           2592,
-          480
+          528
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4915,6 +4914,11 @@
           "options": {
             "redirect": {
               "redirect": {}
+            },
+            "response": {
+              "response": {
+                "neverError": true
+              }
             }
           }
         },
@@ -4943,7 +4947,7 @@
         "typeVersion": 2,
         "position": [
           2064,
-          80
+          -256
         ]
       },
       {
@@ -4975,8 +4979,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          2352,
-          -80
+          2368,
+          -208
         ]
       },
       {
@@ -4992,8 +4996,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2352,
-          192
+          2368,
+          240
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -5015,8 +5019,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2100,
-          128
+          2112,
+          160
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -5027,7 +5031,6 @@
       },
       {
         "parameters": {
-          "method": "GET",
           "url": "http://api:8000/api/log-entries/photo-limit",
           "options": {}
         },
@@ -5036,21 +5039,21 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2340,
-          128
+          2368,
+          112
         ]
       },
       {
         "parameters": {
-          "jsCode": "const entryData = $('HTTP: GET Entry Photos').first().json;\nconst limitData = $('HTTP: GET Photo Limit').first().json;\nconst mediaData = $('Code: Build Image Media Body').first().json;\n\nconst currentCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst maxPhotos = limitData.max_photos || 5;\n\nreturn [{\n  json: {\n    phone: mediaData.phone,\n    remoteJid: mediaData.remoteJid,\n    entry_id: mediaData.entry_id,\n    current_count: currentCount,\n    max_photos: maxPhotos,\n    at_limit: currentCount >= maxPhotos\n  }\n}];"
+          "jsCode": "const entryData = $('HTTP: GET Entry Photos').first().json;\nconst limitData = $('HTTP: GET Photo Limit').first().json;\nconst mediaData = $('Code: Build Image Media Body').first().json;\n\nconst currentCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst maxPhotos = limitData.max_photos || 5;\n\nreturn [{\n  json: {\n    phone: mediaData.phone,\n    remoteJid: mediaData.remoteJid,\n    entry_id: mediaData.entry_id,\n    current_count: currentCount,\n    max_photos: maxPhotos,\n    at_limit: currentCount >= maxPhotos,\n    mediaBody: mediaData.mediaBody\n  }\n}];\n"
         },
         "id": "code_check_photo_limit",
         "name": "Code: Check Photo Limit",
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2580,
-          128
+          2608,
+          192
         ]
       },
       {
@@ -5083,8 +5086,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          2820,
-          128
+          2768,
+          192
         ]
       },
       {
@@ -5096,8 +5099,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          3060,
-          280
+          2976,
+          176
         ]
       },
       {
@@ -5126,8 +5129,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          3300,
-          280
+          3200,
+          -80
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -5965,39 +5968,15 @@
       }
     },
     "authors": "Andrej Mejac",
-    "name": null,
-    "description": null,
-    "autosaved": false,
+    "name": "Version d236b39f",
+    "description": "",
+    "autosaved": true,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-18T18:43:46.101Z",
-        "id": 295,
+        "createdAt": "2026-05-19T18:25:38.158Z",
+        "id": 357,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:46.125Z",
-        "id": 296,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:46.184Z",
-        "id": 297,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:46.217Z",
-        "id": 298,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "79d71d31-5e65-4cee-a34f-4f4c20c27437",
+        "versionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }

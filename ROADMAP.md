@@ -26,7 +26,7 @@ This page shows what's coming before the first stable release and what has alrea
 - GDPR consent document generated for each volunteer, ready to print and sign
 
 ### Polish
-- NGO logo appears on the dashboard and on all printed documents
+- ✓ NGO logo appears on the dashboard and on all printed documents
 - Documentation includes screenshots, example conversations, and a sample report
 
 ---
