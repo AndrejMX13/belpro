@@ -21,7 +21,8 @@ This page shows what's coming before the first stable release and what has alrea
 - ✓ Login sessions protected against script-based attacks on the local network
 - ✓ Photo uploads per entry are limited to a sensible maximum
 - Photos are automatically cleaned up after the legal retention period
-- ✓ EMŠO validated at entry — a bad number is caught immediately, not days later
+- ✓ EMŠO validated with checksum at entry — a bad number is caught immediately, not days later
+- ✓ Tax number (davčna) validated with checksum at entry
 - ✓ A safe procedure exists for rotating the encryption key if ever needed
 - ✓ GDPR consent document generated for each volunteer, ready to print and sign
 
