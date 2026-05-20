@@ -4,6 +4,7 @@ set -euo pipefail
 DATE=$(date +%Y%m%d_%H%M%S)
 BACKUP_DIR="/backups/${DATE}"
 RETENTION_DAYS="${BACKUP_RETENTION_DAYS:-30}"
+EMSO_KEY_FINGERPRINT="${EMSO_ENCRYPTION_KEY:0:8}..."
 
 report_error() {
   local message="$1"
@@ -46,6 +47,16 @@ if ! tar -czf "${BACKUP_DIR}/pdfs.tar.gz" -C /app pdfs 2>/dev/null; then
   echo "[backup] Warning: PDFs archive failed (directory may be empty)"
   report_error "PDFs archive failed" "tar returned non-zero; directory may be empty"
 fi
+
+# Manifest
+cat > "${BACKUP_DIR}/manifest.txt" <<EOF
+BelPro backup
+Timestamp         : ${DATE}
+Date              : $(date)
+DB                : ${POSTGRES_DB}
+Files             : belpro.pgdump  photos.tar.gz  pdfs.tar.gz
+EMSO key prefix   : ${EMSO_KEY_FINGERPRINT}
+EOF
 
 echo "[backup] Backup complete: ${BACKUP_DIR}"
 

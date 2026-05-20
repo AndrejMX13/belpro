@@ -159,6 +159,13 @@ echo ""
 warn "Preden odgovoriš 'DA': preveri, da si že posodobil .env, znova zagnal API vsebnik"
 warn "in da v logu ni napak. Varnostna kopija je edina pot nazaj."
 echo ""
+RETENTION_DAYS=$(grep -E '^BACKUP_RETENTION_DAYS=' "$ENV_FILE" 2>/dev/null | cut -d= -f2 | tr -d '"')
+RETENTION_DAYS="${RETENTION_DAYS:-30}"
+warn "⚠️  STARE VARNOSTNE KOPIJE: Vse varnostne kopije ustvarjene PRED to rotacijo vsebujejo"
+warn "    EMŠO podatke šifrirane s STARIM ključem. Brez starega ključa jih ne morete obnoviti."
+warn "    Stari ključ hranite na varnem mestu vsaj ${RETENTION_DAYS} dni (BACKUP_RETENTION_DAYS),"
+warn "    preden ga trajno izbrišete."
+echo ""
 read -r -p "  Koraki 1–3 so zaključeni, API deluje. Izbrišem varnostno kopijo? Vpišite 'DA' za brisanje: " cleanup
 if [[ "$cleanup" == "DA" ]]; then
   $COMPOSE exec -T api rm -f "$BACKUP_FILE"

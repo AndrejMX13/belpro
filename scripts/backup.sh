@@ -21,12 +21,14 @@ fi
 # Export only the DB variables we need
 set -a
 # shellcheck disable=SC1090
-source <(grep -E '^(POSTGRES_DB|POSTGRES_USER|POSTGRES_PASSWORD)=' "$ENV_FILE")
+source <(grep -E '^(POSTGRES_DB|POSTGRES_USER|POSTGRES_PASSWORD|EMSO_ENCRYPTION_KEY)=' "$ENV_FILE")
 set +a
 
 : "${POSTGRES_DB:?POSTGRES_DB not set in .env}"
 : "${POSTGRES_USER:?POSTGRES_USER not set in .env}"
 : "${POSTGRES_PASSWORD:?POSTGRES_PASSWORD not set in .env}"
+
+EMSO_KEY_FINGERPRINT="${EMSO_ENCRYPTION_KEY:0:8}..."
 
 # ── Prepare backup directory ───────────────────────────────────────────────
 mkdir -p "$BACKUP_DIR"
@@ -57,11 +59,13 @@ echo "        ✓ photos.tar.gz ($(du -sh "$BACKUP_DIR/photos.tar.gz" | cut -f1)
 echo "  [3/3] Writing manifest..."
 cat > "$BACKUP_DIR/manifest.txt" <<EOF
 BelPro backup
-Timestamp : $TIMESTAMP
-Date      : $(date)
-DB        : $POSTGRES_DB
-Files     : belpro.pgdump  photos.tar.gz
+Timestamp         : $TIMESTAMP
+Date              : $(date)
+DB                : $POSTGRES_DB
+Files             : belpro.pgdump  photos.tar.gz
+EMSO key prefix   : $EMSO_KEY_FINGERPRINT
 EOF
+echo "        (key prefix recorded — required if restoring after a key rotation)"
 echo "        ✓ manifest.txt"
 
 # ── Done ───────────────────────────────────────────────────────────────────

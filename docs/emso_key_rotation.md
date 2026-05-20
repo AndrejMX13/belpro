@@ -98,6 +98,16 @@ The script will delete the targeted backup file from `/app/pdfs/temp/`. That fil
 
 ---
 
+## Backups taken before this rotation
+
+Any database backup created before the key rotation contains EMŠOs encrypted with the **old** key. Restoring such a backup after the old key has been discarded will succeed at the database level, but the application will fail to decrypt any EMŠO — leaving all volunteer records unreadable.
+
+**Rule:** Keep the old `EMSO_ENCRYPTION_KEY` stored securely for at least as long as your backup retention period (`BACKUP_RETENTION_DAYS`, default 30 days). Only discard the old key once all backups from before the rotation have aged out.
+
+To identify which key a backup requires, check `manifest.txt` inside the backup directory. It contains an `EMSO key prefix` field — the first 8 characters of the `EMSO_ENCRYPTION_KEY` that was active when the backup was taken. Compare this against your saved keys to find the right one.
+
+---
+
 ## If something goes wrong
 
 If the rotation fails mid-way, the database is not changed — the Python script uses an all-or-nothing transaction. Your old key still works. Simply fix the problem and re-run.
