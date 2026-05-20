@@ -22,15 +22,15 @@ async function renderAdmin() {
       <div id="admin-settings-form" hidden>
         <div class="field">
           <label for="a-max-photos">Najve&#269;je &#353;tevilo fotografij na vnos</label>
-          <input id="a-max-photos" type="number" min="1" style="max-width:12rem" />
+          <input id="a-max-photos" type="number" min="1" style="width:100%;max-width:12rem" step="1" />
         </div>
         <div class="field">
           <label for="a-photo-retention">Hranjenje fotografij (dni)</label>
-          <input id="a-photo-retention" type="number" min="1" style="max-width:12rem" />
+          <input id="a-photo-retention" type="number" min="1" style="width:100%;max-width:12rem" step="1" />
         </div>
         <div class="field">
           <label for="a-session-duration">Trajanje seje (ure)</label>
-          <input id="a-session-duration" type="number" min="1" style="max-width:12rem" />
+          <input id="a-session-duration" type="number" min="1" style="width:100%;max-width:12rem" step="1" />
         </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
@@ -75,7 +75,7 @@ async function renderAdmin() {
     // Validate
     for (const [key, val] of Object.entries(current)) {
       if (!Number.isInteger(val) || val < 1) {
-        errEl.textContent = 'Vse vrednosti morajo biti cela &#353;tevila, ve&#269;ja ali enaka 1.';
+        errEl.textContent = 'Vse vrednosti morajo biti cela števila, večja ali enaka 1.';
         errEl.style.display = 'block';
         return;
       }
