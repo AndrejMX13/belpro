@@ -39,7 +39,7 @@ logger = logging.getLogger(__name__)
 # All four cron lines are dynamic; hours/day/period are runtime-tunable.
 CRONTAB_TEMPLATE = (
     "# m h dom mon dow command\n"
-    "0 {backup_hour} * * * /app/scripts/backup.sh >> /proc/1/fd/1 2>&1\n"
+    "0 {backup_hour} * * * /app/scripts/backup.sh {retention_days} >> /proc/1/fd/1 2>&1\n"
     "0 {cleanup_hour} * * * /app/scripts/photo_cleanup.py >> /proc/1/fd/1 2>&1\n"
     "0 7 {day} * * /app/scripts/monthly_report_send.py --period {period}"
     " >> /proc/1/fd/1 2>&1\n"
@@ -78,16 +78,22 @@ def reload_crond() -> None:
     os.kill(int(pid_str), signal.SIGHUP)
 
 
-def write_crontab(day: int, period: str, backup_hour: int, cleanup_hour: int) -> None:
+def write_crontab(
+    day: int, period: str, backup_hour: int, cleanup_hour: int, retention_days: int
+) -> None:
     """Write a new crontab to CRONTAB_PATH and reload crond."""
     content = CRONTAB_TEMPLATE.format(
-        day=day, period=period, backup_hour=backup_hour, cleanup_hour=cleanup_hour
+        day=day,
+        period=period,
+        backup_hour=backup_hour,
+        cleanup_hour=cleanup_hour,
+        retention_days=retention_days,
     )
     CRONTAB_PATH.write_text(content)
     reload_crond()
     logger.info(
-        "Crontab updated: day=%d period=%s backup_hour=%d cleanup_hour=%d",
-        day, period, backup_hour, cleanup_hour,
+        "Crontab updated: day=%d period=%s backup_hour=%d cleanup_hour=%d retention_days=%d",
+        day, period, backup_hour, cleanup_hour, retention_days,
     )
 
 
@@ -104,7 +110,7 @@ def fetch_settings_from_db() -> dict[str, str]:
                 cur.execute(
                     "SELECT name, value FROM settings"
                     " WHERE name IN ('report_auto_day', 'report_auto_period',"
-                    " 'backup_hour', 'photo_cleanup_hour')"
+                    " 'backup_hour', 'photo_cleanup_hour', 'backup_retention_days')"
                 )
                 rows = {name: value for name, value in cur.fetchall()}
             conn.close()
@@ -157,8 +163,9 @@ class _Handler(BaseHTTPRequestHandler):
         period = raw_period if raw_period in ("current", "previous") else "current"
         backup_hour = max(0, min(int(payload.get("backup_hour", 2)), 23))
         cleanup_hour = max(0, min(int(payload.get("photo_cleanup_hour", 3)), 23))
+        retention_days = max(1, int(payload.get("backup_retention_days", 30)))
         try:
-            write_crontab(day, period, backup_hour, cleanup_hour)
+            write_crontab(day, period, backup_hour, cleanup_hour, retention_days)
         except Exception as exc:
             logger.error("Crontab update failed: %s", exc)
             report_error("Crontab update failed", str(exc))
@@ -173,11 +180,12 @@ def main() -> None:
         period = rows.get("report_auto_period", "current") or "current"
         backup_hour = max(0, min(int(rows.get("backup_hour", 2)), 23))
         cleanup_hour = max(0, min(int(rows.get("photo_cleanup_hour", 3)), 23))
+        retention_days = max(1, int(rows.get("backup_retention_days", 30)))
         try:
-            write_crontab(day, period, backup_hour, cleanup_hour)
+            write_crontab(day, period, backup_hour, cleanup_hour, retention_days)
             logger.info(
-                "Startup crontab sync complete (day=%d, period=%s, backup_hour=%d, cleanup_hour=%d).",
-                day, period, backup_hour, cleanup_hour,
+                "Startup crontab sync complete (day=%d, period=%s, backup_hour=%d, cleanup_hour=%d, retention_days=%d).",
+                day, period, backup_hour, cleanup_hour, retention_days,
             )
         except Exception as exc:
             logger.warning("Startup crontab sync failed; baked-in default remains: %s", exc)

@@ -3,7 +3,7 @@ set -euo pipefail
 
 DATE=$(date +%Y%m%d_%H%M%S)
 BACKUP_DIR="/backups/${DATE}"
-RETENTION_DAYS="${BACKUP_RETENTION_DAYS:-30}"
+RETENTION_DAYS="${1:-${BACKUP_RETENTION_DAYS:-30}}"
 EMSO_KEY_FINGERPRINT="${EMSO_ENCRYPTION_KEY:0:8}..."
 
 report_error() {
