@@ -85,7 +85,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const result = $input.first().json;\nconst sent = result.sent_to_volunteers || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano prostovoljcem: ${sent.length}`,\n  `Upravljalec obveščen: ${result.manager_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez e-pošte): ${(result.skipped_no_email || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
+        "jsCode": "const result = $input.first().json;\nconst sentEmail = result.sent_via_email || [];\nconst sentWa = result.sent_via_whatsapp || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano e-pošta: ${sentEmail.length}, WhatsApp: ${sentWa.length}`,\n  `Upravljalec — e-pošta: ${result.manager_email_sent ? 'Da' : 'Ne'}, WhatsApp: ${result.manager_whatsapp_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez kanala): ${(result.skipped_no_channel || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
       },
       "id": "code-log",
       "name": "Zabeleži Rezultat",
@@ -255,7 +255,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const result = $input.first().json;\nconst sent = result.sent_to_volunteers || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano prostovoljcem: ${sent.length}`,\n  `Upravljalec obveščen: ${result.manager_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez e-pošte): ${(result.skipped_no_email || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
+          "jsCode": "const result = $input.first().json;\nconst sentEmail = result.sent_via_email || [];\nconst sentWa = result.sent_via_whatsapp || [];\nconst errors = result.errors || [];\n\nconst lines = [\n  `BelPro mesečna poročila — ${result.month}/${result.year}`,\n  `Poslano e-pošta: ${sentEmail.length}, WhatsApp: ${sentWa.length}`,\n  `Upravljalec — e-pošta: ${result.manager_email_sent ? 'Da' : 'Ne'}, WhatsApp: ${result.manager_whatsapp_sent ? 'Da' : 'Ne'}`,\n  `Preskočeni (brez vnosov): ${(result.skipped_no_entries || []).length}`,\n  `Preskočeni (brez kanala): ${(result.skipped_no_channel || []).length}`,\n];\n\nif (errors.length > 0) {\n  lines.push(`NAPAKE (${errors.length}):`);\n  errors.forEach(e => lines.push('  ' + e));\n}\n\nconsole.log(lines.join('\\n'));\nreturn [{ json: result }];\n"
         },
         "id": "code-log",
         "name": "Zabeleži Rezultat",
