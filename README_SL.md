@@ -44,7 +44,7 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 - **Poročila** — Ustvarjanje in prenos mesečnih PDF-jev na zahtevo (po prostovoljcu ali zbirno); pošiljanje poročil po e-pošti ali WhatsAppu na zahtevo ali samodejno prek cron opravila na nastavljiv dan (privzeto 28.) za tekoči ali prejšnji mesec; razdelek Arhiv poročil za pregled in prenos vseh predhodno ustvarjenih poročil
 - **Nastavitve** — Profil vodje, geslo, nastavitev SMTP, prikaz telefonske številke WhatsApp bota, privzeti kanal dostave poročil za nove prostovoljce
 - **Skladnost z GDPR** — Ustvarjanje in prenos dogovora o prostovoljstvu (*Dogovor o prostovoljstvu*) kot PDF pripravljen za tisk, z možnostjo dodatnih klavzul
-- **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje, dan in obdobje samodejne dostave poročil, ura varnostnega kopiranja, ura čiščenja fotografij; živi pripomoček za stanje sistema z vsemi storitvami (PostgreSQL, Whisper, n8n, WhatsApp, disk, zadnji vnos) z osvežitvijo vsakih 30 s
+- **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje, dan in obdobje samodejne dostave poročil, ura varnostnega kopiranja, ura čiščenja fotografij, obdobje hrambe varnostnih kopij; živi pripomoček za stanje sistema z vsemi storitvami (PostgreSQL, Whisper, n8n, WhatsApp, disk, zadnji vnos) z osvežitvijo vsakih 30 s
 - **Dnevnik napak** — Operacijske napake opravil v ozadju (nočno varnostno kopiranje, čiščenje fotografij) z možnostjo potrditve vsake napake; oznaka v navigacijski vrstici prikazuje število nepotrjenih
 
 ---
@@ -277,7 +277,7 @@ bash scripts/backup.sh
 
 Ustvari varnostno kopijo PostgreSQL zbirke podatkov ter shranjenih fotografij in PDF poročil.
 
-Varnostne kopije se ustvarijo **samodejno vsako noč** (privzeto ob 02:00, nastavljivo na strani Administracija) prek vsebnika `ops` — brez potrebe po konfiguraciji cron opravil na gostitelju. Napake pri varnostnem kopiranju se zabeležijo v Dnevnik napak, vidnem na nadzorni plošči. Čas hrambe kopij je določen s spremenljivko `BACKUP_RETENTION_DAYS` v `.env` (privzeto: 30 dni).
+Varnostne kopije se ustvarijo **samodejno vsako noč** (privzeto ob 02:00, nastavljivo na strani Administracija) prek vsebnika `ops` — brez potrebe po konfiguraciji cron opravil na gostitelju. Napake pri varnostnem kopiranju se zabeležijo v Dnevnik napak, vidnem na nadzorni plošči. Čas hrambe kopij je nastavljiv na strani Administracija (privzeto: 30 dni); spremenljivka `BACKUP_RETENTION_DAYS` v `.env` je še vedno sprejeta kot nadomestna vrednost.
 
 ### Obnovitev podatkov (Restore)
 
