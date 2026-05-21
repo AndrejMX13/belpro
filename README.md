@@ -38,10 +38,10 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 - **Pending approvals** — One-click approve or reject for entries awaiting manager review; photo thumbnails shown inline; add or remove photos directly from the approval view
 - **Log & history** — Full searchable entry log across all periods; filter by volunteer, month, status, or location; CSV export
 - **Analytics** — KPI tiles (hours, active volunteers, entry counts); hours-per-volunteer and hours-per-location charts; 6-month trend; year/month navigator; CSV export; print-friendly layout
-- **Reports** — Generate and download monthly PDFs on demand (per volunteer or consolidated); send reports by email on demand or let the automated cron handle delivery on the 28th; Arhiv poročil section for browsing and downloading all previously generated reports
+- **Reports** — Generate and download monthly PDFs on demand (per volunteer or consolidated); send reports by email or WhatsApp on demand or let the automated cron handle delivery on a configurable day (default: 28th) covering either the current or previous month; Arhiv poročil section for browsing and downloading all previously generated reports
 - **Settings** — Manager profile, password, SMTP configuration, WhatsApp bot phone display, report delivery defaults for new volunteers
 - **GDPR compliance** — Generate and download the volunteer consent agreement (*Dogovor o prostovoljstvu*) as a ready-to-print PDF, with optional additional clauses
-- **System administration** — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration; live health widget showing all service states (PostgreSQL, Whisper, n8n, WhatsApp, disk, last entry heartbeat) refreshed every 30 s
+- **System administration** — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration, auto-report delivery day and period, backup hour, photo-cleanup hour; live health widget showing all service states (PostgreSQL, Whisper, n8n, WhatsApp, disk, last entry heartbeat) refreshed every 30 s
 - **Error log (Dnevnik napak)** — Operational errors from background jobs (nightly backup, photo cleanup) shown with per-error acknowledge; nav badge tracks unacknowledged count
 
 ---
@@ -265,7 +265,7 @@ bash scripts/backup.sh
 
 Backs up the PostgreSQL database and stored photos/PDFs.
 
-Backups also run **automatically every night at 02:00** via the `ops` sidecar container — no host-level cron configuration needed. Backup failures are reported to the Dnevnik napak error log visible in the dashboard. Retention is controlled by `BACKUP_RETENTION_DAYS` in `.env` (default: 30 days).
+Backups also run **automatically every night** (default: 02:00, configurable from the System administration page) via the `ops` sidecar container — no host-level cron configuration needed. Backup failures are reported to the Dnevnik napak error log visible in the dashboard. Retention is controlled by `BACKUP_RETENTION_DAYS` in `.env` (default: 30 days).
 
 ### Restore
 
