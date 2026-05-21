@@ -52,6 +52,10 @@ async function renderAdmin() {
           <label for="a-cleanup-hour">Ura &#269;i&#353;&#269;enja fotografij (0&#8211;23)</label>
           <input id="a-cleanup-hour" type="number" min="0" max="23" style="width:100%;max-width:12rem" step="1" />
         </div>
+        <div class="field">
+          <label for="a-backup-retention">Hranjenje varnostnih kopij (dni)</label>
+          <input id="a-backup-retention" type="number" min="1" style="width:100%;max-width:12rem" step="1" />
+        </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="a-save-btn">Shrani</button>
@@ -74,6 +78,7 @@ async function renderAdmin() {
     $('a-report-period').value = data.report_auto_period;
     $('a-backup-hour').value   = data.backup_hour;
     $('a-cleanup-hour').value  = data.photo_cleanup_hour;
+    $('a-backup-retention').value = data.backup_retention_days;
 
     $('admin-settings-loading').hidden = true;
     $('admin-settings-form').hidden    = false;
@@ -98,6 +103,7 @@ async function renderAdmin() {
       report_auto_period:     $('a-report-period').value,
       backup_hour:            parseInt($('a-backup-hour').value, 10),
       photo_cleanup_hour:     parseInt($('a-cleanup-hour').value, 10),
+      backup_retention_days:  parseInt($('a-backup-retention').value, 10),
     };
 
     // Validate
