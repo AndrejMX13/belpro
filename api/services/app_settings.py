@@ -72,12 +72,13 @@ class AppSettings:
     @property
     def report_auto_day(self) -> int:
         """Day of month (1–28) on which monthly reports are auto-sent."""
-        return self._int("report_auto_day", 28)
+        return max(1, min(self._int("report_auto_day", 28), 28))
 
     @property
     def report_auto_period(self) -> str:
         """Reporting period: 'current' (this month) or 'previous' (last month)."""
-        return self._str("report_auto_period", "current") or "current"
+        raw = self._str("report_auto_period", "current") or "current"
+        return raw if raw in ("current", "previous") else "current"
 
     # ── passthrough for all other env settings ─────────────────────────────────
 
