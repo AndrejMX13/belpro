@@ -1,3 +1,4 @@
 # m h dom mon dow command
 0 2 * * * /app/scripts/backup.sh >> /proc/1/fd/1 2>&1
 0 3 * * * /app/scripts/photo_cleanup.py >> /proc/1/fd/1 2>&1
+0 7 28 * * /app/scripts/monthly_report_send.py --period current >> /proc/1/fd/1 2>&1
