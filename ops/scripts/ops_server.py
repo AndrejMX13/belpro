@@ -145,8 +145,10 @@ class _Handler(BaseHTTPRequestHandler):
         # Respond immediately — this thread continues working after the response.
         self._send(202)
 
-        day = int(payload.get("report_auto_day", 28))
-        period = str(payload.get("report_auto_period", "current"))
+        raw_day = int(payload.get("report_auto_day", 28))
+        day = max(1, min(raw_day, 28))
+        raw_period = str(payload.get("report_auto_period", "current"))
+        period = raw_period if raw_period in ("current", "previous") else "current"
         try:
             write_crontab(day, period)
         except Exception as exc:
