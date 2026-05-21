@@ -28,6 +28,7 @@ async def _notify_ops(env: Settings, s: AppSettings) -> None:
         "report_auto_period": s.report_auto_period,
         "backup_hour": s.backup_hour,
         "photo_cleanup_hour": s.photo_cleanup_hour,
+        "backup_retention_days": s.backup_retention_days,
     }
     try:
         async with httpx.AsyncClient(timeout=3.0) as client:
@@ -69,6 +70,7 @@ async def get_admin_settings(
         report_auto_period=s.report_auto_period,
         backup_hour=s.backup_hour,
         photo_cleanup_hour=s.photo_cleanup_hour,
+        backup_retention_days=s.backup_retention_days,
     )
 
 
@@ -116,4 +118,5 @@ async def update_admin_settings(
         report_auto_period=s.report_auto_period,
         backup_hour=s.backup_hour,
         photo_cleanup_hour=s.photo_cleanup_hour,
+        backup_retention_days=s.backup_retention_days,
     )
