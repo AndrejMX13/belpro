@@ -127,6 +127,7 @@ services:
       MAX_PHOTOS_PER_ENTRY: ${MAX_PHOTOS_PER_ENTRY:-5}
       SESSION_DURATION_HOURS: ${SESSION_DURATION_HOURS:-24}
       COOKIE_SECURE: ${COOKIE_SECURE:-False}
+      OPS_URL: http://ops:9000
       TZ: Europe/Ljubljana
     volumes:
       - api_photos:/app/photos
@@ -166,6 +167,12 @@ services:
       - api_photos:/app/photos:ro
       - api_pdfs:/app/pdfs:ro
       - ./backups:/backups
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO /dev/null http://localhost:9000/health || exit 1"]
+      interval: 15s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
     depends_on:
       api:
         condition: service_healthy
