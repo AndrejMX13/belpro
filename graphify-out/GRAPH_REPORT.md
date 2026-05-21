@@ -1,12 +1,12 @@
 # Graph Report - D:\Andrej\vsCode-workspace\BelPro  (2026-05-21)
 
 ## Corpus Check
-- 108 files · ~299,083 words
+- 108 files · ~302,069 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1174 nodes · 3205 edges · 93 communities detected
-- Extraction: 38% EXTRACTED · 62% INFERRED · 0% AMBIGUOUS · INFERRED: 1997 edges (avg confidence: 0.57)
+- 1180 nodes · 3232 edges · 95 communities detected
+- Extraction: 37% EXTRACTED · 63% INFERRED · 0% AMBIGUOUS · INFERRED: 2021 edges (avg confidence: 0.57)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -103,12 +103,14 @@
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 91|Community 91]]
 - [[_COMMUNITY_Community 92|Community 92]]
+- [[_COMMUNITY_Community 93|Community 93]]
+- [[_COMMUNITY_Community 94|Community 94]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `EntryStatus` - 188 edges
-2. `Manager` - 157 edges
-3. `LogEntry` - 123 edges
-4. `Volunteer` - 109 edges
+1. `EntryStatus` - 190 edges
+2. `Manager` - 159 edges
+3. `LogEntry` - 125 edges
+4. `Volunteer` - 111 edges
 5. `LogEntryListResponse` - 68 edges
 6. `Settings` - 67 edges
 7. `LogEntryCreate` - 67 edges
@@ -131,40 +133,40 @@
 ## Communities
 
 ### Community 0 - "Community 0"
-Cohesion: 0.08
-Nodes (128): Base, Base, Declarative base — import and subclass in every model., AsyncClient with get_db dependency wired to the test session., HTTP Basic Auth header for the seeded manager., Returns an async callable that inserts a LogEntry row via flush., Run Alembic migrations against belpro_test, seed one Manager row.     Drops all, Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo (+120 more)
+Cohesion: 0.04
+Nodes (145): Create a signed, self-expiring session token., Return True if the token signature is valid and not expired., Verify password against DB hash or env var fallback., Reject requests without a valid session cookie or Basic Auth credentials., Base, BaseSettings, Generate and stream the GDPR Article 13 consent notice PDF., _check_mx() (+137 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.04
-Nodes (88): Create a signed, self-expiring session token., Return True if the token signature is valid and not expired., Verify password against DB hash or env var fallback., Reject requests without a valid session cookie or Basic Auth credentials., BaseSettings, Generate and stream the GDPR Article 13 consent notice PDF., health(), health_detailed() (+80 more)
+Cohesion: 0.08
+Nodes (127): Base, Declarative base — import and subclass in every model., AsyncClient with get_db dependency wired to the test session., HTTP Basic Auth header for the seeded manager., Returns an async callable that inserts a LogEntry row via flush., Run Alembic migrations against belpro_test, seed one Manager row.     Drops all, Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo, DeclarativeBase (+119 more)
 
 ### Community 2 - "Community 2"
-Cohesion: 0.05
-Nodes (91): emso_checksum_valid(), EMŠO (Enotna matična številka občana) validation utilities., Return True if emso passes the mod-11 checksum.      Assumes the caller already, decrypt_emso(), encrypt_emso(), hash_emso(), load_key(), mask_emso() (+83 more)
+Cohesion: 0.04
+Nodes (71): auth(), client(), db_session(), engine(), log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), volunteer_factory(), Exception (+63 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.04
-Nodes (64): auth(), client(), db_session(), engine(), log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), volunteer_factory(), Exception (+56 more)
+Cohesion: 0.06
+Nodes (83): decrypt_emso(), encrypt_emso(), hash_emso(), load_key(), mask_emso(), AES-256-GCM encryption service for sensitive fields (EMŠO).  Usage ----- key = l, Decode and validate a base64-encoded 32-byte AES-256 key.      Raises ValueError, Encrypt EMŠO with AES-256-GCM.      Returns base64(nonce + ciphertext + auth_tag (+75 more)
 
 ### Community 4 - "Community 4"
-Cohesion: 0.08
-Nodes (80): Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Raised when the manager has not configured SMTP., Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port, send_email(), SmtpNotConfiguredError, ErrorLog, One row per operational failure. Written by API, n8n, and ops sidecar., EvolutionClient (+72 more)
+Cohesion: 0.05
+Nodes (71): AdminSettingsResponse, AdminSettingsUpdate, get_admin_settings(), Pydantic schemas for the admin settings endpoints., Partial update for runtime-tunable settings. Only provided fields are written., Return current values of all runtime-tunable settings., Update one or more runtime-tunable settings. Returns updated state., Current values of all runtime-tunable settings. (+63 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.05
-Nodes (72): AdminSettingsResponse, AdminSettingsUpdate, get_admin_settings(), Pydantic schemas for the admin settings endpoints., Partial update for runtime-tunable settings. Only provided fields are written., Return current values of all runtime-tunable settings., Update one or more runtime-tunable settings. Returns updated state., Current values of all runtime-tunable settings. (+64 more)
-
-### Community 6 - "Community 6"
 Cohesion: 0.08
 Nodes (68): renderAdmin(), _destroyCharts(), loadAnalytics(), renderAnalytics(), renderAnalyticsContent(), _renderCharts(), renderDocuments(), healthWidgetHTML() (+60 more)
 
+### Community 6 - "Community 6"
+Cohesion: 0.06
+Nodes (52): analytics_summary(), AnalyticsSummary, HoursPerLocation, HoursPerVolunteer, MonthlyTrendPoint, _preceding_months(), Analytics router — aggregated summary for the dashboard analytics page., Per-volunteer approved hours for a given month. (+44 more)
+
 ### Community 7 - "Community 7"
-Cohesion: 0.08
-Nodes (33): delete_logo(), get_logo(), logo_exists(), _open_image(), NGO logo file management., Return the NGO logo as PNG, or 404 if none has been uploaded., Return True if a logo file is present on disk., Remove the logo file if it exists. Silent if absent. (+25 more)
+Cohesion: 0.07
+Nodes (26): Return (normalized_phone, state) for the configured instance.          States: ", health(), health_detailed(), lifespan(), seed_whatsapp_phone_from_env(), normalize_wa_phone(), normalize_phone(), Return digits-only WhatsApp-native phone number, or None for invalid input. (+18 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.11
-Nodes (33): analytics_summary(), AnalyticsSummary, HoursPerLocation, HoursPerVolunteer, MonthlyTrendPoint, _preceding_months(), Analytics router — aggregated summary for the dashboard analytics page., Per-volunteer approved hours for a given month. (+25 more)
+Cohesion: 0.08
+Nodes (33): delete_logo(), get_logo(), logo_exists(), _open_image(), NGO logo file management., Return the NGO logo as PNG, or 404 if none has been uploaded., Return True if a logo file is present on disk., Remove the logo file if it exists. Silent if absent. (+25 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.11
@@ -175,52 +177,52 @@ Cohesion: 0.1
 Nodes (34): Dashboard — Web UI and FastAPI Backend, Nadzorna plošča — Spl. vmesnik + API, Evolution API — WhatsApp Gateway, Evolution API — API Prehod, Gmail — Email Delivery via SMTP, Gmail — Pošiljanje e-pošte, Manager — Browser or Phone Access, Vodja — Brskalnik / Telefon (+26 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.12
-Nodes (19): login(), LoginRequest, LoginResponse, logout(), _make_session_token(), Manager authentication — HTTP Basic Auth.  Password priority:   1. manager.passw, Response for login and logout endpoints., Verify manager password and set an httpOnly session cookie. (+11 more)
+Cohesion: 0.08
+Nodes (30): _esc(), _now_str(), GDPR Article 13 consent notice PDF generation., Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage, render_consent_pdf(), _esc(), _fmt_date(), _generated_line() (+22 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.14
-Nodes (20): Return (normalized_phone, state) for the configured instance.          States: ", normalize_wa_phone(), normalize_phone(), Return digits-only WhatsApp-native phone number, or None for invalid input., _make_mock_http(), test_connected_returns_normalized_phone_and_open_state(), test_disconnected_returns_none_and_close_state(), test_instance_not_in_response_returns_close() (+12 more)
-
-### Community 13 - "Community 13"
-Cohesion: 0.11
-Nodes (20): _esc(), _now_str(), GDPR Article 13 consent notice PDF generation., Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage, render_consent_pdf(), Tests for the /documents router and consent_pdf service., render_consent_pdf returns non-empty bytes for a minimal manager., render_consent_pdf produces bytes when additional clauses are set. (+12 more)
-
-### Community 14 - "Community 14"
 Cohesion: 0.12
 Nodes (20): _internal_header(), Tests for POST /api/errors, GET /api/errors, PATCH /api/errors/{id}/acknowledge., PATCH /{id}/acknowledge on unknown id returns 404., GET /api/errors/unacknowledged-count returns integer count., POST with valid internal key creates a record., POST without internal key is rejected., POST with wrong internal key is rejected., GET /api/errors without manager auth is rejected. (+12 more)
 
-### Community 15 - "Community 15"
+### Community 13 - "Community 13"
 Cohesion: 0.27
 Nodes (18): body(), border(), borders(), cell(), complianceTable(), componentTable(), coverPage(), featureTable() (+10 more)
 
-### Community 16 - "Community 16"
+### Community 14 - "Community 14"
 Cohesion: 0.17
 Nodes (6): _validate_davcna_checksum(), Slovenian tax number (davčna številka) validation utilities., Return True if value passes the Modulus 11 check digit algorithm.      Accepts b, tax_number_valid(), Tests for Slovenian tax number (davčna številka) validation., TestTaxNumberValid
 
+### Community 15 - "Community 15"
+Cohesion: 0.27
+Nodes (12): arrow_h(), arrow_h_dashed(), arrow_h_dotted(), arrow_v(), draw_box(), fig1(), fig2(), fig3() (+4 more)
+
+### Community 16 - "Community 16"
+Cohesion: 0.27
+Nodes (12): arrow_h(), arrow_h_dashed(), arrow_h_dotted(), arrow_v(), draw_box(), fig1(), fig2(), fig3() (+4 more)
+
 ### Community 17 - "Community 17"
-Cohesion: 0.27
-Nodes (12): arrow_h(), arrow_h_dashed(), arrow_h_dotted(), arrow_v(), draw_box(), fig1(), fig2(), fig3() (+4 more)
-
-### Community 18 - "Community 18"
-Cohesion: 0.27
-Nodes (12): arrow_h(), arrow_h_dashed(), arrow_h_dotted(), arrow_v(), draw_box(), fig1(), fig2(), fig3() (+4 more)
-
-### Community 19 - "Community 19"
 Cohesion: 0.18
 Nodes (8): BaseHTTPRequestHandler, _Handler, Thin HTTP wrapper around Faster-Whisper for local speech-to-text.  Exposes a sin, Handle POST /transcribe requests., Transcribe the uploaded audio and return plain-text., Health check — GET /health returns 200 ok., Send a simple HTTP response., Route access logs to stdout.
 
-### Community 20 - "Community 20"
+### Community 18 - "Community 18"
 Cohesion: 0.21
 Nodes (11): _do_run_migrations(), _get_url(), Alembic environment — async SQLAlchemy / asyncpg configuration., Read DATABASE_URL from settings (env / .env file)., Run migrations without a live DB connection (generates SQL script)., Inner helper called inside the async connection context., Create an async engine and run migrations inside it., Run migrations against a live database. (+3 more)
 
-### Community 21 - "Community 21"
+### Community 19 - "Community 19"
+Cohesion: 0.24
+Nodes (8): emso_checksum_valid(), EMŠO (Enotna matična številka občana) validation utilities., Return True if emso passes the mod-11 checksum.      Assumes the caller already, Unit tests for the EMŠO checksum validator utility., test_emso_checksum_valid_accepts_valid_numbers(), test_emso_checksum_valid_rejects_bad_checksum(), test_emso_checksum_valid_rejects_malformed_input(), _validate_emso_checksum()
+
+### Community 20 - "Community 20"
 Cohesion: 0.31
 Nodes (9): api_request(), cmd_export(), cmd_import(), load_env(), main(), Overwrite each repo workflow file with its current definition from n8n., Parse KEY=VALUE lines from a .env file; ignore comments and blanks., Make an authenticated request to the n8n API.      Returns (status_code, respo (+1 more)
 
-### Community 22 - "Community 22"
+### Community 21 - "Community 21"
 Cohesion: 0.28
 Nodes (8): api_client(), _auth_header(), _manager_password(), n8n_client(), Session-scoped AsyncClient against FastAPI. Skips all tests if unreachable., Session-scoped AsyncClient against n8n. Skips all tests if unreachable., Creates a volunteer with a unique phone, yields the volunteer dict,     deletes, test_volunteer()
+
+### Community 22 - "Community 22"
+Cohesion: 0.38
+Nodes (6): dsn_from_url(), main(), POST failure to the API error log., Convert asyncpg DATABASE_URL to psycopg2 DSN., Query approved entries older than retention cutoff, delete their photos and DB r, report_error()
 
 ### Community 23 - "Community 23"
 Cohesion: 0.33
@@ -364,146 +366,154 @@ Nodes (0):
 
 ### Community 58 - "Community 58"
 Cohesion: 1.0
-Nodes (1): Return a cached Settings instance (constructed once per process).
+Nodes (1): Raised when the manager has not configured SMTP.
 
 ### Community 59 - "Community 59"
 Cohesion: 1.0
-Nodes (1): Payload for the change-password endpoint.
+Nodes (1): Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port
 
 ### Community 60 - "Community 60"
 Cohesion: 1.0
-Nodes (1): Manager profile returned by the API.
+Nodes (1): Return a cached Settings instance (constructed once per process).
 
 ### Community 61 - "Community 61"
 Cohesion: 1.0
-Nodes (1): Response schema for GET /managers/me/config-info.
+Nodes (1): Payload for the change-password endpoint.
 
 ### Community 62 - "Community 62"
 Cohesion: 1.0
-Nodes (1): Per-volunteer aggregated totals for a given month.
+Nodes (1): Manager profile returned by the API.
 
 ### Community 63 - "Community 63"
 Cohesion: 1.0
-Nodes (1): Aggregated monthly summary across all active volunteers.
+Nodes (1): Response schema for GET /managers/me/config-info.
 
 ### Community 64 - "Community 64"
 Cohesion: 1.0
-Nodes (1): NGO identity shown in every PDF header.
+Nodes (1): Per-volunteer aggregated totals for a given month.
 
 ### Community 65 - "Community 65"
 Cohesion: 1.0
-Nodes (1): Render the NGO header block as an HTML string.
+Nodes (1): Aggregated monthly summary across all active volunteers.
 
 ### Community 66 - "Community 66"
 Cohesion: 1.0
-Nodes (1): Render a single-volunteer monthly report PDF and return raw bytes.
+Nodes (1): NGO identity shown in every PDF header.
 
 ### Community 67 - "Community 67"
 Cohesion: 1.0
-Nodes (1): Render an all-volunteer summary PDF and return raw bytes.
+Nodes (1): Render the NGO header block as an HTML string.
 
 ### Community 68 - "Community 68"
 Cohesion: 1.0
-Nodes (1): FastAPI dependency — rejects requests without the correct manager password.
+Nodes (1): Render a single-volunteer monthly report PDF and return raw bytes.
 
 ### Community 69 - "Community 69"
 Cohesion: 1.0
-Nodes (1): Return a cached Settings instance (constructed once per process).
+Nodes (1): Render an all-volunteer summary PDF and return raw bytes.
 
 ### Community 70 - "Community 70"
 Cohesion: 1.0
-Nodes (1): Re-encrypt all EMŠOs from old_key to new_key. Returns count of rotated records.
+Nodes (1): FastAPI dependency — rejects requests without the correct manager password.
 
 ### Community 71 - "Community 71"
 Cohesion: 1.0
-Nodes (1): Print pending_manager entries as JSON for the manual trigger node.  Usage:   pyt
+Nodes (1): Return a cached Settings instance (constructed once per process).
 
 ### Community 72 - "Community 72"
 Cohesion: 1.0
-Nodes (1): Return a cached Settings instance (constructed once per process).
+Nodes (1): Re-encrypt all EMŠOs from old_key to new_key. Returns count of rotated records.
 
 ### Community 73 - "Community 73"
 Cohesion: 1.0
-Nodes (1): Fields required for first-time manager setup.
+Nodes (1): Print pending_manager entries as JSON for the manual trigger node.  Usage:   pyt
 
 ### Community 74 - "Community 74"
 Cohesion: 1.0
-Nodes (1): Partial update — all fields optional.  Only provided fields are written.
+Nodes (1): Return a cached Settings instance (constructed once per process).
 
 ### Community 75 - "Community 75"
 Cohesion: 1.0
-Nodes (1): Normalize to WhatsApp-native digits-only format; reject unparseable values.
+Nodes (1): Fields required for first-time manager setup.
 
 ### Community 76 - "Community 76"
 Cohesion: 1.0
-Nodes (1): Payload for the change-password endpoint.
+Nodes (1): Partial update — all fields optional.  Only provided fields are written.
 
 ### Community 77 - "Community 77"
 Cohesion: 1.0
-Nodes (1): Manager profile returned by the API.
+Nodes (1): Normalize to WhatsApp-native digits-only format; reject unparseable values.
 
 ### Community 78 - "Community 78"
 Cohesion: 1.0
-Nodes (1): Response schema for GET /managers/me/config-info.
+Nodes (1): Payload for the change-password endpoint.
 
 ### Community 79 - "Community 79"
 Cohesion: 1.0
-Nodes (1): Encrypt EMŠO with AES-256-GCM.      Returns base64(nonce + ciphertext + auth_tag
+Nodes (1): Manager profile returned by the API.
 
 ### Community 80 - "Community 80"
 Cohesion: 1.0
-Nodes (1): Decrypt EMŠO ciphertext produced by encrypt_emso.      Returns the plaintext str
+Nodes (1): Response schema for GET /managers/me/config-info.
 
 ### Community 81 - "Community 81"
 Cohesion: 1.0
-Nodes (1): Return HMAC-SHA256 hex digest of plaintext EMŠO.      Deterministic (unlike encr
+Nodes (1): Encrypt EMŠO with AES-256-GCM.      Returns base64(nonce + ciphertext + auth_tag
 
 ### Community 82 - "Community 82"
 Cohesion: 1.0
-Nodes (1): Return EMŠO with all but the last 3 characters replaced by *.      Used in all A
+Nodes (1): Decrypt EMŠO ciphertext produced by encrypt_emso.      Returns the plaintext str
 
 ### Community 83 - "Community 83"
 Cohesion: 1.0
-Nodes (1): Update or append KEY=value in a .env file. Returns True on success, False on fai
+Nodes (1): Return HMAC-SHA256 hex digest of plaintext EMŠO.      Deterministic (unlike encr
 
 ### Community 84 - "Community 84"
 Cohesion: 1.0
-Nodes (1): Belpro_Architecture.docx — English Architecture Document
+Nodes (1): Return EMŠO with all but the last 3 characters replaced by *.      Used in all A
 
 ### Community 85 - "Community 85"
 Cohesion: 1.0
-Nodes (1): Belpro_Arhitektura_Sl.docx — Slovenian Architecture Document
+Nodes (1): Update or append KEY=value in a .env file. Returns True on success, False on fai
 
 ### Community 86 - "Community 86"
 Cohesion: 1.0
-Nodes (1): POST a WhatsApp event to the n8n webhook. Asserts 200.
+Nodes (1): Belpro_Architecture.docx — English Architecture Document
 
 ### Community 87 - "Community 87"
 Cohesion: 1.0
-Nodes (1): Poll GET /api/log-entries until at least one entry for volunteer_id appears.
+Nodes (1): Belpro_Arhitektura_Sl.docx — Slovenian Architecture Document
 
 ### Community 88 - "Community 88"
 Cohesion: 1.0
-Nodes (1): Poll GET /api/log-entries/{entry_id} until its status matches expected_status.
+Nodes (1): POST a WhatsApp event to the n8n webhook. Asserts 200.
 
 ### Community 89 - "Community 89"
 Cohesion: 1.0
-Nodes (1): Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError
+Nodes (1): Poll GET /api/log-entries until at least one entry for volunteer_id appears.
 
 ### Community 90 - "Community 90"
 Cohesion: 1.0
-Nodes (1): A message from an unregistered phone must not create any log entry.     The work
+Nodes (1): Poll GET /api/log-entries/{entry_id} until its status matches expected_status.
 
 ### Community 91 - "Community 91"
 Cohesion: 1.0
-Nodes (1): Async HTTP client for the Evolution API WhatsApp gateway.
+Nodes (1): Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError
 
 ### Community 92 - "Community 92"
+Cohesion: 1.0
+Nodes (1): A message from an unregistered phone must not create any log entry.     The work
+
+### Community 93 - "Community 93"
+Cohesion: 1.0
+Nodes (1): Async HTTP client for the Evolution API WhatsApp gateway.
+
+### Community 94 - "Community 94"
 Cohesion: 1.0
 Nodes (1): Return (normalized_phone, state) for the configured instance.          States: "
 
 ## Knowledge Gaps
-- **224 isolated node(s):** `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc`, `Return a cached Settings instance (constructed once per process).`, `Async SQLAlchemy engine and session factory.`, `FastAPI dependency — yields one async DB session per request.` (+219 more)
+- **227 isolated node(s):** `Application settings — loaded from environment variables / .env file.`, `All configuration for the Belpro API service.      Values are read from the proc`, `Return a cached Settings instance (constructed once per process).`, `Async SQLAlchemy engine and session factory.`, `FastAPI dependency — yields one async DB session per request.` (+222 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **Thin community `Community 39`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -543,91 +553,95 @@ Nodes (1): Return (normalized_phone, state) for the configured instance.        
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 57`** (1 nodes): `__init__.py`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 58`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
+- **Thin community `Community 58`** (1 nodes): `Raised when the manager has not configured SMTP.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 59`** (1 nodes): `Payload for the change-password endpoint.`
+- **Thin community `Community 59`** (1 nodes): `Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 60`** (1 nodes): `Manager profile returned by the API.`
+- **Thin community `Community 60`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 61`** (1 nodes): `Response schema for GET /managers/me/config-info.`
+- **Thin community `Community 61`** (1 nodes): `Payload for the change-password endpoint.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 62`** (1 nodes): `Per-volunteer aggregated totals for a given month.`
+- **Thin community `Community 62`** (1 nodes): `Manager profile returned by the API.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 63`** (1 nodes): `Aggregated monthly summary across all active volunteers.`
+- **Thin community `Community 63`** (1 nodes): `Response schema for GET /managers/me/config-info.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 64`** (1 nodes): `NGO identity shown in every PDF header.`
+- **Thin community `Community 64`** (1 nodes): `Per-volunteer aggregated totals for a given month.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 65`** (1 nodes): `Render the NGO header block as an HTML string.`
+- **Thin community `Community 65`** (1 nodes): `Aggregated monthly summary across all active volunteers.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 66`** (1 nodes): `Render a single-volunteer monthly report PDF and return raw bytes.`
+- **Thin community `Community 66`** (1 nodes): `NGO identity shown in every PDF header.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 67`** (1 nodes): `Render an all-volunteer summary PDF and return raw bytes.`
+- **Thin community `Community 67`** (1 nodes): `Render the NGO header block as an HTML string.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 68`** (1 nodes): `FastAPI dependency — rejects requests without the correct manager password.`
+- **Thin community `Community 68`** (1 nodes): `Render a single-volunteer monthly report PDF and return raw bytes.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 69`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
+- **Thin community `Community 69`** (1 nodes): `Render an all-volunteer summary PDF and return raw bytes.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 70`** (1 nodes): `Re-encrypt all EMŠOs from old_key to new_key. Returns count of rotated records.`
+- **Thin community `Community 70`** (1 nodes): `FastAPI dependency — rejects requests without the correct manager password.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 71`** (1 nodes): `Print pending_manager entries as JSON for the manual trigger node.  Usage:   pyt`
+- **Thin community `Community 71`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 72`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
+- **Thin community `Community 72`** (1 nodes): `Re-encrypt all EMŠOs from old_key to new_key. Returns count of rotated records.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 73`** (1 nodes): `Fields required for first-time manager setup.`
+- **Thin community `Community 73`** (1 nodes): `Print pending_manager entries as JSON for the manual trigger node.  Usage:   pyt`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 74`** (1 nodes): `Partial update — all fields optional.  Only provided fields are written.`
+- **Thin community `Community 74`** (1 nodes): `Return a cached Settings instance (constructed once per process).`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 75`** (1 nodes): `Normalize to WhatsApp-native digits-only format; reject unparseable values.`
+- **Thin community `Community 75`** (1 nodes): `Fields required for first-time manager setup.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 76`** (1 nodes): `Payload for the change-password endpoint.`
+- **Thin community `Community 76`** (1 nodes): `Partial update — all fields optional.  Only provided fields are written.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 77`** (1 nodes): `Manager profile returned by the API.`
+- **Thin community `Community 77`** (1 nodes): `Normalize to WhatsApp-native digits-only format; reject unparseable values.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 78`** (1 nodes): `Response schema for GET /managers/me/config-info.`
+- **Thin community `Community 78`** (1 nodes): `Payload for the change-password endpoint.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 79`** (1 nodes): `Encrypt EMŠO with AES-256-GCM.      Returns base64(nonce + ciphertext + auth_tag`
+- **Thin community `Community 79`** (1 nodes): `Manager profile returned by the API.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 80`** (1 nodes): `Decrypt EMŠO ciphertext produced by encrypt_emso.      Returns the plaintext str`
+- **Thin community `Community 80`** (1 nodes): `Response schema for GET /managers/me/config-info.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 81`** (1 nodes): `Return HMAC-SHA256 hex digest of plaintext EMŠO.      Deterministic (unlike encr`
+- **Thin community `Community 81`** (1 nodes): `Encrypt EMŠO with AES-256-GCM.      Returns base64(nonce + ciphertext + auth_tag`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 82`** (1 nodes): `Return EMŠO with all but the last 3 characters replaced by *.      Used in all A`
+- **Thin community `Community 82`** (1 nodes): `Decrypt EMŠO ciphertext produced by encrypt_emso.      Returns the plaintext str`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 83`** (1 nodes): `Update or append KEY=value in a .env file. Returns True on success, False on fai`
+- **Thin community `Community 83`** (1 nodes): `Return HMAC-SHA256 hex digest of plaintext EMŠO.      Deterministic (unlike encr`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 84`** (1 nodes): `Belpro_Architecture.docx — English Architecture Document`
+- **Thin community `Community 84`** (1 nodes): `Return EMŠO with all but the last 3 characters replaced by *.      Used in all A`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 85`** (1 nodes): `Belpro_Arhitektura_Sl.docx — Slovenian Architecture Document`
+- **Thin community `Community 85`** (1 nodes): `Update or append KEY=value in a .env file. Returns True on success, False on fai`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 86`** (1 nodes): `POST a WhatsApp event to the n8n webhook. Asserts 200.`
+- **Thin community `Community 86`** (1 nodes): `Belpro_Architecture.docx — English Architecture Document`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 87`** (1 nodes): `Poll GET /api/log-entries until at least one entry for volunteer_id appears.`
+- **Thin community `Community 87`** (1 nodes): `Belpro_Arhitektura_Sl.docx — Slovenian Architecture Document`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 88`** (1 nodes): `Poll GET /api/log-entries/{entry_id} until its status matches expected_status.`
+- **Thin community `Community 88`** (1 nodes): `POST a WhatsApp event to the n8n webhook. Asserts 200.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 89`** (1 nodes): `Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError`
+- **Thin community `Community 89`** (1 nodes): `Poll GET /api/log-entries until at least one entry for volunteer_id appears.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 90`** (1 nodes): `A message from an unregistered phone must not create any log entry.     The work`
+- **Thin community `Community 90`** (1 nodes): `Poll GET /api/log-entries/{entry_id} until its status matches expected_status.`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 91`** (1 nodes): `Async HTTP client for the Evolution API WhatsApp gateway.`
+- **Thin community `Community 91`** (1 nodes): `Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 92`** (1 nodes): `Return (normalized_phone, state) for the configured instance.          States: "`
+- **Thin community `Community 92`** (1 nodes): `A message from an unregistered phone must not create any log entry.     The work`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 93`** (1 nodes): `Async HTTP client for the Evolution API WhatsApp gateway.`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 94`** (1 nodes): `Return (normalized_phone, state) for the configured instance.          States: "`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `EntryStatus` connect `Community 0` to `Community 1`, `Community 2`, `Community 3`, `Community 4`, `Community 5`, `Community 8`?**
-  _High betweenness centrality (0.139) - this node is a cross-community bridge._
-- **Why does `Manager` connect `Community 1` to `Community 0`, `Community 2`, `Community 3`, `Community 4`, `Community 5`, `Community 11`?**
-  _High betweenness centrality (0.081) - this node is a cross-community bridge._
-- **Why does `get_settings()` connect `Community 5` to `Community 0`, `Community 1`, `Community 3`, `Community 4`, `Community 8`, `Community 14`, `Community 20`?**
-  _High betweenness centrality (0.077) - this node is a cross-community bridge._
-- **Are the 185 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
-  _`EntryStatus` has 185 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 154 inferred relationships involving `Manager` (e.g. with `Belpro FastAPI application entry point.` and `Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.`) actually correct?**
-  _`Manager` has 154 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 120 inferred relationships involving `LogEntry` (e.g. with `Belpro FastAPI application entry point.` and `Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.`) actually correct?**
-  _`LogEntry` has 120 INFERRED edges - model-reasoned connections that need verification._
-- **Are the 106 inferred relationships involving `Volunteer` (e.g. with `EntryStatus` and `LogEntry`) actually correct?**
-  _`Volunteer` has 106 INFERRED edges - model-reasoned connections that need verification._
+- **Why does `EntryStatus` connect `Community 1` to `Community 0`, `Community 2`, `Community 3`, `Community 4`, `Community 6`?**
+  _High betweenness centrality (0.128) - this node is a cross-community bridge._
+- **Why does `get_settings()` connect `Community 4` to `Community 0`, `Community 1`, `Community 2`, `Community 6`, `Community 7`, `Community 12`, `Community 18`?**
+  _High betweenness centrality (0.089) - this node is a cross-community bridge._
+- **Why does `Manager` connect `Community 0` to `Community 1`, `Community 2`, `Community 3`, `Community 4`, `Community 6`?**
+  _High betweenness centrality (0.071) - this node is a cross-community bridge._
+- **Are the 187 inferred relationships involving `EntryStatus` (e.g. with `Base` and `LogEntryPhoto`) actually correct?**
+  _`EntryStatus` has 187 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 156 inferred relationships involving `Manager` (e.g. with `Belpro FastAPI application entry point.` and `Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.`) actually correct?**
+  _`Manager` has 156 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 122 inferred relationships involving `LogEntry` (e.g. with `Belpro FastAPI application entry point.` and `Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.`) actually correct?**
+  _`LogEntry` has 122 INFERRED edges - model-reasoned connections that need verification._
+- **Are the 108 inferred relationships involving `Volunteer` (e.g. with `EntryStatus` and `LogEntry`) actually correct?**
+  _`Volunteer` has 108 INFERRED edges - model-reasoned connections that need verification._
