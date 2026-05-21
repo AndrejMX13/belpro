@@ -12,8 +12,22 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 import aiosmtplib
+import dns.asyncresolver
+import dns.exception
+import dns.resolver
 
 logger = logging.getLogger(__name__)
+
+
+async def _check_mx(address: str) -> None:
+    """Raise ValueError if the recipient domain has no MX records."""
+    domain = address.split("@")[-1]
+    try:
+        await dns.asyncresolver.resolve(domain, "MX")
+    except (dns.resolver.NXDOMAIN, dns.resolver.NoAnswer, dns.exception.DNSException) as exc:
+        raise ValueError(
+            f"Domena '{domain}' nima MX zapisov (e-poštni naslov verjetno ne obstaja)"
+        ) from exc
 
 
 class SmtpNotConfiguredError(Exception):
@@ -42,6 +56,8 @@ async def send_email(
         raise SmtpNotConfiguredError(
             "SMTP ni konfiguriran. Nastavite strežnik, vrata in uporabniško ime v Nastavitvah."
         )
+
+    await _check_mx(to_address)
 
     from_name = smtp_from_name or smtp_user
     from_addr = f"{from_name} <{smtp_user}>"

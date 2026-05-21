@@ -214,8 +214,10 @@ async function sendReports() {
     if (r.manager_email_sent) mgr.push('e-pošta');
     if (r.manager_whatsapp_sent) mgr.push('WhatsApp');
     lines.push(`Upravljalec: ${mgr.length ? mgr.join(' + ') : 'preskočeno'}`);
-    if (r.errors.length)
-      lines.push(`Napake: ${r.errors.map(esc).join('; ')}`);
+    if (r.errors.length) {
+      lines.push(`Napake (${r.errors.length}):`);
+      r.errors.forEach(e => lines.push(`&nbsp;&nbsp;• ${esc(e)}`));
+    }
 
     const hasErrors = r.errors.length > 0;
     if (resultEl) {

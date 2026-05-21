@@ -255,7 +255,7 @@ async def send_monthly_reports(
         pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, y, m, entries, ngo=ngo)
         filename = f"porocilo_{vol.last_name}_{vol.first_name}_{y}_{m:02d}.pdf"
         caption = f"BelPro — mesečno poročilo {m:02d}/{y}"
-        await persist_report(db, y, m, filename, pdf_bytes, volunteer_id=vol.id)
+        vol_delivered = False
 
         if will_email:
             body = (
@@ -277,6 +277,7 @@ async def send_monthly_reports(
                     attachment_filename=filename,
                 )
                 sent_via_email.append(f"{vol.first_name} {vol.last_name} <{vol.email}>")
+                vol_delivered = True
             except Exception as exc:  # noqa: BLE001
                 detail = f"{vol.first_name} {vol.last_name} (e-pošta): {exc}"
                 logger.error("Report email delivery failed: %s", detail)
@@ -307,6 +308,7 @@ async def send_monthly_reports(
                 try:
                     await wa_client.send_document(normalized, pdf_bytes, filename, caption)
                     sent_via_whatsapp.append(f"{vol.first_name} {vol.last_name}")
+                    vol_delivered = True
                 except Exception as exc:  # noqa: BLE001
                     detail = f"{vol.first_name} {vol.last_name} (WhatsApp): {exc}"
                     logger.error("Report WhatsApp delivery failed: %s", detail)
@@ -317,6 +319,9 @@ async def send_monthly_reports(
                         detail=detail,
                     ))
                     errors.append(detail)
+
+        if vol_delivered:
+            await persist_report(db, y, m, filename, pdf_bytes, volunteer_id=vol.id)
 
     # Consolidated PDF → manager
     manager_email_sent = False
@@ -329,7 +334,6 @@ async def send_monthly_reports(
         consolidated_bytes = render_summary_pdf(y, m, mgr_items, ngo=ngo)
         consolidated_filename = f"porocilo_skupno_{y}_{m:02d}.pdf"
         mgr_caption = f"BelPro — skupno mesečno poročilo {m:02d}/{y}"
-        await persist_report(db, y, m, consolidated_filename, consolidated_bytes, volunteer_id=None)
 
         if manager_will_email:
             manager_body = (
@@ -390,6 +394,9 @@ async def send_monthly_reports(
                         detail=detail,
                     ))
                     errors.append(detail)
+
+        if manager_email_sent or manager_whatsapp_sent:
+            await persist_report(db, y, m, consolidated_filename, consolidated_bytes, volunteer_id=None)
 
     await db.commit()
 
