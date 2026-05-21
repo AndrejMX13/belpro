@@ -44,12 +44,25 @@ function showLogin() {
 
 let _badgeInterval = null;
 
+// Load/refresh the sidebar NGO logo using a probe Image so that a transient
+// network failure never takes down a logo that is already visible.
+// forced=true: hide the wrapper even if currently showing (use after delete).
+function _refreshSidebarLogo(forced = false) {
+  const wrap = $('sidebar-ngo-logo-wrap');
+  const img  = $('sidebar-ngo-logo-img');
+  if (!wrap || !img) return;
+  const probe = new Image();
+  probe.onload = () => { img.src = probe.src; wrap.style.display = 'block'; };
+  probe.onerror = () => {
+    if (forced || wrap.style.display !== 'block') wrap.style.display = 'none';
+  };
+  probe.src = `/api/logo?t=${Date.now()}`;
+}
+
 function showApp() {
   hide($('login-screen'));
   show($('app'));
-  // Re-fetch logo — onload/onerror may have fired while #app was hidden or API was starting up
-  const logoImg = document.querySelector('#sidebar-ngo-logo-wrap img');
-  if (logoImg) logoImg.src = `/api/logo?t=${Date.now()}`;
+  _refreshSidebarLogo();
   refreshErrorBadge();
   if (_badgeInterval) clearInterval(_badgeInterval);
   _badgeInterval = setInterval(refreshErrorBadge, 60_000);
@@ -1526,6 +1539,7 @@ async function renderSettings() {
           try {
             await API.logo.delete();
             toast('Logotip je bil odstranjen.');
+            _refreshSidebarLogo(true);
             await _initLogoSection();
           } catch (err) {
             showErr('s-logo-error', err.message);
@@ -1550,6 +1564,7 @@ async function renderSettings() {
           try {
             await API.logo.upload(formData);
             toast('Logotip je bil naložen.');
+            _refreshSidebarLogo(true);
             await _initLogoSection();
           } catch (err) {
             showErr('s-logo-error', err.message);
@@ -1576,6 +1591,7 @@ async function renderSettings() {
           try {
             await API.logo.upload(formData);
             toast('Logotip je bil naložen.');
+            _refreshSidebarLogo(true);
             await _initLogoSection();
           } catch (uploadErr) {
             showErr('s-logo-error', uploadErr.message);
