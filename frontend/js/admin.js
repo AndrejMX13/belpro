@@ -96,6 +96,11 @@ async function renderAdmin() {
         errEl.style.display = 'block';
         return;
       }
+      if (key === 'report_auto_day' && val > 28) {
+        errEl.textContent = 'Dan samodejnega pošiljanja mora biti med 1 in 28.';
+        errEl.style.display = 'block';
+        return;
+      }
     }
 
     // Collect only changed fields

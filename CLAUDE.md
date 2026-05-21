@@ -188,6 +188,10 @@ These must be explicit in `requirements.txt` — transitive resolution gets them
 - `email-validator` — required alongside `pydantic[email]`; omitting it causes an import error at runtime.
 - `pydyf==0.10.0` — required alongside `weasyprint==62.3`; a newer `pydyf` breaks PDF generation silently.
 
+### Alpine / BusyBox quirks
+
+- **`wget` cannot resolve `localhost`** — BusyBox wget in Alpine containers fails DNS lookup for `localhost`. Always use `127.0.0.1` explicitly in Docker healthchecks. Example: `wget -qO /dev/null http://127.0.0.1:9000/health`.
+
 ---
 
 ## Adding a New Feature
