@@ -80,6 +80,16 @@ class AppSettings:
         raw = self._str("report_auto_period", "current") or "current"
         return raw if raw in ("current", "previous") else "current"
 
+    @property
+    def backup_hour(self) -> int:
+        """Hour of day (0–23) at which the daily backup runs."""
+        return max(0, min(self._int("backup_hour", 2), 23))
+
+    @property
+    def photo_cleanup_hour(self) -> int:
+        """Hour of day (0–23) at which the daily photo cleanup runs."""
+        return max(0, min(self._int("photo_cleanup_hour", 3), 23))
+
     # ── passthrough for all other env settings ─────────────────────────────────
 
     def __getattr__(self, name: str) -> object:

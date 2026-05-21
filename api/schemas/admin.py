@@ -12,6 +12,8 @@ class AdminSettingsResponse(BaseModel):
     session_duration_hours: int
     report_auto_day: int
     report_auto_period: str
+    backup_hour: int
+    photo_cleanup_hour: int
 
 
 class AdminSettingsUpdate(BaseModel):
@@ -22,3 +24,5 @@ class AdminSettingsUpdate(BaseModel):
     session_duration_hours: int | None = Field(None, ge=1)
     report_auto_day: int | None = Field(None, ge=1, le=28)
     report_auto_period: str | None = Field(None, pattern="^(current|previous)$")
+    backup_hour: int | None = Field(None, ge=0, le=23)
+    photo_cleanup_hour: int | None = Field(None, ge=0, le=23)

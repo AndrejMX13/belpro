@@ -44,6 +44,14 @@ async function renderAdmin() {
             <option value="previous">Prej&#353;nji mesec</option>
           </select>
         </div>
+        <div class="field">
+          <label for="a-backup-hour">Ura varnostnega kopiranja (0&#8211;23)</label>
+          <input id="a-backup-hour" type="number" min="0" max="23" style="width:100%;max-width:12rem" step="1" />
+        </div>
+        <div class="field">
+          <label for="a-cleanup-hour">Ura &#269;i&#353;&#269;enja fotografij (0&#8211;23)</label>
+          <input id="a-cleanup-hour" type="number" min="0" max="23" style="width:100%;max-width:12rem" step="1" />
+        </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="a-save-btn">Shrani</button>
@@ -64,6 +72,8 @@ async function renderAdmin() {
     $('a-session-duration').value = data.session_duration_hours;
     $('a-report-day').value    = data.report_auto_day;
     $('a-report-period').value = data.report_auto_period;
+    $('a-backup-hour').value   = data.backup_hour;
+    $('a-cleanup-hour').value  = data.photo_cleanup_hour;
 
     $('admin-settings-loading').hidden = true;
     $('admin-settings-form').hidden    = false;
@@ -86,11 +96,22 @@ async function renderAdmin() {
       session_duration_hours: parseInt($('a-session-duration').value, 10),
       report_auto_day:        parseInt($('a-report-day').value, 10),
       report_auto_period:     $('a-report-period').value,
+      backup_hour:            parseInt($('a-backup-hour').value, 10),
+      photo_cleanup_hour:     parseInt($('a-cleanup-hour').value, 10),
     };
 
     // Validate
     for (const [key, val] of Object.entries(current)) {
       if (key === 'report_auto_period') continue;
+      if (key === 'backup_hour' || key === 'photo_cleanup_hour') {
+        if (!Number.isInteger(val) || val < 0 || val > 23) {
+          const label = key === 'backup_hour' ? 'varnostnega kopiranja' : 'čiščenja fotografij';
+          errEl.textContent = `Ura ${label} mora biti med 0 in 23.`;
+          errEl.style.display = 'block';
+          return;
+        }
+        continue;
+      }
       if (!Number.isInteger(val) || val < 1) {
         errEl.textContent = 'Vse vrednosti morajo biti cela števila, večja ali enaka 1.';
         errEl.style.display = 'block';

@@ -36,11 +36,11 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-# Static crontab lines + one dynamic monthly-report line.
+# All four cron lines are dynamic; hours/day/period are runtime-tunable.
 CRONTAB_TEMPLATE = (
     "# m h dom mon dow command\n"
-    "0 2 * * * /app/scripts/backup.sh >> /proc/1/fd/1 2>&1\n"
-    "0 3 * * * /app/scripts/photo_cleanup.py >> /proc/1/fd/1 2>&1\n"
+    "0 {backup_hour} * * * /app/scripts/backup.sh >> /proc/1/fd/1 2>&1\n"
+    "0 {cleanup_hour} * * * /app/scripts/photo_cleanup.py >> /proc/1/fd/1 2>&1\n"
     "0 7 {day} * * /app/scripts/monthly_report_send.py --period {period}"
     " >> /proc/1/fd/1 2>&1\n"
 )
@@ -78,12 +78,17 @@ def reload_crond() -> None:
     os.kill(int(pid_str), signal.SIGHUP)
 
 
-def write_crontab(day: int, period: str) -> None:
+def write_crontab(day: int, period: str, backup_hour: int, cleanup_hour: int) -> None:
     """Write a new crontab to CRONTAB_PATH and reload crond."""
-    content = CRONTAB_TEMPLATE.format(day=day, period=period)
+    content = CRONTAB_TEMPLATE.format(
+        day=day, period=period, backup_hour=backup_hour, cleanup_hour=cleanup_hour
+    )
     CRONTAB_PATH.write_text(content)
     reload_crond()
-    logger.info("Crontab updated: day=%d period=%s", day, period)
+    logger.info(
+        "Crontab updated: day=%d period=%s backup_hour=%d cleanup_hour=%d",
+        day, period, backup_hour, cleanup_hour,
+    )
 
 
 def fetch_settings_from_db() -> dict[str, str]:
@@ -98,7 +103,8 @@ def fetch_settings_from_db() -> dict[str, str]:
             with conn.cursor() as cur:
                 cur.execute(
                     "SELECT name, value FROM settings"
-                    " WHERE name IN ('report_auto_day', 'report_auto_period')"
+                    " WHERE name IN ('report_auto_day', 'report_auto_period',"
+                    " 'backup_hour', 'photo_cleanup_hour')"
                 )
                 rows = {name: value for name, value in cur.fetchall()}
             conn.close()
@@ -149,8 +155,10 @@ class _Handler(BaseHTTPRequestHandler):
         day = max(1, min(raw_day, 28))
         raw_period = str(payload.get("report_auto_period", "current"))
         period = raw_period if raw_period in ("current", "previous") else "current"
+        backup_hour = max(0, min(int(payload.get("backup_hour", 2)), 23))
+        cleanup_hour = max(0, min(int(payload.get("photo_cleanup_hour", 3)), 23))
         try:
-            write_crontab(day, period)
+            write_crontab(day, period, backup_hour, cleanup_hour)
         except Exception as exc:
             logger.error("Crontab update failed: %s", exc)
             report_error("Crontab update failed", str(exc))
@@ -163,9 +171,14 @@ def main() -> None:
     if rows:
         day = int(rows.get("report_auto_day", 28))
         period = rows.get("report_auto_period", "current") or "current"
+        backup_hour = max(0, min(int(rows.get("backup_hour", 2)), 23))
+        cleanup_hour = max(0, min(int(rows.get("photo_cleanup_hour", 3)), 23))
         try:
-            write_crontab(day, period)
-            logger.info("Startup crontab sync complete (day=%d, period=%s).", day, period)
+            write_crontab(day, period, backup_hour, cleanup_hour)
+            logger.info(
+                "Startup crontab sync complete (day=%d, period=%s, backup_hour=%d, cleanup_hour=%d).",
+                day, period, backup_hour, cleanup_hour,
+            )
         except Exception as exc:
             logger.warning("Startup crontab sync failed; baked-in default remains: %s", exc)
     else:
