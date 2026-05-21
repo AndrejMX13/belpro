@@ -168,7 +168,7 @@ services:
       - api_pdfs:/app/pdfs:ro
       - ./backups:/backups
     healthcheck:
-      test: ["CMD-SHELL", "wget -qO /dev/null http://localhost:9000/health || exit 1"]
+      test: ["CMD-SHELL", "wget -qO /dev/null http://127.0.0.1:9000/health || exit 1"]
       interval: 15s
       timeout: 5s
       retries: 3
