@@ -33,6 +33,17 @@ async function renderAdmin() {
           <label for="a-session-duration">Trajanje seje (ure)</label>
           <input id="a-session-duration" type="number" min="1" style="width:100%;max-width:12rem" step="1" />
         </div>
+        <div class="field">
+          <label for="a-report-day">Dan samodejnega po&#353;iljanja poro&#269;il (1&#8211;28)</label>
+          <input id="a-report-day" type="number" min="1" max="28" style="width:100%;max-width:12rem" step="1" />
+        </div>
+        <div class="field">
+          <label for="a-report-period">Obdobje poro&#269;ila</label>
+          <select id="a-report-period" style="width:100%;max-width:16rem">
+            <option value="current">Teko&#269;i mesec</option>
+            <option value="previous">Prej&#353;nji mesec</option>
+          </select>
+        </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="a-save-btn">Shrani</button>
@@ -51,6 +62,8 @@ async function renderAdmin() {
     $('a-max-photos').value      = data.max_photos_per_entry;
     $('a-photo-retention').value = data.photo_retention_days;
     $('a-session-duration').value = data.session_duration_hours;
+    $('a-report-day').value    = data.report_auto_day;
+    $('a-report-period').value = data.report_auto_period;
 
     $('admin-settings-loading').hidden = true;
     $('admin-settings-form').hidden    = false;
@@ -68,13 +81,16 @@ async function renderAdmin() {
     errEl.style.display = 'none';
 
     const current = {
-      max_photos_per_entry:  parseInt($('a-max-photos').value, 10),
-      photo_retention_days:  parseInt($('a-photo-retention').value, 10),
+      max_photos_per_entry:   parseInt($('a-max-photos').value, 10),
+      photo_retention_days:   parseInt($('a-photo-retention').value, 10),
       session_duration_hours: parseInt($('a-session-duration').value, 10),
+      report_auto_day:        parseInt($('a-report-day').value, 10),
+      report_auto_period:     $('a-report-period').value,
     };
 
     // Validate
     for (const [key, val] of Object.entries(current)) {
+      if (key === 'report_auto_period') continue;
       if (!Number.isInteger(val) || val < 1) {
         errEl.textContent = 'Vse vrednosti morajo biti cela števila, večja ali enaka 1.';
         errEl.style.display = 'block';
