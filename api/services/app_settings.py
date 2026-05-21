@@ -69,6 +69,16 @@ class AppSettings:
         """Manager session cookie lifetime in hours."""
         return self._int("session_duration_hours", self._env.session_duration_hours)
 
+    @property
+    def report_auto_day(self) -> int:
+        """Day of month (1–28) on which monthly reports are auto-sent."""
+        return self._int("report_auto_day", 28)
+
+    @property
+    def report_auto_period(self) -> str:
+        """Reporting period: 'current' (this month) or 'previous' (last month)."""
+        return self._str("report_auto_period", "current") or "current"
+
     # ── passthrough for all other env settings ─────────────────────────────────
 
     def __getattr__(self, name: str) -> object:

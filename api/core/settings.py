@@ -39,6 +39,7 @@ class Settings(BaseSettings):
     evolution_instance_name: str = "belpro"
     authentication_api_key: str = ""
     ngo_whatsapp_phone: str = ""
+    ops_url: str = "http://ops:9000"
 
     # ── Uploads ───────────────────────────────────────────────────────────────
     max_photos_per_entry: int = 5
