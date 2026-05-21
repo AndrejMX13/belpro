@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import io
+import logging
 import uuid
 from datetime import date
 from decimal import Decimal
@@ -17,17 +18,20 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from core.auth import require_manager
 from core.settings import get_settings
 from db.session import get_db
+from models.error_log import ErrorLog
 from models.log_entry import EntryStatus, LogEntry
 from models.manager import Manager
 from models.monthly_report import MonthlyReport
 from models.volunteer import Volunteer
 from schemas.report import MonthlyReportSummary, ReportHistoryItem, ReportHistoryList, VolunteerMonthlySummary
-from services.email import SmtpNotConfiguredError, send_email
+from services.email import send_email
 from services.evolution import EvolutionClient
 from services.logo import logo_src
 from services.report_pdf import NGOInfo, render_summary_pdf, render_volunteer_pdf
 from services.report_storage import persist_report
 from utils.phone import normalize_phone
+
+logger = logging.getLogger(__name__)
 
 router = APIRouter(prefix="/reports", tags=["reports"])
 
@@ -273,19 +277,46 @@ async def send_monthly_reports(
                     attachment_filename=filename,
                 )
                 sent_via_email.append(f"{vol.first_name} {vol.last_name} <{vol.email}>")
-            except SmtpNotConfiguredError as exc:
-                raise HTTPException(status_code=503, detail=str(exc)) from exc
             except Exception as exc:  # noqa: BLE001
-                errors.append(f"{vol.first_name} {vol.last_name} (e-pošta): {exc}")
+                detail = f"{vol.first_name} {vol.last_name} (e-pošta): {exc}"
+                logger.error("Report email delivery failed: %s", detail)
+                db.add(ErrorLog(
+                    service="api",
+                    operation="send_monthly_reports",
+                    message="Dostava e-poštnega poročila ni uspela",
+                    detail=detail,
+                ))
+                errors.append(detail)
 
         if will_whatsapp:
             normalized = normalize_phone(vol.phone)
-            if normalized:
+            if not normalized:
+                detail = (
+                    f"{vol.first_name} {vol.last_name} (WhatsApp): "
+                    f"neveljavna telefonska številka '{vol.phone}'"
+                )
+                logger.warning("Invalid phone for WhatsApp report delivery: %s", detail)
+                db.add(ErrorLog(
+                    service="api",
+                    operation="send_monthly_reports",
+                    message="Neveljavna telefonska številka za WhatsApp poročilo",
+                    detail=detail,
+                ))
+                errors.append(detail)
+            else:
                 try:
                     await wa_client.send_document(normalized, pdf_bytes, filename, caption)
                     sent_via_whatsapp.append(f"{vol.first_name} {vol.last_name}")
                 except Exception as exc:  # noqa: BLE001
-                    errors.append(f"{vol.first_name} {vol.last_name} (WhatsApp): {exc}")
+                    detail = f"{vol.first_name} {vol.last_name} (WhatsApp): {exc}"
+                    logger.error("Report WhatsApp delivery failed: %s", detail)
+                    db.add(ErrorLog(
+                        service="api",
+                        operation="send_monthly_reports",
+                        message="Dostava WhatsApp poročila ni uspela",
+                        detail=detail,
+                    ))
+                    errors.append(detail)
 
     # Consolidated PDF → manager
     manager_email_sent = False
@@ -320,21 +351,45 @@ async def send_monthly_reports(
                     attachment_filename=consolidated_filename,
                 )
                 manager_email_sent = True
-            except SmtpNotConfiguredError as exc:
-                raise HTTPException(status_code=503, detail=str(exc)) from exc
             except Exception as exc:  # noqa: BLE001
-                errors.append(f"Upravljalec (e-pošta): {exc}")
+                detail = f"Upravljalec (e-pošta): {exc}"
+                logger.error("Report email delivery to manager failed: %s", detail)
+                db.add(ErrorLog(
+                    service="api",
+                    operation="send_monthly_reports",
+                    message="Dostava e-poštnega poročila upravljalcu ni uspela",
+                    detail=detail,
+                ))
+                errors.append(detail)
 
         if manager_will_whatsapp:
             normalized_mgr = normalize_phone(manager.phone)
-            if normalized_mgr:
+            if not normalized_mgr:
+                detail = f"Upravljalec (WhatsApp): neveljavna telefonska številka '{manager.phone}'"
+                logger.warning("Invalid manager phone for WhatsApp report delivery: %s", detail)
+                db.add(ErrorLog(
+                    service="api",
+                    operation="send_monthly_reports",
+                    message="Neveljavna telefonska številka upravljalca za WhatsApp poročilo",
+                    detail=detail,
+                ))
+                errors.append(detail)
+            else:
                 try:
                     await wa_client.send_document(
                         normalized_mgr, consolidated_bytes, consolidated_filename, mgr_caption
                     )
                     manager_whatsapp_sent = True
                 except Exception as exc:  # noqa: BLE001
-                    errors.append(f"Upravljalec (WhatsApp): {exc}")
+                    detail = f"Upravljalec (WhatsApp): {exc}"
+                    logger.error("Report WhatsApp delivery to manager failed: %s", detail)
+                    db.add(ErrorLog(
+                        service="api",
+                        operation="send_monthly_reports",
+                        message="Dostava WhatsApp poročila upravljalcu ni uspela",
+                        detail=detail,
+                    ))
+                    errors.append(detail)
 
     await db.commit()
 
