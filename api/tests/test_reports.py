@@ -1,9 +1,14 @@
 import uuid
 from decimal import Decimal
 from datetime import date
-from httpx import AsyncClient
+from unittest.mock import AsyncMock, patch
 
+from httpx import AsyncClient
+from sqlalchemy import select
+
+from models.error_log import ErrorLog
 from models.log_entry import EntryStatus
+from services.email import SmtpNotConfiguredError
 from services.report_pdf import NGOInfo, ngo_header_html
 
 
@@ -128,3 +133,106 @@ def test_ngo_header_html_with_logo():
     html = ngo_header_html(ngo)
     assert "<img" in html
     assert "data:image/png;base64,FAKE" in html
+
+
+# ── report delivery error logging ─────────────────────────────────────────────
+
+
+async def test_send_monthly_email_failure_logged(
+    client: AsyncClient, auth: dict, db_session, volunteer_factory, log_entry_factory
+) -> None:
+    """Email delivery failure writes an ErrorLog row and appears in response errors."""
+    v = await volunteer_factory(report_email=True, email="vol@test.si")
+    await log_entry_factory(
+        v.id, work_date=date(2026, 3, 1), hours=Decimal("2.0"), status=EntryStatus.APPROVED
+    )
+
+    with patch("routers.reports.send_email", new_callable=AsyncMock,
+               side_effect=Exception("SMTP connection refused")):
+        r = await client.post("/api/reports/send-monthly?year=2026&month=3", headers=auth)
+
+    assert r.status_code == 200
+    data = r.json()
+    assert any("e-pošta" in e for e in data["errors"])
+    rows = (
+        await db_session.execute(
+            select(ErrorLog).where(ErrorLog.operation == "send_monthly_reports")
+        )
+    ).scalars().all()
+    assert len(rows) >= 1
+    assert any("e-pošta" in (row.detail or "") for row in rows)
+
+
+async def test_send_monthly_whatsapp_failure_logged(
+    client: AsyncClient, auth: dict, db_session, volunteer_factory, log_entry_factory
+) -> None:
+    """WhatsApp delivery failure writes an ErrorLog row and appears in response errors."""
+    v = await volunteer_factory(report_whatsapp=True, phone="+38641111222")
+    await log_entry_factory(
+        v.id, work_date=date(2026, 3, 2), hours=Decimal("2.0"), status=EntryStatus.APPROVED
+    )
+
+    with patch(
+        "services.evolution.EvolutionClient.send_document",
+        new_callable=AsyncMock,
+        side_effect=Exception("Evolution 500"),
+    ):
+        r = await client.post("/api/reports/send-monthly?year=2026&month=3", headers=auth)
+
+    assert r.status_code == 200
+    data = r.json()
+    assert any("WhatsApp" in e for e in data["errors"])
+    rows = (
+        await db_session.execute(
+            select(ErrorLog).where(ErrorLog.operation == "send_monthly_reports")
+        )
+    ).scalars().all()
+    assert len(rows) >= 1
+    assert any("WhatsApp" in (row.detail or "") for row in rows)
+
+
+async def test_send_monthly_smtp_not_configured_does_not_abort_batch(
+    client: AsyncClient, auth: dict, db_session, volunteer_factory, log_entry_factory
+) -> None:
+    """SmtpNotConfiguredError must NOT abort the batch — response is 200 with error in list."""
+    v = await volunteer_factory(report_email=True, email="vol@test.si")
+    await log_entry_factory(
+        v.id, work_date=date(2026, 3, 3), hours=Decimal("2.0"), status=EntryStatus.APPROVED
+    )
+
+    with patch("routers.reports.send_email", new_callable=AsyncMock,
+               side_effect=SmtpNotConfiguredError("SMTP ni konfiguriran")):
+        r = await client.post("/api/reports/send-monthly?year=2026&month=3", headers=auth)
+
+    assert r.status_code == 200
+    data = r.json()
+    assert any("e-pošta" in e for e in data["errors"])
+    rows = (
+        await db_session.execute(
+            select(ErrorLog).where(ErrorLog.operation == "send_monthly_reports")
+        )
+    ).scalars().all()
+    assert len(rows) >= 1
+    assert any("e-pošta" in (row.detail or "") for row in rows)
+
+
+async def test_send_monthly_invalid_phone_logged(
+    client: AsyncClient, auth: dict, db_session, volunteer_factory, log_entry_factory
+) -> None:
+    """Volunteer with WhatsApp enabled but invalid phone gets an error log entry."""
+    v = await volunteer_factory(report_whatsapp=True, phone="not-a-phone")
+    await log_entry_factory(
+        v.id, work_date=date(2026, 3, 4), hours=Decimal("2.0"), status=EntryStatus.APPROVED
+    )
+
+    r = await client.post("/api/reports/send-monthly?year=2026&month=3", headers=auth)
+
+    assert r.status_code == 200
+    data = r.json()
+    assert any("WhatsApp" in e for e in data["errors"])
+    rows = (
+        await db_session.execute(
+            select(ErrorLog).where(ErrorLog.operation == "send_monthly_reports")
+        )
+    ).scalars().all()
+    assert len(rows) >= 1
