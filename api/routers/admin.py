@@ -11,7 +11,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.auth import require_manager
 from core.settings import Settings, get_settings
-from db.session import get_db
+from db.session import AsyncSessionLocal, get_db
 from models.app_setting import AppSetting
 from models.error_log import ErrorLog
 from schemas.admin import AdminSettingsResponse, AdminSettingsUpdate
@@ -21,7 +21,7 @@ router = APIRouter(prefix="/admin", tags=["admin"])
 logger = logging.getLogger(__name__)
 
 
-async def _notify_ops(db: AsyncSession, env: Settings, s: AppSettings) -> None:
+async def _notify_ops(env: Settings, s: AppSettings) -> None:
     """POST /reconfigure to ops. Logs and persists error on failure; never raises."""
     payload = {
         "report_auto_day": s.report_auto_day,
@@ -37,13 +37,14 @@ async def _notify_ops(db: AsyncSession, env: Settings, s: AppSettings) -> None:
             r.raise_for_status()
     except Exception as exc:
         logger.warning("ops notification failed: %s", exc)
-        db.add(ErrorLog(
-            service="api",
-            operation="notify_ops_reconfigure",
-            message="Ops service notification failed",
-            detail=str(exc),
-        ))
-        await db.commit()
+        async with AsyncSessionLocal() as error_session:
+            async with error_session.begin():
+                error_session.add(ErrorLog(
+                    service="api",
+                    operation="notify_ops_reconfigure",
+                    message="Ops service notification failed",
+                    detail=str(exc),
+                ))
 
 
 @router.get(
@@ -101,7 +102,7 @@ async def update_admin_settings(
     s = AppSettings(env, {r.name: r.value for r in rows if r.value is not None})
 
     if updates:
-        await _notify_ops(db, env, s)
+        await _notify_ops(env, s)
 
     return AdminSettingsResponse(
         max_photos_per_entry=s.max_photos_per_entry,
