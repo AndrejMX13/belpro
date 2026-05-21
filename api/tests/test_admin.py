@@ -73,3 +73,32 @@ async def test_patch_settings_ops_failure_does_not_break_save(
 
     assert r.status_code == 200
     assert r.json()["report_auto_day"] == 10
+
+
+async def test_get_settings_returns_backup_retention_default(
+    client: AsyncClient, auth: dict
+) -> None:
+    """GET /api/admin/settings returns default backup_retention_days of 30."""
+    r = await client.get("/api/admin/settings", headers=auth)
+    assert r.status_code == 200
+    assert r.json()["backup_retention_days"] == 30
+
+
+async def test_patch_settings_saves_backup_retention(
+    client: AsyncClient, auth: dict
+) -> None:
+    """PATCH /api/admin/settings persists backup_retention_days."""
+    with patch("routers.admin.httpx.AsyncClient") as MockClient:
+        MockClient.return_value.__aenter__ = AsyncMock(return_value=AsyncMock(
+            post=AsyncMock(return_value=MagicMock(raise_for_status=MagicMock()))
+        ))
+        MockClient.return_value.__aexit__ = AsyncMock(return_value=False)
+
+        r = await client.patch(
+            "/api/admin/settings",
+            json={"backup_retention_days": 14},
+            headers=auth,
+        )
+
+    assert r.status_code == 200
+    assert r.json()["backup_retention_days"] == 14
