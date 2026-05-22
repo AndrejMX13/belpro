@@ -47,6 +47,29 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 - **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje, dan in obdobje samodejne dostave poročil, ura varnostnega kopiranja, ura čiščenja fotografij, obdobje hrambe varnostnih kopij; živi pripomoček za stanje sistema z vsemi storitvami (PostgreSQL, Whisper, n8n, WhatsApp, disk, zadnji vnos) z osvežitvijo vsakih 30 s
 - **Dnevnik napak** — Operacijske napake opravil v ozadju (nočno varnostno kopiranje, čiščenje fotografij) z možnostjo potrditve vsake napake; oznaka v navigacijski vrstici prikazuje število nepotrjenih
 
+<table>
+<tr>
+<td align="center"><a href="docs/images/belpro-prostovoljci.png"><img src="docs/images/belpro-prostovoljci.png" width="360"><br><sub>Prostovoljci</sub></a></td>
+<td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"><br><sub>Prostovoljec (podrobnosti)</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"><br><sub>Dnevniki</sub></a></td>
+<td align="center"><a href="docs/images/belpro-vnos-pregled-urejanje.png"><img src="docs/images/belpro-vnos-pregled-urejanje.png" width="360"><br><sub>Vnos (podrobnosti)</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-analitika.png"><img src="docs/images/belpro-analitika.png" width="360"><br><sub>Analitika</sub></a></td>
+<td align="center"><a href="docs/images/belpro-porocila.png"><img src="docs/images/belpro-porocila.png" width="360"><br><sub>Poročila</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-nastavitve.png"><img src="docs/images/belpro-nastavitve.png" width="360"><br><sub>Nastavitve</sub></a></td>
+<td align="center"><a href="docs/images/belpro-dokumenti.png"><img src="docs/images/belpro-dokumenti.png" width="360"><br><sub>Dokumenti (GDPR)</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-administracija.png"><img src="docs/images/belpro-administracija.png" width="360"><br><sub>Administracija</sub></a></td>
+<td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"><br><sub>Dnevnik napak</sub></a></td>
+</tr>
+</table>
+
 ---
 
 ## Tehnološki sklad (Stack)

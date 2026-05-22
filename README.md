@@ -44,6 +44,29 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 - **System administration** — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration, auto-report delivery day and period, backup hour, photo-cleanup hour, backup retention period; live health widget showing all service states (PostgreSQL, Whisper, n8n, WhatsApp, disk, last entry heartbeat) refreshed every 30 s
 - **Error log (Dnevnik napak)** — Operational errors from background jobs (nightly backup, photo cleanup) shown with per-error acknowledge; nav badge tracks unacknowledged count
 
+<table>
+<tr>
+<td align="center"><a href="docs/images/belpro-prostovoljci.png"><img src="docs/images/belpro-prostovoljci.png" width="360"><br><sub>Volunteers</sub></a></td>
+<td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"><br><sub>Volunteer detail</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"><br><sub>Work diary</sub></a></td>
+<td align="center"><a href="docs/images/belpro-vnos-pregled-urejanje.png"><img src="docs/images/belpro-vnos-pregled-urejanje.png" width="360"><br><sub>Entry detail</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-analitika.png"><img src="docs/images/belpro-analitika.png" width="360"><br><sub>Analytics</sub></a></td>
+<td align="center"><a href="docs/images/belpro-porocila.png"><img src="docs/images/belpro-porocila.png" width="360"><br><sub>Reports</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-nastavitve.png"><img src="docs/images/belpro-nastavitve.png" width="360"><br><sub>Settings</sub></a></td>
+<td align="center"><a href="docs/images/belpro-dokumenti.png"><img src="docs/images/belpro-dokumenti.png" width="360"><br><sub>Documents (GDPR)</sub></a></td>
+</tr>
+<tr>
+<td align="center"><a href="docs/images/belpro-administracija.png"><img src="docs/images/belpro-administracija.png" width="360"><br><sub>Administration</sub></a></td>
+<td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"><br><sub>Error log</sub></a></td>
+</tr>
+</table>
+
 ---
 
 ## Stack
