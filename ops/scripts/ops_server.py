@@ -100,7 +100,7 @@ def write_crontab(
 
 
 def fetch_settings_from_db() -> dict[str, str]:
-    """Read report_auto_day and report_auto_period from the settings table.
+    """Read all runtime-tunable settings from the settings table.
 
     Returns an empty dict on any failure (caller falls back to defaults).
     Retries 3 times with 2-second gaps to handle slow DB startup.
