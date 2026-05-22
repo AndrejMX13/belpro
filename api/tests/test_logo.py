@@ -106,16 +106,29 @@ def test_save_overwrites_existing_logo(tmp_path, monkeypatch):
 
 @pytest.fixture(autouse=False)
 def _clean_logo(tmp_path, monkeypatch):
-    """Redirect logo storage to a temp dir for isolation.
+    """Redirect logo operations to a temporary directory — never touches the real logo file."""
+    from pathlib import Path
+    import services.logo as logo_mod
+    import routers.logo as logo_router
 
-    Never touches the real logo file on disk.
-    """
-    from services import logo as logo_mod
-    test_dir = tmp_path / "logo"
-    test_dir.mkdir()
-    monkeypatch.setattr(logo_mod, "LOGO_DIR", test_dir)
-    monkeypatch.setattr(logo_mod, "LOGO_PATH", test_dir / "logo.png")
+    real_logo = Path("/app/photos/logo/logo.png")
+    existed_before = real_logo.exists()
+
+    tmp_dir = tmp_path / "logo"
+    tmp_dir.mkdir()
+    tmp_logo_path = tmp_dir / "logo.png"
+
+    monkeypatch.setattr(logo_mod, "LOGO_DIR", tmp_dir)
+    monkeypatch.setattr(logo_mod, "LOGO_PATH", tmp_logo_path)
+    monkeypatch.setattr(logo_router, "LOGO_PATH", tmp_logo_path)
+
     yield
+
+    if existed_before and not real_logo.exists():
+        raise AssertionError(
+            f"BUG: Real logo was deleted during this test! "
+            f"LOGO_PATH was patched to {tmp_logo_path}"
+        )
 
 
 @pytest.mark.asyncio

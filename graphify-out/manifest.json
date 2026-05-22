@@ -749,11 +749,6 @@
     "ast_hash": "",
     "semantic_hash": ""
   },
-  "graphify-out\\graph.html": {
-    "mtime": 1779365208.2818277,
-    "ast_hash": "",
-    "semantic_hash": ""
-  },
   "graphify-out\\GRAPH_REPORT.md": {
     "mtime": 1779365191.9028537,
     "ast_hash": "",
@@ -1225,8 +1220,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\volunteers.js": {
-    "mtime": 1779289271.6057954,
-    "ast_hash": "6b7bb62bf3ba61c9e8cecf40ecaca0d5",
+    "mtime": 1779372708.9291952,
+    "ast_hash": "e21693f33af5cfbcb80488251b3ac728",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ops\\scripts\\monthly_report_send.py": {
@@ -2320,8 +2315,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\index.html": {
-    "mtime": 1779287885.7193143,
-    "ast_hash": "0760b294817e82eba3e554f55896973f",
+    "mtime": 1779372670.7462845,
+    "ast_hash": "3727ffb67ae699e40243f1a8f37cb34a",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ops\\requirements.txt": {
