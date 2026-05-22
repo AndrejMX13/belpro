@@ -37,36 +37,46 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za upravljanje celotnega življenjskega cikla prostovoljcev.
 
-- **Prostovoljci** — Registracija, urejanje, aktivacija/deaktivacija prostovoljcev; pregled zgodovine posameznega prostovoljca; preklopniki za kanal poročil (WhatsApp / e-pošta)
-- **Čakajoče odobritve** — Odobritev ali zavrnitev vnosov z enim klikom; sličice fotografij prikazane neposredno v seznamu; dodajanje in odstranjevanje fotografij iz pogleda za odobritev
-- **Dnevnik in zgodovina** — Celoten seznam vnosov z možnostjo iskanja za vsa obdobja; filtriranje po prostovoljcu, mesecu, statusu ali lokaciji; izvoz v CSV
-- **Analitika** — KPI ploščice (ure, aktivni prostovoljci, število vnosov); grafikoni ur po prostovoljcu in po lokaciji; trend za 6 mesecev; izbirnik leta/meseca; izvoz v CSV; tiskalniku prijazna postavitev
-- **Poročila** — Ustvarjanje in prenos mesečnih PDF-jev na zahtevo (po prostovoljcu ali zbirno); pošiljanje poročil po e-pošti ali WhatsAppu na zahtevo ali samodejno prek cron opravila na nastavljiv dan (privzeto 28.) za tekoči ali prejšnji mesec; razdelek Arhiv poročil za pregled in prenos vseh predhodno ustvarjenih poročil
-- **Nastavitve** — Profil vodje, geslo, nastavitev SMTP, prikaz telefonske številke WhatsApp bota, privzeti kanal dostave poročil za nove prostovoljce
-- **Skladnost z GDPR** — Ustvarjanje in prenos dogovora o prostovoljstvu (*Dogovor o prostovoljstvu*) kot PDF pripravljen za tisk, z možnostjo dodatnih klavzul
-- **Administracija** — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje, dan in obdobje samodejne dostave poročil, ura varnostnega kopiranja, ura čiščenja fotografij, obdobje hrambe varnostnih kopij; živi pripomoček za stanje sistema z vsemi storitvami (PostgreSQL, Whisper, n8n, WhatsApp, disk, zadnji vnos) z osvežitvijo vsakih 30 s
-- **Dnevnik napak** — Operacijske napake opravil v ozadju (nočno varnostno kopiranje, čiščenje fotografij) z možnostjo potrditve vsake napake; oznaka v navigacijski vrstici prikazuje število nepotrjenih
-
 <table>
 <tr>
-<td align="center"><a href="docs/images/belpro-prostovoljci.png"><img src="docs/images/belpro-prostovoljci.png" width="360"><br><sub>Prostovoljci</sub></a></td>
-<td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"><br><sub>Prostovoljec (podrobnosti)</sub></a></td>
+<td><b>Prostovoljci</b> — Registracija, urejanje, aktivacija/deaktivacija prostovoljcev; pregled zgodovine posameznega prostovoljca; preklopniki za kanal poročil (WhatsApp / e-pošta)</td>
+<td align="center"><a href="docs/images/belpro-prostovoljci.png"><img src="docs/images/belpro-prostovoljci.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"><br><sub>Dnevniki</sub></a></td>
-<td align="center"><a href="docs/images/belpro-vnos-pregled-urejanje.png"><img src="docs/images/belpro-vnos-pregled-urejanje.png" width="360"><br><sub>Vnos (podrobnosti)</sub></a></td>
+<td><b>Prostovoljec (podrobnosti)</b> — Stran posameznega prostovoljca s kontaktnimi podatki, nastavitvami kanala poročil in osebnim dnevnikom dela.</td>
+<td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-analitika.png"><img src="docs/images/belpro-analitika.png" width="360"><br><sub>Analitika</sub></a></td>
-<td align="center"><a href="docs/images/belpro-porocila.png"><img src="docs/images/belpro-porocila.png" width="360"><br><sub>Poročila</sub></a></td>
+<td><b>Čakajoče odobritve</b> — Odobritev ali zavrnitev vnosov z enim klikom; sličice fotografij prikazane neposredno v seznamu; dodajanje in odstranjevanje fotografij iz pogleda za odobritev<br><br><b>Dnevnik in zgodovina</b> — Celoten seznam vnosov z možnostjo iskanja za vsa obdobja; filtriranje po prostovoljcu, mesecu, statusu ali lokaciji; izvoz v CSV</td>
+<td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-nastavitve.png"><img src="docs/images/belpro-nastavitve.png" width="360"><br><sub>Nastavitve</sub></a></td>
-<td align="center"><a href="docs/images/belpro-dokumenti.png"><img src="docs/images/belpro-dokumenti.png" width="360"><br><sub>Dokumenti (GDPR)</sub></a></td>
+<td><b>Vnos (podrobnosti)</b> — Podroben pogled na vnos z opisom dela, prepisom glasovnega sporočila, lokacijo in priloženimi fotografijami.</td>
+<td align="center"><a href="docs/images/belpro-vnos-pregled-urejanje.png"><img src="docs/images/belpro-vnos-pregled-urejanje.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-administracija.png"><img src="docs/images/belpro-administracija.png" width="360"><br><sub>Administracija</sub></a></td>
-<td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"><br><sub>Dnevnik napak</sub></a></td>
+<td><b>Analitika</b> — KPI ploščice (ure, aktivni prostovoljci, število vnosov); grafikoni ur po prostovoljcu in po lokaciji; trend za 6 mesecev; izbirnik leta/meseca; izvoz v CSV; tiskalniku prijazna postavitev</td>
+<td align="center"><a href="docs/images/belpro-analitika.png"><img src="docs/images/belpro-analitika.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Poročila</b> — Ustvarjanje in prenos mesečnih PDF-jev na zahtevo (po prostovoljcu ali zbirno); pošiljanje poročil po e-pošti ali WhatsAppu na zahtevo ali samodejno prek cron opravila na nastavljiv dan (privzeto 28.) za tekoči ali prejšnji mesec; razdelek Arhiv poročil za pregled in prenos vseh predhodno ustvarjenih poročil</td>
+<td align="center"><a href="docs/images/belpro-porocila.png"><img src="docs/images/belpro-porocila.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Nastavitve</b> — Profil vodje, geslo, nastavitev SMTP, prikaz telefonske številke WhatsApp bota, privzeti kanal dostave poročil za nove prostovoljce</td>
+<td align="center"><a href="docs/images/belpro-nastavitve.png"><img src="docs/images/belpro-nastavitve.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Skladnost z GDPR</b> — Ustvarjanje in prenos dogovora o prostovoljstvu (<em>Dogovor o prostovoljstvu</em>) kot PDF pripravljen za tisk, z možnostjo dodatnih klavzul</td>
+<td align="center"><a href="docs/images/belpro-dokumenti.png"><img src="docs/images/belpro-dokumenti.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Administracija</b> — Nastavitve, nastavljive med delovanjem brez ponovnega zagona vsebnika: omejitev fotografij na vnos, obdobje hrambe fotografij, trajanje seje, dan in obdobje samodejne dostave poročil, ura varnostnega kopiranja, ura čiščenja fotografij, obdobje hrambe varnostnih kopij; živi pripomoček za stanje sistema z vsemi storitvami (PostgreSQL, Whisper, n8n, WhatsApp, disk, zadnji vnos) z osvežitvijo vsakih 30 s</td>
+<td align="center"><a href="docs/images/belpro-administracija.png"><img src="docs/images/belpro-administracija.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Dnevnik napak</b> — Operacijske napake opravil v ozadju (nočno varnostno kopiranje, čiščenje fotografij) z možnostjo potrditve vsake napake; oznaka v navigacijski vrstici prikazuje število nepotrjenih</td>
+<td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"></a></td>
 </tr>
 </table>
 

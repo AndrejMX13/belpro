@@ -34,36 +34,46 @@ Volunteers log work via **WhatsApp** (voice notes, photos, or text). A manager r
 
 The web dashboard (`http://localhost:80`) is the manager's control centre for the full volunteer lifecycle.
 
-- **Volunteers** — Register, edit, activate/deactivate volunteers; per-volunteer history view; per-volunteer report channel toggles (WhatsApp / email)
-- **Pending approvals** — One-click approve or reject for entries awaiting manager review; photo thumbnails shown inline; add or remove photos directly from the approval view
-- **Log & history** — Full searchable entry log across all periods; filter by volunteer, month, status, or location; CSV export
-- **Analytics** — KPI tiles (hours, active volunteers, entry counts); hours-per-volunteer and hours-per-location charts; 6-month trend; year/month navigator; CSV export; print-friendly layout
-- **Reports** — Generate and download monthly PDFs on demand (per volunteer or consolidated); send reports by email or WhatsApp on demand or let the automated cron handle delivery on a configurable day (default: 28th) covering either the current or previous month; Arhiv poročil section for browsing and downloading all previously generated reports
-- **Settings** — Manager profile, password, SMTP configuration, WhatsApp bot phone display, report delivery defaults for new volunteers
-- **GDPR compliance** — Generate and download the volunteer consent agreement (*Dogovor o prostovoljstvu*) as a ready-to-print PDF, with optional additional clauses
-- **System administration** — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration, auto-report delivery day and period, backup hour, photo-cleanup hour, backup retention period; live health widget showing all service states (PostgreSQL, Whisper, n8n, WhatsApp, disk, last entry heartbeat) refreshed every 30 s
-- **Error log (Dnevnik napak)** — Operational errors from background jobs (nightly backup, photo cleanup) shown with per-error acknowledge; nav badge tracks unacknowledged count
-
 <table>
 <tr>
-<td align="center"><a href="docs/images/belpro-prostovoljci.png"><img src="docs/images/belpro-prostovoljci.png" width="360"><br><sub>Volunteers</sub></a></td>
-<td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"><br><sub>Volunteer detail</sub></a></td>
+<td><b>Volunteers</b> — Register, edit, activate/deactivate volunteers; per-volunteer history view; per-volunteer report channel toggles (WhatsApp / email)</td>
+<td align="center"><a href="docs/images/belpro-prostovoljci.png"><img src="docs/images/belpro-prostovoljci.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"><br><sub>Work diary</sub></a></td>
-<td align="center"><a href="docs/images/belpro-vnos-pregled-urejanje.png"><img src="docs/images/belpro-vnos-pregled-urejanje.png" width="360"><br><sub>Entry detail</sub></a></td>
+<td><b>Volunteer detail</b> — Per-volunteer page with contact info, report channel preferences, and personal work diary.</td>
+<td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-analitika.png"><img src="docs/images/belpro-analitika.png" width="360"><br><sub>Analytics</sub></a></td>
-<td align="center"><a href="docs/images/belpro-porocila.png"><img src="docs/images/belpro-porocila.png" width="360"><br><sub>Reports</sub></a></td>
+<td><b>Pending approvals</b> — One-click approve or reject for entries awaiting manager review; photo thumbnails shown inline; add or remove photos directly from the approval view<br><br><b>Log & history</b> — Full searchable entry log across all periods; filter by volunteer, month, status, or location; CSV export</td>
+<td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-nastavitve.png"><img src="docs/images/belpro-nastavitve.png" width="360"><br><sub>Settings</sub></a></td>
-<td align="center"><a href="docs/images/belpro-dokumenti.png"><img src="docs/images/belpro-dokumenti.png" width="360"><br><sub>Documents (GDPR)</sub></a></td>
+<td><b>Entry detail</b> — Full entry view with work description, voice transcript, location, and attached photos.</td>
+<td align="center"><a href="docs/images/belpro-vnos-pregled-urejanje.png"><img src="docs/images/belpro-vnos-pregled-urejanje.png" width="360"></a></td>
 </tr>
 <tr>
-<td align="center"><a href="docs/images/belpro-administracija.png"><img src="docs/images/belpro-administracija.png" width="360"><br><sub>Administration</sub></a></td>
-<td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"><br><sub>Error log</sub></a></td>
+<td><b>Analytics</b> — KPI tiles (hours, active volunteers, entry counts); hours-per-volunteer and hours-per-location charts; 6-month trend; year/month navigator; CSV export; print-friendly layout</td>
+<td align="center"><a href="docs/images/belpro-analitika.png"><img src="docs/images/belpro-analitika.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Reports</b> — Generate and download monthly PDFs on demand (per volunteer or consolidated); send reports by email or WhatsApp on demand or let the automated cron handle delivery on a configurable day (default: 28th) covering either the current or previous month; Arhiv poročil section for browsing and downloading all previously generated reports</td>
+<td align="center"><a href="docs/images/belpro-porocila.png"><img src="docs/images/belpro-porocila.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Settings</b> — Manager profile, password, SMTP configuration, WhatsApp bot phone display, report delivery defaults for new volunteers</td>
+<td align="center"><a href="docs/images/belpro-nastavitve.png"><img src="docs/images/belpro-nastavitve.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>GDPR compliance</b> — Generate and download the volunteer consent agreement (<em>Dogovor o prostovoljstvu</em>) as a ready-to-print PDF, with optional additional clauses</td>
+<td align="center"><a href="docs/images/belpro-dokumenti.png"><img src="docs/images/belpro-dokumenti.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>System administration</b> — Runtime-tunable settings without a container restart: photo limit per entry, photo retention period, session duration, auto-report delivery day and period, backup hour, photo-cleanup hour, backup retention period; live health widget showing all service states (PostgreSQL, Whisper, n8n, WhatsApp, disk, last entry heartbeat) refreshed every 30 s</td>
+<td align="center"><a href="docs/images/belpro-administracija.png"><img src="docs/images/belpro-administracija.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Error log (Dnevnik napak)</b> — Operational errors from background jobs (nightly backup, photo cleanup) shown with per-error acknowledge; nav badge tracks unacknowledged count</td>
+<td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"></a></td>
 </tr>
 </table>
 
