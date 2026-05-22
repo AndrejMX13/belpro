@@ -137,7 +137,7 @@ async def generate_monthly_pdf(
         postal_code=manager.ngo_postal_code,
         city=manager.ngo_city,
         phone=manager.phone,
-        email=manager.email,
+        email=manager.smtp_user,
         ngo_davcna=manager.ngo_davcna,
         logo_path=logo_src(),
     )
@@ -157,7 +157,7 @@ async def generate_monthly_pdf(
                 func.extract("month", LogEntry.work_date) == month,
                 LogEntry.status == EntryStatus.APPROVED,
             )
-            .order_by(LogEntry.work_date)
+            .order_by(LogEntry.work_date.desc())
         )
         entries = (await db.execute(entries_stmt)).scalars().all()
         pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_name, year, month, entries, ngo=ngo)
@@ -210,7 +210,7 @@ async def send_monthly_reports(
         postal_code=manager.ngo_postal_code,
         city=manager.ngo_city,
         phone=manager.phone,
-        email=manager.email,
+        email=manager.smtp_user,
         ngo_davcna=manager.ngo_davcna,
         logo_path=logo_src(),
     )
@@ -234,7 +234,7 @@ async def send_monthly_reports(
                         func.extract("year", LogEntry.work_date) == y,
                         func.extract("month", LogEntry.work_date) == m,
                         LogEntry.status == EntryStatus.APPROVED,
-                    ).order_by(LogEntry.work_date)
+                    ).order_by(LogEntry.work_date.desc())
                 )
             )
             .scalars()
