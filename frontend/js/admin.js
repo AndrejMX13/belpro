@@ -45,6 +45,10 @@ async function renderAdmin() {
           </select>
         </div>
         <div class="field">
+          <label for="a-report-hour">Ura samodejnega po&#353;iljanja poro&#269;il (0&#8211;23)</label>
+          <input id="a-report-hour" type="number" min="0" max="23" style="width:100%;max-width:12rem" step="1" />
+        </div>
+        <div class="field">
           <label for="a-backup-hour">Ura varnostnega kopiranja (0&#8211;23)</label>
           <input id="a-backup-hour" type="number" min="0" max="23" style="width:100%;max-width:12rem" step="1" />
         </div>
@@ -76,6 +80,7 @@ async function renderAdmin() {
     $('a-session-duration').value = data.session_duration_hours;
     $('a-report-day').value    = data.report_auto_day;
     $('a-report-period').value = data.report_auto_period;
+    $('a-report-hour').value   = data.report_auto_hour;
     $('a-backup-hour').value   = data.backup_hour;
     $('a-cleanup-hour').value  = data.photo_cleanup_hour;
     $('a-backup-retention').value = data.backup_retention_days;
@@ -101,6 +106,7 @@ async function renderAdmin() {
       session_duration_hours: parseInt($('a-session-duration').value, 10),
       report_auto_day:        parseInt($('a-report-day').value, 10),
       report_auto_period:     $('a-report-period').value,
+      report_auto_hour:       parseInt($('a-report-hour').value, 10),
       backup_hour:            parseInt($('a-backup-hour').value, 10),
       photo_cleanup_hour:     parseInt($('a-cleanup-hour').value, 10),
       backup_retention_days:  parseInt($('a-backup-retention').value, 10),
@@ -109,10 +115,14 @@ async function renderAdmin() {
     // Validate
     for (const [key, val] of Object.entries(current)) {
       if (key === 'report_auto_period') continue;
-      if (key === 'backup_hour' || key === 'photo_cleanup_hour') {
+      if (key === 'backup_hour' || key === 'photo_cleanup_hour' || key === 'report_auto_hour') {
         if (!Number.isInteger(val) || val < 0 || val > 23) {
-          const label = key === 'backup_hour' ? 'varnostnega kopiranja' : 'čiščenja fotografij';
-          errEl.textContent = `Ura ${label} mora biti med 0 in 23.`;
+          const labels = {
+            backup_hour: 'varnostnega kopiranja',
+            photo_cleanup_hour: 'čiščenja fotografij',
+            report_auto_hour: 'pošiljanja poročil',
+          };
+          errEl.textContent = `Ura ${labels[key]} mora biti med 0 in 23.`;
           errEl.style.display = 'block';
           return;
         }
