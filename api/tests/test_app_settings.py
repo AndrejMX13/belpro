@@ -252,3 +252,45 @@ async def test_login_cookie_max_age_reflects_db_session_duration(
     assert "max-age=7200" in set_cookie.lower(), (
         f"Expected max-age=7200 in Set-Cookie, got: {set_cookie}"
     )
+
+
+# ── report_auto_hour tests ────────────────────────────────────────────────────
+
+def test_appsettings_report_auto_hour_default() -> None:
+    """report_auto_hour defaults to 7 when no DB row exists."""
+    from core.settings import get_settings
+    from services.app_settings import AppSettings
+
+    env = get_settings()
+    s = AppSettings(env, {})
+    assert s.report_auto_hour == 7
+
+
+def test_appsettings_report_auto_hour_from_db() -> None:
+    """report_auto_hour reads the DB value when present."""
+    from core.settings import get_settings
+    from services.app_settings import AppSettings
+
+    env = get_settings()
+    s = AppSettings(env, {"report_auto_hour": "9"})
+    assert s.report_auto_hour == 9
+
+
+def test_appsettings_report_auto_hour_clamped_high() -> None:
+    """report_auto_hour clamps values above 23 to 23."""
+    from core.settings import get_settings
+    from services.app_settings import AppSettings
+
+    env = get_settings()
+    s = AppSettings(env, {"report_auto_hour": "99"})
+    assert s.report_auto_hour == 23
+
+
+def test_appsettings_report_auto_hour_clamped_low() -> None:
+    """report_auto_hour clamps negative values to 0."""
+    from core.settings import get_settings
+    from services.app_settings import AppSettings
+
+    env = get_settings()
+    s = AppSettings(env, {"report_auto_hour": "-5"})
+    assert s.report_auto_hour == 0

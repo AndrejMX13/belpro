@@ -91,6 +91,11 @@ class AppSettings:
         return max(0, min(self._int("photo_cleanup_hour", 3), 23))
 
     @property
+    def report_auto_hour(self) -> int:
+        """Hour of day (0–23) at which the monthly report cron fires."""
+        return max(0, min(self._int("report_auto_hour", 7), 23))
+
+    @property
     def backup_retention_days(self) -> int:
         """Number of days local backup archives are kept before pruning."""
         return max(1, self._int("backup_retention_days", 30))
