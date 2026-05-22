@@ -105,12 +105,17 @@ def test_save_overwrites_existing_logo(tmp_path, monkeypatch):
 # ── integration tests: logo endpoints ─────────────────────────────────────────
 
 @pytest.fixture(autouse=False)
-def _clean_logo():
-    """Delete logo before and after each endpoint test for isolation."""
+def _clean_logo(tmp_path, monkeypatch):
+    """Redirect logo storage to a temp dir for isolation.
+
+    Never touches the real logo file on disk.
+    """
     from services import logo as logo_mod
-    logo_mod.LOGO_PATH.unlink(missing_ok=True)
+    test_dir = tmp_path / "logo"
+    test_dir.mkdir()
+    monkeypatch.setattr(logo_mod, "LOGO_DIR", test_dir)
+    monkeypatch.setattr(logo_mod, "LOGO_PATH", test_dir / "logo.png")
     yield
-    logo_mod.LOGO_PATH.unlink(missing_ok=True)
 
 
 @pytest.mark.asyncio
