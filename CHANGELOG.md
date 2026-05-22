@@ -6,6 +6,27 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.11.1-beta.0] — 2026-05-22
+
+### Added
+- **Configurable auto-report schedule:** `report_auto_day` (1–28), `report_auto_period` (current/previous month), and `report_auto_hour` (0–23) settings in Sistemske nastavitve. The ops sidecar crontab is regenerated immediately on save — no container restart needed. (`api/services/app_settings.py`, `api/routers/admin.py`, `ops/scripts/ops_server.py`, `ops/scripts/monthly_report_send.py`, `frontend/js/admin.js`)
+- **Configurable backup and cleanup hours:** `backup_hour` and `photo_cleanup_hour` settings in Sistemske nastavitve; ops crontab regenerated on save.
+- **Configurable backup retention:** `backup_retention_days` setting in Sistemske nastavitve; passed as CLI argument to `backup.sh` via the regenerated crontab.
+- **Ops notification server:** `ops/scripts/ops_server.py` — lightweight HTTP server on port 9000 inside the ops container. Receives `POST /reconfigure` from the API and regenerates the crontab without a container restart. Wired into `docker-compose.yml` with a healthcheck. (`ops/scripts/ops_server.py`)
+- **Report delivery error visibility:** send failures (MX check, SMTP errors) logged to Docker logs and recorded in Dnevnik napak. (`api/routers/reports.py`, n8n `monthly_reports` workflow)
+- **Dashboard screenshot gallery:** README and README_SL now include a screenshot for every dashboard page.
+
+### Fixed
+- Logo sidebar: probe `<img>` used to prevent transient load failures hiding the sidebar logo.
+- PDF header: NGO email now shown; entries sorted newest-first. (`api/services/report_pdf.py`)
+- Report delivery: MX check before send; PDF archived only on successful delivery; clearer error messages. (`api/routers/reports.py`)
+- Ops healthcheck: `127.0.0.1` instead of `localhost` — BusyBox wget cannot resolve `localhost` via DNS. (`docker-compose.yml`)
+- EMSO key rotation: guard against restoring pre-rotation backups with wrong key. (`scripts/rotate_emso_key.sh`)
+- n8n `monthly_reports` workflow: corrected field names in summary Code node.
+- Logo integration tests isolated to `tmp_path` via monkeypatch — never touch the real logo file. (`api/tests/test_logo.py`)
+
+---
+
 ## [0.11.0-beta.0] — 2026-05-20
 
 ### Added

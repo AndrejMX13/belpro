@@ -137,7 +137,21 @@ Photos are stored in a separate `log_entry_photos` table (see below) — multipl
 | type | TEXT | Value type hint: `'int'`, `'bool'`, `'text'`, `'json'` |
 | value | TEXT | Stored value (nullable — falls back to env default when absent) |
 
-Seeded on first migration with three rows: `max_photos_per_entry` (default `5`), `photo_retention_days` (default `730`), `session_duration_hours` (default `24`). All runtime-tunable values live here rather than being hardcoded or read exclusively from `.env`. See `AppSettings` service and `GET/PATCH /api/admin/settings`.
+Seeded on first migration with the following rows (all runtime-tunable via the Administracija page):
+
+| Name | Default | Description |
+|------|---------|-------------|
+| `max_photos_per_entry` | `5` | Maximum photos a volunteer may attach per entry |
+| `photo_retention_days` | `730` | Days to keep stored photos before cleanup |
+| `session_duration_hours` | `24` | Manager session cookie lifetime |
+| `report_auto_day` | `28` | Day of month (1–28) the auto-report cron fires |
+| `report_auto_period` | `current` | Report period: `current` or `previous` month |
+| `report_auto_hour` | `7` | Hour (0–23) the auto-report cron fires |
+| `backup_hour` | `2` | Hour (0–23) the nightly backup cron fires |
+| `photo_cleanup_hour` | `3` | Hour (0–23) the nightly photo cleanup cron fires |
+| `backup_retention_days` | `30` | Days to keep backup archives |
+
+All values live in the DB (DB-first, env-fallback via `AppSettings` service). See `GET/PATCH /api/admin/settings`.
 
 ### `error_log`
 | Field | Type | Notes |
@@ -291,8 +305,14 @@ Runtime-tunable operational settings. Changes take effect immediately without a 
 - **Največje število fotografij na vnos** (`max_photos_per_entry`) — maximum photos a volunteer may attach to a single entry; enforced at the API level on upload
 - **Hranjenje fotografij (dni)** (`photo_retention_days`) — retention window for stored photos; used by the scheduled cleanup job
 - **Trajanje seje (ure)** (`session_duration_hours`) — manager session cookie lifetime
+- **Dan samodejnega pošiljanja poročil** (`report_auto_day`, 1–28) — day of month the auto-report cron fires
+- **Obdobje poročila** (`report_auto_period`) — `current` (tekoči mesec) or `previous` (prejšnji mesec)
+- **Ura samodejnega pošiljanja poročil** (`report_auto_hour`, 0–23) — hour the auto-report cron fires
+- **Ura varnostnega kopiranja** (`backup_hour`, 0–23) — hour the nightly backup cron fires
+- **Ura čiščenja fotografij** (`photo_cleanup_hour`, 0–23) — hour the nightly photo cleanup cron fires
+- **Hranjenje varnostnih kopij (dni)** (`backup_retention_days`) — how long backup archives are kept; passed as CLI argument to `backup.sh`
 
-Values are stored in the `settings` table via the `AppSettings` service and exposed through `GET/PATCH /api/admin/settings`. The service falls back to `.env` defaults when a DB row is absent, so the system works correctly before any value is explicitly set.
+All values are stored in the `settings` table via the `AppSettings` service and exposed through `GET/PATCH /api/admin/settings`. Changes take effect immediately: the API POSTs a `POST /reconfigure` to the ops notification server (port 9000), which regenerates the crontab and reloads crond — no container restart needed. The service falls back to env defaults when a DB row is absent.
 
 The page also shows a **live system health widget** — a summary of all service states (PostgreSQL response time, Whisper, n8n, WhatsApp connection, disk free space, last heartbeat entry) refreshed every 30 seconds via `GET /api/health/detailed`. The `/api/health` endpoint remains separate (simple up/down, used by Docker healthcheck) and is never blocked by the detailed check.
 
@@ -458,7 +478,7 @@ belpro/
 - Target: any Linux host (local dev machine, VPS, on-premise server).
 - **Local development:** Windows 10 with WSL2 + Docker Desktop. All `docker compose` commands and shell scripts run inside WSL2 (Ubuntu). Do not assume native Windows paths or tooling.
 - Services: `postgres`, `n8n`, `whisper`, `api`, `frontend` (nginx), `evolution-api`, `ops`.
-- The `ops` sidecar (Alpine/Python) runs two scheduled jobs: daily DB + photo backup at 02:00 (configurable via `BACKUP_RETENTION_DAYS`), and nightly photo cleanup at 03:00 using the `photo_retention_days` setting. Job failures are reported via `POST /api/errors` and appear in the Dnevnik napak dashboard page.
+- The `ops` sidecar (Alpine/Python) runs three components: (1) a daily DB + photo backup, (2) a nightly photo cleanup job, and (3) `ops_server.py` — a lightweight HTTP server on port 9000 that receives `POST /reconfigure` from the API and regenerates the crontab (including backup hour, cleanup hour, report schedule, and retention period) without a container restart. All cron schedule settings are configurable from the Administracija page. Job failures are reported via `POST /api/errors` and appear in the Dnevnik napak dashboard page.
 - All configuration via `.env` file.
 - `setup.sh` guides initial configuration (manager credentials, Gmail, WhatsApp number linking).
 - No Kubernetes, no cloud-specific dependencies.

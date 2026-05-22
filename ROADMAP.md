@@ -31,11 +31,14 @@ This page shows what's coming before the first stable release and what has alrea
 
 ### Polish
 - ✓ NGO logo appears on the dashboard and on all printed documents
-- Documentation includes screenshots, example conversations, and a sample report
+- ✓ Dashboard screenshots added to documentation
+- ✓ Example PDF reports added to documentation (consolidated manager report + per-volunteer CSD report)
 
 ---
 
 ## Done
+
+- v0.11.1-beta — configurable cron schedule (report day/period/hour, backup hour, cleanup hour, retention period) from admin UI without container restart; ops notification server; report delivery error visibility; dashboard screenshot gallery in README
 
 - v0.11.0-beta — ops sidecar (automated nightly backup + photo cleanup), error log with dashboard notifications, live health widget on the admin page, GDPR consent PDF, settings table with runtime-tunable config, n8n photo confirmation fixes
 

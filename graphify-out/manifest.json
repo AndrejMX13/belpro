@@ -775,8 +775,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\main.py": {
-    "mtime": 1779290593.9429357,
-    "ast_hash": "285ff7685008ffc852c3e220e5b9a0c7",
+    "mtime": 1779448813.7204022,
+    "ast_hash": "61657f94e5d7ed295cd216a77b81e8f5",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\core\\auth.py": {
@@ -915,8 +915,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\admin.py": {
-    "mtime": 1779368449.552855,
-    "ast_hash": "5591079800d1cb03264e9b8fe873b6a1",
+    "mtime": 1779440265.0208266,
+    "ast_hash": "545c31d34d3cf562313e31a87dbdab4e",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\analytics.py": {
@@ -955,8 +955,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\reports.py": {
-    "mtime": 1779351977.8628335,
-    "ast_hash": "fd4451fd206940eb9493a1276545b6b7",
+    "mtime": 1779438791.484842,
+    "ast_hash": "37ccc91734d080cc0f8ca71d9b8cecb2",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\routers\\volunteers.py": {
@@ -970,8 +970,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\admin.py": {
-    "mtime": 1779368352.873362,
-    "ast_hash": "04ee48137245f294271099024b8bfdf0",
+    "mtime": 1779440244.8716085,
+    "ast_hash": "2b813b4d0e654e85d9ea16547289da12",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\schemas\\analytics.py": {
@@ -1020,8 +1020,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\app_settings.py": {
-    "mtime": 1779368348.3842168,
-    "ast_hash": "228133a312b0db608e99d4313457187f",
+    "mtime": 1779440032.146211,
+    "ast_hash": "e7fd86fb04b15d6a7bdf8b2012e5da55",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\services\\consent_pdf.py": {
@@ -1065,13 +1065,13 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\conftest.py": {
-    "mtime": 1778338780.7224505,
-    "ast_hash": "7ff1aa5398b4d71eb47098b19d3b58aa",
+    "mtime": 1779445615.9893842,
+    "ast_hash": "b1842b80c942017027b5c30f30ba2fde",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_admin.py": {
-    "mtime": 1779368509.0730698,
-    "ast_hash": "93b7eb68e4b368847d2e0b5897bd2a41",
+    "mtime": 1779440220.092024,
+    "ast_hash": "8d0a208e38bed6dc5006490749c72b82",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_analytics.py": {
@@ -1080,8 +1080,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_app_settings.py": {
-    "mtime": 1779272262.7157054,
-    "ast_hash": "0931449bc227eb28673d0d6e89ad3c6d",
+    "mtime": 1779440027.0799124,
+    "ast_hash": "fbc685f7b525a4b4200d39c7418d064f",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_auth.py": {
@@ -1120,8 +1120,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_logo.py": {
-    "mtime": 1779199598.827739,
-    "ast_hash": "b6e3e8f3ef01d2fd2809569944f36b54",
+    "mtime": 1779444807.0469837,
+    "ast_hash": "4bb09b5bef6bdcd3726f7983dada23dd",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\tests\\test_log_entries.py": {
@@ -1190,8 +1190,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\admin.js": {
-    "mtime": 1779368767.9530573,
-    "ast_hash": "7f912b6d8ab4a800228e527685d51913",
+    "mtime": 1779440782.8020484,
+    "ast_hash": "048a6dbed8a5d7b85c7940d852b4d3a7",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\frontend\\js\\analytics.js": {
@@ -1230,8 +1230,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ops\\scripts\\ops_server.py": {
-    "mtime": 1779368659.603927,
-    "ast_hash": "bf033c13a12ad3c23b8a7d01eab9e2a2",
+    "mtime": 1779440936.2088766,
+    "ast_hash": "643d4218d123df432ee587bec9a52a7e",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ops\\scripts\\photo_cleanup.py": {
@@ -1425,8 +1425,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CHANGELOG.md": {
-    "mtime": 1779290621.1551661,
-    "ast_hash": "9e5de234d805003072398615aa37370a",
+    "mtime": 1779449005.2538652,
+    "ast_hash": "8e8746452263b4d317a2bc05d55215f7",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CLAUDE.md": {
@@ -1460,18 +1460,18 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README.md": {
-    "mtime": 1779368835.4831889,
-    "ast_hash": "8e853c4616e1cedae2b0239d842458dd",
+    "mtime": 1779448148.604658,
+    "ast_hash": "c882fe3bb8a252053490d1182d3b8b10",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README_SL.md": {
-    "mtime": 1779368841.6595397,
-    "ast_hash": "5826d56718195ac41ad6cd258ba1307e",
+    "mtime": 1779448195.0619187,
+    "ast_hash": "e04a6b48c3e4e4e894ce534b55379ea5",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ROADMAP.md": {
-    "mtime": 1779290797.4130197,
-    "ast_hash": "b6ca4e1fc4cf572f9205a2111c6f8027",
+    "mtime": 1779449084.0967886,
+    "ast_hash": "36aa62c388a0261a21d131cea29d075d",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SECURITY.md": {
@@ -1480,8 +1480,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC.md": {
-    "mtime": 1779290008.7902,
-    "ast_hash": "4dbc5abc25de701ee6a4f2c3a42928f9",
+    "mtime": 1779449061.286754,
+    "ast_hash": "39576694f7e982dfeadff30c22ec5369",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC_SL.md": {
@@ -2382,6 +2382,71 @@
   "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\diagrams\\fig3_reporting.png": {
     "mtime": 1777805010.294409,
     "ast_hash": "2a7e460a8f3490b16b3b74e76c5ab1cb",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\db\\migrations\\versions\\014_seed_report_auto_hour.py": {
+    "mtime": 1779440561.163859,
+    "ast_hash": "814793398a5b9d06e42a87cc4e5d48de",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\plans\\2026-05-22-report-auto-hour.md": {
+    "mtime": 1779439786.7458787,
+    "ast_hash": "1211c3ba9ab74f3ab468575730c882a7",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\specs\\2026-05-22-report-auto-hour-design.md": {
+    "mtime": 1779439382.6849275,
+    "ast_hash": "9b971e24b5cb7f1ce0550de706756c53",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-administracija.png": {
+    "mtime": 1779446009.5173547,
+    "ast_hash": "fd1fa47745f96e5b897ac8c1b19a06a4",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-analitika.png": {
+    "mtime": 1779436739.4150906,
+    "ast_hash": "b76cf6abf3f6cdcf956d2aade6595000",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-dnevnik-napak.png": {
+    "mtime": 1779437270.3712974,
+    "ast_hash": "67b3fd2e376e10658cb2e1606b1cada7",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-dnevniki.png": {
+    "mtime": 1779436616.1357121,
+    "ast_hash": "945e324c49c93ab4ff852abe3c837afd",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-dokumenti.png": {
+    "mtime": 1779437129.7384496,
+    "ast_hash": "83721d8d2b8c8d7222d655c4318d1f69",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-nastavitve.png": {
+    "mtime": 1779437038.0602696,
+    "ast_hash": "9c858f2d40a07f7dcad8428b55ac4666",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-porocila.png": {
+    "mtime": 1779437619.0522628,
+    "ast_hash": "e7fc07f0cce92b0ccc9862502cdf6c18",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-prostovoljci.png": {
+    "mtime": 1779436367.4741886,
+    "ast_hash": "d25c4f59873ae3cad731aadb7c287aad",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-prostovoljec.png": {
+    "mtime": 1779436534.5166452,
+    "ast_hash": "40426c7e3853d48d58bf16c7c9354853",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-vnos-pregled-urejanje.png": {
+    "mtime": 1779436694.7992482,
+    "ast_hash": "c8d4c51dfcd77e3137a4004ddf4dae80",
     "semantic_hash": ""
   }
 }

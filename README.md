@@ -77,6 +77,11 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 </tr>
 </table>
 
+### Sample PDF reports
+
+- [Monthly report — example (May 2026)](docs/images/porocilo_2026_05-primer.pdf) — consolidated monthly report sent to the manager
+- [Per-volunteer report — example (Pridni Slavko, May 2026)](docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf) — individual report submitted to CSD
+
 ---
 
 ## Stack

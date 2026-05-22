@@ -80,6 +80,11 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 </tr>
 </table>
 
+### Vzorčna PDF poročila
+
+- [Mesečno poročilo — primer (maj 2026)](docs/images/porocilo_2026_05-primer.pdf) — zbirno mesečno poročilo, ki ga prejme vodja
+- [Poročilo za prostovoljca — primer (Pridni Slavko, maj 2026)](docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf) — posamično poročilo, ki se odda na CSD
+
 ---
 
 ## Tehnološki sklad (Stack)
