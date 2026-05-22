@@ -26,6 +26,7 @@ async def _notify_ops(env: Settings, s: AppSettings) -> None:
     payload = {
         "report_auto_day": s.report_auto_day,
         "report_auto_period": s.report_auto_period,
+        "report_auto_hour": s.report_auto_hour,
         "backup_hour": s.backup_hour,
         "photo_cleanup_hour": s.photo_cleanup_hour,
         "backup_retention_days": s.backup_retention_days,
@@ -68,6 +69,7 @@ async def get_admin_settings(
         session_duration_hours=s.session_duration_hours,
         report_auto_day=s.report_auto_day,
         report_auto_period=s.report_auto_period,
+        report_auto_hour=s.report_auto_hour,
         backup_hour=s.backup_hour,
         photo_cleanup_hour=s.photo_cleanup_hour,
         backup_retention_days=s.backup_retention_days,
@@ -116,6 +118,7 @@ async def update_admin_settings(
         session_duration_hours=s.session_duration_hours,
         report_auto_day=s.report_auto_day,
         report_auto_period=s.report_auto_period,
+        report_auto_hour=s.report_auto_hour,
         backup_hour=s.backup_hour,
         photo_cleanup_hour=s.photo_cleanup_hour,
         backup_retention_days=s.backup_retention_days,
