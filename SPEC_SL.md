@@ -137,7 +137,21 @@ Fotografije so shranjene v ločeni tabeli `log_entry_photos` (glej spodaj) — p
 | type | TEXT | Namig tipa vrednosti: `'int'`, `'bool'`, `'text'`, `'json'` |
 | value | TEXT | Shranjena vrednost (nullable — pri odsotnosti se uporabi privzeta vrednost iz `.env`) |
 
-Ob prvi migraciji se vnese s tremi vrsticami: `max_photos_per_entry` (privzeto `5`), `photo_retention_days` (privzeto `730`), `session_duration_hours` (privzeto `24`). Vse vrednosti, nastavljive med delovanjem, so shranjene tukaj in ne hardcoded ali brane izključno iz `.env`. Glejte storitev `AppSettings` in `GET/PATCH /api/admin/settings`.
+Ob prvi migraciji se vnesejo naslednje vrstice (vse nastavljive med delovanjem prek strani Administracija):
+
+| Ime | Privzeto | Opis |
+|-----|---------|------|
+| `max_photos_per_entry` | `5` | Največje število fotografij, ki jih prostovoljec lahko priloži vnosu |
+| `photo_retention_days` | `730` | Število dni hrambe shranjenih fotografij pred čiščenjem |
+| `session_duration_hours` | `24` | Čas trajanja piškotka seje vodje |
+| `report_auto_day` | `28` | Dan v mesecu (1–28), ko se sproži cron za samodejno poročilo |
+| `report_auto_period` | `current` | Obdobje poročila: `current` (tekoči mesec) ali `previous` (prejšnji mesec) |
+| `report_auto_hour` | `7` | Ura (0–23), ko se sproži cron za samodejno poročilo |
+| `backup_hour` | `2` | Ura (0–23), ko se sproži nočni cron za varnostno kopiranje |
+| `photo_cleanup_hour` | `3` | Ura (0–23), ko se sproži nočni cron za čiščenje fotografij |
+| `backup_retention_days` | `30` | Število dni hrambe varnostnih kopij |
+
+Vse vrednosti so v zbirki podatkov (prednost zbirka, rezerva `.env` prek storitve `AppSettings`). Glejte `GET/PATCH /api/admin/settings`.
 
 ### `error_log`
 | Polje | Tip | Opomba |
@@ -283,8 +297,14 @@ Vrednosti, nastavljive med delovanjem sistema. Spremembe stopijo v veljavo takoj
 - **Največje število fotografij na vnos** (`max_photos_per_entry`) — največje število fotografij, ki jih prostovoljec lahko priloži posamičnemu vnosu; uveljavljeno na ravni API ob nalaganju
 - **Hranjenje fotografij (dni)** (`photo_retention_days`) — čas hrambe shranjenih fotografij; uporablja ga načrtovano opravilo za čiščenje
 - **Trajanje seje (ure)** (`session_duration_hours`) — trajanje piškotka seje vodje
+- **Dan samodejnega pošiljanja poročil** (`report_auto_day`, 1–28) — dan v mesecu, ko se sproži cron za samodejno poročilo
+- **Obdobje poročila** (`report_auto_period`) — `current` (tekoči mesec) ali `previous` (prejšnji mesec)
+- **Ura samodejnega pošiljanja poročil** (`report_auto_hour`, 0–23) — ura, ko se sproži cron za samodejno poročilo
+- **Ura varnostnega kopiranja** (`backup_hour`, 0–23) — ura, ko se sproži nočni cron za varnostno kopiranje
+- **Ura čiščenja fotografij** (`photo_cleanup_hour`, 0–23) — ura, ko se sproži nočni cron za čiščenje fotografij
+- **Hranjenje varnostnih kopij (dni)** (`backup_retention_days`) — čas hrambe arhivov varnostnih kopij; posredovano kot argument CLI skripti `backup.sh`
 
-Vrednosti so shranjene v tabeli `settings` prek storitve `AppSettings` in dostopne prek `GET/PATCH /api/admin/settings`. Storitev ob odsotnosti vrstice v zbirki podatkov privzame vrednosti iz `.env`, tako da sistem pravilno deluje pred izrecno nastavitvijo katere koli vrednosti.
+Vse vrednosti so shranjene v tabeli `settings` prek storitve `AppSettings` in dostopne prek `GET/PATCH /api/admin/settings`. Spremembe stopijo v veljavo takoj: API pošlje `POST /reconfigure` na strežnik za obvestila ops (port 9000), ki regenerira crontab in znova naloži crond — brez ponovnega zagona vsebnika. Storitev ob odsotnosti vrstice v zbirki podatkov privzame vrednosti iz `.env`.
 
 Stran prav tako prikazuje **živi pripomoček za stanje sistema** — povzetek stanj vseh storitev (odzivni čas PostgreSQL, Whisper, n8n, povezava WhatsApp, prosto mesto na disku, zadnji zapis v dnevniku) z osvežitvijo vsakih 30 sekund prek `GET /api/health/detailed`. Končna točka `/api/health` ostane ločena (preprost status deluje/ne deluje za Dockerjev zdravstveni pregled) in nikoli ni blokirana s podrobnim pregledom.
 
@@ -449,7 +469,7 @@ belpro/
 - Cilj: kateri koli Linux gostitelj (lokalni razvojni stroj, VPS, strežnik na lokaciji).
 - **Lokalni razvoj:** Windows 10 z WSL2 + Docker Desktop. Vsi ukazi `docker compose` in lupinske skripte se izvajajo znotraj WSL2 (Ubuntu). Ne predpostavljajte izvornih Windows poti ali orodij.
 - Storitve: `postgres`, `n8n`, `whisper`, `api`, `frontend` (nginx), `evolution-api`, `ops`.
-- Operacijski spremljevalnik `ops` (Alpine/Python) poganja dve načrtovani opravili: dnevno varnostno kopiranje zbirke podatkov in fotografij ob 02:00 (nastavljivo prek `BACKUP_RETENTION_DAYS`) ter nočno čiščenje fotografij ob 03:00 po nastavitvi `photo_retention_days`. Napake pri izvedbi opravil so javljene prek `POST /api/errors` in prikazane na strani Dnevnik napak nadzorne plošče.
+- Operacijski spremljevalnik `ops` (Alpine/Python) poganja tri komponente: (1) dnevno varnostno kopiranje zbirke podatkov in fotografij, (2) nočno opravilo čiščenja fotografij ter (3) `ops_server.py` — lahek HTTP strežnik na portu 9000, ki od API-ja prejme `POST /reconfigure` in regenerira crontab (vključno z uro varnostnega kopiranja, uro čiščenja, urnikom poročil in obdobjem hrambe) brez ponovnega zagona vsebnika. Vse nastavitve urnika cron so nastavljive na strani Administracija. Napake pri izvedbi opravil so javljene prek `POST /api/errors` in prikazane na strani Dnevnik napak nadzorne plošče.
 - Vsa konfiguracija prek datoteke `.env`.
 - `setup.sh` vodi začetno konfiguracijo (poverilnice vodje, Gmail, vezava WhatsApp številke).
 - Brez Kubernetesa, brez odvisnosti od oblačnih ponudnikov.
