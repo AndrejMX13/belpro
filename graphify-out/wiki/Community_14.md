@@ -1,42 +1,49 @@
 # Community 14
 
-> 19 nodes · cohesion 0.21
+> 34 nodes Â· cohesion 0.06
 
 ## Key Concepts
 
-- **ErrorLogCreate** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
-- **ErrorLogResponse** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
-- **UnacknowledgedCountResponse** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
-- **errors.py** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **error_log.py** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
-- **Error log router — write endpoint for internal services, read endpoints for mana** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **Validate X-Internal-Key header against API_SECRET_KEY.** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **Record an operational failure. Called by API exception handlers, n8n, and the op** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **Return count of unacknowledged errors. Used by nav badge.** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **List error log entries, newest first. Optionally filter to unacknowledged only.** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **Mark an error as acknowledged (read by manager).** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **_require_internal_key()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **unacknowledged_count()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **acknowledge_error()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **list_errors()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **write_error()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- **Pydantic schemas for the error_log endpoint.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
-- **Payload sent by internal services (API, n8n, ops sidecar).** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
-- **Single error log row returned to the dashboard.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
+- **Sidebar Navigation Menu** (18 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Work Diary Entries Table** (9 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Dnevniki (Work Diary Entries) Page** (5 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Dnevnik napak - Error Log Dashboard Page** (4 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Error Entry: Email Delivery Failure (send_monthly_reports)** (2 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Nav Item: Dnevnik napak (Error Log) - Active with badge 1** (2 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Column: Prostovoljec (Volunteer Name Link)** (2 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Column: Status (Odobreno / Approved Badge)** (2 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Nav Item: Dnevniki (active)** (2 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Filter: Samo nepotrjene (Unconfirmed Only) Checkbox** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Nav Item: Analitika (Analytics)** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Nav Item: Dnevniki (Diaries/Work Logs)** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Nav Item: Nastavitve (Settings)** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Nav Item: Prostovoljci (Volunteers)** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Odjava (Logout) Button** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Organization Logo: Med in Mleko** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Potrdi (Confirm/Acknowledge) Button on Error Entry** (1 connections) â€” `docs/images/belpro-dnevnik-napak.png`
+- **Column: Dan Vnosa (Entry Date)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Column: Datum Dela (Work Date)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Column: Dejanja (Action Buttons)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Column: Lokacija (Location)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Column: Opis Dela (Work Description)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Column: Ure (Hours)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Filter Bar (Volunteer, Date Range, Location Search, Iskanje)** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- **Nav Item: Administracija** (1 connections) â€” `docs/images/belpro-dnevniki.png`
+- *... and 9 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 65]] (1 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\errors.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\schemas\error_log.py`
+- `docs/images/belpro-dnevnik-napak.png`
+- `docs/images/belpro-dnevniki.png`
 
 ## Audit Trail
 
-- EXTRACTED: 37 (49%)
-- INFERRED: 39 (51%)
+- EXTRACTED: 71 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

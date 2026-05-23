@@ -1,50 +1,60 @@
 # Community 8
 
-> 37 nodes · cohesion 0.11
+> 37 nodes Â· cohesion 0.07
 
 ## Key Concepts
 
-- **make_text_payload()** (12 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **post_to_webhook()** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **poll_for_entry()** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **make_response_payload()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **test_edit_path()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **test_volunteer_entry.py** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **test_add_photos_then_cancel()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **test_add_photos_then_confirm()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **test_cancel_path()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **test_happy_path_text_confirm()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **helpers.py** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **test_photo_upload.py** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_photo_upload.py`
-- **poll_for_entry_gone()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **poll_for_entry_status()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **test_upload_photo_bad_extension()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_photo_upload.py`
-- **test_upload_photo_happy_path()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_photo_upload.py`
-- **test_upload_second_photo_increments_count()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_photo_upload.py`
-- **test_unknown_volunteer_creates_no_entry()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
-- **test_upload_photo_unknown_entry()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_photo_upload.py`
-- **Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **Build a WhatsApp text-message webhook body for the given bare-digit phone.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **Build a volunteer response payload. response_type must be one of:     'confirm'** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **POST a WhatsApp event to the n8n webhook. Asserts 200.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **Poll GET /api/log-entries until at least one entry for volunteer_id appears.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- **Poll GET /api/log-entries/{entry_id} until its status matches expected_status.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
+- **path** (16 connections) â€” `scripts/gen_architecture_docx.js`
+- **persist_report()** (15 connections) â€” `api/services/report_storage.py`
+- **test_report_history.py** (14 connections) â€” `api/tests/test_report_history.py`
+- **main()** (6 connections) â€” `ops/scripts/photo_cleanup.py`
+- **test_persist_report_creates_file_and_row()** (5 connections) â€” `api/tests/test_report_history.py`
+- **test_persist_report_overwrites_on_resend()** (5 connections) â€” `api/tests/test_report_history.py`
+- **test_send_monthly_persists_consolidated_pdf()** (5 connections) â€” `api/tests/test_report_history.py`
+- **test_send_monthly_persists_volunteer_pdf()** (5 connections) â€” `api/tests/test_report_history.py`
+- **report_path()** (4 connections) â€” `api/services/report_storage.py`
+- **test_get_history_pdf_missing_file_returns_404()** (4 connections) â€” `api/tests/test_report_history.py`
+- **test_get_history_returns_items()** (4 connections) â€” `api/tests/test_report_history.py`
+- **test_persist_report_consolidated_overwrites_on_resend()** (4 connections) â€” `api/tests/test_report_history.py`
+- **test_send_monthly_resend_overwrites_row()** (4 connections) â€” `api/tests/test_report_history.py`
+- **report_storage.py** (3 connections) â€” `api/services/report_storage.py`
+- **test_get_history_filter_by_year_month()** (3 connections) â€” `api/tests/test_report_history.py`
+- **test_get_history_pdf_streams_file()** (3 connections) â€” `api/tests/test_report_history.py`
+- **test_persist_report_consolidated_has_null_volunteer()** (3 connections) â€” `api/tests/test_report_history.py`
+- **test_get_history_empty()** (2 connections) â€” `api/tests/test_report_history.py`
+- **test_get_history_pdf_unknown_id_returns_404()** (2 connections) â€” `api/tests/test_report_history.py`
+- **Query approved entries older than retention cutoff, delete their photos and DB r** (1 connections) â€” `ops/scripts/photo_cleanup.py`
+- **PDF report storage â€” disk write and upsert of MonthlyReport rows.** (1 connections) â€” `api/services/report_storage.py`
+- **Return the canonical filesystem path for a report PDF.** (1 connections) â€” `api/services/report_storage.py`
+- **Write pdf_bytes to disk and upsert a MonthlyReport row.      If a row already ex** (1 connections) â€” `api/services/report_storage.py`
+- **Tests for PDF report persistence and history endpoints.** (1 connections) â€” `api/tests/test_report_history.py`
+- **Second persist_report() for consolidated (volunteer_id=None, year, month) must o** (1 connections) â€” `api/tests/test_report_history.py`
 - *... and 12 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 25]] (7 shared connections)
+- [[Community 11]] (6 shared connections)
+- [[Community 13]] (3 shared connections)
+- [[Community 23]] (3 shared connections)
+- [[Community 22]] (3 shared connections)
+- [[Community 0]] (1 shared connections)
+- [[Community 7]] (1 shared connections)
+- [[Community 61]] (1 shared connections)
+- [[Community 28]] (1 shared connections)
+- [[Community 69]] (1 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\helpers.py`
-- `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_photo_upload.py`
-- `D:\Andrej\vsCode-workspace\BelPro\tests\workflow\test_volunteer_entry.py`
+- `api/services/report_storage.py`
+- `api/tests/test_report_history.py`
+- `ops/scripts/photo_cleanup.py`
+- `scripts/gen_architecture_docx.js`
 
 ## Audit Trail
 
-- EXTRACTED: 70 (48%)
-- INFERRED: 75 (52%)
+- EXTRACTED: 72 (58%)
+- INFERRED: 53 (42%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,56 +1,54 @@
 # Community 4
 
-> 73 nodes · cohesion 0.07
+> 41 nodes Â· cohesion 0.07
 
 ## Key Concepts
 
-- **BaseModel** (33 connections)
-- **EvolutionClient** (20 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\evolution.py`
-- **MonthlyReportSummary** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\report.py`
-- **ReportHistoryItem** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\report.py`
-- **ReportHistoryList** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\report.py`
-- **VolunteerMonthlySummary** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\report.py`
-- **Reports router — monthly aggregation and PDF export endpoints.** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **Generate a monthly PDF report for one volunteer or all active volunteers.** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **Generate monthly PDFs and deliver them via email and/or WhatsApp.      Default** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **List persisted PDF reports, newest first. Optionally filter by year and/or month** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **Stream a previously generated PDF from disk. Returns 404 if the row or file is m** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **Return per-volunteer totals of approved entries for the given year/month.** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **Run the monthly aggregation query and return per-volunteer summaries.** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **ConfigInfoResponse** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- **send_monthly_reports()** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- **Analytics router — aggregated summary for the dashboard analytics page.** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\analytics.py`
-- **ManagerCreate** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- **ManagerResponse** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- **ManagerUpdate** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- **PasswordChangeRequest** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- **Return `count` consecutive (year, month) tuples ending at (year, month).** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\analytics.py`
-- **Return aggregated analytics data scoped to the given month.      Defaults to t** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\analytics.py`
-- **manager.py** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- **Managers router — single-manager setup and profile.** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\managers.py`
-- **Change the manager password.  Verifies the current password before updating.** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\managers.py`
-- *... and 48 more nodes in this community*
+- **BelPro System** (16 connections) â€” `Belpro_Architecture.pdf`
+- **n8n Workflow Engine** (13 connections)
+- **Evolution API (WhatsApp Gateway)** (5 connections) â€” `Belpro_Architecture.pdf`
+- **FastAPI Backend** (5 connections)
+- **Monthly Manager Report PDF (May 2026 Sample)** (5 connections) â€” `docs/images/porocilo_2026_05-primer.pdf`
+- **Individual Volunteer PDF Report (Pridni Slavko, May 2026 Sample)** (5 connections) â€” `docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf`
+- **Monthly Reporting Pipeline (28th trigger â†’ PDF â†’ Email â†’ CSD submission)** (4 connections) â€” `Belpro_Architecture.pdf`
+- **Evolution API** (4 connections)
+- **Manager** (4 connections)
+- **PostgreSQL 18 Database** (3 connections) â€” `Belpro_Architecture.pdf`
+- **Evolution API (WhatsApp Gateway)** (3 connections) â€” `docs/images/architecture_sl.svg`
+- **PostgreSQL** (3 connections)
+- **Faster-Whisper** (3 connections)
+- **Faster-Whisper AI Transcription** (2 connections) â€” `Belpro_Architecture.pdf`
+- **Gmail Email Delivery** (2 connections) â€” `Belpro_Architecture.pdf`
+- **Redis 7 Message Cache** (2 connections) â€” `Belpro_Architecture.pdf`
+- **Volunteer Work Diary (Dnevnik prostovoljskega dela)** (2 connections) â€” `Belpro_Architecture.pdf`
+- **WeasyPrint PDF Engine** (2 connections) â€” `Belpro_Architecture.pdf`
+- **LID Identifier Disparity in Evolution API and N8N (Technical Paper)** (2 connections) â€” `Evolution_API_and_N8N_phone_identification_solutions.pdf`
+- **FastAPI + Web Dashboard (Manager Dashboard and API)** (2 connections) â€” `docs/images/architecture_sl.svg`
+- **Web Dashboard** (2 connections)
+- **Work Diary Entry** (2 connections)
+- **PDF Report** (2 connections)
+- **Voice Note** (2 connections)
+- **NGO: MedInMleko (Sample Organisation)** (2 connections) â€” `docs/images/porocilo_2026_05-primer.pdf`
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
-- [[Community 0]] (1 shared connections)
+- [[Community 33]] (3 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\analytics.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\managers.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\reports.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\schemas\analytics.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\schemas\manager.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\schemas\report.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\services\evolution.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\services\logo.py`
+- `Belpro_Architecture.pdf`
+- `Belpro_Arhitektura_SL.pdf`
+- `Evolution_API_and_N8N_phone_identification_solutions.pdf`
+- `docs/images/architecture_sl.svg`
+- `docs/images/porocilo_2026_05-primer.pdf`
+- `docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf`
 
 ## Audit Trail
 
-- EXTRACTED: 187 (42%)
-- INFERRED: 256 (58%)
-- AMBIGUOUS: 0 (0%)
+- EXTRACTED: 102 (89%)
+- INFERRED: 9 (8%)
+- AMBIGUOUS: 4 (3%)
 
 ---
 

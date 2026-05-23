@@ -1,50 +1,60 @@
 # Community 11
 
-> 26 nodes · cohesion 0.09
+> 35 nodes Â· cohesion 0.07
 
 ## Key Concepts
 
-- **render_consent_pdf()** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- **test_documents.py** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **consent_pdf.py** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- **download_consent_pdf()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\documents.py`
-- **Documents router — downloadable compliance documents.** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\documents.py`
-- **Generate and stream the GDPR Article 13 consent notice PDF.** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\documents.py`
-- **test_render_consent_pdf_empty_clauses_treated_as_none()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **test_render_consent_pdf_returns_bytes()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **test_render_consent_pdf_with_additional_clauses()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **_esc()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- **_now_str()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- **documents.py** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\documents.py`
-- **test_consent_pdf_requires_auth()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **test_consent_pdf_returns_pdf()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **test_patch_manager_clears_gdpr_clauses()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **test_patch_manager_saves_gdpr_clauses()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **GDPR Article 13 consent notice PDF generation.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- **Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- **Tests for the /documents router and consent_pdf service.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **render_consent_pdf returns non-empty bytes for a minimal manager.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **render_consent_pdf produces bytes when additional clauses are set.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **render_consent_pdf handles empty string clauses without error.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **Authenticated request returns a PDF response.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **Unauthenticated request is rejected.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- **PATCH /managers/me accepts and persists gdpr_additional_clauses.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
-- *... and 1 more nodes in this community*
+- **str** (38 connections)
+- **log_entries.py** (16 connections) â€” `api/routers/log_entries.py`
+- **upload_photo()** (6 connections) â€” `api/routers/log_entries.py`
+- **upload_photo_base64()** (6 connections) â€” `api/routers/log_entries.py`
+- **_extract_exif()** (4 connections) â€” `api/routers/log_entries.py`
+- **test_get_entry_found()** (4 connections) â€” `api/tests/test_log_entries.py`
+- **test_list_entries_filter_by_volunteer()** (4 connections) â€” `api/tests/test_log_entries.py`
+- **delete_log_entry()** (3 connections) â€” `api/routers/log_entries.py`
+- **get_photo_file()** (3 connections) â€” `api/routers/log_entries.py`
+- **test_create_entry_inactive_volunteer_returns_409()** (3 connections) â€” `api/tests/test_log_entries.py`
+- **test_create_entry_missing_required_field_returns_422()** (3 connections) â€” `api/tests/test_log_entries.py`
+- **test_create_entry_success()** (3 connections) â€” `api/tests/test_log_entries.py`
+- **approve_log_entry()** (2 connections) â€” `api/routers/log_entries.py`
+- **confirm_log_entry()** (2 connections) â€” `api/routers/log_entries.py`
+- **delete_photo()** (2 connections) â€” `api/routers/log_entries.py`
+- **get_log_entry()** (2 connections) â€” `api/routers/log_entries.py`
+- **get_photo_limit()** (2 connections) â€” `api/routers/log_entries.py`
+- **notify_log_entry()** (2 connections) â€” `api/routers/log_entries.py`
+- **reject_log_entry()** (2 connections) â€” `api/routers/log_entries.py`
+- **update_log_entry()** (2 connections) â€” `api/routers/log_entries.py`
+- **test_create_entry_unknown_volunteer_returns_404()** (2 connections) â€” `api/tests/test_log_entries.py`
+- **Log entries CRUD router â€” volunteer work diary entries.** (1 connections) â€” `api/routers/log_entries.py`
+- **Return the configured maximum photos per log entry. Used by n8n workflows.** (1 connections) â€” `api/routers/log_entries.py`
+- **Get a single log entry by ID.** (1 connections) â€” `api/routers/log_entries.py`
+- **Update activity_description, hours, location, and/or work_date. Blocked once app** (1 connections) â€” `api/routers/log_entries.py`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 22]] (8 shared connections)
+- [[Community 25]] (7 shared connections)
+- [[Community 8]] (6 shared connections)
+- [[Community 38]] (3 shared connections)
+- [[Community 7]] (3 shared connections)
+- [[Community 32]] (3 shared connections)
+- [[Community 17]] (3 shared connections)
+- [[Community 50]] (2 shared connections)
+- [[Community 39]] (2 shared connections)
+- [[Community 55]] (2 shared connections)
+- [[Community 37]] (1 shared connections)
+- [[Community 46]] (1 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\documents.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\services\consent_pdf.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_documents.py`
+- `api/routers/log_entries.py`
+- `api/tests/test_log_entries.py`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (79%)
-- INFERRED: 13 (21%)
+- EXTRACTED: 67 (54%)
+- INFERRED: 58 (46%)
 - AMBIGUOUS: 0 (0%)
 
 ---

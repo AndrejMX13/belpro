@@ -1,0 +1,56 @@
+# Community 22
+
+> 28 nodes · cohesion 0.11
+
+## Key Concepts
+
+- **log_entry_factory()** (34 connections) — `api/tests/conftest.py`
+- **test_log_entries.py** (30 connections) — `api/tests/test_log_entries.py`
+- **test_approve_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_pending_volunteer_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_entry_happy_path()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_pending_manager_entry_succeeds()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_rejected_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_filter_by_status()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_returns_created_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_photo_upload_unsupported_extension_returns_400_or_422()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_status_cannot_go_from_approved_to_pending_manager()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_status_cannot_go_from_rejected_to_approved()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_photo_limit_returns_default()** (2 connections) — `api/tests/test_log_entries.py`
+- **Returns an async callable that inserts a LogEntry row via flush.** (1 connections) — `api/tests/conftest.py`
+- **GET /photo-limit returns the DB-seeded default (5), not the raw env value.** (1 connections) — `api/tests/test_log_entries.py`
+- **test_approve_entry_not_found()** (1 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_entry_not_found()** (1 connections) — `api/tests/test_log_entries.py`
+- **test_delete_entry_not_found()** (1 connections) — `api/tests/test_log_entries.py`
+- *... and 3 more nodes in this community*
+
+## Relationships
+
+- [[Community 25]] (19 shared connections)
+- [[Community 11]] (8 shared connections)
+- [[Community 32]] (7 shared connections)
+- [[Community 8]] (3 shared connections)
+- [[Community 61]] (1 shared connections)
+- [[Community 77]] (1 shared connections)
+
+## Source Files
+
+- `api/tests/conftest.py`
+- `api/tests/test_log_entries.py`
+
+## Audit Trail
+
+- EXTRACTED: 59 (47%)
+- INFERRED: 66 (53%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

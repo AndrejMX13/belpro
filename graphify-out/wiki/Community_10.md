@@ -1,35 +1,35 @@
 # Community 10
 
-> 32 nodes · cohesion 0.08
+> 36 nodes Â· cohesion 0.09
 
 ## Key Concepts
 
-- **ops_server.py** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **_Handler** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **_Handler** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- **.do_POST()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **write_crontab()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **._respond()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- **fetch_settings_from_db()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **._send()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **main()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **_dsn()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **reload_crond()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **report_error()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **.do_GET()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- **.do_POST()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- **BaseHTTPRequestHandler** (2 connections)
-- **transcribe.py** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- **.do_GET()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **.log_message()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- **.log_message()** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **Read report_auto_day and report_auto_period from the settings table.      Return** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **HTTP request handler for the ops notification server.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **Sync crontab with DB settings, then start the notification server.** (1 connections) — `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- **Convert asyncpg DATABASE_URL to a psycopg2-compatible DSN.** (1 connections) — `ops\scripts\ops_server.py`
-- **POST failure to the API error log. Best-effort — never raises.** (1 connections) — `ops\scripts\ops_server.py`
-- **Send SIGHUP to crond so it reloads the crontab file.** (1 connections) — `ops\scripts\ops_server.py`
-- *... and 7 more nodes in this community*
+- **n8n Code Python: SKILL (Main Guide)** (12 connections) â€” `.claude/skills/n8n-code-python/SKILL.md`
+- **n8n Code JavaScript: SKILL (Main Guide)** (11 connections) â€” `.claude/skills/n8n-code-javascript/SKILL.md`
+- **n8n Expression Syntax: SKILL (Main Guide)** (9 connections) â€” `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **n8n MCP Tools Expert: SKILL (Main Guide)** (9 connections) â€” `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **n8n Node Configuration: SKILL (Main Guide)** (7 connections) â€” `.claude/skills/n8n-node-configuration/SKILL.md`
+- **JavaScript Pro Skill** (5 connections) â€” `.claude/skills/javascript-pro/SKILL.md`
+- **n8n Code JavaScript: Error Patterns** (5 connections) â€” `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **n8n Code Python: README / Skill Metadata** (5 connections) â€” `.claude/skills/n8n-code-python/README.md`
+- **Webhook Data Body Nesting Gotcha (concept)** (4 connections) â€” `.claude/skills/n8n-code-javascript/SKILL.md`
+- **n8n Expression Syntax {{ }} (concept)** (3 connections) â€” `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **JavaScript Async Patterns Reference** (3 connections) â€” `.claude/skills/javascript-pro/references/async-patterns.md`
+- **n8n Code JavaScript Built-in Functions** (3 connections) â€” `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Luxon DateTime Library (concept)** (2 connections) â€” `.claude/skills/n8n-code-javascript/SKILL.md`
+- **n8n Code Node (concept)** (2 connections) â€” `.claude/skills/n8n-code-javascript/SKILL.md`
+- **SplitInBatches Node Pattern (concept)** (2 connections) â€” `.claude/skills/n8n-code-javascript/SKILL.md`
+- **JavaScript Browser APIs Reference** (2 connections) â€” `.claude/skills/javascript-pro/references/browser-apis.md`
+- **JavaScript Module Systems Reference** (2 connections) â€” `.claude/skills/javascript-pro/references/modules.md`
+- **JavaScript Node.js Essentials Reference** (2 connections) â€” `.claude/skills/javascript-pro/references/node-essentials.md`
+- **n8n Code JavaScript Data Access Patterns** (2 connections) â€” `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **n8n Code JavaScript: README / Skill Metadata** (2 connections) â€” `.claude/skills/n8n-code-javascript/README.md`
+- **n8n Code Python: Common Patterns** (2 connections) â€” `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **n8n Code Python: Data Access Patterns** (2 connections) â€” `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **n8n Code Python: Error Patterns** (2 connections) â€” `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **n8n Code Python: Standard Library Reference** (2 connections) â€” `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **n8n MCP Tools (n8n-mcp server, concept)** (1 connections) â€” `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
@@ -37,14 +37,31 @@
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\ops\scripts\ops_server.py`
-- `D:\Andrej\vsCode-workspace\BelPro\whisper\transcribe.py`
-- `ops\scripts\ops_server.py`
+- `.claude/skills/javascript-pro/SKILL.md`
+- `.claude/skills/javascript-pro/references/async-patterns.md`
+- `.claude/skills/javascript-pro/references/browser-apis.md`
+- `.claude/skills/javascript-pro/references/modern-syntax.md`
+- `.claude/skills/javascript-pro/references/modules.md`
+- `.claude/skills/javascript-pro/references/node-essentials.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/README.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 82 (96%)
-- INFERRED: 3 (4%)
+- EXTRACTED: 104 (93%)
+- INFERRED: 8 (7%)
 - AMBIGUOUS: 0 (0%)
 
 ---

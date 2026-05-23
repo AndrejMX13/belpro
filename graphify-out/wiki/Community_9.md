@@ -1,35 +1,35 @@
 # Community 9
 
-> 32 nodes ∑ cohesion 0.10
+> 37 nodes ¬∑ cohesion 0.07
 
 ## Key Concepts
 
-- **test_auth.py** (11 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
-- **LoginResponse** (8 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\schemas\auth.py`
-- **_verify_session_token()** (8 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **Schemas for the auth endpoints.** (7 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\schemas\auth.py`
-- **LoginRequest** (6 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\schemas\auth.py`
-- **_make_session_token()** (6 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **login()** (5 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\routers\auth.py`
-- **auth.py** (5 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **Verify manager password and set an httpOnly session cookie.** (4 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\routers\auth.py`
-- **Clear the session cookie.** (4 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\routers\auth.py`
-- **require_manager()** (4 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **_verify_password()** (4 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **logout()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\routers\auth.py`
-- **auth.py** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\routers\auth.py`
-- **auth.py** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\schemas\auth.py`
-- **test_make_and_verify_session_token()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
-- **test_verify_session_token_expired()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
-- **test_verify_session_token_wrong_secret()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
-- **Create a signed, self-expiring session token.** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **Return True if the token signature is valid and not expired.** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **Verify password against DB hash or env var fallback.** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **Reject requests without a valid session cookie or Basic Auth credentials.** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- **test_verify_session_token_empty()** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
-- **test_verify_session_token_garbage()** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
-- **Response for login and logout endpoints.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\schemas\auth.py`
-- *... and 7 more nodes in this community*
+- **monthly_reports.json** (20 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **activeVersion** (12 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **settings** (7 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **connections** (5 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **main** (3 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **28. v mesecu ob 07:00** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **Po≈°lji Meseƒçna Poroƒçila** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **Roƒçni Zagon** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **createdAt** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **description** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **name** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **nodes** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **staticData** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **node:28. v mesecu ob 07:00** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **updatedAt** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **versionId** (2 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **active** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **authors** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **autosaved** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **workflowId** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **workflowPublishHistory** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **activeVersionId** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **id** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **isArchived** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- **meta** (1 connections) ‚Äî `n8n/workflows/monthly_reports.json`
+- *... and 12 more nodes in this community*
 
 ## Relationships
 
@@ -37,15 +37,12 @@
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\core\auth.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\auth.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\schemas\auth.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_auth.py`
+- `n8n/workflows/monthly_reports.json`
 
 ## Audit Trail
 
-- EXTRACTED: 66 (60%)
-- INFERRED: 44 (40%)
+- EXTRACTED: 90 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

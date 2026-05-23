@@ -1,43 +1,50 @@
 # Community 12
 
-> 21 nodes ∑ cohesion 0.12
+> 35 nodes ¬∑ cohesion 0.08
 
 ## Key Concepts
 
-- **test_errors.py** (11 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **_internal_header()** (7 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_acknowledge_error()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_get_errors_filter_unacknowledged()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_get_errors_returns_list()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_post_error_valid_internal_key()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_unacknowledged_count()** (3 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_acknowledge_nonexistent_returns_404()** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_get_errors_requires_manager_auth()** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_post_error_missing_key_rejected()** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **test_post_error_wrong_key_rejected()** (2 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **Tests for POST /api/errors, GET /api/errors, PATCH /api/errors/{id}/acknowledge.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **PATCH /{id}/acknowledge on unknown id returns 404.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **GET /api/errors/unacknowledged-count returns integer count.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **POST with valid internal key creates a record.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **POST without internal key is rejected.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **POST with wrong internal key is rejected.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **GET /api/errors without manager auth is rejected.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **GET returns all error log entries, newest first.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **GET ?unacknowledged=true filters to unacknowledged only.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
-- **PATCH /{id}/acknowledge sets acknowledged to True.** (1 connections) ó `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
+- **Analitika (Analytics) Dashboard Page** (13 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Analitika Page (Analytics Dashboard)** (11 connections)
+- **Prostovoljci (Volunteers) List Page** (6 connections) ‚Äî `docs/images/belpro-prostovoljci.png`
+- **Volunteer Table (Ime in Priimek, Telefon, Mesto, Ure ta Mesec, Status, Akcije)** (5 connections) ‚Äî `docs/images/belpro-prostovoljci.png`
+- **Volunteer Detail Page ‚Äî Miha Lufter** (5 connections) ‚Äî `docs/images/belpro-prostovoljec.png`
+- **Navigation Sidebar (Prostovoljci, Dnevniki, Analitika, Poroƒçila, Nastavitve, Dokumenti, Administracija, Dnevnik napak, Odjava)** (4 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Deaktiviraj (Deactivate) Action Button per Volunteer Row** (4 connections) ‚Äî `docs/images/belpro-prostovoljci.png`
+- **KPI: ƒåaka Odobritev (Awaiting Approval)** (4 connections)
+- **KPI: Ure v Mesecu (Hours This Month)** (4 connections)
+- **Chart: Ure po Lokacijah ‚Äî Maj 2026 (Hours per Location, vertical bar chart)** (3 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Chart: Ure po Prostovoljcih ‚Äî Maj 2026 (Hours per Volunteer, horizontal bar chart)** (3 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Filter: Leto (Year) ‚Äî 2026** (3 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Filter: Mesec (Month) ‚Äî Maj** (3 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **KPI: Odobreno (Approved) ‚Äî 41** (3 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **KPI: Zavrnjeno (Rejected) ‚Äî 3** (3 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **KPI: Brez Vnosov Ta Mesec (No Entries This Month) ‚Äî 1** (2 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Volunteer: Jaka Puher (38630345678, La≈°ko, 0.0h, Aktiven)** (2 connections) ‚Äî `docs/images/belpro-prostovoljci.png`
+- **Volunteer: Miha Lufter (38630123456, La≈°ko, 4.0h, Aktiven)** (2 connections) ‚Äî `docs/images/belpro-prostovoljci.png`
+- **Volunteer: Slavko Pridni (38630234567, La≈°ko, 81.0h, Aktiven)** (2 connections) ‚Äî `docs/images/belpro-prostovoljci.png`
+- **Dnevnik dela Section (Work Diary Table)** (2 connections) ‚Äî `docs/images/belpro-prostovoljec.png`
+- **Chart: Meseƒçni Trend (Monthly Trend - Last 6 Months)** (2 connections)
+- **Chart: Ure po Prostovoljcih (Hours per Volunteer)** (2 connections)
+- **KPI: Aktivni Prostovoljci (Active Volunteers)** (2 connections)
+- **Action Button: Izvozi CSV (Export CSV)** (1 connections) ‚Äî `docs/images/belpro-analitika.png`
+- **Chart: Meseƒçni Trend ‚Äî Zadnjih 6 Mesecev (Monthly Trend ‚Äî Last 6 Months, line chart)** (1 connections) ‚Äî `docs/images/belpro-analitika.png`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 69]] (2 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_errors.py`
+- `docs/images/belpro-analitika.png`
+- `docs/images/belpro-prostovoljci.png`
+- `docs/images/belpro-prostovoljec.png`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 94 (92%)
+- INFERRED: 8 (8%)
 - AMBIGUOUS: 0 (0%)
 
 ---

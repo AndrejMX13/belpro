@@ -1,51 +1,52 @@
 # Community 5
 
-> 47 nodes · cohesion 0.08
+> 40 nodes Â· cohesion 0.10
 
 ## Key Concepts
 
-- **load_key()** (16 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- **test_encryption.py** (14 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_encryption.py`
-- **volunteers.py** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **_to_response()** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **cmd_rotate()** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- **encrypt_emso()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- **hash_emso()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- **mask_emso()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- **create_volunteer()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **decrypt_emso()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- **encryption.py** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- **cmd_backup()** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- **_to_detail_response()** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **rotate_emso_key.py** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- **cmd_restore()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- **main()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- **check_emso()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **list_volunteers()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **_db_url()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- **test_decrypt_with_wrong_key_raises_invalid_tag()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_encryption.py`
-- **activate_volunteer()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **deactivate_volunteer()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **get_volunteer()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **update_volunteer()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- **test_hash_differs_from_encryption()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_encryption.py`
-- *... and 22 more nodes in this community*
+- **make_text_payload()** (12 connections) â€” `tests/workflow/helpers.py`
+- **post_to_webhook()** (11 connections) â€” `tests/workflow/helpers.py`
+- **poll_for_entry()** (10 connections) â€” `tests/workflow/helpers.py`
+- **test_volunteer_entry.py** (8 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **make_response_payload()** (8 connections) â€” `tests/workflow/helpers.py`
+- **test_edit_path()** (8 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **test_add_photos_then_cancel()** (7 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **test_add_photos_then_confirm()** (7 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **test_cancel_path()** (7 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **test_happy_path_text_confirm()** (7 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **helpers.py** (6 connections) â€” `tests/workflow/helpers.py`
+- **test_photo_upload.py** (6 connections) â€” `tests/workflow/test_photo_upload.py`
+- **poll_for_entry_gone()** (5 connections) â€” `tests/workflow/helpers.py`
+- **poll_for_entry_status()** (5 connections) â€” `tests/workflow/helpers.py`
+- **test_upload_photo_bad_extension()** (5 connections) â€” `tests/workflow/test_photo_upload.py`
+- **test_upload_photo_happy_path()** (5 connections) â€” `tests/workflow/test_photo_upload.py`
+- **test_upload_second_photo_increments_count()** (5 connections) â€” `tests/workflow/test_photo_upload.py`
+- **Plan: Volunteer Entry Workflow Integration Tests** (4 connections) â€” `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Workflow Test Helpers** (4 connections) â€” `tests/workflow/helpers.py`
+- **test_unknown_volunteer_creates_no_entry()** (4 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **test_upload_photo_unknown_entry()** (3 connections) â€” `tests/workflow/test_photo_upload.py`
+- **Workflow Integration Tests: Volunteer Entry** (2 connections) â€” `tests/workflow/test_volunteer_entry.py`
+- **Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError** (1 connections) â€” `tests/workflow/helpers.py`
+- **Build a WhatsApp text-message webhook body for the given bare-digit phone.** (1 connections) â€” `tests/workflow/helpers.py`
+- **Build a volunteer response payload. response_type must be one of:     'confirm'** (1 connections) â€” `tests/workflow/helpers.py`
+- *... and 15 more nodes in this community*
 
 ## Relationships
 
-- [[Community 0]] (11 shared connections)
+- [[Community 6]] (2 shared connections)
+- [[Community 11]] (1 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\volunteers.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\scripts\rotate_emso_key.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\services\encryption.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_encryption.py`
+- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- `tests/workflow/helpers.py`
+- `tests/workflow/test_photo_upload.py`
+- `tests/workflow/test_volunteer_entry.py`
 
 ## Audit Trail
 
-- EXTRACTED: 121 (59%)
-- INFERRED: 83 (41%)
+- EXTRACTED: 82 (52%)
+- INFERRED: 75 (48%)
 - AMBIGUOUS: 0 (0%)
 
 ---

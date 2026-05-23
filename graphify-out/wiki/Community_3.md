@@ -1,53 +1,55 @@
 # Community 3
 
-> 78 nodes · cohesion 0.07
+> 48 nodes Â· cohesion 0.05
 
 ## Key Concepts
 
-- **volunteers.js** (47 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **$()** (36 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **setHtml()** (25 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **esc()** (20 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **route()** (14 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **loadVolunteers()** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **renderDetail()** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **errors.js** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\errors.js`
-- **renderLogEntryDetail()** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **reports.js** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\reports.js`
-- **loadApprovals()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **loadVolunteerLog()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **renderList()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **renderSettings()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **toast()** (8 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **renderAdmin()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\admin.js`
-- **loadAnalytics()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\analytics.js`
-- **renderApprovals()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
-- **analytics.js** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\analytics.js`
-- **loadReports()** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\reports.js`
-- **renderAnalytics()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\analytics.js`
-- **renderDocuments()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\documents.js`
-- **renderAppLog()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\errors.js`
-- **renderReports()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\reports.js`
-- **renderReportsTable()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\frontend\js\reports.js`
-- *... and 53 more nodes in this community*
+- **normalize_phone()** (16 connections) â€” `api/utils/phone.py`
+- **test_managers.py** (13 connections) â€” `api/tests/test_managers.py`
+- **test_phone_utils.py** (10 connections) â€” `api/tests/test_phone_utils.py`
+- **EvolutionClient** (7 connections) â€” `api/services/evolution.py`
+- **seed_whatsapp_phone_from_env()** (6 connections) â€” `api/main.py`
+- **main.py** (5 connections) â€” `api/main.py`
+- **health_detailed()** (4 connections) â€” `api/main.py`
+- **lifespan()** (4 connections) â€” `api/main.py`
+- **.get_connected_phone()** (3 connections) â€” `api/services/evolution.py`
+- **test_seed_whatsapp_phone_does_not_overwrite_existing_value()** (3 connections) â€” `api/tests/test_managers.py`
+- **test_seed_whatsapp_phone_populates_null_db_field()** (3 connections) â€” `api/tests/test_managers.py`
+- **health()** (2 connections) â€” `api/main.py`
+- **.send_document()** (2 connections) â€” `api/services/evolution.py`
+- **test_already_normalized()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_empty_string_returns_none()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_jid_phone_part()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_none_returns_none()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_strips_dashes()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_strips_parentheses()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_strips_plus_prefix()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_strips_spaces()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_too_short_returns_none()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **test_whitespace_only_returns_none()** (2 connections) â€” `api/tests/test_phone_utils.py`
+- **Belpro FastAPI application entry point.** (1 connections) â€” `api/main.py`
+- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) â€” `api/main.py`
+- *... and 23 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 36]] (2 shared connections)
+- [[Community 41]] (2 shared connections)
+- [[Community 69]] (2 shared connections)
+- [[Community 11]] (1 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\frontend\js\admin.js`
-- `D:\Andrej\vsCode-workspace\BelPro\frontend\js\analytics.js`
-- `D:\Andrej\vsCode-workspace\BelPro\frontend\js\documents.js`
-- `D:\Andrej\vsCode-workspace\BelPro\frontend\js\errors.js`
-- `D:\Andrej\vsCode-workspace\BelPro\frontend\js\reports.js`
-- `D:\Andrej\vsCode-workspace\BelPro\frontend\js\volunteers.js`
+- `api/main.py`
+- `api/services/evolution.py`
+- `api/tests/test_managers.py`
+- `api/tests/test_phone_utils.py`
+- `api/utils/phone.py`
 
 ## Audit Trail
 
-- EXTRACTED: 368 (82%)
-- INFERRED: 82 (18%)
+- EXTRACTED: 88 (72%)
+- INFERRED: 35 (28%)
 - AMBIGUOUS: 0 (0%)
 
 ---

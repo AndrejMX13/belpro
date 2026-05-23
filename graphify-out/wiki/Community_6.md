@@ -1,53 +1,71 @@
 # Community 6
 
-> 44 nodes · cohesion 0.07
+> 38 nodes Â· cohesion 0.08
 
 ## Key Concepts
 
-- **normalize_phone()** (16 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\utils\phone.py`
-- **test_managers.py** (13 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_managers.py`
-- **test_phone_utils.py** (10 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- **.get_connected_phone()** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\evolution.py`
-- **test_evolution_service.py** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **seed_whatsapp_phone_from_env()** (6 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\main.py`
-- **main.py** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\main.py`
-- **_make_mock_http()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **health_detailed()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\main.py`
-- **lifespan()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\main.py`
-- **test_connected_returns_normalized_phone_and_open_state()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **test_disconnected_returns_none_and_close_state()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **test_instance_not_in_response_returns_close()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **test_lid_jid_returns_lid_unsupported()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **test_network_error_returns_unreachable()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- **test_seed_whatsapp_phone_does_not_overwrite_existing_value()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_managers.py`
-- **test_seed_whatsapp_phone_populates_null_db_field()** (3 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_managers.py`
-- **health()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\main.py`
-- **seed_whatsapp_phone_from_env writes normalized phone to DB when DB value is null** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_managers.py`
-- **seed_whatsapp_phone_from_env leaves existing DB value untouched.** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_managers.py`
-- **test_already_normalized()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- **test_empty_string_returns_none()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- **test_jid_phone_part()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- **test_none_returns_none()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- **test_strips_dashes()** (2 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- *... and 19 more nodes in this community*
+- **Plan: WhatsApp Phone Single Source of Truth** (9 connections) â€” `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **n8n Volunteer Entry Workflow** (8 connections) â€” `n8n/workflows/volunteer_entry.json`
+- **n8n_workflows.py** (8 connections) â€” `scripts/n8n_workflows.py`
+- **Plan: Work Date Rename + Dashboard Entry Creation** (6 connections) â€” `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Log Entries Router** (5 connections) â€” `api/routers/log_entries.py`
+- **Frontend Dashboard JS (volunteers.js)** (5 connections) â€” `frontend/js/volunteers.js`
+- **API Core Settings** (4 connections) â€” `api/core/settings.py`
+- **Evolution API Client Service** (4 connections) â€” `api/services/evolution.py`
+- **Plan: Photo Upload Limit (ISS-002)** (4 connections) â€” `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **api_request()** (4 connections) â€” `scripts/n8n_workflows.py`
+- **cmd_export()** (4 connections) â€” `scripts/n8n_workflows.py`
+- **cmd_import()** (4 connections) â€” `scripts/n8n_workflows.py`
+- **main()** (4 connections) â€” `scripts/n8n_workflows.py`
+- **Managers Router** (3 connections) â€” `api/routers/managers.py`
+- **Evolution API LID JID Resolution Doc** (3 connections) â€” `docs/evolution-lid-resolution.md`
+- **n8n Manager Approval Workflow** (3 connections) â€” `n8n/workflows/manager_approval.json`
+- **Plan: Log Entry Location Edit + Auto-Refresh** (3 connections) â€” `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Plan: Manager WhatsApp Approval** (3 connections) â€” `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Plan: Volunteer Contact Inline Edit** (3 connections) â€” `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **load_env()** (3 connections) â€” `scripts/n8n_workflows.py`
+- **API Main (FastAPI app)** (2 connections) â€” `api/main.py`
+- **Volunteers Router** (2 connections) â€” `api/routers/volunteers.py`
+- **Log Entry Pydantic Schemas** (2 connections) â€” `api/schemas/log_entry.py`
+- **API Test: Log Entry Endpoints** (2 connections) â€” `api/tests/test_log_entries.py`
+- **Env Writer Utility** (2 connections) â€” `api/utils/env_writer.py`
+- *... and 13 more nodes in this community*
 
 ## Relationships
 
-- [[Community 0]] (5 shared connections)
+- [[Community 7]] (2 shared connections)
+- [[Community 5]] (2 shared connections)
+- [[Community 34]] (1 shared connections)
+- [[Community 35]] (1 shared connections)
+- [[Community 65]] (1 shared connections)
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\main.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\services\evolution.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_evolution_service.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_managers.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_phone_utils.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\utils\phone.py`
+- `.claude/skills/version-bump/SKILL.md`
+- `.github/pull_request_template.md`
+- `api/core/settings.py`
+- `api/main.py`
+- `api/routers/log_entries.py`
+- `api/routers/managers.py`
+- `api/routers/volunteers.py`
+- `api/schemas/log_entry.py`
+- `api/schemas/manager.py`
+- `api/schemas/volunteer.py`
+- `api/services/evolution.py`
+- `api/tests/test_log_entries.py`
+- `api/utils/env_writer.py`
+- `api/utils/phone.py`
+- `db/init.sql`
+- `docs/evolution-lid-resolution.md`
+- `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
 
 ## Audit Trail
 
-- EXTRACTED: 92 (66%)
-- INFERRED: 47 (34%)
+- EXTRACTED: 112 (96%)
+- INFERRED: 5 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

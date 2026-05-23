@@ -1,58 +1,60 @@
 # Community 2
 
-> 89 nodes · cohesion 0.04
+> 52 nodes Â· cohesion 0.06
 
 ## Key Concepts
 
-- **AppSetting** (49 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\models\app_setting.py`
-- **test_app_settings.py** (19 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
-- **Settings (Pydantic BaseSettings)** (19 connections) — `api/core/settings.py`
-- **get_settings() cached factory** (16 connections) — `api/core/settings.py`
-- **AdminSettingsResponse** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\admin.py`
-- **app_settings.py** (11 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\app_settings.py`
-- **AdminSettingsUpdate** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\schemas\admin.py`
-- **._int()** (9 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\app_settings.py`
-- **Pydantic schemas for the admin settings endpoints.** (7 connections) — `api\schemas\admin.py`
-- **update_admin_settings()** (7 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- **POST /reconfigure to ops. Logs and persists error on failure; never raises.** (6 connections) — `api\routers\admin.py`
-- **Return current values of all runtime-tunable settings.** (5 connections) — `api\routers\admin.py`
-- **Return current values of all runtime-tunable settings.** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- **Update one or more runtime-tunable settings. Returns updated state.** (5 connections) — `api\routers\admin.py`
-- **Update one or more runtime-tunable settings. Returns updated state.** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- **._bool()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\app_settings.py`
-- **._str()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\services\app_settings.py`
-- **test_appsettings_bool_helper_falls_back_to_default()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
-- **test_appsettings_bool_helper_parses_falsy_strings()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
-- **test_appsettings_bool_helper_parses_truthy_strings()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
-- **test_appsettings_str_helper_falls_back_to_default()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
-- **test_appsettings_str_helper_returns_db_value()** (5 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
-- **get_admin_settings()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- **_notify_ops()** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- **admin.py** (4 connections) — `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- *... and 64 more nodes in this community*
+- **BelPro System Specification** (29 connections) â€” `SPEC.md`
+- **Docker Compose (all services containerised)** (8 connections) â€” `CLAUDE.md`
+- **Digital Volunteer Diary Architecture & GDPR Notes** (6 connections) â€” `BelPro.md`
+- **Manager Web Dashboard** (6 connections) â€” `SPEC.md`
+- **Version 0.11.1-beta.0** (6 connections) â€” `CHANGELOG.md`
+- **BelPro README (English)** (5 connections) â€” `README.md`
+- **AppSettings â€” Runtime-Tunable Configuration (DB-first, env-fallback)** (5 connections) â€” `SPEC.md`
+- **Evolution API (WhatsApp Gateway)** (5 connections) â€” `SPEC.md`
+- **Ops Sidecar (backup, photo cleanup, error reporting)** (5 connections) â€” `SPEC.md`
+- **DB Table: volunteers** (5 connections) â€” `SPEC.md`
+- **Contributing Guide** (4 connections) â€” `CONTRIBUTING.md`
+- **EMÅ O Encryption (AES-256-GCM at rest)** (4 connections) â€” `SPEC.md`
+- **Error Log (Dnevnik napak)** (4 connections) â€” `SPEC.md`
+- **FastAPI Backend + PDF Generation** (4 connections) â€” `CLAUDE.md`
+- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) â€” `SPEC.md`
+- **PostgreSQL 18 Database** (4 connections) â€” `SPEC.md`
+- **WhatsApp Volunteer Entry Flow** (4 connections) â€” `SPEC.md`
+- **Evolution API QR Code Troubleshooting (English)** (4 connections) â€” `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **CLAUDE.md â€” Project AI Instructions** (3 connections) â€” `CLAUDE.md`
+- **GDPR Consent PDF (Dogovor o prostovoljstvu)** (3 connections) â€” `SPEC.md`
+- **Monthly PDF Reports Generation and Delivery** (3 connections) â€” `SPEC.md`
+- **n8n as Workflow Engine** (3 connections) â€” `CLAUDE.md`
+- **Ops Notification Server (POST /reconfigure, port 9000)** (3 connections) â€” `CHANGELOG.md`
+- **DB Table: log_entries** (3 connections) â€” `SPEC.md`
+- **DB Table: monthly_reports** (3 connections) â€” `SPEC.md`
+- *... and 27 more nodes in this community*
 
 ## Relationships
 
-- [[Community 0]] (1 shared connections)
-- [[Community 1]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `D:\Andrej\vsCode-workspace\BelPro\api\models\app_setting.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\routers\admin.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\schemas\admin.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\services\app_settings.py`
-- `D:\Andrej\vsCode-workspace\BelPro\api\tests\test_app_settings.py`
+- `.claude/skills/code-documenter/SKILL.md`
+- `BelPro.md`
+- `CHANGELOG.md`
+- `CLAUDE.md`
+- `CODE_OF_CONDUCT.md`
+- `CONTRIBUTING.md`
+- `EVOLUTION_QR_TROUBLESHOOTING.md`
+- `README.md`
+- `README_SL.md`
+- `ROADMAP.md`
 - `SECURITY.md`
-- `api/core/settings.py`
-- `api\routers\admin.py`
-- `api\schemas\admin.py`
-- `api\services\app_settings.py`
+- `SPEC.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 162 (42%)
-- INFERRED: 222 (58%)
+- EXTRACTED: 166 (98%)
+- INFERRED: 4 (2%)
 - AMBIGUOUS: 0 (0%)
 
 ---
