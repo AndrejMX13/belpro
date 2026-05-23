@@ -214,12 +214,23 @@ These must be explicit in `requirements.txt` — transitive resolution gets them
 
 ## Project Memory
 
-This project uses a persistent memory system at `~/.claude/projects/<project>/memory/`. `MEMORY.md` is an index automatically loaded into every conversation, but individual memory files must be consulted actively.
+Two separate memory systems are in use — consult both at the start of every session.
 
-- **At the start of every session**, read `MEMORY.md` and the relevant individual memory files before taking any action. This is not optional — the same rule as graphify orientation.
+### Claude memory (`~/.claude/projects/<project>/memory/`)
+Private, per-user, not in the repository. `MEMORY.md` is an index automatically loaded into every conversation; individual files must be read actively.
+
+- **At the start of every session**, read `MEMORY.md` and the relevant individual memory files before taking any action.
 - **When patterns recur**, write them to memory — feedback (corrections/confirmations), project state, and user preferences. Link related memories with `[[name]]`.
 - **Never write code patterns, file paths, or architecture to memory** — those are derivable from the codebase. Memory is for behavioral feedback, project decisions, and user context.
-- **After every session that modifies code**, run `graphify update .`.
+
+### Serena memory (`.serena/memories/`)
+Project-level, committed to the repository — shared across machines and contributors. Contains code style, project overview, state, feedback, and script notes written by Serena during previous sessions.
+
+- **At the start of every session**, check `.serena/memories/` for relevant context before touching code.
+- Serena manages these files itself via its MCP tools (`write_memory`, `edit_memory`, etc.) — do not edit them by hand.
+
+### After every session that modifies code
+Run `graphify update .` to keep the knowledge graph current (AST-only, no API cost).
 
 ---
 

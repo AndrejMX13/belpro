@@ -409,7 +409,7 @@ Full system specification: [SPEC.md](SPEC.md)
 This project was developed with the help of the following tools, whose configuration and output files are committed to the repository:
 
 - **[Claude Code](https://code.claude.com/docs/en/quickstart)** — Anthropic's AI coding assistant, used for implementation, workflow automation, and debugging throughout the project.
-- **[Serena](https://github.com/oraios/serena)** — MCP server for semantic code navigation (symbol search, cross-referencing). Configuration lives in `.claude/`.
+- **[Serena](https://github.com/oraios/serena)** — MCP server for semantic code navigation (symbol search, cross-referencing). Configuration and project memory files live in `.serena/`.
 - **[Graphify](https://github.com/safishamsi/graphify)** — AST-based knowledge graph generator for codebase mapping. Output lives in `graphify-out/`.
 - **[Superpowers](https://github.com/obra/superpowers)** — Claude Code plugin providing structured development workflows (brainstorming, planning, subagent-driven execution, code review). Configuration lives in `.claude/`.
 - **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp)** — MCP server for managing n8n workflows directly from Claude Code. Used throughout to create, update, and validate workflows without touching JSON by hand.

@@ -422,7 +422,7 @@ Celotna specifikacija sistema: [SPEC_SL.md](SPEC_SL.md)
 Ta projekt je bil razvit s pomočjo naslednjih orodij, katerih nastavitvene in izhodne datoteke so shranjene v repozitoriju:
 
 - **[Claude Code](https://code.claude.com/docs/en/quickstart)** — Anthropic's AI programerski pomočnik, uporabljen za implementacijo, avtomatizacijo delovnih procesov in iskanje hroščev skozi celoten projekt.
-- **[Serena](https://github.com/oraios/serena)** — MCP strežnik za semantično navigacijo po kodi (iskanje simbolov, navzkrižno sklicevanje). Nastavitve se nahajajo v mapi `.claude/`.
+- **[Serena](https://github.com/oraios/serena)** — MCP strežnik za semantično navigacijo po kodi (iskanje simbolov, navzkrižno sklicevanje). Nastavitve in datoteke projektnega spomina se nahajajo v mapi `.serena/`.
 - **[Graphify](https://github.com/safishamsi/graphify)** — Generator grafov znanja na podlagi AST za mapiranje kode. Izhodni podatki se nahajajo v mapi `graphify-out/`.
 - **[Superpowers](https://github.com/obra/superpowers)** — Vtičnik za Claude Code, ki omogoča strukturirane razvojne procese (brainstorming, načrtovanje, izvajanje s pod-agenti, pregled kode). Nastavitve se nahajajo v mapi `.claude/`.
 - **[n8n-mcp](https://github.com/czlonkowski/n8n-mcp)** — MCP strežnik za upravljanje n8n delovnih procesov neposredno preko Claude Code. Uporabljen je bil za ustvarjanje, posodabljanje in preverjanje procesov brez ročnega urejanja JSON datotek.
