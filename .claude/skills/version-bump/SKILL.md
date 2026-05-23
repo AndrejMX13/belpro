@@ -1,6 +1,6 @@
 ---
 name: version-bump
-description: "Guide through a BelPro version bump. Use when the user asks to bump the version, cut a release, or do a version bump. Covers: version suggestion, file updates (main.py, CHANGELOG, SPEC, README), pre-commit review, optional tagging, optional GitHub release note drafting, and optional container rebuild."
+description: "Guide through a BelPro version bump. Use when the user asks to bump the version, cut a release, or do a version bump. Covers: version suggestion, file updates (main.py, CHANGELOG, SPEC, SPEC_SL, README, README_SL, ROADMAP), pre-commit review, optional tagging, optional GitHub release note drafting, and optional container rebuild."
 metadata:
   role: procedure
   scope: project
@@ -9,7 +9,13 @@ metadata:
 
 # BelPro Version Bump
 
-A step-by-step release procedure for BelPro. Work through each step in order. Pause for explicit user confirmation at every decision point — never commit, tag, or execute a command without approval.
+A step-by-step release procedure for BelPro. Work through each step in order.
+
+**Hard rules — never break these:**
+- **Do not commit anything until Step 3 is complete and the user has explicitly approved the commit message.**
+- **Do not make intermediate commits during file updates.** All version bump changes go in one single commit.
+- **Never push.** Pushing is always the user's responsibility. Do not offer to push, do not execute a push command.
+- **Always show the full commit message and wait for explicit approval before running `git commit`.**
 
 ---
 
@@ -43,7 +49,7 @@ Check the conversation context first.
 
 ## Step 2 — Update files
 
-Work through each file in order. Update where needed; note explicitly if no change is required.
+Work through each file in order. **Do not commit anything yet.** Update where needed; note explicitly if no change is required.
 
 ### `api/main.py`
 Update `__version__` to the confirmed version string.
@@ -76,11 +82,23 @@ Use the date from the previous CHANGELOG section header as the `--since` value. 
 ### `SPEC.md`
 Read the file. Check whether any behaviour described there has changed with this bump. If yes, update it. If unsure, ask the user.
 
+### `SPEC_SL.md`
+Apply the same changes made to `SPEC.md`, translated into Slovenian. Never update one without the other.
+
 ### `README.md`
 Read the file. Compare it against what changed in this bump:
 - If anything described (features, setup steps, behaviour) has changed, suggest the update.
 - If the version number appears explicitly, update it.
 - If uncertain whether a change warrants a README mention, ask the user.
+
+### `README_SL.md`
+Apply the same changes made to `README.md`, translated into Slovenian. Never update one without the other.
+
+### `ROADMAP.md`
+Read the file. Tick any items that are now complete (add `✓`) and move newly completed versions into the Done section if applicable. If unsure whether something is done, ask the user.
+
+### `graphify-out/`
+Check `git status` — if any `graphify-out/` files appear as modified, they must be included in the release commit. Do not skip them.
 
 ---
 
@@ -92,27 +110,39 @@ Read the file. Compare it against what changed in this bump:
    - **Untracked files that look like generated/local output** — suggest: "Should this be added to `.gitignore`?"
    - **Modified files not yet staged** — ask: "Was this intentionally left out?"
    - **`.env` variants** — never stage; warn the user if one appears untracked.
-3. Draft the commit message and show it to the user:
+3. Draft the commit message and show it to the user. The title should be `chore: release <version>`. The body should list all changed files and what was done in each, as bullet points. For a release with meaningful scope, this body is not optional — it is the changelog for the commit itself. Use this structure:
+
    ```
-   chore: bump version to <version>
+   chore: release <version>
+
+   - Version bump: api/main.py __version__ → <version>
+   - CHANGELOG: add <version> entry (<one-line summary of scope>)
+   - SPEC / SPEC_SL: <what changed, if anything>
+   - README / README_SL: <what changed, if anything>
+   - ROADMAP: <what was ticked, if anything>
+   - graphify-out: incremental update (if included)
 
    Co-Authored-By: <Model Name> <email>
    ```
-   Determine the trailer from the current session context:
+
+   Determine the Co-Authored-By trailer from the current session context:
    - Anthropic model → `Co-Authored-By: Claude Sonnet 4.6 <noreply@anthropic.com>` (use actual model name from context)
    - Third-party or unknown model → `Co-Authored-By: AI Assistant <noreply@ai>`
-4. **Wait for explicit confirmation before committing.**
-5. After approval, commit using PowerShell (assign message to variable first):
-   ```powershell
-   $msg = @'
-   chore: bump version to <version>
+
+4. **Show the full message to the user and wait for explicit approval before doing anything else.**
+5. After approval, stage all updated files and commit using the Bash tool:
+   ```bash
+   git add api/main.py CHANGELOG.md SPEC.md SPEC_SL.md README.md README_SL.md ROADMAP.md
+   # also: git add graphify-out/ if modified
+   git commit -m "$(cat <<'EOF'
+   chore: release <version>
+
+   - ...bullet points...
 
    Co-Authored-By: <Model Name> <email>
-   '@
-   git commit -m $msg
+   EOF
+   )"
    ```
-   Stage all updated files before running this. Example: `git add api/main.py CHANGELOG.md  # also add SPEC.md and/or README.md if updated`
-6. After the commit, remind the user: "Push the branch when ready: `git push central main`"
 
 ---
 
@@ -124,10 +154,7 @@ Ask: "Do you want to tag this commit as `v<version>`?"
   ```
   git tag v<version>
   ```
-  Then ask: "Push the tag to central?"
-  ```
-  git push central v<version>
-  ```
+  Note: pushing the tag is the user's responsibility, same as pushing commits.
 - If **no**: skip to Step 5.
 
 ---
@@ -140,22 +167,29 @@ If Step 4 was skipped (no tag was created), note this: "GitHub releases are typi
 
 - If **yes**:
   1. Ask: "What was the last version that had a GitHub release?" (user checks GitHub if unsure).
-  2. Read all CHANGELOG entries from that version up to the current one and aggregate them.
-  3. Propose formatted release notes. Use this structure:
+  2. Run `git log <last-release-tag>..HEAD --oneline` and read all relevant CHANGELOG entries from that version up to the current one.
+  3. Propose formatted release notes. When the release covers many changes across multiple versions, use **thematic grouping** rather than Added/Changed/Fixed — it reads better for a large release. Example structure:
+
      ```markdown
-     ## What's new in <version>
+     **<one-line summary of what this release is about>**
 
-     ### Added
+     ### <Theme 1 — e.g. Ops & reliability>
      - ...
 
-     ### Changed
+     ### <Theme 2 — e.g. Manager dashboard>
      - ...
 
-     ### Fixed
+     ### <Theme N>
      - ...
+
+     ---
+     **Full changelog:** [CHANGELOG.md](CHANGELOG.md)
      ```
-     Discuss and revise with the user until they are happy.
-  4. Remind: "GitHub releases are created manually via the web UI at github.com — paste the notes there."
+
+     For a small patch release, Added/Changed/Fixed is fine.
+
+  4. Save the release notes to `docs/release-notes-v<version>.md` for easy pasting into the GitHub release UI.
+  5. Remind: "GitHub releases are created manually via the web UI — open the release, paste from `docs/release-notes-v<version>.md`."
 - If **no**: skip.
 
 ---
