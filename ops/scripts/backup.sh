@@ -60,11 +60,22 @@ EOF
 
 echo "[backup] Backup complete: ${BACKUP_DIR}"
 
-# Prune old backups
-echo "[backup] Pruning backups older than ${RETENTION_DAYS} days..."
-find /backups -maxdepth 1 -type d -mtime "+${RETENTION_DAYS}" -exec rm -rf {} + || {
-  echo "[backup] Warning: pruning old backups failed"
-  report_error "backup pruning failed" "find/rm returned non-zero"
-}
+# Prune old backups — always keep at least the 5 newest regardless of retention setting
+echo "[backup] Pruning backups older than ${RETENTION_DAYS} days (keeping at least 5)..."
+KEEP_MIN=5
+TOTAL=$(find /backups -maxdepth 1 -mindepth 1 -type d | wc -l)
+DELETABLE=$(( TOTAL - KEEP_MIN ))
+if [ "$DELETABLE" -gt 0 ]; then
+  find /backups -maxdepth 1 -mindepth 1 -type d | sort | head -n "$DELETABLE" | while read -r OLD_DIR; do
+    if find "$OLD_DIR" -maxdepth 0 -mtime "+${RETENTION_DAYS}" | grep -q .; then
+      rm -rf "$OLD_DIR" || {
+        echo "[backup] Warning: failed to remove ${OLD_DIR}"
+        report_error "backup pruning failed" "rm returned non-zero for ${OLD_DIR}"
+      }
+    fi
+  done
+else
+  echo "[backup] Only ${TOTAL} backup(s) present — nothing to prune (minimum ${KEEP_MIN} always kept)"
+fi
 
 echo "[backup] Done."
