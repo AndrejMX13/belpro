@@ -1,6 +1,6 @@
 # Belpro — Suggested Commands
 
-> All commands run in WSL2 (Ubuntu) terminal — not Windows PowerShell.
+> **Shell:** Use Git Bash (MINGW64) for most commands. Use PowerShell for `docker compose` and Windows-specific ops.
 > Docker Desktop must be running.
 
 ## Stack management
@@ -25,7 +25,13 @@ docker compose exec api alembic history           # show migration history
 ```bash
 docker compose exec api black .       # format
 docker compose exec api ruff check .  # lint
-docker compose exec api pytest        # tests (when added)
+docker compose exec api pytest tests/ -v  # tests; path inside container is tests/ not api/tests/
+
+## Workflow integration tests (host Python, requires stack running)
+```bash
+python -m pytest tests/workflow/ -v   # run from project root on host
+```
+These hit the live n8n webhook + FastAPI together. Require docker compose stack to be up.
 ```
 
 ## Access points
