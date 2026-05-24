@@ -7,6 +7,10 @@
           {
             "type": "command",
             "command": "bash .claude/hooks/list-skills.sh"
+          },
+          {
+            "type": "command",
+            "command": "bash .claude/hooks/load-project-memory.sh"
           }
         ]
       }
