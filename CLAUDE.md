@@ -165,6 +165,9 @@ docker compose logs -f
 # Evolution API: http://localhost:8180
 ```
 
+# Run workflow integration tests (host Python — requires full stack running)
+python -m pytest tests/workflow/ -v
+
 ---
 
 ## Tooling & Shell Conventions
@@ -214,21 +217,12 @@ These must be explicit in `requirements.txt` — transitive resolution gets them
 
 ## Project Memory
 
-Two separate memory systems are in use — consult both at the start of every session.
-
 ### Claude memory (`~/.claude/projects/<project>/memory/`)
 Private, per-user, not in the repository. `MEMORY.md` is an index automatically loaded into every conversation; individual files must be read actively.
 
 - **At the start of every session**, read `MEMORY.md` and the relevant individual memory files before taking any action.
 - **When patterns recur**, write them to memory — feedback (corrections/confirmations), project state, and user preferences. Link related memories with `[[name]]`.
 - **Never write code patterns, file paths, or architecture to memory** — those are derivable from the codebase. Memory is for behavioral feedback, project decisions, and user context.
-
-### Serena memory (`.serena/memories/`)
-Project-level, committed to the repository — shared across machines and contributors. Contains code style, project overview, state, feedback, and script notes written by Serena during previous sessions.
-
-- **At the start of every session**, check `.serena/memories/` for relevant context before touching code.
-- Serena manages these files itself via its MCP tools (`write_memory`, `edit_memory`, etc.) — do not edit them by hand.
-- **When Serena adds, renames, or deletes a memory file**, update the Serena section in `~/.claude/projects/d--Andrej-vsCode-workspace-BelPro/memory/MEMORY.md` to match.
 
 ### After every session that modifies code
 Run `graphify update .` to keep the knowledge graph current (AST-only, no API cost).
