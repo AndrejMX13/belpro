@@ -582,7 +582,7 @@ Potek testiranja se opira na dve vozlišči ročnega sprožilca v n8n delovnih p
 
 ## 13. Avtomatizirana testna zbirka
 
-Varnostna mreža za regresijsko testiranje zalednega sistema FastAPI, ki temelji na pytest. Obseg: vse API končne točke, srečna pot in ključni primeri napak. Testi delovnih procesov n8n so izvzeti (čakajo strukturne spremembe).
+Varnostna mreža za regresijsko testiranje zalednega sistema FastAPI, ki temelji na pytest. Obseg: vse API končne točke, srečna pot in ključni primeri napak. Celoviti integracijski testi delovnih procesov n8n so v razdelku 14.
 
 ### Infrastruktura
 

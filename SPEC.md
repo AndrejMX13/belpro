@@ -591,7 +591,7 @@ The testing workflow relies on two manual trigger nodes in the n8n workflows:
 
 ## 13. Automated Test Suite
 
-A pytest-based regression safety net for the FastAPI backend. Scope: all API endpoints, happy path + key error cases. n8n workflow tests are excluded (structural changes pending).
+A pytest-based regression safety net for the FastAPI backend. Scope: all API endpoints, happy path + key error cases. End-to-end n8n workflow tests live in Section 14.
 
 ### Infrastructure
 
