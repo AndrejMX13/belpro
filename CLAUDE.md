@@ -228,6 +228,7 @@ Project-level, committed to the repository — shared across machines and contri
 
 - **At the start of every session**, check `.serena/memories/` for relevant context before touching code.
 - Serena manages these files itself via its MCP tools (`write_memory`, `edit_memory`, etc.) — do not edit them by hand.
+- **When Serena adds, renames, or deletes a memory file**, update the Serena section in `~/.claude/projects/d--Andrej-vsCode-workspace-BelPro/memory/MEMORY.md` to match.
 
 ### After every session that modifies code
 Run `graphify update .` to keep the knowledge graph current (AST-only, no API cost).
