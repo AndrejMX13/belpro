@@ -1,16 +1,16 @@
 # Graph Report - BelPro  (2026-05-24)
 
 ## Corpus Check
-- 336 files · ~425,139 words
+- 337 files · ~425,472 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 8542 nodes · 9475 edges · 757 communities (685 shown, 72 thin omitted)
+- 8553 nodes · 9487 edges · 758 communities (686 shown, 72 thin omitted)
 - Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 542 edges (avg confidence: 0.78)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d4cecd24`
+- Built from commit: `d5631498`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -723,6 +723,7 @@
 - [[_COMMUNITY_Community 730|Community 730]]
 - [[_COMMUNITY_Community 731|Community 731]]
 - [[_COMMUNITY_Community 755|Community 755]]
+- [[_COMMUNITY_Community 757|Community 757]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `connections` - 71 edges
@@ -741,18 +742,18 @@
   .github/pull_request_template.md → api/routers/log_entries.py
 - `Plan: API Test Suite Implementation` --creates--> `API Test: Log Entry Endpoints`  [EXTRACTED]
   docs/superpowers/plans/2026-05-09-test-suite.md → api/tests/test_log_entries.py
-- `Report Auto Hour Implementation Plan` --modifies--> `api/tests/test_app_settings.py`  [EXTRACTED]
-  docs/superpowers/plans/2026-05-22-report-auto-hour.md → api/tests/test_app_settings.py
+- `Auto Monthly Report Delivery Implementation Plan` --modifies--> `ops/entrypoint.sh`  [EXTRACTED]
+  docs/superpowers/plans/2026-05-21-auto-monthly-reports.md → ops/entrypoint.sh
 - `EMSO Key Rotation Guide (English)` --references--> `Encryption Service`  [INFERRED]
   docs/emso_key_rotation.md → api/services/encryption.py
 - `Evolution API LID JID Resolution Doc` --references--> `n8n Volunteer Entry Workflow`  [EXTRACTED]
   docs/evolution-lid-resolution.md → n8n/workflows/volunteer_entry.json
 
-## Communities (757 total, 72 thin omitted)
+## Communities (758 total, 72 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.06
-Nodes (82): renderAdmin(), analyticsState, _destroyCharts(), exportAnalyticsCsv(), loadAnalytics(), renderAnalytics(), renderAnalyticsContent(), _renderCharts() (+74 more)
+Nodes (83): renderAdmin(), analyticsState, _destroyCharts(), exportAnalyticsCsv(), loadAnalytics(), renderAnalytics(), renderAnalyticsContent(), _renderCharts() (+75 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.10
@@ -763,16 +764,16 @@ Cohesion: 0.06
 Nodes (52): Digital Volunteer Diary Architecture & GDPR Notes, BelPro Changelog, CLAUDE.md — Project AI Instructions, Contributor Covenant Code of Conduct, Contributing Guide, BelPro — Beleženje Prostovoljstva, BelPro README (English), BelPro README (Slovenian) (+44 more)
 
 ### Community 3 - "Community 3"
-Cohesion: 0.05
-Nodes (29): health(), lifespan(), Belpro FastAPI application entry point., Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null., Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null., Health check — returns ok when the service is up., seed_whatsapp_phone_from_env(), EvolutionClient (+21 more)
+Cohesion: 0.24
+Nodes (12): test_already_normalized(), test_empty_string_returns_none(), test_jid_phone_part(), test_none_returns_none(), test_strips_dashes(), test_strips_parentheses(), test_strips_plus_prefix(), test_strips_spaces() (+4 more)
 
 ### Community 4 - "Community 4"
 Cohesion: 0.11
-Nodes (24): BelPro System, Centre for Social Work (CSD), Docker Compose Microservices Stack, EMSO AES-256 Encryption at Rest, Evolution API (WhatsApp Gateway), GDPR & ZVOP-2 Compliance, Gmail Email Delivery, Monthly Reporting Pipeline (28th trigger → PDF → Email → CSD submission) (+16 more)
+Nodes (23): BelPro System, Centre for Social Work (CSD), Docker Compose Microservices Stack, EMSO AES-256 Encryption at Rest, Evolution API (WhatsApp Gateway), GDPR & ZVOP-2 Compliance, Gmail Email Delivery, Monthly Reporting Pipeline (28th trigger → PDF → Email → CSD submission) (+15 more)
 
 ### Community 5 - "Community 5"
-Cohesion: 0.16
-Nodes (23): make_response_payload(), make_text_payload(), poll_for_entry_gone(), poll_for_entry_status(), post_to_webhook(), Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError, Build a WhatsApp text-message webhook body for the given bare-digit phone., Build a volunteer response payload. response_type must be one of:     'confirm' (+15 more)
+Cohesion: 0.14
+Nodes (27): make_response_payload(), make_text_payload(), poll_for_entry(), poll_for_entry_gone(), poll_for_entry_status(), post_to_webhook(), Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError, Build a WhatsApp text-message webhook body for the given bare-digit phone. (+19 more)
 
 ### Community 6 - "Community 6"
 Cohesion: 0.15
@@ -783,8 +784,8 @@ Cohesion: 0.17
 Nodes (13): Encryption Service, EMSO Key Rotation Guide (English), EMSO Key Rotation Guide (Slovenian), Plan: EMSO Key Rotation Script, API Production Requirements, cmd_backup(), cmd_restore(), cmd_rotate() (+5 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.06
-Nodes (41): download_history_pdf(), get_report_history(), List persisted PDF reports, newest first. Optionally filter by year and/or month, Stream a previously generated PDF from disk. Returns 404 if the row or file is m, path, dsn_from_url(), main(), POST failure to the API error log. (+33 more)
+Cohesion: 0.10
+Nodes (27): path, persist_report(), PDF report storage — disk write and upsert of MonthlyReport rows., Return the canonical filesystem path for a report PDF., Write pdf_bytes to disk and upsert a MonthlyReport row.      If a row already ex, report_path(), Tests for PDF report persistence and history endpoints., Second persist_report() for consolidated (volunteer_id=None, year, month) must o (+19 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.06
@@ -795,16 +796,16 @@ Cohesion: 0.09
 Nodes (36): Luxon DateTime Library (concept), n8n Code Node (concept), n8n Expression Syntax {{ }} (concept), n8n MCP Tools (n8n-mcp server, concept), n8n nodeType Format Distinction (concept), n8n Property Dependencies / displayOptions (concept), Python Code Node: No External Libraries Limitation (concept), SplitInBatches Node Pattern (concept) (+28 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.06
-Nodes (48): Base, DeclarativeBase, AppSetting, One row per named setting. All values stored as TEXT., Base, Declarative base — import and subclass in every model., ErrorLog, One row per operational failure. Written by API, n8n, and ops sidecar. (+40 more)
+Cohesion: 0.10
+Nodes (31): Base, DeclarativeBase, AppSetting, AppSetting ORM model — runtime-tunable key-value configuration., One row per named setting. All values stored as TEXT., Base, SQLAlchemy declarative base shared by all ORM models., Declarative base — import and subclass in every model. (+23 more)
 
 ### Community 12 - "Community 12"
-Cohesion: 0.08
-Nodes (35): Action Button: Izvozi CSV (Export CSV), Analitika (Analytics) Dashboard Page, Chart: Mesečni Trend — Zadnjih 6 Mesecev (Monthly Trend — Last 6 Months, line chart), Chart: Ure po Lokacijah — Maj 2026 (Hours per Location, vertical bar chart), Chart: Ure po Prostovoljcih — Maj 2026 (Hours per Volunteer, horizontal bar chart), Filter: Leto (Year) — 2026, Filter: Mesec (Month) — Maj, KPI: Brez Vnosov Ta Mesec (No Entries This Month) — 1 (+27 more)
+Cohesion: 0.06
+Nodes (47): Action Button: Izvozi CSV (Export CSV), Analitika (Analytics) Dashboard Page, Chart: Mesečni Trend — Zadnjih 6 Mesecev (Monthly Trend — Last 6 Months, line chart), Chart: Ure po Lokacijah — Maj 2026 (Hours per Location, vertical bar chart), Chart: Ure po Prostovoljcih — Maj 2026 (Hours per Volunteer, horizontal bar chart), Filter: Leto (Year) — 2026, Filter: Mesec (Month) — Maj, KPI: Brez Vnosov Ta Mesec (No Entries This Month) — 1 (+39 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.22
-Nodes (21): MonthlyReport ORM model — tracks generated PDF reports., body(), border(), borders(), cell(), complianceTable(), componentTable(), coverPage() (+13 more)
+Cohesion: 0.20
+Nodes (22): MonthlyReport ORM model — tracks generated PDF reports., Tracks generated PDF reports for audit and re-delivery purposes.      volunteer_, body(), border(), borders(), cell(), complianceTable(), componentTable() (+14 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.06
@@ -839,12 +840,12 @@ Cohesion: 0.09
 Nodes (29): n8n AI Connection Types (8 types), n8n Auto-Sanitization System, n8n Batch Processing / SplitInBatches Pattern, n8n Validation Loop Pattern, n8n Validation Profiles (minimal/runtime/ai-friendly/strict), PostgreSQL EXPLAIN ANALYZE Workflow, Python Type Safety with mypy strict, n8n Validation Error Catalog (+21 more)
 
 ### Community 22 - "Community 22"
-Cohesion: 0.06
-Nodes (56): str, log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), Returns an async callable that inserts a LogEntry row via flush., volunteer_factory(), A month with only rejected entries returns total_hours=0, not an error., Rejected entries don't contribute to total_hours; pending_manager entries don't, test_analytics_all_rejected_returns_zero_hours() (+48 more)
+Cohesion: 0.05
+Nodes (57): log_entry_factory(), Returns an async callable that inserts a Volunteer row via flush (not commit), Returns an async callable that inserts a LogEntry row via flush., volunteer_factory(), A month with only rejected entries returns total_hours=0, not an error., Rejected entries don't contribute to total_hours; pending_manager entries don't, test_analytics_all_rejected_returns_zero_hours(), test_analytics_rejected_hours_excluded() (+49 more)
 
 ### Community 23 - "Community 23"
-Cohesion: 0.04
-Nodes (76): BaseSettings, get_settings(), Application settings — loaded from environment variables / .env file., All configuration for the Belpro API service.      Values are read from the proc, Return a cached Settings instance (constructed once per process)., Settings, get_admin_settings(), _notify_ops() (+68 more)
+Cohesion: 0.05
+Nodes (54): BaseSettings, get_settings(), Application settings — loaded from environment variables / .env file., All configuration for the Belpro API service.      Values are read from the proc, Return a cached Settings instance (constructed once per process)., Settings, get_admin_settings(), Return current values of all runtime-tunable settings. (+46 more)
 
 ### Community 24 - "Community 24"
 Cohesion: 0.16
@@ -859,20 +860,20 @@ Cohesion: 0.10
 Nodes (25): Content Security Policy & Security Headers, JWT Token Authentication, k6 Load/Performance Testing, OWASP Top 10 Vulnerabilities, Password Hashing (bcrypt/argon2), Playwright E2E Testing, Rate Limiting, SQL Injection Prevention (+17 more)
 
 ### Community 27 - "Community 27"
-Cohesion: 0.67
-Nodes (3): Login sets a cookie whose max_age matches the session_duration_hours DB setting., Login sets a cookie whose max_age matches the session_duration_hours DB setting., test_login_cookie_max_age_reflects_db_session_duration()
+Cohesion: 0.08
+Nodes (23): Tests for the settings table, AppSettings service, and admin settings router., GET /api/admin/settings returns the seeded default values., Migration seeds the three default settings rows., Unauthenticated request is rejected., PATCH updates a single field; others are unchanged., Subsequent GET reflects a PATCHed value., PATCH rejects zero (ge=1 constraint)., PATCH rejects negative values. (+15 more)
 
 ### Community 28 - "Community 28"
 Cohesion: 0.11
 Nodes (14): _clean_logo(), _ico_16x16(), _png_1x1(), Tests for NGO logo service and endpoints., Redirect logo operations to a temporary directory — never touches the real logo, Minimal valid 1×1 PNG., Minimal valid 16×16 ICO — openable by Pillow but not in allowed list., ICO is openable by Pillow but excluded from the allowed set. (+6 more)
 
 ### Community 29 - "Community 29"
-Cohesion: 0.12
-Nodes (21): EntryStatus, Volunteer diary entry status.  Flows one way only — never backwards., EmsoCheckRequest, EmsoCheckResponse, LogEntryBrief, _normalise_phone(), _normalise_phone_field(), Pydantic schemas for the Volunteer entity. (+13 more)
+Cohesion: 0.10
+Nodes (19): EmsoCheckRequest, EmsoCheckResponse, LogEntryBrief, _normalise_phone(), _normalise_phone_field(), Pydantic schemas for the Volunteer entity., Volunteer with full entry history — returned by GET /volunteers/{id}., Paginated volunteer list. (+11 more)
 
 ### Community 30 - "Community 30"
-Cohesion: 0.15
-Nodes (16): hash_emso(), mask_emso(), Return HMAC-SHA256 hex digest of plaintext EMŠO.      Deterministic (unlike encr, Return EMŠO with all but the last 3 characters replaced by *.      Used in all A, Unit tests for the EMŠO encryption service.  No database needed — pure crypto lo, test_different_emso_produces_different_hash(), test_encrypt_produces_different_ciphertext_each_call(), test_hash_differs_from_encryption() (+8 more)
+Cohesion: 0.12
+Nodes (27): create_volunteer(), Register a new volunteer.  Encrypts EMŠO before storing., decrypt_emso(), encrypt_emso(), hash_emso(), load_key(), mask_emso(), AES-256-GCM encryption service for sensitive fields (EMŠO).  Usage ----- key = l (+19 more)
 
 ### Community 31 - "Community 31"
 Cohesion: 0.12
@@ -883,36 +884,32 @@ Cohesion: 0.04
 Nodes (48): Auto Monthly Report Delivery — Implementation Plan, code:python (from httpx import AsyncClient), code:block10 (docker compose exec api pytest tests/test_admin.py -v), code:python ("""Admin router — runtime-tunable settings management."""), code:block12 (docker compose exec api pytest tests/ -v), code:bash (git add api/routers/admin.py api/tests/test_admin.py), code:javascript (<div class="field">), code:javascript ($('a-report-day').value    = data.report_auto_day;) (+40 more)
 
 ### Community 33 - "Community 33"
-Cohesion: 0.20
-Nodes (14): Evolution API, AI obdela (Whisper transkripcija), Work Entry (Vnos), Končano (Entry saved), Manager (Vodja), Posnami (Snemanje), Potrdi (Prostovoljec potrdi), Vodja odobri (Manager approval) (+6 more)
+Cohesion: 0.08
+Nodes (25): approve_log_entry(), confirm_log_entry(), create_log_entry(), delete_log_entry(), delete_photo(), get_log_entry(), get_photo_file(), get_photo_limit() (+17 more)
 
 ### Community 34 - "Community 34"
-Cohesion: 0.14
-Nodes (18): api/core/auth.py, api/routers/auth.py, api/routers/log_entries.py, api/schemas/auth.py, frontend/js/api.js, frontend/js/volunteers.js, n8n/workflows/manager_approval.json, n8n/workflows/volunteer_entry.json (+10 more)
+Cohesion: 0.21
+Nodes (12): api/routers/log_entries.py, frontend/js/api.js, frontend/js/volunteers.js, n8n/workflows/manager_approval.json, n8n/workflows/volunteer_entry.json, api/tests/test_log_entries.py, Delete Non-Approved Entries Implementation Plan, Log Entry Location Edit Design Spec (+4 more)
 
 ### Community 35 - "Community 35"
-Cohesion: 0.17
-Nodes (18): api/models/error_log.py, api/routers/errors.py, api/schemas/admin.py, frontend/js/admin.js, frontend/js/errors.js, api/db/migrations/versions/013_error_log_table.py, ops/scripts/backup.sh, ops/crontab (+10 more)
+Cohesion: 0.14
+Nodes (14): api/models/error_log.py, api/routers/errors.py, frontend/js/errors.js, api/db/migrations/versions/013_error_log_table.py, n8n/workflows/monthly_reports.json, ops/crontab, ops/Dockerfile, ops/entrypoint.sh (+6 more)
 
 ### Community 36 - "Community 36"
 Cohesion: 0.04
 Nodes (47): Automatic Failover with pg_auto_failover, Backup and Point-in-Time Recovery (PITR), Base Backup with pg_basebackup, Cascading Replication, code:sql (-- postgresql.conf), code:block10 (Primary -> Standby1 -> Standby2), code:sql (-- On Standby1 (acts as relay)), code:sql (-- On standby: postgresql.conf) (+39 more)
 
 ### Community 37 - "Community 37"
-Cohesion: 0.07
-Nodes (38): BaseModel, analytics_summary(), _preceding_months(), Return `count` consecutive (year, month) tuples ending at (year, month)., Return aggregated analytics data scoped to the given month.      Defaults to t, list_log_entries(), List log entries with optional filters, sorting, and pagination., AnalyticsSummary (+30 more)
-
-### Community 38 - "Community 38"
-Cohesion: 0.24
-Nodes (6): AppSetting ORM model — runtime-tunable key-value configuration., SQLAlchemy declarative base shared by all ORM models., ErrorLog ORM model — structured record of operational failures., SQLAlchemy ORM models — import all to ensure they register with Base.metadata., LogEntry ORM model — core audit trail for volunteer work diary entries., Manager ORM model — one row per deployment (single-tenant).
+Cohesion: 0.09
+Nodes (32): BaseModel, analytics_summary(), _preceding_months(), Return `count` consecutive (year, month) tuples ending at (year, month)., Return aggregated analytics data scoped to the given month.      Defaults to t, AdminSettingsResponse, AdminSettingsUpdate, Pydantic schemas for the admin settings endpoints. (+24 more)
 
 ### Community 39 - "Community 39"
 Cohesion: 0.14
 Nodes (16): get_logo(), Logo router — public GET + authenticated POST and DELETE., Return the NGO logo as PNG, or 404 if none has been uploaded., Upload or replace the NGO logo. Accepts JPEG, PNG, WebP, GIF, BMP, TIFF., Delete the current NGO logo., remove_logo(), upload_logo(), delete_logo() (+8 more)
 
 ### Community 40 - "Community 40"
-Cohesion: 0.12
-Nodes (27): activate_volunteer(), check_emso(), create_volunteer(), deactivate_volunteer(), get_volunteer(), list_volunteers(), List volunteers with optional filters, sorting, and pagination., Check whether an EMŠO is already registered.  Used by the frontend before form s (+19 more)
+Cohesion: 0.10
+Nodes (31): Evolution API, AI obdela (Whisper transkripcija), Work Entry (Vnos), Končano (Entry saved), Manager (Vodja), Posnami (Snemanje), Potrdi (Prostovoljec potrdi), Vodja odobri (Manager approval) (+23 more)
 
 ### Community 41 - "Community 41"
 Cohesion: 0.17
@@ -927,8 +924,8 @@ Cohesion: 0.21
 Nodes (14): api/main.py, api/routers/documents.py, api/routers/logo.py, api/services/consent_pdf.py, api/services/logo.py, api/services/report_pdf.py, frontend/js/documents.js, frontend/index.html (+6 more)
 
 ### Community 44 - "Community 44"
-Cohesion: 0.22
-Nodes (14): API Notification to Ops on Settings Save, Auto Monthly Report Delivery Design, Docker Compose Changes for Auto Monthly Reports, Monthly Report Send Script (ops/scripts/monthly_report_send.py), Ops HTTP Server (ops_server.py), Setting: report_auto_period, Setting: report_auto_hour, Test Plan for report_auto_hour and Hour Settings (+6 more)
+Cohesion: 0.25
+Nodes (11): API Notification to Ops on Settings Save, Auto Monthly Report Delivery Design, Docker Compose Changes for Auto Monthly Reports, Monthly Report Send Script (ops/scripts/monthly_report_send.py), Ops HTTP Server (ops_server.py), Setting: report_auto_period, Setting: report_auto_hour, Frontend Admin Script (admin.js) (+3 more)
 
 ### Community 45 - "Community 45"
 Cohesion: 0.24
@@ -951,8 +948,8 @@ Cohesion: 0.04
 Nodes (45): Additional Parameters, Check Version Compatibility, code:javascript (search_nodes({), code:javascript (get_node({), code:javascript (get_node({), code:javascript (get_node({), code:javascript (get_node({), code:block14 (Step 1: Search) (+37 more)
 
 ### Community 50 - "Community 50"
-Cohesion: 0.33
-Nodes (5): AdminSettingsResponse, AdminSettingsUpdate, Pydantic schemas for the admin settings endpoints., Partial update for runtime-tunable settings. Only provided fields are written., Current values of all runtime-tunable settings.
+Cohesion: 0.18
+Nodes (11): health(), lifespan(), Belpro FastAPI application entry point., Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null., Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null., Health check — returns ok when the service is up., seed_whatsapp_phone_from_env(), seed_whatsapp_phone_from_env writes normalized phone to DB when DB value is null (+3 more)
 
 ### Community 51 - "Community 51"
 Cohesion: 0.21
@@ -963,16 +960,16 @@ Cohesion: 0.04
 Nodes (45): code:text (Tool: n8n_update_partial_workflow), code:text (Tool: n8n_update_partial_workflow), code:text (Tool: n8n_update_partial_workflow), code:text (Tool: n8n_update_partial_workflow), code:text (Tool: n8n_update_partial_workflow), code:text (Tool: n8n_validate_workflow), code:bash (Tool: n8n_get_workflow with mode="full" → save to n8n/workfl), code:text (Tool: n8n_create_workflow) (+37 more)
 
 ### Community 54 - "Community 54"
-Cohesion: 0.08
-Nodes (39): BelPro Manager Dashboard, Dnevnik napak (Error Log) Dashboard Page, Error Log Entry — send_monthly_reports email failure, send_monthly_reports API Function, Dashboard Sidebar Navigation, generate_monthly_pdf(), monthly_summary(), Reports router — monthly aggregation and PDF export endpoints. (+31 more)
+Cohesion: 0.12
+Nodes (30): send_monthly_reports API Function, generate_monthly_pdf(), monthly_summary(), Reports router — monthly aggregation and PDF export endpoints., Generate a monthly PDF report for one volunteer or all active volunteers., Generate monthly PDFs and deliver them via email and/or WhatsApp.      Default, Return per-volunteer totals of approved entries for the given year/month., Run the monthly aggregation query and return per-volunteer summaries. (+22 more)
 
 ### Community 55 - "Community 55"
-Cohesion: 0.14
-Nodes (13): change_password(), create_manager(), get_config_info(), get_manager(), Managers router — single-manager setup and profile., Change the manager password.  Verifies the current password before updating., Return the single manager profile, or 404 if setup has not been completed., Seed the manager profile (first-time setup). Returns 409 if already configured. (+5 more)
+Cohesion: 0.20
+Nodes (9): change_password(), create_manager(), get_manager(), Managers router — single-manager setup and profile., Change the manager password.  Verifies the current password before updating., Return the single manager profile, or 404 if setup has not been completed., Seed the manager profile (first-time setup). Returns 409 if already configured., Update manager and/or NGO fields.  Only provided (non-None) fields are written. (+1 more)
 
 ### Community 56 - "Community 56"
-Cohesion: 0.22
-Nodes (10): api/routers/reports.py, api/services/report_storage.py, frontend/js/reports.js, api/db/migrations/versions/010_monthly_reports_unique_idx.py, n8n/workflows/monthly_reports.json, api/tests/test_report_history.py, api/tests/test_reports.py, PDF Report History Implementation Plan (ISS-024) (+2 more)
+Cohesion: 0.40
+Nodes (6): api/routers/reports.py, api/services/report_storage.py, frontend/js/reports.js, api/db/migrations/versions/010_monthly_reports_unique_idx.py, api/tests/test_report_history.py, PDF Report History Implementation Plan (ISS-024)
 
 ### Community 57 - "Community 57"
 Cohesion: 0.11
@@ -1027,28 +1024,28 @@ Cohesion: 0.05
 Nodes (43): Accessibility Testing (WCAG 2.1 AA), code:markdown (**Charter**: Explore {feature} with focus on {aspect}), code:typescript (// Defect Removal Efficiency (target: >95%)), code:markdown (| Metric | Target | Actual | Trend | Status |), code:markdown (**Early Testing**:), code:typescript (const feedbackCycle = {), code:markdown (## Production Release Gate), code:markdown (**Week 1-2**: Test fundamentals) (+35 more)
 
 ### Community 70 - "Community 70"
-Cohesion: 0.43
-Nodes (8): E-poštna integracija (Email Integration) Section, Evolution API (WhatsApp Gateway), Podatki upravitelja (Manager Data) Section, Moja mesečna poročila (My Monthly Reports) Section, Nastavitve (Settings) Page, Podatki organizacije (Organization Data) Section, Sprememba gesla (Password Change) Section, Privzete nastavitve poročil za prostovoljce (Default Volunteer Report Settings) Section
+Cohesion: 0.18
+Nodes (11): get_report_history(), List persisted PDF reports, newest first. Optionally filter by year and/or month, MonthlyReportSummary, Pydantic schemas for monthly report summaries., Per-volunteer aggregated totals for a given month., Aggregated monthly summary across all active volunteers., One persisted report record in the history list., List of persisted report records. (+3 more)
 
 ### Community 71 - "Community 71"
 Cohesion: 0.33
 Nodes (7): Evolution API (WhatsApp Gateway), FastAPI + Web Dashboard (Manager UI & API), Faster-Whisper (Speech-to-Text CPU), n8n Workflow (Business Logic Engine), PostgreSQL 18 (Data Store), SMTP (Email Delivery), Volunteer (WhatsApp)
 
 ### Community 72 - "Community 72"
-Cohesion: 0.52
-Nodes (7): api/models/app_setting.py, api/routers/admin.py, api/services/app_settings.py, api/db/migrations/versions/012_settings_table.py, api/tests/test_app_settings.py, Settings Table Implementation Plan (ISS-026), Settings Table Design Spec (ISS-026)
+Cohesion: 0.27
+Nodes (18): Test Plan for report_auto_hour and Hour Settings, api/models/app_setting.py, api/routers/admin.py, api/schemas/admin.py, api/services/app_settings.py, frontend/js/admin.js, api/db/migrations/versions/012_settings_table.py, api/db/migrations/versions/014_seed_report_auto_hour.py (+10 more)
 
 ### Community 73 - "Community 73"
 Cohesion: 0.52
 Nodes (7): FastAPI Async SQLAlchemy Reference, FastAPI Authentication Reference, FastAPI Endpoints and Routing Reference, FastAPI Migration from Django Reference, FastAPI Pydantic V2 Reference, FastAPI Expert Skill, FastAPI Async Testing Reference
 
 ### Community 74 - "Community 74"
-Cohesion: 0.38
-Nodes (6): main(), POST failure to the API error log., Return (year, month) for the given period label.      'current'  → today's year, Resolve target month and call the send-monthly API endpoint., report_error(), resolve_period()
+Cohesion: 0.09
+Nodes (23): health_detailed(), Per-service health status for the manager dashboard widget., _notify_ops(), Admin router — runtime-tunable settings management., POST /reconfigure to ops. Logs and persists error on failure; never raises., Update one or more runtime-tunable settings. Returns updated state., update_admin_settings(), download_history_pdf() (+15 more)
 
 ### Community 76 - "Community 76"
-Cohesion: 0.39
-Nodes (7): Exception, _make_mock_http(), test_connected_returns_normalized_phone_and_open_state(), test_disconnected_returns_none_and_close_state(), test_instance_not_in_response_returns_close(), test_lid_jid_returns_lid_unsupported(), test_network_error_returns_unreachable()
+Cohesion: 0.19
+Nodes (12): Exception, _check_mx(), Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row, Raise ValueError if the recipient domain has no MX records., Raised when the manager has not configured SMTP., SmtpNotConfiguredError, _make_mock_http(), test_connected_returns_normalized_phone_and_open_state() (+4 more)
 
 ### Community 77 - "Community 77"
 Cohesion: 0.05
@@ -1259,8 +1256,8 @@ Cohesion: 0.07
 Nodes (30): main, main, main, main, main, main, main, Code: Clear State Confirm (+22 more)
 
 ### Community 193 - "Community 193"
-Cohesion: 0.07
-Nodes (28): Adding a New Feature, After every session that modifies code, Alpine / BusyBox quirks, CLAUDE.md — Belpro, Claude memory (`~/.claude/projects/<project>/memory/`), code:block1 (belpro/), code:block2 (# PostgreSQL), code:bash (# Copy and fill in environment) (+20 more)
+Cohesion: 0.06
+Nodes (31): Adding a New Feature, After every session that modifies code, Alpine / BusyBox quirks, CLAUDE.md — Belpro, Claude memory (`~/.claude/projects/<project>/memory/`), code:block1 (belpro/), code:block2 (# PostgreSQL), code:bash (# Copy and fill in environment) (+23 more)
 
 ### Community 194 - "Community 194"
 Cohesion: 0.07
@@ -1535,8 +1532,8 @@ Cohesion: 0.12
 Nodes (17): 1. ❌ Wrong: Unbounded queries, 2. ❌ Wrong: String concatenation in queries, 3. ❌ Wrong: No transaction for multi-step operations, 4. ❌ Wrong: Processing all items at once, code:sql (SELECT * FROM large_table  -- Could return millions), code:sql (SELECT * FROM large_table), code:javascript (query: "SELECT * FROM users WHERE id = '{{$json.id}}'"), code:javascript (query: "SELECT * FROM users WHERE id = $1",) (+9 more)
 
 ### Community 262 - "Community 262"
-Cohesion: 0.17
-Nodes (16): Faster-Whisper AI Transcription, Evolution API (WhatsApp Gateway), FastAPI + Web Dashboard (Manager Dashboard and API), Faster-Whisper (Speech-to-Text, CPU), PostgreSQL 18 (Database), Prostovoljec (Volunteer), SMTP (Email Delivery), Web Dashboard (+8 more)
+Cohesion: 0.15
+Nodes (17): Faster-Whisper AI Transcription, PostgreSQL 18 Database, Evolution API (WhatsApp Gateway), FastAPI + Web Dashboard (Manager Dashboard and API), Faster-Whisper (Speech-to-Text, CPU), PostgreSQL 18 (Database), Prostovoljec (Volunteer), SMTP (Email Delivery) (+9 more)
 
 ### Community 263 - "Community 263"
 Cohesion: 0.12
@@ -1887,8 +1884,8 @@ Cohesion: 0.17
 Nodes (12): code:python (# Remove:), code:python (# Before:), code:python (# Remove:), code:python (settings: Annotated[Settings, Depends(get_settings)],), code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],), code:python (settings: Annotated[Settings, Depends(get_settings)],), code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],), code:python (# Remove:) (+4 more)
 
 ### Community 350 - "Community 350"
-Cohesion: 0.20
-Nodes (11): poll_for_entry(), Poll GET /api/log-entries until at least one entry for volunteer_id appears., Direct API tests for POST /api/log-entries/{entry_id}/photos/base64.  These test, Uploading to a non-existent entry_id must return 404., Upload a photo directly to the API. Response must be 201 with photo_count=1., Uploading two photos must yield photo_count=2 on the second response., A filename with a disallowed extension must return 422., test_upload_photo_bad_extension() (+3 more)
+Cohesion: 0.25
+Nodes (7): Direct API tests for POST /api/log-entries/{entry_id}/photos/base64.  These test, Uploading to a non-existent entry_id must return 404., Upload a photo directly to the API. Response must be 201 with photo_count=1., Uploading two photos must yield photo_count=2 on the second response., test_upload_photo_happy_path(), test_upload_photo_unknown_entry(), test_upload_second_photo_increments_count()
 
 ### Community 351 - "Community 351"
 Cohesion: 0.18
@@ -1907,8 +1904,8 @@ Cohesion: 0.18
 Nodes (10): AWS ECS Fargate Setup, AWS RDS PostgreSQL, Best Practices, code:hcl (terraform {), code:hcl (resource "aws_db_instance" "postgres" {), code:hcl (# variables.tf), code:bash (terraform init), Common Commands (+2 more)
 
 ### Community 355 - "Community 355"
-Cohesion: 0.18
-Nodes (10): Authentication: SimpleJWT → FastAPI JWT, code:python (# auth.py - FastAPI JWT implementation), code:python (# Django settings.py), Concept Mapping: Django/DRF → FastAPI, Cross-Reference, Django SimpleJWT, Django to FastAPI Migration Guide, FastAPI JWT Authentication (+2 more)
+Cohesion: 0.33
+Nodes (5): Concept Mapping: Django/DRF → FastAPI, Cross-Reference, Django to FastAPI Migration Guide, Migration Checklist, When to Use This Guide
 
 ### Community 356 - "Community 356"
 Cohesion: 0.18
@@ -2067,8 +2064,8 @@ Cohesion: 0.18
 Nodes (11): code:python (# ── Integration tests for GET/PATCH /api/admin/settings ───), code:block15 (docker compose exec api pytest tests/test_app_settings.py -k), code:python ("""Pydantic schemas for the admin settings endpoints."""), code:python ("""Admin router — runtime-tunable settings management."""), code:python (from routers.admin import router as admin_router), code:python (app.include_router(admin_router, prefix="/api")), code:python (from routers.admin import router as admin_router), code:python (app.include_router(admin_router, prefix="/api")) (+3 more)
 
 ### Community 395 - "Community 395"
-Cohesion: 0.20
-Nodes (9): [0.4.0 and earlier] — 2026-05-01 to 2026-05-03, [0.6.1] — 2026-05-04, [0.8.2] — 2026-05-08, Added, Added, Changelog, Changelog maintenance, code:bash (# Get all commits since the last version tag) (+1 more)
+Cohesion: 0.15
+Nodes (12): [0.10.0-beta.2] — 2026-05-16, [0.4.0 and earlier] — 2026-05-01 to 2026-05-03, [0.6.1] — 2026-05-04, [0.8.2] — 2026-05-08, Added, Added, Added, Changed (+4 more)
 
 ### Community 396 - "Community 396"
 Cohesion: 0.20
@@ -2503,16 +2500,16 @@ Cohesion: 0.29
 Nodes (6): 1. Project Overview, 2. Technical Architecture, 3. GDPR Notes for Volunteer Agreements, 4. Operational Flow, Article X: Digital Record Keeping and Privacy, Digital Volunteer Diary: System Architecture & Specification
 
 ### Community 504 - "Community 504"
-Cohesion: 0.29
-Nodes (7): 14. Workflow Integration Tests, code:powershell (# From the project root on the Windows host:), Design notes, Prerequisites, Running, Scenarios, Test files
+Cohesion: 0.25
+Nodes (9): 14. Workflow Integration Tests, code:powershell (# From the project root on the Windows host:), Design notes, Prerequisites, Running, Running, Scenarios, Test files (+1 more)
 
 ### Community 505 - "Community 505"
 Cohesion: 0.29
 Nodes (7): 4.1 Submitting an entry, 4.2 Missing photo, 4.3 Sent-message visibility on linked phone, 4.4 Volunteer language, 4.5 Whisper concurrency — design decision, 4. WhatsApp Flow (Volunteer), code:block1 (Volunteer sends:)
 
 ### Community 506 - "Community 506"
-Cohesion: 0.29
-Nodes (7): 14. Integracijski testi delovnih procesov, code:powershell (# Iz korenskega imenika projekta na Windows gostitelju:), Opombe o zasnovi, Predpogoji, Scenariji, Testne datoteke, Zagon
+Cohesion: 0.25
+Nodes (9): 14. Integracijski testi delovnih procesov, code:powershell (# Iz korenskega imenika projekta na Windows gostitelju:), Opombe o zasnovi, Predpogoji, Scenariji, Testne datoteke, Testne datoteke, Zagon (+1 more)
 
 ### Community 507 - "Community 507"
 Cohesion: 0.29
@@ -2752,11 +2749,11 @@ Nodes (5): migrations_engine(), Migration roundtrip test — runs against belpro
 
 ### Community 566 - "Community 566"
 Cohesion: 0.33
-Nodes (6): 13. Automated Test Suite, Backup/restore smoke test, code:bash (# From the api/ directory on the WSL2 host (not inside the c), Infrastructure, Running, Test files
+Nodes (6): 13. Automated Test Suite, Backup/restore smoke test, code:bash (docker compose exec api pytest tests/ -v), Infrastructure, Running, Test files
 
 ### Community 567 - "Community 567"
 Cohesion: 0.33
-Nodes (6): 13. Avtomatizirana testna zbirka, code:bash (# Iz mape api/ na WSL2 gostitelju (ne znotraj vsebnika):), Dimni test varnostnega kopiranja in obnovitve, Infrastruktura, Testne datoteke, Zagon
+Nodes (6): 13. Avtomatizirana testna zbirka, code:bash (docker compose exec api pytest tests/ -v), Dimni test varnostnega kopiranja in obnovitve, Infrastruktura, Testne datoteke, Zagon
 
 ### Community 568 - "Community 568"
 Cohesion: 0.33
@@ -3163,8 +3160,8 @@ Cohesion: 0.50
 Nodes (4): code:python ("""GDPR Article 13 consent notice PDF generation."""), code:block30 (docker compose exec api pytest tests/test_documents.py::test), code:block31 (git add api/services/consent_pdf.py), Task 5: Consent PDF service
 
 ### Community 669 - "Community 669"
-Cohesion: 0.67
-Nodes (3): [0.10.0-beta.2] — 2026-05-16, Added, Changed
+Cohesion: 0.17
+Nodes (8): get_config_info(), Return config status for the settings UI; auto-syncs WhatsApp phone if connected, ConfigInfoResponse, Response schema for GET /managers/me/config-info., EvolutionClient, Async HTTP client for the Evolution API WhatsApp gateway., Return (normalized_phone, state) for the configured instance.          States: ", Send a PDF document to a WhatsApp number via Evolution API sendMedia.
 
 ### Community 670 - "Community 670"
 Cohesion: 0.67
@@ -3291,8 +3288,16 @@ Cohesion: 0.67
 Nodes (3): 3. Session Management, code:python (# Reusing session across requests), code:python (# Dependency injection per request)
 
 ### Community 703 - "Community 703"
-Cohesion: 0.67
-Nodes (3): upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in, upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in, test_photo_upload_respects_db_max_photos_setting()
+Cohesion: 0.38
+Nodes (6): api/core/auth.py, api/routers/auth.py, api/schemas/auth.py, api/tests/test_auth.py, httpOnly Cookie Auth Implementation Plan, httpOnly Cookie Auth Design Spec (ISS-005)
+
+### Community 704 - "Community 704"
+Cohesion: 0.40
+Nodes (5): Authentication: SimpleJWT → FastAPI JWT, code:python (# auth.py - FastAPI JWT implementation), code:python (# Django settings.py), Django SimpleJWT, FastAPI JWT Authentication
+
+### Community 757 - "Community 757"
+Cohesion: 0.50
+Nodes (3): Coverage Baseline, Gaps by file, Well-covered (≥89%)
 
 ## Ambiguous Edges - Review These
 - `n8n Workflow Engine` → `PostgreSQL`  [AMBIGUOUS]
@@ -3301,7 +3306,7 @@ Nodes (3): upload_photo rejects a second photo when max_photos_per_entry is patc
    · relation: may_call_directly
 
 ## Knowledge Gaps
-- **4040 isolated node(s):** `SessionStart`, `PreToolUse`, `allow`, `enabledMcpjsonServers`, `enableAllProjectMcpServers` (+4035 more)
+- **4044 isolated node(s):** `SessionStart`, `PreToolUse`, `allow`, `enabledMcpjsonServers`, `enableAllProjectMcpServers` (+4039 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **72 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -3312,9 +3317,9 @@ _Questions this graph is uniquely positioned to answer:_
   _Edge tagged AMBIGUOUS (relation: may_query_directly) - confidence is low._
 - **What is the exact relationship between `Faster-Whisper` and `FastAPI Backend`?**
   _Edge tagged AMBIGUOUS (relation: may_call_directly) - confidence is low._
-- **Why does `test_upload_photo_unknown_entry()` connect `Community 350` to `Community 22`?**
+- **Why does `test_upload_photo_unknown_entry()` connect `Community 350` to `Community 74`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `volunteer_factory()` connect `Community 22` to `Community 40`, `Community 8`, `Community 23`, `Community 25`, `Community 61`, `Community 703`?**
+- **Why does `volunteer_factory()` connect `Community 22` to `Community 8`, `Community 74`, `Community 23`, `Community 25`, `Community 27`, `Community 61`, `Community 30`?**
   _High betweenness centrality (0.005) - this node is a cross-community bridge._
 - **Why does `Workflow Test Helpers` connect `Community 597` to `Community 5`, `Community 350`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._

@@ -1430,8 +1430,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CLAUDE.md": {
-    "mtime": 1779610261.7815242,
-    "ast_hash": "98f68adb3eccc74bfff400743ebfd923",
+    "mtime": 1779626339.792435,
+    "ast_hash": "a26476290908c1d1b85a51779bd942fd",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CODE_OF_CONDUCT.md": {
@@ -1460,13 +1460,13 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README.md": {
-    "mtime": 1779533520.0750587,
-    "ast_hash": "6d54f41c4cf12a1e2f10344b47016f7e",
+    "mtime": 1779632279.86088,
+    "ast_hash": "4ed2c01529ea7e73313182d27a2038df",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README_SL.md": {
-    "mtime": 1779533537.922382,
-    "ast_hash": "45e0828f8301749c742b64a29775c174",
+    "mtime": 1779632287.010954,
+    "ast_hash": "87dad65a6665433d75ffe73f82f4672a",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ROADMAP.md": {
@@ -1475,18 +1475,18 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SECURITY.md": {
-    "mtime": 1778302005.695806,
-    "ast_hash": "fd3f8076c5c2246af96bfd47bef7dd6a",
+    "mtime": 1779628402.8707762,
+    "ast_hash": "6b6addb540990e1fee7894b15c2e5aff",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC.md": {
-    "mtime": 1779449061.286754,
-    "ast_hash": "39576694f7e982dfeadff30c22ec5369",
+    "mtime": 1779633625.5865996,
+    "ast_hash": "da7b9a7881075d60051ceda19ebba3c8",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC_SL.md": {
-    "mtime": 1779531923.346858,
-    "ast_hash": "c9296beeb87f857c8f993c27eb626b7d",
+    "mtime": 1779633629.202582,
+    "ast_hash": "adb83c77002948cbd8dac014de9ef3b8",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\skills\\code-documenter\\SKILL.md": {
@@ -2125,8 +2125,8 @@
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\requirements-test.txt": {
-    "mtime": 1778335724.496863,
-    "ast_hash": "e1e0b62e8ce2e91d42d57b05df2e1776",
+    "mtime": 1779625694.89805,
+    "ast_hash": "d05ececf4525986a0065ed2e38091cfc",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\api\\requirements.txt": {
@@ -2607,6 +2607,11 @@
   "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\porocilo_Pridni_Slavko_2026_05-primer.pdf": {
     "mtime": 1779457342.4614823,
     "ast_hash": "80228153a40c2d1e17ebbe5241a5ed7c",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\coverage-baseline.md": {
+    "mtime": 1779626357.3223786,
+    "ast_hash": "507f30710c1c13ddf78ce873a97a4917",
     "semantic_hash": ""
   }
 }
