@@ -406,6 +406,7 @@ belpro/
 ├── n8n/workflows/          # Izvoženi n8n delovni procesi v JSON (objavljeni v repozitoriju)
 ├── whisper/                # HTTP ovojnik (wrapper) za Faster-Whisper
 ├── api/                    # FastAPI ozadje + generiranje PDF poročil
+│   └── tests/              # pytest zbirka (240 testov, 84 % pokritost)
 ├── frontend/               # Nadzorna plošča za vodje (HTML/CSS/JS)
 ├── ops/                    # Operacijski spremljevalnik: samodejno varnostno kopiranje, čiščenje fotografij, javljanje napak
 ├── nginx/                  # Nastavitve povratnega posrednika (reverse proxy config)

@@ -595,33 +595,32 @@ A pytest-based regression safety net for the FastAPI backend. Scope: all API end
 
 ### Infrastructure
 
-- **Test database:** `belpro_test` — a second database on the existing `postgres` Docker container, reachable at `localhost:5432` from WSL2. Production `DATABASE_URL` is never touched.
-- **Configuration:** `api/.env.test` (gitignored) points pytest at `belpro_test` and supplies test-only secrets.
+- **Test database:** `belpro_test` — a second database on the existing `postgres` Docker container. Production `DATABASE_URL` is never touched.
+- **Migration test database:** `belpro_test_migrations` — a third database used exclusively by the migration roundtrip test; created by `db/create_extra_dbs.sh` on first container start.
+- **Configuration:** `api/.env.test` (gitignored) points pytest at `belpro_test` and supplies test-only secrets, including `DATABASE_URL_MIGRATIONS`.
 - **Isolation:** Every test runs inside a SQLAlchemy SAVEPOINT. All writes are rolled back on teardown — no data leaks between tests.
 - **No mocks, ever.** All tests hit a real PostgreSQL database.
 
 ### Running
 
 ```bash
-# From the api/ directory on the WSL2 host (not inside the container):
-cd api
-python -m pytest tests/ -v
+docker compose exec api pytest tests/ -v
+docker compose exec api pytest tests/ --cov=. --cov-report=term-missing -q
 ```
-
-Requires the `postgres` Docker container to be running and `belpro_test` to exist (created automatically on first run by the session-scoped engine fixture).
 
 ### Test files
 
 | File | Coverage |
 |------|----------|
 | `tests/test_health.py` | `GET /api/health` |
-| `tests/test_managers.py` | Manager profile, single-manager constraint, auth |
-| `tests/test_volunteers.py` | Full volunteers CRUD, deactivate/activate, EMŠO duplicate detection |
-| `tests/test_log_entries.py` | Full log entries CRUD, status machine (approve/reject/confirm), photo validation |
+| `tests/test_managers.py` | Manager profile, single-manager constraint, auth, password change |
+| `tests/test_volunteers.py` | Full volunteers CRUD, deactivate/activate, EMŠO duplicate detection, EMŠO encrypted at rest |
+| `tests/test_log_entries.py` | Full log entries CRUD, status machine (approve/reject/confirm), photo validation, 409 on invalid status transitions |
 | `tests/test_reports.py` | Report generation, PDF content-type, 404 on unknown volunteer |
-| `tests/test_analytics.py` | Summary shape, approved-only hour counts, 6-point monthly trend |
-| `tests/test_app_settings.py` | `settings` table seeding, `AppSettings` service unit tests, `GET/PATCH /api/admin/settings`, route-level enforcement (photo limit, session cookie) |
+| `tests/test_analytics.py` | Summary shape, approved-only hour counts, 6-point monthly trend, rejected hours excluded |
+| `tests/test_app_settings.py` | `settings` table seeding, `AppSettings` service unit tests, `GET/PATCH /api/admin/settings`, route-level enforcement (photo limit, session cookie), base64 photo upload |
 | `tests/test_errors.py` | `POST /api/errors` (internal key auth), `GET /api/errors` with unacknowledged filter, `PATCH /api/errors/{id}/acknowledge`, unacknowledged count |
+| `tests/test_migrations.py` | Alembic migration roundtrip: `stamp base` → `upgrade head` → `downgrade -1` → `upgrade head` on isolated DB |
 
 ### Backup/restore smoke test
 

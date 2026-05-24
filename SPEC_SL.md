@@ -586,33 +586,32 @@ Varnostna mreža za regresijsko testiranje zalednega sistema FastAPI, ki temelji
 
 ### Infrastruktura
 
-- **Testna zbirka podatkov:** `belpro_test` — druga zbirka podatkov na obstoječem Docker vsebniku `postgres`, dosegljiva na `localhost:5432` iz WSL2. Produkcijski `DATABASE_URL` se nikoli ne dotakne.
-- **Konfiguracija:** `api/.env.test` (gitignorirano) usmeri pytest na `belpro_test` in posreduje testne skrivnosti.
+- **Testna zbirka podatkov:** `belpro_test` — druga zbirka podatkov na obstoječem Docker vsebniku `postgres`. Produkcijski `DATABASE_URL` se nikoli ne dotakne.
+- **Zbirka za migracijske teste:** `belpro_test_migrations` — tretja zbirka, ki jo uporablja izključno test zaokroženega poteka migracij; ustvarjena z `db/create_extra_dbs.sh` ob prvem zagonu vsebnika.
+- **Konfiguracija:** `api/.env.test` (gitignorirano) usmeri pytest na `belpro_test` in posreduje testne skrivnosti, vključno z `DATABASE_URL_MIGRATIONS`.
 - **Izolacija:** Vsak test se izvede znotraj SQLAlchemy SAVEPOINT. Vse spremembe se ob zaključku povrnejo — med testi ni uhajanja podatkov.
 - **Brez navideznih objektov.** Vsi testi delajo z resnično PostgreSQL zbirko podatkov.
 
 ### Zagon
 
 ```bash
-# Iz mape api/ na WSL2 gostitelju (ne znotraj vsebnika):
-cd api
-python -m pytest tests/ -v
+docker compose exec api pytest tests/ -v
+docker compose exec api pytest tests/ --cov=. --cov-report=term-missing -q
 ```
-
-Zahteva, da Docker vsebnik `postgres` teče in da `belpro_test` obstaja (samodejno ustvarjena ob prvem zagonu z vpičiščem motorja v obsegu seje).
 
 ### Testne datoteke
 
 | Datoteka | Pokritost |
 |------|----------|
 | `tests/test_health.py` | `GET /api/health` |
-| `tests/test_managers.py` | Profil vodje, omejitev enega vodje, overitev |
-| `tests/test_volunteers.py` | Celoten CRUD prostovoljcev, deaktivacija/aktivacija, zaznavanje podvojenih EMŠO |
-| `tests/test_log_entries.py` | Celoten CRUD dnevniških zapisov, stroj stanj (odobri/zavrni/potrdi), preverjanje fotografij |
+| `tests/test_managers.py` | Profil vodje, omejitev enega vodje, overitev, sprememba gesla |
+| `tests/test_volunteers.py` | Celoten CRUD prostovoljcev, deaktivacija/aktivacija, zaznavanje podvojenih EMŠO, šifriranje EMŠO v zbirki |
+| `tests/test_log_entries.py` | Celoten CRUD dnevniških zapisov, stroj stanj (odobri/zavrni/potrdi), preverjanje fotografij, 409 za neveljavne prehode stanj |
 | `tests/test_reports.py` | Ustvarjanje poročil, vrsta vsebine PDF, 404 za neznanega prostovoljca |
-| `tests/test_analytics.py` | Oblika povzetka, štetje ur samo za odobrene, 6-točkovni mesečni trend |
-| `tests/test_app_settings.py` | Vnos podatkov v tabelo `settings`, enotni testi storitve `AppSettings`, `GET/PATCH /api/admin/settings`, uveljavljanje na ravni poti (omejitev fotografij, piškotek seje) |
+| `tests/test_analytics.py` | Oblika povzetka, štetje ur samo za odobrene, 6-točkovni mesečni trend, izključitev zavrnjenih ur |
+| `tests/test_app_settings.py` | Vnos podatkov v tabelo `settings`, enotni testi storitve `AppSettings`, `GET/PATCH /api/admin/settings`, uveljavljanje na ravni poti (omejitev fotografij, piškotek seje), nalaganje fotografij base64 |
 | `tests/test_errors.py` | `POST /api/errors` (overovitev z notranjim ključem), `GET /api/errors` s filtrom nepotrjenih, `PATCH /api/errors/{id}/acknowledge`, štetje nepotrjenih |
+| `tests/test_migrations.py` | Zaokroženi potek Alembic migracij: `stamp base` → `upgrade head` → `downgrade -1` → `upgrade head` na izolirani zbirki |
 
 ### Dimni test varnostnega kopiranja in obnovitve
 

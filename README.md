@@ -393,6 +393,7 @@ belpro/
 ├── n8n/workflows/          # n8n workflow JSON exports (committed)
 ├── whisper/                # Faster-Whisper HTTP wrapper
 ├── api/                    # FastAPI backend + PDF generation
+│   └── tests/              # pytest suite (240 tests, 84% coverage)
 ├── frontend/               # Manager dashboard (HTML/CSS/JS)
 ├── ops/                    # Ops sidecar: automated backup, photo cleanup, error reporting
 ├── nginx/                  # Reverse proxy config
