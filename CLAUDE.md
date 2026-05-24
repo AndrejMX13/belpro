@@ -170,6 +170,17 @@ python -m pytest tests/workflow/ -v
 
 ---
 
+## Testing
+
+All tests run inside the API container against `belpro_test` (session-scoped Alembic migrations, per-test SAVEPOINT rollback). A second DB `belpro_test_migrations` is used exclusively by the migration roundtrip test.
+
+```bash
+docker compose exec api pytest tests/ -v                                        # run suite
+docker compose exec api pytest tests/ --cov=. --cov-report=term-missing -q     # with coverage
+```
+
+Current coverage baseline and known gaps: [`docs/coverage-baseline.md`](docs/coverage-baseline.md) — update it after any significant test session.
+
 ## Tooling & Shell Conventions
 
 - **Use the Bash tool for all commands** including `docker compose`. The Bash tool runs Git Bash (MINGW64), not WSL2. VS Code runs as a Windows-local app; the working directory is `/d/Andrej/vsCode-workspace/BelPro` (Git Bash path format).
