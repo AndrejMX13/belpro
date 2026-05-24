@@ -197,9 +197,13 @@ async def test_photo_upload_respects_db_max_photos_setting(
     db_session,
     volunteer_factory,
     log_entry_factory,
+    monkeypatch,
+    tmp_path,
 ) -> None:
     """upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in DB."""
     import io
+    import routers.log_entries as le_mod
+    monkeypatch.setattr(le_mod, "_PHOTOS_ROOT", tmp_path / "photos")
 
     # Patch max_photos_per_entry to 1 via the admin API
     r_patch = await client.patch(
@@ -294,3 +298,46 @@ def test_appsettings_report_auto_hour_clamped_low() -> None:
     env = get_settings()
     s = AppSettings(env, {"report_auto_hour": "-5"})
     assert s.report_auto_hour == 0
+
+
+async def test_photo_upload_base64_respects_db_max_photos_setting(
+    client: AsyncClient,
+    auth: dict,
+    db_session,
+    volunteer_factory,
+    log_entry_factory,
+    monkeypatch,
+    tmp_path,
+) -> None:
+    """upload_photo_base64 rejects a second photo when max_photos_per_entry is 1 in DB."""
+    import base64
+    import routers.log_entries as le_mod
+
+    monkeypatch.setattr(le_mod, "_PHOTOS_ROOT", tmp_path / "photos")
+
+    r_patch = await client.patch(
+        "/api/admin/settings", headers=auth, json={"max_photos_per_entry": 1}
+    )
+    assert r_patch.status_code == 200
+    assert r_patch.json()["max_photos_per_entry"] == 1
+
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id)
+
+    fake_image = b"\xff\xd8\xff\xe0" + b"\x00" * 100
+    fake_b64 = base64.b64encode(fake_image).decode()
+
+    r1 = await client.post(
+        f"/api/log-entries/{e.id}/photos/base64",
+        headers=auth,
+        json={"image_base64": fake_b64, "filename": "photo1.jpg"},
+    )
+    assert r1.status_code == 201, f"First upload failed: {r1.text}"
+
+    r2 = await client.post(
+        f"/api/log-entries/{e.id}/photos/base64",
+        headers=auth,
+        json={"image_base64": fake_b64, "filename": "photo2.jpg"},
+    )
+    assert r2.status_code == 409, f"Expected 409 but got {r2.status_code}: {r2.text}"
+    assert "1" in r2.json()["detail"]
