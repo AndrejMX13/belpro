@@ -7,4 +7,6 @@ set -e
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" <<-EOSQL
     CREATE DATABASE evolution;
     GRANT ALL PRIVILEGES ON DATABASE evolution TO $POSTGRES_USER;
+    CREATE DATABASE belpro_test_migrations;
+    GRANT ALL PRIVILEGES ON DATABASE belpro_test_migrations TO $POSTGRES_USER;
 EOSQL
