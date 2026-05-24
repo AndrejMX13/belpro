@@ -18,6 +18,21 @@ _N8N_BASE = "http://localhost:5678"
 _WEBHOOK_PATH = "/webhook/volunteer-message"
 
 
+_EMSO_WEIGHTS = (7, 6, 5, 4, 3, 2, 7, 6, 5, 4, 3, 2)
+
+
+def _make_valid_emso() -> str:
+    """Generate a random 13-digit EMŠO that passes the Modulus 11 checksum."""
+    while True:
+        digits = [random.randint(0, 9) for _ in range(12)]
+        total = sum(w * d for w, d in zip(_EMSO_WEIGHTS, digits))
+        mod = total % 11
+        if mod == 1:
+            continue  # no valid check digit exists for this prefix; retry
+        check = 0 if mod == 0 else 11 - mod
+        return "".join(map(str, digits)) + str(check)
+
+
 def _manager_password() -> str:
     pw = os.getenv("MANAGER_PASSWORD", "")
     if not pw:
@@ -66,7 +81,7 @@ async def test_volunteer(api_client: httpx.AsyncClient) -> AsyncGenerator[dict, 
     # Random phone in range 38640900000–38640909999.
     # Random enough across sessions; well outside real Slovenian mobile ranges.
     phone = f"3864090{random.randint(0, 9999):04d}"
-    emso = f"{random.randint(10**12, 10**13 - 1):013d}"
+    emso = _make_valid_emso()
 
     payload = {
         "first_name": "Test",
