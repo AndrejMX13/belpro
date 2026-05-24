@@ -315,3 +315,21 @@ async def test_photo_limit_returns_default(client: AsyncClient) -> None:
     assert r.status_code == 200
     # The migration seeds max_photos_per_entry = 5; the endpoint now reads from DB.
     assert r.json() == {"max_photos": 5}
+
+
+async def test_approve_pending_volunteer_returns_409(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.PENDING_VOLUNTEER)
+    r = await client.patch(f"/api/log-entries/{e.id}/approve", headers=auth)
+    assert r.status_code == 409
+
+
+async def test_reject_pending_volunteer_returns_409(
+    client: AsyncClient, auth: dict, volunteer_factory, log_entry_factory
+) -> None:
+    v = await volunteer_factory()
+    e = await log_entry_factory(v.id, status=EntryStatus.PENDING_VOLUNTEER)
+    r = await client.patch(f"/api/log-entries/{e.id}/reject", headers=auth)
+    assert r.status_code == 409
