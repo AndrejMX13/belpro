@@ -19,6 +19,10 @@ async def migrations_engine():
     """Session-scoped engine targeting belpro_test_migrations."""
     url = os.environ["DATABASE_URL_MIGRATIONS"]
     eng = create_async_engine(url, poolclass=NullPool, echo=False)
+    # Wipe any leftover schema from previous runs so migrations always start clean
+    async with eng.begin() as conn:
+        await conn.execute(text("DROP SCHEMA public CASCADE"))
+        await conn.execute(text("CREATE SCHEMA public"))
     yield eng
     await eng.dispose()
 

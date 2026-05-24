@@ -184,3 +184,27 @@ async def test_update_manager_empty_phone_not_stored_as_empty_string(client, aut
     )
     assert resp.status_code == 200
     assert resp.json()["ngo_whatsapp_phone"] != ""
+
+
+@pytest.mark.asyncio
+async def test_change_password_invalidates_old_credentials(
+    client: AsyncClient, auth: dict
+) -> None:
+    """After a password change, old credentials return 401 and new ones return 200."""
+    r = await client.post(
+        "/api/managers/me/change-password",
+        headers=auth,
+        json={"current_password": "testpass123", "new_password": "newpassword456"},
+    )
+    assert r.status_code == 204
+
+    # Old credentials must now be rejected
+    r2 = await client.get("/api/managers/me", headers=auth)
+    assert r2.status_code == 401
+
+    # New credentials must be accepted
+    new_creds = base64.b64encode(b"manager:newpassword456").decode()
+    r3 = await client.get(
+        "/api/managers/me", headers={"Authorization": f"Basic {new_creds}"}
+    )
+    assert r3.status_code == 200
