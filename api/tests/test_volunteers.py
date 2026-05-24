@@ -193,3 +193,38 @@ async def test_check_emso_already_registered(
     )
     assert r.status_code == 200
     assert r.json()["exists"] is True
+
+
+async def test_emso_stored_encrypted(
+    client: AsyncClient, auth: dict, db_session
+) -> None:
+    """EMŠO is stored encrypted in DB and never returned as plaintext by the API."""
+    from sqlalchemy import text
+
+    plaintext_emso = "1234567890125"
+    payload = {
+        "first_name": "Enc",
+        "last_name": "Test",
+        "street": "Testna 1",
+        "postal_code": "1000",
+        "city": "Ljubljana",
+        "emso": plaintext_emso,
+        "phone": "+38641777888",
+    }
+    r = await client.post("/api/volunteers", json=payload, headers=auth)
+    assert r.status_code == 201
+    vol_id = r.json()["id"]
+
+    # Raw DB column must not equal the plaintext
+    row = (
+        await db_session.execute(
+            text("SELECT emso FROM volunteers WHERE id = CAST(:id AS UUID)"),
+            {"id": vol_id},
+        )
+    ).one()
+    assert row.emso != plaintext_emso
+
+    # API response must not contain the plaintext EMŠO anywhere
+    r2 = await client.get(f"/api/volunteers/{vol_id}", headers=auth)
+    assert r2.status_code == 200
+    assert plaintext_emso not in r2.text
