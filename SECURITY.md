@@ -57,8 +57,8 @@ will not receive backported fixes.
 
 | Version | Supported |
 |---------|-----------|
-| 0.8.x   | Yes       |
-| < 0.8   | No        |
+| 0.11.x  | Yes       |
+| < 0.11  | No        |
 
 ## Security model assumptions
 
