@@ -1,32 +1,53 @@
 # connections
 
-> God node · 60 connections · `n8n/workflows/volunteer_entry.json`
+> 30 nodes · cohesion 0.10
 
-**Community:** [[Community 1]]
+## Key Concepts
 
-## Connections by Relation
+- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
+- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
+- **Execute Workflow Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Manual Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Parse Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Switch: Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /approve** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /reject** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Notify Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Manager Confirm** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Confirm to Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **IF: Should Notify?** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /notify** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Next Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- *... and 5 more nodes in this community*
 
-### contains
-- [[volunteer_entry.json]] `EXTRACTED`
-- [[activeVersion]] `EXTRACTED`
-- [[IF: Should Notify?]] `EXTRACTED`
-- [[HTTP: PATCH /notify]] `EXTRACTED`
-- [[HTTP: GET Volunteer]] `EXTRACTED`
-- [[Manual: Poslji Obvestilo Upravljalcu]] `EXTRACTED`
-- [[Filter & Route]] `EXTRACTED`
-- [[Razpotje]] `EXTRACTED`
-- [[HTTP: Fetch Media]] `EXTRACTED`
-- [[Code: Transcribe + Extract]] `EXTRACTED`
-- [[Text Extract]] `EXTRACTED`
-- [[HTTP: Lookup Volunteer]] `EXTRACTED`
-- [[Code: Pripravi Prostovoljca]] `EXTRACTED`
-- [[Prostovoljec Najden?]] `EXTRACTED`
-- [[HTTP: Ustvari Vnos]] `EXTRACTED`
-- [[Code: Shrani Stanje]] `EXTRACTED`
-- [[Nalozi Stanje]] `EXTRACTED`
-- [[Ima Vnos?]] `EXTRACTED`
-- [[Vrsta Odziva]] `EXTRACTED`
-- [[HTTP: Potrdi Vnos]] `EXTRACTED`
+## Relationships
+
+- [[Code: Build Volunteer Msg]] (2 shared connections)
+- [[HTTP: GET Pending Entries]] (2 shared connections)
+- [[Code: Check Next Entry]] (2 shared connections)
+- [[n8n/workflows/manager_approval.json]] (1 shared connections)
+- [[activeVersion]] (1 shared connections)
+
+## Source Files
+
+- `n8n/workflows/manager_approval.json`
+
+## Audit Trail
+
+- EXTRACTED: 92 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 

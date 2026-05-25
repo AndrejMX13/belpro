@@ -1,47 +1,47 @@
 # BelPro System Specification
 
-> God node · 29 connections · `SPEC.md`
+> 17 nodes · cohesion 0.17
 
-**Community:** [[Community 2]]
+## Key Concepts
 
-## Connections by Relation
+- **BelPro System Specification** (29 connections) — `SPEC.md`
+- **DB Table: volunteers** (5 connections) — `SPEC.md`
+- **WhatsApp Volunteer Entry Flow** (4 connections) — `SPEC.md`
+- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) — `SPEC.md`
+- **Monthly PDF Reports Generation and Delivery** (3 connections) — `SPEC.md`
+- **DB Table: log_entries** (3 connections) — `SPEC.md`
+- **DB Table: monthly_reports** (3 connections) — `SPEC.md`
+- **Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)** (2 connections) — `SPEC.md`
+- **DB Table: managers** (2 connections) — `SPEC.md`
+- **DB Table: log_entry_photos** (2 connections) — `SPEC.md`
+- **DB Table: settings** (2 connections) — `SPEC.md`
+- **BelPro System Specification (Slovenian)** (1 connections) — `SPEC_SL.md`
+- **CSD — Centre for Social Work** (1 connections) — `SPEC.md`
+- **Single-Tenant Architecture** (1 connections) — `SPEC.md`
+- **WeasyPrint (HTML to PDF)** (1 connections) — `CLAUDE.md`
+- **DB Table: error_log** (1 connections) — `SPEC.md`
+- **Whisper Single-Threaded Design (deliberate trade-off)** (1 connections) — `SPEC.md`
 
-### defines
-- [[Manager Web Dashboard]] `EXTRACTED`
-- [[Ops Sidecar (backup, photo cleanup, error reporting)]] `EXTRACTED`
-- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] `EXTRACTED`
-- [[DB Table: volunteers]] `EXTRACTED`
-- [[EMŠO Encryption (AES-256-GCM at rest)]] `EXTRACTED`
-- [[WhatsApp Volunteer Entry Flow]] `EXTRACTED`
-- [[Error Log (Dnevnik napak)]] `EXTRACTED`
-- [[Monthly PDF Reports Generation and Delivery]] `EXTRACTED`
-- [[DB Table: log_entries]] `EXTRACTED`
-- [[DB Table: monthly_reports]] `EXTRACTED`
-- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] `EXTRACTED`
-- [[Dnevnik prostovoljskega dela (Volunteer Work Diary)]] `EXTRACTED`
-- [[Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)]] `EXTRACTED`
-- [[GDPR and ZVOP-2 Compliance]] `EXTRACTED`
-- [[DB Table: managers]] `EXTRACTED`
-- [[DB Table: log_entry_photos]] `EXTRACTED`
-- [[DB Table: settings]] `EXTRACTED`
-- [[Single-Tenant Architecture]] `EXTRACTED`
-- [[DB Table: error_log]] `EXTRACTED`
-- [[Whisper Single-Threaded Design (deliberate trade-off)]] `EXTRACTED`
+## Relationships
 
-### references
-- [[BelPro README (English)]] `EXTRACTED`
-- [[Contributing Guide]] `EXTRACTED`
-- [[CLAUDE.md — Project AI Instructions]] `EXTRACTED`
-- [[CSD — Centre for Social Work]] `EXTRACTED`
+- [[Docker Compose (all services containerised)]] (9 shared connections)
+- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] (4 shared connections)
+- [[EMŠO Encryption (AES-256-GCM at rest)]] (3 shared connections)
+- [[BelPro README (English)]] (1 shared connections)
+- [[CLAUDE.md — Project AI Instructions]] (1 shared connections)
+- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] (1 shared connections)
 
-### translates
-- [[BelPro System Specification (Slovenian)]] `EXTRACTED`
+## Source Files
 
-### uses
-- [[Evolution API (WhatsApp Gateway)]] `EXTRACTED`
-- [[Faster-Whisper (CPU Speech-to-Text)]] `EXTRACTED`
-- [[PostgreSQL 18 Database]] `EXTRACTED`
-- [[n8n as Workflow Engine]] `EXTRACTED`
+- `CLAUDE.md`
+- `SPEC.md`
+- `SPEC_SL.md`
+
+## Audit Trail
+
+- EXTRACTED: 63 (97%)
+- INFERRED: 2 (3%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 

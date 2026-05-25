@@ -1,38 +1,60 @@
 # volunteer_factory()
 
-> God node · 52 connections · `api/tests/conftest.py`
+> 29 nodes · cohesion 0.09
 
-**Community:** [[Community 25]]
+## Key Concepts
 
-## Connections by Relation
+- **volunteer_factory()** (57 connections) — `api/tests/conftest.py`
+- **test_volunteers.py** (21 connections) — `api/tests/test_volunteers.py`
+- **test_photo_upload_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_photo_upload_base64_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_get_volunteer_found()** (3 connections) — `api/tests/test_volunteers.py`
+- **test_delete_volunteer_with_entries_returns_409()** (3 connections) — `api/tests/test_volunteers.py`
+- **test_list_volunteers_returns_created_volunteer()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_duplicate_emso_returns_409()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_update_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_deactivate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_activate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_delete_volunteer_happy_path()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_check_emso_already_registered()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_emso_stored_encrypted()** (2 connections) — `api/tests/test_volunteers.py`
+- **Returns an async callable that inserts a Volunteer row via flush (not commit)** (1 connections) — `api/tests/conftest.py`
+- **upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in** (1 connections) — `api/tests/test_app_settings.py`
+- **upload_photo_base64 rejects a second photo when max_photos_per_entry is 1 in DB.** (1 connections) — `api/tests/test_app_settings.py`
+- **test_list_volunteers_empty()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_success()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_missing_required_field_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_postal_code_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_emso_length_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_emso_checksum_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_get_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_update_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- *... and 4 more nodes in this community*
 
-### calls
-- [[get_settings()]] `INFERRED`
-- [[load_key()]] `INFERRED`
-- [[test_send_monthly_email_failure_logged()]] `INFERRED`
-- [[test_send_monthly_whatsapp_failure_logged()]] `INFERRED`
-- [[test_send_monthly_smtp_not_configured_does_not_abort_batch()]] `INFERRED`
-- [[test_persist_report_creates_file_and_row()]] `INFERRED`
-- [[test_persist_report_overwrites_on_resend()]] `INFERRED`
-- [[test_send_monthly_persists_volunteer_pdf()]] `INFERRED`
-- [[test_send_monthly_persists_consolidated_pdf()]] `INFERRED`
-- [[test_photo_upload_respects_db_max_photos_setting()]] `INFERRED`
-- [[test_list_entries_filter_by_volunteer()]] `INFERRED`
-- [[test_get_entry_found()]] `INFERRED`
-- [[test_with_entries_only_excludes_volunteers_with_no_entries()]] `INFERRED`
-- [[test_with_entries_only_includes_any_status_not_only_approved()]] `INFERRED`
-- [[test_send_monthly_invalid_phone_logged()]] `INFERRED`
-- [[test_get_history_returns_items()]] `INFERRED`
-- [[test_send_monthly_resend_overwrites_row()]] `INFERRED`
-- [[test_analytics_summary_counts_approved_hours()]] `INFERRED`
-- [[test_list_entries_returns_created_entry()]] `INFERRED`
-- [[test_list_entries_filter_by_status()]] `INFERRED`
+## Relationships
 
-### contains
-- [[conftest.py]] `EXTRACTED`
+- [[log_entry_factory()]] (22 shared connections)
+- [[test_reports.py]] (8 shared connections)
+- [[str]] (6 shared connections)
+- [[test_analytics.py]] (4 shared connections)
+- [[persist_report()]] (4 shared connections)
+- [[path]] (2 shared connections)
+- [[test_app_settings.py]] (2 shared connections)
+- [[AppSettings]] (1 shared connections)
+- [[load_key()]] (1 shared connections)
+- [[conftest.py]] (1 shared connections)
 
-### rationale_for
-- [[Returns an async callable that inserts a Volunteer row via flush (not commit)]] `EXTRACTED`
+## Source Files
+
+- `api/tests/conftest.py`
+- `api/tests/test_app_settings.py`
+- `api/tests/test_volunteers.py`
+
+## Audit Trail
+
+- EXTRACTED: 53 (43%)
+- INFERRED: 70 (57%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 

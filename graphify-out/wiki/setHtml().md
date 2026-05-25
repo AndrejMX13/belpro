@@ -1,32 +1,32 @@
 # setHtml()
 
-> God node · 23 connections · `frontend/js/volunteers.js`
+> God node · 25 connections · `frontend/js/volunteers.js`
 
-**Community:** [[Community 0]]
+**Community:** [[volunteers.js]]
 
 ## Connections by Relation
 
 ### calls
-- [[loadVolunteers()]] `EXTRACTED`
-- [[renderDetail()]] `EXTRACTED`
 - [[renderLogEntryDetail()]] `EXTRACTED`
-- [[renderList()]] `EXTRACTED`
+- [[renderDetail()]] `EXTRACTED`
 - [[renderSettings()]] `EXTRACTED`
-- [[renderApprovals()]] `EXTRACTED`
+- [[loadVolunteers()]] `EXTRACTED`
 - [[loadApprovals()]] `EXTRACTED`
 - [[renderAdmin()]] `INFERRED`
-- [[renderAnalytics()]] `INFERRED`
+- [[loadVolunteerLog()]] `EXTRACTED`
 - [[loadAnalytics()]] `INFERRED`
-- [[loadReports()]] `INFERRED`
-- [[openManagerSetupModal()]] `EXTRACTED`
-- [[openModal()]] `EXTRACTED`
-- [[closeModal()]] `EXTRACTED`
 - [[renderDocuments()]] `INFERRED`
+- [[renderList()]] `EXTRACTED`
+- [[renderApprovals()]] `EXTRACTED`
+- [[loadReports()]] `INFERRED`
 - [[renderAppLog()]] `INFERRED`
+- [[sendReports()]] `INFERRED`
+- [[renderAnalytics()]] `INFERRED`
 - [[renderReports()]] `INFERRED`
 - [[renderReportsTable()]] `INFERRED`
-- [[sendReports()]] `INFERRED`
-- [[renderTable()]] `EXTRACTED`
+- [[loadReportArchive()]] `INFERRED`
+- [[openManagerSetupModal()]] `EXTRACTED`
+- [[openModal()]] `EXTRACTED`
 
 ### contains
 - [[volunteers.js]] `EXTRACTED`

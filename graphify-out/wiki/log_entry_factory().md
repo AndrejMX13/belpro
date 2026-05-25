@@ -1,38 +1,56 @@
 # log_entry_factory()
 
-> God node · 34 connections · `api/tests/conftest.py`
+> 31 nodes · cohesion 0.10
 
-**Community:** [[Community 22]]
+## Key Concepts
 
-## Connections by Relation
+- **log_entry_factory()** (39 connections) — `api/tests/conftest.py`
+- **test_log_entries.py** (33 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_returns_created_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_filter_by_status()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_pending_volunteer_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_status_cannot_go_from_approved_to_pending_manager()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_status_cannot_go_from_rejected_to_approved()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_entry_happy_path()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_pending_manager_entry_succeeds()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_rejected_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_photo_upload_unsupported_extension_returns_400_or_422()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_pending_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_pending_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_photo_limit_returns_default()** (2 connections) — `api/tests/test_log_entries.py`
+- **Returns an async callable that inserts a LogEntry row via flush.** (1 connections) — `api/tests/conftest.py`
+- **test_list_entries_empty()** (1 connections) — `api/tests/test_log_entries.py`
+- **test_get_entry_not_found()** (1 connections) — `api/tests/test_log_entries.py`
+- *... and 6 more nodes in this community*
 
-### calls
-- [[test_send_monthly_email_failure_logged()]] `INFERRED`
-- [[test_send_monthly_whatsapp_failure_logged()]] `INFERRED`
-- [[test_send_monthly_smtp_not_configured_does_not_abort_batch()]] `INFERRED`
-- [[test_send_monthly_persists_volunteer_pdf()]] `INFERRED`
-- [[test_send_monthly_persists_consolidated_pdf()]] `INFERRED`
-- [[test_photo_upload_respects_db_max_photos_setting()]] `INFERRED`
-- [[test_list_entries_filter_by_volunteer()]] `INFERRED`
-- [[test_get_entry_found()]] `INFERRED`
-- [[test_with_entries_only_excludes_volunteers_with_no_entries()]] `INFERRED`
-- [[test_with_entries_only_includes_any_status_not_only_approved()]] `INFERRED`
-- [[test_send_monthly_invalid_phone_logged()]] `INFERRED`
-- [[test_send_monthly_resend_overwrites_row()]] `INFERRED`
-- [[test_analytics_summary_counts_approved_hours()]] `INFERRED`
-- [[test_list_entries_returns_created_entry()]] `INFERRED`
-- [[test_list_entries_filter_by_status()]] `INFERRED`
-- [[test_update_entry_success()]] `INFERRED`
-- [[test_approve_pending_manager_entry()]] `INFERRED`
-- [[test_approve_already_approved_returns_409()]] `INFERRED`
-- [[test_reject_pending_manager_entry()]] `INFERRED`
-- [[test_reject_approved_entry_returns_409()]] `INFERRED`
+## Relationships
 
-### contains
-- [[conftest.py]] `EXTRACTED`
+- [[volunteer_factory()]] (22 shared connections)
+- [[str]] (8 shared connections)
+- [[test_reports.py]] (7 shared connections)
+- [[test_analytics.py]] (3 shared connections)
+- [[path]] (2 shared connections)
+- [[conftest.py]] (1 shared connections)
+- [[persist_report()]] (1 shared connections)
 
-### rationale_for
-- [[Returns an async callable that inserts a LogEntry row via flush.]] `EXTRACTED`
+## Source Files
+
+- `api/tests/conftest.py`
+- `api/tests/test_log_entries.py`
+
+## Audit Trail
+
+- EXTRACTED: 65 (46%)
+- INFERRED: 75 (54%)
+- AMBIGUOUS: 0 (0%)
 
 ---
 
