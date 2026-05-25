@@ -40,6 +40,8 @@ Precedent for the n8n endpoint pattern: `GET /api/log-entries/photo-limit` (no a
 | Create | `db/versions/<timestamp>_add_evolution_instance_name_setting.py` |
 | Modify | `api/tests/test_app_settings.py` |
 | Create | `api/tests/test_config.py` |
+| Modify | `api/tests/test_admin.py` |
+| Modify | `frontend/admin.js` |
 | Modify | `n8n/workflows/volunteer_entry.json` |
 | Modify | `n8n/workflows/manager_approval.json` |
 
@@ -70,7 +72,7 @@ evolution_instance_name: str
 
 ### Admin router
 
-Include `evolution_instance_name` in both `GET /api/admin/settings` and `PATCH /api/admin/settings` responses. No PATCH support for this field — it is read-only from the admin settings endpoint (runtime changes go via the DB directly or future UI).
+Include `evolution_instance_name` in both `GET /api/admin/settings` and `PATCH /api/admin/settings` responses. Add `evolution_instance_name: str | None` to `AdminSettingsUpdate` so the manager can update it at runtime via the dashboard without any container restart.
 
 ### New config router
 
@@ -123,10 +125,18 @@ Both `volunteer_entry.json` and `manager_approval.json` need this change. `month
 - `test_get_evolution_instance_requires_no_auth()` — endpoint is public
 - `test_get_evolution_instance_returns_default()` — returns `"belpro"` from seeded default
 
+**`api/tests/test_admin.py`** — add:
+- `test_get_admin_settings_returns_evolution_instance_name()` — field present in GET response
+- `test_patch_admin_settings_updates_evolution_instance_name()` — PATCH persists new value
+- `test_patch_admin_settings_evolution_instance_name_reflected_in_config_endpoint()` — config endpoint returns updated value after PATCH
+
+### Admin UI
+
+Add an `evolution_instance_name` input field to the settings section in `frontend/admin.js`, following the same pattern as existing fields (read from `GET /api/admin/settings` on load, PATCH on save). Label: `"Ime instance (WhatsApp)"`.
+
 ---
 
 ## Out of Scope
 
-- Making `evolution_instance_name` editable via the admin dashboard UI (OPEN_ISSUES: ISS-NNN — n8n variable passing system rework)
 - Parameterising `evolution-api:8080` base URL (YAGNI — Docker service name is stable)
 - Changing `monthly_reports.json` (no Evolution API calls)
