@@ -113,7 +113,7 @@ Add to `CLAUDE.md` graphify workflow section (between "Locate" and "Maintain" st
 
 > **Infrastructure patch:** After any change to `docker-compose.yml` or `nginx/nginx.conf`, run `python scripts/graphify_infra.py` to patch `graph.json`. Run this before `graphify update .` or any wiki/report regeneration.
 
-Add to project public memory (`docs/.claude/memory/`) as a reference memory entry indexed in `MEMORY.md`.
+Add to project public memory (`.claude/memory/`) as a reference memory entry indexed in `.claude/memory/MEMORY.md`.
 
 ---
 
