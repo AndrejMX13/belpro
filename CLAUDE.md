@@ -267,4 +267,5 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
 1. **Orient** — Read `graphify-out/wiki/index.md` to find the community most relevant to your task. Each community article lists its member nodes and links to connected communities.
 2. **Locate** — Use Serena `find_symbol` to find specific functions, classes, or methods within the identified files, or `find_referencing_symbols` to trace callers.
 3. **Read** — Read the actual source files to understand logic. The graph tells you which files matter; it does not replace reading them.
-4. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
+4. **Infrastructure patch** — After any change to `docker-compose.yml` or `nginx/nginx.conf`, run `python scripts/graphify_infra.py` to patch `graph.json`. Do this before `graphify update .` or any wiki/report regeneration. Script: `scripts/graphify_infra.py`.
+5. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
