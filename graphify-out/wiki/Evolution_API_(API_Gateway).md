@@ -1,66 +1,48 @@
 # Evolution API (API Gateway)
 
-> 33 nodes
+> 35 nodes
 
 ## Key Concepts
 
-- **Base** (11 connections) — `api/models/base.py`
-- **base.py** (10 connections) — `api/models/base.py`
-- **__init__.py** (10 connections) — `api/models/__init__.py`
-- **Volunteer** (9 connections) — `api/models/volunteer.py`
-- **LogEntryPhoto** (8 connections) — `api/models/log_entry_photo.py`
-- **Base** (7 connections)
-- **ErrorLog** (7 connections) — `api/models/error_log.py`
-- **log_entry.py** (7 connections) — `api/models/log_entry.py`
-- **LogEntry** (7 connections) — `api/models/log_entry.py`
-- **Manager** (7 connections) — `api/models/manager.py`
-- **MonthlyReport** (6 connections) — `api/models/monthly_report.py`
-- **volunteer.py** (6 connections) — `api/models/volunteer.py`
-- **log_entry_photo.py** (5 connections) — `api/models/log_entry_photo.py`
-- **manager.py** (5 connections) — `api/models/manager.py`
-- **monthly_report.py** (5 connections) — `api/models/monthly_report.py`
-- **app_setting.py** (4 connections) — `api/models/app_setting.py`
-- **error_log.py** (4 connections) — `api/models/error_log.py`
-- **AppSetting ORM model — runtime-tunable key-value configuration.** (1 connections) — `api/models/app_setting.py`
-- **DeclarativeBase** (1 connections)
-- **SQLAlchemy declarative base shared by all ORM models.** (1 connections) — `api/models/base.py`
-- **Declarative base — import and subclass in every model.** (1 connections) — `api/models/base.py`
-- **ErrorLog ORM model — structured record of operational failures.** (1 connections) — `api/models/error_log.py`
-- **One row per operational failure. Written by API, n8n, and ops sidecar.** (1 connections) — `api/models/error_log.py`
-- **LogEntry ORM model — core audit trail for volunteer work diary entries.** (1 connections) — `api/models/log_entry.py`
-- **Individual work diary entry submitted by a volunteer.** (1 connections) — `api/models/log_entry.py`
-- *... and 8 more nodes in this community*
+- **n8n Node Configuration** (17 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Key Insights** (6 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Usage Examples** (4 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Tool Usage Pattern** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Integration with Other Skills** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **What This Skill Teaches** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **File Structure** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Example 1: Basic Configuration Flow** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Example 2: Handling Dependencies** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Example 3: Operation Change** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **The Problem This Solves** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Core Concepts** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **code:block1 (n8n-node-configuration/)** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **Usage Statistics** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **code:block2 (search_nodes → get_node (18s average))** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **code:block3 (get_node → configure → validate → iterate (56s avg per edit))** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **1. Progressive Disclosure Works** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **2. Operations Determine Requirements** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **3. Dependencies Control Visibility** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **4. Configuration is Iterative** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **5. Common Gotchas Exist** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **code:javascript (// Step 1: Get standard info)** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **code:javascript (// Step 1: Configure HTTP POST)** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (4 shared connections)
-- [[HTTP: PATCH /notify (Manual)]] (3 shared connections)
-- [[BelPro Project Memory Public Index]] (3 shared connections)
-- [[Manager WhatsApp Approval Workflow Design]] (1 shared connections)
-- [[011_manager_gdpr_clauses.py]] (1 shared connections)
-- [[GET /log-entries/{id}/photos/{pid}/file]] (1 shared connections)
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
-- [[Community 405]] (1 shared connections)
-- [[analytics_summary()]] (1 shared connections)
-- [[errors.py]] (1 shared connections)
-- [[Community 362]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/models/__init__.py`
-- `api/models/app_setting.py`
-- `api/models/base.py`
-- `api/models/error_log.py`
-- `api/models/log_entry.py`
-- `api/models/log_entry_photo.py`
-- `api/models/manager.py`
-- `api/models/monthly_report.py`
-- `api/models/volunteer.py`
+- `.claude/skills/n8n-node-configuration/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 99 (74%)
-- INFERRED: 35 (26%)
+- EXTRACTED: 68 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

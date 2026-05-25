@@ -4,39 +4,43 @@
 
 ## Key Concepts
 
-- **test_graphify_infra.py** (18 connections) — `tests/test_graphify_infra.py`
-- **load()** (13 connections) — `tests/test_graphify_infra.py`
-- **edge_triples()** (5 connections) — `tests/test_graphify_infra.py`
-- **node_ids()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_service_nodes_created()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_depends_on_dict_format()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_depends_on_list_format()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_env_url_calls_edges()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_nginx_proxies_to_edge()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_existing_nodes_preserved()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_skeleton_node_is_upgraded()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_node_has_required_fields()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_edges_are_extracted_confidence_1()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_idempotent_nodes()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_idempotent_edges()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_no_self_calls()** (2 connections) — `tests/test_graphify_infra.py`
-- **tmp_graph()** (1 connections) — `tests/test_graphify_infra.py`
-- **test_missing_graph_file_raises()** (1 connections) — `tests/test_graphify_infra.py`
-- **Tests for scripts/graphify_infra.py — inject Docker service topology into graph.** (1 connections) — `tests/test_graphify_infra.py`
-- **Pre-existing node with matching ID but no file_type gets patched.** (1 connections) — `tests/test_graphify_infra.py`
+- **logo.py** (9 connections) — `api/services/logo.py`
+- **logo.py** (5 connections) — `api/routers/logo.py`
+- **logo_src()** (5 connections) — `api/services/logo.py`
+- **get_logo()** (4 connections) — `api/routers/logo.py`
+- **upload_logo()** (4 connections) — `api/routers/logo.py`
+- **remove_logo()** (4 connections) — `api/routers/logo.py`
+- **logo_exists()** (4 connections) — `api/services/logo.py`
+- **save_logo()** (4 connections) — `api/services/logo.py`
+- **delete_logo()** (3 connections) — `api/services/logo.py`
+- **_open_image()** (3 connections) — `api/services/logo.py`
+- **Logo router — public GET + authenticated POST and DELETE.** (1 connections) — `api/routers/logo.py`
+- **Return the NGO logo as PNG, or 404 if none has been uploaded.** (1 connections) — `api/routers/logo.py`
+- **Upload or replace the NGO logo. Accepts JPEG, PNG, WebP, GIF, BMP, TIFF.** (1 connections) — `api/routers/logo.py`
+- **Delete the current NGO logo.** (1 connections) — `api/routers/logo.py`
+- **NGO logo file management.** (1 connections) — `api/services/logo.py`
+- **Return True if a logo file is present on disk.** (1 connections) — `api/services/logo.py`
+- **Remove the logo file if it exists. Silent if absent.** (1 connections) — `api/services/logo.py`
+- **Validate, normalize to PNG, and persist logo bytes.      Accepts raster formats** (1 connections) — `api/services/logo.py`
+- **Open image bytes with Pillow. Raises ValueError for unsupported or corrupt input** (1 connections) — `api/services/logo.py`
+- **Return a data URI for the NGO logo, or None if no logo is uploaded.** (1 connections) — `api/services/logo.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[load_key()]] (2 shared connections)
+- [[Community 434]] (2 shared connections)
+- [[Systematic Debugging Reference]] (2 shared connections)
+- [[merge_semantic.py]] (1 shared connections)
 
 ## Source Files
 
-- `tests/test_graphify_infra.py`
+- `api/routers/logo.py`
+- `api/services/logo.py`
 
 ## Audit Trail
 
-- EXTRACTED: 74 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 40 (73%)
+- INFERRED: 15 (27%)
 - AMBIGUOUS: 0 (0%)
 
 ---

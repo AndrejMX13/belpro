@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Self-Help Tools** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Get Tool Documentation** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **AI Agent Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Health Check** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Overview of all tools)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Comprehensive AI workflow guide)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Quick health check)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Common Patterns from Telemetry** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Pattern 1: Edit → Validate (7,841 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Pattern 2: Validate → Fix (7,266 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Pattern 3: Iterative Building (31,464 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_update_partial_workflow({...}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_validate_workflow({id}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (update → update → update → ... (56s avg between edits))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[test_health_returns_ok()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Production Gotchas** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Cross-Iteration Data Accumulation (CRITICAL)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **pairedItem for New Output Items** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Float Precision for Price/Currency Comparison** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// BEFORE the loop (reset accumulator):)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const results = [];)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG - .json directly on node reference)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ Unreliable - float comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Critical: Webhook Data Structure** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Structure** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Wrong vs Right** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example: Full Webhook Processing** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **POST Data, Query Params, and Headers** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **The Problem** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Webhook node output structure:)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# ❌ WRONG: Trying to access directly)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Get webhook data from previous node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Text Extract]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 

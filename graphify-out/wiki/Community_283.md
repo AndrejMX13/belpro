@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Common Patterns Overview** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **1. Multi-Source Data Aggregation** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **2. Filtering with Regex** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **3. Data Transformation & Enrichment** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **4. Top N Filtering & Ranking** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **5. Aggregation & Reporting** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const pattern = /\b([A-Z]{2,5})\b/g;)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Pattern 2: _input.first() - Get First Item** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (data = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (response = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Text Extract]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 

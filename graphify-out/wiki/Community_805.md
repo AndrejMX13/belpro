@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **n8n Set Node Pattern** (0 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **feature_request.md** (0 connections) — `.github/ISSUE_TEMPLATE/feature_request.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.github/ISSUE_TEMPLATE/feature_request.md`
 
 ## Audit Trail
 

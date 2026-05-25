@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **create_extra_dbs.sh** (0 connections) — `db/create_extra_dbs.sh`
+- **Hour of day (0–23) at which the daily photo cleanup runs.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `db/create_extra_dbs.sh`
+- `api/services/app_settings.py`
 
 ## Audit Trail
 

@@ -1,46 +1,51 @@
 # report_pdf.py
 
-> 25 nodes
+> 26 nodes
 
 ## Key Concepts
 
-- **Deployment Strategies** (11 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Rollback Procedures** (4 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Rolling Deployment (Kubernetes)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Blue-Green with Ingress** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Canary with Istio** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Kubernetes Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **ArgoCD Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Terraform Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Post-deployment Verification** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Deployment Metrics (DORA)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Advanced Canary with Automated Analysis** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Shadow Deployment** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **deployment-strategies.md** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Strategy Comparison** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Blue deployment (current))** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (apiVersion: networking.istio.io/v1beta1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (# View rollout history)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (argocd app rollback app-prod --revision=123)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (# Identify previous state)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Pre-deployment Checklist** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (# Check pod status)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Prometheus metrics for DORA tracking)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Flagger: Automated canary with rollback)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Mirror traffic to shadow deployment)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **manager_approval.json** (31 connections) — `n8n/workflows/manager_approval.json`
+- **settings** (7 connections) — `n8n/workflows/manager_approval.json`
+- **pinData** (2 connections) — `n8n/workflows/manager_approval.json`
+- **updatedAt** (1 connections) — `n8n/workflows/manager_approval.json`
+- **createdAt** (1 connections) — `n8n/workflows/manager_approval.json`
+- **id** (1 connections) — `n8n/workflows/manager_approval.json`
+- **name** (1 connections) — `n8n/workflows/manager_approval.json`
+- **description** (1 connections) — `n8n/workflows/manager_approval.json`
+- **active** (1 connections) — `n8n/workflows/manager_approval.json`
+- **isArchived** (1 connections) — `n8n/workflows/manager_approval.json`
+- **nodes** (1 connections) — `n8n/workflows/manager_approval.json`
+- **executionOrder** (1 connections) — `n8n/workflows/manager_approval.json`
+- **saveDataErrorExecution** (1 connections) — `n8n/workflows/manager_approval.json`
+- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/manager_approval.json`
+- **saveManualExecutions** (1 connections) — `n8n/workflows/manager_approval.json`
+- **saveExecutionProgress** (1 connections) — `n8n/workflows/manager_approval.json`
+- **binaryMode** (1 connections) — `n8n/workflows/manager_approval.json`
+- **staticData** (1 connections) — `n8n/workflows/manager_approval.json`
+- **meta** (1 connections) — `n8n/workflows/manager_approval.json`
+- **Manual Trigger** (1 connections) — `n8n/workflows/manager_approval.json`
+- **versionId** (1 connections) — `n8n/workflows/manager_approval.json`
+- **activeVersionId** (1 connections) — `n8n/workflows/manager_approval.json`
+- **versionCounter** (1 connections) — `n8n/workflows/manager_approval.json`
+- **triggerCount** (1 connections) — `n8n/workflows/manager_approval.json`
+- **shared** (1 connections) — `n8n/workflows/manager_approval.json`
+- *... and 1 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[scripts/gen_diagrams_sl.py]] (6 shared connections)
+- [[test_admin.py]] (2 shared connections)
+- [[Code Reviewer Skill]] (2 shared connections)
+- [[005_report_prefs.py]] (2 shared connections)
+- [[merge_ast_semantic.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- `n8n/workflows/manager_approval.json`
 
 ## Audit Trail
 
-- EXTRACTED: 48 (100%)
+- EXTRACTED: 63 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

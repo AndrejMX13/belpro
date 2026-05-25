@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **list_pending_entries.py** (3 connections) — `scripts/list_pending_entries.py`
-- **_get()** (3 connections) — `scripts/list_pending_entries.py`
-- **_auth()** (2 connections) — `scripts/list_pending_entries.py`
-- **main()** (2 connections) — `scripts/list_pending_entries.py`
+- **Task 5: Consent PDF service** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python ("""GDPR Article 13 consent notice PDF generation.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block30 (docker compose exec api pytest tests/test_documents.py::test)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block31 (git add api/services/consent_pdf.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 537]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/list_pending_entries.py`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 7 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

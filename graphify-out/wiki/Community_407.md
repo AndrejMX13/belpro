@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Security Policy** (7 connections) — `SECURITY.md`
-- **SECURITY.md** (1 connections) — `SECURITY.md`
-- **Reporting a vulnerability** (1 connections) — `SECURITY.md`
-- **Scope** (1 connections) — `SECURITY.md`
-- **Out of scope** (1 connections) — `SECURITY.md`
-- **EMŠO encryption** (1 connections) — `SECURITY.md`
-- **Supported versions** (1 connections) — `SECURITY.md`
-- **Security model assumptions** (1 connections) — `SECURITY.md`
+- **Testing & Debugging** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. Log Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **5. Use Binary Data Properly** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. Test with Manual Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. Use Postman/Insomnia First** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - log for debugging)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. Check Execution Data** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `SECURITY.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

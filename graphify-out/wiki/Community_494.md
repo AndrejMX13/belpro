@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 2: ORM Model + Schemas** (7 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (Index("idx_entries_vol_work_date", "volunteer_id", "work_dat)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (work_date: Mapped[date] = mapped_column(Date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (__table_args__ = ()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python ("""Pydantic schemas for the LogEntry entity.""")** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add api/models/log_entry.py api/schemas/log_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Task 8: Settings UI — display, badges, read-only states** (7 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:js (function _waBadge(state) {)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:js (if (configInfo.wa_synced) {)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:js (<div class="field" style="margin-top:0.75rem">)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:js (<div class="field" style="margin-top:0.75rem">)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:js (ngo_whatsapp_phone: $('s-ngo-wa-phone').value.trim() || null)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- [[Community 495]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

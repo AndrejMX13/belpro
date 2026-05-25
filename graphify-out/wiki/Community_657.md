@@ -4,23 +4,22 @@
 
 ## Key Concepts
 
-- **unacknowledged_count** (2 connections) — `api/routers/errors.py`
-- **loadHealthWidget** (1 connections) — `frontend/js/errors.js`
-- **refreshErrorBadge** (1 connections) — `frontend/js/errors.js`
+- **What This Skill Teaches** (3 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Core Concepts** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Top 5 Error Prevention** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 288]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/errors.js`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (50%)
-- INFERRED: 2 (50%)
+- EXTRACTED: 5 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

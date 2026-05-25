@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Contributor Covenant Code of Conduct** (7 connections) — `CODE_OF_CONDUCT.md`
-- **CODE_OF_CONDUCT.md** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Our Pledge** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Our Standards** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Enforcement Responsibilities** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Scope** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Enforcement** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Attribution** (1 connections) — `CODE_OF_CONDUCT.md`
+- **3. Podatkovni model** (8 connections) — `SPEC_SL.md`
+- **`volunteers`** (1 connections) — `SPEC_SL.md`
+- **`managers`** (1 connections) — `SPEC_SL.md`
+- **`log_entries`** (1 connections) — `SPEC_SL.md`
+- **`log_entry_photos`** (1 connections) — `SPEC_SL.md`
+- **`monthly_reports`** (1 connections) — `SPEC_SL.md`
+- **`settings`** (1 connections) — `SPEC_SL.md`
+- **`error_log`** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `CODE_OF_CONDUCT.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

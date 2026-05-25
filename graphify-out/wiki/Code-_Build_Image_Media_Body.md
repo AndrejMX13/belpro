@@ -1,39 +1,39 @@
 # Code: Build Image Media Body
 
-> 17 nodes
+> 16 nodes
 
 ## Key Concepts
 
-- **SQL Pro** (6 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Quick-Reference Examples** (5 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **CTE Pattern** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Window Function Pattern** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **EXPLAIN ANALYZE Interpretation** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Before / After Optimization Example** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- Isolate expensive subquery logic for reuse and readabilit)** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- Running total and rank within partition — no self-join re)** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- PostgreSQL: always use ANALYZE to see actual row counts v)** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- BEFORE: correlated subquery, one execution per row (slow))** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
+- **analytics_summary()** (7 connections) — `api/routers/analytics.py`
+- **analytics.py** (6 connections) — `api/schemas/analytics.py`
+- **analytics.py** (4 connections) — `api/routers/analytics.py`
+- **HoursPerVolunteer** (4 connections) — `api/schemas/analytics.py`
+- **HoursPerLocation** (4 connections) — `api/schemas/analytics.py`
+- **MonthlyTrendPoint** (4 connections) — `api/schemas/analytics.py`
+- **AnalyticsSummary** (4 connections) — `api/schemas/analytics.py`
+- **_preceding_months()** (3 connections) — `api/routers/analytics.py`
+- **Analytics router — aggregated summary for the dashboard analytics page.** (1 connections) — `api/routers/analytics.py`
+- **Return aggregated analytics data scoped to the given month.      Defaults to t** (1 connections) — `api/routers/analytics.py`
+- **Return `count` consecutive (year, month) tuples ending at (year, month).** (1 connections) — `api/routers/analytics.py`
+- **Pydantic schemas for the analytics summary endpoint.** (1 connections) — `api/schemas/analytics.py`
+- **Per-volunteer approved hours for a given month.** (1 connections) — `api/schemas/analytics.py`
+- **Approved hours grouped by location for a given month.** (1 connections) — `api/schemas/analytics.py`
+- **Total approved hours for a single calendar month.** (1 connections) — `api/schemas/analytics.py`
+- **Aggregated analytics data for a given month.** (1 connections) — `api/schemas/analytics.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[renderDetail() — volunteer detail page]] (4 shared connections)
 
 ## Source Files
 
-- `.claude/skills/sql-pro/SKILL.md`
+- `api/routers/analytics.py`
+- `api/schemas/analytics.py`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 34 (77%)
+- INFERRED: 10 (23%)
 - AMBIGUOUS: 0 (0%)
 
 ---

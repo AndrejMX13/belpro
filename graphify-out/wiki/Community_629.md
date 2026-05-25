@@ -4,25 +4,14 @@
 
 ## Key Concepts
 
-- **Common n8n Expression Mistakes** (18 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **COMMON_MISTAKES.md** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **Debugging Process** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **11. Using = Prefix Outside JSON** (4 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block22 (Email: ={{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block23 (Email: {{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:javascript (// JSON mode (set property to expression))** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 667]] (1 shared connections)
-- [[Community 628]] (1 shared connections)
-- [[Community 668]] (1 shared connections)
-- [[Community 676]] (1 shared connections)
-- [[Community 673]] (1 shared connections)
-- [[Community 669]] (1 shared connections)
-- [[Community 670]] (1 shared connections)
-- [[Community 671]] (1 shared connections)
-- [[Community 672]] (1 shared connections)
-- [[Community 664]] (1 shared connections)
-- [[Community 627]] (1 shared connections)
-- [[Community 674]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 
@@ -30,7 +19,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 7 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

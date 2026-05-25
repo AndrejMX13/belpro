@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **15. Empty Expression Brackets** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block31 ({{}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block32 ({{$json.field}}                 // Include expression conten)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **7. Array Access with Dots** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block14 ({{$json.items.0.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block15 ({{$json.items[0].name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 

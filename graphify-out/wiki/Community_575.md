@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Integration-Specific Gotchas** (4 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Bidirectional Threshold Checking** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Google Sheets** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Google Drive** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript (// ❌ Only catches increases)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Nested Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **What Are They?** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **How to Handle** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Step 1: Parent)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[Community 375]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

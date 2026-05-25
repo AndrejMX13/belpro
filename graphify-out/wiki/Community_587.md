@@ -4,15 +4,15 @@
 
 ## Key Concepts
 
-- **Testing Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django/DRF Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# FastAPI pytest with httpx)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Serializer → Pydantic V2 Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django REST Framework Serializer** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI Pydantic V2 Schemas** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django DRF)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# FastAPI with Pydantic V2)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 

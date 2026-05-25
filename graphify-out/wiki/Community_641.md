@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **[0.11.1-beta.0] — 2026-05-22** (3 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Fixed** (1 connections) — `CHANGELOG.md`
+- **3. Zagon vseh storitev** (3 connections) — `README_SL.md`
+- **code:bash (docker compose up -d)** (1 connections) — `README_SL.md`
+- **code:bash (docker compose ps)** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[POST /api/volunteers/check-emso (check_emso)]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `README_SL.md`
 
 ## Audit Trail
 

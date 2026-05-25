@@ -1,58 +1,48 @@
 # DevOps Engineer Skill
 
-> 46 nodes
+> 48 nodes
 
 ## Key Concepts
 
-- **test_auth.py** (11 connections) — `api/tests/test_auth.py`
-- **httpOnly Cookie Auth Design ISS-005** (9 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **_verify_session_token()** (8 connections) — `api/core/auth.py`
-- **auth.py** (7 connections) — `api/routers/auth.py`
-- **login()** (7 connections) — `api/routers/auth.py`
-- **auth.py** (6 connections) — `api/core/auth.py`
-- **_make_session_token()** (6 connections) — `api/core/auth.py`
-- **LoginResponse** (5 connections) — `api/schemas/auth.py`
-- **_verify_password()** (4 connections) — `api/core/auth.py`
-- **require_manager()** (4 connections) — `api/core/auth.py`
-- **logout()** (4 connections) — `api/routers/auth.py`
-- **auth.py** (4 connections) — `api/schemas/auth.py`
-- **api/routers/auth.py Login and Logout Endpoints** (4 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **LoginRequest** (3 connections) — `api/schemas/auth.py`
-- **test_make_and_verify_session_token()** (3 connections) — `api/tests/test_auth.py`
-- **test_verify_session_token_wrong_secret()** (3 connections) — `api/tests/test_auth.py`
-- **test_verify_session_token_expired()** (3 connections) — `api/tests/test_auth.py`
-- **test_verify_session_token_garbage()** (2 connections) — `api/tests/test_auth.py`
-- **test_verify_session_token_empty()** (2 connections) — `api/tests/test_auth.py`
-- **belpro_session httpOnly Cookie** (2 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Dashboard Login Screen** (2 connections) — `frontend/index.html`
-- **POST /api/auth/login (login)** (2 connections) — `api/routers/auth.py`
-- **API.auth.login()** (2 connections) — `frontend/js/api.js`
-- **API.auth.logout()** (2 connections) — `frontend/js/api.js`
-- **POST /auth/login** (2 connections) — `api/routers/auth.py`
-- *... and 21 more nodes in this community*
+- **PostgreSQL Replication** (10 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Streaming Replication (Physical)** (5 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Logical Replication (Row-level)** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Failover and Promotion** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Backup and Point-in-Time Recovery (PITR)** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Primary Server Setup** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Standby Server Setup** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Cascading Replication** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Connection Pooling for HA** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Monitoring Replication** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Synchronous Replication** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Publisher Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Subscriber Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Logical Replication Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Delayed Replication (Delayed Standby)** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Manual Failover** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Automatic Failover with pg_auto_failover** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Patroni (Production HA Solution)** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **PgBouncer Configuration** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **HAProxy for Load Balancing** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **WAL Archiving Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Base Backup with pg_basebackup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Point-in-Time Recovery** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Monitoring Best Practices** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Troubleshooting** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- *... and 23 more nodes in this community*
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (2 shared connections)
-- [[Code: Clear State Preklici]] (1 shared connections)
-- [[POST /api/logo (upload_logo)]] (1 shared connections)
-- [[Code: Preveri Slike Stanje]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/core/auth.py`
-- `api/routers/auth.py`
-- `api/schemas/auth.py`
-- `api/tests/test_auth.py`
-- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- `frontend/index.html`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/postgres-pro/references/replication.md`
 
 ## Audit Trail
 
-- EXTRACTED: 98 (76%)
-- INFERRED: 31 (24%)
+- EXTRACTED: 94 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

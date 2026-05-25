@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 2: Health Endpoint** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 2.2 — Run** (3 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 2.1 — Write test** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 2.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# api/tests/test_health.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest tests/test_health.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:block12 (PASSED tests/test_health.py::test_health_returns_ok)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/tests/test_health.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Task 8: n8n — volunteer_entry workflow** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (grep -n "evolution-api.*belpro" n8n/workflows/volunteer_entr)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (grep -c "evolution-api.*belpro" n8n/workflows/volunteer_entr)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (grep -c "Fetch Config.*instance_name\|instance_name.*Fetch C)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add n8n/workflows/volunteer_entry.json)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[Community 392]] (1 shared connections)
+- [[Community 398]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 

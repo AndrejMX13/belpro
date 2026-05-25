@@ -4,34 +4,29 @@
 
 ## Key Concepts
 
-- **n8n Code Python Skill** (16 connections) — `.claude/skills/n8n-code-python/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Skill Activation** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Success Metrics** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Best Practices** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **When Python is the Right Choice** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Learning Path** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Support** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Version** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Credits** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Best Practices** (6 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **1. Always Use .get() for Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **2. Handle None/Null Values Explicitly** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **3. Use List Comprehensions for Filtering** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **4. Return Consistent Structure** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **5. Debug with print() Statements** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ SAFE: Won't crash if field missing)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ GOOD: Default to 0 if None)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ PYTHONIC: List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ CONSISTENT: Always list with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Debug statements appear in browser console (F12))** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 661]] (1 shared connections)
-- [[Community 515]] (1 shared connections)
-- [[Community 516]] (1 shared connections)
-- [[Community 290]] (1 shared connections)
-- [[Community 370]] (1 shared connections)
-- [[Community 561]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

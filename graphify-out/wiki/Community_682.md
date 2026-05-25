@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **test_health_returns_ok()** (2 connections) — `api/tests/test_health.py`
-- **test_health.py** (1 connections) — `api/tests/test_health.py`
-- **Health endpoint must return 200 with status ok.** (1 connections) — `api/tests/test_health.py`
+- **002_add_emso_hash.py** (2 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
+- **upgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
+- **downgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
 
 ## Relationships
 
@@ -14,7 +14,7 @@
 
 ## Source Files
 
-- `api/tests/test_health.py`
+- `api/db/migrations/versions/002_add_emso_hash.py`
 
 ## Audit Trail
 

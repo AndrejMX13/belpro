@@ -1,35 +1,35 @@
 # Test Coverage Gaps Plan
 
-> 27 nodes
+> 28 nodes
 
 ## Key Concepts
 
-- **Task 2: Settings field + photo-limit API endpoint** (8 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Photo Upload Limit (ISS-002) Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Task 3: n8n workflow — insert photo limit check** (5 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Task 1: Add MAX_PHOTOS_PER_ENTRY to both env example files** (4 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Node specifications** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Steps** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Context — existing photo sub-flow** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **New flow after HTTP: GET Entry (Photo Count)** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **2026-05-18-photo-upload-limit.md** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:block1 (# ----------------------------------------------------------)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:block2 (# ----------------------------------------------------------)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:bash (git add .env.example .env.example.sl)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:python (async def test_photo_limit_returns_default(client: AsyncClie)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:bash (docker compose exec -T api pytest tests/test_log_entries.py:)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:python (# ── Uploads ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:python (@router.get("/photo-limit"))** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:bash (docker compose exec -T api pytest tests/ -v --tb=short)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:bash (git add api/core/settings.py api/routers/log_entries.py api/)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:block11 ([image arrives])** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:block12 (HTTP: GET Entry (Photo Count))** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:javascript (// Find the actual name of the node that checks photo state )** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:javascript (const d = $input.first().json;)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **code:bash (python ./scripts/n8n_workflows.py export)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- *... and 2 more nodes in this community*
+- **Spec Compliance Review** (7 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **The Three Verification Categories** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Spec Compliance Checklist** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Stage 1: Spec Compliance Review** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 1: Missing Requirements** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 2: Unnecessary Additions** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Why Order Matters** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Output Format** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Two-Stage Review Architecture** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 3: Interpretation Gaps** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Compliant Result** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Issues Found** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **spec-compliance-review.md** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block1 (┌─────────────────────┐)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Core Directive** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block3** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block5** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Stage 1 Must Come First** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Separation of Concerns** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Before You Start** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **During Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **After Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- *... and 3 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- `.claude/skills/code-reviewer/references/spec-compliance-review.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (100%)
+- EXTRACTED: 54 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

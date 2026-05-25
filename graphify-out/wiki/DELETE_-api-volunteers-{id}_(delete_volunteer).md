@@ -4,36 +4,30 @@
 
 ## Key Concepts
 
-- **Belpro — System Specification** (15 connections) — `SPEC.md`
-- **1. Project Overview** (2 connections) — `SPEC.md`
-- **2. Architecture Overview** (2 connections) — `SPEC.md`
-- **9. Project Structure** (2 connections) — `SPEC.md`
-- **SPEC.md** (1 connections) — `SPEC.md`
-- **Legal Context** (1 connections) — `SPEC.md`
-- **Components** (1 connections) — `SPEC.md`
-- **7. Email** (1 connections) — `SPEC.md`
-- **8. GDPR & Privacy** (1 connections) — `SPEC.md`
-- **code:block2 (belpro/)** (1 connections) — `SPEC.md`
-- **10. Deployment** (1 connections) — `SPEC.md`
-- **11. Out of Scope (v1)** (1 connections) — `SPEC.md`
+- **Common Workflow Errors** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Workflow Validation** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **validate_workflow (Structure)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Broken Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Circular Dependencies** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Multiple Start Nodes** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **4. Disconnected Nodes** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (validate_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 408]] (1 shared connections)
-- [[Community 440]] (1 shared connections)
-- [[Community 321]] (1 shared connections)
-- [[Community 611]] (1 shared connections)
-- [[Number of days approved entry photos are retained on disk.]] (1 shared connections)
-- [[Community 504]] (1 shared connections)
-- [[Community 439]] (1 shared connections)
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

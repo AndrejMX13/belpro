@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **Pydantic V2 Schemas** (8 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Schema Patterns** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **ORM Mode (from_attributes)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Model Validator** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Nested Models** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Serialization Control** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Settings (Pydantic V2)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **pydantic-v2.md** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **code:python (class UserResponse(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **code:python (class OrderCreate(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **code:python (class Address(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **code:python (class User(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **code:python (from pydantic_settings import BaseSettings, SettingsConfigDi)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Pattern 1: _input.all() - Process All Items** (8 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 1: Filter Active Items** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 2: Transform All Items** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 3: Aggregate Data** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 4: Sort and Limit** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 5: Group By Category** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 6: Deduplicate by ID** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Get all items from previous node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 411]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

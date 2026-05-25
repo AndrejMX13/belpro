@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **POST /api/managers (create_manager)** (0 connections) — `api/routers/managers.py`
+- **DELETE /api/volunteers/{id} (delete_volunteer)** (0 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/managers.py`
+- `api/routers/volunteers.py`
 
 ## Audit Trail
 

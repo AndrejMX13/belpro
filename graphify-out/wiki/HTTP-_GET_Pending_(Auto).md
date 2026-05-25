@@ -1,37 +1,37 @@
 # HTTP: GET Pending (Auto)
 
-> 15 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **Review Process** (6 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Review Checklist** (5 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Category Deep Dive** (5 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **review-checklist.md** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Comprehensive Review Checklist** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **1. Context (5 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **2. Structure (10 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **3. Code Details (20 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **4. Tests (10 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **5. Final Pass (5 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Design Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Logic Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Security Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Performance Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **VolunteerUpdate** (14 connections) — `api/schemas/volunteer.py`
+- **test_volunteer_update_schema.py** (11 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_rejects_empty_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_rejects_empty_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_email_string()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_coerces_empty_email_to_none()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_none_email()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_normalises_phone()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_all_none_produces_empty_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_first_name_included_in_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **Fields that can be updated on an existing volunteer.** (1 connections) — `api/schemas/volunteer.py`
+- **Unit tests for VolunteerUpdate schema — no DB required.** (1 connections) — `api/tests/test_volunteer_update_schema.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[renderDetail() — volunteer detail page]] (3 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/review-checklist.md`
+- `api/schemas/volunteer.py`
+- `api/tests/test_volunteer_update_schema.py`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (55%)
+- INFERRED: 21 (45%)
 - AMBIGUOUS: 0 (0%)
 
 ---

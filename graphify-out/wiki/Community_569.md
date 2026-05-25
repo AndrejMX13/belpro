@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Unified Tool Reference** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **get_node (Unified Node Information)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **validate_node (Unified Validation)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Standard (recommended))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Full validation with runtime profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Production Gotchas** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Cross-Iteration Data Not Available in Python** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

@@ -4,35 +4,32 @@
 
 ## Key Concepts
 
-- **loadAnalytics()** (8 connections) — `frontend/js/analytics.js`
-- **analytics.js** (7 connections) — `frontend/js/analytics.js`
-- **renderAnalytics()** (5 connections) — `frontend/js/analytics.js`
-- **renderAnalyticsContent()** (3 connections) — `frontend/js/analytics.js`
-- **_renderCharts()** (3 connections) — `frontend/js/analytics.js`
-- **loadAnalytics()** (3 connections) — `frontend/js/analytics.js`
-- **GET /analytics/summary** (3 connections) — `api/routers/analytics.py`
-- **_destroyCharts()** (2 connections) — `frontend/js/analytics.js`
-- **API.analytics.summary()** (2 connections) — `frontend/js/api.js`
-- **AnalyticsSummary shape (total_hours, active_volunteer_count, hours_per_volunteer[], hours_per_location[], monthly_trend[])** (2 connections) — `api/routers/analytics.py`
-- **analyticsState** (1 connections) — `frontend/js/analytics.js`
-- **exportAnalyticsCsv()** (1 connections) — `frontend/js/analytics.js`
-- **renderAnalytics() — analytics page** (1 connections) — `frontend/js/analytics.js`
+- **Example 4: Date Formatting** (7 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **ISO Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Custom Date Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Time Only** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Full Readable Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Date Math - Future** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Date Math - Past** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toISO()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('HH:mm:ss')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('MMMM dd, yyyy')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.plus({days: 7}).toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.minus({hours: 24}).toFormat('yyyy-MM-dd HH:mm')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (6 shared connections)
-- [[tax_number_valid()]] (1 shared connections)
+- [[Community 331]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/analytics.py`
-- `frontend/js/analytics.js`
-- `frontend/js/api.js`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (83%)
-- INFERRED: 7 (17%)
+- EXTRACTED: 25 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

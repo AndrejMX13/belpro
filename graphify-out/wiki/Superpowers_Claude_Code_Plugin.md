@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **E2E Testing** (7 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **E2E Test Strategy** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **User Flow Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Checkout Flow** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Test Data Management** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Cross-Browser Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **e2e-testing.md** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (// Critical user paths to test)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (import { test, expect } from '@playwright/test';)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (test.describe('Checkout Flow', () => {)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (// fixtures/testData.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (// playwright.config.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Design: httpOnly Cookie Auth (ISS-005)** (8 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **2026-05-19-httponly-cookie-auth-design.md** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Dual auth in `require_manager`** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Session token** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **New settings** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **New endpoints** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **File Map** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **What does NOT change** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Behaviour changes visible to the manager** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Not in scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Relationships
 
@@ -24,7 +24,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/e2e-testing.md`
+- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Audit Trail
 

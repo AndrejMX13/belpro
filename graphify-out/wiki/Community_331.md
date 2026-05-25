@@ -4,38 +4,36 @@
 
 ## Key Concepts
 
-- **Standard Library Reference - Python Code Node** (16 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Available Modules** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **⚠️ Critical Limitation** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **STANDARD_LIBRARY.md** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (# ❌ NOT AVAILABLE - Will cause ModuleNotFoundError)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Priority 1: Most Useful (Use These)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Priority 2: Moderately Useful** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Priority 3: Occasionally Useful** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Complete Standard Library List** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **n8n Expression Examples** (13 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Example 9: Code Node (Direct Access)** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Example 2: HTTP API to Database** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **EXAMPLES.md** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:sql (INSERT INTO users (user_id, name, email, role, synced_at))** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (// ✅ Direct access (no {{ }}))** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 374]] (1 shared connections)
-- [[Community 296]] (1 shared connections)
-- [[Community 295]] (1 shared connections)
-- [[Community 463]] (1 shared connections)
-- [[Community 464]] (1 shared connections)
-- [[Community 372]] (1 shared connections)
-- [[Community 467]] (1 shared connections)
-- [[Community 373]] (1 shared connections)
-- [[Community 566]] (1 shared connections)
-- [[Community 466]] (1 shared connections)
-- [[Community 465]] (1 shared connections)
+- [[Community 572]] (1 shared connections)
+- [[Community 333]] (1 shared connections)
+- [[Hour of day (0–23) at which the monthly report cron fires.]] (1 shared connections)
+- [[Community 332]] (1 shared connections)
+- [[Community 413]] (1 shared connections)
+- [[GET /api/managers/me/config-info (get_config_info)]] (1 shared connections)
+- [[Community 412]] (1 shared connections)
+- [[Community 571]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 27 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

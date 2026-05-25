@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **Work Date Rename and Dashboard Entry Plan** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **work_date Column (renamed from entry_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Node.js Essentials Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Node.js File System API** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Relationships
 
@@ -13,7 +13,7 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Audit Trail
 

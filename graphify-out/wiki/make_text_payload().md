@@ -1,48 +1,60 @@
 # make_text_payload()
 
-> 47 nodes
+> 48 nodes
 
 ## Key Concepts
 
-- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
-- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
-- **activeVersion** (12 connections) — `n8n/workflows/manager_approval.json`
-- **Execute Workflow Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Manual Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Code: Parse Action** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Switch: Action** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: PATCH /approve** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: PATCH /reject** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Code: Build Volunteer Msg** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: WA Notify Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Code: Build Manager Confirm** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: WA Confirm to Manager** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: GET Pending Entries** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Code: Check Next Entry** (3 connections) — `n8n/workflows/manager_approval.json`
-- **IF: Should Notify?** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: PATCH /notify** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: GET Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
-- **HTTP: GET Manager** (3 connections) — `n8n/workflows/manager_approval.json`
-- **Code: Build Next Msg** (3 connections) — `n8n/workflows/manager_approval.json`
-- **main** (1 connections) — `n8n/workflows/manager_approval.json`
-- **main** (1 connections) — `n8n/workflows/manager_approval.json`
-- **main** (1 connections) — `n8n/workflows/manager_approval.json`
-- **main** (1 connections) — `n8n/workflows/manager_approval.json`
-- **main** (1 connections) — `n8n/workflows/manager_approval.json`
-- *... and 22 more nodes in this community*
+- **volunteers.js** (55 connections) — `frontend/js/volunteers.js`
+- **$()** (37 connections) — `frontend/js/volunteers.js`
+- **setHtml()** (25 connections) — `frontend/js/volunteers.js`
+- **esc()** (20 connections) — `frontend/js/volunteers.js`
+- **loadVolunteers()** (11 connections) — `frontend/js/volunteers.js`
+- **loadApprovals()** (11 connections) — `frontend/js/volunteers.js`
+- **loadVolunteerLog()** (9 connections) — `frontend/js/volunteers.js`
+- **toast()** (8 connections) — `frontend/js/volunteers.js`
+- **renderList()** (8 connections) — `frontend/js/volunteers.js`
+- **renderApprovals()** (8 connections) — `frontend/js/volunteers.js`
+- **submitAddVolunteer()** (7 connections) — `frontend/js/volunteers.js`
+- **sendReports()** (6 connections) — `frontend/js/reports.js`
+- **show()** (5 connections) — `frontend/js/volunteers.js`
+- **hide()** (5 connections) — `frontend/js/volunteers.js`
+- **openManagerSetupModal()** (5 connections) — `frontend/js/volunteers.js`
+- **submitManagerSetup()** (5 connections) — `frontend/js/volunteers.js`
+- **openModal()** (5 connections) — `frontend/js/volunteers.js`
+- **closeModal()** (5 connections) — `frontend/js/volunteers.js`
+- **showLogin()** (4 connections) — `frontend/js/volunteers.js`
+- **renderThead()** (4 connections) — `frontend/js/volunteers.js`
+- **renderTable()** (4 connections) — `frontend/js/volunteers.js`
+- **renderApprovalsThead()** (4 connections) — `frontend/js/volunteers.js`
+- **renderApprovalsTable()** (4 connections) — `frontend/js/volunteers.js`
+- **renderVolunteerLogThead()** (4 connections) — `frontend/js/volunteers.js`
+- **renderVolunteerLogTable()** (4 connections) — `frontend/js/volunteers.js`
+- *... and 23 more nodes in this community*
 
 ## Relationships
 
-- [[010_monthly_reports_unique_idx.py]] (2 shared connections)
+- [[test_managers.py]] (21 shared connections)
+- [[001_initial_schema.py]] (11 shared connections)
+- [[loadReports()]] (10 shared connections)
+- [[__init__.py]] (8 shared connections)
+- [[Day of month (1–28) on which monthly reports are auto-sent.]] (6 shared connections)
+- [[Community 358]] (3 shared connections)
+- [[Community 550]] (3 shared connections)
+- [[API.health.basic()]] (2 shared connections)
+- [[Community 512]] (2 shared connections)
+- [[Community 618]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/manager_approval.json`
+- `api/routers/log_entries.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 126 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 274 (89%)
+- INFERRED: 35 (11%)
 - AMBIGUOUS: 0 (0%)
 
 ---

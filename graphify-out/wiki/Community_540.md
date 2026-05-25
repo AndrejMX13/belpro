@@ -4,26 +4,30 @@
 
 ## Key Concepts
 
-- **Test Coverage Gaps Design Spec** (4 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **BelPro API Test Suite Design** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **belpro_test PostgreSQL Test Database** (2 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **belpro_test_migrations Isolated Migration Test Database** (2 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **pytest Fixture Architecture session and function scoped** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **api/tests/test_migrations.py Migration Roundtrip Test** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **GDPR Consent PDF (Dogovor o prostovoljstvu)** (5 connections) — `SPEC.md`
+- **NGO Logo Plan** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **NGO Logo Storage and PDF Embedding** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **PDF Report History Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **GDPR Consent PDF Plan** (2 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **PDF Report History (MonthlyReport table upsert)** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Manager WhatsApp Approval Workflow Design]] (1 shared connections)
+- [[send_monthly_reports()]] (1 shared connections)
+- [[POST /log-entries/{id}/photos]] (1 shared connections)
+- [[API.reports.downloadHistoryPdf()]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- `SPEC.md`
+- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (85%)
-- INFERRED: 2 (15%)
+- EXTRACTED: 11 (65%)
+- INFERRED: 6 (35%)
 - AMBIGUOUS: 0 (0%)
 
 ---

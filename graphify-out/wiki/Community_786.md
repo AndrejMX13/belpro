@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_graphify_orientation.md** (0 connections) — `.claude/memory/feedback_graphify_orientation.md`
+- **feedback_docker_exec_patterns.md** (0 connections) — `.claude/memory/feedback_docker_exec_patterns.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_graphify_orientation.md`
+- `.claude/memory/feedback_docker_exec_patterns.md`
 
 ## Audit Trail
 

@@ -4,32 +4,35 @@
 
 ## Key Concepts
 
-- **Async Testing** (7 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Test Setup** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Endpoint Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Auth Helper Fixture** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Service Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Mocking Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **testing-async.md** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (@pytest.fixture)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (from unittest.mock import AsyncMock, patch)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **loadAnalytics()** (8 connections) — `frontend/js/analytics.js`
+- **analytics.js** (7 connections) — `frontend/js/analytics.js`
+- **renderAnalytics()** (5 connections) — `frontend/js/analytics.js`
+- **renderAnalyticsContent()** (3 connections) — `frontend/js/analytics.js`
+- **_renderCharts()** (3 connections) — `frontend/js/analytics.js`
+- **loadAnalytics()** (3 connections) — `frontend/js/analytics.js`
+- **GET /analytics/summary** (3 connections) — `api/routers/analytics.py`
+- **_destroyCharts()** (2 connections) — `frontend/js/analytics.js`
+- **API.analytics.summary()** (2 connections) — `frontend/js/api.js`
+- **AnalyticsSummary shape (total_hours, active_volunteer_count, hours_per_volunteer[], hours_per_location[], monthly_trend[])** (2 connections) — `api/routers/analytics.py`
+- **analyticsState** (1 connections) — `frontend/js/analytics.js`
+- **exportAnalyticsCsv()** (1 connections) — `frontend/js/analytics.js`
+- **renderAnalytics() — analytics page** (1 connections) — `frontend/js/analytics.js`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[make_text_payload()]] (6 shared connections)
+- [[test_managers.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/testing-async.md`
+- `api/routers/analytics.py`
+- `frontend/js/analytics.js`
+- `frontend/js/api.js`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 34 (83%)
+- INFERRED: 7 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

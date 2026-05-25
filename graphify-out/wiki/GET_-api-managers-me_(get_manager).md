@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Design Details** (7 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Report Auto-Hour Implementation Design** (5 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Ops server (`ops/scripts/ops_server.py`)** (4 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Schemas (`api/schemas/admin.py`)** (3 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Test Plan** (3 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **AppSettings (`api/services/app_settings.py`)** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Admin router (`api/routers/admin.py`)** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **DB seed migration** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **2026-05-22-report-auto-hour-design.md** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Files Touched** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_auto_hour: int)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_auto_hour: int | None = Field(None, ge=0, le=23))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python ("report_auto_hour": app_settings.report_auto_hour,)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python ("0 {report_hour} {day} * * /app/scripts/monthly_report_send.)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_hour = max(0, min(int(payload.get("report_auto_hour",)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_hour = max(0, min(int(rows.get("report_auto_hour", 7))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:sql (INSERT INTO settings (name, value, value_type))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Frontend (`frontend/js/admin.js`)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **New tests — `test_admin.py`** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **New tests — `test_app_settings.py`** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Manager WhatsApp Approval Workflow — Design Spec** (8 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Data Flow** (4 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **WhatsApp Messages** (4 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Routing Change (volunteer_entry.json)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Manager Workflow (manager_approval.json)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Execute Workflow Input (from volunteer flow)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **2026-05-07-manager-approval-design.md** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Solution** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block1 (Webhook: WhatsApp)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block2 (┌─ Manual Trigger ──────────────────────┐)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Manager → "Not Registered" Fix** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Testing Without a Third Phone** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **API Endpoints Used** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block4 (Vaš vnos z dne 07.05.2026 je bil odobren. ✅)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block5 (Vaš vnos z dne 07.05.2026 je bil zavrnjen. ❌)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block6 (Vnos za Slavko Pridni je bil odobren/zavrnjen.)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Interaction Format** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Known Limitation: Buttons** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Files Changed** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
 
 ## Relationships
 
@@ -33,7 +33,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
 
 ## Audit Trail
 

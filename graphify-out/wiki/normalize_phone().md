@@ -1,35 +1,35 @@
 # normalize_phone()
 
-> 31 nodes
+> 32 nodes
 
 ## Key Concepts
 
-- **n8n Validation Expert** (15 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Key Insights** (6 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Usage Examples** (4 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Integration with Other Skills** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **What This Skill Teaches** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **File Structure** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Example 1: Basic Validation Loop** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Example 2: Handling False Positives** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Example 3: Using Auto-Fix** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **The Problem This Solves** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Core Concepts** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **code:block1 (n8n-validation-expert/)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Common Error Types** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **1. Validation is Iterative** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **2. False Positives Exist** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **3. Auto-Sanitization Works** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **4. Profile Matters** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **5. Error Messages Help** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **code:javascript (// Iteration 1)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **code:javascript (// Run validation)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **code:javascript (// Check what can be auto-fixed)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **When This Skill Activates** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **Works With:** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- *... and 6 more nodes in this community*
+- **Platform Engineering** (17 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Self-Service with Crossplane** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Terraform Self-Service Module** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Backstage Service Template** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Service Catalog Info** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Golden Path Scaffolding** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **GitOps Repository Structure** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **ArgoCD Application** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform Metrics** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Custom Backstage Plugin** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Cost Allocation** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform APIs** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Multi-Tenant Architecture** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Adoption Strategy** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **CLI Tool Example** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **platform-engineering.md** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform Principles** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# Composition for self-service database)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:hcl (# modules/service/main.tf)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# templates/microservice/template.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# catalog-info.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:block6 (gitops/)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (apiVersion: argoproj.io/v1alpha1)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# prometheus/platform-metrics.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/README.md`
+- `.claude/skills/devops-engineer/references/platform-engineering.md`
 
 ## Audit Trail
 
-- EXTRACTED: 60 (100%)
+- EXTRACTED: 62 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

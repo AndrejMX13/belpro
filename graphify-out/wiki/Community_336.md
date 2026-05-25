@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Troubleshooting Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Problem 1: "Field X is required but not visible"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Problem 2: "Field disappears when I change operation"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Problem 3: "Validation passes but field doesn't save"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Check field dependencies using search_properties)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Working configuration)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Check requirements for new operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Configure)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Correct approach - check property dependencies)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **✅ Do** (5 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **❌ Don't** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (get_node({nodeType: "...", mode: "search_properties", proper)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// First: method, resource, operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Operation changed → requirements changed)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:block36 (Error: "body required when sendBody=true")** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Error: "body not visible" → Check displayOptions)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Bad: Adding fields that will be hidden)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Each operation has unique requirements)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Community 376]] (1 shared connections)
+- [[Community 375]] (1 shared connections)
 
 ## Source Files
 

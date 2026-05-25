@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Example 5: Array Operations** (6 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **First User** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Last User** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **All Emails (Join)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Array Length** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Example 3: Multi-Node Data Flow** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Node 3: Email** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Node 2: HTTP Request** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Node 1: Webhook** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 - **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.users[0].name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.users[$json.users.length - 1].name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.users.map(u => u.email).join(', ')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.users.length}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block8 (https://api.example.com/orders/{{$json.body.order_id}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block10 (Order {{$node["Webhook"].json.body.order_id}} Confirmed)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block11 (Dear {{$node["HTTP Request"].json.order.customer}},)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block12 (Subject: Order ORD-12345 Confirmed)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[Community 331]] (1 shared connections)
 
 ## Source Files
 

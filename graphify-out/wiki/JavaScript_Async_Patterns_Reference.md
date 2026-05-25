@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Modern JavaScript Syntax (ES2023+)** (13 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Optional Chaining and Nullish Coalescing** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Private Class Fields** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Top-Level Await** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Array Methods (Modern)** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Object and String Enhancements** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **WeakRef and FinalizationRegistry** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Logical Assignment Operators** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Numeric Separators and BigInt** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Pattern Matching (Stage 3 Proposal)** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Iterator Helpers (Stage 3)** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Temporal API (Stage 3)** (2 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **modern-syntax.md** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// Optional chaining - safe property access)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (class BankAccount {)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// No need for async IIFE wrapper)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// at() - negative indexing)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// Object.groupBy() - group array elements)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// WeakRef - hold weak references to objects)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// ||= - assign if falsy)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// Numeric separators for readability)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// Using switch with enhanced patterns (when available))** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// When available - chaining iterator operations)** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **code:javascript (// Modern date/time handling (when available))** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
-- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/modern-syntax.md`
+- **Incident Response** (13 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Chaos Engineering** (3 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Response Metrics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Runbook Template** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Auto-Remediation Script** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Postmortem Template** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **PagerDuty Configuration** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Evidence Collection & Forensics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Communication Templates** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Security Incident Specifics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Compliance Requirements** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **incident-response.md** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Severity Levels** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:markdown (# Runbook: High API Error Rate)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:markdown (# Postmortem: API Outage - 2024-01-15)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:yaml (schedules:)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:yaml (# chaos-mesh: Pod failure test)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:markdown (## SEV1 Initial Notification)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Incident Classification** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:bash (# Compromise investigation checklist)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:yaml (# Incident notification requirements)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
 
 ## Relationships
 
@@ -36,7 +36,7 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/modern-syntax.md`
+- `.claude/skills/devops-engineer/references/incident-response.md`
 
 ## Audit Trail
 

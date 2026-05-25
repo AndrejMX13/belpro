@@ -1,14 +1,15 @@
 # Community 542
 
-> 5 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **settings.local.json** (3 connections) — `.claude/settings.local.json`
-- **permissions** (2 connections) — `.claude/settings.local.json`
-- **allow** (1 connections) — `.claude/settings.local.json`
-- **enabledMcpjsonServers** (1 connections) — `.claude/settings.local.json`
-- **enableAllProjectMcpServers** (1 connections) — `.claude/settings.local.json`
+- **Test Reports** (4 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **Test Report Template** (2 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **test-reports.md** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **code:markdown (# Test Report: {Feature Name})** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **Severity Definitions** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
 
 ## Relationships
 
@@ -16,11 +17,11 @@
 
 ## Source Files
 
-- `.claude/settings.local.json`
+- `.claude/skills/test-master/references/test-reports.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 10 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

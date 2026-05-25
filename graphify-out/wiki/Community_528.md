@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 2: Phone normalization utility** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (from api.utils.phone import normalize_phone)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_phone_utils.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import re)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_phone_utils.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/utils/__init__.py api/utils/phone.py api/tests/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Checklist for Webhook Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Setup** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Data Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 496]] (1 shared connections)
+- [[Community 388]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

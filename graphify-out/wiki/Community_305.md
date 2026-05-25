@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Data Flow Patterns** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Linear Flow** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Branching Flow** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Parallel Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Loop Pattern** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Error Handler Pattern** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block1 (Trigger → Transform → Action → End)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block2 (Trigger → IF → [True Path])** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block3 (Trigger → [Branch 1] → Merge)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block4 (Trigger → Split in Batches → Process → Loop (until done))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block5 (Main Flow → [Success Path])** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Common Gotchas** (9 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **1. ❌ Wrong: Accessing webhook data** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({{$json.email}}  // Empty or undefined)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({{$json.body.email}}  // Data is under .body)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **2. ❌ Wrong: Response mode confusion** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **3. ❌ Wrong: No validation** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **4. ❌ Wrong: Hardcoded paths** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[Community 388]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

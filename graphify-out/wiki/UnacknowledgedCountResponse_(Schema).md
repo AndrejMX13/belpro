@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **5. Standard JavaScript Globals** (6 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Math Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **JSON Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **console Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Object Methods** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Array Methods** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (return [{)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Parse JSON string)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Debug logging (appears in browser console, press F12))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const obj = {name: "John", age: 30, city: "NYC"};)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const arr = [1, 2, 3, 4, 5];)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Error #2: Expression Syntax Confusion** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Solution** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Problem** (3 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Quick Fix Guide** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Using n8n expression syntax in Code node)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Trying to evaluate expressions)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Use JavaScript directly (no {{ }}))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: JavaScript template literals (use backticks))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Direct variable access)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Comparison Table** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// WRONG → RIGHT conversions)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 547]] (1 shared connections)
+- [[PhotoBase64Request (Schema)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

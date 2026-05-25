@@ -4,10 +4,10 @@
 
 ## Key Concepts
 
-- **session.py** (2 connections) — `api/db/session.py`
-- **get_db()** (2 connections) — `api/db/session.py`
-- **Async SQLAlchemy engine and session factory.** (1 connections) — `api/db/session.py`
-- **FastAPI dependency — yields one async DB session per request.** (1 connections) — `api/db/session.py`
+- **hooks** (3 connections) — `.claude/settings.json`
+- **settings.json** (1 connections) — `.claude/settings.json`
+- **SessionStart** (1 connections) — `.claude/settings.json`
+- **PreToolUse** (1 connections) — `.claude/settings.json`
 
 ## Relationships
 
@@ -15,7 +15,7 @@
 
 ## Source Files
 
-- `api/db/session.py`
+- `.claude/settings.json`
 
 ## Audit Trail
 

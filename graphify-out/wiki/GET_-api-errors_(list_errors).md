@@ -4,30 +4,30 @@
 
 ## Key Concepts
 
-- **Task 3: Ops sidecar container shell** (12 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:dockerfile (# ops/Dockerfile)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block14 (# ops/requirements.txt)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (#!/bin/bash)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block16 (# ops/crontab)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (# ops/scripts/backup.sh — placeholder)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:yaml (# ──────────────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:yaml (volumes:)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (# Ops sidecar)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add ops/ docker-compose.yml .env.example)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **GitHub Actions Pipelines** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Common Workflow Patterns** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Complete CI/CD Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Matrix Builds (Multi-version testing)** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Reusable Workflows** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Caching Dependencies** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **github-actions.md** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (name: CI/CD Pipeline)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (jobs:)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (# .github/workflows/deploy.yml)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (- uses: actions/cache@v4)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
 
 ## Relationships
 
-- [[Community 432]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `.claude/skills/devops-engineer/references/github-actions.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

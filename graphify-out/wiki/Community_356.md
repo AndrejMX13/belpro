@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Working Examples** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Example 1: Webhook to Slack** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Example 2: HTTP Request to Email** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Example 3: Format Timestamp** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:block20 (New form submission!)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:block22 (Product: {{$node["HTTP Request"].json.data.items[0].name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Current date)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Task 4: Remaining Backend Files** (9 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:block20 (LogEntry.entry_date  →  LogEntry.work_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (.order_by(LogEntry.work_date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:block22 (LogEntry.entry_date  →  LogEntry.work_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (LogEntry.work_date >= date(first_y, first_m, 1),)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (volunteer.log_entries.sort(key=lambda e: e.work_date, revers)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (f"<td class='num'>{_fmt_date(e.work_date)}</td>")** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add api/routers/reports.py api/routers/analytics.py api/)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[API Client (api.js)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 

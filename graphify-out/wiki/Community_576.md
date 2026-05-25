@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Workflow Creation Checklist** (5 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Planning Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Implementation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Validation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Deployment Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Summary** (5 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Always Fix** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Usually Fix** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Often Acceptable** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Always Acceptable** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[Community 419]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

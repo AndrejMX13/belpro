@@ -1,35 +1,35 @@
 # Docker Compose (all services containerised)
 
-> 33 nodes
+> 35 nodes
 
 ## Key Concepts
 
-- **Monitoring and Analysis** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **PostgreSQL Monitoring** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **MySQL Monitoring** (5 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Cross-Platform Monitoring** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Alert Thresholds** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Essential Extensions** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Query Performance Tracking** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Connection and Lock Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Table and Index Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Database Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Performance Schema Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **InnoDB Status Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Connection and Process Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **System Status Variables** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Resource Utilization** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Health Check Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **PostgreSQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **MySQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **monitoring-analysis.md** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Install performance monitoring extensions)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Top queries by total time)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Current activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Table bloat and dead tuples)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Database size and activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Top statements by total latency)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- *... and 8 more nodes in this community*
+- **Async Programming Patterns** (12 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Asynchronous Patterns** (11 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **Async Generators** (4 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Promise Patterns** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async/Await Best Practices** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import TaskGroup)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Error Handling Strategies** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from typing import Self)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Promise Combinators** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from collections.abc import AsyncIterator)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **code:python (# Async list comprehension)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Concurrent Queue Management** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Event Loop Understanding** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import Queue)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **AbortController for Cancellation** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (# Timeout for single operation)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Stream Processing** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import create_task, Task)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Basic Async/Await** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Task Groups (Python 3.11+)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async Context Managers** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async Comprehensions** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Synchronization Primitives** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- `.claude/skills/javascript-pro/references/async-patterns.md`
+- `.claude/skills/python-pro/references/async-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 64 (100%)
+- EXTRACTED: 86 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

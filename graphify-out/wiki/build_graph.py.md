@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Authentication Methods** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. Bearer Token (Most Common)** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. API Key (Header or Query)** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. None (Public APIs)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Basic Auth** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **5. OAuth2** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Security Headers** (7 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Helmet (Express)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Manual Headers** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Rate Limiting** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **CORS Configuration** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Cookie Security** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **security-headers.md** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import helmet from 'helmet';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (app.use((req, res, next) => {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import rateLimit from 'express-rate-limit';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import cors from 'cors';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (res.cookie('session', token, {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/secure-code-guardian/references/security-headers.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

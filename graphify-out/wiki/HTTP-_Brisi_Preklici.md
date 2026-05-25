@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **API Documentation: FastAPI & Django** (4 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Django REST Framework (drf-spectacular)** (4 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **FastAPI (Auto-generates from types)** (3 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Endpoint Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Router with Tags** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **ViewSet Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Serializer Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Custom Schema** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **api-docs-fastapi-django.md** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from fastapi import FastAPI, HTTPException, status)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from fastapi import APIRouter)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from rest_framework import viewsets, status)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from rest_framework import serializers)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from drf_spectacular.utils import extend_schema, OpenApiExam)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
+- **Review Process** (6 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Review Checklist** (5 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Category Deep Dive** (5 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **review-checklist.md** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Comprehensive Review Checklist** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **1. Context (5 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **2. Structure (10 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **3. Code Details (20 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **4. Tests (10 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **5. Final Pass (5 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Design Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Logic Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Security Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Performance Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
 
 ## Relationships
 
@@ -26,7 +26,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
+- `.claude/skills/code-reviewer/references/review-checklist.md`
 
 ## Audit Trail
 

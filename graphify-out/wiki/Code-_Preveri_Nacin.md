@@ -4,35 +4,34 @@
 
 ## Key Concepts
 
-- **Evolution API (API Gateway)** (4 connections) — `scripts/diagrams/fig1_architecture.png`
-- **n8n (Workflow Engine)** (4 connections) — `scripts/diagrams/fig1_architecture.png`
-- **PostgreSQL (Database)** (4 connections) — `scripts/diagrams/fig1_architecture.png`
-- **Evolution API (API Prehod)** (4 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **n8n (Avtomatizacija)** (4 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **PostgreSQL (Baza podatkov)** (4 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **Dashboard (Web UI + API)** (3 connections) — `scripts/diagrams/fig1_architecture.png`
-- **Whisper AI (Transcription)** (3 connections) — `scripts/diagrams/fig1_architecture.png`
-- **Nadzorna pl. / Dashboard (Spl. vmesnik + API)** (3 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **Whisper AI (Transkripcija)** (3 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **Volunteer (WhatsApp)** (2 connections) — `scripts/diagrams/fig1_architecture.png`
-- **Manager (Browser / Phone)** (2 connections) — `scripts/diagrams/fig1_architecture.png`
-- **Gmail (Email Delivery)** (2 connections) — `scripts/diagrams/fig1_architecture.png`
-- **Prostovoljec / Volunteer (WhatsApp)** (2 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **Vodja / Manager (Brskalnik / Tel.)** (2 connections) — `scripts/diagrams/fig1_arhitektura.png`
-- **Gmail (Pošiljanje e-pošte)** (2 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **Common Gotchas** (9 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. ❌ Wrong: Hardcoded URLs** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **✅ Correct: Use environment variables** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. ❌ Wrong: Credentials in parameters** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **✅ Correct: Use credentials system** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. ❌ Wrong: No error handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **✅ Correct: Handle errors** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **✅ Correct: Use batching** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (url: "https://api.example.com/prod/users")** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (url: "={{$env.API_BASE_URL}}/users")** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (headerParameters: {)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (authentication: "predefinedCredentialType",)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (HTTP Request → Process (fails if API down))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (HTTP Request (continueOnFail: true) → IF (error) → Handle)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. ❌ Wrong: Blocking on large responses** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block54 (Split In Batches (100 items) → Process → Loop)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/diagrams/fig1_architecture.png`
-- `scripts/diagrams/fig1_arhitektura.png`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 48 (100%)
+- EXTRACTED: 31 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

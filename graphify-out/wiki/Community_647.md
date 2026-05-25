@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **3. Start all services** (3 connections) — `README.md`
-- **code:bash (docker compose up -d)** (1 connections) — `README.md`
-- **code:bash (docker compose ps)** (1 connections) — `README.md`
+- **[0.9.7] — 2026-05-15** (3 connections) — `CHANGELOG.md`
+- **Removed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 
-- `README.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 

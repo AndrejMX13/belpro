@@ -4,24 +4,30 @@
 
 ## Key Concepts
 
-- **Finding Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Using get_node with search_properties Mode** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Using get_node with Full Detail** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Find properties related to "body")** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Get complete schema with displayOptions)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **When to Use** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Error Patterns - Python Code Node** (12 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **ERROR_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Error Overview** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Error Prevention Checklist** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Quick Fix Reference** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 376]] (1 shared connections)
+- [[Community 329]] (1 shared connections)
+- [[Community 456]] (1 shared connections)
+- [[Community 285]] (1 shared connections)
+- [[Community 286]] (1 shared connections)
+- [[Community 364]] (1 shared connections)
+- [[Community 564]] (1 shared connections)
+- [[Community 455]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

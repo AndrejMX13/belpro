@@ -4,39 +4,32 @@
 
 ## Key Concepts
 
-- **n8n Node Configuration** (15 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Node-Specific Configuration Notes** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **SplitInBatches v3** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Surgical Field Edits with patchNodeField** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Configuration Philosophy** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Google Sheets Node** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Instead of replacing the entire jsCode field:)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Do** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Detailed References** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **graphify_infra.py** (7 connections) — `scripts/graphify_infra.py`
+- **_extract_compose_data()** (6 connections) — `scripts/graphify_infra.py`
+- **_service_node_id()** (5 connections) — `scripts/graphify_infra.py`
+- **_extract_nginx_edges()** (5 connections) — `scripts/graphify_infra.py`
+- **_make_node()** (4 connections) — `scripts/graphify_infra.py`
+- **_make_edge()** (4 connections) — `scripts/graphify_infra.py`
+- **inject()** (4 connections) — `scripts/graphify_infra.py`
+- **graphify_infra.py — Inject Docker service topology into graphify-out/graph.json.** (1 connections) — `scripts/graphify_infra.py`
+- **Convert a Docker service name to a graph node ID.** (1 connections) — `scripts/graphify_infra.py`
+- **Build a graph node dict for a Docker service.** (1 connections) — `scripts/graphify_infra.py`
+- **Build a graph edge dict.** (1 connections) — `scripts/graphify_infra.py`
+- **Extract service nodes and edges from a parsed docker-compose structure.      Ret** (1 connections) — `scripts/graphify_infra.py`
+- **Extract proxies_to edges from nginx config.      Matches the variable-upstream p** (1 connections) — `scripts/graphify_infra.py`
+- **Inject Docker service topology nodes and edges into graph.json.      Reads the t** (1 connections) — `scripts/graphify_infra.py`
 
 ## Relationships
 
-- [[Community 519]] (1 shared connections)
-- [[GET /api/reports/history/{id}/pdf (download_history_pdf)]] (1 shared connections)
-- [[Community 380]] (1 shared connections)
-- [[restore.sh]] (1 shared connections)
-- [[Community 381]] (1 shared connections)
-- [[Community 298]] (1 shared connections)
-- [[Community 473]] (1 shared connections)
-- [[Community 338]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `scripts/graphify_infra.py`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Example 1: Webhook Form Submission** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block3 (New form submission! 📝)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block4 (New form submission! 📝)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Python Modes: Beta vs Native** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Python (Beta) - Recommended** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Python (Native) (Beta)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Python (Beta) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Python (Native) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

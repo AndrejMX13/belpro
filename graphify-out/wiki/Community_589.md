@@ -4,25 +4,24 @@
 
 ## Key Concepts
 
-- **Settings** (5 connections) — `api/core/settings.py`
-- **settings.py** (3 connections) — `api/core/settings.py`
-- **BaseSettings** (1 connections)
-- **Application settings — loaded from environment variables / .env file.** (1 connections) — `api/core/settings.py`
-- **All configuration for the Belpro API service.      Values are read from the proc** (1 connections) — `api/core/settings.py`
+- **Testing Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django/DRF Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# FastAPI pytest with httpx)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- [[monthly_reports.json]] (2 shared connections)
-- [[HTTP: PATCH /notify (Manual)]] (1 shared connections)
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 
-- `api/core/settings.py`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (91%)
-- INFERRED: 1 (9%)
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

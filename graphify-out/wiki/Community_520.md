@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Strategy 1: Progressive Strictness** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Validation Profile Strategies** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Strategy 2: Profile by Workflow Type** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Expression Syntax** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n MCP Tools Expert** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Workflow Patterns** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Code JavaScript** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Node Configuration** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[Community 425]] (1 shared connections)
+- [[Community 288]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

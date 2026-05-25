@@ -4,36 +4,27 @@
 
 ## Key Concepts
 
-- **Webhook Processing Pattern** (14 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **webhook_processing.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block1 (Webhook → [Validate] → [Transform] → [Action] → [Response/No)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block34 (Webhook → Set → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block35 (Webhook → Verify Signature → Update Database → Send Receipt )** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block36 (Webhook → Parse Command → AI Agent → Format Response → Webho)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Task 7: Normalize phone in update_manager + write .env on manual save** (9 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@field_validator("ngo_whatsapp_phone", mode="before"))** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (if "ngo_whatsapp_phone" in payload.model_fields_set and mana)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/schemas/manager.py api/routers/managers.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 307]] (1 shared connections)
-- [[Normalize to WhatsApp-native digits-only format; reject unparseable values.]] (1 shared connections)
-- [[Community 577]] (1 shared connections)
-- [[Community 428]] (1 shared connections)
-- [[Community 527]] (1 shared connections)
-- [[Community 343]] (1 shared connections)
-- [[Community 488]] (1 shared connections)
-- [[Community 578]] (1 shared connections)
-- [[Community 308]] (1 shared connections)
-- [[Community 526]] (1 shared connections)
+- [[Community 495]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

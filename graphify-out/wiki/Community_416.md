@@ -4,32 +4,26 @@
 
 ## Key Concepts
 
-- **Data Access Patterns - JavaScript Code Node** (11 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Decision Tree** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **DATA_ACCESS.md** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:block28 (Do you need ALL items from previous node?)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **9. operator_structure** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Fixed Automatically: Binary Operators** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Fixed Automatically: Unary Operators** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Auto-Sanitization Fixes** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[HTTP: PATCH /notify (Auto)]] (1 shared connections)
-- [[Number of days local backup archives are kept before pruning.]] (1 shared connections)
-- [[PhotoBase64Request (Schema)]] (1 shared connections)
-- [[Community 364]] (1 shared connections)
-- [[PATCH /api/managers/me (update_manager)]] (1 shared connections)
-- [[PasswordChangeRequest (Schema)]] (1 shared connections)
-- [[Community 456]] (1 shared connections)
+- [[Community 297]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

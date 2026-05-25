@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Spec Compliance Review** (7 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **The Three Verification Categories** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Spec Compliance Checklist** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Stage 1: Spec Compliance Review** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Category 1: Missing Requirements** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Category 2: Unnecessary Additions** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Why Order Matters** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Output Format** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Two-Stage Review Architecture** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Category 3: Interpretation Gaps** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Compliant Result** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Issues Found** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **spec-compliance-review.md** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **code:block1 (┌─────────────────────┐)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Core Directive** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **code:block3** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **code:block5** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Stage 1 Must Come First** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Separation of Concerns** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Before You Start** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **During Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **After Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Evolution API — Odpravljanje težav s QR kodo WhatsApp** (8 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Koraki namestitve (čista instanca od začetka)** (6 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Vzroki** (4 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **1. Zastarela različica odjemalca WhatsApp (pravi krivec)** (3 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **5. Pridobi QR kodo in jo skeniraj** (3 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **1. Preveri, da ima docker-compose.yml pravilne okoljske spremenljivke** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **2. Znova zaženi Evolution API** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **3. Izbriši morebitno obstoječo pokvarjeno instanco** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **4. Ustvari instanco in se poveži v enem koraku** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Ponovna vzpostavitev povezave (telefon odklopljen, seja potekla)** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Preverjanje stanja instance** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Ključne okoljske spremenljivke v .env** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **EVOLUTION_QR_TROUBLESHOOTING_SL.md** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Težava** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:block1 (https://raw.githubusercontent.com/WhiskeySockets/Baileys/mas)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:yaml (environment:)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **2. Napaka v uporabniškem vmesniku nadzorne plošče (ločena težava)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **3. Napačno mapiranje okoljske spremenljivke (odkrito med preiskavo)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:yaml (evolution-api:)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:bash (docker compose up -d evolution-api)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:bash (curl -X DELETE \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:bash (curl -s -X POST \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:bash (curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:python (import json, sys)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **code:bash (curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
 - *... and 3 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
 
 ## Audit Trail
 

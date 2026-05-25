@@ -4,30 +4,27 @@
 
 ## Key Concepts
 
-- **send_email()** (6 connections) — `api/services/email.py`
-- **email.py** (5 connections) — `api/services/email.py`
-- **SmtpNotConfiguredError** (5 connections) — `api/services/email.py`
-- **_check_mx()** (3 connections) — `api/services/email.py`
-- **Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row** (1 connections) — `api/services/email.py`
-- **Raise ValueError if the recipient domain has no MX records.** (1 connections) — `api/services/email.py`
-- **Raised when the manager has not configured SMTP.** (1 connections) — `api/services/email.py`
-- **Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port** (1 connections) — `api/services/email.py`
+- **Test Master** (6 connections) — `.claude/skills/test-master/SKILL.md`
+- **Quick-Start Example** (2 connections) — `.claude/skills/test-master/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **code:js (// ✅ Good: meaningful description, specific assertion, isola)** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Constraints** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/test-master/SKILL.md`
 
 ## Relationships
 
-- [[GET /log-entries/{id}/photos/{pid}/file]] (2 shared connections)
-- [[Maximum photos allowed per log entry.]] (1 shared connections)
-- [[005_report_prefs.py]] (1 shared connections)
-- [[LoginRequest (Schema)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/email.py`
+- `.claude/skills/test-master/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (87%)
-- INFERRED: 3 (13%)
+- EXTRACTED: 14 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

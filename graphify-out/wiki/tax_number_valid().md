@@ -1,57 +1,48 @@
 # tax_number_valid()
 
-> 32 nodes
+> 34 nodes
 
 ## Key Concepts
 
-- **renderLogEntryDetail()** (18 connections) — `frontend/js/volunteers.js`
-- **route()** (14 connections) — `frontend/js/volunteers.js`
-- **renderDetail()** (14 connections) — `frontend/js/volunteers.js`
-- **renderDetail() — volunteer detail page** (6 connections) — `frontend/js/volunteers.js`
-- **GET /volunteers/{id}** (4 connections) — `api/routers/volunteers.py`
-- **fmtHours()** (3 connections) — `frontend/js/volunteers.js`
-- **fmtDatetime()** (3 connections) — `frontend/js/volunteers.js`
-- **PATCH /log-entries/{id}/approve** (3 connections) — `api/routers/log_entries.py`
-- **PATCH /log-entries/{id}/reject** (3 connections) — `api/routers/log_entries.py`
-- **revokePhotoUrls()** (2 connections) — `frontend/js/volunteers.js`
-- **API.volunteers.get()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.update()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.delete()** (2 connections) — `frontend/js/api.js`
-- **API.logEntries.create()** (2 connections) — `frontend/js/api.js`
-- **DELETE /volunteers/{id}** (2 connections) — `api/routers/volunteers.py`
-- **PATCH /volunteers/{id}** (2 connections) — `api/routers/volunteers.py`
-- **POST /log-entries** (2 connections) — `api/routers/log_entries.py`
-- **GET /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **PATCH /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **DELETE /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **POST /log-entries/{id}/photos** (2 connections) — `api/routers/log_entries.py`
-- **GET /log-entries/{id}/photos/{pid}/file** (2 connections) — `api/routers/log_entries.py`
-- **DELETE /log-entries/{id}/photos/{pid}** (2 connections) — `api/routers/log_entries.py`
-- **VolunteerDetailResponse shape (emso_masked, log_entries[], hours_this_month)** (2 connections) — `api/routers/volunteers.py`
-- **API.logEntries.get()** (1 connections) — `frontend/js/api.js`
-- *... and 7 more nodes in this community*
+- **Interactive API Documentation** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Multi-Language Examples** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **SDK Reference Template** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Interactive Documentation Portals** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Multi-Protocol Documentation** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **GraphQL Schema Documentation** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **SDK Documentation Strategies** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **OpenAPI 3.1 Advanced Features** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Reusable Components** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Swagger UI Customization** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Redoc (Modern Alternative)** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Stoplight Elements** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **WebSocket Protocol Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **gRPC Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **interactive-api-docs.md** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:yaml (openapi: 3.1.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (// Custom Swagger UI)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:html (<!DOCTYPE html>)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (import { API } from '@stoplight/elements';)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:graphql (""")** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (const { ApolloServer } = require('apollo-server');)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:yaml (# AsyncAPI 2.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:protobuf (syntax = "proto3";)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:markdown (# Create User)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:block10** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- *... and 9 more nodes in this community*
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (21 shared connections)
-- [[Python Docstrings Reference]] (3 shared connections)
-- [[scripts/n8n_workflows.py]] (2 shared connections)
-- [[Community 361]] (1 shared connections)
-- [[Hour of day (0–23) at which the monthly report cron fires.]] (1 shared connections)
-- [[Performance Testing Reference (k6)]] (1 shared connections)
-- [[POST /errors (internal)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `api/routers/volunteers.py`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/code-documenter/references/interactive-api-docs.md`
 
 ## Audit Trail
 
-- EXTRACTED: 99 (93%)
-- INFERRED: 7 (7%)
+- EXTRACTED: 66 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

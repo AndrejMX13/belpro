@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **BelPro — Component Diagram** (2 connections) — `docs/images/belpro-architecture-component.md`
-- **belpro-architecture-component.md** (1 connections) — `docs/images/belpro-architecture-component.md`
-- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-architecture-component.md`
+- **BelPro — Diagram zaporedja** (2 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
+- **belpro-arhitektura-zaporedje.md** (1 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
+- **code:mermaid (sequenceDiagram)** (1 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
 
 ## Relationships
 
@@ -14,7 +14,7 @@
 
 ## Source Files
 
-- `docs/images/belpro-architecture-component.md`
+- `docs/images/belpro-arhitektura-zaporedje.md`
 
 ## Audit Trail
 

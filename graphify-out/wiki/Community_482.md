@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Streaming Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Fallback Language Models** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **RAG (Retrieval-Augmented Generation)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Chat Trigger parameters)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Primary model (targetIndex: 0))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block26 (Documents → Text Splitter → Vector Store ← Embeddings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Transaction Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 1: BEGIN/COMMIT/ROLLBACK** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 2: Atomic Operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 3: Error Rollback** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Node 1: Begin Transaction)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:sql (-- Upsert example (atomic))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block25 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Je v urejanju?]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **project_versioning.md** (0 connections) — `.claude/memory/project_versioning.md`
+- **n8n_api_access.md** (0 connections) — `.claude/memory/n8n_api_access.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/project_versioning.md`
+- `.claude/memory/n8n_api_access.md`
 
 ## Audit Trail
 

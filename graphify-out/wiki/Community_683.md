@@ -1,11 +1,12 @@
 # Community 683
 
-> 2 nodes
+> 3 nodes
 
 ## Key Concepts
 
-- **acknowledgeError** (1 connections) — `frontend/js/errors.js`
-- **acknowledge_error** (1 connections) — `api/routers/errors.py`
+- **008_add_manager_notified_at.py** (2 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
+- **upgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
+- **downgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
 
 ## Relationships
 
@@ -13,12 +14,11 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/errors.js`
+- `api/db/migrations/versions/008_add_manager_notified_at.py`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

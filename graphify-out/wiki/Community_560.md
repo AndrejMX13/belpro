@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Bonus Error: AttributeError** (3 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Using _input.item in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Check mode or use appropriate method)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Pattern 10: String Aggregation & Reporting** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Aggregate multiple text inputs into formatted report)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Numbered list)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 514]] (1 shared connections)
+- [[Community 409]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Audit Trail
 

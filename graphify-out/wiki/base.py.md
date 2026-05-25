@@ -1,35 +1,35 @@
 # base.py
 
-> 35 nodes
+> 36 nodes
 
 ## Key Concepts
 
-- **n8n Node Configuration** (17 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Key Insights** (6 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Usage Examples** (4 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Tool Usage Pattern** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Integration with Other Skills** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **What This Skill Teaches** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **File Structure** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Example 1: Basic Configuration Flow** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Example 2: Handling Dependencies** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Example 3: Operation Change** (2 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **The Problem This Solves** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Core Concepts** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **code:block1 (n8n-node-configuration/)** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **Usage Statistics** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **code:block2 (search_nodes → get_node (18s average))** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **code:block3 (get_node → configure → validate → iterate (56s avg per edit))** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **1. Progressive Disclosure Works** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **2. Operations Determine Requirements** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **3. Dependencies Control Visibility** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **4. Configuration is Iterative** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **5. Common Gotchas Exist** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **code:javascript (// Step 1: Get standard info)** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **code:javascript (// Step 1: Configure HTTP POST)** (1 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- *... and 10 more nodes in this community*
+- **File Summary** (8 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 1: Infrastructure — migration test database** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 6: Base64 photo limit + `_PHOTOS_ROOT` monkeypatch** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 7: Manager password change** (5 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 2: Migration roundtrip test** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 3: EMŠO encryption round-trip** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 4: Status-flow enforcement — `pending_volunteer` → 409** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 5: Analytics edge cases** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Test Coverage Gaps — Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **2026-05-24-test-coverage-gaps.md** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec postgres psql -U belpro -c "CREATE DATAB)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:block3 (CREATE DATABASE)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:block4 (DATABASE_URL_MIGRATIONS=postgresql+asyncpg://belpro:belpro_d)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add db/create_extra_dbs.sh api/.env.test)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python ("""Migration roundtrip test — runs against belpro_test_migra)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_migrations.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_migrations.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_emso_stored_encrypted()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteers.py::tes)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_approve_pending_volunteer_returns_409()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_analytics_rejected_hours_excluded()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/README.md`
+- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
 
 ## Audit Trail
 
-- EXTRACTED: 68 (100%)
+- EXTRACTED: 70 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

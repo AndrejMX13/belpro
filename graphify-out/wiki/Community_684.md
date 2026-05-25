@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **feedback_n8n_import_script.md** (1 connections) — `.claude/memory/feedback_n8n_import_script.md`
-- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `.claude/memory/feedback_n8n_import_script.md`
+- **acknowledgeError** (1 connections) — `frontend/js/errors.js`
+- **acknowledge_error** (1 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_n8n_import_script.md`
+- `api/routers/errors.py`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 

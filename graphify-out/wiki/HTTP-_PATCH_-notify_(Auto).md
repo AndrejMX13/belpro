@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **Pattern 1: $input.all() - Process All Items** (8 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 1: Filter Active Items** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 2: Transform All Items** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 3: Aggregate Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 4: Sort and Limit** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 5: Group By Category** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 6: Deduplicate by ID** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get all items from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **n8n MCP Tools Expert** (12 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Coverage** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **File Count** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Priority** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Dependencies** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Core Topics** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Tool Categories** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Evaluations** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Key Features** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Files** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **What You'll Learn** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Last Updated** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
 
 ## Relationships
 
-- [[Community 416]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-mcp-tools-expert/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,24 +4,25 @@
 
 ## Key Concepts
 
-- **Serializer → Pydantic V2 Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django REST Framework Serializer** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI Pydantic V2 Schemas** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django DRF)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# FastAPI with Pydantic V2)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Python Docstrings Reference** (4 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Google Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **NumPy Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sphinx Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **TypeScript JSDoc Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `.claude/skills/code-documenter/references/python-docstrings.md`
+- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 6 (75%)
+- INFERRED: 2 (25%)
 - AMBIGUOUS: 0 (0%)
 
 ---

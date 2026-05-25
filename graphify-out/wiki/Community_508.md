@@ -4,26 +4,25 @@
 
 ## Key Concepts
 
-- **Systematic Debugging Reference** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Debugging Strategies Reference** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Git Bisect Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Binary Search Debugging Strategy** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Four-Phase Systematic Debugging** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Three-Fix Threshold Rule** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Error Severity Levels** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Errors (Must Fix)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Warnings (Should Fix)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Suggestions (Optional)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/references/strategies.md`
-- `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (83%)
-- INFERRED: 2 (17%)
+- EXTRACTED: 11 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

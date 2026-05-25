@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Hour of day (0–23) at which the monthly report cron fires.** (0 connections) — `api/services/app_settings.py`
+- **Reporting period: 'current' (this month) or 'previous' (last month).** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

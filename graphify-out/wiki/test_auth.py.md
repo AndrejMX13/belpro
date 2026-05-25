@@ -1,48 +1,63 @@
 # test_auth.py
 
-> 46 nodes
+> 47 nodes
 
 ## Key Concepts
 
-- **File Structure** (16 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 2: Add early manager lookup node (new node)** (5 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 11: Create manager_approval workflow** (5 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 15: Final validation and cleanup** (5 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 12: Link Execute Workflow node to manager_approval** (4 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 6: Add Execute Workflow node** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 10: Validate volunteer_entry workflow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 13: Manual test — approve flow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Manager WhatsApp Approval Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 1: Fix existing HTTP: Lookup Manager URL (bugfix)** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 3: Modify Filter & Route code for manager detection** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 4: Add Upravljalec branch to Razpotje switch** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 5: Add Parse Manager Action code node** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 7: Add error WhatsApp node for no-state case** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 8: Modify Code: Pripravi Obvestilo Upravljalcu (state storage + phone fix)** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Task 9: Fix HTTP: WA Upravljalcu body parameter** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **2026-05-07-manager-approval.md** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- *... and 21 more nodes in this community*
+- **path** (17 connections) — `scripts/gen_architecture_docx.js`
+- **persist_report()** (16 connections) — `api/services/report_storage.py`
+- **test_report_history.py** (14 connections) — `api/tests/test_report_history.py`
+- **main()** (6 connections) — `ops/scripts/photo_cleanup.py`
+- **test_persist_report_creates_file_and_row()** (5 connections) — `api/tests/test_report_history.py`
+- **test_persist_report_overwrites_on_resend()** (5 connections) — `api/tests/test_report_history.py`
+- **test_send_monthly_persists_volunteer_pdf()** (5 connections) — `api/tests/test_report_history.py`
+- **test_send_monthly_persists_consolidated_pdf()** (5 connections) — `api/tests/test_report_history.py`
+- **download_history_pdf()** (4 connections) — `api/routers/reports.py`
+- **report_storage.py** (4 connections) — `api/services/report_storage.py`
+- **report_path()** (4 connections) — `api/services/report_storage.py`
+- **test_persist_report_consolidated_overwrites_on_resend()** (4 connections) — `api/tests/test_report_history.py`
+- **test_get_history_returns_items()** (4 connections) — `api/tests/test_report_history.py`
+- **test_get_history_pdf_missing_file_returns_404()** (4 connections) — `api/tests/test_report_history.py`
+- **render()** (4 connections) — `scripts/render_diagrams.py`
+- **test_persist_report_consolidated_has_null_volunteer()** (3 connections) — `api/tests/test_report_history.py`
+- **test_get_history_filter_by_year_month()** (3 connections) — `api/tests/test_report_history.py`
+- **test_get_history_pdf_streams_file()** (3 connections) — `api/tests/test_report_history.py`
+- **photo_cleanup.py** (3 connections) — `ops/scripts/photo_cleanup.py`
+- **report_error()** (3 connections) — `ops/scripts/photo_cleanup.py`
+- **dsn_from_url()** (3 connections) — `ops/scripts/photo_cleanup.py`
+- **main()** (3 connections) — `scripts/render_diagrams.py`
+- **test_get_history_empty()** (2 connections) — `api/tests/test_report_history.py`
+- **test_get_history_pdf_unknown_id_returns_404()** (2 connections) — `api/tests/test_report_history.py`
+- **render_diagrams.py** (2 connections) — `scripts/render_diagrams.py`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[load_key()]] (13 shared connections)
+- [[Community 434]] (2 shared connections)
+- [[merge_semantic.py]] (2 shared connections)
+- [[connections]] (2 shared connections)
+- [[BelPro System Specification]] (1 shared connections)
+- [[n8n Code Node Pattern]] (1 shared connections)
+- [[app_settings.py]] (1 shared connections)
+- [[Community 402]] (1 shared connections)
+- [[Volunteer Profile Screen]] (1 shared connections)
+- [[test_evolution_service.py]] (1 shared connections)
+- [[Community 314]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- `api/routers/reports.py`
+- `api/services/report_storage.py`
+- `api/tests/test_report_history.py`
+- `ops/scripts/photo_cleanup.py`
+- `scripts/gen_architecture_docx.js`
+- `scripts/render_diagrams.py`
 
 ## Audit Trail
 
-- EXTRACTED: 90 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 94 (63%)
+- INFERRED: 56 (37%)
 - AMBIGUOUS: 0 (0%)
 
 ---

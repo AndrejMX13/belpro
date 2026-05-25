@@ -1,43 +1,38 @@
 # PATCH /log-entries/{id}
 
-> 18 nodes
+> 17 nodes
 
 ## Key Concepts
 
-- **gen_diagrams_sl.py** (20 connections) — `scripts/gen_diagrams_sl.py`
-- **fig1()** (7 connections) — `scripts/gen_diagrams_sl.py`
-- **fnt()** (5 connections) — `scripts/gen_diagrams_sl.py`
-- **text_size()** (5 connections) — `scripts/gen_diagrams_sl.py`
-- **draw_box()** (4 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams_sl.py`
-- **fig2()** (3 connections) — `scripts/gen_diagrams_sl.py`
-- **fig3()** (3 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_h()** (2 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_v()** (2 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams_sl.py`
-- **scripts/diagrams/** (2 connections)
-- **main()** (1 connections) — `scripts/gen_diagrams_sl.py`
-- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams_sl.py`
-- **Dashed horizontal arrow (single line, for Vodja connection).** (1 connections) — `scripts/gen_diagrams_sl.py`
-- **scripts/diagrams/fig1_arhitektura.png** (1 connections)
-- **scripts/diagrams/fig2_potek.png** (1 connections)
-- **scripts/diagrams/fig3_porocanje.png** (1 connections)
+- **Quick Fixes** (9 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **TypeError: Cannot read property 'x' of undefined** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Unhandled Promise Rejection** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **React: Too Many Re-renders** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **CORS Error** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Maximum Call Stack Size Exceeded** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Module Not Found** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Async/Await Issues** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **quick-fixes.md** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error: Calling setState during render)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Browser blocks cross-origin request)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error: Infinite recursion)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:bash (# Error: Cannot find module 'x')** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error: await in non-async function)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
 
 ## Relationships
 
-- [[004_log_entry_photos.py]] (2 shared connections)
-- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
-- [[n8n Set Node Pattern]] (1 shared connections)
-- [[api.js]] (1 shared connections)
-- [[API.logo.upload()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `scripts/gen_diagrams_sl.py`
+- `.claude/skills/debugging-wizard/references/quick-fixes.md`
 
 ## Audit Trail
 
-- EXTRACTED: 64 (100%)
+- EXTRACTED: 32 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

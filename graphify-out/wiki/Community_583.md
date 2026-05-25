@@ -4,25 +4,24 @@
 
 ## Key Concepts
 
-- **Python Docstrings Reference** (4 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Google Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **NumPy Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Sphinx Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **TypeScript JSDoc Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Task 6: Final integration test and version bump** (5 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block40 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (__version__ = "0.10.2-beta.0")** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:markdown (## [0.10.2-beta.0] — 2026-05-19)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add api/main.py CHANGELOG.md)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 533]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/python-docstrings.md`
-- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 
-- EXTRACTED: 6 (75%)
-- INFERRED: 2 (25%)
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

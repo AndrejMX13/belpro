@@ -1,35 +1,32 @@
 # POST /api/logo (upload_logo)
 
-> 12 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **frontend/index.html Manager Dashboard SPA** (9 connections) — `frontend/index.html`
-- **GDPR Consent Document Design ISS-015** (4 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- **api/services/consent_pdf.py Consent PDF Renderer** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- **api/routers/documents.py GET /documents/consent-pdf** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- **Dashboard Nav Dokumenti Documents Tab** (2 connections) — `frontend/index.html`
-- **Dashboard Nav Administracija Admin Tab** (2 connections) — `frontend/index.html`
-- **Dashboard Nav Prostovoljci Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Dnevniki Approvals Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Analitika Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Porocila Reports Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Nastavitve Settings Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Dnevnik napak Error Log Tab** (1 connections) — `frontend/index.html`
+- **Terraform Infrastructure as Code** (6 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **AWS ECS Fargate Setup** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **AWS RDS PostgreSQL** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Variables and Outputs** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Common Commands** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **terraform-iac.md** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:hcl (terraform {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:hcl (resource "aws_db_instance" "postgres" {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:hcl (# variables.tf)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:bash (terraform init)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
 
 ## Relationships
 
-- [[Manager WhatsApp Approval Workflow Design]] (2 shared connections)
-- [[DevOps Engineer Skill]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- `frontend/index.html`
+- `.claude/skills/devops-engineer/references/terraform-iac.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

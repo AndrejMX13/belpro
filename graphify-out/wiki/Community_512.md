@@ -4,24 +4,26 @@
 
 ## Key Concepts
 
-- **The Solution** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Optional chaining)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Check array length)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Guard clauses)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Default values)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Try-catch for risky operations)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **submitAddVolunteer()** (3 connections) — `frontend/js/volunteers.js`
+- **POST /volunteers/check-emso** (3 connections) — `api/routers/volunteers.py`
+- **API.volunteers.checkEmso()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.create()** (2 connections) — `frontend/js/api.js`
+- **POST /volunteers** (2 connections) — `api/routers/volunteers.py`
+- **EmsoCheckResponse shape ({exists})** (2 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
-- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
+- [[make_text_payload()]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `api/routers/volunteers.py`
+- `frontend/js/api.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

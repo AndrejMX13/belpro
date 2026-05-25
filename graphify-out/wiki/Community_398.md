@@ -4,27 +4,33 @@
 
 ## Key Concepts
 
-- **Codebase context** (9 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:js (reports: {)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:js (API.reports.history().then(console.log))** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:js (<div id="reports-content">)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:js (<div id="reports-content">)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:js (let archiveLoaded = false;)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:js (async function loadReportArchive() {)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block38 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:bash (git add frontend/js/api.js frontend/js/reports.js)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Evolution Instance Name — AppSettings Migration Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Task 3: Pydantic schemas** (4 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **2026-05-25-evolution-instance-appsetting.md** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Codebase Orientation** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api python -c "from schemas.admin import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Done** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[Community 531]] (1 shared connections)
+- [[Community 499]] (1 shared connections)
+- [[Community 500]] (1 shared connections)
+- [[Community 430]] (1 shared connections)
+- [[Community 399]] (1 shared connections)
+- [[Community 501]] (1 shared connections)
+- [[Community 431]] (1 shared connections)
+- [[Community 429]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

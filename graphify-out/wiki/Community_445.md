@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **n8n_executions (EXECUTION MANAGEMENT)** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Get Execution Details** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **List Executions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Delete Execution** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_executions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_executions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_executions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Task 2: ORM Model + Schemas** (7 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (Index("idx_entries_vol_work_date", "volunteer_id", "work_dat)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (work_date: Mapped[date] = mapped_column(Date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (__table_args__ = ()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python ("""Pydantic schemas for the LogEntry entity.""")** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add api/models/log_entry.py api/schemas/log_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- [[API Client (api.js)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 

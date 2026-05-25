@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Security Headers** (7 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Helmet (Express)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Manual Headers** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Rate Limiting** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **CORS Configuration** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Cookie Security** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **security-headers.md** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (import helmet from 'helmet';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (app.use((req, res, next) => {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (import rateLimit from 'express-rate-limit';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (import cors from 'cors';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (res.cookie('session', token, {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Pattern 2: $input.first() - Get First Item** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 5: Combine with Other Methods** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const response = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get first item's data)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 410]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/security-headers.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

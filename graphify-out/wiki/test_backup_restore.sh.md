@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Database Node Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **MongoDB** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **MySQL** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **SELECT with JOIN** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Bulk INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Find Documents** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Insert Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Update Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Common Pitfalls** (6 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **1. Async/Await Mistakes** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **2. Missing `from_attributes` (orm_mode)** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **4. Relationship Loading** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **5. Transaction Handling** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Blocking call in async function)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (@router.get("/users"))** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (class UserRead(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (class UserRead(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Lazy loading in async (causes errors))** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Eager loading with selectinload)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Auto-commit not configured)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (@router.post("/users"))** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- [[Nalozi Stanje]] (1 shared connections)
-- [[Community 386]] (1 shared connections)
+- [[Community 541]] (1 shared connections)
+- [[Community 679]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 

@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **1. Missing Curly Braces** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block1 ($json.email)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block2 ({{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **8. Using Expressions in Code Nodes** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:javascript (const email = '{{$json.email}}';)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:javascript (const email = $json.email;)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 

@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **5. Incorrect Node Reference Case** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block10 ({{$node["http request"].json.data}}  // lowercase)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block11 ({{$node["HTTP Request"].json.data}}  // exact match)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **✅ Do** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **❌ Don't** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

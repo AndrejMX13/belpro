@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **deactivate_volunteer** (0 connections) — `api/routers/volunteers.py`
+- **UnacknowledgedCountResponse (Schema)** (0 connections) — `api/schemas/error_log.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `api/schemas/error_log.py`
 
 ## Audit Trail
 

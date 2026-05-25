@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Additional Resources** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Related Files** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **n8n Documentation** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **15. Empty Expression Brackets** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block31 ({{}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block32 ({{$json.field}}                 // Include expression conten)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

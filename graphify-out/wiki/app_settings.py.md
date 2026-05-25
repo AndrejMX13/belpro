@@ -1,48 +1,53 @@
 # app_settings.py
 
-> 34 nodes
+> 36 nodes
 
 ## Key Concepts
 
-- **Interactive API Documentation** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Multi-Language Examples** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **SDK Reference Template** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Interactive Documentation Portals** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Multi-Protocol Documentation** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **GraphQL Schema Documentation** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **SDK Documentation Strategies** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **OpenAPI 3.1 Advanced Features** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Reusable Components** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Swagger UI Customization** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Redoc (Modern Alternative)** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Stoplight Elements** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **WebSocket Protocol Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **gRPC Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **interactive-api-docs.md** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:yaml (openapi: 3.1.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:javascript (// Custom Swagger UI)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:html (<!DOCTYPE html>)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:javascript (import { API } from '@stoplight/elements';)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:graphql (""")** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:javascript (const { ApolloServer } = require('apollo-server');)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:yaml (# AsyncAPI 2.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:protobuf (syntax = "proto3";)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:markdown (# Create User)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **code:block10** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- *... and 9 more nodes in this community*
+- **load_key()** (16 connections) — `api/services/encryption.py`
+- **test_encryption.py** (14 connections) — `api/tests/test_encryption.py`
+- **cmd_rotate()** (9 connections) — `api/scripts/rotate_emso_key.py`
+- **encrypt_emso()** (8 connections) — `api/services/encryption.py`
+- **hash_emso()** (8 connections) — `api/services/encryption.py`
+- **mask_emso()** (8 connections) — `api/services/encryption.py`
+- **decrypt_emso()** (7 connections) — `api/services/encryption.py`
+- **cmd_backup()** (6 connections) — `api/scripts/rotate_emso_key.py`
+- **main()** (6 connections) — `api/scripts/rotate_emso_key.py`
+- **encryption.py** (6 connections) — `api/services/encryption.py`
+- **rotate_emso_key.py** (5 connections) — `api/scripts/rotate_emso_key.py`
+- **cmd_restore()** (5 connections) — `api/scripts/rotate_emso_key.py`
+- **_db_url()** (4 connections) — `api/scripts/rotate_emso_key.py`
+- **test_decrypt_with_wrong_key_raises_invalid_tag()** (4 connections) — `api/tests/test_encryption.py`
+- **test_roundtrip_restores_plaintext()** (3 connections) — `api/tests/test_encryption.py`
+- **test_hash_differs_from_encryption()** (3 connections) — `api/tests/test_encryption.py`
+- **test_load_key_accepts_valid_32_byte_key()** (2 connections) — `api/tests/test_encryption.py`
+- **test_load_key_rejects_short_key()** (2 connections) — `api/tests/test_encryption.py`
+- **test_load_key_accepts_key_without_padding()** (2 connections) — `api/tests/test_encryption.py`
+- **test_encrypt_produces_different_ciphertext_each_call()** (2 connections) — `api/tests/test_encryption.py`
+- **test_hash_is_deterministic()** (2 connections) — `api/tests/test_encryption.py`
+- **test_different_emso_produces_different_hash()** (2 connections) — `api/tests/test_encryption.py`
+- **test_mask_replaces_all_but_last_three_chars()** (2 connections) — `api/tests/test_encryption.py`
+- **test_mask_length_preserved()** (2 connections) — `api/tests/test_encryption.py`
+- **test_mask_short_value_returned_unchanged()** (2 connections) — `api/tests/test_encryption.py`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[connections]] (14 shared connections)
+- [[load_key()]] (4 shared connections)
+- [[Community 315]] (1 shared connections)
+- [[test_auth.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- `api/scripts/rotate_emso_key.py`
+- `api/services/encryption.py`
+- `api/tests/test_encryption.py`
 
 ## Audit Trail
 
-- EXTRACTED: 66 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 78 (55%)
+- INFERRED: 64 (45%)
 - AMBIGUOUS: 0 (0%)
 
 ---

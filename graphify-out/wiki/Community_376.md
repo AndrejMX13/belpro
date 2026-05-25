@@ -4,34 +4,27 @@
 
 ## Key Concepts
 
-- **Property Dependencies Guide** (12 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Auto-Sanitization and Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **What Auto-Sanitization Fixes** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **What It Doesn't Fix** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **DEPENDENCIES.md** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **What Are Property Dependencies?** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// You configure (missing singleValue))** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// You configure (missing channel))** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Slack (nodes-base.slack)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Post Message** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Update Message** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Create Channel** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[POST /api/managers/me/change-password (change_password)]] (1 shared connections)
-- [[Community 375]] (1 shared connections)
-- [[Community 518]] (1 shared connections)
-- [[POST /api/reports/monthly/pdf (generate_monthly_pdf)]] (1 shared connections)
-- [[Community 570]] (1 shared connections)
-- [[Community 336]] (1 shared connections)
-- [[Community 472]] (1 shared connections)
-- [[Community 337]] (1 shared connections)
+- [[Community 415]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

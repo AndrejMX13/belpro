@@ -1,57 +1,48 @@
 # path
 
-> 29 nodes
+> 31 nodes
 
 ## Key Concepts
 
-- **volunteer_factory()** (57 connections) — `api/tests/conftest.py`
-- **test_volunteers.py** (21 connections) — `api/tests/test_volunteers.py`
-- **test_photo_upload_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
-- **test_photo_upload_base64_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
-- **test_get_volunteer_found()** (3 connections) — `api/tests/test_volunteers.py`
-- **test_delete_volunteer_with_entries_returns_409()** (3 connections) — `api/tests/test_volunteers.py`
-- **test_list_volunteers_returns_created_volunteer()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_duplicate_emso_returns_409()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_update_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_deactivate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_activate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_delete_volunteer_happy_path()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_check_emso_already_registered()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_emso_stored_encrypted()** (2 connections) — `api/tests/test_volunteers.py`
-- **Returns an async callable that inserts a Volunteer row via flush (not commit)** (1 connections) — `api/tests/conftest.py`
-- **upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in** (1 connections) — `api/tests/test_app_settings.py`
-- **upload_photo_base64 rejects a second photo when max_photos_per_entry is 1 in DB.** (1 connections) — `api/tests/test_app_settings.py`
-- **test_list_volunteers_empty()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_success()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_missing_required_field_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_postal_code_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_emso_length_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_emso_checksum_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_get_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_update_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- *... and 4 more nodes in this community*
+- **Task 3: Documentation** (14 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **File Map** (5 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Task 2: Bash wrapper script** (5 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **EMŠO Key Rotation Script Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Task 1: Python rotation script** (4 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Task 0: Patch test volunteers with valid EMŠOs (dev only)** (3 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **2026-05-18-rotate-emso-key.md** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Pre-requisite: test data preparation** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (docker compose exec -T api python - <<'PYEOF')** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (docker compose exec -T api python - <<'PYEOF')** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (python -m py_compile api/scripts/rotate_emso_key.py && echo )** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (git add api/scripts/rotate_emso_key.py)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (bash -n scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (chmod +x scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (git add scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:markdown (### Rotacija ključa za šifriranje EMŠO)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block11** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block12** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block13** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block14 (├── scripts/                # Skripte: setup.sh, upgrade.sh,)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block15 (├── scripts/                # Skripte: setup.sh, upgrade.sh,)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:markdown (### EMŠO Key Rotation)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block17** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [[test_documents.py]] (22 shared connections)
-- [[005_report_prefs.py]] (12 shared connections)
-- [[analytics_summary()]] (6 shared connections)
-- [[Community 349]] (4 shared connections)
-- [[monthly_reports.json]] (3 shared connections)
-- [[Maximum photos allowed per log entry.]] (2 shared connections)
-- [[get_report_history()]] (1 shared connections)
-- [[Community 405]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/conftest.py`
-- `api/tests/test_app_settings.py`
-- `api/tests/test_volunteers.py`
+- `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
 
 ## Audit Trail
 
-- EXTRACTED: 53 (43%)
-- INFERRED: 70 (57%)
+- EXTRACTED: 60 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

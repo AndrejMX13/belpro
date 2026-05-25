@@ -4,45 +4,48 @@
 
 ## Key Concepts
 
-- **update_log_entry()** (10 connections) — `api/routers/log_entries.py`
-- **log_entries Router FastAPI** (9 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Log Entry Location Edit and Auto-Refresh Design** (8 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **Log Entry Location Edit Auto-Refresh Plan** (6 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Test Coverage Baseline 84pct 240 tests** (5 connections) — `docs/coverage-baseline.md`
-- **LogEntryUpdate Pydantic Schema** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **volunteers.js Frontend** (3 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Test Report Template** (2 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **API Test Python Dependencies requirements-test.txt** (2 connections) — `api/requirements-test.txt`
-- **PATCH /api/log-entries/{id} (update_log_entry)** (2 connections) — `api/routers/log_entries.py`
-- **LogEntryUpdate (Schema)** (2 connections) — `api/schemas/log_entry.py`
-- **Update activity_description, hours, location, and/or work_date. Blocked once app** (1 connections) — `api/routers/log_entries.py`
-- **Test Report Severity Definitions** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **Graphify Semantic Rebuild Guide** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **pytest pytest-asyncio** (1 connections) — `api/requirements-test.txt`
-- **Volunteer Contact Info Inline Edit Design** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **EMŠO Encryption (AES-256-GCM at rest)** (7 connections) — `SPEC.md`
+- **BelPro README (English)** (5 connections) — `README.md`
+- **Evolution API QR Code Troubleshooting (English)** (5 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Contributing Guide** (4 connections) — `CONTRIBUTING.md`
+- **BelPro — Beleženje Prostovoljstva** (2 connections) — `README.md`
+- **BelPro Roadmap** (2 connections) — `ROADMAP.md`
+- **Security Policy** (2 connections) — `SECURITY.md`
+- **Upgrade Script Plan** (2 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **BelPro README (Slovenian)** (1 connections) — `README_SL.md`
+- **Contributor Covenant Code of Conduct** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Evolution API QR Code Troubleshooting (Slovenian)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- **Evolution API QR Dashboard Bug (issue #1602)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **CONFIG_SESSION_PHONE_VERSION Fix for WhatsApp Connection** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Code Documenter Skill** (1 connections) — `.claude/skills/code-documenter/SKILL.md`
+- **EMŠO Encryption Key Rotation Procedure** (1 connections) — `README.md`
+- **Rotate EMSO Key Plan** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
 
 ## Relationships
 
-- [[BelPro Project Memory Public Index]] (6 shared connections)
-- [[API.reports.downloadHistoryPdf()]] (3 shared connections)
-- [[HTTP: GET Photo Limit]] (1 shared connections)
+- [[send_monthly_reports()]] (5 shared connections)
+- [[POST /api/errors (write_error)]] (1 shared connections)
+- [[API.reports.downloadHistoryPdf()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/test-reports.md`
-- `api/requirements-test.txt`
-- `api/routers/log_entries.py`
-- `api/schemas/log_entry.py`
-- `docs/coverage-baseline.md`
-- `docs/graphify-semantic-rebuild.md`
-- `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- `.claude/skills/code-documenter/SKILL.md`
+- `CODE_OF_CONDUCT.md`
+- `CONTRIBUTING.md`
+- `EVOLUTION_QR_TROUBLESHOOTING.md`
+- `EVOLUTION_QR_TROUBLESHOOTING_SL.md`
+- `README.md`
+- `README_SL.md`
+- `ROADMAP.md`
+- `SECURITY.md`
+- `SPEC.md`
+- `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- `docs/superpowers/plans/2026-05-18-upgrade-script.md`
 
 ## Audit Trail
 
-- EXTRACTED: 43 (74%)
-- INFERRED: 15 (26%)
+- EXTRACTED: 32 (86%)
+- INFERRED: 5 (14%)
 - AMBIGUOUS: 0 (0%)
 
 ---

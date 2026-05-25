@@ -4,30 +4,35 @@
 
 ## Key Concepts
 
-- **graphify semantic rebuild** (6 connections) — `docs/graphify-semantic-rebuild.md`
-- **What to run** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **After the rebuild — step 1: generate community labels from graph data** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **After the rebuild — step 2: regenerate graph.html** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **Commit format** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **graphify-semantic-rebuild.md** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **Problem** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:block1 (/graphify .)** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:block4 (chore: full graphify semantic rebuild — graphify update)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **renderList() — volunteers page** (5 connections) — `frontend/js/volunteers.js`
+- **GET /volunteers** (4 connections) — `api/routers/volunteers.py`
+- **loadVolunteers()** (3 connections) — `frontend/js/volunteers.js`
+- **loadHealthWidget()** (3 connections) — `frontend/js/errors.js`
+- **API.volunteers.list()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.activate()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.deactivate()** (2 connections) — `frontend/js/api.js`
+- **VolunteerListResponse shape (items[], total)** (2 connections) — `api/routers/volunteers.py`
+- **API.health.detailed()** (1 connections) — `frontend/js/api.js`
+- **PATCH /volunteers/{id}/activate** (1 connections) — `api/routers/volunteers.py`
+- **PATCH /volunteers/{id}/deactivate** (1 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[make_text_payload()]] (2 shared connections)
+- [[test_managers.py]] (1 shared connections)
+- [[Community 358]] (1 shared connections)
 
 ## Source Files
 
-- `docs/graphify-semantic-rebuild.md`
+- `api/routers/volunteers.py`
+- `frontend/js/api.js`
+- `frontend/js/errors.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 25 (96%)
+- INFERRED: 1 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

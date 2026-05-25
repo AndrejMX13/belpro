@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **Endpoints & Routing** (8 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Router Setup** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **CRUD Endpoints** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Custom Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Query Parameters** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Include Router** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Response Models** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **endpoints-routing.md** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **code:python (from fastapi import APIRouter, Depends, HTTPException, statu)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **code:python (@router.post("/", response_model=UserOut, status_code=status)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **code:python (from fastapi import Depends)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **code:python (@router.get("/search"))** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **code:python (# main.py)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **code:python (from fastapi import Response)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Pattern 1: $input.all() - Process All Items** (8 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Filter Active Items** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Transform All Items** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Aggregate Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 4: Sort and Limit** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 5: Group By Category** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 6: Deduplicate by ID** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get all items from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 410]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

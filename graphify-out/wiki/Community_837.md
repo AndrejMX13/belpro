@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **LoginRequest (Schema)** (0 connections) — `api/schemas/auth.py`
+- **GET /api/health/detailed (health_detailed)** (0 connections) — `api/main.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/auth.py`
+- `api/main.py`
 
 ## Audit Trail
 

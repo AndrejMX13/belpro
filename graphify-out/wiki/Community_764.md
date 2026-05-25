@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Hour of day (0–23) at which the daily photo cleanup runs.** (0 connections) — `api/services/app_settings.py`
+- **Day of month (1–28) on which monthly reports are auto-sent.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

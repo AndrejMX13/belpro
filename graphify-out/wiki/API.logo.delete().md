@@ -4,35 +4,39 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (9 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **1. ❌ Wrong: Unbounded queries** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Use LIMIT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **2. ❌ Wrong: String concatenation in queries** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Parameterized queries** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **3. ❌ Wrong: No transaction for multi-step operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Use transaction** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **4. ❌ Wrong: Processing all items at once** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Batch processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT * FROM large_table  -- Could return millions)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT * FROM large_table)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (query: "SELECT * FROM users WHERE id = '{{$json.id}}'")** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (query: "SELECT * FROM users WHERE id = $1",)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block45 (INSERT into orders)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block46 (BEGIN)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block47 (SELECT 1000000 records → Process all → OOM error)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block48 (SELECT records → Split In Batches (1000) → Process → Loop)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **gen_diagrams_sl.py** (20 connections) — `scripts/gen_diagrams_sl.py`
+- **fig1()** (7 connections) — `scripts/gen_diagrams_sl.py`
+- **fnt()** (5 connections) — `scripts/gen_diagrams_sl.py`
+- **text_size()** (5 connections) — `scripts/gen_diagrams_sl.py`
+- **draw_box()** (4 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams_sl.py`
+- **fig2()** (3 connections) — `scripts/gen_diagrams_sl.py`
+- **fig3()** (3 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_h()** (2 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_v()** (2 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams_sl.py`
+- **main()** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **Dashed horizontal arrow (single line, for Vodja connection).** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **scripts/diagrams/fig1_arhitektura.png** (1 connections)
+- **scripts/diagrams/fig2_potek.png** (1 connections)
+- **scripts/diagrams/fig3_porocanje.png** (1 connections)
 
 ## Relationships
 
-- [[Nalozi Stanje]] (1 shared connections)
+- [[005_report_prefs.py]] (2 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[008_add_manager_notified_at.py]] (1 shared connections)
+- [[merge_ast_semantic.py]] (1 shared connections)
+- [[POST /log-entries/{id}/photos]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `scripts/gen_diagrams_sl.py`
 
 ## Audit Trail
 
-- EXTRACTED: 33 (100%)
+- EXTRACTED: 62 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

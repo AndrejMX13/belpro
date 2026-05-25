@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **feedback_serena_replace_symbol.md** (2 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
-- **Pitfall 1 — Decorated functions** (1 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
-- **Pitfall 2 — Module-level string constants** (1 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
+- **10. Incorrect Property Path** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block20 ({{$json.data.items.name}}       // items is an array)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block21 ({{$json.data.items[0].name}}    // access array element)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/feedback_serena_replace_symbol.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

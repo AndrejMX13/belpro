@@ -4,29 +4,29 @@
 
 ## Key Concepts
 
-- **Codebase context** (11 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (from datetime import date)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block23 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (from services.report_storage import persist_report)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_na)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_na)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (mgr_items = [i for i in await _summary_items(db, y, m) if i.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (mgr_items = [i for i in await _summary_items(db, y, m) if i.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block29 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block30 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:bash (git add api/routers/reports.py api/tests/test_report_history)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Unit Testing** (6 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Jest/Vitest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **pytest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Mocking Patterns** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Test Organization** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **unit-testing.md** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:typescript (describe('UserService', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:typescript (// Mock functions)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:typescript (describe('Feature', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
 
 ## Relationships
 
-- [[Community 531]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `.claude/skills/test-master/references/unit-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

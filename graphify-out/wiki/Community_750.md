@@ -1,22 +1,24 @@
 # Community 750
 
-> 1 nodes
+> 2 nodes
 
 ## Key Concepts
 
-- **list-skills.sh** (0 connections) — `.claude/hooks/list-skills.sh`
+- **IF: Manager Error?** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[002_add_emso_hash.py]] (1 shared connections)
+- [[012_settings_table.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/hooks/list-skills.sh`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

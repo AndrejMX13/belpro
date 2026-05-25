@@ -1,48 +1,64 @@
 # BelPro System Specification
 
-> 34 nodes
+> 35 nodes
 
 ## Key Concepts
 
-- **Python Packaging and Project Setup** (16 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Poetry Project Management** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Pre-commit Hooks** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Project Structure** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Pyproject.toml Configuration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Virtual Environments** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Package __init__.py** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Type Stub Files (py.typed)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **CLI Entry Points** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Requirements Files** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Building and Distribution** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Setuptools Configuration (Legacy)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Manifest for Package Data** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Version Management** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Dependency Management Best Practices** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **CI/CD Integration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **packaging.md** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:block1 (myproject/)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:toml ([build-system])** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:toml (# pyproject.toml for Poetry)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:bash (# Poetry commands)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:bash (# Using venv (built-in))** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:python (# src/myproject/__init__.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:python (# src/myproject/py.typed)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:python (# src/myproject/cli.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- *... and 9 more nodes in this community*
+- **Base** (11 connections) — `api/models/base.py`
+- **base.py** (10 connections) — `api/models/base.py`
+- **__init__.py** (10 connections) — `api/models/__init__.py`
+- **Volunteer** (9 connections) — `api/models/volunteer.py`
+- **LogEntryPhoto** (8 connections) — `api/models/log_entry_photo.py`
+- **Base** (7 connections)
+- **ErrorLog** (7 connections) — `api/models/error_log.py`
+- **log_entry.py** (7 connections) — `api/models/log_entry.py`
+- **LogEntry** (7 connections) — `api/models/log_entry.py`
+- **Manager** (7 connections) — `api/models/manager.py`
+- **AppSetting** (6 connections) — `api/models/app_setting.py`
+- **MonthlyReport** (6 connections) — `api/models/monthly_report.py`
+- **volunteer.py** (6 connections) — `api/models/volunteer.py`
+- **log_entry_photo.py** (5 connections) — `api/models/log_entry_photo.py`
+- **manager.py** (5 connections) — `api/models/manager.py`
+- **monthly_report.py** (5 connections) — `api/models/monthly_report.py`
+- **app_setting.py** (4 connections) — `api/models/app_setting.py`
+- **error_log.py** (4 connections) — `api/models/error_log.py`
+- **AppSetting ORM model — runtime-tunable key-value configuration.** (1 connections) — `api/models/app_setting.py`
+- **One row per named setting. All values stored as TEXT.** (1 connections) — `api/models/app_setting.py`
+- **DeclarativeBase** (1 connections)
+- **SQLAlchemy declarative base shared by all ORM models.** (1 connections) — `api/models/base.py`
+- **Declarative base — import and subclass in every model.** (1 connections) — `api/models/base.py`
+- **ErrorLog ORM model — structured record of operational failures.** (1 connections) — `api/models/error_log.py`
+- **One row per operational failure. Written by API, n8n, and ops sidecar.** (1 connections) — `api/models/error_log.py`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[renderDetail() — volunteer detail page]] (4 shared connections)
+- [[connections]] (4 shared connections)
+- [[n8n MCP Workflow Management Guide]] (3 shared connections)
+- [[009_rename_entry_date_to_work_date.py]] (1 shared connections)
+- [[merge_semantic.py]] (1 shared connections)
+- [[HTTP: Fetch Media]] (1 shared connections)
+- [[Community 402]] (1 shared connections)
+- [[test_auth.py]] (1 shared connections)
+- [[Community 348]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/python-pro/references/packaging.md`
+- `api/models/__init__.py`
+- `api/models/app_setting.py`
+- `api/models/base.py`
+- `api/models/error_log.py`
+- `api/models/log_entry.py`
+- `api/models/log_entry_photo.py`
+- `api/models/manager.py`
+- `api/models/monthly_report.py`
+- `api/models/volunteer.py`
 
 ## Audit Trail
 
-- EXTRACTED: 66 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 103 (73%)
+- INFERRED: 38 (27%)
 - AMBIGUOUS: 0 (0%)
 
 ---

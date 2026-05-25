@@ -4,29 +4,30 @@
 
 ## Key Concepts
 
-- **Module 2: datetime - Date and Time** (6 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Current Date and Time** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Parse Date String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Date Calculations** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Compare Dates** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Format Dates** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime, timedelta)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Operation-Specific Configuration** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **HTTP Request Node Examples** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **IF Node Examples** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **GET Request** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **POST with JSON** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **String Comparison (Binary)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Empty Check (Unary)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[Community 474]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

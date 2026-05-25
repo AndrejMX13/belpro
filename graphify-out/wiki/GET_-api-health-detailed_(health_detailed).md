@@ -4,29 +4,29 @@
 
 ## Key Concepts
 
-- **Integration Testing** (6 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **API Testing (Supertest)** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Authenticated Requests** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Database Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **pytest API Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **integration-testing.md** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:typescript (import request from 'supertest';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:typescript (describe('Protected endpoints', () => {)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:typescript (import { db } from '../database';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Task 9: Scripts and Docs** (11 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:powershell (. .\scripts\load_env.ps1)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:sql (entry_date              DATE            NOT NULL,   -- Date )** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:sql (work_date               DATE            NOT NULL,   -- Date )** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:sql (COMMENT ON COLUMN log_entries.entry_date IS 'The date work w)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:sql (COMMENT ON COLUMN log_entries.work_date IS 'The date work wa)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:sql (CREATE INDEX idx_entries_date     ON log_entries(entry_date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:sql (CREATE INDEX idx_entries_work_date     ON log_entries(work_d)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (grep -n "entry_date" SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (grep "entry_date" SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add scripts/list_pending_entries.py db/init.sql SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[API Client (api.js)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/integration-testing.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,28 +4,31 @@
 
 ## Key Concepts
 
-- **Task 1: AppSetting ORM model + Alembic migration** (9 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""Tests for AppSettings service and admin settings router.")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block2 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""AppSetting ORM model — runtime-tunable key-value configur)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""SQLAlchemy ORM models — import all to ensure they registe)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""Add settings table for runtime-tunable configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block6 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block7 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/models/app_setting.py api/models/__init__.py api)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **conftest.py** (6 connections) — `api/tests/conftest.py`
+- **engine()** (6 connections) — `api/tests/conftest.py`
+- **db_session()** (2 connections) — `api/tests/conftest.py`
+- **client()** (2 connections) — `api/tests/conftest.py`
+- **auth()** (2 connections) — `api/tests/conftest.py`
+- **Run Alembic migrations against belpro_test, seed one Manager row.     Drops all** (1 connections) — `api/tests/conftest.py`
+- **Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo** (1 connections) — `api/tests/conftest.py`
+- **AsyncClient with get_db dependency wired to the test session.** (1 connections) — `api/tests/conftest.py`
+- **HTTP Basic Auth header for the seeded manager.** (1 connections) — `api/tests/conftest.py`
 
 ## Relationships
 
-- [[Community 536]] (1 shared connections)
+- [[load_key()]] (3 shared connections)
+- [[volunteers.js]] (1 shared connections)
+- [[BelPro System Specification]] (1 shared connections)
+- [[test_auth.py]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `api/tests/conftest.py`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 18 (82%)
+- INFERRED: 4 (18%)
 - AMBIGUOUS: 0 (0%)
 
 ---

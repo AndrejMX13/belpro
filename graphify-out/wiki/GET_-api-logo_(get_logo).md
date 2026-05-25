@@ -1,21 +1,20 @@
 # GET /api/logo (get_logo)
 
-> 12 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **Volunteer Contact Info — Inline Edit** (7 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Design** (4 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Backend changes** (2 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **2026-05-10-volunteer-contact-inline-edit-design.md** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Edit zones** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Interaction flow** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Error handling** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **code:python (first_name: str | None = None        # min_length=1 if provi)** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **Frontend changes** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
-- **What does not change** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Kubernetes Manifests** (6 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Complete Deployment Stack** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **ConfigMap and Secrets** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Horizontal Pod Autoscaler** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Common kubectl Commands** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **kubernetes.md** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:yaml (apiVersion: v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:yaml (apiVersion: autoscaling/v2)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:bash (kubectl apply -f deployment.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
 
 ## Relationships
 
@@ -23,11 +22,11 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- `.claude/skills/devops-engineer/references/kubernetes.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

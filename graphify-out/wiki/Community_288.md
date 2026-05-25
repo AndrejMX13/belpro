@@ -4,29 +4,34 @@
 
 ## Key Concepts
 
-- **Error #3: KeyError** (6 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Error Message** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Nested Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Webhook Body Access (Critical!)** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Direct key access)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:block10 (KeyError: 'name')** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Nested key access)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Forgetting webhook data is under "body")** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **n8n Code Python Skill** (16 connections) — `.claude/skills/n8n-code-python/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Skill Activation** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Success Metrics** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Best Practices** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **When Python is the Right Choice** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Learning Path** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Support** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Version** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Credits** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[Community 514]] (1 shared connections)
+- [[Community 657]] (1 shared connections)
+- [[Community 519]] (1 shared connections)
+- [[Community 520]] (1 shared connections)
+- [[Community 287]] (1 shared connections)
+- [[Community 365]] (1 shared connections)
+- [[Community 565]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

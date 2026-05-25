@@ -4,26 +4,24 @@
 
 ## Key Concepts
 
-- **submitAddVolunteer()** (3 connections) — `frontend/js/volunteers.js`
-- **POST /volunteers/check-emso** (3 connections) — `api/routers/volunteers.py`
-- **API.volunteers.checkEmso()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.create()** (2 connections) — `frontend/js/api.js`
-- **POST /volunteers** (2 connections) — `api/routers/volunteers.py`
-- **EmsoCheckResponse shape ({exists})** (2 connections) — `api/routers/volunteers.py`
+- **Checklist for API Integration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (2 shared connections)
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

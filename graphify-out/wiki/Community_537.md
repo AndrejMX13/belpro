@@ -4,24 +4,31 @@
 
 ## Key Concepts
 
-- **Task 2: AppSettings central authority + unit tests** (6 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# ── Unit tests for AppSettings ────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block10 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""AppSettings — central authority for all configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block12 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **ISS-015 GDPR Consent Document Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Final check** (3 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **2026-05-20-gdpr-consent.md** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **File structure** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block45 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block46 (git push central main)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
+- [[Community 633]] (1 shared connections)
+- [[switch_manager_phone.ps1]] (1 shared connections)
+- [[Community 534]] (1 shared connections)
+- [[Community 535]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
+- [[Community 635]] (1 shared connections)
 - [[Community 536]] (1 shared connections)
+- [[Community 394]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

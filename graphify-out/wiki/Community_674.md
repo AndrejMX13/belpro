@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **12. Expressions in Webhook Path** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block25 (path: "{{$json.user_id}}/webhook")** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block26 (path: "my-webhook"              // Static paths only)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Mistake 5: Not Using Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// IF node connection)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// IF node - semantic branch names)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Work Date Rename and Dashboard Entry Plan]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

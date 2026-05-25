@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- [[DELETE /api/volunteers/{id} (delete_volunteer)]] (1 shared connections)
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
 
 ## Source Files
 

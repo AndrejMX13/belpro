@@ -4,10 +4,10 @@
 
 ## Key Concepts
 
-- **Coverage Baseline** (3 connections) — `docs/coverage-baseline.md`
-- **coverage-baseline.md** (1 connections) — `docs/coverage-baseline.md`
-- **Gaps by file** (1 connections) — `docs/coverage-baseline.md`
-- **Well-covered (≥89%)** (1 connections) — `docs/coverage-baseline.md`
+- **session.py** (2 connections) — `api/db/session.py`
+- **get_db()** (2 connections) — `api/db/session.py`
+- **Async SQLAlchemy engine and session factory.** (1 connections) — `api/db/session.py`
+- **FastAPI dependency — yields one async DB session per request.** (1 connections) — `api/db/session.py`
 
 ## Relationships
 
@@ -15,7 +15,7 @@
 
 ## Source Files
 
-- `docs/coverage-baseline.md`
+- `api/db/session.py`
 
 ## Audit Trail
 

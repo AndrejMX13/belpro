@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Pattern 1: Try-Catch with Error Trigger** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Pattern 2: Validation Early Exit** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Pattern 3: Continue On Fail** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block23 (Main Flow:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block26 (Webhook → IF (validate) → [True: Process])** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block28 (Webhook → Database (critical) → Slack (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Task 6: ConfigInfoResponse schema + enhanced get_config_info** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from unittest.mock import patch, AsyncMock)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (class ConfigInfoResponse(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (logger = logging.getLogger(__name__))** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@router.get("/me/config-info", dependencies=[Depends(require)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/schemas/manager.py api/routers/managers.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[Community 495]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

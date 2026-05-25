@@ -1,35 +1,35 @@
 # VolunteerUpdate
 
-> 32 nodes
+> 33 nodes
 
 ## Key Concepts
 
-- **Platform Engineering** (17 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Self-Service with Crossplane** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Terraform Self-Service Module** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Backstage Service Template** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Service Catalog Info** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Golden Path Scaffolding** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **GitOps Repository Structure** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **ArgoCD Application** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Platform Metrics** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Custom Backstage Plugin** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Cost Allocation** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Platform APIs** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Multi-Tenant Architecture** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Adoption Strategy** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **CLI Tool Example** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **platform-engineering.md** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **Platform Principles** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:yaml (# Composition for self-service database)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:hcl (# modules/service/main.tf)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:yaml (# templates/microservice/template.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:yaml (# catalog-info.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:block6 (gitops/)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:yaml (apiVersion: argoproj.io/v1alpha1)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **code:yaml (# prometheus/platform-metrics.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- *... and 7 more nodes in this community*
+- **Monitoring and Analysis** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **PostgreSQL Monitoring** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **MySQL Monitoring** (5 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Cross-Platform Monitoring** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Alert Thresholds** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Essential Extensions** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Query Performance Tracking** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Connection and Lock Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Table and Index Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Database Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Performance Schema Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **InnoDB Status Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Connection and Process Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **System Status Variables** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Resource Utilization** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Health Check Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **PostgreSQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **MySQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **monitoring-analysis.md** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Install performance monitoring extensions)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Top queries by total time)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Current activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Table bloat and dead tuples)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Database size and activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Top statements by total latency)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- *... and 8 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/platform-engineering.md`
+- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
 
 ## Audit Trail
 
-- EXTRACTED: 62 (100%)
+- EXTRACTED: 64 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

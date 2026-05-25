@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Best Practices** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **1. Use Standard Library When Possible** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **2. Fall Back to n8n Nodes** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **3. Combine Multiple Modules** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (# ✅ GOOD: Use standard library)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (# For operations requiring external libraries,)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Tool Usage Patterns** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Pattern 1: Node Discovery (Most Common)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Pattern 2: Validation Loop** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Pattern 3: Workflow Editing** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Step 1: Search (fast!))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Step 1: Validate)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Iterative workflow building (NOT one-shot!))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

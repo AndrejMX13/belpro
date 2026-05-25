@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Template Usage** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Search Templates** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Get Template Details** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Deploy Template Directly** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Search by keyword (default mode))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (get_template({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Deploy template to your n8n instance)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **n8n_executions (EXECUTION MANAGEMENT)** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Get Execution Details** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **List Executions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Delete Execution** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_executions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_executions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_executions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[test_health_returns_ok()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

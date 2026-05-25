@@ -4,39 +4,31 @@
 
 ## Key Concepts
 
-- **Test Coverage Gaps Plan** (7 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Test Suite Plan** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Log Entry Status State Machine** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **httpOnly Cookie Session Auth** (3 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Fix Image Upload Env Access Plan** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **pytest SAVEPOINT Isolation Pattern** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **n8n Workflow Import/Export Script** (2 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
-- **Volunteer Contact Inline Edit Plan** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **n8n Workflow Scripts Plan** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
-- **Delete Non-Approved Entries Plan** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **HttpOnly Cookie Auth Plan** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **belpro_test_migrations DB for Migration Roundtrip Test** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **How to Read It** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Validation Result Structure** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Complete Response** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Check `valid` field** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Fix errors first** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Review warnings** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **4. Consider suggestions** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (if (result.valid) {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (result.errors.forEach(error => {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (result.warnings.forEach(warning => {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Optional improvements)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[env.py]] (1 shared connections)
-- [[Code: Check Entry]] (1 shared connections)
-- [[API.reports.exportPdf()]] (1 shared connections)
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
-- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
-- `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (62%)
-- INFERRED: 11 (38%)
+- EXTRACTED: 23 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

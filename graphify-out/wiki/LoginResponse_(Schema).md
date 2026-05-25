@@ -4,30 +4,29 @@
 
 ## Key Concepts
 
-- **activeVersion** (12 connections) — `n8n/workflows/volunteer_entry.json`
-- **updatedAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **createdAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **versionId** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **workflowId** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **nodes** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **authors** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **name** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **description** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **autosaved** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **workflowPublishHistory** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Common Mistakes** (6 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 1: Using $json Without Context** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 2: Forgetting .json Property** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 3: Using $input.item in All Items Mode** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 4: Not Handling Empty Arrays** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 5: Modifying Original Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: $json is ambiguous)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: Trying to access fields on item object)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: $input.item is undefined in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: Crashes if no items)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ RISKY: Mutating original)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
-- [[API.errors.acknowledge()]] (1 shared connections)
+- [[Community 410]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

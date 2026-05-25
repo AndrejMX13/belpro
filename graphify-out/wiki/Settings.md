@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Secure Code Guardian** (7 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Code Examples** (6 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Core Workflow** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Password Hashing (bcrypt)** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Parameterized SQL Query (Node.js / pg)** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Input Validation with Zod** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **JWT Validation** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Securing an Endpoint — Full Flow** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Validation Checkpoints** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import bcrypt from 'bcrypt';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (// NEVER: `SELECT * FROM users WHERE email = '${email}'`)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import { z } from 'zod';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import jwt from 'jsonwebtoken';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import express from 'express';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Knowledge Reference** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **TDD Iron Laws** (7 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **The Three Iron Laws** (4 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **The RED-GREEN-REFACTOR Cycle** (4 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Practical Application** (3 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **RED: Write One Minimal Failing Test** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **GREEN: Implement Simplest Passing Code** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **REFACTOR: Improve While Keeping Tests Green** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Starting a New Feature** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Fixing a Bug** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **tdd-iron-laws.md** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **The Fundamental Principle** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Iron Law 1: The Fundamental Rule** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Iron Law 2: Proof Through Observation** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Iron Law 3: The Final Rule** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **code:typescript (// Start with the smallest possible failing test)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **code:typescript (// Write only enough code to pass this specific test)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **code:typescript (// Now improve the code while tests stay green)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Common Rationalizations to Reject** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **code:typescript (// 1. RED: Write failing test for simplest behavior)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **code:typescript (// 1. RED: Write test that exposes the bug)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Verification Checklist** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
 
 ## Relationships
 
@@ -32,7 +32,7 @@
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/SKILL.md`
+- `.claude/skills/test-master/references/tdd-iron-laws.md`
 
 ## Audit Trail
 

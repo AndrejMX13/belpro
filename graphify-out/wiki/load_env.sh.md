@@ -4,36 +4,32 @@
 
 ## Key Concepts
 
-- **Operation Patterns Guide** (10 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Conditional Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Chat Completion** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Switch (nodes-base.switch)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Basic Switch** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **AI Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **OpenAI (nodes-langchain.openAi)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **OPERATION_PATTERNS.md** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Database Node Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **MongoDB** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **MySQL** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **SELECT with JOIN** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Bulk INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Find Documents** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Insert Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Update Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 379]] (1 shared connections)
-- [[Community 421]] (1 shared connections)
-- [[Community 297]] (1 shared connections)
-- [[GET /api/reports/history (get_report_history)]] (1 shared connections)
-- [[Community 378]] (1 shared connections)
-- [[list_pending_entries.sh]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 384]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

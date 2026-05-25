@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Reject tax numbers that fail the Modulus 11 check digit.** (0 connections) — `api/schemas/manager.py`
+- **list-skills.sh** (0 connections) — `.claude/hooks/list-skills.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/manager.py`
+- `.claude/hooks/list-skills.sh`
 
 ## Audit Trail
 

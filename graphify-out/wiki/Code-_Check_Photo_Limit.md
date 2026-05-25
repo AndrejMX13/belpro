@@ -1,33 +1,33 @@
 # Code: Check Photo Limit
 
-> 16 nodes
+> 15 nodes
 
 ## Key Concepts
 
-- **Design: BelPro Version-Bump Skill** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step-by-Step Flow** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **2026-05-15-version-bump-skill-design.md** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Trigger** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Approach** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 0 — Pre-flight: test suite check** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 1 — Orient and suggest version** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 2 — Update files** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 3 — Pre-commit review** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 4 — Tag? (optional)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 6 — Offer container rebuild** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **BelPro-Specific Constraints** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Reminders (skill mentions, does not execute)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Maintenance** (9 connections) — `README.md`
+- **Upgrade** (2 connections) — `README.md`
+- **Backup** (2 connections) — `README.md`
+- **Restore** (2 connections) — `README.md`
+- **Tail logs** (2 connections) — `README.md`
+- **Rebuild a service after code changes** (2 connections) — `README.md`
+- **Reset a forgotten dashboard password** (2 connections) — `README.md`
+- **Applying `.env` changes** (2 connections) — `README.md`
+- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README.md`
+- **code:bash (bash scripts/backup.sh)** (1 connections) — `README.md`
+- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README.md`
+- **code:bash (docker compose logs -f)** (1 connections) — `README.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `README.md`
+- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README.md`
+- **code:bash (docker compose up -d <service>)** (1 connections) — `README.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: GET Photo Limit]] (1 shared connections)
+- [[Community 601]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- `README.md`
 
 ## Audit Trail
 

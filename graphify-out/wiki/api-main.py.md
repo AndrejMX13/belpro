@@ -1,6 +1,6 @@
 # api/main.py
 
-> 31 nodes
+> 32 nodes
 
 ## Key Concepts
 
@@ -15,6 +15,7 @@
 - **Local Development** (2 connections) — `CLAUDE.md`
 - **Testing** (2 connections) — `CLAUDE.md`
 - **graphify & serena** (2 connections) — `CLAUDE.md`
+- **Workflow** (2 connections) — `CLAUDE.md`
 - **What is this project?** (1 connections) — `CLAUDE.md`
 - **code:block1 (belpro/)** (1 connections) — `CLAUDE.md`
 - **Technology Choices** (1 connections) — `CLAUDE.md`
@@ -28,8 +29,7 @@
 - **code:bash (# Copy and fill in environment)** (1 connections) — `CLAUDE.md`
 - **code:bash (docker compose exec api pytest tests/ -v                    )** (1 connections) — `CLAUDE.md`
 - **Known packaging pins** (1 connections) — `CLAUDE.md`
-- **Alpine / BusyBox quirks** (1 connections) — `CLAUDE.md`
-- *... and 6 more nodes in this community*
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
@@ -41,7 +41,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 60 (100%)
+- EXTRACTED: 62 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

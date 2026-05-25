@@ -4,42 +4,41 @@
 
 ## Key Concepts
 
-- **Python Pro Skill** (6 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Test Master Skill** (5 connections) — `.claude/skills/test-master/SKILL.md`
-- **E2E Testing Reference (Playwright, User Flows, Cross-Browser)** (4 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Python Testing Reference (pytest)** (3 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Test Automation Frameworks Reference (Screenplay, Parallel, CI/CD)** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Integration Testing Reference (Supertest, API Testing, pytest httpx)** (3 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Python Async Patterns Reference** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Python Type System Reference** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **pytest Testing Framework** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Playwright E2E Testing Framework** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Python Packaging Reference** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Python Standard Library Reference** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **asyncio and async-await Pattern** (1 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **mypy Strict Type Checking** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **n8n Expression Syntax** (16 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Expression Format** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Debugging Expressions** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Common Mistakes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Expression Helpers** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:block1 ({{expression}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:block2 (✅ {{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Quick Fixes** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Test in Expression Editor** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Common Error Messages** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Available Methods** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Related Skills** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 354]] (2 shared connections)
+- [[Community 372]] (1 shared connections)
+- [[Community 573]] (1 shared connections)
+- [[Community 462]] (1 shared connections)
+- [[Community 464]] (1 shared connections)
+- [[Community 370]] (1 shared connections)
+- [[Community 371]] (1 shared connections)
+- [[Community 373]] (1 shared connections)
+- [[Community 463]] (1 shared connections)
+- [[Community 673]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/python-pro/SKILL.md`
-- `.claude/skills/python-pro/references/async-patterns.md`
-- `.claude/skills/python-pro/references/packaging.md`
-- `.claude/skills/python-pro/references/standard-library.md`
-- `.claude/skills/python-pro/references/testing.md`
-- `.claude/skills/python-pro/references/type-system.md`
-- `.claude/skills/test-master/SKILL.md`
-- `.claude/skills/test-master/references/automation-frameworks.md`
-- `.claude/skills/test-master/references/e2e-testing.md`
-- `.claude/skills/test-master/references/integration-testing.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (78%)
-- INFERRED: 8 (22%)
+- EXTRACTED: 35 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

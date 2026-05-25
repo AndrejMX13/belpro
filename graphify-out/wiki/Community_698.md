@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **API.logo.delete()** (1 connections) — `frontend/js/api.js`
-- **DELETE /logo** (1 connections) — `api/routers/logo.py`
+- **backup.sh** (1 connections) — `ops/scripts/backup.sh`
+- **report_error()** (1 connections) — `ops/scripts/backup.sh`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
-- `frontend/js/api.js`
+- `ops/scripts/backup.sh`
 
 ## Audit Trail
 

@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Coming up — v1.0** (6 connections) — `ROADMAP.md`
-- **BelPro Roadmap** (4 connections) — `ROADMAP.md`
-- **ROADMAP.md** (1 connections) — `ROADMAP.md`
-- **Reliability** (1 connections) — `ROADMAP.md`
-- **Manager experience** (1 connections) — `ROADMAP.md`
-- **Security & data protection** (1 connections) — `ROADMAP.md`
-- **System architecture** (1 connections) — `ROADMAP.md`
-- **Polish** (1 connections) — `ROADMAP.md`
-- **Done** (1 connections) — `ROADMAP.md`
-- **On the radar (post-1.0)** (1 connections) — `ROADMAP.md`
+- **Error Handling Patterns** (5 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 3: Error Trigger Workflow** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 1: Retry on Failure** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 2: Fallback API** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 4: Circuit Breaker** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block34 (HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block35 (HTTP Request (Primary API, continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block36 (HTTP Request → Process Data)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block37 (Error Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - circuit breaker logic)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `ROADMAP.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

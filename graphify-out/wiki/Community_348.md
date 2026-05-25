@@ -1,32 +1,39 @@
 # Community 348
 
-> 10 nodes
+> 9 nodes
 
 ## Key Concepts
 
-- **Task 5: Frontend — Administracija page** (10 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js (admin: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:html (<a href="#admin" class="nav-item" data-page="admin">)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:html (<script src="/js/admin.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js (} else if (hash === '#admin') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js (} else if (hash === '#settings') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block41 (docker compose up -d --build frontend)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block42 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add frontend/js/api.js frontend/index.html frontend/js/a)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **__init__.py** (9 connections) — `api/routers/__init__.py`
+- **__init__.py** (1 connections) — `api/core/__init__.py`
+- **__init__.py** (1 connections) — `api/db/__init__.py`
+- **__init__.py** (1 connections) — `api/schemas/__init__.py`
+- **__init__.py** (1 connections) — `api/services/__init__.py`
+- **__init__.py** (1 connections) — `api/tests/__init__.py`
+- **__init__.py** (1 connections) — `api/utils/__init__.py`
+- **__init__.py** (1 connections) — `tests/__init__.py`
+- **__init__.py** (1 connections) — `tests/workflow/__init__.py`
 
 ## Relationships
 
-- [[Community 536]] (1 shared connections)
+- [[BelPro System Specification]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `api/core/__init__.py`
+- `api/db/__init__.py`
+- `api/routers/__init__.py`
+- `api/schemas/__init__.py`
+- `api/services/__init__.py`
+- `api/tests/__init__.py`
+- `api/utils/__init__.py`
+- `tests/__init__.py`
+- `tests/workflow/__init__.py`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 0 (0%)
+- INFERRED: 17 (100%)
 - AMBIGUOUS: 0 (0%)
 
 ---

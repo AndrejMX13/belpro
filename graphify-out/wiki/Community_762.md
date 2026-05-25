@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Reporting period: 'current' (this month) or 'previous' (last month).** (0 connections) — `api/services/app_settings.py`
+- **Number of days approved entry photos are retained on disk.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

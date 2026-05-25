@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **project_readme_screenshots.md** (0 connections) — `.claude/memory/project_readme_screenshots.md`
+- **feedback_superpowers_discipline.md** (0 connections) — `.claude/memory/feedback_superpowers_discipline.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/project_readme_screenshots.md`
+- `.claude/memory/feedback_superpowers_discipline.md`
 
 ## Audit Trail
 

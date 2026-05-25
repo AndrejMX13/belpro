@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 6: Enhanced `/api/health/detailed` endpoint** (7 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (import shutil)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (@app.get("/api/health/detailed"))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block40 (httpx==0.27.2)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (curl -s http://localhost:8100/api/health/detailed | python -)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add api/main.py api/requirements.txt)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Task 1: Alembic migration — seed `evolution_instance_name`** (7 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (async def test_settings_table_seeded_evolution_instance_name)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (# api/db/migrations/versions/015_seed_evolution_instance_nam)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/db/migrations/versions/015_seed_evolution_instan)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[Community 432]] (1 shared connections)
+- [[Community 398]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 

@@ -1,42 +1,46 @@
 # loadAppLog()
 
-> 20 nodes
+> 21 nodes
 
 ## Key Concepts
 
-- **n8n_update_partial_workflow (MOST USED!)** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Cleanup & Recovery** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **patchNodeField (Surgical String Edits)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Intent Parameter (IMPORTANT!)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **AI Connection Types (8 types)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Property Removal with null** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Activation Operations** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Example Usage** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **19 Operation Types** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// Language Model)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// Remove a property)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// Basic strict find/replace in code)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// Activate workflow)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript ({type: "cleanStaleConnections"})** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **upgrade.sh** (12 connections) — `scripts/upgrade.sh`
+- **rotate_emso_key.sh** (11 connections) — `scripts/rotate_emso_key.sh`
+- **backup.sh** (8 connections) — `scripts/backup.sh`
+- **.env** (5 connections)
+- **EMSO encrypted field** (4 connections)
+- **docker-compose.yml** (3 connections)
+- **api/scripts/rotate_emso_key.py** (3 connections)
+- **Alembic migrations** (2 connections)
+- **/app/photos (volume)** (2 connections)
+- **info()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **ok()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **warn()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **heading()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **die()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **info()** (1 connections) — `scripts/upgrade.sh`
+- **ok()** (1 connections) — `scripts/upgrade.sh`
+- **warn()** (1 connections) — `scripts/upgrade.sh`
+- **heading()** (1 connections) — `scripts/upgrade.sh`
+- **die()** (1 connections) — `scripts/upgrade.sh`
+- **get_env()** (1 connections) — `scripts/upgrade.sh`
+- **backups/** (1 connections)
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
-- [[Community 652]] (1 shared connections)
+- [[005_report_prefs.py]] (10 shared connections)
+- [[merge_ast_semantic.py]] (1 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `scripts/backup.sh`
+- `scripts/rotate_emso_key.sh`
+- `scripts/upgrade.sh`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 62 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

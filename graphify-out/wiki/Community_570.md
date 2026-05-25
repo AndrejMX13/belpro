@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Nested Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **What Are They?** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **How to Handle** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Step 1: Parent)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Module 9: statistics - Statistical Functions** (3 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Basic Statistics** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Aggregate from Items** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 376]] (1 shared connections)
+- [[Community 330]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

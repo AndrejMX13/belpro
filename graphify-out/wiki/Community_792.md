@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **n8n_api_access.md** (0 connections) — `.claude/memory/n8n_api_access.md`
+- **feedback_n8n_workflow_edits.md** (0 connections) — `.claude/memory/feedback_n8n_workflow_edits.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/n8n_api_access.md`
+- `.claude/memory/feedback_n8n_workflow_edits.md`
 
 ## Audit Trail
 

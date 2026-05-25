@@ -4,25 +4,26 @@
 
 ## Key Concepts
 
-- **Error Prevention Checklist** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Code Structure** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Return Format** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Syntax** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Data Safety** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Systematic Debugging Reference** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Debugging Strategies Reference** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Git Bisect Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Binary Search Debugging Strategy** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Four-Phase Systematic Debugging** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Three-Fix Threshold Rule** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
 
 ## Relationships
 
-- [[SmtpNotConfiguredError (Service)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `.claude/skills/debugging-wizard/references/strategies.md`
+- `.claude/skills/debugging-wizard/references/systematic-debugging.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 10 (83%)
+- INFERRED: 2 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

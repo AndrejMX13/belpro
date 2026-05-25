@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Conditional Content** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Date Manipulation** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **String Manipulation** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Ternary operator)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Add days)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Substring)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Rate Limiting** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 1: Wait Between Requests** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 2: Exponential Backoff** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 3: Respect Rate Limit Headers** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block26 (Split In Batches (1 item per batch))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - check rate limit)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

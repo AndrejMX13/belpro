@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Batch Processing Pattern** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **SplitInBatches Loop** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Nested Loops** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **API Pagination** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Dry-Run / Verification Tolerance** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block6 (Prepare Items → SplitInBatches → [main[1]: Process Batch] → )** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Cross-Iteration Data** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block7 (Define Categories (N items))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block8 (Schedule → Set Date Window → Fetch Page → Process)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript (// In verification Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Task 5: Settings update + startup seeding** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (authentication_api_key: str = "")** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from sqlalchemy import select, text)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (async def seed_whatsapp_phone_from_env(session: AsyncSession)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@asynccontextmanager)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/core/settings.py api/main.py api/tests/test_mana)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[Community 495]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

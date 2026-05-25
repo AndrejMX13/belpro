@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **0. Sandbox Restrictions (Critical)** (5 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Blocked helpers** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **`require()` is gated by allowlists** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// ❌ BLOCKED — throws UnsupportedFunctionError)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **`$env` may be blocked** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// May throw "Cannot find module 'crypto'" — depends on env )** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **What's always safe** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Built-in Functions & Helpers** (4 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **$helpers.httpRequest()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **DateTime (Luxon)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **$jmespath()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// Current time)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[Community 547]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 

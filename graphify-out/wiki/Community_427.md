@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **1. Webhook Data Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **2. Multiple Input Items** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript (❌ {{$json.email}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript ({{$json[0].field}}  // First item only)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **3. Authentication Issues** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **4. Node Execution Order** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **5. Expression Errors** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Task 7: Health widget on the dashboard** (8 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<!-- Health widget — shown on main landing page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<a href="#applog" class="nav-item" data-page="applog">)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<!-- App log page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:css (/* Health widget */)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:javascript (// frontend/js/errors.js)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<script type="module" src="/js/errors.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add frontend/index.html frontend/js/errors.js frontend/c)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[Community 428]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

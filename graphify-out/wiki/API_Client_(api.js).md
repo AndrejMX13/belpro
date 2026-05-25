@@ -4,29 +4,36 @@
 
 ## Key Concepts
 
-- **Unit Testing** (6 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Jest/Vitest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **pytest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Mocking Patterns** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Test Organization** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **unit-testing.md** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:typescript (describe('UserService', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:typescript (// Mock functions)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:typescript (describe('Feature', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Work Date Rename + Dashboard Entry Creation Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Task 7: Frontend — "Dodaj vnos" on Volunteer Detail Page** (5 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Task 10: Run graphify update** (3 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **2026-05-09-work-date-rename-and-dashboard-entry.md** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<p class="section-title">Dnevnik dela</p>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript ($('add-entry-btn').addEventListener('click', () => {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (create: (payload) => apiFetch('/log-entries', {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add graphify-out/)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 548]] (1 shared connections)
+- [[Community 445]] (1 shared connections)
+- [[Community 322]] (1 shared connections)
+- [[Community 356]] (1 shared connections)
+- [[HTTP: Fetch Image]] (1 shared connections)
+- [[Community 617]] (1 shared connections)
+- [[Community 357]] (1 shared connections)
+- [[GET /api/health/detailed (health_detailed)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/unit-testing.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

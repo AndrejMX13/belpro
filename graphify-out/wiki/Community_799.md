@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **reference_serena_memory.md** (0 connections) — `.claude/memory/reference_serena_memory.md`
+- **project_readme_screenshots.md** (0 connections) — `.claude/memory/project_readme_screenshots.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/reference_serena_memory.md`
+- `.claude/memory/project_readme_screenshots.md`
 
 ## Audit Trail
 

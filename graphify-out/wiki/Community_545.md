@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **pull_request_template.md** (4 connections) — `.github/pull_request_template.md`
-- **Summary** (1 connections) — `.github/pull_request_template.md`
-- **Type of change** (1 connections) — `.github/pull_request_template.md`
-- **Testing** (1 connections) — `.github/pull_request_template.md`
-- **Checklist** (1 connections) — `.github/pull_request_template.md`
+- **settings.local.json** (3 connections) — `.claude/settings.local.json`
+- **permissions** (2 connections) — `.claude/settings.local.json`
+- **allow** (1 connections) — `.claude/settings.local.json`
+- **enabledMcpjsonServers** (1 connections) — `.claude/settings.local.json`
+- **enableAllProjectMcpServers** (1 connections) — `.claude/settings.local.json`
 
 ## Relationships
 
@@ -16,7 +16,7 @@
 
 ## Source Files
 
-- `.github/pull_request_template.md`
+- `.claude/settings.local.json`
 
 ## Audit Trail
 

@@ -4,34 +4,28 @@
 
 ## Key Concepts
 
-- **Secure Code Guardian Skill** (8 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Input Validation Reference (Zod, SQL Injection)** (3 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **OWASP Top 10 Prevention Reference** (3 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **Authentication Reference (bcrypt, JWT)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Security Headers Reference (Helmet, CORS, Rate Limiting)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **XSS and CSRF Prevention Reference** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **SQL Injection Prevention (Parameterized Queries)** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **OWASP Top 10 Vulnerabilities** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **JWT Token Authentication** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
+- **Performance Optimization** (5 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. Parallel Requests** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. Caching** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. Conditional Fetching** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. Batch API Calls** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block44 (Set (create array of IDs))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block45 (IF (check cache exists))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block46 (HTTP Request (GET with If-Modified-Since header))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (2 shared connections)
-- [[api.js]] (2 shared connections)
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/SKILL.md`
-- `.claude/skills/secure-code-guardian/references/authentication.md`
-- `.claude/skills/secure-code-guardian/references/input-validation.md`
-- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- `.claude/skills/secure-code-guardian/references/security-headers.md`
-- `.claude/skills/secure-code-guardian/references/xss-csrf.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (83%)
-- INFERRED: 4 (17%)
+- EXTRACTED: 17 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

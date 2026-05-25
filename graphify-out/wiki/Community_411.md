@@ -4,26 +4,32 @@
 
 ## Key Concepts
 
-- **Monitoring & Logging** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern 1: Execution Log Table** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern 2: Metrics Collection** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern 3: Summary Notifications** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:sql (CREATE TABLE workflow_executions ()** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block25 (Schedule)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block26 (Schedule → [Execute])** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block27 (Schedule (daily at 6 PM) → Query execution logs)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Data Access Patterns - Python Code Node** (11 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Decision Tree** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **DATA_ACCESS.md** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:block24 (Do you need ALL items from previous node?)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[HTTP: GET Volunteer (Auto)]] (1 shared connections)
+- [[Community 283]] (1 shared connections)
+- [[Community 363]] (1 shared connections)
+- [[Community 453]] (1 shared connections)
+- [[Community 328]] (1 shared connections)
+- [[Community 284]] (1 shared connections)
+- [[Community 454]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Webhook Data Structure** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Standard Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Accessing Different Parts** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// Headers)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Philosophy** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **✅ Good Practice** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **❌ Bad Practice** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:block1 (1. Run validation with 'runtime' profile)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:block2 (1. Ignore all warnings blindly)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[Community 419]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

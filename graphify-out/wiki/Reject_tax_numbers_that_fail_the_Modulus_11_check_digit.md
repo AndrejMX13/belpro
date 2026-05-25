@@ -4,32 +4,38 @@
 
 ## Key Concepts
 
-- **Auto-Sanitization System** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What It Fixes** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What It CANNOT Fix** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Binary Operators (Two Values)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Unary Operators (One Value)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What It Does** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. IF/Switch Metadata** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Broken Connections** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Branch Count Mismatches** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. Paradoxical Corrupt States** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **main.py** (22 connections) — `api/main.py`
+- **health()** (3 connections) — `api/main.py`
+- **Belpro FastAPI application entry point.** (1 connections) — `api/main.py`
+- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
+- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
+- **routers/admin** (1 connections)
+- **routers/auth** (1 connections)
+- **routers/analytics** (1 connections)
+- **routers/log_entries** (1 connections)
+- **routers/volunteers** (1 connections)
+- **routers/reports** (1 connections)
+- **models/log_entry** (1 connections)
+- **models/manager** (1 connections)
+- **models/monthly_report** (1 connections)
 
 ## Relationships
 
-- [[Community 339]] (1 shared connections)
+- [[005_report_prefs.py]] (4 shared connections)
+- [[GET /api/log-entries (list_log_entries)]] (2 shared connections)
+- [[volunteers.js]] (1 shared connections)
+- [[merge_ast_semantic.py]] (1 shared connections)
+- [[loadAppLog()]] (1 shared connections)
+- [[008_add_manager_notified_at.py]] (1 shared connections)
+- [[API.logo.delete()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `api/main.py`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
+- EXTRACTED: 37 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Testing with Pytest** (11 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Basic Pytest Structure** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Fixtures for Setup/Teardown** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Parametrize for Multiple Cases** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Mocking and Patching** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Async Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Pytest Markers** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Test Coverage** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Property-Based Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Test Organization** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Snapshot Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **testing.md** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (# test_user.py)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (# conftest.py - shared fixtures)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (from unittest.mock import Mock, MagicMock, patch, AsyncMock,)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (# Run with coverage)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (from hypothesis import given, strategies as st)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (# tests/)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Volunteer Contact Inline Edit — Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 3: Handle phone IntegrityError in update_volunteer** (6 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 4: Frontend — inline edit zones on the detail page** (5 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 1: Create test infrastructure and failing schema tests** (4 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 2: Extend VolunteerUpdate schema** (4 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **2026-05-10-volunteer-contact-inline-edit.md** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose exec api mkdir -p tests)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python ("""Unit tests for VolunteerUpdate schema — no DB required."")** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteer_update_s)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (class VolunteerUpdate(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteer_update_s)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (git add api/schemas/volunteer.py api/tests/__init__.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (from sqlalchemy.exc import IntegrityError)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (for field, value in payload.model_dump(exclude_none=True).it)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (for field, value in payload.model_dump(exclude_none=True).it)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (git add api/routers/volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:javascript (<div class="detail-header">)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:javascript (<div class="detail-header">)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:javascript (function wireInlineEdit({ pencilId, inputsId, textId, saveId)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
 
 ## Relationships
 
@@ -33,7 +33,7 @@
 
 ## Source Files
 
-- `.claude/skills/python-pro/references/testing.md`
+- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
 
 ## Audit Trail
 

@@ -4,36 +4,40 @@
 
 ## Key Concepts
 
-- **Standard Library Mastery** (9 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Pathlib for File Operations** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Dataclasses for Data Structures** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Functools for Function Tools** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Itertools for Iteration** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Collections for Data Structures** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Context Managers** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Enum for Constants** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **Logging** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **standard-library.md** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from pathlib import Path)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from dataclasses import dataclass, field, asdict, replace)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from functools import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from itertools import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from collections import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from contextlib import contextmanager, suppress, ExitStack)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (from enum import Enum, auto, IntEnum, Flag)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **code:python (import logging)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Errors (Must Fix)** (6 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **4. invalid_expression** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Missing Curly Braces** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: Invalid Node Reference** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 3: Invalid Property Access** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 4: Webhook Data Access Error** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 297]] (1 shared connections)
+- [[CLAUDE.md — Project AI Instructions]] (1 shared connections)
+- [[GET /log-entries/{id}]] (1 shared connections)
+- [[DELETE /log-entries/{id}/photos/{pid}]] (1 shared connections)
+- [[GET /api/admin/settings (get_admin_settings)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/python-pro/references/standard-library.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 39 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

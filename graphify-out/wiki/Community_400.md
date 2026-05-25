@@ -4,28 +4,34 @@
 
 ## Key Concepts
 
-- **Task 2: Error log API endpoints + schemas + tests** (9 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (# api/tests/test_errors.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec api pytest tests/test_errors.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (# api/schemas/error_log.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (# api/routers/errors.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (from routers.errors import router as errors_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (app.include_router(errors_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec api pytest tests/test_errors.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add api/schemas/error_log.py api/routers/errors.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Secure Code Guardian Skill** (8 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Input Validation Reference (Zod, SQL Injection)** (3 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
+- **OWASP Top 10 Prevention Reference** (3 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **Authentication Reference (bcrypt, JWT)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
+- **Security Headers Reference (Helmet, CORS, Rate Limiting)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **XSS and CSRF Prevention Reference** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
+- **SQL Injection Prevention (Parameterized Queries)** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
+- **OWASP Top 10 Vulnerabilities** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **JWT Token Authentication** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
 
 ## Relationships
 
-- [[Community 432]] (1 shared connections)
+- [[Text Extract]] (2 shared connections)
+- [[POST /log-entries/{id}/photos]] (2 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `.claude/skills/secure-code-guardian/SKILL.md`
+- `.claude/skills/secure-code-guardian/references/authentication.md`
+- `.claude/skills/secure-code-guardian/references/input-validation.md`
+- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- `.claude/skills/secure-code-guardian/references/security-headers.md`
+- `.claude/skills/secure-code-guardian/references/xss-csrf.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 20 (83%)
+- INFERRED: 4 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,35 +1,34 @@
 # Reject EMŠO numbers that fail the mod-11 checksum.
 
-> 14 nodes
+> 13 nodes
 
 ## Key Concepts
 
-- **OWASP Top 10 Prevention** (8 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A01: Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A02: Broken Authentication** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A03: Sensitive Data Exposure** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A05: Broken Access Control** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A07: XSS Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **owasp-prevention.md** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **OWASP Top 10 Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// SQL Injection - Use parameterized queries)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Use bcrypt for passwords)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Encrypt sensitive data at rest)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Always validate on server side)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Use Content Security Policy)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **12. Pripomočki za testiranje** (6 connections) — `SPEC_SL.md`
+- **`load_env.ps1` / `load_env.sh`** (3 connections) — `SPEC_SL.md`
+- **`switch_manager_phone.ps1` / `switch_manager_phone.sh`** (3 connections) — `SPEC_SL.md`
+- **Tipičen potek testiranja** (3 connections) — `SPEC_SL.md`
+- **`list_pending_entries.py`** (2 connections) — `SPEC_SL.md`
+- **code:block3 (. .\scripts\load_env.ps1)** (1 connections) — `SPEC_SL.md`
+- **code:bash (source scripts/load_env.sh)** (1 connections) — `SPEC_SL.md`
+- **code:block5 (.\scripts\switch_manager_phone.ps1 volunteer   # nastavi tel)** (1 connections) — `SPEC_SL.md`
+- **code:bash (bash scripts/switch_manager_phone.sh volunteer)** (1 connections) — `SPEC_SL.md`
+- **code:block7 (python scripts/list_pending_entries.py          # vnosi, ki )** (1 connections) — `SPEC_SL.md`
+- **code:block8 (# 0. Nalaganje okoljskih spremenljivk (enkrat na sejo):)** (1 connections) — `SPEC_SL.md`
+- **code:bash (# 0. Nalaganje okoljskih spremenljivk (enkrat na sejo):)** (1 connections) — `SPEC_SL.md`
+- **Vozlišča ročnega sprožilca v n8n** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 7: Health widget on the dashboard** (8 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<!-- Health widget — shown on main landing page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<a href="#applog" class="nav-item" data-page="applog">)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<!-- App log page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:css (/* Health widget */)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:javascript (// frontend/js/errors.js)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<script type="module" src="/js/errors.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add frontend/index.html frontend/js/errors.js frontend/c)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Task 7: n8n — manager_approval workflow** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (grep -n "evolution-api.*belpro" n8n/workflows/manager_approv)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ("Fetch Config": {)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ("={{ 'http://evolution-api:8080/message/sendText/' + $('Fetc)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ("={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessa)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add n8n/workflows/manager_approval.json)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[Community 432]] (1 shared connections)
+- [[Community 398]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 

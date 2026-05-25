@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Performance Optimization** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Choose Right Model** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. Limit Context Window** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Optimize Tool Descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Cache Embeddings** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Async Tools for Slow Operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block30 (Fast & cheap: GPT-3.5-turbo, Claude 3 Haiku)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// ❌ Vague)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block33 (Setup (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block34 (AI Agent → [Queue slow tool request])** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Performance Optimization** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **1. Use Indexes** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **2. Limit Result Sets** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **3. Use Prepared Statements** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **4. Batch Writes** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **5. Connection Pooling** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:sql (-- Add index for sync queries)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:sql (-- ✅ Good)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// ✅ Good - prepared statement)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// ✅ Good - batch insert)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Je v urejanju?]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

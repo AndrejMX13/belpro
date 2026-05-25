@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Common Patterns** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Access Nested Fields** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Reference Other Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Combine Variables** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Simple nesting)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Node without spaces)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Concatenation (automatic))** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Recovery Strategies** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 3: Clean Stale Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 4: Use Auto-fix** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 1: Start Fresh** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 2: Binary Search** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Preview fixes (default - doesn't apply))** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **restore.sh** (0 connections) — `scripts/restore.sh`
+- **entrypoint.sh** (0 connections) — `ops/entrypoint.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/restore.sh`
+- `ops/entrypoint.sh`
 
 ## Audit Trail
 

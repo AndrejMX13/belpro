@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **BelPro — Sequence Diagram** (2 connections) — `docs/images/belpro-architecture-sequence.md`
-- **belpro-architecture-sequence.md** (1 connections) — `docs/images/belpro-architecture-sequence.md`
-- **code:mermaid (sequenceDiagram)** (1 connections) — `docs/images/belpro-architecture-sequence.md`
+- **list_volunteers** (2 connections) — `api/routers/volunteers.py`
+- **loadVolunteers** (1 connections) — `frontend/js/volunteers.js`
+- **renderApprovals** (1 connections) — `frontend/js/volunteers.js`
 
 ## Relationships
 
@@ -14,7 +14,8 @@
 
 ## Source Files
 
-- `docs/images/belpro-architecture-sequence.md`
+- `api/routers/volunteers.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 

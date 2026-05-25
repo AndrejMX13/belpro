@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Day of month (1–28) on which monthly reports are auto-sent.** (0 connections) — `api/services/app_settings.py`
+- **Maximum photos allowed per log entry.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

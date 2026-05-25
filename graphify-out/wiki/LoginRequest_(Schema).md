@@ -4,41 +4,30 @@
 
 ## Key Concepts
 
-- **PATCH /api/log-entries/{id}/notify (notify_log_entry)** (8 connections) — `api/routers/log_entries.py`
-- **Shared LogEntry Data Structure (volunteer_id, work_date, hours, activity_description, location, status, raw_transcript)** (8 connections) — `api/routers/log_entries.py`
-- **n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)** (7 connections) — `n8n/workflows/monthly_reports.json`
-- **POST /api/reports/send-monthly (send_monthly_reports)** (3 connections) — `api/routers/reports.py`
-- **BelPro - Mesecna Porocila (Monthly Reports Workflow)** (2 connections) — `n8n/workflows/monthly_reports.json`
-- **POST /api/log-entries/{id}/photos/base64 (upload_photo_base64)** (2 connections) — `api/routers/log_entries.py`
-- **n8n: PATCH /api/log-entries/{id}/notify (Manual Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: PATCH /api/log-entries/{id}/notify (Auto Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: POST /api/log-entries/{id}/photos/base64 (Photo Upload)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: PATCH /api/log-entries/{id}/notify (Next Entry Notify)** (1 connections) — `n8n/workflows/manager_approval.json`
-- **GET /api/log-entries/photo-limit (get_photo_limit)** (1 connections) — `api/routers/log_entries.py`
+- **Pattern 3: $input.item - Current Item (Each Item Mode)** (6 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Add Processing Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Per-Item Validation** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Item-Specific API Call** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 4: Conditional Processing** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// In "Run Once for Each Item" mode)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Code: Preveri Slike Stanje]] (3 shared connections)
-- [[API.reports.downloadHistoryPdf()]] (3 shared connections)
-- [[GET /log-entries/{id}/photos/{pid}/file]] (2 shared connections)
-- [[Community 435]] (1 shared connections)
-- [[list_pending_entries.py]] (1 shared connections)
-- [[analytics_summary()]] (1 shared connections)
-- [[BelPro Project Memory Public Index]] (1 shared connections)
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
+- [[Community 410]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `api/routers/reports.py`
-- `n8n/workflows/manager_approval.json`
-- `n8n/workflows/monthly_reports.json`
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (80%)
-- INFERRED: 7 (20%)
+- EXTRACTED: 21 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,28 +1,29 @@
 # 007_add_ngo_davcna.py
 
-> 19 nodes
+> 20 nodes
 
 ## Key Concepts
 
-- **API Python Dependencies requirements.txt** (5 connections) — `api/requirements.txt`
-- **Security Testing Reference** (4 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Version Bump Skill** (4 connections) — `.claude/skills/version-bump/SKILL.md`
-- **EMSO Encryption Key Rotation Procedure EN** (4 connections) — `docs/emso_key_rotation.md`
-- **GitHub Pull Request Template** (3 connections) — `.github/pull_request_template.md`
-- **FastAPI** (2 connections) — `api/requirements.txt`
-- **Cryptography Library AES-256 EMSO** (2 connections) — `api/requirements.txt`
-- **Authentication Security Tests** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Authorization Tests IDOR Privilege Escalation** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Input Validation and Injection Tests** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **CHANGELOG Update Procedure** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Pre-commit Review Step Version Bump** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **GitHub Bug Report Issue Template** (1 connections) — `.github/ISSUE_TEMPLATE/bug_report.md`
-- **GitHub Feature Request Issue Template** (1 connections) — `.github/ISSUE_TEMPLATE/feature_request.md`
-- **EMSO Encryption Key Rotation Procedure SL** (1 connections) — `docs/emso_key_rotation_sl.md`
-- **WeasyPrint PDF generation** (1 connections) — `api/requirements.txt`
-- **SQLAlchemy 2.x ORM** (1 connections) — `api/requirements.txt`
-- **Alembic Migrations** (1 connections) — `api/requirements.txt`
-- **rotate_emso_key.sh and rotate_emso_key.py** (1 connections) — `docs/emso_key_rotation.md`
+- **test_graphify_infra.py** (18 connections) — `tests/test_graphify_infra.py`
+- **load()** (13 connections) — `tests/test_graphify_infra.py`
+- **edge_triples()** (5 connections) — `tests/test_graphify_infra.py`
+- **node_ids()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_service_nodes_created()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_depends_on_dict_format()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_depends_on_list_format()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_env_url_calls_edges()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_nginx_proxies_to_edge()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_existing_nodes_preserved()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_skeleton_node_is_upgraded()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_node_has_required_fields()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_edges_are_extracted_confidence_1()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_idempotent_nodes()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_idempotent_edges()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_no_self_calls()** (2 connections) — `tests/test_graphify_infra.py`
+- **tmp_graph()** (1 connections) — `tests/test_graphify_infra.py`
+- **test_missing_graph_file_raises()** (1 connections) — `tests/test_graphify_infra.py`
+- **Tests for scripts/graphify_infra.py — inject Docker service topology into graph.** (1 connections) — `tests/test_graphify_infra.py`
+- **Pre-existing node with matching ID but no file_type gets patched.** (1 connections) — `tests/test_graphify_infra.py`
 
 ## Relationships
 
@@ -30,19 +31,12 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/security-testing.md`
-- `.claude/skills/version-bump/SKILL.md`
-- `.github/ISSUE_TEMPLATE/bug_report.md`
-- `.github/ISSUE_TEMPLATE/feature_request.md`
-- `.github/pull_request_template.md`
-- `api/requirements.txt`
-- `docs/emso_key_rotation.md`
-- `docs/emso_key_rotation_sl.md`
+- `tests/test_graphify_infra.py`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (67%)
-- INFERRED: 12 (33%)
+- EXTRACTED: 74 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

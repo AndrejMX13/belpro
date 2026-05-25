@@ -4,38 +4,45 @@
 
 ## Key Concepts
 
-- **Task 1: Test Infrastructure** (10 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.1 — Create `belpro_test` database** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.2 — Create `api/.env.test`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.3 — Create `api/requirements-test.txt`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.4 — Create `api/pyproject.toml`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.5 — Create `api/tests/__init__.py`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.6 — Create `api/tests/conftest.py`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.7 — Install test dependencies** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.8 — Verify infrastructure with a dry run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 1.9 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (docker compose exec postgres psql -U belpro -c "CREATE DATAB)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:dotenv (# Test database — separate from production belpro DB)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:block3 (pytest>=8.0)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:toml ([tool.pytest.ini_options])** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# Load test env BEFORE any app imports — must be the very fi)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/.env.test api/requirements-test.txt api/pyprojec)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **API Python Dependencies requirements.txt** (5 connections) — `api/requirements.txt`
+- **Security Testing Reference** (4 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Version Bump Skill** (4 connections) — `.claude/skills/version-bump/SKILL.md`
+- **EMSO Encryption Key Rotation Procedure EN** (4 connections) — `docs/emso_key_rotation.md`
+- **GitHub Pull Request Template** (3 connections) — `.github/pull_request_template.md`
+- **FastAPI** (2 connections) — `api/requirements.txt`
+- **Cryptography Library AES-256 EMSO** (2 connections) — `api/requirements.txt`
+- **Authentication Security Tests** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Authorization Tests IDOR Privilege Escalation** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Input Validation and Injection Tests** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **CHANGELOG Update Procedure** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Pre-commit Review Step Version Bump** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **GitHub Bug Report Issue Template** (1 connections) — `.github/ISSUE_TEMPLATE/bug_report.md`
+- **GitHub Feature Request Issue Template** (1 connections) — `.github/ISSUE_TEMPLATE/feature_request.md`
+- **EMSO Encryption Key Rotation Procedure SL** (1 connections) — `docs/emso_key_rotation_sl.md`
+- **WeasyPrint PDF generation** (1 connections) — `api/requirements.txt`
+- **SQLAlchemy 2.x ORM** (1 connections) — `api/requirements.txt`
+- **Alembic Migrations** (1 connections) — `api/requirements.txt`
+- **rotate_emso_key.sh and rotate_emso_key.py** (1 connections) — `docs/emso_key_rotation.md`
 
 ## Relationships
 
-- [[Community 392]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/test-master/references/security-testing.md`
+- `.claude/skills/version-bump/SKILL.md`
+- `.github/ISSUE_TEMPLATE/bug_report.md`
+- `.github/ISSUE_TEMPLATE/feature_request.md`
+- `.github/pull_request_template.md`
+- `api/requirements.txt`
+- `docs/emso_key_rotation.md`
+- `docs/emso_key_rotation_sl.md`
 
 ## Audit Trail
 
-- EXTRACTED: 37 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 24 (67%)
+- INFERRED: 12 (33%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Testing Scheduled Workflows** (5 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **1. Use Manual Trigger for Testing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **2. Test with Different Times** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **3. Dry Run Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **4. Shorter Interval for Testing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block28 (Manual Trigger (for testing))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// Code node - simulate different times)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block30 (Schedule → Set (dryRun: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// Testing: every 1 minute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 4: $node - Reference Other Nodes** (5 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Access Node Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const oldData = $node["Get Old Data"].json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get data from specific execution path)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 410]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

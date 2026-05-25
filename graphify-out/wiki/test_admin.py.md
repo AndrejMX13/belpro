@@ -1,47 +1,47 @@
 # test_admin.py
 
-> 47 nodes
+> 49 nodes
 
 ## Key Concepts
 
-- **Progressive Disclosure** (7 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **User Guides & Tutorials** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Step-by-Step Tutorial** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Check for extra spaces** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Progressive Learning Path** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Task-Based Writing** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Diagram Integration** (4 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Tutorial Structure** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Writing Techniques** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Visual Communication** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **user-guides-tutorials.md** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Information Architecture** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Content Hierarchy** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Screenshot Annotations** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Troubleshooting Guides** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Problem-Solution Format** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **FAQ Section** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:markdown (# Getting Started with API)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block3** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block4** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:markdown (# Tutorial: Building a User Dashboard)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block6** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block7** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block8** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- *... and 22 more nodes in this community*
+- **connections** (19 connections) — `n8n/workflows/manager_approval.json`
+- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
+- **activeVersion** (12 connections) — `n8n/workflows/manager_approval.json`
+- **Execute Workflow Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Manual Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Parse Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Switch: Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /approve** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /reject** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Volunteer Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Notify Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Manager Confirm** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Confirm to Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Pending Entries** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Check Next Entry** (3 connections) — `n8n/workflows/manager_approval.json`
+- **IF: Should Notify?** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /notify** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Next Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Fetch Config** (2 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- *... and 24 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[report_pdf.py]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- `n8n/workflows/manager_approval.json`
 
 ## Audit Trail
 
-- EXTRACTED: 92 (100%)
+- EXTRACTED: 130 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

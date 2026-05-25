@@ -4,44 +4,37 @@
 
 ## Key Concepts
 
-- **manager_approval.json** (31 connections) — `n8n/workflows/manager_approval.json`
-- **pinData** (2 connections) — `n8n/workflows/manager_approval.json`
-- **updatedAt** (1 connections) — `n8n/workflows/manager_approval.json`
-- **createdAt** (1 connections) — `n8n/workflows/manager_approval.json`
-- **id** (1 connections) — `n8n/workflows/manager_approval.json`
-- **name** (1 connections) — `n8n/workflows/manager_approval.json`
-- **description** (1 connections) — `n8n/workflows/manager_approval.json`
-- **active** (1 connections) — `n8n/workflows/manager_approval.json`
-- **isArchived** (1 connections) — `n8n/workflows/manager_approval.json`
-- **nodes** (1 connections) — `n8n/workflows/manager_approval.json`
-- **staticData** (1 connections) — `n8n/workflows/manager_approval.json`
-- **meta** (1 connections) — `n8n/workflows/manager_approval.json`
-- **Manual Trigger** (1 connections) — `n8n/workflows/manager_approval.json`
-- **versionId** (1 connections) — `n8n/workflows/manager_approval.json`
-- **activeVersionId** (1 connections) — `n8n/workflows/manager_approval.json`
-- **versionCounter** (1 connections) — `n8n/workflows/manager_approval.json`
-- **triggerCount** (1 connections) — `n8n/workflows/manager_approval.json`
-- **shared** (1 connections) — `n8n/workflows/manager_approval.json`
-- **tags** (1 connections) — `n8n/workflows/manager_approval.json`
+- **Database Design** (10 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Normalization Levels** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Primary and Foreign Keys** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Constraints and Validation** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Indexing Strategy** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Common Design Patterns** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Temporal/Historical Data** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Soft Deletes** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Audit Trails** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **database-design.md** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- 1NF: Atomic values, no repeating groups)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Natural vs Surrogate keys)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- CHECK constraints)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Index foreign keys (critical for JOIN performance))** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Polymorphic associations (flexible but harder to enforce )** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Slowly Changing Dimension Type 2 (SCD2) - Full history)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Soft delete pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Audit table pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Schema Design Best Practices** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
 
 ## Relationships
 
-- [[API.reports.downloadHistoryPdf()]] (5 shared connections)
-- [[make_text_payload()]] (2 shared connections)
-- [[004_log_entry_photos.py]] (2 shared connections)
-- [[Community 451]] (1 shared connections)
-- [[Community 414]] (1 shared connections)
-- [[Code: Preveri Slike Stanje]] (1 shared connections)
-- [[n8n Set Node Pattern]] (1 shared connections)
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/manager_approval.json`
+- `.claude/skills/sql-pro/references/database-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (100%)
+- EXTRACTED: 36 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

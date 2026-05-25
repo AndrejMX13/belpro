@@ -1,20 +1,19 @@
 # Community 316
 
-> 11 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **Kubernetes Manifests** (6 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Complete Deployment Stack** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **ConfigMap and Secrets** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Horizontal Pod Autoscaler** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Common kubectl Commands** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **kubernetes.md** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:yaml (apiVersion: v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:yaml (apiVersion: autoscaling/v2)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:bash (kubectl apply -f deployment.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Coming up — v1.0** (6 connections) — `ROADMAP.md`
+- **BelPro Roadmap** (4 connections) — `ROADMAP.md`
+- **ROADMAP.md** (1 connections) — `ROADMAP.md`
+- **Reliability** (1 connections) — `ROADMAP.md`
+- **Manager experience** (1 connections) — `ROADMAP.md`
+- **Security & data protection** (1 connections) — `ROADMAP.md`
+- **System architecture** (1 connections) — `ROADMAP.md`
+- **Polish** (1 connections) — `ROADMAP.md`
+- **Done** (1 connections) — `ROADMAP.md`
+- **On the radar (post-1.0)** (1 connections) — `ROADMAP.md`
 
 ## Relationships
 
@@ -22,11 +21,11 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/kubernetes.md`
+- `ROADMAP.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **BelPro Version-Bump Skill Design** (0 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Superpowers Claude Code Plugin** (0 connections) — `README.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- `README.md`
 
 ## Audit Trail
 

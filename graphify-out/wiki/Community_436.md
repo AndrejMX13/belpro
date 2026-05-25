@@ -4,14 +4,14 @@
 
 ## Key Concepts
 
-- **Test Master** (6 connections) — `.claude/skills/test-master/SKILL.md`
-- **Quick-Start Example** (2 connections) — `.claude/skills/test-master/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **code:js (// ✅ Good: meaningful description, specific assertion, isola)** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Constraints** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **test_config.py** (4 connections) — `api/tests/test_config.py`
+- **test_get_evolution_instance_no_auth_required()** (2 connections) — `api/tests/test_config.py`
+- **test_get_evolution_instance_returns_instance_name()** (2 connections) — `api/tests/test_config.py`
+- **test_get_evolution_instance_reflects_db_value()** (2 connections) — `api/tests/test_config.py`
+- **Tests for the public config endpoint consumed by n8n workflows.** (1 connections) — `api/tests/test_config.py`
+- **GET /api/config/evolution-instance is publicly accessible.** (1 connections) — `api/tests/test_config.py`
+- **Response contains a non-empty instance_name string matching the seeded default.** (1 connections) — `api/tests/test_config.py`
+- **Config endpoint reflects value updated via PATCH /api/admin/settings.** (1 connections) — `api/tests/test_config.py`
 
 ## Relationships
 
@@ -19,7 +19,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/SKILL.md`
+- `api/tests/test_config.py`
 
 ## Audit Trail
 

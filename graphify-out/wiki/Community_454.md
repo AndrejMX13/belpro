@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **6. Available Node.js Modules** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **crypto Module** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Buffer (built-in)** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **URL / URLSearchParams** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const crypto = require('crypto');)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Base64 encoding)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Parse URL)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Pattern: Safe Nested Access** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Pattern: List Comprehension with Filtering** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Pattern: Dictionary Comprehension** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Deep nested access with .get())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 547]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 

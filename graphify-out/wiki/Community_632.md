@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Codebase context (read before any task)** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block1 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block2 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block3 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Detailed Guides** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Node Discovery Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Validation Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Workflow Management** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 535]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

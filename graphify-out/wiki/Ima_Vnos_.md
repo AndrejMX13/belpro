@@ -4,34 +4,33 @@
 
 ## Key Concepts
 
-- **VolunteerUpdate** (14 connections) — `api/schemas/volunteer.py`
-- **test_volunteer_update_schema.py** (11 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_rejects_empty_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_rejects_empty_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_email_string()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_coerces_empty_email_to_none()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_none_email()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_normalises_phone()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_all_none_produces_empty_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_first_name_included_in_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **Fields that can be updated on an existing volunteer.** (1 connections) — `api/schemas/volunteer.py`
-- **Unit tests for VolunteerUpdate schema — no DB required.** (1 connections) — `api/tests/test_volunteer_update_schema.py`
+- **Tool Configuration** (7 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Database as Tool** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Making ANY Node an AI Tool** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Pre-built Tool Nodes** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **MCP Client Tool** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **AI Agent Tool (Sub-Agents)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Code Node as Tool** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block12 (AI Agent)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:sql (CREATE USER ai_readonly WITH PASSWORD 'secure_password';)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Tool metadata)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (3 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
-- `api/tests/test_volunteer_update_schema.py`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (55%)
-- INFERRED: 21 (45%)
+- EXTRACTED: 27 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

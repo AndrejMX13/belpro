@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_docker_exec_patterns.md** (0 connections) — `.claude/memory/feedback_docker_exec_patterns.md`
+- **merge_ast_semantic.py** (0 connections) — `scripts/graphify/merge_ast_semantic.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_docker_exec_patterns.md`
+- `scripts/graphify/merge_ast_semantic.py`
 
 ## Audit Trail
 

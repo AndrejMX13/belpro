@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_superpowers_discipline.md** (0 connections) — `.claude/memory/feedback_superpowers_discipline.md`
+- **feedback_issue_workflow.md** (0 connections) — `.claude/memory/feedback_issue_workflow.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_superpowers_discipline.md`
+- `.claude/memory/feedback_issue_workflow.md`
 
 ## Audit Trail
 

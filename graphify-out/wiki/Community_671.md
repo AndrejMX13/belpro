@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **8. Using Expressions in Code Nodes** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:javascript (const email = '{{$json.email}}';)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:javascript (const email = $json.email;)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **13. Forgetting .json in $node Reference** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block27 ({{$node["HTTP Request"].data}}          // Missing .json)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block28 ({{$node["HTTP Request"].json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 

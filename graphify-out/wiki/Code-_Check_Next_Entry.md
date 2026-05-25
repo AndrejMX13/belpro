@@ -4,35 +4,35 @@
 
 ## Key Concepts
 
-- **n8n_manage_credentials (CREDENTIAL MANAGEMENT)** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **List Credentials** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Get Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Discover Schema** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Create Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Update Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Delete Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Typical Workflow: Set Up Credentials for a New Integration** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **6 Actions** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({action: "list"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({action: "get", id: "123"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({action: "delete", id: "123"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// 1. Discover what fields are needed)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Security Notes** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **DevOps Engineer** (8 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Output Templates** (4 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Minimal GitHub Actions Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Minimal Dockerfile Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Rollback Procedure Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Role Definition** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **code:yaml (name: CI)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **code:dockerfile (FROM python:3.12-slim AS builder)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **code:bash (# Kubernetes: roll back to previous deployment revision)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `.claude/skills/devops-engineer/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 33 (100%)
+- EXTRACTED: 32 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

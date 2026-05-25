@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Module 9: statistics - Statistical Functions** (3 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Basic Statistics** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Aggregate from Items** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Return Format Requirements** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Correct Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Incorrect Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ Single result)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ❌ WRONG: Dictionary without list wrapper)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

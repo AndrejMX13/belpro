@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **14. String Concatenation Confusion** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block29 (`Hello ${$json.name}!`          // Template literal syntax)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block30 (Hello {{$json.name}}!           // n8n expressions auto-conc)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **6. Double Wrapping** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block12 ({{{$json.field}}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block13 ({{$json.field}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 

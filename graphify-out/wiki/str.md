@@ -1,35 +1,35 @@
 # str
 
-> 35 nodes
+> 36 nodes
 
 ## Key Concepts
 
-- **Async Programming Patterns** (12 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Asynchronous Patterns** (11 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **Async Generators** (4 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Promise Patterns** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Async/Await Best Practices** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (from asyncio import TaskGroup)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Error Handling Strategies** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (from typing import Self)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Promise Combinators** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (from collections.abc import AsyncIterator)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **code:python (# Async list comprehension)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Concurrent Queue Management** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Event Loop Understanding** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (from asyncio import Queue)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **AbortController for Cancellation** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (# Timeout for single operation)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Stream Processing** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
-- **code:python (from asyncio import create_task, Task)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Basic Async/Await** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Task Groups (Python 3.11+)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Async Context Managers** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Async Comprehensions** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Synchronization Primitives** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- *... and 10 more nodes in this community*
+- **Configuration Validation Tools Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Handling Validation Errors** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **validate_node (UNIFIED VALIDATION)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Quick Check (mode="minimal")** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Validation Response** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **validate_workflow (STRUCTURE VALIDATION)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Validation Loop Pattern** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Full Validation (mode="full", DEFAULT)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Validate by Workflow ID** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Auto-Sanitization System** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **n8n_autofix_workflow (AUTO-FIX TOOL)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Process** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Example: Complete Validation Workflow** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **VALIDATION_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Validation Philosophy** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Validation Profiles** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **Error Types** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:javascript (validate_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:javascript (// Validate workflow already in n8n)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **code:block7 (1. Configure node)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
@@ -37,12 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/async-patterns.md`
-- `.claude/skills/python-pro/references/async-patterns.md`
+- `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
 
 ## Audit Trail
 
-- EXTRACTED: 86 (100%)
+- EXTRACTED: 70 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

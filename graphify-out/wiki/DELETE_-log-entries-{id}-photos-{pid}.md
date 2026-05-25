@@ -4,36 +4,35 @@
 
 ## Key Concepts
 
-- **Common Mistakes** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 1: Wrong nodeType Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 2: Using detail="full" by Default** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 3: Using n8n_get_workflow mode="full" for Large Workflows** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 4: Not Using Validation Profiles** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 4: Ignoring Auto-Sanitization** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 7: Wrong Parameter Name for updateNode** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 8: Wrong Credential Attachment Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 6: Not Using intent Parameter** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - Returns 3-8K tokens, use sparingly)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG — 58-node workflow, every parameter bloated)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - Uses default profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// After ANY update, auto-sanitization runs on ALL nodes)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - credentials as flat object)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - No context for response)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **3. type_mismatch** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: String Instead of Number** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: Number Instead of String** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 3: Boolean as String** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 4: Object Instead of Array** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
-- [[Community 677]] (1 shared connections)
+- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 33 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

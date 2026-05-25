@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **BelPro — Diagram komponent** (2 connections) — `docs/images/belpro-arhitektura-komponente.md`
-- **belpro-arhitektura-komponente.md** (1 connections) — `docs/images/belpro-arhitektura-komponente.md`
-- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-arhitektura-komponente.md`
+- **unacknowledged_count** (2 connections) — `api/routers/errors.py`
+- **loadHealthWidget** (1 connections) — `frontend/js/errors.js`
+- **refreshErrorBadge** (1 connections) — `frontend/js/errors.js`
 
 ## Relationships
 
@@ -14,12 +14,13 @@
 
 ## Source Files
 
-- `docs/images/belpro-arhitektura-komponente.md`
+- `api/routers/errors.py`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 2 (50%)
+- INFERRED: 2 (50%)
 - AMBIGUOUS: 0 (0%)
 
 ---

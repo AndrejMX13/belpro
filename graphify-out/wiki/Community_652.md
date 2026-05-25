@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **BelPro — Diagram komponent** (2 connections) — `docs/images/belpro-arhitektura-komponente.md`
+- **belpro-arhitektura-komponente.md** (1 connections) — `docs/images/belpro-arhitektura-komponente.md`
+- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-arhitektura-komponente.md`
 
 ## Relationships
 
-- [[loadAppLog()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `docs/images/belpro-arhitektura-komponente.md`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

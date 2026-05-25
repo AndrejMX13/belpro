@@ -4,15 +4,15 @@
 
 ## Key Concepts
 
-- **Pattern 4: JSON Comparison & Validation** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Pattern 7: Array Transformation with Context** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 - **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 - **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Compare and validate JSON objects from different sources)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Simple equality check)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Transform releases with contextual information)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Add ranking)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 415]] (1 shared connections)
+- [[Community 409]] (1 shared connections)
 
 ## Source Files
 

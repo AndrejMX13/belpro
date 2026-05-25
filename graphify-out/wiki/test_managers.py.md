@@ -1,48 +1,57 @@
 # test_managers.py
 
-> 31 nodes
+> 32 nodes
 
 ## Key Concepts
 
-- **Task 3: Documentation** (14 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **File Map** (5 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **Task 2: Bash wrapper script** (5 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **EMŠO Key Rotation Script Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **Task 1: Python rotation script** (4 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **Task 0: Patch test volunteers with valid EMŠOs (dev only)** (3 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **2026-05-18-rotate-emso-key.md** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **Pre-requisite: test data preparation** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (docker compose exec -T api python - <<'PYEOF')** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (docker compose exec -T api python - <<'PYEOF')** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (python -m py_compile api/scripts/rotate_emso_key.py && echo )** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (git add api/scripts/rotate_emso_key.py)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (bash -n scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (chmod +x scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:bash (git add scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:markdown (### Rotacija ključa za šifriranje EMŠO)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:block11** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:block12** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:block13** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:block14 (├── scripts/                # Skripte: setup.sh, upgrade.sh,)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:block15 (├── scripts/                # Skripte: setup.sh, upgrade.sh,)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:markdown (### EMŠO Key Rotation)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- **code:block17** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- *... and 6 more nodes in this community*
+- **renderLogEntryDetail()** (18 connections) — `frontend/js/volunteers.js`
+- **route()** (14 connections) — `frontend/js/volunteers.js`
+- **renderDetail()** (14 connections) — `frontend/js/volunteers.js`
+- **renderDetail() — volunteer detail page** (6 connections) — `frontend/js/volunteers.js`
+- **GET /volunteers/{id}** (4 connections) — `api/routers/volunteers.py`
+- **fmtHours()** (3 connections) — `frontend/js/volunteers.js`
+- **fmtDatetime()** (3 connections) — `frontend/js/volunteers.js`
+- **PATCH /log-entries/{id}/approve** (3 connections) — `api/routers/log_entries.py`
+- **PATCH /log-entries/{id}/reject** (3 connections) — `api/routers/log_entries.py`
+- **revokePhotoUrls()** (2 connections) — `frontend/js/volunteers.js`
+- **API.volunteers.get()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.update()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.delete()** (2 connections) — `frontend/js/api.js`
+- **API.logEntries.create()** (2 connections) — `frontend/js/api.js`
+- **DELETE /volunteers/{id}** (2 connections) — `api/routers/volunteers.py`
+- **PATCH /volunteers/{id}** (2 connections) — `api/routers/volunteers.py`
+- **POST /log-entries** (2 connections) — `api/routers/log_entries.py`
+- **GET /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
+- **PATCH /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
+- **DELETE /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
+- **POST /log-entries/{id}/photos** (2 connections) — `api/routers/log_entries.py`
+- **GET /log-entries/{id}/photos/{pid}/file** (2 connections) — `api/routers/log_entries.py`
+- **DELETE /log-entries/{id}/photos/{pid}** (2 connections) — `api/routers/log_entries.py`
+- **VolunteerDetailResponse shape (emso_masked, log_entries[], hours_this_month)** (2 connections) — `api/routers/volunteers.py`
+- **API.logEntries.get()** (1 connections) — `frontend/js/api.js`
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[make_text_payload()]] (21 shared connections)
+- [[loadReports()]] (3 shared connections)
+- [[__init__.py]] (2 shared connections)
+- [[Community 358]] (1 shared connections)
+- [[Day of month (1–28) on which monthly reports are auto-sent.]] (1 shared connections)
+- [[001_initial_schema.py]] (1 shared connections)
+- [[API.health.basic()]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- `api/routers/log_entries.py`
+- `api/routers/volunteers.py`
+- `frontend/js/api.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 60 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 99 (93%)
+- INFERRED: 7 (7%)
 - AMBIGUOUS: 0 (0%)
 
 ---

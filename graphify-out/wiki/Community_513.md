@@ -4,35 +4,24 @@
 
 ## Key Concepts
 
-- **Common Patterns - Python Code Node** (17 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **COMMON_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Pattern Overview** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **When to Use Each Pattern** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Two workarounds** (3 connections) — `.claude/memory/feedback_graphify_html.md`
+- **1. Aggregated community meta-graph (recommended)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
+- **2. Raise the env-var limit (full graph, slow)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
+- **feedback_graphify_html.md** (1 connections) — `.claude/memory/feedback_graphify_html.md`
+- **code:python (import json)** (1 connections) — `.claude/memory/feedback_graphify_html.md`
+- **code:powershell ($env:GRAPHIFY_VIZ_NODE_LIMIT = "10000")** (1 connections) — `.claude/memory/feedback_graphify_html.md`
 
 ## Relationships
 
-- [[Community 617]] (1 shared connections)
-- [[Community 623]] (1 shared connections)
-- [[Community 624]] (1 shared connections)
-- [[Community 618]] (1 shared connections)
-- [[Community 619]] (1 shared connections)
-- [[Community 626]] (1 shared connections)
-- [[Community 625]] (1 shared connections)
-- [[Community 620]] (1 shared connections)
-- [[Community 621]] (1 shared connections)
-- [[Community 622]] (1 shared connections)
-- [[Community 367]] (1 shared connections)
-- [[Community 285]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `.claude/memory/feedback_graphify_html.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 10 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

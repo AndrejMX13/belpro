@@ -4,15 +4,15 @@
 
 ## Key Concepts
 
-- **ViewSet → APIRouter Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django REST Framework ViewSet** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI APIRouter with Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django DRF ViewSet)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# FastAPI APIRouter)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Authentication: SimpleJWT → FastAPI JWT** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django SimpleJWT** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI JWT Authentication** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django settings.py)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# auth.py - FastAPI JWT implementation)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 

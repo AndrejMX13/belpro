@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Tool Usage Patterns** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Pattern 1: Node Discovery (Most Common)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Pattern 2: Validation Loop** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Pattern 3: Workflow Editing** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Step 1: Search (fast!))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Step 1: Validate)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Iterative workflow building (NOT one-shot!))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Critical: nodeType Formats** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Format 1: Search/Validate Tools** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Format 2: Workflow Tools** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Conversion** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Use SHORT prefix)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Use FULL prefix)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// search_nodes returns BOTH formats)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (1 shared connections)
 
 ## Source Files
 

@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Security Testing** (7 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Authentication Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Authorization Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Input Validation Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Security Headers Test** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **security-testing.md** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Authentication Security', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Authorization', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Input Validation', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Security Headers', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Security Test Checklist** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Volunteer Contact Info — Inline Edit** (7 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Design** (4 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Backend changes** (2 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **2026-05-10-volunteer-contact-inline-edit-design.md** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Edit zones** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Interaction flow** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Error handling** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **code:python (first_name: str | None = None        # min_length=1 if provi)** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Frontend changes** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **What does not change** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
 
 ## Relationships
 
@@ -23,7 +23,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/security-testing.md`
+- `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
 
 ## Audit Trail
 

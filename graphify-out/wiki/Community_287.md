@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Common Mistakes** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Mistake 1: Using _json Without Context** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Mistake 2: Forgetting ["json"] Property** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Mistake 3: Using _input.item in All Items Mode** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Mistake 4: Not Handling Empty Lists** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Mistake 5: Direct Dictionary Access (KeyError)** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# ❌ RISKY: _json is ambiguous)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# ❌ WRONG: Trying to access fields on item dictionary)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# ❌ WRONG: _input.item is None in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# ❌ WRONG: Crashes if no items)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# ❌ RISKY: Crashes if key missing)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Quick Reference** (6 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Data Access** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Webhook Data** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Safe Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Return Format** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Standard Library** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (# ✅ Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (# ✅ Correct format)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (# ✅ Available)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[Community 417]] (1 shared connections)
+- [[Community 288]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

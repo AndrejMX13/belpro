@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **TypeScript JSDoc** (8 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Function Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Interface Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Generic Types** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Async Functions** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Common Patterns** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **typescript-jsdoc.md** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (// Optional parameters)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **BelPro Project Memory — Public Index** (14 connections) — `.claude/memory/MEMORY.md`
+- **MEMORY.md** (1 connections) — `.claude/memory/MEMORY.md`
+- **Conventions & Naming** (1 connections) — `.claude/memory/MEMORY.md`
+- **Packaging & Dependencies** (1 connections) — `.claude/memory/MEMORY.md`
+- **Docker & Dev Environment** (1 connections) — `.claude/memory/MEMORY.md`
+- **Tooling — Serena** (1 connections) — `.claude/memory/MEMORY.md`
+- **Tooling — Diagrams** (1 connections) — `.claude/memory/MEMORY.md`
+- **Tooling — graphify** (1 connections) — `.claude/memory/MEMORY.md`
+- **n8n Workflows** (1 connections) — `.claude/memory/MEMORY.md`
+- **Infrastructure** (1 connections) — `.claude/memory/MEMORY.md`
+- **Git & Commits** (1 connections) — `.claude/memory/MEMORY.md`
+- **Architecture** (1 connections) — `.claude/memory/MEMORY.md`
+- **Release** (1 connections) — `.claude/memory/MEMORY.md`
+- **Superpowers** (1 connections) — `.claude/memory/MEMORY.md`
+- **Project State** (1 connections) — `.claude/memory/MEMORY.md`
 
 ## Relationships
 
@@ -26,7 +26,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- `.claude/memory/MEMORY.md`
 
 ## Audit Trail
 

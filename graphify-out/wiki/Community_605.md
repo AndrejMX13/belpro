@@ -4,14 +4,14 @@
 
 ## Key Concepts
 
-- **[0.9.5] — 2026-05-11** (4 connections) — `CHANGELOG.md`
+- **[0.10.0-beta.1] — 2026-05-15** (4 connections) — `CHANGELOG.md`
 - **Added** (1 connections) — `CHANGELOG.md`
 - **Changed** (1 connections) — `CHANGELOG.md`
 - **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 

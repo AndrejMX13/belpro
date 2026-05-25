@@ -4,31 +4,29 @@
 
 ## Key Concepts
 
-- **Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Recovery Patterns** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Pattern 1: Progressive Validation** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Pattern 2: Error Triage** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Pattern 3: Use get_node** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **ERROR_CATALOG.md** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Error Types Overview** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (// Step 1: Minimal valid config)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (const result = validate_node({...});)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (// Before configuring, check requirements)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Performance Optimization** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Choose Right Model** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Limit Context Window** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Optimize Tool Descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Cache Embeddings** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Async Tools for Slow Operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block30 (Fast & cheap: GPT-3.5-turbo, Claude 3 Haiku)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// ❌ Vague)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block33 (Setup (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block34 (AI Agent → [Queue slow tool request])** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[API.auth.login()]] (1 shared connections)
-- [[GET /log-entries/{id}]] (1 shared connections)
-- [[Community 422]] (1 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

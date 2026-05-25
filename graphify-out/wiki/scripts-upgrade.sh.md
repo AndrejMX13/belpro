@@ -4,44 +4,40 @@
 
 ## Key Concepts
 
-- **gen_architecture_docx.js** (22 connections) — `scripts/gen_architecture_docx.js`
-- **spacer()** (8 connections) — `scripts/gen_architecture_docx.js`
-- **systemArchitecture()** (7 connections) — `scripts/gen_architecture_docx.js`
-- **main()** (7 connections) — `scripts/gen_architecture_docx.js`
-- **heading1()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **body()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **whatIsBelpro()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **volunteerJourney()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **monthlyReporting()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **stepParagraph()** (5 connections) — `scripts/gen_architecture_docx.js`
-- **privacyCompliance()** (5 connections) — `scripts/gen_architecture_docx.js`
-- **heading2()** (4 connections) — `scripts/gen_architecture_docx.js`
-- **borders()** (3 connections) — `scripts/gen_architecture_docx.js`
-- **coverPage()** (3 connections) — `scripts/gen_architecture_docx.js`
-- **border()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **cell()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **featureTable()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **componentTable()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **complianceTable()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **{
-  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
-  Header, Footer, AlignmentType, HeadingLevel, BorderStyle, WidthType,
-  ShadingType, VerticalAlign, PageNumber, PageBreak, LevelFormat,
-}** (1 connections) — `scripts/gen_architecture_docx.js`
-- **fs** (1 connections) — `scripts/gen_architecture_docx.js`
-- **noBorders()** (1 connections) — `scripts/gen_architecture_docx.js`
+- **Testing with Pytest** (11 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Basic Pytest Structure** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Fixtures for Setup/Teardown** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Parametrize for Multiple Cases** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Mocking and Patching** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Async Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Pytest Markers** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Coverage** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Property-Based Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Organization** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Snapshot Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **testing.md** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# test_user.py)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# conftest.py - shared fixtures)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (from unittest.mock import Mock, MagicMock, patch, AsyncMock,)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# Run with coverage)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (from hypothesis import given, strategies as st)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# tests/)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
 
 ## Relationships
 
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `scripts/gen_architecture_docx.js`
+- `.claude/skills/python-pro/references/testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 107 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

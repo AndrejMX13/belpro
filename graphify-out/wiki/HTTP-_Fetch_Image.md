@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **BelPro Project Memory — Public Index** (14 connections) — `.claude/memory/MEMORY.md`
-- **MEMORY.md** (1 connections) — `.claude/memory/MEMORY.md`
-- **Conventions & Naming** (1 connections) — `.claude/memory/MEMORY.md`
-- **Packaging & Dependencies** (1 connections) — `.claude/memory/MEMORY.md`
-- **Docker & Dev Environment** (1 connections) — `.claude/memory/MEMORY.md`
-- **Tooling — Serena** (1 connections) — `.claude/memory/MEMORY.md`
-- **Tooling — Diagrams** (1 connections) — `.claude/memory/MEMORY.md`
-- **Tooling — graphify** (1 connections) — `.claude/memory/MEMORY.md`
-- **n8n Workflows** (1 connections) — `.claude/memory/MEMORY.md`
-- **Infrastructure** (1 connections) — `.claude/memory/MEMORY.md`
-- **Git & Commits** (1 connections) — `.claude/memory/MEMORY.md`
-- **Architecture** (1 connections) — `.claude/memory/MEMORY.md`
-- **Release** (1 connections) — `.claude/memory/MEMORY.md`
-- **Superpowers** (1 connections) — `.claude/memory/MEMORY.md`
-- **Project State** (1 connections) — `.claude/memory/MEMORY.md`
+- **Task 5: Frontend — Renames + Two-Column Date Lists** (15 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (filter: { status: 'pending_manager', search_q: '', date_from)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (filter: { status: '', search_q: '', date_from: null, date_to)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (volunteerLogState.filter = { status: '', search_q: '', date_)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (function renderApprovalsThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="8">${msg})** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="5)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (function renderVolunteerLogThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="6">Ni vno)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="6)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<div class="detail-name">${esc(entry.entry_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<div class="detail-name">${esc(entry.work_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[API Client (api.js)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/MEMORY.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

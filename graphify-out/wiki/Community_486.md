@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Response Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Extract Nested Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Flatten Arrays** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Combine Multiple API Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - flatten nested array)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block41 (HTTP Request 1 (users))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Timezone Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Set Workflow Timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Common Timezones** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Handle Daylight Saving** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// In workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block14 (America/New_York    - Eastern (US))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// ❌ Bad: UTC schedule for "9 AM local")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

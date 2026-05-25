@@ -1,64 +1,48 @@
 # BelPro Project Memory Public Index
 
-> 40 nodes
+> 41 nodes
 
 ## Key Concepts
 
-- **LogEntry (ORM)** (22 connections) — `api/models/log_entry.py`
-- **log_entries.py** (17 connections) — `api/routers/log_entries.py`
-- **path** (17 connections) — `scripts/gen_architecture_docx.js`
-- **EntryStatus (Enum)** (15 connections) — `api/models/log_entry.py`
-- **LogEntryResponse (Schema)** (11 connections) — `api/schemas/log_entry.py`
-- **upload_photo_base64()** (10 connections) — `api/routers/log_entries.py`
-- **upload_photo()** (9 connections) — `api/routers/log_entries.py`
-- **create_log_entry()** (8 connections) — `api/routers/log_entries.py`
-- **LogEntryPhoto (ORM)** (8 connections) — `api/models/log_entry_photo.py`
-- **list_log_entries()** (7 connections) — `api/routers/log_entries.py`
-- **delete_log_entry()** (7 connections) — `api/routers/log_entries.py`
-- **approve_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **reject_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **notify_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **confirm_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **get_log_entry()** (5 connections) — `api/routers/log_entries.py`
-- **_extract_exif()** (4 connections) — `api/routers/log_entries.py`
-- **get_photo_file()** (4 connections) — `api/routers/log_entries.py`
-- **delete_photo()** (4 connections) — `api/routers/log_entries.py`
-- **PhotoResponse (Schema)** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryCreate (Schema)** (3 connections) — `api/schemas/log_entry.py`
-- **LogEntryBrief (Schema)** (3 connections) — `api/schemas/volunteer.py`
-- **get_photo_limit()** (2 connections) — `api/routers/log_entries.py`
-- **LogEntryListResponse (Schema)** (2 connections) — `api/schemas/log_entry.py`
-- **Log entries CRUD router — volunteer work diary entries.** (1 connections) — `api/routers/log_entries.py`
-- *... and 15 more nodes in this community*
+- **Release Automation** (13 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Artifact Management** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Feature Flags** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Multi-Platform CI/CD** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Build Optimization** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Build Optimization** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Container Registry Lifecycle** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Artifact Promotion** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **LaunchDarkly Integration** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Flagger Progressive Delivery** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **GitLab CI** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Jenkins Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Multi-stage Docker Build** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Parallel Testing** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Release Orchestration** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Dependency Management** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Renovate Auto-Update** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Build Caching Strategy** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Parallel CI Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Multi-Service Release Orchestration** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Advanced Artifact Management** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Zero-Downtime Database Migrations** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Release Metrics Dashboard** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **release-automation.md** (1 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **code:json ({)** (1 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
-- [[errors.py]] (8 shared connections)
-- [[Code: Procesiraj Popravek]] (6 shared connections)
-- [[analytics_summary()]] (6 shared connections)
-- [[005_report_prefs.py]] (4 shared connections)
-- [[Evolution API (API Gateway)]] (3 shared connections)
-- [[Code: Preveri Slike Stanje]] (3 shared connections)
-- [[send_monthly_reports()]] (3 shared connections)
-- [[API.reports.downloadHistoryPdf()]] (2 shared connections)
-- [[Porocila Page - Monthly Reports Overview]] (1 shared connections)
-- [[Community 414]] (1 shared connections)
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
-- [[LoginRequest (Schema)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/models/log_entry.py`
-- `api/models/log_entry_photo.py`
-- `api/routers/log_entries.py`
-- `api/schemas/log_entry.py`
-- `api/schemas/volunteer.py`
-- `scripts/gen_architecture_docx.js`
+- `.claude/skills/devops-engineer/references/release-automation.md`
 
 ## Audit Trail
 
-- EXTRACTED: 163 (81%)
-- INFERRED: 39 (19%)
+- EXTRACTED: 80 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

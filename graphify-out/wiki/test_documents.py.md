@@ -1,54 +1,48 @@
 # test_documents.py
 
-> 31 nodes
+> 32 nodes
 
 ## Key Concepts
 
-- **log_entry_factory()** (39 connections) — `api/tests/conftest.py`
-- **test_log_entries.py** (33 connections) — `api/tests/test_log_entries.py`
-- **test_list_entries_returns_created_entry()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_list_entries_filter_by_status()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_update_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_approve_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_approve_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_reject_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_reject_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_confirm_pending_volunteer_entry()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_confirm_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_status_cannot_go_from_approved_to_pending_manager()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_status_cannot_go_from_rejected_to_approved()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_delete_entry_happy_path()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_delete_pending_manager_entry_succeeds()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_delete_rejected_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_delete_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_update_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_photo_upload_unsupported_extension_returns_400_or_422()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_approve_pending_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_reject_pending_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_photo_limit_returns_default()** (2 connections) — `api/tests/test_log_entries.py`
-- **Returns an async callable that inserts a LogEntry row via flush.** (1 connections) — `api/tests/conftest.py`
-- **test_list_entries_empty()** (1 connections) — `api/tests/test_log_entries.py`
-- **test_get_entry_not_found()** (1 connections) — `api/tests/test_log_entries.py`
-- *... and 6 more nodes in this community*
+- **Performance Optimization** (9 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Index Strategies** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Query Optimization Patterns** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **EXPLAIN ANALYZE Fundamentals** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Reading EXPLAIN Output** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **B-tree Indexes (Default)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **GIN Indexes (JSONB, arrays, full-text)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **GiST Indexes (Spatial, ranges, nearest neighbor)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **BRIN Indexes (Large, naturally ordered tables)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Statistics and Planner** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Sequential scan on large table** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Index not used** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Large JOIN inefficiency** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: COUNT(*) slow** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Connection Pooling** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Configuration Tuning** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Performance Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **performance.md** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Basic EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:block2 (Seq Scan on users  (cost=0.00..1234.56 rows=10000 width=32))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Single column index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- JSONB containment)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- PostGIS spatial index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Time-series data (insert-only, sorted by time))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Update statistics (do after bulk changes))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
-- [[path]] (22 shared connections)
-- [[005_report_prefs.py]] (13 shared connections)
-- [[Community 349]] (3 shared connections)
-- [[analytics_summary()]] (3 shared connections)
-- [[Maximum photos allowed per log entry.]] (2 shared connections)
-- [[Community 405]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/conftest.py`
-- `api/tests/test_log_entries.py`
+- `.claude/skills/postgres-pro/references/performance.md`
 
 ## Audit Trail
 
-- EXTRACTED: 65 (46%)
-- INFERRED: 75 (54%)
+- EXTRACTED: 62 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

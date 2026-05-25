@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **hooks** (3 connections) — `.claude/settings.json`
-- **settings.json** (1 connections) — `.claude/settings.json`
-- **SessionStart** (1 connections) — `.claude/settings.json`
-- **PreToolUse** (1 connections) — `.claude/settings.json`
+- **[0.11.0-beta.0] — 2026-05-20** (4 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/settings.json`
+- `CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 6 (100%)
+- EXTRACTED: 7 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

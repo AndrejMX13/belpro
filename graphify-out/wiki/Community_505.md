@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **13. Avtomatizirana testna zbirka** (5 connections) — `SPEC_SL.md`
-- **Zagon** (2 connections) — `SPEC_SL.md`
-- **Infrastruktura** (1 connections) — `SPEC_SL.md`
-- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `SPEC_SL.md`
-- **Testne datoteke** (1 connections) — `SPEC_SL.md`
-- **Dimni test varnostnega kopiranja in obnovitve** (1 connections) — `SPEC_SL.md`
+- **13. Automated Test Suite** (5 connections) — `SPEC.md`
+- **Running** (2 connections) — `SPEC.md`
+- **Infrastructure** (1 connections) — `SPEC.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `SPEC.md`
+- **Test files** (1 connections) — `SPEC.md`
+- **Backup/restore smoke test** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[PATCH /api/log-entries/{id} (update_log_entry)]] (1 shared connections)
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `SPEC.md`
 
 ## Audit Trail
 

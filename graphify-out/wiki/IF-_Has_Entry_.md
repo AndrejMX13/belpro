@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **n8n MCP Tools Expert** (12 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Coverage** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Purpose** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Activates On** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **File Count** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Priority** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Dependencies** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Core Topics** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Tool Categories** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Evaluations** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Key Features** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Files** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **What You'll Learn** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **Last Updated** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Common Use Cases** (8 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. Daily Reports** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. Data Synchronization** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. Monitoring & Health Checks** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. Cleanup & Maintenance** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **5. Data Enrichment** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **6. Backup Automation** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **7. Content Publishing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block6 (1. Schedule (daily at 9 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block7 (1. Schedule (every hour))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block8 (1. Schedule (every 5 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block9 (1. Schedule (weekly on Sunday at 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block10 (1. Schedule (nightly at 3 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block11 (1. Schedule (daily at 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block12 (1. Schedule (every 3 hours during business hours))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/README.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

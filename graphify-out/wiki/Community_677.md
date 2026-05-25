@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Mistake 5: Not Using Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// IF node connection)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// IF node - semantic branch names)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **n8n_create_workflow** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_create_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_create_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[DELETE /log-entries/{id}/photos/{pid}]] (1 shared connections)
+- [[test_health_returns_ok()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

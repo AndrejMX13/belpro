@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **entrypoint.sh** (0 connections) — `ops/entrypoint.sh`
+- **Hour of day (0–23) at which the monthly report cron fires.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `ops/entrypoint.sh`
+- `api/services/app_settings.py`
 
 ## Audit Trail
 

@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Return Format Requirements** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Correct Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Incorrect Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ Single result)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ WRONG: Dictionary without list wrapper)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Return Format Requirements** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Correct Return Formats** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Incorrect Return Formats** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ Single result)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG: Object without array wrapper)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 

@@ -1,47 +1,47 @@
 # ops_server.py
 
-> 45 nodes
+> 46 nodes
 
 ## Key Concepts
 
-- **Task 4: ops_server.py + backup.sh** (14 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Task 6: README updates** (10 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Configurable Backup Retention Days Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Task 3: Tests** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Task 5: Frontend** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Task 1: AppSettings property + schemas** (4 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Task 2: Admin router** (4 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **2026-05-21-backup-retention-configurable.md** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Files Changed** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:bash (git add api/services/app_settings.py api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (payload = {)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:bash (git add api/routers/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (async def test_get_settings_returns_backup_retention_default)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:bash (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:bash (git add api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (cur.execute()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (retention_days = max(1, int(payload.get("backup_retention_da)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (write_crontab(day, period, backup_hour, cleanup_hour, retent)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **code:python (retention_days = max(1, int(rows.get("backup_retention_days")** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- *... and 20 more nodes in this community*
+- **monthly_reports.json** (21 connections) — `n8n/workflows/monthly_reports.json`
+- **activeVersion** (12 connections) — `n8n/workflows/monthly_reports.json`
+- **settings** (7 connections) — `n8n/workflows/monthly_reports.json`
+- **connections** (4 connections) — `n8n/workflows/monthly_reports.json`
+- **connections** (4 connections) — `n8n/workflows/monthly_reports.json`
+- **28. v mesecu ob 07:00** (3 connections) — `n8n/workflows/monthly_reports.json`
+- **Ročni Zagon** (3 connections) — `n8n/workflows/monthly_reports.json`
+- **Pošlji Mesečna Poročila** (3 connections) — `n8n/workflows/monthly_reports.json`
+- **staticData** (2 connections) — `n8n/workflows/monthly_reports.json`
+- **node:28. v mesecu ob 07:00** (2 connections) — `n8n/workflows/monthly_reports.json`
+- **updatedAt** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **createdAt** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **id** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **name** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **description** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **active** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **isArchived** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **nodes** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **executionOrder** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **timezone** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **saveDataErrorExecution** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/monthly_reports.json`
+- *... and 21 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 434]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- `n8n/workflows/monthly_reports.json`
 
 ## Audit Trail
 
-- EXTRACTED: 88 (100%)
+- EXTRACTED: 97 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

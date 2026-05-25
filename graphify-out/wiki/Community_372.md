@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Module 6: urllib.parse - URL Operations** (5 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Parse URL** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **URL Encode Parameters** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Parse Query String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **URL Encode/Decode Strings** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from urllib.parse import urlparse)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from urllib.parse import urlencode)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from urllib.parse import parse_qs)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from urllib.parse import quote, unquote)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Core Variables** (5 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$json - Current Node Output** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$node - Reference Other Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$now - Current Timestamp** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$env - Environment Variables** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$json.fieldName}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$node["Node Name"].json.fieldName}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$now}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

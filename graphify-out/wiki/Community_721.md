@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **HTTP: GET Volunteer (Auto)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Pripravi Slike** (3 connections) — `n8n/workflows/volunteer_entry.json`
 - **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
 - [[002_add_emso_hash.py]] (1 shared connections)
-- [[API.errors.acknowledge()]] (1 shared connections)
+- [[012_settings_table.py]] (1 shared connections)
 
 ## Source Files
 

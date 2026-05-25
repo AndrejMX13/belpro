@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **project_app_settings.md** (0 connections) — `.claude/memory/project_app_settings.md`
+- **feedback_plan_file_commit.md** (0 connections) — `.claude/memory/feedback_plan_file_commit.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/project_app_settings.md`
+- `.claude/memory/feedback_plan_file_commit.md`
 
 ## Audit Trail
 

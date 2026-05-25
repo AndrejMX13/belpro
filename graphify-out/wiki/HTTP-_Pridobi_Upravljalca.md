@@ -4,43 +4,42 @@
 
 ## Key Concepts
 
-- **Python Code Node (Beta)** (18 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **When to Use Python vs JavaScript** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Quick Start** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Critical: Webhook Data Structure** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Integration with Other Skills** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Basic template for Python Code nodes)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Essential Rules** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ WRONG - Will raise KeyError)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Use Python When:** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Use JavaScript When:** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Consider Other Nodes When:** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Works With:** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Quick Reference Checklist** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Database Operations Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Checklist for Database Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **database_operations.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block1 (Trigger → [Query/Read] → [Transform] → [Write/Update] → [Ver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block49 (Schedule → Postgres (SELECT new records) → Transform → MySQL)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block50 (Schedule → [Multiple DB reads] → Merge → Transform → Warehou)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block51 (Schedule → Postgres (SELECT all) → JSON → Google Drive (uplo)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Reliability** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 563]] (1 shared connections)
-- [[Community 564]] (1 shared connections)
-- [[Community 371]] (1 shared connections)
-- [[Community 562]] (1 shared connections)
-- [[Community 517]] (1 shared connections)
-- [[Community 293]] (1 shared connections)
-- [[Community 292]] (1 shared connections)
-- [[Community 663]] (1 shared connections)
-- [[Community 294]] (1 shared connections)
-- [[Community 565]] (1 shared connections)
-- [[Community 662]] (1 shared connections)
+- [[Community 526]] (1 shared connections)
+- [[load_env.ps1]] (1 shared connections)
+- [[load_env.sh]] (1 shared connections)
+- [[Community 385]] (1 shared connections)
+- [[Community 482]] (1 shared connections)
+- [[Community 483]] (1 shared connections)
+- [[Community 301]] (1 shared connections)
+- [[Community 484]] (1 shared connections)
+- [[Community 383]] (1 shared connections)
+- [[PATCH /log-entries/{id}/reject]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 
-- EXTRACTED: 39 (100%)
+- EXTRACTED: 38 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

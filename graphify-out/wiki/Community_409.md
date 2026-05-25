@@ -4,26 +4,35 @@
 
 ## Key Concepts
 
-- **3. Podatkovni model** (8 connections) — `SPEC_SL.md`
-- **`volunteers`** (1 connections) — `SPEC_SL.md`
-- **`managers`** (1 connections) — `SPEC_SL.md`
-- **`log_entries`** (1 connections) — `SPEC_SL.md`
-- **`log_entry_photos`** (1 connections) — `SPEC_SL.md`
-- **`monthly_reports`** (1 connections) — `SPEC_SL.md`
-- **`settings`** (1 connections) — `SPEC_SL.md`
-- **`error_log`** (1 connections) — `SPEC_SL.md`
+- **Common Patterns - JavaScript Code Node** (14 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Combining Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **COMMON_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Pattern Selection Guide** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Example: Multi-source aggregation + Top N filtering)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[PATCH /api/log-entries/{id} (update_log_entry)]] (1 shared connections)
+- [[Community 552]] (1 shared connections)
+- [[Community 558]] (1 shared connections)
+- [[Community 561]] (1 shared connections)
+- [[Community 559]] (1 shared connections)
+- [[Community 553]] (1 shared connections)
+- [[Community 554]] (1 shared connections)
+- [[Community 555]] (1 shared connections)
+- [[Community 556]] (1 shared connections)
+- [[Community 557]] (1 shared connections)
+- [[Community 560]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

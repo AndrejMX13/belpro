@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Quick Start Examples** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 1: Simple Webhook → Slack** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 2: Scheduled Report** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 3: Database Sync** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 4: AI Assistant** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 5: API Integration** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block13 (1. Webhook (path: "form-submit", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block14 (1. Schedule (daily at 9 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block15 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block16 (1. Webhook (receive chat message))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block17 (1. Manual Trigger (for testing))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Codebase context** (11 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (from datetime import datetime)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (async def test_get_history_empty(client: AsyncClient, auth: )** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block14 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (from fastapi.responses import FileResponse, JSONResponse, St)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (from pathlib import Path)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (from models.monthly_report import MonthlyReport)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (@router.get("/history", response_model=ReportHistoryList, de)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block19 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block20 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add api/schemas/report.py api/routers/reports.py api/tes)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[Community 533]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 

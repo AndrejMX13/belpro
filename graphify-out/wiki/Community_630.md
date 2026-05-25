@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Detailed Guides** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Node Discovery Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Validation Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Workflow Management** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **2. Webhook Body Access** (4 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block3 ({{$json.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block4 ({{$json.body.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

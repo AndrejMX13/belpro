@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Mode Selection Guide** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Run Once for All Items (Recommended - Default)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Run Once for Each Item** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Example: Calculate total from all items)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Example: Add processing timestamp to each item)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Pattern 4: JSON Comparison & Validation** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Compare and validate JSON objects from different sources)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Simple equality check)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Text Extract]] (1 shared connections)
+- [[Community 409]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Audit Trail
 

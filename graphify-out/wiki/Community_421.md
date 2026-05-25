@@ -4,27 +4,26 @@
 
 ## Key Concepts
 
-- **Communication Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Gmail (nodes-base.gmail)** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Send Email** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Get Email** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Monitoring & Logging** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 1: Execution Log Table** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 2: Metrics Collection** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 3: Summary Notifications** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:sql (CREATE TABLE workflow_executions ()** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block25 (Schedule)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block26 (Schedule → [Execute])** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block27 (Schedule (daily at 6 PM) → Query execution logs)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[load_env.sh]] (1 shared connections)
-- [[Community 377]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

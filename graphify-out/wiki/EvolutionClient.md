@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Feedback Examples** (7 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Good vs Bad Feedback** (5 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Feedback by Category** (4 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Major (Should Fix)** (4 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Be Specific, Not Vague** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Be Actionable, Not Just Critical** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Be Constructive, Not Demanding** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Ask Questions, Don't Assume** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Praise Examples** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Critical (Must Fix)** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Minor (Nice to Have)** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Question Format** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Summary Format** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **feedback-examples.md** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "This is confusing")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "Fix the query")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "Add tests")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "This is wrong")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown ("Great use of early returns here - much more readable than n)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[CRITICAL] Security: SQL Injection**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[MAJOR] Performance: N+1 Query**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:block8** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:block9** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[MINOR] Naming: Unclear variable**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[QUESTION]**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Task 2: Settings field + photo-limit API endpoint** (8 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Photo Upload Limit (ISS-002) Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Task 3: n8n workflow — insert photo limit check** (5 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Task 1: Add MAX_PHOTOS_PER_ENTRY to both env example files** (4 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Node specifications** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Steps** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Context — existing photo sub-flow** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **New flow after HTTP: GET Entry (Photo Count)** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **2026-05-18-photo-upload-limit.md** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block1 (# ----------------------------------------------------------)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block2 (# ----------------------------------------------------------)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (git add .env.example .env.example.sl)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:python (async def test_photo_limit_returns_default(client: AsyncClie)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (docker compose exec -T api pytest tests/test_log_entries.py:)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:python (# ── Uploads ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:python (@router.get("/photo-limit"))** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (docker compose exec -T api pytest tests/ -v --tb=short)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (git add api/core/settings.py api/routers/log_entries.py api/)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block11 ([image arrives])** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block12 (HTTP: GET Entry (Photo Count))** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:javascript (// Find the actual name of the node that checks photo state )** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:javascript (const d = $input.first().json;)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (python ./scripts/n8n_workflows.py export)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
 - *... and 2 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/feedback-examples.md`
+- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
 
 ## Audit Trail
 

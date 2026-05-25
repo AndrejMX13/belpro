@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **LoginResponse (Schema)** (0 connections) — `api/schemas/auth.py`
+- **API Client (api.js)** (0 connections) — `frontend/js/api.js`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/auth.py`
+- `frontend/js/api.js`
 
 ## Audit Trail
 

@@ -4,31 +4,38 @@
 
 ## Key Concepts
 
-- **Task 1: Rename shared PDF utilities** (13 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (def test_ngo_header_html_without_logo():)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block6 (docker compose exec api pytest tests/test_reports.py::test_n)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block13 (docker compose exec api pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block14 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block15 (git add api/services/report_pdf.py api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **n8n_workflows.py** (11 connections) — `scripts/n8n_workflows.py`
+- **n8n** (6 connections) — `docker-compose.yml`
+- **api_request()** (4 connections) — `scripts/n8n_workflows.py`
+- **cmd_import()** (4 connections) — `scripts/n8n_workflows.py`
+- **cmd_export()** (4 connections) — `scripts/n8n_workflows.py`
+- **main()** (4 connections) — `scripts/n8n_workflows.py`
+- **load_env()** (3 connections) — `scripts/n8n_workflows.py`
+- **Parse KEY=VALUE lines from a .env file; ignore comments and blanks.** (1 connections) — `scripts/n8n_workflows.py`
+- **Make an authenticated request to the n8n API.      Returns (status_code, respo** (1 connections) — `scripts/n8n_workflows.py`
+- **Load each repo workflow file into n8n (upsert + activate).** (1 connections) — `scripts/n8n_workflows.py`
+- **Overwrite each repo workflow file with its current definition from n8n.** (1 connections) — `scripts/n8n_workflows.py`
+- **n8n REST API** (1 connections)
+- **n8n/workflows/** (1 connections)
 
 ## Relationships
 
-- [[Community 535]] (1 shared connections)
+- [[005_report_prefs.py]] (2 shared connections)
+- [[report_pdf.py]] (1 shared connections)
+- [[Code Reviewer Skill]] (1 shared connections)
+- [[loadAppLog()]] (1 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[008_add_manager_notified_at.py]] (1 shared connections)
+- [[API.logo.delete()]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `docker-compose.yml`
+- `scripts/n8n_workflows.py`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

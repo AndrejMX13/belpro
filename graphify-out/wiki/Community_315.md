@@ -1,33 +1,35 @@
 # Community 315
 
-> 11 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **Docker Patterns** (6 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **Multi-stage Dockerfile (Node.js)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **Multi-stage Dockerfile (Python)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **Docker Compose (Development)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **.dockerignore Template** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **docker-patterns.md** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **code:dockerfile (# Build stage)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **code:dockerfile (FROM python:3.12-slim AS builder)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **code:yaml (version: '3.8')** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **Security Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **code:block4 (node_modules)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **emso_checksum_valid()** (7 connections) — `api/utils/emso.py`
+- **test_emso.py** (4 connections) — `api/tests/test_emso.py`
+- **_validate_emso_checksum()** (2 connections) — `api/schemas/volunteer.py`
+- **test_emso_checksum_valid_accepts_valid_numbers()** (2 connections) — `api/tests/test_emso.py`
+- **test_emso_checksum_valid_rejects_bad_checksum()** (2 connections) — `api/tests/test_emso.py`
+- **test_emso_checksum_valid_rejects_malformed_input()** (2 connections) — `api/tests/test_emso.py`
+- **emso.py** (2 connections) — `api/utils/emso.py`
+- **Unit tests for the EMŠO checksum validator utility.** (1 connections) — `api/tests/test_emso.py`
+- **EMŠO (Enotna matična številka občana) validation utilities.** (1 connections) — `api/utils/emso.py`
+- **Return True if emso passes the mod-11 checksum.      Assumes the caller already** (1 connections) — `api/utils/emso.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[renderDetail() — volunteer detail page]] (1 shared connections)
+- [[app_settings.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/docker-patterns.md`
+- `api/schemas/volunteer.py`
+- `api/tests/test_emso.py`
+- `api/utils/emso.py`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 15 (62%)
+- INFERRED: 9 (38%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,27 +4,38 @@
 
 ## Key Concepts
 
-- **Nastavite WhatsAppa** (5 connections) — `README_SL.md`
-- **Upravljanje delovnih procesov (Workflows)** (4 connections) — `README_SL.md`
-- **7. Nastavitev n8n delovnih procesov** (2 connections) — `README_SL.md`
-- **6. Ustvari instanco Evolution API** (1 connections) — `README_SL.md`
-- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README_SL.md`
-- **8. Poveži WhatsApp** (1 connections) — `README_SL.md`
-- **code:block9 (N8N_API_KEY=<your-key>)** (1 connections) — `README_SL.md`
-- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README_SL.md`
-- **code:bash (./scripts/n8n_workflows.py export)** (1 connections) — `README_SL.md`
+- **HTTP API Integration Pattern** (16 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **http_api_integration.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block1 (Trigger → HTTP Request → [Transform] → [Action] → [Error Han)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block55 (Schedule → HTTP Request (GitHub API) → Transform → HTTP Requ)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block56 (Schedule → HTTP Request (Weather API) → Set (format) → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block57 (Schedule → HTTP Request (CRM A) → Transform → HTTP Request ()** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[Community 355]] (1 shared connections)
+- [[PATCH /api/log-entries/{id} (update_log_entry)]] (1 shared connections)
+- [[Maximum photos allowed per log entry.]] (1 shared connections)
+- [[Code: Pripravi Popravek]] (1 shared connections)
+- [[Community 444]] (1 shared connections)
+- [[DELETE /api/logo (remove_logo)]] (1 shared connections)
+- [[Community 320]] (1 shared connections)
+- [[Community 443]] (1 shared connections)
+- [[Community 407]] (1 shared connections)
+- [[Community 354]] (1 shared connections)
+- [[Code: Preveri Nacin]] (1 shared connections)
+- [[Community 509]] (1 shared connections)
 
 ## Source Files
 
-- `README_SL.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

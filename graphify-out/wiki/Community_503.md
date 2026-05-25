@@ -1,33 +1,29 @@
 # Community 503
 
-> 6 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **GDPR Consent PDF (Dogovor o prostovoljstvu)** (5 connections) — `SPEC.md`
-- **NGO Logo Plan** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **NGO Logo Storage and PDF Embedding** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **PDF Report History Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **GDPR Consent PDF Plan** (2 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **PDF Report History (MonthlyReport table upsert)** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **main()** (5 connections) — `ops/scripts/monthly_report_send.py`
+- **monthly_report_send.py** (3 connections) — `ops/scripts/monthly_report_send.py`
+- **report_error()** (3 connections) — `ops/scripts/monthly_report_send.py`
+- **resolve_period()** (3 connections) — `ops/scripts/monthly_report_send.py`
+- **POST failure to the API error log.** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **Return (year, month) for the given period label.      'current'  → today's year** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **Resolve target month and call the send-monthly API endpoint.** (1 connections) — `ops/scripts/monthly_report_send.py`
 
 ## Relationships
 
-- [[env.py]] (1 shared connections)
-- [[api.js]] (1 shared connections)
-- [[API.reports.exportPdf()]] (1 shared connections)
+- [[load_key()]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `ops/scripts/monthly_report_send.py`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (65%)
-- INFERRED: 6 (35%)
+- EXTRACTED: 16 (94%)
+- INFERRED: 1 (6%)
 - AMBIGUOUS: 0 (0%)
 
 ---

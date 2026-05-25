@@ -1,51 +1,47 @@
 # scripts/n8n_workflows.py
 
-> 24 nodes
+> 25 nodes
 
 ## Key Concepts
 
-- **errors.js** (10 connections) — `frontend/js/errors.js`
-- **renderAppLog()** (6 connections) — `frontend/js/errors.js`
-- **showApp()** (6 connections) — `frontend/js/volunteers.js`
-- **loadHealthWidget()** (4 connections) — `frontend/js/errors.js`
-- **GET /errors/unacknowledged-count** (4 connections) — `api/routers/errors.py`
-- **startHealthWidget()** (3 connections) — `frontend/js/errors.js`
-- **refreshErrorBadge()** (3 connections) — `frontend/js/errors.js`
-- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
-- **initAppLogPage()** (3 connections) — `frontend/js/errors.js`
-- **_refreshSidebarLogo()** (3 connections) — `frontend/js/volunteers.js`
-- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
-- **GET /errors** (3 connections) — `api/routers/errors.py`
-- **renderHealthWidget()** (2 connections) — `frontend/js/errors.js`
-- **stopHealthWidget()** (2 connections) — `frontend/js/errors.js`
-- **API.errors.list()** (2 connections) — `frontend/js/api.js`
-- **API.errors.unacknowledgedCount()** (2 connections) — `frontend/js/api.js`
-- **API.errors.acknowledge()** (2 connections) — `frontend/js/api.js`
-- **refreshErrorBadge()** (2 connections) — `frontend/js/errors.js`
-- **PATCH /errors/{id}/acknowledge** (2 connections) — `api/routers/errors.py`
-- **ErrorLogResponse shape (id, service, operation, message, detail, acknowledged, created_at)** (2 connections) — `api/routers/errors.py`
-- **UnacknowledgedCountResponse shape ({count})** (2 connections) — `api/routers/errors.py`
-- **SERVICE_LABELS** (1 connections) — `frontend/js/errors.js`
-- **acknowledgeError()** (1 connections) — `frontend/js/errors.js`
-- **renderAppLog() — app log page** (1 connections) — `frontend/js/errors.js`
+- **Deployment Strategies** (11 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Rollback Procedures** (4 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Rolling Deployment (Kubernetes)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Blue-Green with Ingress** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Canary with Istio** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Kubernetes Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **ArgoCD Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Terraform Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Post-deployment Verification** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Deployment Metrics (DORA)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Advanced Canary with Automated Analysis** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Shadow Deployment** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **deployment-strategies.md** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Strategy Comparison** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Blue deployment (current))** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (apiVersion: networking.istio.io/v1beta1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# View rollout history)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (argocd app rollback app-prod --revision=123)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# Identify previous state)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Pre-deployment Checklist** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# Check pod status)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Prometheus metrics for DORA tracking)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Flagger: Automated canary with rollback)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Mirror traffic to shadow deployment)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (8 shared connections)
-- [[Community 361]] (2 shared connections)
-- [[tax_number_valid()]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/api.js`
-- `frontend/js/errors.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/devops-engineer/references/deployment-strategies.md`
 
 ## Audit Trail
 
-- EXTRACTED: 63 (88%)
-- INFERRED: 9 (12%)
+- EXTRACTED: 48 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

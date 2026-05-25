@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Pattern: Pagination Handling** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Pattern: Conditional Node Reference** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Pattern: Multi-Node Aggregation** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const currentPage = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Access different nodes based on condition)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Collect data from multiple named nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Error #2: Empty Code / Missing Return** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Best Practice** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Empty code)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Always return)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ GOOD: Return at end of function (unconditional))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 416]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

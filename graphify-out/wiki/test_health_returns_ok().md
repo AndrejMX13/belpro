@@ -25,13 +25,13 @@
 
 ## Relationships
 
-- [[Community 651]] (1 shared connections)
-- [[loadAppLog()]] (1 shared connections)
-- [[GET /api/health (health)]] (1 shared connections)
-- [[Code: Check Next Entry]] (1 shared connections)
-- [[Community 447]] (1 shared connections)
-- [[Community 445]] (1 shared connections)
-- [[Community 446]] (1 shared connections)
+- [[Community 677]] (1 shared connections)
+- [[004_log_entry_photos.py]] (1 shared connections)
+- [[Community 294]] (1 shared connections)
+- [[PATCH /log-entries/{id}/approve]] (1 shared connections)
+- [[Community 471]] (1 shared connections)
+- [[Community 469]] (1 shared connections)
+- [[Community 470]] (1 shared connections)
 
 ## Source Files
 

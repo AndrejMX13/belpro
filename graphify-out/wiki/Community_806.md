@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **n8n Code Node Pattern** (0 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n-mcp MCP Server** (0 connections) — `README.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `README.md`
 
 ## Audit Trail
 

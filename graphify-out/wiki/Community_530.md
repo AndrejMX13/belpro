@@ -4,16 +4,16 @@
 
 ## Key Concepts
 
-- **Task 4: Evolution API service client** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import pytest)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/services/evolution.py api/tests/test_evolution_s)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Task 2: Phone normalization utility** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from api.utils.phone import normalize_phone)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_phone_utils.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import re)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_phone_utils.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/utils/__init__.py api/utils/phone.py api/tests/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 496]] (1 shared connections)
+- [[Community 495]] (1 shared connections)
 
 ## Source Files
 

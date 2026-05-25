@@ -4,31 +4,39 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. Data Fetching & Storage** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. API to API Integration** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. Data Enrichment** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Monitoring & Alerting** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **5. Batch Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block5 (1. Schedule (every hour))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - filter issues)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block7 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block8 (1. Postgres (SELECT new contacts))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block9 (1. Schedule (every 5 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block10 (1. Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Test Coverage Gaps Plan** (7 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Test Suite Plan** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Log Entry Status State Machine** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **httpOnly Cookie Session Auth** (3 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Fix Image Upload Env Access Plan** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **pytest SAVEPOINT Isolation Pattern** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **n8n Workflow Import/Export Script** (2 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **Volunteer Contact Inline Edit Plan** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **n8n Workflow Scripts Plan** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **Delete Non-Approved Entries Plan** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **HttpOnly Cookie Auth Plan** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **belpro_test_migrations DB for Migration Roundtrip Test** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[send_monthly_reports()]] (1 shared connections)
+- [[Code: Procesiraj Popravek]] (1 shared connections)
+- [[API.reports.downloadHistoryPdf()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 18 (62%)
+- INFERRED: 11 (38%)
 - AMBIGUOUS: 0 (0%)
 
 ---

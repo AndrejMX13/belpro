@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **GitHub Actions Pipelines** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Common Workflow Patterns** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Complete CI/CD Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Matrix Builds (Multi-version testing)** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Reusable Workflows** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Caching Dependencies** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **github-actions.md** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (name: CI/CD Pipeline)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (jobs:)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (# .github/workflows/deploy.yml)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (- uses: actions/cache@v4)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Security Testing** (7 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Authentication Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Authorization Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Input Validation Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Security Headers Test** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **security-testing.md** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Authentication Security', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Authorization', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Input Validation', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Security Headers', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Security Test Checklist** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
 
 ## Relationships
 
@@ -23,7 +23,7 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/github-actions.md`
+- `.claude/skills/test-master/references/security-testing.md`
 
 ## Audit Trail
 

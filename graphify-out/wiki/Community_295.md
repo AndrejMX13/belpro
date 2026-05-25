@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Module 3: re - Regular Expressions** (6 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Pattern Matching** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Extract All Matches** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Replace Patterns** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Validate Format** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Split on Pattern** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Postgres (nodes-base.postgres)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Execute Query** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Insert** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Database Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Update** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript (// ❌ BAD - SQL injection risk!)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[entrypoint.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 

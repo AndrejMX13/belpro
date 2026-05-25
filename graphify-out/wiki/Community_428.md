@@ -4,26 +4,32 @@
 
 ## Key Concepts
 
-- **Authentication & Security** (5 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **1. Query Parameter Token** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **2. Header-Based Auth** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **3. Signature Verification** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// IF node - validate token)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// IF node - check header)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **4. IP Whitelist** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Ops Sidecar & Error Logging Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Task 8: App log page** (4 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **2026-05-20-ops-sidecar-and-error-log.md** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **File Structure** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (curl -s -X POST http://localhost:8100/api/errors \)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add frontend/index.html)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Self-Review** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[Community 584]] (1 shared connections)
+- [[Community 395]] (1 shared connections)
+- [[PATCH /api/admin/settings (update_admin_settings)]] (1 shared connections)
+- [[Community 396]] (1 shared connections)
+- [[Community 497]] (1 shared connections)
+- [[Community 498]] (1 shared connections)
+- [[Community 427]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

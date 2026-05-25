@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **11. Using = Prefix Outside JSON** (4 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block22 (Email: ={{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block23 (Email: {{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:javascript (// JSON mode (set property to expression))** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Pattern 7: Array Transformation** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Implementation** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Key Techniques** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Community 517]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Audit Trail
 

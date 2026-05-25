@@ -1,43 +1,38 @@
 # HTTP: GET Volunteer (Mgr)
 
-> 15 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **main.py** (22 connections) — `api/main.py`
-- **lifespan()** (4 connections) — `api/main.py`
-- **health()** (2 connections) — `api/main.py`
-- **Belpro FastAPI application entry point.** (1 connections) — `api/main.py`
-- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
-- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
-- **routers/admin** (1 connections)
-- **routers/auth** (1 connections)
-- **routers/analytics** (1 connections)
-- **routers/log_entries** (1 connections)
-- **routers/volunteers** (1 connections)
-- **routers/reports** (1 connections)
-- **models/log_entry** (1 connections)
-- **models/manager** (1 connections)
-- **models/monthly_report** (1 connections)
+- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README_SL.md`
+- **Nadzorna plošča za vodje** (2 connections) — `README_SL.md`
+- **Struktura projekta (Project layout)** (2 connections) — `README_SL.md`
+- **README_SL.md** (1 connections) — `README_SL.md`
+- **Kako deluje** (1 connections) — `README_SL.md`
+- **Vzorčna PDF poročila** (1 connections) — `README_SL.md`
+- **Tehnološki sklad (Stack)** (1 connections) — `README_SL.md`
+- **Sistemske zahteve** (1 connections) — `README_SL.md`
+- **Dostopne točke (Access points)** (1 connections) — `README_SL.md`
+- **Varnostne opombe (Security notes)** (1 connections) — `README_SL.md`
+- **code:block22 (belpro/)** (1 connections) — `README_SL.md`
+- **Razvoj s pomočjo umetne inteligence** (1 connections) — `README_SL.md`
+- **Roadmap** (1 connections) — `README_SL.md`
+- **Izven obsega - različica v1** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- [[004_log_entry_photos.py]] (4 shared connections)
-- [[001_initial_schema.py]] (2 shared connections)
-- [[monthly_reports.json]] (2 shared connections)
-- [[n8n Set Node Pattern]] (1 shared connections)
-- [[loadAnalytics()]] (1 shared connections)
-- [[API.logo.upload()]] (1 shared connections)
-- [[PATCH /log-entries/{id}]] (1 shared connections)
+- [[POST /api/volunteers/check-emso (check_emso)]] (1 shared connections)
+- [[Community 351]] (1 shared connections)
+- [[Code: Clear State Confirm]] (1 shared connections)
 
 ## Source Files
 
-- `api/main.py`
+- `README_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 39 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 29 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,21 +4,22 @@
 
 ## Key Concepts
 
-- **3. Session Management** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Reusing session across requests)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Dependency injection per request)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **renderAdmin** (2 connections) — `frontend/js/admin.js`
+- **get_admin_settings** (1 connections) — `api/routers/admin.py`
+- **update_admin_settings** (1 connections) — `api/routers/admin.py`
 
 ## Relationships
 
-- [[Automated Upgrade Script (upgrade.sh)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `api/routers/admin.py`
+- `frontend/js/admin.js`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

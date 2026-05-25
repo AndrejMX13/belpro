@@ -4,36 +4,29 @@
 
 ## Key Concepts
 
-- **Work Date Rename + Dashboard Entry Creation Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **Task 7: Frontend — "Dodaj vnos" on Volunteer Detail Page** (5 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **Task 10: Run graphify update** (3 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **2026-05-09-work-date-rename-and-dashboard-entry.md** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<p class="section-title">Dnevnik dela</p>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript ($('add-entry-btn').addEventListener('click', () => {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (create: (payload) => apiFetch('/log-entries', {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add graphify-out/)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Docker Patterns** (6 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Multi-stage Dockerfile (Node.js)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Multi-stage Dockerfile (Python)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Docker Compose (Development)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **.dockerignore Template** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **docker-patterns.md** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:dockerfile (# Build stage)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:dockerfile (FROM python:3.12-slim AS builder)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:yaml (version: '3.8')** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Security Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:block4 (node_modules)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
 
 ## Relationships
 
-- [[Community 580]] (1 shared connections)
-- [[Community 494]] (1 shared connections)
-- [[Community 344]] (1 shared connections)
-- [[Community 394]] (1 shared connections)
-- [[Vrsta Odziva]] (1 shared connections)
-- [[Community 631]] (1 shared connections)
-- [[Community 395]] (1 shared connections)
-- [[Community 309]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/devops-engineer/references/docker-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **EMŠO Key Rotation** (4 connections) — `README.md`
-- **code:bash (bash scripts/rotate_emso_key.sh <OLD_KEY> <NEW_KEY>)** (1 connections) — `README.md`
-- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README.md`
-- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README.md`
+- **[0.9.3] — 2026-05-10** (4 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- [[Code: Pripravi Popravek]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 
-- `README.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 

@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **BelPro Architecture Document EN** (1 connections) — `Belpro_Architecture.pdf`
-- **BelPro Arhitektura Document SL** (1 connections) — `Belpro_Arhitektura_SL.pdf`
+- **loadReports** (1 connections) — `frontend/js/reports.js`
+- **monthly_summary** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -13,13 +13,13 @@
 
 ## Source Files
 
-- `Belpro_Architecture.pdf`
-- `Belpro_Arhitektura_SL.pdf`
+- `api/routers/reports.py`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
-- INFERRED: 2 (100%)
+- EXTRACTED: 2 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

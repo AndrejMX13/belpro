@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Best Practices** (6 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **1. Always Use .get() for Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **2. Handle None/Null Values Explicitly** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **3. Use List Comprehensions for Filtering** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **4. Return Consistent Structure** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **5. Debug with print() Statements** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ SAFE: Won't crash if field missing)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ GOOD: Default to 0 if None)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ PYTHONIC: List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ CONSISTENT: Always list with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Debug statements appear in browser console (F12))** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **n8n_workflow_versions (VERSION CONTROL)** (6 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **List Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Get Specific Version** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Rollback to Previous Version** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Delete Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Prune Old Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (// Delete specific version)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[test_health_returns_ok()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

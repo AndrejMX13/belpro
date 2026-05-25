@@ -4,36 +4,35 @@
 
 ## Key Concepts
 
-- **tax_number_valid()** (11 connections) — `api/utils/tax_number.py`
-- **TestTaxNumberValid** (10 connections) — `api/tests/test_tax_number.py`
-- **test_tax_number.py** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_accepts_valid_bare_digits()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_accepts_si_prefix()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_accepts_lowercase_si_prefix()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_rejects_bad_check_digit()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_rejects_wrong_length()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_rejects_non_digits()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_rejects_empty()** (2 connections) — `api/tests/test_tax_number.py`
-- **.test_check_digit_one_case()** (2 connections) — `api/tests/test_tax_number.py`
-- **tax_number.py** (2 connections) — `api/utils/tax_number.py`
-- **.test_check_digit_zero_case()** (1 connections) — `api/tests/test_tax_number.py`
-- **Tests for Slovenian tax number (davčna številka) validation.** (1 connections) — `api/tests/test_tax_number.py`
-- **Slovenian tax number (davčna številka) validation utilities.** (1 connections) — `api/utils/tax_number.py`
-- **Return True if value passes the Modulus 11 check digit algorithm.      Accepts b** (1 connections) — `api/utils/tax_number.py`
+- **Six Tests** (7 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **Test Coverage Gaps — Design Spec** (6 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **Infrastructure** (3 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **`_PHOTOS_ROOT` monkeypatching** (2 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **2026-05-24-test-coverage-gaps-design.md** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **Overview** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **Migration test database** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **code:python (import api.routers.log_entries as le_mod)** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **1. Migration roundtrip — `api/tests/test_migrations.py` (new file)** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **2. EMŠO encryption round-trip — `api/tests/test_volunteers.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **3. Status-flow enforcement — `api/tests/test_log_entries.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **4. Analytics edge cases — `api/tests/test_analytics.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **5. Base64 photo limit + monkeypatch — `api/tests/test_app_settings.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **6. Manager password change — `api/tests/test_managers.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **File Summary** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
 
 ## Relationships
 
-- [[DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_tax_number.py`
-- `api/utils/tax_number.py`
+- `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (62%)
-- INFERRED: 17 (38%)
+- EXTRACTED: 30 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

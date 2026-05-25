@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Template from Real Workflow** (6 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Webhook Slash Command** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **OpenStreetMap API** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Weather API (NWS)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Slack Message** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Workflow Structure** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block44 (https://nominatim.openstreetmap.org/search?q={{$json.body.te)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block45 (https://api.weather.gov/points/{{$node["OpenStreetMap"].json)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block46 (Weather for {{$json.body.text}}:)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Troubleshooting Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Problem 1: "Field X is required but not visible"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Problem 2: "Field disappears when I change operation"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Problem 3: "Validation passes but field doesn't save"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Check field dependencies using search_properties)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Working configuration)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Check requirements for new operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Configure)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Correct approach - check property dependencies)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[Community 375]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

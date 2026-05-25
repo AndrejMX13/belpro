@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)** (0 connections) — `api/routers/log_entries.py`
+- **PATCH /api/volunteers/{id}/deactivate (deactivate_volunteer)** (0 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/log_entries.py`
+- `api/routers/volunteers.py`
 
 ## Audit Trail
 

@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **6. Mesečna PDF poročila** (4 connections) — `SPEC_SL.md`
-- **6.1 PDF za prostovoljca (po osebi)** (1 connections) — `SPEC_SL.md`
-- **6.2 Zbirni PDF za vodjo** (1 connections) — `SPEC_SL.md`
-- **6.3 Dostava** (1 connections) — `SPEC_SL.md`
+- **[0.4.1] — 2026-05-03** (4 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- [[PATCH /api/log-entries/{id} (update_log_entry)]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 

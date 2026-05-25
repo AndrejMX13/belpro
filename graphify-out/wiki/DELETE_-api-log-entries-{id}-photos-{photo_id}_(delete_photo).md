@@ -4,34 +4,31 @@
 
 ## Key Concepts
 
-- **manager.py** (8 connections) — `api/schemas/manager.py`
-- **ManagerCreate** (3 connections) — `api/schemas/manager.py`
-- **ManagerUpdate** (3 connections) — `api/schemas/manager.py`
-- **PasswordChangeRequest** (3 connections) — `api/schemas/manager.py`
-- **ManagerResponse** (3 connections) — `api/schemas/manager.py`
-- **_validate_davcna_checksum()** (2 connections) — `api/schemas/manager.py`
-- **normalize_wa_phone()** (2 connections) — `api/schemas/manager.py`
-- **Pydantic schemas for the Manager entity.** (1 connections) — `api/schemas/manager.py`
-- **Fields required for first-time manager setup.** (1 connections) — `api/schemas/manager.py`
-- **Partial update — all fields optional.  Only provided fields are written.** (1 connections) — `api/schemas/manager.py`
-- **Payload for the change-password endpoint.** (1 connections) — `api/schemas/manager.py`
-- **Manager profile returned by the API.** (1 connections) — `api/schemas/manager.py`
+- **Evolution API — @lid JID Resolution for BelPro** (8 connections) — `docs/evolution-lid-resolution.md`
+- **Priority Fix: Upgrade to v2.3.7** (3 connections) — `docs/evolution-lid-resolution.md`
+- **Environment Variables to Add on Upgrade** (2 connections) — `docs/evolution-lid-resolution.md`
+- **evolution-lid-resolution.md** (1 connections) — `docs/evolution-lid-resolution.md`
+- **The Problem** (1 connections) — `docs/evolution-lid-resolution.md`
+- **code:json ({)** (1 connections) — `docs/evolution-lid-resolution.md`
+- **code:js (const rawJid = data.key.remoteJid;)** (1 connections) — `docs/evolution-lid-resolution.md`
+- **code:yaml (WPP_LID_MODE: "false"            # Instructs underlying WPP )** (1 connections) — `docs/evolution-lid-resolution.md`
+- **Current Workaround (v2.2.3, active in workflow)** (1 connections) — `docs/evolution-lid-resolution.md`
+- **Sendback: @lid as Direct Recipient** (1 connections) — `docs/evolution-lid-resolution.md`
+- **Future: Volunteer Registration Flow** (1 connections) — `docs/evolution-lid-resolution.md`
+- **What Does NOT Work** (1 connections) — `docs/evolution-lid-resolution.md`
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (4 shared connections)
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
-- [[Code: Check Pending (Manual)]] (1 shared connections)
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/schemas/manager.py`
+- `docs/evolution-lid-resolution.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (93%)
-- INFERRED: 2 (7%)
+- EXTRACTED: 22 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

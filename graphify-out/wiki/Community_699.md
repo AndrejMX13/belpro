@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **API.logo.upload()** (1 connections) — `frontend/js/api.js`
-- **POST /logo** (1 connections) — `api/routers/logo.py`
+- **BelPro Architecture Document EN** (1 connections) — `Belpro_Architecture.pdf`
+- **BelPro Arhitektura Document SL** (1 connections) — `Belpro_Arhitektura_SL.pdf`
 
 ## Relationships
 
@@ -13,13 +13,13 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
-- `frontend/js/api.js`
+- `Belpro_Architecture.pdf`
+- `Belpro_Arhitektura_SL.pdf`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 0 (0%)
+- INFERRED: 2 (100%)
 - AMBIGUOUS: 0 (0%)
 
 ---

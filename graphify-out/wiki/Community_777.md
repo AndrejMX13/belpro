@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **check_cache.py** (0 connections) — `scripts/graphify/check_cache.py`
+- **switch_manager_phone.ps1** (0 connections) — `scripts/switch_manager_phone.ps1`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/graphify/check_cache.py`
+- `scripts/switch_manager_phone.ps1`
 
 ## Audit Trail
 

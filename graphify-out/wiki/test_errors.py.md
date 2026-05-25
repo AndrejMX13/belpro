@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Documentation Systems & Infrastructure** (8 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Static Site Generators** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Migration Guides** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Docusaurus (Meta)** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Multi-Version Documentation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Search Implementation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Documentation Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Code Example Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Performance Optimization** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Analytics Integration** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **MkDocs (Python)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **VitePress (Vue)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Version Switcher** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Algolia DocSearch** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Local Search (Lunr.js)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Link Checking** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Build Optimization** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **CDN & Caching** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Google Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Custom Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **documentation-systems.md** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:bash (# Setup)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:javascript (module.exports = {)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:yaml (# mkdocs.yml)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:typescript (// .vitepress/config.ts)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Database Maintenance** (10 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat Monitoring Views** (6 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **VACUUM Fundamentals** (4 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Bloat Detection and Removal** (4 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Autovacuum Configuration** (3 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **VACUUM Variants** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **VACUUM Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Per-Table Autovacuum Tuning** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **ANALYZE (Statistics)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Detect Table Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Detect Index Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Remove Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_activity (Current Queries)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_database (Database-wide Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_user_tables (Table Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_user_indexes (Index Usage)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_statio_user_tables (I/O Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Lock Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Transaction ID Wraparound** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Helpful Maintenance Queries** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **maintenance.md** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Why VACUUM is Critical** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **code:sql (-- Standard VACUUM (non-blocking, reclaims space for reuse))** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **code:sql (-- Check when tables were last vacuumed)** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **code:sql (-- Global settings (postgresql.conf))** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
 - *... and 14 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/documentation-systems.md`
+- `.claude/skills/postgres-pro/references/maintenance.md`
 
 ## Audit Trail
 

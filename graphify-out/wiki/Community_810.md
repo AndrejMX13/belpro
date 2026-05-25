@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **PATCH /api/volunteers/{id} (update_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **n8n Code Node Pattern** (0 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 

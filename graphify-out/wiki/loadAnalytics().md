@@ -4,43 +4,39 @@
 
 ## Key Concepts
 
-- **upgrade.sh** (12 connections) — `scripts/upgrade.sh`
-- **rotate_emso_key.sh** (11 connections) — `scripts/rotate_emso_key.sh`
-- **backup.sh** (8 connections) — `scripts/backup.sh`
-- **.env** (5 connections)
-- **EMSO encrypted field** (4 connections)
-- **docker-compose.yml** (3 connections)
-- **api/scripts/rotate_emso_key.py** (3 connections)
-- **Alembic migrations** (2 connections)
-- **/app/photos (volume)** (2 connections)
-- **info()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **ok()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **warn()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **heading()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **die()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **info()** (1 connections) — `scripts/upgrade.sh`
-- **ok()** (1 connections) — `scripts/upgrade.sh`
-- **warn()** (1 connections) — `scripts/upgrade.sh`
-- **heading()** (1 connections) — `scripts/upgrade.sh`
-- **die()** (1 connections) — `scripts/upgrade.sh`
-- **get_env()** (1 connections) — `scripts/upgrade.sh`
-- **backups/** (1 connections)
+- **Node.js Essentials** (11 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **File System (fs/promises)** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Path Module** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Streams** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **EventEmitter** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Child Processes** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Worker Threads** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Process & Environment** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **HTTP/HTTPS Server** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Cluster for Multi-Core** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **node-essentials.md** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { readFile, writeFile, appendFile, mkdir, rm, readdir)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { join, resolve, dirname, basename, extname, parse, f)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { createReadStream, createWriteStream } from 'fs';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { EventEmitter } from 'events';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { spawn, exec, execFile } from 'child_process';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { Worker, isMainThread, parentPort, workerData } from)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (// Environment variables)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { createServer } from 'http';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import cluster from 'cluster';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Relationships
 
-- [[004_log_entry_photos.py]] (10 shared connections)
-- [[n8n Set Node Pattern]] (1 shared connections)
-- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `scripts/backup.sh`
-- `scripts/rotate_emso_key.sh`
-- `scripts/upgrade.sh`
+- `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Audit Trail
 
-- EXTRACTED: 62 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

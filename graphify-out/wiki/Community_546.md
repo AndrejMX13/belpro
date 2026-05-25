@@ -4,29 +4,24 @@
 
 ## Key Concepts
 
-- **GET /api/volunteers/{id} (get_volunteer)** (7 connections) — `api/routers/volunteers.py`
-- **n8n: GET /api/volunteers/{id} (Next Entry Volunteer Detail)** (2 connections) — `n8n/workflows/manager_approval.json`
-- **Shared Volunteer Data Structure (phone, first_name, last_name, id)** (2 connections) — `api/routers/volunteers.py`
-- **n8n: GET /api/volunteers/{id} (Get Volunteer for Manager Msg)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: GET /api/volunteers/{id} (Auto Notify Volunteer Detail)** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **The Validation Loop** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Pattern from Telemetry** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Example** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:block3 (1. Configure node)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Iteration 1)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Code: Preveri Slike Stanje]] (2 shared connections)
-- [[errors.py]] (1 shared connections)
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
-- [[API.reports.downloadHistoryPdf()]] (1 shared connections)
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `n8n/workflows/manager_approval.json`
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 12 (92%)
-- INFERRED: 1 (8%)
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

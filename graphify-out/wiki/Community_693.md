@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **project_fastapi_lifespan.md** (1 connections) — `.claude/memory/project_fastapi_lifespan.md`
-- **code:python (from contextlib import asynccontextmanager)** (1 connections) — `.claude/memory/project_fastapi_lifespan.md`
+- **project_error_reporting_pattern.md** (1 connections) — `.claude/memory/project_error_reporting_pattern.md`
+- **code:python (from models.error_log import ErrorLog)** (1 connections) — `.claude/memory/project_error_reporting_pattern.md`
 
 ## Relationships
 
@@ -13,7 +13,7 @@
 
 ## Source Files
 
-- `.claude/memory/project_fastapi_lifespan.md`
+- `.claude/memory/project_error_reporting_pattern.md`
 
 ## Audit Trail
 

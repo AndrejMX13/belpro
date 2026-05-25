@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **DELETE /api/volunteers/{id} (delete_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **POST /api/volunteers/check-emso (check_emso)** (0 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 

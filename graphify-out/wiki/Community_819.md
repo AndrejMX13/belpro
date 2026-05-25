@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/managers/me/config-info (get_config_info)** (0 connections) — `api/routers/managers.py`
+- **GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)** (0 connections) — `api/routers/log_entries.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/managers.py`
+- `api/routers/log_entries.py`
 
 ## Audit Trail
 

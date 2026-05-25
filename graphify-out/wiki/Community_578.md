@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Performance Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Large Payloads** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block31 (Webhook → Queue (Redis/DB) → Response (immediate))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **High Volume** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Retries** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Integration-Specific Gotchas** (4 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Bidirectional Threshold Checking** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Google Sheets** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Google Drive** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:javascript (// ❌ Only catches increases)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[restore.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 

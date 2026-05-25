@@ -1,32 +1,31 @@
 # Community 317
 
-> 11 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **Terraform Infrastructure as Code** (6 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **AWS ECS Fargate Setup** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **AWS RDS PostgreSQL** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **Variables and Outputs** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **Common Commands** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **terraform-iac.md** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:hcl (terraform {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:hcl (resource "aws_db_instance" "postgres" {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:hcl (# variables.tf)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:bash (terraform init)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Pages / Views** (9 connections) — `SPEC.md`
+- **5. Manager Dashboard (Web UI)** (2 connections) — `SPEC.md`
+- **5.1 Volunteers** (1 connections) — `SPEC.md`
+- **5.2 Pending Approvals** (1 connections) — `SPEC.md`
+- **5.3 Log / History** (1 connections) — `SPEC.md`
+- **5.4 Analytics** (1 connections) — `SPEC.md`
+- **5.5 Reports** (1 connections) — `SPEC.md`
+- **5.6 Settings** (1 connections) — `SPEC.md`
+- **5.7 Administracija (System Administration)** (1 connections) — `SPEC.md`
+- **5.8 Dnevnik napak (App Log)** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/terraform-iac.md`
+- `SPEC.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

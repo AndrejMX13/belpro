@@ -4,30 +4,28 @@
 
 ## Key Concepts
 
-- **Django to FastAPI Migration Guide** (12 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **migration-from-django.md** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **When to Use This Guide** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Concept Mapping: Django/DRF → FastAPI** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Cross-Reference** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Migration Checklist** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **ISS-026: Settings Table Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Post-implementation** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **2026-05-20-settings-table.md** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- [[Community 585]] (1 shared connections)
-- [[Community 586]] (1 shared connections)
-- [[Community 434]] (1 shared connections)
-- [[Community 584]] (1 shared connections)
-- [[Community 587]] (1 shared connections)
-- [[Community 433]] (1 shared connections)
-- [[Automated Upgrade Script (upgrade.sh)]] (1 shared connections)
+- [[Community 397]] (1 shared connections)
+- [[Community 539]] (1 shared connections)
+- [[Community 308]] (1 shared connections)
+- [[POST /api/auth/logout (logout)]] (1 shared connections)
+- [[Community 344]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

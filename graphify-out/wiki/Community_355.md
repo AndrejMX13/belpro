@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Validation Rules** (5 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **1. Always Use {{}}** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **2. Use Quotes for Spaces and Special Characters** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **3. Match Exact Node Names** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **4. No Nested {{}}** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (❌ $json.field)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (❌ {{$json.field name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (❌ {{$node["http request"].json}}  // lowercase)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (❌ {{{$json.field}}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. HTTP Request Node** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. Response Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **5. Error Handler** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block3 (HTTP Request → Code (parse) → Set (map fields) → Action)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. Action** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block4 (Error Trigger → Log Error → Notify Admin → Retry Logic (opti)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

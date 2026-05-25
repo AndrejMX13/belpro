@@ -1,35 +1,35 @@
 # volunteer_factory()
 
-> 42 nodes
+> 43 nodes
 
 ## Key Concepts
 
-- **JSONB Operations** (10 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **JSONB Indexing** (6 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **JSONB Operators** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Query Patterns** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Performance Best Practices** (3 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **JSONB vs JSON** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Retrieval Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Containment Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Modification Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **GIN Index (Default for containment)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **GIN Index on Specific Path** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **GIN Index with jsonb_path_ops** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **B-tree Index on Extracted Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Expression Index for Nested Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Filtering** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Aggregation** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Array Operations** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **JSONB Functions** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **JSONB Path Queries (Postgres 12+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **DO** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **DON'T** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Schema Validation (Postgres 15+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **Migration Patterns** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **jsonb.md** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- **code:sql (-- Use JSONB (binary, indexed, faster))** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
-- *... and 17 more nodes in this community*
+- **Systematic Debugging** (10 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Phase 1: Root Cause Investigation** (6 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Phase 2: Pattern Analysis** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Phase 3: Hypothesis Testing** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Phase 4: Implementation** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **The Three-Fix Threshold** (3 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **The Four Mandatory Phases** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 1.1: Read Error Messages Thoroughly** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 1.2: Reproduce Reliably** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 1.3: Examine Recent Changes** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 1.4: Trace Data Flow Backward** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 1.5: Add Diagnostic Instrumentation** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 2.1: Locate Similar Working Implementations** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 2.2: Study Reference Implementations Completely** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 3.1: Form Specific, Written Hypothesis** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 3.2: Test with Minimal Changes** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 3.3: One Variable at a Time** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 4.1: Create Failing Test Case First** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 4.2: Implement Single Fix** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Step 4.3: Verify No New Breakage** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **What Three Failures Means** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Decision Flowchart** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **systematic-debugging.md** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Core Principle** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **code:block1 (┌───────────────────────────────────────────────────────────)** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- *... and 18 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/postgres-pro/references/jsonb.md`
+- `.claude/skills/debugging-wizard/references/systematic-debugging.md`
 
 ## Audit Trail
 
-- EXTRACTED: 82 (100%)
+- EXTRACTED: 84 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

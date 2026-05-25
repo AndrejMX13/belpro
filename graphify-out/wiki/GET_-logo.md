@@ -4,36 +4,40 @@
 
 ## Key Concepts
 
-- **Quick Fixes** (9 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **TypeError: Cannot read property 'x' of undefined** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **Unhandled Promise Rejection** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **React: Too Many Re-renders** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **CORS Error** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **Maximum Call Stack Size Exceeded** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **Module Not Found** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **Async/Await Issues** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **quick-fixes.md** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:typescript (// Error)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:typescript (// Error)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:typescript (// Error: Calling setState during render)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:typescript (// Browser blocks cross-origin request)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:typescript (// Error: Infinite recursion)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:bash (# Error: Cannot find module 'x')** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **code:typescript (// Error: await in non-async function)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
-- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **report_pdf.py** (10 connections) — `api/services/report_pdf.py`
+- **render_volunteer_pdf()** (9 connections) — `api/services/report_pdf.py`
+- **ngo_header_html()** (8 connections) — `api/services/report_pdf.py`
+- **NGOInfo** (7 connections) — `api/services/report_pdf.py`
+- **render_summary_pdf()** (7 connections) — `api/services/report_pdf.py`
+- **_esc()** (4 connections) — `api/services/report_pdf.py`
+- **test_ngo_header_html_without_logo()** (4 connections) — `api/tests/test_reports.py`
+- **test_ngo_header_html_with_logo()** (4 connections) — `api/tests/test_reports.py`
+- **_generated_line()** (3 connections) — `api/services/report_pdf.py`
+- **_fmt_date()** (2 connections) — `api/services/report_pdf.py`
+- **PDF rendering for monthly volunteer reports using WeasyPrint.** (1 connections) — `api/services/report_pdf.py`
+- **NGO identity shown in every PDF header.** (1 connections) — `api/services/report_pdf.py`
+- **Render the NGO header block as an HTML string.** (1 connections) — `api/services/report_pdf.py`
+- **Render a single-volunteer monthly report PDF and return raw bytes.** (1 connections) — `api/services/report_pdf.py`
+- **Render an all-volunteer summary PDF and return raw bytes.** (1 connections) — `api/services/report_pdf.py`
+- **ngo_header_html must not include an img tag when logo_path is None.** (1 connections) — `api/tests/test_reports.py`
+- **ngo_header_html must include an img tag with data URI src when logo_path is set.** (1 connections) — `api/tests/test_reports.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 434]] (4 shared connections)
+- [[merge_semantic.py]] (4 shared connections)
+- [[Systematic Debugging Reference]] (3 shared connections)
+- [[load_key()]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- `api/services/report_pdf.py`
+- `api/tests/test_reports.py`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 48 (74%)
+- INFERRED: 17 (26%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Treat empty string as absent — store None rather than ''.** (0 connections) — `api/schemas/volunteer.py`
+- **Normalize to WhatsApp-native digits-only format; reject unparseable values.** (0 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 

@@ -4,31 +4,37 @@
 
 ## Key Concepts
 
-- **Property Dependencies Deep Dive** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Common Dependency Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Finding Property Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **displayOptions Mechanism** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 1: Boolean Toggle** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 2: Operation Switch** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 3: Type Selection** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// sendBody controls body visibility)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Different operations → different fields)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **n8n Workflow Patterns** (16 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Pattern Selection Guide** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **The 6 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **When to use each pattern:** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Pattern Statistics** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Detailed Pattern Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Real Template Examples** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **✅ Do** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **❌ Don't** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[load-project-memory.sh]] (1 shared connections)
+- [[Community 527]] (1 shared connections)
+- [[Community 579]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
+- [[Community 339]] (1 shared connections)
+- [[Community 578]] (1 shared connections)
+- [[Community 423]] (1 shared connections)
+- [[Community 303]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 31 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

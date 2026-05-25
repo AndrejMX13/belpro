@@ -1,34 +1,30 @@
 # Community 404
 
-> 9 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **cmd_rotate()** (9 connections) — `api/scripts/rotate_emso_key.py`
-- **cmd_backup()** (6 connections) — `api/scripts/rotate_emso_key.py`
-- **main()** (6 connections) — `api/scripts/rotate_emso_key.py`
-- **rotate_emso_key.py** (5 connections) — `api/scripts/rotate_emso_key.py`
-- **cmd_restore()** (5 connections) — `api/scripts/rotate_emso_key.py`
-- **_db_url()** (4 connections) — `api/scripts/rotate_emso_key.py`
-- **Dump volunteers table + old key to out_path as JSON.** (1 connections) — `api/scripts/rotate_emso_key.py`
-- **Restore emso + emso_hash for all volunteers from backup_path.** (1 connections) — `api/scripts/rotate_emso_key.py`
-- **Re-encrypt all EMŠOs from old_key to new_key. Returns count of rotated records.** (1 connections) — `api/scripts/rotate_emso_key.py`
+- **Security Policy** (7 connections) — `SECURITY.md`
+- **SECURITY.md** (1 connections) — `SECURITY.md`
+- **Reporting a vulnerability** (1 connections) — `SECURITY.md`
+- **Scope** (1 connections) — `SECURITY.md`
+- **Out of scope** (1 connections) — `SECURITY.md`
+- **EMŠO encryption** (1 connections) — `SECURITY.md`
+- **Supported versions** (1 connections) — `SECURITY.md`
+- **Security model assumptions** (1 connections) — `SECURITY.md`
 
 ## Relationships
 
-- [[get_report_history()]] (5 shared connections)
-- [[005_report_prefs.py]] (3 shared connections)
-- [[Community 363]] (1 shared connections)
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/scripts/rotate_emso_key.py`
+- `SECURITY.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (74%)
-- INFERRED: 10 (26%)
+- EXTRACTED: 14 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

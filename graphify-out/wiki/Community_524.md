@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Checklist for API Integration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Strategy 1: Progressive Strictness** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Validation Profile Strategies** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Strategy 2: Profile by Workflow Type** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 419]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

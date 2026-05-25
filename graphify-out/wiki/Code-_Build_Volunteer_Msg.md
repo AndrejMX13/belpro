@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Debugging Tools** (7 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **Python** (4 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **Go** (4 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **Node.js / TypeScript** (3 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **VS Code Debug Config** (2 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **debugging-tools.md** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **Debuggers by Language** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:bash (# Start with inspector)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:typescript (// In code)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:bash (# Start debugger)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:python (# In code)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **pdb Commands** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:bash (# Start delve)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:go (// Quick print)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **Delve Commands** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **code:json (// .vscode/launch.json)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **renderLogEntryDetail** (9 connections) — `frontend/js/volunteers.js`
+- **renderDetail** (4 connections) — `frontend/js/volunteers.js`
+- **loadApprovals** (3 connections) — `frontend/js/volunteers.js`
+- **get_volunteer** (2 connections) — `api/routers/volunteers.py`
+- **list_log_entries** (2 connections) — `api/routers/log_entries.py`
+- **approve_log_entry** (2 connections) — `api/routers/log_entries.py`
+- **reject_log_entry** (2 connections) — `api/routers/log_entries.py`
+- **loadVolunteerLog** (1 connections) — `frontend/js/volunteers.js`
+- **delete_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **update_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **get_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **create_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **update_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **upload_photo** (1 connections) — `api/routers/log_entries.py`
+- **get_photo_file** (1 connections) — `api/routers/log_entries.py`
+- **delete_photo** (1 connections) — `api/routers/log_entries.py`
+- **delete_log_entry** (1 connections) — `api/routers/log_entries.py`
 
 ## Relationships
 
@@ -28,11 +28,13 @@
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- `api/routers/log_entries.py`
+- `api/routers/volunteers.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

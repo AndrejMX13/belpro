@@ -1,35 +1,35 @@
 # logo.py
 
-> 35 nodes
+> 36 nodes
 
 ## Key Concepts
 
-- **n8n Code JavaScript Skill Entry Point** (8 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **n8n JavaScript Code Node Built-in Functions** (7 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **n8n JavaScript Code Node Data Access Patterns** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **n8n JavaScript Code Node Error Patterns** (7 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **n8n Code JavaScript Skill README** (7 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **n8n Code Python Skill Entry Point** (7 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **n8n JavaScript Code Node Common Patterns** (6 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **n8n Expression Syntax Skill Entry Point** (6 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **n8n MCP Tools Expert Skill Entry Point** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **n8n Python Code Node Data Access Patterns** (3 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **n8n Code Node** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Webhook Data Body Nesting Gotcha** (3 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **n8n Python Code Node Common Patterns** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **n8n Python Code Node Error Patterns** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **n8n Python Code Node Standard Library Reference** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **n8n Expression Syntax Common Mistakes** (2 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **n8n Expression Syntax Skill README** (2 connections) — `.claude/skills/n8n-expression-syntax/README.md`
-- **n8n MCP Tools Expert Skill README** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **n8n MCP Tools Node Discovery Search Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **n8n MCP Tools Configuration Validation Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **n8n Task Runner Sandbox Restrictions** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **n8n Expression Syntax Double Curly Braces** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Python Code Node No External Libraries Constraint** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **SplitInBatches Loop Pattern** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **$getWorkflowStaticData() Persistent Storage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- *... and 10 more nodes in this community*
+- **Volunteer Entry Workflow Integration Tests Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 1: Host dependencies and directory structure** (6 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 7: Unknown volunteer test** (5 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 2: `conftest.py` — fixtures** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 3: `helpers.py` — payload builders and polling** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 4: Happy path — text entry then confirm** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 5: Edit path — text, edit, new text, confirm** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 6: Cancel path — text then cancel** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **2026-05-10-workflow-integration-tests.md** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Key Facts (read before writing any code)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pip install httpx pytest pytest-asyncio python-dot)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (New-Item -ItemType File -Force tests\__init__.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:toml ([tool.pytest.ini_options])** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/ --collect-only)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add pyproject.toml tests/)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:python (import asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/ --collect-only)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add tests/workflow/conftest.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:python (import asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/ --collect-only)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add tests/workflow/helpers.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:python (""")** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/test_volunteer_entry.py::tes)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add tests/workflow/test_volunteer_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
@@ -37,31 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/modules.md`
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- `.claude/skills/n8n-code-javascript/README.md`
-- `.claude/skills/n8n-code-javascript/SKILL.md`
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- `.claude/skills/n8n-code-python/README.md`
-- `.claude/skills/n8n-code-python/SKILL.md`
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- `.claude/skills/n8n-expression-syntax/README.md`
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
-- `.claude/skills/n8n-mcp-tools-expert/README.md`
-- `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
 
 ## Audit Trail
 
-- EXTRACTED: 98 (92%)
-- INFERRED: 8 (8%)
+- EXTRACTED: 70 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

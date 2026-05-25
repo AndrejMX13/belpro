@@ -4,40 +4,41 @@
 
 ## Key Concepts
 
-- **n8n Expression Syntax** (16 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Expression Format** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Debugging Expressions** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Common Mistakes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Expression Helpers** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:block1 ({{expression}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:block2 (✅ {{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Quick Fixes** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Test in Expression Editor** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Common Error Messages** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Available Methods** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Related Skills** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **n8n MCP Tools Expert** (18 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Quick Reference** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Credential Management** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **n8n_manage_credentials** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Tool Categories** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Most Used Tools (by success rate)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// List all credentials)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Tool Availability** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Performance Characteristics** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Do** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Don't** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 358]] (1 shared connections)
-- [[Community 543]] (1 shared connections)
-- [[Community 442]] (1 shared connections)
-- [[Community 443]] (1 shared connections)
-- [[Community 355]] (1 shared connections)
-- [[Community 356]] (1 shared connections)
-- [[Community 357]] (1 shared connections)
-- [[Community 444]] (1 shared connections)
-- [[Community 650]] (1 shared connections)
+- [[Community 414]] (1 shared connections)
+- [[Community 468]] (1 shared connections)
+- [[Work Date Rename and Dashboard Entry Plan]] (1 shared connections)
+- [[Community 465]] (1 shared connections)
+- [[Community 632]] (1 shared connections)
+- [[Community 466]] (1 shared connections)
+- [[Community 676]] (1 shared connections)
+- [[Community 675]] (1 shared connections)
+- [[Community 467]] (1 shared connections)
+- [[Community 574]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 35 (100%)
+- EXTRACTED: 36 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

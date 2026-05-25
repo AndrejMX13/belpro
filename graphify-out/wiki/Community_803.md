@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Superpowers Claude Code Plugin** (0 connections) — `README.md`
+- **reference_serena_memory.md** (0 connections) — `.claude/memory/reference_serena_memory.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `README.md`
+- `.claude/memory/reference_serena_memory.md`
 
 ## Audit Trail
 

@@ -1,35 +1,35 @@
 # update_admin_settings()
 
-> 27 nodes
+> 28 nodes
 
 ## Key Concepts
 
-- **Module Systems** (14 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **ES Modules (ESM)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Import Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Dynamic Imports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Package.json Configuration** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Conditional Exports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Import Maps (Browser)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **CommonJS Compatibility** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Module Resolution** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Circular Dependencies** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Tree Shaking Optimization** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Module Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Node.js ESM Specifics** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **modules.md** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Named exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Named imports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Basic dynamic import)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:json ({)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// package.json with conditional exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:html (<!-- In HTML -->)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// ESM consuming CommonJS)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Explicit file extensions required in ESM)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// moduleA.js)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Write side-effect-free code for tree shaking)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Singleton pattern)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- *... and 2 more nodes in this community*
+- **Task 1: Script skeleton — helpers, validation, dispatch** (7 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **Task 4: README, SPEC, and OPEN_ISSUES updates** (7 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **Task 2: Export command** (6 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **File Map** (5 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **Task 3: Import command** (5 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **n8n Workflow Import/Export Script Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **2026-05-16-n8n-workflow-scripts.md** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:python (#!/usr/bin/env python)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (chmod +x scripts/n8n_workflows.py)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (python scripts/n8n_workflows.py)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (python -c ")** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (N8N_API_KEY=FILL_IN_AFTER_FIRST_N8N_RUN python -c ")** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (git add scripts/n8n_workflows.py)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:python (def cmd_export(base_url: str, api_key: str) -> None:)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (./scripts/n8n_workflows.py export)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:block9 (✓ Volunteer Entry → volunteer_entry.json)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (ls -la n8n/workflows/*.json)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (git add scripts/n8n_workflows.py)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:python (def cmd_import(base_url: str, api_key: str) -> None:)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:block14 (✓ Volunteer Entry: updated and activated)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:bash (git add scripts/n8n_workflows.py)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:markdown (### Workflow management)** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:block17** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- **code:block18** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
+- *... and 3 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/modules.md`
+- `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (100%)
+- EXTRACTED: 54 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

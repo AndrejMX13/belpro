@@ -4,21 +4,22 @@
 
 ## Key Concepts
 
-- **3. Zagon vseh storitev** (3 connections) — `README_SL.md`
-- **code:bash (docker compose up -d)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose ps)** (1 connections) — `README_SL.md`
+- **submitAddVolunteer** (2 connections) — `frontend/js/volunteers.js`
+- **check_emso** (1 connections) — `api/routers/volunteers.py`
+- **create_volunteer** (1 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README_SL.md`
+- `api/routers/volunteers.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

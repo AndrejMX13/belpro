@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **project_evolution_qr.md** (0 connections) — `.claude/memory/project_evolution_qr.md`
+- **feedback_pydyf_pin.md** (0 connections) — `.claude/memory/feedback_pydyf_pin.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/project_evolution_qr.md`
+- `.claude/memory/feedback_pydyf_pin.md`
 
 ## Audit Trail
 

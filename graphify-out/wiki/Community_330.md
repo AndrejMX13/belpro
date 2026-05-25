@@ -4,28 +4,38 @@
 
 ## Key Concepts
 
-- **Error #1: ModuleNotFoundError (MOST CRITICAL)** (5 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Solution** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Available Standard Library Modules** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: External libraries not available)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ JavaScript Code node with $helpers.httpRequest())** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ Add HTTP Request node BEFORE Python Code node)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ Use urllib from standard library (limited functionality))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Common Library Replacements** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ THESE WORK - Standard library only)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Standard Library Reference - Python Code Node** (16 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Available Modules** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **⚠️ Critical Limitation** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **STANDARD_LIBRARY.md** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# ❌ NOT AVAILABLE - Will cause ModuleNotFoundError)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Priority 1: Most Useful (Use These)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Priority 2: Moderately Useful** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Priority 3: Occasionally Useful** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Complete Standard Library List** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 514]] (1 shared connections)
+- [[Community 369]] (1 shared connections)
+- [[Community 292]] (1 shared connections)
+- [[Community 293]] (1 shared connections)
+- [[Community 457]] (1 shared connections)
+- [[Community 458]] (1 shared connections)
+- [[Community 367]] (1 shared connections)
+- [[Community 461]] (1 shared connections)
+- [[Community 368]] (1 shared connections)
+- [[Community 570]] (1 shared connections)
+- [[Community 460]] (1 shared connections)
+- [[Community 459]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

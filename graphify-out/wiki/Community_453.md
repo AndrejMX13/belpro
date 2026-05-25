@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **3. $jmespath() - JSON Querying** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Basic Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Advanced Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Common Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Pattern 1: Filter and project)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Pattern 4: _node - Reference Other Nodes** (4 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (old_data = _node["Get Old Data"]["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 547]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 

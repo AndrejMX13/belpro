@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Pattern 4: $node - Reference Other Nodes** (5 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 3: Access Node Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const oldData = $node["Get Old Data"].json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get data from specific execution path)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Error #5: Incorrect Return Format** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Common Scenarios** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Returning plain dictionary)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Array of objects with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# Calculate total)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# Filter active items)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Return empty array)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 416]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

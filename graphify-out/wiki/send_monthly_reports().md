@@ -4,61 +4,54 @@
 
 ## Key Concepts
 
-- **Manager (ORM)** (12 connections) — `api/models/manager.py`
-- **Base (DeclarativeBase)** (7 connections) — `api/models/base.py`
-- **render_volunteer_pdf (Service)** (6 connections) — `api/services/report_pdf.py`
-- **render_consent_pdf (Service)** (5 connections) — `api/services/consent_pdf.py`
-- **NGOInfo (Dataclass)** (5 connections) — `api/services/report_pdf.py`
-- **AppSetting (ORM)** (4 connections) — `api/models/app_setting.py`
-- **MonthlyReport (ORM)** (4 connections) — `api/models/monthly_report.py`
-- **AppSettings (Service)** (4 connections) — `api/services/app_settings.py`
-- **persist_report (Service)** (4 connections) — `api/services/report_storage.py`
-- **ErrorLog (ORM)** (3 connections) — `api/models/error_log.py`
-- **VolunteerMonthlySummary (Schema)** (3 connections) — `api/schemas/report.py`
-- **ReportHistoryItem (Schema)** (3 connections) — `api/schemas/report.py`
-- **send_email (Service)** (3 connections) — `api/services/email.py`
-- **EvolutionClient (Service)** (3 connections) — `api/services/evolution.py`
-- **render_summary_pdf (Service)** (3 connections) — `api/services/report_pdf.py`
-- **AdminSettingsResponse (Schema)** (2 connections) — `api/schemas/admin.py`
-- **AdminSettingsUpdate (Schema)** (2 connections) — `api/schemas/admin.py`
-- **ManagerResponse (Schema)** (2 connections) — `api/schemas/manager.py`
-- **ConfigInfoResponse (Schema)** (2 connections) — `api/schemas/manager.py`
-- **logo_src (Service)** (2 connections) — `api/services/logo.py`
-- **ngo_header_html (Service)** (2 connections) — `api/services/report_pdf.py`
-- **ErrorLogCreate (Schema)** (1 connections) — `api/schemas/error_log.py`
-- **ErrorLogResponse (Schema)** (1 connections) — `api/schemas/error_log.py`
-- **ManagerCreate (Schema)** (1 connections) — `api/schemas/manager.py`
-- **ManagerUpdate (Schema)** (1 connections) — `api/schemas/manager.py`
+- **BelPro System Specification** (29 connections) — `SPEC.md`
+- **Evolution API (WhatsApp Gateway)** (7 connections) — `SPEC.md`
+- **Digital Volunteer Diary Architecture & GDPR Notes** (6 connections) — `BelPro.md`
+- **DB Table: volunteers** (5 connections) — `SPEC.md`
+- **WhatsApp Volunteer Entry Flow** (4 connections) — `SPEC.md`
+- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) — `SPEC.md`
+- **CLAUDE.md — Project AI Instructions** (3 connections) — `CLAUDE.md`
+- **Monthly PDF Reports Generation and Delivery** (3 connections) — `SPEC.md`
+- **DB Table: log_entries** (3 connections) — `SPEC.md`
+- **DB Table: monthly_reports** (3 connections) — `SPEC.md`
+- **Dnevnik prostovoljskega dela (Volunteer Work Diary)** (2 connections) — `SPEC.md`
+- **Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)** (2 connections) — `SPEC.md`
+- **GDPR and ZVOP-2 Compliance** (2 connections) — `SPEC.md`
+- **DB Table: managers** (2 connections) — `SPEC.md`
+- **DB Table: log_entry_photos** (2 connections) — `SPEC.md`
+- **DB Table: settings** (2 connections) — `SPEC.md`
+- **Workflow Integration Tests Plan** (2 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **WhatsApp Phone Source of Truth Plan** (2 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **BelPro System Specification (Slovenian)** (1 connections) — `SPEC_SL.md`
+- **CSD — Centre for Social Work** (1 connections) — `SPEC.md`
+- **Single-Tenant Architecture** (1 connections) — `SPEC.md`
+- **WeasyPrint (HTML to PDF)** (1 connections) — `CLAUDE.md`
+- **Graphify Knowledge Graph Tooling** (1 connections) — `CLAUDE.md`
+- **Serena MCP Server (Symbol Navigation)** (1 connections) — `CLAUDE.md`
+- **DB Table: error_log** (1 connections) — `SPEC.md`
 - *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [[errors.py]] (6 shared connections)
-- [[BelPro Project Memory Public Index]] (3 shared connections)
+- [[POST /log-entries/{id}/photos]] (7 shared connections)
+- [[Code: Procesiraj Popravek]] (5 shared connections)
+- [[API.reports.downloadHistoryPdf()]] (4 shared connections)
+- [[Community 540]] (1 shared connections)
+- [[POST /api/errors (write_error)]] (1 shared connections)
 
 ## Source Files
 
-- `api/models/app_setting.py`
-- `api/models/base.py`
-- `api/models/error_log.py`
-- `api/models/manager.py`
-- `api/models/monthly_report.py`
-- `api/schemas/admin.py`
-- `api/schemas/error_log.py`
-- `api/schemas/manager.py`
-- `api/schemas/report.py`
-- `api/services/app_settings.py`
-- `api/services/consent_pdf.py`
-- `api/services/email.py`
-- `api/services/evolution.py`
-- `api/services/logo.py`
-- `api/services/report_pdf.py`
-- `api/services/report_storage.py`
+- `BelPro.md`
+- `CLAUDE.md`
+- `SPEC.md`
+- `SPEC_SL.md`
+- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 49 (56%)
-- INFERRED: 38 (44%)
+- EXTRACTED: 89 (97%)
+- INFERRED: 3 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

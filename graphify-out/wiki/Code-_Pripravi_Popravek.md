@@ -4,34 +4,33 @@
 
 ## Key Concepts
 
-- **Maintenance** (9 connections) — `README.md`
-- **Upgrade** (2 connections) — `README.md`
-- **Backup** (2 connections) — `README.md`
-- **Restore** (2 connections) — `README.md`
-- **Tail logs** (2 connections) — `README.md`
-- **Rebuild a service after code changes** (2 connections) — `README.md`
-- **Reset a forgotten dashboard password** (2 connections) — `README.md`
-- **Applying `.env` changes** (2 connections) — `README.md`
-- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README.md`
-- **code:bash (bash scripts/backup.sh)** (1 connections) — `README.md`
-- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README.md`
-- **code:bash (docker compose logs -f)** (1 connections) — `README.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `README.md`
-- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README.md`
-- **code:bash (docker compose up -d <service>)** (1 connections) — `README.md`
+- **Handling API Responses** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pagination** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Error Responses (400-599)** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 1: Offset-based** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Success Response (200-299)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 2: Cursor-based** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 3: Link Header** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Entire response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block19 (1. Set (initialize: page=1, has_more=true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (const items = $input.first().json;)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block21 (1. HTTP Request (GET /api/items))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - parse Link header)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block24 (HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({{$json.error}} is empty)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[IF: Aktivno Slike Stanje?]] (1 shared connections)
-- [[Community 609]] (1 shared connections)
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `README.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

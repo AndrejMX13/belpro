@@ -4,39 +4,49 @@
 
 ## Key Concepts
 
-- **ops_server.py** (7 connections) — `ops/scripts/ops_server.py`
-- **_Handler** (7 connections) — `ops/scripts/ops_server.py`
-- **write_crontab()** (5 connections) — `ops/scripts/ops_server.py`
-- **.do_POST()** (5 connections) — `ops/scripts/ops_server.py`
-- **fetch_settings_from_db()** (4 connections) — `ops/scripts/ops_server.py`
-- **._send()** (4 connections) — `ops/scripts/ops_server.py`
-- **main()** (4 connections) — `ops/scripts/ops_server.py`
-- **_dsn()** (3 connections) — `ops/scripts/ops_server.py`
-- **report_error()** (3 connections) — `ops/scripts/ops_server.py`
-- **reload_crond()** (3 connections) — `ops/scripts/ops_server.py`
-- **.do_GET()** (2 connections) — `ops/scripts/ops_server.py`
-- **.log_message()** (1 connections) — `ops/scripts/ops_server.py`
-- **Convert asyncpg DATABASE_URL to a psycopg2-compatible DSN.** (1 connections) — `ops/scripts/ops_server.py`
-- **POST failure to the API error log. Best-effort — never raises.** (1 connections) — `ops/scripts/ops_server.py`
-- **Send SIGHUP to crond so it reloads the crontab file.** (1 connections) — `ops/scripts/ops_server.py`
-- **Write a new crontab to CRONTAB_PATH and reload crond.** (1 connections) — `ops/scripts/ops_server.py`
-- **Read all runtime-tunable settings from the settings table.      Returns an empty** (1 connections) — `ops/scripts/ops_server.py`
-- **HTTP request handler for the ops notification server.** (1 connections) — `ops/scripts/ops_server.py`
-- **Sync crontab with DB settings, then start the notification server.** (1 connections) — `ops/scripts/ops_server.py`
+- **connections** (66 connections) — `n8n/workflows/volunteer_entry.json`
+- **Filter & Route** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Shrani Stanje** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Build Media Body** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Manual: Poslji Obvestilo Upravljalcu** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **HTTP: GET Pending (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Build Msg (Auto)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Build Image Media Body** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **IF: Photo Limit Reached** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **HTTP: Brisi Star Vnos (Audio)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- [[005_report_prefs.py]] (2 shared connections)
-- [[n8n Code Node Pattern]] (1 shared connections)
+- [[002_add_emso_hash.py]] (17 shared connections)
+- [[Community 738]] (1 shared connections)
+- [[Community 742]] (1 shared connections)
+- [[Community 715]] (1 shared connections)
+- [[Community 739]] (1 shared connections)
+- [[Community 727]] (1 shared connections)
+- [[Community 720]] (1 shared connections)
+- [[Community 733]] (1 shared connections)
+- [[Community 737]] (1 shared connections)
+- [[Community 736]] (1 shared connections)
+- [[Community 730]] (1 shared connections)
+- [[Community 717]] (1 shared connections)
 
 ## Source Files
 
-- `ops/scripts/ops_server.py`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 53 (96%)
-- INFERRED: 2 (4%)
+- EXTRACTED: 102 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Testing & Debugging** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. Log Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **5. Use Binary Data Properly** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. Test with Manual Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. Use Postman/Insomnia First** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - log for debugging)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Check Execution Data** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Codebase context** (7 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 2: Storage service** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (class MonthlyReport(Base):)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python ("""Tests for PDF report persistence and history endpoints."")** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block8 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python ("""PDF report storage — disk write and upsert of MonthlyRepo)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block10 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add api/services/report_storage.py api/tests/test_report)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 533]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 

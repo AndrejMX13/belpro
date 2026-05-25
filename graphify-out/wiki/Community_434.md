@@ -4,27 +4,33 @@
 
 ## Key Concepts
 
-- **Django ORM → Async SQLAlchemy** (4 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Query Patterns: Django ORM vs SQLAlchemy** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django ORM Models** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **SQLAlchemy 2.0 Async Models** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django models)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# SQLAlchemy 2.0 models)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django ORM queries)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# SQLAlchemy 2.0 async queries)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **reports.py** (13 connections) — `api/routers/reports.py`
+- **generate_monthly_pdf()** (7 connections) — `api/routers/reports.py`
+- **_summary_items()** (6 connections) — `api/routers/reports.py`
+- **monthly_summary()** (4 connections) — `api/routers/reports.py`
+- **Reports router — monthly aggregation and PDF export endpoints.** (1 connections) — `api/routers/reports.py`
+- **Return per-volunteer totals of approved entries for the given year/month.** (1 connections) — `api/routers/reports.py`
+- **Run the monthly aggregation query and return per-volunteer summaries.** (1 connections) — `api/routers/reports.py`
+- **Generate a monthly PDF report for one volunteer or all active volunteers.** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[GET /logo]] (4 shared connections)
+- [[merge_semantic.py]] (3 shared connections)
+- [[n8n Code Node Pattern]] (3 shared connections)
+- [[test_auth.py]] (2 shared connections)
+- [[006_whatsapp_and_smtp_config.py]] (2 shared connections)
+- [[ops_server.py]] (1 shared connections)
+- [[Community 543]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `api/routers/reports.py`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 28 (82%)
+- INFERRED: 6 (18%)
 - AMBIGUOUS: 0 (0%)
 
 ---

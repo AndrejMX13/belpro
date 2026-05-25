@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Use Cases** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **4. $getWorkflowStaticData() - Persistent Storage** (3 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Get static data storage)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Use Case 1: Rate limiting)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Use Case 2: Tracking last processed ID)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Use Case 3: Accumulating results)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Testing Your Code** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Test Pattern 1: Handle Empty Input** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Test Pattern 2: Test with Missing Fields** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Test Pattern 3: Test Both Modes** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Always test with empty input)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Code that works in both modes)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 547]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

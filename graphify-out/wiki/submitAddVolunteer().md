@@ -4,39 +4,39 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (11 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. ❌ Wrong: Connecting tools to main port** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **✅ Correct: Use ai_tool connection type** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. ❌ Wrong: Vague tool descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **✅ Correct: Specific descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. ❌ Wrong: No memory for conversations** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **✅ Correct: Add memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. ❌ Wrong: Giving AI write access** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **✅ Correct: Read-only access** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. ❌ Wrong: Unbounded tool responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **✅ Correct: Limit tool output** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block44 (HTTP Request → AI Agent  // Won't work as tool!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block45 (HTTP Request --[ai_tool]--> AI Agent)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block46 (description: "Get data"  // AI won't know when to use this)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block47 (description: "Query customer orders by email address. Return)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block48 (Every message is standalone - no context!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block49 (Window Buffer Memory --[ai_memory]--> AI Agent)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block50 (Postgres (full access) as tool  // AI could DELETE data!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block51 (Postgres (read-only user) as tool  // Safe)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block52 (Tool returns 10MB of data → exceeds token limit)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Database Optimizer** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Common Operations & Examples** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Identify Top Slow Queries (PostgreSQL)** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Capture an Execution Plan** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Create a Covering Index** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Validate Improvement** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MySQL: Find Slow Queries** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Requires pg_stat_statements extension)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Use BUFFERS to expose cache hit vs. disk read ratio)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Reading EXPLAIN Output — Key Patterns to Find** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Covers the filter AND the projected columns, eliminating )** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Before optimization: save plan & timing)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Inspect slow query log candidates)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
 
 ## Relationships
 
-- [[Je v urejanju?]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/database-optimizer/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 41 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

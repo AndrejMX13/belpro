@@ -4,37 +4,31 @@
 
 ## Key Concepts
 
-- **n8n Workflow Patterns** (16 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Pattern Selection Guide** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **The 6 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **When to use each pattern:** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Pattern Statistics** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Detailed Pattern Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Real Template Examples** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **✅ Do** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **❌ Don't** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Async Testing** (7 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Test Setup** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Endpoint Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Auth Helper Fixture** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Service Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Mocking Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **testing-async.md** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.fixture)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (from unittest.mock import AsyncMock, patch)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Relationships
 
-- [[Community 525]] (1 shared connections)
-- [[Community 576]] (1 shared connections)
-- [[Community 305]] (1 shared connections)
-- [[Community 342]] (1 shared connections)
-- [[Community 575]] (1 shared connections)
-- [[Community 427]] (1 shared connections)
-- [[Community 306]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Audit Trail
 
-- EXTRACTED: 31 (100%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

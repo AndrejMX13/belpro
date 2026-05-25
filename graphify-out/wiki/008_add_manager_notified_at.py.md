@@ -4,37 +4,40 @@
 
 ## Key Concepts
 
-- **Authentication** (12 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **OAuth2 Password Flow** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (import bcrypt from 'bcrypt';)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **JWT Token Creation** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (import jwt from 'jsonwebtoken';)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Get Current User** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (function authMiddleware(req: Request, res: Response, next: N)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Role-Based Access** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (const MAX_ATTEMPTS = 5;)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Refresh Token** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **Password Hashing** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **JWT Implementation** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Auth Middleware** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Account Lockout** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **authentication.md** (1 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:python (@router.post("/refresh", response_model=Token))** (1 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **authentication.md** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
+- **gen_diagrams.py** (22 connections) — `scripts/gen_diagrams.py`
+- **fig1()** (7 connections) — `scripts/gen_diagrams.py`
+- **fnt()** (5 connections) — `scripts/gen_diagrams.py`
+- **text_size()** (5 connections) — `scripts/gen_diagrams.py`
+- **draw_box()** (4 connections) — `scripts/gen_diagrams.py`
+- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams.py`
+- **fig2()** (3 connections) — `scripts/gen_diagrams.py`
+- **fig3()** (3 connections) — `scripts/gen_diagrams.py`
+- **arrow_h()** (2 connections) — `scripts/gen_diagrams.py`
+- **arrow_v()** (2 connections) — `scripts/gen_diagrams.py`
+- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams.py`
+- **scripts/diagrams/** (2 connections)
+- **main()** (1 connections) — `scripts/gen_diagrams.py`
+- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams.py`
+- **Dashed horizontal arrow (single line, for Manager connection).** (1 connections) — `scripts/gen_diagrams.py`
+- **scripts/diagrams/fig1_architecture.png** (1 connections)
+- **scripts/diagrams/fig2_workflow.png** (1 connections)
+- **scripts/diagrams/fig3_reporting.png** (1 connections)
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[005_report_prefs.py]] (4 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[merge_ast_semantic.py]] (1 shared connections)
+- [[POST /log-entries/{id}/photos]] (1 shared connections)
+- [[API.logo.delete()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/authentication.md`
-- `.claude/skills/secure-code-guardian/references/authentication.md`
+- `scripts/gen_diagrams.py`
 
 ## Audit Trail
 
-- EXTRACTED: 42 (100%)
+- EXTRACTED: 66 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/reports/history (get_report_history)** (0 connections) — `api/routers/reports.py`
+- **PATCH /api/managers/me (update_manager)** (0 connections) — `api/routers/managers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
+- `api/routers/managers.py`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_belpro_name.md** (0 connections) — `.claude/memory/feedback_belpro_name.md`
+- **build_graph.py** (0 connections) — `scripts/graphify/build_graph.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_belpro_name.md`
+- `scripts/graphify/build_graph.py`
 
 ## Audit Trail
 

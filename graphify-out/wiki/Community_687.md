@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **Node.js Essentials Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Node.js File System API** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **downloadHistoryPdf** (1 connections) — `frontend/js/reports.js`
+- **download_history_pdf** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/node-essentials.md`
+- `api/routers/reports.py`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 

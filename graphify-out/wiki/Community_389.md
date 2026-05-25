@@ -4,27 +4,34 @@
 
 ## Key Concepts
 
-- **Performance Optimization** (5 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. Parallel Requests** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. Caching** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. Conditional Fetching** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Batch API Calls** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block44 (Set (create array of IDs))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block45 (IF (check cache exists))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block46 (HTTP Request (GET with If-Modified-Since header))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Test Suite Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Task 8: Run Full Suite** (3 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 8.1 — Run all tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 8.2 — Commit if any fixes were needed** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **2026-05-09-test-suite.md** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (cd api && pytest -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add -p)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Self-Review Checklist** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[014_seed_report_auto_hour.py]] (1 shared connections)
+- [[Community 425]] (1 shared connections)
+- [[Community 489]] (1 shared connections)
+- [[Community 492]] (1 shared connections)
+- [[Community 490]] (1 shared connections)
+- [[Community 491]] (1 shared connections)
+- [[Community 493]] (1 shared connections)
+- [[Community 390]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

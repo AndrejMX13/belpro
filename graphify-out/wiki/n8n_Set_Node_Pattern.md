@@ -1,42 +1,37 @@
 # n8n Set Node Pattern
 
-> 13 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **n8n_workflows.py** (11 connections) — `scripts/n8n_workflows.py`
-- **n8n** (6 connections) — `docker-compose.yml`
-- **api_request()** (4 connections) — `scripts/n8n_workflows.py`
-- **cmd_import()** (4 connections) — `scripts/n8n_workflows.py`
-- **cmd_export()** (4 connections) — `scripts/n8n_workflows.py`
-- **main()** (4 connections) — `scripts/n8n_workflows.py`
-- **load_env()** (3 connections) — `scripts/n8n_workflows.py`
-- **Parse KEY=VALUE lines from a .env file; ignore comments and blanks.** (1 connections) — `scripts/n8n_workflows.py`
-- **Make an authenticated request to the n8n API.      Returns (status_code, respo** (1 connections) — `scripts/n8n_workflows.py`
-- **Load each repo workflow file into n8n (upsert + activate).** (1 connections) — `scripts/n8n_workflows.py`
-- **Overwrite each repo workflow file with its current definition from n8n.** (1 connections) — `scripts/n8n_workflows.py`
-- **n8n REST API** (1 connections)
-- **n8n/workflows/** (1 connections)
+- **manager.py** (8 connections) — `api/schemas/manager.py`
+- **ManagerCreate** (3 connections) — `api/schemas/manager.py`
+- **ManagerUpdate** (3 connections) — `api/schemas/manager.py`
+- **PasswordChangeRequest** (3 connections) — `api/schemas/manager.py`
+- **ManagerResponse** (3 connections) — `api/schemas/manager.py`
+- **_validate_davcna_checksum()** (2 connections) — `api/schemas/manager.py`
+- **normalize_wa_phone()** (2 connections) — `api/schemas/manager.py`
+- **Pydantic schemas for the Manager entity.** (1 connections) — `api/schemas/manager.py`
+- **Fields required for first-time manager setup.** (1 connections) — `api/schemas/manager.py`
+- **Partial update — all fields optional.  Only provided fields are written.** (1 connections) — `api/schemas/manager.py`
+- **Payload for the change-password endpoint.** (1 connections) — `api/schemas/manager.py`
+- **Manager profile returned by the API.** (1 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
-- [[004_log_entry_photos.py]] (2 shared connections)
-- [[010_monthly_reports_unique_idx.py]] (1 shared connections)
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
-- [[loadAnalytics()]] (1 shared connections)
-- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
-- [[API.logo.upload()]] (1 shared connections)
-- [[PATCH /log-entries/{id}]] (1 shared connections)
+- [[renderDetail() — volunteer detail page]] (4 shared connections)
+- [[HTTP: Fetch Media]] (1 shared connections)
+- [[Code: Check Entry]] (1 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
 
 ## Source Files
 
-- `docker-compose.yml`
-- `scripts/n8n_workflows.py`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 
-- EXTRACTED: 42 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 27 (93%)
+- INFERRED: 2 (7%)
 - AMBIGUOUS: 0 (0%)
 
 ---

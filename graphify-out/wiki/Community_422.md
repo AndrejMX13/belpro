@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **9. operator_structure** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Fixed Automatically: Binary Operators** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Fixed Automatically: Unary Operators** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Auto-Sanitization Fixes** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 1: Error Trigger Workflow** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 2: Retry with Backoff** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 3: Partial Failure Handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block16 (Schedule → Fetch → Process → Deliver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block17 (Error Trigger (for main workflow))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block18 (Schedule → HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block19 (Schedule → Split In Batches)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 299]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

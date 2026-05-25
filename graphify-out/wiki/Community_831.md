@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **DELETE /api/logo (remove_logo)** (0 connections) — `api/routers/logo.py`
+- **PATCH /api/errors/{id}/acknowledge (acknowledge_error)** (0 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
+- `api/routers/errors.py`
 
 ## Audit Trail
 

@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **Task 5: Frontend — Renames + Two-Column Date Lists** (15 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (filter: { status: 'pending_manager', search_q: '', date_from)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (filter: { status: '', search_q: '', date_from: null, date_to)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (volunteerLogState.filter = { status: '', search_q: '', date_)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (function renderApprovalsThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="8">${msg})** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="5)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (function renderVolunteerLogThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="6">Ni vno)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="6)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<div class="detail-name">${esc(entry.entry_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<div class="detail-name">${esc(entry.work_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Pydantic V2 Schemas** (8 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Schema Patterns** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **ORM Mode (from_attributes)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Model Validator** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Nested Models** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Serialization Control** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Settings (Pydantic V2)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **pydantic-v2.md** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class UserResponse(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class OrderCreate(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class Address(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class User(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (from pydantic_settings import BaseSettings, SettingsConfigDi)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

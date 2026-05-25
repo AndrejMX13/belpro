@@ -4,30 +4,30 @@
 
 ## Key Concepts
 
-- **Task 4: Migrate call sites to get_app_settings** (12 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block33 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/routers/log_entries.py api/routers/auth.py api/r)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Python Docstrings** (7 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Google Style (Recommended)** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **NumPy Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sphinx Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **python-docstrings.md** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (class UserService:)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sections Available** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
 
 ## Relationships
 
-- [[Community 536]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `.claude/skills/code-documenter/references/python-docstrings.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

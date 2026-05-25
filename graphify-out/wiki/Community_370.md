@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (5 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 1: Process Webhook Data** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 2: Filter and Transform** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 3: Aggregate Statistics** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 4: Parse JSON String** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Validation Rules** (5 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **1. Always Use {{}}** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **2. Use Quotes for Spaces and Special Characters** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **3. Match Exact Node Names** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **4. No Nested {{}}** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (❌ $json.field)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (❌ {{$json.field name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (❌ {{$node["http request"].json}}  // lowercase)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (❌ {{{$json.field}}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 291]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

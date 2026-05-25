@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Dynamic Scheduling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Dependent Schedules** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Conditional Execution** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block45 (Schedule (check every hour) → Code (check if it's time to ru)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block46 (Workflow A (daily 2 AM): Data sync)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block47 (Schedule → HTTP Request (check feature flag))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Pattern: Pagination Handling** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Pattern: Conditional Node Reference** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Pattern: Multi-Node Aggregation** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const currentPage = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Access different nodes based on condition)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Collect data from multiple named nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 410]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

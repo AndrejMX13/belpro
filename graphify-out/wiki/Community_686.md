@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **reference_render_diagrams.md** (1 connections) — `.claude/memory/reference_render_diagrams.md`
-- **code:block1 (python scripts/render_diagrams.py)** (1 connections) — `.claude/memory/reference_render_diagrams.md`
+- **Work Date Rename and Dashboard Entry Plan** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **work_date Column (renamed from entry_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
@@ -13,7 +13,7 @@
 
 ## Source Files
 
-- `.claude/memory/reference_render_diagrams.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 

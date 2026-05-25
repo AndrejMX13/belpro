@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Two workarounds** (3 connections) — `.claude/memory/feedback_graphify_html.md`
-- **1. Aggregated community meta-graph (recommended)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
-- **2. Raise the env-var limit (full graph, slow)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
-- **feedback_graphify_html.md** (1 connections) — `.claude/memory/feedback_graphify_html.md`
-- **code:python (import json)** (1 connections) — `.claude/memory/feedback_graphify_html.md`
-- **code:powershell ($env:GRAPHIFY_VIZ_NODE_LIMIT = "10000")** (1 connections) — `.claude/memory/feedback_graphify_html.md`
+- **4. WhatsApp tok (prostovoljec)** (5 connections) — `SPEC_SL.md`
+- **4.1 Oddaja vnosa** (2 connections) — `SPEC_SL.md`
+- **code:block1 (Prostovoljec pošlje:)** (1 connections) — `SPEC_SL.md`
+- **4.2 Manjkajoča fotografija** (1 connections) — `SPEC_SL.md`
+- **4.3 Vidnost poslanih sporočil na povezanem telefonu** (1 connections) — `SPEC_SL.md`
+- **4.4 Jezik prostovoljcev** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/feedback_graphify_html.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

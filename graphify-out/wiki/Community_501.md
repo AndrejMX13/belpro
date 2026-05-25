@@ -4,27 +4,26 @@
 
 ## Key Concepts
 
-- **main()** (6 connections) — `ops/scripts/photo_cleanup.py`
-- **photo_cleanup.py** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **report_error()** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **dsn_from_url()** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **POST failure to the API error log.** (1 connections) — `ops/scripts/photo_cleanup.py`
-- **Convert asyncpg DATABASE_URL to psycopg2 DSN.** (1 connections) — `ops/scripts/photo_cleanup.py`
-- **Query approved entries older than retention cutoff, delete their photos and DB r** (1 connections) — `ops/scripts/photo_cleanup.py`
+- **Task 6: Admin UI — settings field** (7 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:html (<div class="field">)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:js ($('a-evolution-instance').value = data.evolution_instance_na)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:js (const current = {)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:js (// Validate)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose up -d)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add frontend/js/admin.js)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[005_report_prefs.py]] (1 shared connections)
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- [[Community 398]] (1 shared connections)
 
 ## Source Files
 
-- `ops/scripts/photo_cleanup.py`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (89%)
-- INFERRED: 2 (11%)
+- EXTRACTED: 13 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

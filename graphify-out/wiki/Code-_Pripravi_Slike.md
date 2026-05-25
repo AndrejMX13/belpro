@@ -4,34 +4,33 @@
 
 ## Key Concepts
 
-- **Vzdrževanje** (9 connections) — `README_SL.md`
-- **Nadgradnja sistema** (2 connections) — `README_SL.md`
-- **Varnostno kopiranje (Backup)** (2 connections) — `README_SL.md`
-- **Obnovitev podatkov (Restore)** (2 connections) — `README_SL.md`
-- **Spremljanje dnevniških zapisov storitev (Logs)** (2 connections) — `README_SL.md`
-- **Ponovna izgradnja storitve po spremembi kode** (2 connections) — `README_SL.md`
-- **Ponastavitev pozabljenega gesla za nadzorno ploščo** (2 connections) — `README_SL.md`
-- **Uveljavljanje sprememb v `.env`** (2 connections) — `README_SL.md`
-- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README_SL.md`
-- **code:bash (bash scripts/backup.sh)** (1 connections) — `README_SL.md`
-- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose logs -f)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose up -d <service>)** (1 connections) — `README_SL.md`
+- **Query Patterns** (8 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Common Table Expressions (CTEs)** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Recursive CTEs** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Advanced JOIN Patterns** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Subquery Optimization** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **PIVOT/UNPIVOT Operations** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Set Operations** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **query-patterns.md** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Basic CTE for readability)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Organizational hierarchy traversal)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Self-join for finding gaps in sequences)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Scalar subquery in SELECT (use sparingly - can cause N+1))** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- PostgreSQL CROSSTAB (requires tablefunc extension))** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- UNION for combining distinct results)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Performance Tips** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
-- [[Community 610]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README_SL.md`
+- `.claude/skills/sql-pro/references/query-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

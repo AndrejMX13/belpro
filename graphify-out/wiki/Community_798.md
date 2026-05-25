@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **reference_graphify_recovery.md** (0 connections) — `.claude/memory/reference_graphify_recovery.md`
+- **project_evolution_qr.md** (0 connections) — `.claude/memory/project_evolution_qr.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/reference_graphify_recovery.md`
+- `.claude/memory/project_evolution_qr.md`
 
 ## Audit Trail
 

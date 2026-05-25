@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **list_pending_entries.sh** (0 connections) — `scripts/list_pending_entries.sh`
+- **Number of days local backup archives are kept before pruning.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/list_pending_entries.sh`
+- `api/services/app_settings.py`
 
 ## Audit Trail
 

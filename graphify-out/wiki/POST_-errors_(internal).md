@@ -4,35 +4,30 @@
 
 ## Key Concepts
 
-- **renderList() — volunteers page** (5 connections) — `frontend/js/volunteers.js`
-- **GET /volunteers** (4 connections) — `api/routers/volunteers.py`
-- **loadVolunteers()** (3 connections) — `frontend/js/volunteers.js`
-- **loadHealthWidget()** (3 connections) — `frontend/js/errors.js`
-- **API.volunteers.list()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.activate()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.deactivate()** (2 connections) — `frontend/js/api.js`
-- **VolunteerListResponse shape (items[], total)** (2 connections) — `api/routers/volunteers.py`
-- **API.health.detailed()** (1 connections) — `frontend/js/api.js`
-- **PATCH /volunteers/{id}/activate** (1 connections) — `api/routers/volunteers.py`
-- **PATCH /volunteers/{id}/deactivate** (1 connections) — `api/routers/volunteers.py`
+- **5. Standard JavaScript Globals** (6 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Math Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **JSON Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **console Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Object Methods** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Array Methods** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (return [{)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Parse JSON string)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Debug logging (appears in browser console, press F12))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const obj = {name: "John", age: 30, city: "NYC"};)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const arr = [1, 2, 3, 4, 5];)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (2 shared connections)
-- [[tax_number_valid()]] (1 shared connections)
-- [[Community 361]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/api.js`
-- `frontend/js/errors.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (96%)
-- INFERRED: 1 (4%)
+- EXTRACTED: 21 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

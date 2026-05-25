@@ -1,27 +1,30 @@
 # Community 543
 
-> 5 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **🚨 CRITICAL: Webhook Data Structure** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Webhook Node Output Structure** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Correct Webhook Data Access** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (❌ WRONG: {{$json.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **send_email()** (6 connections) — `api/services/email.py`
+- **email.py** (5 connections) — `api/services/email.py`
+- **_check_mx()** (3 connections) — `api/services/email.py`
+- **Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row** (1 connections) — `api/services/email.py`
+- **Raise ValueError if the recipient domain has no MX records.** (1 connections) — `api/services/email.py`
+- **Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port** (1 connections) — `api/services/email.py`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 346]] (2 shared connections)
+- [[merge_semantic.py]] (2 shared connections)
+- [[Community 434]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `api/services/email.py`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 15 (88%)
+- INFERRED: 2 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,48 +1,49 @@
 # scripts/gen_diagrams.py
 
-> 31 nodes
+> 32 nodes
 
 ## Key Concepts
 
-- **Settings Table (ISS-026) Design** (10 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **API Layer** (5 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Data Layer** (4 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Admin router** (4 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Frontend** (4 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Testing** (3 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **`settings` table** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **ORM model** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Central authority: `AppSettings`** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Navigation** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Admin page (`frontend/js/admin.js`)** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **2026-05-20-settings-table-design.md** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:sql (CREATE TABLE settings ()** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Seed rows (inserted in the Alembic migration)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:python (class AppSetting(Base):)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:python (class AppSettings:)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Caller migration** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:block4 (GET  /api/admin/settings  → AdminSettingsResponse)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:python (class AdminSettingsResponse(BaseModel):)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **Env vars** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **code:html (<a href="#admin" class="nav-item" data-page="admin">)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- *... and 6 more nodes in this community*
+- **ops_server.py** (7 connections) — `ops/scripts/ops_server.py`
+- **_Handler** (7 connections) — `ops/scripts/ops_server.py`
+- **_Handler** (7 connections) — `whisper/transcribe.py`
+- **write_crontab()** (5 connections) — `ops/scripts/ops_server.py`
+- **.do_POST()** (5 connections) — `ops/scripts/ops_server.py`
+- **._respond()** (5 connections) — `whisper/transcribe.py`
+- **fetch_settings_from_db()** (4 connections) — `ops/scripts/ops_server.py`
+- **._send()** (4 connections) — `ops/scripts/ops_server.py`
+- **main()** (4 connections) — `ops/scripts/ops_server.py`
+- **_dsn()** (3 connections) — `ops/scripts/ops_server.py`
+- **report_error()** (3 connections) — `ops/scripts/ops_server.py`
+- **reload_crond()** (3 connections) — `ops/scripts/ops_server.py`
+- **.do_POST()** (3 connections) — `whisper/transcribe.py`
+- **.do_GET()** (3 connections) — `whisper/transcribe.py`
+- **BaseHTTPRequestHandler** (2 connections)
+- **.do_GET()** (2 connections) — `ops/scripts/ops_server.py`
+- **transcribe.py** (2 connections) — `whisper/transcribe.py`
+- **.log_message()** (2 connections) — `whisper/transcribe.py`
+- **.log_message()** (1 connections) — `ops/scripts/ops_server.py`
+- **Convert asyncpg DATABASE_URL to a psycopg2-compatible DSN.** (1 connections) — `ops/scripts/ops_server.py`
+- **POST failure to the API error log. Best-effort — never raises.** (1 connections) — `ops/scripts/ops_server.py`
+- **Send SIGHUP to crond so it reloads the crontab file.** (1 connections) — `ops/scripts/ops_server.py`
+- **Write a new crontab to CRONTAB_PATH and reload crond.** (1 connections) — `ops/scripts/ops_server.py`
+- **Read all runtime-tunable settings from the settings table.      Returns an empty** (1 connections) — `ops/scripts/ops_server.py`
+- **HTTP request handler for the ops notification server.** (1 connections) — `ops/scripts/ops_server.py`
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[load_key()]] (3 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- `ops/scripts/ops_server.py`
+- `whisper/transcribe.py`
 
 ## Audit Trail
 
-- EXTRACTED: 60 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 82 (96%)
+- INFERRED: 3 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

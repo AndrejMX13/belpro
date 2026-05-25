@@ -4,38 +4,36 @@
 
 ## Key Concepts
 
-- **HTTP API Integration Pattern** (16 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **http_api_integration.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block1 (Trigger → HTTP Request → [Transform] → [Action] → [Error Han)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block55 (Schedule → HTTP Request (GitHub API) → Transform → HTTP Requ)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block56 (Schedule → HTTP Request (Weather API) → Set (format) → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block57 (Schedule → HTTP Request (CRM A) → Transform → HTTP Request ()** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Webhook Processing Pattern** (14 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **webhook_processing.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block1 (Webhook → [Validate] → [Transform] → [Action] → [Response/No)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block34 (Webhook → Set → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block35 (Webhook → Verify Signature → Update Database → Send Receipt )** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block36 (Webhook → Parse Command → AI Agent → Format Response → Webho)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 390]] (1 shared connections)
-- [[POST /api/errors (write_error)]] (1 shared connections)
-- [[build_graph.py]] (1 shared connections)
-- [[Prostovoljec Najden?]] (1 shared connections)
-- [[Community 487]] (1 shared connections)
 - [[Community 304]] (1 shared connections)
-- [[Community 341]] (1 shared connections)
-- [[Community 486]] (1 shared connections)
-- [[Community 426]] (1 shared connections)
-- [[Community 389]] (1 shared connections)
-- [[Code: Pripravi Upload Slike]] (1 shared connections)
-- [[Community 524]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
+- [[Community 580]] (1 shared connections)
+- [[Community 424]] (1 shared connections)
+- [[Community 529]] (1 shared connections)
+- [[Community 340]] (1 shared connections)
+- [[Community 488]] (1 shared connections)
+- [[Community 581]] (1 shared connections)
+- [[Community 305]] (1 shared connections)
+- [[Community 528]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

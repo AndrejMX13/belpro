@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Python Modes: Beta vs Native** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Python (Beta) - Recommended** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Python (Native) (Beta)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Python (Beta) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Python (Native) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Bonus Error: AttributeError** (3 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Using _input.item in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Check mode or use appropriate method)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

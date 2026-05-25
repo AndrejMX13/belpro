@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Common Issues** (10 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **N+1 Query Problem** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Missing Error Handling** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Magic Numbers/Strings** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Deep Nesting** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **God Functions** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Mutable Shared State** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Missing Null Checks** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Synchronous File Operations** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **common-issues.md** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// N+1 queries - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Unhandled rejection - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Magic number - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Deep nesting - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Does too much - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Shared mutable - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Unsafe access - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **code:typescript (// Blocks event loop - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **PostgreSQL Pro** (8 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Common Patterns** (4 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Core Workflow** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **End-to-End Example: Slow Query → Fix → Verification** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **JSONB — GIN Index and Query** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **VACUUM and Bloat Monitoring** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Replication Lag Monitoring** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- Step 1: Identify slow queries)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- Create GIN index for containment queries)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- Check tables with high dead tuple counts)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- On primary: check standby lag)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
 
 ## Relationships
 
@@ -30,7 +30,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/common-issues.md`
+- `.claude/skills/postgres-pro/SKILL.md`
 
 ## Audit Trail
 

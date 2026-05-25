@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Current State (Already Applied)** (5 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Fix Image Upload — $env Access Denied in Code Node** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 1: Add HTTP: Upload Photo Node** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 3: Update Code: Slika Prejeta** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **2026-05-13-fix-image-upload-env-access.md** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **code:block1 (n8n_update_partial_workflow with addNode:)** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 2: Rewire Connections** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **code:javascript (const d = $('Code: Pripravi Upload Slike').first().json;)** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 4: Validate and Export** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Task 1: AppSetting ORM model + Alembic migration** (9 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""Tests for AppSettings service and admin settings router.")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block2 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""AppSetting ORM model — runtime-tunable key-value configur)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""SQLAlchemy ORM models — import all to ensure they registe)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""Add settings table for runtime-tunable configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block6 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block7 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/models/app_setting.py api/models/__init__.py api)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 538]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

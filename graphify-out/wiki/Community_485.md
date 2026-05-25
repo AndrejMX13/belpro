@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 1: Check Rows Affected** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 2: Constraint Violations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 3: Rollback on Error** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block34 (Database Operation (UPDATE users...))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Database operation with continueOnFail: true)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block36 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Checklist for Scheduled Workflows** (7 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Monitoring** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Nalozi Stanje]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **6. Double Wrapping** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block12 ({{{$json.field}}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block13 ({{$json.field}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **5. Incorrect Node Reference Case** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block10 ({{$node["http request"].json.data}}  // lowercase)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block11 ({{$node["HTTP Request"].json.data}}  // exact match)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 

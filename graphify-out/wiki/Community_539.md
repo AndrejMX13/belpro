@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Test Reports** (4 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **Test Report Template** (2 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **test-reports.md** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **code:markdown (# Test Report: {Feature Name})** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **Severity Definitions** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **Task 2: AppSettings central authority + unit tests** (6 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# ── Unit tests for AppSettings ────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block10 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""AppSettings — central authority for all configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block12 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 538]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/test-reports.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,28 +4,24 @@
 
 ## Key Concepts
 
-- **ISS-026: Settings Table Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **Post-implementation** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **2026-05-20-settings-table.md** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Task 6: Documents router and main.py registration** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python ("""Documents router — downloadable compliance documents.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (from routers.documents import router as documents_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (app.include_router(documents_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block35 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block36 (git add api/routers/documents.py api/main.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 402]] (1 shared connections)
 - [[Community 537]] (1 shared connections)
-- [[Community 313]] (1 shared connections)
-- [[GET /api/errors/unacknowledged-count (unacknowledged_count)]] (1 shared connections)
-- [[Community 348]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

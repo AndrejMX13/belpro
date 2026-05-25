@@ -102,6 +102,8 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 | Predpomnilnik / vrsta | Redis 7 | interno |
 | Operacijski spremljevalnik | Alpine/Python | interno |
 
+Celotna sistemska specifikacija: [SPEC.md](SPEC.md)
+
 ---
 
 ## Sistemske zahteve

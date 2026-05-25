@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **PATCH /api/errors/{id}/acknowledge (acknowledge_error)** (0 connections) — `api/routers/errors.py`
+- **GET /api/reports/history/{id}/pdf (download_history_pdf)** (0 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `api/routers/reports.py`
 
 ## Audit Trail
 

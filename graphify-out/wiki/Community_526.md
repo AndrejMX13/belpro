@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Checklist for Webhook Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Setup** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Data Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **2. Database Read Nodes** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **3. Transform** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **4. Database Write Nodes** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **5. Verification** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

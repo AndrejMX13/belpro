@@ -4,24 +4,35 @@
 
 ## Key Concepts
 
-- **Critical Limitation: No External Libraries** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **What's NOT Available** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **What IS Available (Standard Library)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ NOT AVAILABLE - Will raise ModuleNotFoundError)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ AVAILABLE - Standard library only)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Workarounds** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Common Patterns - Python Code Node** (17 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **COMMON_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Pattern Overview** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **When to Use Each Pattern** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 619]] (1 shared connections)
+- [[Community 625]] (1 shared connections)
+- [[Community 626]] (1 shared connections)
+- [[Community 620]] (1 shared connections)
+- [[Community 621]] (1 shared connections)
+- [[Community 628]] (1 shared connections)
+- [[Community 627]] (1 shared connections)
+- [[Community 622]] (1 shared connections)
+- [[Community 623]] (1 shared connections)
+- [[Community 624]] (1 shared connections)
+- [[Community 362]] (1 shared connections)
+- [[SmtpNotConfiguredError (Service)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

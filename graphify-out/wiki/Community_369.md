@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Error #5: Incorrect Return Format** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Common Scenarios** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Returning plain dictionary)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Array of objects with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# Calculate total)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# Filter active items)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Return empty array)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Module 1: json - JSON Operations** (5 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Parse JSON String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Generate JSON String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Handle JSON Errors** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Pretty Print JSON** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 514]] (1 shared connections)
+- [[Community 330]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

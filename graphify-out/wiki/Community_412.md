@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern 1: Error Trigger Workflow** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern 2: Retry with Backoff** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern 3: Partial Failure Handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block16 (Schedule → Fetch → Process → Deliver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block17 (Error Trigger (for main workflow))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block18 (Schedule → HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block19 (Schedule → Split In Batches)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Example 8: Fields with Spaces** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Bracket Notation** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Combined** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Nested Spaces** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json['user data']['first name']}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json['user data']['first name']}} {{$json['user data']['l)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (Contact: {{$json['user data']['phone number']}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 331]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

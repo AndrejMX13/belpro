@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Common Workflow Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **1. Triggers** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **2. Data Sources** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **3. Transformation** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **4. Outputs** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **5. Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Checklist for AI Agent Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[check_cache.py]] (1 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

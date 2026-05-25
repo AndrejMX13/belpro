@@ -4,36 +4,36 @@
 
 ## Key Concepts
 
-- **JavaScript Pro** (7 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Key Patterns with Examples** (5 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Async/Await Error Handling** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Optional Chaining & Nullish Coalescing** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **ESM Module Structure** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Avoid var / Prefer const** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **When to Use This Skill** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **code:js (// ✅ Correct — always handle async errors explicitly)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **code:js (// ✅ Correct)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **code:js (// ✅ Correct — named exports, no default-only exports for li)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **code:js (// ✅ Correct)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **1. missing_required** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Slack Channel Missing** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: HTTP Request Missing URL** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 3: Database Query Missing Connection** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 4: Conditional Fields** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript (// Use get_node to see what's required)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/SKILL.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 35 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

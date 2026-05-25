@@ -4,39 +4,39 @@
 
 ## Key Concepts
 
-- **Node.js Essentials** (11 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **File System (fs/promises)** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Path Module** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Streams** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **EventEmitter** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Child Processes** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Worker Threads** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Process & Environment** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **HTTP/HTTPS Server** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Cluster for Multi-Core** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **node-essentials.md** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { readFile, writeFile, appendFile, mkdir, rm, readdir)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { join, resolve, dirname, basename, extname, parse, f)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { createReadStream, createWriteStream } from 'fs';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { EventEmitter } from 'events';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { spawn, exec, execFile } from 'child_process';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { Worker, isMainThread, parentPort, workerData } from)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (// Environment variables)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { createServer } from 'http';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import cluster from 'cluster';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Common Gotchas** (11 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. ❌ Wrong: Ignoring timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Set workflow timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. ❌ Wrong: Overlapping executions** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Add execution lock** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. ❌ Wrong: No error handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Add error workflow** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. ❌ Wrong: Processing all data at once** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Batch processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **5. ❌ Wrong: Hardcoded dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Dynamic dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (Schedule (9 AM)  // 9 AM in which timezone?)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block34 (Schedule (every 5 min) → Long-running task (10 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block35 (Schedule → Redis (check lock))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block36 (Schedule → API call → Process (fails silently))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block37 (Main: Schedule → Execute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block38 (Schedule → SELECT 1000000 records → Process (OOM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block39 (Schedule → SELECT with pagination → Split In Batches → Proce)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (query: "SELECT * FROM orders WHERE date = '2024-01-15'")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (query: "SELECT * FROM orders WHERE date = CURRENT_DATE - INT)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/node-essentials.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 41 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

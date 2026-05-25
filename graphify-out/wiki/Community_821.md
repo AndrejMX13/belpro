@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **POST /api/reports/monthly/pdf (generate_monthly_pdf)** (0 connections) — `api/routers/reports.py`
+- **POST /api/managers (create_manager)** (0 connections) — `api/routers/managers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
+- `api/routers/managers.py`
 
 ## Audit Trail
 

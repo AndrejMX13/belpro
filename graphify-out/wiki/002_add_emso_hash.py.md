@@ -4,16 +4,16 @@
 
 ## Key Concepts
 
-- **connections** (66 connections) — `n8n/workflows/volunteer_entry.json`
-- **Razpotje** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Transcribe + Extract** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **HTTP: Ustvari Nov Vnos** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **connections** (67 connections) — `n8n/workflows/volunteer_entry.json`
+- **Prostovoljec Najden?** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Vrsta Odziva** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Je v urejanju?** (3 connections) — `n8n/workflows/volunteer_entry.json`
 - **Webhook: WhatsApp** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **HTTP: GET Pending (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
 - **IF: Should Notify? (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Build Image Media Body** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Slika Prejeta** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **HTTP: GET Entry (Photo Count)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Build Payload** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Check Entry** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **HTTP: GET Photo Limit** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Fetch Config** (2 connections) — `n8n/workflows/volunteer_entry.json`
 - **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 - **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 - **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
@@ -26,18 +26,18 @@
 
 ## Relationships
 
-- [[API.errors.acknowledge()]] (18 shared connections)
-- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
-- [[Community 737]] (1 shared connections)
-- [[Community 749]] (1 shared connections)
-- [[Community 723]] (1 shared connections)
-- [[Community 708]] (1 shared connections)
-- [[Community 732]] (1 shared connections)
-- [[Community 731]] (1 shared connections)
-- [[Community 747]] (1 shared connections)
+- [[012_settings_table.py]] (17 shared connections)
+- [[Code Reviewer Skill]] (1 shared connections)
+- [[Community 738]] (1 shared connections)
+- [[Community 742]] (1 shared connections)
+- [[Community 715]] (1 shared connections)
+- [[Community 739]] (1 shared connections)
+- [[Community 727]] (1 shared connections)
+- [[Community 720]] (1 shared connections)
 - [[Community 733]] (1 shared connections)
-- [[Community 725]] (1 shared connections)
-- [[Community 714]] (1 shared connections)
+- [[Community 737]] (1 shared connections)
+- [[Community 736]] (1 shared connections)
+- [[Community 730]] (1 shared connections)
 
 ## Source Files
 

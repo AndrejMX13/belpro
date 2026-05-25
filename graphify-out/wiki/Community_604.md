@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **[0.9.3] — 2026-05-10** (4 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
-- **Fixed** (1 connections) — `CHANGELOG.md`
+- **6. Mesečna PDF poročila** (4 connections) — `SPEC_SL.md`
+- **6.1 PDF za prostovoljca (po osebi)** (1 connections) — `SPEC_SL.md`
+- **6.2 Zbirni PDF za vodjo** (1 connections) — `SPEC_SL.md`
+- **6.3 Dostava** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 

@@ -4,41 +4,43 @@
 
 ## Key Concepts
 
-- **test_managers.py** (14 connections) — `api/tests/test_managers.py`
-- **seed_whatsapp_phone_from_env()** (6 connections) — `api/main.py`
-- **test_seed_whatsapp_phone_populates_null_db_field()** (3 connections) — `api/tests/test_managers.py`
-- **test_seed_whatsapp_phone_does_not_overwrite_existing_value()** (3 connections) — `api/tests/test_managers.py`
-- **test_change_password_invalidates_old_credentials()** (2 connections) — `api/tests/test_managers.py`
-- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
-- **test_get_manager_returns_profile()** (1 connections) — `api/tests/test_managers.py`
-- **test_create_manager_returns_409_when_already_configured()** (1 connections) — `api/tests/test_managers.py`
-- **test_auth_wrong_password_returns_401()** (1 connections) — `api/tests/test_managers.py`
-- **test_auth_missing_credentials_returns_401()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_includes_wa_fields()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_auto_syncs_when_evolution_reports_new_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_no_sync_when_phone_already_matches()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_shows_db_phone_when_disconnected()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_normalizes_whatsapp_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_rejects_too_short_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_empty_phone_not_stored_as_empty_string()** (1 connections) — `api/tests/test_managers.py`
-- **seed_whatsapp_phone_from_env writes normalized phone to DB when DB value is null** (1 connections) — `api/tests/test_managers.py`
-- **seed_whatsapp_phone_from_env leaves existing DB value untouched.** (1 connections) — `api/tests/test_managers.py`
-- **After a password change, old credentials return 401 and new ones return 200.** (1 connections) — `api/tests/test_managers.py`
+- **reports.js** (10 connections) — `frontend/js/reports.js`
+- **loadReports()** (7 connections) — `frontend/js/reports.js`
+- **renderReports()** (5 connections) — `frontend/js/reports.js`
+- **renderReportsTable()** (5 connections) — `frontend/js/reports.js`
+- **downloadHistoryPdf()** (4 connections) — `frontend/js/reports.js`
+- **exportReportPdf()** (3 connections) — `frontend/js/reports.js`
+- **loadReports()** (3 connections) — `frontend/js/reports.js`
+- **GET /reports/monthly** (3 connections) — `api/routers/reports.py`
+- **fmtHours()** (2 connections) — `frontend/js/reports.js`
+- **API.reports.monthly()** (2 connections) — `frontend/js/api.js`
+- **API.reports.exportPdf()** (2 connections) — `frontend/js/api.js`
+- **API.reports.downloadHistoryPdf()** (2 connections) — `frontend/js/api.js`
+- **POST /reports/monthly/pdf** (2 connections) — `api/routers/reports.py`
+- **GET /reports/history/{id}/pdf** (2 connections) — `api/routers/reports.py`
+- **MonthlyReportSummary shape (items[], total_hours, total_entries)** (2 connections) — `api/routers/reports.py`
+- **SL_MONTHS** (1 connections) — `frontend/js/reports.js`
+- **reportsState** (1 connections) — `frontend/js/reports.js`
+- **exportReportPdf()** (1 connections) — `frontend/js/reports.js`
+- **downloadHistoryPdf()** (1 connections) — `frontend/js/reports.js`
+- **renderReports() — reports page** (1 connections) — `frontend/js/reports.js`
 
 ## Relationships
 
-- [[HTTP: GET Volunteer (Mgr)]] (2 shared connections)
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[make_text_payload()]] (11 shared connections)
+- [[Community 550]] (1 shared connections)
+- [[test_managers.py]] (1 shared connections)
 
 ## Source Files
 
-- `api/main.py`
-- `api/tests/test_managers.py`
+- `api/routers/reports.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 
-- EXTRACTED: 38 (88%)
-- INFERRED: 5 (12%)
+- EXTRACTED: 48 (81%)
+- INFERRED: 11 (19%)
 - AMBIGUOUS: 0 (0%)
 
 ---

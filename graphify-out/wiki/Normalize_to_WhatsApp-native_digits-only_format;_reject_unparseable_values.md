@@ -1,35 +1,34 @@
 # Normalize to WhatsApp-native digits-only format; reject unparseable values.
 
-> 14 nodes
+> 13 nodes
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **1. Form Submissions** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **3. Chat Platform Integrations (Slack, Discord, Teams)** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **4. GitHub/GitLab Webhooks** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **2. Payment Webhooks (Stripe, PayPal)** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **5. IoT Device Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block7 (1. Webhook (path: "contact-form", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (Name: {{$json.body.name}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// Code node - verify Stripe signature)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block10 (1. Webhook (path: "slack-command", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (Command: {{$json.body.command}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block12 (1. Webhook (path: "github", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (Event Type: {{$json.headers['x-github-event']}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block14 (1. Webhook (path: "sensor-data", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **12. Testing Utilities** (6 connections) — `SPEC.md`
+- **`load_env.ps1` / `load_env.sh`** (3 connections) — `SPEC.md`
+- **`switch_manager_phone.ps1` / `switch_manager_phone.sh`** (3 connections) — `SPEC.md`
+- **Typical testing workflow** (3 connections) — `SPEC.md`
+- **`list_pending_entries.py`** (2 connections) — `SPEC.md`
+- **code:block3 (. .\scripts\load_env.ps1)** (1 connections) — `SPEC.md`
+- **code:bash (source scripts/load_env.sh)** (1 connections) — `SPEC.md`
+- **code:block5 (.\scripts\switch_manager_phone.ps1 volunteer   # set manager)** (1 connections) — `SPEC.md`
+- **code:bash (bash scripts/switch_manager_phone.sh volunteer)** (1 connections) — `SPEC.md`
+- **code:block7 (python scripts/list_pending_entries.py          # entries no)** (1 connections) — `SPEC.md`
+- **code:block8 (# 0. Load environment variables (once per session):)** (1 connections) — `SPEC.md`
+- **code:bash (# 0. Load environment variables (once per session):)** (1 connections) — `SPEC.md`
+- **Manual trigger nodes in n8n** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `SPEC.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

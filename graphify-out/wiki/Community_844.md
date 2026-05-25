@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **create_manager** (0 connections) — `api/routers/managers.py`
+- **PasswordChangeRequest (Schema)** (0 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/managers.py`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 

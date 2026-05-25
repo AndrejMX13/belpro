@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 4: Remaining Backend Files** (9 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block20 (LogEntry.entry_date  →  LogEntry.work_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (.order_by(LogEntry.work_date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block22 (LogEntry.entry_date  →  LogEntry.work_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (LogEntry.work_date >= date(first_y, first_m, 1),)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (volunteer.log_entries.sort(key=lambda e: e.work_date, revers)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (f"<td class='num'>{_fmt_date(e.work_date)}</td>")** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add api/routers/reports.py api/routers/analytics.py api/)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Task 7: Frontend — Dokumenti tab** (9 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:html (<a href="#documents" class="nav-item" data-page="documents">)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:html (<script src="/js/documents.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js (documents: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block43 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block44 (git add frontend/index.html frontend/js/api.js frontend/js/v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- [[Community 537]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Example 4: Date Formatting** (7 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **ISO Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Custom Date Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Time Only** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Full Readable Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Date Math - Future** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Date Math - Past** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toISO()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toFormat('HH:mm:ss')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toFormat('MMMM dd, yyyy')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.plus({days: 7}).toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.minus({hours: 24}).toFormat('yyyy-MM-dd HH:mm')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Property Dependencies Deep Dive** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Common Dependency Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Finding Property Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **displayOptions Mechanism** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 1: Boolean Toggle** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 2: Operation Switch** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 3: Type Selection** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// sendBody controls body visibility)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Different operations → different fields)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[IF: Should Notify? (Auto)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

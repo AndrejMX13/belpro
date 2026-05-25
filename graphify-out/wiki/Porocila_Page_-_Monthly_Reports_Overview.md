@@ -1,62 +1,48 @@
 # Porocila Page - Monthly Reports Overview
 
-> 40 nodes
+> 42 nodes
 
 ## Key Concepts
 
-- **BaseModel** (33 connections)
-- **EntryStatus** (20 connections) — `api/models/log_entry.py`
-- **volunteer.py** (13 connections) — `api/schemas/volunteer.py`
-- **log_entry.py** (7 connections) — `api/schemas/log_entry.py`
-- **VolunteerResponse** (6 connections) — `api/schemas/volunteer.py`
-- **LogEntryListResponse** (5 connections) — `api/schemas/log_entry.py`
-- **EmsoCheckResponse** (5 connections) — `api/schemas/volunteer.py`
-- **VolunteerDetailResponse** (5 connections) — `api/schemas/volunteer.py`
-- **VolunteerListResponse** (5 connections) — `api/schemas/volunteer.py`
-- **LogEntryCreate** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryResponse** (4 connections) — `api/schemas/log_entry.py`
-- **PhotoResponse** (4 connections) — `api/schemas/log_entry.py`
-- **PhotoBase64Request** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryUpdate** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryBrief** (4 connections) — `api/schemas/volunteer.py`
-- **EmsoCheckRequest** (4 connections) — `api/schemas/volunteer.py`
-- **VolunteerCreate** (4 connections) — `api/schemas/volunteer.py`
-- **AdminSettingsUpdate** (3 connections) — `api/schemas/admin.py`
-- **_normalise_phone()** (3 connections) — `api/schemas/volunteer.py`
-- **_validate_emso_checksum()** (2 connections) — `api/schemas/volunteer.py`
-- **_normalise_phone_field()** (2 connections) — `api/schemas/volunteer.py`
-- **Volunteer diary entry status.  Flows one way only — never backwards.** (1 connections) — `api/models/log_entry.py`
-- **Partial update for runtime-tunable settings. Only provided fields are written.** (1 connections) — `api/schemas/admin.py`
-- **Pydantic schemas for the LogEntry entity.** (1 connections) — `api/schemas/log_entry.py`
-- **Fields required to create a new log entry.** (1 connections) — `api/schemas/log_entry.py`
-- *... and 15 more nodes in this community*
+- **JSONB Operations** (10 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Indexing** (6 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Operators** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Query Patterns** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Performance Best Practices** (3 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB vs JSON** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Retrieval Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Containment Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Modification Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index (Default for containment)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index on Specific Path** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index with jsonb_path_ops** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **B-tree Index on Extracted Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Expression Index for Nested Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Filtering** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Aggregation** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Array Operations** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Functions** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Path Queries (Postgres 12+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **DO** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **DON'T** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Schema Validation (Postgres 15+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Migration Patterns** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **jsonb.md** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **code:sql (-- Use JSONB (binary, indexed, faster))** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
-- [[Evolution API (API Gateway)]] (4 shared connections)
-- [[Code: Pripravi Prostovoljca]] (4 shared connections)
-- [[DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)]] (4 shared connections)
-- [[POST /api/managers (create_manager)]] (4 shared connections)
-- [[errors.py]] (4 shared connections)
-- [[Ima Vnos?]] (3 shared connections)
-- [[011_manager_gdpr_clauses.py]] (3 shared connections)
-- [[Manager WhatsApp Approval Workflow Design]] (2 shared connections)
-- [[DevOps Engineer Skill]] (2 shared connections)
-- [[005_report_prefs.py]] (1 shared connections)
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/models/log_entry.py`
-- `api/schemas/admin.py`
-- `api/schemas/log_entry.py`
-- `api/schemas/volunteer.py`
+- `.claude/skills/postgres-pro/references/jsonb.md`
 
 ## Audit Trail
 
-- EXTRACTED: 124 (78%)
-- INFERRED: 36 (22%)
+- EXTRACTED: 82 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

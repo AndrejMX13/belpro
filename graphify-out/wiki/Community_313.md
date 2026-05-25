@@ -4,29 +4,30 @@
 
 ## Key Concepts
 
-- **Task 3: Admin router + integration tests** (11 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# ── Integration tests for GET/PATCH /api/admin/settings ───)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block15 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""Admin router — runtime-tunable settings management.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (app.include_router(admin_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (app.include_router(admin_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block22 (docker compose exec api pytest tests/test_app_settings.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/schemas/admin.py api/routers/admin.py api/main.p)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **activeVersion** (12 connections) — `n8n/workflows/volunteer_entry.json`
+- **updatedAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **createdAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **versionId** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **workflowId** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **nodes** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **authors** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **name** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **description** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **autosaved** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **workflowPublishHistory** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- [[Community 536]] (1 shared connections)
+- [[Code Reviewer Skill]] (1 shared connections)
+- [[012_settings_table.py]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,35 +1,35 @@
 # API Python Dependencies requirements.txt
 
-> 37 nodes
+> 39 nodes
 
 ## Key Concepts
 
-- **Task 5: Documentation — add upgrade.sh to both READMEs** (10 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **File Map** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **Task 1: Script skeleton — shebang, helpers, pre-flight checks** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **Task 3: Docker rebuild and service readiness wait** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **Task 4: Migrations, health check, and summary** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **Task 2: Backup and git pull steps** (5 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **Upgrade Script Implementation Plan** (3 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **2026-05-18-upgrade-script.md** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Banner ────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (chmod +x scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Backup ────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Git pull ──────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Rebuild images ────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Wait for PostgreSQL ───────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Wait for API ──────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Alembic migrations ────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Health check ──────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **code:bash (# ── Summary ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- *... and 12 more nodes in this community*
+- **Documentation Systems & Infrastructure** (8 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Static Site Generators** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Migration Guides** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Docusaurus (Meta)** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Multi-Version Documentation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Search Implementation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Documentation Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Code Example Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Performance Optimization** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Analytics Integration** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **MkDocs (Python)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **VitePress (Vue)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Version Switcher** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Algolia DocSearch** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Local Search (Lunr.js)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Link Checking** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Build Optimization** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **CDN & Caching** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Google Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Custom Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **documentation-systems.md** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:bash (# Setup)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:javascript (module.exports = {)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:yaml (# mkdocs.yml)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:typescript (// .vitepress/config.ts)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- `.claude/skills/code-documenter/references/documentation-systems.md`
 
 ## Audit Trail
 
-- EXTRACTED: 72 (100%)
+- EXTRACTED: 76 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

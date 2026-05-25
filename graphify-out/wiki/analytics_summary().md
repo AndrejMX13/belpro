@@ -1,55 +1,67 @@
 # analytics_summary()
 
-> 34 nodes
+> 35 nodes
 
 ## Key Concepts
 
-- **persist_report()** (16 connections) — `api/services/report_storage.py`
-- **test_report_history.py** (14 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_creates_file_and_row()** (5 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_overwrites_on_resend()** (5 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_persists_volunteer_pdf()** (5 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_persists_consolidated_pdf()** (5 connections) — `api/tests/test_report_history.py`
-- **report_storage.py** (4 connections) — `api/services/report_storage.py`
-- **report_path()** (4 connections) — `api/services/report_storage.py`
-- **test_persist_report_consolidated_overwrites_on_resend()** (4 connections) — `api/tests/test_report_history.py`
-- **test_get_history_returns_items()** (4 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_missing_file_returns_404()** (4 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_resend_overwrites_row()** (4 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_consolidated_has_null_volunteer()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_filter_by_year_month()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_streams_file()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_empty()** (2 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_unknown_id_returns_404()** (2 connections) — `api/tests/test_report_history.py`
-- **PDF report storage — disk write and upsert of MonthlyReport rows.** (1 connections) — `api/services/report_storage.py`
-- **Return the canonical filesystem path for a report PDF.** (1 connections) — `api/services/report_storage.py`
-- **Write pdf_bytes to disk and upsert a MonthlyReport row.      If a row already ex** (1 connections) — `api/services/report_storage.py`
-- **Tests for PDF report persistence and history endpoints.** (1 connections) — `api/tests/test_report_history.py`
-- **persist_report() must write bytes to disk and insert a MonthlyReport row.** (1 connections) — `api/tests/test_report_history.py`
-- **Consolidated report rows must have volunteer_id=None.** (1 connections) — `api/tests/test_report_history.py`
-- **Second persist_report() for same (volunteer, year, month) must overwrite — no ne** (1 connections) — `api/tests/test_report_history.py`
-- **Second persist_report() for consolidated (volunteer_id=None, year, month) must o** (1 connections) — `api/tests/test_report_history.py`
-- *... and 9 more nodes in this community*
+- **n8n Code JavaScript Skill Entry Point** (8 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **n8n JavaScript Code Node Built-in Functions** (7 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **n8n JavaScript Code Node Data Access Patterns** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **n8n JavaScript Code Node Error Patterns** (7 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **n8n Code JavaScript Skill README** (7 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **n8n Code Python Skill Entry Point** (7 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **n8n JavaScript Code Node Common Patterns** (6 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **n8n Expression Syntax Skill Entry Point** (6 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **n8n MCP Tools Expert Skill Entry Point** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **n8n Python Code Node Data Access Patterns** (3 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **n8n Code Node** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Webhook Data Body Nesting Gotcha** (3 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **n8n Python Code Node Common Patterns** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **n8n Python Code Node Error Patterns** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **n8n Python Code Node Standard Library Reference** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **n8n Expression Syntax Common Mistakes** (2 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **n8n Expression Syntax Skill README** (2 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **n8n MCP Tools Expert Skill README** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **n8n MCP Tools Node Discovery Search Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **n8n MCP Tools Configuration Validation Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- **n8n Task Runner Sandbox Restrictions** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **n8n Expression Syntax Double Curly Braces** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Python Code Node No External Libraries Constraint** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **SplitInBatches Loop Pattern** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **$getWorkflowStaticData() Persistent Storage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- [[BelPro Project Memory Public Index]] (6 shared connections)
-- [[path]] (6 shared connections)
-- [[005_report_prefs.py]] (3 shared connections)
-- [[test_documents.py]] (3 shared connections)
-- [[GET /log-entries/{id}/photos/{pid}/file]] (2 shared connections)
-- [[Evolution API (API Gateway)]] (1 shared connections)
-- [[LoginRequest (Schema)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/report_storage.py`
-- `api/tests/test_report_history.py`
+- `.claude/skills/javascript-pro/references/modules.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/README.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-expression-syntax/README.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/README.md`
+- `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 67 (64%)
-- INFERRED: 37 (36%)
+- EXTRACTED: 98 (92%)
+- INFERRED: 8 (8%)
 - AMBIGUOUS: 0 (0%)
 
 ---

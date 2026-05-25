@@ -4,24 +4,29 @@
 
 ## Key Concepts
 
-- **Task 3: Settings and schema update** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# ── Data retention ────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block24 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block25 (git add api/core/settings.py api/schemas/manager.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **File Structure** (7 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **ISS-024: PDF Report History Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 3: History endpoints and Pydantic schemas** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 4: Wire persistence into send_monthly_reports** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 5: Frontend — "Arhiv poročil" section** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **2026-05-19-pdf-report-history.md** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Community 535]] (1 shared connections)
+- [[Community 496]] (1 shared connections)
+- [[Community 426]] (1 shared connections)
+- [[Community 583]] (1 shared connections)
+- [[Community 306]] (1 shared connections)
+- [[Community 307]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

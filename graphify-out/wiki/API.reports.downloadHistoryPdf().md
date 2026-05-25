@@ -4,45 +4,44 @@
 
 ## Key Concepts
 
-- **BelPro - Odobritev Upravljalca (Manager Approval Workflow)** (13 connections) — `n8n/workflows/manager_approval.json`
-- **Manager WhatsApp Approval Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Manager WhatsApp Approval Workflow Design** (11 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **PATCH /api/log-entries/{id}/approve (approve_log_entry)** (7 connections) — `api/routers/log_entries.py`
-- **PATCH /api/log-entries/{id}/reject (reject_log_entry)** (7 connections) — `api/routers/log_entries.py`
-- **manager_approval n8n Workflow** (6 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **manager_approval.json n8n Workflow** (6 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Evolution API WhatsApp** (4 connections) — `docs/evolution-lid-resolution.md`
-- **n8n: PATCH /api/log-entries/{id}/approve** (4 connections) — `n8n/workflows/manager_approval.json`
-- **n8n: PATCH /api/log-entries/{id}/reject** (4 connections) — `n8n/workflows/manager_approval.json`
-- **volunteer_entry n8n Workflow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Work Date Rename and Dashboard Entry Creation Design** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Evolution API lid JID Resolution** (2 connections) — `docs/evolution-lid-resolution.md`
-- **Volunteer Entry Workflow Manager Routing Change** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **n8n Workflow Import Export Script Design** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Alembic Migration entry_date to work_date Rename** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **scripts/n8n_workflows.py Import Export Script** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Evolution API and N8N Phone Identification Solutions** (1 connections) — `Evolution_API_and_N8N_phone_identification_solutions.pdf`
+- **AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)** (14 connections) — `SPEC.md`
+- **Ops Sidecar (backup, photo cleanup, error reporting)** (10 connections) — `SPEC.md`
+- **Auto Monthly Reports Plan** (7 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- **Error Log (Dnevnik napak)** (6 connections) — `SPEC.md`
+- **ops_server.py ThreadingHTTPServer Reconfigure** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- **Version 0.11.0-beta.0** (5 connections) — `CHANGELOG.md`
+- **Ops Sidecar and Error Log Plan** (5 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Configurable Backup Retention Days Plan** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Report Auto Hour Plan** (5 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Version 0.11.1-beta.0** (3 connections) — `CHANGELOG.md`
+- **Ops Notification Server (POST /reconfigure, port 9000)** (3 connections) — `CHANGELOG.md`
+- **Settings Table Plan** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Report Delivery Error Visibility Plan** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **MAX_PHOTOS_PER_ENTRY Setting** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Configurable Backup Retention Days** (3 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **report_auto_hour Configurable Cron Hour** (3 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **BelPro Changelog** (2 connections) — `CHANGELOG.md`
+- **Photo Upload Limit Plan** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
 
 ## Relationships
 
-- [[010_monthly_reports_unique_idx.py]] (5 shared connections)
-- [[Code: Procesiraj Popravek]] (3 shared connections)
-- [[LoginRequest (Schema)]] (3 shared connections)
-- [[Community 414]] (2 shared connections)
-- [[Code: Preveri Slike Stanje]] (2 shared connections)
-- [[BelPro Project Memory Public Index]] (2 shared connections)
-- [[Community 546]] (1 shared connections)
+- [[send_monthly_reports()]] (4 shared connections)
+- [[POST /log-entries/{id}/photos]] (3 shared connections)
+- [[Code: Procesiraj Popravek]] (1 shared connections)
+- [[Community 540]] (1 shared connections)
+- [[POST /api/errors (write_error)]] (1 shared connections)
 
 ## Source Files
 
-- `Evolution_API_and_N8N_phone_identification_solutions.pdf`
-- `api/routers/log_entries.py`
-- `docs/evolution-lid-resolution.md`
-- `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- `n8n/workflows/manager_approval.json`
+- `CHANGELOG.md`
+- `SPEC.md`
+- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
 
 ## Audit Trail
 

@@ -4,32 +4,25 @@
 
 ## Key Concepts
 
-- **File Map** (9 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **WhatsApp Phone — Single Source of Truth Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **Self-Review** (3 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **2026-05-11-whatsapp-phone-source-of-truth.md** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **Context & Key Decisions** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **Spec coverage** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **Pre-flight checks before Task 6** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Codebase context** (6 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 1: DB migration — unique partial indexes** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python ("""Add unique partial indexes to monthly_reports.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block2 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block3 (docker compose exec api alembic current)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block4 (docker compose exec postgres psql -U belpro -d belpro -c "\d)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add api/db/migrations/versions/010_monthly_reports_uniqu)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Community 345]] (1 shared connections)
-- [[Community 528]] (1 shared connections)
-- [[Community 529]] (1 shared connections)
-- [[Community 530]] (1 shared connections)
-- [[Community 346]] (1 shared connections)
-- [[Community 347]] (1 shared connections)
-- [[Community 396]] (1 shared connections)
-- [[Community 495]] (1 shared connections)
+- [[Community 533]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 13 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

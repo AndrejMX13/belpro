@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **backup.sh** (1 connections) — `ops/scripts/backup.sh`
-- **report_error()** (1 connections) — `ops/scripts/backup.sh`
+- **reference_render_diagrams.md** (1 connections) — `.claude/memory/reference_render_diagrams.md`
+- **code:block1 (python scripts/render_diagrams.py)** (1 connections) — `.claude/memory/reference_render_diagrams.md`
 
 ## Relationships
 
@@ -13,7 +13,7 @@
 
 ## Source Files
 
-- `ops/scripts/backup.sh`
+- `.claude/memory/reference_render_diagrams.md`
 
 ## Audit Trail
 

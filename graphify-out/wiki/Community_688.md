@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **downloadHistoryPdf** (1 connections) — `frontend/js/reports.js`
-- **download_history_pdf** (1 connections) — `api/routers/reports.py`
+- **exportReportPdf** (1 connections) — `frontend/js/reports.js`
+- **generate_monthly_pdf** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 

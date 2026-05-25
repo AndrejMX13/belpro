@@ -1,35 +1,35 @@
 # volunteer.py
 
-> 28 nodes
+> 31 nodes
 
 ## Key Concepts
 
-- **Evolution API — WhatsApp QR Code Troubleshooting** (8 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **Setup Steps (clean instance from scratch)** (6 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **Root Causes** (4 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **1. Outdated WhatsApp client version (the real blocker)** (3 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **5. Get QR code and scan it** (3 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **1. Ensure docker-compose.yml has the correct environment variables** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **2. Restart Evolution API** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **3. Delete any existing broken instance** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **4. Create instance and connect in one shot** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **Reconnecting (phone unlinked, session expired)** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **Checking instance status** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **Key env vars in .env** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **EVOLUTION_QR_TROUBLESHOOTING.md** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **The Problem** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:block1 (https://raw.githubusercontent.com/WhiskeySockets/Baileys/mas)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:yaml (environment:)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **2. Dashboard UI bug (separate issue)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **3. Wrong env var mapping (found during investigation)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:yaml (evolution-api:)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:bash (docker compose up -d evolution-api)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:bash (curl -X DELETE \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:bash (curl -s -X POST \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:bash (curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:python (import json, sys)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- **code:bash (curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
-- *... and 3 more nodes in this community*
+- **n8n Validation Expert** (15 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Key Insights** (6 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Usage Examples** (4 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Integration with Other Skills** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **What This Skill Teaches** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **File Structure** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Example 1: Basic Validation Loop** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Example 2: Handling False Positives** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Example 3: Using Auto-Fix** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **The Problem This Solves** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Core Concepts** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:block1 (n8n-validation-expert/)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Common Error Types** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **1. Validation is Iterative** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **2. False Positives Exist** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **3. Auto-Sanitization Works** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **4. Profile Matters** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **5. Error Messages Help** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:javascript (// Iteration 1)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:javascript (// Run validation)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:javascript (// Check what can be auto-fixed)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **When This Skill Activates** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Works With:** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `EVOLUTION_QR_TROUBLESHOOTING.md`
+- `.claude/skills/n8n-validation-expert/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 54 (100%)
+- EXTRACTED: 60 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

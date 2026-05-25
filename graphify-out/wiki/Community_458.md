@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Built-in Functions & Helpers** (4 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **$helpers.httpRequest()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **DateTime (Luxon)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **$jmespath()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Current time)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Module 5: hashlib - Hashing** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **MD5 Hash** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **SHA256 Hash** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Generate Unique ID** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Text Extract]] (1 shared connections)
+- [[Community 330]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Receiving Feedback** (8 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **The Six-Step Process** (7 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Avoiding Agreement Theater** (5 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Verification Before Claiming Fixed** (5 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **When to Push Back** (4 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Step 1: Read Completely** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Step 2: Restate Requirements** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Step 3: Check Against Codebase** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Step 4: Evaluate Technical Soundness** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Step 5: Respond with Substance** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Step 6: Implement One at a Time** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Actions Demonstrate Understanding** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **When Acknowledgment IS Appropriate** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Good Pushback Format** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Bad Pushback** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Acceptable Responses** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Unacceptable Responses** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **When You Can't Verify** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **receiving-feedback.md** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Core Mindset** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **code:markdown (❌ BAD: Read first sentence → start typing defense)** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **code:markdown (Reviewer: "This function is doing too much. It handles valid)** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **code:typescript (// Reviewer says: "This will throw if user is null")** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **code:markdown (Reviewer: "You should use useMemo here for performance")** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **code:markdown (✅ GOOD: "Fixed. Split into validate(), transform(), persist()** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Graphify — Connect Isolated Communities** (8 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 1: Connect Frontend JS ↔ Backend Routers (C0, C20, C48)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 2: Connect ORM Models ↔ Pydantic Schemas (C3)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 3: Connect Services ↔ Routers + monthly_reports.json (C4)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 4: Connect Design Docs ↔ Implementation (C10, C15, C79)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 5: Connect Ops Scripts (C54, C55, C69, C77, C90, C100)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 6: Regenerate graph.html and GRAPH_REPORT.md** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Context for the executing agent** (4 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Merge script (reuse across all tasks, substitute CHUNK_FILE and OUTPUT_LABEL)** (2 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Connectivity check (reuse across all tasks, substitute COMMUNITY_IDS)** (2 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Graph.html regeneration (final task only)** (2 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **2026-05-25-graphify-connect-isolated-communities.md** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (# merge_chunk.py — run from project root)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (# check_connectivity.py — run from project root)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (# regen_html.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block4 (frontend/js/admin.js)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block5 (You are a graphify extraction subagent. Read the files liste)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (import json)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block7 (git status)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block8 (api/models/app_setting.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block9 (You are a graphify extraction subagent. Read the files liste)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (import json)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block11 (git status)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block12 (api/services/app_settings.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block13 (You are a graphify extraction subagent. Read the files liste)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
 - *... and 14 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
 
 ## Audit Trail
 

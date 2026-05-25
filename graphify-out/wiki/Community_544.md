@@ -1,30 +1,29 @@
 # Community 544
 
-> 5 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **loadReportArchive()** (5 connections) — `frontend/js/reports.js`
-- **GET /reports/history** (3 connections) — `api/routers/reports.py`
-- **API.reports.history()** (2 connections) — `frontend/js/api.js`
-- **loadReportArchive()** (2 connections) — `frontend/js/reports.js`
-- **ReportHistoryList shape (items[], total)** (2 connections) — `api/routers/reports.py`
+- **Test Coverage Gaps Design Spec** (4 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **BelPro API Test Suite Design** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **belpro_test PostgreSQL Test Database** (2 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **belpro_test_migrations Isolated Migration Test Database** (2 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **pytest Fixture Architecture session and function scoped** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **api/tests/test_migrations.py Migration Roundtrip Test** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (3 shared connections)
-- [[Performance Testing Reference (k6)]] (1 shared connections)
+- [[n8n MCP Workflow Management Guide]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/api.js`
-- `frontend/js/reports.js`
+- `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (79%)
-- INFERRED: 3 (21%)
+- EXTRACTED: 11 (85%)
+- INFERRED: 2 (15%)
 - AMBIGUOUS: 0 (0%)
 
 ---

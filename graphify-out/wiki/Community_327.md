@@ -4,29 +4,28 @@
 
 ## Key Concepts
 
-- **The Solution** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Error #3: Incorrect Return Wrapper Format** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Common Scenarios** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Single result)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Multiple results)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Transforming array)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Empty result)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Conditional returns)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Return Format Checklist** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// Scenario 1: Single object from API)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Production Gotchas** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Cross-Iteration Data Accumulation (CRITICAL)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **pairedItem for New Output Items** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Float Precision for Price/Currency Comparison** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// BEFORE the loop (reset accumulator):)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const results = [];)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG - .json directly on node reference)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ Unreliable - float comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[SmtpNotConfiguredError (Service)]] (1 shared connections)
-- [[Community 511]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

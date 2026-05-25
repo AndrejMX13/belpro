@@ -4,28 +4,25 @@
 
 ## Key Concepts
 
-- **renderSettings** (4 connections) — `frontend/js/volunteers.js`
-- **renderDocuments** (3 connections) — `frontend/js/documents.js`
-- **get_manager** (2 connections) — `api/routers/managers.py`
-- **update_manager** (2 connections) — `api/routers/managers.py`
-- **download_consent_pdf** (1 connections) — `api/routers/documents.py`
-- **get_config_info** (1 connections) — `api/routers/managers.py`
-- **change_password** (1 connections) — `api/routers/managers.py`
+- **Task 2: AppSettings property** (7 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (def test_appsettings_evolution_instance_name_default() -> No)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 398]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/documents.py`
-- `api/routers/managers.py`
-- `frontend/js/documents.js`
-- `frontend/js/volunteers.js`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 13 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

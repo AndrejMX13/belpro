@@ -1,35 +1,35 @@
 # renderSettings() — settings page
 
-> 32 nodes
+> 34 nodes
 
 ## Key Concepts
 
-- **Performance Optimization** (9 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Index Strategies** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Query Optimization Patterns** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **EXPLAIN ANALYZE Fundamentals** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Reading EXPLAIN Output** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **B-tree Indexes (Default)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **GIN Indexes (JSONB, arrays, full-text)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **GiST Indexes (Spatial, ranges, nearest neighbor)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **BRIN Indexes (Large, naturally ordered tables)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Statistics and Planner** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: Sequential scan on large table** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: Index not used** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: Large JOIN inefficiency** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: COUNT(*) slow** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Connection Pooling** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Configuration Tuning** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Performance Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **performance.md** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Basic EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:block2 (Seq Scan on users  (cost=0.00..1234.56 rows=10000 width=32))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Single column index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- JSONB containment)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- PostGIS spatial index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Time-series data (insert-only, sorted by time))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Update statistics (do after bulk changes))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- *... and 7 more nodes in this community*
+- **Python Packaging and Project Setup** (16 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Poetry Project Management** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Pre-commit Hooks** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Project Structure** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Pyproject.toml Configuration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Virtual Environments** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Package __init__.py** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Type Stub Files (py.typed)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **CLI Entry Points** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Requirements Files** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Building and Distribution** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Setuptools Configuration (Legacy)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Manifest for Package Data** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Version Management** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Dependency Management Best Practices** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **CI/CD Integration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **packaging.md** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:block1 (myproject/)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:toml ([build-system])** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:toml (# pyproject.toml for Poetry)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:bash (# Poetry commands)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:bash (# Using venv (built-in))** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:python (# src/myproject/__init__.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:python (# src/myproject/py.typed)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:python (# src/myproject/cli.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- *... and 9 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/postgres-pro/references/performance.md`
+- `.claude/skills/python-pro/references/packaging.md`
 
 ## Audit Trail
 
-- EXTRACTED: 62 (100%)
+- EXTRACTED: 66 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

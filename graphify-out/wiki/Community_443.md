@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **When NOT to Use Expressions** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Code Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Webhook Paths** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Credential Fields** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// ❌ WRONG in Code node)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Response Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Extract Nested Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Flatten Arrays** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Combine Multiple API Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - flatten nested array)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block41 (HTTP Request 1 (users))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 353]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **submitAddVolunteer** (2 connections) — `frontend/js/volunteers.js`
-- **check_emso** (1 connections) — `api/routers/volunteers.py`
-- **create_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **feedback_graphify_update.md** (2 connections) — `.claude/memory/feedback_graphify_update.md`
+- **code:block1 (feat: report delivery error visibility — graphify update)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
+- **Known version issue (2026-05-21)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
 
 ## Relationships
 
@@ -14,8 +14,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/volunteers.js`
+- `.claude/memory/feedback_graphify_update.md`
 
 ## Audit Trail
 

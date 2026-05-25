@@ -4,34 +4,37 @@
 
 ## Key Concepts
 
-- **Input Validation** (8 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Zod Validation** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **SQL Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Path Traversal Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Command Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **URL Validation** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **File Upload Validation** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **input-validation.md** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (import { z } from 'zod';)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (// ❌ NEVER do this)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (import path from 'path';)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (import { execFile } from 'child_process';)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (function validateUrl(input: string, allowedHosts: string[]):)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/gif)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
+- **Testing Anti-Patterns Reference** (6 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **QA Methodology Reference** (5 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **TDD Iron Laws** (4 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Quality Gates Production Release Gate** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Shift-Left Testing Strategy** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Anti-Pattern Integration Tests as Afterthought** (2 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Unit Testing Reference Jest pytest Patterns** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Exploratory Testing Charter** (1 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Accessibility Testing WCAG 2.1 AA** (1 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Defect Management and Root Cause Analysis** (1 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **RED-GREEN-REFACTOR Cycle** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Anti-Pattern Testing Mock Behavior** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern Test-Only Methods in Production** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern Mocking Without Understanding** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern Incomplete Mocks** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[GET /log-entries]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/input-validation.md`
+- `.claude/skills/test-master/references/qa-methodology.md`
+- `.claude/skills/test-master/references/tdd-iron-laws.md`
+- `.claude/skills/test-master/references/testing-anti-patterns.md`
+- `.claude/skills/test-master/references/unit-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 22 (71%)
+- INFERRED: 9 (29%)
 - AMBIGUOUS: 0 (0%)
 
 ---

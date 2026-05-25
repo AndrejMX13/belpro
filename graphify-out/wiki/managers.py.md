@@ -1,33 +1,34 @@
 # managers.py
 
-> 24 nodes
+> 25 nodes
 
 ## Key Concepts
 
-- **Database Dialect Differences** (13 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Auto-Incrementing Primary Keys** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **String Concatenation** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Date/Time Functions** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **LIMIT/OFFSET (Pagination)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Boolean Data Type** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **JSON/JSONB Support** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **String Comparison (Case Sensitivity)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Recursive CTEs** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Window Functions - Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **UPSERT (Insert or Update)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **dialect-differences.md** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (strict - automatic casting))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- Current timestamp)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL & MySQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (native BOOLEAN))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (JSONB - binary, indexable))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (case-sensitive by default))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL - Full support)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (ON CONFLICT))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Data Type Mapping** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Performance Tips by Database** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **n8n Workflow Patterns** (17 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Workflow Creation Checklist** (5 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Coverage** (3 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Real Template Examples** (2 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **File Count** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Priority** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Dependencies** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **The 5 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Cross-Cutting Concerns** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Evaluations** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Key Features** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Success Metrics** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Pattern Selection Stats** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Critical Insights** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Planning Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Implementation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Validation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Deployment Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **code:block1 (Schedule (daily 8 AM) → HTTP Request (weather) → Set → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Last Updated** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
 
 ## Relationships
 
@@ -35,11 +36,11 @@
 
 ## Source Files
 
-- `.claude/skills/sql-pro/references/dialect-differences.md`
+- `.claude/skills/n8n-workflow-patterns/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 46 (100%)
+- EXTRACTED: 48 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

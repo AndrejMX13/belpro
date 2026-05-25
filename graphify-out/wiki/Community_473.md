@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- [[load-project-memory.sh]] (1 shared connections)
+- [[IF: Should Notify? (Auto)]] (1 shared connections)
 
 ## Source Files
 

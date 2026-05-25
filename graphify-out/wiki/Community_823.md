@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/reports/history/{id}/pdf (download_history_pdf)** (0 connections) — `api/routers/reports.py`
+- **GET /api/managers/me/config-info (get_config_info)** (0 connections) — `api/routers/managers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
+- `api/routers/managers.py`
 
 ## Audit Trail
 

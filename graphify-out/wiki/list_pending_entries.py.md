@@ -4,44 +4,38 @@
 
 ## Key Concepts
 
-- **report_pdf.py** (10 connections) — `api/services/report_pdf.py`
-- **render_volunteer_pdf()** (9 connections) — `api/services/report_pdf.py`
-- **ngo_header_html()** (8 connections) — `api/services/report_pdf.py`
-- **generate_monthly_pdf()** (7 connections) — `api/routers/reports.py`
-- **NGOInfo** (7 connections) — `api/services/report_pdf.py`
-- **render_summary_pdf()** (7 connections) — `api/services/report_pdf.py`
-- **_esc()** (4 connections) — `api/services/report_pdf.py`
-- **test_ngo_header_html_without_logo()** (4 connections) — `api/tests/test_reports.py`
-- **test_ngo_header_html_with_logo()** (4 connections) — `api/tests/test_reports.py`
-- **_generated_line()** (3 connections) — `api/services/report_pdf.py`
-- **_fmt_date()** (2 connections) — `api/services/report_pdf.py`
-- **Generate a monthly PDF report for one volunteer or all active volunteers.** (1 connections) — `api/routers/reports.py`
-- **PDF rendering for monthly volunteer reports using WeasyPrint.** (1 connections) — `api/services/report_pdf.py`
-- **NGO identity shown in every PDF header.** (1 connections) — `api/services/report_pdf.py`
-- **Render the NGO header block as an HTML string.** (1 connections) — `api/services/report_pdf.py`
-- **Render a single-volunteer monthly report PDF and return raw bytes.** (1 connections) — `api/services/report_pdf.py`
-- **Render an all-volunteer summary PDF and return raw bytes.** (1 connections) — `api/services/report_pdf.py`
-- **ngo_header_html must not include an img tag when logo_path is None.** (1 connections) — `api/tests/test_reports.py`
-- **ngo_header_html must include an img tag with data URI src when logo_path is set.** (1 connections) — `api/tests/test_reports.py`
+- **Design** (9 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Evolution Instance Name — AppSettings Migration Design** (5 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **AppSettings extension** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Schema** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **New config router** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Alembic migration** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **n8n workflow changes** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **2026-05-25-evolution-instance-appsetting.md** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Context** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Files** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (evolution_instance_name: str)** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Admin router** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (GET /api/config/evolution-instance)** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (op.execute()** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **code:block5 (Before: "http://evolution-api:8080/message/sendText/belpro")** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Tests** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Admin UI** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[GET /log-entries/{id}/photos/{pid}/file]] (6 shared connections)
-- [[main()]] (3 shared connections)
-- [[005_report_prefs.py]] (2 shared connections)
-- [[loadReports()]] (1 shared connections)
-- [[LoginRequest (Schema)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `api/services/report_pdf.py`
-- `api/tests/test_reports.py`
+- `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (71%)
-- INFERRED: 21 (29%)
+- EXTRACTED: 36 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,30 +4,31 @@
 
 ## Key Concepts
 
-- **Add to CI pipeline** (5 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **coverage-reports.md** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **Coverage Reports** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **Documentation Coverage Report Template** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **Checklist During Documentation** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **Framework-Specific Linting** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **code:markdown (# Documentation Report: {project_name})** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **code:markdown (## Documentation Checklist)** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **code:bash (# JavaScript/TypeScript - ESLint)** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **conftest.py** (6 connections) — `tests/workflow/conftest.py`
+- **test_volunteer()** (5 connections) — `tests/workflow/conftest.py`
+- **_make_valid_emso()** (4 connections) — `tests/workflow/conftest.py`
+- **_auth_header()** (3 connections) — `tests/workflow/conftest.py`
+- **api_client()** (3 connections) — `tests/workflow/conftest.py`
+- **_manager_password()** (2 connections) — `tests/workflow/conftest.py`
+- **n8n_client()** (2 connections) — `tests/workflow/conftest.py`
+- **Generate a random 13-digit EMŠO that passes the Modulus 11 checksum.** (1 connections) — `tests/workflow/conftest.py`
+- **Session-scoped AsyncClient against FastAPI. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
+- **Session-scoped AsyncClient against n8n. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
+- **Creates a volunteer with a unique phone, yields the volunteer dict,     deletes** (1 connections) — `tests/workflow/conftest.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[load_key()]] (2 shared connections)
+- [[test_auth.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/coverage-reports.md`
+- `tests/workflow/conftest.py`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (90%)
+- INFERRED: 3 (10%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,45 +1,48 @@
 # GET /api/log-entries (list_log_entries)
 
-> 23 nodes
+> 24 nodes
 
 ## Key Concepts
 
-- **PostgreSQL Extensions** (12 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **Extension Management** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **pg_stat_statements (Query Performance)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **uuid-ossp (UUID Generation)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **pg_trgm (Fuzzy String Matching)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **PostGIS (Spatial and Geographic)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **pgvector (Vector Similarity Search)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **pgcrypto (Encryption and Hashing)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **postgres_fdw (Foreign Data Wrapper)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **pg_repack (Online Table Reorganization)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **timescaledb (Time-Series Data)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **extensions.md** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (-- List available extensions)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (-- Install and configure)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS "uuid-ossp";)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS pg_trgm;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS postgis;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS vector;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS pgcrypto;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS postgres_fdw;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS pg_repack;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **code:sql (CREATE EXTENSION IF NOT EXISTS timescaledb;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
-- **Extension Recommendations by Use Case** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **test_managers.py** (14 connections) — `api/tests/test_managers.py`
+- **seed_whatsapp_phone_from_env()** (7 connections) — `api/main.py`
+- **lifespan()** (5 connections) — `api/main.py`
+- **test_seed_whatsapp_phone_populates_null_db_field()** (3 connections) — `api/tests/test_managers.py`
+- **test_seed_whatsapp_phone_does_not_overwrite_existing_value()** (3 connections) — `api/tests/test_managers.py`
+- **test_change_password_invalidates_old_credentials()** (2 connections) — `api/tests/test_managers.py`
+- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
+- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
+- **test_get_manager_returns_profile()** (1 connections) — `api/tests/test_managers.py`
+- **test_create_manager_returns_409_when_already_configured()** (1 connections) — `api/tests/test_managers.py`
+- **test_auth_wrong_password_returns_401()** (1 connections) — `api/tests/test_managers.py`
+- **test_auth_missing_credentials_returns_401()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_includes_wa_fields()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_auto_syncs_when_evolution_reports_new_phone()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_no_sync_when_phone_already_matches()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_shows_db_phone_when_disconnected()** (1 connections) — `api/tests/test_managers.py`
+- **test_update_manager_normalizes_whatsapp_phone()** (1 connections) — `api/tests/test_managers.py`
+- **test_update_manager_rejects_too_short_phone()** (1 connections) — `api/tests/test_managers.py`
+- **test_update_manager_empty_phone_not_stored_as_empty_string()** (1 connections) — `api/tests/test_managers.py`
+- **seed_whatsapp_phone_from_env writes normalized phone to DB when DB value is null** (1 connections) — `api/tests/test_managers.py`
+- **seed_whatsapp_phone_from_env leaves existing DB value untouched.** (1 connections) — `api/tests/test_managers.py`
+- **After a password change, old credentials return 401 and new ones return 200.** (1 connections) — `api/tests/test_managers.py`
+- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
+- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (3 shared connections)
+- [[volunteers.js]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/postgres-pro/references/extensions.md`
+- `api/main.py`
+- `api/tests/test_managers.py`
 
 ## Audit Trail
 
-- EXTRACTED: 44 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 46 (88%)
+- INFERRED: 6 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **File Structure** (6 connections) — `.claude/skills/n8n-code-python/README.md`
-- **SKILL.md (719 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **DATA_ACCESS.md (703 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **STANDARD_LIBRARY.md (850 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **COMMON_PATTERNS.md (895 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **ERROR_PATTERNS.md (730 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **The Problem** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning object instead of array)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning array without json wrapper)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning plain value)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning items without mapping)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Incomplete structure)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 291]] (1 shared connections)
+- [[Community 326]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

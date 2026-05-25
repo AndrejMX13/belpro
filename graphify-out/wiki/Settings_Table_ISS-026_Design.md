@@ -4,44 +4,44 @@
 
 ## Key Concepts
 
-- **monthly_reports.json** (21 connections) — `n8n/workflows/monthly_reports.json`
-- **activeVersion** (12 connections) — `n8n/workflows/monthly_reports.json`
-- **settings** (7 connections) — `n8n/workflows/monthly_reports.json`
-- **connections** (4 connections) — `n8n/workflows/monthly_reports.json`
-- **connections** (4 connections) — `n8n/workflows/monthly_reports.json`
-- **28. v mesecu ob 07:00** (3 connections) — `n8n/workflows/monthly_reports.json`
-- **Ročni Zagon** (3 connections) — `n8n/workflows/monthly_reports.json`
-- **Pošlji Mesečna Poročila** (3 connections) — `n8n/workflows/monthly_reports.json`
-- **staticData** (2 connections) — `n8n/workflows/monthly_reports.json`
-- **node:28. v mesecu ob 07:00** (2 connections) — `n8n/workflows/monthly_reports.json`
-- **updatedAt** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **createdAt** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **id** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **name** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **description** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **active** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **isArchived** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **nodes** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **executionOrder** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **timezone** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **saveDataErrorExecution** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/monthly_reports.json`
+- **Node Discovery Tools Guide** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **get_node Modes** (7 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **get_node (UNIFIED NODE INFORMATION)** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **nodeType Format (CRITICAL!)** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Examples** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **search_nodes (START HERE!)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Additional Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Standard Detail (RECOMMENDED)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Minimal Detail** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Full Detail (USE SPARINGLY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="docs" (READABLE DOCUMENTATION)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="search_properties" (FIND SPECIFIC FIELDS)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="versions" (VERSION HISTORY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="compare" (COMPARE VERSIONS)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="breaking" (BREAKING CHANGES ONLY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="migrations" (AUTO-MIGRATABLE)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **includeTypeInfo** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **includeExamples** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Common Workflow: Finding & Configuring** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Find and Configure HTTP Request** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Explore AI Nodes** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Check Version Compatibility** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **SEARCH_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **code:javascript (search_nodes({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
 - *... and 21 more nodes in this community*
 
 ## Relationships
 
-- [[GET /log-entries/{id}/photos/{pid}/file]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/monthly_reports.json`
+- `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
 
 ## Audit Trail
 
-- EXTRACTED: 97 (100%)
+- EXTRACTED: 90 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

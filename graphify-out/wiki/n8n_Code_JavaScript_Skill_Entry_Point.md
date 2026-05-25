@@ -1,35 +1,35 @@
 # n8n Code JavaScript Skill Entry Point
 
-> 46 nodes
+> 47 nodes
 
 ## Key Concepts
 
-- **Node Discovery Tools Guide** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **get_node Modes** (7 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **get_node (UNIFIED NODE INFORMATION)** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **nodeType Format (CRITICAL!)** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Examples** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **search_nodes (START HERE!)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Additional Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Standard Detail (RECOMMENDED)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Minimal Detail** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Full Detail (USE SPARINGLY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **mode="docs" (READABLE DOCUMENTATION)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **mode="search_properties" (FIND SPECIFIC FIELDS)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **mode="versions" (VERSION HISTORY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **mode="compare" (COMPARE VERSIONS)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **mode="breaking" (BREAKING CHANGES ONLY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **mode="migrations" (AUTO-MIGRATABLE)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **includeTypeInfo** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **includeExamples** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Common Workflow: Finding & Configuring** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Find and Configure HTTP Request** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Explore AI Nodes** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **Check Version Compatibility** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **SEARCH_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **code:javascript (search_nodes({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- *... and 21 more nodes in this community*
+- **Progressive Disclosure** (7 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **User Guides & Tutorials** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Step-by-Step Tutorial** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Check for extra spaces** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Progressive Learning Path** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Task-Based Writing** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Diagram Integration** (4 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Tutorial Structure** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Writing Techniques** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Visual Communication** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **user-guides-tutorials.md** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Information Architecture** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Content Hierarchy** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Screenshot Annotations** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Troubleshooting Guides** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Problem-Solution Format** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **FAQ Section** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:markdown (# Getting Started with API)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block3** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block4** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:markdown (# Tutorial: Building a User Dashboard)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block6** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block7** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block8** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- `.claude/skills/code-documenter/references/user-guides-tutorials.md`
 
 ## Audit Trail
 
-- EXTRACTED: 90 (100%)
+- EXTRACTED: 92 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

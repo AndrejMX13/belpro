@@ -4,34 +4,33 @@
 
 ## Key Concepts
 
-- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README.md`
-- **Manager dashboard** (2 connections) — `README.md`
-- **Project layout** (2 connections) — `README.md`
-- **README.md** (1 connections) — `README.md`
-- **How it works** (1 connections) — `README.md`
-- **Sample PDF reports** (1 connections) — `README.md`
-- **Stack** (1 connections) — `README.md`
-- **Requirements** (1 connections) — `README.md`
-- **Access points** (1 connections) — `README.md`
-- **Security notes** (1 connections) — `README.md`
-- **code:block22 (belpro/)** (1 connections) — `README.md`
-- **AI-assisted development** (1 connections) — `README.md`
-- **Roadmap** (1 connections) — `README.md`
-- **Out of scope (v1)** (1 connections) — `README.md`
+- **Error #5: Missing Null Checks / Undefined Access** (7 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Problem** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Safe Access Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Webhook Data Safety** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Array Safety** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Object Property Safety** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: No null check - crashes if user doesn't exist)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Assumes array has items)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Assumes nested property exists)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: No validation before array operations)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Pattern 1: Optional chaining (modern, recommended))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Webhook data requires extra safety)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ RISKY: No length check)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ RISKY: Direct access)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
-- [[Community 352]] (1 shared connections)
-- [[Code: Pripravi Popravek]] (1 shared connections)
+- [[PhotoBase64Request (Schema)]] (1 shared connections)
+- [[Community 516]] (1 shared connections)
 
 ## Source Files
 
-- `README.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

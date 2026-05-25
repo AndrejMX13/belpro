@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Request Configuration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **GET Request** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **POST Request (JSON Body)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **POST Request (Form Data)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **PUT/PATCH Request (Update)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **DELETE Request** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **1. Webhook Node (Trigger)** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **2. Validation (Optional but Recommended)** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **3. Transformation** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **5. Response (If responseMode: "lastNode")** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript (❌ {{$json.email}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript (// IF node condition)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **4. Action** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
@@ -22,7 +22,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

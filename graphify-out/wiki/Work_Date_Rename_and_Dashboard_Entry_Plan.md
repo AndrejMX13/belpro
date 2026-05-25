@@ -4,35 +4,36 @@
 
 ## Key Concepts
 
-- **EMŠO Encryption Key Rotation — Procedure Guide** (11 connections) — `docs/emso_key_rotation.md`
-- **Step 1 — Save the current key** (2 connections) — `docs/emso_key_rotation.md`
-- **Step 2 — Generate a new key** (2 connections) — `docs/emso_key_rotation.md`
-- **Step 3 — Run the rotation script** (2 connections) — `docs/emso_key_rotation.md`
-- **Step 4 — Update `.env` and restart the API (while script is paused)** (2 connections) — `docs/emso_key_rotation.md`
-- **If something goes wrong** (2 connections) — `docs/emso_key_rotation.md`
-- **emso_key_rotation.md** (1 connections) — `docs/emso_key_rotation.md`
-- **When to use this** (1 connections) — `docs/emso_key_rotation.md`
-- **Prerequisites** (1 connections) — `docs/emso_key_rotation.md`
-- **code:bash (grep EMSO_ENCRYPTION_KEY .env)** (1 connections) — `docs/emso_key_rotation.md`
-- **code:bash (NEW_KEY=$(python3 -c "import secrets,base64; print(base64.ur)** (1 connections) — `docs/emso_key_rotation.md`
-- **code:bash (bash scripts/rotate_emso_key.sh <OLD_KEY> "$NEW_KEY")** (1 connections) — `docs/emso_key_rotation.md`
-- **code:bash (# Edit .env — change EMSO_ENCRYPTION_KEY to the new value)** (1 connections) — `docs/emso_key_rotation.md`
-- **Step 5 — Confirm cleanup in the first terminal** (1 connections) — `docs/emso_key_rotation.md`
-- **Backups taken before this rotation** (1 connections) — `docs/emso_key_rotation.md`
-- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `docs/emso_key_rotation.md`
-- **Known issues encountered during development** (1 connections) — `docs/emso_key_rotation.md`
+- **Common Mistakes** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 1: Wrong nodeType Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 2: Using detail="full" by Default** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 3: Using n8n_get_workflow mode="full" for Large Workflows** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 4: Not Using Validation Profiles** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 4: Ignoring Auto-Sanitization** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 7: Wrong Parameter Name for updateNode** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 8: Wrong Credential Attachment Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 6: Not Using intent Parameter** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - Returns 3-8K tokens, use sparingly)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG — 58-node workflow, every parameter bloated)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - Uses default profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// After ANY update, auto-sanitization runs on ALL nodes)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - credentials as flat object)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - No context for response)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 674]] (1 shared connections)
 
 ## Source Files
 
-- `docs/emso_key_rotation.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

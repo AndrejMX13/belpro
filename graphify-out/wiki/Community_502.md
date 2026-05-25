@@ -4,26 +4,29 @@
 
 ## Key Concepts
 
-- **main()** (5 connections) — `ops/scripts/monthly_report_send.py`
-- **monthly_report_send.py** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **report_error()** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **resolve_period()** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **POST failure to the API error log.** (1 connections) — `ops/scripts/monthly_report_send.py`
-- **Return (year, month) for the given period label.      'current'  → today's year** (1 connections) — `ops/scripts/monthly_report_send.py`
-- **Resolve target month and call the send-monthly API endpoint.** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **renderSettings** (4 connections) — `frontend/js/volunteers.js`
+- **renderDocuments** (3 connections) — `frontend/js/documents.js`
+- **get_manager** (2 connections) — `api/routers/managers.py`
+- **update_manager** (2 connections) — `api/routers/managers.py`
+- **download_consent_pdf** (1 connections) — `api/routers/documents.py`
+- **get_config_info** (1 connections) — `api/routers/managers.py`
+- **change_password** (1 connections) — `api/routers/managers.py`
 
 ## Relationships
 
-- [[005_report_prefs.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `ops/scripts/monthly_report_send.py`
+- `api/routers/documents.py`
+- `api/routers/managers.py`
+- `frontend/js/documents.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (94%)
-- INFERRED: 1 (6%)
+- EXTRACTED: 14 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

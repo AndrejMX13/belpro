@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Timezone Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Set Workflow Timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Common Timezones** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Handle Daylight Saving** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// In workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block14 (America/New_York    - Eastern (US))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// ❌ Bad: UTC schedule for "9 AM local")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Use Cases** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **4. $getWorkflowStaticData() - Persistent Storage** (3 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Get static data storage)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Use Case 1: Rate limiting)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Use Case 2: Tracking last processed ID)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Use Case 3: Accumulating results)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

@@ -4,40 +4,42 @@
 
 ## Key Concepts
 
-- **JavaScript Code Node** (15 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Quick Start** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Additional Resources** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Critical: Webhook Data Structure** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Integration with Other Skills** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Basic template for Code nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Essential Rules** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG - Will return undefined)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **When to Use Code Node** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Works With:** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Quick Reference Checklist** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Related Files** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **n8n Documentation** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Python Pro Skill** (6 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Test Master Skill** (5 connections) — `.claude/skills/test-master/SKILL.md`
+- **E2E Testing Reference (Playwright, User Flows, Cross-Browser)** (4 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Python Testing Reference (pytest)** (3 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Automation Frameworks Reference (Screenplay, Parallel, CI/CD)** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Integration Testing Reference (Supertest, API Testing, pytest httpx)** (3 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Python Async Patterns Reference** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Python Type System Reference** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **pytest Testing Framework** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Playwright E2E Testing Framework** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Python Packaging Reference** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Python Standard Library Reference** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **asyncio and async-await Pattern** (1 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **mypy Strict Type Checking** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
 
 ## Relationships
 
-- [[Community 559]] (1 shared connections)
-- [[Community 366]] (1 shared connections)
-- [[Community 558]] (1 shared connections)
-- [[Community 283]] (1 shared connections)
-- [[Community 284]] (1 shared connections)
-- [[Community 458]] (1 shared connections)
-- [[entrypoint.sh]] (1 shared connections)
-- [[Community 328]] (1 shared connections)
+- [[Community 400]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/python-pro/SKILL.md`
+- `.claude/skills/python-pro/references/async-patterns.md`
+- `.claude/skills/python-pro/references/packaging.md`
+- `.claude/skills/python-pro/references/standard-library.md`
+- `.claude/skills/python-pro/references/testing.md`
+- `.claude/skills/python-pro/references/type-system.md`
+- `.claude/skills/test-master/SKILL.md`
+- `.claude/skills/test-master/references/automation-frameworks.md`
+- `.claude/skills/test-master/references/e2e-testing.md`
+- `.claude/skills/test-master/references/integration-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 28 (78%)
+- INFERRED: 8 (22%)
 - AMBIGUOUS: 0 (0%)
 
 ---

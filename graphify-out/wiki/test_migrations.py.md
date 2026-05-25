@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **The Five Anti-Patterns** (6 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Testing Anti-Patterns** (5 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Anti-Pattern 1: Testing Mock Behavior** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Anti-Pattern 2: Test-Only Methods in Production** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Anti-Pattern 3: Mocking Without Understanding** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Anti-Pattern 4: Incomplete Mocks** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Anti-Pattern 5: Integration Tests as Afterthought** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **testing-anti-patterns.md** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Core Principle** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ❌ BAD: Testing the mock, not the behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ✅ GOOD: Testing actual behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ❌ BAD: Production code polluted with test concerns)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ✅ GOOD: Test utilities separate from production)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ❌ BAD: Mocking everything without understanding)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ✅ GOOD: Strategic mocking with real components where poss)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ❌ BAD: Incomplete mock response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ✅ GOOD: Complete mock matching real API response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ❌ BAD: "We'll add tests later")** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **code:typescript (// ✅ GOOD: Tests are part of implementation)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Detection Checklist** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Browser APIs** (11 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Fetch API** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Web Workers** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Service Workers & PWA** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Local Storage & IndexedDB** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Intersection Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Mutation Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Web Notifications** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Canvas & WebGL** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Performance APIs** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **browser-apis.md** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Basic GET request)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// main.js - Create and communicate with worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Register Service Worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// LocalStorage (synchronous, max 5-10MB))** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Lazy loading images)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Watch DOM changes)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Request permission)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Canvas 2D)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Performance timing)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
 
 ## Relationships
 
@@ -32,7 +32,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/testing-anti-patterns.md`
+- `.claude/skills/javascript-pro/references/browser-apis.md`
 
 ## Audit Trail
 

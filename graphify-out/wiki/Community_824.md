@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **POST /api/errors (write_error)** (0 connections) — `api/routers/errors.py`
+- **POST /api/managers/me/change-password (change_password)** (0 connections) — `api/routers/managers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `api/routers/managers.py`
 
 ## Audit Trail
 

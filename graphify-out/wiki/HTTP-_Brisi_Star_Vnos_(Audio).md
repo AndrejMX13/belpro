@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **API Documentation: NestJS & Express** (4 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Express (swagger-jsdoc)** (4 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **NestJS (@nestjs/swagger)** (3 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Controller Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **DTO Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Setup** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Route Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Schema Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **api-docs-nestjs-express.md** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:typescript (import { Controller, Post, Body, Get, Param } from '@nestjs/)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:typescript (import { ApiProperty, ApiPropertyOptional } from '@nestjs/sw)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:javascript (const swaggerJsdoc = require('swagger-jsdoc');)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:javascript (/**)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:javascript (/**)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **TypeScript JSDoc** (8 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Function Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Interface Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Generic Types** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Async Functions** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Common Patterns** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **typescript-jsdoc.md** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (// Optional parameters)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Relationships
 
@@ -26,7 +26,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Audit Trail
 

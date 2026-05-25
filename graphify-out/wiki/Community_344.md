@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Task 3: log_entries Router** (10 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (f"<strong>{entry.entry_date}</strong> je bila <strong>{actio)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (f"<strong>{entry.work_date}</strong> je bila <strong>{action)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (sort_by: Literal["work_date", "hours", "created_at", "status)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (if date_from is not None:)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (entry = LogEntry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (entry = LogEntry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (async def update_log_entry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (# List entries — should return work_date field, not entry_da)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add api/routers/log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Task 5: Frontend — Administracija page** (10 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js (admin: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:html (<a href="#admin" class="nav-item" data-page="admin">)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:html (<script src="/js/admin.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js (} else if (hash === '#admin') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js (} else if (hash === '#settings') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block41 (docker compose up -d --build frontend)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block42 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add frontend/js/api.js frontend/index.html frontend/js/a)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- [[Community 538]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 

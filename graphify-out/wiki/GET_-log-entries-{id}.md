@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Warnings (Should Fix)** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 1: Missing Error Handling** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 1: Unbounded Query** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **6. best_practice** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 1: Old typeVersion** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 2: No Retry Logic** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **7. deprecated** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **8. performance** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **2. invalid_value** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Invalid Operation** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: Invalid HTTP Method** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 3: Invalid Channel Format** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 4: Invalid Enum with Case Sensitivity** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 - **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 - **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 - **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:sql (SELECT * FROM users WHERE active = true)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:sql (SELECT * FROM users WHERE active = true LIMIT 1000)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[Community 299]] (1 shared connections)
+- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
 
 ## Source Files
 

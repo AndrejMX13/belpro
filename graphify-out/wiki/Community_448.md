@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Checklist for Scheduled Workflows** (7 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Monitoring** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **6. Available Node.js Modules** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **crypto Module** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Buffer (built-in)** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **URL / URLSearchParams** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const crypto = require('crypto');)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Base64 encoding)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Parse URL)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

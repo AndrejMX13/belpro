@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Data Table Management** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **n8n_manage_datatable** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Create a data table)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **3. Session Management** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Reusing session across requests)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Dependency injection per request)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[test_backup_restore.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 

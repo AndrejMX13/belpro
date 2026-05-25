@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Example 10: Environment Variables** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **In HTTP Request (Headers)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **In URL** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript (Authorization: Bearer {{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript (https://api.example.com/data?key={{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Mode Selection Guide** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Run Once for All Items (Recommended - Default)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Run Once for Each Item** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Example: Calculate total from all items)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Example: Add processing timestamp to each item)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

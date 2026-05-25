@@ -4,28 +4,27 @@
 
 ## Key Concepts
 
-- **BelPro Architecture Diagram (English)** (8 connections) — `docs/images/architecture.svg`
-- **n8n Workflow (Business Logic Engine)** (6 connections) — `docs/images/architecture.svg`
-- **Evolution API (WhatsApp Gateway)** (4 connections) — `docs/images/architecture.svg`
-- **FastAPI + Web Dashboard (Manager UI & API)** (3 connections) — `docs/images/architecture.svg`
-- **Volunteer (WhatsApp User)** (2 connections) — `docs/images/architecture.svg`
-- **Faster-Whisper (Speech-to-Text, CPU)** (2 connections) — `docs/images/architecture.svg`
-- **PostgreSQL 18 (Data Store)** (2 connections) — `docs/images/architecture.svg`
-- **SMTP (Email Delivery)** (2 connections) — `docs/images/architecture.svg`
-- **BelPro Architecture Diagram (Slovenian)** (1 connections) — `docs/images/architecture_sl.svg`
+- **Nastavite WhatsAppa** (5 connections) — `README_SL.md`
+- **Upravljanje delovnih procesov (Workflows)** (4 connections) — `README_SL.md`
+- **7. Nastavitev n8n delovnih procesov** (2 connections) — `README_SL.md`
+- **6. Ustvari instanco Evolution API** (1 connections) — `README_SL.md`
+- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README_SL.md`
+- **8. Poveži WhatsApp** (1 connections) — `README_SL.md`
+- **code:block9 (N8N_API_KEY=<your-key>)** (1 connections) — `README_SL.md`
+- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README_SL.md`
+- **code:bash (./scripts/n8n_workflows.py export)** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/architecture.svg`
-- `docs/images/architecture_sl.svg`
+- `README_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

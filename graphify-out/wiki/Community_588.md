@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **render()** (4 connections) — `scripts/render_diagrams.py`
-- **main()** (3 connections) — `scripts/render_diagrams.py`
-- **render_diagrams.py** (2 connections) — `scripts/render_diagrams.py`
-- **Extract Mermaid source from md_file and render to a matching .svg.** (1 connections) — `scripts/render_diagrams.py`
-- **Render all Mermaid diagrams in docs/images/.** (1 connections) — `scripts/render_diagrams.py`
+- **ViewSet → APIRouter Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django REST Framework ViewSet** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI APIRouter with Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django DRF ViewSet)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# FastAPI APIRouter)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/render_diagrams.py`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (91%)
-- INFERRED: 1 (9%)
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

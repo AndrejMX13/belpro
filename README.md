@@ -99,6 +99,8 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 | Cache/queue | Redis 7 | internal |
 | Ops sidecar | Alpine/Python | internal |
 
+Full system specification: [SPEC.md](SPEC.md)
+
 ---
 
 ## Requirements

@@ -1,48 +1,58 @@
 # connections
 
-> 36 nodes
+> 38 nodes
 
 ## Key Concepts
 
-- **Configuration Validation Tools Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Handling Validation Errors** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **validate_node (UNIFIED VALIDATION)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Quick Check (mode="minimal")** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Response** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **validate_workflow (STRUCTURE VALIDATION)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Loop Pattern** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Full Validation (mode="full", DEFAULT)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validate by Workflow ID** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Auto-Sanitization System** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **n8n_autofix_workflow (AUTO-FIX TOOL)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Process** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Example: Complete Validation Workflow** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **VALIDATION_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Philosophy** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Profiles** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Error Types** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (validate_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (// Validate workflow already in n8n)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:block7 (1. Configure node)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- *... and 11 more nodes in this community*
+- **Volunteer (ORM)** (25 connections) — `api/models/volunteer.py`
+- **_to_response()** (12 connections) — `api/routers/volunteers.py`
+- **create_volunteer()** (12 connections) — `api/routers/volunteers.py`
+- **volunteers.py** (11 connections) — `api/routers/volunteers.py`
+- **list_volunteers()** (10 connections) — `api/routers/volunteers.py`
+- **_to_detail_response()** (9 connections) — `api/routers/volunteers.py`
+- **VolunteerResponse (Schema)** (9 connections) — `api/schemas/volunteer.py`
+- **check_emso()** (8 connections) — `api/routers/volunteers.py`
+- **update_volunteer()** (8 connections) — `api/routers/volunteers.py`
+- **get_volunteer()** (7 connections) — `api/routers/volunteers.py`
+- **activate_volunteer()** (6 connections) — `api/routers/volunteers.py`
+- **deactivate_volunteer()** (6 connections) — `api/routers/volunteers.py`
+- **AnalyticsSummary (Schema)** (5 connections) — `api/schemas/analytics.py`
+- **VolunteerCreate (Schema)** (5 connections) — `api/schemas/volunteer.py`
+- **VolunteerDetailResponse (Schema)** (4 connections) — `api/schemas/volunteer.py`
+- **delete_volunteer()** (3 connections) — `api/routers/volunteers.py`
+- **HoursPerVolunteer (Schema)** (2 connections) — `api/schemas/analytics.py`
+- **VolunteerListResponse (Schema)** (2 connections) — `api/schemas/volunteer.py`
+- **VolunteerUpdate (Schema)** (2 connections) — `api/schemas/volunteer.py`
+- **EmsoCheckRequest (Schema)** (2 connections) — `api/schemas/volunteer.py`
+- **encrypt_emso (Service)** (2 connections) — `api/services/encryption.py`
+- **hash_emso (Service)** (2 connections) — `api/services/encryption.py`
+- **Volunteers CRUD router.** (1 connections) — `api/routers/volunteers.py`
+- **Decrypt EMŠO, mask it, and build a VolunteerResponse from an ORM object.** (1 connections) — `api/routers/volunteers.py`
+- **Same as _to_response but includes sorted log_entries and computed hours for the** (1 connections) — `api/routers/volunteers.py`
+- *... and 13 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[app_settings.py]] (14 shared connections)
+- [[connections]] (8 shared connections)
+- [[scripts/setup.sh]] (6 shared connections)
+- [[renderDetail() — volunteer detail page]] (4 shared connections)
+- [[Code Reviewer Skill]] (2 shared connections)
+- [[load_key()]] (1 shared connections)
+- [[BelPro System Specification]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- `api/models/volunteer.py`
+- `api/routers/volunteers.py`
+- `api/schemas/analytics.py`
+- `api/schemas/volunteer.py`
+- `api/services/encryption.py`
 
 ## Audit Trail
 
-- EXTRACTED: 70 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 124 (74%)
+- INFERRED: 44 (26%)
 - AMBIGUOUS: 0 (0%)
 
 ---

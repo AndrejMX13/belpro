@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **[0.9.1] — 2026-05-09** (4 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
-- **Fixed** (1 connections) — `CHANGELOG.md`
+- **Rotacija ključa za šifriranje EMŠO** (4 connections) — `README_SL.md`
+- **code:bash (bash scripts/rotate_emso_key.sh <STAR_KLJUC> <NOV_KLJUC>)** (1 connections) — `README_SL.md`
+- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README_SL.md`
+- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[Code: Clear State Confirm]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `README_SL.md`
 
 ## Audit Trail
 

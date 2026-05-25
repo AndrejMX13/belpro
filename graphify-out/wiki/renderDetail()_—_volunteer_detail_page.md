@@ -1,48 +1,63 @@
 # renderDetail() — volunteer detail page
 
-> 41 nodes
+> 42 nodes
 
 ## Key Concepts
 
-- **Index Strategies** (10 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **B-Tree Indexes (Default)** (4 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Specialized Index Types** (4 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Covering Indexes** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Partial Indexes** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Expression Indexes** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Index Maintenance** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Index Selection Methodology** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Identify Index Candidates** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Single Column Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Multi-Column Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Column Order Guidelines** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL INCLUDE Clause** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **MySQL Covering Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL Partial Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **MySQL Filtered Indexes (8.0+)** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL Function Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **MySQL Generated Column Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL GIN Indexes (Full-Text, Arrays, JSONB)** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL GiST Indexes (Geometric, Range)** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **MySQL Full-Text Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL Maintenance** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **MySQL Maintenance** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **index-strategies.md** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **code:sql (-- PostgreSQL: Find queries missing indexes)** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- *... and 16 more nodes in this community*
+- **BaseModel** (33 connections)
+- **EntryStatus** (20 connections) — `api/models/log_entry.py`
+- **volunteer.py** (13 connections) — `api/schemas/volunteer.py`
+- **log_entry.py** (7 connections) — `api/schemas/log_entry.py`
+- **VolunteerResponse** (6 connections) — `api/schemas/volunteer.py`
+- **LogEntryListResponse** (5 connections) — `api/schemas/log_entry.py`
+- **EmsoCheckResponse** (5 connections) — `api/schemas/volunteer.py`
+- **VolunteerDetailResponse** (5 connections) — `api/schemas/volunteer.py`
+- **VolunteerListResponse** (5 connections) — `api/schemas/volunteer.py`
+- **AdminSettingsUpdate** (4 connections) — `api/schemas/admin.py`
+- **LogEntryCreate** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryResponse** (4 connections) — `api/schemas/log_entry.py`
+- **PhotoResponse** (4 connections) — `api/schemas/log_entry.py`
+- **PhotoBase64Request** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryUpdate** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryBrief** (4 connections) — `api/schemas/volunteer.py`
+- **EmsoCheckRequest** (4 connections) — `api/schemas/volunteer.py`
+- **VolunteerCreate** (4 connections) — `api/schemas/volunteer.py`
+- **LoginRequest** (3 connections) — `api/schemas/auth.py`
+- **_normalise_phone()** (3 connections) — `api/schemas/volunteer.py`
+- **_normalise_phone_field()** (2 connections) — `api/schemas/volunteer.py`
+- **Volunteer diary entry status.  Flows one way only — never backwards.** (1 connections) — `api/models/log_entry.py`
+- **Partial update for runtime-tunable settings. Only provided fields are written.** (1 connections) — `api/schemas/admin.py`
+- **Body for POST /api/auth/login.** (1 connections) — `api/schemas/auth.py`
+- **Pydantic schemas for the LogEntry entity.** (1 connections) — `api/schemas/log_entry.py`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[connections]] (5 shared connections)
+- [[BelPro System Specification]] (4 shared connections)
+- [[Code: Build Image Media Body]] (4 shared connections)
+- [[n8n Set Node Pattern]] (4 shared connections)
+- [[n8n Code Node Pattern]] (4 shared connections)
+- [[HTTP: GET Pending (Auto)]] (3 shared connections)
+- [[009_rename_entry_date_to_work_date.py]] (3 shared connections)
+- [[n8n MCP Workflow Management Guide]] (2 shared connections)
+- [[GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)]] (2 shared connections)
+- [[load_key()]] (1 shared connections)
+- [[HTTP: Fetch Media]] (1 shared connections)
+- [[Community 315]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/database-optimizer/references/index-strategies.md`
+- `api/models/log_entry.py`
+- `api/schemas/admin.py`
+- `api/schemas/auth.py`
+- `api/schemas/log_entry.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 
-- EXTRACTED: 80 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 129 (79%)
+- INFERRED: 35 (21%)
 - AMBIGUOUS: 0 (0%)
 
 ---

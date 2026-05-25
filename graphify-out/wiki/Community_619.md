@@ -4,14 +4,14 @@
 
 ## Key Concepts
 
-- **Pattern 5: CRM Data Transformation** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Pattern 1: Multi-Source Data Aggregation** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 - **Implementation** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 - **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 - **Key Techniques** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 513]] (1 shared connections)
+- [[Community 517]] (1 shared connections)
 
 ## Source Files
 

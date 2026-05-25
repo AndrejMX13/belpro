@@ -4,29 +4,29 @@
 
 ## Key Concepts
 
-- **Task 9: Scripts and Docs** (11 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:powershell (. .\scripts\load_env.ps1)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (entry_date              DATE            NOT NULL,   -- Date )** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (work_date               DATE            NOT NULL,   -- Date )** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (COMMENT ON COLUMN log_entries.entry_date IS 'The date work w)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (COMMENT ON COLUMN log_entries.work_date IS 'The date work wa)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (CREATE INDEX idx_entries_date     ON log_entries(entry_date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (CREATE INDEX idx_entries_work_date     ON log_entries(work_d)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (grep -n "entry_date" SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (grep "entry_date" SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add scripts/list_pending_entries.py db/init.sql SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Add to CI pipeline** (5 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **coverage-reports.md** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Coverage Reports** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Documentation Coverage Report Template** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Checklist During Documentation** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Framework-Specific Linting** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:markdown (# Documentation Report: {project_name})** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:markdown (## Documentation Checklist)** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:bash (# JavaScript/TypeScript - ESLint)** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/code-documenter/references/coverage-reports.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -14,7 +14,7 @@
 
 ## Relationships
 
-- [[PATCH /api/log-entries/{id} (update_log_entry)]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 

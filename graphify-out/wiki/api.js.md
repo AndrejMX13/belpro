@@ -4,50 +4,36 @@
 
 ## Key Concepts
 
-- **Docker Compose (all services containerised)** (11 connections) — `CLAUDE.md`
-- **SQL Pro Skill** (7 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Manager Web Dashboard** (6 connections) — `SPEC.md`
-- **PostgreSQL 18 Database** (6 connections) — `SPEC.md`
-- **SQL Query Patterns Reference (CTEs, JOINs, Subqueries)** (5 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
-- **FastAPI Backend + PDF Generation** (4 connections) — `CLAUDE.md`
-- **SQL Query Optimization Reference (EXPLAIN, Indexes, Partitioning)** (4 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **n8n as Workflow Engine** (3 connections) — `CLAUDE.md`
-- **SQL Window Functions Reference (ROW_NUMBER, RANK, LAG/LEAD)** (3 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **nginx Reverse Proxy** (2 connections) — `SPEC.md`
-- **Database Design Reference (Normalization, Keys, Constraints)** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **SQL Dialect Differences Reference (PostgreSQL, MySQL, SQL Server, Oracle)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Alembic DB Migrations** (1 connections) — `CLAUDE.md`
-- **Redis 7 (Cache/Queue)** (1 connections) — `README.md`
-- **EXPLAIN ANALYZE Query Plan Analysis** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Common Table Expressions (CTEs)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
-- **SQL Window Functions** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Code Reviewer** (8 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Review Patterns (Quick Reference)** (4 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **N+1 Query — Bad vs Good** (2 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Magic Number — Bad vs Good** (2 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Security: SQL Injection — Bad vs Good** (2 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **code:python (# BAD: query inside loop)** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **code:python (# BAD)** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **code:python (# BAD: string interpolation in query)** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Output Template** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
 
 ## Relationships
 
-- [[env.py]] (7 shared connections)
-- [[API.reports.exportPdf()]] (3 shared connections)
-- [[Community 354]] (2 shared connections)
-- [[Community 503]] (1 shared connections)
-- [[API.logo.upload()]] (1 shared connections)
-- [[PATCH /log-entries/{id}]] (1 shared connections)
-- [[004_log_entry_photos.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/sql-pro/SKILL.md`
-- `.claude/skills/sql-pro/references/database-design.md`
-- `.claude/skills/sql-pro/references/dialect-differences.md`
-- `.claude/skills/sql-pro/references/optimization.md`
-- `.claude/skills/sql-pro/references/query-patterns.md`
-- `.claude/skills/sql-pro/references/window-functions.md`
-- `CLAUDE.md`
-- `README.md`
-- `SPEC.md`
+- `.claude/skills/code-reviewer/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (87%)
-- INFERRED: 8 (13%)
+- EXTRACTED: 32 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

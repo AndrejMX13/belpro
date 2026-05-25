@@ -1,25 +1,26 @@
 # Community 600
 
-> 4 nodes
+> 5 nodes
 
 ## Key Concepts
 
-- **[0.10.0-beta.1] — 2026-05-15** (4 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
-- **Fixed** (1 connections) — `CHANGELOG.md`
+- **015_seed_evolution_instance_name.py** (2 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **Seed the evolution_instance_name settings row with default value belpro.** (1 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **Remove the evolution_instance_name settings row.** (1 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `api/db/migrations/versions/015_seed_evolution_instance_name.py`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

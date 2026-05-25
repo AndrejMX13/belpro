@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Codebase context** (6 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **Task 1: DB migration — unique partial indexes** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python ("""Add unique partial indexes to monthly_reports.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block2 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block3 (docker compose exec api alembic current)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block4 (docker compose exec postgres psql -U belpro -d belpro -c "\d)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:bash (git add api/db/migrations/versions/010_monthly_reports_uniqu)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 5: Photo retention cleanup job** (7 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec ops /app/scripts/photo_cleanup.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:block35 ([photo_cleanup] Retention cutoff: 2024-05-20 (730 days))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec -e DATABASE_URL=postgresql+asyncpg://bad)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add ops/scripts/photo_cleanup.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 531]] (1 shared connections)
+- [[Community 428]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

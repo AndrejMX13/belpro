@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **POST /api/managers/me/change-password (change_password)** (0 connections) — `api/routers/managers.py`
+- **DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)** (0 connections) — `api/routers/log_entries.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/managers.py`
+- `api/routers/log_entries.py`
 
 ## Audit Trail
 

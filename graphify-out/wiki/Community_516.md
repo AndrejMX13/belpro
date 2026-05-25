@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Expression Syntax** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n MCP Tools Expert** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Workflow Patterns** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Code JavaScript** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Node Configuration** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **The Solution** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Optional chaining)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Check array length)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Guard clauses)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Default values)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Try-catch for risky operations)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 291]] (1 shared connections)
+- [[IF: Aktivno Slike Stanje?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

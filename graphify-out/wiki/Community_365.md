@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Debugging Tips** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **1. Use console.log()** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **2. Return Intermediate Results** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **3. Try-Catch for Troubleshooting** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **4. Validate Input Structure** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// Debug by returning current state)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (try {)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Common Use Cases** (5 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Use Case 1: Process Webhook Data** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Use Case 2: Filter and Transform** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Use Case 3: Aggregate Statistics** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Use Case 4: Parse JSON String** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[SmtpNotConfiguredError (Service)]] (1 shared connections)
+- [[Community 288]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

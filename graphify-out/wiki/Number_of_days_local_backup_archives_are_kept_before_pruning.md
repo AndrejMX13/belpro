@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Pattern 2: $input.first() - Get First Item** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 5: Combine with Other Methods** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const item = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const response = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get first item's data)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **IF (nodes-base.if)** (6 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **String Comparison** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Number Comparison** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Boolean Comparison** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Multiple Conditions (AND)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Multiple Conditions (OR)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 416]] (1 shared connections)
+- [[entrypoint.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 

@@ -4,40 +4,40 @@
 
 ## Key Concepts
 
-- **test_errors.py** (11 connections) — `api/tests/test_errors.py`
-- **_internal_header()** (7 connections) — `api/tests/test_errors.py`
-- **test_post_error_valid_internal_key()** (3 connections) — `api/tests/test_errors.py`
-- **test_get_errors_returns_list()** (3 connections) — `api/tests/test_errors.py`
-- **test_get_errors_filter_unacknowledged()** (3 connections) — `api/tests/test_errors.py`
-- **test_acknowledge_error()** (3 connections) — `api/tests/test_errors.py`
-- **test_unacknowledged_count()** (3 connections) — `api/tests/test_errors.py`
-- **test_post_error_missing_key_rejected()** (2 connections) — `api/tests/test_errors.py`
-- **test_post_error_wrong_key_rejected()** (2 connections) — `api/tests/test_errors.py`
-- **test_get_errors_requires_manager_auth()** (2 connections) — `api/tests/test_errors.py`
-- **test_acknowledge_nonexistent_returns_404()** (2 connections) — `api/tests/test_errors.py`
-- **Tests for POST /api/errors, GET /api/errors, PATCH /api/errors/{id}/acknowledge.** (1 connections) — `api/tests/test_errors.py`
-- **POST with valid internal key creates a record.** (1 connections) — `api/tests/test_errors.py`
-- **POST without internal key is rejected.** (1 connections) — `api/tests/test_errors.py`
-- **POST with wrong internal key is rejected.** (1 connections) — `api/tests/test_errors.py`
-- **GET /api/errors without manager auth is rejected.** (1 connections) — `api/tests/test_errors.py`
-- **GET returns all error log entries, newest first.** (1 connections) — `api/tests/test_errors.py`
-- **GET ?unacknowledged=true filters to unacknowledged only.** (1 connections) — `api/tests/test_errors.py`
-- **PATCH /{id}/acknowledge sets acknowledged to True.** (1 connections) — `api/tests/test_errors.py`
-- **PATCH /{id}/acknowledge on unknown id returns 404.** (1 connections) — `api/tests/test_errors.py`
-- **GET /api/errors/unacknowledged-count returns integer count.** (1 connections) — `api/tests/test_errors.py`
+- **The Five Anti-Patterns** (6 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Testing Anti-Patterns** (5 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 1: Testing Mock Behavior** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 2: Test-Only Methods in Production** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 3: Mocking Without Understanding** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 4: Incomplete Mocks** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 5: Integration Tests as Afterthought** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **testing-anti-patterns.md** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Core Principle** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Testing the mock, not the behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Testing actual behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Production code polluted with test concerns)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Test utilities separate from production)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Mocking everything without understanding)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Strategic mocking with real components where poss)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Incomplete mock response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Complete mock matching real API response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: "We'll add tests later")** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Tests are part of implementation)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Detection Checklist** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Relationships
 
-- [[monthly_reports.json]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_errors.py`
+- `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 40 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

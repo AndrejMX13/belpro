@@ -4,22 +4,21 @@
 
 ## Key Concepts
 
-- **list_volunteers** (2 connections) — `api/routers/volunteers.py`
-- **loadVolunteers** (1 connections) — `frontend/js/volunteers.js`
-- **renderApprovals** (1 connections) — `frontend/js/volunteers.js`
+- **Additional Resources** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Related Files** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **n8n Documentation** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/volunteers.js`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

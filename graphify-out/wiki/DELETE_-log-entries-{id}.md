@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **2. DateTime (Luxon) - Date & Time Operations** (9 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Current Date/Time** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Formatting Dates** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Parsing Dates** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Date Arithmetic** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Time Comparisons** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Timezone Operations** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Start/End of Period** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Weekday & Month Info** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Current time)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const now = DateTime.now();)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// From ISO string)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const now = DateTime.now();)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const now = DateTime.now();)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const now = DateTime.now();)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const now = DateTime.now();)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const now = DateTime.now();)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Warnings (Should Fix)** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Missing Error Handling** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Unbounded Query** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **6. best_practice** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Old typeVersion** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: No Retry Logic** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **7. deprecated** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **8. performance** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:sql (SELECT * FROM users WHERE active = true)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:sql (SELECT * FROM users WHERE active = true LIMIT 1000)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[Community 547]] (1 shared connections)
+- [[Community 297]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 

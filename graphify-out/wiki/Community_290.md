@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Quick Reference** (6 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Data Access** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Webhook Data** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Safe Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Return Format** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Standard Library** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (# ✅ Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (# ✅ Correct format)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (# ✅ Available)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Common Patterns Overview** (6 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **1. Data Transformation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **2. Filtering & Aggregation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **3. String Processing with Regex** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **4. Data Validation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **5. Statistical Analysis** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (from statistics import mean, median, stdev)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 291]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

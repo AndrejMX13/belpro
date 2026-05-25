@@ -1,48 +1,64 @@
 # load_key()
 
-> 49 nodes
+> 71 nodes
 
 ## Key Concepts
 
-- **Task 8: docker-compose and integration test** (12 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **File Map** (9 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 1: AppSettings — new properties and env var** (7 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 3: Admin router — return new fields, save them, notify ops** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 4: Frontend — Sistemske nastavitve UI** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 5: monthly_report_send.py** (5 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 7: ops crontab and entrypoint** (4 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 2: Admin schemas — new fields** (3 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 6: ops_server.py** (3 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Auto Monthly Report Delivery — Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **2026-05-21-auto-monthly-reports.md** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (from httpx import AsyncClient)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block2 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (ops_url: str = "http://ops:9000")** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block5 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:bash (git add api/core/settings.py api/services/app_settings.py ap)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:bash (git add api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (from unittest.mock import AsyncMock, MagicMock, patch)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block10 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python ("""Admin router — runtime-tunable settings management.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block12 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:bash (git add api/routers/admin.py api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:javascript (<div class="field">)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- *... and 24 more nodes in this community*
+- **volunteer_factory()** (57 connections) — `api/tests/conftest.py`
+- **str** (39 connections)
+- **log_entry_factory()** (39 connections) — `api/tests/conftest.py`
+- **test_log_entries.py** (33 connections) — `api/tests/test_log_entries.py`
+- **test_reports.py** (14 connections) — `api/tests/test_reports.py`
+- **test_analytics.py** (7 connections) — `api/tests/test_analytics.py`
+- **test_send_monthly_email_failure_logged()** (5 connections) — `api/tests/test_reports.py`
+- **test_send_monthly_whatsapp_failure_logged()** (5 connections) — `api/tests/test_reports.py`
+- **test_send_monthly_smtp_not_configured_does_not_abort_batch()** (5 connections) — `api/tests/test_reports.py`
+- **test_analytics_rejected_hours_excluded()** (4 connections) — `api/tests/test_analytics.py`
+- **test_analytics_all_rejected_returns_zero_hours()** (4 connections) — `api/tests/test_analytics.py`
+- **test_list_entries_filter_by_volunteer()** (4 connections) — `api/tests/test_log_entries.py`
+- **test_get_entry_found()** (4 connections) — `api/tests/test_log_entries.py`
+- **test_with_entries_only_excludes_volunteers_with_no_entries()** (4 connections) — `api/tests/test_reports.py`
+- **test_with_entries_only_includes_any_status_not_only_approved()** (4 connections) — `api/tests/test_reports.py`
+- **test_send_monthly_invalid_phone_logged()** (4 connections) — `api/tests/test_reports.py`
+- **test_send_monthly_resend_overwrites_row()** (4 connections) — `api/tests/test_report_history.py`
+- **test_analytics_summary_counts_approved_hours()** (3 connections) — `api/tests/test_analytics.py`
+- **test_list_entries_returns_created_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_filter_by_status()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_create_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_create_entry_inactive_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_create_entry_missing_required_field_returns_422()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- *... and 46 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_auth.py]] (13 shared connections)
+- [[Python Docstrings Reference]] (9 shared connections)
+- [[volunteers.js]] (6 shared connections)
+- [[connections]] (5 shared connections)
+- [[app_settings.py]] (4 shared connections)
+- [[Community 402]] (3 shared connections)
+- [[scripts/gen_diagrams.py]] (3 shared connections)
+- [[Community 346]] (3 shared connections)
+- [[n8n MCP Workflow Management Guide]] (2 shared connections)
+- [[006_whatsapp_and_smtp_config.py]] (2 shared connections)
+- [[HTTP: Fetch Media]] (2 shared connections)
+- [[Community 314]] (2 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- `api/tests/conftest.py`
+- `api/tests/test_analytics.py`
+- `api/tests/test_log_entries.py`
+- `api/tests/test_report_history.py`
+- `api/tests/test_reports.py`
+- `api/tests/test_volunteers.py`
 
 ## Audit Trail
 
-- EXTRACTED: 96 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 132 (38%)
+- INFERRED: 215 (62%)
 - AMBIGUOUS: 0 (0%)
 
 ---

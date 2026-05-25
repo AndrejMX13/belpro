@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Pattern 1: Multi-Source Data Aggregation** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Implementation** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Key Techniques** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Task 6: Frontend — work_date in Entry Edit Form** (4 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (${editable ? `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (if (editable) {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- [[Community 513]] (1 shared connections)
+- [[API Client (api.js)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 

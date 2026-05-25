@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **n8n-mcp MCP Server** (0 connections) — `README.md`
+- **reference_graphify_recovery.md** (0 connections) — `.claude/memory/reference_graphify_recovery.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `README.md`
+- `.claude/memory/reference_graphify_recovery.md`
 
 ## Audit Trail
 

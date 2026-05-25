@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **PATCH /api/volunteers/{id}/deactivate (deactivate_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **POST /api/volunteers (create_volunteer)** (0 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 

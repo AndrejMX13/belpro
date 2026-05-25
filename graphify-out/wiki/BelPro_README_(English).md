@@ -4,42 +4,45 @@
 
 ## Key Concepts
 
-- **test_logo.py** (18 connections) — `api/tests/test_logo.py`
-- **_png_1x1()** (7 connections) — `api/tests/test_logo.py`
-- **_ico_16x16()** (3 connections) — `api/tests/test_logo.py`
-- **test_open_image_rejects_disallowed_format()** (3 connections) — `api/tests/test_logo.py`
-- **_clean_logo()** (3 connections) — `api/tests/test_logo.py`
-- **test_save_creates_png_on_disk()** (2 connections) — `api/tests/test_logo.py`
-- **test_delete_removes_file()** (2 connections) — `api/tests/test_logo.py`
-- **test_upload_logo_and_retrieve()** (2 connections) — `api/tests/test_logo.py`
-- **test_upload_logo_requires_auth()** (2 connections) — `api/tests/test_logo.py`
-- **test_delete_logo()** (2 connections) — `api/tests/test_logo.py`
-- **test_logo_not_exists_initially()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_when_no_logo_is_silent()** (1 connections) — `api/tests/test_logo.py`
-- **test_open_image_rejects_corrupt_bytes()** (1 connections) — `api/tests/test_logo.py`
-- **test_save_overwrites_existing_logo()** (1 connections) — `api/tests/test_logo.py`
-- **test_get_logo_returns_404_when_absent()** (1 connections) — `api/tests/test_logo.py`
-- **test_upload_invalid_logo_returns_422()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_logo_when_absent_returns_404()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_logo_requires_auth()** (1 connections) — `api/tests/test_logo.py`
-- **Tests for NGO logo service and endpoints.** (1 connections) — `api/tests/test_logo.py`
-- **Minimal valid 1×1 PNG.** (1 connections) — `api/tests/test_logo.py`
-- **Minimal valid 16×16 ICO — openable by Pillow but not in allowed list.** (1 connections) — `api/tests/test_logo.py`
-- **ICO is openable by Pillow but excluded from the allowed set.** (1 connections) — `api/tests/test_logo.py`
-- **Redirect logo operations to a temporary directory — never touches the real logo** (1 connections) — `api/tests/test_logo.py`
+- **Analitika (Analytics Screen)** (9 connections) — `docs/images/belpro-analitika.png`
+- **Administracija (Administration Screen)** (7 connections) — `docs/images/belpro-administracija.png`
+- **Dnevnik Napak (Error Log Screen)** (6 connections) — `docs/images/belpro-dnevnik-napak.png`
+- **Dnevniki (Work Diary Entries Screen)** (6 connections) — `docs/images/belpro-dnevniki.png`
+- **Shared Sidebar Navigation (Prostovoljci, Dnevniki, Analitika, Porocila, Nastavitve, Dokumenti, Administracija, Dnevnik napak, Odjava)** (4 connections) — `docs/images/belpro-administracija.png`
+- **Potrdi (Acknowledge) Button on Error Entry** (3 connections) — `docs/images/belpro-dnevnik-napak.png`
+- **Stanje Sistema (System Status Panel)** (2 connections) — `docs/images/belpro-administracija.png`
+- **Shrani (Save) Button** (2 connections) — `docs/images/belpro-administracija.png`
+- **Service Health Indicators (PostgreSQL, Whisper, n8n, WhatsApp, Disk, Heartbeat)** (2 connections) — `docs/images/belpro-administracija.png`
+- **KPI Summary Cards (Ure v mesecu, Aktivni prostovoljci, Caka odobritev, Odobreno, Zavrnjeno, Brez vnosov)** (2 connections) — `docs/images/belpro-analitika.png`
+- **Year/Month Period Filter (Leto, Mesec dropdowns)** (2 connections) — `docs/images/belpro-analitika.png`
+- **Horizontal Bar Chart: Ure po Prostovoljcih (Hours per Volunteer)** (2 connections) — `docs/images/belpro-analitika.png`
+- **Vertical Bar Chart: Ure po Lokacijah (Hours per Location)** (2 connections) — `docs/images/belpro-analitika.png`
+- **Error Log Entry Card (source, timestamp, message, detail)** (2 connections) — `docs/images/belpro-dnevnik-napak.png`
+- **Dnevniki Filter Bar (Volunteer dropdown, Date range pickers, Location search, Isci/Ponastavi buttons)** (2 connections) — `docs/images/belpro-dnevniki.png`
+- **Entry Status Badge (Odobreno approved status indicator)** (2 connections) — `docs/images/belpro-dnevniki.png`
+- **Sistemske Nastavitve (System Settings Form)** (1 connections) — `docs/images/belpro-administracija.png`
+- **Izvozi CSV (Export CSV) Button** (1 connections) — `docs/images/belpro-analitika.png`
+- **Line Chart: Mesecni Trend Zadnjih 6 Mesecev (Monthly 6-Month Trend)** (1 connections) — `docs/images/belpro-analitika.png`
+- **Samo Nepotrjene Filter Checkbox (Show Only Unacknowledged Errors)** (1 connections) — `docs/images/belpro-dnevnik-napak.png`
+- **Navigation Badge Counter on Dnevnik Napak Menu Item** (1 connections) — `docs/images/belpro-dnevnik-napak.png`
+- **Dnevniki Data Table (Datum dela, Prostovoljec, Opis dela, Ure, Lokacija, Dan vnosa, Status, Dejanja columns)** (1 connections) — `docs/images/belpro-dnevniki.png`
+- **Pagination Control (Prikazujem 1-20 od 44, Prejsnja/Naslednja buttons)** (1 connections) — `docs/images/belpro-dnevniki.png`
 
 ## Relationships
 
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_logo.py`
+- `docs/images/belpro-administracija.png`
+- `docs/images/belpro-analitika.png`
+- `docs/images/belpro-dnevnik-napak.png`
+- `docs/images/belpro-dnevniki.png`
 
 ## Audit Trail
 
-- EXTRACTED: 56 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 48 (77%)
+- INFERRED: 14 (23%)
 - AMBIGUOUS: 0 (0%)
 
 ---

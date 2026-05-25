@@ -4,34 +4,31 @@
 
 ## Key Concepts
 
-- **get_report_history()** (5 connections) — `api/routers/reports.py`
-- **report.py** (5 connections) — `api/schemas/report.py`
-- **VolunteerMonthlySummary** (4 connections) — `api/schemas/report.py`
-- **MonthlyReportSummary** (4 connections) — `api/schemas/report.py`
-- **ReportHistoryItem** (4 connections) — `api/schemas/report.py`
-- **ReportHistoryList** (4 connections) — `api/schemas/report.py`
-- **List persisted PDF reports, newest first. Optionally filter by year and/or month** (1 connections) — `api/routers/reports.py`
-- **Pydantic schemas for monthly report summaries.** (1 connections) — `api/schemas/report.py`
-- **Per-volunteer aggregated totals for a given month.** (1 connections) — `api/schemas/report.py`
-- **Aggregated monthly summary across all active volunteers.** (1 connections) — `api/schemas/report.py`
-- **One persisted report record in the history list.** (1 connections) — `api/schemas/report.py`
-- **List of persisted report records.** (1 connections) — `api/schemas/report.py`
+- **env.py** (6 connections) — `api/db/migrations/env.py`
+- **_get_url()** (5 connections) — `api/db/migrations/env.py`
+- **_run_async_migrations()** (4 connections) — `api/db/migrations/env.py`
+- **run_migrations_offline()** (3 connections) — `api/db/migrations/env.py`
+- **run_migrations_online()** (3 connections) — `api/db/migrations/env.py`
+- **_do_run_migrations()** (2 connections) — `api/db/migrations/env.py`
+- **Alembic environment — async SQLAlchemy / asyncpg configuration.** (1 connections) — `api/db/migrations/env.py`
+- **Read DATABASE_URL from settings (env / .env file).** (1 connections) — `api/db/migrations/env.py`
+- **Run migrations without a live DB connection (generates SQL script).** (1 connections) — `api/db/migrations/env.py`
+- **Inner helper called inside the async connection context.** (1 connections) — `api/db/migrations/env.py`
+- **Create an async engine and run migrations inside it.** (1 connections) — `api/db/migrations/env.py`
+- **Run migrations against a live database.** (1 connections) — `api/db/migrations/env.py`
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (4 shared connections)
-- [[GET /log-entries/{id}/photos/{pid}/file]] (3 shared connections)
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- [[volunteers.js]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `api/schemas/report.py`
+- `api/db/migrations/env.py`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (78%)
-- INFERRED: 7 (22%)
+- EXTRACTED: 28 (97%)
+- INFERRED: 1 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

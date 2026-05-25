@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Summary** (5 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Always Fix** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Usually Fix** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Often Acceptable** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Always Acceptable** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Example 10: Environment Variables** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **In HTTP Request (Headers)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **In URL** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (Authorization: Bearer {{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (https://api.example.com/data?key={{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 425]] (1 shared connections)
+- [[Community 331]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

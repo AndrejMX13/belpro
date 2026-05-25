@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **merge_semantic.py** (0 connections) — `scripts/graphify/merge_semantic.py`
+- **test_backup_restore.sh** (0 connections) — `scripts/test_backup_restore.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/graphify/merge_semantic.py`
+- `scripts/test_backup_restore.sh`
 
 ## Audit Trail
 

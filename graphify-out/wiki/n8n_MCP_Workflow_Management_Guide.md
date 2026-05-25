@@ -1,60 +1,64 @@
 # n8n MCP Workflow Management Guide
 
-> 48 nodes
+> 57 nodes
 
 ## Key Concepts
 
-- **volunteers.js** (55 connections) — `frontend/js/volunteers.js`
-- **$()** (37 connections) — `frontend/js/volunteers.js`
-- **setHtml()** (25 connections) — `frontend/js/volunteers.js`
-- **esc()** (20 connections) — `frontend/js/volunteers.js`
-- **loadVolunteers()** (11 connections) — `frontend/js/volunteers.js`
-- **loadApprovals()** (11 connections) — `frontend/js/volunteers.js`
-- **loadVolunteerLog()** (9 connections) — `frontend/js/volunteers.js`
-- **toast()** (8 connections) — `frontend/js/volunteers.js`
-- **renderList()** (8 connections) — `frontend/js/volunteers.js`
-- **renderApprovals()** (8 connections) — `frontend/js/volunteers.js`
-- **submitAddVolunteer()** (7 connections) — `frontend/js/volunteers.js`
-- **sendReports()** (6 connections) — `frontend/js/reports.js`
-- **show()** (5 connections) — `frontend/js/volunteers.js`
-- **hide()** (5 connections) — `frontend/js/volunteers.js`
-- **openManagerSetupModal()** (5 connections) — `frontend/js/volunteers.js`
-- **submitManagerSetup()** (5 connections) — `frontend/js/volunteers.js`
-- **openModal()** (5 connections) — `frontend/js/volunteers.js`
-- **closeModal()** (5 connections) — `frontend/js/volunteers.js`
-- **showLogin()** (4 connections) — `frontend/js/volunteers.js`
-- **renderThead()** (4 connections) — `frontend/js/volunteers.js`
-- **renderTable()** (4 connections) — `frontend/js/volunteers.js`
-- **renderApprovalsThead()** (4 connections) — `frontend/js/volunteers.js`
-- **renderApprovalsTable()** (4 connections) — `frontend/js/volunteers.js`
-- **renderVolunteerLogThead()** (4 connections) — `frontend/js/volunteers.js`
-- **renderVolunteerLogTable()** (4 connections) — `frontend/js/volunteers.js`
-- *... and 23 more nodes in this community*
+- **AppSettings** (28 connections) — `api/services/app_settings.py`
+- **app_settings.py** (17 connections) — `api/services/app_settings.py`
+- **Settings Table ISS-026 Design** (14 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Auto Monthly Report Delivery Design** (13 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **update_admin_settings()** (11 connections) — `api/routers/admin.py`
+- **._int()** (11 connections) — `api/services/app_settings.py`
+- **AppSettings Central Configuration Authority** (10 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **admin.py** (9 connections) — `api/routers/admin.py`
+- **_notify_ops()** (7 connections) — `api/routers/admin.py`
+- **get_app_settings()** (7 connections) — `api/services/app_settings.py`
+- **api/routers/admin.py GET and PATCH /api/admin/settings** (7 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **get_admin_settings()** (6 connections) — `api/routers/admin.py`
+- **download_consent_pdf()** (5 connections) — `api/routers/documents.py`
+- **AdminSettingsResponse** (5 connections) — `api/schemas/admin.py`
+- **._str()** (5 connections) — `api/services/app_settings.py`
+- **documents.py** (4 connections) — `api/routers/documents.py`
+- **admin.py** (4 connections) — `api/schemas/admin.py`
+- **photo_retention_days()** (4 connections) — `api/services/app_settings.py`
+- **session_duration_hours()** (4 connections) — `api/services/app_settings.py`
+- **.__getattr__()** (4 connections) — `api/services/app_settings.py`
+- **ops/scripts/ops_server.py ThreadingHTTPServer** (4 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Report Auto-Hour Configurable Setting Design** (4 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **._bool()** (3 connections) — `api/services/app_settings.py`
+- **max_photos_per_entry()** (3 connections) — `api/services/app_settings.py`
+- **report_auto_day()** (3 connections) — `api/services/app_settings.py`
+- *... and 32 more nodes in this community*
 
 ## Relationships
 
-- [[tax_number_valid()]] (21 shared connections)
-- [[Performance Testing Reference (k6)]] (11 shared connections)
-- [[Python Docstrings Reference]] (10 shared connections)
-- [[scripts/n8n_workflows.py]] (8 shared connections)
-- [[Hour of day (0–23) at which the monthly report cron fires.]] (6 shared connections)
-- [[Community 361]] (3 shared connections)
-- [[Community 544]] (3 shared connections)
-- [[POST /errors (internal)]] (2 shared connections)
-- [[Community 509]] (2 shared connections)
-- [[Community 616]] (1 shared connections)
+- [[volunteers.js]] (16 shared connections)
+- [[BelPro System Specification]] (3 shared connections)
+- [[load_key()]] (2 shared connections)
+- [[Systematic Debugging Reference]] (2 shared connections)
+- [[renderDetail() — volunteer detail page]] (2 shared connections)
+- [[POST /api/log-entries/{id}/photos (upload_photo)]] (2 shared connections)
+- [[Community 321]] (1 shared connections)
+- [[Community 544]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `frontend/js/api.js`
-- `frontend/js/reports.js`
-- `frontend/js/volunteers.js`
+- `api/routers/admin.py`
+- `api/routers/documents.py`
+- `api/schemas/admin.py`
+- `api/services/app_settings.py`
+- `docs/images/porocilo_2026_05-primer.pdf`
+- `docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf`
+- `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- `ops/requirements.txt`
 
 ## Audit Trail
 
-- EXTRACTED: 274 (89%)
-- INFERRED: 35 (11%)
+- EXTRACTED: 193 (82%)
+- INFERRED: 42 (18%)
 - AMBIGUOUS: 0 (0%)
 
 ---

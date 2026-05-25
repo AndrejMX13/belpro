@@ -4,26 +4,30 @@
 
 ## Key Concepts
 
-- **Example 6: Conditional Logic** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Ternary Operator** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Default Values** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Multiple Conditions** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.order.status === 'completed' ? 'Order Complete ✓' : )** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.order.notes || 'No notes provided'}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.order.total > 100 ? 'Premium Customer' : 'Standard C)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **False Positives Guide** (9 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Decision Framework** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Should I Fix This Warning?** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Documentation Template** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **FALSE_POSITIVES.md** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **What Are False Positives?** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:block37 (┌─────────────────────────────────┐)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// workflows/customer-notifications.json)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[Community 577]] (1 shared connections)
+- [[Community 298]] (1 shared connections)
+- [[Community 524]] (1 shared connections)
+- [[Community 476]] (1 shared connections)
+- [[Community 576]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **bug_report.md** (0 connections) — `.github/ISSUE_TEMPLATE/bug_report.md`
+- **project_versioning.md** (0 connections) — `.claude/memory/project_versioning.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.github/ISSUE_TEMPLATE/bug_report.md`
+- `.claude/memory/project_versioning.md`
 
 ## Audit Trail
 

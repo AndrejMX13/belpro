@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Pattern 1: Multi-Source Data Aggregation** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Process and structure data collected from multiple source)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Add source weighting)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Task 1: Alembic Migration** (5 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (# api/db/migrations/versions/002_rename_entry_date_to_work_d)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add api/db/migrations/versions/002_rename_entry_date_to_)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- [[Community 415]] (1 shared connections)
+- [[API Client (api.js)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 

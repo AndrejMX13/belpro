@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Data Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Schema Mapping** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Data Type Conversions** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Aggregation** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Code node - map schemas)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Code node - convert data types)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Code node - aggregate data)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 1: Check Rows Affected** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 2: Constraint Violations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 3: Rollback on Error** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block34 (Database Operation (UPDATE users...))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Database operation with continueOnFail: true)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block36 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Nalozi Stanje]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 

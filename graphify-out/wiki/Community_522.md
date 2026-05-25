@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Checklist for AI Agent Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Finding Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Using get_node with search_properties Mode** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Using get_node with Full Detail** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Find properties related to "body")** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Get complete schema with displayOptions)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **When to Use** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Je v urejanju?]] (1 shared connections)
+- [[Community 375]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

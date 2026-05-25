@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Example 8: Fields with Spaces** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Bracket Notation** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Combined** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Nested Spaces** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json['user data']['first name']}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json['user data']['first name']}} {{$json['user data']['l)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript (Contact: {{$json['user data']['phone number']}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **4. Unbounded Database Queries** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When to Fix** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Config table with ~10 rows)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// COUNT/SUM operations)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Testing with small dataset)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: User table could have millions of rows)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 332]] (1 shared connections)
+- [[Community 298]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

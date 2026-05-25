@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Conversational Chatbot** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Data Analysis Assistant** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. Document Q&A** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Workflow Automation Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Email Processing Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block4 (1. Webhook (path: "chat", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block5 (You are a customer support assistant.)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block6 (Setup Phase (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block7 (1. Webhook (data question: "What were sales last month?"))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block9 (1. Slack (slash command: /deploy production))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block10 (1. Email Trigger (new support email))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Task 1: Rename shared PDF utilities** (13 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (def test_ngo_header_html_without_logo():)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block6 (docker compose exec api pytest tests/test_reports.py::test_n)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block13 (docker compose exec api pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block14 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block15 (git add api/services/report_pdf.py api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Je v urejanju?]] (1 shared connections)
+- [[Community 537]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

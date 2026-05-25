@@ -1,30 +1,30 @@
 # POST /api/volunteers (create_volunteer)
 
-> 13 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **Design: httpOnly Cookie Auth (ISS-005)** (8 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **2026-05-19-httponly-cookie-auth-design.md** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Dual auth in `require_manager`** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Session token** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **New settings** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **New endpoints** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **File Map** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **What does NOT change** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Behaviour changes visible to the manager** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Not in scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Installation** (8 connections) — `README.md`
+- **2. Create and configure the environment file** (3 connections) — `README.md`
+- **Quick start — setup wizard** (2 connections) — `README.md`
+- **1. Clone the repository** (2 connections) — `README.md`
+- **4. Run database migrations** (2 connections) — `README.md`
+- **code:bash (git clone https://github.com/AndrejMX13/belpro.git)** (1 connections) — `README.md`
+- **Manual installation (alternative)** (1 connections) — `README.md`
+- **code:bash (git clone https://github.com/AndrejMX13/belpro.git)** (1 connections) — `README.md`
+- **code:bash (cp .env.example .env)** (1 connections) — `README.md`
+- **code:bash (# EMSO encryption key (32 bytes, base64url))** (1 connections) — `README.md`
+- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `README.md`
+- **5. Log in to the dashboard** (1 connections) — `README.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: GET Photo Limit]] (1 shared connections)
+- [[Community 640]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- `README.md`
 
 ## Audit Trail
 

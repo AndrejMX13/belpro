@@ -19,7 +19,7 @@
 
 ## Relationships
 
-- [[load_env.sh]] (1 shared connections)
+- [[entrypoint.sh]] (1 shared connections)
 
 ## Source Files
 

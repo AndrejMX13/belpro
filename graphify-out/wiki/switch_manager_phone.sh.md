@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **1. Data Synchronization** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **2. ETL (Extract, Transform, Load)** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **3. Data Validation & Cleanup** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **4. Backup & Archive** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **5. Real-time Data Updates** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block2 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT *)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block5 (1. Schedule (daily at 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block6 (1. Schedule (weekly))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block7 (1. Schedule (monthly))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block8 (1. Webhook (receive status update))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **E2E Testing** (7 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **E2E Test Strategy** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **User Flow Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Checkout Flow** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Test Data Management** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Cross-Browser Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **e2e-testing.md** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (// Critical user paths to test)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (import { test, expect } from '@playwright/test';)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (test.describe('Checkout Flow', () => {)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (// fixtures/testData.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (// playwright.config.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
 
 ## Relationships
 
-- [[Nalozi Stanje]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/test-master/references/e2e-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

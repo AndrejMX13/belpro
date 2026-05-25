@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Pattern 2: _input.first() - Get First Item** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (data = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (item = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (response = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Error #4: IndexError** (6 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Error Message** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Safe First Item Access** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Slice Instead of Index** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Assuming items exist)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:block15 (IndexError: list index out of range)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Check length first)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Use _input.first() instead of [0])** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Use slicing (never raises IndexError))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 417]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

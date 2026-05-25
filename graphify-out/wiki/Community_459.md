@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Pattern 4: _node - Reference Other Nodes** (4 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (old_data = _node["Get Old Data"]["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Best Practices** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **1. Use Standard Library When Possible** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **2. Fall Back to n8n Nodes** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **3. Combine Multiple Modules** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# ✅ GOOD: Use standard library)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# For operations requiring external libraries,)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 417]] (1 shared connections)
+- [[Community 330]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **What This Skill Teaches** (3 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Core Concepts** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Top 5 Error Prevention** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **14. String Concatenation Confusion** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block29 (`Hello ${$json.name}!`          // Template literal syntax)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block30 (Hello {{$json.name}}!           // n8n expressions auto-conc)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 291]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

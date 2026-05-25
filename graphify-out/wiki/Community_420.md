@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Tool Selection Guide** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Finding the Right Node** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Validating Configuration** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Managing Workflows** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:block1 (1. search_nodes({query: "keyword"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Step 1: Search)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:block3 (1. validate_node({nodeType, config: {}, mode: "minimal"}) - )** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:block4 (1. n8n_create_workflow({name, nodes, connections}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Schedule Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Cron Mode (Advanced)** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Interval Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Days & Hours Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Every 15 minutes)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Weekdays at 9 AM)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Every weekday at 9 AM)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block5 (0 */6 * * *      Every 6 hours)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

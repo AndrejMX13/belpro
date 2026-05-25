@@ -4,24 +4,27 @@
 
 ## Key Concepts
 
-- **Pattern 6: Release Information Processing** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Extract and filter stable releases from GitHub API)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Version comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **loadReportArchive()** (5 connections) — `frontend/js/reports.js`
+- **GET /reports/history** (3 connections) — `api/routers/reports.py`
+- **API.reports.history()** (2 connections) — `frontend/js/api.js`
+- **loadReportArchive()** (2 connections) — `frontend/js/reports.js`
+- **ReportHistoryList shape (items[], total)** (2 connections) — `api/routers/reports.py`
 
 ## Relationships
 
-- [[Community 415]] (1 shared connections)
+- [[make_text_payload()]] (3 shared connections)
+- [[001_initial_schema.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- `api/routers/reports.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 11 (79%)
+- INFERRED: 3 (21%)
 - AMBIGUOUS: 0 (0%)
 
 ---

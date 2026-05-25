@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Response Modes** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **lastNode (Custom Response)** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **onReceived (Default)** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Common Workflow Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **1. Triggers** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **2. Data Sources** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **3. Transformation** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **4. Outputs** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **5. Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[Community 391]] (1 shared connections)
+- [[restore.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Reject EMŠO numbers that fail the mod-11 checksum.** (0 connections) — `api/schemas/volunteer.py`
+- **Reject tax numbers that fail the Modulus 11 check digit.** (0 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 

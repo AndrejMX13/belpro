@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Rotacija ključa za šifriranje EMŠO** (4 connections) — `README_SL.md`
-- **code:bash (bash scripts/rotate_emso_key.sh <STAR_KLJUC> <NOV_KLJUC>)** (1 connections) — `README_SL.md`
-- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README_SL.md`
-- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README_SL.md`
+- **[0.9.5] — 2026-05-11** (4 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- [[Code: Pripravi Slike]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 
-- `README_SL.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 

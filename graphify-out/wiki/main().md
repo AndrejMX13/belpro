@@ -4,44 +4,41 @@
 
 ## Key Concepts
 
-- **render_consent_pdf()** (11 connections) — `api/services/consent_pdf.py`
-- **test_documents.py** (8 connections) — `api/tests/test_documents.py`
-- **consent_pdf.py** (7 connections) — `api/services/consent_pdf.py`
-- **test_render_consent_pdf_returns_bytes()** (3 connections) — `api/tests/test_documents.py`
-- **test_render_consent_pdf_with_additional_clauses()** (3 connections) — `api/tests/test_documents.py`
-- **test_render_consent_pdf_empty_clauses_treated_as_none()** (3 connections) — `api/tests/test_documents.py`
-- **_esc()** (2 connections) — `api/services/consent_pdf.py`
-- **_now_str()** (2 connections) — `api/services/consent_pdf.py`
-- **test_consent_pdf_returns_pdf()** (2 connections) — `api/tests/test_documents.py`
-- **test_consent_pdf_requires_auth()** (2 connections) — `api/tests/test_documents.py`
-- **test_patch_manager_saves_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
-- **test_patch_manager_clears_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
-- **GDPR Article 13 consent notice PDF generation.** (1 connections) — `api/services/consent_pdf.py`
-- **Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage** (1 connections) — `api/services/consent_pdf.py`
-- **Tests for the /documents router and consent_pdf service.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf returns non-empty bytes for a minimal manager.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf produces bytes when additional clauses are set.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf handles empty string clauses without error.** (1 connections) — `api/tests/test_documents.py`
-- **Authenticated request returns a PDF response.** (1 connections) — `api/tests/test_documents.py`
-- **Unauthenticated request is rejected.** (1 connections) — `api/tests/test_documents.py`
-- **PATCH /managers/me accepts and persists gdpr_additional_clauses.** (1 connections) — `api/tests/test_documents.py`
-- **PATCH /managers/me with empty string clears gdpr_additional_clauses.      Note:** (1 connections) — `api/tests/test_documents.py`
+- **Python Pro** (8 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Code Examples** (6 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/python-pro/SKILL.md`
+- **mypy strict configuration (pyproject.toml)** (3 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Type-annotated function with error handling** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Dataclass with validation** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Async pattern** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **pytest fixture and parametrize** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (from pathlib import Path)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (from dataclasses import dataclass, field)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (import asyncio)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:toml ([tool.mypy])** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:block6 (Success: no issues found in 12 source files)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/python-pro/SKILL.md`
 
 ## Relationships
 
-- [[list_pending_entries.py]] (3 shared connections)
-- [[Code: Clear State Preklici]] (2 shared connections)
-- [[loadReports()]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/consent_pdf.py`
-- `api/tests/test_documents.py`
+- `.claude/skills/python-pro/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 47 (82%)
-- INFERRED: 10 (18%)
+- EXTRACTED: 42 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

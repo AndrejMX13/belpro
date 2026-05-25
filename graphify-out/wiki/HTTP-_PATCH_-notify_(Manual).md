@@ -1,43 +1,36 @@
 # HTTP: PATCH /notify (Manual)
 
-> 15 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **AppSettings** (26 connections) — `api/services/app_settings.py`
-- **AppSettings Central Configuration Authority** (10 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
-- **AppSetting** (6 connections) — `api/models/app_setting.py`
-- **get_app_settings()** (6 connections) — `api/services/app_settings.py`
-- **._str()** (4 connections) — `api/services/app_settings.py`
-- **._bool()** (3 connections) — `api/services/app_settings.py`
-- **report_auto_period()** (3 connections) — `api/services/app_settings.py`
-- **.__getattr__()** (3 connections) — `api/services/app_settings.py`
-- **.__init__()** (2 connections) — `api/services/app_settings.py`
-- **One row per named setting. All values stored as TEXT.** (1 connections) — `api/models/app_setting.py`
-- **Central authority for all configuration — env base + DB runtime overrides.** (1 connections) — `api/services/app_settings.py`
-- **Resolve a boolean setting: 'true'/'1'/'yes' → True, else False.** (1 connections) — `api/services/app_settings.py`
-- **Resolve a string setting: DB value first, default fallback.** (1 connections) — `api/services/app_settings.py`
-- **Delegate any non-overridden attribute to the underlying env Settings.** (1 connections) — `api/services/app_settings.py`
-- **FastAPI dependency — returns the central settings authority for this request.** (1 connections) — `api/services/app_settings.py`
+- **Auto-Sanitization System** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **What It Fixes** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **What It CANNOT Fix** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Binary Operators (Two Values)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Unary Operators (One Value)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **What It Does** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. IF/Switch Metadata** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Broken Connections** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Branch Count Mismatches** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Paradoxical Corrupt States** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[monthly_reports.json]] (12 shared connections)
-- [[Manager WhatsApp Approval Workflow Design]] (9 shared connections)
-- [[Code: Clear State Preklici]] (6 shared connections)
-- [[Evolution API (API Gateway)]] (3 shared connections)
-- [[Community 589]] (1 shared connections)
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `api/models/app_setting.py`
-- `api/services/app_settings.py`
-- `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 49 (71%)
-- INFERRED: 20 (29%)
+- EXTRACTED: 27 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

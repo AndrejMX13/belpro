@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **n8n_audit_instance (SECURITY AUDIT)** (6 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Examples** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Two Scanning Approaches** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// Full audit (default))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Output** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Secret Masking** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Remediation Types** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **3. $jmespath() - JSON Querying** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Basic Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Advanced Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Common Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Pattern 1: Filter and project)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

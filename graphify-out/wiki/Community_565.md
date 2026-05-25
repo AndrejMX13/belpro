@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Production Gotchas** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Cross-Iteration Data Not Available in Python** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Limitations and Workarounds** (5 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 1: No HTTP Requests Library** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 2: No Data Analysis Library** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 3: No Database Drivers** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 4: No Web Scraping** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 288]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

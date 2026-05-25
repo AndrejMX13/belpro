@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **n8n_create_workflow** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_create_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_create_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **BelPro — Sequence Diagram** (2 connections) — `docs/images/belpro-architecture-sequence.md`
+- **belpro-architecture-sequence.md** (1 connections) — `docs/images/belpro-architecture-sequence.md`
+- **code:mermaid (sequenceDiagram)** (1 connections) — `docs/images/belpro-architecture-sequence.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `docs/images/belpro-architecture-sequence.md`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

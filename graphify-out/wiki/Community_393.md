@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 9: Backup / Restore Smoke Test** (5 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.1 — Verify backup.sh and restore.sh exist** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.2 — Write `scripts/test_backup_restore.sh`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.3 — Make executable** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.4 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (ls scripts/backup.sh scripts/restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (chmod +x scripts/test_backup_restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add scripts/test_backup_restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Codebase context** (9 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (reports: {)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (API.reports.history().then(console.log))** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (<div id="reports-content">)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (<div id="reports-content">)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (let archiveLoaded = false;)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (async function loadReportArchive() {)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block38 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add frontend/js/api.js frontend/js/reports.js)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Community 392]] (1 shared connections)
+- [[Community 533]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 

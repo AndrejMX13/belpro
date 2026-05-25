@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Debugging Wizard** (6 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Common Debugging Commands** (5 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (python -m pdb script.py          # launch debugger)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (node --inspect-brk script.js     # pause at first line, atta)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (git bisect start)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (dlv debug ./cmd/server           # build & attach)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
+- **Best Practices** (7 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **1. Always Validate Input Data** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **2. Use Try-Catch for Error Handling** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **3. Prefer Array Methods Over Loops** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **4. Filter Early, Process Late** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **5. Use Descriptive Variable Names** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **6. Debug with console.log()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (try {)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ GOOD: Functional approach)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ GOOD: Filter first to reduce processing)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ GOOD: Clear intent)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// Debug statements appear in browser console)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/SKILL.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

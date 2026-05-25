@@ -4,36 +4,35 @@
 
 ## Key Concepts
 
-- **analytics_summary()** (7 connections) — `api/routers/analytics.py`
-- **analytics.py** (6 connections) — `api/schemas/analytics.py`
-- **analytics.py** (4 connections) — `api/routers/analytics.py`
-- **HoursPerVolunteer** (4 connections) — `api/schemas/analytics.py`
-- **HoursPerLocation** (4 connections) — `api/schemas/analytics.py`
-- **MonthlyTrendPoint** (4 connections) — `api/schemas/analytics.py`
-- **AnalyticsSummary** (4 connections) — `api/schemas/analytics.py`
-- **_preceding_months()** (3 connections) — `api/routers/analytics.py`
-- **Analytics router — aggregated summary for the dashboard analytics page.** (1 connections) — `api/routers/analytics.py`
-- **Return aggregated analytics data scoped to the given month.      Defaults to t** (1 connections) — `api/routers/analytics.py`
-- **Return `count` consecutive (year, month) tuples ending at (year, month).** (1 connections) — `api/routers/analytics.py`
-- **Pydantic schemas for the analytics summary endpoint.** (1 connections) — `api/schemas/analytics.py`
-- **Per-volunteer approved hours for a given month.** (1 connections) — `api/schemas/analytics.py`
-- **Approved hours grouped by location for a given month.** (1 connections) — `api/schemas/analytics.py`
-- **Total approved hours for a single calendar month.** (1 connections) — `api/schemas/analytics.py`
-- **Aggregated analytics data for a given month.** (1 connections) — `api/schemas/analytics.py`
+- **Design: BelPro Version-Bump Skill** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step-by-Step Flow** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **2026-05-15-version-bump-skill-design.md** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Trigger** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Approach** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 0 — Pre-flight: test suite check** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 1 — Orient and suggest version** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 2 — Update files** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 3 — Pre-commit review** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 4 — Tag? (optional)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 6 — Offer container rebuild** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **BelPro-Specific Constraints** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Reminders (skill mentions, does not execute)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (4 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/analytics.py`
-- `api/schemas/analytics.py`
+- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (77%)
-- INFERRED: 10 (23%)
+- EXTRACTED: 30 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

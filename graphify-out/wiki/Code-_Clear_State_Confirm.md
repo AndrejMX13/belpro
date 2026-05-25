@@ -1,33 +1,33 @@
 # Code: Clear State Confirm
 
-> 16 nodes
+> 15 nodes
 
 ## Key Concepts
 
-- **Six Tests** (7 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Test Coverage Gaps — Design Spec** (6 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Infrastructure** (3 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **`_PHOTOS_ROOT` monkeypatching** (2 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **2026-05-24-test-coverage-gaps-design.md** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Overview** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Migration test database** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **code:python (import api.routers.log_entries as le_mod)** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **1. Migration roundtrip — `api/tests/test_migrations.py` (new file)** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **2. EMŠO encryption round-trip — `api/tests/test_volunteers.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **3. Status-flow enforcement — `api/tests/test_log_entries.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **4. Analytics edge cases — `api/tests/test_analytics.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **5. Base64 photo limit + monkeypatch — `api/tests/test_app_settings.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **6. Manager password change — `api/tests/test_managers.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **File Summary** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **Vzdrževanje** (9 connections) — `README_SL.md`
+- **Nadgradnja sistema** (2 connections) — `README_SL.md`
+- **Varnostno kopiranje (Backup)** (2 connections) — `README_SL.md`
+- **Obnovitev podatkov (Restore)** (2 connections) — `README_SL.md`
+- **Spremljanje dnevniških zapisov storitev (Logs)** (2 connections) — `README_SL.md`
+- **Ponovna izgradnja storitve po spremembi kode** (2 connections) — `README_SL.md`
+- **Ponastavitev pozabljenega gesla za nadzorno ploščo** (2 connections) — `README_SL.md`
+- **Uveljavljanje sprememb v `.env`** (2 connections) — `README_SL.md`
+- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README_SL.md`
+- **code:bash (bash scripts/backup.sh)** (1 connections) — `README_SL.md`
+- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README_SL.md`
+- **code:bash (docker compose logs -f)** (1 connections) — `README_SL.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `README_SL.md`
+- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README_SL.md`
+- **code:bash (docker compose up -d <service>)** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
+- [[Community 602]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- `README_SL.md`
 
 ## Audit Trail
 

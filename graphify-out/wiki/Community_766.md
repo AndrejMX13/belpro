@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Number of days local backup archives are kept before pruning.** (0 connections) — `api/services/app_settings.py`
+- **Hour of day (0–23) at which the daily backup runs.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

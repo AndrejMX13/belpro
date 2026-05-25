@@ -4,42 +4,33 @@
 
 ## Key Concepts
 
-- **Database Operations Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Checklist for Database Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **database_operations.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block1 (Trigger → [Query/Read] → [Transform] → [Write/Update] → [Ver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block49 (Schedule → Postgres (SELECT new records) → Transform → MySQL)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block50 (Schedule → [Multiple DB reads] → Merge → Transform → Warehou)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block51 (Schedule → Postgres (SELECT all) → JSON → Google Drive (uplo)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Reliability** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Endpoints & Routing** (8 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Router Setup** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **CRUD Endpoints** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Custom Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Query Parameters** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Include Router** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Response Models** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **endpoints-routing.md** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (from fastapi import APIRouter, Depends, HTTPException, statu)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (@router.post("/", response_model=UserOut, status_code=status)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (from fastapi import Depends)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (@router.get("/search"))** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (# main.py)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (from fastapi import Response)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
 
 ## Relationships
 
-- [[Community 523]] (1 shared connections)
-- [[switch_manager_phone.sh]] (1 shared connections)
-- [[test_backup_restore.sh]] (1 shared connections)
-- [[Community 387]] (1 shared connections)
-- [[Community 483]] (1 shared connections)
-- [[Community 484]] (1 shared connections)
-- [[Community 303]] (1 shared connections)
-- [[Community 485]] (1 shared connections)
-- [[Community 385]] (1 shared connections)
-- [[API.logo.delete()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/fastapi-expert/references/endpoints-routing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 38 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

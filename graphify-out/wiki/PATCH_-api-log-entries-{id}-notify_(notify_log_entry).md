@@ -1,30 +1,31 @@
 # PATCH /api/log-entries/{id}/notify (notify_log_entry)
 
-> 21 nodes
+> 22 nodes
 
 ## Key Concepts
 
-- **Browser APIs** (11 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Fetch API** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Web Workers** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Service Workers & PWA** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Local Storage & IndexedDB** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Intersection Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Mutation Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Web Notifications** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Canvas & WebGL** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Performance APIs** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **browser-apis.md** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Basic GET request)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// main.js - Create and communicate with worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Register Service Worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// LocalStorage (synchronous, max 5-10MB))** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Lazy loading images)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Watch DOM changes)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Request permission)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Canvas 2D)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **code:javascript (// Performance timing)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
-- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Test Suite Design — BelPro API** (8 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Test Files** (7 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Fixture Architecture** (4 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Infrastructure** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Backup / Restore Smoke Test** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **2026-05-09-test-suite-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Goals** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Constraints** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Test database** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **pytest configuration** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Session-scoped (once per `pytest` run)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Function-scoped (once per test)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Data factories** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_health.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_managers.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_volunteers.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_log_entries.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_reports.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_analytics.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Sequence** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Pass criteria** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **What is NOT covered (yet)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
 
 ## Relationships
 
@@ -32,11 +33,11 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/browser-apis.md`
+- `docs/superpowers/specs/2026-05-09-test-suite-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

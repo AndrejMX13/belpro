@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **IF (nodes-base.if)** (6 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **String Comparison** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Number Comparison** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Boolean Comparison** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Multiple Conditions (AND)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Multiple Conditions (OR)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Conversational Chatbot** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Data Analysis Assistant** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Document Q&A** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Workflow Automation Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Email Processing Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block4 (1. Webhook (path: "chat", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block5 (You are a customer support assistant.)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block6 (Setup Phase (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block7 (1. Webhook (data question: "What were sales last month?"))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block9 (1. Slack (slash command: /deploy production))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block10 (1. Email Trigger (new support email))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[load_env.sh]] (1 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

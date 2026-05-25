@@ -4,34 +4,27 @@
 
 ## Key Concepts
 
-- **Test Suite Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Task 8: Run Full Suite** (3 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 8.1 — Run all tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 8.2 — Commit if any fixes were needed** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **2026-05-09-test-suite.md** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add -p)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Self-Review Checklist** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Current State (Already Applied)** (5 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Fix Image Upload — $env Access Denied in Code Node** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Task 1: Add HTTP: Upload Photo Node** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Task 3: Update Code: Slika Prejeta** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **2026-05-13-fix-image-upload-env-access.md** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **code:block1 (n8n_update_partial_workflow with addNode:)** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Task 2: Rewire Connections** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **code:javascript (const d = $('Code: Pripravi Upload Slike').first().json;)** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Task 4: Validate and Export** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
 
 ## Relationships
 
-- [[013_error_log_table.py]] (1 shared connections)
-- [[Community 429]] (1 shared connections)
-- [[Community 489]] (1 shared connections)
-- [[Community 492]] (1 shared connections)
-- [[Community 490]] (1 shared connections)
-- [[Community 491]] (1 shared connections)
-- [[Community 493]] (1 shared connections)
-- [[Community 393]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

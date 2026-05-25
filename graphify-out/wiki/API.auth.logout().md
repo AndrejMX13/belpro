@@ -4,36 +4,36 @@
 
 ## Key Concepts
 
-- **1. missing_required** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 1: Slack Channel Missing** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 2: HTTP Request Missing URL** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 3: Database Query Missing Connection** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 4: Conditional Fields** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (// Use get_node to see what's required)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Standard Library Mastery** (9 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Pathlib for File Operations** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Dataclasses for Data Structures** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Functools for Function Tools** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Itertools for Iteration** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Collections for Data Structures** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Context Managers** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Enum for Constants** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Logging** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **standard-library.md** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from pathlib import Path)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from dataclasses import dataclass, field, asdict, replace)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from functools import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from itertools import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from collections import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from contextlib import contextmanager, suppress, ExitStack)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from enum import Enum, auto, IntEnum, Flag)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (import logging)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
 
 ## Relationships
 
-- [[API.auth.login()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/python-pro/references/standard-library.md`
 
 ## Audit Trail
 
-- EXTRACTED: 35 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

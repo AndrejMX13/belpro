@@ -4,14 +4,14 @@
 
 ## Key Concepts
 
-- **Task 4: Write tests (TDD — write before implementing)** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python ("""Tests for the /documents router and consent_pdf service.")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block27 (docker compose exec api pytest tests/test_documents.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block28 (git add api/tests/test_documents.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Codebase context (read before any task)** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block1 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block2 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block3 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 535]] (1 shared connections)
+- [[Community 537]] (1 shared connections)
 
 ## Source Files
 

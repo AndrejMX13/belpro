@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 7: Frontend — Dokumenti tab** (9 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:html (<a href="#documents" class="nav-item" data-page="documents">)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:html (<script src="/js/documents.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js (documents: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block43 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block44 (git add frontend/index.html frontend/js/api.js frontend/js/v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Task 5: Config router — no-auth endpoint for n8n** (9 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python ("""Tests for the public config endpoint consumed by n8n work)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_config.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python ("""Config router — public read-only settings for n8n workflo)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (from routers.config import router as config_router)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (app.include_router(config_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_config.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/routers/config.py api/main.py api/tests/test_con)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[Community 535]] (1 shared connections)
+- [[Community 398]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 

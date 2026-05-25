@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Common Patterns from Telemetry** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Pattern 1: Edit → Validate (7,841 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Pattern 2: Validate → Fix (7,266 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Pattern 3: Iterative Building (31,464 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_update_partial_workflow({...}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_validate_workflow({id}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (update → update → update → ... (56s avg between edits))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **0. Sandbox Restrictions (Critical)** (5 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Blocked helpers** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **`require()` is gated by allowlists** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// ❌ BLOCKED — throws UnsupportedFunctionError)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **`$env` may be blocked** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// May throw "Cannot find module 'crypto'" — depends on env )** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **What's always safe** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

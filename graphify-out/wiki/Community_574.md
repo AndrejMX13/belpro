@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Validation Profiles** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **minimal** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **runtime (RECOMMENDED)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **ai-friendly** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **strict** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Unified Tool Reference** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **get_node (Unified Node Information)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **validate_node (Unified Validation)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Standard (recommended))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Full validation with runtime profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 339]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

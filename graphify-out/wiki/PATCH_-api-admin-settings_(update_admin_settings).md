@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **How to Read It** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Validation Result Structure** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Complete Response** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Check `valid` field** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Fix errors first** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. Review warnings** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **4. Consider suggestions** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (if (result.valid) {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (result.errors.forEach(error => {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (result.warnings.forEach(warning => {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (// Optional improvements)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Task 3: Ops sidecar container shell** (12 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:dockerfile (# ops/Dockerfile)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:block14 (# ops/requirements.txt)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:block16 (# ops/crontab)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (# ops/scripts/backup.sh — placeholder)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:yaml (# ──────────────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:yaml (volumes:)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (# Ops sidecar)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add ops/ docker-compose.yml .env.example)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 339]] (1 shared connections)
+- [[Community 428]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

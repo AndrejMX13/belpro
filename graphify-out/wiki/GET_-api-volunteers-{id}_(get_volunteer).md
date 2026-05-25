@@ -1,42 +1,43 @@
 # GET /api/volunteers/{id} (get_volunteer)
 
-> 21 nodes
+> 22 nodes
 
 ## Key Concepts
 
-- **Common Gotchas** (11 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **1. ❌ Wrong: Ignoring timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Set workflow timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **2. ❌ Wrong: Overlapping executions** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Add execution lock** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **3. ❌ Wrong: No error handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Add error workflow** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **4. ❌ Wrong: Processing all data at once** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Batch processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **5. ❌ Wrong: Hardcoded dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Dynamic dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (Schedule (9 AM)  // 9 AM in which timezone?)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// Workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block34 (Schedule (every 5 min) → Long-running task (10 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block35 (Schedule → Redis (check lock))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block36 (Schedule → API call → Process (fails silently))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block37 (Main: Schedule → Execute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block38 (Schedule → SELECT 1000000 records → Process (OOM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block39 (Schedule → SELECT with pagination → Split In Batches → Proce)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (query: "SELECT * FROM orders WHERE date = '2024-01-15'")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (query: "SELECT * FROM orders WHERE date = CURRENT_DATE - INT)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Design Details** (7 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Report Auto-Hour Implementation Design** (5 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Ops server (`ops/scripts/ops_server.py`)** (4 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Schemas (`api/schemas/admin.py`)** (3 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Test Plan** (3 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **AppSettings (`api/services/app_settings.py`)** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Admin router (`api/routers/admin.py`)** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **DB seed migration** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **2026-05-22-report-auto-hour-design.md** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Files Touched** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python (report_auto_hour: int)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python (report_auto_hour: int | None = Field(None, ge=0, le=23))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python ("report_auto_hour": app_settings.report_auto_hour,)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python ("0 {report_hour} {day} * * /app/scripts/monthly_report_send.)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python (report_hour = max(0, min(int(payload.get("report_auto_hour",)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:python (report_hour = max(0, min(int(rows.get("report_auto_hour", 7))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **code:sql (INSERT INTO settings (name, value, value_type))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **Frontend (`frontend/js/admin.js`)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **New tests — `test_admin.py`** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **New tests — `test_app_settings.py`** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 41 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Task 4: Automated backup job** (9 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (#!/bin/bash)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec ops /app/scripts/backup.sh)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block27 ([backup] Starting backup: 20260520_020000)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec ops ls /backups/)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec -e POSTGRES_PASSWORD=wrong ops /app/scri)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (curl -s http://localhost:8100/api/errors \)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add ops/scripts/backup.sh)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Report Template** (6 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Full Review Report Template** (3 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **report-template.md** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **code:markdown (# Code Review: [PR Title])** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **code:block2** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Verdict Guidelines** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Severity Definitions** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Time Boxing** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Quick Checks Before Submitting** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
 
 ## Relationships
 
-- [[Community 432]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `.claude/skills/code-reviewer/references/report-template.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

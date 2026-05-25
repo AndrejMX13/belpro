@@ -1,63 +1,48 @@
 # connections
 
-> 36 nodes
+> 44 nodes
 
 ## Key Concepts
 
-- **DevOps Engineer Skill** (8 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Deployment Strategies Reference** (6 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Release Automation Reference** (6 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **FastAPI Expert Skill** (6 connections) — `.claude/skills/fastapi-expert/SKILL.md`
-- **Django to FastAPI Migration Guide** (5 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Incident Response Reference** (4 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Async SQLAlchemy Reference** (4 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **GitHub Actions Pipelines Reference** (3 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Kubernetes Manifests Reference** (3 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Platform Engineering Reference** (3 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **FastAPI Authentication Reference** (3 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **Async Testing Reference** (3 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Docker Patterns Reference** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **Terraform IaC Reference** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **FastAPI Endpoints and Routing Reference** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Pydantic V2 Schemas Reference** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Canary Deployment Strategy** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **DORA Metrics** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Feature Flags Progressive Delivery** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Zero-Downtime Database Migrations** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Blue-Green Deployment Strategy** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Multi-Stage Dockerfile Pattern** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **CI/CD Pipeline Pattern** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Incident Severity Levels** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Mean Time To Resolve MTTR** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- *... and 11 more nodes in this community*
+- **test_admin.py** (22 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_ops_failure_does_not_break_save()** (3 connections) — `api/tests/test_admin.py`
+- **test_get_settings_returns_report_defaults()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_saves_report_fields()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_notifies_ops()** (2 connections) — `api/tests/test_admin.py`
+- **test_get_settings_returns_backup_retention_default()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_saves_backup_retention()** (2 connections) — `api/tests/test_admin.py`
+- **test_get_settings_returns_report_hour_default()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_saves_report_hour()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_report_hour_boundary_zero()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_report_hour_boundary_23()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_report_hour_rejects_24()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_report_hour_rejects_negative()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_ops_payload_includes_report_hour()** (2 connections) — `api/tests/test_admin.py`
+- **test_get_settings_returns_backup_hour_default()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_saves_backup_hour()** (2 connections) — `api/tests/test_admin.py`
+- **test_get_settings_returns_photo_cleanup_hour_default()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_saves_photo_cleanup_hour()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_settings_ops_payload_includes_all_fields()** (2 connections) — `api/tests/test_admin.py`
+- **test_get_admin_settings_includes_evolution_instance_name()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_admin_settings_updates_evolution_instance_name()** (2 connections) — `api/tests/test_admin.py`
+- **test_patch_admin_settings_evolution_instance_name_rejects_empty()** (2 connections) — `api/tests/test_admin.py`
+- **Tests for report auto-delivery settings.** (1 connections) — `api/tests/test_admin.py`
+- **GET /api/admin/settings returns defaults for report_auto_day and report_auto_per** (1 connections) — `api/tests/test_admin.py`
+- **PATCH /api/admin/settings persists report_auto_day and report_auto_period.** (1 connections) — `api/tests/test_admin.py`
+- *... and 19 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 346]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/SKILL.md`
-- `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- `.claude/skills/devops-engineer/references/docker-patterns.md`
-- `.claude/skills/devops-engineer/references/github-actions.md`
-- `.claude/skills/devops-engineer/references/incident-response.md`
-- `.claude/skills/devops-engineer/references/kubernetes.md`
-- `.claude/skills/devops-engineer/references/platform-engineering.md`
-- `.claude/skills/devops-engineer/references/release-automation.md`
-- `.claude/skills/devops-engineer/references/terraform-iac.md`
-- `.claude/skills/fastapi-expert/SKILL.md`
-- `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- `.claude/skills/fastapi-expert/references/authentication.md`
-- `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- `.claude/skills/fastapi-expert/references/testing-async.md`
+- `api/tests/test_admin.py`
 
 ## Audit Trail
 
-- EXTRACTED: 76 (88%)
-- INFERRED: 10 (12%)
+- EXTRACTED: 86 (99%)
+- INFERRED: 1 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---

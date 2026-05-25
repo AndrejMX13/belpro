@@ -1,35 +1,35 @@
 # Analitika (Analytics Screen)
 
-> 40 nodes
+> 42 nodes
 
 ## Key Concepts
 
-- **Task 3: Logo in PDF reports (TDD)** (12 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **Task 2: Logo API endpoints (TDD)** (10 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **Task 1: Logo service (TDD)** (8 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **NGO Logo Implementation Plan** (7 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **Task 4: Frontend — API methods and settings UI** (6 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **2026-05-19-ngo-logo.md** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python ("""Tests for NGO logo service and endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block2 (docker compose exec api pytest tests/test_logo.py -v -k "not)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python ("""NGO logo file management.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block4 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block5 (docker compose ps)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block6 (docker compose exec api pytest tests/test_logo.py -v -k "not)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block7 (git add api/services/logo.py api/tests/test_logo.py)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python (# ── integration tests: logo endpoints ─────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block9 (docker compose exec api pytest tests/test_logo.py -v -k "tes)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python ("""Logo router — public GET + authenticated POST and DELETE.)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python (from routers.logo import router as logo_router)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python (app.include_router(logo_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block13 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block14 (docker compose ps)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block15 (docker compose exec api pytest tests/test_logo.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block16 (git add api/routers/logo.py api/main.py api/tests/test_logo.)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:python (# ── logo in PDF header ────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **code:block18 (docker compose exec api pytest tests/test_reports.py -v -k ")** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- *... and 15 more nodes in this community*
+- **PostgreSQL Tuning** (10 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Memory Configuration** (5 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Query Planner Settings** (4 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Write Performance Optimization** (3 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **VACUUM and Autovacuum** (3 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Shared Buffers** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Work Memory** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Maintenance Work Memory** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Effective Cache Size** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Statistics Target** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Parallel Query Configuration** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Join and Scan Methods** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **WAL Configuration** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Commit Delays** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Autovacuum Configuration** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Manual Vacuum Operations** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Connection Pooling** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Configuration** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Lock Management** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Lock Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Partitioning** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Range Partitioning** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Performance Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Key Metrics Queries** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- **Configuration File Example** (2 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- `.claude/skills/database-optimizer/references/postgresql-tuning.md`
 
 ## Audit Trail
 
-- EXTRACTED: 78 (100%)
+- EXTRACTED: 82 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

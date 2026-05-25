@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Task 6: Final integration test and version bump** (5 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block40 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (__version__ = "0.10.2-beta.0")** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:markdown (## [0.10.2-beta.0] — 2026-05-19)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:bash (git add api/main.py CHANGELOG.md)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Performance Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Large Payloads** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block31 (Webhook → Queue (Redis/DB) → Response (immediate))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **High Volume** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Retries** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 531]] (1 shared connections)
+- [[Community 388]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

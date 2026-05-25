@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **✅ Do** (5 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **❌ Don't** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (get_node({nodeType: "...", mode: "search_properties", proper)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// First: method, resource, operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Operation changed → requirements changed)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:block36 (Error: "body required when sendBody=true")** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Error: "body not visible" → Check displayOptions)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Bad: Adding fields that will be hidden)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Each operation has unique requirements)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Configuration Anti-Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **❌ Don't: Over-configure Upfront** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **❌ Don't: Skip Validation** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **❌ Don't: Ignore Operation Context** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Adding every possible field)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Start minimal)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Configure and deploy without validating)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Validate before deploying)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Same config for all Slack operations)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Check requirements when changing operation)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 376]] (1 shared connections)
+- [[IF: Should Notify? (Auto)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

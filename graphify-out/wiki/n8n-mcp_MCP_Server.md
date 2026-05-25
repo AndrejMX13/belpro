@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Async SQLAlchemy** (7 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **Engine & Session Setup** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **Model Definition** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **Database Dependency** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **CRUD Operations** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **Lifespan Handler** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **async-sqlalchemy.md** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **code:python (from sqlalchemy.ext.asyncio import create_async_engine, Asyn)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **code:python (from sqlalchemy.orm import Mapped, mapped_column, relationsh)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **code:python (from typing import AsyncGenerator)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **code:python (from sqlalchemy import select, update, delete)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **code:python (from contextlib import asynccontextmanager)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Design: n8n Workflow Import/Export Script** (10 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **File Layout** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Interface** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **2026-05-16-n8n-workflow-scripts-design.md** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **code:block1 (scripts/n8n_workflows.py    ← new executable script)** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **code:bash (./scripts/n8n_workflows.py import   # load n8n/workflows/*.j)** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Configuration** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Import Flow** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Export Flow** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Error Handling** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **README / SPEC Updates** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
 
 ## Relationships
 
@@ -24,7 +24,7 @@
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
 
 ## Audit Trail
 

@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Best Practices** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **✅ Do** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Don't** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **BelPro — Component Diagram** (2 connections) — `docs/images/belpro-architecture-component.md`
+- **belpro-architecture-component.md** (1 connections) — `docs/images/belpro-architecture-component.md`
+- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-architecture-component.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `docs/images/belpro-architecture-component.md`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

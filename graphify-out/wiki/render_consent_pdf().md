@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Work Date Rename + Dashboard Entry Creation Design** (10 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Frontend (`frontend/js/volunteers.js`)** (5 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Data Layer** (4 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Migration** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **API Layer** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **List views — two date columns** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Entry detail edit form (`renderLogEntryDetail`)** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Router: `api/routers/log_entries.py`** (2 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **2026-05-09-work-date-and-dashboard-entry-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:sql (ALTER TABLE log_entries RENAME COLUMN entry_date TO work_dat)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:sql (ALTER INDEX idx_entries_vol_date RENAME TO idx_entries_vol_w)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **ORM model (`api/models/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Schemas (`api/schemas/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:python (if payload.work_date is not None:)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Other routers** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Global renames** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:block4 (Dan opravljenega dela | Prostovoljec | Opis dela | Ure | Lok)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:block5 (Dan opravljenega dela | Opis dela | Ure | Lokacija | Dan vno)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:html (<div class="field">)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:javascript (const workDate = $('d-work-date').value || null;)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **"Dodaj vnos" button (volunteer detail page)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **n8n Workflows** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Module Systems** (14 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **ES Modules (ESM)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Import Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Dynamic Imports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Package.json Configuration** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Conditional Exports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Import Maps (Browser)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **CommonJS Compatibility** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Module Resolution** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Circular Dependencies** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Tree Shaking Optimization** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Module Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Node.js ESM Specifics** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **modules.md** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Named exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Named imports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Basic dynamic import)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:json ({)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// package.json with conditional exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:html (<!-- In HTML -->)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// ESM consuming CommonJS)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Explicit file extensions required in ESM)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// moduleA.js)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Write side-effect-free code for tree shaking)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Singleton pattern)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
 - *... and 2 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- `.claude/skills/javascript-pro/references/modules.md`
 
 ## Audit Trail
 

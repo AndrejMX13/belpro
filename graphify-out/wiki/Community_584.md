@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Authentication: SimpleJWT → FastAPI JWT** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django SimpleJWT** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI JWT Authentication** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django settings.py)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# auth.py - FastAPI JWT implementation)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Task 1: error_log migration + ORM model** (5 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/db/migrations/versions/013_error_log_table.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/models/error_log.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add api/db/migrations/versions/013_error_log_table.py ap)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[Community 428]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

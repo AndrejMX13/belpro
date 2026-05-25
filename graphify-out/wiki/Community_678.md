@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Security & Audit** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **n8n_audit_instance** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Full audit (default — runs both built-in + custom scan))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[list-skills.sh]] (1 shared connections)
+- [[004_log_entry_photos.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

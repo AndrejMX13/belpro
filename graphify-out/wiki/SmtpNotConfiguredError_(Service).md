@@ -4,36 +4,29 @@
 
 ## Key Concepts
 
-- **Error Patterns - JavaScript Code Node** (13 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Error #7: $env is not defined / Cannot access $env** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Solution** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **ERROR_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ Throws if N8N_BLOCK_ENV_ACCESS_IN_NODE=true)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ Token arrives as data from an upstream node that used a)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Why This Matters** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Quick Error Reference** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Best Practices** (6 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **1. Use .get() for Safe Access** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **2. Handle Empty Lists** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **3. Use List Comprehensions** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **4. Return Proper Format** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **5. Use Standard Library** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ SAFE: Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ SAFE: Check before processing)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ PYTHONIC: List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Array of objects with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ GOOD: Use standard library)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 326]] (1 shared connections)
-- [[EmsoCheckResponse (Schema)]] (1 shared connections)
-- [[Community 327]] (1 shared connections)
-- [[create_extra_dbs.sh]] (1 shared connections)
-- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
-- [[Community 457]] (1 shared connections)
-- [[Community 510]] (1 shared connections)
-- [[Community 365]] (1 shared connections)
+- [[Community 517]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Common Workflow Errors** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Workflow Validation** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **validate_workflow (Structure)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Broken Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Circular Dependencies** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. Multiple Start Nodes** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **4. Disconnected Nodes** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (validate_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Task 4: Migrate call sites to get_app_settings** (12 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block33 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/routers/log_entries.py api/routers/auth.py api/r)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- [[Community 339]] (1 shared connections)
+- [[Community 538]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 

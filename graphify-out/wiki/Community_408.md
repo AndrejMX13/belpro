@@ -4,26 +4,27 @@
 
 ## Key Concepts
 
-- **3. Data Model** (8 connections) — `SPEC.md`
-- **`volunteers`** (1 connections) — `SPEC.md`
-- **`managers`** (1 connections) — `SPEC.md`
-- **`log_entries`** (1 connections) — `SPEC.md`
-- **`log_entry_photos`** (1 connections) — `SPEC.md`
-- **`monthly_reports`** (1 connections) — `SPEC.md`
-- **`settings`** (1 connections) — `SPEC.md`
-- **`error_log`** (1 connections) — `SPEC.md`
+- **PDF Generated (Per Volunteer + Consolidated)** (3 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **Email Sent to Volunteer and Manager** (3 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **PDF Generated (Per Volunteer + Consolidated)** (3 connections) — `scripts/diagrams/fig3_reporting.png`
+- **Email Sent to Volunteer and Manager** (3 connections) — `scripts/diagrams/fig3_reporting.png`
+- **28th of Month — Automatic Trigger** (2 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **CSD Submission — Volunteer Signs and Submits** (2 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **28th of Month — Automatic Trigger** (2 connections) — `scripts/diagrams/fig3_reporting.png`
+- **CSD Submission — Volunteer Signs and Submits** (2 connections) — `scripts/diagrams/fig3_reporting.png`
 
 ## Relationships
 
-- [[DELETE /api/volunteers/{id} (delete_volunteer)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `SPEC.md`
+- `scripts/diagrams/fig3_porocanje.png`
+- `scripts/diagrams/fig3_reporting.png`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

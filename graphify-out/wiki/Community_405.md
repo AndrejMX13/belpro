@@ -1,36 +1,30 @@
 # Community 405
 
-> 9 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **conftest.py** (6 connections) — `api/tests/conftest.py`
-- **engine()** (6 connections) — `api/tests/conftest.py`
-- **db_session()** (2 connections) — `api/tests/conftest.py`
-- **client()** (2 connections) — `api/tests/conftest.py`
-- **auth()** (2 connections) — `api/tests/conftest.py`
-- **Run Alembic migrations against belpro_test, seed one Manager row.     Drops all** (1 connections) — `api/tests/conftest.py`
-- **Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo** (1 connections) — `api/tests/conftest.py`
-- **AsyncClient with get_db dependency wired to the test session.** (1 connections) — `api/tests/conftest.py`
-- **HTTP Basic Auth header for the seeded manager.** (1 connections) — `api/tests/conftest.py`
+- **3. Data Model** (8 connections) — `SPEC.md`
+- **`volunteers`** (1 connections) — `SPEC.md`
+- **`managers`** (1 connections) — `SPEC.md`
+- **`log_entries`** (1 connections) — `SPEC.md`
+- **`log_entry_photos`** (1 connections) — `SPEC.md`
+- **`monthly_reports`** (1 connections) — `SPEC.md`
+- **`settings`** (1 connections) — `SPEC.md`
+- **`error_log`** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[path]] (1 shared connections)
-- [[test_documents.py]] (1 shared connections)
-- [[monthly_reports.json]] (1 shared connections)
-- [[005_report_prefs.py]] (1 shared connections)
-- [[Evolution API (API Gateway)]] (1 shared connections)
-- [[BelPro Project Memory Public Index]] (1 shared connections)
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/conftest.py`
+- `SPEC.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (82%)
-- INFERRED: 4 (18%)
+- EXTRACTED: 15 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

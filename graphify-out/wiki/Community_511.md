@@ -4,25 +4,26 @@
 
 ## Key Concepts
 
-- **The Problem** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Returning object instead of array)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Returning array without json wrapper)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Returning plain value)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Returning items without mapping)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Incomplete structure)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **auth.py** (6 connections) — `api/core/auth.py`
+- **_verify_password()** (4 connections) — `api/core/auth.py`
+- **require_manager()** (4 connections) — `api/core/auth.py`
+- **Manager authentication — httpOnly session cookie with Basic Auth fallback.  Auth** (1 connections) — `api/core/auth.py`
+- **Verify password against DB hash or env var fallback.** (1 connections) — `api/core/auth.py`
+- **Reject requests without a valid session cookie or Basic Auth credentials.** (1 connections) — `api/core/auth.py`
 
 ## Relationships
 
-- [[Community 327]] (1 shared connections)
+- [[Code: Preveri Slike Stanje]] (3 shared connections)
+- [[GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `api/core/auth.py`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 15 (88%)
+- INFERRED: 2 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

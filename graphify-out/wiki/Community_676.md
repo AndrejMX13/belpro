@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **4. Spaces in Node Names** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block8 ({{$node.HTTP Request.json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block9 ({{$node["HTTP Request"].json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Data Table Management** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **n8n_manage_datatable** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Create a data table)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 629]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

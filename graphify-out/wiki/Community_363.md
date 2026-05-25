@@ -4,30 +4,28 @@
 
 ## Key Concepts
 
-- **emso_checksum_valid()** (7 connections) — `api/utils/emso.py`
-- **test_emso.py** (4 connections) — `api/tests/test_emso.py`
-- **test_emso_checksum_valid_accepts_valid_numbers()** (2 connections) — `api/tests/test_emso.py`
-- **test_emso_checksum_valid_rejects_bad_checksum()** (2 connections) — `api/tests/test_emso.py`
-- **test_emso_checksum_valid_rejects_malformed_input()** (2 connections) — `api/tests/test_emso.py`
-- **emso.py** (2 connections) — `api/utils/emso.py`
-- **Unit tests for the EMŠO checksum validator utility.** (1 connections) — `api/tests/test_emso.py`
-- **EMŠO (Enotna matična številka občana) validation utilities.** (1 connections) — `api/utils/emso.py`
-- **Return True if emso passes the mod-11 checksum.      Assumes the caller already** (1 connections) — `api/utils/emso.py`
+- **Pattern 3: _input.item - Current Item (Each Item Mode)** (5 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 1: Add Processing Metadata** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 2: Per-Item Validation** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 3: Conditional Processing** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# In "Run Once for Each Item" mode)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Porocila Page - Monthly Reports Overview]] (1 shared connections)
-- [[Community 404]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/test_emso.py`
-- `api/utils/emso.py`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (64%)
-- INFERRED: 8 (36%)
+- EXTRACTED: 17 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

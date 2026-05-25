@@ -4,22 +4,33 @@
 
 ## Key Concepts
 
-- **Task 6: Frontend — work_date in Entry Edit Form** (4 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (${editable ? `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (if (editable) {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Common n8n Expression Mistakes** (18 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **COMMON_MISTAKES.md** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Debugging Process** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- [[Community 663]] (1 shared connections)
+- [[Community 630]] (1 shared connections)
+- [[Community 664]] (1 shared connections)
+- [[Community 672]] (1 shared connections)
+- [[Community 669]] (1 shared connections)
+- [[Community 665]] (1 shared connections)
+- [[Community 666]] (1 shared connections)
+- [[Community 667]] (1 shared connections)
+- [[Community 668]] (1 shared connections)
+- [[Community 660]] (1 shared connections)
+- [[Community 629]] (1 shared connections)
+- [[Community 670]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

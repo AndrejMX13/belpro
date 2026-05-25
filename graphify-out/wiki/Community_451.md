@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **settings** (7 connections) — `n8n/workflows/manager_approval.json`
-- **executionOrder** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveDataErrorExecution** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveManualExecutions** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveExecutionProgress** (1 connections) — `n8n/workflows/manager_approval.json`
-- **binaryMode** (1 connections) — `n8n/workflows/manager_approval.json`
+- **Error #6: UnsupportedFunctionError (Auth Helpers Blocked)** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Solution** (3 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ BLOCKED in task runner sandbox (default since v2.0))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Parent Code node — prepare payloads, then delegate)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ Works — manual auth header, token came from upstream)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Decision Guide** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[010_monthly_reports_unique_idx.py]] (1 shared connections)
+- [[PhotoBase64Request (Schema)]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/manager_approval.json`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

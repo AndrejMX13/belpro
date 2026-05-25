@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Module 7: math - Mathematical Operations** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Basic Math Functions** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Trigonometry** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Logarithms** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import math)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import math)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import math)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Self-Help Tools** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Get Tool Documentation** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **AI Agent Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Health Check** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Overview of all tools)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Comprehensive AI workflow guide)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// Quick health check)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

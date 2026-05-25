@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 2: DB migration and Manager model field** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python ("""Add gdpr_additional_clauses to managers.)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (gdpr_additional_clauses: Mapped[str | None] = mapped_column()** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block18 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block19 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block20 (git add api/db/migrations/versions/011_manager_gdpr_clauses.)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Task 4: Evolution API service client** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import pytest)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/services/evolution.py api/tests/test_evolution_s)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 535]] (1 shared connections)
+- [[Community 495]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

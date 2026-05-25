@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **feedback_graphify_update.md** (2 connections) — `.claude/memory/feedback_graphify_update.md`
-- **code:block1 (feat: report delivery error visibility — graphify update)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
-- **Known version issue (2026-05-21)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
+- **Standard Library Reference** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Most Useful Modules** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# JSON operations)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/feedback_graphify_update.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

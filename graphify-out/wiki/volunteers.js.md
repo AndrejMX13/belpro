@@ -1,67 +1,58 @@
 # volunteers.js
 
-> 51 nodes
+> 82 nodes
 
 ## Key Concepts
 
-- **n8n MCP Workflow Management Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n Node Operation Patterns Reference** (8 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **n8n Workflow Patterns Skill README** (8 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **n8n Node Configuration Skill (SKILL.md)** (7 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **n8n Validation Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **PostgreSQL Pro Skill (SKILL.md)** (7 connections) — `.claude/skills/postgres-pro/SKILL.md`
-- **n8n Workflow Patterns Skill (SKILL.md)** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **n8n Validation Expert Skill (SKILL.md)** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **n8n Node Configuration Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **n8n_update_partial_workflow Tool** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n AI Connection Types (8 types)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n Node Configuration Skill README** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **n8n Validation False Positives Guide** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **n8n Validation Expert Skill README** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **n8n Webhook Processing Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **n8n HTTP API Integration Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **n8n Database Operations Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **n8n AI Agent Workflow Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **n8n Scheduled Tasks Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **patchNodeField Operation (Surgical String Edit)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n_validate_workflow Tool (by ID)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n Workflow Lifecycle (Create-Validate-Edit-Activate-Monitor)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n HTTP Request Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **n8n Webhook Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **n8n Postgres Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- *... and 26 more nodes in this community*
+- **test_app_settings.py** (27 connections) — `api/tests/test_app_settings.py`
+- **get_settings()** (26 connections) — `api/core/settings.py`
+- **health_detailed()** (5 connections) — `api/main.py`
+- **Settings** (5 connections) — `api/core/settings.py`
+- **test_appsettings_uses_db_int_value()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_falls_back_to_env_when_row_missing()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_passthrough_to_env()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_bool_helper_parses_truthy_strings()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_bool_helper_parses_falsy_strings()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_bool_helper_falls_back_to_default()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_str_helper_returns_db_value()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_str_helper_falls_back_to_default()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_photo_upload_respects_db_max_photos_setting()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_default()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_from_db()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_clamped_high()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_clamped_low()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_photo_upload_base64_respects_db_max_photos_setting()** (5 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_evolution_instance_name_default()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_evolution_instance_name_from_db()** (4 connections) — `api/tests/test_app_settings.py`
+- **settings.py** (3 connections) — `api/core/settings.py`
+- **test_get_admin_settings_returns_seeded_defaults()** (3 connections) — `api/tests/test_app_settings.py`
+- **test_get_admin_settings_requires_auth()** (3 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_updates_single_field()** (3 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_get_reflects_change()** (3 connections) — `api/tests/test_app_settings.py`
+- *... and 57 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[n8n MCP Workflow Management Guide]] (16 shared connections)
+- [[load_key()]] (6 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[GET /api/log-entries (list_log_entries)]] (1 shared connections)
+- [[POST /api/managers (create_manager)]] (1 shared connections)
+- [[009_rename_entry_date_to_work_date.py]] (1 shared connections)
+- [[merge_semantic.py]] (1 shared connections)
+- [[Community 402]] (1 shared connections)
+- [[Performance Testing Reference (k6)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- `.claude/skills/n8n-node-configuration/README.md`
-- `.claude/skills/n8n-node-configuration/SKILL.md`
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- `.claude/skills/n8n-validation-expert/README.md`
-- `.claude/skills/n8n-validation-expert/SKILL.md`
-- `.claude/skills/n8n-workflow-patterns/README.md`
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- `.claude/skills/postgres-pro/SKILL.md`
-- `.claude/skills/postgres-pro/references/extensions.md`
-- `.claude/skills/postgres-pro/references/jsonb.md`
-- `.claude/skills/postgres-pro/references/maintenance.md`
+- `api/core/settings.py`
+- `api/main.py`
+- `api/tests/test_app_settings.py`
 
 ## Audit Trail
 
-- EXTRACTED: 120 (87%)
-- INFERRED: 18 (13%)
+- EXTRACTED: 169 (74%)
+- INFERRED: 58 (26%)
 - AMBIGUOUS: 0 (0%)
 
 ---

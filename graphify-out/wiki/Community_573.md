@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **The Validation Loop** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Pattern from Telemetry** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Example** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:block3 (1. Configure node)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (// Iteration 1)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **🚨 CRITICAL: Webhook Data Structure** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Webhook Node Output Structure** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Correct Webhook Data Access** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (❌ WRONG: {{$json.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 339]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

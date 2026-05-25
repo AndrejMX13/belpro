@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **PasswordChangeRequest (Schema)** (0 connections) — `api/schemas/manager.py`
+- **POST /errors (internal)** (0 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/manager.py`
+- `api/routers/errors.py`
 
 ## Audit Trail
 

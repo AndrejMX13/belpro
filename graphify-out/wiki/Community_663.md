@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Standard Library Reference** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Most Useful Modules** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# JSON operations)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **1. Missing Curly Braces** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block1 ($json.email)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block2 ({{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

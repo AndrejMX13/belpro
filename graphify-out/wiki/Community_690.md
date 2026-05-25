@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **api.js** (1 connections) — `frontend/js/api.js`
-- **API** (1 connections) — `frontend/js/api.js`
+- **loadAppLog** (1 connections) — `frontend/js/errors.js`
+- **list_errors** (1 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `frontend/js/api.js`
+- `api/routers/errors.py`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 

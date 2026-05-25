@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Database Design** (10 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Normalization Levels** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Primary and Foreign Keys** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Constraints and Validation** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Indexing Strategy** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Common Design Patterns** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Temporal/Historical Data** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Soft Deletes** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Audit Trails** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **database-design.md** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- 1NF: Atomic values, no repeating groups)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- Natural vs Surrogate keys)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- CHECK constraints)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- Index foreign keys (critical for JOIN performance))** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- Polymorphic associations (flexible but harder to enforce )** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- Slowly Changing Dimension Type 2 (SCD2) - Full history)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- Soft delete pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **code:sql (-- Audit table pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
-- **Schema Design Best Practices** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Common Issues** (10 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **N+1 Query Problem** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Missing Error Handling** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Magic Numbers/Strings** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Deep Nesting** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **God Functions** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Mutable Shared State** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Missing Null Checks** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Synchronous File Operations** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **common-issues.md** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// N+1 queries - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Unhandled rejection - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Magic number - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Deep nesting - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Does too much - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Shared mutable - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Unsafe access - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **code:typescript (// Blocks event loop - BAD)** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
 
 ## Relationships
 
@@ -30,7 +30,7 @@
 
 ## Source Files
 
-- `.claude/skills/sql-pro/references/database-design.md`
+- `.claude/skills/code-reviewer/references/common-issues.md`
 
 ## Audit Trail
 

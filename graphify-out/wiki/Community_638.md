@@ -1,12 +1,13 @@
 # Community 638
 
-> 3 nodes
+> 4 nodes
 
 ## Key Concepts
 
-- **008_add_manager_notified_at.py** (2 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
-- **upgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
-- **downgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
+- **012_settings_table.py** (2 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **downgrade()** (1 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **Create settings table and seed default values.** (1 connections) — `api/db/migrations/versions/012_settings_table.py`
 
 ## Relationships
 
@@ -14,11 +15,11 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/008_add_manager_notified_at.py`
+- `api/db/migrations/versions/012_settings_table.py`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 6 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Configuration Anti-Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't: Over-configure Upfront** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't: Skip Validation** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't: Ignore Operation Context** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Adding every possible field)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Start minimal)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Configure and deploy without validating)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Validate before deploying)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Same config for all Slack operations)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Check requirements when changing operation)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Testing AI Agents** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Start with Manual Trigger** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Test Tools Independently** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Test with Standard Questions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Monitor Token Usage** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block40 (Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block41 (Manual Trigger → Tool Node → Verify output format)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block42 (1. "Hello" - Test basic response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Code node - log token usage)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Test Edge Cases** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[load-project-memory.sh]] (1 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

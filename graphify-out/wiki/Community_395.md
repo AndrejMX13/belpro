@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 8: n8n Workflows** (9 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block49 (n8n_list_workflows)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block50 (n8n_get_workflow(id="<volunteer_entry_id>"))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block51 (n8n_update_full_workflow(id="<volunteer_entry_id>", workflow)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block52 (n8n_get_workflow(id="<manager_approval_id>"))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block53 (n8n_update_full_workflow(id="<manager_approval_id>", workflo)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block54 (n8n_validate_workflow(id="<volunteer_entry_id>"))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:block55 (n8n_get_workflow(id="<volunteer_entry_id>")  → save to n8n/w)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add n8n/workflows/volunteer_entry.json n8n/workflows/man)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Task 2: Error log API endpoints + schemas + tests** (9 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/tests/test_errors.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api pytest tests/test_errors.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/schemas/error_log.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/routers/errors.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (from routers.errors import router as errors_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (app.include_router(errors_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api pytest tests/test_errors.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add api/schemas/error_log.py api/routers/errors.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 310]] (1 shared connections)
+- [[Community 428]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

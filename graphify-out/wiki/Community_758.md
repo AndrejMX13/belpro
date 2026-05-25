@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Maximum photos allowed per log entry.** (0 connections) — `api/services/app_settings.py`
+- **Reject EMŠO numbers that fail the mod-11 checksum.** (0 connections) — `api/schemas/volunteer.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 

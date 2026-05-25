@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Transaction Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 1: BEGIN/COMMIT/ROLLBACK** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 2: Atomic Operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 3: Error Rollback** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Node 1: Begin Transaction)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (-- Upsert example (atomic))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block25 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Data Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Schema Mapping** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Data Type Conversions** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Aggregation** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Code node - map schemas)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Code node - convert data types)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Code node - aggregate data)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Nalozi Stanje]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 

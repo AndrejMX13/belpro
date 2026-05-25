@@ -4,17 +4,24 @@
 
 ## Key Concepts
 
-- **Task 8: Settings UI — display, badges, read-only states** (7 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (function _waBadge(state) {)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (if (configInfo.wa_synced) {)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (<div class="field" style="margin-top:0.75rem">)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (<div class="field" style="margin-top:0.75rem">)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (ngo_whatsapp_phone: $('s-ngo-wa-phone').value.trim() || null)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **File Map** (9 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **WhatsApp Phone — Single Source of Truth Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Self-Review** (3 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **2026-05-11-whatsapp-phone-source-of-truth.md** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Context & Key Decisions** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Spec coverage** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Pre-flight checks before Task 6** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 496]] (1 shared connections)
+- [[Community 341]] (1 shared connections)
+- [[Community 530]] (1 shared connections)
+- [[Community 531]] (1 shared connections)
+- [[Community 532]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
+- [[Community 343]] (1 shared connections)
+- [[Community 391]] (1 shared connections)
+- [[Community 494]] (1 shared connections)
 
 ## Source Files
 
@@ -22,7 +29,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

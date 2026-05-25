@@ -4,29 +4,23 @@
 
 ## Key Concepts
 
-- **Built-in Functions - JavaScript Code Node** (11 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **BUILTIN_FUNCTIONS.md** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **What's NOT Available** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Validation Profiles** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **minimal** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **runtime (RECOMMENDED)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **ai-friendly** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **strict** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 452]] (1 shared connections)
-- [[Volunteer Profile Screen]] (1 shared connections)
-- [[DELETE /log-entries/{id}]] (1 shared connections)
-- [[Community 453]] (1 shared connections)
-- [[Community 455]] (1 shared connections)
-- [[UnacknowledgedCountResponse (Schema)]] (1 shared connections)
-- [[Community 454]] (1 shared connections)
+- [[Community 319]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

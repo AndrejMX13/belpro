@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Testing AI Agents** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Start with Manual Trigger** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. Test Tools Independently** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Test with Standard Questions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Monitor Token Usage** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block40 (Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block41 (Manual Trigger → Tool Node → Verify output format)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block42 (1. "Hello" - Test basic response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Code node - log token usage)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Test Edge Cases** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern 1: Try-Catch with Error Trigger** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern 2: Validation Early Exit** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern 3: Continue On Fail** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block23 (Main Flow:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block26 (Webhook → IF (validate) → [True: Process])** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block28 (Webhook → Database (critical) → Slack (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Je v urejanju?]] (1 shared connections)
+- [[Community 388]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

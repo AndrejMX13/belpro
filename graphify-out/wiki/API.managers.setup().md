@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Log Entry Location Edit + Auto-Refresh Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Task 2: Apply location update in the router** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Task 3: Add location field to the frontend edit form** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Task 4: Update the save handler** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Task 1: Extend the API update schema** (3 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **2026-05-09-log-entry-location-edit.md** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **Files** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:python (class LogEntryUpdate(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:bash (git add api/schemas/log_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:python (async def update_log_entry()** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:bash (git add api/routers/log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:javascript (<div class=\"field\" style=\"max-width:160px\">)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:javascript (<div class=\"field\" style=\"max-width:160px\">)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:javascript (try {)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:javascript (const location = $('d-location').value.trim() || null;)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Type System Mastery** (9 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Basic Type Annotations** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Generic Types** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Protocol for Structural Typing** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Advanced Type Features** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Callable Types** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Mypy Configuration** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Common Type Patterns** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Type Narrowing** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **type-system.md** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (from typing import Any)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (from typing import TypeVar, Generic, Protocol)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (from typing import Protocol, runtime_checkable)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (from typing import Literal, TypeAlias, TypedDict, NotRequire)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (from collections.abc import Callable)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:toml (# pyproject.toml)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (# Result type pattern)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **code:python (from typing import assert_type, assert_never)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
 
 ## Relationships
 
@@ -29,7 +29,7 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- `.claude/skills/python-pro/references/type-system.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **POST /api/volunteers (create_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **Automated Upgrade Script (upgrade.sh)** (0 connections) — `README.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `README.md`
 
 ## Audit Trail
 

@@ -4,24 +4,30 @@
 
 ## Key Concepts
 
-- **test_migrations.py** (3 connections) — `api/tests/test_migrations.py`
-- **migrations_engine()** (2 connections) — `api/tests/test_migrations.py`
-- **test_migration_roundtrip()** (2 connections) — `api/tests/test_migrations.py`
-- **Migration roundtrip test — runs against belpro_test_migrations (isolated DB).** (1 connections) — `api/tests/test_migrations.py`
-- **Session-scoped engine targeting belpro_test_migrations.** (1 connections) — `api/tests/test_migrations.py`
-- **stamp base → upgrade head → downgrade -1 → upgrade head all exit 0.** (1 connections) — `api/tests/test_migrations.py`
+- **Django to FastAPI Migration Guide** (12 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **migration-from-django.md** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **When to Use This Guide** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Concept Mapping: Django/DRF → FastAPI** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Cross-Reference** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Migration Checklist** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 587]] (1 shared connections)
+- [[Community 588]] (1 shared connections)
+- [[Community 433]] (1 shared connections)
+- [[Community 586]] (1 shared connections)
+- [[Community 589]] (1 shared connections)
+- [[Community 432]] (1 shared connections)
+- [[test_backup_restore.sh]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/test_migrations.py`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

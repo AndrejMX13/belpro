@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Recovery Strategies** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 3: Clean Stale Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 4: Use Auto-fix** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 1: Start Fresh** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 2: Binary Search** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (// Preview fixes (default - doesn't apply))** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Memory Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Buffer Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Window Buffer Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Summary Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[Community 339]] (1 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

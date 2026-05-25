@@ -19,7 +19,7 @@
 
 ## Relationships
 
-- [[API.auth.login()]] (1 shared connections)
+- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
 
 ## Source Files
 
