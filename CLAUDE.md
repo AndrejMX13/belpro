@@ -268,4 +268,7 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
 2. **Locate** — Use Serena `find_symbol` to find specific functions, classes, or methods within the identified files, or `find_referencing_symbols` to trace callers.
 3. **Read** — Read the actual source files to understand logic. The graph tells you which files matter; it does not replace reading them.
 4. **Infrastructure patch** — After any change to `docker-compose.yml` or `nginx/nginx.conf`, run `python scripts/graphify_infra.py` to patch `graph.json`. Do this before `graphify update .` or any wiki/report regeneration. Script: `scripts/graphify_infra.py`.
-5. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
+5. **Maintain** — After modifying code files:
+   - Run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
+   - Then run `GRAPHIFY_VIZ_NODE_LIMIT=10000 graphify cluster-only .` to regenerate `graph.html` and `GRAPH_REPORT.md`. The default node limit (5000) silently skips HTML generation for this graph — always set 10000.
+   - Wiki does **not** auto-regenerate. After `cluster-only`, rebuild it: `python scripts/rebuild_wiki.py`
