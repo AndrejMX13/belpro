@@ -270,7 +270,7 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
 4. **Infrastructure patch** — After any change to `docker-compose.yml` or `nginx/nginx.conf`, run `python scripts/graphify_infra.py` to patch `graph.json`. Do this before `graphify update .` or any wiki/report regeneration. Script: `scripts/graphify_infra.py`.
 5. **Maintain** — After modifying code files:
    - Run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
-   - Then run `GRAPHIFY_VIZ_NODE_LIMIT=10000 graphify cluster-only .` to regenerate `graph.html` and `GRAPH_REPORT.md`. The default node limit (5000) silently skips HTML generation for this graph — always set 10000.
+   - Then run `GRAPHIFY_VIZ_NODE_LIMIT=20000 graphify cluster-only .` to regenerate `graph.html` and `GRAPH_REPORT.md`. The default node limit (5000) silently skips HTML generation for this graph — always set well above the current node count (currently ~9 k nodes; 20000 gives ample headroom).
    - Wiki does **not** auto-regenerate. After `cluster-only`, rebuild it: `python scripts/rebuild_wiki.py`
 
 **Recovery** — A `graphify-good` git tag marks a known-good graph state. If an update produces unexpected results (node count drops, communities collapse), restore with:
