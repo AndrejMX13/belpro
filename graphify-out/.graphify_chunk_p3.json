@@ -1,0 +1,296 @@
+{
+  "nodes": [],
+  "edges": [
+    {
+      "source": "routers_admin_get_admin_settings",
+      "target": "services_app_settings_appsettings",
+      "relation": "instantiates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/admin.py"
+    },
+    {
+      "source": "routers_admin_update_admin_settings",
+      "target": "services_app_settings_appsettings",
+      "relation": "instantiates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/admin.py"
+    },
+    {
+      "source": "routers_admin_update_admin_settings",
+      "target": "services_app_settings_get_app_settings",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "api/routers/admin.py"
+    },
+    {
+      "source": "routers_documents_download_consent_pdf",
+      "target": "services_consent_pdf_render_consent_pdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/documents.py"
+    },
+    {
+      "source": "routers_documents_download_consent_pdf",
+      "target": "services_app_settings_get_app_settings",
+      "relation": "depends_on",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/documents.py"
+    },
+    {
+      "source": "routers_documents_download_consent_pdf",
+      "target": "services_app_settings_photo_retention_days",
+      "relation": "reads_setting",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/documents.py"
+    },
+    {
+      "source": "services_consent_pdf_render_consent_pdf",
+      "target": "services_report_pdf_ngoinfo",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/services/consent_pdf.py"
+    },
+    {
+      "source": "services_consent_pdf_render_consent_pdf",
+      "target": "services_report_pdf_ngo_header_html",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/services/consent_pdf.py"
+    },
+    {
+      "source": "api_services_consent_pdf_py",
+      "target": "api_services_report_pdf_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/services/consent_pdf.py"
+    },
+    {
+      "source": "api_services_consent_pdf_py",
+      "target": "api_services_logo_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/services/consent_pdf.py"
+    },
+    {
+      "source": "services_consent_pdf_render_consent_pdf",
+      "target": "services_logo_logo_src",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/services/consent_pdf.py"
+    },
+    {
+      "source": "routers_reports_generate_monthly_pdf",
+      "target": "services_report_pdf_render_volunteer_pdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_generate_monthly_pdf",
+      "target": "services_report_pdf_render_summary_pdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_generate_monthly_pdf",
+      "target": "services_report_pdf_ngoinfo",
+      "relation": "uses",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_generate_monthly_pdf",
+      "target": "services_logo_logo_src",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_email_send_email",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_evolution_evolutionclient",
+      "relation": "instantiates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_evolution_evolutionclient_send_document",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_report_storage_persist_report",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_report_pdf_render_volunteer_pdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_report_pdf_render_summary_pdf",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "routers_reports_send_monthly_reports",
+      "target": "services_logo_logo_src",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "monthly_reports_http_send",
+      "target": "routers_reports_send_monthly_reports",
+      "relation": "http_calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "n8n/workflows/monthly_reports.json"
+    },
+    {
+      "source": "n8n_workflows_monthly_reports_json",
+      "target": "api_routers_reports_py",
+      "relation": "triggers",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "n8n/workflows/monthly_reports.json"
+    },
+    {
+      "source": "monthly_reports_http_send",
+      "target": "services_email_send_email",
+      "relation": "triggers_indirectly",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "n8n/workflows/monthly_reports.json"
+    },
+    {
+      "source": "monthly_reports_http_send",
+      "target": "services_evolution_evolutionclient_send_document",
+      "relation": "triggers_indirectly",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "n8n/workflows/monthly_reports.json"
+    },
+    {
+      "source": "monthly_reports_http_send",
+      "target": "services_report_pdf_render_volunteer_pdf",
+      "relation": "triggers_indirectly",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "n8n/workflows/monthly_reports.json"
+    },
+    {
+      "source": "monthly_reports_http_send",
+      "target": "services_report_storage_persist_report",
+      "relation": "triggers_indirectly",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "n8n/workflows/monthly_reports.json"
+    },
+    {
+      "source": "api_routers_reports_py",
+      "target": "api_services_email_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "api_routers_reports_py",
+      "target": "api_services_evolution_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "api_routers_reports_py",
+      "target": "api_services_logo_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "api_routers_reports_py",
+      "target": "api_services_report_pdf_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "api_routers_reports_py",
+      "target": "api_services_report_storage_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/reports.py"
+    },
+    {
+      "source": "api_routers_documents_py",
+      "target": "api_services_app_settings_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/documents.py"
+    },
+    {
+      "source": "api_routers_documents_py",
+      "target": "api_services_consent_pdf_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/documents.py"
+    },
+    {
+      "source": "api_routers_admin_py",
+      "target": "api_services_app_settings_py",
+      "relation": "imports_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/admin.py"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
