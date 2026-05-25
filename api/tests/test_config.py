@@ -5,14 +5,16 @@ import pytest
 from httpx import AsyncClient
 
 
+@pytest.mark.anyio
 async def test_get_evolution_instance_no_auth_required(client: AsyncClient) -> None:
     """GET /api/config/evolution-instance is publicly accessible."""
     r = await client.get("/api/config/evolution-instance")
     assert r.status_code == 200
 
 
+@pytest.mark.anyio
 async def test_get_evolution_instance_returns_instance_name(client: AsyncClient) -> None:
-    """Response contains a non-empty instance_name string."""
+    """Response contains a non-empty instance_name string matching the seeded default."""
     r = await client.get("/api/config/evolution-instance")
     data = r.json()
     assert "instance_name" in data
@@ -20,6 +22,7 @@ async def test_get_evolution_instance_returns_instance_name(client: AsyncClient)
     assert len(data["instance_name"]) > 0
 
 
+@pytest.mark.anyio
 async def test_get_evolution_instance_reflects_db_value(
     client: AsyncClient,
     auth: dict,
