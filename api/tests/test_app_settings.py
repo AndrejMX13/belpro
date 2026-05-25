@@ -24,6 +24,17 @@ async def test_settings_table_seeded(db_session: AsyncSession) -> None:
     assert by_name["session_duration_hours"].value == "24"
 
 
+async def test_settings_table_seeded_evolution_instance_name(db_session: AsyncSession) -> None:
+    """Migration 015 seeds the evolution_instance_name row."""
+    from models.app_setting import AppSetting
+
+    rows = (await db_session.execute(select(AppSetting))).scalars().all()
+    by_name = {r.name: r for r in rows}
+    assert "evolution_instance_name" in by_name
+    assert by_name["evolution_instance_name"].value == "belpro"
+    assert by_name["evolution_instance_name"].value_type == "str"
+
+
 # ── Unit tests for AppSettings ────────────────────────────────────────────────
 
 def test_appsettings_uses_db_int_value() -> None:
