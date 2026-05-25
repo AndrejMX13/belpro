@@ -371,7 +371,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/chat/getBase64FromMediaMessage/belpro",
+        "url": "={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessage/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -479,7 +479,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -584,7 +584,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -620,7 +620,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -696,7 +696,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -788,7 +788,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -824,7 +824,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -896,7 +896,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1087,7 +1087,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1250,7 +1250,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1677,7 +1677,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1726,7 +1726,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/chat/getBase64FromMediaMessage/belpro",
+        "url": "={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessage/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1778,7 +1778,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1827,7 +1827,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2096,7 +2096,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2128,6 +2128,20 @@
           "name": "BelPro Evolution API"
         }
       }
+    },
+    {
+      "parameters": {
+        "url": "http://api:8000/api/config/evolution-instance",
+        "options": {}
+      },
+      "id": "fetch_config",
+      "name": "Fetch Config",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        500,
+        304
+      ]
     }
   ],
   "connections": {
@@ -2502,7 +2516,7 @@
       "main": [
         [
           {
-            "node": "HTTP: Pridobi Upravljalca",
+            "node": "Fetch Config",
             "type": "main",
             "index": 0
           }
@@ -2955,6 +2969,17 @@
           }
         ]
       ]
+    },
+    "Fetch Config": {
+      "main": [
+        [
+          {
+            "node": "HTTP: Pridobi Upravljalca",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -3381,7 +3406,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/chat/getBase64FromMediaMessage/belpro",
+          "url": "={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessage/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3489,7 +3514,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3594,7 +3619,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3630,7 +3655,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3706,7 +3731,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3798,7 +3823,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3834,7 +3859,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -3906,7 +3931,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4097,7 +4122,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4260,7 +4285,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4687,7 +4712,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4736,7 +4761,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/chat/getBase64FromMediaMessage/belpro",
+          "url": "={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessage/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4788,7 +4813,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4837,7 +4862,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -5106,7 +5131,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
