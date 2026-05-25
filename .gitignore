@@ -141,6 +141,9 @@ npm-debug.log*
 # -----------------------------------------------------------------------------
 # Graphify
 # -----------------------------------------------------------------------------
+# Auto-generated dated backup folders (graphify cluster-only safety copies)
+graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
+graphify-out/[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]_*/
 # Machine-specific and regenerated temp files — do not commit
 graphify-out/.graphify_python
 graphify-out/.graphify_root
