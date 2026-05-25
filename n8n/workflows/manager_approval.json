@@ -207,7 +207,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -256,7 +256,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -300,7 +300,7 @@
       ],
       "parameters": {
         "method": "POST",
-        "url": "http://evolution-api:8080/message/sendText/belpro",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -476,6 +476,20 @@
       "parameters": {
         "jsCode": "const checkData = $('Code: Check Next Entry').first().json;\nconst manager = $input.first().json;\nconst volunteer = $('HTTP: GET Volunteer').first().json;\n\nconst mgrJid = (manager.phone || '').replace(/[^0-9]/g, '') + '@s.whatsapp.net';\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\n\nconst d = new Date(checkData.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = checkData.unnotified_count > 1 ? `\\n\\nV vrsti: ${checkData.unnotified_count - 1} vnos(ov)` : '';\n\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${checkData.hours} ur\\n📝 ${checkData.activity_description}\\n📍 ${checkData.location || 'ni navedeno'}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\n\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
       }
+    },
+    {
+      "parameters": {
+        "url": "http://api:8000/api/config/evolution-instance",
+        "options": {}
+      },
+      "id": "fetch_config",
+      "name": "Fetch Config",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        380,
+        400
+      ]
     }
   ],
   "connections": {
@@ -483,7 +497,7 @@
       "main": [
         [
           {
-            "node": "Code: Parse Action",
+            "node": "Fetch Config",
             "type": "main",
             "index": 0
           }
@@ -491,6 +505,17 @@
       ]
     },
     "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Config": {
       "main": [
         [
           {
@@ -932,7 +957,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -981,7 +1006,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -1025,7 +1050,7 @@
         ],
         "parameters": {
           "method": "POST",
-          "url": "http://evolution-api:8080/message/sendText/belpro",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
