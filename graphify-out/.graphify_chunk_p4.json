@@ -1,0 +1,536 @@
+{
+  "nodes": [],
+  "edges": [
+    {
+      "source": "spec_manager_approval_design",
+      "target": "n8n_manager_approval_workflow",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "manager_approval_workflow",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "log_entries_approve_log_entry",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "log_entries_reject_log_entry",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "manager_approval_http_approve",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "manager_approval_http_reject",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "manager_approval_http_get_pending",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_workflow",
+      "target": "manager_approval_workflow",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_manager_approval_workflow",
+      "target": "n8n_workflows_manager_approval_json",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_log_entry_location_edit_design",
+      "target": "log_entry_router",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md"
+    },
+    {
+      "source": "spec_log_entry_location_edit_design",
+      "target": "log_entry_schema",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md"
+    },
+    {
+      "source": "spec_log_entry_location_edit_design",
+      "target": "volunteers_js",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md"
+    },
+    {
+      "source": "spec_log_entry_location_edit_design",
+      "target": "log_entries_update_log_entry",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md"
+    },
+    {
+      "source": "spec_log_entry_location_edit_design",
+      "target": "routers_log_entries_update_log_entry",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md"
+    },
+    {
+      "source": "spec_httponly_cookie_auth_design",
+      "target": "auth_login",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_cookie_auth_design",
+      "target": "auth_logout",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_cookie_auth_design",
+      "target": "router_auth_login",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_cookie_auth_design",
+      "target": "router_auth_logout",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_cookie_auth_design",
+      "target": "api_routers_auth_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_cookie_auth_design",
+      "target": "services_app_settings_session_duration_hours",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_auth_router",
+      "target": "api_routers_auth_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_auth_router",
+      "target": "routers_auth_login",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_auth_router",
+      "target": "routers_auth_logout",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_httponly_belpro_session_cookie",
+      "target": "routers_auth_login",
+      "relation": "specifies",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "services_app_settings_appsettings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "api_services_app_settings_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "admin_get_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "admin_update_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "api_routers_admin_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "services_app_settings_max_photos_per_entry",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "services_app_settings_photo_retention_days",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_settings_table_design",
+      "target": "services_app_settings_session_duration_hours",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_appsettings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_get_app_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_appsettings_init",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_appsettings_int",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_appsettings_bool",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_appsettings_str",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_app_settings_class",
+      "target": "services_app_settings_appsettings_getattr",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_admin_router",
+      "target": "api_routers_admin_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_admin_router",
+      "target": "routers_admin_get_admin_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_admin_router",
+      "target": "routers_admin_update_admin_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_admin_router",
+      "target": "admin_get_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_admin_router",
+      "target": "admin_update_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-20-settings-table-design.md"
+    },
+    {
+      "source": "spec_auto_monthly_reports_design",
+      "target": "services_app_settings_report_auto_day",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "spec_auto_monthly_reports_design",
+      "target": "services_app_settings_report_auto_period",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "spec_auto_monthly_reports_design",
+      "target": "routers_admin_update_admin_settings",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "spec_auto_monthly_reports_design",
+      "target": "routers_admin_notify_ops",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "spec_auto_monthly_reports_design",
+      "target": "api_routers_admin_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "spec_auto_monthly_reports_design",
+      "target": "api_services_app_settings_py",
+      "relation": "specifies",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "spec_ops_server",
+      "target": "routers_admin_notify_ops",
+      "relation": "specifies",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md"
+    },
+    {
+      "source": "plan_manager_approval",
+      "target": "manager_approval_workflow",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "plan_manager_approval",
+      "target": "n8n_workflows_manager_approval_json",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "plan_manager_approval",
+      "target": "manager_approval_http_approve",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "plan_manager_approval",
+      "target": "manager_approval_http_reject",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "plan_manager_approval",
+      "target": "log_entries_approve_log_entry",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "plan_manager_approval",
+      "target": "log_entries_reject_log_entry",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "n8n_manager_approval_workflow",
+      "target": "manager_approval_workflow",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "n8n_manager_approval_workflow",
+      "target": "n8n_workflows_manager_approval_json",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-07-manager-approval.md"
+    },
+    {
+      "source": "plan_log_entry_location_edit",
+      "target": "log_entries_update_log_entry",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-09-log-entry-location-edit.md"
+    },
+    {
+      "source": "plan_log_entry_location_edit",
+      "target": "routers_log_entries_update_log_entry",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-09-log-entry-location-edit.md"
+    },
+    {
+      "source": "log_entry_schema",
+      "target": "routers_log_entries_update_log_entry",
+      "relation": "implements",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "docs/superpowers/plans/2026-05-09-log-entry-location-edit.md"
+    },
+    {
+      "source": "log_entry_router",
+      "target": "api_routers_log_entries_py",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-09-log-entry-location-edit.md"
+    },
+    {
+      "source": "log_entry_router",
+      "target": "routers_log_entries_update_log_entry",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-09-log-entry-location-edit.md"
+    },
+    {
+      "source": "spec_manager_approval_design",
+      "target": "plan_manager_approval",
+      "relation": "specifies",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/superpowers/specs/2026-05-07-manager-approval-design.md"
+    },
+    {
+      "source": "spec_log_entry_location_edit_design",
+      "target": "plan_log_entry_location_edit",
+      "relation": "specifies",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
