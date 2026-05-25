@@ -23,6 +23,19 @@ Vsaka NVO poganja lastno, neodvisno instanco BelPro. Prostovoljci komunicirajo i
 
 ![BelPro Arhitektura](docs/images/architecture_sl.svg)
 
+<table>
+<tr>
+  <td align="center"><a href="docs/images/belpro-arhitektura-komponente.svg"><img src="docs/images/belpro-arhitektura-komponente.svg" width="380" alt="Diagram komponent BelPro"></a></td>
+  <td align="center"><a href="docs/images/belpro-arhitektura-zaporedje.svg"><img src="docs/images/belpro-arhitektura-zaporedje.svg" width="380" alt="Diagram zaporedja BelPro"></a></td>
+</tr>
+<tr>
+  <td align="center"><strong>Diagram storitev</strong> — osem Docker storitev, njihove vloge in komunikacija med njimi</td>
+  <td align="center"><strong>Potek v korakih</strong> — glasovno sporočilo prostovoljca skozi transkripcijo in odobritev vodje do mesečnega poročila PDF</td>
+</tr>
+</table>
+
+> Diagrami so ustvarjeni iz izvorne kode Mermaid v `docs/images/`. Po urejanju zaženite `python scripts/render_diagrams.py`. Dve vrsti povezav še nista zajeti: klici fetch() nadzorne plošče na posamezne končne točke API in registracija webhook Evolution API → n8n (nastavitev med izvajanjem, ni v izvorni kodi).
+
 ### Komponente
 
 | Komponenta | Tehnologija | Vloga |

@@ -23,6 +23,19 @@ Each NGO runs its own independent Belpro instance. Volunteers interact exclusive
 
 ![BelPro Architecture](docs/images/architecture.svg)
 
+<table>
+<tr>
+  <td align="center"><a href="docs/images/belpro-architecture-component.svg"><img src="docs/images/belpro-architecture-component.svg" width="380" alt="BelPro component diagram"></a></td>
+  <td align="center"><a href="docs/images/belpro-architecture-sequence.svg"><img src="docs/images/belpro-architecture-sequence.svg" width="380" alt="BelPro sequence diagram"></a></td>
+</tr>
+<tr>
+  <td align="center"><strong>Service map</strong> — the eight Docker services, their roles, and how they communicate at runtime</td>
+  <td align="center"><strong>Flow walkthrough</strong> — a volunteer voice message traced through transcription and manager approval to the monthly PDF report</td>
+</tr>
+</table>
+
+> Diagrams are generated from Mermaid source in `docs/images/`. Run `python scripts/render_diagrams.py` to regenerate after edits. Two connection types are not yet captured: the dashboard's fetch() calls to specific API endpoints, and the Evolution API → n8n webhook registration (a runtime setting, not in source).
+
 ### Components
 
 | Component | Technology | Role |

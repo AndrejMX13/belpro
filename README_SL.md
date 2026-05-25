@@ -89,6 +89,8 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 
 ## Tehnološki sklad (Stack)
 
+<a href="docs/images/belpro-arhitektura-komponente.svg"><img src="docs/images/belpro-arhitektura-komponente.svg" width="780" alt="BelPro Arhitektura"></a>
+
 | Storitev | Tehnologija | Vrata (Port) |
 |---------|-----------|------|
 | Zbirka podatkov | PostgreSQL 18 | interno |

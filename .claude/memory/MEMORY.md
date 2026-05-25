@@ -18,6 +18,9 @@ Project knowledge that travels with the repo. Load individual files when relevan
 - [Serena replace_symbol_body pitfalls](feedback_serena_replace_symbol.md) — drops decorators; corrupts module-level strings; use Edit tool instead
 - [Serena memory](reference_serena_memory.md) — Serena memory directory currently empty (all migrated to Claude Code memory); tools may be used again in future
 
+## Tooling — Diagrams
+- [render_diagrams script](reference_render_diagrams.md) — `python scripts/render_diagrams.py` re-renders all Mermaid .md files in docs/images/ to SVG; run after editing any diagram source
+
 ## Tooling — graphify
 - [graphify orientation](feedback_graphify_orientation.md) — always read graphify wiki first to locate files; grep/Serena only after
 - [graphify update](feedback_graphify_update.md) — run `graphify update .` after every session that modifies code files

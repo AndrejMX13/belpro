@@ -86,6 +86,8 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 
 ## Stack
 
+<a href="docs/images/belpro-architecture-component.svg"><img src="docs/images/belpro-architecture-component.svg" width="780" alt="BelPro Architecture"></a>
+
 | Service | Technology | Port |
 |---------|-----------|------|
 | Database | PostgreSQL 18 | internal |
