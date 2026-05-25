@@ -100,6 +100,11 @@ class AppSettings:
         """Number of days local backup archives are kept before pruning."""
         return max(1, self._int("backup_retention_days", 30))
 
+    @property
+    def evolution_instance_name(self) -> str:
+        """Evolution API WhatsApp instance name. DB-first, env-fallback."""
+        return self._str("evolution_instance_name", self._env.evolution_instance_name) or self._env.evolution_instance_name
+
     # ── passthrough for all other env settings ─────────────────────────────────
 
     def __getattr__(self, name: str) -> object:

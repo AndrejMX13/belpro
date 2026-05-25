@@ -311,6 +311,26 @@ def test_appsettings_report_auto_hour_clamped_low() -> None:
     assert s.report_auto_hour == 0
 
 
+def test_appsettings_evolution_instance_name_default() -> None:
+    """Returns env default when no DB row exists."""
+    from core.settings import get_settings
+    from services.app_settings import AppSettings
+
+    env = get_settings()
+    settings = AppSettings(env, {})
+    assert settings.evolution_instance_name == env.evolution_instance_name
+
+
+def test_appsettings_evolution_instance_name_from_db() -> None:
+    """Returns DB value when row exists, overriding env default."""
+    from core.settings import get_settings
+    from services.app_settings import AppSettings
+
+    env = get_settings()
+    settings = AppSettings(env, {"evolution_instance_name": "myinstance"})
+    assert settings.evolution_instance_name == "myinstance"
+
+
 async def test_photo_upload_base64_respects_db_max_photos_setting(
     client: AsyncClient,
     auth: dict,
