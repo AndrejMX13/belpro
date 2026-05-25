@@ -277,4 +277,4 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
 ```
 git checkout graphify-good -- graphify-out/
 ```
-Re-apply the tag manually after verifying a new state is good: `git tag -f graphify-good HEAD`. Do not apply it automatically — verify first.
+Re-apply the tag manually after verifying a new state of the graph is good: `git tag -f graphify-good HEAD`. Do not apply it automatically — verify first.
