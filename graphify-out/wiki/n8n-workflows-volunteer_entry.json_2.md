@@ -18,13 +18,13 @@
 - [[GET /api/log-entries/{id} (get_log_entry)]] `EXTRACTED`
 
 ### calls_api_endpoints
-- [[api (service)]]
+- [[api]]
 
 ### calls_as_sub_workflow
 - [[n8n/workflows/manager_approval.json]]
 
 ### calls_for_transcription
-- [[whisper (service)]]
+- [[whisper]]
 
 ### contains
 - [[connections]] `EXTRACTED`
@@ -52,7 +52,7 @@
 - [[scripts/n8n_workflows.py]]
 
 ### sends_whatsapp_via
-- [[evolution-api (service)]]
+- [[evolution-api]]
 
 ---
 

@@ -45,13 +45,13 @@
 - [[scripts/n8n_workflows.py]]
 
 ### sends_whatsapp_notifications_via
-- [[evolution-api (service)]]
+- [[evolution-api]]
 
 ### specifies
 - [[manager_approval.json n8n Workflow]] `EXTRACTED`
 
 ### updates_entry_status_via
-- [[api (service)]]
+- [[api]]
 
 ---
 

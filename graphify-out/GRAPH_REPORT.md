@@ -5,7 +5,7 @@
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 2338 nodes · 3452 edges · 283 communities (146 shown, 137 thin omitted)
+- 2341 nodes · 3461 edges · 283 communities (146 shown, 137 thin omitted)
 - Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 625 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -809,7 +809,7 @@ Cohesion: 0.06
 Nodes (51): AppSetting (ORM), Base (DeclarativeBase), ErrorLog (ORM), LogEntry (ORM), EntryStatus (Enum), LogEntryPhoto (ORM), Manager (ORM), MonthlyReport (ORM) (+43 more)
 
 ## Knowledge Gaps
-- **467 isolated node(s):** `SessionStart`, `PreToolUse`, `allow`, `enabledMcpjsonServers`, `enableAllProjectMcpServers` (+462 more)
+- **469 isolated node(s):** `SessionStart`, `PreToolUse`, `allow`, `enabledMcpjsonServers`, `enableAllProjectMcpServers` (+464 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **137 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -829,4 +829,4 @@ _Questions this graph is uniquely positioned to answer:_
 - **Are the 37 inferred relationships involving `log_entry_factory()` (e.g. with `test_analytics_summary_counts_approved_hours()` and `test_analytics_rejected_hours_excluded()`) actually correct?**
   _`log_entry_factory()` has 37 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `SessionStart`, `PreToolUse`, `allow` to the rest of the system?**
-  _899 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _901 weakly-connected nodes found - possible documentation gaps or missing edges._
