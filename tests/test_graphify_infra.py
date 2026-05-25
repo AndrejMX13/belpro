@@ -181,3 +181,13 @@ def test_no_self_calls(tmp_graph):
     data = load(g)
     for edge in data["links"]:
         assert edge["source"] != edge["target"], f"self-call edge found: {edge}"
+
+
+def test_missing_graph_file_raises(tmp_path):
+    missing = tmp_path / "nonexistent.json"
+    c = tmp_path / "docker-compose.yml"
+    c.write_text(MINIMAL_COMPOSE, encoding="utf-8")
+    n = tmp_path / "nginx.conf"
+    n.write_text(MINIMAL_NGINX, encoding="utf-8")
+    with pytest.raises(SystemExit):
+        graphify_infra.inject(missing, c, n)

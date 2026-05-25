@@ -34,6 +34,12 @@ NGINX_FILE = _PROJECT_ROOT / "nginx" / "nginx.conf"
 _NGINX_UPSTREAM_RE = re.compile(r"set\s+\$\w+\s+(\w[\w-]*):\d+")
 
 # ---------------------------------------------------------------------------
+# The Docker service name that corresponds to the nginx container.
+# Used as the source node in proxies_to edges extracted from nginx.conf.
+# ---------------------------------------------------------------------------
+_NGINX_SERVICE_NAME = "frontend"
+
+# ---------------------------------------------------------------------------
 # Regex: match http(s)://hostname:port  OR  http(s)://hostname  in env values
 # ---------------------------------------------------------------------------
 _ENV_URL_RE = re.compile(r"https?://([a-zA-Z][a-zA-Z0-9_-]*)(?::\d+)?")
@@ -151,23 +157,28 @@ def _extract_compose_data(
     return nodes, edges
 
 
-def _extract_nginx_edges(nginx_text: str) -> list[dict[str, Any]]:
+def _extract_nginx_edges(nginx_text: str, known_services: set[str]) -> list[dict[str, Any]]:
     """
     Extract proxies_to edges from nginx config.
 
     Matches the variable-upstream pattern:  set $<var> <hostname>:<port>
-    Source is always service_frontend (the nginx container).
+    Source is always ``service_{_NGINX_SERVICE_NAME}`` (the nginx container).
+    Only emits an edge when the resolved hostname is present in ``known_services``
+    to avoid dangling edges pointing at non-existent nodes.
     """
+    src_id = f"service_{_NGINX_SERVICE_NAME}"
     edges: list[dict[str, Any]] = []
     seen: set[str] = set()
     for match in _NGINX_UPSTREAM_RE.finditer(nginx_text):
         hostname = match.group(1)
+        if hostname not in known_services:
+            continue
         tgt_id = _service_node_id(hostname)
         if tgt_id not in seen:
             seen.add(tgt_id)
             edges.append(
                 _make_edge(
-                    "service_frontend",
+                    src_id,
                     tgt_id,
                     "proxies_to",
                     "nginx/nginx.conf",
@@ -188,6 +199,10 @@ def inject(
     Reads the three source files, patches graph.json in place (idempotent),
     and returns a summary dict with keys 'nodes_added' and 'edges_added'.
     """
+    if not graph_file.exists():
+        print(f"ERROR: graph.json not found at {graph_file}. Run 'graphify update .' first.")
+        raise SystemExit(1)
+
     # Read graph (UTF-8 with optional BOM)
     raw = graph_file.read_bytes().decode("utf-8-sig")
     graph: dict[str, Any] = json.loads(raw)
@@ -203,11 +218,12 @@ def inject(
     # Parse compose
     compose_text = compose_file.read_text(encoding="utf-8")
     compose = yaml.safe_load(compose_text)
+    services: dict[str, Any] = (compose or {}).get("services", {})
     new_nodes, compose_edges = _extract_compose_data(compose)
 
     # Parse nginx
     nginx_text = nginx_file.read_text(encoding="utf-8")
-    nginx_edges = _extract_nginx_edges(nginx_text)
+    nginx_edges = _extract_nginx_edges(nginx_text, set(services.keys()))
 
     all_edges = compose_edges + nginx_edges
 
