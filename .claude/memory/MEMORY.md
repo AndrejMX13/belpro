@@ -23,6 +23,7 @@ Project knowledge that travels with the repo. Load individual files when relevan
 - [graphify update](feedback_graphify_update.md) — run `graphify update .` after every session that modifies code files
 - [graphify recovery scripts](reference_graphify_recovery.md) — 4-step recovery order when subagents write results to notifications instead of disk
 - [graphify HTML large graph](feedback_graphify_html.md) — graph.html skipped (8 553 nodes > 5 000 limit); use `node_limit=1` to get aggregated community meta-graph instead
+- [graphify infra script](reference_graphify_infra_script.md) — scripts/graphify_infra.py patches graph.json with Docker service topology; run after compose/nginx changes
 
 ## n8n Workflows
 - [n8n workflow edits](feedback_n8n_workflow_edits.md) — edit JSON on disk + import via script; never pass full workflow through subagents or n8n-mcp
