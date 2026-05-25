@@ -1430,9 +1430,9 @@
     "semantic_hash": "8e8746452263b4d317a2bc05d55215f7"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CLAUDE.md": {
-    "mtime": 1779715370.3797977,
-    "ast_hash": "b5400e1c1382f544a64b1969a7041e34",
-    "semantic_hash": ""
+    "mtime": 1779626339.792435,
+    "ast_hash": "a26476290908c1d1b85a51779bd942fd",
+    "semantic_hash": "a26476290908c1d1b85a51779bd942fd"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CODE_OF_CONDUCT.md": {
     "mtime": 1778302005.694806,
@@ -1460,14 +1460,14 @@
     "semantic_hash": "54f16bc9f4158623b0a5b343ccedaf63"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README.md": {
-    "mtime": 1779720927.8326168,
-    "ast_hash": "eb7dbbcbfeb7423bf77e4f26ecfe218b",
-    "semantic_hash": ""
+    "mtime": 1779632279.86088,
+    "ast_hash": "4ed2c01529ea7e73313182d27a2038df",
+    "semantic_hash": "4ed2c01529ea7e73313182d27a2038df"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README_SL.md": {
-    "mtime": 1779720932.3257804,
-    "ast_hash": "a30d62f2aa90bd17dceb99d9862b8327",
-    "semantic_hash": ""
+    "mtime": 1779632287.010954,
+    "ast_hash": "87dad65a6665433d75ffe73f82f4672a",
+    "semantic_hash": "87dad65a6665433d75ffe73f82f4672a"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ROADMAP.md": {
     "mtime": 1779457763.420167,
@@ -1480,14 +1480,14 @@
     "semantic_hash": "6b6addb540990e1fee7894b15c2e5aff"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC.md": {
-    "mtime": 1779721694.7251778,
-    "ast_hash": "48c2ca9e462b54080cba919a20e9c850",
-    "semantic_hash": ""
+    "mtime": 1779633625.5865996,
+    "ast_hash": "da7b9a7881075d60051ceda19ebba3c8",
+    "semantic_hash": "da7b9a7881075d60051ceda19ebba3c8"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC_SL.md": {
-    "mtime": 1779721701.6963367,
-    "ast_hash": "2843f316df594557b34cc37a4192099b",
-    "semantic_hash": ""
+    "mtime": 1779633629.202582,
+    "ast_hash": "adb83c77002948cbd8dac014de9ef3b8",
+    "semantic_hash": "adb83c77002948cbd8dac014de9ef3b8"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\skills\\code-documenter\\SKILL.md": {
     "mtime": 1778941473.9207306,
@@ -2540,9 +2540,9 @@
     "semantic_hash": "b04c2131c6a4685598d758e97809ab9e"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\memory\\MEMORY.md": {
-    "mtime": 1779720635.8646863,
-    "ast_hash": "5b3df414a11554a8e8a46c03f40bb095",
-    "semantic_hash": ""
+    "mtime": 1779638146.3802807,
+    "ast_hash": "0e0478c693c185ee265ab0d15ee5ea32",
+    "semantic_hash": "0e0478c693c185ee265ab0d15ee5ea32"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\memory\\n8n_api_access.md": {
     "mtime": 1779615206.2969043,
@@ -2623,85 +2623,5 @@
     "mtime": 1779639490.2678342,
     "ast_hash": "048358fd91e0749a4b1e3e636d924ff7",
     "semantic_hash": "048358fd91e0749a4b1e3e636d924ff7"
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\graphify_infra.py": {
-    "mtime": 1779715686.8260403,
-    "ast_hash": "d2bb507babd33f259e8c05d8b2f10a19",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\render_diagrams.py": {
-    "mtime": 1779720606.8316905,
-    "ast_hash": "de100b887526200e65c59f84845cf0e0",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\tests\\test_graphify_infra.py": {
-    "mtime": 1779715706.3782122,
-    "ast_hash": "729923c092c1681ab34ad4966cad866c",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\memory\\reference_graphify_infra_script.md": {
-    "mtime": 1779715494.916899,
-    "ast_hash": "fd1c561233de3262ef4fdc27a15719f6",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\memory\\reference_render_diagrams.md": {
-    "mtime": 1779720628.0215108,
-    "ast_hash": "5f082312d962640c93a12309d4ea07ce",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-architecture-component.md": {
-    "mtime": 1779717333.4764977,
-    "ast_hash": "1291889522dcbaba474e5ff5ad14106a",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-architecture-sequence.md": {
-    "mtime": 1779717349.726283,
-    "ast_hash": "7350ea33f5afbb080d667f27b15483a8",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-arhitektura-komponente.md": {
-    "mtime": 1779719992.507494,
-    "ast_hash": "efeceb2d7a98d72267e847080a3f8fa8",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-arhitektura-zaporedje.md": {
-    "mtime": 1779720010.3016891,
-    "ast_hash": "ee2b43693abf6aef91d6bc5733366da9",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\plans\\2026-05-25-graphify-connect-isolated-communities.md": {
-    "mtime": 1779694906.8416035,
-    "ast_hash": "60edd9c6a2e4d5e2b5ef86d38e397b60",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\plans\\2026-05-25-graphify-infra-layer.md": {
-    "mtime": 1779714550.6506374,
-    "ast_hash": "35184c93c9788225a6bc2bd98c4ed622",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\specs\\2026-05-25-graphify-infra-layer-design.md": {
-    "mtime": 1779714400.863767,
-    "ast_hash": "9c178ff98ab29190f45968633a19da44",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-architecture-component.svg": {
-    "mtime": 1779727325.3784645,
-    "ast_hash": "90c7fff9c66a51b368d9d73400f93dc6",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-architecture-sequence.svg": {
-    "mtime": 1779727326.2337196,
-    "ast_hash": "3b158cc8ea112f3270d40215f0d4caa9",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-arhitektura-komponente.svg": {
-    "mtime": 1779727327.1816025,
-    "ast_hash": "8ad863c38eb4574fbd734c0569fe478b",
-    "semantic_hash": ""
-  },
-  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\belpro-arhitektura-zaporedje.svg": {
-    "mtime": 1779727328.0589285,
-    "ast_hash": "ffb6c4ef1f71a0e1c2775eb17708f1ef",
-    "semantic_hash": ""
   }
 }
