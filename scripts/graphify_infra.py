@@ -227,13 +227,24 @@ def inject(
 
     all_edges = compose_edges + nginx_edges
 
-    # Inject nodes
+    # Build a lookup from node ID to index for in-place patching
+    node_index: dict[str, int] = {n["id"]: i for i, n in enumerate(existing_nodes)}
+
+    # Inject nodes (append new, patch skeleton nodes in place)
     nodes_added = 0
+    nodes_patched = 0
     for node in new_nodes:
-        if node["id"] not in existing_node_ids:
+        nid = node["id"]
+        if nid not in existing_node_ids:
             existing_nodes.append(node)
-            existing_node_ids.add(node["id"])
+            existing_node_ids.add(nid)
+            node_index[nid] = len(existing_nodes) - 1
             nodes_added += 1
+        elif existing_nodes[node_index[nid]].get("file_type") != "service":
+            # Skeleton node exists but lacks service typing — patch in place
+            existing_nodes[node_index[nid]].update(node)
+            nodes_patched += 1
+        # else: already a fully-typed service node — skip (idempotent)
 
     # Inject edges (skip self-loops and duplicates)
     edges_added = 0
@@ -249,11 +260,13 @@ def inject(
     # Write back (UTF-8, no BOM — standard for JSON)
     graph_file.write_text(json.dumps(graph, ensure_ascii=False, indent=2), encoding="utf-8")
 
+    result = {"nodes_added": nodes_added, "nodes_patched": nodes_patched, "edges_added": edges_added}
     print(
-        f"graphify_infra: injected {nodes_added} nodes, {edges_added} edges"
-        f" -> {graph_file}"
+        f"graphify_infra: injected {result['nodes_added']} nodes, "
+        f"patched {result['nodes_patched']} existing, "
+        f"{result['edges_added']} edges -> {graph_file}"
     )
-    return {"nodes_added": nodes_added, "edges_added": edges_added}
+    return result
 
 
 if __name__ == "__main__":

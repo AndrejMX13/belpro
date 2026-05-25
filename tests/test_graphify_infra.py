@@ -148,9 +148,11 @@ def test_idempotent_nodes(tmp_graph):
     g, c, n = tmp_graph
     graphify_infra.inject(g, c, n)
     count_after_first = len(load(g)["nodes"])
-    graphify_infra.inject(g, c, n)
+    result2 = graphify_infra.inject(g, c, n)
     count_after_second = len(load(g)["nodes"])
     assert count_after_first == count_after_second
+    assert result2["nodes_added"] == 0
+    assert result2["nodes_patched"] == 0
 
 
 def test_idempotent_edges(tmp_graph):
@@ -173,6 +175,20 @@ def test_existing_nodes_preserved(tmp_graph):
     graphify_infra.inject(g, c, n)
     ids = node_ids(load(g))
     assert "existing_node" in ids
+
+
+def test_skeleton_node_is_upgraded(tmp_graph):
+    """Pre-existing node with matching ID but no file_type gets patched."""
+    g, c, n = tmp_graph
+    skeleton = {"nodes": [{"id": "service_api", "label": "api"}], "links": []}
+    g.write_text(json.dumps(skeleton), encoding="utf-8")
+    result = graphify_infra.inject(g, c, n)
+    data = load(g)
+    api_node = next(node for node in data["nodes"] if node["id"] == "service_api")
+    assert api_node["file_type"] == "service"
+    assert api_node["source_file"] == "docker-compose.yml"
+    assert result["nodes_patched"] == 1
+    assert result["nodes_added"] == 3  # postgres, whisper, ops
 
 
 def test_no_self_calls(tmp_graph):

@@ -23797,34 +23797,68 @@
       "id": "dot_env_example"
     },
     {
-      "label": "postgres (service)",
+      "label": "postgres",
       "type": "service",
       "description": "PostgreSQL database container",
-      "id": "service_postgres"
+      "id": "service_postgres",
+      "norm_label": "postgres",
+      "file_type": "service",
+      "source_file": "docker-compose.yml",
+      "source_location": "services.postgres",
+      "image": "postgres:18.3"
     },
     {
-      "label": "api (service)",
+      "label": "api",
       "type": "service",
       "description": "FastAPI backend container",
-      "id": "service_api"
+      "id": "service_api",
+      "norm_label": "api",
+      "file_type": "service",
+      "source_file": "docker-compose.yml",
+      "source_location": "services.api",
+      "image": "custom build (./api)",
+      "ports": [
+        "8100:8000"
+      ]
     },
     {
-      "label": "n8n (service)",
+      "label": "n8n",
       "type": "service",
       "description": "n8n workflow engine container",
-      "id": "service_n8n"
+      "id": "service_n8n",
+      "norm_label": "n8n",
+      "file_type": "service",
+      "source_file": "docker-compose.yml",
+      "source_location": "services.n8n",
+      "image": "n8nio/n8n:2.18.5",
+      "ports": [
+        "5678:5678"
+      ]
     },
     {
-      "label": "whisper (service)",
+      "label": "whisper",
       "type": "service",
       "description": "Faster-Whisper transcription service container",
-      "id": "service_whisper"
+      "id": "service_whisper",
+      "norm_label": "whisper",
+      "file_type": "service",
+      "source_file": "docker-compose.yml",
+      "source_location": "services.whisper",
+      "image": "custom build (./whisper)"
     },
     {
-      "label": "evolution-api (service)",
+      "label": "evolution-api",
       "type": "service",
       "description": "Evolution API WhatsApp gateway container",
-      "id": "service_evolution_api"
+      "id": "service_evolution_api",
+      "norm_label": "evolution-api",
+      "file_type": "service",
+      "source_file": "docker-compose.yml",
+      "source_location": "services.evolution-api",
+      "image": "evoapicloud/evolution-api:v2.3.7",
+      "ports": [
+        "8180:8080"
+      ]
     },
     {
       "label": "Alembic migrations",
