@@ -243,7 +243,7 @@ Run `graphify update .` to keep the knowledge graph current (AST-only, no API co
 ## What NOT to do
 
 - **Do not commit `OPEN_ISSUES.md`** — it is gitignored, local-only tracking. Never `git add` it.
-- **Don't start with `glob` or `grep` for discovery.** If `graphify-out/wiki/index.md` exists, read it first to identify relevant communities and files. Once you know the target area, use Serena `find_symbol` for code or `grep` for non-code assets (logs, config, raw text). Use `grep` only for targeted lookups once you know the file area — never as a substitute for orientation.
+- **Don't start with `glob` or `grep` for discovery.** Read `graphify-out/wiki/index.md` first to identify relevant communities and files. Once you know the target area, use Serena `find_symbol` for code or `grep` for non-code assets (logs, config, raw text). Use `grep` only for targeted lookups once you know the file area — never as a substitute for orientation.
 - Do not build multi-tenant features. Out of scope for v1.
 - Do not add a frontend JavaScript framework (React, Vue, etc.) — plain JS only.
 - Do not store photos in cloud storage. Local filesystem only.
@@ -258,13 +258,13 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
 
 | Tool | Best for | Not for |
 |------|----------|---------|
-| **Graphify wiki** (`graphify-out/wiki/index.md`) | "Which parts of the codebase handle X?" — identifies relevant communities and files in seconds | Understanding logic, reading actual code |
-| **Graphify report** (`graphify-out/GRAPH_REPORT.md`) | God nodes, surprising connections, architectural overview | Finding specific function definitions |
+| **Graphify wiki** (`graphify-out/wiki/index.md`) | "Which parts of the codebase handle X?" — community list sorted by size, one article per community with member nodes and cross-links | Understanding logic, reading actual code |
+| **Graphify report** (`graphify-out/GRAPH_REPORT.md`) | God nodes, surprising connections, full community list with cohesion scores | Navigating to a specific article |
 | **Serena** (`find_symbol`, `find_referencing_symbols`) | "Where is X defined?", "Who calls Y?", precise symbol navigation | High-level orientation, architectural mapping |
 
 ### Workflow
 
-1. **Orient** — If `graphify-out/wiki/index.md` exists, read it first to identify which communities are relevant to your question. This tells you *where* to look, not what the code does.
+1. **Orient** — Read `graphify-out/wiki/index.md` to find the community most relevant to your task. Each community article lists its member nodes and links to connected communities.
 2. **Locate** — Use Serena `find_symbol` to find specific functions, classes, or methods within the identified files, or `find_referencing_symbols` to trace callers.
 3. **Read** — Read the actual source files to understand logic. The graph tells you which files matter; it does not replace reading them.
-4. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost).
+4. **Maintain** — After modifying code files, run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
