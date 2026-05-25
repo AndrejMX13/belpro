@@ -272,3 +272,9 @@ This project uses a Graphify knowledge graph (`graphify-out/`) for orientation a
    - Run `graphify update .` to keep the graph current (AST-only, no API cost). Cross-layer semantic edges are preserved in the committed cache (`graphify-out/cache/`) and survive full rebuilds.
    - Then run `GRAPHIFY_VIZ_NODE_LIMIT=10000 graphify cluster-only .` to regenerate `graph.html` and `GRAPH_REPORT.md`. The default node limit (5000) silently skips HTML generation for this graph — always set 10000.
    - Wiki does **not** auto-regenerate. After `cluster-only`, rebuild it: `python scripts/rebuild_wiki.py`
+
+**Recovery** — A `graphify-good` git tag marks a known-good graph state. If an update produces unexpected results (node count drops, communities collapse), restore with:
+```
+git checkout graphify-good -- graphify-out/
+```
+Re-apply the tag manually after verifying a new state is good: `git tag -f graphify-good HEAD`. Do not apply it automatically — verify first.
