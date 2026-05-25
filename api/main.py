@@ -28,6 +28,7 @@ from routers.reports import router as reports_router
 from routers.volunteers import router as volunteers_router
 from routers.documents import router as documents_router
 from routers.errors import router as errors_router
+from routers.config import router as config_router
 
 __version__ = "0.11.1-beta.0"
 
@@ -77,6 +78,7 @@ app.include_router(reports_router, prefix="/api")
 app.include_router(volunteers_router, prefix="/api")
 app.include_router(documents_router, prefix="/api")
 app.include_router(errors_router, prefix="/api")
+app.include_router(config_router, prefix="/api")
 
 
 @app.get("/api/health")
