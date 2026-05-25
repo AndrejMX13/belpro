@@ -1,0 +1,784 @@
+{
+  "nodes": [],
+  "edges": [
+    {
+      "source": "schemas_log_entry__LogEntryResponse",
+      "target": "models_log_entry__LogEntry",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/log_entry.py"
+    },
+    {
+      "source": "schemas_log_entry__LogEntryCreate",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "imports_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/log_entry.py"
+    },
+    {
+      "source": "schemas_log_entry__LogEntryResponse",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/log_entry.py"
+    },
+    {
+      "source": "schemas_log_entry__PhotoResponse",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/log_entry.py"
+    },
+    {
+      "source": "schemas_log_entry__LogEntryListResponse",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "contains_list_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/log_entry.py"
+    },
+    {
+      "source": "schemas_volunteer__VolunteerCreate",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "imports_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_volunteer__LogEntryBrief",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_volunteer__LogEntryBrief",
+      "target": "models_log_entry__LogEntry",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_volunteer__VolunteerResponse",
+      "target": "models_volunteer__Volunteer",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_volunteer__VolunteerDetailResponse",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_volunteer__VolunteerDetailResponse",
+      "target": "schemas_volunteer__LogEntryBrief",
+      "relation": "contains_list_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_volunteer__VolunteerListResponse",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "contains_list_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/volunteer.py"
+    },
+    {
+      "source": "schemas_manager__ManagerResponse",
+      "target": "models_manager__Manager",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/manager.py"
+    },
+    {
+      "source": "schemas_error_log__ErrorLogResponse",
+      "target": "models_error_log__ErrorLog",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/error_log.py"
+    },
+    {
+      "source": "schemas_report__ReportHistoryItem",
+      "target": "models_monthly_report__MonthlyReport",
+      "relation": "orm_schema_mapping",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/report.py"
+    },
+    {
+      "source": "schemas_report__MonthlyReportSummary",
+      "target": "schemas_report__VolunteerMonthlySummary",
+      "relation": "contains_list_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/report.py"
+    },
+    {
+      "source": "schemas_report__ReportHistoryList",
+      "target": "schemas_report__ReportHistoryItem",
+      "relation": "contains_list_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/schemas/report.py"
+    },
+    {
+      "source": "schemas_analytics__AnalyticsSummary",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "aggregates_status",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "api/schemas/analytics.py"
+    },
+    {
+      "source": "schemas_analytics__AnalyticsSummary",
+      "target": "models_volunteer__Volunteer",
+      "relation": "aggregates_volunteer_data",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "api/schemas/analytics.py"
+    },
+    {
+      "source": "routers_log_entries_list_log_entries",
+      "target": "schemas_log_entry__LogEntryListResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_list_log_entries",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_list_log_entries",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_get_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_get_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_create_log_entry",
+      "target": "schemas_log_entry__LogEntryCreate",
+      "relation": "request_body",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_create_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_create_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "creates_orm_instance",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_create_log_entry",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_update_log_entry",
+      "target": "schemas_log_entry__LogEntryUpdate",
+      "relation": "request_body",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_update_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_update_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_update_log_entry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo",
+      "target": "schemas_log_entry__PhotoResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "creates_orm_instance",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo_base64",
+      "target": "schemas_log_entry__PhotoBase64Request",
+      "relation": "request_body",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo_base64",
+      "target": "schemas_log_entry__PhotoResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo_base64",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_upload_photo_base64",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "creates_orm_instance",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_get_photo_file",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_delete_photo",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_delete_photo",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_approve_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_approve_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_approve_log_entry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_reject_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_reject_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_reject_log_entry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_notify_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_notify_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_notify_log_entry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_confirm_log_entry",
+      "target": "schemas_log_entry__LogEntryResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_confirm_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_confirm_log_entry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_delete_log_entry",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_delete_log_entry",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_log_entries_delete_log_entry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/log_entries.py"
+    },
+    {
+      "source": "routers_volunteers_list_volunteers",
+      "target": "schemas_volunteer__VolunteerListResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_list_volunteers",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_list_volunteers",
+      "target": "models_log_entry__LogEntry",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_list_volunteers",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_check_emso",
+      "target": "schemas_volunteer__EmsoCheckRequest",
+      "relation": "request_body",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_check_emso",
+      "target": "schemas_volunteer__EmsoCheckResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_check_emso",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_create_volunteer",
+      "target": "schemas_volunteer__VolunteerCreate",
+      "relation": "request_body",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_create_volunteer",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_create_volunteer",
+      "target": "models_volunteer__Volunteer",
+      "relation": "creates_orm_instance",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_create_volunteer",
+      "target": "models_manager__Manager",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_get_volunteer",
+      "target": "schemas_volunteer__VolunteerDetailResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_get_volunteer",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_update_volunteer",
+      "target": "schemas_volunteer__VolunteerUpdate",
+      "relation": "request_body",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_update_volunteer",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_update_volunteer",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_update_volunteer",
+      "target": "models_manager__Manager",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_activate_volunteer",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_activate_volunteer",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_deactivate_volunteer",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "response_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_deactivate_volunteer",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_delete_volunteer",
+      "target": "models_volunteer__Volunteer",
+      "relation": "queries_orm_model",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_to_response",
+      "target": "models_volunteer__Volunteer",
+      "relation": "accepts_orm_instance",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_to_response",
+      "target": "schemas_volunteer__VolunteerResponse",
+      "relation": "returns_schema",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_to_detail_response",
+      "target": "models_volunteer__Volunteer",
+      "relation": "accepts_orm_instance",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_to_detail_response",
+      "target": "schemas_volunteer__VolunteerDetailResponse",
+      "relation": "returns_schema",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "routers_volunteers_to_detail_response",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/routers/volunteers.py"
+    },
+    {
+      "source": "models_log_entry__LogEntry",
+      "target": "models_volunteer__Volunteer",
+      "relation": "foreign_key_relationship",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/log_entry.py"
+    },
+    {
+      "source": "models_log_entry__LogEntry",
+      "target": "models_log_entry_photo__LogEntryPhoto",
+      "relation": "one_to_many_relationship",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/log_entry.py"
+    },
+    {
+      "source": "models_log_entry_photo__LogEntryPhoto",
+      "target": "models_log_entry__LogEntry",
+      "relation": "foreign_key_relationship",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/log_entry_photo.py"
+    },
+    {
+      "source": "models_volunteer__Volunteer",
+      "target": "models_manager__Manager",
+      "relation": "foreign_key_relationship",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/volunteer.py"
+    },
+    {
+      "source": "models_monthly_report__MonthlyReport",
+      "target": "models_volunteer__Volunteer",
+      "relation": "foreign_key_relationship",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/monthly_report.py"
+    },
+    {
+      "source": "models_log_entry__LogEntry",
+      "target": "models_log_entry__EntryStatus",
+      "relation": "uses_enum",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/log_entry.py"
+    },
+    {
+      "source": "models_app_setting__AppSetting",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/app_setting.py"
+    },
+    {
+      "source": "models_error_log__ErrorLog",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/error_log.py"
+    },
+    {
+      "source": "models_log_entry__LogEntry",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/log_entry.py"
+    },
+    {
+      "source": "models_log_entry_photo__LogEntryPhoto",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/log_entry_photo.py"
+    },
+    {
+      "source": "models_manager__Manager",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/manager.py"
+    },
+    {
+      "source": "models_monthly_report__MonthlyReport",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/monthly_report.py"
+    },
+    {
+      "source": "models_volunteer__Volunteer",
+      "target": "models_base__Base",
+      "relation": "inherits_from",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "api/models/volunteer.py"
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
