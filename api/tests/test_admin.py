@@ -275,3 +275,46 @@ async def test_patch_settings_ops_payload_includes_all_fields(client: AsyncClien
     for field in ("report_auto_day", "report_auto_period", "backup_hour",
                   "photo_cleanup_hour", "backup_retention_days", "report_auto_hour"):
         assert field in payload, f"Missing field in ops payload: {field}"
+
+
+async def test_get_admin_settings_includes_evolution_instance_name(
+    client: AsyncClient, auth: dict
+) -> None:
+    """GET /api/admin/settings includes evolution_instance_name field."""
+    r = await client.get("/api/admin/settings", headers=auth)
+    assert r.status_code == 200
+    data = r.json()
+    assert "evolution_instance_name" in data
+    assert isinstance(data["evolution_instance_name"], str)
+    assert len(data["evolution_instance_name"]) > 0
+
+
+async def test_patch_admin_settings_updates_evolution_instance_name(
+    client: AsyncClient, auth: dict
+) -> None:
+    """PATCH /api/admin/settings persists a new evolution_instance_name value."""
+    with patch("routers.admin.httpx.AsyncClient") as MockClient:
+        MockClient.return_value.__aenter__ = AsyncMock(return_value=AsyncMock(
+            post=AsyncMock(return_value=MagicMock(raise_for_status=MagicMock()))
+        ))
+        MockClient.return_value.__aexit__ = AsyncMock(return_value=False)
+
+        r = await client.patch(
+            "/api/admin/settings",
+            json={"evolution_instance_name": "testinstance"},
+            headers=auth,
+        )
+    assert r.status_code == 200
+    assert r.json()["evolution_instance_name"] == "testinstance"
+
+
+async def test_patch_admin_settings_evolution_instance_name_rejects_empty(
+    client: AsyncClient, auth: dict
+) -> None:
+    """PATCH /api/admin/settings rejects empty evolution_instance_name."""
+    r = await client.patch(
+        "/api/admin/settings",
+        json={"evolution_instance_name": ""},
+        headers=auth,
+    )
+    assert r.status_code == 422

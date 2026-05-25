@@ -73,6 +73,7 @@ async def get_admin_settings(
         backup_hour=s.backup_hour,
         photo_cleanup_hour=s.photo_cleanup_hour,
         backup_retention_days=s.backup_retention_days,
+        evolution_instance_name=s.evolution_instance_name,
     )
 
 
@@ -122,4 +123,5 @@ async def update_admin_settings(
         backup_hour=s.backup_hour,
         photo_cleanup_hour=s.photo_cleanup_hour,
         backup_retention_days=s.backup_retention_days,
+        evolution_instance_name=s.evolution_instance_name,
     )
