@@ -141,16 +141,18 @@ npm-debug.log*
 # -----------------------------------------------------------------------------
 # Graphify
 # -----------------------------------------------------------------------------
-graphify-out/cache/
-graphify-out/graph.html
-graphify-out/.graphify_chunk_*.json
-.graphify_python
-.graphify_incremental.json
-.graphify_ast.json
-.graphify_cached.json
-.graphify_extract.json
-.graphify_semantic.json
-.graphify_uncached.txt
+# Machine-specific and regenerated temp files — do not commit
+graphify-out/.graphify_python
+graphify-out/.graphify_root
+graphify-out/.graphify_detect.json
+graphify-out/.graphify_merged.json
+graphify-out/.graphify_semantic_plan.json
+graphify-out/.graphify_ast.json
+graphify-out/.graphify_cached.json
+graphify-out/.graphify_uncached.txt
+# Legacy names (pre-rename)
+graphify-out/.graphify_extract.json
+graphify-out/.graphify_semantic.json
 
 # -----------------------------------------------------------------------------
 # Playwright

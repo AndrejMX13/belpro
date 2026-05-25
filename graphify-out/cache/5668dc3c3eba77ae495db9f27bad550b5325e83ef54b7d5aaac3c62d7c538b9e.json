@@ -1,0 +1,1 @@
+{"nodes": [{"id": "component_weasyprint", "label": "WeasyPrint PDF Generation", "file_type": "code", "source_file": "api/services/report_pdf.py", "source_location": null, "source_url": null, "captured_at": "2026-05-21", "author": null, "contributor": null}], "edges": [], "hyperedges": []}
