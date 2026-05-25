@@ -1,1 +1,1 @@
-{"nodes": [{"id": "router_documents_consent_pdf", "label": "GET /documents/consent-pdf", "file_type": "code", "source_file": "api/routers/documents.py", "source_location": "line 21", "source_url": null, "captured_at": null, "author": null, "contributor": null}], "edges": [], "hyperedges": []}
+{"nodes": [{"id": "download_consent_pdf", "label": "download_consent_pdf", "source_file": "api/routers/documents.py", "node_type": "function"}], "edges": [], "hyperedges": []}

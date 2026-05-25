@@ -1,0 +1,53 @@
+{
+  "nodes": [],
+  "edges": [
+    {"source": "js_analytics_loadanalytics", "target": "router_analytics_summary", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/analytics.js"},
+
+    {"source": "js_admin_renderadmin", "target": "router_admin_settings_get", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/admin.js"},
+    {"source": "js_admin_renderadmin", "target": "router_admin_settings_patch", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/admin.js"},
+
+    {"source": "js_documents_renderdocuments", "target": "router_managers_me_get", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/documents.js"},
+    {"source": "js_documents_renderdocuments", "target": "router_managers_me_patch", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/documents.js"},
+    {"source": "js_documents_renderdocuments", "target": "router_documents_consent_pdf", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/documents.js"},
+
+    {"source": "js_errors_loadhealthwidget", "target": "router_errors_unacknowledged_count", "relation": "calls", "confidence": "INFERRED", "confidence_score": 0.85, "source_file": "frontend/js/errors.js"},
+    {"source": "js_errors_refresherrorbadge", "target": "router_errors_unacknowledged_count", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/errors.js"},
+    {"source": "js_errors_loadapplog", "target": "router_errors_list", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/errors.js"},
+    {"source": "js_errors_renderapplog", "target": "router_errors_acknowledge", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/errors.js"},
+
+    {"source": "js_reports_loadreports", "target": "router_reports_monthly", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/reports.js"},
+    {"source": "js_reports_exportreportpdf", "target": "router_reports_monthly_pdf", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/reports.js"},
+    {"source": "js_reports_sendreports", "target": "router_reports_send_monthly", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/reports.js"},
+    {"source": "js_reports_loadreportarchive", "target": "router_reports_history", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/reports.js"},
+    {"source": "js_reports_downloadhistorypdf", "target": "router_reports_history_pdf", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/reports.js"},
+
+    {"source": "js_volunteers_loadvolunteers", "target": "router_volunteers_list", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_submitaddvolunteer", "target": "router_volunteers_check_emso", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_submitaddvolunteer", "target": "router_volunteers_create", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderdetail", "target": "router_volunteers_get", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderdetail", "target": "router_volunteers_update", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderdetail", "target": "router_volunteers_delete", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderdetail", "target": "router_log_entries_create", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderapprovals", "target": "router_volunteers_list", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_loadapprovals", "target": "router_log_entries_list", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_loadapprovals", "target": "router_log_entries_approve", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_loadapprovals", "target": "router_log_entries_reject", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_loadvolunteerlog", "target": "router_log_entries_list", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_get", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_volunteers_get", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_photo_file", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_upload_photo", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_delete_photo", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_approve", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_reject", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_delete", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_renderlogentrydetail", "target": "router_log_entries_update", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_rendersettings", "target": "router_managers_me_get", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_rendersettings", "target": "router_managers_config_info", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_rendersettings", "target": "router_managers_me_patch", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"},
+    {"source": "js_volunteers_rendersettings", "target": "router_managers_change_password", "relation": "calls", "confidence": "EXTRACTED", "confidence_score": 1.0, "source_file": "frontend/js/volunteers.js"}
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
