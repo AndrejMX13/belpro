@@ -60,6 +60,10 @@ async function renderAdmin() {
           <label for="a-backup-retention">Hranjenje varnostnih kopij (dni)</label>
           <input id="a-backup-retention" type="number" min="1" style="width:100%;max-width:12rem" step="1" />
         </div>
+        <div class="field">
+          <label for="a-evolution-instance">Ime instance (WhatsApp)</label>
+          <input id="a-evolution-instance" type="text" style="width:100%;max-width:24rem" />
+        </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="a-save-btn">Shrani</button>
@@ -84,6 +88,7 @@ async function renderAdmin() {
     $('a-backup-hour').value   = data.backup_hour;
     $('a-cleanup-hour').value  = data.photo_cleanup_hour;
     $('a-backup-retention').value = data.backup_retention_days;
+    $('a-evolution-instance').value = data.evolution_instance_name;
 
     $('admin-settings-loading').hidden = true;
     $('admin-settings-form').hidden    = false;
@@ -110,11 +115,13 @@ async function renderAdmin() {
       backup_hour:            parseInt($('a-backup-hour').value, 10),
       photo_cleanup_hour:     parseInt($('a-cleanup-hour').value, 10),
       backup_retention_days:  parseInt($('a-backup-retention').value, 10),
+      evolution_instance_name: $('a-evolution-instance').value.trim(),
     };
 
     // Validate
     for (const [key, val] of Object.entries(current)) {
       if (key === 'report_auto_period') continue;
+      if (key === 'evolution_instance_name') continue;
       if (key === 'backup_hour' || key === 'photo_cleanup_hour' || key === 'report_auto_hour') {
         if (!Number.isInteger(val) || val < 0 || val > 23) {
           const labels = {
@@ -138,6 +145,12 @@ async function renderAdmin() {
         errEl.style.display = 'block';
         return;
       }
+    }
+
+    if (!current.evolution_instance_name) {
+      errEl.textContent = 'Ime instance ne sme biti prazno.';
+      errEl.style.display = 'block';
+      return;
     }
 
     // Collect only changed fields
