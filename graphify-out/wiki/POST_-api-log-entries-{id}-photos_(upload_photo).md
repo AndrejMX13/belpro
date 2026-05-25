@@ -1,10 +1,21 @@
 # POST /api/log-entries/{id}/photos (upload_photo)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **POST /api/log-entries/{id}/photos (upload_photo)** (0 connections) — `api/routers/log_entries.py`
+- **Python Docstrings** (7 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Google Style (Recommended)** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **NumPy Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sphinx Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **python-docstrings.md** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (class UserService:)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sections Available** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
 
 ## Relationships
 
@@ -12,11 +23,11 @@
 
 ## Source Files
 
-- `api/routers/log_entries.py`
+- `.claude/skills/code-documenter/references/python-docstrings.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,34 +1,57 @@
 # env.py
 
-> 12 nodes · cohesion 0.21
+> 27 nodes
 
 ## Key Concepts
 
-- **env.py** (6 connections) — `api/db/migrations/env.py`
-- **_get_url()** (5 connections) — `api/db/migrations/env.py`
-- **_run_async_migrations()** (4 connections) — `api/db/migrations/env.py`
-- **run_migrations_offline()** (3 connections) — `api/db/migrations/env.py`
-- **run_migrations_online()** (3 connections) — `api/db/migrations/env.py`
-- **_do_run_migrations()** (2 connections) — `api/db/migrations/env.py`
-- **Alembic environment — async SQLAlchemy / asyncpg configuration.** (1 connections) — `api/db/migrations/env.py`
-- **Read DATABASE_URL from settings (env / .env file).** (1 connections) — `api/db/migrations/env.py`
-- **Run migrations without a live DB connection (generates SQL script).** (1 connections) — `api/db/migrations/env.py`
-- **Inner helper called inside the async connection context.** (1 connections) — `api/db/migrations/env.py`
-- **Create an async engine and run migrations inside it.** (1 connections) — `api/db/migrations/env.py`
-- **Run migrations against a live database.** (1 connections) — `api/db/migrations/env.py`
+- **BelPro System Specification** (29 connections) — `SPEC.md`
+- **Evolution API (WhatsApp Gateway)** (7 connections) — `SPEC.md`
+- **Digital Volunteer Diary Architecture & GDPR Notes** (6 connections) — `BelPro.md`
+- **DB Table: volunteers** (5 connections) — `SPEC.md`
+- **WhatsApp Volunteer Entry Flow** (4 connections) — `SPEC.md`
+- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) — `SPEC.md`
+- **CLAUDE.md — Project AI Instructions** (3 connections) — `CLAUDE.md`
+- **Monthly PDF Reports Generation and Delivery** (3 connections) — `SPEC.md`
+- **DB Table: log_entries** (3 connections) — `SPEC.md`
+- **DB Table: monthly_reports** (3 connections) — `SPEC.md`
+- **Dnevnik prostovoljskega dela (Volunteer Work Diary)** (2 connections) — `SPEC.md`
+- **Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)** (2 connections) — `SPEC.md`
+- **GDPR and ZVOP-2 Compliance** (2 connections) — `SPEC.md`
+- **DB Table: managers** (2 connections) — `SPEC.md`
+- **DB Table: log_entry_photos** (2 connections) — `SPEC.md`
+- **DB Table: settings** (2 connections) — `SPEC.md`
+- **Workflow Integration Tests Plan** (2 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **WhatsApp Phone Source of Truth Plan** (2 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **BelPro System Specification (Slovenian)** (1 connections) — `SPEC_SL.md`
+- **CSD — Centre for Social Work** (1 connections) — `SPEC.md`
+- **Single-Tenant Architecture** (1 connections) — `SPEC.md`
+- **WeasyPrint (HTML to PDF)** (1 connections) — `CLAUDE.md`
+- **Graphify Knowledge Graph Tooling** (1 connections) — `CLAUDE.md`
+- **Serena MCP Server (Symbol Navigation)** (1 connections) — `CLAUDE.md`
+- **DB Table: error_log** (1 connections) — `SPEC.md`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [[AppSettings]] (1 shared connections)
+- [[api.js]] (7 shared connections)
+- [[Code: Check Entry]] (5 shared connections)
+- [[API.reports.exportPdf()]] (4 shared connections)
+- [[Community 503]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/deactivate (deactivate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/env.py`
+- `BelPro.md`
+- `CLAUDE.md`
+- `SPEC.md`
+- `SPEC_SL.md`
+- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (97%)
-- INFERRED: 1 (3%)
+- EXTRACTED: 89 (97%)
+- INFERRED: 3 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

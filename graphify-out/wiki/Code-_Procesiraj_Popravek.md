@@ -1,24 +1,48 @@
 # Code: Procesiraj Popravek
 
-> 2 nodes · cohesion 1.00
+> 16 nodes
 
 ## Key Concepts
 
-- **Code: Procesiraj Popravek** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **update_log_entry()** (10 connections) — `api/routers/log_entries.py`
+- **log_entries Router FastAPI** (9 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Log Entry Location Edit and Auto-Refresh Design** (8 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **Log Entry Location Edit Auto-Refresh Plan** (6 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Test Coverage Baseline 84pct 240 tests** (5 connections) — `docs/coverage-baseline.md`
+- **LogEntryUpdate Pydantic Schema** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **volunteers.js Frontend** (3 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Test Report Template** (2 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **API Test Python Dependencies requirements-test.txt** (2 connections) — `api/requirements-test.txt`
+- **PATCH /api/log-entries/{id} (update_log_entry)** (2 connections) — `api/routers/log_entries.py`
+- **LogEntryUpdate (Schema)** (2 connections) — `api/schemas/log_entry.py`
+- **Update activity_description, hours, location, and/or work_date. Blocked once app** (1 connections) — `api/routers/log_entries.py`
+- **Test Report Severity Definitions** (1 connections) — `.claude/skills/test-master/references/test-reports.md`
+- **Graphify Semantic Rebuild Guide** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **pytest pytest-asyncio** (1 connections) — `api/requirements-test.txt`
+- **Volunteer Contact Info Inline Edit Design** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[BelPro Project Memory Public Index]] (6 shared connections)
+- [[API.reports.downloadHistoryPdf()]] (3 shared connections)
+- [[HTTP: GET Photo Limit]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/test-master/references/test-reports.md`
+- `api/requirements-test.txt`
+- `api/routers/log_entries.py`
+- `api/schemas/log_entry.py`
+- `docs/coverage-baseline.md`
+- `docs/graphify-semantic-rebuild.md`
+- `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 43 (74%)
+- INFERRED: 15 (26%)
 - AMBIGUOUS: 0 (0%)
 
 ---

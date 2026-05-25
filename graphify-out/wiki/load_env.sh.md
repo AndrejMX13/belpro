@@ -1,22 +1,39 @@
 # load_env.sh
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **load_env.sh** (0 connections) — `scripts/load_env.sh`
+- **Operation Patterns Guide** (10 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Conditional Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Chat Completion** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Switch (nodes-base.switch)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Basic Switch** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **AI Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **OpenAI (nodes-langchain.openAi)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **OPERATION_PATTERNS.md** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 379]] (1 shared connections)
+- [[Community 421]] (1 shared connections)
+- [[Community 297]] (1 shared connections)
+- [[GET /api/reports/history (get_report_history)]] (1 shared connections)
+- [[Community 378]] (1 shared connections)
+- [[list_pending_entries.sh]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/load_env.sh`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

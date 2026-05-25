@@ -1,32 +1,35 @@
 # Analitika (Analytics Screen)
 
-> 23 nodes · cohesion 0.12
+> 40 nodes
 
 ## Key Concepts
 
-- **Analitika (Analytics Screen)** (9 connections) — `docs/images/belpro-analitika.png`
-- **Administracija (Administration Screen)** (7 connections) — `docs/images/belpro-administracija.png`
-- **Dnevnik Napak (Error Log Screen)** (6 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Dnevniki (Work Diary Entries Screen)** (6 connections) — `docs/images/belpro-dnevniki.png`
-- **Shared Sidebar Navigation (Prostovoljci, Dnevniki, Analitika, Porocila, Nastavitve, Dokumenti, Administracija, Dnevnik napak, Odjava)** (4 connections) — `docs/images/belpro-administracija.png`
-- **Potrdi (Acknowledge) Button on Error Entry** (3 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Stanje Sistema (System Status Panel)** (2 connections) — `docs/images/belpro-administracija.png`
-- **Shrani (Save) Button** (2 connections) — `docs/images/belpro-administracija.png`
-- **Service Health Indicators (PostgreSQL, Whisper, n8n, WhatsApp, Disk, Heartbeat)** (2 connections) — `docs/images/belpro-administracija.png`
-- **KPI Summary Cards (Ure v mesecu, Aktivni prostovoljci, Caka odobritev, Odobreno, Zavrnjeno, Brez vnosov)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Year/Month Period Filter (Leto, Mesec dropdowns)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Horizontal Bar Chart: Ure po Prostovoljcih (Hours per Volunteer)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Vertical Bar Chart: Ure po Lokacijah (Hours per Location)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Error Log Entry Card (source, timestamp, message, detail)** (2 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Dnevniki Filter Bar (Volunteer dropdown, Date range pickers, Location search, Isci/Ponastavi buttons)** (2 connections) — `docs/images/belpro-dnevniki.png`
-- **Entry Status Badge (Odobreno approved status indicator)** (2 connections) — `docs/images/belpro-dnevniki.png`
-- **Sistemske Nastavitve (System Settings Form)** (1 connections) — `docs/images/belpro-administracija.png`
-- **Izvozi CSV (Export CSV) Button** (1 connections) — `docs/images/belpro-analitika.png`
-- **Line Chart: Mesecni Trend Zadnjih 6 Mesecev (Monthly 6-Month Trend)** (1 connections) — `docs/images/belpro-analitika.png`
-- **Samo Nepotrjene Filter Checkbox (Show Only Unacknowledged Errors)** (1 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Navigation Badge Counter on Dnevnik Napak Menu Item** (1 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Dnevniki Data Table (Datum dela, Prostovoljec, Opis dela, Ure, Lokacija, Dan vnosa, Status, Dejanja columns)** (1 connections) — `docs/images/belpro-dnevniki.png`
-- **Pagination Control (Prikazujem 1-20 od 44, Prejsnja/Naslednja buttons)** (1 connections) — `docs/images/belpro-dnevniki.png`
+- **Task 3: Logo in PDF reports (TDD)** (12 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **Task 2: Logo API endpoints (TDD)** (10 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **Task 1: Logo service (TDD)** (8 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **NGO Logo Implementation Plan** (7 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **Task 4: Frontend — API methods and settings UI** (6 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **2026-05-19-ngo-logo.md** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python ("""Tests for NGO logo service and endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block2 (docker compose exec api pytest tests/test_logo.py -v -k "not)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python ("""NGO logo file management.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block4 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block5 (docker compose ps)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block6 (docker compose exec api pytest tests/test_logo.py -v -k "not)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block7 (git add api/services/logo.py api/tests/test_logo.py)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python (# ── integration tests: logo endpoints ─────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block9 (docker compose exec api pytest tests/test_logo.py -v -k "tes)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python ("""Logo router — public GET + authenticated POST and DELETE.)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python (from routers.logo import router as logo_router)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python (app.include_router(logo_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block13 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block14 (docker compose ps)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block15 (docker compose exec api pytest tests/test_logo.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block16 (git add api/routers/logo.py api/main.py api/tests/test_logo.)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:python (# ── logo in PDF header ────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **code:block18 (docker compose exec api pytest tests/test_reports.py -v -k ")** (1 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- *... and 15 more nodes in this community*
 
 ## Relationships
 
@@ -34,15 +37,12 @@
 
 ## Source Files
 
-- `docs/images/belpro-administracija.png`
-- `docs/images/belpro-analitika.png`
-- `docs/images/belpro-dnevnik-napak.png`
-- `docs/images/belpro-dnevniki.png`
+- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
 
 ## Audit Trail
 
-- EXTRACTED: 48 (77%)
-- INFERRED: 14 (23%)
+- EXTRACTED: 78 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

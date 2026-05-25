@@ -1,26 +1,43 @@
 # API.auth.login()
 
-> 3 nodes · cohesion 0.67
+> 18 nodes
 
 ## Key Concepts
 
-- **API.auth.login()** (2 connections) — `frontend/js/api.js`
-- **POST /auth/login** (2 connections) — `api/routers/auth.py`
-- **login form submit handler** (1 connections) — `frontend/js/volunteers.js`
+- **Errors (Must Fix)** (6 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **4. invalid_expression** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Missing Curly Braces** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: Invalid Node Reference** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 3: Invalid Property Access** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 4: Webhook Data Access Error** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[Settings Table ISS-026 Design]] (1 shared connections)
+- [[Community 299]] (1 shared connections)
+- [[API.auth.logout()]] (1 shared connections)
+- [[POST /log-entries/{id}/photos]] (1 shared connections)
+- [[PATCH /log-entries/{id}/reject]] (1 shared connections)
+- [[GET /api/admin/settings (get_admin_settings)]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/auth.py`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 39 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

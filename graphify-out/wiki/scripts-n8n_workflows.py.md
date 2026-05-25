@@ -1,33 +1,51 @@
 # scripts/n8n_workflows.py
 
-> 10 nodes · cohesion 0.31
+> 24 nodes
 
 ## Key Concepts
 
-- **scripts/n8n_workflows.py** (11 connections) — `scripts/n8n_workflows.py`
-- **api_request()** (4 connections) — `scripts/n8n_workflows.py`
-- **cmd_import()** (4 connections) — `scripts/n8n_workflows.py`
-- **cmd_export()** (4 connections) — `scripts/n8n_workflows.py`
-- **main()** (4 connections) — `scripts/n8n_workflows.py`
-- **load_env()** (3 connections) — `scripts/n8n_workflows.py`
-- **Parse KEY=VALUE lines from a .env file; ignore comments and blanks.** (1 connections) — `scripts/n8n_workflows.py`
-- **Make an authenticated request to the n8n API.      Returns (status_code, respo** (1 connections) — `scripts/n8n_workflows.py`
-- **Load each repo workflow file into n8n (upsert + activate).** (1 connections) — `scripts/n8n_workflows.py`
-- **Overwrite each repo workflow file with its current definition from n8n.** (1 connections) — `scripts/n8n_workflows.py`
+- **errors.js** (10 connections) — `frontend/js/errors.js`
+- **renderAppLog()** (6 connections) — `frontend/js/errors.js`
+- **showApp()** (6 connections) — `frontend/js/volunteers.js`
+- **loadHealthWidget()** (4 connections) — `frontend/js/errors.js`
+- **GET /errors/unacknowledged-count** (4 connections) — `api/routers/errors.py`
+- **startHealthWidget()** (3 connections) — `frontend/js/errors.js`
+- **refreshErrorBadge()** (3 connections) — `frontend/js/errors.js`
+- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
+- **initAppLogPage()** (3 connections) — `frontend/js/errors.js`
+- **_refreshSidebarLogo()** (3 connections) — `frontend/js/volunteers.js`
+- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
+- **GET /errors** (3 connections) — `api/routers/errors.py`
+- **renderHealthWidget()** (2 connections) — `frontend/js/errors.js`
+- **stopHealthWidget()** (2 connections) — `frontend/js/errors.js`
+- **API.errors.list()** (2 connections) — `frontend/js/api.js`
+- **API.errors.unacknowledgedCount()** (2 connections) — `frontend/js/api.js`
+- **API.errors.acknowledge()** (2 connections) — `frontend/js/api.js`
+- **refreshErrorBadge()** (2 connections) — `frontend/js/errors.js`
+- **PATCH /errors/{id}/acknowledge** (2 connections) — `api/routers/errors.py`
+- **ErrorLogResponse shape (id, service, operation, message, detail, acknowledged, created_at)** (2 connections) — `api/routers/errors.py`
+- **UnacknowledgedCountResponse shape ({count})** (2 connections) — `api/routers/errors.py`
+- **SERVICE_LABELS** (1 connections) — `frontend/js/errors.js`
+- **acknowledgeError()** (1 connections) — `frontend/js/errors.js`
+- **renderAppLog() — app log page** (1 connections) — `frontend/js/errors.js`
 
 ## Relationships
 
-- [[n8n/workflows/manager_approval.json]] (1 shared connections)
-- [[n8n/workflows/volunteer_entry.json]] (1 shared connections)
+- [[n8n MCP Workflow Management Guide]] (8 shared connections)
+- [[Community 361]] (2 shared connections)
+- [[tax_number_valid()]] (2 shared connections)
 
 ## Source Files
 
-- `scripts/n8n_workflows.py`
+- `api/routers/errors.py`
+- `frontend/js/api.js`
+- `frontend/js/errors.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 63 (88%)
+- INFERRED: 9 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,10 +1,21 @@
 # PATCH /api/errors/{id}/acknowledge (acknowledge_error)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **PATCH /api/errors/{id}/acknowledge (acknowledge_error)** (0 connections) — `api/routers/errors.py`
+- **GitHub Actions Pipelines** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Common Workflow Patterns** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Complete CI/CD Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Matrix Builds (Multi-version testing)** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Reusable Workflows** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Caching Dependencies** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **github-actions.md** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (name: CI/CD Pipeline)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (jobs:)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (# .github/workflows/deploy.yml)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (- uses: actions/cache@v4)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
 
 ## Relationships
 
@@ -12,11 +23,11 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `.claude/skills/devops-engineer/references/github-actions.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,23 +1,38 @@
 # Code: Preveri Nacin
 
-> 2 nodes · cohesion 1.00
+> 16 nodes
 
 ## Key Concepts
 
-- **Code: Preveri Nacin** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Evolution API (API Gateway)** (4 connections) — `scripts/diagrams/fig1_architecture.png`
+- **n8n (Workflow Engine)** (4 connections) — `scripts/diagrams/fig1_architecture.png`
+- **PostgreSQL (Database)** (4 connections) — `scripts/diagrams/fig1_architecture.png`
+- **Evolution API (API Prehod)** (4 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **n8n (Avtomatizacija)** (4 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **PostgreSQL (Baza podatkov)** (4 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **Dashboard (Web UI + API)** (3 connections) — `scripts/diagrams/fig1_architecture.png`
+- **Whisper AI (Transcription)** (3 connections) — `scripts/diagrams/fig1_architecture.png`
+- **Nadzorna pl. / Dashboard (Spl. vmesnik + API)** (3 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **Whisper AI (Transkripcija)** (3 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **Volunteer (WhatsApp)** (2 connections) — `scripts/diagrams/fig1_architecture.png`
+- **Manager (Browser / Phone)** (2 connections) — `scripts/diagrams/fig1_architecture.png`
+- **Gmail (Email Delivery)** (2 connections) — `scripts/diagrams/fig1_architecture.png`
+- **Prostovoljec / Volunteer (WhatsApp)** (2 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **Vodja / Manager (Brskalnik / Tel.)** (2 connections) — `scripts/diagrams/fig1_arhitektura.png`
+- **Gmail (Pošiljanje e-pošte)** (2 connections) — `scripts/diagrams/fig1_arhitektura.png`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `scripts/diagrams/fig1_architecture.png`
+- `scripts/diagrams/fig1_arhitektura.png`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 48 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,0 +1,34 @@
+# Community 536
+
+> 6 nodes
+
+## Key Concepts
+
+- **ISS-026: Settings Table Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Post-implementation** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **2026-05-20-settings-table.md** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+
+## Relationships
+
+- [[Community 402]] (1 shared connections)
+- [[Community 537]] (1 shared connections)
+- [[Community 313]] (1 shared connections)
+- [[GET /api/errors/unacknowledged-count (unacknowledged_count)]] (1 shared connections)
+- [[Community 348]] (1 shared connections)
+
+## Source Files
+
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
+
+## Audit Trail
+
+- EXTRACTED: 15 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

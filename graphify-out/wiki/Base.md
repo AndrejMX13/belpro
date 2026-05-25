@@ -1,58 +1,48 @@
 # Base
 
-> 18 nodes · cohesion 0.18
+> 36 nodes
 
 ## Key Concepts
 
-- **Base** (11 connections) — `api/models/base.py`
-- **Volunteer** (9 connections) — `api/models/volunteer.py`
-- **LogEntryPhoto** (8 connections) — `api/models/log_entry_photo.py`
-- **Base** (7 connections)
-- **ErrorLog** (7 connections) — `api/models/error_log.py`
-- **LogEntry** (7 connections) — `api/models/log_entry.py`
-- **Manager** (7 connections) — `api/models/manager.py`
-- **AppSetting** (6 connections) — `api/models/app_setting.py`
-- **MonthlyReport** (6 connections) — `api/models/monthly_report.py`
-- **One row per named setting. All values stored as TEXT.** (1 connections) — `api/models/app_setting.py`
-- **DeclarativeBase** (1 connections)
-- **Declarative base — import and subclass in every model.** (1 connections) — `api/models/base.py`
-- **One row per operational failure. Written by API, n8n, and ops sidecar.** (1 connections) — `api/models/error_log.py`
-- **Individual work diary entry submitted by a volunteer.** (1 connections) — `api/models/log_entry.py`
-- **A photo attached to a log entry.** (1 connections) — `api/models/log_entry_photo.py`
-- **NGO manager.  Single row expected per deployment.** (1 connections) — `api/models/manager.py`
-- **Tracks generated PDF reports for audit and re-delivery purposes.      volunteer_** (1 connections) — `api/models/monthly_report.py`
-- **Registered volunteer.  Soft-deleted via active=False — never hard-deleted.** (1 connections) — `api/models/volunteer.py`
+- **Volunteer Entry Workflow Integration Tests Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 1: Host dependencies and directory structure** (6 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 7: Unknown volunteer test** (5 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 2: `conftest.py` — fixtures** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 3: `helpers.py` — payload builders and polling** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 4: Happy path — text entry then confirm** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 5: Edit path — text, edit, new text, confirm** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Task 6: Cancel path — text then cancel** (4 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **2026-05-10-workflow-integration-tests.md** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **Key Facts (read before writing any code)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pip install httpx pytest pytest-asyncio python-dot)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (New-Item -ItemType File -Force tests\__init__.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:toml ([tool.pytest.ini_options])** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/ --collect-only)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add pyproject.toml tests/)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:python (import asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/ --collect-only)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add tests/workflow/conftest.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:python (import asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/ --collect-only)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add tests/workflow/helpers.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:python (""")** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (python -m pytest tests/workflow/test_volunteer_entry.py::tes)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **code:powershell (git add tests/workflow/test_volunteer_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
-- [[base.py]] (8 shared connections)
-- [[BaseModel]] (3 shared connections)
-- [[update_admin_settings()]] (2 shared connections)
-- [[log_entries.py]] (2 shared connections)
-- [[AppSettings]] (1 shared connections)
-- [[errors.py]] (1 shared connections)
-- [[send_monthly_reports()]] (1 shared connections)
-- [[BelPro - Vnos Prostovoljcev (Volunteer Entry Workflow)]] (1 shared connections)
-- [[managers.py]] (1 shared connections)
-- [[conftest.py]] (1 shared connections)
-- [[persist_report()]] (1 shared connections)
-- [[load_key()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/models/app_setting.py`
-- `api/models/base.py`
-- `api/models/error_log.py`
-- `api/models/log_entry.py`
-- `api/models/log_entry_photo.py`
-- `api/models/manager.py`
-- `api/models/monthly_report.py`
-- `api/models/volunteer.py`
+- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (52%)
-- INFERRED: 37 (48%)
+- EXTRACTED: 70 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

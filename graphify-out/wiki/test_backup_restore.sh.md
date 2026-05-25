@@ -1,22 +1,35 @@
 # test_backup_restore.sh
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **test_backup_restore.sh** (0 connections) — `scripts/test_backup_restore.sh`
+- **Database Node Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **MongoDB** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **MySQL** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **SELECT with JOIN** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Bulk INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Find Documents** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Insert Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Update Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Nalozi Stanje]] (1 shared connections)
+- [[Community 386]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/test_backup_restore.sh`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

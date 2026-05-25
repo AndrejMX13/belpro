@@ -1,49 +1,57 @@
 # path
 
-> 14 nodes · cohesion 0.16
+> 29 nodes
 
 ## Key Concepts
 
-- **path** (16 connections) — `scripts/gen_architecture_docx.js`
-- **main()** (6 connections) — `ops/scripts/photo_cleanup.py`
-- **test_send_monthly_persists_volunteer_pdf()** (5 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_persists_consolidated_pdf()** (5 connections) — `api/tests/test_report_history.py`
-- **download_history_pdf()** (4 connections) — `api/routers/reports.py`
-- **photo_cleanup.py** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **report_error()** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **dsn_from_url()** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **Stream a previously generated PDF from disk. Returns 404 if the row or file is m** (1 connections) — `api/routers/reports.py`
-- **send_monthly_reports must persist one MonthlyReport row per volunteer PDF.** (1 connections) — `api/tests/test_report_history.py`
-- **send_monthly_reports must persist a consolidated MonthlyReport row when manager** (1 connections) — `api/tests/test_report_history.py`
-- **POST failure to the API error log.** (1 connections) — `ops/scripts/photo_cleanup.py`
-- **Convert asyncpg DATABASE_URL to psycopg2 DSN.** (1 connections) — `ops/scripts/photo_cleanup.py`
-- **Query approved entries older than retention cutoff, delete their photos and DB r** (1 connections) — `ops/scripts/photo_cleanup.py`
+- **volunteer_factory()** (57 connections) — `api/tests/conftest.py`
+- **test_volunteers.py** (21 connections) — `api/tests/test_volunteers.py`
+- **test_photo_upload_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_photo_upload_base64_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_get_volunteer_found()** (3 connections) — `api/tests/test_volunteers.py`
+- **test_delete_volunteer_with_entries_returns_409()** (3 connections) — `api/tests/test_volunteers.py`
+- **test_list_volunteers_returns_created_volunteer()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_duplicate_emso_returns_409()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_update_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_deactivate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_activate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_delete_volunteer_happy_path()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_check_emso_already_registered()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_emso_stored_encrypted()** (2 connections) — `api/tests/test_volunteers.py`
+- **Returns an async callable that inserts a Volunteer row via flush (not commit)** (1 connections) — `api/tests/conftest.py`
+- **upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in** (1 connections) — `api/tests/test_app_settings.py`
+- **upload_photo_base64 rejects a second photo when max_photos_per_entry is 1 in DB.** (1 connections) — `api/tests/test_app_settings.py`
+- **test_list_volunteers_empty()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_success()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_missing_required_field_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_postal_code_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_emso_length_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_emso_checksum_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_get_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_update_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- *... and 4 more nodes in this community*
 
 ## Relationships
 
-- [[persist_report()]] (6 shared connections)
-- [[str]] (3 shared connections)
-- [[volunteer_factory()]] (2 shared connections)
-- [[log_entry_factory()]] (2 shared connections)
-- [[log_entries.py]] (2 shared connections)
-- [[send_monthly_reports()]] (1 shared connections)
+- [[test_documents.py]] (22 shared connections)
+- [[005_report_prefs.py]] (12 shared connections)
+- [[analytics_summary()]] (6 shared connections)
+- [[Community 349]] (4 shared connections)
+- [[monthly_reports.json]] (3 shared connections)
+- [[Maximum photos allowed per log entry.]] (2 shared connections)
 - [[get_report_history()]] (1 shared connections)
-- [[load_key()]] (1 shared connections)
-- [[conftest.py]] (1 shared connections)
-- [[test_logo.py]] (1 shared connections)
-- [[gen_architecture_docx.js]] (1 shared connections)
+- [[Community 405]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `api/tests/test_report_history.py`
-- `ops/scripts/photo_cleanup.py`
-- `scripts/gen_architecture_docx.js`
+- `api/tests/conftest.py`
+- `api/tests/test_app_settings.py`
+- `api/tests/test_volunteers.py`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (51%)
-- INFERRED: 25 (49%)
+- EXTRACTED: 53 (43%)
+- INFERRED: 70 (57%)
 - AMBIGUOUS: 0 (0%)
 
 ---

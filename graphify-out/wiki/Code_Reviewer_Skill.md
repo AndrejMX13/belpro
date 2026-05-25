@@ -1,35 +1,35 @@
 # Code Reviewer Skill
 
-> 28 nodes · cohesion 0.09
+> 41 nodes
 
 ## Key Concepts
 
-- **Code Reviewer Skill** (8 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Database Optimizer Skill** (6 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Database Index Strategies** (5 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL Tuning Reference** (5 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- **Database Query Optimization** (5 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
-- **Database Monitoring and Analysis** (4 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Debugging Wizard Skill** (4 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Common Bug Patterns** (4 connections) — `.claude/skills/debugging-wizard/references/common-patterns.md`
-- **N+1 Query Anti-Pattern** (3 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **MySQL Tuning Reference** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Code Review Common Issues** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **pg_stat_statements Extension** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **EXPLAIN ANALYZE Execution Plan Analysis** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
-- **Code Review Feedback Examples** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Receiving Code Review Feedback** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Code Review Report Template** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Code Review Checklist** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Spec Compliance Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Covering Index Pattern** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Partial Index Pattern** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **InnoDB Buffer Pool Configuration** (1 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **PostgreSQL Shared Buffers Configuration** (1 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- **PostgreSQL Autovacuum Configuration** (1 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- **Keyset Pagination Pattern** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
-- **Race Condition Bug Pattern** (1 connections) — `.claude/skills/debugging-wizard/references/common-patterns.md`
-- *... and 3 more nodes in this community*
+- **n8n Code JavaScript** (15 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **What You'll Learn** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Coverage** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Critical Gotchas Highlighted** (4 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Quick Reference** (4 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **File Structure** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **#1: Webhook Data Structure** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **#2: Return Format** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **#3: Expression Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Quick Start** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Data Access Mastery** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Common Patterns (Production-Tested)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Error Prevention** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Built-in Functions** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **code:block1 (n8n-code-javascript/)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Mode Selection** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Data Access** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Error Prevention** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Production Patterns** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Built-in Functions** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
@@ -37,28 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/SKILL.md`
-- `.claude/skills/code-reviewer/references/common-issues.md`
-- `.claude/skills/code-reviewer/references/feedback-examples.md`
-- `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- `.claude/skills/code-reviewer/references/report-template.md`
-- `.claude/skills/code-reviewer/references/review-checklist.md`
-- `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- `.claude/skills/database-optimizer/SKILL.md`
-- `.claude/skills/database-optimizer/references/index-strategies.md`
-- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- `.claude/skills/database-optimizer/references/query-optimization.md`
-- `.claude/skills/debugging-wizard/SKILL.md`
-- `.claude/skills/debugging-wizard/references/common-patterns.md`
-- `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- `.claude/skills/n8n-code-javascript/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (76%)
-- INFERRED: 16 (24%)
+- EXTRACTED: 80 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

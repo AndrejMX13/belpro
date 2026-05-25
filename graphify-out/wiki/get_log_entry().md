@@ -1,29 +1,41 @@
 # get_log_entry()
 
-> 4 nodes · cohesion 0.50
+> 19 nodes
 
 ## Key Concepts
 
-- **get_log_entry()** (5 connections) — `api/routers/log_entries.py`
-- **GET /api/log-entries/{id} (get_log_entry)** (3 connections) — `api/routers/log_entries.py`
-- **Get a single log entry by ID.** (1 connections) — `api/routers/log_entries.py`
-- **n8n: GET /api/log-entries/{id} (Get Entry for Photo Count)** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Window Functions** (10 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Ranking Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Aggregate Window Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **LAG and LEAD Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **FIRST_VALUE and LAST_VALUE** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Advanced Analytics** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Conditional Aggregation with Windows** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Performance Considerations** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **window-functions.md** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- ROW_NUMBER: Sequential numbering within partition)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Running totals and cumulative sums)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Compare with previous/next row)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Compare each row to first/last in partition)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- ROWS vs RANGE difference)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Percentile calculations)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Filter within window function)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Avoid multiple window passes - combine into one)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Common Patterns** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
 
 ## Relationships
 
-- [[Volunteer (ORM)]] (2 shared connections)
-- [[log_entries.py]] (1 shared connections)
-- [[n8n/workflows/volunteer_entry.json]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/sql-pro/references/window-functions.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (80%)
-- INFERRED: 2 (20%)
+- EXTRACTED: 36 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

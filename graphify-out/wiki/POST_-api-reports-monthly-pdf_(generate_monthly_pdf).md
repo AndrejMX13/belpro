@@ -1,22 +1,33 @@
 # POST /api/reports/monthly/pdf (generate_monthly_pdf)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **POST /api/reports/monthly/pdf (generate_monthly_pdf)** (0 connections) — `api/routers/reports.py`
+- **Example 1: HTTP Request Complete Flow** (6 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Complex Dependency Examples** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Example 2: IF Node Operator Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Example 3: Slack Operation Matrix** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:block16 (method=POST)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// post message)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 376]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

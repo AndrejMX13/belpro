@@ -1,14 +1,28 @@
 # 014_seed_report_auto_hour.py
 
-> 5 nodes · cohesion 0.40
+> 19 nodes
 
 ## Key Concepts
 
-- **014_seed_report_auto_hour.py** (2 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
-- **Seed the report_auto_hour settings row with default value 7.** (1 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
-- **Remove the report_auto_hour settings row.** (1 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
+- **PostgreSQL Pro** (8 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Common Patterns** (4 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Core Workflow** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **End-to-End Example: Slow Query → Fix → Verification** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **JSONB — GIN Index and Query** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **VACUUM and Bloat Monitoring** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Replication Lag Monitoring** (2 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- Step 1: Identify slow queries)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- Create GIN index for containment queries)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- Check tables with high dead tuple counts)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **code:sql (-- On primary: check standby lag)** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/postgres-pro/SKILL.md`
 
 ## Relationships
 
@@ -16,11 +30,11 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/014_seed_report_auto_hour.py`
+- `.claude/skills/postgres-pro/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 36 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

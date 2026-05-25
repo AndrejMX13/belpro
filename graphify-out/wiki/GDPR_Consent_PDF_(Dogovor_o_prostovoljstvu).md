@@ -1,33 +1,43 @@
 # GDPR Consent PDF (Dogovor o prostovoljstvu)
 
-> 6 nodes · cohesion 0.47
+> 21 nodes
 
 ## Key Concepts
 
-- **GDPR Consent PDF (Dogovor o prostovoljstvu)** (5 connections) — `SPEC.md`
-- **NGO Logo Plan** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **NGO Logo Storage and PDF Embedding** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **PDF Report History Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **GDPR Consent PDF Plan** (2 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **PDF Report History (MonthlyReport table upsert)** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Database Optimizer** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Common Operations & Examples** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Identify Top Slow Queries (PostgreSQL)** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Capture an Execution Plan** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Create a Covering Index** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Validate Improvement** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MySQL: Find Slow Queries** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Requires pg_stat_statements extension)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Use BUFFERS to expose cache hit vs. disk read ratio)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Reading EXPLAIN Output — Key Patterns to Find** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Covers the filter AND the projected columns, eliminating )** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Before optimization: save plan & timing)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Inspect slow query log candidates)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
 
 ## Relationships
 
-- [[BelPro System Specification]] (1 shared connections)
-- [[Docker Compose (all services containerised)]] (1 shared connections)
-- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/database-optimizer/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (65%)
-- INFERRED: 6 (35%)
+- EXTRACTED: 40 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

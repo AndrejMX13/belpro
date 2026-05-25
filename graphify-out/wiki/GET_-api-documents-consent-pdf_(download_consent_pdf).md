@@ -1,10 +1,21 @@
 # GET /api/documents/consent-pdf (download_consent_pdf)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **GET /api/documents/consent-pdf (download_consent_pdf)** (0 connections) — `api/routers/documents.py`
+- **Security Testing** (7 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Authentication Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Authorization Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Input Validation Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Security Headers Test** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **security-testing.md** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Authentication Security', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Authorization', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Input Validation', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **code:typescript (describe('Security Headers', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Security Test Checklist** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
 
 ## Relationships
 
@@ -12,11 +23,11 @@
 
 ## Source Files
 
-- `api/routers/documents.py`
+- `.claude/skills/test-master/references/security-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

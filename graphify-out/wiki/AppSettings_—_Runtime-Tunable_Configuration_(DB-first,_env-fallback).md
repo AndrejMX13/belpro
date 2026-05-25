@@ -1,52 +1,48 @@
 # AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)
 
-> 18 nodes · cohesion 0.25
+> 36 nodes
 
 ## Key Concepts
 
-- **AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)** (14 connections) — `SPEC.md`
-- **Ops Sidecar (backup, photo cleanup, error reporting)** (10 connections) — `SPEC.md`
-- **Auto Monthly Reports Plan** (7 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Error Log (Dnevnik napak)** (6 connections) — `SPEC.md`
-- **ops_server.py ThreadingHTTPServer Reconfigure** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Version 0.11.0-beta.0** (5 connections) — `CHANGELOG.md`
-- **Ops Sidecar and Error Log Plan** (5 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **Configurable Backup Retention Days Plan** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Report Auto Hour Plan** (5 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Version 0.11.1-beta.0** (3 connections) — `CHANGELOG.md`
-- **Ops Notification Server (POST /reconfigure, port 9000)** (3 connections) — `CHANGELOG.md`
-- **Settings Table Plan** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **Report Delivery Error Visibility Plan** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
-- **MAX_PHOTOS_PER_ENTRY Setting** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Configurable Backup Retention Days** (3 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **report_auto_hour Configurable Cron Hour** (3 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **BelPro Changelog** (2 connections) — `CHANGELOG.md`
-- **Photo Upload Limit Plan** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **File Summary** (8 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 1: Infrastructure — migration test database** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 6: Base64 photo limit + `_PHOTOS_ROOT` monkeypatch** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 7: Manager password change** (5 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 2: Migration roundtrip test** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 3: EMŠO encryption round-trip** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 4: Status-flow enforcement — `pending_volunteer` → 409** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 5: Analytics edge cases** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Test Coverage Gaps — Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **2026-05-24-test-coverage-gaps.md** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec postgres psql -U belpro -c "CREATE DATAB)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:block3 (CREATE DATABASE)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:block4 (DATABASE_URL_MIGRATIONS=postgresql+asyncpg://belpro:belpro_d)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add db/create_extra_dbs.sh api/.env.test)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python ("""Migration roundtrip test — runs against belpro_test_migra)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_migrations.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_migrations.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_emso_stored_encrypted()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteers.py::tes)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_approve_pending_volunteer_returns_409()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_analytics_rejected_hours_excluded()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- *... and 11 more nodes in this community*
 
 ## Relationships
 
-- [[BelPro System Specification]] (4 shared connections)
-- [[Docker Compose (all services containerised)]] (3 shared connections)
-- [[EMŠO Encryption (AES-256-GCM at rest)]] (1 shared connections)
-- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] (1 shared connections)
-- [[Test Coverage Gaps Plan]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `CHANGELOG.md`
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
-- `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
-- `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
 
 ## Audit Trail
 
-- EXTRACTED: 77 (88%)
-- INFERRED: 11 (12%)
+- EXTRACTED: 70 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

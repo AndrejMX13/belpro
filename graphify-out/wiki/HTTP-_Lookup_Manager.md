@@ -1,23 +1,45 @@
 # HTTP: Lookup Manager
 
-> 2 nodes · cohesion 1.00
+> 15 nodes
 
 ## Key Concepts
 
-- **HTTP: Lookup Manager** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Scheduled Tasks Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **scheduled_tasks.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block1 (Schedule Trigger → [Fetch Data] → [Process] → [Deliver] → [L)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. Schedule Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. Data Source** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. Processing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. Delivery** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **5. Logging** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block42 (Schedule (daily 8 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block43 (Schedule (nightly 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block44 (Schedule (every 5 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[Community 410]] (1 shared connections)
+- [[HTTP: Lookup Volunteer]] (1 shared connections)
+- [[Community 449]] (1 shared connections)
+- [[Community 412]] (1 shared connections)
+- [[Community 360]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
+- [[Community 359]] (1 shared connections)
+- [[GET /api/volunteers/{id} (get_volunteer)]] (1 shared connections)
+- [[Community 448]] (1 shared connections)
+- [[Community 450]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 38 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

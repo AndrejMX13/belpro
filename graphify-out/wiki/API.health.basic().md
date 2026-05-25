@@ -1,10 +1,20 @@
 # API.health.basic()
 
-> 1 nodes · cohesion 0.00
+> 11 nodes
 
 ## Key Concepts
 
-- **API.health.basic()** (0 connections) — `frontend/js/api.js`
+- **graphify semantic rebuild** (6 connections) — `docs/graphify-semantic-rebuild.md`
+- **What to run** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **After the rebuild — step 1: generate community labels from graph data** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **After the rebuild — step 2: regenerate graph.html** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **Commit format** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **graphify-semantic-rebuild.md** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **Problem** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:block1 (/graphify .)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:block4 (chore: full graphify semantic rebuild — graphify update)** (1 connections) — `docs/graphify-semantic-rebuild.md`
 
 ## Relationships
 
@@ -12,11 +22,11 @@
 
 ## Source Files
 
-- `frontend/js/api.js`
+- `docs/graphify-semantic-rebuild.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

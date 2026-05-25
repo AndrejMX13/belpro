@@ -1,23 +1,39 @@
 # Normalise phone to bare E.164 digits, pass through None.
 
-> 1 nodes · cohesion 0.00
+> 14 nodes
 
 ## Key Concepts
 
-- **Normalise phone to bare E.164 digits, pass through None.** (0 connections) — `api/schemas/volunteer.py`
+- **normalize_phone()** (16 connections) — `api/utils/phone.py`
+- **test_phone_utils.py** (10 connections) — `api/tests/test_phone_utils.py`
+- **test_strips_plus_prefix()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_strips_spaces()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_strips_dashes()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_strips_parentheses()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_already_normalized()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_none_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_empty_string_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_whitespace_only_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_too_short_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
+- **test_jid_phone_part()** (2 connections) — `api/tests/test_phone_utils.py`
+- **phone.py** (1 connections) — `api/utils/phone.py`
+- **Return digits-only WhatsApp-native phone number, or None for invalid input.** (1 connections) — `api/utils/phone.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[GET /log-entries/{id}/photos/{pid}/file]] (2 shared connections)
+- [[001_initial_schema.py]] (1 shared connections)
+- [[DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)]] (1 shared connections)
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
+- `api/tests/test_phone_utils.py`
+- `api/utils/phone.py`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 24 (50%)
+- INFERRED: 24 (50%)
 - AMBIGUOUS: 0 (0%)
 
 ---

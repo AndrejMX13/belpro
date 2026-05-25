@@ -1,30 +1,43 @@
 # send_email()
 
-> 6 nodes · cohesion 0.40
+> 21 nodes
 
 ## Key Concepts
 
-- **send_email()** (6 connections) — `api/services/email.py`
-- **email.py** (5 connections) — `api/services/email.py`
-- **_check_mx()** (3 connections) — `api/services/email.py`
-- **Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row** (1 connections) — `api/services/email.py`
-- **Raise ValueError if the recipient domain has no MX records.** (1 connections) — `api/services/email.py`
-- **Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port** (1 connections) — `api/services/email.py`
+- **Context** (9 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Context** (7 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Delete Non-Approved Entries Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Task 1: Extend the DELETE endpoint and clean up photo files** (2 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Task 2: Frontend — API client method and delete button** (2 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **2026-05-19-delete-non-approved-entries.md** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:block2 (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:python (@router.delete()** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:block4 (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:block5 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:bash (git add api/routers/log_entries.py api/tests/test_log_entrie)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (// Before the closing `},` of the logEntries object, add:)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (logEntries: {)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (const editable   = entry.status !== 'approved';)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (const editable   = entry.status !== 'approved';)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (${canApprove ? `)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js ($('approve-btn').addEventListener('click', () => doAction('a)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (const delEntryBtn = $('delete-entry-btn');)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:bash (git add frontend/js/api.js frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
 
 ## Relationships
 
-- [[send_monthly_reports()]] (2 shared connections)
-- [[test_reports.py]] (2 shared connections)
-- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/email.py`
+- `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (88%)
-- INFERRED: 2 (12%)
+- EXTRACTED: 40 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

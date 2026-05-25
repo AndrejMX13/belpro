@@ -1,24 +1,39 @@
 # DELETE /log-entries/{id}/photos/{pid}
 
-> 2 nodes · cohesion 1.00
+> 17 nodes
 
 ## Key Concepts
 
-- **DELETE /log-entries/{id}/photos/{pid}** (2 connections) — `api/routers/log_entries.py`
-- **API.logEntries.deletePhoto()** (1 connections) — `frontend/js/api.js`
+- **Common Mistakes** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 1: Wrong nodeType Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 2: Using detail="full" by Default** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 3: Using n8n_get_workflow mode="full" for Large Workflows** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 4: Not Using Validation Profiles** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 4: Ignoring Auto-Sanitization** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 7: Wrong Parameter Name for updateNode** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 8: Wrong Credential Attachment Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 6: Not Using intent Parameter** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - Returns 3-8K tokens, use sparingly)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG — 58-node workflow, every parameter bloated)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - Uses default profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// After ANY update, auto-sanitization runs on ALL nodes)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - credentials as flat object)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// WRONG - No context for response)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- [[list-skills.sh]] (1 shared connections)
+- [[Community 677]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `frontend/js/api.js`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 3 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

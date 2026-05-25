@@ -1,24 +1,37 @@
 # Ima Vnos?
 
-> 2 nodes · cohesion 1.00
+> 14 nodes
 
 ## Key Concepts
 
-- **Ima Vnos?** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **VolunteerUpdate** (14 connections) — `api/schemas/volunteer.py`
+- **test_volunteer_update_schema.py** (11 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_rejects_empty_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_rejects_empty_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_email_string()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_coerces_empty_email_to_none()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_none_email()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_normalises_phone()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_all_none_produces_empty_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_first_name_included_in_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **Fields that can be updated on an existing volunteer.** (1 connections) — `api/schemas/volunteer.py`
+- **Unit tests for VolunteerUpdate schema — no DB required.** (1 connections) — `api/tests/test_volunteer_update_schema.py`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[Porocila Page - Monthly Reports Overview]] (3 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `api/schemas/volunteer.py`
+- `api/tests/test_volunteer_update_schema.py`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (55%)
+- INFERRED: 21 (45%)
 - AMBIGUOUS: 0 (0%)
 
 ---

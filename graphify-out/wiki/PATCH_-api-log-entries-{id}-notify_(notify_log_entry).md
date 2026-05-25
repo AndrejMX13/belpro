@@ -1,34 +1,43 @@
 # PATCH /api/log-entries/{id}/notify (notify_log_entry)
 
-> 6 nodes · cohesion 0.33
+> 21 nodes
 
 ## Key Concepts
 
-- **PATCH /api/log-entries/{id}/notify (notify_log_entry)** (8 connections) — `api/routers/log_entries.py`
-- **notify_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **Mark a pending_manager entry as notified (sets manager_notified_at).      Only** (1 connections) — `api/routers/log_entries.py`
-- **n8n: PATCH /api/log-entries/{id}/notify (Manual Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: PATCH /api/log-entries/{id}/notify (Auto Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: PATCH /api/log-entries/{id}/notify (Next Entry Notify)** (1 connections) — `n8n/workflows/manager_approval.json`
+- **Browser APIs** (11 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Fetch API** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Web Workers** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Service Workers & PWA** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Local Storage & IndexedDB** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Intersection Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Mutation Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Web Notifications** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Canvas & WebGL** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Performance APIs** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **browser-apis.md** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Basic GET request)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// main.js - Create and communicate with worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Register Service Worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// LocalStorage (synchronous, max 5-10MB))** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Lazy loading images)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Watch DOM changes)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Request permission)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Canvas 2D)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Performance timing)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
 
 ## Relationships
 
-- [[Volunteer (ORM)]] (3 shared connections)
-- [[BelPro - Odobritev Upravljalca (Manager Approval Workflow)]] (2 shared connections)
-- [[log_entries.py]] (1 shared connections)
-- [[n8n/workflows/volunteer_entry.json]] (1 shared connections)
-- [[BelPro - Vnos Prostovoljcev (Volunteer Entry Workflow)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `n8n/workflows/manager_approval.json`
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/javascript-pro/references/browser-apis.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (89%)
-- INFERRED: 2 (11%)
+- EXTRACTED: 40 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

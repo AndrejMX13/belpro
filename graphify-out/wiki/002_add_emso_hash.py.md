@@ -1,24 +1,51 @@
 # 002_add_emso_hash.py
 
-> 3 nodes · cohesion 0.67
+> 19 nodes
 
 ## Key Concepts
 
-- **002_add_emso_hash.py** (2 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
-- **upgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
-- **downgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
+- **connections** (66 connections) — `n8n/workflows/volunteer_entry.json`
+- **Razpotje** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Transcribe + Extract** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **HTTP: Ustvari Nov Vnos** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Webhook: WhatsApp** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **HTTP: GET Pending (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **IF: Should Notify? (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Build Image Media Body** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Slika Prejeta** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **HTTP: GET Entry (Photo Count)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[API.errors.acknowledge()]] (18 shared connections)
+- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
+- [[Community 737]] (1 shared connections)
+- [[Community 749]] (1 shared connections)
+- [[Community 723]] (1 shared connections)
+- [[Community 708]] (1 shared connections)
+- [[Community 732]] (1 shared connections)
+- [[Community 731]] (1 shared connections)
+- [[Community 747]] (1 shared connections)
+- [[Community 733]] (1 shared connections)
+- [[Community 725]] (1 shared connections)
+- [[Community 714]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/versions/002_add_emso_hash.py`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 102 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

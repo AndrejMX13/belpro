@@ -1,63 +1,58 @@
 # DevOps Engineer Skill
 
-> 36 nodes · cohesion 0.07
+> 46 nodes
 
 ## Key Concepts
 
-- **DevOps Engineer Skill** (8 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Deployment Strategies Reference** (6 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Release Automation Reference** (6 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **FastAPI Expert Skill** (6 connections) — `.claude/skills/fastapi-expert/SKILL.md`
-- **Django to FastAPI Migration Guide** (5 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Incident Response Reference** (4 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Async SQLAlchemy Reference** (4 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- **GitHub Actions Pipelines Reference** (3 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Kubernetes Manifests Reference** (3 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Platform Engineering Reference** (3 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
-- **FastAPI Authentication Reference** (3 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **Async Testing Reference** (3 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Docker Patterns Reference** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **Terraform IaC Reference** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **FastAPI Endpoints and Routing Reference** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- **Pydantic V2 Schemas Reference** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- **Canary Deployment Strategy** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **DORA Metrics** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Feature Flags Progressive Delivery** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Zero-Downtime Database Migrations** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Blue-Green Deployment Strategy** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Multi-Stage Dockerfile Pattern** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
-- **CI/CD Pipeline Pattern** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Incident Severity Levels** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Mean Time To Resolve MTTR** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- *... and 11 more nodes in this community*
+- **test_auth.py** (11 connections) — `api/tests/test_auth.py`
+- **httpOnly Cookie Auth Design ISS-005** (9 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **_verify_session_token()** (8 connections) — `api/core/auth.py`
+- **auth.py** (7 connections) — `api/routers/auth.py`
+- **login()** (7 connections) — `api/routers/auth.py`
+- **auth.py** (6 connections) — `api/core/auth.py`
+- **_make_session_token()** (6 connections) — `api/core/auth.py`
+- **LoginResponse** (5 connections) — `api/schemas/auth.py`
+- **_verify_password()** (4 connections) — `api/core/auth.py`
+- **require_manager()** (4 connections) — `api/core/auth.py`
+- **logout()** (4 connections) — `api/routers/auth.py`
+- **auth.py** (4 connections) — `api/schemas/auth.py`
+- **api/routers/auth.py Login and Logout Endpoints** (4 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **LoginRequest** (3 connections) — `api/schemas/auth.py`
+- **test_make_and_verify_session_token()** (3 connections) — `api/tests/test_auth.py`
+- **test_verify_session_token_wrong_secret()** (3 connections) — `api/tests/test_auth.py`
+- **test_verify_session_token_expired()** (3 connections) — `api/tests/test_auth.py`
+- **test_verify_session_token_garbage()** (2 connections) — `api/tests/test_auth.py`
+- **test_verify_session_token_empty()** (2 connections) — `api/tests/test_auth.py`
+- **belpro_session httpOnly Cookie** (2 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Dashboard Login Screen** (2 connections) — `frontend/index.html`
+- **POST /api/auth/login (login)** (2 connections) — `api/routers/auth.py`
+- **API.auth.login()** (2 connections) — `frontend/js/api.js`
+- **API.auth.logout()** (2 connections) — `frontend/js/api.js`
+- **POST /auth/login** (2 connections) — `api/routers/auth.py`
+- *... and 21 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Porocila Page - Monthly Reports Overview]] (2 shared connections)
+- [[Code: Clear State Preklici]] (1 shared connections)
+- [[POST /api/logo (upload_logo)]] (1 shared connections)
+- [[Code: Preveri Slike Stanje]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/SKILL.md`
-- `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- `.claude/skills/devops-engineer/references/docker-patterns.md`
-- `.claude/skills/devops-engineer/references/github-actions.md`
-- `.claude/skills/devops-engineer/references/incident-response.md`
-- `.claude/skills/devops-engineer/references/kubernetes.md`
-- `.claude/skills/devops-engineer/references/platform-engineering.md`
-- `.claude/skills/devops-engineer/references/release-automation.md`
-- `.claude/skills/devops-engineer/references/terraform-iac.md`
-- `.claude/skills/fastapi-expert/SKILL.md`
-- `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
-- `.claude/skills/fastapi-expert/references/authentication.md`
-- `.claude/skills/fastapi-expert/references/endpoints-routing.md`
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
-- `.claude/skills/fastapi-expert/references/testing-async.md`
+- `api/core/auth.py`
+- `api/routers/auth.py`
+- `api/schemas/auth.py`
+- `api/tests/test_auth.py`
+- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- `frontend/index.html`
+- `frontend/js/api.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 76 (88%)
-- INFERRED: 10 (12%)
+- EXTRACTED: 98 (76%)
+- INFERRED: 31 (24%)
 - AMBIGUOUS: 0 (0%)
 
 ---

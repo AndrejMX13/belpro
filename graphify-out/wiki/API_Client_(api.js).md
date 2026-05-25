@@ -1,10 +1,20 @@
 # API Client (api.js)
 
-> 1 nodes · cohesion 0.00
+> 11 nodes
 
 ## Key Concepts
 
-- **API Client (api.js)** (0 connections) — `frontend/js/api.js`
+- **Unit Testing** (6 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Jest/Vitest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **pytest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Mocking Patterns** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Test Organization** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **unit-testing.md** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:typescript (describe('UserService', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:typescript (// Mock functions)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **code:typescript (describe('Feature', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
 
 ## Relationships
 
@@ -12,11 +22,11 @@
 
 ## Source Files
 
-- `frontend/js/api.js`
+- `.claude/skills/test-master/references/unit-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

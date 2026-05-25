@@ -1,22 +1,40 @@
 # check_cache.py
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **check_cache.py** (0 connections) — `scripts/graphify/check_cache.py`
+- **n8n Workflow Patterns** (16 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Pattern Selection Guide** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **The 6 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **When to use each pattern:** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Pattern Statistics** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Detailed Pattern Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Real Template Examples** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **✅ Do** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **❌ Don't** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 525]] (1 shared connections)
+- [[Community 576]] (1 shared connections)
+- [[Community 305]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
+- [[Community 575]] (1 shared connections)
+- [[Community 427]] (1 shared connections)
+- [[Community 306]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/graphify/check_cache.py`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 31 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

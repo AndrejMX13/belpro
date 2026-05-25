@@ -1,38 +1,48 @@
 # VolunteerUpdate
 
-> 14 nodes · cohesion 0.24
+> 32 nodes
 
 ## Key Concepts
 
-- **VolunteerUpdate** (14 connections) — `api/schemas/volunteer.py`
-- **test_volunteer_update_schema.py** (11 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_rejects_empty_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_rejects_empty_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_email_string()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_coerces_empty_email_to_none()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_accepts_none_email()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_normalises_phone()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_all_none_produces_empty_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **test_first_name_included_in_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
-- **Fields that can be updated on an existing volunteer.** (1 connections) — `api/schemas/volunteer.py`
-- **Unit tests for VolunteerUpdate schema — no DB required.** (1 connections) — `api/tests/test_volunteer_update_schema.py`
+- **Platform Engineering** (17 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Self-Service with Crossplane** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Terraform Self-Service Module** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Backstage Service Template** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Service Catalog Info** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Golden Path Scaffolding** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **GitOps Repository Structure** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **ArgoCD Application** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform Metrics** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Custom Backstage Plugin** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Cost Allocation** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform APIs** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Multi-Tenant Architecture** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Adoption Strategy** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **CLI Tool Example** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **platform-engineering.md** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform Principles** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# Composition for self-service database)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:hcl (# modules/service/main.tf)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# templates/microservice/template.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# catalog-info.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:block6 (gitops/)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (apiVersion: argoproj.io/v1alpha1)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# prometheus/platform-metrics.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
-- [[BaseModel]] (2 shared connections)
-- [[volunteer.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
-- `api/tests/test_volunteer_update_schema.py`
+- `.claude/skills/devops-engineer/references/platform-engineering.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (55%)
-- INFERRED: 21 (45%)
+- EXTRACTED: 62 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

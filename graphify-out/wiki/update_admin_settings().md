@@ -1,40 +1,48 @@
 # update_admin_settings()
 
-> 12 nodes · cohesion 0.21
+> 27 nodes
 
 ## Key Concepts
 
-- **update_admin_settings()** (10 connections) — `api/routers/admin.py`
-- **admin.py** (9 connections) — `api/routers/admin.py`
-- **_notify_ops()** (7 connections) — `api/routers/admin.py`
-- **get_admin_settings()** (6 connections) — `api/routers/admin.py`
-- **AdminSettingsResponse** (5 connections) — `api/schemas/admin.py`
-- **admin.py** (4 connections) — `api/schemas/admin.py`
-- **Admin router — runtime-tunable settings management.** (1 connections) — `api/routers/admin.py`
-- **POST /reconfigure to ops. Logs and persists error on failure; never raises.** (1 connections) — `api/routers/admin.py`
-- **Return current values of all runtime-tunable settings.** (1 connections) — `api/routers/admin.py`
-- **Update one or more runtime-tunable settings. Returns updated state.** (1 connections) — `api/routers/admin.py`
-- **Pydantic schemas for the admin settings endpoints.** (1 connections) — `api/schemas/admin.py`
-- **Current values of all runtime-tunable settings.** (1 connections) — `api/schemas/admin.py`
+- **Module Systems** (14 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **ES Modules (ESM)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Import Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Dynamic Imports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Package.json Configuration** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Conditional Exports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Import Maps (Browser)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **CommonJS Compatibility** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Module Resolution** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Circular Dependencies** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Tree Shaking Optimization** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Module Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Node.js ESM Specifics** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **modules.md** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Named exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Named imports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Basic dynamic import)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:json ({)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// package.json with conditional exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:html (<!-- In HTML -->)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// ESM consuming CommonJS)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Explicit file extensions required in ESM)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// moduleA.js)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Write side-effect-free code for tree shaking)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Singleton pattern)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [[Settings Table ISS-026 Design]] (8 shared connections)
-- [[AppSettings]] (3 shared connections)
-- [[app_settings.py]] (2 shared connections)
-- [[Base]] (2 shared connections)
-- [[str]] (2 shared connections)
-- [[BaseModel]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/admin.py`
-- `api/schemas/admin.py`
+- `.claude/skills/javascript-pro/references/modules.md`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (68%)
-- INFERRED: 15 (32%)
+- EXTRACTED: 52 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

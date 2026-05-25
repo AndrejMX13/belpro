@@ -1,22 +1,33 @@
 # LoginResponse (Schema)
 
-> 1 nodes · cohesion 0.00
+> 11 nodes
 
 ## Key Concepts
 
-- **LoginResponse (Schema)** (0 connections) — `api/schemas/auth.py`
+- **activeVersion** (12 connections) — `n8n/workflows/volunteer_entry.json`
+- **updatedAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **createdAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **versionId** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **workflowId** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **nodes** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **authors** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **name** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **description** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **autosaved** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **workflowPublishHistory** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
+- [[API.errors.acknowledge()]] (1 shared connections)
 
 ## Source Files
 
-- `api/schemas/auth.py`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

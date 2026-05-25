@@ -1,10 +1,22 @@
 # n8n-mcp MCP Server
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **n8n-mcp MCP Server** (0 connections) — `README.md`
+- **Async SQLAlchemy** (7 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Engine & Session Setup** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Model Definition** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Database Dependency** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **CRUD Operations** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Lifespan Handler** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **async-sqlalchemy.md** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from sqlalchemy.ext.asyncio import create_async_engine, Asyn)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from sqlalchemy.orm import Mapped, mapped_column, relationsh)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from typing import AsyncGenerator)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from sqlalchemy import select, update, delete)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from contextlib import asynccontextmanager)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
 
 ## Relationships
 
@@ -12,11 +24,11 @@
 
 ## Source Files
 
-- `README.md`
+- `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

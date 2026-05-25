@@ -1,23 +1,37 @@
 # POST /api/managers (create_manager)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **POST /api/managers (create_manager)** (0 connections) — `api/routers/managers.py`
+- **get_report_history()** (5 connections) — `api/routers/reports.py`
+- **report.py** (5 connections) — `api/schemas/report.py`
+- **VolunteerMonthlySummary** (4 connections) — `api/schemas/report.py`
+- **MonthlyReportSummary** (4 connections) — `api/schemas/report.py`
+- **ReportHistoryItem** (4 connections) — `api/schemas/report.py`
+- **ReportHistoryList** (4 connections) — `api/schemas/report.py`
+- **List persisted PDF reports, newest first. Optionally filter by year and/or month** (1 connections) — `api/routers/reports.py`
+- **Pydantic schemas for monthly report summaries.** (1 connections) — `api/schemas/report.py`
+- **Per-volunteer aggregated totals for a given month.** (1 connections) — `api/schemas/report.py`
+- **Aggregated monthly summary across all active volunteers.** (1 connections) — `api/schemas/report.py`
+- **One persisted report record in the history list.** (1 connections) — `api/schemas/report.py`
+- **List of persisted report records.** (1 connections) — `api/schemas/report.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Porocila Page - Monthly Reports Overview]] (4 shared connections)
+- [[GET /log-entries/{id}/photos/{pid}/file]] (3 shared connections)
+- [[BelPro Project Memory Public Index]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/managers.py`
+- `api/routers/reports.py`
+- `api/schemas/report.py`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 25 (78%)
+- INFERRED: 7 (22%)
 - AMBIGUOUS: 0 (0%)
 
 ---

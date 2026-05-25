@@ -1,24 +1,38 @@
 # GET /log-entries/{id}
 
-> 2 nodes · cohesion 1.00
+> 17 nodes
 
 ## Key Concepts
 
-- **GET /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **API.logEntries.get()** (1 connections) — `frontend/js/api.js`
+- **Warnings (Should Fix)** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Missing Error Handling** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Unbounded Query** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **6. best_practice** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 1: Old typeVersion** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Example 2: No Retry Logic** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **7. deprecated** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **8. performance** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:sql (SELECT * FROM users WHERE active = true)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:sql (SELECT * FROM users WHERE active = true LIMIT 1000)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- [[Community 299]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `frontend/js/api.js`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 3 (100%)
+- EXTRACTED: 33 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

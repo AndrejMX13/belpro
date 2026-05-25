@@ -1,23 +1,37 @@
 # IF: Ima Star Vnos?
 
-> 2 nodes · cohesion 1.00
+> 14 nodes
 
 ## Key Concepts
 
-- **IF: Ima Star Vnos?** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README_SL.md`
+- **Nadzorna plošča za vodje** (2 connections) — `README_SL.md`
+- **Struktura projekta (Project layout)** (2 connections) — `README_SL.md`
+- **README_SL.md** (1 connections) — `README_SL.md`
+- **Kako deluje** (1 connections) — `README_SL.md`
+- **Vzorčna PDF poročila** (1 connections) — `README_SL.md`
+- **Tehnološki sklad (Stack)** (1 connections) — `README_SL.md`
+- **Sistemske zahteve** (1 connections) — `README_SL.md`
+- **Dostopne točke (Access points)** (1 connections) — `README_SL.md`
+- **Varnostne opombe (Security notes)** (1 connections) — `README_SL.md`
+- **code:block22 (belpro/)** (1 connections) — `README_SL.md`
+- **Razvoj s pomočjo umetne inteligence** (1 connections) — `README_SL.md`
+- **Roadmap** (1 connections) — `README_SL.md`
+- **Izven obsega - različica v1** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- [[Community 353]] (1 shared connections)
+- [[Code: Pripravi Slike]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `README_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

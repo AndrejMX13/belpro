@@ -1,35 +1,47 @@
 # test_managers.py
 
-> 14 nodes · cohesion 0.14
+> 31 nodes
 
 ## Key Concepts
 
-- **test_managers.py** (14 connections) — `api/tests/test_managers.py`
-- **test_change_password_invalidates_old_credentials()** (2 connections) — `api/tests/test_managers.py`
-- **test_get_manager_returns_profile()** (1 connections) — `api/tests/test_managers.py`
-- **test_create_manager_returns_409_when_already_configured()** (1 connections) — `api/tests/test_managers.py`
-- **test_auth_wrong_password_returns_401()** (1 connections) — `api/tests/test_managers.py`
-- **test_auth_missing_credentials_returns_401()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_includes_wa_fields()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_auto_syncs_when_evolution_reports_new_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_no_sync_when_phone_already_matches()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_shows_db_phone_when_disconnected()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_normalizes_whatsapp_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_rejects_too_short_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_empty_phone_not_stored_as_empty_string()** (1 connections) — `api/tests/test_managers.py`
-- **After a password change, old credentials return 401 and new ones return 200.** (1 connections) — `api/tests/test_managers.py`
+- **Task 3: Documentation** (14 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **File Map** (5 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Task 2: Bash wrapper script** (5 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **EMŠO Key Rotation Script Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Task 1: Python rotation script** (4 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Task 0: Patch test volunteers with valid EMŠOs (dev only)** (3 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **2026-05-18-rotate-emso-key.md** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Pre-requisite: test data preparation** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (docker compose exec -T api python - <<'PYEOF')** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (docker compose exec -T api python - <<'PYEOF')** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (python -m py_compile api/scripts/rotate_emso_key.py && echo )** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (git add api/scripts/rotate_emso_key.py)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (bash -n scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (chmod +x scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:bash (git add scripts/rotate_emso_key.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:markdown (### Rotacija ključa za šifriranje EMŠO)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block11** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block12** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block13** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block14 (├── scripts/                # Skripte: setup.sh, upgrade.sh,)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block15 (├── scripts/                # Skripte: setup.sh, upgrade.sh,)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:markdown (### EMŠO Key Rotation)** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **code:block17** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [[api/main.py]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_managers.py`
+- `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 60 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

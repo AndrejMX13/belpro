@@ -1,24 +1,39 @@
 # Code: Check Pending (Manual)
 
-> 2 nodes · cohesion 1.00
+> 16 nodes
 
 ## Key Concepts
 
-- **Code: Check Pending (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **tax_number_valid()** (11 connections) — `api/utils/tax_number.py`
+- **TestTaxNumberValid** (10 connections) — `api/tests/test_tax_number.py`
+- **test_tax_number.py** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_accepts_valid_bare_digits()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_accepts_si_prefix()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_accepts_lowercase_si_prefix()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_bad_check_digit()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_wrong_length()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_non_digits()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_empty()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_check_digit_one_case()** (2 connections) — `api/tests/test_tax_number.py`
+- **tax_number.py** (2 connections) — `api/utils/tax_number.py`
+- **.test_check_digit_zero_case()** (1 connections) — `api/tests/test_tax_number.py`
+- **Tests for Slovenian tax number (davčna številka) validation.** (1 connections) — `api/tests/test_tax_number.py`
+- **Slovenian tax number (davčna številka) validation utilities.** (1 connections) — `api/utils/tax_number.py`
+- **Return True if value passes the Modulus 11 check digit algorithm.      Accepts b** (1 connections) — `api/utils/tax_number.py`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `api/tests/test_tax_number.py`
+- `api/utils/tax_number.py`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 28 (62%)
+- INFERRED: 17 (38%)
 - AMBIGUOUS: 0 (0%)
 
 ---

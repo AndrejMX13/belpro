@@ -1,23 +1,36 @@
 # HTTP: Fetch Image
 
-> 2 nodes · cohesion 1.00
+> 15 nodes
 
 ## Key Concepts
 
-- **HTTP: Fetch Image** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **BelPro Project Memory — Public Index** (14 connections) — `.claude/memory/MEMORY.md`
+- **MEMORY.md** (1 connections) — `.claude/memory/MEMORY.md`
+- **Conventions & Naming** (1 connections) — `.claude/memory/MEMORY.md`
+- **Packaging & Dependencies** (1 connections) — `.claude/memory/MEMORY.md`
+- **Docker & Dev Environment** (1 connections) — `.claude/memory/MEMORY.md`
+- **Tooling — Serena** (1 connections) — `.claude/memory/MEMORY.md`
+- **Tooling — Diagrams** (1 connections) — `.claude/memory/MEMORY.md`
+- **Tooling — graphify** (1 connections) — `.claude/memory/MEMORY.md`
+- **n8n Workflows** (1 connections) — `.claude/memory/MEMORY.md`
+- **Infrastructure** (1 connections) — `.claude/memory/MEMORY.md`
+- **Git & Commits** (1 connections) — `.claude/memory/MEMORY.md`
+- **Architecture** (1 connections) — `.claude/memory/MEMORY.md`
+- **Release** (1 connections) — `.claude/memory/MEMORY.md`
+- **Superpowers** (1 connections) — `.claude/memory/MEMORY.md`
+- **Project State** (1 connections) — `.claude/memory/MEMORY.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/memory/MEMORY.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,23 +1,36 @@
 # HTTP: GET Volunteer (Auto)
 
-> 2 nodes · cohesion 1.00
+> 15 nodes
 
 ## Key Concepts
 
-- **HTTP: GET Volunteer (Auto)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Pydantic V2 Schemas** (8 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Schema Patterns** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **ORM Mode (from_attributes)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Model Validator** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Nested Models** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Serialization Control** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Settings (Pydantic V2)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **pydantic-v2.md** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class UserResponse(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class OrderCreate(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class Address(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class User(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (from pydantic_settings import BaseSettings, SettingsConfigDi)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

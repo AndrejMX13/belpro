@@ -1,10 +1,22 @@
 # Reporting period: 'current' (this month) or 'previous' (last month).
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **Reporting period: 'current' (this month) or 'previous' (last month).** (0 connections) — `api/services/app_settings.py`
+- **Security Headers** (7 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Helmet (Express)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Manual Headers** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Rate Limiting** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **CORS Configuration** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Cookie Security** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **security-headers.md** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import helmet from 'helmet';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (app.use((req, res, next) => {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import rateLimit from 'express-rate-limit';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import cors from 'cors';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (res.cookie('session', token, {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
 
 ## Relationships
 
@@ -12,11 +24,11 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `.claude/skills/secure-code-guardian/references/security-headers.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

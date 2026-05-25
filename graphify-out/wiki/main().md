@@ -1,29 +1,47 @@
 # main()
 
-> 7 nodes · cohesion 0.38
+> 22 nodes
 
 ## Key Concepts
 
-- **main()** (5 connections) — `ops/scripts/monthly_report_send.py`
-- **monthly_report_send.py** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **report_error()** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **resolve_period()** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **POST failure to the API error log.** (1 connections) — `ops/scripts/monthly_report_send.py`
-- **Return (year, month) for the given period label.      'current'  → today's year** (1 connections) — `ops/scripts/monthly_report_send.py`
-- **Resolve target month and call the send-monthly API endpoint.** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **render_consent_pdf()** (11 connections) — `api/services/consent_pdf.py`
+- **test_documents.py** (8 connections) — `api/tests/test_documents.py`
+- **consent_pdf.py** (7 connections) — `api/services/consent_pdf.py`
+- **test_render_consent_pdf_returns_bytes()** (3 connections) — `api/tests/test_documents.py`
+- **test_render_consent_pdf_with_additional_clauses()** (3 connections) — `api/tests/test_documents.py`
+- **test_render_consent_pdf_empty_clauses_treated_as_none()** (3 connections) — `api/tests/test_documents.py`
+- **_esc()** (2 connections) — `api/services/consent_pdf.py`
+- **_now_str()** (2 connections) — `api/services/consent_pdf.py`
+- **test_consent_pdf_returns_pdf()** (2 connections) — `api/tests/test_documents.py`
+- **test_consent_pdf_requires_auth()** (2 connections) — `api/tests/test_documents.py`
+- **test_patch_manager_saves_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
+- **test_patch_manager_clears_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
+- **GDPR Article 13 consent notice PDF generation.** (1 connections) — `api/services/consent_pdf.py`
+- **Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage** (1 connections) — `api/services/consent_pdf.py`
+- **Tests for the /documents router and consent_pdf service.** (1 connections) — `api/tests/test_documents.py`
+- **render_consent_pdf returns non-empty bytes for a minimal manager.** (1 connections) — `api/tests/test_documents.py`
+- **render_consent_pdf produces bytes when additional clauses are set.** (1 connections) — `api/tests/test_documents.py`
+- **render_consent_pdf handles empty string clauses without error.** (1 connections) — `api/tests/test_documents.py`
+- **Authenticated request returns a PDF response.** (1 connections) — `api/tests/test_documents.py`
+- **Unauthenticated request is rejected.** (1 connections) — `api/tests/test_documents.py`
+- **PATCH /managers/me accepts and persists gdpr_additional_clauses.** (1 connections) — `api/tests/test_documents.py`
+- **PATCH /managers/me with empty string clears gdpr_additional_clauses.      Note:** (1 connections) — `api/tests/test_documents.py`
 
 ## Relationships
 
-- [[str]] (1 shared connections)
+- [[list_pending_entries.py]] (3 shared connections)
+- [[Code: Clear State Preklici]] (2 shared connections)
+- [[loadReports()]] (2 shared connections)
 
 ## Source Files
 
-- `ops/scripts/monthly_report_send.py`
+- `api/services/consent_pdf.py`
+- `api/tests/test_documents.py`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (94%)
-- INFERRED: 1 (6%)
+- EXTRACTED: 47 (82%)
+- INFERRED: 10 (18%)
 - AMBIGUOUS: 0 (0%)
 
 ---

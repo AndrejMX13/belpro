@@ -1,27 +1,44 @@
 # 011_manager_gdpr_clauses.py
 
-> 5 nodes · cohesion 0.40
+> 19 nodes
 
 ## Key Concepts
 
-- **011_manager_gdpr_clauses.py** (2 connections) — `api/db/migrations/versions/011_manager_gdpr_clauses.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/011_manager_gdpr_clauses.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/011_manager_gdpr_clauses.py`
-- **Add gdpr_additional_clauses nullable text column to managers.** (1 connections) — `api/db/migrations/versions/011_manager_gdpr_clauses.py`
-- **Remove gdpr_additional_clauses column from managers.** (1 connections) — `api/db/migrations/versions/011_manager_gdpr_clauses.py`
+- **errors.py** (6 connections) — `api/routers/errors.py`
+- **error_log.py** (4 connections) — `api/schemas/error_log.py`
+- **_require_internal_key()** (3 connections) — `api/routers/errors.py`
+- **write_error()** (3 connections) — `api/routers/errors.py`
+- **unacknowledged_count()** (3 connections) — `api/routers/errors.py`
+- **ErrorLogCreate** (3 connections) — `api/schemas/error_log.py`
+- **ErrorLogResponse** (3 connections) — `api/schemas/error_log.py`
+- **UnacknowledgedCountResponse** (3 connections) — `api/schemas/error_log.py`
+- **list_errors()** (2 connections) — `api/routers/errors.py`
+- **acknowledge_error()** (2 connections) — `api/routers/errors.py`
+- **Error log router — write endpoint for internal services, read endpoints for mana** (1 connections) — `api/routers/errors.py`
+- **Validate X-Internal-Key header against API_SECRET_KEY.** (1 connections) — `api/routers/errors.py`
+- **Record an operational failure. Called by API exception handlers, n8n, and the op** (1 connections) — `api/routers/errors.py`
+- **Return count of unacknowledged errors. Used by nav badge.** (1 connections) — `api/routers/errors.py`
+- **List error log entries, newest first. Optionally filter to unacknowledged only.** (1 connections) — `api/routers/errors.py`
+- **Mark an error as acknowledged (read by manager).** (1 connections) — `api/routers/errors.py`
+- **Pydantic schemas for the error_log endpoint.** (1 connections) — `api/schemas/error_log.py`
+- **Payload sent by internal services (API, n8n, ops sidecar).** (1 connections) — `api/schemas/error_log.py`
+- **Single error log row returned to the dashboard.** (1 connections) — `api/schemas/error_log.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Porocila Page - Monthly Reports Overview]] (3 shared connections)
+- [[monthly_reports.json]] (1 shared connections)
+- [[Evolution API (API Gateway)]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/versions/011_manager_gdpr_clauses.py`
+- `api/routers/errors.py`
+- `api/schemas/error_log.py`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 37 (90%)
+- INFERRED: 4 (10%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,50 +1,48 @@
 # make_text_payload()
 
-> 37 nodes · cohesion 0.11
+> 47 nodes
 
 ## Key Concepts
 
-- **make_text_payload()** (12 connections) — `tests/workflow/helpers.py`
-- **post_to_webhook()** (11 connections) — `tests/workflow/helpers.py`
-- **poll_for_entry()** (10 connections) — `tests/workflow/helpers.py`
-- **make_response_payload()** (8 connections) — `tests/workflow/helpers.py`
-- **test_edit_path()** (8 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_volunteer_entry.py** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_happy_path_text_confirm()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_cancel_path()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_add_photos_then_confirm()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_add_photos_then_cancel()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **helpers.py** (6 connections) — `tests/workflow/helpers.py`
-- **poll_for_entry_status()** (5 connections) — `tests/workflow/helpers.py`
-- **poll_for_entry_gone()** (5 connections) — `tests/workflow/helpers.py`
-- **test_photo_upload.py** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_upload_photo_happy_path()** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_upload_second_photo_increments_count()** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_upload_photo_bad_extension()** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_unknown_volunteer_creates_no_entry()** (4 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_upload_photo_unknown_entry()** (3 connections) — `tests/workflow/test_photo_upload.py`
-- **Build a WhatsApp text-message webhook body for the given bare-digit phone.** (1 connections) — `tests/workflow/helpers.py`
-- **Build a volunteer response payload. response_type must be one of:     'confirm'** (1 connections) — `tests/workflow/helpers.py`
-- **POST a WhatsApp event to the n8n webhook. Asserts 200.** (1 connections) — `tests/workflow/helpers.py`
-- **Poll GET /api/log-entries until at least one entry for volunteer_id appears.** (1 connections) — `tests/workflow/helpers.py`
-- **Poll GET /api/log-entries/{entry_id} until its status matches expected_status.** (1 connections) — `tests/workflow/helpers.py`
-- **Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError** (1 connections) — `tests/workflow/helpers.py`
-- *... and 12 more nodes in this community*
+- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
+- **connections** (18 connections) — `n8n/workflows/manager_approval.json`
+- **activeVersion** (12 connections) — `n8n/workflows/manager_approval.json`
+- **Execute Workflow Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Manual Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Parse Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Switch: Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /approve** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /reject** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Volunteer Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Notify Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Manager Confirm** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Confirm to Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Pending Entries** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Check Next Entry** (3 connections) — `n8n/workflows/manager_approval.json`
+- **IF: Should Notify?** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /notify** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Next Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- [[str]] (1 shared connections)
+- [[010_monthly_reports_unique_idx.py]] (2 shared connections)
 
 ## Source Files
 
-- `tests/workflow/helpers.py`
-- `tests/workflow/test_photo_upload.py`
-- `tests/workflow/test_volunteer_entry.py`
+- `n8n/workflows/manager_approval.json`
 
 ## Audit Trail
 
-- EXTRACTED: 70 (48%)
-- INFERRED: 75 (52%)
+- EXTRACTED: 126 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

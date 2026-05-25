@@ -1,59 +1,48 @@
 # volunteer_factory()
 
-> 29 nodes · cohesion 0.09
+> 42 nodes
 
 ## Key Concepts
 
-- **volunteer_factory()** (57 connections) — `api/tests/conftest.py`
-- **test_volunteers.py** (21 connections) — `api/tests/test_volunteers.py`
-- **test_photo_upload_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
-- **test_photo_upload_base64_respects_db_max_photos_setting()** (4 connections) — `api/tests/test_app_settings.py`
-- **test_get_volunteer_found()** (3 connections) — `api/tests/test_volunteers.py`
-- **test_delete_volunteer_with_entries_returns_409()** (3 connections) — `api/tests/test_volunteers.py`
-- **test_list_volunteers_returns_created_volunteer()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_duplicate_emso_returns_409()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_update_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_deactivate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_activate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_delete_volunteer_happy_path()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_check_emso_already_registered()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_emso_stored_encrypted()** (2 connections) — `api/tests/test_volunteers.py`
-- **Returns an async callable that inserts a Volunteer row via flush (not commit)** (1 connections) — `api/tests/conftest.py`
-- **upload_photo rejects a second photo when max_photos_per_entry is patched to 1 in** (1 connections) — `api/tests/test_app_settings.py`
-- **upload_photo_base64 rejects a second photo when max_photos_per_entry is 1 in DB.** (1 connections) — `api/tests/test_app_settings.py`
-- **test_list_volunteers_empty()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_success()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_missing_required_field_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_postal_code_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_emso_length_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_emso_checksum_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_get_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_update_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- *... and 4 more nodes in this community*
+- **JSONB Operations** (10 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Indexing** (6 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Operators** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Query Patterns** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Performance Best Practices** (3 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB vs JSON** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Retrieval Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Containment Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Modification Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index (Default for containment)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index on Specific Path** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index with jsonb_path_ops** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **B-tree Index on Extracted Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Expression Index for Nested Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Filtering** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Aggregation** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Array Operations** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Functions** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Path Queries (Postgres 12+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **DO** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **DON'T** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Schema Validation (Postgres 15+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Migration Patterns** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **jsonb.md** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **code:sql (-- Use JSONB (binary, indexed, faster))** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
-- [[log_entry_factory()]] (22 shared connections)
-- [[test_reports.py]] (8 shared connections)
-- [[str]] (6 shared connections)
-- [[test_analytics.py]] (4 shared connections)
-- [[persist_report()]] (4 shared connections)
-- [[path]] (2 shared connections)
-- [[test_app_settings.py]] (2 shared connections)
-- [[AppSettings]] (1 shared connections)
-- [[load_key()]] (1 shared connections)
-- [[conftest.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/conftest.py`
-- `api/tests/test_app_settings.py`
-- `api/tests/test_volunteers.py`
+- `.claude/skills/postgres-pro/references/jsonb.md`
 
 ## Audit Trail
 
-- EXTRACTED: 53 (43%)
-- INFERRED: 70 (57%)
+- EXTRACTED: 82 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

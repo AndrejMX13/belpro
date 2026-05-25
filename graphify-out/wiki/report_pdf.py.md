@@ -1,36 +1,47 @@
 # report_pdf.py
 
-> 11 nodes · cohesion 0.33
+> 25 nodes
 
 ## Key Concepts
 
-- **report_pdf.py** (10 connections) — `api/services/report_pdf.py`
-- **render_volunteer_pdf()** (9 connections) — `api/services/report_pdf.py`
-- **ngo_header_html()** (8 connections) — `api/services/report_pdf.py`
-- **render_summary_pdf()** (7 connections) — `api/services/report_pdf.py`
-- **_esc()** (4 connections) — `api/services/report_pdf.py`
-- **_generated_line()** (3 connections) — `api/services/report_pdf.py`
-- **_fmt_date()** (2 connections) — `api/services/report_pdf.py`
-- **PDF rendering for monthly volunteer reports using WeasyPrint.** (1 connections) — `api/services/report_pdf.py`
-- **Render the NGO header block as an HTML string.** (1 connections) — `api/services/report_pdf.py`
-- **Render a single-volunteer monthly report PDF and return raw bytes.** (1 connections) — `api/services/report_pdf.py`
-- **Render an all-volunteer summary PDF and return raw bytes.** (1 connections) — `api/services/report_pdf.py`
+- **Deployment Strategies** (11 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Rollback Procedures** (4 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Rolling Deployment (Kubernetes)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Blue-Green with Ingress** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Canary with Istio** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Kubernetes Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **ArgoCD Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Terraform Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Post-deployment Verification** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Deployment Metrics (DORA)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Advanced Canary with Automated Analysis** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Shadow Deployment** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **deployment-strategies.md** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Strategy Comparison** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Blue deployment (current))** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (apiVersion: networking.istio.io/v1beta1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# View rollout history)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (argocd app rollback app-prod --revision=123)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# Identify previous state)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Pre-deployment Checklist** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# Check pod status)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Prometheus metrics for DORA tracking)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Flagger: Automated canary with rollback)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Mirror traffic to shadow deployment)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
 
 ## Relationships
 
-- [[send_monthly_reports()]] (5 shared connections)
-- [[NGOInfo]] (3 shared connections)
-- [[render_consent_pdf()]] (2 shared connections)
-- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/report_pdf.py`
+- `.claude/skills/devops-engineer/references/deployment-strategies.md`
 
 ## Audit Trail
 
-- EXTRACTED: 39 (83%)
-- INFERRED: 8 (17%)
+- EXTRACTED: 48 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,23 +1,38 @@
 # Hour of day (0–23) at which the monthly report cron fires.
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **Hour of day (0–23) at which the monthly report cron fires.** (0 connections) — `api/services/app_settings.py`
+- **loadAnalytics()** (8 connections) — `frontend/js/analytics.js`
+- **analytics.js** (7 connections) — `frontend/js/analytics.js`
+- **renderAnalytics()** (5 connections) — `frontend/js/analytics.js`
+- **renderAnalyticsContent()** (3 connections) — `frontend/js/analytics.js`
+- **_renderCharts()** (3 connections) — `frontend/js/analytics.js`
+- **loadAnalytics()** (3 connections) — `frontend/js/analytics.js`
+- **GET /analytics/summary** (3 connections) — `api/routers/analytics.py`
+- **_destroyCharts()** (2 connections) — `frontend/js/analytics.js`
+- **API.analytics.summary()** (2 connections) — `frontend/js/api.js`
+- **AnalyticsSummary shape (total_hours, active_volunteer_count, hours_per_volunteer[], hours_per_location[], monthly_trend[])** (2 connections) — `api/routers/analytics.py`
+- **analyticsState** (1 connections) — `frontend/js/analytics.js`
+- **exportAnalyticsCsv()** (1 connections) — `frontend/js/analytics.js`
+- **renderAnalytics() — analytics page** (1 connections) — `frontend/js/analytics.js`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[n8n MCP Workflow Management Guide]] (6 shared connections)
+- [[tax_number_valid()]] (1 shared connections)
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `api/routers/analytics.py`
+- `frontend/js/analytics.js`
+- `frontend/js/api.js`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 34 (83%)
+- INFERRED: 7 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

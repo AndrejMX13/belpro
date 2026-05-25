@@ -1,28 +1,47 @@
 # scripts/upgrade.sh
 
-> 7 nodes · cohesion 0.29
+> 22 nodes
 
 ## Key Concepts
 
-- **scripts/upgrade.sh** (12 connections) — `scripts/upgrade.sh`
-- **info()** (1 connections) — `scripts/upgrade.sh`
-- **ok()** (1 connections) — `scripts/upgrade.sh`
-- **warn()** (1 connections) — `scripts/upgrade.sh`
-- **heading()** (1 connections) — `scripts/upgrade.sh`
-- **die()** (1 connections) — `scripts/upgrade.sh`
-- **get_env()** (1 connections) — `scripts/upgrade.sh`
+- **gen_architecture_docx.js** (22 connections) — `scripts/gen_architecture_docx.js`
+- **spacer()** (8 connections) — `scripts/gen_architecture_docx.js`
+- **systemArchitecture()** (7 connections) — `scripts/gen_architecture_docx.js`
+- **main()** (7 connections) — `scripts/gen_architecture_docx.js`
+- **heading1()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **body()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **whatIsBelpro()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **volunteerJourney()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **monthlyReporting()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **stepParagraph()** (5 connections) — `scripts/gen_architecture_docx.js`
+- **privacyCompliance()** (5 connections) — `scripts/gen_architecture_docx.js`
+- **heading2()** (4 connections) — `scripts/gen_architecture_docx.js`
+- **borders()** (3 connections) — `scripts/gen_architecture_docx.js`
+- **coverPage()** (3 connections) — `scripts/gen_architecture_docx.js`
+- **border()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **cell()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **featureTable()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **componentTable()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **complianceTable()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **{
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  Header, Footer, AlignmentType, HeadingLevel, BorderStyle, WidthType,
+  ShadingType, VerticalAlign, PageNumber, PageBreak, LevelFormat,
+}** (1 connections) — `scripts/gen_architecture_docx.js`
+- **fs** (1 connections) — `scripts/gen_architecture_docx.js`
+- **noBorders()** (1 connections) — `scripts/gen_architecture_docx.js`
 
 ## Relationships
 
-- [[scripts/backup.sh]] (1 shared connections)
+- [[BelPro Project Memory Public Index]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/upgrade.sh`
+- `scripts/gen_architecture_docx.js`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (100%)
+- EXTRACTED: 107 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

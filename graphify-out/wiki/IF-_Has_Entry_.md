@@ -1,23 +1,36 @@
 # IF: Has Entry?
 
-> 2 nodes · cohesion 1.00
+> 15 nodes
 
 ## Key Concepts
 
-- **IF: Has Entry?** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n MCP Tools Expert** (12 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Coverage** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **File Count** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Priority** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Dependencies** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Core Topics** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Tool Categories** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Evaluations** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Key Features** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Files** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **What You'll Learn** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
+- **Last Updated** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-mcp-tools-expert/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,42 +1,48 @@
 # app_settings.py
 
-> 17 nodes · cohesion 0.17
+> 34 nodes
 
 ## Key Concepts
 
-- **app_settings.py** (16 connections) — `api/services/app_settings.py`
-- **._int()** (11 connections) — `api/services/app_settings.py`
-- **get_app_settings()** (6 connections) — `api/services/app_settings.py`
-- **._str()** (4 connections) — `api/services/app_settings.py`
-- **photo_retention_days()** (4 connections) — `api/services/app_settings.py`
-- **session_duration_hours()** (4 connections) — `api/services/app_settings.py`
-- **max_photos_per_entry()** (3 connections) — `api/services/app_settings.py`
-- **report_auto_day()** (3 connections) — `api/services/app_settings.py`
-- **report_auto_period()** (3 connections) — `api/services/app_settings.py`
-- **backup_hour()** (2 connections) — `api/services/app_settings.py`
-- **photo_cleanup_hour()** (2 connections) — `api/services/app_settings.py`
-- **report_auto_hour()** (2 connections) — `api/services/app_settings.py`
-- **backup_retention_days()** (2 connections) — `api/services/app_settings.py`
-- **AppSettings — central authority for all configuration.  Wraps the env-only Setti** (1 connections) — `api/services/app_settings.py`
-- **Resolve an integer setting: DB value first, env default fallback.          Falls** (1 connections) — `api/services/app_settings.py`
-- **Resolve a string setting: DB value first, default fallback.** (1 connections) — `api/services/app_settings.py`
-- **FastAPI dependency — returns the central settings authority for this request.** (1 connections) — `api/services/app_settings.py`
+- **Interactive API Documentation** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Multi-Language Examples** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **SDK Reference Template** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Interactive Documentation Portals** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Multi-Protocol Documentation** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **GraphQL Schema Documentation** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **SDK Documentation Strategies** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **OpenAPI 3.1 Advanced Features** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Reusable Components** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Swagger UI Customization** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Redoc (Modern Alternative)** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Stoplight Elements** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **WebSocket Protocol Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **gRPC Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **interactive-api-docs.md** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:yaml (openapi: 3.1.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (// Custom Swagger UI)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:html (<!DOCTYPE html>)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (import { API } from '@stoplight/elements';)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:graphql (""")** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (const { ApolloServer } = require('apollo-server');)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:yaml (# AsyncAPI 2.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:protobuf (syntax = "proto3";)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:markdown (# Create User)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:block10** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- *... and 9 more nodes in this community*
 
 ## Relationships
 
-- [[Settings Table ISS-026 Design]] (11 shared connections)
-- [[AppSettings]] (4 shared connections)
-- [[render_consent_pdf()]] (3 shared connections)
-- [[update_admin_settings()]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `.claude/skills/code-documenter/references/interactive-api-docs.md`
 
 ## Audit Trail
 
-- EXTRACTED: 65 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 66 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,64 +1,67 @@
 # volunteers.js
 
-> 90 nodes · cohesion 0.06
+> 51 nodes
 
 ## Key Concepts
 
-- **volunteers.js** (55 connections) — `frontend/js/volunteers.js`
-- **$()** (37 connections) — `frontend/js/volunteers.js`
-- **setHtml()** (25 connections) — `frontend/js/volunteers.js`
-- **esc()** (20 connections) — `frontend/js/volunteers.js`
-- **renderLogEntryDetail()** (18 connections) — `frontend/js/volunteers.js`
-- **route()** (14 connections) — `frontend/js/volunteers.js`
-- **renderDetail()** (14 connections) — `frontend/js/volunteers.js`
-- **renderSettings()** (12 connections) — `frontend/js/volunteers.js`
-- **loadVolunteers()** (11 connections) — `frontend/js/volunteers.js`
-- **loadApprovals()** (11 connections) — `frontend/js/volunteers.js`
-- **errors.js** (10 connections) — `frontend/js/errors.js`
-- **reports.js** (10 connections) — `frontend/js/reports.js`
-- **renderAdmin()** (9 connections) — `frontend/js/admin.js`
-- **loadVolunteerLog()** (9 connections) — `frontend/js/volunteers.js`
-- **loadAnalytics()** (8 connections) — `frontend/js/analytics.js`
-- **renderDocuments()** (8 connections) — `frontend/js/documents.js`
-- **toast()** (8 connections) — `frontend/js/volunteers.js`
-- **renderList()** (8 connections) — `frontend/js/volunteers.js`
-- **renderApprovals()** (8 connections) — `frontend/js/volunteers.js`
-- **analytics.js** (7 connections) — `frontend/js/analytics.js`
-- **loadReports()** (7 connections) — `frontend/js/reports.js`
-- **submitAddVolunteer()** (7 connections) — `frontend/js/volunteers.js`
-- **renderAppLog()** (6 connections) — `frontend/js/errors.js`
-- **sendReports()** (6 connections) — `frontend/js/reports.js`
-- **showApp()** (6 connections) — `frontend/js/volunteers.js`
-- *... and 65 more nodes in this community*
+- **n8n MCP Workflow Management Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n Node Operation Patterns Reference** (8 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n Workflow Patterns Skill README** (8 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **n8n Node Configuration Skill (SKILL.md)** (7 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **n8n Validation Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **PostgreSQL Pro Skill (SKILL.md)** (7 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **n8n Workflow Patterns Skill (SKILL.md)** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **n8n Validation Expert Skill (SKILL.md)** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **n8n Node Configuration Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **n8n_update_partial_workflow Tool** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n AI Connection Types (8 types)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n Node Configuration Skill README** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **n8n Validation False Positives Guide** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **n8n Validation Expert Skill README** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **n8n Webhook Processing Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **n8n HTTP API Integration Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **n8n Database Operations Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **n8n AI Agent Workflow Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **n8n Scheduled Tasks Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **patchNodeField Operation (Surgical String Edit)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n_validate_workflow Tool (by ID)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n Workflow Lifecycle (Create-Validate-Edit-Activate-Monitor)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n HTTP Request Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n Webhook Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n Postgres Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- *... and 26 more nodes in this community*
 
 ## Relationships
 
-- [[renderDetail() — volunteer detail page]] (9 shared connections)
-- [[renderSettings() — settings page]] (7 shared connections)
-- [[GET /errors/unacknowledged-count]] (2 shared connections)
-- [[submitAddVolunteer()]] (2 shared connections)
-- [[GET /log-entries]] (2 shared connections)
-- [[PATCH /log-entries/{id}/approve]] (2 shared connections)
-- [[PATCH /log-entries/{id}/reject]] (2 shared connections)
-- [[loadAnalytics()]] (1 shared connections)
-- [[loadAppLog()]] (1 shared connections)
-- [[API.errors.acknowledge()]] (1 shared connections)
-- [[loadReports()]] (1 shared connections)
-- [[API.reports.exportPdf()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `frontend/js/admin.js`
-- `frontend/js/analytics.js`
-- `frontend/js/documents.js`
-- `frontend/js/errors.js`
-- `frontend/js/reports.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.claude/skills/n8n-node-configuration/README.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-validation-expert/README.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/README.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/postgres-pro/SKILL.md`
+- `.claude/skills/postgres-pro/references/extensions.md`
+- `.claude/skills/postgres-pro/references/jsonb.md`
+- `.claude/skills/postgres-pro/references/maintenance.md`
 
 ## Audit Trail
 
-- EXTRACTED: 435 (84%)
-- INFERRED: 81 (16%)
+- EXTRACTED: 120 (87%)
+- INFERRED: 18 (13%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,10 +1,20 @@
 # GET /api/health/detailed (health_detailed)
 
-> 1 nodes · cohesion 0.00
+> 11 nodes
 
 ## Key Concepts
 
-- **GET /api/health/detailed (health_detailed)** (0 connections) — `api/main.py`
+- **Integration Testing** (6 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **API Testing (Supertest)** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Authenticated Requests** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Database Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **pytest API Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **integration-testing.md** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:typescript (import request from 'supertest';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:typescript (describe('Protected endpoints', () => {)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:typescript (import { db } from '../database';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
 
 ## Relationships
 
@@ -12,11 +22,11 @@
 
 ## Source Files
 
-- `api/main.py`
+- `.claude/skills/test-master/references/integration-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,23 +1,37 @@
 # Code: Check Photo Limit
 
-> 2 nodes · cohesion 1.00
+> 16 nodes
 
 ## Key Concepts
 
-- **Code: Check Photo Limit** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Design: BelPro Version-Bump Skill** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step-by-Step Flow** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **2026-05-15-version-bump-skill-design.md** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Trigger** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Approach** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 0 — Pre-flight: test suite check** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 1 — Orient and suggest version** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 2 — Update files** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 3 — Pre-commit review** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 4 — Tag? (optional)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 6 — Offer container rebuild** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **BelPro-Specific Constraints** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Reminders (skill mentions, does not execute)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

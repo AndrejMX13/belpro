@@ -1,64 +1,64 @@
 # BelPro Project Memory Public Index
 
-> 23 nodes · cohesion 0.12
+> 40 nodes
 
 ## Key Concepts
 
-- **BelPro Project Memory Public Index** (17 connections) — `.claude/memory/MEMORY.md`
-- **Graphify Update Rule** (3 connections) — `.claude/memory/feedback_graphify_update.md`
-- **n8n Workflow Import Script Rule** (3 connections) — `.claude/memory/feedback_n8n_import_script.md`
-- **n8n Workflow Edit Strategy** (3 connections) — `.claude/memory/feedback_n8n_workflow_edits.md`
-- **n8n API Surfaces — /rest/ vs /api/v1/** (3 connections) — `.claude/memory/n8n_api_access.md`
-- **Error Log Reporting Pattern — Two Pathways** (3 connections) — `.claude/memory/project_error_reporting_pattern.md`
-- **FastAPI Lifespan Context Manager Pattern** (3 connections) — `.claude/memory/project_fastapi_lifespan.md`
-- **Code Documenter Skill** (3 connections) — `.claude/skills/code-documenter/SKILL.md`
-- **Plan File Commit Gap After Subagent Runs** (2 connections) — `.claude/memory/feedback_plan_file_commit.md`
-- **Serena replace_symbol_body Pitfalls** (2 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
-- **Superpowers Skill Invocation Discipline** (2 connections) — `.claude/memory/feedback_superpowers_discipline.md`
-- **AppSettings Service and settings Table** (2 connections) — `.claude/memory/project_app_settings.md`
-- **Graphify Recovery Script Order** (2 connections) — `.claude/memory/reference_graphify_recovery.md`
-- **Serena Memory Directory — Empty by Design** (2 connections) — `.claude/memory/reference_serena_memory.md`
-- **Code Documenter — FastAPI and Django API Docs Reference** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Graphify 0.4.23 Bug and Fix** (1 connections) — `.claude/memory/feedback_graphify_update.md`
-- **Issue Workflow — ISS-NNN Markers and Manual Testing** (1 connections) — `.claude/memory/feedback_issue_workflow.md`
-- **pydyf==0.10.0 Pin for WeasyPrint** (1 connections) — `.claude/memory/feedback_pydyf_pin.md`
-- **Evolution API QR Code Fix — v2.2.3** (1 connections) — `.claude/memory/project_evolution_qr.md`
-- **README Dashboard Screenshots Placeholder** (1 connections) — `.claude/memory/project_readme_screenshots.md`
-- **BelPro Release Versioning Pipeline** (1 connections) — `.claude/memory/project_versioning.md`
-- **Code Documenter — NestJS and Express API Docs Reference** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Code Documenter — Coverage Reports Reference** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **LogEntry (ORM)** (22 connections) — `api/models/log_entry.py`
+- **log_entries.py** (17 connections) — `api/routers/log_entries.py`
+- **path** (17 connections) — `scripts/gen_architecture_docx.js`
+- **EntryStatus (Enum)** (15 connections) — `api/models/log_entry.py`
+- **LogEntryResponse (Schema)** (11 connections) — `api/schemas/log_entry.py`
+- **upload_photo_base64()** (10 connections) — `api/routers/log_entries.py`
+- **upload_photo()** (9 connections) — `api/routers/log_entries.py`
+- **create_log_entry()** (8 connections) — `api/routers/log_entries.py`
+- **LogEntryPhoto (ORM)** (8 connections) — `api/models/log_entry_photo.py`
+- **list_log_entries()** (7 connections) — `api/routers/log_entries.py`
+- **delete_log_entry()** (7 connections) — `api/routers/log_entries.py`
+- **approve_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **reject_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **notify_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **confirm_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **get_log_entry()** (5 connections) — `api/routers/log_entries.py`
+- **_extract_exif()** (4 connections) — `api/routers/log_entries.py`
+- **get_photo_file()** (4 connections) — `api/routers/log_entries.py`
+- **delete_photo()** (4 connections) — `api/routers/log_entries.py`
+- **PhotoResponse (Schema)** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryCreate (Schema)** (3 connections) — `api/schemas/log_entry.py`
+- **LogEntryBrief (Schema)** (3 connections) — `api/schemas/volunteer.py`
+- **get_photo_limit()** (2 connections) — `api/routers/log_entries.py`
+- **LogEntryListResponse (Schema)** (2 connections) — `api/schemas/log_entry.py`
+- **Log entries CRUD router — volunteer work diary entries.** (1 connections) — `api/routers/log_entries.py`
+- *... and 15 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[errors.py]] (8 shared connections)
+- [[Code: Procesiraj Popravek]] (6 shared connections)
+- [[analytics_summary()]] (6 shared connections)
+- [[005_report_prefs.py]] (4 shared connections)
+- [[Evolution API (API Gateway)]] (3 shared connections)
+- [[Code: Preveri Slike Stanje]] (3 shared connections)
+- [[send_monthly_reports()]] (3 shared connections)
+- [[API.reports.downloadHistoryPdf()]] (2 shared connections)
+- [[Porocila Page - Monthly Reports Overview]] (1 shared connections)
+- [[Community 414]] (1 shared connections)
+- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
+- [[LoginRequest (Schema)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/MEMORY.md`
-- `.claude/memory/feedback_graphify_update.md`
-- `.claude/memory/feedback_issue_workflow.md`
-- `.claude/memory/feedback_n8n_import_script.md`
-- `.claude/memory/feedback_n8n_workflow_edits.md`
-- `.claude/memory/feedback_plan_file_commit.md`
-- `.claude/memory/feedback_pydyf_pin.md`
-- `.claude/memory/feedback_serena_replace_symbol.md`
-- `.claude/memory/feedback_superpowers_discipline.md`
-- `.claude/memory/n8n_api_access.md`
-- `.claude/memory/project_app_settings.md`
-- `.claude/memory/project_error_reporting_pattern.md`
-- `.claude/memory/project_evolution_qr.md`
-- `.claude/memory/project_fastapi_lifespan.md`
-- `.claude/memory/project_readme_screenshots.md`
-- `.claude/memory/project_versioning.md`
-- `.claude/memory/reference_graphify_recovery.md`
-- `.claude/memory/reference_serena_memory.md`
-- `.claude/skills/code-documenter/SKILL.md`
-- `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
+- `api/models/log_entry.py`
+- `api/models/log_entry_photo.py`
+- `api/routers/log_entries.py`
+- `api/schemas/log_entry.py`
+- `api/schemas/volunteer.py`
+- `scripts/gen_architecture_docx.js`
 
 ## Audit Trail
 
-- EXTRACTED: 44 (73%)
-- INFERRED: 16 (27%)
+- EXTRACTED: 163 (81%)
+- INFERRED: 39 (19%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,23 +1,36 @@
 # HTTP: Upload Photo
 
-> 2 nodes · cohesion 1.00
+> 15 nodes
 
 ## Key Concepts
 
-- **HTTP: Upload Photo** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n Expression Syntax** (11 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Coverage** (4 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **File Count** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Dependencies** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Core Topics** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Common Patterns** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Error Prevention** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Evaluations** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Key Features** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Files** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Success Metrics** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
+- **Last Updated** (1 connections) — `.claude/skills/n8n-expression-syntax/README.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-expression-syntax/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

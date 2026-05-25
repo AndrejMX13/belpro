@@ -1,28 +1,41 @@
 # GET /errors/unacknowledged-count
 
-> 4 nodes · cohesion 0.67
+> 19 nodes
 
 ## Key Concepts
 
-- **GET /errors/unacknowledged-count** (4 connections) — `api/routers/errors.py`
-- **API.errors.unacknowledgedCount()** (2 connections) — `frontend/js/api.js`
-- **refreshErrorBadge()** (2 connections) — `frontend/js/errors.js`
-- **UnacknowledgedCountResponse shape ({count})** (2 connections) — `api/routers/errors.py`
+- **Database Design** (10 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Normalization Levels** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Primary and Foreign Keys** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Constraints and Validation** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Indexing Strategy** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Common Design Patterns** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Temporal/Historical Data** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Soft Deletes** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Audit Trails** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **database-design.md** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- 1NF: Atomic values, no repeating groups)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Natural vs Surrogate keys)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- CHECK constraints)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Index foreign keys (critical for JOIN performance))** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Polymorphic associations (flexible but harder to enforce )** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Slowly Changing Dimension Type 2 (SCD2) - Full history)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Soft delete pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Audit table pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Schema Design Best Practices** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
 
 ## Relationships
 
-- [[volunteers.js]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/api.js`
-- `frontend/js/errors.js`
+- `.claude/skills/sql-pro/references/database-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (90%)
-- INFERRED: 1 (10%)
+- EXTRACTED: 36 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,22 +1,39 @@
 # DELETE /api/volunteers/{id} (delete_volunteer)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **DELETE /api/volunteers/{id} (delete_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **Belpro — System Specification** (15 connections) — `SPEC.md`
+- **1. Project Overview** (2 connections) — `SPEC.md`
+- **2. Architecture Overview** (2 connections) — `SPEC.md`
+- **9. Project Structure** (2 connections) — `SPEC.md`
+- **SPEC.md** (1 connections) — `SPEC.md`
+- **Legal Context** (1 connections) — `SPEC.md`
+- **Components** (1 connections) — `SPEC.md`
+- **7. Email** (1 connections) — `SPEC.md`
+- **8. GDPR & Privacy** (1 connections) — `SPEC.md`
+- **code:block2 (belpro/)** (1 connections) — `SPEC.md`
+- **10. Deployment** (1 connections) — `SPEC.md`
+- **11. Out of Scope (v1)** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 408]] (1 shared connections)
+- [[Community 440]] (1 shared connections)
+- [[Community 321]] (1 shared connections)
+- [[Community 611]] (1 shared connections)
+- [[Number of days approved entry photos are retained on disk.]] (1 shared connections)
+- [[Community 504]] (1 shared connections)
+- [[Community 439]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `SPEC.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

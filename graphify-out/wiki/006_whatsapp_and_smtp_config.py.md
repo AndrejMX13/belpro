@@ -1,14 +1,29 @@
 # 006_whatsapp_and_smtp_config.py
 
-> 5 nodes · cohesion 0.40
+> 20 nodes
 
 ## Key Concepts
 
-- **006_whatsapp_and_smtp_config.py** (2 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
-- **Add WhatsApp bot number and SMTP config columns to managers.** (1 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
-- **Drop WhatsApp bot number and SMTP config columns from managers.** (1 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
+- **test_graphify_infra.py** (18 connections) — `tests/test_graphify_infra.py`
+- **load()** (13 connections) — `tests/test_graphify_infra.py`
+- **edge_triples()** (5 connections) — `tests/test_graphify_infra.py`
+- **node_ids()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_service_nodes_created()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_depends_on_dict_format()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_depends_on_list_format()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_env_url_calls_edges()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_nginx_proxies_to_edge()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_existing_nodes_preserved()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_skeleton_node_is_upgraded()** (3 connections) — `tests/test_graphify_infra.py`
+- **test_node_has_required_fields()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_edges_are_extracted_confidence_1()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_idempotent_nodes()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_idempotent_edges()** (2 connections) — `tests/test_graphify_infra.py`
+- **test_no_self_calls()** (2 connections) — `tests/test_graphify_infra.py`
+- **tmp_graph()** (1 connections) — `tests/test_graphify_infra.py`
+- **test_missing_graph_file_raises()** (1 connections) — `tests/test_graphify_infra.py`
+- **Tests for scripts/graphify_infra.py — inject Docker service topology into graph.** (1 connections) — `tests/test_graphify_infra.py`
+- **Pre-existing node with matching ID but no file_type gets patched.** (1 connections) — `tests/test_graphify_infra.py`
 
 ## Relationships
 
@@ -16,11 +31,11 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
+- `tests/test_graphify_infra.py`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 74 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

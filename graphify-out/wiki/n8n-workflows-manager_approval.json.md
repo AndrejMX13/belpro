@@ -1,50 +1,50 @@
 # n8n/workflows/manager_approval.json
 
-> 19 nodes · cohesion 0.11
+> 37 nodes
 
 ## Key Concepts
 
-- **n8n/workflows/manager_approval.json** (31 connections) — `n8n/workflows/manager_approval.json`
-- **pinData** (2 connections) — `n8n/workflows/manager_approval.json`
-- **updatedAt** (1 connections) — `n8n/workflows/manager_approval.json`
-- **createdAt** (1 connections) — `n8n/workflows/manager_approval.json`
-- **id** (1 connections) — `n8n/workflows/manager_approval.json`
-- **name** (1 connections) — `n8n/workflows/manager_approval.json`
-- **description** (1 connections) — `n8n/workflows/manager_approval.json`
-- **active** (1 connections) — `n8n/workflows/manager_approval.json`
-- **isArchived** (1 connections) — `n8n/workflows/manager_approval.json`
-- **nodes** (1 connections) — `n8n/workflows/manager_approval.json`
-- **staticData** (1 connections) — `n8n/workflows/manager_approval.json`
-- **meta** (1 connections) — `n8n/workflows/manager_approval.json`
-- **Manual Trigger** (1 connections) — `n8n/workflows/manager_approval.json`
-- **versionId** (1 connections) — `n8n/workflows/manager_approval.json`
-- **activeVersionId** (1 connections) — `n8n/workflows/manager_approval.json`
-- **versionCounter** (1 connections) — `n8n/workflows/manager_approval.json`
-- **triggerCount** (1 connections) — `n8n/workflows/manager_approval.json`
-- **shared** (1 connections) — `n8n/workflows/manager_approval.json`
-- **tags** (1 connections) — `n8n/workflows/manager_approval.json`
+- **make_text_payload()** (12 connections) — `tests/workflow/helpers.py`
+- **post_to_webhook()** (11 connections) — `tests/workflow/helpers.py`
+- **poll_for_entry()** (10 connections) — `tests/workflow/helpers.py`
+- **make_response_payload()** (8 connections) — `tests/workflow/helpers.py`
+- **test_edit_path()** (8 connections) — `tests/workflow/test_volunteer_entry.py`
+- **test_volunteer_entry.py** (7 connections) — `tests/workflow/test_volunteer_entry.py`
+- **test_happy_path_text_confirm()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
+- **test_cancel_path()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
+- **test_add_photos_then_confirm()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
+- **test_add_photos_then_cancel()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
+- **helpers.py** (6 connections) — `tests/workflow/helpers.py`
+- **poll_for_entry_status()** (5 connections) — `tests/workflow/helpers.py`
+- **poll_for_entry_gone()** (5 connections) — `tests/workflow/helpers.py`
+- **test_photo_upload.py** (5 connections) — `tests/workflow/test_photo_upload.py`
+- **test_upload_photo_happy_path()** (5 connections) — `tests/workflow/test_photo_upload.py`
+- **test_upload_second_photo_increments_count()** (5 connections) — `tests/workflow/test_photo_upload.py`
+- **test_upload_photo_bad_extension()** (5 connections) — `tests/workflow/test_photo_upload.py`
+- **test_unknown_volunteer_creates_no_entry()** (4 connections) — `tests/workflow/test_volunteer_entry.py`
+- **test_upload_photo_unknown_entry()** (3 connections) — `tests/workflow/test_photo_upload.py`
+- **Build a WhatsApp text-message webhook body for the given bare-digit phone.** (1 connections) — `tests/workflow/helpers.py`
+- **Build a volunteer response payload. response_type must be one of:     'confirm'** (1 connections) — `tests/workflow/helpers.py`
+- **POST a WhatsApp event to the n8n webhook. Asserts 200.** (1 connections) — `tests/workflow/helpers.py`
+- **Poll GET /api/log-entries until at least one entry for volunteer_id appears.** (1 connections) — `tests/workflow/helpers.py`
+- **Poll GET /api/log-entries/{entry_id} until its status matches expected_status.** (1 connections) — `tests/workflow/helpers.py`
+- **Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError** (1 connections) — `tests/workflow/helpers.py`
+- *... and 12 more nodes in this community*
 
 ## Relationships
 
-- [[BelPro - Odobritev Upravljalca (Manager Approval Workflow)]] (2 shared connections)
-- [[Manager WhatsApp Approval Implementation Plan]] (2 shared connections)
-- [[connections]] (1 shared connections)
-- [[settings]] (1 shared connections)
-- [[activeVersion]] (1 shared connections)
-- [[GET /api/log-entries (list_log_entries)]] (1 shared connections)
-- [[GET /api/managers/me (get_manager)]] (1 shared connections)
-- [[Manager WhatsApp Approval Workflow Design]] (1 shared connections)
-- [[scripts/n8n_workflows.py]] (1 shared connections)
-- [[n8n/workflows/volunteer_entry.json]] (1 shared connections)
+- [[005_report_prefs.py]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/manager_approval.json`
+- `tests/workflow/helpers.py`
+- `tests/workflow/test_photo_upload.py`
+- `tests/workflow/test_volunteer_entry.py`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 70 (48%)
+- INFERRED: 75 (52%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,23 +1,37 @@
 # IF: Aktivno Slike Stanje?
 
-> 2 nodes · cohesion 1.00
+> 14 nodes
 
 ## Key Concepts
 
-- **IF: Aktivno Slike Stanje?** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README.md`
+- **Manager dashboard** (2 connections) — `README.md`
+- **Project layout** (2 connections) — `README.md`
+- **README.md** (1 connections) — `README.md`
+- **How it works** (1 connections) — `README.md`
+- **Sample PDF reports** (1 connections) — `README.md`
+- **Stack** (1 connections) — `README.md`
+- **Requirements** (1 connections) — `README.md`
+- **Access points** (1 connections) — `README.md`
+- **Security notes** (1 connections) — `README.md`
+- **code:block22 (belpro/)** (1 connections) — `README.md`
+- **AI-assisted development** (1 connections) — `README.md`
+- **Roadmap** (1 connections) — `README.md`
+- **Out of scope (v1)** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- [[Community 352]] (1 shared connections)
+- [[Code: Pripravi Popravek]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,35 +1,35 @@
 # n8n Code JavaScript Skill Entry Point
 
-> 35 nodes · cohesion 0.09
+> 46 nodes
 
 ## Key Concepts
 
-- **n8n Code JavaScript Skill Entry Point** (8 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **n8n JavaScript Code Node Built-in Functions** (7 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **n8n JavaScript Code Node Data Access Patterns** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **n8n JavaScript Code Node Error Patterns** (7 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **n8n Code JavaScript Skill README** (7 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **n8n Code Python Skill Entry Point** (7 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **n8n JavaScript Code Node Common Patterns** (6 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **n8n Expression Syntax Skill Entry Point** (6 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **n8n MCP Tools Expert Skill Entry Point** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **n8n Python Code Node Data Access Patterns** (3 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **n8n Code Node** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Webhook Data Body Nesting Gotcha** (3 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **n8n Python Code Node Common Patterns** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **n8n Python Code Node Error Patterns** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **n8n Python Code Node Standard Library Reference** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **n8n Expression Syntax Common Mistakes** (2 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **n8n Expression Syntax Skill README** (2 connections) — `.claude/skills/n8n-expression-syntax/README.md`
-- **n8n MCP Tools Expert Skill README** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/README.md`
-- **n8n MCP Tools Node Discovery Search Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- **n8n MCP Tools Configuration Validation Guide** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **n8n Task Runner Sandbox Restrictions** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **n8n Expression Syntax Double Curly Braces** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Python Code Node No External Libraries Constraint** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **SplitInBatches Loop Pattern** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **$getWorkflowStaticData() Persistent Storage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- *... and 10 more nodes in this community*
+- **Node Discovery Tools Guide** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **get_node Modes** (7 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **get_node (UNIFIED NODE INFORMATION)** (5 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **nodeType Format (CRITICAL!)** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Examples** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **search_nodes (START HERE!)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Additional Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Standard Detail (RECOMMENDED)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Minimal Detail** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Full Detail (USE SPARINGLY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="docs" (READABLE DOCUMENTATION)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="search_properties" (FIND SPECIFIC FIELDS)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="versions" (VERSION HISTORY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="compare" (COMPARE VERSIONS)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="breaking" (BREAKING CHANGES ONLY)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **mode="migrations" (AUTO-MIGRATABLE)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **includeTypeInfo** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **includeExamples** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Common Workflow: Finding & Configuring** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Find and Configure HTTP Request** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Explore AI Nodes** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **Check Version Compatibility** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **SEARCH_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **code:javascript (search_nodes({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
+- *... and 21 more nodes in this community*
 
 ## Relationships
 
@@ -37,31 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/modules.md`
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- `.claude/skills/n8n-code-javascript/README.md`
-- `.claude/skills/n8n-code-javascript/SKILL.md`
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- `.claude/skills/n8n-code-python/README.md`
-- `.claude/skills/n8n-code-python/SKILL.md`
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- `.claude/skills/n8n-expression-syntax/README.md`
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
-- `.claude/skills/n8n-mcp-tools-expert/README.md`
 - `.claude/skills/n8n-mcp-tools-expert/SEARCH_GUIDE.md`
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 98 (92%)
-- INFERRED: 8 (8%)
+- EXTRACTED: 90 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

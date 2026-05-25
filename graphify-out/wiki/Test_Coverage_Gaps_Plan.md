@@ -1,42 +1,48 @@
 # Test Coverage Gaps Plan
 
-> 12 nodes · cohesion 0.20
+> 27 nodes
 
 ## Key Concepts
 
-- **Test Coverage Gaps Plan** (7 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Test Suite Plan** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Log Entry Status State Machine** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **httpOnly Cookie Session Auth** (3 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Fix Image Upload Env Access Plan** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **pytest SAVEPOINT Isolation Pattern** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **n8n Workflow Import/Export Script** (2 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
-- **Volunteer Contact Inline Edit Plan** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **n8n Workflow Scripts Plan** (1 connections) — `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
-- **Delete Non-Approved Entries Plan** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **HttpOnly Cookie Auth Plan** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **belpro_test_migrations DB for Migration Roundtrip Test** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 2: Settings field + photo-limit API endpoint** (8 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Photo Upload Limit (ISS-002) Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Task 3: n8n workflow — insert photo limit check** (5 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Task 1: Add MAX_PHOTOS_PER_ENTRY to both env example files** (4 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Node specifications** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Steps** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Context — existing photo sub-flow** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **New flow after HTTP: GET Entry (Photo Count)** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **2026-05-18-photo-upload-limit.md** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block1 (# ----------------------------------------------------------)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block2 (# ----------------------------------------------------------)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (git add .env.example .env.example.sl)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:python (async def test_photo_limit_returns_default(client: AsyncClie)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (docker compose exec -T api pytest tests/test_log_entries.py:)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:python (# ── Uploads ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:python (@router.get("/photo-limit"))** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (docker compose exec -T api pytest tests/ -v --tb=short)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (git add api/core/settings.py api/routers/log_entries.py api/)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block11 ([image arrives])** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:block12 (HTTP: GET Entry (Photo Count))** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:javascript (// Find the actual name of the node that checks photo state )** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:javascript (const d = $input.first().json;)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **code:bash (python ./scripts/n8n_workflows.py export)** (1 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [[Docker Compose (all services containerised)]] (1 shared connections)
-- [[EMŠO Encryption (AES-256-GCM at rest)]] (1 shared connections)
-- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
-- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- `docs/superpowers/plans/2026-05-16-n8n-workflow-scripts.md`
-- `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (62%)
-- INFERRED: 11 (38%)
+- EXTRACTED: 52 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

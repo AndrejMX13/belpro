@@ -1,23 +1,37 @@
 # Code: Pripravi Popravek
 
-> 2 nodes · cohesion 1.00
+> 15 nodes
 
 ## Key Concepts
 
-- **Code: Pripravi Popravek** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Maintenance** (9 connections) — `README.md`
+- **Upgrade** (2 connections) — `README.md`
+- **Backup** (2 connections) — `README.md`
+- **Restore** (2 connections) — `README.md`
+- **Tail logs** (2 connections) — `README.md`
+- **Rebuild a service after code changes** (2 connections) — `README.md`
+- **Reset a forgotten dashboard password** (2 connections) — `README.md`
+- **Applying `.env` changes** (2 connections) — `README.md`
+- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README.md`
+- **code:bash (bash scripts/backup.sh)** (1 connections) — `README.md`
+- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README.md`
+- **code:bash (docker compose logs -f)** (1 connections) — `README.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `README.md`
+- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README.md`
+- **code:bash (docker compose up -d <service>)** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- [[IF: Aktivno Slike Stanje?]] (1 shared connections)
+- [[Community 609]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,23 +1,34 @@
 # scripts/backup.sh
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **scripts/backup.sh** (8 connections) — `scripts/backup.sh`
+- **Example 4: Date Formatting** (7 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **ISO Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Custom Date Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Time Only** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Full Readable Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Date Math - Future** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Date Math - Past** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toISO()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('HH:mm:ss')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('MMMM dd, yyyy')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.plus({days: 7}).toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.minus({hours: 24}).toFormat('yyyy-MM-dd HH:mm')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[scripts/upgrade.sh]] (1 shared connections)
-- [[scripts/rotate_emso_key.sh]] (1 shared connections)
+- [[Community 332]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/backup.sh`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

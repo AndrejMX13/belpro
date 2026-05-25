@@ -1,45 +1,48 @@
 # test_logo.py
 
-> 23 nodes · cohesion 0.11
+> 39 nodes
 
 ## Key Concepts
 
-- **test_logo.py** (18 connections) — `api/tests/test_logo.py`
-- **_png_1x1()** (7 connections) — `api/tests/test_logo.py`
-- **_ico_16x16()** (3 connections) — `api/tests/test_logo.py`
-- **test_open_image_rejects_disallowed_format()** (3 connections) — `api/tests/test_logo.py`
-- **_clean_logo()** (3 connections) — `api/tests/test_logo.py`
-- **test_save_creates_png_on_disk()** (2 connections) — `api/tests/test_logo.py`
-- **test_delete_removes_file()** (2 connections) — `api/tests/test_logo.py`
-- **test_upload_logo_and_retrieve()** (2 connections) — `api/tests/test_logo.py`
-- **test_upload_logo_requires_auth()** (2 connections) — `api/tests/test_logo.py`
-- **test_delete_logo()** (2 connections) — `api/tests/test_logo.py`
-- **test_logo_not_exists_initially()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_when_no_logo_is_silent()** (1 connections) — `api/tests/test_logo.py`
-- **test_open_image_rejects_corrupt_bytes()** (1 connections) — `api/tests/test_logo.py`
-- **test_save_overwrites_existing_logo()** (1 connections) — `api/tests/test_logo.py`
-- **test_get_logo_returns_404_when_absent()** (1 connections) — `api/tests/test_logo.py`
-- **test_upload_invalid_logo_returns_422()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_logo_when_absent_returns_404()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_logo_requires_auth()** (1 connections) — `api/tests/test_logo.py`
-- **Tests for NGO logo service and endpoints.** (1 connections) — `api/tests/test_logo.py`
-- **Minimal valid 1×1 PNG.** (1 connections) — `api/tests/test_logo.py`
-- **Minimal valid 16×16 ICO — openable by Pillow but not in allowed list.** (1 connections) — `api/tests/test_logo.py`
-- **ICO is openable by Pillow but excluded from the allowed set.** (1 connections) — `api/tests/test_logo.py`
-- **Redirect logo operations to a temporary directory — never touches the real logo** (1 connections) — `api/tests/test_logo.py`
+- **Task 3: Login and logout endpoints** (9 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **httpOnly Cookie Auth (ISS-005) Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 2: Session token helpers** (7 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 5: Frontend — `volunteers.js`** (7 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 1: Settings fields, schemas, and env examples** (6 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 4: Frontend — `api.js`** (5 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 6: Manual browser test** (2 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **2026-05-19-httponly-cookie-auth.md** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (# ── Session ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Schemas for the auth endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block3 (# SESSION_DURATION_HOURS: how long a dashboard login session)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block4 (# SESSION_DURATION_HOURS: kako dolgo traja seja upravljalca )** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:bash (git add api/core/settings.py api/schemas/auth.py .env.exampl)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Tests for auth helpers and endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block7 (docker compose exec api pytest tests/test_auth.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Manager authentication — httpOnly session cookie with Bas)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block9 (docker compose exec api pytest tests/test_auth.py::test_make)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block10 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:bash (git add api/core/auth.py api/tests/test_auth.py)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (import base64)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block13 (docker compose exec api pytest tests/test_auth.py::test_logi)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Auth endpoints — login sets an httpOnly session cookie, l)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (from routers.auth import router as auth_router)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (app.include_router(auth_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[path]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_logo.py`
+- `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 56 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 76 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

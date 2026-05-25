@@ -1,23 +1,37 @@
 # Code: Limit Reject Message
 
-> 2 nodes · cohesion 1.00
+> 16 nodes
 
 ## Key Concepts
 
-- **Code: Limit Reject Message** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **FastAPI Expert** (9 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Minimal Complete Example** (4 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **JWT Authentication Snippet** (2 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# schemas.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# routers/users.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# crud.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# security.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/fastapi-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

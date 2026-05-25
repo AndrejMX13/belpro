@@ -1,40 +1,48 @@
 # normalize_phone()
 
-> 14 nodes · cohesion 0.24
+> 31 nodes
 
 ## Key Concepts
 
-- **normalize_phone()** (16 connections) — `api/utils/phone.py`
-- **test_phone_utils.py** (10 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_plus_prefix()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_spaces()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_dashes()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_parentheses()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_already_normalized()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_none_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_empty_string_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_whitespace_only_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_too_short_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_jid_phone_part()** (2 connections) — `api/tests/test_phone_utils.py`
-- **phone.py** (1 connections) — `api/utils/phone.py`
-- **Return digits-only WhatsApp-native phone number, or None for invalid input.** (1 connections) — `api/utils/phone.py`
+- **n8n Validation Expert** (15 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Key Insights** (6 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Usage Examples** (4 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Integration with Other Skills** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **What This Skill Teaches** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **File Structure** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Example 1: Basic Validation Loop** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Example 2: Handling False Positives** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Example 3: Using Auto-Fix** (2 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **The Problem This Solves** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Core Concepts** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:block1 (n8n-validation-expert/)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Common Error Types** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **1. Validation is Iterative** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **2. False Positives Exist** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **3. Auto-Sanitization Works** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **4. Profile Matters** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **5. Error Messages Help** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:javascript (// Iteration 1)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:javascript (// Run validation)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **code:javascript (// Check what can be auto-fixed)** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **When This Skill Activates** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **Works With:** (1 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [[api/main.py]] (1 shared connections)
-- [[send_monthly_reports()]] (1 shared connections)
-- [[manager.py]] (1 shared connections)
-- [[EvolutionClient]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_phone_utils.py`
-- `api/utils/phone.py`
+- `.claude/skills/n8n-validation-expert/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (50%)
-- INFERRED: 24 (50%)
+- EXTRACTED: 60 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

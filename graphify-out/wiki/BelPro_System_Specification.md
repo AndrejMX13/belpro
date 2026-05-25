@@ -1,46 +1,48 @@
 # BelPro System Specification
 
-> 17 nodes · cohesion 0.17
+> 34 nodes
 
 ## Key Concepts
 
-- **BelPro System Specification** (29 connections) — `SPEC.md`
-- **DB Table: volunteers** (5 connections) — `SPEC.md`
-- **WhatsApp Volunteer Entry Flow** (4 connections) — `SPEC.md`
-- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) — `SPEC.md`
-- **Monthly PDF Reports Generation and Delivery** (3 connections) — `SPEC.md`
-- **DB Table: log_entries** (3 connections) — `SPEC.md`
-- **DB Table: monthly_reports** (3 connections) — `SPEC.md`
-- **Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)** (2 connections) — `SPEC.md`
-- **DB Table: managers** (2 connections) — `SPEC.md`
-- **DB Table: log_entry_photos** (2 connections) — `SPEC.md`
-- **DB Table: settings** (2 connections) — `SPEC.md`
-- **BelPro System Specification (Slovenian)** (1 connections) — `SPEC_SL.md`
-- **CSD — Centre for Social Work** (1 connections) — `SPEC.md`
-- **Single-Tenant Architecture** (1 connections) — `SPEC.md`
-- **WeasyPrint (HTML to PDF)** (1 connections) — `CLAUDE.md`
-- **DB Table: error_log** (1 connections) — `SPEC.md`
-- **Whisper Single-Threaded Design (deliberate trade-off)** (1 connections) — `SPEC.md`
+- **Python Packaging and Project Setup** (16 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Poetry Project Management** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Pre-commit Hooks** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Project Structure** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Pyproject.toml Configuration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Virtual Environments** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Package __init__.py** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Type Stub Files (py.typed)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **CLI Entry Points** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Requirements Files** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Building and Distribution** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Setuptools Configuration (Legacy)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Manifest for Package Data** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Version Management** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **Dependency Management Best Practices** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **CI/CD Integration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **packaging.md** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:block1 (myproject/)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:toml ([build-system])** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:toml (# pyproject.toml for Poetry)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:bash (# Poetry commands)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:bash (# Using venv (built-in))** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:python (# src/myproject/__init__.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:python (# src/myproject/py.typed)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- **code:python (# src/myproject/cli.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
+- *... and 9 more nodes in this community*
 
 ## Relationships
 
-- [[Docker Compose (all services containerised)]] (9 shared connections)
-- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] (4 shared connections)
-- [[EMŠO Encryption (AES-256-GCM at rest)]] (3 shared connections)
-- [[BelPro README (English)]] (1 shared connections)
-- [[CLAUDE.md — Project AI Instructions]] (1 shared connections)
-- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `CLAUDE.md`
-- `SPEC.md`
-- `SPEC_SL.md`
+- `.claude/skills/python-pro/references/packaging.md`
 
 ## Audit Trail
 
-- EXTRACTED: 63 (97%)
-- INFERRED: 2 (3%)
+- EXTRACTED: 66 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

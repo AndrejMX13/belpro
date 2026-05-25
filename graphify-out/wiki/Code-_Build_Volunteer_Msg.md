@@ -1,23 +1,38 @@
 # Code: Build Volunteer Msg
 
-> 2 nodes · cohesion 1.00
+> 17 nodes
 
 ## Key Concepts
 
-- **Code: Build Volunteer Msg** (3 connections) — `n8n/workflows/manager_approval.json`
-- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **Debugging Tools** (7 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **Python** (4 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **Go** (4 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **Node.js / TypeScript** (3 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **VS Code Debug Config** (2 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **debugging-tools.md** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **Debuggers by Language** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:bash (# Start with inspector)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:typescript (// In code)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:bash (# Start debugger)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:python (# In code)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **pdb Commands** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:bash (# Start delve)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:go (// Quick print)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **Delve Commands** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **code:json (// .vscode/launch.json)** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
+- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/debugging-tools.md`
 
 ## Relationships
 
-- [[connections]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/manager_approval.json`
+- `.claude/skills/debugging-wizard/references/debugging-tools.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 32 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

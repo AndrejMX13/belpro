@@ -1,22 +1,33 @@
 # GET /api/reports/history/{id}/pdf (download_history_pdf)
 
-> 1 nodes · cohesion 0.00
+> 12 nodes
 
 ## Key Concepts
 
-- **GET /api/reports/history/{id}/pdf (download_history_pdf)** (0 connections) — `api/routers/reports.py`
+- **Example: Configuring HTTP Request** (9 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Configuration Workflow** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Standard Process** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:block3 (1. Identify node type and operation)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Goal: POST JSON to API)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (const info = get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (validate_node({...});)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (validate_node({...});)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[load-project-memory.sh]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

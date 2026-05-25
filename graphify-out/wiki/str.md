@@ -1,52 +1,49 @@
 # str
 
-> 18 nodes · cohesion 0.14
+> 35 nodes
 
 ## Key Concepts
 
-- **str** (39 connections)
-- **conftest.py** (6 connections) — `tests/workflow/conftest.py`
-- **test_volunteer()** (5 connections) — `tests/workflow/conftest.py`
-- **test_list_entries_filter_by_volunteer()** (4 connections) — `api/tests/test_log_entries.py`
-- **test_get_entry_found()** (4 connections) — `api/tests/test_log_entries.py`
-- **_make_valid_emso()** (4 connections) — `tests/workflow/conftest.py`
-- **test_create_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_create_entry_inactive_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
-- **test_create_entry_missing_required_field_returns_422()** (3 connections) — `api/tests/test_log_entries.py`
-- **_auth_header()** (3 connections) — `tests/workflow/conftest.py`
-- **api_client()** (3 connections) — `tests/workflow/conftest.py`
-- **test_create_entry_unknown_volunteer_returns_404()** (2 connections) — `api/tests/test_log_entries.py`
-- **_manager_password()** (2 connections) — `tests/workflow/conftest.py`
-- **n8n_client()** (2 connections) — `tests/workflow/conftest.py`
-- **Generate a random 13-digit EMŠO that passes the Modulus 11 checksum.** (1 connections) — `tests/workflow/conftest.py`
-- **Session-scoped AsyncClient against FastAPI. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
-- **Session-scoped AsyncClient against n8n. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
-- **Creates a volunteer with a unique phone, yields the volunteer dict,     deletes** (1 connections) — `tests/workflow/conftest.py`
+- **Async Programming Patterns** (12 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Asynchronous Patterns** (11 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **Async Generators** (4 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Promise Patterns** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async/Await Best Practices** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import TaskGroup)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Error Handling Strategies** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from typing import Self)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Promise Combinators** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from collections.abc import AsyncIterator)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **code:python (# Async list comprehension)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Concurrent Queue Management** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Event Loop Understanding** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import Queue)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **AbortController for Cancellation** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (# Timeout for single operation)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Stream Processing** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import create_task, Task)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Basic Async/Await** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Task Groups (Python 3.11+)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async Context Managers** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async Comprehensions** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Synchronization Primitives** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- [[log_entry_factory()]] (8 shared connections)
-- [[volunteer_factory()]] (6 shared connections)
-- [[log_entries.py]] (4 shared connections)
-- [[load_key()]] (4 shared connections)
-- [[path]] (3 shared connections)
-- [[persist_report()]] (3 shared connections)
-- [[test_reports.py]] (3 shared connections)
-- [[ops_server.py]] (3 shared connections)
-- [[update_admin_settings()]] (2 shared connections)
-- [[logo.py]] (2 shared connections)
-- [[managers.py]] (2 shared connections)
-- [[api/main.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_log_entries.py`
-- `tests/workflow/conftest.py`
+- `.claude/skills/javascript-pro/references/async-patterns.md`
+- `.claude/skills/python-pro/references/async-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 33 (38%)
-- INFERRED: 54 (62%)
+- EXTRACTED: 86 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

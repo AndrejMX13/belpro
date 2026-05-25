@@ -1,10 +1,22 @@
 # POST /api/volunteers (create_volunteer)
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **POST /api/volunteers (create_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **Design: httpOnly Cookie Auth (ISS-005)** (8 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **2026-05-19-httponly-cookie-auth-design.md** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Dual auth in `require_manager`** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Session token** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **New settings** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **New endpoints** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **File Map** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **What does NOT change** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Behaviour changes visible to the manager** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Not in scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Relationships
 
@@ -12,11 +24,11 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

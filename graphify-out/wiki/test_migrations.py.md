@@ -1,15 +1,30 @@
 # test_migrations.py
 
-> 6 nodes · cohesion 0.33
+> 21 nodes
 
 ## Key Concepts
 
-- **test_migrations.py** (3 connections) — `api/tests/test_migrations.py`
-- **migrations_engine()** (2 connections) — `api/tests/test_migrations.py`
-- **test_migration_roundtrip()** (2 connections) — `api/tests/test_migrations.py`
-- **Migration roundtrip test — runs against belpro_test_migrations (isolated DB).** (1 connections) — `api/tests/test_migrations.py`
-- **Session-scoped engine targeting belpro_test_migrations.** (1 connections) — `api/tests/test_migrations.py`
-- **stamp base → upgrade head → downgrade -1 → upgrade head all exit 0.** (1 connections) — `api/tests/test_migrations.py`
+- **The Five Anti-Patterns** (6 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Testing Anti-Patterns** (5 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 1: Testing Mock Behavior** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 2: Test-Only Methods in Production** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 3: Mocking Without Understanding** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 4: Incomplete Mocks** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 5: Integration Tests as Afterthought** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **testing-anti-patterns.md** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Core Principle** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Testing the mock, not the behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Testing actual behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Production code polluted with test concerns)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Test utilities separate from production)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Mocking everything without understanding)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Strategic mocking with real components where poss)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Incomplete mock response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Complete mock matching real API response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: "We'll add tests later")** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Tests are part of implementation)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Detection Checklist** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Relationships
 
@@ -17,11 +32,11 @@
 
 ## Source Files
 
-- `api/tests/test_migrations.py`
+- `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

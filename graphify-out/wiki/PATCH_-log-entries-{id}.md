@@ -1,24 +1,43 @@
 # PATCH /log-entries/{id}
 
-> 2 nodes · cohesion 1.00
+> 18 nodes
 
 ## Key Concepts
 
-- **PATCH /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **API.logEntries.update()** (1 connections) — `frontend/js/api.js`
+- **gen_diagrams_sl.py** (20 connections) — `scripts/gen_diagrams_sl.py`
+- **fig1()** (7 connections) — `scripts/gen_diagrams_sl.py`
+- **fnt()** (5 connections) — `scripts/gen_diagrams_sl.py`
+- **text_size()** (5 connections) — `scripts/gen_diagrams_sl.py`
+- **draw_box()** (4 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams_sl.py`
+- **fig2()** (3 connections) — `scripts/gen_diagrams_sl.py`
+- **fig3()** (3 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_h()** (2 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_v()** (2 connections) — `scripts/gen_diagrams_sl.py`
+- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams_sl.py`
+- **scripts/diagrams/** (2 connections)
+- **main()** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **Dashed horizontal arrow (single line, for Vodja connection).** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **scripts/diagrams/fig1_arhitektura.png** (1 connections)
+- **scripts/diagrams/fig2_potek.png** (1 connections)
+- **scripts/diagrams/fig3_porocanje.png** (1 connections)
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- [[004_log_entry_photos.py]] (2 shared connections)
+- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
+- [[api.js]] (1 shared connections)
+- [[API.logo.upload()]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `frontend/js/api.js`
+- `scripts/gen_diagrams_sl.py`
 
 ## Audit Trail
 
-- EXTRACTED: 3 (100%)
+- EXTRACTED: 64 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

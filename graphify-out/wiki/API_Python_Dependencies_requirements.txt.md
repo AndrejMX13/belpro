@@ -1,28 +1,35 @@
 # API Python Dependencies requirements.txt
 
-> 19 nodes · cohesion 0.11
+> 37 nodes
 
 ## Key Concepts
 
-- **API Python Dependencies requirements.txt** (5 connections) — `api/requirements.txt`
-- **Security Testing Reference** (4 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Version Bump Skill** (4 connections) — `.claude/skills/version-bump/SKILL.md`
-- **EMSO Encryption Key Rotation Procedure EN** (4 connections) — `docs/emso_key_rotation.md`
-- **GitHub Pull Request Template** (3 connections) — `.github/pull_request_template.md`
-- **FastAPI** (2 connections) — `api/requirements.txt`
-- **Cryptography Library AES-256 EMSO** (2 connections) — `api/requirements.txt`
-- **Authentication Security Tests** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Authorization Tests IDOR Privilege Escalation** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Input Validation and Injection Tests** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **CHANGELOG Update Procedure** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Pre-commit Review Step Version Bump** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **GitHub Bug Report Issue Template** (1 connections) — `.github/ISSUE_TEMPLATE/bug_report.md`
-- **GitHub Feature Request Issue Template** (1 connections) — `.github/ISSUE_TEMPLATE/feature_request.md`
-- **EMSO Encryption Key Rotation Procedure SL** (1 connections) — `docs/emso_key_rotation_sl.md`
-- **WeasyPrint PDF generation** (1 connections) — `api/requirements.txt`
-- **SQLAlchemy 2.x ORM** (1 connections) — `api/requirements.txt`
-- **Alembic Migrations** (1 connections) — `api/requirements.txt`
-- **rotate_emso_key.sh and rotate_emso_key.py** (1 connections) — `docs/emso_key_rotation.md`
+- **Task 5: Documentation — add upgrade.sh to both READMEs** (10 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **File Map** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 1: Script skeleton — shebang, helpers, pre-flight checks** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 3: Docker rebuild and service readiness wait** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 4: Migrations, health check, and summary** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 2: Backup and git pull steps** (5 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Upgrade Script Implementation Plan** (3 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **2026-05-18-upgrade-script.md** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Banner ────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (chmod +x scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Backup ────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Git pull ──────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Rebuild images ────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Wait for PostgreSQL ───────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Wait for API ──────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Alembic migrations ────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Health check ──────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Summary ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- *... and 12 more nodes in this community*
 
 ## Relationships
 
@@ -30,19 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/security-testing.md`
-- `.claude/skills/version-bump/SKILL.md`
-- `.github/ISSUE_TEMPLATE/bug_report.md`
-- `.github/ISSUE_TEMPLATE/feature_request.md`
-- `.github/pull_request_template.md`
-- `api/requirements.txt`
-- `docs/emso_key_rotation.md`
-- `docs/emso_key_rotation_sl.md`
+- `docs/superpowers/plans/2026-05-18-upgrade-script.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (67%)
-- INFERRED: 12 (33%)
+- EXTRACTED: 72 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

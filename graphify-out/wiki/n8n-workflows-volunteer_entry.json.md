@@ -1,52 +1,47 @@
 # n8n/workflows/volunteer_entry.json
 
-> 20 nodes · cohesion 0.10
+> 39 nodes
 
 ## Key Concepts
 
-- **n8n/workflows/volunteer_entry.json** (34 connections) — `n8n/workflows/volunteer_entry.json`
-- **staticData** (2 connections) — `n8n/workflows/volunteer_entry.json`
-- **pinData** (2 connections) — `n8n/workflows/volunteer_entry.json`
-- **updatedAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **createdAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **id** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **name** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **description** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **active** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **isArchived** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **nodes** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **global** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **meta** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **Manual: Poslji Obvestilo Upravljalcu** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **versionId** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **activeVersionId** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **versionCounter** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **triggerCount** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **shared** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **tags** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Database Maintenance** (10 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat Monitoring Views** (6 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **VACUUM Fundamentals** (4 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Bloat Detection and Removal** (4 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Autovacuum Configuration** (3 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **VACUUM Variants** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **VACUUM Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Per-Table Autovacuum Tuning** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **ANALYZE (Statistics)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Detect Table Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Detect Index Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Remove Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_activity (Current Queries)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_database (Database-wide Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_user_tables (Table Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_stat_user_indexes (Index Usage)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **pg_statio_user_tables (I/O Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Lock Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Transaction ID Wraparound** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Helpful Maintenance Queries** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **maintenance.md** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **Why VACUUM is Critical** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **code:sql (-- Standard VACUUM (non-blocking, reclaims space for reuse))** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **code:sql (-- Check when tables were last vacuumed)** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- **code:sql (-- Global settings (postgresql.conf))** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[BelPro - Vnos Prostovoljcev (Volunteer Entry Workflow)]] (3 shared connections)
-- [[n8n/workflows/manager_approval.json]] (1 shared connections)
-- [[connections]] (1 shared connections)
-- [[settings]] (1 shared connections)
-- [[activeVersion]] (1 shared connections)
-- [[GET /api/log-entries (list_log_entries)]] (1 shared connections)
-- [[PATCH /api/log-entries/{id}/notify (notify_log_entry)]] (1 shared connections)
-- [[get_log_entry()]] (1 shared connections)
-- [[load_key()]] (1 shared connections)
-- [[GET /api/volunteers/{id} (get_volunteer)]] (1 shared connections)
-- [[GET /api/managers/me (get_manager)]] (1 shared connections)
-- [[scripts/n8n_workflows.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/postgres-pro/references/maintenance.md`
 
 ## Audit Trail
 
-- EXTRACTED: 55 (100%)
+- EXTRACTED: 76 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,48 +1,60 @@
 # monthly_reports.json
 
-> 46 nodes · cohesion 0.05
+> 48 nodes
 
 ## Key Concepts
 
-- **monthly_reports.json** (21 connections) — `n8n/workflows/monthly_reports.json`
-- **activeVersion** (12 connections) — `n8n/workflows/monthly_reports.json`
-- **settings** (7 connections) — `n8n/workflows/monthly_reports.json`
-- **connections** (4 connections) — `n8n/workflows/monthly_reports.json`
-- **connections** (4 connections) — `n8n/workflows/monthly_reports.json`
-- **28. v mesecu ob 07:00** (3 connections) — `n8n/workflows/monthly_reports.json`
-- **Ročni Zagon** (3 connections) — `n8n/workflows/monthly_reports.json`
-- **Pošlji Mesečna Poročila** (3 connections) — `n8n/workflows/monthly_reports.json`
-- **staticData** (2 connections) — `n8n/workflows/monthly_reports.json`
-- **node:28. v mesecu ob 07:00** (2 connections) — `n8n/workflows/monthly_reports.json`
-- **updatedAt** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **createdAt** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **id** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **name** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **description** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **active** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **isArchived** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **nodes** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **main** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **executionOrder** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **timezone** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **saveDataErrorExecution** (1 connections) — `n8n/workflows/monthly_reports.json`
-- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/monthly_reports.json`
-- *... and 21 more nodes in this community*
+- **get_settings()** (24 connections) — `api/core/settings.py`
+- **test_app_settings.py** (24 connections) — `api/tests/test_app_settings.py`
+- **health_detailed()** (4 connections) — `api/main.py`
+- **test_appsettings_uses_db_int_value()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_falls_back_to_env_when_row_missing()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_passthrough_to_env()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_bool_helper_parses_truthy_strings()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_bool_helper_parses_falsy_strings()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_bool_helper_falls_back_to_default()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_str_helper_returns_db_value()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_str_helper_falls_back_to_default()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_default()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_from_db()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_clamped_high()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_appsettings_report_auto_hour_clamped_low()** (4 connections) — `api/tests/test_app_settings.py`
+- **test_settings_table_seeded()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_get_admin_settings_returns_seeded_defaults()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_get_admin_settings_requires_auth()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_updates_single_field()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_get_reflects_change()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_rejects_zero()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_rejects_negative()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_patch_admin_settings_requires_auth()** (2 connections) — `api/tests/test_app_settings.py`
+- **test_login_cookie_max_age_reflects_db_session_duration()** (2 connections) — `api/tests/test_app_settings.py`
+- **Per-service health status for the manager dashboard widget.** (1 connections) — `api/main.py`
+- *... and 23 more nodes in this community*
 
 ## Relationships
 
-- [[send_monthly_reports()]] (1 shared connections)
+- [[HTTP: PATCH /notify (Manual)]] (12 shared connections)
+- [[path]] (3 shared connections)
+- [[HTTP: GET Volunteer (Mgr)]] (2 shared connections)
+- [[Community 589]] (2 shared connections)
+- [[005_report_prefs.py]] (1 shared connections)
+- [[DELETE /api/logo (remove_logo)]] (1 shared connections)
+- [[Manager WhatsApp Approval Workflow Design]] (1 shared connections)
+- [[011_manager_gdpr_clauses.py]] (1 shared connections)
+- [[GET /log-entries/{id}/photos/{pid}/file]] (1 shared connections)
+- [[Community 405]] (1 shared connections)
+- [[settings.local.json]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/monthly_reports.json`
+- `api/core/settings.py`
+- `api/main.py`
+- `api/tests/test_app_settings.py`
 
 ## Audit Trail
 
-- EXTRACTED: 97 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 95 (67%)
+- INFERRED: 47 (33%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,10 +1,22 @@
 # Day of month (1–28) on which monthly reports are auto-sent.
 
-> 1 nodes · cohesion 0.00
+> 13 nodes
 
 ## Key Concepts
 
-- **Day of month (1–28) on which monthly reports are auto-sent.** (0 connections) — `api/services/app_settings.py`
+- **Async Testing** (7 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Test Setup** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Endpoint Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Auth Helper Fixture** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Service Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Mocking Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **testing-async.md** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.fixture)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (from unittest.mock import AsyncMock, patch)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Relationships
 
@@ -12,11 +24,11 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

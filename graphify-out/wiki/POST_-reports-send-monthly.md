@@ -1,27 +1,40 @@
 # POST /reports/send-monthly
 
-> 4 nodes · cohesion 0.67
+> 19 nodes
 
 ## Key Concepts
 
-- **POST /reports/send-monthly** (3 connections) — `api/routers/reports.py`
-- **API.reports.sendMonthly()** (2 connections) — `frontend/js/api.js`
-- **sendReports()** (2 connections) — `frontend/js/reports.js`
-- **send-monthly JSON response (sent_via_email[], sent_via_whatsapp[], skipped_no_entries[], skipped_no_channel[], manager_email_sent, manager_whatsapp_sent, errors[])** (2 connections) — `api/routers/reports.py`
+- **Query Optimization** (10 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **EXPLAIN Plan Analysis** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Index Design and Optimization** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Index Maintenance** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Query Rewriting Patterns** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Partitioning Strategies** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Materialized Views** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Query Hints and Optimization** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Performance Monitoring Queries** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **optimization.md** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Covering index (all columns in index))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL: Find missing indexes)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Avoid SELECT DISTINCT when possible)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Range partitioning by date (PostgreSQL))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Create materialized view for expensive aggregations)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL: Force index usage (use sparingly))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL: Find slow queries)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Best Practices Checklist** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/api.js`
-- `frontend/js/reports.js`
+- `.claude/skills/sql-pro/references/optimization.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
+- EXTRACTED: 36 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

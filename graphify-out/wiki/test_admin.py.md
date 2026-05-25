@@ -1,48 +1,48 @@
 # test_admin.py
 
-> 38 nodes · cohesion 0.05
+> 47 nodes
 
 ## Key Concepts
 
-- **test_admin.py** (19 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_ops_failure_does_not_break_save()** (3 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_report_defaults()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_report_fields()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_notifies_ops()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_backup_retention_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_backup_retention()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_report_hour_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_report_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_boundary_zero()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_boundary_23()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_rejects_24()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_rejects_negative()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_ops_payload_includes_report_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_backup_hour_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_backup_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_photo_cleanup_hour_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_photo_cleanup_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_ops_payload_includes_all_fields()** (2 connections) — `api/tests/test_admin.py`
-- **Tests for report auto-delivery settings.** (1 connections) — `api/tests/test_admin.py`
-- **GET /api/admin/settings returns defaults for report_auto_day and report_auto_per** (1 connections) — `api/tests/test_admin.py`
-- **PATCH /api/admin/settings persists report_auto_day and report_auto_period.** (1 connections) — `api/tests/test_admin.py`
-- **PATCH /api/admin/settings calls ops /reconfigure with updated values.** (1 connections) — `api/tests/test_admin.py`
-- **PATCH /api/admin/settings still returns 200 when ops service is unreachable.** (1 connections) — `api/tests/test_admin.py`
-- **GET /api/admin/settings returns default backup_retention_days of 30.** (1 connections) — `api/tests/test_admin.py`
-- *... and 13 more nodes in this community*
+- **Progressive Disclosure** (7 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **User Guides & Tutorials** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Step-by-Step Tutorial** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Check for extra spaces** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Progressive Learning Path** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Task-Based Writing** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Diagram Integration** (4 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Tutorial Structure** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Writing Techniques** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Visual Communication** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **user-guides-tutorials.md** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Information Architecture** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Content Hierarchy** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Screenshot Annotations** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Troubleshooting Guides** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **Problem-Solution Format** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **FAQ Section** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:markdown (# Getting Started with API)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block3** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block4** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:markdown (# Tutorial: Building a User Dashboard)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block6** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block7** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **code:block8** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- *... and 22 more nodes in this community*
 
 ## Relationships
 
-- [[test_reports.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_admin.py`
+- `.claude/skills/code-documenter/references/user-guides-tutorials.md`
 
 ## Audit Trail
 
-- EXTRACTED: 74 (99%)
-- INFERRED: 1 (1%)
+- EXTRACTED: 92 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

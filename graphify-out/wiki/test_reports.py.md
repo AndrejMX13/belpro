@@ -1,49 +1,48 @@
 # test_reports.py
 
-> 20 nodes · cohesion 0.11
+> 39 nodes
 
 ## Key Concepts
 
-- **test_reports.py** (14 connections) — `api/tests/test_reports.py`
-- **SmtpNotConfiguredError** (5 connections) — `api/services/email.py`
-- **Exception** (5 connections)
-- **test_send_monthly_email_failure_logged()** (5 connections) — `api/tests/test_reports.py`
-- **test_send_monthly_whatsapp_failure_logged()** (5 connections) — `api/tests/test_reports.py`
-- **test_send_monthly_smtp_not_configured_does_not_abort_batch()** (5 connections) — `api/tests/test_reports.py`
-- **test_with_entries_only_excludes_volunteers_with_no_entries()** (4 connections) — `api/tests/test_reports.py`
-- **test_with_entries_only_includes_any_status_not_only_approved()** (4 connections) — `api/tests/test_reports.py`
-- **test_send_monthly_invalid_phone_logged()** (4 connections) — `api/tests/test_reports.py`
-- **test_monthly_summary_counts_only_approved_entries()** (3 connections) — `api/tests/test_reports.py`
-- **test_with_entries_only_false_includes_all_active_volunteers()** (3 connections) — `api/tests/test_reports.py`
-- **Raised when the manager has not configured SMTP.** (1 connections) — `api/services/email.py`
-- **test_monthly_summary_empty()** (1 connections) — `api/tests/test_reports.py`
-- **test_monthly_summary_missing_params_returns_422()** (1 connections) — `api/tests/test_reports.py`
-- **test_monthly_pdf_empty_month_returns_pdf_content_type()** (1 connections) — `api/tests/test_reports.py`
-- **test_monthly_pdf_for_unknown_volunteer_returns_404()** (1 connections) — `api/tests/test_reports.py`
-- **Email delivery failure writes an ErrorLog row and appears in response errors.** (1 connections) — `api/tests/test_reports.py`
-- **WhatsApp delivery failure writes an ErrorLog row and appears in response errors.** (1 connections) — `api/tests/test_reports.py`
-- **SmtpNotConfiguredError must NOT abort the batch — response is 200 with error in** (1 connections) — `api/tests/test_reports.py`
-- **Volunteer with WhatsApp enabled but invalid phone gets an error log entry.** (1 connections) — `api/tests/test_reports.py`
+- **Receiving Feedback** (8 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **The Six-Step Process** (7 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Avoiding Agreement Theater** (5 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Verification Before Claiming Fixed** (5 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **When to Push Back** (4 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 1: Read Completely** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 2: Restate Requirements** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 3: Check Against Codebase** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 4: Evaluate Technical Soundness** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 5: Respond with Substance** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 6: Implement One at a Time** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Actions Demonstrate Understanding** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **When Acknowledgment IS Appropriate** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Good Pushback Format** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Bad Pushback** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Acceptable Responses** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Unacceptable Responses** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **When You Can't Verify** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **receiving-feedback.md** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Core Mindset** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (❌ BAD: Read first sentence → start typing defense)** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (Reviewer: "This function is doing too much. It handles valid)** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:typescript (// Reviewer says: "This will throw if user is null")** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (Reviewer: "You should use useMemo here for performance")** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (✅ GOOD: "Fixed. Split into validate(), transform(), persist()** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[volunteer_factory()]] (8 shared connections)
-- [[log_entry_factory()]] (7 shared connections)
-- [[str]] (3 shared connections)
-- [[send_email()]] (2 shared connections)
-- [[NGOInfo]] (2 shared connections)
-- [[test_admin.py]] (1 shared connections)
-- [[test_evolution_service.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/email.py`
-- `api/tests/test_reports.py`
+- `.claude/skills/code-reviewer/references/receiving-feedback.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (61%)
-- INFERRED: 26 (39%)
+- EXTRACTED: 76 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

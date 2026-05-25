@@ -1,49 +1,48 @@
 # ops_server.py
 
-> 32 nodes · cohesion 0.08
+> 45 nodes
 
 ## Key Concepts
 
-- **ops_server.py** (7 connections) — `ops/scripts/ops_server.py`
-- **_Handler** (7 connections) — `ops/scripts/ops_server.py`
-- **_Handler** (7 connections) — `whisper/transcribe.py`
-- **write_crontab()** (5 connections) — `ops/scripts/ops_server.py`
-- **.do_POST()** (5 connections) — `ops/scripts/ops_server.py`
-- **._respond()** (5 connections) — `whisper/transcribe.py`
-- **fetch_settings_from_db()** (4 connections) — `ops/scripts/ops_server.py`
-- **._send()** (4 connections) — `ops/scripts/ops_server.py`
-- **main()** (4 connections) — `ops/scripts/ops_server.py`
-- **_dsn()** (3 connections) — `ops/scripts/ops_server.py`
-- **report_error()** (3 connections) — `ops/scripts/ops_server.py`
-- **reload_crond()** (3 connections) — `ops/scripts/ops_server.py`
-- **.do_POST()** (3 connections) — `whisper/transcribe.py`
-- **.do_GET()** (3 connections) — `whisper/transcribe.py`
-- **BaseHTTPRequestHandler** (2 connections)
-- **.do_GET()** (2 connections) — `ops/scripts/ops_server.py`
-- **transcribe.py** (2 connections) — `whisper/transcribe.py`
-- **.log_message()** (2 connections) — `whisper/transcribe.py`
-- **.log_message()** (1 connections) — `ops/scripts/ops_server.py`
-- **Convert asyncpg DATABASE_URL to a psycopg2-compatible DSN.** (1 connections) — `ops/scripts/ops_server.py`
-- **POST failure to the API error log. Best-effort — never raises.** (1 connections) — `ops/scripts/ops_server.py`
-- **Send SIGHUP to crond so it reloads the crontab file.** (1 connections) — `ops/scripts/ops_server.py`
-- **Write a new crontab to CRONTAB_PATH and reload crond.** (1 connections) — `ops/scripts/ops_server.py`
-- **Read all runtime-tunable settings from the settings table.      Returns an empty** (1 connections) — `ops/scripts/ops_server.py`
-- **HTTP request handler for the ops notification server.** (1 connections) — `ops/scripts/ops_server.py`
-- *... and 7 more nodes in this community*
+- **Task 4: ops_server.py + backup.sh** (14 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 6: README updates** (10 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Configurable Backup Retention Days Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 3: Tests** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 5: Frontend** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 1: AppSettings property + schemas** (4 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 2: Admin router** (4 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **2026-05-21-backup-retention-configurable.md** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Files Changed** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (git add api/services/app_settings.py api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (payload = {)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (git add api/routers/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (async def test_get_settings_returns_backup_retention_default)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (git add api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (cur.execute()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (retention_days = max(1, int(payload.get("backup_retention_da)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (write_crontab(day, period, backup_hour, cleanup_hour, retent)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (retention_days = max(1, int(rows.get("backup_retention_days")** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- *... and 20 more nodes in this community*
 
 ## Relationships
 
-- [[str]] (3 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `ops/scripts/ops_server.py`
-- `whisper/transcribe.py`
+- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
 
 ## Audit Trail
 
-- EXTRACTED: 82 (96%)
-- INFERRED: 3 (4%)
+- EXTRACTED: 88 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

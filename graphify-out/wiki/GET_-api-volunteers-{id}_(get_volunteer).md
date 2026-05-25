@@ -1,33 +1,43 @@
 # GET /api/volunteers/{id} (get_volunteer)
 
-> 6 nodes · cohesion 0.33
+> 21 nodes
 
 ## Key Concepts
 
-- **GET /api/volunteers/{id} (get_volunteer)** (7 connections) — `api/routers/volunteers.py`
-- **n8n: GET /api/volunteers?search_by=phone (Lookup Volunteer by Phone)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: GET /api/volunteers/{id} (Next Entry Volunteer Detail)** (2 connections) — `n8n/workflows/manager_approval.json`
-- **Shared Volunteer Data Structure (phone, first_name, last_name, id)** (2 connections) — `api/routers/volunteers.py`
-- **n8n: GET /api/volunteers/{id} (Get Volunteer for Manager Msg)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: GET /api/volunteers/{id} (Auto Notify Volunteer Detail)** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Common Gotchas** (11 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. ❌ Wrong: Ignoring timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Set workflow timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. ❌ Wrong: Overlapping executions** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Add execution lock** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. ❌ Wrong: No error handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Add error workflow** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. ❌ Wrong: Processing all data at once** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Batch processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **5. ❌ Wrong: Hardcoded dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **✅ Correct: Dynamic dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (Schedule (9 AM)  // 9 AM in which timezone?)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block34 (Schedule (every 5 min) → Long-running task (10 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block35 (Schedule → Redis (check lock))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block36 (Schedule → API call → Process (fails silently))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block37 (Main: Schedule → Execute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block38 (Schedule → SELECT 1000000 records → Process (OOM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block39 (Schedule → SELECT with pagination → Split In Batches → Proce)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (query: "SELECT * FROM orders WHERE date = '2024-01-15'")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (query: "SELECT * FROM orders WHERE date = CURRENT_DATE - INT)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[BelPro - Vnos Prostovoljcev (Volunteer Entry Workflow)]] (2 shared connections)
-- [[load_key()]] (2 shared connections)
-- [[n8n/workflows/volunteer_entry.json]] (1 shared connections)
-- [[BelPro - Odobritev Upravljalca (Manager Approval Workflow)]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `n8n/workflows/manager_approval.json`
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (94%)
-- INFERRED: 1 (6%)
+- EXTRACTED: 41 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

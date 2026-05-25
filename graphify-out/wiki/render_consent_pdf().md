@@ -1,41 +1,48 @@
 # render_consent_pdf()
 
-> 12 nodes · cohesion 0.21
+> 27 nodes
 
 ## Key Concepts
 
-- **render_consent_pdf()** (11 connections) — `api/services/consent_pdf.py`
-- **consent_pdf.py** (7 connections) — `api/services/consent_pdf.py`
-- **download_consent_pdf()** (5 connections) — `api/routers/documents.py`
-- **documents.py** (4 connections) — `api/routers/documents.py`
-- **test_render_consent_pdf_empty_clauses_treated_as_none()** (3 connections) — `api/tests/test_documents.py`
-- **_esc()** (2 connections) — `api/services/consent_pdf.py`
-- **_now_str()** (2 connections) — `api/services/consent_pdf.py`
-- **Documents router — downloadable compliance documents.** (1 connections) — `api/routers/documents.py`
-- **Generate and stream the GDPR Article 13 consent notice PDF.** (1 connections) — `api/routers/documents.py`
-- **GDPR Article 13 consent notice PDF generation.** (1 connections) — `api/services/consent_pdf.py`
-- **Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage** (1 connections) — `api/services/consent_pdf.py`
-- **render_consent_pdf handles empty string clauses without error.** (1 connections) — `api/tests/test_documents.py`
+- **Work Date Rename + Dashboard Entry Creation Design** (10 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Frontend (`frontend/js/volunteers.js`)** (5 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Data Layer** (4 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Migration** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **API Layer** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **List views — two date columns** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Entry detail edit form (`renderLogEntryDetail`)** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Router: `api/routers/log_entries.py`** (2 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **2026-05-09-work-date-and-dashboard-entry-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:sql (ALTER TABLE log_entries RENAME COLUMN entry_date TO work_dat)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:sql (ALTER INDEX idx_entries_vol_date RENAME TO idx_entries_vol_w)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **ORM model (`api/models/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Schemas (`api/schemas/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:python (if payload.work_date is not None:)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Other routers** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Global renames** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:block4 (Dan opravljenega dela | Prostovoljec | Opis dela | Ure | Lok)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:block5 (Dan opravljenega dela | Opis dela | Ure | Lokacija | Dan vno)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:html (<div class="field">)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:javascript (const workDate = $('d-work-date').value || null;)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **"Dodaj vnos" button (volunteer detail page)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **n8n Workflows** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [[app_settings.py]] (3 shared connections)
-- [[test_documents.py]] (3 shared connections)
-- [[report_pdf.py]] (2 shared connections)
-- [[logo.py]] (1 shared connections)
-- [[NGOInfo]] (1 shared connections)
-- [[send_monthly_reports()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/documents.py`
-- `api/services/consent_pdf.py`
-- `api/tests/test_documents.py`
+- `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (77%)
-- INFERRED: 9 (23%)
+- EXTRACTED: 52 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

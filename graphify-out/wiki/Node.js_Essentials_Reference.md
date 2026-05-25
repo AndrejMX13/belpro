@@ -1,11 +1,26 @@
 # Node.js Essentials Reference
 
-> 2 nodes · cohesion 1.00
+> 17 nodes
 
 ## Key Concepts
 
-- **Node.js Essentials Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Node.js File System API** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **renderLogEntryDetail** (9 connections) — `frontend/js/volunteers.js`
+- **renderDetail** (4 connections) — `frontend/js/volunteers.js`
+- **loadApprovals** (3 connections) — `frontend/js/volunteers.js`
+- **get_volunteer** (2 connections) — `api/routers/volunteers.py`
+- **list_log_entries** (2 connections) — `api/routers/log_entries.py`
+- **approve_log_entry** (2 connections) — `api/routers/log_entries.py`
+- **reject_log_entry** (2 connections) — `api/routers/log_entries.py`
+- **loadVolunteerLog** (1 connections) — `frontend/js/volunteers.js`
+- **delete_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **update_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **get_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **create_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **update_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **upload_photo** (1 connections) — `api/routers/log_entries.py`
+- **get_photo_file** (1 connections) — `api/routers/log_entries.py`
+- **delete_photo** (1 connections) — `api/routers/log_entries.py`
+- **delete_log_entry** (1 connections) — `api/routers/log_entries.py`
 
 ## Relationships
 
@@ -13,11 +28,13 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/node-essentials.md`
+- `api/routers/log_entries.py`
+- `api/routers/volunteers.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

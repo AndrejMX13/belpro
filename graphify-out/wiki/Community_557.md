@@ -1,0 +1,29 @@
+# Community 557
+
+> 5 nodes
+
+## Key Concepts
+
+- **Pattern 3: Markdown Parsing & Structured Data Extraction** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Parse markdown and extract structured information)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Parse HTML table to JSON)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+
+## Relationships
+
+- [[Community 415]] (1 shared connections)
+
+## Source Files
+
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+
+## Audit Trail
+
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

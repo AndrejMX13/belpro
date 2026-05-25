@@ -1,0 +1,41 @@
+# Community 415
+
+> 8 nodes
+
+## Key Concepts
+
+- **Common Patterns - JavaScript Code Node** (14 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Combining Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **COMMON_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Pattern Selection Guide** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Example: Multi-source aggregation + Top N filtering)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+
+## Relationships
+
+- [[Community 548]] (1 shared connections)
+- [[Community 554]] (1 shared connections)
+- [[Community 557]] (1 shared connections)
+- [[Community 555]] (1 shared connections)
+- [[Community 549]] (1 shared connections)
+- [[Community 550]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
+- [[Community 552]] (1 shared connections)
+- [[Community 553]] (1 shared connections)
+- [[Community 556]] (1 shared connections)
+
+## Source Files
+
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+
+## Audit Trail
+
+- EXTRACTED: 24 (100%)
+- INFERRED: 0 (0%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [[index]] to navigate.*

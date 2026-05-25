@@ -1,37 +1,48 @@
 # manager.py
 
-> 12 nodes · cohesion 0.17
+> 28 nodes
 
 ## Key Concepts
 
-- **manager.py** (8 connections) — `api/schemas/manager.py`
-- **ManagerCreate** (3 connections) — `api/schemas/manager.py`
-- **ManagerUpdate** (3 connections) — `api/schemas/manager.py`
-- **PasswordChangeRequest** (3 connections) — `api/schemas/manager.py`
-- **ManagerResponse** (3 connections) — `api/schemas/manager.py`
-- **_validate_davcna_checksum()** (2 connections) — `api/schemas/manager.py`
-- **normalize_wa_phone()** (2 connections) — `api/schemas/manager.py`
-- **Pydantic schemas for the Manager entity.** (1 connections) — `api/schemas/manager.py`
-- **Fields required for first-time manager setup.** (1 connections) — `api/schemas/manager.py`
-- **Partial update — all fields optional.  Only provided fields are written.** (1 connections) — `api/schemas/manager.py`
-- **Payload for the change-password endpoint.** (1 connections) — `api/schemas/manager.py`
-- **Manager profile returned by the API.** (1 connections) — `api/schemas/manager.py`
+- **Spec Compliance Review** (7 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **The Three Verification Categories** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Spec Compliance Checklist** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Stage 1: Spec Compliance Review** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 1: Missing Requirements** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 2: Unnecessary Additions** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Why Order Matters** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Output Format** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Two-Stage Review Architecture** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 3: Interpretation Gaps** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Compliant Result** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Issues Found** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **spec-compliance-review.md** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block1 (┌─────────────────────┐)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Core Directive** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block3** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block5** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Stage 1 Must Come First** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Separation of Concerns** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Before You Start** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **During Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **After Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- *... and 3 more nodes in this community*
 
 ## Relationships
 
-- [[BaseModel]] (4 shared connections)
-- [[EvolutionClient]] (1 shared connections)
-- [[tax_number_valid()]] (1 shared connections)
-- [[normalize_phone()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/schemas/manager.py`
+- `.claude/skills/code-reviewer/references/spec-compliance-review.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (93%)
-- INFERRED: 2 (7%)
+- EXTRACTED: 54 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

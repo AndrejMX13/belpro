@@ -1,32 +1,43 @@
 # NGOInfo
 
-> 6 nodes · cohesion 0.33
+> 21 nodes
 
 ## Key Concepts
 
-- **NGOInfo** (7 connections) — `api/services/report_pdf.py`
-- **test_ngo_header_html_without_logo()** (4 connections) — `api/tests/test_reports.py`
-- **test_ngo_header_html_with_logo()** (4 connections) — `api/tests/test_reports.py`
-- **NGO identity shown in every PDF header.** (1 connections) — `api/services/report_pdf.py`
-- **ngo_header_html must not include an img tag when logo_path is None.** (1 connections) — `api/tests/test_reports.py`
-- **ngo_header_html must include an img tag with data URI src when logo_path is set.** (1 connections) — `api/tests/test_reports.py`
+- **Node.js Essentials** (11 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **File System (fs/promises)** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Path Module** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Streams** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **EventEmitter** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Child Processes** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Worker Threads** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Process & Environment** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **HTTP/HTTPS Server** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Cluster for Multi-Core** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **node-essentials.md** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { readFile, writeFile, appendFile, mkdir, rm, readdir)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { join, resolve, dirname, basename, extname, parse, f)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { createReadStream, createWriteStream } from 'fs';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { EventEmitter } from 'events';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { spawn, exec, execFile } from 'child_process';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { Worker, isMainThread, parentPort, workerData } from)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (// Environment variables)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import { createServer } from 'http';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **code:javascript (import cluster from 'cluster';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Relationships
 
-- [[report_pdf.py]] (3 shared connections)
-- [[send_monthly_reports()]] (2 shared connections)
-- [[test_reports.py]] (2 shared connections)
-- [[render_consent_pdf()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/report_pdf.py`
-- `api/tests/test_reports.py`
+- `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (50%)
-- INFERRED: 9 (50%)
+- EXTRACTED: 40 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

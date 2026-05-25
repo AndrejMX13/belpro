@@ -1,36 +1,54 @@
 # test_documents.py
 
-> 14 nodes · cohesion 0.14
+> 31 nodes
 
 ## Key Concepts
 
-- **test_documents.py** (8 connections) — `api/tests/test_documents.py`
-- **test_render_consent_pdf_returns_bytes()** (3 connections) — `api/tests/test_documents.py`
-- **test_render_consent_pdf_with_additional_clauses()** (3 connections) — `api/tests/test_documents.py`
-- **test_consent_pdf_returns_pdf()** (2 connections) — `api/tests/test_documents.py`
-- **test_consent_pdf_requires_auth()** (2 connections) — `api/tests/test_documents.py`
-- **test_patch_manager_saves_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
-- **test_patch_manager_clears_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
-- **Tests for the /documents router and consent_pdf service.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf returns non-empty bytes for a minimal manager.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf produces bytes when additional clauses are set.** (1 connections) — `api/tests/test_documents.py`
-- **Authenticated request returns a PDF response.** (1 connections) — `api/tests/test_documents.py`
-- **Unauthenticated request is rejected.** (1 connections) — `api/tests/test_documents.py`
-- **PATCH /managers/me accepts and persists gdpr_additional_clauses.** (1 connections) — `api/tests/test_documents.py`
-- **PATCH /managers/me with empty string clears gdpr_additional_clauses.      Note:** (1 connections) — `api/tests/test_documents.py`
+- **log_entry_factory()** (39 connections) — `api/tests/conftest.py`
+- **test_log_entries.py** (33 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_returns_created_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_list_entries_filter_by_status()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_entry_success()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_pending_manager_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_pending_volunteer_entry()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_confirm_already_approved_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_status_cannot_go_from_approved_to_pending_manager()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_status_cannot_go_from_rejected_to_approved()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_entry_happy_path()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_pending_manager_entry_succeeds()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_rejected_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_delete_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_update_approved_entry_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_photo_upload_unsupported_extension_returns_400_or_422()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_approve_pending_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_reject_pending_volunteer_returns_409()** (3 connections) — `api/tests/test_log_entries.py`
+- **test_photo_limit_returns_default()** (2 connections) — `api/tests/test_log_entries.py`
+- **Returns an async callable that inserts a LogEntry row via flush.** (1 connections) — `api/tests/conftest.py`
+- **test_list_entries_empty()** (1 connections) — `api/tests/test_log_entries.py`
+- **test_get_entry_not_found()** (1 connections) — `api/tests/test_log_entries.py`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [[render_consent_pdf()]] (3 shared connections)
+- [[path]] (22 shared connections)
+- [[005_report_prefs.py]] (13 shared connections)
+- [[Community 349]] (3 shared connections)
+- [[analytics_summary()]] (3 shared connections)
+- [[Maximum photos allowed per log entry.]] (2 shared connections)
+- [[Community 405]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/test_documents.py`
+- `api/tests/conftest.py`
+- `api/tests/test_log_entries.py`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (93%)
-- INFERRED: 2 (7%)
+- EXTRACTED: 65 (46%)
+- INFERRED: 75 (54%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,28 +1,46 @@
 # loadAnalytics()
 
-> 5 nodes · cohesion 0.50
+> 21 nodes
 
 ## Key Concepts
 
-- **loadAnalytics()** (3 connections) — `frontend/js/analytics.js`
-- **GET /analytics/summary** (3 connections) — `api/routers/analytics.py`
-- **API.analytics.summary()** (2 connections) — `frontend/js/api.js`
-- **AnalyticsSummary shape (total_hours, active_volunteer_count, hours_per_volunteer[], hours_per_location[], monthly_trend[])** (2 connections) — `api/routers/analytics.py`
-- **renderAnalytics() — analytics page** (1 connections) — `frontend/js/analytics.js`
+- **upgrade.sh** (12 connections) — `scripts/upgrade.sh`
+- **rotate_emso_key.sh** (11 connections) — `scripts/rotate_emso_key.sh`
+- **backup.sh** (8 connections) — `scripts/backup.sh`
+- **.env** (5 connections)
+- **EMSO encrypted field** (4 connections)
+- **docker-compose.yml** (3 connections)
+- **api/scripts/rotate_emso_key.py** (3 connections)
+- **Alembic migrations** (2 connections)
+- **/app/photos (volume)** (2 connections)
+- **info()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **ok()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **warn()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **heading()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **die()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **info()** (1 connections) — `scripts/upgrade.sh`
+- **ok()** (1 connections) — `scripts/upgrade.sh`
+- **warn()** (1 connections) — `scripts/upgrade.sh`
+- **heading()** (1 connections) — `scripts/upgrade.sh`
+- **die()** (1 connections) — `scripts/upgrade.sh`
+- **get_env()** (1 connections) — `scripts/upgrade.sh`
+- **backups/** (1 connections)
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- [[004_log_entry_photos.py]] (10 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
+- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/analytics.py`
-- `frontend/js/analytics.js`
-- `frontend/js/api.js`
+- `scripts/backup.sh`
+- `scripts/rotate_emso_key.sh`
+- `scripts/upgrade.sh`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 62 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

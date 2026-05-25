@@ -1,38 +1,44 @@
 # EMŠO Encryption (AES-256-GCM at rest)
 
-> 7 nodes · cohesion 0.29
+> 22 nodes
 
 ## Key Concepts
 
-- **EMŠO Encryption (AES-256-GCM at rest)** (7 connections) — `SPEC.md`
-- **Contributing Guide** (4 connections) — `CONTRIBUTING.md`
-- **Security Policy** (2 connections) — `SECURITY.md`
-- **Upgrade Script Plan** (2 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
-- **Contributor Covenant Code of Conduct** (1 connections) — `CODE_OF_CONDUCT.md`
-- **EMŠO Encryption Key Rotation Procedure** (1 connections) — `README.md`
-- **Rotate EMSO Key Plan** (1 connections) — `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
+- **Testing with Pytest** (11 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Basic Pytest Structure** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Fixtures for Setup/Teardown** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Parametrize for Multiple Cases** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Mocking and Patching** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Async Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Pytest Markers** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Coverage** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Property-Based Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Organization** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Snapshot Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **testing.md** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# test_user.py)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# conftest.py - shared fixtures)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (from unittest.mock import Mock, MagicMock, patch, AsyncMock,)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# Run with coverage)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (from hypothesis import given, strategies as st)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# tests/)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
 
 ## Relationships
 
-- [[BelPro System Specification]] (3 shared connections)
-- [[BelPro README (English)]] (1 shared connections)
-- [[Test Coverage Gaps Plan]] (1 shared connections)
-- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `CODE_OF_CONDUCT.md`
-- `CONTRIBUTING.md`
-- `README.md`
-- `SECURITY.md`
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-18-rotate-emso-key.md`
-- `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- `.claude/skills/python-pro/references/testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (83%)
-- INFERRED: 3 (17%)
+- EXTRACTED: 42 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

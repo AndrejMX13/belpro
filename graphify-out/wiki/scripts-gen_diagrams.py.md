@@ -1,36 +1,47 @@
 # scripts/gen_diagrams.py
 
-> 14 nodes · cohesion 0.27
+> 31 nodes
 
 ## Key Concepts
 
-- **scripts/gen_diagrams.py** (22 connections) — `scripts/gen_diagrams.py`
-- **fig1()** (7 connections) — `scripts/gen_diagrams.py`
-- **fnt()** (5 connections) — `scripts/gen_diagrams.py`
-- **text_size()** (5 connections) — `scripts/gen_diagrams.py`
-- **draw_box()** (4 connections) — `scripts/gen_diagrams.py`
-- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams.py`
-- **fig2()** (3 connections) — `scripts/gen_diagrams.py`
-- **fig3()** (3 connections) — `scripts/gen_diagrams.py`
-- **arrow_h()** (2 connections) — `scripts/gen_diagrams.py`
-- **arrow_v()** (2 connections) — `scripts/gen_diagrams.py`
-- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams.py`
-- **main()** (1 connections) — `scripts/gen_diagrams.py`
-- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams.py`
-- **Dashed horizontal arrow (single line, for Manager connection).** (1 connections) — `scripts/gen_diagrams.py`
+- **Settings Table (ISS-026) Design** (10 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **API Layer** (5 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Data Layer** (4 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Admin router** (4 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Frontend** (4 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Testing** (3 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **`settings` table** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **ORM model** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Central authority: `AppSettings`** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Navigation** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Admin page (`frontend/js/admin.js`)** (2 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **2026-05-20-settings-table-design.md** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:sql (CREATE TABLE settings ()** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Seed rows (inserted in the Alembic migration)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:python (class AppSetting(Base):)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:python (class AppSettings:)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Caller migration** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:block4 (GET  /api/admin/settings  → AdminSettingsResponse)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:python (class AdminSettingsResponse(BaseModel):)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **Env vars** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- **code:html (<a href="#admin" class="nav-item" data-page="admin">)** (1 connections) — `docs/superpowers/specs/2026-05-20-settings-table-design.md`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [[api/main.py]] (1 shared connections)
-- [[Docker Compose (all services containerised)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `scripts/gen_diagrams.py`
+- `docs/superpowers/specs/2026-05-20-settings-table-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 61 (100%)
+- EXTRACTED: 60 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,55 +1,48 @@
 # persist_report()
 
-> 30 nodes · cohesion 0.09
+> 42 nodes
 
 ## Key Concepts
 
-- **persist_report()** (16 connections) — `api/services/report_storage.py`
-- **test_report_history.py** (14 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_creates_file_and_row()** (5 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_overwrites_on_resend()** (5 connections) — `api/tests/test_report_history.py`
-- **report_storage.py** (4 connections) — `api/services/report_storage.py`
-- **report_path()** (4 connections) — `api/services/report_storage.py`
-- **test_persist_report_consolidated_overwrites_on_resend()** (4 connections) — `api/tests/test_report_history.py`
-- **test_get_history_returns_items()** (4 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_missing_file_returns_404()** (4 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_resend_overwrites_row()** (4 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_consolidated_has_null_volunteer()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_filter_by_year_month()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_streams_file()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_empty()** (2 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_unknown_id_returns_404()** (2 connections) — `api/tests/test_report_history.py`
-- **PDF report storage — disk write and upsert of MonthlyReport rows.** (1 connections) — `api/services/report_storage.py`
-- **Return the canonical filesystem path for a report PDF.** (1 connections) — `api/services/report_storage.py`
-- **Write pdf_bytes to disk and upsert a MonthlyReport row.      If a row already ex** (1 connections) — `api/services/report_storage.py`
-- **Tests for PDF report persistence and history endpoints.** (1 connections) — `api/tests/test_report_history.py`
-- **persist_report() must write bytes to disk and insert a MonthlyReport row.** (1 connections) — `api/tests/test_report_history.py`
-- **Consolidated report rows must have volunteer_id=None.** (1 connections) — `api/tests/test_report_history.py`
-- **Second persist_report() for same (volunteer, year, month) must overwrite — no ne** (1 connections) — `api/tests/test_report_history.py`
-- **Second persist_report() for consolidated (volunteer_id=None, year, month) must o** (1 connections) — `api/tests/test_report_history.py`
-- **GET /reports/history with no rows returns empty list.** (1 connections) — `api/tests/test_report_history.py`
-- **GET /reports/history returns one item per MonthlyReport row.** (1 connections) — `api/tests/test_report_history.py`
-- *... and 5 more nodes in this community*
+- **Report Delivery Error Visibility Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 3b — Fix manager WhatsApp exception handling** (6 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 1b — Add the logger (no logic change yet)** (5 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 2b — Fix manager email exception handling** (4 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 4 — Fix stale field names in the n8n monthly reports Code node** (4 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 4a — Update the Code node JavaScript** (4 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 1 — Add logger to reports.py and write failing tests for delivery error logging** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 1a — Add the failing tests** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 2 — Implement delivery error logging for email failures (volunteer + manager)** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 2a — Fix volunteer email exception handling** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 3 — Implement delivery error logging for WhatsApp failures (volunteer + manager)** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 3a — Fix volunteer WhatsApp exception handling** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Background the implementer needs** (2 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 4b — Reimport the workflow into n8n** (2 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 4c — Commit** (2 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **2026-05-21-report-delivery-error-visibility.md** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (class ErrorLog(Base):)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (# ── report delivery error logging ─────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:block3 (docker compose exec api pytest tests/test_reports.py::test_s)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (logger = logging.getLogger(__name__))** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (from models.error_log import ErrorLog)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:block7 (docker compose exec api pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (if will_email:)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
-- [[path]] (6 shared connections)
-- [[volunteer_factory()]] (4 shared connections)
-- [[str]] (3 shared connections)
-- [[send_monthly_reports()]] (2 shared connections)
-- [[Base]] (1 shared connections)
-- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
-- [[log_entry_factory()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/report_storage.py`
-- `api/tests/test_report_history.py`
+- `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
 
 ## Audit Trail
 
-- EXTRACTED: 61 (66%)
-- INFERRED: 31 (34%)
+- EXTRACTED: 82 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

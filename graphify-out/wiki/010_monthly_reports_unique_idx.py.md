@@ -1,26 +1,47 @@
 # 010_monthly_reports_unique_idx.py
 
-> 5 nodes · cohesion 0.40
+> 19 nodes
 
 ## Key Concepts
 
-- **010_monthly_reports_unique_idx.py** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **Create unique partial indexes on monthly_reports.** (1 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **Drop unique partial indexes from monthly_reports.** (1 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- **manager_approval.json** (31 connections) — `n8n/workflows/manager_approval.json`
+- **pinData** (2 connections) — `n8n/workflows/manager_approval.json`
+- **updatedAt** (1 connections) — `n8n/workflows/manager_approval.json`
+- **createdAt** (1 connections) — `n8n/workflows/manager_approval.json`
+- **id** (1 connections) — `n8n/workflows/manager_approval.json`
+- **name** (1 connections) — `n8n/workflows/manager_approval.json`
+- **description** (1 connections) — `n8n/workflows/manager_approval.json`
+- **active** (1 connections) — `n8n/workflows/manager_approval.json`
+- **isArchived** (1 connections) — `n8n/workflows/manager_approval.json`
+- **nodes** (1 connections) — `n8n/workflows/manager_approval.json`
+- **staticData** (1 connections) — `n8n/workflows/manager_approval.json`
+- **meta** (1 connections) — `n8n/workflows/manager_approval.json`
+- **Manual Trigger** (1 connections) — `n8n/workflows/manager_approval.json`
+- **versionId** (1 connections) — `n8n/workflows/manager_approval.json`
+- **activeVersionId** (1 connections) — `n8n/workflows/manager_approval.json`
+- **versionCounter** (1 connections) — `n8n/workflows/manager_approval.json`
+- **triggerCount** (1 connections) — `n8n/workflows/manager_approval.json`
+- **shared** (1 connections) — `n8n/workflows/manager_approval.json`
+- **tags** (1 connections) — `n8n/workflows/manager_approval.json`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[API.reports.downloadHistoryPdf()]] (5 shared connections)
+- [[make_text_payload()]] (2 shared connections)
+- [[004_log_entry_photos.py]] (2 shared connections)
+- [[Community 451]] (1 shared connections)
+- [[Community 414]] (1 shared connections)
+- [[Code: Preveri Slike Stanje]] (1 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
+- [[PDF Generated (Per Volunteer + Consolidated)]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- `n8n/workflows/manager_approval.json`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 50 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

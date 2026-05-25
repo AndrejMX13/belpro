@@ -1,23 +1,38 @@
 # POST /errors (internal)
 
-> 1 nodes · cohesion 0.00
+> 11 nodes
 
 ## Key Concepts
 
-- **POST /errors (internal)** (0 connections) — `api/routers/errors.py`
+- **renderList() — volunteers page** (5 connections) — `frontend/js/volunteers.js`
+- **GET /volunteers** (4 connections) — `api/routers/volunteers.py`
+- **loadVolunteers()** (3 connections) — `frontend/js/volunteers.js`
+- **loadHealthWidget()** (3 connections) — `frontend/js/errors.js`
+- **API.volunteers.list()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.activate()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.deactivate()** (2 connections) — `frontend/js/api.js`
+- **VolunteerListResponse shape (items[], total)** (2 connections) — `api/routers/volunteers.py`
+- **API.health.detailed()** (1 connections) — `frontend/js/api.js`
+- **PATCH /volunteers/{id}/activate** (1 connections) — `api/routers/volunteers.py`
+- **PATCH /volunteers/{id}/deactivate** (1 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[n8n MCP Workflow Management Guide]] (2 shared connections)
+- [[tax_number_valid()]] (1 shared connections)
+- [[Community 361]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `api/routers/volunteers.py`
+- `frontend/js/api.js`
+- `frontend/js/errors.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 25 (96%)
+- INFERRED: 1 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

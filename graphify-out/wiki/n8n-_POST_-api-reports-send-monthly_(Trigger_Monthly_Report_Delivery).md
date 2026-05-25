@@ -1,31 +1,40 @@
 # n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)
 
-> 3 nodes · cohesion 1.00
+> 18 nodes
 
 ## Key Concepts
 
-- **n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)** (7 connections) — `n8n/workflows/monthly_reports.json`
-- **POST /api/reports/send-monthly (send_monthly_reports)** (3 connections) — `api/routers/reports.py`
-- **BelPro - Mesecna Porocila (Monthly Reports Workflow)** (2 connections) — `n8n/workflows/monthly_reports.json`
+- **Standard Library Mastery** (9 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Pathlib for File Operations** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Dataclasses for Data Structures** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Functools for Function Tools** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Itertools for Iteration** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Collections for Data Structures** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Context Managers** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Enum for Constants** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **Logging** (2 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **standard-library.md** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from pathlib import Path)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from dataclasses import dataclass, field, asdict, replace)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from functools import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from itertools import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from collections import ()** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from contextlib import contextmanager, suppress, ExitStack)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (from enum import Enum, auto, IntEnum, Flag)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
+- **code:python (import logging)** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
 
 ## Relationships
 
-- [[send_monthly_reports()]] (1 shared connections)
-- [[send_email()]] (1 shared connections)
-- [[EvolutionClient]] (1 shared connections)
-- [[report_pdf.py]] (1 shared connections)
-- [[persist_report()]] (1 shared connections)
-- [[BelPro - Odobritev Upravljalca (Manager Approval Workflow)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `n8n/workflows/monthly_reports.json`
+- `.claude/skills/python-pro/references/standard-library.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (67%)
-- INFERRED: 4 (33%)
+- EXTRACTED: 34 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

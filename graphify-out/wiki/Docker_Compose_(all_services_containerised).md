@@ -1,52 +1,48 @@
 # Docker Compose (all services containerised)
 
-> 16 nodes · cohesion 0.16
+> 33 nodes
 
 ## Key Concepts
 
-- **Docker Compose (all services containerised)** (11 connections) — `CLAUDE.md`
-- **Evolution API (WhatsApp Gateway)** (7 connections) — `SPEC.md`
-- **Digital Volunteer Diary Architecture & GDPR Notes** (6 connections) — `BelPro.md`
-- **Manager Web Dashboard** (6 connections) — `SPEC.md`
-- **PostgreSQL 18 Database** (6 connections) — `SPEC.md`
-- **FastAPI Backend + PDF Generation** (4 connections) — `CLAUDE.md`
-- **n8n as Workflow Engine** (3 connections) — `CLAUDE.md`
-- **Dnevnik prostovoljskega dela (Volunteer Work Diary)** (2 connections) — `SPEC.md`
-- **GDPR and ZVOP-2 Compliance** (2 connections) — `SPEC.md`
-- **nginx Reverse Proxy** (2 connections) — `SPEC.md`
-- **SQL Dialect Differences Reference (PostgreSQL, MySQL, SQL Server, Oracle)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Workflow Integration Tests Plan** (2 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
-- **WhatsApp Phone Source of Truth Plan** (2 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **Alembic DB Migrations** (1 connections) — `CLAUDE.md`
-- **Redis 7 (Cache/Queue)** (1 connections) — `README.md`
-- **Phone Number Normalization (digits-only)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Monitoring and Analysis** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **PostgreSQL Monitoring** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **MySQL Monitoring** (5 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Cross-Platform Monitoring** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Alert Thresholds** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Essential Extensions** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Query Performance Tracking** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Connection and Lock Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Table and Index Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Database Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Performance Schema Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **InnoDB Status Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Connection and Process Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **System Status Variables** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Resource Utilization** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Health Check Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **PostgreSQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **MySQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **monitoring-analysis.md** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Install performance monitoring extensions)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Top queries by total time)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Current activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Table bloat and dead tuples)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Database size and activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Top statements by total latency)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- *... and 8 more nodes in this community*
 
 ## Relationships
 
-- [[BelPro System Specification]] (9 shared connections)
-- [[AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)]] (3 shared connections)
-- [[Secure Code Guardian Skill]] (2 shared connections)
-- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] (1 shared connections)
-- [[BelPro README (English)]] (1 shared connections)
-- [[scripts/gen_diagrams.py]] (1 shared connections)
-- [[scripts/gen_diagrams_sl.py]] (1 shared connections)
-- [[scripts/setup.sh]] (1 shared connections)
-- [[Test Coverage Gaps Plan]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/sql-pro/references/dialect-differences.md`
-- `BelPro.md`
-- `CLAUDE.md`
-- `README.md`
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
 
 ## Audit Trail
 
-- EXTRACTED: 57 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 64 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

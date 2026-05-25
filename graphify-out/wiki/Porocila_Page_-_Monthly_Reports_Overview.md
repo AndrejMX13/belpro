@@ -1,51 +1,62 @@
 # Porocila Page - Monthly Reports Overview
 
-> 26 nodes · cohesion 0.10
+> 40 nodes
 
 ## Key Concepts
 
-- **Porocila Page - Monthly Reports Overview** (9 connections) — `docs/images/belpro-porocila.png`
-- **Nastavitve Page - Settings** (7 connections) — `docs/images/belpro-nastavitve.png`
-- **Prostovoljci Page - Volunteers List Management** (5 connections) — `docs/images/belpro-prostovoljci.png`
-- **Volunteers Table - Ime in Priimek, Telefon, Mesto, Ure ta mesec, Status, Akcije with sortable headers and pagination** (4 connections) — `docs/images/belpro-prostovoljci.png`
-- **Shared Sidebar Navigation - BelPro brand, all section links, Odjava button, NGO logo (present on all four pages)** (4 connections) — `docs/images/belpro-prostovoljci.png`
-- **GDPR Consent Form Section (Soglasje za obdelavo osebnih podatkov)** (3 connections) — `docs/images/belpro-dokumenti.png`
-- **Organization Data Section (Podatki organizacije) - Name, Address, Tax ID, Phone, Evolution API status, Logo** (3 connections) — `docs/images/belpro-nastavitve.png`
-- **Dokumenti Page - GDPR Consent Document Download** (2 connections) — `docs/images/belpro-dokumenti.png`
-- **Prenesi PDF Button (Download GDPR PDF)** (2 connections) — `docs/images/belpro-dokumenti.png`
-- **Email Integration Section (E-postna integracija) - SMTP server, port, username, display name, configured status** (2 connections) — `docs/images/belpro-nastavitve.png`
-- **Manager Monthly Report Delivery Settings (Moja mesecna porocila) - Email and WhatsApp channel toggles** (2 connections) — `docs/images/belpro-nastavitve.png`
-- **Volunteer Report Delivery Settings (Privzete nastavitve porocil za prostovoljce) - Email and WhatsApp toggles** (2 connections) — `docs/images/belpro-nastavitve.png`
-- **Volunteer Hours Summary Table - Prostovoljec, Ure, Vnosi columns with per-row Izvozi PDF and totals row** (2 connections) — `docs/images/belpro-porocila.png`
-- **Izvozi vse (PDF) Button - Bulk PDF Export for all volunteers in period** (2 connections) — `docs/images/belpro-porocila.png`
-- **Poslji porocila Button - Send Reports to volunteers via configured delivery channels** (2 connections) — `docs/images/belpro-porocila.png`
-- **Additional Clauses Textarea (Dodatne dolocbe - optional freetext appended to document)** (1 connections) — `docs/images/belpro-dokumenti.png`
-- **Manager Data Section (Podatki upravlajca) - Name, Surname, Email, Phone** (1 connections) — `docs/images/belpro-nastavitve.png`
-- **Evolution API Connection Status Indicator (Povezano badge, WhatsApp integration)** (1 connections) — `docs/images/belpro-nastavitve.png`
-- **Organization Logo Upload and Delete Control** (1 connections) — `docs/images/belpro-nastavitve.png`
-- **Change Password Section (Sprememba gesla) - Current, New, Confirm password fields** (1 connections) — `docs/images/belpro-nastavitve.png`
-- **Period Filter Controls - Year and Month dropdowns, Samo z vnosi v mesecu checkbox** (1 connections) — `docs/images/belpro-porocila.png`
-- **Report Archive Section (Arhiv porocil) - Obdobje, Prostovoljec, Poslano date, Prenesi download** (1 connections) — `docs/images/belpro-porocila.png`
-- **Volunteer Search and Filter Bar - Status dropdown, Sort field, Search text, Isci and Ponastavi buttons** (1 connections) — `docs/images/belpro-prostovoljci.png`
-- **Dodaj prostovoljca Button - Add New Volunteer Action** (1 connections) — `docs/images/belpro-prostovoljci.png`
-- **Deaktiviraj Button - Deactivate Volunteer per-row Action** (1 connections) — `docs/images/belpro-prostovoljci.png`
-- *... and 1 more nodes in this community*
+- **BaseModel** (33 connections)
+- **EntryStatus** (20 connections) — `api/models/log_entry.py`
+- **volunteer.py** (13 connections) — `api/schemas/volunteer.py`
+- **log_entry.py** (7 connections) — `api/schemas/log_entry.py`
+- **VolunteerResponse** (6 connections) — `api/schemas/volunteer.py`
+- **LogEntryListResponse** (5 connections) — `api/schemas/log_entry.py`
+- **EmsoCheckResponse** (5 connections) — `api/schemas/volunteer.py`
+- **VolunteerDetailResponse** (5 connections) — `api/schemas/volunteer.py`
+- **VolunteerListResponse** (5 connections) — `api/schemas/volunteer.py`
+- **LogEntryCreate** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryResponse** (4 connections) — `api/schemas/log_entry.py`
+- **PhotoResponse** (4 connections) — `api/schemas/log_entry.py`
+- **PhotoBase64Request** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryUpdate** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryBrief** (4 connections) — `api/schemas/volunteer.py`
+- **EmsoCheckRequest** (4 connections) — `api/schemas/volunteer.py`
+- **VolunteerCreate** (4 connections) — `api/schemas/volunteer.py`
+- **AdminSettingsUpdate** (3 connections) — `api/schemas/admin.py`
+- **_normalise_phone()** (3 connections) — `api/schemas/volunteer.py`
+- **_validate_emso_checksum()** (2 connections) — `api/schemas/volunteer.py`
+- **_normalise_phone_field()** (2 connections) — `api/schemas/volunteer.py`
+- **Volunteer diary entry status.  Flows one way only — never backwards.** (1 connections) — `api/models/log_entry.py`
+- **Partial update for runtime-tunable settings. Only provided fields are written.** (1 connections) — `api/schemas/admin.py`
+- **Pydantic schemas for the LogEntry entity.** (1 connections) — `api/schemas/log_entry.py`
+- **Fields required to create a new log entry.** (1 connections) — `api/schemas/log_entry.py`
+- *... and 15 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Evolution API (API Gateway)]] (4 shared connections)
+- [[Code: Pripravi Prostovoljca]] (4 shared connections)
+- [[DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)]] (4 shared connections)
+- [[POST /api/managers (create_manager)]] (4 shared connections)
+- [[errors.py]] (4 shared connections)
+- [[Ima Vnos?]] (3 shared connections)
+- [[011_manager_gdpr_clauses.py]] (3 shared connections)
+- [[Manager WhatsApp Approval Workflow Design]] (2 shared connections)
+- [[DevOps Engineer Skill]] (2 shared connections)
+- [[005_report_prefs.py]] (1 shared connections)
+- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[BelPro Project Memory Public Index]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/belpro-dokumenti.png`
-- `docs/images/belpro-nastavitve.png`
-- `docs/images/belpro-porocila.png`
-- `docs/images/belpro-prostovoljci.png`
+- `api/models/log_entry.py`
+- `api/schemas/admin.py`
+- `api/schemas/log_entry.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (81%)
-- INFERRED: 12 (19%)
+- EXTRACTED: 124 (78%)
+- INFERRED: 36 (22%)
 - AMBIGUOUS: 0 (0%)
 
 ---

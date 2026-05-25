@@ -1,45 +1,48 @@
 # test_app_settings.py
 
-> 22 nodes · cohesion 0.09
+> 39 nodes
 
 ## Key Concepts
 
-- **test_app_settings.py** (24 connections) — `api/tests/test_app_settings.py`
-- **test_appsettings_bool_helper_parses_truthy_strings()** (4 connections) — `api/tests/test_app_settings.py`
-- **test_settings_table_seeded()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_get_admin_settings_returns_seeded_defaults()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_get_admin_settings_requires_auth()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_patch_admin_settings_updates_single_field()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_patch_admin_settings_get_reflects_change()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_patch_admin_settings_rejects_zero()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_patch_admin_settings_rejects_negative()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_patch_admin_settings_requires_auth()** (2 connections) — `api/tests/test_app_settings.py`
-- **test_login_cookie_max_age_reflects_db_session_duration()** (2 connections) — `api/tests/test_app_settings.py`
-- **Tests for the settings table, AppSettings service, and admin settings router.** (1 connections) — `api/tests/test_app_settings.py`
-- **Migration seeds the three default settings rows.** (1 connections) — `api/tests/test_app_settings.py`
-- **_bool() accepts 'true', '1', 'yes' as True.** (1 connections) — `api/tests/test_app_settings.py`
-- **GET /api/admin/settings returns the seeded default values.** (1 connections) — `api/tests/test_app_settings.py`
-- **Unauthenticated request is rejected.** (1 connections) — `api/tests/test_app_settings.py`
-- **PATCH updates a single field; others are unchanged.** (1 connections) — `api/tests/test_app_settings.py`
-- **Subsequent GET reflects a PATCHed value.** (1 connections) — `api/tests/test_app_settings.py`
-- **PATCH rejects zero (ge=1 constraint).** (1 connections) — `api/tests/test_app_settings.py`
-- **PATCH rejects negative values.** (1 connections) — `api/tests/test_app_settings.py`
-- **Unauthenticated PATCH is rejected.** (1 connections) — `api/tests/test_app_settings.py`
-- **Login sets a cookie whose max_age matches the session_duration_hours DB setting.** (1 connections) — `api/tests/test_app_settings.py`
+- **Graphify — Connect Isolated Communities** (8 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 1: Connect Frontend JS ↔ Backend Routers (C0, C20, C48)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 2: Connect ORM Models ↔ Pydantic Schemas (C3)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 3: Connect Services ↔ Routers + monthly_reports.json (C4)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 4: Connect Design Docs ↔ Implementation (C10, C15, C79)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 5: Connect Ops Scripts (C54, C55, C69, C77, C90, C100)** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Task 6: Regenerate graph.html and GRAPH_REPORT.md** (5 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Context for the executing agent** (4 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Merge script (reuse across all tasks, substitute CHUNK_FILE and OUTPUT_LABEL)** (2 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Connectivity check (reuse across all tasks, substitute COMMUNITY_IDS)** (2 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **Graph.html regeneration (final task only)** (2 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **2026-05-25-graphify-connect-isolated-communities.md** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (# merge_chunk.py — run from project root)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (# check_connectivity.py — run from project root)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (# regen_html.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block4 (frontend/js/admin.js)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block5 (You are a graphify extraction subagent. Read the files liste)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (import json)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block7 (git status)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block8 (api/models/app_setting.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block9 (You are a graphify extraction subagent. Read the files liste)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:python (import json)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block11 (git status)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block12 (api/services/app_settings.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- **code:block13 (You are a graphify extraction subagent. Read the files liste)** (1 connections) — `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[AppSettings]] (13 shared connections)
-- [[volunteer_factory()]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_app_settings.py`
+- `docs/superpowers/plans/2026-05-25-graphify-connect-isolated-communities.md`
 
 ## Audit Trail
 
-- EXTRACTED: 55 (96%)
-- INFERRED: 2 (4%)
+- EXTRACTED: 76 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

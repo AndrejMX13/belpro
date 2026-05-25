@@ -1,40 +1,47 @@
 # renderSettings() — settings page
 
-> 15 nodes · cohesion 0.17
+> 32 nodes
 
 ## Key Concepts
 
-- **renderSettings() — settings page** (6 connections) — `frontend/js/volunteers.js`
-- **API.managers.me()** (4 connections) — `frontend/js/api.js`
-- **renderDocuments() — documents page** (4 connections) — `frontend/js/documents.js`
-- **GET /managers/me** (4 connections) — `api/routers/managers.py`
-- **API.managers.update()** (3 connections) — `frontend/js/api.js`
-- **PATCH /managers/me** (3 connections) — `api/routers/managers.py`
-- **GET /managers/me/config-info** (3 connections) — `api/routers/managers.py`
-- **ManagerResponse shape (first_name, last_name, email, phone, ngo_name, ngo_street, ngo_postal_code, ngo_city, ngo_davcna, ngo_whatsapp_phone, report_email, report_whatsapp, default_report_email, default_report_whatsapp, gdpr_additional_clauses)** (3 connections) — `api/routers/managers.py`
-- **API.managers.changePassword()** (2 connections) — `frontend/js/api.js`
-- **API.managers.configInfo()** (2 connections) — `frontend/js/api.js`
-- **API.documents.consentPdf()** (2 connections) — `frontend/js/api.js`
-- **POST /managers/me/change-password** (2 connections) — `api/routers/managers.py`
-- **GET /documents/consent-pdf** (2 connections) — `api/routers/documents.py`
-- **ConfigInfoResponse shape (smtp_host, smtp_port, smtp_user, smtp_configured, evolution_api_admin_url, wa_phone, wa_state, wa_synced)** (2 connections) — `api/routers/managers.py`
-- **checkManagerSetup()** (1 connections) — `frontend/js/volunteers.js`
+- **Performance Optimization** (9 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Index Strategies** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Query Optimization Patterns** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **EXPLAIN ANALYZE Fundamentals** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Reading EXPLAIN Output** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **B-tree Indexes (Default)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **GIN Indexes (JSONB, arrays, full-text)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **GiST Indexes (Spatial, ranges, nearest neighbor)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **BRIN Indexes (Large, naturally ordered tables)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Statistics and Planner** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Sequential scan on large table** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Index not used** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Large JOIN inefficiency** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: COUNT(*) slow** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Connection Pooling** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Configuration Tuning** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Performance Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **performance.md** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Basic EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:block2 (Seq Scan on users  (cost=0.00..1234.56 rows=10000 width=32))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Single column index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- JSONB containment)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- PostGIS spatial index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Time-series data (insert-only, sorted by time))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Update statistics (do after bulk changes))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- *... and 7 more nodes in this community*
 
 ## Relationships
 
-- [[volunteers.js]] (7 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/documents.py`
-- `api/routers/managers.py`
-- `frontend/js/api.js`
-- `frontend/js/documents.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/postgres-pro/references/performance.md`
 
 ## Audit Trail
 
-- EXTRACTED: 43 (100%)
+- EXTRACTED: 62 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

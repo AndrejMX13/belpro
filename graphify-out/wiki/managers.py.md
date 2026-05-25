@@ -1,35 +1,46 @@
 # managers.py
 
-> 10 nodes · cohesion 0.20
+> 24 nodes
 
 ## Key Concepts
 
-- **managers.py** (6 connections) — `api/routers/managers.py`
-- **create_manager()** (4 connections) — `api/routers/managers.py`
-- **get_manager()** (3 connections) — `api/routers/managers.py`
-- **update_manager()** (3 connections) — `api/routers/managers.py`
-- **change_password()** (2 connections) — `api/routers/managers.py`
-- **Managers router — single-manager setup and profile.** (1 connections) — `api/routers/managers.py`
-- **Return the single manager profile, or 404 if setup has not been completed.** (1 connections) — `api/routers/managers.py`
-- **Seed the manager profile (first-time setup). Returns 409 if already configured.** (1 connections) — `api/routers/managers.py`
-- **Update manager and/or NGO fields.  Only provided (non-None) fields are written.** (1 connections) — `api/routers/managers.py`
-- **Change the manager password.  Verifies the current password before updating.** (1 connections) — `api/routers/managers.py`
+- **Database Dialect Differences** (13 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Auto-Incrementing Primary Keys** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **String Concatenation** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Date/Time Functions** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **LIMIT/OFFSET (Pagination)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Boolean Data Type** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **JSON/JSONB Support** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **String Comparison (Case Sensitivity)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Recursive CTEs** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Window Functions - Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **UPSERT (Insert or Update)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **dialect-differences.md** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (strict - automatic casting))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- Current timestamp)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL & MySQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (native BOOLEAN))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (JSONB - binary, indexable))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (case-sensitive by default))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL - Full support)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (ON CONFLICT))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Data Type Mapping** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Performance Tips by Database** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
 
 ## Relationships
 
-- [[str]] (2 shared connections)
-- [[EvolutionClient]] (1 shared connections)
-- [[GET /api/managers/me (get_manager)]] (1 shared connections)
-- [[Base]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/managers.py`
+- `.claude/skills/sql-pro/references/dialect-differences.md`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (83%)
-- INFERRED: 4 (17%)
+- EXTRACTED: 46 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

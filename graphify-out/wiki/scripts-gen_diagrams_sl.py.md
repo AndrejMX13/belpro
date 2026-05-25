@@ -1,36 +1,47 @@
 # scripts/gen_diagrams_sl.py
 
-> 14 nodes · cohesion 0.27
+> 29 nodes
 
 ## Key Concepts
 
-- **scripts/gen_diagrams_sl.py** (20 connections) — `scripts/gen_diagrams_sl.py`
-- **fig1()** (7 connections) — `scripts/gen_diagrams_sl.py`
-- **fnt()** (5 connections) — `scripts/gen_diagrams_sl.py`
-- **text_size()** (5 connections) — `scripts/gen_diagrams_sl.py`
-- **draw_box()** (4 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams_sl.py`
-- **fig2()** (3 connections) — `scripts/gen_diagrams_sl.py`
-- **fig3()** (3 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_h()** (2 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_v()** (2 connections) — `scripts/gen_diagrams_sl.py`
-- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams_sl.py`
-- **main()** (1 connections) — `scripts/gen_diagrams_sl.py`
-- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams_sl.py`
-- **Dashed horizontal arrow (single line, for Vodja connection).** (1 connections) — `scripts/gen_diagrams_sl.py`
+- **Query Optimization** (9 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Query Rewriting Patterns** (5 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Execution Plan Analysis** (3 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **PostgreSQL EXPLAIN ANALYZE** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **MySQL EXPLAIN** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Eliminate Subqueries** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Optimize JOIN Order** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Use EXISTS Instead of IN** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Optimize DISTINCT** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **CTE Optimization** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Materialized vs Inline CTEs** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Window Function Optimization** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Aggregation Strategies** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Partial Aggregation** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Pagination Optimization** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **Performance Validation** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **query-optimization.md** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- Get actual execution statistics)** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- Basic execution plan)** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- BEFORE (Slow - executes subquery for each row))** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- BEFORE (Cartesian product then filter))** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- BEFORE (Slow - materializes entire subquery))** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- BEFORE (Sorts entire result set))** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- PostgreSQL: Force materialization for reuse)** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- **code:sql (-- BEFORE (Multiple subqueries))** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
+- *... and 4 more nodes in this community*
 
 ## Relationships
 
-- [[api/main.py]] (1 shared connections)
-- [[Docker Compose (all services containerised)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `scripts/gen_diagrams_sl.py`
+- `.claude/skills/database-optimizer/references/query-optimization.md`
 
 ## Audit Trail
 
-- EXTRACTED: 59 (100%)
+- EXTRACTED: 56 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
