@@ -23,10 +23,20 @@ Volunteers log work via **WhatsApp** (voice notes, photos, or text). A manager r
 
 ![BelPro Architecture](docs/images/architecture.svg)
 
-1. Volunteer sends a voice note, photo, or text message to the NGO's WhatsApp number.
-2. n8n transcribes audio via Faster-Whisper (local, CPU, Slovenian), extracts date/hours/location/activity, and sends the volunteer a confirmation summary with Potrdi / Popravi / Prekliči buttons.
-3. On confirmation, the entry moves to `pending_manager` and the manager gets a WhatsApp notification with Approve / Reject buttons.
-4. On the 28th of each month, PDFs are generated automatically and emailed — one per volunteer (for CSD submission) and a consolidated one to the manager.
+<table>
+<tr>
+<td><b>Voice note or text entry</b> — The volunteer sends a voice note or text message to the NGO's WhatsApp number. BelPro transcribes audio via Faster-Whisper (local, CPU, Slovenian), extracts date, hours, location, and activity, then sends a confirmation summary with four options: 1&nbsp;Potrdi / 2&nbsp;Popravi / 3&nbsp;Dodaj slike / 4&nbsp;Prekliči.</td>
+<td align="center"><a href="docs/images/Belpro-WhatsApp-1.jpg"><img src="docs/images/Belpro-WhatsApp-1.jpg" width="200"></a></td>
+</tr>
+<tr>
+<td><b>Photo attachments</b> — Choosing <em>Dodaj slike</em> enters photo mode. The volunteer sends one or more photos; the bot acknowledges each before offering Potrdi / Več slik / Prekliči to finish or continue adding.</td>
+<td align="center"><a href="docs/images/Belpro-WhatsApp-2.jpg"><img src="docs/images/Belpro-WhatsApp-2.jpg" width="200"></a></td>
+</tr>
+<tr>
+<td><b>Manager approval &amp; monthly reports</b> — On confirmation the entry moves to <em>pending_manager</em> and the manager receives a WhatsApp notification with Odobri / Zavrni. Both parties get a status update once the entry is decided. On the configured day each month (default: 28th) PDF reports are generated and delivered automatically — <a href="docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf">per-volunteer report (example)</a> · <a href="docs/images/porocilo_2026_05-primer.pdf">consolidated report (example)</a>.</td>
+<td align="center"><a href="docs/images/Belpro-WhatsApp-3.jpg"><img src="docs/images/Belpro-WhatsApp-3.jpg" width="200"></a></td>
+</tr>
+</table>
 
 ---
 
@@ -44,7 +54,11 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 <td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"></a></td>
 </tr>
 <tr>
-<td><b>Pending approvals</b> — One-click approve or reject for entries awaiting manager review; photo thumbnails shown inline; add or remove photos directly from the approval view<br><br><b>Log & history</b> — Full searchable entry log across all periods; filter by volunteer, month, status, or location; CSV export</td>
+<td><b>Pending approvals</b> — One-click approve or reject for entries awaiting manager review; photo thumbnails shown inline; add or remove photos directly from the approval view</td>
+<td align="center"><a href="docs/images/BelPro-Dnevniki-Pending-Manager.png"><img src="docs/images/BelPro-Dnevniki-Pending-Manager.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Log & history</b> — Full searchable entry log across all periods; filter by volunteer, month, status, or location; CSV export</td>
 <td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"></a></td>
 </tr>
 <tr>
@@ -76,11 +90,6 @@ The web dashboard (`http://localhost:80`) is the manager's control centre for th
 <td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"></a></td>
 </tr>
 </table>
-
-### Sample PDF reports
-
-- [Monthly report — example (May 2026)](docs/images/porocilo_2026_05-primer.pdf) — consolidated monthly report sent to the manager
-- [Per-volunteer report — example (Pridni Slavko, May 2026)](docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf) — individual report submitted to CSD
 
 ---
 

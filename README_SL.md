@@ -23,13 +23,20 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 ![BelPro Arhitektura](docs/images/architecture_sl.svg)
 
-1. Prostovoljec pošlje glasovno sporočilo, fotografijo ali tekstovno sporočilo na WhatsApp številko nevladne organizacije (NVO).
-
-2. n8n preko orodja Faster-Whisper (lokalno, na procesorju (CPU), v slovenščini) pretvori zvok v besedilo, izlušči datum, ure, lokacijo ter aktivnost in prostovoljcu v potrditev pošlje povzetek z gumbi Potrdi / Popravi / Prekliči.
-
-3. Po potrditvi se vnos premakne v stanje pending_manager (čaka na potrditev), vodja pa prejme WhatsApp obvestilo z gumboma Odobri / Zavrni.
-
-4. Na nastavljiv dan v mesecu (privzeto 28.) se samodejno ustvarijo PDF poročila in pošljejo po e-pošti ali WhatsAppu — eno za vsakega prostovoljca (za predložitev na CSD) in zbirno poročilo za vodjo.
+<table>
+<tr>
+<td><b>Glasovni zapis ali besedilni vnos</b> — Prostovoljec pošlje glasovno sporočilo ali besedilno sporočilo na WhatsApp številko NVO. BelPro pretvori zvok v besedilo s Faster-Whisper (lokalno, na procesorju, v slovenščini), izlušči datum, ure, lokacijo in aktivnost ter pošlje povzetek z možnostmi: 1&nbsp;Potrdi / 2&nbsp;Popravi / 3&nbsp;Dodaj slike / 4&nbsp;Prekliči.</td>
+<td align="center"><a href="docs/images/Belpro-WhatsApp-1.jpg"><img src="docs/images/Belpro-WhatsApp-1.jpg" width="200"></a></td>
+</tr>
+<tr>
+<td><b>Dodajanje fotografij</b> — Izbira <em>Dodaj slike</em> odpre fotografski podmeni. Prostovoljec pošlje eno ali več fotografij; bot vsako posebej potrdi in ponudi možnosti Potrdi / Več slik / Prekliči.</td>
+<td align="center"><a href="docs/images/Belpro-WhatsApp-2.jpg"><img src="docs/images/Belpro-WhatsApp-2.jpg" width="200"></a></td>
+</tr>
+<tr>
+<td><b>Odobritev vodje in mesečna poročila</b> — Po potrditvi se vnos premakne v stanje <em>pending_manager</em>, vodja pa prejme WhatsApp obvestilo z možnostma Odobri / Zavrni. Obe strani prejmeta obvestilo o odločitvi. Na nastavljiv dan v mesecu (privzeto 28.) se samodejno ustvarijo PDF poročila in dostavijo — <a href="docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf">poročilo prostovoljca (primer)</a> · <a href="docs/images/porocilo_2026_05-primer.pdf">zbirno poročilo (primer)</a>.</td>
+<td align="center"><a href="docs/images/Belpro-WhatsApp-3.jpg"><img src="docs/images/Belpro-WhatsApp-3.jpg" width="200"></a></td>
+</tr>
+</table>
 
 ---
 
@@ -47,7 +54,11 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 <td align="center"><a href="docs/images/belpro-prostovoljec.png"><img src="docs/images/belpro-prostovoljec.png" width="360"></a></td>
 </tr>
 <tr>
-<td><b>Čakajoče odobritve</b> — Odobritev ali zavrnitev vnosov z enim klikom; sličice fotografij prikazane neposredno v seznamu; dodajanje in odstranjevanje fotografij iz pogleda za odobritev<br><br><b>Dnevnik in zgodovina</b> — Celoten seznam vnosov z možnostjo iskanja za vsa obdobja; filtriranje po prostovoljcu, mesecu, statusu ali lokaciji; izvoz v CSV</td>
+<td><b>Čakajoče odobritve</b> — Odobritev ali zavrnitev vnosov z enim klikom; sličice fotografij prikazane neposredno v seznamu; dodajanje in odstranjevanje fotografij iz pogleda za odobritev</td>
+<td align="center"><a href="docs/images/BelPro-Dnevniki-Pending-Manager.png"><img src="docs/images/BelPro-Dnevniki-Pending-Manager.png" width="360"></a></td>
+</tr>
+<tr>
+<td><b>Dnevnik in zgodovina</b> — Celoten seznam vnosov z možnostjo iskanja za vsa obdobja; filtriranje po prostovoljcu, mesecu, statusu ali lokaciji; izvoz v CSV</td>
 <td align="center"><a href="docs/images/belpro-dnevniki.png"><img src="docs/images/belpro-dnevniki.png" width="360"></a></td>
 </tr>
 <tr>
@@ -79,11 +90,6 @@ Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za u
 <td align="center"><a href="docs/images/belpro-dnevnik-napak.png"><img src="docs/images/belpro-dnevnik-napak.png" width="360"></a></td>
 </tr>
 </table>
-
-### Vzorčna PDF poročila
-
-- [Mesečno poročilo — primer (maj 2026)](docs/images/porocilo_2026_05-primer.pdf) — zbirno mesečno poročilo, ki ga prejme vodja
-- [Poročilo za prostovoljca — primer (Pridni Slavko, maj 2026)](docs/images/porocilo_Pridni_Slavko_2026_05-primer.pdf) — posamično poročilo, ki se odda na CSD
 
 ---
 
