@@ -11,6 +11,7 @@ Datoteke JSON s prijavnimi podatki so **gitignorirane** in jih nikoli ne smete o
 | `BelPro Postgres` | PostgreSQL | Vsa vozlišča za dostop do zbirke podatkov |
 | `BelPro SMTP` | SMTP (vozlišče Send Email) | Dostava mesečnih PDF-jev, obvestila |
 | `BelPro Evolution API` | HTTP Header Auth | Vozlišča za pošiljanje WhatsApp sporočil |
+| `BelPro API Internal Key` | HTTP Header Auth | Potek dela za napake (`error_handler.json`) |
 
 ## Nastavitev
 
@@ -25,3 +26,4 @@ http://localhost:5678 in ročno ustvari vse prijavne podatke pod
   v datoteki `.env`. Deluje z Gmail (smtp.gmail.com:587 + Geslo za aplikacijo), Yahoo, Proton
   ali katerim koli SMTP strežnikom.
 - **Evolution API:** glava `apikey: <EVOLUTION_API_KEY iz .env>`
+- **BelPro API Internal Key:** Ime glave `X-Internal-Key`, vrednost = `API_SECRET_KEY` iz datoteke `.env`.

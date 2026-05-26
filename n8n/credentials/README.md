@@ -11,6 +11,7 @@ Credential JSON files are **gitignored** and must never be committed.
 | `BelPro Postgres` | PostgreSQL | All DB nodes |
 | `BelPro SMTP` | SMTP (Send Email node) | Monthly PDF delivery, notifications |
 | `BelPro Evolution API` | HTTP Header Auth | WhatsApp send nodes |
+| `BelPro API Internal Key` | HTTP Header Auth | Error handler workflow (`error_handler.json`) |
 
 ## Setup
 
@@ -25,3 +26,4 @@ http://localhost:5678 and create each credential manually under
   in `.env`. Works with Gmail (smtp.gmail.com:587 + App Password), Yahoo, Proton,
   or any SMTP server.
 - **Evolution API:** Header `apikey: <EVOLUTION_API_KEY from .env>`
+- **BelPro API Internal Key:** Header name `X-Internal-Key`, value = `API_SECRET_KEY` from `.env`.
