@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:15:48.884Z",
+  "updatedAt": "2026-05-26T07:33:02.553Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -788,7 +788,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + ($('Fetch Config').isExecuted ? $('Fetch Config').first().json.instance_name : $('Fetch Config (Manual)').first().json.instance_name) }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -2142,6 +2142,20 @@
         500,
         304
       ]
+    },
+    {
+      "parameters": {
+        "url": "http://api:8000/api/config/evolution-instance",
+        "options": {}
+      },
+      "id": "fetch_config_manual",
+      "name": "Fetch Config (Manual)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4,
+      "position": [
+        3280,
+        128
+      ]
     }
   ],
   "connections": {
@@ -2556,7 +2570,7 @@
       "main": [
         [
           {
-            "node": "HTTP: GET Pending (Manual)",
+            "node": "Fetch Config (Manual)",
             "type": "main",
             "index": 0
           }
@@ -2980,6 +2994,17 @@
           }
         ]
       ]
+    },
+    "Fetch Config (Manual)": {
+      "main": [
+        [
+          {
+            "node": "HTTP: GET Pending (Manual)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -3012,9 +3037,9 @@
       }
     ]
   },
-  "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
-  "activeVersionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
-  "versionCounter": 929,
+  "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+  "activeVersionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+  "versionCounter": 938,
   "triggerCount": 1,
   "shared": [
     {
@@ -3037,9 +3062,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-26T07:15:48.886Z",
-    "createdAt": "2026-05-26T07:15:48.886Z",
-    "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+    "updatedAt": "2026-05-26T07:33:02.555Z",
+    "createdAt": "2026-05-26T07:33:02.555Z",
+    "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -3823,7 +3848,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $('Fetch Config').first().json.instance_name }}",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + ($('Fetch Config').isExecuted ? $('Fetch Config').first().json.instance_name : $('Fetch Config (Manual)').first().json.instance_name) }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -5177,6 +5202,20 @@
           500,
           304
         ]
+      },
+      {
+        "parameters": {
+          "url": "http://api:8000/api/config/evolution-instance",
+          "options": {}
+        },
+        "id": "fetch_config_manual",
+        "name": "Fetch Config (Manual)",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          3280,
+          128
+        ]
       }
     ],
     "connections": {
@@ -5591,7 +5630,7 @@
         "main": [
           [
             {
-              "node": "HTTP: GET Pending (Manual)",
+              "node": "Fetch Config (Manual)",
               "type": "main",
               "index": 0
             }
@@ -6015,6 +6054,17 @@
             }
           ]
         ]
+      },
+      "Fetch Config (Manual)": {
+        "main": [
+          [
+            {
+              "node": "HTTP: GET Pending (Manual)",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
       }
     },
     "authors": "Andrej Mejac",
@@ -6023,34 +6073,34 @@
     "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-26T07:15:48.957Z",
-        "id": 438,
+        "createdAt": "2026-05-26T07:33:02.768Z",
+        "id": 452,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-26T07:15:49.041Z",
-        "id": 440,
+        "createdAt": "2026-05-26T07:33:02.792Z",
+        "id": 453,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T07:15:49.065Z",
-        "id": 441,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-26T07:15:48.981Z",
-        "id": 439,
+        "createdAt": "2026-05-26T07:33:02.618Z",
+        "id": 450,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.674Z",
+        "id": 451,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }

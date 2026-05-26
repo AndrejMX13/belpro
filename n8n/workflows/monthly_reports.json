@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:15:48.732Z",
+  "updatedAt": "2026-05-26T07:33:02.438Z",
   "createdAt": "2026-05-04T17:46:55.815Z",
   "id": "db9cibXhzSyyZJc8",
   "name": "BelPro — Mesečna Poročila",
@@ -149,7 +149,7 @@
   "pinData": {},
   "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
   "activeVersionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
-  "versionCounter": 87,
+  "versionCounter": 92,
   "triggerCount": 1,
   "shared": [
     {
@@ -334,6 +334,38 @@
       {
         "createdAt": "2026-05-26T07:15:48.786Z",
         "id": 435,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.462Z",
+        "id": 446,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.479Z",
+        "id": 447,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.510Z",
+        "id": 448,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.524Z",
+        "id": 449,
         "workflowId": "db9cibXhzSyyZJc8",
         "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
         "event": "activated",

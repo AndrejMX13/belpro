@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:15:48.573Z",
+  "updatedAt": "2026-05-26T07:33:02.284Z",
   "createdAt": "2026-05-07T19:10:06.456Z",
   "id": "LCimvAZcQWegvzRk",
   "name": "BelPro — Odobritev Upravljalca",
@@ -729,7 +729,7 @@
   },
   "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
   "activeVersionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
-  "versionCounter": 122,
+  "versionCounter": 127,
   "triggerCount": 0,
   "shared": [
     {
@@ -1481,6 +1481,38 @@
       {
         "createdAt": "2026-05-26T07:15:48.685Z",
         "id": 433,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.326Z",
+        "id": 442,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.343Z",
+        "id": 443,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.396Z",
+        "id": 444,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:33:02.413Z",
+        "id": 445,
         "workflowId": "LCimvAZcQWegvzRk",
         "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
         "event": "activated",
