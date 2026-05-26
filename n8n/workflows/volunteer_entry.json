@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T18:25:20.681Z",
+  "updatedAt": "2026-05-26T07:15:48.884Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -3012,9 +3012,9 @@
       }
     ]
   },
-  "versionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
-  "activeVersionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
-  "versionCounter": 847,
+  "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+  "activeVersionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+  "versionCounter": 929,
   "triggerCount": 1,
   "shared": [
     {
@@ -3037,9 +3037,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-19T18:25:38.162Z",
-    "createdAt": "2026-05-19T18:25:20.683Z",
-    "versionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
+    "updatedAt": "2026-05-26T07:15:48.886Z",
+    "createdAt": "2026-05-26T07:15:48.886Z",
+    "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -5163,6 +5163,20 @@
             "name": "BelPro Evolution API"
           }
         }
+      },
+      {
+        "parameters": {
+          "url": "http://api:8000/api/config/evolution-instance",
+          "options": {}
+        },
+        "id": "fetch_config",
+        "name": "Fetch Config",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          500,
+          304
+        ]
       }
     ],
     "connections": {
@@ -5537,7 +5551,7 @@
         "main": [
           [
             {
-              "node": "HTTP: Pridobi Upravljalca",
+              "node": "Fetch Config",
               "type": "main",
               "index": 0
             }
@@ -5990,18 +6004,53 @@
             }
           ]
         ]
+      },
+      "Fetch Config": {
+        "main": [
+          [
+            {
+              "node": "HTTP: Pridobi Upravljalca",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
       }
     },
     "authors": "Andrej Mejac",
-    "name": "Version d236b39f",
-    "description": "",
-    "autosaved": true,
+    "name": null,
+    "description": null,
+    "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-19T18:25:38.158Z",
-        "id": 357,
+        "createdAt": "2026-05-26T07:15:48.957Z",
+        "id": 438,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "d236b39f-5edc-4488-87a0-86c0b39e9267",
+        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:15:49.041Z",
+        "id": 440,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:15:49.065Z",
+        "id": 441,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:15:48.981Z",
+        "id": 439,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "609c52ed-0d47-45ae-ab3f-aa5a536a8052",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }

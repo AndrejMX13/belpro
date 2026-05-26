@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-19T07:19:46.508Z",
+  "updatedAt": "2026-05-26T07:15:48.573Z",
   "createdAt": "2026-05-07T19:10:06.456Z",
   "id": "LCimvAZcQWegvzRk",
   "name": "BelPro — Odobritev Upravljalca",
@@ -67,7 +67,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const data = $input.first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || '';\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || '',\n  manager_remoteJid: data.manager_remoteJid || '',\n  volunteer_name: data.volunteer_name || '',\n  volunteer_remoteJid: data.volunteer_remoteJid || '',\n  work_date: data.work_date || '',\n  hours: data.hours || 0,\n  activity_description: data.activity_description || '',\n  location: data.location || ''\n};\n\nif (!entry_id || !action) {\n  throw new Error('Missing required fields: entry_id and action');\n}\n\nreturn [{json: payload}];"
+        "jsCode": "// Fetch Config sits upstream for instance_name; read entry data from the trigger directly\nconst data = $('Execute Workflow Trigger').isExecuted\n    ? $('Execute Workflow Trigger').first().json\n    : $('Manual Trigger').first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || '';\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || '',\n  manager_remoteJid: data.manager_remoteJid || '',\n  volunteer_name: data.volunteer_name || '',\n  volunteer_remoteJid: data.volunteer_remoteJid || '',\n  work_date: data.work_date || '',\n  hours: data.hours || 0,\n  activity_description: data.activity_description || '',\n  location: data.location || ''\n};\n\nif (!entry_id || !action) {\n  throw new Error('Missing required fields: entry_id and action');\n}\n\nreturn [{json: payload}];"
       },
       "id": "code_parse_action",
       "name": "Code: Parse Action",
@@ -727,9 +727,9 @@
       }
     ]
   },
-  "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-  "activeVersionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-  "versionCounter": 86,
+  "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+  "activeVersionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+  "versionCounter": 122,
   "triggerCount": 0,
   "shared": [
     {
@@ -752,9 +752,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-10T12:06:54.718Z",
-    "createdAt": "2026-05-10T12:06:54.718Z",
-    "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+    "updatedAt": "2026-05-26T07:15:48.575Z",
+    "createdAt": "2026-05-26T07:15:48.575Z",
+    "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
     "workflowId": "LCimvAZcQWegvzRk",
     "nodes": [
       {
@@ -817,7 +817,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const data = $input.first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || '';\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || '',\n  manager_remoteJid: data.manager_remoteJid || '',\n  volunteer_name: data.volunteer_name || '',\n  volunteer_remoteJid: data.volunteer_remoteJid || '',\n  work_date: data.work_date || '',\n  hours: data.hours || 0,\n  activity_description: data.activity_description || '',\n  location: data.location || ''\n};\n\nif (!entry_id || !action) {\n  throw new Error('Missing required fields: entry_id and action');\n}\n\nreturn [{json: payload}];"
+          "jsCode": "// Fetch Config sits upstream for instance_name; read entry data from the trigger directly\nconst data = $('Execute Workflow Trigger').isExecuted\n    ? $('Execute Workflow Trigger').first().json\n    : $('Manual Trigger').first().json;\n\nconst entry_id = data.entry_id;\nconst action = data.action || '';\n\nconst payload = {\n  entry_id,\n  action,\n  manager_phone: data.manager_phone || '',\n  manager_remoteJid: data.manager_remoteJid || '',\n  volunteer_name: data.volunteer_name || '',\n  volunteer_remoteJid: data.volunteer_remoteJid || '',\n  work_date: data.work_date || '',\n  hours: data.hours || 0,\n  activity_description: data.activity_description || '',\n  location: data.location || ''\n};\n\nif (!entry_id || !action) {\n  throw new Error('Missing required fields: entry_id and action');\n}\n\nreturn [{json: payload}];"
         },
         "id": "code_parse_action",
         "name": "Code: Parse Action",
@@ -1226,6 +1226,20 @@
         "parameters": {
           "jsCode": "const checkData = $('Code: Check Next Entry').first().json;\nconst manager = $input.first().json;\nconst volunteer = $('HTTP: GET Volunteer').first().json;\n\nconst mgrJid = (manager.phone || '').replace(/[^0-9]/g, '') + '@s.whatsapp.net';\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\n\nconst d = new Date(checkData.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = checkData.unnotified_count > 1 ? `\\n\\nV vrsti: ${checkData.unnotified_count - 1} vnos(ov)` : '';\n\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${checkData.hours} ur\\n📝 ${checkData.activity_description}\\n📍 ${checkData.location || 'ni navedeno'}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\n\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
         }
+      },
+      {
+        "parameters": {
+          "url": "http://api:8000/api/config/evolution-instance",
+          "options": {}
+        },
+        "id": "fetch_config",
+        "name": "Fetch Config",
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4,
+        "position": [
+          380,
+          400
+        ]
       }
     ],
     "connections": {
@@ -1233,7 +1247,7 @@
         "main": [
           [
             {
-              "node": "Code: Parse Action",
+              "node": "Fetch Config",
               "type": "main",
               "index": 0
             }
@@ -1241,6 +1255,17 @@
         ]
       },
       "Manual Trigger": {
+        "main": [
+          [
+            {
+              "node": "Fetch Config",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Fetch Config": {
         "main": [
           [
             {
@@ -1430,242 +1455,34 @@
     "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-10T12:06:54.744Z",
-        "id": 183,
+        "createdAt": "2026-05-26T07:15:48.615Z",
+        "id": 430,
         "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-10T12:06:54.761Z",
-        "id": 184,
+        "createdAt": "2026-05-26T07:15:48.634Z",
+        "id": 431,
         "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-16T09:19:51.169Z",
-        "id": 265,
+        "createdAt": "2026-05-26T07:15:48.671Z",
+        "id": 432,
         "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-16T09:19:51.191Z",
-        "id": 266,
+        "createdAt": "2026-05-26T07:15:48.685Z",
+        "id": 433,
         "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-16T09:21:51.427Z",
-        "id": 275,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-16T09:21:51.444Z",
-        "id": 276,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-16T09:21:51.484Z",
-        "id": 277,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-16T09:21:51.500Z",
-        "id": 278,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:45.723Z",
-        "id": 287,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:45.741Z",
-        "id": 288,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-16T09:19:51.092Z",
-        "id": 263,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-16T09:19:51.111Z",
-        "id": 264,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:45.808Z",
-        "id": 289,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-18T18:43:45.824Z",
-        "id": 290,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T06:44:00.935Z",
-        "id": 302,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T06:44:00.952Z",
-        "id": 303,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T06:44:01.001Z",
-        "id": 304,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T06:44:01.017Z",
-        "id": 305,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:03:20.630Z",
-        "id": 314,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:03:20.647Z",
-        "id": 315,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:03:20.700Z",
-        "id": 316,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:03:20.714Z",
-        "id": 317,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:10:01.220Z",
-        "id": 326,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:10:01.237Z",
-        "id": 327,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:10:01.278Z",
-        "id": 328,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:10:01.292Z",
-        "id": 329,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:19:46.566Z",
-        "id": 338,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:19:46.583Z",
-        "id": 339,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:19:46.619Z",
-        "id": 340,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-19T07:19:46.634Z",
-        "id": 341,
-        "workflowId": "LCimvAZcQWegvzRk",
-        "versionId": "00488c8e-c41d-448f-b402-1f2ca61a6b88",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }
