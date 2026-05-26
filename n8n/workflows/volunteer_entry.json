@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:33:02.553Z",
+  "updatedAt": "2026-05-26T07:43:41.421Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -788,7 +788,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "={{ 'http://evolution-api:8080/message/sendText/' + ($('Fetch Config').isExecuted ? $('Fetch Config').first().json.instance_name : $('Fetch Config (Manual)').first().json.instance_name) }}",
+        "url": "={{ 'http://evolution-api:8080/message/sendText/' + $json.instance_name }}",
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
@@ -1387,7 +1387,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const data = $('Code: Check Pending (Manual)').first().json;\nconst mgrPhoneRaw = data.manager_phone || '';\nconst mgrPhone = mgrPhoneRaw.replace(/[^0-9]/g, '');\nconst mgrJid = mgrPhone + '@s.whatsapp.net';\n\nlet work_date = data.work_date || '2000-01-01';\nif (/^\\d{2}\\.\\d{2}\\.\\d{4}$/.test(work_date)) {\n  const parts = work_date.split('.');\n  work_date = `${parts[2]}-${parts[1]}-${parts[0]}`;\n}\n\nconst entryData = $input.first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${data.volunteer_name||'Prostovoljec'}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
+        "jsCode": "const data = $('Code: Check Pending (Manual)').first().json;\nconst mgrPhoneRaw = data.manager_phone || '';\nconst mgrPhone = mgrPhoneRaw.replace(/[^0-9]/g, '');\nconst mgrJid = mgrPhone + '@s.whatsapp.net';\n\nlet work_date = data.work_date || '2000-01-01';\nif (/^\\d{2}\\.\\d{2}\\.\\d{4}$/.test(work_date)) {\n  const parts = work_date.split('.');\n  work_date = `${parts[2]}-${parts[1]}-${parts[0]}`;\n}\n\nconst entryData = $input.first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${data.volunteer_name||'Prostovoljec'}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nconst instance_name = $('Fetch Config (Manual)').first().json.instance_name;\nreturn [{json: {phone: mgrJid, text: mgrMsg, instance_name}}];"
       },
       "id": "code_build_man",
       "name": "Code: Build Msg (Manual)",
@@ -1616,7 +1616,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const data = $('Code: Check Entry').first().json;\nconst volunteer = $('HTTP: GET Volunteer (Auto)').first().json;\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(data.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = data.unnotified_count > 1 ? `\\n\\nV vrsti: ${data.unnotified_count - 1} vnos(ov)` : '';\nconst entryData = $('HTTP: GET Entry (Photo Count)').first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: data.manager_phone, text: mgrMsg}}];"
+        "jsCode": "const data = $('Code: Check Entry').first().json;\nconst volunteer = $('HTTP: GET Volunteer (Auto)').first().json;\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(data.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = data.unnotified_count > 1 ? `\\n\\nV vrsti: ${data.unnotified_count - 1} vnos(ov)` : '';\nconst entryData = $('HTTP: GET Entry (Photo Count)').first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nconst instance_name = $('Fetch Config').first().json.instance_name;\nreturn [{json: {phone: data.manager_phone, text: mgrMsg, instance_name}}];"
       },
       "id": "code_build_msg_auto",
       "name": "Code: Build Msg (Auto)",
@@ -3037,9 +3037,9 @@
       }
     ]
   },
-  "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
-  "activeVersionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
-  "versionCounter": 938,
+  "versionId": "8460cf55-c608-44f9-8026-687148e66172",
+  "activeVersionId": "8460cf55-c608-44f9-8026-687148e66172",
+  "versionCounter": 947,
   "triggerCount": 1,
   "shared": [
     {
@@ -3062,9 +3062,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-26T07:33:02.555Z",
-    "createdAt": "2026-05-26T07:33:02.555Z",
-    "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+    "updatedAt": "2026-05-26T07:43:41.423Z",
+    "createdAt": "2026-05-26T07:43:41.423Z",
+    "versionId": "8460cf55-c608-44f9-8026-687148e66172",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -3848,7 +3848,7 @@
       {
         "parameters": {
           "method": "POST",
-          "url": "={{ 'http://evolution-api:8080/message/sendText/' + ($('Fetch Config').isExecuted ? $('Fetch Config').first().json.instance_name : $('Fetch Config (Manual)').first().json.instance_name) }}",
+          "url": "={{ 'http://evolution-api:8080/message/sendText/' + $json.instance_name }}",
           "authentication": "genericCredentialType",
           "genericAuthType": "httpHeaderAuth",
           "sendBody": true,
@@ -4447,7 +4447,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const data = $('Code: Check Pending (Manual)').first().json;\nconst mgrPhoneRaw = data.manager_phone || '';\nconst mgrPhone = mgrPhoneRaw.replace(/[^0-9]/g, '');\nconst mgrJid = mgrPhone + '@s.whatsapp.net';\n\nlet work_date = data.work_date || '2000-01-01';\nif (/^\\d{2}\\.\\d{2}\\.\\d{4}$/.test(work_date)) {\n  const parts = work_date.split('.');\n  work_date = `${parts[2]}-${parts[1]}-${parts[0]}`;\n}\n\nconst entryData = $input.first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${data.volunteer_name||'Prostovoljec'}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: mgrJid, text: mgrMsg}}];"
+          "jsCode": "const data = $('Code: Check Pending (Manual)').first().json;\nconst mgrPhoneRaw = data.manager_phone || '';\nconst mgrPhone = mgrPhoneRaw.replace(/[^0-9]/g, '');\nconst mgrJid = mgrPhone + '@s.whatsapp.net';\n\nlet work_date = data.work_date || '2000-01-01';\nif (/^\\d{2}\\.\\d{2}\\.\\d{4}$/.test(work_date)) {\n  const parts = work_date.split('.');\n  work_date = `${parts[2]}-${parts[1]}-${parts[0]}`;\n}\n\nconst entryData = $input.first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${data.volunteer_name||'Prostovoljec'}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nconst instance_name = $('Fetch Config (Manual)').first().json.instance_name;\nreturn [{json: {phone: mgrJid, text: mgrMsg, instance_name}}];"
         },
         "id": "code_build_man",
         "name": "Code: Build Msg (Manual)",
@@ -4676,7 +4676,7 @@
       },
       {
         "parameters": {
-          "jsCode": "const data = $('Code: Check Entry').first().json;\nconst volunteer = $('HTTP: GET Volunteer (Auto)').first().json;\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(data.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = data.unnotified_count > 1 ? `\\n\\nV vrsti: ${data.unnotified_count - 1} vnos(ov)` : '';\nconst entryData = $('HTTP: GET Entry (Photo Count)').first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nreturn [{json: {phone: data.manager_phone, text: mgrMsg}}];"
+          "jsCode": "const data = $('Code: Check Entry').first().json;\nconst volunteer = $('HTTP: GET Volunteer (Auto)').first().json;\nconst volunteer_name = volunteer.first_name + ' ' + volunteer.last_name;\nfunction formatHours(n) { if (n === 1) return '1 ura'; if (n === 2) return '2 uri'; if (n === 3 || n === 4) return n + ' ure'; return n + ' ur'; }\nconst d = new Date(data.work_date + 'T12:00:00Z');\nconst dateStr = `${d.getUTCDate()}. ${d.getUTCMonth()+1}. ${d.getUTCFullYear()}`;\nconst queueInfo = data.unnotified_count > 1 ? `\\n\\nV vrsti: ${data.unnotified_count - 1} vnos(ov)` : '';\nconst entryData = $('HTTP: GET Entry (Photo Count)').first().json;\nconst photoCount = (entryData.photos && entryData.photos.length) ? entryData.photos.length : 0;\nconst photoInfo = photoCount > 0 ? `\\n📷 Slike: ${photoCount}` : '';\nconst mgrMsg = `Nov vnos čaka na odobritev:\\n\\n👤 ${volunteer_name}\\n📅 ${dateStr} — ${formatHours(data.hours)}\\n📝 ${data.activity_description||''}\\n📍 ${data.location||'ni navedeno'}${photoInfo}${queueInfo}\\n\\n1 - Odobri\\n2 - Zavrni`;\nconst instance_name = $('Fetch Config').first().json.instance_name;\nreturn [{json: {phone: data.manager_phone, text: mgrMsg, instance_name}}];"
         },
         "id": "code_build_msg_auto",
         "name": "Code: Build Msg (Auto)",
@@ -6073,34 +6073,34 @@
     "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-26T07:33:02.768Z",
-        "id": 452,
+        "createdAt": "2026-05-26T07:43:41.480Z",
+        "id": 462,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-26T07:33:02.792Z",
-        "id": 453,
+        "createdAt": "2026-05-26T07:43:41.503Z",
+        "id": 463,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-26T07:33:02.618Z",
-        "id": 450,
+        "createdAt": "2026-05-26T07:43:41.565Z",
+        "id": 464,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-26T07:33:02.674Z",
-        "id": 451,
+        "createdAt": "2026-05-26T07:43:41.591Z",
+        "id": 465,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "a90550ae-5046-4b2a-9838-001e1bccd9ff",
+        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }

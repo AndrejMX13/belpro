@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:33:02.284Z",
+  "updatedAt": "2026-05-26T07:43:41.078Z",
   "createdAt": "2026-05-07T19:10:06.456Z",
   "id": "LCimvAZcQWegvzRk",
   "name": "BelPro — Odobritev Upravljalca",
@@ -729,7 +729,7 @@
   },
   "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
   "activeVersionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
-  "versionCounter": 127,
+  "versionCounter": 132,
   "triggerCount": 0,
   "shared": [
     {
@@ -1487,6 +1487,22 @@
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
+        "createdAt": "2026-05-26T07:43:41.191Z",
+        "id": 456,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:43:41.208Z",
+        "id": 457,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
         "createdAt": "2026-05-26T07:33:02.326Z",
         "id": 442,
         "workflowId": "LCimvAZcQWegvzRk",
@@ -1513,6 +1529,22 @@
       {
         "createdAt": "2026-05-26T07:33:02.413Z",
         "id": 445,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:43:41.116Z",
+        "id": 454,
+        "workflowId": "LCimvAZcQWegvzRk",
+        "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:43:41.135Z",
+        "id": 455,
         "workflowId": "LCimvAZcQWegvzRk",
         "versionId": "995508b2-fb6d-47e8-82e1-fe7053bdaf94",
         "event": "activated",

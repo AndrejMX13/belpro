@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:33:02.438Z",
+  "updatedAt": "2026-05-26T07:43:41.266Z",
   "createdAt": "2026-05-04T17:46:55.815Z",
   "id": "db9cibXhzSyyZJc8",
   "name": "BelPro — Mesečna Poročila",
@@ -149,7 +149,7 @@
   "pinData": {},
   "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
   "activeVersionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
-  "versionCounter": 92,
+  "versionCounter": 97,
   "triggerCount": 1,
   "shared": [
     {
@@ -340,6 +340,22 @@
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
+        "createdAt": "2026-05-26T07:43:41.351Z",
+        "id": 460,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:43:41.379Z",
+        "id": 461,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
         "createdAt": "2026-05-26T07:33:02.462Z",
         "id": 446,
         "workflowId": "db9cibXhzSyyZJc8",
@@ -366,6 +382,22 @@
       {
         "createdAt": "2026-05-26T07:33:02.524Z",
         "id": 449,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:43:41.287Z",
+        "id": 458,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T07:43:41.303Z",
+        "id": 459,
         "workflowId": "db9cibXhzSyyZJc8",
         "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
         "event": "activated",
