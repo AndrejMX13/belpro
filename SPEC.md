@@ -177,7 +177,7 @@ All values live in the DB (DB-first, env-fallback via `AppSettings` service). Se
 | acknowledged | BOOLEAN | Default false; toggled by manager via dashboard |
 | created_at | TIMESTAMPTZ | NOT NULL DEFAULT now() |
 
-Written by internal services (ops sidecar scripts) via `POST /api/errors` authenticated with `X-Internal-Key: {API_SECRET_KEY}`. Unacknowledged error count shown as a nav badge on the Dnevnik napak page.
+Written by internal services via `POST /api/errors` authenticated with `X-Internal-Key: {API_SECRET_KEY}`. Writers include the ops sidecar (backup, photo cleanup) and the `BelPro - Napake` n8n sub-workflow (unhandled workflow exceptions and explicit logic errors from all n8n workflows). Unacknowledged error count shown as a nav badge on the Dnevnik napak page.
 
 ---
 
@@ -331,7 +331,10 @@ The page also shows a **live system health widget** — a summary of all service
 
 #### 5.8 Dnevnik napak (App Log)
 
-Operational error log — errors recorded by background services (ops sidecar backup, photo cleanup) and any other service using the `POST /api/errors` internal endpoint.
+Operational error log — errors recorded by background services and n8n workflows via the `POST /api/errors` internal endpoint. Two sources feed it:
+
+- **Ops sidecar** — backup failures, photo cleanup errors
+- **`BelPro - Napake` n8n sub-workflow** — all three main workflows (`Vnos Prostovoljcev`, `Odobritev Upravljalca`, `Mesečna Poročila`) route unhandled node exceptions here automatically via n8n's `errorWorkflow` setting; explicit logic errors (e.g. manager lookup with no pending entry) are sent via Execute Workflow calls from within the workflow
 
 - Default view: unacknowledged errors only; toggled via checkbox to show all
 - Per-row **Potrdi** button marks an error as acknowledged (`PATCH /api/errors/{id}/acknowledge`)
