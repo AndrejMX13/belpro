@@ -408,8 +408,9 @@ belpro/
 │   └── credentials/                   # Gitignorirano, priložen primer
 
 > **Kanonični vir delovnih procesov:** `n8n/workflows/` je vir resnice za vse definicije delovnih procesov.
-> Pri sveži namestitvi jih naložite v n8n z `./scripts/n8n_workflows.py import`.
-> Po urejanju delovnega procesa v n8n vmesniku ga izvozite z `./scripts/n8n_workflows.py export` in rezultat objavite v repozitorij.
+> Pri sveži namestitvi `scripts/setup.sh` samodejno izvede `scripts/n8n_workflows.py import` po ustvaritvi zahtevanih prijavnih podatkov v n8n.
+> Za ročni uvoz: `python scripts/n8n_workflows.py import`.
+> Po urejanju delovnega procesa v n8n vmesniku ga izvozite z `python scripts/n8n_workflows.py export` in rezultat objavite v repozitorij.
 │
 ├── whisper/
 │   ├── Dockerfile

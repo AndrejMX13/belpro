@@ -215,41 +215,107 @@ heading "7. Zaganjam Alembic migracije"
 $COMPOSE exec -T api alembic upgrade head
 ok "Migracije baze podatkov so uspešno izvedene."
 
-# ── n8n API key reminder ───────────────────────────────────────────────────
-heading "8. n8n — prenesite delovne tokove"
+# ── Wait for n8n ──────────────────────────────────────────────────────────
+heading "8. n8n — konfiguracija in uvoz delovnih tokov"
+info "Čakam na n8n..."
+ELAPSED=0
+until curl -sf http://localhost:5678/healthz &>/dev/null; do
+  if [[ $ELAPSED -ge 90 ]]; then
+    warn "n8n se ni odzval v 90s. Preverite: $COMPOSE logs n8n"
+    break
+  fi
+  sleep 3; ELAPSED=$((ELAPSED + 3))
+done
+ok "n8n je pripravljen."
 echo ""
 info "Odprite n8n: http://localhost:5678"
 info "Prijavite se z N8N_BASIC_AUTH_USER / N8N_BASIC_AUTH_PASSWORD iz .env"
 echo ""
-info "V n8n naredite:"
-echo "   a) Settings → API → ustvarite API ključ → vpišite v .env kot N8N_API_KEY"
-echo "      in v .mcp.json (za Claude Code n8n-mcp orodje)"
-echo "   b) Uvozite delovni tok: $PROJECT_DIR/n8n/workflows/monthly_reports.json"
-echo "      (Workflows → Import from file)"
-echo "   c) Ustvarite credential 'BelPro API (Basic Auth)' (HTTP Basic Auth):"
-echo "      - Uporabniško ime: manager"
-echo "      - Geslo: vrednost MANAGER_PASSWORD iz .env"
-echo "   d) Aktivirajte delovni tok 'BelPro — Mesečna Poročila'"
-echo ""
-warn "WhatsApp (Evolution API) ni konfiguriran — to naredite, ko dobite telefonsko številko:"
-echo "   a) Odprite Evolution API: http://localhost:8180/manager/"
-echo "      Prijavite se z AUTHENTICATION_API_KEY iz .env"
-echo "   b) Ustvarite instanco z imenom 'belpro'"
-echo "   c) Kopirajte ključ instance → vpišite v .env kot EVOLUTION_API_KEY"
-echo "   d) Zaženite: docker compose restart api"
-echo "   e) Skenirajte QR kodo s telefonom (glejte EVOLUTION_QR_TROUBLESHOOTING.md)"
 
-# ── SMTP reminder ──────────────────────────────────────────────────────────
-heading "9. E-poštna integracija"
-echo ""
-if [[ -z "$(get_env SMTP_PASSWORD)" || "$(get_env SMTP_PASSWORD)" == "xxxx_xxxx_xxxx_xxxx" ]]; then
-  warn "SMTP geslo ni nastavljeno. Ko boste imeli App Password:"
-  echo "   1. Dodajte SMTP_PASSWORD v .env"
-  echo "   2. Zaženite: $COMPOSE restart api"
-  echo "   3. Nastavite SMTP strežnik v BelPro Nastavitvah (nadzorna plošča)"
+# ── n8n API key ────────────────────────────────────────────────────────────
+EXISTING_N8N_KEY="$(get_env N8N_API_KEY)"
+if [[ -z "$EXISTING_N8N_KEY" || "$EXISTING_N8N_KEY" == "FILL_IN_AFTER_FIRST_N8N_RUN" ]]; then
+  info "Ustvarite API ključ: Settings → API → Create an API key"
+  read -r -p "  Prilepite N8N_API_KEY: " N8N_KEY
+  set_env "N8N_API_KEY" "$N8N_KEY"
+  ok "N8N_API_KEY shranjen v .env."
 else
-  info "SMTP geslo je nastavljeno. Nastavite strežnik v BelPro Nastavitvah."
+  N8N_KEY="$EXISTING_N8N_KEY"
+  ok "N8N_API_KEY je že nastavljen v .env."
 fi
+echo ""
+
+# ── Create n8n credentials ─────────────────────────────────────────────────
+info "Ustvarjam prijavne podatke v n8n..."
+POSTGRES_DB="$(get_env POSTGRES_DB)" \
+POSTGRES_USER="$(get_env POSTGRES_USER)" \
+POSTGRES_PASSWORD="$(get_env POSTGRES_PASSWORD)" \
+MANAGER_PASSWORD="$(get_env MANAGER_PASSWORD)" \
+API_SECRET_KEY="$(get_env API_SECRET_KEY)" \
+N8N_API_KEY="$N8N_KEY" \
+python - <<'PYEOF'
+import os, urllib.request, urllib.error, json
+
+API_KEY = os.environ["N8N_API_KEY"]
+BASE    = "http://localhost:5678/api/v1"
+
+def create_cred(name, ctype, data):
+    payload = json.dumps({"name": name, "type": ctype, "data": data}).encode()
+    req = urllib.request.Request(f"{BASE}/credentials", data=payload, method="POST")
+    req.add_header("X-N8N-API-KEY", API_KEY)
+    req.add_header("Content-Type", "application/json")
+    req.add_header("Accept", "application/json")
+    try:
+        with urllib.request.urlopen(req, timeout=10):
+            print(f"  \033[32m✓\033[0m {name}")
+    except urllib.error.HTTPError as e:
+        body = e.read().decode(errors="replace")
+        if e.code in (400, 409):
+            print(f"  \033[33m~\033[0m {name}: že obstaja ali napaka ({e.code})")
+        else:
+            print(f"  \033[31m✗\033[0m {name}: HTTP {e.code} — {body[:120]}")
+    except Exception as exc:
+        print(f"  \033[31m✗\033[0m {name}: {exc}")
+
+create_cred("BelPro Postgres", "postgres", {
+    "host": "postgres", "port": 5432,
+    "database": os.environ["POSTGRES_DB"],
+    "user":     os.environ["POSTGRES_USER"],
+    "password": os.environ["POSTGRES_PASSWORD"],
+    "ssl": False,
+})
+create_cred("BelPro API (Basic Auth)", "httpBasicAuth", {
+    "user":     "manager",
+    "password": os.environ["MANAGER_PASSWORD"],
+})
+create_cred("BelPro API Internal Key", "httpHeaderAuth", {
+    "name":  "X-Internal-Key",
+    "value": os.environ["API_SECRET_KEY"],
+})
+PYEOF
+echo ""
+
+# ── Import workflows ───────────────────────────────────────────────────────
+info "Uvažam delovne tokove..."
+python "$PROJECT_DIR/scripts/n8n_workflows.py" import
+echo ""
+
+# ── Remaining manual steps ─────────────────────────────────────────────────
+warn "Preostalo (ročno) — WhatsApp (Evolution API):"
+echo "   Ko dobite telefonsko številko:"
+echo "   a) Odprite: http://localhost:8180/manager/"
+echo "      Prijavite se z AUTHENTICATION_API_KEY iz .env"
+echo "   b) Ustvarite instanco in kopirajte ključ instance"
+echo "   c) Vpišite ključ v .env kot EVOLUTION_API_KEY"
+echo "   d) Zaženite: $COMPOSE up -d --build api"
+echo "   e) Skenirajte QR kodo s telefonom (glejte EVOLUTION_QR_TROUBLESHOOTING.md)"
+echo "   f) V n8n ustvarite credential 'BelPro Evolution API' (HTTP Header Auth):"
+echo "      Ime glave: apikey   Vrednost: EVOLUTION_API_KEY iz .env"
+echo "   g) Zaženite: python scripts/n8n_workflows.py import"
+echo ""
+warn "Preostalo (ročno) — SMTP (e-pošta):"
+echo "   V n8n ustvarite credential 'BelPro SMTP' (SMTP) z geslom iz SMTP_PASSWORD v .env."
+echo "   Gostitelja, vrata in uporabnika nastavite v BelPro Nastavitvah (nadzorna plošča)."
 
 # ── Summary ────────────────────────────────────────────────────────────────
 heading "✓ Namestitev dokončana"

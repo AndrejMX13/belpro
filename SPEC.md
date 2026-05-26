@@ -417,8 +417,9 @@ belpro/
 │   └── credentials/                   # Gitignored, example provided
 
 > **Canonical workflow source:** `n8n/workflows/` is the source of truth for all workflow definitions.
-> On a fresh install, load them into n8n with `./scripts/n8n_workflows.py import`.
-> After editing a workflow in the n8n UI, export with `./scripts/n8n_workflows.py export` and commit the result.
+> On a fresh install, `scripts/setup.sh` runs `scripts/n8n_workflows.py import` automatically after creating the required n8n credentials.
+> To import manually: `python scripts/n8n_workflows.py import`.
+> After editing a workflow in the n8n UI, export with `python scripts/n8n_workflows.py export` and commit the result.
 │
 ├── whisper/
 │   ├── Dockerfile

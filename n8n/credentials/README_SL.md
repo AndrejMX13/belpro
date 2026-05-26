@@ -6,26 +6,29 @@ Datoteke JSON s prijavnimi podatki so **gitignorirane** in jih nikoli ne smete o
 
 ## Zahtevani prijavni podatki
 
-| Ime prijavnih podatkov | Tip | Uporablja |
+| Ime prijavnih podatkov | Tip | Ustvari |
 |----------------|------|---------|
-| `BelPro Postgres` | PostgreSQL | Vsa vozlišča za dostop do zbirke podatkov |
-| `BelPro SMTP` | SMTP (vozlišče Send Email) | Dostava mesečnih PDF-jev, obvestila |
-| `BelPro Evolution API` | HTTP Header Auth | Vozlišča za pošiljanje WhatsApp sporočil |
-| `BelPro API (Basic Auth)` | Basic Auth | Vsi klici zaledja FastAPI (skoraj vsako vozlišče) |
-| `BelPro API Internal Key` | HTTP Header Auth | Potek dela za napake (`error_handler.json`) |
+| `BelPro Postgres` | PostgreSQL | `scripts/setup.sh` (samodejno) |
+| `BelPro API (Basic Auth)` | Basic Auth | `scripts/setup.sh` (samodejno) |
+| `BelPro API Internal Key` | HTTP Header Auth | `scripts/setup.sh` (samodejno) |
+| `BelPro Evolution API` | HTTP Header Auth | Ročno (po namestitvi WhatsApp) |
+| `BelPro SMTP` | SMTP (vozlišče Send Email) | Ročno (po namestitvi SMTP) |
 
 ## Nastavitev
 
-Po zagonu sklada (`docker compose up -d`) odpri n8n na naslovu
-http://localhost:5678 in ročno ustvari vse prijavne podatke pod
-**Settings → Credentials → New Credential**.
+`scripts/setup.sh` samodejno ustvari prve tri prijavne podatke med namestitvijo.
+Preostala dva zahtevata vrednosti, ki ob namestitvi še niso na voljo.
 
-- **PostgreSQL:** gostitelj `postgres`, vrata `5432`, zbirka podatkov `belpro`,
-  uporabnik/geslo iz datoteke `.env`
-- **SMTP:** uporabi prijavne podatke za vozlišče Send Email. Gostitelj, vrata, uporabnik in prikazno ime
-  se nastavijo prek vmesnika BelPro Nastavitve (shranjeno v zbirki podatkov). Geslo iz `SMTP_PASSWORD`
-  v datoteki `.env`. Deluje z Gmail (smtp.gmail.com:587 + Geslo za aplikacijo), Yahoo, Proton
-  ali katerim koli SMTP strežnikom.
-- **Evolution API:** glava `apikey: <EVOLUTION_API_KEY iz .env>`
-- **BelPro API (Basic Auth):** uporabniško ime = `manager`, geslo = `MANAGER_PASSWORD` iz datoteke `.env`.
-- **BelPro API Internal Key:** Ime glave `X-Internal-Key`, vrednost = `API_SECRET_KEY` iz datoteke `.env`.
+### Ročno — BelPro Evolution API
+Po ustvaritvi instance Evolution API in vnosu ključa v `.env` kot `EVOLUTION_API_KEY`:
+- Tip: HTTP Header Auth
+- Ime glave: `apikey`
+- Vrednost: `EVOLUTION_API_KEY` iz datoteke `.env`
+
+Nato znova zaženite: `python scripts/n8n_workflows.py import`
+
+### Ročno — BelPro SMTP
+- Tip: SMTP (vozlišče Send Email)
+- Geslo: `SMTP_PASSWORD` iz datoteke `.env`
+- Gostitelj, vrata, uporabnik in prikazno ime: nastavljeno prek vmesnika BelPro Nastavitve (shranjeno v zbirki podatkov)
+- Deluje z Gmail (smtp.gmail.com:587 + Geslo za aplikacijo), Yahoo, Proton ali katerim koli SMTP strežnikom.
