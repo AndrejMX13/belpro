@@ -143,7 +143,9 @@ bash scripts/setup.sh
 5. Zagnal vse Docker storitve (`docker compose up -d --build`).
 6. Počakal, da PostgreSQL in API postaneta aktivna in dostopna.
 7. Samodejno izvedel Alembic migracije zbirke podatkov.
-8. Izpisal seznam preostalih ročnih korakov (uvoz n8n procesov, nastavitev WhatsAppa).
+8. Samodejno ustvaril n8n prijavne podatke (`BelPro Postgres`, `BelPro API (Basic Auth)`, `BelPro API Internal Key`) prek n8n API.
+9. Samodejno uvozil vse n8n delovne tokove.
+10. Izpisal seznam preostalih ročnih korakov (nastavitev WhatsAppa, SMTP prijavni podatki).
 
 
 Po zaključku čarovnika nadaljuj s korakom [Nastavite WhatsAppa](#nastavite-whatsappa) spodaj.

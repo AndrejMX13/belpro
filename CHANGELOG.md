@@ -6,6 +6,24 @@ The format follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and
 
 ---
 
+## [0.12.0-beta.0] — 2026-05-26
+
+### Added
+- **n8n error handler sub-workflow (BelPro - Napake):** all n8n workflow exceptions automatically routed to a centralised error handler via the `errorWorkflow` setting; errors written to `error_log` via `POST /api/errors` with a Slovenian human-readable title and structured detail. (`n8n/workflows/error_handler.json`, `scripts/n8n_workflows.py`)
+- **Explicit error path in volunteer_entry:** manager-facing logic errors (e.g. approval with no pending entry) explicitly reported to the error log in addition to automatic exception handling. (`n8n/workflows/volunteer_entry.json`)
+- **Automated n8n setup in `setup.sh`:** credentials (`BelPro Postgres`, `BelPro API (Basic Auth)`, `BelPro API Internal Key`) now created automatically via n8n API during installation; all workflows imported automatically; only Evolution API and SMTP credentials require manual setup. (`scripts/setup.sh`)
+- **Configurable Evolution API instance name:** `evolution_instance_name` setting in Sistemske nastavitve; fetched dynamically by volunteer_entry and manager_approval workflows instead of being hardcoded. (`api/routers/admin.py`, `api/services/app_settings.py`, migration 015, `n8n/workflows/volunteer_entry.json`, `n8n/workflows/manager_approval.json`)
+- **Architecture diagrams:** Mermaid-based system architecture diagrams added to docs (EN + SL), rendered to SVG via `scripts/render_diagrams.py`.
+- **WhatsApp flow documentation:** flow table and pending-approvals screenshot added to README and README_SL.
+
+### Fixed
+- **Error handler Code node:** `join('\n')` replaced with `join(' | ')` — a literal newline in JSON caused a JS syntax error inside the Code node, preventing any error from being processed. (`n8n/workflows/error_handler.json`)
+- **Error handler HTTP body format:** changed from `contentType: "json"` + `JSON.stringify()` to `specifyBody: "json"` + `jsonBody` expression — the previous format sent an empty key-value body, causing HTTP 422 from FastAPI. (`n8n/workflows/error_handler.json`)
+- **Credentials README:** added missing `BelPro API (Basic Auth)` credential (omission would cause fresh-install workflow failures); corrected username from `admin` to `manager`. (`n8n/credentials/README.md`, `n8n/credentials/README_SL.md`)
+- **n8n import script:** added `errorWorkflow` support and credential name-to-ID resolution so wired error handler survives export/import cycles. (`scripts/n8n_workflows.py`)
+
+---
+
 ## [0.11.1-beta.0] — 2026-05-22
 
 ### Added

@@ -30,7 +30,7 @@ from routers.documents import router as documents_router
 from routers.errors import router as errors_router
 from routers.config import router as config_router
 
-__version__ = "0.11.1-beta.0"
+__version__ = "0.12.0-beta.0"
 
 
 async def seed_whatsapp_phone_from_env(

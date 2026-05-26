@@ -38,6 +38,8 @@ This page shows what's coming before the first stable release and what has alrea
 
 ## Done
 
+- v0.12.0-beta — centralised n8n error handler sub-workflow (BelPro - Napake) routing all workflow exceptions to the error log; explicit logic error path in volunteer entry; automated credential creation and workflow import in setup.sh; configurable Evolution API instance name from admin UI
+
 - v0.11.1-beta — configurable cron schedule (report day/period/hour, backup hour, cleanup hour, retention period) from admin UI without container restart; ops notification server; report delivery error visibility; dashboard screenshot gallery in README
 
 - v0.11.0-beta — ops sidecar (automated nightly backup + photo cleanup), error log with dashboard notifications, live health widget on the admin page, GDPR consent PDF, settings table with runtime-tunable config, n8n photo confirmation fixes

@@ -143,7 +143,9 @@ The wizard will:
 5. Start all Docker services (`docker compose up -d --build`).
 6. Wait for PostgreSQL and the API to become healthy.
 7. Run Alembic database migrations automatically.
-8. Print a checklist of the remaining manual steps (n8n workflow import, WhatsApp setup).
+8. Create n8n credentials (`BelPro Postgres`, `BelPro API (Basic Auth)`, `BelPro API Internal Key`) automatically via the n8n API.
+9. Import all n8n workflows automatically.
+10. Print a checklist of the remaining manual steps (WhatsApp setup, SMTP credential).
 
 > **Note:** The wizard prints instructions in Slovenian — this is intentional, as the primary users of BelPro are Slovenian NGOs.
 
