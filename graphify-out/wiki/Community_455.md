@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Testing Your Code** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Test Pattern 1: Handle Empty Input** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Test Pattern 2: Test with Missing Fields** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Test Pattern 3: Test Both Modes** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ Always test with empty input)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ Code that works in both modes)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **3. $jmespath() - JSON Querying** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Basic Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Advanced Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Common Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Pattern 1: Filter and project)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[Community 518]] (1 shared connections)
+- [[Community 555]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

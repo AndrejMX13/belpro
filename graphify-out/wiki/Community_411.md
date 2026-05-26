@@ -4,32 +4,26 @@
 
 ## Key Concepts
 
-- **Data Access Patterns - Python Code Node** (11 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Decision Tree** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **DATA_ACCESS.md** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:block24 (Do you need ALL items from previous node?)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Common Gotchas** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **1. Webhook Data Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **2. Multiple Input Items** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:javascript (❌ {{$json.email}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:javascript ({{$json[0].field}}  // First item only)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **3. Authentication Issues** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **4. Node Execution Order** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **5. Expression Errors** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[HTTP: GET Volunteer (Auto)]] (1 shared connections)
-- [[Community 283]] (1 shared connections)
-- [[Community 363]] (1 shared connections)
-- [[Community 453]] (1 shared connections)
-- [[Community 328]] (1 shared connections)
-- [[Community 284]] (1 shared connections)
-- [[Community 454]] (1 shared connections)
+- [[Reporting period: 'current' (this month) or 'previous' (last month).]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

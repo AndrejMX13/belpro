@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **002_add_emso_hash.py** (2 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
-- **upgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
-- **downgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
+- **API.managers.setup()** (2 connections) — `frontend/js/api.js`
+- **submitManagerSetup()** (1 connections) — `frontend/js/volunteers.js`
+- **POST /managers (setup)** (1 connections) — `api/routers/managers.py`
 
 ## Relationships
 
@@ -14,7 +14,9 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/002_add_emso_hash.py`
+- `api/routers/managers.py`
+- `frontend/js/api.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 

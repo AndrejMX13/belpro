@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **pull_request_template.md** (4 connections) — `.github/pull_request_template.md`
-- **Summary** (1 connections) — `.github/pull_request_template.md`
-- **Type of change** (1 connections) — `.github/pull_request_template.md`
-- **Testing** (1 connections) — `.github/pull_request_template.md`
-- **Checklist** (1 connections) — `.github/pull_request_template.md`
+- **Mode Selection Guide** (3 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Run Once for All Items (Recommended - Default)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Run Once for Each Item** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// Example: Calculate total from all items)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// Example: Add processing timestamp to each item)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `.github/pull_request_template.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

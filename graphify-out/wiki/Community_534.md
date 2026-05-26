@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 2: DB migration and Manager model field** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python ("""Add gdpr_additional_clauses to managers.)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (gdpr_additional_clauses: Mapped[str | None] = mapped_column()** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block18 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block19 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block20 (git add api/db/migrations/versions/011_manager_gdpr_clauses.)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Error Severity Levels** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Errors (Must Fix)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Warnings (Should Fix)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Suggestions (Optional)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 

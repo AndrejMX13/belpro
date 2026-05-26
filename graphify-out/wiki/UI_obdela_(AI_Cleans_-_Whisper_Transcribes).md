@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Step 2 — Update files** (9 connections) — `.claude/skills/version-bump/SKILL.md`
-- **BelPro Version Bump** (8 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`CHANGELOG.md`** (4 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Step 3 — Pre-commit review** (3 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Step 0 — Pre-flight: test suite check** (2 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Step 4 — Tag? (optional)** (2 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (2 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Step 6 — Offer container rebuild** (2 connections) — `.claude/skills/version-bump/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:block1 (docker compose exec api pytest tests/ -v)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **Step 1 — Orient and suggest version** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`api/main.py`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:block2 (## [<version>] — <today's date YYYY-MM-DD>)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:block3 (git log <previous-version-tag>..HEAD --oneline)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:block4 (git log --since="YYYY-MM-DD" --oneline)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`SPEC.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`SPEC_SL.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`README.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`README_SL.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`ROADMAP.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **`graphify-out/`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:block5 (chore: release <version>)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:bash (git add api/main.py CHANGELOG.md SPEC.md SPEC_SL.md README.m)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:block7 (git tag v<version>)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
-- **code:markdown (**<one-line summary of what this release is about>**)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Porocila Page - Monthly Reports Overview** (9 connections) — `docs/images/belpro-porocila.png`
+- **Nastavitve Page - Settings** (7 connections) — `docs/images/belpro-nastavitve.png`
+- **Prostovoljci Page - Volunteers List Management** (5 connections) — `docs/images/belpro-prostovoljci.png`
+- **Volunteers Table - Ime in Priimek, Telefon, Mesto, Ure ta mesec, Status, Akcije with sortable headers and pagination** (4 connections) — `docs/images/belpro-prostovoljci.png`
+- **Shared Sidebar Navigation - BelPro brand, all section links, Odjava button, NGO logo (present on all four pages)** (4 connections) — `docs/images/belpro-prostovoljci.png`
+- **GDPR Consent Form Section (Soglasje za obdelavo osebnih podatkov)** (3 connections) — `docs/images/belpro-dokumenti.png`
+- **Organization Data Section (Podatki organizacije) - Name, Address, Tax ID, Phone, Evolution API status, Logo** (3 connections) — `docs/images/belpro-nastavitve.png`
+- **Dokumenti Page - GDPR Consent Document Download** (2 connections) — `docs/images/belpro-dokumenti.png`
+- **Prenesi PDF Button (Download GDPR PDF)** (2 connections) — `docs/images/belpro-dokumenti.png`
+- **Email Integration Section (E-postna integracija) - SMTP server, port, username, display name, configured status** (2 connections) — `docs/images/belpro-nastavitve.png`
+- **Manager Monthly Report Delivery Settings (Moja mesecna porocila) - Email and WhatsApp channel toggles** (2 connections) — `docs/images/belpro-nastavitve.png`
+- **Volunteer Report Delivery Settings (Privzete nastavitve porocil za prostovoljce) - Email and WhatsApp toggles** (2 connections) — `docs/images/belpro-nastavitve.png`
+- **Volunteer Hours Summary Table - Prostovoljec, Ure, Vnosi columns with per-row Izvozi PDF and totals row** (2 connections) — `docs/images/belpro-porocila.png`
+- **Izvozi vse (PDF) Button - Bulk PDF Export for all volunteers in period** (2 connections) — `docs/images/belpro-porocila.png`
+- **Poslji porocila Button - Send Reports to volunteers via configured delivery channels** (2 connections) — `docs/images/belpro-porocila.png`
+- **Additional Clauses Textarea (Dodatne dolocbe - optional freetext appended to document)** (1 connections) — `docs/images/belpro-dokumenti.png`
+- **Manager Data Section (Podatki upravlajca) - Name, Surname, Email, Phone** (1 connections) — `docs/images/belpro-nastavitve.png`
+- **Evolution API Connection Status Indicator (Povezano badge, WhatsApp integration)** (1 connections) — `docs/images/belpro-nastavitve.png`
+- **Organization Logo Upload and Delete Control** (1 connections) — `docs/images/belpro-nastavitve.png`
+- **Change Password Section (Sprememba gesla) - Current, New, Confirm password fields** (1 connections) — `docs/images/belpro-nastavitve.png`
+- **Period Filter Controls - Year and Month dropdowns, Samo z vnosi v mesecu checkbox** (1 connections) — `docs/images/belpro-porocila.png`
+- **Report Archive Section (Arhiv porocil) - Obdobje, Prostovoljec, Poslano date, Prenesi download** (1 connections) — `docs/images/belpro-porocila.png`
+- **Volunteer Search and Filter Bar - Status dropdown, Sort field, Search text, Isci and Ponastavi buttons** (1 connections) — `docs/images/belpro-prostovoljci.png`
+- **Dodaj prostovoljca Button - Add New Volunteer Action** (1 connections) — `docs/images/belpro-prostovoljci.png`
+- **Deaktiviraj Button - Deactivate Volunteer per-row Action** (1 connections) — `docs/images/belpro-prostovoljci.png`
 - *... and 1 more nodes in this community*
 
 ## Relationships
@@ -37,12 +37,15 @@
 
 ## Source Files
 
-- `.claude/skills/version-bump/SKILL.md`
+- `docs/images/belpro-dokumenti.png`
+- `docs/images/belpro-nastavitve.png`
+- `docs/images/belpro-porocila.png`
+- `docs/images/belpro-prostovoljci.png`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 50 (81%)
+- INFERRED: 12 (19%)
 - AMBIGUOUS: 0 (0%)
 
 ---

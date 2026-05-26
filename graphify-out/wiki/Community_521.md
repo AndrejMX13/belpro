@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Critical Limitation: No External Libraries** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **What's NOT Available** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **What IS Available (Standard Library)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ NOT AVAILABLE - Will raise ModuleNotFoundError)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ AVAILABLE - Standard library only)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Workarounds** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Task 6: Documents router and main.py registration** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python ("""Documents router — downloadable compliance documents.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (from routers.documents import router as documents_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (app.include_router(documents_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block35 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block36 (git add api/routers/documents.py api/main.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

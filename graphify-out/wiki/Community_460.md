@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Workarounds for Missing Libraries** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **HTTP Requests (No requests library)** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Data Processing (No pandas)** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Database Operations (No drivers)** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (# ❌ Can't use requests library)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (# ❌ Can't use pandas)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (# ❌ Can't use database drivers)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Pattern: Safe Nested Access** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Pattern: List Comprehension with Filtering** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Pattern: Dictionary Comprehension** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# Deep nested access with .get())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[Community 417]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 

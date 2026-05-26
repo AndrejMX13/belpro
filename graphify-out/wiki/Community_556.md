@@ -4,15 +4,15 @@
 
 ## Key Concepts
 
-- **Pattern 8: Slack Block Kit Formatting** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Pattern 1: Multi-Source Data Aggregation** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 - **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 - **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Create Slack-formatted message with structured blocks)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Interactive buttons)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Process and structure data collected from multiple source)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Add source weighting)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 409]] (1 shared connections)
+- [[Community 415]] (1 shared connections)
 
 ## Source Files
 

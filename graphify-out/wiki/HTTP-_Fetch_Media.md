@@ -1,42 +1,37 @@
 # HTTP: Fetch Media
 
-> 14 nodes
+> 15 nodes
 
 ## Key Concepts
 
-- **managers.py** (6 connections) — `api/routers/managers.py`
-- **create_manager()** (4 connections) — `api/routers/managers.py`
-- **get_config_info()** (4 connections) — `api/routers/managers.py`
-- **ConfigInfoResponse** (4 connections) — `api/schemas/manager.py`
-- **get_manager()** (3 connections) — `api/routers/managers.py`
-- **update_manager()** (3 connections) — `api/routers/managers.py`
-- **change_password()** (2 connections) — `api/routers/managers.py`
-- **Managers router — single-manager setup and profile.** (1 connections) — `api/routers/managers.py`
-- **Return the single manager profile, or 404 if setup has not been completed.** (1 connections) — `api/routers/managers.py`
-- **Seed the manager profile (first-time setup). Returns 409 if already configured.** (1 connections) — `api/routers/managers.py`
-- **Update manager and/or NGO fields.  Only provided (non-None) fields are written.** (1 connections) — `api/routers/managers.py`
-- **Return config status for the settings UI; auto-syncs WhatsApp phone if connected** (1 connections) — `api/routers/managers.py`
-- **Change the manager password.  Verifies the current password before updating.** (1 connections) — `api/routers/managers.py`
-- **Response schema for GET /managers/me/config-info.** (1 connections) — `api/schemas/manager.py`
+- **Pydantic V2 Schemas** (8 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Schema Patterns** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **ORM Mode (from_attributes)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Model Validator** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Nested Models** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Serialization Control** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Settings (Pydantic V2)** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **pydantic-v2.md** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class UserResponse(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class OrderCreate(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class Address(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (class User(BaseModel):)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **code:python (from pydantic_settings import BaseSettings, SettingsConfigDi)** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
 
 ## Relationships
 
-- [[load_key()]] (2 shared connections)
-- [[Code Reviewer Skill]] (1 shared connections)
-- [[BelPro System Specification]] (1 shared connections)
-- [[merge_semantic.py]] (1 shared connections)
-- [[renderDetail() — volunteer detail page]] (1 shared connections)
-- [[n8n Set Node Pattern]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/managers.py`
-- `api/schemas/manager.py`
+- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (79%)
-- INFERRED: 7 (21%)
+- EXTRACTED: 28 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

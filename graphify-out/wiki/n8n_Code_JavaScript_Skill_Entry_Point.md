@@ -1,35 +1,35 @@
 # n8n Code JavaScript Skill Entry Point
 
-> 47 nodes
+> 48 nodes
 
 ## Key Concepts
 
-- **Progressive Disclosure** (7 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **User Guides & Tutorials** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Step-by-Step Tutorial** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Check for extra spaces** (6 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Progressive Learning Path** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Task-Based Writing** (5 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Diagram Integration** (4 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Tutorial Structure** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Writing Techniques** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Visual Communication** (3 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **user-guides-tutorials.md** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Information Architecture** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Content Hierarchy** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Screenshot Annotations** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Troubleshooting Guides** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Problem-Solution Format** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **FAQ Section** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:markdown (# Getting Started with API)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block3** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block4** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:markdown (# Tutorial: Building a User Dashboard)** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block6** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block7** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **code:block8** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- *... and 22 more nodes in this community*
+- **PostgreSQL Replication** (10 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Streaming Replication (Physical)** (5 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Logical Replication (Row-level)** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Failover and Promotion** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Backup and Point-in-Time Recovery (PITR)** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Primary Server Setup** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Standby Server Setup** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Cascading Replication** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Connection Pooling for HA** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Monitoring Replication** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Synchronous Replication** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Publisher Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Subscriber Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Logical Replication Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Delayed Replication (Delayed Standby)** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Manual Failover** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Automatic Failover with pg_auto_failover** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Patroni (Production HA Solution)** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **PgBouncer Configuration** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **HAProxy for Load Balancing** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **WAL Archiving Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Base Backup with pg_basebackup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Point-in-Time Recovery** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Monitoring Best Practices** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- **Troubleshooting** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
+- *... and 23 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- `.claude/skills/postgres-pro/references/replication.md`
 
 ## Audit Trail
 
-- EXTRACTED: 92 (100%)
+- EXTRACTED: 94 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

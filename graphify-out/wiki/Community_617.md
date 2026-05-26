@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 6: Frontend — work_date in Entry Edit Form** (4 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (${editable ? `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (if (editable) {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **session.py** (2 connections) — `api/db/session.py`
+- **get_db()** (2 connections) — `api/db/session.py`
+- **Async SQLAlchemy engine and session factory.** (1 connections) — `api/db/session.py`
+- **FastAPI dependency — yields one async DB session per request.** (1 connections) — `api/db/session.py`
 
 ## Relationships
 
-- [[API Client (api.js)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `api/db/session.py`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 6 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

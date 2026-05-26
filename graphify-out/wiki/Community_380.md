@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Common Node Patterns** (5 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 1: Resource/Operation Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 2: HTTP-Based Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 3: Database Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 4: Conditional Logic Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **get_node Detail Levels** (5 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Standard Detail (DEFAULT - Use This!)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Full Detail (Use Sparingly)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Search Properties Mode** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Decision Tree** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:block15 (┌─────────────────────────────────┐)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
 
 ## Source Files
 

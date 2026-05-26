@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Async Testing** (7 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Test Setup** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Endpoint Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Auth Helper Fixture** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Service Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Mocking Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **testing-async.md** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (@pytest.fixture)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **code:python (from unittest.mock import AsyncMock, patch)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
-- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **E2E Testing** (7 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **E2E Test Strategy** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **User Flow Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Checkout Flow** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Test Data Management** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Cross-Browser Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **e2e-testing.md** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (// Critical user paths to test)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (import { test, expect } from '@playwright/test';)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (test.describe('Checkout Flow', () => {)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (// fixtures/testData.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **code:typescript (// playwright.config.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
 
 ## Relationships
 
@@ -24,7 +24,7 @@
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/testing-async.md`
+- `.claude/skills/test-master/references/e2e-testing.md`
 
 ## Audit Trail
 

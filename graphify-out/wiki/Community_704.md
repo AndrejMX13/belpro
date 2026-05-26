@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **GET /logo** (1 connections) — `api/routers/logo.py`
-- **_refreshSidebarLogo() — GET /api/logo probe** (1 connections) — `frontend/js/volunteers.js`
+- **sendReports** (1 connections) — `frontend/js/reports.js`
+- **send_monthly_reports** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -13,8 +13,8 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
-- `frontend/js/volunteers.js`
+- `api/routers/reports.py`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 

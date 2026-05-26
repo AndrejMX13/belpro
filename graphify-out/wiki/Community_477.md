@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **6. Hardcoded Credentials** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When Acceptable** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When to Fix (Always!)** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Truly public API with no secrets)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Example workflow in documentation)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: Real API key in workflow)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Slack Node Examples** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Post Message** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Update Message** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Create Channel** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 298]] (1 shared connections)
+- [[Community 300]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

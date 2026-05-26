@@ -1,35 +1,35 @@
 # renderSettings() — settings page
 
-> 34 nodes
+> 35 nodes
 
 ## Key Concepts
 
-- **Python Packaging and Project Setup** (16 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Poetry Project Management** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Pre-commit Hooks** (3 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Project Structure** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Pyproject.toml Configuration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Virtual Environments** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Package __init__.py** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Type Stub Files (py.typed)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **CLI Entry Points** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Requirements Files** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Building and Distribution** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Setuptools Configuration (Legacy)** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Manifest for Package Data** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Version Management** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Dependency Management Best Practices** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **CI/CD Integration** (2 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **packaging.md** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:block1 (myproject/)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:toml ([build-system])** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:toml (# pyproject.toml for Poetry)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:bash (# Poetry commands)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:bash (# Using venv (built-in))** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:python (# src/myproject/__init__.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:python (# src/myproject/py.typed)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **code:python (# src/myproject/cli.py)** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- *... and 9 more nodes in this community*
+- **Async Programming Patterns** (12 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Asynchronous Patterns** (11 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **Async Generators** (4 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Promise Patterns** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async/Await Best Practices** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import TaskGroup)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Error Handling Strategies** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from typing import Self)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Promise Combinators** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from collections.abc import AsyncIterator)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **code:python (# Async list comprehension)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Concurrent Queue Management** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (import asyncio)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Event Loop Understanding** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import Queue)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **AbortController for Cancellation** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (# Timeout for single operation)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Stream Processing** (2 connections) — `.claude/skills/javascript-pro/references/async-patterns.md`
+- **code:python (from asyncio import create_task, Task)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Basic Async/Await** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Task Groups (Python 3.11+)** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async Context Managers** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Async Comprehensions** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- **Synchronization Primitives** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/python-pro/references/packaging.md`
+- `.claude/skills/javascript-pro/references/async-patterns.md`
+- `.claude/skills/python-pro/references/async-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 66 (100%)
+- EXTRACTED: 86 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

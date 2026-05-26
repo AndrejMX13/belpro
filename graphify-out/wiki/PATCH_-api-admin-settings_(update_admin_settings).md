@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Task 3: Ops sidecar container shell** (12 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:dockerfile (# ops/Dockerfile)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block14 (# ops/requirements.txt)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (#!/bin/bash)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block16 (# ops/crontab)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (# ops/scripts/backup.sh — placeholder)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:yaml (# ──────────────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:yaml (volumes:)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (# Ops sidecar)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add ops/ docker-compose.yml .env.example)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Common Workflow Errors** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Workflow Validation** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **validate_workflow (Structure)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Broken Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Circular Dependencies** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Multiple Start Nodes** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **4. Disconnected Nodes** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (validate_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 428]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 

@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Core Components** (7 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. AI Agent Node** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Language Model** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Tools (ANY Node Can Be a Tool!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Memory (Optional but Recommended)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **6. Output Processing** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. No Retry Logic** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When to Fix** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Stripe has its own retry mechanism)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// GET request - safe to retry manually if needed)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Internal API with high reliability)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: Known unreliable API without retries)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: POST without retry - may lose data)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

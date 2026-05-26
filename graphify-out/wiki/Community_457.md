@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Module 4: base64 - Encoding/Decoding** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Encode String to Base64** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Decode Base64 to String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Basic Auth Header** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import base64)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import base64)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import base64)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Pattern: Pagination Handling** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Pattern: Conditional Node Reference** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Pattern: Multi-Node Aggregation** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const currentPage = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Access different nodes based on condition)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Collect data from multiple named nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[Community 416]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

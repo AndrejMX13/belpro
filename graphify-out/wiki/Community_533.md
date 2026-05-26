@@ -4,29 +4,24 @@
 
 ## Key Concepts
 
-- **File Structure** (7 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **ISS-024: PDF Report History Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **Task 3: History endpoints and Pydantic schemas** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **Task 4: Wire persistence into send_monthly_reports** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **Task 5: Frontend — "Arhiv poročil" section** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **2026-05-19-pdf-report-history.md** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Strategy 1: Progressive Strictness** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Validation Profile Strategies** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Strategy 2: Profile by Workflow Type** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 496]] (1 shared connections)
-- [[Community 426]] (1 shared connections)
-- [[Community 583]] (1 shared connections)
-- [[Community 306]] (1 shared connections)
-- [[Community 307]] (1 shared connections)
-- [[Community 393]] (1 shared connections)
+- [[Community 425]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

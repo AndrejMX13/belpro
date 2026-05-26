@@ -4,26 +4,27 @@
 
 ## Key Concepts
 
-- **Example 6: Conditional Logic** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Ternary Operator** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Default Values** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Multiple Conditions** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.order.status === 'completed' ? 'Order Complete ✓' : )** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.order.notes || 'No notes provided'}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$json.order.total > 100 ? 'Premium Customer' : 'Standard C)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **PDF Generated (Per Volunteer + Consolidated)** (3 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **Email Sent to Volunteer and Manager** (3 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **PDF Generated (Per Volunteer + Consolidated)** (3 connections) — `scripts/diagrams/fig3_reporting.png`
+- **Email Sent to Volunteer and Manager** (3 connections) — `scripts/diagrams/fig3_reporting.png`
+- **28th of Month — Automatic Trigger** (2 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **CSD Submission — Volunteer Signs and Submits** (2 connections) — `scripts/diagrams/fig3_porocanje.png`
+- **28th of Month — Automatic Trigger** (2 connections) — `scripts/diagrams/fig3_reporting.png`
+- **CSD Submission — Volunteer Signs and Submits** (2 connections) — `scripts/diagrams/fig3_reporting.png`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `scripts/diagrams/fig3_porocanje.png`
+- `scripts/diagrams/fig3_reporting.png`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

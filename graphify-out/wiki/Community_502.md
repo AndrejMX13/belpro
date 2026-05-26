@@ -4,28 +4,25 @@
 
 ## Key Concepts
 
-- **renderSettings** (4 connections) — `frontend/js/volunteers.js`
-- **renderDocuments** (3 connections) — `frontend/js/documents.js`
-- **get_manager** (2 connections) — `api/routers/managers.py`
-- **update_manager** (2 connections) — `api/routers/managers.py`
-- **download_consent_pdf** (1 connections) — `api/routers/documents.py`
-- **get_config_info** (1 connections) — `api/routers/managers.py`
-- **change_password** (1 connections) — `api/routers/managers.py`
+- **Task 6: Enhanced `/api/health/detailed` endpoint** (7 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (import shutil)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (@app.get("/api/health/detailed"))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:block40 (httpx==0.27.2)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (curl -s http://localhost:8100/api/health/detailed | python -)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add api/main.py api/requirements.txt)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 433]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/documents.py`
-- `api/routers/managers.py`
-- `frontend/js/documents.js`
-- `frontend/js/volunteers.js`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 13 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

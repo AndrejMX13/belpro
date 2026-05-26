@@ -4,30 +4,29 @@
 
 ## Key Concepts
 
-- **Error Patterns - Python Code Node** (12 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **ERROR_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Error Overview** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Error Prevention Checklist** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Quick Fix Reference** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **File Structure** (7 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **ISS-024: PDF Report History Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 3: History endpoints and Pydantic schemas** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 4: Wire persistence into send_monthly_reports** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 5: Frontend — "Arhiv poročil" section** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **2026-05-19-pdf-report-history.md** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Community 329]] (1 shared connections)
-- [[Community 456]] (1 shared connections)
-- [[Community 285]] (1 shared connections)
-- [[Community 286]] (1 shared connections)
-- [[Community 364]] (1 shared connections)
-- [[Community 564]] (1 shared connections)
-- [[Community 455]] (1 shared connections)
+- [[Community 452]] (1 shared connections)
+- [[Community 412]] (1 shared connections)
+- [[Community 553]] (1 shared connections)
+- [[LoginResponse (Schema)]] (1 shared connections)
+- [[UnacknowledgedCountResponse (Schema)]] (1 shared connections)
+- [[Community 363]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

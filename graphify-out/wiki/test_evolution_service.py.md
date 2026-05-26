@@ -4,44 +4,40 @@
 
 ## Key Concepts
 
-- **gen_architecture_docx.js** (22 connections) — `scripts/gen_architecture_docx.js`
-- **spacer()** (8 connections) — `scripts/gen_architecture_docx.js`
-- **systemArchitecture()** (7 connections) — `scripts/gen_architecture_docx.js`
-- **main()** (7 connections) — `scripts/gen_architecture_docx.js`
-- **heading1()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **body()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **whatIsBelpro()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **volunteerJourney()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **monthlyReporting()** (6 connections) — `scripts/gen_architecture_docx.js`
-- **stepParagraph()** (5 connections) — `scripts/gen_architecture_docx.js`
-- **privacyCompliance()** (5 connections) — `scripts/gen_architecture_docx.js`
-- **heading2()** (4 connections) — `scripts/gen_architecture_docx.js`
-- **borders()** (3 connections) — `scripts/gen_architecture_docx.js`
-- **coverPage()** (3 connections) — `scripts/gen_architecture_docx.js`
-- **border()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **cell()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **featureTable()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **componentTable()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **complianceTable()** (2 connections) — `scripts/gen_architecture_docx.js`
-- **{
-  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
-  Header, Footer, AlignmentType, HeadingLevel, BorderStyle, WidthType,
-  ShadingType, VerticalAlign, PageNumber, PageBreak, LevelFormat,
-}** (1 connections) — `scripts/gen_architecture_docx.js`
-- **fs** (1 connections) — `scripts/gen_architecture_docx.js`
-- **noBorders()** (1 connections) — `scripts/gen_architecture_docx.js`
+- **1. $helpers.httpRequest() - HTTP Requests** (10 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Authentication Patterns** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **GET Request** (3 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Complete Options** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **POST Request** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **PUT/PATCH Request** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **DELETE Request** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Error Handling** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Full Response Access** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Simple GET)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// GET with query parameters)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// POST with JSON body)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Update resource)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Delete resource)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Bearer Token (token came from a previous node, not $env))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// API Key in Header (key came from a previous node, not $en)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Basic Auth (manual))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Handle HTTP errors gracefully)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Get full response including headers and status)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[test_auth.py]] (1 shared connections)
+- [[Community 555]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/gen_architecture_docx.js`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 107 (100%)
+- EXTRACTED: 43 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

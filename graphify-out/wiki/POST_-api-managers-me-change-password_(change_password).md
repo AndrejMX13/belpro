@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **displayOptions Structure** (5 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Show vs Hide** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Basic Format** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **show (Most Common)** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **hide (Less Common)** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Multiple Conditions (AND Logic)** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Multiple Values (OR Logic)** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Example 1: HTTP Request Complete Flow** (6 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Complex Dependency Examples** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Example 2: IF Node Operator Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Example 3: Slack Operation Matrix** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:block16 (method=POST)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// post message)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Community 375]] (1 shared connections)
+- [[Community 376]] (1 shared connections)
 
 ## Source Files
 

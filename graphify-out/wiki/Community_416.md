@@ -4,26 +4,32 @@
 
 ## Key Concepts
 
-- **9. operator_structure** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Fixed Automatically: Binary Operators** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Fixed Automatically: Unary Operators** (3 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Auto-Sanitization Fixes** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Data Access Patterns - JavaScript Code Node** (11 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Decision Tree** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **DATA_ACCESS.md** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:block28 (Do you need ALL items from previous node?)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 297]] (1 shared connections)
+- [[HTTP: GET Notified Entry]] (1 shared connections)
+- [[Hour of day (0–23) at which the monthly report cron fires.]] (1 shared connections)
+- [[SmtpNotConfiguredError (Service)]] (1 shared connections)
+- [[Community 365]] (1 shared connections)
+- [[POST /api/managers (create_manager)]] (1 shared connections)
+- [[Community 283]] (1 shared connections)
+- [[Community 457]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

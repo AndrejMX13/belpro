@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Pattern 3: _input.item - Current Item (Each Item Mode)** (5 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 1: Add Processing Metadata** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 2: Per-Item Validation** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 3: Conditional Processing** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# In "Run Once for Each Item" mode)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Codebase context** (9 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (reports: {)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (API.reports.history().then(console.log))** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (<div id="reports-content">)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (<div id="reports-content">)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (let archiveLoaded = false;)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:js (async function loadReportArchive() {)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block38 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add frontend/js/api.js frontend/js/reports.js)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[Community 411]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 

@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 1: Alembic migration — seed `evolution_instance_name`** (7 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (async def test_settings_table_seeded_evolution_instance_name)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (# api/db/migrations/versions/015_seed_evolution_instance_nam)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (git add api/db/migrations/versions/015_seed_evolution_instan)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Task 7: Analytics Endpoint** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 7.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 7.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 7.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:python (# api/tests/test_analytics.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (cd api && pytest tests/test_analytics.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add api/tests/test_analytics.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 398]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 

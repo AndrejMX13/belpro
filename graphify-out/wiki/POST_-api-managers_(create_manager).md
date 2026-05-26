@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **env.py** (6 connections) — `api/db/migrations/env.py`
-- **_get_url()** (5 connections) — `api/db/migrations/env.py`
-- **_run_async_migrations()** (4 connections) — `api/db/migrations/env.py`
-- **run_migrations_offline()** (3 connections) — `api/db/migrations/env.py`
-- **run_migrations_online()** (3 connections) — `api/db/migrations/env.py`
-- **_do_run_migrations()** (2 connections) — `api/db/migrations/env.py`
-- **Alembic environment — async SQLAlchemy / asyncpg configuration.** (1 connections) — `api/db/migrations/env.py`
-- **Read DATABASE_URL from settings (env / .env file).** (1 connections) — `api/db/migrations/env.py`
-- **Run migrations without a live DB connection (generates SQL script).** (1 connections) — `api/db/migrations/env.py`
-- **Inner helper called inside the async connection context.** (1 connections) — `api/db/migrations/env.py`
-- **Create an async engine and run migrations inside it.** (1 connections) — `api/db/migrations/env.py`
-- **Run migrations against a live database.** (1 connections) — `api/db/migrations/env.py`
+- **Critical: Webhook Data Structure** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Structure** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Wrong vs Right** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example: Full Webhook Processing** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **POST Data, Query Params, and Headers** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Common Webhook Scenarios** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **The Problem** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Webhook node output structure:)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: Trying to access directly)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get webhook data from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const webhook = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Scenario 1: Form submission)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- [[Community 416]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/env.py`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (97%)
-- INFERRED: 1 (3%)
+- EXTRACTED: 23 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Response Modes** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **lastNode (Custom Response)** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **onReceived (Default)** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Expression Syntax** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n MCP Tools Expert** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Workflow Patterns** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Code JavaScript** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **n8n Node Configuration** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 292]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

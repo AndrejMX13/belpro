@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **001_initial_schema.py** (2 connections) — `api/db/migrations/versions/001_initial_schema.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/001_initial_schema.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/001_initial_schema.py`
-- **Create the full Belpro schema from scratch (idempotent — safe to re-run).** (1 connections) — `api/db/migrations/versions/001_initial_schema.py`
-- **Drop all Belpro tables and the entry_status enum.** (1 connections) — `api/db/migrations/versions/001_initial_schema.py`
+- **Testing Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django/DRF Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# FastAPI pytest with httpx)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/versions/001_initial_schema.py`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

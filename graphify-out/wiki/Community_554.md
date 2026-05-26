@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Pattern 6: Release Information Processing** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Extract and filter stable releases from GitHub API)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Version comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **pull_request_template.md** (4 connections) — `.github/pull_request_template.md`
+- **Summary** (1 connections) — `.github/pull_request_template.md`
+- **Type of change** (1 connections) — `.github/pull_request_template.md`
+- **Testing** (1 connections) — `.github/pull_request_template.md`
+- **Checklist** (1 connections) — `.github/pull_request_template.md`
 
 ## Relationships
 
-- [[Community 409]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- `.github/pull_request_template.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,33 +4,27 @@
 
 ## Key Concepts
 
-- **Evolution Instance Name — AppSettings Migration Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **Task 3: Pydantic schemas** (4 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **2026-05-25-evolution-instance-appsetting.md** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **Codebase Orientation** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api python -c "from schemas.admin import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (git add api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **Done** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Task 2: Error log API endpoints + schemas + tests** (9 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/tests/test_errors.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api pytest tests/test_errors.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/schemas/error_log.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/routers/errors.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (from routers.errors import router as errors_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (app.include_router(errors_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api pytest tests/test_errors.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add api/schemas/error_log.py api/routers/errors.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 499]] (1 shared connections)
-- [[Community 500]] (1 shared connections)
-- [[Community 430]] (1 shared connections)
-- [[Community 399]] (1 shared connections)
-- [[Community 501]] (1 shared connections)
-- [[Community 431]] (1 shared connections)
-- [[Community 429]] (1 shared connections)
+- [[Community 433]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

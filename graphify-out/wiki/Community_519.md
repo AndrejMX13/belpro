@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **File Structure** (6 connections) — `.claude/skills/n8n-code-python/README.md`
-- **SKILL.md (719 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **DATA_ACCESS.md (703 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **STANDARD_LIBRARY.md (850 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **COMMON_PATTERNS.md (895 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **ERROR_PATTERNS.md (730 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Task 2: DB migration and Manager model field** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python ("""Add gdpr_additional_clauses to managers.)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (gdpr_additional_clauses: Mapped[str | None] = mapped_column()** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block18 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block19 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block20 (git add api/db/migrations/versions/011_manager_gdpr_clauses.)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 288]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

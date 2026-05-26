@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **3. Session Management** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Reusing session across requests)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Dependency injection per request)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[test_backup_restore.sh]] (1 shared connections)
+- [[004_log_entry_photos.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

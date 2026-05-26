@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 6: Report Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 6.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 6.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 6.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Checklist for Scheduled Workflows** (7 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Monitoring** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 389]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

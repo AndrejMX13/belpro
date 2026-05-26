@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Common False Positives** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **False Positives** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Reducing False Positives** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What Are They?** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. "Missing error handling"** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. "No retry logic"** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. "Missing rate limiting"** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **4. "Unbounded query"** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **WhatsApp setup** (5 connections) — `README.md`
+- **Workflow management** (4 connections) — `README.md`
+- **7. Configure n8n workflows** (2 connections) — `README.md`
+- **6. Create the Evolution API instance** (1 connections) — `README.md`
+- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README.md`
+- **8. Connect WhatsApp** (1 connections) — `README.md`
+- **code:block9 (N8N_API_KEY=<your-key>)** (1 connections) — `README.md`
+- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README.md`
+- **code:bash (./scripts/n8n_workflows.py export)** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[HTTP: PATCH /notify (Manual)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `README.md`
 
 ## Audit Trail
 

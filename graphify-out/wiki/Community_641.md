@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **3. Zagon vseh storitev** (3 connections) — `README_SL.md`
-- **code:bash (docker compose up -d)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose ps)** (1 connections) — `README_SL.md`
+- **002_add_emso_hash.py** (2 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
+- **upgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
+- **downgrade()** (1 connections) — `api/db/migrations/versions/002_add_emso_hash.py`
 
 ## Relationships
 
-- [[POST /api/volunteers/check-emso (check_emso)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README_SL.md`
+- `api/db/migrations/versions/002_add_emso_hash.py`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

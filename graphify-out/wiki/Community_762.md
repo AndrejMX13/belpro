@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Number of days approved entry photos are retained on disk.** (0 connections) — `api/services/app_settings.py`
+- **Reject EMŠO numbers that fail the mod-11 checksum.** (0 connections) — `api/schemas/volunteer.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 

@@ -4,50 +4,45 @@
 
 ## Key Concepts
 
-- **load_key()** (16 connections) — `api/services/encryption.py`
-- **test_encryption.py** (14 connections) — `api/tests/test_encryption.py`
-- **cmd_rotate()** (9 connections) — `api/scripts/rotate_emso_key.py`
-- **encrypt_emso()** (8 connections) — `api/services/encryption.py`
-- **hash_emso()** (8 connections) — `api/services/encryption.py`
-- **mask_emso()** (8 connections) — `api/services/encryption.py`
-- **decrypt_emso()** (7 connections) — `api/services/encryption.py`
-- **cmd_backup()** (6 connections) — `api/scripts/rotate_emso_key.py`
-- **main()** (6 connections) — `api/scripts/rotate_emso_key.py`
-- **encryption.py** (6 connections) — `api/services/encryption.py`
-- **rotate_emso_key.py** (5 connections) — `api/scripts/rotate_emso_key.py`
-- **cmd_restore()** (5 connections) — `api/scripts/rotate_emso_key.py`
-- **_db_url()** (4 connections) — `api/scripts/rotate_emso_key.py`
-- **test_decrypt_with_wrong_key_raises_invalid_tag()** (4 connections) — `api/tests/test_encryption.py`
-- **test_roundtrip_restores_plaintext()** (3 connections) — `api/tests/test_encryption.py`
-- **test_hash_differs_from_encryption()** (3 connections) — `api/tests/test_encryption.py`
-- **test_load_key_accepts_valid_32_byte_key()** (2 connections) — `api/tests/test_encryption.py`
-- **test_load_key_rejects_short_key()** (2 connections) — `api/tests/test_encryption.py`
-- **test_load_key_accepts_key_without_padding()** (2 connections) — `api/tests/test_encryption.py`
-- **test_encrypt_produces_different_ciphertext_each_call()** (2 connections) — `api/tests/test_encryption.py`
-- **test_hash_is_deterministic()** (2 connections) — `api/tests/test_encryption.py`
-- **test_different_emso_produces_different_hash()** (2 connections) — `api/tests/test_encryption.py`
-- **test_mask_replaces_all_but_last_three_chars()** (2 connections) — `api/tests/test_encryption.py`
-- **test_mask_length_preserved()** (2 connections) — `api/tests/test_encryption.py`
-- **test_mask_short_value_returned_unchanged()** (2 connections) — `api/tests/test_encryption.py`
+- **File Summary** (8 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 1: Infrastructure — migration test database** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 6: Base64 photo limit + `_PHOTOS_ROOT` monkeypatch** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 7: Manager password change** (5 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 2: Migration roundtrip test** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 3: EMŠO encryption round-trip** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 4: Status-flow enforcement — `pending_volunteer` → 409** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Task 5: Analytics edge cases** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **Test Coverage Gaps — Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **2026-05-24-test-coverage-gaps.md** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec postgres psql -U belpro -c "CREATE DATAB)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:block3 (CREATE DATABASE)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:block4 (DATABASE_URL_MIGRATIONS=postgresql+asyncpg://belpro:belpro_d)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add db/create_extra_dbs.sh api/.env.test)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python ("""Migration roundtrip test — runs against belpro_test_migra)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_migrations.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_migrations.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_emso_stored_encrypted()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteers.py::tes)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_approve_pending_volunteer_returns_409()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:bash (git add api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **code:python (async def test_analytics_rejected_hours_excluded()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
 - *... and 11 more nodes in this community*
 
 ## Relationships
 
-- [[connections]] (14 shared connections)
-- [[load_key()]] (4 shared connections)
-- [[Community 315]] (1 shared connections)
-- [[test_auth.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/scripts/rotate_emso_key.py`
-- `api/services/encryption.py`
-- `api/tests/test_encryption.py`
+- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
 
 ## Audit Trail
 
-- EXTRACTED: 78 (55%)
-- INFERRED: 64 (45%)
+- EXTRACTED: 70 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

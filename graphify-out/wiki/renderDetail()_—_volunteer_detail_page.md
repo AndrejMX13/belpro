@@ -1,63 +1,64 @@
 # renderDetail() — volunteer detail page
 
-> 42 nodes
+> 43 nodes
 
 ## Key Concepts
 
-- **BaseModel** (33 connections)
-- **EntryStatus** (20 connections) — `api/models/log_entry.py`
-- **volunteer.py** (13 connections) — `api/schemas/volunteer.py`
-- **log_entry.py** (7 connections) — `api/schemas/log_entry.py`
-- **VolunteerResponse** (6 connections) — `api/schemas/volunteer.py`
-- **LogEntryListResponse** (5 connections) — `api/schemas/log_entry.py`
-- **EmsoCheckResponse** (5 connections) — `api/schemas/volunteer.py`
-- **VolunteerDetailResponse** (5 connections) — `api/schemas/volunteer.py`
-- **VolunteerListResponse** (5 connections) — `api/schemas/volunteer.py`
-- **AdminSettingsUpdate** (4 connections) — `api/schemas/admin.py`
-- **LogEntryCreate** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryResponse** (4 connections) — `api/schemas/log_entry.py`
-- **PhotoResponse** (4 connections) — `api/schemas/log_entry.py`
-- **PhotoBase64Request** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryUpdate** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryBrief** (4 connections) — `api/schemas/volunteer.py`
-- **EmsoCheckRequest** (4 connections) — `api/schemas/volunteer.py`
-- **VolunteerCreate** (4 connections) — `api/schemas/volunteer.py`
-- **LoginRequest** (3 connections) — `api/schemas/auth.py`
-- **_normalise_phone()** (3 connections) — `api/schemas/volunteer.py`
-- **_normalise_phone_field()** (2 connections) — `api/schemas/volunteer.py`
-- **Volunteer diary entry status.  Flows one way only — never backwards.** (1 connections) — `api/models/log_entry.py`
-- **Partial update for runtime-tunable settings. Only provided fields are written.** (1 connections) — `api/schemas/admin.py`
-- **Body for POST /api/auth/login.** (1 connections) — `api/schemas/auth.py`
-- **Pydantic schemas for the LogEntry entity.** (1 connections) — `api/schemas/log_entry.py`
-- *... and 17 more nodes in this community*
+- **manager_approval.json** (31 connections) — `n8n/workflows/manager_approval.json`
+- **BelPro - Odobritev Upravljalca (Manager Approval Workflow)** (13 connections) — `n8n/workflows/manager_approval.json`
+- **Manager WhatsApp Approval Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Manager WhatsApp Approval Workflow Design** (11 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **GET /api/log-entries (list_log_entries)** (10 connections) — `api/routers/log_entries.py`
+- **PATCH /api/log-entries/{id}/approve (approve_log_entry)** (7 connections) — `api/routers/log_entries.py`
+- **PATCH /api/log-entries/{id}/reject (reject_log_entry)** (7 connections) — `api/routers/log_entries.py`
+- **manager_approval n8n Workflow** (6 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **manager_approval.json n8n Workflow** (6 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Evolution API WhatsApp** (4 connections) — `docs/evolution-lid-resolution.md`
+- **n8n: PATCH /api/log-entries/{id}/approve** (4 connections) — `n8n/workflows/manager_approval.json`
+- **n8n: PATCH /api/log-entries/{id}/reject** (4 connections) — `n8n/workflows/manager_approval.json`
+- **volunteer_entry n8n Workflow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **pinData** (2 connections) — `n8n/workflows/manager_approval.json`
+- **Evolution API lid JID Resolution** (2 connections) — `docs/evolution-lid-resolution.md`
+- **Volunteer Entry Workflow Manager Routing Change** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **n8n Workflow Import Export Script Design** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **n8n: GET /api/log-entries?status=pending_manager (Post-Action Queue Check)** (2 connections) — `n8n/workflows/manager_approval.json`
+- **analytics_summary** (2 connections) — `api/routers/analytics.py`
+- **updatedAt** (1 connections) — `n8n/workflows/manager_approval.json`
+- **createdAt** (1 connections) — `n8n/workflows/manager_approval.json`
+- **id** (1 connections) — `n8n/workflows/manager_approval.json`
+- **name** (1 connections) — `n8n/workflows/manager_approval.json`
+- **description** (1 connections) — `n8n/workflows/manager_approval.json`
+- **active** (1 connections) — `n8n/workflows/manager_approval.json`
+- *... and 18 more nodes in this community*
 
 ## Relationships
 
-- [[connections]] (5 shared connections)
-- [[BelPro System Specification]] (4 shared connections)
-- [[Code: Build Image Media Body]] (4 shared connections)
-- [[n8n Set Node Pattern]] (4 shared connections)
-- [[n8n Code Node Pattern]] (4 shared connections)
-- [[HTTP: GET Pending (Auto)]] (3 shared connections)
-- [[009_rename_entry_date_to_work_date.py]] (3 shared connections)
-- [[n8n MCP Workflow Management Guide]] (2 shared connections)
-- [[GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)]] (2 shared connections)
-- [[load_key()]] (1 shared connections)
-- [[HTTP: Fetch Media]] (1 shared connections)
-- [[Community 315]] (1 shared connections)
+- [[Volunteer (ORM)]] (9 shared connections)
+- [[API.auth.logout()]] (3 shared connections)
+- [[errors.py]] (3 shared connections)
+- [[DevOps Engineer Skill]] (2 shared connections)
+- [[007_add_ngo_davcna.py]] (2 shared connections)
+- [[Community 414]] (1 shared connections)
+- [[settings]] (1 shared connections)
 
 ## Source Files
 
-- `api/models/log_entry.py`
-- `api/schemas/admin.py`
-- `api/schemas/auth.py`
-- `api/schemas/log_entry.py`
-- `api/schemas/volunteer.py`
+- `Evolution_API_and_N8N_phone_identification_solutions.pdf`
+- `api/routers/analytics.py`
+- `api/routers/log_entries.py`
+- `api/routers/reports.py`
+- `docs/evolution-lid-resolution.md`
+- `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- `frontend/js/analytics.js`
+- `n8n/workflows/manager_approval.json`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 129 (79%)
-- INFERRED: 35 (21%)
+- EXTRACTED: 138 (90%)
+- INFERRED: 15 (10%)
 - AMBIGUOUS: 0 (0%)
 
 ---

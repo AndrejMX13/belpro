@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **BelPro — Component Diagram** (2 connections) — `docs/images/belpro-architecture-component.md`
-- **belpro-architecture-component.md** (1 connections) — `docs/images/belpro-architecture-component.md`
-- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-architecture-component.md`
+- **[0.9.7] — 2026-05-15** (3 connections) — `CHANGELOG.md`
+- **Removed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Manager session cookie lifetime in hours.]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/belpro-architecture-component.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

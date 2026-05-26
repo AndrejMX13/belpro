@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **8. Using Expressions in Code Nodes** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:javascript (const email = '{{$json.email}}';)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:javascript (const email = $json.email;)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **6. Double Wrapping** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block12 ({{{$json.field}}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block13 ({{$json.field}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 631]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 

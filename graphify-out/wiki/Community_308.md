@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Task 3: Admin router + integration tests** (11 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# ── Integration tests for GET/PATCH /api/admin/settings ───)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block15 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""Admin router — runtime-tunable settings management.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (app.include_router(admin_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (app.include_router(admin_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block22 (docker compose exec api pytest tests/test_app_settings.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/schemas/admin.py api/routers/admin.py api/main.p)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Common Gotchas** (9 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **1. ❌ Wrong: Accessing webhook data** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({{$json.email}}  // Empty or undefined)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({{$json.body.email}}  // Data is under .body)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **2. ❌ Wrong: Response mode confusion** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **3. ❌ Wrong: No validation** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **4. ❌ Wrong: Hardcoded paths** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

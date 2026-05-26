@@ -27,8 +27,8 @@
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
-- [[Community 678]] (1 shared connections)
+- [[API.managers.setup()]] (1 shared connections)
+- [[Community 679]] (1 shared connections)
 
 ## Source Files
 

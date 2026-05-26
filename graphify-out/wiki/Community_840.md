@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **POST /errors (internal)** (0 connections) — `api/routers/errors.py`
+- **GET /api/health (health)** (0 connections) — `api/main.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `api/main.py`
 
 ## Audit Trail
 

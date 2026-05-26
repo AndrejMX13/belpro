@@ -1,11 +1,12 @@
 # Community 684
 
-> 2 nodes
+> 3 nodes
 
 ## Key Concepts
 
-- **acknowledgeError** (1 connections) — `frontend/js/errors.js`
-- **acknowledge_error** (1 connections) — `api/routers/errors.py`
+- **test_health_returns_ok()** (2 connections) — `api/tests/test_health.py`
+- **test_health.py** (1 connections) — `api/tests/test_health.py`
+- **Health endpoint must return 200 with status ok.** (1 connections) — `api/tests/test_health.py`
 
 ## Relationships
 
@@ -13,12 +14,11 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/errors.js`
+- `api/tests/test_health.py`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

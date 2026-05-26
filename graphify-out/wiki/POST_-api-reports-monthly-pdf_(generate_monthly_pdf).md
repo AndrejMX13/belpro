@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Example 1: HTTP Request Complete Flow** (6 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Complex Dependency Examples** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Example 2: IF Node Operator Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Example 3: Slack Operation Matrix** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:block16 (method=POST)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// post message)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Simple Transformation** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Data Transformation Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Set (nodes-base.set)** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Set from Input Data** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Set Fixed Values** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Code (nodes-base.code)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript (// ❌ Wrong type)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript (// ❌ Wrong - expressions don't work in Code nodes)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 375]] (1 shared connections)
+- [[list_pending_entries.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 

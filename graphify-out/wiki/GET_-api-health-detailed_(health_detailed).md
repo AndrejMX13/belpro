@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Task 9: Scripts and Docs** (11 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:powershell (. .\scripts\load_env.ps1)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (entry_date              DATE            NOT NULL,   -- Date )** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (work_date               DATE            NOT NULL,   -- Date )** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (COMMENT ON COLUMN log_entries.entry_date IS 'The date work w)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (COMMENT ON COLUMN log_entries.work_date IS 'The date work wa)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (CREATE INDEX idx_entries_date     ON log_entries(entry_date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:sql (CREATE INDEX idx_entries_work_date     ON log_entries(work_d)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (grep -n "entry_date" SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (grep "entry_date" SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add scripts/list_pending_entries.py db/init.sql SPEC.md)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Common Patterns Overview** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **1. Multi-Source Data Aggregation** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **2. Filtering with Regex** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **3. Data Transformation & Enrichment** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **4. Top N Filtering & Ranking** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **5. Aggregation & Reporting** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const pattern = /\b([A-Z]{2,5})\b/g;)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[API Client (api.js)]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 

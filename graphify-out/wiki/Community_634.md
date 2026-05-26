@@ -4,22 +4,33 @@
 
 ## Key Concepts
 
-- **Task 4: Write tests (TDD — write before implementing)** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python ("""Tests for the /documents router and consent_pdf service.")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block27 (docker compose exec api pytest tests/test_documents.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block28 (git add api/tests/test_documents.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Common n8n Expression Mistakes** (18 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **COMMON_MISTAKES.md** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **Debugging Process** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[Community 665]] (1 shared connections)
+- [[Community 633]] (1 shared connections)
+- [[Community 666]] (1 shared connections)
+- [[Community 674]] (1 shared connections)
+- [[Community 671]] (1 shared connections)
+- [[Community 667]] (1 shared connections)
+- [[Community 668]] (1 shared connections)
+- [[Community 669]] (1 shared connections)
+- [[Community 670]] (1 shared connections)
+- [[Community 662]] (1 shared connections)
+- [[Community 632]] (1 shared connections)
+- [[Community 672]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

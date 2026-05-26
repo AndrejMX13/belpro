@@ -1,33 +1,33 @@
 # Code: Clear State Confirm
 
-> 15 nodes
+> 16 nodes
 
 ## Key Concepts
 
-- **Vzdrževanje** (9 connections) — `README_SL.md`
-- **Nadgradnja sistema** (2 connections) — `README_SL.md`
-- **Varnostno kopiranje (Backup)** (2 connections) — `README_SL.md`
-- **Obnovitev podatkov (Restore)** (2 connections) — `README_SL.md`
-- **Spremljanje dnevniških zapisov storitev (Logs)** (2 connections) — `README_SL.md`
-- **Ponovna izgradnja storitve po spremembi kode** (2 connections) — `README_SL.md`
-- **Ponastavitev pozabljenega gesla za nadzorno ploščo** (2 connections) — `README_SL.md`
-- **Uveljavljanje sprememb v `.env`** (2 connections) — `README_SL.md`
-- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README_SL.md`
-- **code:bash (bash scripts/backup.sh)** (1 connections) — `README_SL.md`
-- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose logs -f)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README_SL.md`
-- **code:bash (docker compose up -d <service>)** (1 connections) — `README_SL.md`
+- **Design: BelPro Version-Bump Skill** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step-by-Step Flow** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **2026-05-15-version-bump-skill-design.md** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Trigger** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Approach** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 0 — Pre-flight: test suite check** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 1 — Orient and suggest version** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 2 — Update files** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 3 — Pre-commit review** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 4 — Tag? (optional)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Step 6 — Offer container rebuild** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **BelPro-Specific Constraints** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Reminders (skill mentions, does not execute)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Relationships
 
-- [[HTTP: GET Volunteer (Mgr)]] (1 shared connections)
-- [[Community 602]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README_SL.md`
+- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Audit Trail
 

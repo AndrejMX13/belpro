@@ -4,36 +4,33 @@
 
 ## Key Concepts
 
-- **normalize_phone()** (16 connections) — `api/utils/phone.py`
-- **test_phone_utils.py** (10 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_plus_prefix()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_spaces()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_dashes()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_strips_parentheses()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_already_normalized()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_none_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_empty_string_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_whitespace_only_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_too_short_returns_none()** (2 connections) — `api/tests/test_phone_utils.py`
-- **test_jid_phone_part()** (2 connections) — `api/tests/test_phone_utils.py`
-- **phone.py** (1 connections) — `api/utils/phone.py`
-- **Return digits-only WhatsApp-native phone number, or None for invalid input.** (1 connections) — `api/utils/phone.py`
+- **OWASP Top 10 Prevention** (8 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **A01: Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **A02: Broken Authentication** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **A03: Sensitive Data Exposure** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **A05: Broken Access Control** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **A07: XSS Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **owasp-prevention.md** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **OWASP Top 10 Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **code:typescript (// SQL Injection - Use parameterized queries)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **code:typescript (// Use bcrypt for passwords)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **code:typescript (// Encrypt sensitive data at rest)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **code:typescript (// Always validate on server side)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **code:typescript (// Use Content Security Policy)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
 
 ## Relationships
 
-- [[merge_semantic.py]] (2 shared connections)
-- [[GET /api/log-entries (list_log_entries)]] (1 shared connections)
-- [[n8n Set Node Pattern]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_phone_utils.py`
-- `api/utils/phone.py`
+- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (50%)
-- INFERRED: 24 (50%)
+- EXTRACTED: 26 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

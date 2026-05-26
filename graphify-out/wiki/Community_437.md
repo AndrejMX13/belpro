@@ -1,31 +1,30 @@
 # Community 437
 
-> 7 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **Volunteer Profile Screen** (5 connections) — `docs/images/belpro-prostovoljec.png`
-- **Work Entry Detail / Review Screen** (4 connections) — `docs/images/belpro-vnos-pregled-urejanje.png`
-- **Manager Dashboard Sidebar Navigation** (2 connections) — `docs/images/belpro-prostovoljec.png`
-- **Volunteer Work Diary Table** (2 connections) — `docs/images/belpro-prostovoljec.png`
-- **Monthly Report Notification Preferences** (1 connections) — `docs/images/belpro-prostovoljec.png`
-- **Work Entry Photo Attachments** (1 connections) — `docs/images/belpro-vnos-pregled-urejanje.png`
-- **Evolution API Logo** (1 connections) — `frontend/images/evolution-api-logo.svg`
+- **Incremental Migration Strategy** (5 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Phase 1: Parallel API (Strangler Pattern)** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Phase 2: Shared Database Migration** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Phase 4: Complete Cutover** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Nginx routing config)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# FastAPI with existing Django database)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Phase 3: Database Schema Modernization** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Decommission Django)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/belpro-prostovoljec.png`
-- `docs/images/belpro-vnos-pregled-urejanje.png`
-- `frontend/images/evolution-api-logo.svg`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (50%)
-- INFERRED: 8 (50%)
+- EXTRACTED: 15 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

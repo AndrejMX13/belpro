@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Codebase context** (11 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (from datetime import datetime)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (async def test_get_history_empty(client: AsyncClient, auth: )** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block14 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (from fastapi.responses import FileResponse, JSONResponse, St)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (from pathlib import Path)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (from models.monthly_report import MonthlyReport)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python (@router.get("/history", response_model=ReportHistoryList, de)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block19 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block20 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:bash (git add api/schemas/report.py api/routers/reports.py api/tes)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Request Configuration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **GET Request** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **POST Request (JSON Body)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **POST Request (Form Data)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **PUT/PATCH Request (Update)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **DELETE Request** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[Community 533]] (1 shared connections)
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

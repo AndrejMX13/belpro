@@ -4,27 +4,33 @@
 
 ## Key Concepts
 
-- **Report Template** (6 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Full Review Report Template** (3 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **report-template.md** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **code:markdown (# Code Review: [PR Title])** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **code:block2** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Verdict Guidelines** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Severity Definitions** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Time Boxing** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Quick Checks Before Submitting** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Evolution Instance Name — AppSettings Migration Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Task 3: Pydantic schemas** (4 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **2026-05-25-evolution-instance-appsetting.md** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Codebase Orientation** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api python -c "from schemas.admin import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Done** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 503]] (1 shared connections)
+- [[Community 504]] (1 shared connections)
+- [[Community 435]] (1 shared connections)
+- [[Community 402]] (1 shared connections)
+- [[Community 505]] (1 shared connections)
+- [[Community 436]] (1 shared connections)
+- [[Community 434]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/report-template.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (100%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

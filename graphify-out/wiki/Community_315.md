@@ -1,35 +1,33 @@
 # Community 315
 
-> 10 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **emso_checksum_valid()** (7 connections) — `api/utils/emso.py`
-- **test_emso.py** (4 connections) — `api/tests/test_emso.py`
-- **_validate_emso_checksum()** (2 connections) — `api/schemas/volunteer.py`
-- **test_emso_checksum_valid_accepts_valid_numbers()** (2 connections) — `api/tests/test_emso.py`
-- **test_emso_checksum_valid_rejects_bad_checksum()** (2 connections) — `api/tests/test_emso.py`
-- **test_emso_checksum_valid_rejects_malformed_input()** (2 connections) — `api/tests/test_emso.py`
-- **emso.py** (2 connections) — `api/utils/emso.py`
-- **Unit tests for the EMŠO checksum validator utility.** (1 connections) — `api/tests/test_emso.py`
-- **EMŠO (Enotna matična številka občana) validation utilities.** (1 connections) — `api/utils/emso.py`
-- **Return True if emso passes the mod-11 checksum.      Assumes the caller already** (1 connections) — `api/utils/emso.py`
+- **Kubernetes Manifests** (6 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Complete Deployment Stack** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **ConfigMap and Secrets** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Horizontal Pod Autoscaler** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Common kubectl Commands** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **kubernetes.md** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:yaml (apiVersion: v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:yaml (apiVersion: autoscaling/v2)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **code:bash (kubectl apply -f deployment.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
 
 ## Relationships
 
-- [[renderDetail() — volunteer detail page]] (1 shared connections)
-- [[app_settings.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
-- `api/tests/test_emso.py`
-- `api/utils/emso.py`
+- `.claude/skills/devops-engineer/references/kubernetes.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (62%)
-- INFERRED: 9 (38%)
+- EXTRACTED: 20 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

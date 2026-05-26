@@ -4,15 +4,15 @@
 
 ## Key Concepts
 
-- **Performance Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Large Payloads** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block31 (Webhook → Queue (Redis/DB) → Response (immediate))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **High Volume** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Retries** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Webhook Data Structure** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Standard Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Accessing Different Parts** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript (// Headers)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 

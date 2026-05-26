@@ -1,25 +1,26 @@
 # Community 602
 
-> 4 nodes
+> 5 nodes
 
 ## Key Concepts
 
-- **Rotacija ključa za šifriranje EMŠO** (4 connections) — `README_SL.md`
-- **code:bash (bash scripts/rotate_emso_key.sh <STAR_KLJUC> <NOV_KLJUC>)** (1 connections) — `README_SL.md`
-- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README_SL.md`
-- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README_SL.md`
+- **015_seed_evolution_instance_name.py** (2 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **Seed the evolution_instance_name settings row with default value belpro.** (1 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
+- **Remove the evolution_instance_name settings row.** (1 connections) — `api/db/migrations/versions/015_seed_evolution_instance_name.py`
 
 ## Relationships
 
-- [[Code: Clear State Confirm]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README_SL.md`
+- `api/db/migrations/versions/015_seed_evolution_instance_name.py`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

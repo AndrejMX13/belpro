@@ -4,26 +4,32 @@
 
 ## Key Concepts
 
-- **Django ORM → Async SQLAlchemy** (4 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Query Patterns: Django ORM vs SQLAlchemy** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django ORM Models** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **SQLAlchemy 2.0 Async Models** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django models)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# SQLAlchemy 2.0 models)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django ORM queries)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# SQLAlchemy 2.0 async queries)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Ops Sidecar & Error Logging Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Task 8: App log page** (4 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **2026-05-20-ops-sidecar-and-error-log.md** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **File Structure** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (curl -s -X POST http://localhost:8100/api/errors \)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add frontend/index.html)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Self-Review** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 541]] (1 shared connections)
+- [[Community 585]] (1 shared connections)
+- [[Community 398]] (1 shared connections)
+- [[POST /api/errors (write_error)]] (1 shared connections)
+- [[Community 399]] (1 shared connections)
+- [[Community 501]] (1 shared connections)
+- [[Community 502]] (1 shared connections)
+- [[Community 432]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

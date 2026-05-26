@@ -4,38 +4,38 @@
 
 ## Key Concepts
 
-- **Scheduled Tasks Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **scheduled_tasks.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block1 (Schedule Trigger → [Fetch Data] → [Process] → [Deliver] → [L)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **1. Schedule Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **2. Data Source** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **3. Processing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **4. Delivery** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **5. Logging** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block42 (Schedule (daily 8 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block43 (Schedule (nightly 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block44 (Schedule (every 5 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Database Operations Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Checklist for Database Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **database_operations.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block1 (Trigger → [Query/Read] → [Transform] → [Write/Update] → [Ver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block49 (Schedule → Postgres (SELECT new records) → Transform → MySQL)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block50 (Schedule → [Multiple DB reads] → Merge → Transform → Warehou)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block51 (Schedule → Postgres (SELECT all) → JSON → Google Drive (uplo)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Reliability** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 420]] (1 shared connections)
-- [[IF: Has Entry?]] (1 shared connections)
-- [[Community 486]] (1 shared connections)
-- [[Community 422]] (1 shared connections)
+- [[Community 536]] (1 shared connections)
+- [[restore.sh]] (1 shared connections)
+- [[switch_manager_phone.ps1]] (1 shared connections)
 - [[Community 387]] (1 shared connections)
-- [[Community 421]] (1 shared connections)
-- [[Community 386]] (1 shared connections)
-- [[NGOInfo]] (1 shared connections)
-- [[Community 485]] (1 shared connections)
+- [[Community 486]] (1 shared connections)
 - [[Community 487]] (1 shared connections)
+- [[Community 305]] (1 shared connections)
+- [[Community 488]] (1 shared connections)
+- [[Community 385]] (1 shared connections)
+- [[API.logo.upload()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

@@ -4,48 +4,37 @@
 
 ## Key Concepts
 
-- **connections** (66 connections) — `n8n/workflows/volunteer_entry.json`
-- **Filter & Route** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Shrani Stanje** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Build Media Body** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Manual: Poslji Obvestilo Upravljalcu** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **HTTP: GET Pending (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Build Msg (Auto)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **Code: Build Image Media Body** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **IF: Photo Limit Reached** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **HTTP: Brisi Star Vnos (Audio)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **ISS-015 · GDPR Consent Document — Design Spec** (8 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **API** (4 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Frontend** (4 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Data Model** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Settings** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Existing: `PATCH /settings`** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Registration** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **2026-05-20-gdpr-consent-design.md** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **code:sql (ALTER TABLE managers ADD COLUMN gdpr_additional_clauses TEXT)** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **code:python (photo_retention_days: int = 730)** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **PDF Content** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **New router: `api/routers/documents.py`** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **code:python (from routers.documents import router as documents_router)** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Navigation** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Dokumenti tab content** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **JS pattern** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Error Handling** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
 
 ## Relationships
 
-- [[002_add_emso_hash.py]] (17 shared connections)
-- [[Community 738]] (1 shared connections)
-- [[Community 742]] (1 shared connections)
-- [[Community 715]] (1 shared connections)
-- [[Community 739]] (1 shared connections)
-- [[Community 727]] (1 shared connections)
-- [[Community 720]] (1 shared connections)
-- [[Community 733]] (1 shared connections)
-- [[Community 737]] (1 shared connections)
-- [[Community 736]] (1 shared connections)
-- [[Community 730]] (1 shared connections)
-- [[Community 717]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 102 (100%)
+- EXTRACTED: 36 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

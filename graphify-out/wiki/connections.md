@@ -4,57 +4,45 @@
 
 ## Key Concepts
 
-- **LogEntry (ORM)** (22 connections) — `api/models/log_entry.py`
-- **log_entries.py** (17 connections) — `api/routers/log_entries.py`
-- **EntryStatus (Enum)** (15 connections) — `api/models/log_entry.py`
-- **LogEntryResponse (Schema)** (11 connections) — `api/schemas/log_entry.py`
-- **upload_photo_base64()** (10 connections) — `api/routers/log_entries.py`
-- **upload_photo()** (9 connections) — `api/routers/log_entries.py`
-- **create_log_entry()** (8 connections) — `api/routers/log_entries.py`
-- **LogEntryPhoto (ORM)** (8 connections) — `api/models/log_entry_photo.py`
-- **list_log_entries()** (7 connections) — `api/routers/log_entries.py`
-- **delete_log_entry()** (7 connections) — `api/routers/log_entries.py`
-- **approve_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **reject_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **notify_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **confirm_log_entry()** (6 connections) — `api/routers/log_entries.py`
-- **get_log_entry()** (5 connections) — `api/routers/log_entries.py`
-- **_extract_exif()** (4 connections) — `api/routers/log_entries.py`
-- **get_photo_file()** (4 connections) — `api/routers/log_entries.py`
-- **delete_photo()** (4 connections) — `api/routers/log_entries.py`
-- **PhotoResponse (Schema)** (4 connections) — `api/schemas/log_entry.py`
-- **LogEntryCreate (Schema)** (3 connections) — `api/schemas/log_entry.py`
-- **LogEntryBrief (Schema)** (3 connections) — `api/schemas/volunteer.py`
-- **get_photo_limit()** (2 connections) — `api/routers/log_entries.py`
-- **LogEntryListResponse (Schema)** (2 connections) — `api/schemas/log_entry.py`
-- **Log entries CRUD router — volunteer work diary entries.** (1 connections) — `api/routers/log_entries.py`
-- **Extract timestamp and GPS from image EXIF. All best-effort — never raises.** (1 connections) — `api/routers/log_entries.py`
+- **Documentation Systems & Infrastructure** (8 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Static Site Generators** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Migration Guides** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Docusaurus (Meta)** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Multi-Version Documentation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Search Implementation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Documentation Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Code Example Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Performance Optimization** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Analytics Integration** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **MkDocs (Python)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **VitePress (Vue)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Version Switcher** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Algolia DocSearch** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Local Search (Lunr.js)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Link Checking** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Build Optimization** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **CDN & Caching** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Google Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Custom Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **documentation-systems.md** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:bash (# Setup)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:javascript (module.exports = {)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:yaml (# mkdocs.yml)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **code:typescript (// .vitepress/config.ts)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
 - *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[connections]] (8 shared connections)
-- [[GET /log-entries]] (6 shared connections)
-- [[scripts/gen_diagrams_sl.py]] (4 shared connections)
-- [[Code Reviewer Skill]] (4 shared connections)
-- [[load_key()]] (4 shared connections)
-- [[BelPro System Specification]] (3 shared connections)
-- [[scripts/setup.sh]] (3 shared connections)
-- [[test_auth.py]] (2 shared connections)
-- [[renderDetail() — volunteer detail page]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/models/log_entry.py`
-- `api/models/log_entry_photo.py`
-- `api/routers/log_entries.py`
-- `api/schemas/log_entry.py`
-- `api/schemas/volunteer.py`
+- `.claude/skills/code-documenter/references/documentation-systems.md`
 
 ## Audit Trail
 
-- EXTRACTED: 162 (88%)
-- INFERRED: 23 (12%)
+- EXTRACTED: 76 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

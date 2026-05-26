@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **BelPro — Diagram zaporedja** (2 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
-- **belpro-arhitektura-zaporedje.md** (1 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
-- **code:mermaid (sequenceDiagram)** (1 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **✅ Do** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **❌ Don't** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/belpro-arhitektura-zaporedje.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

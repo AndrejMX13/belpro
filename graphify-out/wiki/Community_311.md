@@ -4,29 +4,29 @@
 
 ## Key Concepts
 
-- **Integration Testing** (6 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **API Testing (Supertest)** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Authenticated Requests** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Database Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **pytest API Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **integration-testing.md** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:typescript (import request from 'supertest';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:typescript (describe('Protected endpoints', () => {)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:typescript (import { db } from '../database';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Task 3: Admin router + integration tests** (11 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# ── Integration tests for GET/PATCH /api/admin/settings ───)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block15 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""Admin router — runtime-tunable settings management.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (app.include_router(admin_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (from routers.admin import router as admin_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (app.include_router(admin_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block22 (docker compose exec api pytest tests/test_app_settings.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/schemas/admin.py api/routers/admin.py api/main.p)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 539]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/integration-testing.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

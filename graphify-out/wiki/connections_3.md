@@ -1,48 +1,48 @@
 # connections
 
-> 44 nodes
+> 45 nodes
 
 ## Key Concepts
 
-- **test_admin.py** (22 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_ops_failure_does_not_break_save()** (3 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_report_defaults()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_report_fields()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_notifies_ops()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_backup_retention_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_backup_retention()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_report_hour_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_report_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_boundary_zero()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_boundary_23()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_rejects_24()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_report_hour_rejects_negative()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_ops_payload_includes_report_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_backup_hour_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_backup_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_settings_returns_photo_cleanup_hour_default()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_saves_photo_cleanup_hour()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_settings_ops_payload_includes_all_fields()** (2 connections) — `api/tests/test_admin.py`
-- **test_get_admin_settings_includes_evolution_instance_name()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_admin_settings_updates_evolution_instance_name()** (2 connections) — `api/tests/test_admin.py`
-- **test_patch_admin_settings_evolution_instance_name_rejects_empty()** (2 connections) — `api/tests/test_admin.py`
-- **Tests for report auto-delivery settings.** (1 connections) — `api/tests/test_admin.py`
-- **GET /api/admin/settings returns defaults for report_auto_day and report_auto_per** (1 connections) — `api/tests/test_admin.py`
-- **PATCH /api/admin/settings persists report_auto_day and report_auto_period.** (1 connections) — `api/tests/test_admin.py`
-- *... and 19 more nodes in this community*
+- **Task 4: ops_server.py + backup.sh** (14 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 6: README updates** (10 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Configurable Backup Retention Days Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 3: Tests** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 5: Frontend** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 1: AppSettings property + schemas** (4 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Task 2: Admin router** (4 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **2026-05-21-backup-retention-configurable.md** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Files Changed** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (git add api/services/app_settings.py api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (payload = {)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (git add api/routers/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (async def test_get_settings_returns_backup_retention_default)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:bash (git add api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (cur.execute()** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (retention_days = max(1, int(payload.get("backup_retention_da)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (write_crontab(day, period, backup_hour, cleanup_hour, retent)** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **code:python (retention_days = max(1, int(rows.get("backup_retention_days")** (1 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- *... and 20 more nodes in this community*
 
 ## Relationships
 
-- [[Community 346]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_admin.py`
+- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
 
 ## Audit Trail
 
-- EXTRACTED: 86 (99%)
-- INFERRED: 1 (1%)
+- EXTRACTED: 88 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

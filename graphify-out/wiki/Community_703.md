@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **Serena Project Configuration** (1 connections) — `.serena/project.yml`
-- **Serena Project Local Config Override** (1 connections) — `.serena/project.local.yml`
+- **rebuild_wiki.py** (1 connections) — `scripts/rebuild_wiki.py`
+- **Rebuild the graphify wiki from the current graph.json and community labels.** (1 connections) — `scripts/rebuild_wiki.py`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `.serena/project.local.yml`
-- `.serena/project.yml`
+- `scripts/rebuild_wiki.py`
 
 ## Audit Trail
 

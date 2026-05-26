@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Detailed Guides** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Node Discovery Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Validation Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Workflow Management** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **11. Using = Prefix Outside JSON** (4 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block22 (Email: ={{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block23 (Email: {{$json.email}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:javascript (// JSON mode (set property to expression))** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

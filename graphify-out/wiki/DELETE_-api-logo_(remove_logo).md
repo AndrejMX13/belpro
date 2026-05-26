@@ -1,32 +1,33 @@
 # DELETE /api/logo (remove_logo)
 
-> 11 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **Request Configuration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **GET Request** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **POST Request (JSON Body)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **POST Request (Form Data)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **PUT/PATCH Request (Update)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **DELETE Request** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Volunteer Contact Info — Inline Edit** (7 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Design** (4 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Backend changes** (2 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **2026-05-10-volunteer-contact-inline-edit-design.md** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Edit zones** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Interaction flow** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Error handling** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **code:python (first_name: str | None = None        # min_length=1 if provi)** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **Frontend changes** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
+- **What does not change** (1 connections) — `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `docs/superpowers/specs/2026-05-10-volunteer-contact-inline-edit-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

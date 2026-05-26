@@ -1,33 +1,37 @@
 # POST /api/logo (upload_logo)
 
-> 11 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **Terraform Infrastructure as Code** (6 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **AWS ECS Fargate Setup** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **AWS RDS PostgreSQL** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **Variables and Outputs** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **Common Commands** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **terraform-iac.md** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:hcl (terraform {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:hcl (resource "aws_db_instance" "postgres" {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:hcl (# variables.tf)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
-- **code:bash (terraform init)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **get_report_history()** (5 connections) — `api/routers/reports.py`
+- **report.py** (5 connections) — `api/schemas/report.py`
+- **VolunteerMonthlySummary** (4 connections) — `api/schemas/report.py`
+- **MonthlyReportSummary** (4 connections) — `api/schemas/report.py`
+- **ReportHistoryItem** (4 connections) — `api/schemas/report.py`
+- **ReportHistoryList** (4 connections) — `api/schemas/report.py`
+- **List persisted PDF reports, newest first. Optionally filter by year and/or month** (1 connections) — `api/routers/reports.py`
+- **Pydantic schemas for monthly report summaries.** (1 connections) — `api/schemas/report.py`
+- **Per-volunteer aggregated totals for a given month.** (1 connections) — `api/schemas/report.py`
+- **Aggregated monthly summary across all active volunteers.** (1 connections) — `api/schemas/report.py`
+- **One persisted report record in the history list.** (1 connections) — `api/schemas/report.py`
+- **List of persisted report records.** (1 connections) — `api/schemas/report.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_app_settings.py]] (4 shared connections)
+- [[Community 439]] (3 shared connections)
+- [[ops_server.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/terraform-iac.md`
+- `api/routers/reports.py`
+- `api/schemas/report.py`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 25 (78%)
+- INFERRED: 7 (22%)
 - AMBIGUOUS: 0 (0%)
 
 ---

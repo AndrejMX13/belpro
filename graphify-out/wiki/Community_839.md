@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **API.health.basic()** (0 connections) — `frontend/js/api.js`
+- **DELETE /api/logo (remove_logo)** (0 connections) — `api/routers/logo.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `frontend/js/api.js`
+- `api/routers/logo.py`
 
 ## Audit Trail
 

@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 5: Log Entry Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 5.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 5.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 5.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest tests/test_log_entries.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Rate Limiting** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 1: Wait Between Requests** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 2: Exponential Backoff** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 3: Respect Rate Limit Headers** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block26 (Split In Batches (1 item per batch))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - check rate limit)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[Community 389]] (1 shared connections)
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

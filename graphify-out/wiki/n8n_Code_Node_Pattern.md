@@ -1,37 +1,35 @@
 # n8n Code Node Pattern
 
-> 12 nodes
+> 13 nodes
 
 ## Key Concepts
 
-- **get_report_history()** (5 connections) — `api/routers/reports.py`
-- **report.py** (5 connections) — `api/schemas/report.py`
-- **VolunteerMonthlySummary** (4 connections) — `api/schemas/report.py`
-- **MonthlyReportSummary** (4 connections) — `api/schemas/report.py`
-- **ReportHistoryItem** (4 connections) — `api/schemas/report.py`
-- **ReportHistoryList** (4 connections) — `api/schemas/report.py`
-- **List persisted PDF reports, newest first. Optionally filter by year and/or month** (1 connections) — `api/routers/reports.py`
-- **Pydantic schemas for monthly report summaries.** (1 connections) — `api/schemas/report.py`
-- **Per-volunteer aggregated totals for a given month.** (1 connections) — `api/schemas/report.py`
-- **Aggregated monthly summary across all active volunteers.** (1 connections) — `api/schemas/report.py`
-- **One persisted report record in the history list.** (1 connections) — `api/schemas/report.py`
-- **List of persisted report records.** (1 connections) — `api/schemas/report.py`
+- **Design: n8n Workflow Import/Export Script** (10 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **File Layout** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Interface** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **2026-05-16-n8n-workflow-scripts-design.md** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **code:block1 (scripts/n8n_workflows.py    ← new executable script)** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **code:bash (./scripts/n8n_workflows.py import   # load n8n/workflows/*.j)** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Configuration** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Import Flow** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Export Flow** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Error Handling** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **README / SPEC Updates** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
 
 ## Relationships
 
-- [[renderDetail() — volunteer detail page]] (4 shared connections)
-- [[Community 434]] (3 shared connections)
-- [[test_auth.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `api/schemas/report.py`
+- `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (78%)
-- INFERRED: 7 (22%)
+- EXTRACTED: 24 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

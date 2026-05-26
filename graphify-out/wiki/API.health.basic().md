@@ -4,35 +4,30 @@
 
 ## Key Concepts
 
-- **renderList() — volunteers page** (5 connections) — `frontend/js/volunteers.js`
-- **GET /volunteers** (4 connections) — `api/routers/volunteers.py`
-- **loadVolunteers()** (3 connections) — `frontend/js/volunteers.js`
-- **loadHealthWidget()** (3 connections) — `frontend/js/errors.js`
-- **API.volunteers.list()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.activate()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.deactivate()** (2 connections) — `frontend/js/api.js`
-- **VolunteerListResponse shape (items[], total)** (2 connections) — `api/routers/volunteers.py`
-- **API.health.detailed()** (1 connections) — `frontend/js/api.js`
-- **PATCH /volunteers/{id}/activate** (1 connections) — `api/routers/volunteers.py`
-- **PATCH /volunteers/{id}/deactivate** (1 connections) — `api/routers/volunteers.py`
+- **Data Flow Patterns** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Linear Flow** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Branching Flow** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Parallel Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Loop Pattern** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Error Handler Pattern** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block1 (Trigger → Transform → Action → End)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block2 (Trigger → IF → [True Path])** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block3 (Trigger → [Branch 1] → Merge)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block4 (Trigger → Split in Batches → Process → Loop (until done))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block5 (Main Flow → [Success Path])** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[make_text_payload()]] (2 shared connections)
-- [[test_managers.py]] (1 shared connections)
-- [[Community 358]] (1 shared connections)
+- [[Reporting period: 'current' (this month) or 'previous' (last month).]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/api.js`
-- `frontend/js/errors.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (96%)
-- INFERRED: 1 (4%)
+- EXTRACTED: 21 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

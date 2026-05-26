@@ -4,33 +4,36 @@
 
 ## Key Concepts
 
-- **frontend/index.html Manager Dashboard SPA** (9 connections) — `frontend/index.html`
-- **GDPR Consent Document Design ISS-015** (4 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- **api/services/consent_pdf.py Consent PDF Renderer** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- **api/routers/documents.py GET /documents/consent-pdf** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- **Dashboard Nav Dokumenti Documents Tab** (2 connections) — `frontend/index.html`
-- **Dashboard Nav Administracija Admin Tab** (2 connections) — `frontend/index.html`
-- **Dashboard Nav Prostovoljci Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Dnevniki Approvals Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Analitika Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Porocila Reports Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Nastavitve Settings Tab** (1 connections) — `frontend/index.html`
-- **Dashboard Nav Dnevnik napak Error Log Tab** (1 connections) — `frontend/index.html`
+- **auth.py** (7 connections) — `api/routers/auth.py`
+- **login()** (7 connections) — `api/routers/auth.py`
+- **LoginResponse** (5 connections) — `api/schemas/auth.py`
+- **logout()** (4 connections) — `api/routers/auth.py`
+- **auth.py** (4 connections) — `api/schemas/auth.py`
+- **api/routers/auth.py Login and Logout Endpoints** (4 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **belpro_session httpOnly Cookie** (2 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Auth endpoints — login sets an httpOnly session cookie, logout clears it.** (1 connections) — `api/routers/auth.py`
+- **Verify manager password and set an httpOnly session cookie.** (1 connections) — `api/routers/auth.py`
+- **Clear the session cookie.** (1 connections) — `api/routers/auth.py`
+- **Schemas for the auth endpoints.** (1 connections) — `api/schemas/auth.py`
+- **Response for login and logout endpoints.** (1 connections) — `api/schemas/auth.py`
 
 ## Relationships
 
-- [[n8n MCP Workflow Management Guide]] (2 shared connections)
-- [[Community 321]] (1 shared connections)
+- [[Community 325]] (3 shared connections)
+- [[Community 514]] (2 shared connections)
+- [[test_app_settings.py]] (2 shared connections)
+- [[Code: Preveri Slike Stanje]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
-- `frontend/index.html`
+- `api/routers/auth.py`
+- `api/schemas/auth.py`
+- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 27 (71%)
+- INFERRED: 11 (29%)
 - AMBIGUOUS: 0 (0%)
 
 ---

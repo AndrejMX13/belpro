@@ -4,29 +4,29 @@
 
 ## Key Concepts
 
-- **Pattern 3: $input.item - Current Item (Each Item Mode)** (6 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 1: Add Processing Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 2: Per-Item Validation** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 3: Item-Specific API Call** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 4: Conditional Processing** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// In "Run Once for Each Item" mode)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **graphify semantic rebuild** (6 connections) — `docs/graphify-semantic-rebuild.md`
+- **What to run** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **After the rebuild — step 1: generate community labels from graph data** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **After the rebuild — step 2: regenerate graph.html** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **Commit format** (2 connections) — `docs/graphify-semantic-rebuild.md`
+- **graphify-semantic-rebuild.md** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **Problem** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:block1 (/graphify .)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **code:block4 (chore: full graphify semantic rebuild — graphify update)** (1 connections) — `docs/graphify-semantic-rebuild.md`
 
 ## Relationships
 
-- [[Community 410]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `docs/graphify-semantic-rebuild.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

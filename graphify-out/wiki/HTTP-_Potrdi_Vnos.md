@@ -4,44 +4,33 @@
 
 ## Key Concepts
 
-- **AI Agent Workflow Pattern** (19 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Agent Types** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **ai_agent_workflow.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block1 (Trigger → AI Agent (Model + Tools + Memory) → [Process Respo)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Core AI Connection Types** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Security: Treat Tool Output as Untrusted Input** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Conversational Agent** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. OpenAI Functions Agent** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. ReAct Agent** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block54 (Webhook → AI Agent (GPT-4 + Memory) → Webhook Response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block55 (Setup: Files → Embed → Vector Store)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block56 (Webhook → AI Agent (GPT-4 + Postgres Tool) → Format → Respon)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Common Error Types** (7 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **6. patchNodeField Errors** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. missing_required** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. invalid_value** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. type_mismatch** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **4. invalid_expression** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **5. invalid_reference** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Error)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Error)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Error)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Error)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Error)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:block10 (patchNodeField: find string not found in field "parameters.j)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:block11 (patchNodeField: find string matches 3 times in field "parame)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:block12 (patchNodeField: invalid or unsafe regex pattern)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 382]] (1 shared connections)
-- [[list_pending_entries.sh]] (1 shared connections)
-- [[Ima Vnos?]] (1 shared connections)
-- [[Community 478]] (1 shared connections)
-- [[Community 480]] (1 shared connections)
-- [[Community 479]] (1 shared connections)
-- [[Community 481]] (1 shared connections)
-- [[Community 299]] (1 shared connections)
-- [[Community 300]] (1 shared connections)
-- [[Community 338]] (1 shared connections)
-- [[send_email()]] (1 shared connections)
-- [[Community 525]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 3: Settings and schema update** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# ── Data retention ────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block24 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block25 (git add api/core/settings.py api/schemas/manager.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Checklist for AI Agent Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

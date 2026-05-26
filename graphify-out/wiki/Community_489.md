@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 3: Manager Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 3.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 3.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 3.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# api/tests/test_managers.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest tests/test_managers.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/tests/test_managers.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Response Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Extract Nested Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Flatten Arrays** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Combine Multiple API Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - flatten nested array)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block41 (HTTP Request 1 (users))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[Community 389]] (1 shared connections)
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

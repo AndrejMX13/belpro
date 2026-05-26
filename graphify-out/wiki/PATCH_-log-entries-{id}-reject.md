@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (9 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **1. ❌ Wrong: Unbounded queries** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Use LIMIT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **2. ❌ Wrong: String concatenation in queries** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Parameterized queries** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **3. ❌ Wrong: No transaction for multi-step operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Use transaction** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **4. ❌ Wrong: Processing all items at once** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **✅ Correct: Batch processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT * FROM large_table  -- Could return millions)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT * FROM large_table)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (query: "SELECT * FROM users WHERE id = '{{$json.id}}'")** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (query: "SELECT * FROM users WHERE id = $1",)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block45 (INSERT into orders)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block46 (BEGIN)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block47 (SELECT 1000000 records → Process all → OOM error)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block48 (SELECT records → Split In Batches (1000) → Process → Loop)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **n8n_manage_credentials (CREDENTIAL MANAGEMENT)** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **List Credentials** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Get Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Discover Schema** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Create Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Update Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Delete Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Typical Workflow: Set Up Credentials for a New Integration** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **6 Actions** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_manage_credentials({action: "list"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_manage_credentials({action: "get", id: "123"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_manage_credentials({action: "delete", id: "123"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (// 1. Discover what fields are needed)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Security Notes** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[API.managers.setup()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

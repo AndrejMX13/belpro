@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **[0.9.4] — 2026-05-10** (3 connections) — `CHANGELOG.md`
+- **[0.11.1-beta.0] — 2026-05-22** (3 connections) — `CHANGELOG.md`
 - **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[Manager session cookie lifetime in hours.]] (1 shared connections)
 
 ## Source Files
 

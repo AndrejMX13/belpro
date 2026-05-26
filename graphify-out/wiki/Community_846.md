@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **activate_volunteer** (0 connections) — `api/routers/volunteers.py`
+- **LoginResponse (Schema)** (0 connections) — `api/schemas/auth.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `api/schemas/auth.py`
 
 ## Audit Trail
 

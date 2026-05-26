@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **005_report_prefs.py** (2 connections) — `api/db/migrations/versions/005_report_prefs.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/005_report_prefs.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/005_report_prefs.py`
-- **Add report preference columns to managers and volunteers.** (1 connections) — `api/db/migrations/versions/005_report_prefs.py`
-- **Drop report preference columns from managers and volunteers.** (1 connections) — `api/db/migrations/versions/005_report_prefs.py`
+- **001_initial_schema.py** (2 connections) — `api/db/migrations/versions/001_initial_schema.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/001_initial_schema.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/001_initial_schema.py`
+- **Create the full Belpro schema from scratch (idempotent — safe to re-run).** (1 connections) — `api/db/migrations/versions/001_initial_schema.py`
+- **Drop all Belpro tables and the entry_status enum.** (1 connections) — `api/db/migrations/versions/001_initial_schema.py`
 
 ## Relationships
 
@@ -16,7 +16,7 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/005_report_prefs.py`
+- `api/db/migrations/versions/001_initial_schema.py`
 
 ## Audit Trail
 

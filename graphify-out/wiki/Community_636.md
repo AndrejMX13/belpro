@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **config.py** (2 connections) — `api/routers/config.py`
-- **get_evolution_instance()** (2 connections) — `api/routers/config.py`
-- **Config router — public read-only settings for n8n workflow consumption.** (1 connections) — `api/routers/config.py`
-- **Return the Evolution API instance name. No auth required. Used by n8n workflows.** (1 connections) — `api/routers/config.py`
+- **Task 6: Frontend — work_date in Entry Edit Form** (4 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (${editable ? `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (if (editable) {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 310]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/config.py`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 
-- EXTRACTED: 6 (100%)
+- EXTRACTED: 7 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

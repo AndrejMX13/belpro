@@ -4,44 +4,41 @@
 
 ## Key Concepts
 
-- **render_consent_pdf()** (11 connections) — `api/services/consent_pdf.py`
-- **test_documents.py** (8 connections) — `api/tests/test_documents.py`
-- **consent_pdf.py** (7 connections) — `api/services/consent_pdf.py`
-- **test_render_consent_pdf_returns_bytes()** (3 connections) — `api/tests/test_documents.py`
-- **test_render_consent_pdf_with_additional_clauses()** (3 connections) — `api/tests/test_documents.py`
-- **test_render_consent_pdf_empty_clauses_treated_as_none()** (3 connections) — `api/tests/test_documents.py`
-- **_esc()** (2 connections) — `api/services/consent_pdf.py`
-- **_now_str()** (2 connections) — `api/services/consent_pdf.py`
-- **test_consent_pdf_returns_pdf()** (2 connections) — `api/tests/test_documents.py`
-- **test_consent_pdf_requires_auth()** (2 connections) — `api/tests/test_documents.py`
-- **test_patch_manager_saves_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
-- **test_patch_manager_clears_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
-- **GDPR Article 13 consent notice PDF generation.** (1 connections) — `api/services/consent_pdf.py`
-- **Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage** (1 connections) — `api/services/consent_pdf.py`
-- **Tests for the /documents router and consent_pdf service.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf returns non-empty bytes for a minimal manager.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf produces bytes when additional clauses are set.** (1 connections) — `api/tests/test_documents.py`
-- **render_consent_pdf handles empty string clauses without error.** (1 connections) — `api/tests/test_documents.py`
-- **Authenticated request returns a PDF response.** (1 connections) — `api/tests/test_documents.py`
-- **Unauthenticated request is rejected.** (1 connections) — `api/tests/test_documents.py`
-- **PATCH /managers/me accepts and persists gdpr_additional_clauses.** (1 connections) — `api/tests/test_documents.py`
-- **PATCH /managers/me with empty string clears gdpr_additional_clauses.      Note:** (1 connections) — `api/tests/test_documents.py`
+- **Volunteer Contact Inline Edit — Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 3: Handle phone IntegrityError in update_volunteer** (6 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 4: Frontend — inline edit zones on the detail page** (5 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 1: Create test infrastructure and failing schema tests** (4 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **Task 2: Extend VolunteerUpdate schema** (4 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **2026-05-10-volunteer-contact-inline-edit.md** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose exec api mkdir -p tests)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python ("""Unit tests for VolunteerUpdate schema — no DB required."")** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteer_update_s)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (class VolunteerUpdate(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose exec api pytest tests/test_volunteer_update_s)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (git add api/schemas/volunteer.py api/tests/__init__.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (from sqlalchemy.exc import IntegrityError)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (for field, value in payload.model_dump(exclude_none=True).it)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:python (for field, value in payload.model_dump(exclude_none=True).it)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (git add api/routers/volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:javascript (<div class="detail-header">)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:javascript (<div class="detail-header">)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:javascript (function wireInlineEdit({ pencilId, inputsId, textId, saveId)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
 
 ## Relationships
 
-- [[GET /logo]] (3 shared connections)
-- [[n8n MCP Workflow Management Guide]] (2 shared connections)
-- [[006_whatsapp_and_smtp_config.py]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/services/consent_pdf.py`
-- `api/tests/test_documents.py`
+- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
 
 ## Audit Trail
 
-- EXTRACTED: 47 (82%)
-- INFERRED: 10 (18%)
+- EXTRACTED: 42 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

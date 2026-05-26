@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Best Practices** (7 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **1. Always Validate Input Data** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **2. Use Try-Catch for Error Handling** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **3. Prefer Array Methods Over Loops** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **4. Filter Early, Process Late** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **5. Use Descriptive Variable Names** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **6. Debug with console.log()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (try {)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ✅ GOOD: Functional approach)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ✅ GOOD: Filter first to reduce processing)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ✅ GOOD: Clear intent)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Debug statements appear in browser console)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Task 1: Rename shared PDF utilities** (13 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (def test_ngo_header_html_without_logo():)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block6 (docker compose exec api pytest tests/test_reports.py::test_n)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block13 (docker compose exec api pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block14 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block15 (git add api/services/report_pdf.py api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

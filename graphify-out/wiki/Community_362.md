@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Pattern Comparison: Python vs JavaScript** (5 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Data Access** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Dictionary/Object Access** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Array Operations** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Sorting** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# Python)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# Python - Dictionary key access)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# Python - List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# Python)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Task 7: Normalize phone in update_manager + write .env on manual save** (9 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@field_validator("ngo_whatsapp_phone", mode="before"))** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (if "ngo_whatsapp_phone" in payload.model_fields_set and mana)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/schemas/manager.py api/routers/managers.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 517]] (1 shared connections)
+- [[Community 451]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

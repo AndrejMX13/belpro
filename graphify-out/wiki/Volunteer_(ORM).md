@@ -4,64 +4,59 @@
 
 ## Key Concepts
 
-- **n8n MCP Workflow Management Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n Node Operation Patterns Reference** (8 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **n8n Workflow Patterns Skill README** (8 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **n8n Node Configuration Skill (SKILL.md)** (7 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **n8n Validation Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **PostgreSQL Pro Skill (SKILL.md)** (7 connections) — `.claude/skills/postgres-pro/SKILL.md`
-- **n8n Workflow Patterns Skill (SKILL.md)** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **n8n Validation Expert Skill (SKILL.md)** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **n8n Node Configuration Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **n8n_update_partial_workflow Tool** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n AI Connection Types (8 types)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n Node Configuration Skill README** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
-- **n8n Validation False Positives Guide** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **n8n Validation Expert Skill README** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
-- **n8n Webhook Processing Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **n8n HTTP API Integration Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **n8n Database Operations Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **n8n AI Agent Workflow Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **n8n Scheduled Tasks Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **patchNodeField Operation (Surgical String Edit)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n_validate_workflow Tool (by ID)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n Workflow Lifecycle (Create-Validate-Edit-Activate-Monitor)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **n8n HTTP Request Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **n8n Webhook Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **n8n Postgres Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **volunteer_entry.json** (34 connections) — `n8n/workflows/volunteer_entry.json`
+- **BelPro - Vnos Prostovoljcev (Volunteer Entry Workflow)** (15 connections) — `n8n/workflows/volunteer_entry.json`
+- **GET /api/managers/me (get_manager)** (9 connections) — `api/routers/managers.py`
+- **PATCH /api/log-entries/{id}/notify (notify_log_entry)** (8 connections) — `api/routers/log_entries.py`
+- **Shared LogEntry Data Structure (volunteer_id, work_date, hours, activity_description, location, status, raw_transcript)** (8 connections) — `api/routers/log_entries.py`
+- **GET /api/volunteers/{id} (get_volunteer)** (7 connections) — `api/routers/volunteers.py`
+- **POST /api/log-entries (create_log_entry)** (5 connections) — `api/routers/log_entries.py`
+- **DELETE /api/log-entries/{id} (delete_log_entry)** (5 connections) — `api/routers/log_entries.py`
+- **POST /api/log-entries/{id}/confirm (confirm_log_entry)** (5 connections) — `api/routers/log_entries.py`
+- **GET /api/volunteers (list_volunteers)** (4 connections) — `api/routers/volunteers.py`
+- **n8n: GET /api/volunteers?search_by=phone (Lookup Volunteer by Phone)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: POST /api/log-entries (Create Entry)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: GET /api/managers/me (Lookup Manager in Volunteer Workflow)** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **GET /api/log-entries/{id} (get_log_entry)** (3 connections) — `api/routers/log_entries.py`
+- **staticData** (2 connections) — `n8n/workflows/volunteer_entry.json`
+- **pinData** (2 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: POST /api/log-entries/{id}/confirm (Confirm Entry)** (2 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: DELETE /api/log-entries/{id} (Cancel/Delete Entry)** (2 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: DELETE /api/log-entries/{id} (Delete Old Entry on Edit)** (2 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: POST /api/log-entries (Create Edited Entry)** (2 connections) — `n8n/workflows/volunteer_entry.json`
+- **n8n: GET /api/volunteers/{id} (Next Entry Volunteer Detail)** (2 connections) — `n8n/workflows/manager_approval.json`
+- **n8n: GET /api/managers/me (Get Manager for Next Notification)** (2 connections) — `n8n/workflows/manager_approval.json`
+- **POST /api/log-entries/{id}/photos/base64 (upload_photo_base64)** (2 connections) — `api/routers/log_entries.py`
+- **Shared Volunteer Data Structure (phone, first_name, last_name, id)** (2 connections) — `api/routers/volunteers.py`
+- **Shared Manager Data Structure (phone, first_name, last_name)** (2 connections) — `api/routers/managers.py`
 - *... and 26 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[renderDetail() — volunteer detail page]] (9 shared connections)
+- [[errors.py]] (5 shared connections)
+- [[007_add_ngo_davcna.py]] (3 shared connections)
+- [[log_entries.py]] (2 shared connections)
+- [[API.reports.exportPdf()]] (1 shared connections)
+- [[PasswordChangeRequest (Schema)]] (1 shared connections)
+- [[PhotoBase64Request (Schema)]] (1 shared connections)
+- [[settings]] (1 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[Community 325]] (1 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- `.claude/skills/n8n-node-configuration/README.md`
-- `.claude/skills/n8n-node-configuration/SKILL.md`
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- `.claude/skills/n8n-validation-expert/README.md`
-- `.claude/skills/n8n-validation-expert/SKILL.md`
-- `.claude/skills/n8n-workflow-patterns/README.md`
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- `.claude/skills/postgres-pro/SKILL.md`
-- `.claude/skills/postgres-pro/references/extensions.md`
-- `.claude/skills/postgres-pro/references/jsonb.md`
-- `.claude/skills/postgres-pro/references/maintenance.md`
+- `api/routers/log_entries.py`
+- `api/routers/managers.py`
+- `api/routers/volunteers.py`
+- `n8n/workflows/manager_approval.json`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 120 (87%)
-- INFERRED: 18 (13%)
+- EXTRACTED: 149 (93%)
+- INFERRED: 11 (7%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,44 +1,46 @@
 # 009_rename_entry_date_to_work_date.py
 
-> 19 nodes
+> 20 nodes
 
 ## Key Concepts
 
-- **errors.py** (6 connections) — `api/routers/errors.py`
-- **error_log.py** (4 connections) — `api/schemas/error_log.py`
-- **_require_internal_key()** (3 connections) — `api/routers/errors.py`
-- **write_error()** (3 connections) — `api/routers/errors.py`
-- **unacknowledged_count()** (3 connections) — `api/routers/errors.py`
-- **ErrorLogCreate** (3 connections) — `api/schemas/error_log.py`
-- **ErrorLogResponse** (3 connections) — `api/schemas/error_log.py`
-- **UnacknowledgedCountResponse** (3 connections) — `api/schemas/error_log.py`
-- **list_errors()** (2 connections) — `api/routers/errors.py`
-- **acknowledge_error()** (2 connections) — `api/routers/errors.py`
-- **Error log router — write endpoint for internal services, read endpoints for mana** (1 connections) — `api/routers/errors.py`
-- **Validate X-Internal-Key header against API_SECRET_KEY.** (1 connections) — `api/routers/errors.py`
-- **Record an operational failure. Called by API exception handlers, n8n, and the op** (1 connections) — `api/routers/errors.py`
-- **Return count of unacknowledged errors. Used by nav badge.** (1 connections) — `api/routers/errors.py`
-- **List error log entries, newest first. Optionally filter to unacknowledged only.** (1 connections) — `api/routers/errors.py`
-- **Mark an error as acknowledged (read by manager).** (1 connections) — `api/routers/errors.py`
-- **Pydantic schemas for the error_log endpoint.** (1 connections) — `api/schemas/error_log.py`
-- **Payload sent by internal services (API, n8n, ops sidecar).** (1 connections) — `api/schemas/error_log.py`
-- **Single error log row returned to the dashboard.** (1 connections) — `api/schemas/error_log.py`
+- **logo.py** (9 connections) — `api/services/logo.py`
+- **logo.py** (5 connections) — `api/routers/logo.py`
+- **logo_src()** (5 connections) — `api/services/logo.py`
+- **get_logo()** (4 connections) — `api/routers/logo.py`
+- **upload_logo()** (4 connections) — `api/routers/logo.py`
+- **remove_logo()** (4 connections) — `api/routers/logo.py`
+- **logo_exists()** (4 connections) — `api/services/logo.py`
+- **save_logo()** (4 connections) — `api/services/logo.py`
+- **delete_logo()** (3 connections) — `api/services/logo.py`
+- **_open_image()** (3 connections) — `api/services/logo.py`
+- **Logo router — public GET + authenticated POST and DELETE.** (1 connections) — `api/routers/logo.py`
+- **Return the NGO logo as PNG, or 404 if none has been uploaded.** (1 connections) — `api/routers/logo.py`
+- **Upload or replace the NGO logo. Accepts JPEG, PNG, WebP, GIF, BMP, TIFF.** (1 connections) — `api/routers/logo.py`
+- **Delete the current NGO logo.** (1 connections) — `api/routers/logo.py`
+- **NGO logo file management.** (1 connections) — `api/services/logo.py`
+- **Return True if a logo file is present on disk.** (1 connections) — `api/services/logo.py`
+- **Remove the logo file if it exists. Silent if absent.** (1 connections) — `api/services/logo.py`
+- **Validate, normalize to PNG, and persist logo bytes.      Accepts raster formats** (1 connections) — `api/services/logo.py`
+- **Open image bytes with Pillow. Raises ValueError for unsupported or corrupt input** (1 connections) — `api/services/logo.py`
+- **Return a data URI for the NGO logo, or None if no logo is uploaded.** (1 connections) — `api/services/logo.py`
 
 ## Relationships
 
-- [[renderDetail() — volunteer detail page]] (3 shared connections)
-- [[volunteers.js]] (1 shared connections)
-- [[BelPro System Specification]] (1 shared connections)
+- [[load_key()]] (2 shared connections)
+- [[Community 439]] (2 shared connections)
+- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] (2 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `api/schemas/error_log.py`
+- `api/routers/logo.py`
+- `api/services/logo.py`
 
 ## Audit Trail
 
-- EXTRACTED: 37 (90%)
-- INFERRED: 4 (10%)
+- EXTRACTED: 40 (73%)
+- INFERRED: 15 (27%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_email_validator.md** (0 connections) — `.claude/memory/feedback_email_validator.md`
+- **feedback_belpro_name.md** (0 connections) — `.claude/memory/feedback_belpro_name.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_email_validator.md`
+- `.claude/memory/feedback_belpro_name.md`
 
 ## Audit Trail
 

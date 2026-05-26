@@ -1,32 +1,34 @@
 # Community 318
 
-> 10 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **Strani / Pogledi** (9 connections) — `SPEC_SL.md`
-- **5. Nadzorna plošča za vodje (spletni vmesnik)** (2 connections) — `SPEC_SL.md`
-- **5.1 Prostovoljci** (1 connections) — `SPEC_SL.md`
-- **5.2 Čakajoče odobritve** (1 connections) — `SPEC_SL.md`
-- **5.3 Dnevnik / Zgodovina** (1 connections) — `SPEC_SL.md`
-- **5.4 Analitika** (1 connections) — `SPEC_SL.md`
-- **5.5 Poročila** (1 connections) — `SPEC_SL.md`
-- **5.6 Nastavitve** (1 connections) — `SPEC_SL.md`
-- **5.7 Administracija (sistemske nastavitve)** (1 connections) — `SPEC_SL.md`
-- **5.8 Dnevnik napak** (1 connections) — `SPEC_SL.md`
+- **conftest.py** (6 connections) — `tests/workflow/conftest.py`
+- **test_volunteer()** (5 connections) — `tests/workflow/conftest.py`
+- **_make_valid_emso()** (4 connections) — `tests/workflow/conftest.py`
+- **_auth_header()** (3 connections) — `tests/workflow/conftest.py`
+- **api_client()** (3 connections) — `tests/workflow/conftest.py`
+- **_manager_password()** (2 connections) — `tests/workflow/conftest.py`
+- **n8n_client()** (2 connections) — `tests/workflow/conftest.py`
+- **Generate a random 13-digit EMŠO that passes the Modulus 11 checksum.** (1 connections) — `tests/workflow/conftest.py`
+- **Session-scoped AsyncClient against FastAPI. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
+- **Session-scoped AsyncClient against n8n. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
+- **Creates a volunteer with a unique phone, yields the volunteer dict,     deletes** (1 connections) — `tests/workflow/conftest.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- [[load_key()]] (2 shared connections)
+- [[ops_server.py]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `tests/workflow/conftest.py`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (90%)
+- INFERRED: 3 (10%)
 - AMBIGUOUS: 0 (0%)
 
 ---

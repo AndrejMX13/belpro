@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 7: n8n — manager_approval workflow** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (grep -n "evolution-api.*belpro" n8n/workflows/manager_approv)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:json ("Fetch Config": {)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:json ("={{ 'http://evolution-api:8080/message/sendText/' + $('Fetc)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:json ("={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessa)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (git add n8n/workflows/manager_approval.json)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Task 2: Health Endpoint** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 2.2 — Run** (3 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 2.1 — Write test** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 2.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:python (# api/tests/test_health.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (cd api && pytest tests/test_health.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:block12 (PASSED tests/test_health.py::test_health_returns_ok)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add api/tests/test_health.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 398]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 

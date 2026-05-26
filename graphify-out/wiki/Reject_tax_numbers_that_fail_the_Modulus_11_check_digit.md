@@ -4,39 +4,39 @@
 
 ## Key Concepts
 
-- **main.py** (22 connections) — `api/main.py`
-- **health()** (3 connections) — `api/main.py`
-- **Belpro FastAPI application entry point.** (1 connections) — `api/main.py`
-- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
-- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
-- **routers/admin** (1 connections)
-- **routers/auth** (1 connections)
-- **routers/analytics** (1 connections)
-- **routers/log_entries** (1 connections)
-- **routers/volunteers** (1 connections)
-- **routers/reports** (1 connections)
-- **models/log_entry** (1 connections)
-- **models/manager** (1 connections)
-- **models/monthly_report** (1 connections)
+- **managers.py** (6 connections) — `api/routers/managers.py`
+- **create_manager()** (4 connections) — `api/routers/managers.py`
+- **get_config_info()** (4 connections) — `api/routers/managers.py`
+- **ConfigInfoResponse** (4 connections) — `api/schemas/manager.py`
+- **get_manager()** (3 connections) — `api/routers/managers.py`
+- **update_manager()** (3 connections) — `api/routers/managers.py`
+- **change_password()** (2 connections) — `api/routers/managers.py`
+- **Managers router — single-manager setup and profile.** (1 connections) — `api/routers/managers.py`
+- **Return the single manager profile, or 404 if setup has not been completed.** (1 connections) — `api/routers/managers.py`
+- **Seed the manager profile (first-time setup). Returns 409 if already configured.** (1 connections) — `api/routers/managers.py`
+- **Update manager and/or NGO fields.  Only provided (non-None) fields are written.** (1 connections) — `api/routers/managers.py`
+- **Return config status for the settings UI; auto-syncs WhatsApp phone if connected** (1 connections) — `api/routers/managers.py`
+- **Change the manager password.  Verifies the current password before updating.** (1 connections) — `api/routers/managers.py`
+- **Response schema for GET /managers/me/config-info.** (1 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
-- [[005_report_prefs.py]] (4 shared connections)
-- [[GET /api/log-entries (list_log_entries)]] (2 shared connections)
-- [[volunteers.js]] (1 shared connections)
-- [[merge_ast_semantic.py]] (1 shared connections)
-- [[loadAppLog()]] (1 shared connections)
-- [[008_add_manager_notified_at.py]] (1 shared connections)
-- [[API.logo.delete()]] (1 shared connections)
+- [[load_key()]] (2 shared connections)
+- [[Volunteer (ORM)]] (1 shared connections)
+- [[VolunteerUpdate]] (1 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
+- [[test_app_settings.py]] (1 shared connections)
+- [[GET /api/logo (get_logo)]] (1 shared connections)
 
 ## Source Files
 
-- `api/main.py`
+- `api/routers/managers.py`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 
-- EXTRACTED: 37 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (79%)
+- INFERRED: 7 (21%)
 - AMBIGUOUS: 0 (0%)
 
 ---

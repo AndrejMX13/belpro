@@ -1,45 +1,41 @@
 # Normalise phone to bare E.164 digits, pass through None.
 
-> 13 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **Changelog** (21 connections) — `CHANGELOG.md`
-- **[0.10.0-beta.2] — 2026-05-16** (3 connections) — `CHANGELOG.md`
-- **[0.8.2] — 2026-05-08** (2 connections) — `CHANGELOG.md`
-- **[0.6.1] — 2026-05-04** (2 connections) — `CHANGELOG.md`
-- **[0.4.0 and earlier] — 2026-05-01 to 2026-05-03** (2 connections) — `CHANGELOG.md`
-- **Changelog maintenance** (2 connections) — `CHANGELOG.md`
-- **CHANGELOG.md** (1 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
-- **Removed** (1 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **code:bash (# Get all commits since the last version tag)** (1 connections) — `CHANGELOG.md`
+- **main.py** (22 connections) — `api/main.py`
+- **health()** (3 connections) — `api/main.py`
+- **Belpro FastAPI application entry point.** (1 connections) — `api/main.py`
+- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
+- **Health check — returns ok when the service is up.** (1 connections) — `api/main.py`
+- **routers/admin** (1 connections)
+- **routers/auth** (1 connections)
+- **routers/analytics** (1 connections)
+- **routers/log_entries** (1 connections)
+- **routers/volunteers** (1 connections)
+- **routers/reports** (1 connections)
+- **models/log_entry** (1 connections)
+- **models/manager** (1 connections)
+- **models/monthly_report** (1 connections)
 
 ## Relationships
 
-- [[Community 643]] (1 shared connections)
-- [[Community 613]] (1 shared connections)
-- [[Community 642]] (1 shared connections)
-- [[Community 606]] (1 shared connections)
-- [[Community 605]] (1 shared connections)
-- [[Community 647]] (1 shared connections)
-- [[Community 645]] (1 shared connections)
-- [[Community 610]] (1 shared connections)
-- [[Community 646]] (1 shared connections)
-- [[Community 609]] (1 shared connections)
-- [[Community 608]] (1 shared connections)
-- [[Community 607]] (1 shared connections)
+- [[007_add_ngo_davcna.py]] (4 shared connections)
+- [[BelPro README (English)]] (2 shared connections)
+- [[volunteers.js]] (1 shared connections)
+- [[settings]] (1 shared connections)
+- [[Performance Testing Reference (k6)]] (1 shared connections)
+- [[Serena Project Configuration]] (1 shared connections)
+- [[Node.js Essentials Reference]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `api/main.py`
 
 ## Audit Trail
 
-- EXTRACTED: 39 (100%)
+- EXTRACTED: 37 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

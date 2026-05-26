@@ -4,35 +4,36 @@
 
 ## Key Concepts
 
-- **Six Tests** (7 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Test Coverage Gaps — Design Spec** (6 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Infrastructure** (3 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **`_PHOTOS_ROOT` monkeypatching** (2 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **2026-05-24-test-coverage-gaps-design.md** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Overview** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Migration test database** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **code:python (import api.routers.log_entries as le_mod)** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **1. Migration roundtrip — `api/tests/test_migrations.py` (new file)** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **2. EMŠO encryption round-trip — `api/tests/test_volunteers.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **3. Status-flow enforcement — `api/tests/test_log_entries.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **4. Analytics edge cases — `api/tests/test_analytics.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **5. Base64 photo limit + monkeypatch — `api/tests/test_app_settings.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **6. Manager password change — `api/tests/test_managers.py`** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **File Summary** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- **analytics_summary()** (7 connections) — `api/routers/analytics.py`
+- **analytics.py** (6 connections) — `api/schemas/analytics.py`
+- **analytics.py** (4 connections) — `api/routers/analytics.py`
+- **HoursPerVolunteer** (4 connections) — `api/schemas/analytics.py`
+- **HoursPerLocation** (4 connections) — `api/schemas/analytics.py`
+- **MonthlyTrendPoint** (4 connections) — `api/schemas/analytics.py`
+- **AnalyticsSummary** (4 connections) — `api/schemas/analytics.py`
+- **_preceding_months()** (3 connections) — `api/routers/analytics.py`
+- **Analytics router — aggregated summary for the dashboard analytics page.** (1 connections) — `api/routers/analytics.py`
+- **Return aggregated analytics data scoped to the given month.      Defaults to t** (1 connections) — `api/routers/analytics.py`
+- **Return `count` consecutive (year, month) tuples ending at (year, month).** (1 connections) — `api/routers/analytics.py`
+- **Pydantic schemas for the analytics summary endpoint.** (1 connections) — `api/schemas/analytics.py`
+- **Per-volunteer approved hours for a given month.** (1 connections) — `api/schemas/analytics.py`
+- **Approved hours grouped by location for a given month.** (1 connections) — `api/schemas/analytics.py`
+- **Total approved hours for a single calendar month.** (1 connections) — `api/schemas/analytics.py`
+- **Aggregated analytics data for a given month.** (1 connections) — `api/schemas/analytics.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_app_settings.py]] (4 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-24-test-coverage-gaps-design.md`
+- `api/routers/analytics.py`
+- `api/schemas/analytics.py`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 34 (77%)
+- INFERRED: 10 (23%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,12 +1,13 @@
 # Community 639
 
-> 3 nodes
+> 4 nodes
 
 ## Key Concepts
 
-- **API.managers.setup()** (2 connections) — `frontend/js/api.js`
-- **submitManagerSetup()** (1 connections) — `frontend/js/volunteers.js`
-- **POST /managers (setup)** (1 connections) — `api/routers/managers.py`
+- **list_pending_entries.py** (3 connections) — `scripts/list_pending_entries.py`
+- **_get()** (3 connections) — `scripts/list_pending_entries.py`
+- **_auth()** (2 connections) — `scripts/list_pending_entries.py`
+- **main()** (2 connections) — `scripts/list_pending_entries.py`
 
 ## Relationships
 
@@ -14,13 +15,11 @@
 
 ## Source Files
 
-- `api/routers/managers.py`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `scripts/list_pending_entries.py`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 10 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

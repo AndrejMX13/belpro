@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Handling Conditional Requirements** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Example: HTTP Request Body** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Example: IF Node singleValue** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:block33 (body is required when:)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Option 1: Read validation error)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:block35 (singleValue should be true when:)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Common Patterns from Telemetry** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Pattern 1: Edit → Validate (7,841 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Pattern 2: Validate → Fix (7,266 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Pattern 3: Iterative Building (31,464 occurrences)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_update_partial_workflow({...}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_validate_workflow({id}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (update → update → update → ... (56s avg between edits))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[API.managers.setup()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 

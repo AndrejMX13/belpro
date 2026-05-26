@@ -4,40 +4,44 @@
 
 ## Key Concepts
 
-- **test_errors.py** (11 connections) — `api/tests/test_errors.py`
-- **_internal_header()** (7 connections) — `api/tests/test_errors.py`
-- **test_post_error_valid_internal_key()** (3 connections) — `api/tests/test_errors.py`
-- **test_get_errors_returns_list()** (3 connections) — `api/tests/test_errors.py`
-- **test_get_errors_filter_unacknowledged()** (3 connections) — `api/tests/test_errors.py`
-- **test_acknowledge_error()** (3 connections) — `api/tests/test_errors.py`
-- **test_unacknowledged_count()** (3 connections) — `api/tests/test_errors.py`
-- **test_post_error_missing_key_rejected()** (2 connections) — `api/tests/test_errors.py`
-- **test_post_error_wrong_key_rejected()** (2 connections) — `api/tests/test_errors.py`
-- **test_get_errors_requires_manager_auth()** (2 connections) — `api/tests/test_errors.py`
-- **test_acknowledge_nonexistent_returns_404()** (2 connections) — `api/tests/test_errors.py`
-- **Tests for POST /api/errors, GET /api/errors, PATCH /api/errors/{id}/acknowledge.** (1 connections) — `api/tests/test_errors.py`
-- **POST with valid internal key creates a record.** (1 connections) — `api/tests/test_errors.py`
-- **POST without internal key is rejected.** (1 connections) — `api/tests/test_errors.py`
-- **POST with wrong internal key is rejected.** (1 connections) — `api/tests/test_errors.py`
-- **GET /api/errors without manager auth is rejected.** (1 connections) — `api/tests/test_errors.py`
-- **GET returns all error log entries, newest first.** (1 connections) — `api/tests/test_errors.py`
-- **GET ?unacknowledged=true filters to unacknowledged only.** (1 connections) — `api/tests/test_errors.py`
-- **PATCH /{id}/acknowledge sets acknowledged to True.** (1 connections) — `api/tests/test_errors.py`
-- **PATCH /{id}/acknowledge on unknown id returns 404.** (1 connections) — `api/tests/test_errors.py`
-- **GET /api/errors/unacknowledged-count returns integer count.** (1 connections) — `api/tests/test_errors.py`
+- **upgrade.sh** (12 connections) — `scripts/upgrade.sh`
+- **rotate_emso_key.sh** (11 connections) — `scripts/rotate_emso_key.sh`
+- **backup.sh** (8 connections) — `scripts/backup.sh`
+- **.env** (5 connections)
+- **EMSO encrypted field** (4 connections)
+- **docker-compose.yml** (3 connections)
+- **api/scripts/rotate_emso_key.py** (3 connections)
+- **Alembic migrations** (2 connections)
+- **/app/photos (volume)** (2 connections)
+- **info()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **ok()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **warn()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **heading()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **die()** (1 connections) — `scripts/rotate_emso_key.sh`
+- **info()** (1 connections) — `scripts/upgrade.sh`
+- **ok()** (1 connections) — `scripts/upgrade.sh`
+- **warn()** (1 connections) — `scripts/upgrade.sh`
+- **heading()** (1 connections) — `scripts/upgrade.sh`
+- **die()** (1 connections) — `scripts/upgrade.sh`
+- **get_env()** (1 connections) — `scripts/upgrade.sh`
+- **backups/** (1 connections)
 
 ## Relationships
 
-- [[volunteers.js]] (1 shared connections)
+- [[007_add_ngo_davcna.py]] (10 shared connections)
+- [[settings]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/test_errors.py`
+- `scripts/backup.sh`
+- `scripts/rotate_emso_key.sh`
+- `scripts/upgrade.sh`
 
 ## Audit Trail
 
-- EXTRACTED: 50 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 62 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

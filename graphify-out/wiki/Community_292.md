@@ -4,29 +4,34 @@
 
 ## Key Concepts
 
-- **Module 2: datetime - Date and Time** (6 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Current Date and Time** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Parse Date String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Date Calculations** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Compare Dates** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Format Dates** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime, timedelta)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **n8n Code Python Skill** (16 connections) — `.claude/skills/n8n-code-python/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Skill Activation** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Success Metrics** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Best Practices** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **When Python is the Right Choice** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Learning Path** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Support** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Version** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Credits** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[Community 659]] (1 shared connections)
+- [[Community 528]] (1 shared connections)
+- [[Community 529]] (1 shared connections)
+- [[Community 291]] (1 shared connections)
+- [[Community 370]] (1 shared connections)
+- [[Community 567]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

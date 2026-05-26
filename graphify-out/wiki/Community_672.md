@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **4. Spaces in Node Names** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block8 ({{$node.HTTP Request.json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block9 ({{$node["HTTP Request"].json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **12. Expressions in Webhook Path** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block25 (path: "{{$json.user_id}}/webhook")** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block26 (path: "my-webhook"              // Static paths only)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 631]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 

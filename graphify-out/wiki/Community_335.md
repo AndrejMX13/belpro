@@ -4,28 +4,36 @@
 
 ## Key Concepts
 
-- **Troubleshooting Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Problem 1: "Field X is required but not visible"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Problem 2: "Field disappears when I change operation"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Problem 3: "Validation passes but field doesn't save"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Check field dependencies using search_properties)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Working configuration)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Check requirements for new operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Configure)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Correct approach - check property dependencies)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **n8n Expression Examples** (13 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Example 9: Code Node (Direct Access)** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Example 2: HTTP API to Database** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **EXAMPLES.md** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:sql (INSERT INTO users (user_id, name, email, role, synced_at))** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (// ✅ Direct access (no {{ }}))** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 375]] (1 shared connections)
+- [[Community 574]] (1 shared connections)
+- [[Community 337]] (1 shared connections)
+- [[create_extra_dbs.sh]] (1 shared connections)
+- [[Community 336]] (1 shared connections)
+- [[Community 419]] (1 shared connections)
+- [[PATCH /api/managers/me (update_manager)]] (1 shared connections)
+- [[Community 418]] (1 shared connections)
+- [[Community 573]] (1 shared connections)
+- [[Community 338]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
+- EXTRACTED: 27 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

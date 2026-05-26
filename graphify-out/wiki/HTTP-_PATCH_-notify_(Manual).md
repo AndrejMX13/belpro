@@ -4,32 +4,34 @@
 
 ## Key Concepts
 
-- **Auto-Sanitization System** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What It Fixes** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What It CANNOT Fix** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Binary Operators (Two Values)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Unary Operators (One Value)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **What It Does** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. IF/Switch Metadata** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Broken Connections** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Branch Count Mismatches** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. Paradoxical Corrupt States** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README.md`
+- **Manager dashboard** (2 connections) — `README.md`
+- **Project layout** (2 connections) — `README.md`
+- **README.md** (1 connections) — `README.md`
+- **How it works** (1 connections) — `README.md`
+- **Stack** (1 connections) — `README.md`
+- **Requirements** (1 connections) — `README.md`
+- **Access points** (1 connections) — `README.md`
+- **Security notes** (1 connections) — `README.md`
+- **code:block22 (belpro/)** (1 connections) — `README.md`
+- **AI-assisted development** (1 connections) — `README.md`
+- **Roadmap** (1 connections) — `README.md`
+- **Out of scope (v1)** (1 connections) — `README.md`
+- **Sample PDF reports** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[POST /api/volunteers/check-emso (check_emso)]] (1 shared connections)
+- [[Community 352]] (1 shared connections)
+- [[Code: Pripravi Popravek]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

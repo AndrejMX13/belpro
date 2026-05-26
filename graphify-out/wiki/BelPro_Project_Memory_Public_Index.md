@@ -1,35 +1,35 @@
 # BelPro Project Memory Public Index
 
-> 41 nodes
+> 42 nodes
 
 ## Key Concepts
 
-- **Release Automation** (13 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Artifact Management** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Feature Flags** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Multi-Platform CI/CD** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Build Optimization** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Build Optimization** (3 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Container Registry Lifecycle** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Artifact Promotion** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **LaunchDarkly Integration** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Flagger Progressive Delivery** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **GitLab CI** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Jenkins Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Multi-stage Docker Build** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Parallel Testing** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Release Orchestration** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Dependency Management** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Renovate Auto-Update** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Build Caching Strategy** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Parallel CI Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Multi-Service Release Orchestration** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Advanced Artifact Management** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Zero-Downtime Database Migrations** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **Release Metrics Dashboard** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **release-automation.md** (1 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- **code:json ({)** (1 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
-- *... and 16 more nodes in this community*
+- **Report Delivery Error Visibility Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 3b — Fix manager WhatsApp exception handling** (6 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 1b — Add the logger (no logic change yet)** (5 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 2b — Fix manager email exception handling** (4 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 4 — Fix stale field names in the n8n monthly reports Code node** (4 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 4a — Update the Code node JavaScript** (4 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 1 — Add logger to reports.py and write failing tests for delivery error logging** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 1a — Add the failing tests** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 2 — Implement delivery error logging for email failures (volunteer + manager)** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 2a — Fix volunteer email exception handling** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Task 3 — Implement delivery error logging for WhatsApp failures (volunteer + manager)** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 3a — Fix volunteer WhatsApp exception handling** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Background the implementer needs** (2 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 4b — Reimport the workflow into n8n** (2 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **Step 4c — Commit** (2 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **2026-05-21-report-delivery-error-visibility.md** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (class ErrorLog(Base):)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (# ── report delivery error logging ─────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:block3 (docker compose exec api pytest tests/test_reports.py::test_s)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (logger = logging.getLogger(__name__))** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (from models.error_log import ErrorLog)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:block7 (docker compose exec api pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **code:python (if will_email:)** (1 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/release-automation.md`
+- `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
 
 ## Audit Trail
 
-- EXTRACTED: 80 (100%)
+- EXTRACTED: 82 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

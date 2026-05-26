@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **API.logo.delete()** (1 connections) — `frontend/js/api.js`
-- **DELETE /logo** (1 connections) — `api/routers/logo.py`
+- **Work Date Rename and Dashboard Entry Plan** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **work_date Column (renamed from entry_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
-- `frontend/js/api.js`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 

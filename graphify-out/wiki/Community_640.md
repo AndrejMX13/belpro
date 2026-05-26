@@ -1,24 +1,25 @@
 # Community 640
 
-> 3 nodes
+> 4 nodes
 
 ## Key Concepts
 
-- **3. Start all services** (3 connections) — `README.md`
-- **code:bash (docker compose up -d)** (1 connections) — `README.md`
-- **code:bash (docker compose ps)** (1 connections) — `README.md`
+- **012_settings_table.py** (2 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **downgrade()** (1 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **Create settings table and seed default values.** (1 connections) — `api/db/migrations/versions/012_settings_table.py`
 
 ## Relationships
 
-- [[POST /api/volunteers (create_volunteer)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README.md`
+- `api/db/migrations/versions/012_settings_table.py`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 6 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

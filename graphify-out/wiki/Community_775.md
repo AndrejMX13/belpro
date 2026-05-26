@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **load_env.sh** (0 connections) — `scripts/load_env.sh`
+- **create_extra_dbs.sh** (0 connections) — `db/create_extra_dbs.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/load_env.sh`
+- `db/create_extra_dbs.sh`
 
 ## Audit Trail
 

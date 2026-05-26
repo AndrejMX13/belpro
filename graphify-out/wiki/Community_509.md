@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Checklist for API Integration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. WhatsApp tok (prostovoljec)** (5 connections) — `SPEC_SL.md`
+- **4.1 Oddaja vnosa** (2 connections) — `SPEC_SL.md`
+- **code:block1 (Prostovoljec pošlje:)** (1 connections) — `SPEC_SL.md`
+- **4.2 Manjkajoča fotografija** (1 connections) — `SPEC_SL.md`
+- **4.3 Vidnost poslanih sporočil na povezanem telefonu** (1 connections) — `SPEC_SL.md`
+- **4.4 Jezik prostovoljcev** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/deactivate (deactivate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 

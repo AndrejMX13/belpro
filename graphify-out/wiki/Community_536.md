@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 6: Documents router and main.py registration** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python ("""Documents router — downloadable compliance documents.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (from routers.documents import router as documents_router)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (app.include_router(documents_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block35 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block36 (git add api/routers/documents.py api/main.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **2. Database Read Nodes** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **3. Transform** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **4. Database Write Nodes** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **5. Verification** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

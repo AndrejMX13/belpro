@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Expression Syntax** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n MCP Tools Expert** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Workflow Patterns** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Code JavaScript** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **n8n Node Configuration** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Task 3: Settings and schema update** (6 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (# ── Data retention ────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python (gdpr_additional_clauses: str | None = None)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block24 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block25 (git add api/core/settings.py api/schemas/manager.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 288]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

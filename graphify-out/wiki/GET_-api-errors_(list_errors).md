@@ -4,30 +4,30 @@
 
 ## Key Concepts
 
-- **GitHub Actions Pipelines** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Common Workflow Patterns** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Complete CI/CD Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Matrix Builds (Multi-version testing)** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Reusable Workflows** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Caching Dependencies** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **github-actions.md** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (name: CI/CD Pipeline)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (jobs:)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (# .github/workflows/deploy.yml)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **code:yaml (- uses: actions/cache@v4)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
-- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Task 4: Migrate call sites to get_app_settings** (12 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block33 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/routers/log_entries.py api/routers/auth.py api/r)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 539]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/github-actions.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

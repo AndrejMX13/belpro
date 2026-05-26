@@ -4,45 +4,48 @@
 
 ## Key Concepts
 
-- **test_managers.py** (14 connections) — `api/tests/test_managers.py`
-- **seed_whatsapp_phone_from_env()** (7 connections) — `api/main.py`
-- **lifespan()** (5 connections) — `api/main.py`
-- **test_seed_whatsapp_phone_populates_null_db_field()** (3 connections) — `api/tests/test_managers.py`
-- **test_seed_whatsapp_phone_does_not_overwrite_existing_value()** (3 connections) — `api/tests/test_managers.py`
-- **test_change_password_invalidates_old_credentials()** (2 connections) — `api/tests/test_managers.py`
-- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
-- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
-- **test_get_manager_returns_profile()** (1 connections) — `api/tests/test_managers.py`
-- **test_create_manager_returns_409_when_already_configured()** (1 connections) — `api/tests/test_managers.py`
-- **test_auth_wrong_password_returns_401()** (1 connections) — `api/tests/test_managers.py`
-- **test_auth_missing_credentials_returns_401()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_includes_wa_fields()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_auto_syncs_when_evolution_reports_new_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_no_sync_when_phone_already_matches()** (1 connections) — `api/tests/test_managers.py`
-- **test_config_info_shows_db_phone_when_disconnected()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_normalizes_whatsapp_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_rejects_too_short_phone()** (1 connections) — `api/tests/test_managers.py`
-- **test_update_manager_empty_phone_not_stored_as_empty_string()** (1 connections) — `api/tests/test_managers.py`
-- **seed_whatsapp_phone_from_env writes normalized phone to DB when DB value is null** (1 connections) — `api/tests/test_managers.py`
-- **seed_whatsapp_phone_from_env leaves existing DB value untouched.** (1 connections) — `api/tests/test_managers.py`
-- **After a password change, old credentials return 401 and new ones return 200.** (1 connections) — `api/tests/test_managers.py`
-- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
-- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
+- **errors.js** (10 connections) — `frontend/js/errors.js`
+- **renderAppLog()** (6 connections) — `frontend/js/errors.js`
+- **showApp()** (6 connections) — `frontend/js/volunteers.js`
+- **loadHealthWidget()** (4 connections) — `frontend/js/errors.js`
+- **GET /errors/unacknowledged-count** (4 connections) — `api/routers/errors.py`
+- **startHealthWidget()** (3 connections) — `frontend/js/errors.js`
+- **refreshErrorBadge()** (3 connections) — `frontend/js/errors.js`
+- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
+- **initAppLogPage()** (3 connections) — `frontend/js/errors.js`
+- **_refreshSidebarLogo()** (3 connections) — `frontend/js/volunteers.js`
+- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
+- **GET /errors** (3 connections) — `api/routers/errors.py`
+- **renderHealthWidget()** (2 connections) — `frontend/js/errors.js`
+- **stopHealthWidget()** (2 connections) — `frontend/js/errors.js`
+- **API.errors.list()** (2 connections) — `frontend/js/api.js`
+- **API.errors.unacknowledgedCount()** (2 connections) — `frontend/js/api.js`
+- **API.errors.acknowledge()** (2 connections) — `frontend/js/api.js`
+- **refreshErrorBadge()** (2 connections) — `frontend/js/errors.js`
+- **PATCH /errors/{id}/acknowledge** (2 connections) — `api/routers/errors.py`
+- **ErrorLogResponse shape (id, service, operation, message, detail, acknowledged, created_at)** (2 connections) — `api/routers/errors.py`
+- **UnacknowledgedCountResponse shape ({count})** (2 connections) — `api/routers/errors.py`
+- **SERVICE_LABELS** (1 connections) — `frontend/js/errors.js`
+- **acknowledgeError()** (1 connections) — `frontend/js/errors.js`
+- **renderAppLog() — app log page** (1 connections) — `frontend/js/errors.js`
 
 ## Relationships
 
-- [[Reject tax numbers that fail the Modulus 11 check digit.]] (3 shared connections)
-- [[volunteers.js]] (1 shared connections)
+- [[test_auth.py]] (8 shared connections)
+- [[Community 404]] (2 shared connections)
+- [[path]] (2 shared connections)
 
 ## Source Files
 
-- `api/main.py`
-- `api/tests/test_managers.py`
+- `api/routers/errors.py`
+- `frontend/js/api.js`
+- `frontend/js/errors.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 46 (88%)
-- INFERRED: 6 (12%)
+- EXTRACTED: 63 (88%)
+- INFERRED: 9 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

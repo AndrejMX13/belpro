@@ -4,29 +4,30 @@
 
 ## Key Concepts
 
-- **Security Considerations** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Read-Only Database Tools** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. Validate Tool Inputs** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Rate Limiting** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Sanitize User Input** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Monitor Tool Usage** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:sql (-- Create limited user for AI tools)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Code node - validate before execution)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block37 (Webhook → IF (check user rate limit))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block39 (AI Agent → Log Tool Calls)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Operation-Specific Configuration** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **HTTP Request Node Examples** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **IF Node Examples** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **GET Request** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **POST with JSON** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **String Comparison (Binary)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Empty Check (Unary)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
+- [[Community 477]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **api.js** (1 connections) — `frontend/js/api.js`
-- **API** (1 connections) — `frontend/js/api.js`
+- **downloadHistoryPdf** (1 connections) — `frontend/js/reports.js`
+- **download_history_pdf** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `frontend/js/api.js`
+- `api/routers/reports.py`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 

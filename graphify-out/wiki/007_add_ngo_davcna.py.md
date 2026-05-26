@@ -4,38 +4,46 @@
 
 ## Key Concepts
 
-- **test_graphify_infra.py** (18 connections) — `tests/test_graphify_infra.py`
-- **load()** (13 connections) — `tests/test_graphify_infra.py`
-- **edge_triples()** (5 connections) — `tests/test_graphify_infra.py`
-- **node_ids()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_service_nodes_created()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_depends_on_dict_format()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_depends_on_list_format()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_env_url_calls_edges()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_nginx_proxies_to_edge()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_existing_nodes_preserved()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_skeleton_node_is_upgraded()** (3 connections) — `tests/test_graphify_infra.py`
-- **test_node_has_required_fields()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_edges_are_extracted_confidence_1()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_idempotent_nodes()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_idempotent_edges()** (2 connections) — `tests/test_graphify_infra.py`
-- **test_no_self_calls()** (2 connections) — `tests/test_graphify_infra.py`
-- **tmp_graph()** (1 connections) — `tests/test_graphify_infra.py`
-- **test_missing_graph_file_raises()** (1 connections) — `tests/test_graphify_infra.py`
-- **Tests for scripts/graphify_infra.py — inject Docker service topology into graph.** (1 connections) — `tests/test_graphify_infra.py`
-- **Pre-existing node with matching ID but no file_type gets patched.** (1 connections) — `tests/test_graphify_infra.py`
+- **setup.sh** (23 connections) — `scripts/setup.sh`
+- **api** (13 connections) — `docker-compose.yml`
+- **postgres** (11 connections) — `docker-compose.yml`
+- **evolution-api** (8 connections) — `docker-compose.yml`
+- **whisper** (5 connections) — `docker-compose.yml`
+- **warn()** (2 connections) — `scripts/setup.sh`
+- **prompt_password()** (2 connections) — `scripts/setup.sh`
+- **ops** (2 connections) — `docker-compose.yml`
+- **info()** (1 connections) — `scripts/setup.sh`
+- **ok()** (1 connections) — `scripts/setup.sh`
+- **heading()** (1 connections) — `scripts/setup.sh`
+- **die()** (1 connections) — `scripts/setup.sh`
+- **gen_hex32()** (1 connections) — `scripts/setup.sh`
+- **gen_b64_key()** (1 connections) — `scripts/setup.sh`
+- **gen_hex24()** (1 connections) — `scripts/setup.sh`
+- **set_env()** (1 connections) — `scripts/setup.sh`
+- **get_env()** (1 connections) — `scripts/setup.sh`
+- **.env.example** (1 connections)
+- **redis** (1 connections) — `docker-compose.yml`
+- **frontend** (1 connections) — `docker-compose.yml`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Performance Testing Reference (k6)]] (10 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (4 shared connections)
+- [[Serena Project Configuration]] (4 shared connections)
+- [[Volunteer (ORM)]] (3 shared connections)
+- [[settings]] (2 shared connections)
+- [[Node.js Essentials Reference]] (2 shared connections)
+- [[renderDetail() — volunteer detail page]] (2 shared connections)
+- [[BelPro Architecture Document EN]] (1 shared connections)
 
 ## Source Files
 
-- `tests/test_graphify_infra.py`
+- `docker-compose.yml`
+- `scripts/setup.sh`
 
 ## Audit Trail
 
-- EXTRACTED: 74 (100%)
+- EXTRACTED: 78 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

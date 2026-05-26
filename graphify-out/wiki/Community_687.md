@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **downloadHistoryPdf** (1 connections) — `frontend/js/reports.js`
-- **download_history_pdf** (1 connections) — `api/routers/reports.py`
+- **project_fastapi_lifespan.md** (1 connections) — `.claude/memory/project_fastapi_lifespan.md`
+- **code:python (from contextlib import asynccontextmanager)** (1 connections) — `.claude/memory/project_fastapi_lifespan.md`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/reports.js`
+- `.claude/memory/project_fastapi_lifespan.md`
 
 ## Audit Trail
 

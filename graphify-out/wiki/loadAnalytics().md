@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Node.js Essentials** (11 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **File System (fs/promises)** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Path Module** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Streams** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **EventEmitter** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Child Processes** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Worker Threads** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Process & Environment** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **HTTP/HTTPS Server** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Cluster for Multi-Core** (2 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **node-essentials.md** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { readFile, writeFile, appendFile, mkdir, rm, readdir)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { join, resolve, dirname, basename, extname, parse, f)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { createReadStream, createWriteStream } from 'fs';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { EventEmitter } from 'events';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { spawn, exec, execFile } from 'child_process';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { Worker, isMainThread, parentPort, workerData } from)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (// Environment variables)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import { createServer } from 'http';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **code:javascript (import cluster from 'cluster';)** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Context** (9 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Context** (7 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Delete Non-Approved Entries Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Task 1: Extend the DELETE endpoint and clean up photo files** (2 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Task 2: Frontend — API client method and delete button** (2 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **2026-05-19-delete-non-approved-entries.md** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:block2 (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:python (@router.delete()** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:block4 (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:block5 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:bash (git add api/routers/log_entries.py api/tests/test_log_entrie)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (// Before the closing `},` of the logEntries object, add:)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (logEntries: {)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (const editable   = entry.status !== 'approved';)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (const editable   = entry.status !== 'approved';)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (${canApprove ? `)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js ($('approve-btn').addEventListener('click', () => doAction('a)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:js (const delEntryBtn = $('delete-entry-btn');)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **code:bash (git add frontend/js/api.js frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
 
 ## Relationships
 
@@ -32,7 +32,7 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/node-essentials.md`
+- `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
 
 ## Audit Trail
 

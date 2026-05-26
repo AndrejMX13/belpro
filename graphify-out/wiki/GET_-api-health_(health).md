@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **graphify semantic rebuild** (6 connections) — `docs/graphify-semantic-rebuild.md`
-- **What to run** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **After the rebuild — step 1: generate community labels from graph data** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **After the rebuild — step 2: regenerate graph.html** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **Commit format** (2 connections) — `docs/graphify-semantic-rebuild.md`
-- **graphify-semantic-rebuild.md** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **Problem** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:block1 (/graphify .)** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:python (import json)** (1 connections) — `docs/graphify-semantic-rebuild.md`
-- **code:block4 (chore: full graphify semantic rebuild — graphify update)** (1 connections) — `docs/graphify-semantic-rebuild.md`
+- **Terraform Infrastructure as Code** (6 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **AWS ECS Fargate Setup** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **AWS RDS PostgreSQL** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Variables and Outputs** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Common Commands** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **terraform-iac.md** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:hcl (terraform {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:hcl (resource "aws_db_instance" "postgres" {)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:hcl (# variables.tf)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **code:bash (terraform init)** (1 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
 
 ## Relationships
 
@@ -22,7 +22,7 @@
 
 ## Source Files
 
-- `docs/graphify-semantic-rebuild.md`
+- `.claude/skills/devops-engineer/references/terraform-iac.md`
 
 ## Audit Trail
 

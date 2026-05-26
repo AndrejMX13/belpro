@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Schedule Trigger (nodes-base.scheduleTrigger)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Daily at Specific Time** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Schedule Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Every N Minutes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Cron Expression** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Slack (nodes-base.slack)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Post Message** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Update Message** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Create Channel** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript (// ❌ Bad - uses server timezone)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[entrypoint.sh]] (1 shared connections)
+- [[Community 421]] (1 shared connections)
 
 ## Source Files
 

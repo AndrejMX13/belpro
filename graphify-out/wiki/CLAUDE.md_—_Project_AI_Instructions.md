@@ -4,37 +4,49 @@
 
 ## Key Concepts
 
-- **1. missing_required** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 1: Slack Channel Missing** (5 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 2: HTTP Request Missing URL** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 3: Database Query Missing Connection** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Example 4: Conditional Fields** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (// Use get_node to see what's required)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)** (14 connections) — `SPEC.md`
+- **Ops Sidecar (backup, photo cleanup, error reporting)** (10 connections) — `SPEC.md`
+- **Auto Monthly Reports Plan** (7 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- **Error Log (Dnevnik napak)** (6 connections) — `SPEC.md`
+- **ops_server.py ThreadingHTTPServer Reconfigure** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- **Version 0.11.0-beta.0** (5 connections) — `CHANGELOG.md`
+- **Ops Sidecar and Error Log Plan** (5 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Configurable Backup Retention Days Plan** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **Report Auto Hour Plan** (5 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Version 0.11.1-beta.0** (3 connections) — `CHANGELOG.md`
+- **Ops Notification Server (POST /reconfigure, port 9000)** (3 connections) — `CHANGELOG.md`
+- **Settings Table Plan** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Report Delivery Error Visibility Plan** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- **MAX_PHOTOS_PER_ENTRY Setting** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Configurable Backup Retention Days** (3 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- **report_auto_hour Configurable Cron Hour** (3 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **BelPro Changelog** (2 connections) — `CHANGELOG.md`
+- **Photo Upload Limit Plan** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
 
 ## Relationships
 
-- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
+- [[render_consent_pdf()]] (4 shared connections)
+- [[BelPro Architecture Document EN]] (3 shared connections)
+- [[Code: Preveri Nacin]] (1 shared connections)
+- [[Community 513]] (1 shared connections)
+- [[DELETE /api/volunteers/{id} (delete_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `CHANGELOG.md`
+- `SPEC.md`
+- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
+- `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
+- `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
 
 ## Audit Trail
 
-- EXTRACTED: 35 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 77 (88%)
+- INFERRED: 11 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

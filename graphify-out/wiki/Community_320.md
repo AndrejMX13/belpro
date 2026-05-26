@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Error Handling Patterns** (5 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 3: Error Trigger Workflow** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 1: Retry on Failure** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 2: Fallback API** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 4: Circuit Breaker** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block34 (HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block35 (HTTP Request (Primary API, continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block36 (HTTP Request → Process Data)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block37 (Error Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - circuit breaker logic)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pages / Views** (9 connections) — `SPEC.md`
+- **5. Manager Dashboard (Web UI)** (2 connections) — `SPEC.md`
+- **5.1 Volunteers** (1 connections) — `SPEC.md`
+- **5.2 Pending Approvals** (1 connections) — `SPEC.md`
+- **5.3 Log / History** (1 connections) — `SPEC.md`
+- **5.4 Analytics** (1 connections) — `SPEC.md`
+- **5.5 Reports** (1 connections) — `SPEC.md`
+- **5.6 Settings** (1 connections) — `SPEC.md`
+- **5.7 Administracija (System Administration)** (1 connections) — `SPEC.md`
+- **5.8 Dnevnik napak (App Log)** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `SPEC.md`
 
 ## Audit Trail
 

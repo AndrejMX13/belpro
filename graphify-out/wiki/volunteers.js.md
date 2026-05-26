@@ -35,13 +35,13 @@
 
 - [[n8n MCP Workflow Management Guide]] (16 shared connections)
 - [[load_key()]] (6 shared connections)
-- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
-- [[GET /api/log-entries (list_log_entries)]] (1 shared connections)
-- [[POST /api/managers (create_manager)]] (1 shared connections)
-- [[009_rename_entry_date_to_work_date.py]] (1 shared connections)
-- [[merge_semantic.py]] (1 shared connections)
-- [[Community 402]] (1 shared connections)
-- [[Performance Testing Reference (k6)]] (1 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[BelPro README (English)]] (1 shared connections)
+- [[DELETE /api/log-entries/{id}/photos/{photo_id} (delete_photo)]] (1 shared connections)
+- [[list_pending_entries.py]] (1 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
+- [[Community 406]] (1 shared connections)
+- [[001_initial_schema.py]] (1 shared connections)
 
 ## Source Files
 

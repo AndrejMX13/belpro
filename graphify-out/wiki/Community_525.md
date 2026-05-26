@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Checklist for AI Agent Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **The Solution** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Optional chaining)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Check array length)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Guard clauses)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Default values)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Try-catch for risky operations)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[IF: Should Notify? (Auto)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

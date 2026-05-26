@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 3: .env writer utility** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (from pathlib import Path)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_env_writer.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_env_writer.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/utils/env_writer.py api/tests/test_env_writer.py)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Finding Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Using get_node with search_properties Mode** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Using get_node with Full Detail** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Find properties related to "body")** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Get complete schema with displayOptions)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **When to Use** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[Community 376]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

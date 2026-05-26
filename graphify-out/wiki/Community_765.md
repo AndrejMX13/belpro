@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Reporting period: 'current' (this month) or 'previous' (last month).** (0 connections) — `api/services/app_settings.py`
+- **Maximum photos allowed per log entry.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

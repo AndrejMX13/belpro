@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Task 6: ConfigInfoResponse schema + enhanced get_config_info** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (from unittest.mock import patch, AsyncMock)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (class ConfigInfoResponse(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (logger = logging.getLogger(__name__))** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (@router.get("/me/config-info", dependencies=[Depends(require)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/schemas/manager.py api/routers/managers.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Testing AI Agents** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Start with Manual Trigger** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Test Tools Independently** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Test with Standard Questions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Monitor Token Usage** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block40 (Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block41 (Manual Trigger → Tool Node → Verify output format)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block42 (1. "Hello" - Test basic response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Code node - log token usage)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Test Edge Cases** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

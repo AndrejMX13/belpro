@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Example 4: Date Formatting** (7 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **ISO Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Custom Date Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Time Only** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Full Readable Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Date Math - Future** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Date Math - Past** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toISO()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toFormat('HH:mm:ss')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.toFormat('MMMM dd, yyyy')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.plus({days: 7}).toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript ({{$now.minus({hours: 24}).toFormat('yyyy-MM-dd HH:mm')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Pattern 2: $input.first() - Get First Item** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 5: Combine with Other Methods** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const response = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get first item's data)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[Community 416]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

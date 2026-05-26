@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **Data Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Schema Mapping** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Data Type Conversions** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Aggregation** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Code node - map schemas)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Code node - convert data types)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Code node - aggregate data)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Prompt Engineering for Agents** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **System Prompt Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Example (Customer Support)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Example (Data Analyst)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block21 (You are a [ROLE].)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block22 (You are a customer support assistant for Acme Corp.)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block23 (You are a data analyst assistant with access to the company )** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
@@ -18,7 +18,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

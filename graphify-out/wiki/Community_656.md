@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **feedback_serena_replace_symbol.md** (2 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
-- **Pitfall 1 — Decorated functions** (1 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
-- **Pitfall 2 — Module-level string constants** (1 connections) — `.claude/memory/feedback_serena_replace_symbol.md`
+- **BelPro — Component Diagram** (2 connections) — `docs/images/belpro-architecture-component.md`
+- **belpro-architecture-component.md** (1 connections) — `docs/images/belpro-architecture-component.md`
+- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-architecture-component.md`
 
 ## Relationships
 
@@ -14,7 +14,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_serena_replace_symbol.md`
+- `docs/images/belpro-architecture-component.md`
 
 ## Audit Trail
 

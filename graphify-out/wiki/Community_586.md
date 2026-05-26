@@ -4,24 +4,25 @@
 
 ## Key Concepts
 
-- **Authentication: SimpleJWT → FastAPI JWT** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django SimpleJWT** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI JWT Authentication** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django settings.py)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# auth.py - FastAPI JWT implementation)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Python Docstrings Reference** (4 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Google Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **NumPy Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sphinx Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **TypeScript JSDoc Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Relationships
 
-- [[Community 541]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `.claude/skills/code-documenter/references/python-docstrings.md`
+- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 6 (75%)
+- INFERRED: 2 (25%)
 - AMBIGUOUS: 0 (0%)
 
 ---

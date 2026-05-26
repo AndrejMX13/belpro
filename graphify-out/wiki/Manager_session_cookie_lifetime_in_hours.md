@@ -4,31 +4,42 @@
 
 ## Key Concepts
 
-- **Debugging Wizard** (6 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Common Debugging Commands** (5 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (python -m pdb script.py          # launch debugger)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (node --inspect-brk script.js     # pause at first line, atta)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (git bisect start)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **code:bash (dlv debug ./cmd/server           # build & attach)** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/debugging-wizard/SKILL.md`
+- **Changelog** (21 connections) — `CHANGELOG.md`
+- **[0.9.4] — 2026-05-10** (3 connections) — `CHANGELOG.md`
+- **[0.8.2] — 2026-05-08** (2 connections) — `CHANGELOG.md`
+- **[0.6.1] — 2026-05-04** (2 connections) — `CHANGELOG.md`
+- **[0.4.0 and earlier] — 2026-05-01 to 2026-05-03** (2 connections) — `CHANGELOG.md`
+- **Changelog maintenance** (2 connections) — `CHANGELOG.md`
+- **CHANGELOG.md** (1 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
+- **Removed** (1 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **code:bash (# Get all commits since the last version tag)** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 646]] (1 shared connections)
+- [[Community 614]] (1 shared connections)
+- [[Community 645]] (1 shared connections)
+- [[Community 608]] (1 shared connections)
+- [[Community 649]] (1 shared connections)
+- [[Community 607]] (1 shared connections)
+- [[Community 650]] (1 shared connections)
+- [[Community 648]] (1 shared connections)
+- [[Community 615]] (1 shared connections)
+- [[Community 611]] (1 shared connections)
+- [[Community 610]] (1 shared connections)
+- [[Community 609]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/SKILL.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 39 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

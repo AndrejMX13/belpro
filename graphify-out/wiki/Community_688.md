@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **exportReportPdf** (1 connections) — `frontend/js/reports.js`
-- **generate_monthly_pdf** (1 connections) — `api/routers/reports.py`
+- **Node.js Essentials Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **Node.js File System API** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/reports.js`
+- `.claude/skills/javascript-pro/references/node-essentials.md`
 
 ## Audit Trail
 

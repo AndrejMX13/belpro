@@ -4,26 +4,25 @@
 
 ## Key Concepts
 
-- **auth.py** (6 connections) — `api/core/auth.py`
-- **_verify_password()** (4 connections) — `api/core/auth.py`
-- **require_manager()** (4 connections) — `api/core/auth.py`
-- **Manager authentication — httpOnly session cookie with Basic Auth fallback.  Auth** (1 connections) — `api/core/auth.py`
-- **Verify password against DB hash or env var fallback.** (1 connections) — `api/core/auth.py`
-- **Reject requests without a valid session cookie or Basic Auth credentials.** (1 connections) — `api/core/auth.py`
+- **Common Workflow Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **1. Triggers** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **2. Data Sources** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **3. Transformation** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **4. Outputs** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **5. Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[Code: Preveri Slike Stanje]] (3 shared connections)
-- [[GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)]] (2 shared connections)
+- [[Reporting period: 'current' (this month) or 'previous' (last month).]] (1 shared connections)
 
 ## Source Files
 
-- `api/core/auth.py`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (88%)
-- INFERRED: 2 (12%)
+- EXTRACTED: 11 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

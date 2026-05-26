@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Manager session cookie lifetime in hours.** (0 connections) — `api/services/app_settings.py`
+- **Normalise phone to bare E.164 digits, pass through None.** (0 connections) — `api/schemas/volunteer.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 

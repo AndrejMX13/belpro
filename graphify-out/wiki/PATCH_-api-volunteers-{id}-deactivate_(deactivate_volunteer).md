@@ -4,30 +4,36 @@
 
 ## Key Concepts
 
-- **How to Read It** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Validation Result Structure** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Complete Response** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Check `valid` field** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Fix errors first** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. Review warnings** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **4. Consider suggestions** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (if (result.valid) {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (result.errors.forEach(error => {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (result.warnings.forEach(warning => {)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (// Optional improvements)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **BelPro — Specifikacija sistema** (15 connections) — `SPEC_SL.md`
+- **1. Pregled projekta** (2 connections) — `SPEC_SL.md`
+- **2. Pregled arhitekture** (2 connections) — `SPEC_SL.md`
+- **9. Struktura projekta** (2 connections) — `SPEC_SL.md`
+- **SPEC_SL.md** (1 connections) — `SPEC_SL.md`
+- **Pravni okvir** (1 connections) — `SPEC_SL.md`
+- **Komponente** (1 connections) — `SPEC_SL.md`
+- **7. E-pošta** (1 connections) — `SPEC_SL.md`
+- **8. GDPR in zasebnost** (1 connections) — `SPEC_SL.md`
+- **code:block2 (belpro/)** (1 connections) — `SPEC_SL.md`
+- **10. Namestitev** (1 connections) — `SPEC_SL.md`
+- **11. Zunaj obsega — različica v1** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[Community 410]] (1 shared connections)
+- [[Community 509]] (1 shared connections)
+- [[Community 321]] (1 shared connections)
+- [[Community 606]] (1 shared connections)
+- [[Number of days approved entry photos are retained on disk.]] (1 shared connections)
+- [[Community 508]] (1 shared connections)
+- [[Community 355]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

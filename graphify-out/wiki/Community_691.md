@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **loadReportArchive** (1 connections) — `frontend/js/reports.js`
-- **get_report_history** (1 connections) — `api/routers/reports.py`
+- **api.js** (1 connections) — `frontend/js/api.js`
+- **API** (1 connections) — `frontend/js/api.js`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/reports.js`
+- `frontend/js/api.js`
 
 ## Audit Trail
 

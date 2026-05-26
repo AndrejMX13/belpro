@@ -4,31 +4,30 @@
 
 ## Key Concepts
 
-- **conftest.py** (6 connections) — `tests/workflow/conftest.py`
-- **test_volunteer()** (5 connections) — `tests/workflow/conftest.py`
-- **_make_valid_emso()** (4 connections) — `tests/workflow/conftest.py`
-- **_auth_header()** (3 connections) — `tests/workflow/conftest.py`
-- **api_client()** (3 connections) — `tests/workflow/conftest.py`
-- **_manager_password()** (2 connections) — `tests/workflow/conftest.py`
-- **n8n_client()** (2 connections) — `tests/workflow/conftest.py`
-- **Generate a random 13-digit EMŠO that passes the Modulus 11 checksum.** (1 connections) — `tests/workflow/conftest.py`
-- **Session-scoped AsyncClient against FastAPI. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
-- **Session-scoped AsyncClient against n8n. Skips all tests if unreachable.** (1 connections) — `tests/workflow/conftest.py`
-- **Creates a volunteer with a unique phone, yields the volunteer dict,     deletes** (1 connections) — `tests/workflow/conftest.py`
+- **Integration Testing** (6 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **API Testing (Supertest)** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Authenticated Requests** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Database Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **pytest API Testing** (2 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **integration-testing.md** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:typescript (import request from 'supertest';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:typescript (describe('Protected endpoints', () => {)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:typescript (import { db } from '../database';)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/integration-testing.md`
 
 ## Relationships
 
-- [[load_key()]] (2 shared connections)
-- [[test_auth.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `tests/workflow/conftest.py`
+- `.claude/skills/test-master/references/integration-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (90%)
-- INFERRED: 3 (10%)
+- EXTRACTED: 20 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

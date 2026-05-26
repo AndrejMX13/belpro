@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Query Optimization** (10 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **EXPLAIN Plan Analysis** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Index Design and Optimization** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Index Maintenance** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Query Rewriting Patterns** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Partitioning Strategies** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Materialized Views** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Query Hints and Optimization** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Performance Monitoring Queries** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **optimization.md** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- PostgreSQL EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- Covering index (all columns in index))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- PostgreSQL: Find missing indexes)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- Avoid SELECT DISTINCT when possible)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- Range partitioning by date (PostgreSQL))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- Create materialized view for expensive aggregations)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- PostgreSQL: Force index usage (use sparingly))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **code:sql (-- PostgreSQL: Find slow queries)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
-- **Best Practices Checklist** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Database Design** (10 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Normalization Levels** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Primary and Foreign Keys** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Constraints and Validation** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Indexing Strategy** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Common Design Patterns** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Temporal/Historical Data** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Soft Deletes** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Audit Trails** (2 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **database-design.md** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- 1NF: Atomic values, no repeating groups)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Natural vs Surrogate keys)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- CHECK constraints)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Index foreign keys (critical for JOIN performance))** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Polymorphic associations (flexible but harder to enforce )** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Slowly Changing Dimension Type 2 (SCD2) - Full history)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Soft delete pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **code:sql (-- Audit table pattern)** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
+- **Schema Design Best Practices** (1 connections) — `.claude/skills/sql-pro/references/database-design.md`
 
 ## Relationships
 
@@ -30,7 +30,7 @@
 
 ## Source Files
 
-- `.claude/skills/sql-pro/references/optimization.md`
+- `.claude/skills/sql-pro/references/database-design.md`
 
 ## Audit Trail
 

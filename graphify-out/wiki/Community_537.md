@@ -4,31 +4,24 @@
 
 ## Key Concepts
 
-- **ISS-015 GDPR Consent Document Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **Final check** (3 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **2026-05-20-gdpr-consent.md** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **File structure** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block45 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block46 (git push central main)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Checklist for Webhook Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Setup** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Data Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 633]] (1 shared connections)
-- [[switch_manager_phone.ps1]] (1 shared connections)
-- [[Community 534]] (1 shared connections)
-- [[Community 535]] (1 shared connections)
-- [[Community 634]] (1 shared connections)
-- [[Community 635]] (1 shared connections)
-- [[Community 536]] (1 shared connections)
-- [[Community 394]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

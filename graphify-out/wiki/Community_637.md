@@ -4,22 +4,24 @@
 
 ## Key Concepts
 
-- **list_pending_entries.py** (3 connections) — `scripts/list_pending_entries.py`
-- **_get()** (3 connections) — `scripts/list_pending_entries.py`
-- **_auth()** (2 connections) — `scripts/list_pending_entries.py`
-- **main()** (2 connections) — `scripts/list_pending_entries.py`
+- **POST /reports/send-monthly** (3 connections) — `api/routers/reports.py`
+- **API.reports.sendMonthly()** (2 connections) — `frontend/js/api.js`
+- **sendReports()** (2 connections) — `frontend/js/reports.js`
+- **send-monthly JSON response (sent_via_email[], sent_via_whatsapp[], skipped_no_entries[], skipped_no_channel[], manager_email_sent, manager_whatsapp_sent, errors[])** (2 connections) — `api/routers/reports.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_auth.py]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/list_pending_entries.py`
+- `api/routers/reports.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

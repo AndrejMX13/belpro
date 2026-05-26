@@ -4,20 +4,19 @@
 
 ## Key Concepts
 
-- **Webhook (nodes-base.webhook)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **HTTP & API Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Basic Webhook** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Webhook with Authentication** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **Webhook Returning Data** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Schedule Trigger (nodes-base.scheduleTrigger)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Daily at Specific Time** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Schedule Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Every N Minutes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Cron Expression** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript (// ❌ Wrong)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript (// ❌ Bad - uses server timezone)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 - **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[entrypoint.sh]] (1 shared connections)
-- [[create_extra_dbs.sh]] (1 shared connections)
+- [[list_pending_entries.sh]] (1 shared connections)
 
 ## Source Files
 
@@ -25,7 +24,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 18 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

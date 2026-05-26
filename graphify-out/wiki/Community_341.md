@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Task 1: Infrastructure prep** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api python -c "import pytest_asyncio; pr)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:block2 (httpx>=0.27)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:yaml (AUTHENTICATION_API_KEY: ${AUTHENTICATION_API_KEY})** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:yaml (volumes:)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:yaml (volumes:)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:block6 (NGO_WHATSAPP_PHONE=)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (Add-Content "d:\Andrej\vsCode-workspace\BelPro\.env" "`nNGO_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add docker-compose.yml api/requirements.txt .env.example)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Configuration Anti-Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **❌ Don't: Over-configure Upfront** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **❌ Don't: Skip Validation** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **❌ Don't: Ignore Operation Context** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Adding every possible field)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Start minimal)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Configure and deploy without validating)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Validate before deploying)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Same config for all Slack operations)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Check requirements when changing operation)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

@@ -4,36 +4,31 @@
 
 ## Key Concepts
 
-- **auth.py** (7 connections) — `api/routers/auth.py`
-- **login()** (7 connections) — `api/routers/auth.py`
-- **LoginResponse** (5 connections) — `api/schemas/auth.py`
-- **logout()** (4 connections) — `api/routers/auth.py`
-- **auth.py** (4 connections) — `api/schemas/auth.py`
-- **api/routers/auth.py Login and Logout Endpoints** (4 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **belpro_session httpOnly Cookie** (2 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Auth endpoints — login sets an httpOnly session cookie, logout clears it.** (1 connections) — `api/routers/auth.py`
-- **Verify manager password and set an httpOnly session cookie.** (1 connections) — `api/routers/auth.py`
-- **Clear the session cookie.** (1 connections) — `api/routers/auth.py`
-- **Schemas for the auth endpoints.** (1 connections) — `api/schemas/auth.py`
-- **Response for login and logout endpoints.** (1 connections) — `api/schemas/auth.py`
+- **Evolution API — @lid JID Resolution for BelPro** (8 connections) — `docs/evolution-lid-resolution.md`
+- **Priority Fix: Upgrade to v2.3.7** (3 connections) — `docs/evolution-lid-resolution.md`
+- **Environment Variables to Add on Upgrade** (2 connections) — `docs/evolution-lid-resolution.md`
+- **evolution-lid-resolution.md** (1 connections) — `docs/evolution-lid-resolution.md`
+- **The Problem** (1 connections) — `docs/evolution-lid-resolution.md`
+- **code:json ({)** (1 connections) — `docs/evolution-lid-resolution.md`
+- **code:js (const rawJid = data.key.remoteJid;)** (1 connections) — `docs/evolution-lid-resolution.md`
+- **code:yaml (WPP_LID_MODE: "false"            # Instructs underlying WPP )** (1 connections) — `docs/evolution-lid-resolution.md`
+- **Current Workaround (v2.2.3, active in workflow)** (1 connections) — `docs/evolution-lid-resolution.md`
+- **Sendback: @lid as Direct Recipient** (1 connections) — `docs/evolution-lid-resolution.md`
+- **Future: Volunteer Registration Flow** (1 connections) — `docs/evolution-lid-resolution.md`
+- **What Does NOT Work** (1 connections) — `docs/evolution-lid-resolution.md`
 
 ## Relationships
 
-- [[Community 321]] (3 shared connections)
-- [[Community 511]] (2 shared connections)
-- [[renderDetail() — volunteer detail page]] (2 shared connections)
-- [[Code: Preveri Slike Stanje]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/auth.py`
-- `api/schemas/auth.py`
-- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- `docs/evolution-lid-resolution.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (71%)
-- INFERRED: 11 (29%)
+- EXTRACTED: 22 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **n8n Workflow Patterns** (17 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Workflow Creation Checklist** (5 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Coverage** (3 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Real Template Examples** (2 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Purpose** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Activates On** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **File Count** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Priority** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Dependencies** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **The 5 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Cross-Cutting Concerns** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Evaluations** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Key Features** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Success Metrics** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Pattern Selection Stats** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Critical Insights** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Planning Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Implementation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Validation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Deployment Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **code:block1 (Schedule (daily 8 AM) → HTTP Request (weather) → Set → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
-- **Last Updated** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Deployment Strategies** (11 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Rollback Procedures** (4 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Rolling Deployment (Kubernetes)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Blue-Green with Ingress** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Canary with Istio** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Kubernetes Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **ArgoCD Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Terraform Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Post-deployment Verification** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Deployment Metrics (DORA)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Advanced Canary with Automated Analysis** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Shadow Deployment** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **deployment-strategies.md** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Strategy Comparison** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Blue deployment (current))** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (apiVersion: networking.istio.io/v1beta1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# View rollout history)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (argocd app rollback app-prod --revision=123)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# Identify previous state)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Pre-deployment Checklist** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:bash (# Check pod status)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Prometheus metrics for DORA tracking)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Flagger: Automated canary with rollback)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **code:yaml (# Mirror traffic to shadow deployment)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
 
 ## Relationships
 
@@ -36,7 +36,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/README.md`
+- `.claude/skills/devops-engineer/references/deployment-strategies.md`
 
 ## Audit Trail
 

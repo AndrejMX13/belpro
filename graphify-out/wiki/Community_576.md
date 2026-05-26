@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Summary** (5 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Always Fix** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Usually Fix** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Often Acceptable** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Always Acceptable** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Nested Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **What Are They?** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **How to Handle** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Step 1: Parent)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Community 419]] (1 shared connections)
+- [[Community 376]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

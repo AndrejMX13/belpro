@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Configuration Anti-Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't: Over-configure Upfront** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't: Skip Validation** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't: Ignore Operation Context** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Adding every possible field)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Start minimal)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Configure and deploy without validating)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Validate before deploying)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Same config for all Slack operations)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Check requirements when changing operation)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Example 3: Multi-Node Data Flow** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Node 3: Email** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Node 2: HTTP Request** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Node 1: Webhook** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block8 (https://api.example.com/orders/{{$json.body.order_id}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block10 (Order {{$node["Webhook"].json.body.order_id}} Confirmed)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block11 (Dear {{$node["HTTP Request"].json.order.customer}},)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block12 (Subject: Order ORD-12345 Confirmed)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

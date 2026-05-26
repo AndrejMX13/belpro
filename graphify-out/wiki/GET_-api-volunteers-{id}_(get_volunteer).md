@@ -4,40 +4,44 @@
 
 ## Key Concepts
 
-- **Design Details** (7 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Report Auto-Hour Implementation Design** (5 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Ops server (`ops/scripts/ops_server.py`)** (4 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Schemas (`api/schemas/admin.py`)** (3 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Test Plan** (3 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **AppSettings (`api/services/app_settings.py`)** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Admin router (`api/routers/admin.py`)** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **DB seed migration** (2 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **2026-05-22-report-auto-hour-design.md** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Files Touched** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_auto_hour: int)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_auto_hour: int | None = Field(None, ge=0, le=23))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python ("report_auto_hour": app_settings.report_auto_hour,)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python ("0 {report_hour} {day} * * /app/scripts/monthly_report_send.)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_hour = max(0, min(int(payload.get("report_auto_hour",)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:python (report_hour = max(0, min(int(rows.get("report_auto_hour", 7))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **code:sql (INSERT INTO settings (name, value, value_type))** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **Frontend (`frontend/js/admin.js`)** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **New tests — `test_admin.py`** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
-- **New tests — `test_app_settings.py`** (1 connections) — `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- **gen_architecture_docx.js** (22 connections) — `scripts/gen_architecture_docx.js`
+- **spacer()** (8 connections) — `scripts/gen_architecture_docx.js`
+- **systemArchitecture()** (7 connections) — `scripts/gen_architecture_docx.js`
+- **main()** (7 connections) — `scripts/gen_architecture_docx.js`
+- **heading1()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **body()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **whatIsBelpro()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **volunteerJourney()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **monthlyReporting()** (6 connections) — `scripts/gen_architecture_docx.js`
+- **stepParagraph()** (5 connections) — `scripts/gen_architecture_docx.js`
+- **privacyCompliance()** (5 connections) — `scripts/gen_architecture_docx.js`
+- **heading2()** (4 connections) — `scripts/gen_architecture_docx.js`
+- **borders()** (3 connections) — `scripts/gen_architecture_docx.js`
+- **coverPage()** (3 connections) — `scripts/gen_architecture_docx.js`
+- **border()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **cell()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **featureTable()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **componentTable()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **complianceTable()** (2 connections) — `scripts/gen_architecture_docx.js`
+- **{
+  Document, Packer, Paragraph, TextRun, Table, TableRow, TableCell,
+  Header, Footer, AlignmentType, HeadingLevel, BorderStyle, WidthType,
+  ShadingType, VerticalAlign, PageNumber, PageBreak, LevelFormat,
+}** (1 connections) — `scripts/gen_architecture_docx.js`
+- **fs** (1 connections) — `scripts/gen_architecture_docx.js`
+- **noBorders()** (1 connections) — `scripts/gen_architecture_docx.js`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[ops_server.py]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-22-report-auto-hour-design.md`
+- `scripts/gen_architecture_docx.js`
 
 ## Audit Trail
 
-- EXTRACTED: 42 (100%)
+- EXTRACTED: 107 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

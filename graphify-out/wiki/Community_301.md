@@ -4,29 +4,31 @@
 
 ## Key Concepts
 
-- **Performance Optimization** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **1. Use Indexes** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **2. Limit Result Sets** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **3. Use Prepared Statements** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **4. Batch Writes** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **5. Connection Pooling** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (-- Add index for sync queries)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (-- ✅ Good)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// ✅ Good - prepared statement)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// ✅ Good - batch insert)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Recovery Patterns** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Pattern 1: Progressive Validation** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Pattern 2: Error Triage** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Pattern 3: Use get_node** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **ERROR_CATALOG.md** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Error Types Overview** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript (// Step 1: Minimal valid config)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript (const result = validate_node({...});)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **code:javascript (// Before configuring, check requirements)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[008_add_manager_notified_at.py]] (1 shared connections)
+- [[POST /log-entries/{id}/photos]] (1 shared connections)
+- [[Community 422]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 23 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

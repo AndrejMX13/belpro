@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **unacknowledged_count** (2 connections) — `api/routers/errors.py`
-- **loadHealthWidget** (1 connections) — `frontend/js/errors.js`
-- **refreshErrorBadge** (1 connections) — `frontend/js/errors.js`
+- **BelPro — Diagram zaporedja** (2 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
+- **belpro-arhitektura-zaporedje.md** (1 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
+- **code:mermaid (sequenceDiagram)** (1 connections) — `docs/images/belpro-arhitektura-zaporedje.md`
 
 ## Relationships
 
@@ -14,13 +14,12 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/errors.js`
+- `docs/images/belpro-arhitektura-zaporedje.md`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (50%)
-- INFERRED: 2 (50%)
+- EXTRACTED: 4 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

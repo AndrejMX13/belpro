@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 7: Frontend — Dokumenti tab** (9 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:html (<a href="#documents" class="nav-item" data-page="documents">)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:html (<script src="/js/documents.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js (documents: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block43 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block44 (git add frontend/index.html frontend/js/api.js frontend/js/v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Task 9: Backup / Restore Smoke Test** (5 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 9.1 — Verify backup.sh and restore.sh exist** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 9.2 — Write `scripts/test_backup_restore.sh`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 9.3 — Make executable** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 9.4 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (ls scripts/backup.sh scripts/restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (chmod +x scripts/test_backup_restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add scripts/test_backup_restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 

@@ -4,35 +4,39 @@
 
 ## Key Concepts
 
-- **SQL Pro** (6 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Quick-Reference Examples** (5 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **CTE Pattern** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Window Function Pattern** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **EXPLAIN ANALYZE Interpretation** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Before / After Optimization Example** (2 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- Isolate expensive subquery logic for reuse and readabilit)** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- Running total and rank within partition — no self-join re)** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- PostgreSQL: always use ANALYZE to see actual row counts v)** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **code:sql (-- BEFORE: correlated subquery, one execution per row (slow))** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/sql-pro/SKILL.md`
+- **gen_diagrams.py** (22 connections) — `scripts/gen_diagrams.py`
+- **fig1()** (7 connections) — `scripts/gen_diagrams.py`
+- **fnt()** (5 connections) — `scripts/gen_diagrams.py`
+- **text_size()** (5 connections) — `scripts/gen_diagrams.py`
+- **draw_box()** (4 connections) — `scripts/gen_diagrams.py`
+- **arrow_h_dotted()** (3 connections) — `scripts/gen_diagrams.py`
+- **fig2()** (3 connections) — `scripts/gen_diagrams.py`
+- **fig3()** (3 connections) — `scripts/gen_diagrams.py`
+- **arrow_h()** (2 connections) — `scripts/gen_diagrams.py`
+- **arrow_v()** (2 connections) — `scripts/gen_diagrams.py`
+- **arrow_h_dashed()** (2 connections) — `scripts/gen_diagrams.py`
+- **main()** (1 connections) — `scripts/gen_diagrams.py`
+- **Return (width, height) of text string.** (1 connections) — `scripts/gen_diagrams.py`
+- **Dashed horizontal arrow (single line, for Manager connection).** (1 connections) — `scripts/gen_diagrams.py`
+- **scripts/diagrams/fig1_architecture.png** (1 connections)
+- **scripts/diagrams/fig2_workflow.png** (1 connections)
+- **scripts/diagrams/fig3_reporting.png** (1 connections)
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[007_add_ngo_davcna.py]] (4 shared connections)
+- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[Node.js Essentials Reference]] (1 shared connections)
+- [[settings]] (1 shared connections)
+- [[BelPro Architecture Document EN]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/sql-pro/SKILL.md`
+- `scripts/gen_diagrams.py`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
+- EXTRACTED: 64 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

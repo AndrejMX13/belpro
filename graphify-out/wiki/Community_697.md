@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **Node.js Essentials Reference** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
-- **Node.js File System API** (1 connections) — `.claude/skills/javascript-pro/references/node-essentials.md`
+- **reference_render_diagrams.md** (1 connections) — `.claude/memory/reference_render_diagrams.md`
+- **code:block1 (python scripts/render_diagrams.py)** (1 connections) — `.claude/memory/reference_render_diagrams.md`
 
 ## Relationships
 
@@ -13,7 +13,7 @@
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/node-essentials.md`
+- `.claude/memory/reference_render_diagrams.md`
 
 ## Audit Trail
 

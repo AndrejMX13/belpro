@@ -4,25 +4,26 @@
 
 ## Key Concepts
 
-- **Error Prevention Checklist** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Code Structure** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Return Format** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Syntax** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Data Safety** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **auth.py** (6 connections) — `api/core/auth.py`
+- **_verify_password()** (4 connections) — `api/core/auth.py`
+- **require_manager()** (4 connections) — `api/core/auth.py`
+- **Manager authentication — httpOnly session cookie with Basic Auth fallback.  Auth** (1 connections) — `api/core/auth.py`
+- **Verify password against DB hash or env var fallback.** (1 connections) — `api/core/auth.py`
+- **Reject requests without a valid session cookie or Basic Auth credentials.** (1 connections) — `api/core/auth.py`
 
 ## Relationships
 
-- [[PhotoBase64Request (Schema)]] (1 shared connections)
+- [[Code: Preveri Slike Stanje]] (3 shared connections)
+- [[POST /api/log-entries/{id}/photos (upload_photo)]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `api/core/auth.py`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 15 (88%)
+- INFERRED: 2 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

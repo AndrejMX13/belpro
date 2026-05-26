@@ -4,35 +4,32 @@
 
 ## Key Concepts
 
-- **loadAnalytics()** (8 connections) — `frontend/js/analytics.js`
-- **analytics.js** (7 connections) — `frontend/js/analytics.js`
-- **renderAnalytics()** (5 connections) — `frontend/js/analytics.js`
-- **renderAnalyticsContent()** (3 connections) — `frontend/js/analytics.js`
-- **_renderCharts()** (3 connections) — `frontend/js/analytics.js`
-- **loadAnalytics()** (3 connections) — `frontend/js/analytics.js`
-- **GET /analytics/summary** (3 connections) — `api/routers/analytics.py`
-- **_destroyCharts()** (2 connections) — `frontend/js/analytics.js`
-- **API.analytics.summary()** (2 connections) — `frontend/js/api.js`
-- **AnalyticsSummary shape (total_hours, active_volunteer_count, hours_per_volunteer[], hours_per_location[], monthly_trend[])** (2 connections) — `api/routers/analytics.py`
-- **analyticsState** (1 connections) — `frontend/js/analytics.js`
-- **exportAnalyticsCsv()** (1 connections) — `frontend/js/analytics.js`
-- **renderAnalytics() — analytics page** (1 connections) — `frontend/js/analytics.js`
+- **Best Practices** (7 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **1. Always Validate Input Data** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **2. Use Try-Catch for Error Handling** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **3. Prefer Array Methods Over Loops** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **4. Filter Early, Process Late** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **5. Use Descriptive Variable Names** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **6. Debug with console.log()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (try {)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ GOOD: Functional approach)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ GOOD: Filter first to reduce processing)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ✅ GOOD: Clear intent)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// Debug statements appear in browser console)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[make_text_payload()]] (6 shared connections)
-- [[test_managers.py]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/analytics.py`
-- `frontend/js/analytics.js`
-- `frontend/js/api.js`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (83%)
-- INFERRED: 7 (17%)
+- EXTRACTED: 25 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

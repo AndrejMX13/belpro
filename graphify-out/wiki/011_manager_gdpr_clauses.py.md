@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Window Functions** (10 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Ranking Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Aggregate Window Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **LAG and LEAD Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **FIRST_VALUE and LAST_VALUE** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Advanced Analytics** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Conditional Aggregation with Windows** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Performance Considerations** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **window-functions.md** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- ROW_NUMBER: Sequential numbering within partition)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- Running totals and cumulative sums)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- Compare with previous/next row)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- Compare each row to first/last in partition)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- ROWS vs RANGE difference)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- Percentile calculations)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- Filter within window function)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **code:sql (-- Avoid multiple window passes - combine into one)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
-- **Common Patterns** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Debugging Strategies** (8 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Binary Search** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Minimal Reproduction** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Git Bisect** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Time Travel Debugging** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Rubber Duck Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Delta Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **strategies.md** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:markdown (1. Comment out/disable half the code)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:typescript (// Example: Bug in data processing pipeline)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:markdown (1. Create new minimal project)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:typescript (// Instead of debugging full app)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:bash (# Start bisect)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:bash (# Automated bisect with test script)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:markdown (1. Start at the error/failure point)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:typescript (// Error: Cannot read 'name' of undefined at line 45)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:markdown (1. State what the code should do)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **code:bash (# Check what changed)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
 
 ## Relationships
 
@@ -30,7 +30,7 @@
 
 ## Source Files
 
-- `.claude/skills/sql-pro/references/window-functions.md`
+- `.claude/skills/debugging-wizard/references/strategies.md`
 
 ## Audit Trail
 

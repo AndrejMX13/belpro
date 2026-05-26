@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Built-in Functions & Helpers** (4 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **$helpers.httpRequest()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **DateTime (Luxon)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **$jmespath()** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Current time)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Codebase context** (6 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 1: DB migration — unique partial indexes** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python ("""Add unique partial indexes to monthly_reports.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block2 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block3 (docker compose exec api alembic current)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block4 (docker compose exec postgres psql -U belpro -d belpro -c "\d)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add api/db/migrations/versions/010_monthly_reports_uniqu)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 

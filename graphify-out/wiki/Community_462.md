@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Common Patterns** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Access Nested Fields** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Reference Other Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Combine Variables** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Simple nesting)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Node without spaces)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Concatenation (automatic))** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Error #2: Empty Code / Missing Return** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Best Practice** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Empty code)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Always return)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ GOOD: Return at end of function (unconditional))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (1 shared connections)
+- [[Community 527]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

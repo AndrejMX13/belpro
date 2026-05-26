@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **test_health_returns_ok()** (2 connections) — `api/tests/test_health.py`
-- **test_health.py** (1 connections) — `api/tests/test_health.py`
-- **Health endpoint must return 200 with status ok.** (1 connections) — `api/tests/test_health.py`
+- **renderAdmin** (2 connections) — `frontend/js/admin.js`
+- **get_admin_settings** (1 connections) — `api/routers/admin.py`
+- **update_admin_settings** (1 connections) — `api/routers/admin.py`
 
 ## Relationships
 
@@ -14,7 +14,8 @@
 
 ## Source Files
 
-- `api/tests/test_health.py`
+- `api/routers/admin.py`
+- `frontend/js/admin.js`
 
 ## Audit Trail
 

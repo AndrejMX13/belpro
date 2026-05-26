@@ -4,31 +4,36 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Conversational Chatbot** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Data Analysis Assistant** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. Document Q&A** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Workflow Automation Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Email Processing Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block4 (1. Webhook (path: "chat", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block5 (You are a customer support assistant.)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block6 (Setup Phase (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block7 (1. Webhook (data question: "What were sales last month?"))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block9 (1. Slack (slash command: /deploy production))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block10 (1. Email Trigger (new support email))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Operation Patterns Guide** (10 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Conditional Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Chat Completion** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Switch (nodes-base.switch)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Basic Switch** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **AI Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **OpenAI (nodes-langchain.openAi)** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **OPERATION_PATTERNS.md** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 379]] (1 shared connections)
+- [[Community 421]] (1 shared connections)
+- [[Community 299]] (1 shared connections)
+- [[POST /api/reports/monthly/pdf (generate_monthly_pdf)]] (1 shared connections)
+- [[Community 378]] (1 shared connections)
+- [[entrypoint.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 30 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

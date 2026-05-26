@@ -1,47 +1,47 @@
 # DevOps Engineer Skill
 
-> 48 nodes
+> 49 nodes
 
 ## Key Concepts
 
-- **PostgreSQL Replication** (10 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Streaming Replication (Physical)** (5 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Logical Replication (Row-level)** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Failover and Promotion** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Backup and Point-in-Time Recovery (PITR)** (4 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Primary Server Setup** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Standby Server Setup** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Cascading Replication** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Connection Pooling for HA** (3 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Monitoring Replication** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Synchronous Replication** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Publisher Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Subscriber Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Logical Replication Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Delayed Replication (Delayed Standby)** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Manual Failover** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Automatic Failover with pg_auto_failover** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Patroni (Production HA Solution)** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **PgBouncer Configuration** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **HAProxy for Load Balancing** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **WAL Archiving Setup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Base Backup with pg_basebackup** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Point-in-Time Recovery** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Monitoring Best Practices** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- **Troubleshooting** (2 connections) — `.claude/skills/postgres-pro/references/replication.md`
-- *... and 23 more nodes in this community*
+- **connections** (19 connections) — `n8n/workflows/manager_approval.json`
+- **connections** (19 connections) — `n8n/workflows/manager_approval.json`
+- **activeVersion** (12 connections) — `n8n/workflows/manager_approval.json`
+- **Execute Workflow Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Manual Trigger** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Fetch Config** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Parse Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Switch: Action** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /approve** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /reject** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Volunteer Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Notify Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Manager Confirm** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: WA Confirm to Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Pending Entries** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Check Next Entry** (3 connections) — `n8n/workflows/manager_approval.json`
+- **IF: Should Notify?** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: PATCH /notify** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Volunteer** (3 connections) — `n8n/workflows/manager_approval.json`
+- **HTTP: GET Manager** (3 connections) — `n8n/workflows/manager_approval.json`
+- **Code: Build Next Msg** (3 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- **main** (1 connections) — `n8n/workflows/manager_approval.json`
+- *... and 24 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[renderDetail() — volunteer detail page]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/postgres-pro/references/replication.md`
+- `n8n/workflows/manager_approval.json`
 
 ## Audit Trail
 
-- EXTRACTED: 94 (100%)
+- EXTRACTED: 132 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

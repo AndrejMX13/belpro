@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Strategy 1: Progressive Strictness** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Validation Profile Strategies** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Strategy 2: Profile by Workflow Type** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **The Problem** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning object instead of array)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning array without json wrapper)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning plain value)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Returning items without mapping)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Incomplete structure)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 419]] (1 shared connections)
+- [[Community 331]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

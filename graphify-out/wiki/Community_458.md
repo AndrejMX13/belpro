@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Module 5: hashlib - Hashing** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **MD5 Hash** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **SHA256 Hash** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Generate Unique ID** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Error #6: UnsupportedFunctionError (Auth Helpers Blocked)** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Solution** (3 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ BLOCKED in task runner sandbox (default since v2.0))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Parent Code node — prepare payloads, then delegate)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ Works — manual auth header, token came from upstream)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Decision Guide** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[Community 285]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Checklist for Webhook Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Setup** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Data Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **File Structure** (6 connections) — `.claude/skills/n8n-code-python/README.md`
+- **SKILL.md (719 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **DATA_ACCESS.md (703 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **STANDARD_LIBRARY.md (850 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **COMMON_PATTERNS.md (895 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **ERROR_PATTERNS.md (730 lines)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 292]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **Transaction Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 1: BEGIN/COMMIT/ROLLBACK** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 2: Atomic Operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 3: Error Rollback** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Node 1: Begin Transaction)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (-- Upsert example (atomic))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block25 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Memory Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Buffer Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Window Buffer Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Summary Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
@@ -18,7 +18,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

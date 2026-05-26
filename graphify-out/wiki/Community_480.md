@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Prompt Engineering for Agents** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **System Prompt Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Example (Customer Support)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Example (Data Analyst)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block21 (You are a [ROLE].)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block22 (You are a customer support assistant for Acme Corp.)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block23 (You are a data analyst assistant with access to the company )** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **6. Hardcoded Credentials** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When Acceptable** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When to Fix (Always!)** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Truly public API with no secrets)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Example workflow in documentation)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: Real API key in workflow)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

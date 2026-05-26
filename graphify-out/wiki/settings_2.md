@@ -1,43 +1,46 @@
 # settings
 
-> 22 nodes
+> 25 nodes
 
 ## Key Concepts
 
-- **1. $helpers.httpRequest() - HTTP Requests** (10 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Authentication Patterns** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **GET Request** (3 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Complete Options** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **POST Request** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **PUT/PATCH Request** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **DELETE Request** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Error Handling** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Full Response Access** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const response = await $helpers.httpRequest({)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Simple GET)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// GET with query parameters)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// POST with JSON body)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Update resource)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Delete resource)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Bearer Token (token came from a previous node, not $env))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// API Key in Header (key came from a previous node, not $en)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Basic Auth (manual))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Handle HTTP errors gracefully)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Get full response including headers and status)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **n8n Workflow Patterns** (17 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Workflow Creation Checklist** (5 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Coverage** (3 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Real Template Examples** (2 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **File Count** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Priority** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Dependencies** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **The 5 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Cross-Cutting Concerns** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Evaluations** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Key Features** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Success Metrics** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Pattern Selection Stats** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Critical Insights** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Planning Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Implementation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Validation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Deployment Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **code:block1 (Schedule (daily 8 AM) → HTTP Request (weather) → Set → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **Last Updated** (1 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
 
 ## Relationships
 
-- [[Community 551]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-workflow-patterns/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 43 (100%)
+- EXTRACTED: 48 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

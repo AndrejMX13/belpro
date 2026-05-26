@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **reference_render_diagrams.md** (1 connections) — `.claude/memory/reference_render_diagrams.md`
-- **code:block1 (python scripts/render_diagrams.py)** (1 connections) — `.claude/memory/reference_render_diagrams.md`
+- **feedback_n8n_import_script.md** (1 connections) — `.claude/memory/feedback_n8n_import_script.md`
+- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `.claude/memory/feedback_n8n_import_script.md`
 
 ## Relationships
 
@@ -13,7 +13,7 @@
 
 ## Source Files
 
-- `.claude/memory/reference_render_diagrams.md`
+- `.claude/memory/feedback_n8n_import_script.md`
 
 ## Audit Trail
 

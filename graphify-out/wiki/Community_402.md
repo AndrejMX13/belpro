@@ -4,31 +4,28 @@
 
 ## Key Concepts
 
-- **conftest.py** (6 connections) — `api/tests/conftest.py`
-- **engine()** (6 connections) — `api/tests/conftest.py`
-- **db_session()** (2 connections) — `api/tests/conftest.py`
-- **client()** (2 connections) — `api/tests/conftest.py`
-- **auth()** (2 connections) — `api/tests/conftest.py`
-- **Run Alembic migrations against belpro_test, seed one Manager row.     Drops all** (1 connections) — `api/tests/conftest.py`
-- **Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo** (1 connections) — `api/tests/conftest.py`
-- **AsyncClient with get_db dependency wired to the test session.** (1 connections) — `api/tests/conftest.py`
-- **HTTP Basic Auth header for the seeded manager.** (1 connections) — `api/tests/conftest.py`
+- **Task 5: Config router — no-auth endpoint for n8n** (9 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python ("""Tests for the public config endpoint consumed by n8n work)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_config.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python ("""Config router — public read-only settings for n8n workflo)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (from routers.config import router as config_router)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (app.include_router(config_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_config.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/routers/config.py api/main.py api/tests/test_con)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[load_key()]] (3 shared connections)
-- [[volunteers.js]] (1 shared connections)
-- [[BelPro System Specification]] (1 shared connections)
-- [[test_auth.py]] (1 shared connections)
+- [[Community 401]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/conftest.py`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (82%)
-- INFERRED: 4 (18%)
+- EXTRACTED: 17 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

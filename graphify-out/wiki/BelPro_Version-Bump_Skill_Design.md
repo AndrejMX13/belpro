@@ -1,21 +1,22 @@
 # BelPro Version-Bump Skill Design
 
-> 12 nodes
+> 13 nodes
 
 ## Key Concepts
 
-- **Contributing to BelPro** (6 connections) — `CONTRIBUTING.md`
-- **How to contribute** (5 connections) — `CONTRIBUTING.md`
-- **Development setup** (2 connections) — `CONTRIBUTING.md`
-- **CONTRIBUTING.md** (1 connections) — `CONTRIBUTING.md`
-- **Quick links** (1 connections) — `CONTRIBUTING.md`
-- **Report a bug** (1 connections) — `CONTRIBUTING.md`
-- **Suggest a feature** (1 connections) — `CONTRIBUTING.md`
-- **Submit code** (1 connections) — `CONTRIBUTING.md`
-- **First-time contributors** (1 connections) — `CONTRIBUTING.md`
-- **code:bash (git clone https://github.com/AndrejMX13/belpro.git)** (1 connections) — `CONTRIBUTING.md`
-- **Communication** (1 connections) — `CONTRIBUTING.md`
-- **What's in scope (v1)** (1 connections) — `CONTRIBUTING.md`
+- **Design: httpOnly Cookie Auth (ISS-005)** (8 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **2026-05-19-httponly-cookie-auth-design.md** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Dual auth in `require_manager`** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Session token** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **New settings** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **New endpoints** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **File Map** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **What does NOT change** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Behaviour changes visible to the manager** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Not in scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Relationships
 
@@ -23,11 +24,11 @@
 
 ## Source Files
 
-- `CONTRIBUTING.md`
+- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 24 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

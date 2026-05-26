@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 4: Volunteer Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 4.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 4.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 4.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest tests/test_volunteers.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Timezone Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Set Workflow Timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Common Timezones** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Handle Daylight Saving** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// In workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block14 (America/New_York    - Eastern (US))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// ❌ Bad: UTC schedule for "9 AM local")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 389]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

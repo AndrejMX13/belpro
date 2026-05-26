@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **[0.5.1] — 2026-05-04** (3 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
+- **3. Zagon vseh storitev** (3 connections) — `README_SL.md`
+- **code:bash (docker compose up -d)** (1 connections) — `README_SL.md`
+- **code:bash (docker compose ps)** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `README_SL.md`
 
 ## Audit Trail
 

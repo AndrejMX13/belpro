@@ -4,16 +4,20 @@
 
 ## Key Concepts
 
-- **Task 2: AppSettings central authority + unit tests** (6 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# ── Unit tests for AppSettings ────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block10 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python ("""AppSettings — central authority for all configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block12 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **ISS-026: Settings Table Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Post-implementation** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **2026-05-20-settings-table.md** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[Community 400]] (1 shared connections)
+- [[Community 540]] (1 shared connections)
+- [[Community 311]] (1 shared connections)
+- [[GET /api/errors (list_errors)]] (1 shared connections)
+- [[Community 347]] (1 shared connections)
 
 ## Source Files
 
@@ -21,7 +25,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

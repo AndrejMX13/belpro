@@ -4,32 +4,31 @@
 
 ## Key Concepts
 
-- **Database Node Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **MongoDB** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **MySQL** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **SELECT with JOIN** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Bulk INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Find Documents** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Insert Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Update Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Conversational Chatbot** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Data Analysis Assistant** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Document Q&A** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Workflow Automation Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Email Processing Agent** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block4 (1. Webhook (path: "chat", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block5 (You are a customer support assistant.)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block6 (Setup Phase (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block7 (1. Webhook (data question: "What were sales last month?"))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block9 (1. Slack (slash command: /deploy production))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block10 (1. Email Trigger (new support email))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
 - [[HTTP: Pridobi Upravljalca]] (1 shared connections)
-- [[Community 384]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

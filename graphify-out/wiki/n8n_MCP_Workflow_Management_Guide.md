@@ -34,12 +34,12 @@
 ## Relationships
 
 - [[volunteers.js]] (16 shared connections)
-- [[BelPro System Specification]] (3 shared connections)
+- [[VolunteerUpdate]] (3 shared connections)
 - [[load_key()]] (2 shared connections)
-- [[Systematic Debugging Reference]] (2 shared connections)
-- [[renderDetail() — volunteer detail page]] (2 shared connections)
-- [[POST /api/log-entries/{id}/photos (upload_photo)]] (2 shared connections)
-- [[Community 321]] (1 shared connections)
+- [[GDPR Consent PDF (Dogovor o prostovoljstvu)]] (2 shared connections)
+- [[test_app_settings.py]] (2 shared connections)
+- [[PATCH /api/log-entries/{id} (update_log_entry)]] (2 shared connections)
+- [[Community 325]] (1 shared connections)
 - [[Community 544]] (1 shared connections)
 
 ## Source Files

@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 6: Admin UI — settings field** (7 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:html (<div class="field">)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:js ($('a-evolution-instance').value = data.evolution_instance_na)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:js (const current = {)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:js (// Validate)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose up -d)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (git add frontend/js/admin.js)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Task 5: Photo retention cleanup job** (7 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec ops /app/scripts/photo_cleanup.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:block35 ([photo_cleanup] Retention cutoff: 2024-05-20 (730 days))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec -e DATABASE_URL=postgresql+asyncpg://bad)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add ops/scripts/photo_cleanup.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 398]] (1 shared connections)
+- [[Community 433]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

@@ -4,25 +4,32 @@
 
 ## Key Concepts
 
-- **Error #6: UnsupportedFunctionError (Auth Helpers Blocked)** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Solution** (3 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ BLOCKED in task runner sandbox (default since v2.0))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// Parent Code node — prepare payloads, then delegate)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ Works — manual auth header, token came from upstream)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Decision Guide** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **File Map** (9 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **WhatsApp Phone — Single Source of Truth Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Self-Review** (3 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **2026-05-11-whatsapp-phone-source-of-truth.md** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Context & Key Decisions** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Spec coverage** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Pre-flight checks before Task 6** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[PhotoBase64Request (Schema)]] (1 shared connections)
+- [[Community 326]] (1 shared connections)
+- [[Community 515]] (1 shared connections)
+- [[Community 516]] (1 shared connections)
+- [[Community 517]] (1 shared connections)
+- [[Community 327]] (1 shared connections)
+- [[Community 328]] (1 shared connections)
+- [[Community 362]] (1 shared connections)
+- [[Community 450]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

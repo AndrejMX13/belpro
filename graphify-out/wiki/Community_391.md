@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 7: Normalize phone in update_manager + write .env on manual save** (9 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (from pydantic import BaseModel, EmailStr, Field, field_valid)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (@field_validator("ngo_whatsapp_phone", mode="before"))** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (if "ngo_whatsapp_phone" in payload.model_fields_set and mana)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/schemas/manager.py api/routers/managers.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Performance Optimization** (5 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. Batch Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. Parallel Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. Skip if Already Running** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. Early Exit on No Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block20 (Schedule → Query (LIMIT 10000))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block21 (Schedule)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block22 (Schedule → Redis (check lock))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block23 (Schedule → Query (check if work exists))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

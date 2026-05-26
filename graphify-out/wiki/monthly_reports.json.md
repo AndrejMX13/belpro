@@ -1,35 +1,35 @@
 # monthly_reports.json
 
-> 49 nodes
+> 51 nodes
 
 ## Key Concepts
 
-- **Task 8: docker-compose and integration test** (12 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **File Map** (9 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 1: AppSettings — new properties and env var** (7 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 3: Admin router — return new fields, save them, notify ops** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 4: Frontend — Sistemske nastavitve UI** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 5: monthly_report_send.py** (5 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 7: ops crontab and entrypoint** (4 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 2: Admin schemas — new fields** (3 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Task 6: ops_server.py** (3 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Auto Monthly Report Delivery — Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **2026-05-21-auto-monthly-reports.md** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (from httpx import AsyncClient)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block2 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (ops_url: str = "http://ops:9000")** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block5 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:bash (git add api/core/settings.py api/services/app_settings.py ap)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:bash (git add api/schemas/admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python (from unittest.mock import AsyncMock, MagicMock, patch)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block10 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:python ("""Admin router — runtime-tunable settings management.""")** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:block12 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:bash (git add api/routers/admin.py api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **code:javascript (<div class="field">)** (1 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- *... and 24 more nodes in this community*
+- **n8n MCP Workflow Management Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n Node Operation Patterns Reference** (8 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n Workflow Patterns Skill README** (8 connections) — `.claude/skills/n8n-workflow-patterns/README.md`
+- **n8n Node Configuration Skill (SKILL.md)** (7 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **n8n Validation Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **PostgreSQL Pro Skill (SKILL.md)** (7 connections) — `.claude/skills/postgres-pro/SKILL.md`
+- **n8n Workflow Patterns Skill (SKILL.md)** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **n8n Validation Expert Skill (SKILL.md)** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **n8n Node Configuration Property Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **n8n_update_partial_workflow Tool** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n AI Connection Types (8 types)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n Node Configuration Skill README** (3 connections) — `.claude/skills/n8n-node-configuration/README.md`
+- **n8n Validation False Positives Guide** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **n8n Validation Expert Skill README** (3 connections) — `.claude/skills/n8n-validation-expert/README.md`
+- **n8n Webhook Processing Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **n8n HTTP API Integration Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **n8n Database Operations Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **n8n AI Agent Workflow Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **n8n Scheduled Tasks Pattern** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **patchNodeField Operation (Surgical String Edit)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n_validate_workflow Tool (by ID)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n Workflow Lifecycle (Create-Validate-Edit-Activate-Monitor)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n HTTP Request Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n Webhook Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **n8n Postgres Node Pattern** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- *... and 26 more nodes in this community*
 
 ## Relationships
 
@@ -37,12 +37,31 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.claude/skills/n8n-node-configuration/README.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-validation-expert/README.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/README.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/postgres-pro/SKILL.md`
+- `.claude/skills/postgres-pro/references/extensions.md`
+- `.claude/skills/postgres-pro/references/jsonb.md`
+- `.claude/skills/postgres-pro/references/maintenance.md`
 
 ## Audit Trail
 
-- EXTRACTED: 96 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 120 (87%)
+- INFERRED: 18 (13%)
 - AMBIGUOUS: 0 (0%)
 
 ---

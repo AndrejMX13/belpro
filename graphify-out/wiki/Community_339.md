@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Batch Processing Pattern** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **SplitInBatches Loop** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Nested Loops** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **API Pagination** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Dry-Run / Verification Tolerance** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block6 (Prepare Items → SplitInBatches → [main[1]: Process Batch] → )** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Cross-Iteration Data** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block7 (Define Categories (N items))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block8 (Schedule → Set Date Window → Fetch Page → Process)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript (// In verification Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Troubleshooting Dependencies** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Problem 1: "Field X is required but not visible"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Problem 2: "Field disappears when I change operation"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Problem 3: "Validation passes but field doesn't save"** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Check field dependencies using search_properties)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Working configuration)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Check requirements for new operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Configure)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Correct approach - check property dependencies)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[restore.sh]] (1 shared connections)
+- [[Community 376]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

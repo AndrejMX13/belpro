@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 7: Health widget on the dashboard** (8 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<!-- Health widget — shown on main landing page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<a href="#applog" class="nav-item" data-page="applog">)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<!-- App log page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:css (/* Health widget */)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:javascript (// frontend/js/errors.js)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:html (<script type="module" src="/js/errors.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add frontend/index.html frontend/js/errors.js frontend/c)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Schedule Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Cron Mode (Advanced)** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Interval Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Days & Hours Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Every 15 minutes)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Weekdays at 9 AM)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Every weekday at 9 AM)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block5 (0 */6 * * *      Every 6 hours)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 428]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

@@ -1,28 +1,29 @@
 # Community 440
 
-> 7 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **4. WhatsApp Flow (Volunteer)** (6 connections) — `SPEC.md`
-- **4.1 Submitting an entry** (2 connections) — `SPEC.md`
-- **code:block1 (Volunteer sends:)** (1 connections) — `SPEC.md`
-- **4.2 Missing photo** (1 connections) — `SPEC.md`
-- **4.3 Sent-message visibility on linked phone** (1 connections) — `SPEC.md`
-- **4.4 Volunteer language** (1 connections) — `SPEC.md`
-- **4.5 Whisper concurrency — design decision** (1 connections) — `SPEC.md`
+- **Test Master** (6 connections) — `.claude/skills/test-master/SKILL.md`
+- **Quick-Start Example** (2 connections) — `.claude/skills/test-master/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **code:js (// ✅ Good: meaningful description, specific assertion, isola)** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Constraints** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/test-master/SKILL.md`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `SPEC.md`
+- `.claude/skills/test-master/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

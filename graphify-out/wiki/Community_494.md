@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 8: Settings UI — display, badges, read-only states** (7 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (function _waBadge(state) {)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (if (configInfo.wa_synced) {)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (<div class="field" style="margin-top:0.75rem">)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (<div class="field" style="margin-top:0.75rem">)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:js (ngo_whatsapp_phone: $('s-ngo-wa-phone').value.trim() || null)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Testing Webhooks** (5 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **1. Use Manual Trigger** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **2. Use curl** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block29 (Manual Trigger → [set test data] → rest of workflow)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:bash (curl -X POST https://n8n.example.com/webhook/form-submit \)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **3. Use Postman/Insomnia** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **4. Webhook.site** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

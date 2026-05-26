@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Incremental Migration Strategy** (5 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Phase 1: Parallel API (Strangler Pattern)** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Phase 2: Shared Database Migration** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Phase 4: Complete Cutover** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Nginx routing config)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# FastAPI with existing Django database)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Phase 3: Database Schema Modernization** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Decommission Django)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Task 7: Health widget on the dashboard** (8 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<!-- Health widget — shown on main landing page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<a href="#applog" class="nav-item" data-page="applog">)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<!-- App log page -->)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:css (/* Health widget */)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:javascript (// frontend/js/errors.js)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:html (<script type="module" src="/js/errors.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add frontend/index.html frontend/js/errors.js frontend/c)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- [[Community 541]] (1 shared connections)
+- [[Community 433]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 

@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Error #2: Expression Syntax Confusion** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Solution** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Problem** (3 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Quick Fix Guide** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Using n8n expression syntax in Code node)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ WRONG: Trying to evaluate expressions)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Use JavaScript directly (no {{ }}))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: JavaScript template literals (use backticks))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Direct variable access)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Comparison Table** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// WRONG → RIGHT conversions)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Codebase context** (11 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (from datetime import date)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block23 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (from services.report_storage import persist_report)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_na)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (pdf_bytes = render_volunteer_pdf(vol.first_name, vol.last_na)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (mgr_items = [i for i in await _summary_items(db, y, m) if i.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:python (mgr_items = [i for i in await _summary_items(db, y, m) if i.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block29 (docker compose exec api pytest tests/test_report_history.py:)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:block30 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **code:bash (git add api/routers/reports.py api/tests/test_report_history)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- [[PhotoBase64Request (Schema)]] (1 shared connections)
+- [[Community 518]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Audit Trail
 

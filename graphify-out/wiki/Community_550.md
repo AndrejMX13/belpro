@@ -4,27 +4,24 @@
 
 ## Key Concepts
 
-- **loadReportArchive()** (5 connections) — `frontend/js/reports.js`
-- **GET /reports/history** (3 connections) — `api/routers/reports.py`
-- **API.reports.history()** (2 connections) — `frontend/js/api.js`
-- **loadReportArchive()** (2 connections) — `frontend/js/reports.js`
-- **ReportHistoryList shape (items[], total)** (2 connections) — `api/routers/reports.py`
+- **🚨 CRITICAL: Webhook Data Structure** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Webhook Node Output Structure** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Correct Webhook Data Access** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (❌ WRONG: {{$json.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[make_text_payload()]] (3 shared connections)
-- [[001_initial_schema.py]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/api.js`
-- `frontend/js/reports.js`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (79%)
-- INFERRED: 3 (21%)
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **2. No Retry Logic** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When to Fix** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Stripe has its own retry mechanism)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// GET request - safe to retry manually if needed)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Internal API with high reliability)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: Known unreliable API without retries)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: POST without retry - may lose data)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Common Node Patterns** (5 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 1: Resource/Operation Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 2: HTTP-Based Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 3: Database Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 4: Conditional Logic Nodes** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 298]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

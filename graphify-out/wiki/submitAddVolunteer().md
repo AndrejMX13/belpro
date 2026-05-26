@@ -1,30 +1,31 @@
 # submitAddVolunteer()
 
-> 21 nodes
+> 22 nodes
 
 ## Key Concepts
 
-- **Database Optimizer** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Common Operations & Examples** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Identify Top Slow Queries (PostgreSQL)** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Capture an Execution Plan** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Create a Covering Index** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Validate Improvement** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **MySQL: Find Slow Queries** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **When to Use This Skill** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **code:sql (-- Requires pg_stat_statements extension)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **code:sql (-- Use BUFFERS to expose cache hit vs. disk read ratio)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Reading EXPLAIN Output — Key Patterns to Find** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **code:sql (-- Covers the filter AND the projected columns, eliminating )** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **code:sql (-- Before optimization: save plan & timing)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **code:sql (-- Inspect slow query log candidates)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Manager WhatsApp Approval Workflow — Design Spec** (8 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Data Flow** (4 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **WhatsApp Messages** (4 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Routing Change (volunteer_entry.json)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Manager Workflow (manager_approval.json)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Execute Workflow Input (from volunteer flow)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **2026-05-07-manager-approval-design.md** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Solution** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block1 (Webhook: WhatsApp)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block2 (┌─ Manual Trigger ──────────────────────┐)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Manager → "Not Registered" Fix** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Testing Without a Third Phone** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **API Endpoints Used** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block4 (Vaš vnos z dne 07.05.2026 je bil odobren. ✅)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block5 (Vaš vnos z dne 07.05.2026 je bil zavrnjen. ❌)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **code:block6 (Vnos za Slavko Pridni je bil odobren/zavrnjen.)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Interaction Format** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Known Limitation: Buttons** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Files Changed** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
 
 ## Relationships
 
@@ -32,11 +33,11 @@
 
 ## Source Files
 
-- `.claude/skills/database-optimizer/SKILL.md`
+- `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

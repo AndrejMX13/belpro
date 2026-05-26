@@ -4,31 +4,37 @@
 
 ## Key Concepts
 
-- **Pattern 2: $input.first() - Get First Item** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 5: Combine with Other Methods** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const item = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const response = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get first item's data)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **n8n Workflow Patterns** (16 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Pattern Selection Guide** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **The 6 Core Patterns** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **When to use each pattern:** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Integration with Other Skills** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Pattern Statistics** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Detailed Pattern Files** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Real Template Examples** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **✅ Do** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **❌ Don't** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[Community 410]] (1 shared connections)
+- [[Community 511]] (1 shared connections)
+- [[Community 552]] (1 shared connections)
+- [[API.health.basic()]] (1 shared connections)
+- [[Community 323]] (1 shared connections)
+- [[Community 551]] (1 shared connections)
+- [[Community 411]] (1 shared connections)
+- [[POST /errors (internal)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 31 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

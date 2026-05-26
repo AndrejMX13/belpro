@@ -4,30 +4,32 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. Data Fetching & Storage** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. API to API Integration** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. Data Enrichment** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Monitoring & Alerting** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **5. Batch Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block5 (1. Schedule (every hour))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - filter issues)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block7 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block8 (1. Postgres (SELECT new contacts))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block9 (1. Schedule (every 5 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block10 (1. Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **frontend/index.html Manager Dashboard SPA** (9 connections) — `frontend/index.html`
+- **GDPR Consent Document Design ISS-015** (4 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **api/services/consent_pdf.py Consent PDF Renderer** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **api/routers/documents.py GET /documents/consent-pdf** (2 connections) — `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- **Dashboard Nav Dokumenti Documents Tab** (2 connections) — `frontend/index.html`
+- **Dashboard Nav Administracija Admin Tab** (2 connections) — `frontend/index.html`
+- **Dashboard Nav Prostovoljci Tab** (1 connections) — `frontend/index.html`
+- **Dashboard Nav Dnevniki Approvals Tab** (1 connections) — `frontend/index.html`
+- **Dashboard Nav Analitika Tab** (1 connections) — `frontend/index.html`
+- **Dashboard Nav Porocila Reports Tab** (1 connections) — `frontend/index.html`
+- **Dashboard Nav Nastavitve Settings Tab** (1 connections) — `frontend/index.html`
+- **Dashboard Nav Dnevnik napak Error Log Tab** (1 connections) — `frontend/index.html`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- [[n8n MCP Workflow Management Guide]] (2 shared connections)
+- [[Community 325]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `docs/superpowers/specs/2026-05-20-gdpr-consent-design.md`
+- `frontend/index.html`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 27 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

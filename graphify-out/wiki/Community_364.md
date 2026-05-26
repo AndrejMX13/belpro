@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Error #5: Incorrect Return Format** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Common Scenarios** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Returning plain dictionary)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Array of objects with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# Calculate total)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# Filter active items)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Return empty array)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Task 7: Frontend — Dokumenti tab** (9 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:html (<a href="#documents" class="nav-item" data-page="documents">)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:html (<script src="/js/documents.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js (documents: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js (} else if (hash === '#documents') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block43 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block44 (git add frontend/index.html frontend/js/api.js frontend/js/v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 518]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

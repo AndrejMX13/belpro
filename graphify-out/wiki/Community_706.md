@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Code: Check Pending (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **GET /logo** (1 connections) — `api/routers/logo.py`
+- **_refreshSidebarLogo() — GET /api/logo probe** (1 connections) — `frontend/js/volunteers.js`
 
 ## Relationships
 
-- [[002_add_emso_hash.py]] (1 shared connections)
-- [[012_settings_table.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `api/routers/logo.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 2 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

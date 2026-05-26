@@ -1,43 +1,47 @@
 # GDPR Consent PDF (Dogovor o prostovoljstvu)
 
-> 21 nodes
+> 22 nodes
 
 ## Key Concepts
 
-- **Secure Code Guardian** (7 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Code Examples** (6 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Core Workflow** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Password Hashing (bcrypt)** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Parameterized SQL Query (Node.js / pg)** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Input Validation with Zod** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **JWT Validation** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Securing an Endpoint — Full Flow** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Validation Checkpoints** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import bcrypt from 'bcrypt';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (// NEVER: `SELECT * FROM users WHERE email = '${email}'`)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import { z } from 'zod';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import jwt from 'jsonwebtoken';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **code:typescript (import express from 'express';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Knowledge Reference** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **render_consent_pdf()** (11 connections) — `api/services/consent_pdf.py`
+- **test_documents.py** (8 connections) — `api/tests/test_documents.py`
+- **consent_pdf.py** (7 connections) — `api/services/consent_pdf.py`
+- **test_render_consent_pdf_returns_bytes()** (3 connections) — `api/tests/test_documents.py`
+- **test_render_consent_pdf_with_additional_clauses()** (3 connections) — `api/tests/test_documents.py`
+- **test_render_consent_pdf_empty_clauses_treated_as_none()** (3 connections) — `api/tests/test_documents.py`
+- **_esc()** (2 connections) — `api/services/consent_pdf.py`
+- **_now_str()** (2 connections) — `api/services/consent_pdf.py`
+- **test_consent_pdf_returns_pdf()** (2 connections) — `api/tests/test_documents.py`
+- **test_consent_pdf_requires_auth()** (2 connections) — `api/tests/test_documents.py`
+- **test_patch_manager_saves_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
+- **test_patch_manager_clears_gdpr_clauses()** (2 connections) — `api/tests/test_documents.py`
+- **GDPR Article 13 consent notice PDF generation.** (1 connections) — `api/services/consent_pdf.py`
+- **Render the GDPR Article 13 consent notice PDF and return raw bytes.      `manage** (1 connections) — `api/services/consent_pdf.py`
+- **Tests for the /documents router and consent_pdf service.** (1 connections) — `api/tests/test_documents.py`
+- **render_consent_pdf returns non-empty bytes for a minimal manager.** (1 connections) — `api/tests/test_documents.py`
+- **render_consent_pdf produces bytes when additional clauses are set.** (1 connections) — `api/tests/test_documents.py`
+- **render_consent_pdf handles empty string clauses without error.** (1 connections) — `api/tests/test_documents.py`
+- **Authenticated request returns a PDF response.** (1 connections) — `api/tests/test_documents.py`
+- **Unauthenticated request is rejected.** (1 connections) — `api/tests/test_documents.py`
+- **PATCH /managers/me accepts and persists gdpr_additional_clauses.** (1 connections) — `api/tests/test_documents.py`
+- **PATCH /managers/me with empty string clears gdpr_additional_clauses.      Note:** (1 connections) — `api/tests/test_documents.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Code: Build Image Media Body]] (3 shared connections)
+- [[n8n MCP Workflow Management Guide]] (2 shared connections)
+- [[009_rename_entry_date_to_work_date.py]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/SKILL.md`
+- `api/services/consent_pdf.py`
+- `api/tests/test_documents.py`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 47 (82%)
+- INFERRED: 10 (18%)
 - AMBIGUOUS: 0 (0%)
 
 ---

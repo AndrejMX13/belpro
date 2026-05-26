@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **SmtpNotConfiguredError (Service)** (0 connections) — `api/services/email.py`
+- **LoginRequest (Schema)** (0 connections) — `api/schemas/auth.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/services/email.py`
+- `api/schemas/auth.py`
 
 ## Audit Trail
 

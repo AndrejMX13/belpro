@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **13. Forgetting .json in $node Reference** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block27 ({{$node["HTTP Request"].data}}          // Missing .json)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block28 ({{$node["HTTP Request"].json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **5. Incorrect Node Reference Case** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block10 ({{$node["http request"].json.data}}  // lowercase)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block11 ({{$node["HTTP Request"].json.data}}  // exact match)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 631]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 

@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **5. Missing Input Validation** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When Acceptable** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When to Fix** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Webhook from your own backend)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Webhook from Stripe (cryptographically signed))** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: Public webhook without validation)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Pattern 1: Conditional Required with Fallback** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Pattern 2: Mutually Exclusive Fields** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Pattern 3: Progressive Complexity** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Option 1: String)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Use messageId)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **code:javascript (// Simple mode)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Relationships
 
-- [[Community 298]] (1 shared connections)
+- [[Community 376]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
 
 ## Audit Trail
 

@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Data Access Patterns** (5 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Pattern 1: _input.all() - Most Common** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Pattern 2: _input.first() - Very Common** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Pattern 3: _input.item - Each Item Mode Only** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Pattern 4: _node - Reference Other Nodes** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Get all items from previous node)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Get first item only)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Current item in loop (Each Item mode only))** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Debugging Tips** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **1. Use console.log()** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **2. Return Intermediate Results** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **3. Try-Catch for Troubleshooting** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **4. Validate Input Structure** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Debug by returning current state)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (try {)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 285]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/health/detailed (health_detailed)** (0 connections) — `api/main.py`
+- **GET /api/logo (get_logo)** (0 connections) — `api/routers/logo.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/main.py`
+- `api/routers/logo.py`
 
 ## Audit Trail
 

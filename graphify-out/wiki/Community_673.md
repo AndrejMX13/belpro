@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Best Practices** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **✅ Do** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Don't** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **13. Forgetting .json in $node Reference** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block27 ({{$node["HTTP Request"].data}}          // Missing .json)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block28 ({{$node["HTTP Request"].json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

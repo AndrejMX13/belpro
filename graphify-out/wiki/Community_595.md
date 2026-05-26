@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **009_rename_entry_date_to_work_date.py** (2 connections) — `api/db/migrations/versions/009_rename_entry_date_to_work_date.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/009_rename_entry_date_to_work_date.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/009_rename_entry_date_to_work_date.py`
-- **Rename entry_date to work_date and update index names.** (1 connections) — `api/db/migrations/versions/009_rename_entry_date_to_work_date.py`
-- **Reverse rename: work_date back to entry_date and restore index names.** (1 connections) — `api/db/migrations/versions/009_rename_entry_date_to_work_date.py`
+- **006_whatsapp_and_smtp_config.py** (2 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
+- **Add WhatsApp bot number and SMTP config columns to managers.** (1 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
+- **Drop WhatsApp bot number and SMTP config columns from managers.** (1 connections) — `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
 
 ## Relationships
 
@@ -16,7 +16,7 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/009_rename_entry_date_to_work_date.py`
+- `api/db/migrations/versions/006_whatsapp_and_smtp_config.py`
 
 ## Audit Trail
 

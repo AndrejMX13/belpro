@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **6. Monthly PDF Reports** (4 connections) — `SPEC.md`
-- **6.1 Volunteer PDF (per person)** (1 connections) — `SPEC.md`
-- **6.2 Manager Consolidated PDF** (1 connections) — `SPEC.md`
-- **6.3 Delivery** (1 connections) — `SPEC.md`
+- **EMŠO Key Rotation** (4 connections) — `README.md`
+- **code:bash (bash scripts/rotate_emso_key.sh <OLD_KEY> <NEW_KEY>)** (1 connections) — `README.md`
+- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README.md`
+- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- [[Code: Pripravi Popravek]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
+- `README.md`
 
 ## Audit Trail
 

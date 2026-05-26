@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **[0.10.2-beta.0] — 2026-05-19** (3 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
+- **008_add_manager_notified_at.py** (2 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
+- **upgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
+- **downgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
 
 ## Relationships
 
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `api/db/migrations/versions/008_add_manager_notified_at.py`
 
 ## Audit Trail
 
-- EXTRACTED: 5 (100%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

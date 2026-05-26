@@ -1265,9 +1265,9 @@
     "semantic_hash": "20f8d6e920b4a4834e89dc5831707d89"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\n8n_workflows.py": {
-    "mtime": 1778923798.601222,
-    "ast_hash": "b1a22d7fbd45e990e5bd1297bcfce4ae",
-    "semantic_hash": "b1a22d7fbd45e990e5bd1297bcfce4ae"
+    "mtime": 1779807051.6714761,
+    "ast_hash": "40826198b2ef0390ae44d5b2a56231f1",
+    "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\switch_manager_phone.ps1": {
     "mtime": 1778303388.8505251,
@@ -1350,18 +1350,18 @@
     "semantic_hash": "5a13131601c3dbcef6272f1b0db3c34c"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\n8n\\workflows\\manager_approval.json": {
-    "mtime": 1779735722.0148563,
-    "ast_hash": "1d9b8bef0a276c229ab60516ba6da666",
+    "mtime": 1779810794.4744477,
+    "ast_hash": "42ec446d07bd3b396f553718b231f2a4",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\n8n\\workflows\\monthly_reports.json": {
-    "mtime": 1779345781.0358586,
-    "ast_hash": "2ec3c9c269c805d92191ce44af399135",
-    "semantic_hash": "2ec3c9c269c805d92191ce44af399135"
+    "mtime": 1779810794.4956708,
+    "ast_hash": "53835e246febd9353f7a6e5a144b628b",
+    "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\n8n\\workflows\\volunteer_entry.json": {
-    "mtime": 1779736025.6680205,
-    "ast_hash": "5859d963d3beb6d4e9d28028dfec355d",
+    "mtime": 1779810794.537666,
+    "ast_hash": "e26ce6d5d9c7b67aef1ce1ab7766aec5",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ops\\entrypoint.sh": {
@@ -1400,9 +1400,9 @@
     "semantic_hash": "b4a3e2190fc92edb21d0ea68a1cb8f91"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\setup.sh": {
-    "mtime": 1778925767.4046397,
-    "ast_hash": "dd4f7c348fd5e7d1fc0ee6ac67adb737",
-    "semantic_hash": "dd4f7c348fd5e7d1fc0ee6ac67adb737"
+    "mtime": 1779813789.4466372,
+    "ast_hash": "b573960bf3e921c9ddd3db6d50a962ad",
+    "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\scripts\\switch_manager_phone.sh": {
     "mtime": 1778925772.7433214,
@@ -1430,8 +1430,8 @@
     "semantic_hash": "8e8746452263b4d317a2bc05d55215f7"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CLAUDE.md": {
-    "mtime": 1779729705.6505494,
-    "ast_hash": "f3844af354d95c375bb8e6e3b717a185",
+    "mtime": 1779736896.69169,
+    "ast_hash": "349fcd918a69029881642f779109dca0",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\CODE_OF_CONDUCT.md": {
@@ -1460,13 +1460,13 @@
     "semantic_hash": "54f16bc9f4158623b0a5b343ccedaf63"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README.md": {
-    "mtime": 1779720927.8326168,
-    "ast_hash": "eb7dbbcbfeb7423bf77e4f26ecfe218b",
+    "mtime": 1779789615.7404501,
+    "ast_hash": "fffc106a790b3637438101eb0153ecc0",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\README_SL.md": {
-    "mtime": 1779720932.3257804,
-    "ast_hash": "a30d62f2aa90bd17dceb99d9862b8327",
+    "mtime": 1779789617.1500099,
+    "ast_hash": "1f61e8e5f2c6928df7765b5718b847e6",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\ROADMAP.md": {
@@ -1480,13 +1480,13 @@
     "semantic_hash": "6b6addb540990e1fee7894b15c2e5aff"
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC.md": {
-    "mtime": 1779721694.7251778,
-    "ast_hash": "48c2ca9e462b54080cba919a20e9c850",
+    "mtime": 1779813845.8860636,
+    "ast_hash": "ec8998a38febdfcdf3c862ed65dbda16",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\SPEC_SL.md": {
-    "mtime": 1779721701.6963367,
-    "ast_hash": "2843f316df594557b34cc37a4192099b",
+    "mtime": 1779813863.3669014,
+    "ast_hash": "a572e52c4e82b3e05d0818886fc6f156",
     "semantic_hash": ""
   },
   "D:\\Andrej\\vsCode-workspace\\BelPro\\.claude\\skills\\code-documenter\\SKILL.md": {
@@ -2732,6 +2732,46 @@
   "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\specs\\2026-05-25-evolution-instance-appsetting.md": {
     "mtime": 1779731492.7538304,
     "ast_hash": "de877b7b247407c532e8ffc7ebeab830",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\n8n\\workflows\\error_handler.json": {
+    "mtime": 1779810794.448851,
+    "ast_hash": "c8bb86ed9b3a2a9edaa0699a2b034f48",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\tests\\test_n8n_import_script.py": {
+    "mtime": 1779806986.308387,
+    "ast_hash": "4a9a16624feda7b7acaab7d2f1becfc4",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\plans\\2026-05-26-n8n-error-handler.md": {
+    "mtime": 1779806907.3951764,
+    "ast_hash": "a1e314bcc238208397d08f42f24c2f6a",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\superpowers\\specs\\2026-05-26-n8n-error-handler-design.md": {
+    "mtime": 1779806275.6669605,
+    "ast_hash": "d67a76f4e76d7556c97496cacdf36819",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\BelPro-Dnevniki-Pending-Manager.png": {
+    "mtime": 1779778468.3355882,
+    "ast_hash": "25fe02153979a5335f307d1d2ff885b5",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\Belpro-WhatsApp-1.jpg": {
+    "mtime": 1779782613.6349757,
+    "ast_hash": "c1d89fb66547088ed0e226caf4ba8114",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\Belpro-WhatsApp-2.jpg": {
+    "mtime": 1779782680.5637612,
+    "ast_hash": "1944386afd14e6461891bd31714d78a9",
+    "semantic_hash": ""
+  },
+  "D:\\Andrej\\vsCode-workspace\\BelPro\\docs\\images\\Belpro-WhatsApp-3.jpg": {
+    "mtime": 1779782824.8291917,
+    "ast_hash": "b3a649efc12fb5272cbe9d5049cf0015",
     "semantic_hash": ""
   }
 }

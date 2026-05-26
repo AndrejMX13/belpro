@@ -4,48 +4,43 @@
 
 ## Key Concepts
 
-- **errors.js** (10 connections) — `frontend/js/errors.js`
-- **renderAppLog()** (6 connections) — `frontend/js/errors.js`
-- **showApp()** (6 connections) — `frontend/js/volunteers.js`
-- **loadHealthWidget()** (4 connections) — `frontend/js/errors.js`
-- **GET /errors/unacknowledged-count** (4 connections) — `api/routers/errors.py`
-- **startHealthWidget()** (3 connections) — `frontend/js/errors.js`
-- **refreshErrorBadge()** (3 connections) — `frontend/js/errors.js`
-- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
-- **initAppLogPage()** (3 connections) — `frontend/js/errors.js`
-- **_refreshSidebarLogo()** (3 connections) — `frontend/js/volunteers.js`
-- **loadAppLog()** (3 connections) — `frontend/js/errors.js`
-- **GET /errors** (3 connections) — `api/routers/errors.py`
-- **renderHealthWidget()** (2 connections) — `frontend/js/errors.js`
-- **stopHealthWidget()** (2 connections) — `frontend/js/errors.js`
-- **API.errors.list()** (2 connections) — `frontend/js/api.js`
-- **API.errors.unacknowledgedCount()** (2 connections) — `frontend/js/api.js`
-- **API.errors.acknowledge()** (2 connections) — `frontend/js/api.js`
-- **refreshErrorBadge()** (2 connections) — `frontend/js/errors.js`
-- **PATCH /errors/{id}/acknowledge** (2 connections) — `api/routers/errors.py`
-- **ErrorLogResponse shape (id, service, operation, message, detail, acknowledged, created_at)** (2 connections) — `api/routers/errors.py`
-- **UnacknowledgedCountResponse shape ({count})** (2 connections) — `api/routers/errors.py`
-- **SERVICE_LABELS** (1 connections) — `frontend/js/errors.js`
-- **acknowledgeError()** (1 connections) — `frontend/js/errors.js`
-- **renderAppLog() — app log page** (1 connections) — `frontend/js/errors.js`
+- **Database Dialect Differences** (13 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Auto-Incrementing Primary Keys** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **String Concatenation** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Date/Time Functions** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **LIMIT/OFFSET (Pagination)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Boolean Data Type** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **JSON/JSONB Support** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **String Comparison (Case Sensitivity)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Recursive CTEs** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Window Functions - Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **UPSERT (Insert or Update)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **dialect-differences.md** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (strict - automatic casting))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- Current timestamp)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL & MySQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (native BOOLEAN))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (JSONB - binary, indexable))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (case-sensitive by default))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL - Full support)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **code:sql (-- PostgreSQL (ON CONFLICT))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Data Type Mapping** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Performance Tips by Database** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
 
 ## Relationships
 
-- [[make_text_payload()]] (8 shared connections)
-- [[Community 358]] (2 shared connections)
-- [[test_managers.py]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/api.js`
-- `frontend/js/errors.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/sql-pro/references/dialect-differences.md`
 
 ## Audit Trail
 
-- EXTRACTED: 63 (88%)
-- INFERRED: 9 (12%)
+- EXTRACTED: 46 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

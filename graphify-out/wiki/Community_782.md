@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **merge_ast_semantic.py** (0 connections) — `scripts/graphify/merge_ast_semantic.py`
+- **switch_manager_phone.sh** (0 connections) — `scripts/switch_manager_phone.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/graphify/merge_ast_semantic.py`
+- `scripts/switch_manager_phone.sh`
 
 ## Audit Trail
 

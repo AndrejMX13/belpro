@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Pattern 1: Multi-Source Data Aggregation** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Process and structure data collected from multiple source)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Add source weighting)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Workflow Creation Checklist** (5 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Planning Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Implementation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Validation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Deployment Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[Community 409]] (1 shared connections)
+- [[Reporting period: 'current' (this month) or 'previous' (last month).]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 

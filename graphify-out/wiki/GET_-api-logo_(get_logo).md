@@ -1,33 +1,37 @@
 # GET /api/logo (get_logo)
 
-> 11 nodes
+> 12 nodes
 
 ## Key Concepts
 
-- **Kubernetes Manifests** (6 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Complete Deployment Stack** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **ConfigMap and Secrets** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Horizontal Pod Autoscaler** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Common kubectl Commands** (2 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **kubernetes.md** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:yaml (apiVersion: v1)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:yaml (apiVersion: autoscaling/v2)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
-- **code:bash (kubectl apply -f deployment.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **manager.py** (8 connections) — `api/schemas/manager.py`
+- **ManagerCreate** (3 connections) — `api/schemas/manager.py`
+- **ManagerUpdate** (3 connections) — `api/schemas/manager.py`
+- **PasswordChangeRequest** (3 connections) — `api/schemas/manager.py`
+- **ManagerResponse** (3 connections) — `api/schemas/manager.py`
+- **_validate_davcna_checksum()** (2 connections) — `api/schemas/manager.py`
+- **normalize_wa_phone()** (2 connections) — `api/schemas/manager.py`
+- **Pydantic schemas for the Manager entity.** (1 connections) — `api/schemas/manager.py`
+- **Fields required for first-time manager setup.** (1 connections) — `api/schemas/manager.py`
+- **Partial update — all fields optional.  Only provided fields are written.** (1 connections) — `api/schemas/manager.py`
+- **Payload for the change-password endpoint.** (1 connections) — `api/schemas/manager.py`
+- **Manager profile returned by the API.** (1 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_app_settings.py]] (4 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[Code: Check Photo Limit]] (1 shared connections)
+- [[Treat empty string as absent — store None rather than ''.]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/kubernetes.md`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 27 (93%)
+- INFERRED: 2 (7%)
 - AMBIGUOUS: 0 (0%)
 
 ---

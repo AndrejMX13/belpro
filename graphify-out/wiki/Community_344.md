@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Task 5: Frontend — Administracija page** (10 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js (admin: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:html (<a href="#admin" class="nav-item" data-page="admin">)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:html (<script src="/js/admin.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js (} else if (hash === '#admin') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:js (} else if (hash === '#settings') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block41 (docker compose up -d --build frontend)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block42 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add frontend/js/api.js frontend/index.html frontend/js/a)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Error Handling Patterns** (5 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 3: Error Trigger Workflow** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 1: Retry on Failure** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 2: Fallback API** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 4: Circuit Breaker** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block34 (HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block35 (HTTP Request (Primary API, continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block36 (HTTP Request → Process Data)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block37 (Error Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - circuit breaker logic)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

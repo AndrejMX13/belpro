@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Streaming Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Fallback Language Models** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **RAG (Retrieval-Augmented Generation)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Chat Trigger parameters)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Primary model (targetIndex: 0))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block26 (Documents → Text Splitter → Vector Store ← Embeddings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Known n8n Issues** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Issue #304: IF Node Metadata Warning** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Issue #306: Switch Branch Count** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Issue #338: Credential Validation in Test Mode** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 425]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

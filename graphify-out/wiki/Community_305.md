@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (9 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **1. ❌ Wrong: Accessing webhook data** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **✅ Correct** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({{$json.email}}  // Empty or undefined)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({{$json.body.email}}  // Data is under .body)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **2. ❌ Wrong: Response mode confusion** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **3. ❌ Wrong: No validation** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **4. ❌ Wrong: Hardcoded paths** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **✅ Correct** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Performance Optimization** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **1. Use Indexes** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **2. Limit Result Sets** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **3. Use Prepared Statements** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **4. Batch Writes** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **5. Connection Pooling** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:sql (-- Add index for sync queries)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:sql (-- ✅ Good)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// ✅ Good - prepared statement)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// ✅ Good - batch insert)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

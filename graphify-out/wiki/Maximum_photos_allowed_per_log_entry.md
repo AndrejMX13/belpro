@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Authentication Methods** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. Bearer Token (Most Common)** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. API Key (Header or Query)** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. None (Public APIs)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Basic Auth** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **5. OAuth2** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **12. Testing Utilities** (6 connections) — `SPEC.md`
+- **`load_env.ps1` / `load_env.sh`** (3 connections) — `SPEC.md`
+- **`switch_manager_phone.ps1` / `switch_manager_phone.sh`** (3 connections) — `SPEC.md`
+- **Typical testing workflow** (3 connections) — `SPEC.md`
+- **`list_pending_entries.py`** (2 connections) — `SPEC.md`
+- **code:block3 (. .\scripts\load_env.ps1)** (1 connections) — `SPEC.md`
+- **code:bash (source scripts/load_env.sh)** (1 connections) — `SPEC.md`
+- **code:block5 (.\scripts\switch_manager_phone.ps1 volunteer   # set manager)** (1 connections) — `SPEC.md`
+- **code:bash (bash scripts/switch_manager_phone.sh volunteer)** (1 connections) — `SPEC.md`
+- **code:block7 (python scripts/list_pending_entries.py          # entries no)** (1 connections) — `SPEC.md`
+- **code:block8 (# 0. Load environment variables (once per session):)** (1 connections) — `SPEC.md`
+- **code:bash (# 0. Load environment variables (once per session):)** (1 connections) — `SPEC.md`
+- **Manual trigger nodes in n8n** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `SPEC.md`
 
 ## Audit Trail
 

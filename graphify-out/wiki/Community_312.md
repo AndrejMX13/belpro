@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Unit Testing** (6 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Jest/Vitest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **pytest Pattern** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Mocking Patterns** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Test Organization** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **unit-testing.md** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:typescript (describe('UserService', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:typescript (// Mock functions)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **code:typescript (describe('Feature', () => {)** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Add to CI pipeline** (5 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **coverage-reports.md** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Coverage Reports** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Documentation Coverage Report Template** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Checklist During Documentation** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Framework-Specific Linting** (2 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:markdown (# Documentation Report: {project_name})** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:block2** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:markdown (## Documentation Checklist)** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **code:bash (# JavaScript/TypeScript - ESLint)** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/coverage-reports.md`
 
 ## Relationships
 
@@ -22,7 +22,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/unit-testing.md`
+- `.claude/skills/code-documenter/references/coverage-reports.md`
 
 ## Audit Trail
 

@@ -1,25 +1,26 @@
 # Community 601
 
-> 4 nodes
+> 5 nodes
 
 ## Key Concepts
 
-- **EMŠO Key Rotation** (4 connections) — `README.md`
-- **code:bash (bash scripts/rotate_emso_key.sh <OLD_KEY> <NEW_KEY>)** (1 connections) — `README.md`
-- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README.md`
-- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README.md`
+- **014_seed_report_auto_hour.py** (2 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
+- **Seed the report_auto_hour settings row with default value 7.** (1 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
+- **Remove the report_auto_hour settings row.** (1 connections) — `api/db/migrations/versions/014_seed_report_auto_hour.py`
 
 ## Relationships
 
-- [[Code: Check Photo Limit]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README.md`
+- `api/db/migrations/versions/014_seed_report_auto_hour.py`
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

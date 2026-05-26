@@ -4,25 +4,30 @@
 
 ## Key Concepts
 
-- **Two workarounds** (3 connections) — `.claude/memory/feedback_graphify_html.md`
-- **1. Aggregated community meta-graph (recommended)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
-- **2. Raise the env-var limit (full graph, slow)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
-- **feedback_graphify_html.md** (1 connections) — `.claude/memory/feedback_graphify_html.md`
-- **code:python (import json)** (1 connections) — `.claude/memory/feedback_graphify_html.md`
-- **code:powershell ($env:GRAPHIFY_VIZ_NODE_LIMIT = "10000")** (1 connections) — `.claude/memory/feedback_graphify_html.md`
+- **GDPR Consent PDF (Dogovor o prostovoljstvu)** (5 connections) — `SPEC.md`
+- **NGO Logo Plan** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **NGO Logo Storage and PDF Embedding** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- **PDF Report History Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **GDPR Consent PDF Plan** (2 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **PDF Report History (MonthlyReport table upsert)** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[render_consent_pdf()]] (1 shared connections)
+- [[BelPro Architecture Document EN]] (1 shared connections)
+- [[CLAUDE.md — Project AI Instructions]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/feedback_graphify_html.md`
+- `SPEC.md`
+- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
+- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 11 (65%)
+- INFERRED: 6 (35%)
 - AMBIGUOUS: 0 (0%)
 
 ---

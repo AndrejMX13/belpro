@@ -4,42 +4,42 @@
 
 ## Key Concepts
 
-- **test_logo.py** (18 connections) — `api/tests/test_logo.py`
-- **_png_1x1()** (7 connections) — `api/tests/test_logo.py`
-- **_ico_16x16()** (3 connections) — `api/tests/test_logo.py`
-- **test_open_image_rejects_disallowed_format()** (3 connections) — `api/tests/test_logo.py`
-- **_clean_logo()** (3 connections) — `api/tests/test_logo.py`
-- **test_save_creates_png_on_disk()** (2 connections) — `api/tests/test_logo.py`
-- **test_delete_removes_file()** (2 connections) — `api/tests/test_logo.py`
-- **test_upload_logo_and_retrieve()** (2 connections) — `api/tests/test_logo.py`
-- **test_upload_logo_requires_auth()** (2 connections) — `api/tests/test_logo.py`
-- **test_delete_logo()** (2 connections) — `api/tests/test_logo.py`
-- **test_logo_not_exists_initially()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_when_no_logo_is_silent()** (1 connections) — `api/tests/test_logo.py`
-- **test_open_image_rejects_corrupt_bytes()** (1 connections) — `api/tests/test_logo.py`
-- **test_save_overwrites_existing_logo()** (1 connections) — `api/tests/test_logo.py`
-- **test_get_logo_returns_404_when_absent()** (1 connections) — `api/tests/test_logo.py`
-- **test_upload_invalid_logo_returns_422()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_logo_when_absent_returns_404()** (1 connections) — `api/tests/test_logo.py`
-- **test_delete_logo_requires_auth()** (1 connections) — `api/tests/test_logo.py`
-- **Tests for NGO logo service and endpoints.** (1 connections) — `api/tests/test_logo.py`
-- **Minimal valid 1×1 PNG.** (1 connections) — `api/tests/test_logo.py`
-- **Minimal valid 16×16 ICO — openable by Pillow but not in allowed list.** (1 connections) — `api/tests/test_logo.py`
-- **ICO is openable by Pillow but excluded from the allowed set.** (1 connections) — `api/tests/test_logo.py`
-- **Redirect logo operations to a temporary directory — never touches the real logo** (1 connections) — `api/tests/test_logo.py`
+- **PostgreSQL Extensions** (12 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **Extension Management** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **pg_stat_statements (Query Performance)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **uuid-ossp (UUID Generation)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **pg_trgm (Fuzzy String Matching)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **PostGIS (Spatial and Geographic)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **pgvector (Vector Similarity Search)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **pgcrypto (Encryption and Hashing)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **postgres_fdw (Foreign Data Wrapper)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **pg_repack (Online Table Reorganization)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **timescaledb (Time-Series Data)** (2 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **extensions.md** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (-- List available extensions)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (-- Install and configure)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS "uuid-ossp";)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS pg_trgm;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS postgis;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS vector;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS pgcrypto;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS postgres_fdw;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS pg_repack;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **code:sql (CREATE EXTENSION IF NOT EXISTS timescaledb;)** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
+- **Extension Recommendations by Use Case** (1 connections) — `.claude/skills/postgres-pro/references/extensions.md`
 
 ## Relationships
 
-- [[test_auth.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_logo.py`
+- `.claude/skills/postgres-pro/references/extensions.md`
 
 ## Audit Trail
 
-- EXTRACTED: 56 (98%)
-- INFERRED: 1 (2%)
+- EXTRACTED: 44 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

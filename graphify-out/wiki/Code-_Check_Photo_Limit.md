@@ -1,38 +1,39 @@
 # Code: Check Photo Limit
 
-> 15 nodes
+> 16 nodes
 
 ## Key Concepts
 
-- **Maintenance** (9 connections) — `README.md`
-- **Upgrade** (2 connections) — `README.md`
-- **Backup** (2 connections) — `README.md`
-- **Restore** (2 connections) — `README.md`
-- **Tail logs** (2 connections) — `README.md`
-- **Rebuild a service after code changes** (2 connections) — `README.md`
-- **Reset a forgotten dashboard password** (2 connections) — `README.md`
-- **Applying `.env` changes** (2 connections) — `README.md`
-- **code:bash (bash scripts/upgrade.sh)** (1 connections) — `README.md`
-- **code:bash (bash scripts/backup.sh)** (1 connections) — `README.md`
-- **code:bash (bash scripts/restore.sh <backup-file>)** (1 connections) — `README.md`
-- **code:bash (docker compose logs -f)** (1 connections) — `README.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `README.md`
-- **code:bash (docker compose exec postgres psql -U belpro -d belpro \)** (1 connections) — `README.md`
-- **code:bash (docker compose up -d <service>)** (1 connections) — `README.md`
+- **tax_number_valid()** (11 connections) — `api/utils/tax_number.py`
+- **TestTaxNumberValid** (10 connections) — `api/tests/test_tax_number.py`
+- **test_tax_number.py** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_accepts_valid_bare_digits()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_accepts_si_prefix()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_accepts_lowercase_si_prefix()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_bad_check_digit()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_wrong_length()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_non_digits()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_rejects_empty()** (2 connections) — `api/tests/test_tax_number.py`
+- **.test_check_digit_one_case()** (2 connections) — `api/tests/test_tax_number.py`
+- **tax_number.py** (2 connections) — `api/utils/tax_number.py`
+- **.test_check_digit_zero_case()** (1 connections) — `api/tests/test_tax_number.py`
+- **Tests for Slovenian tax number (davčna številka) validation.** (1 connections) — `api/tests/test_tax_number.py`
+- **Slovenian tax number (davčna številka) validation utilities.** (1 connections) — `api/utils/tax_number.py`
+- **Return True if value passes the Modulus 11 check digit algorithm.      Accepts b** (1 connections) — `api/utils/tax_number.py`
 
 ## Relationships
 
-- [[HTTP: GET Photo Limit]] (1 shared connections)
-- [[Community 601]] (1 shared connections)
+- [[GET /api/logo (get_logo)]] (1 shared connections)
 
 ## Source Files
 
-- `README.md`
+- `api/tests/test_tax_number.py`
+- `api/utils/tax_number.py`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 28 (62%)
+- INFERRED: 17 (38%)
 - AMBIGUOUS: 0 (0%)
 
 ---

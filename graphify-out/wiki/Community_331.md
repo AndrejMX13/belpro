@@ -4,36 +4,29 @@
 
 ## Key Concepts
 
-- **n8n Expression Examples** (13 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Example 9: Code Node (Direct Access)** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Example 2: HTTP API to Database** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **EXAMPLES.md** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:sql (INSERT INTO users (user_id, name, email, role, synced_at))** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript (// ✅ Direct access (no {{ }}))** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **The Solution** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Error #3: Incorrect Return Wrapper Format** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Common Scenarios** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Single result)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Multiple results)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Transforming array)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Empty result)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ CORRECT: Conditional returns)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Return Format Checklist** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Scenario 1: Single object from API)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 572]] (1 shared connections)
-- [[Community 333]] (1 shared connections)
-- [[Hour of day (0–23) at which the monthly report cron fires.]] (1 shared connections)
-- [[Community 332]] (1 shared connections)
-- [[Community 413]] (1 shared connections)
-- [[GET /api/managers/me/config-info (get_config_info)]] (1 shared connections)
-- [[Community 412]] (1 shared connections)
-- [[Community 571]] (1 shared connections)
-- [[Community 334]] (1 shared connections)
+- [[Community 285]] (1 shared connections)
+- [[Community 524]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

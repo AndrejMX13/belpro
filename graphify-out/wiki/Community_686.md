@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **Work Date Rename and Dashboard Entry Plan** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **work_date Column (renamed from entry_date)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **acknowledgeError** (1 connections) — `frontend/js/errors.js`
+- **acknowledge_error** (1 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `api/routers/errors.py`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 

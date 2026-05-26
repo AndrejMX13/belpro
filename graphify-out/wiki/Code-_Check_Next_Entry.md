@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **DevOps Engineer** (8 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Output Templates** (4 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Minimal GitHub Actions Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Minimal Dockerfile Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Rollback Procedure Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Role Definition** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **When to Use This Skill** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **code:yaml (name: CI)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **code:dockerfile (FROM python:3.12-slim AS builder)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **code:bash (# Kubernetes: roll back to previous deployment revision)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
-- **Knowledge Reference** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Quick Fixes** (9 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **TypeError: Cannot read property 'x' of undefined** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Unhandled Promise Rejection** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **React: Too Many Re-renders** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **CORS Error** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Maximum Call Stack Size Exceeded** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Module Not Found** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Async/Await Issues** (2 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **quick-fixes.md** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error: Calling setState during render)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Browser blocks cross-origin request)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error: Infinite recursion)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:bash (# Error: Cannot find module 'x')** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **code:typescript (// Error: await in non-async function)** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/quick-fixes.md`
 
 ## Relationships
 
@@ -28,7 +28,7 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/SKILL.md`
+- `.claude/skills/debugging-wizard/references/quick-fixes.md`
 
 ## Audit Trail
 

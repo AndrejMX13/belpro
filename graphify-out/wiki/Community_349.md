@@ -1,32 +1,35 @@
 # Community 349
 
-> 9 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **BelPro Architecture Diagram (English)** (8 connections) — `docs/images/architecture.svg`
-- **n8n Workflow (Business Logic Engine)** (6 connections) — `docs/images/architecture.svg`
-- **Evolution API (WhatsApp Gateway)** (4 connections) — `docs/images/architecture.svg`
-- **FastAPI + Web Dashboard (Manager UI & API)** (3 connections) — `docs/images/architecture.svg`
-- **Volunteer (WhatsApp User)** (2 connections) — `docs/images/architecture.svg`
-- **Faster-Whisper (Speech-to-Text, CPU)** (2 connections) — `docs/images/architecture.svg`
-- **PostgreSQL 18 (Data Store)** (2 connections) — `docs/images/architecture.svg`
-- **SMTP (Email Delivery)** (2 connections) — `docs/images/architecture.svg`
-- **BelPro Architecture Diagram (Slovenian)** (1 connections) — `docs/images/architecture_sl.svg`
+- **test_evolution_service.py** (6 connections) — `api/tests/test_evolution_service.py`
+- **SmtpNotConfiguredError** (5 connections) — `api/services/email.py`
+- **Exception** (5 connections)
+- **_make_mock_http()** (5 connections) — `api/tests/test_evolution_service.py`
+- **test_connected_returns_normalized_phone_and_open_state()** (2 connections) — `api/tests/test_evolution_service.py`
+- **test_disconnected_returns_none_and_close_state()** (2 connections) — `api/tests/test_evolution_service.py`
+- **test_network_error_returns_unreachable()** (2 connections) — `api/tests/test_evolution_service.py`
+- **test_lid_jid_returns_lid_unsupported()** (2 connections) — `api/tests/test_evolution_service.py`
+- **test_instance_not_in_response_returns_close()** (2 connections) — `api/tests/test_evolution_service.py`
+- **Raised when the manager has not configured SMTP.** (1 connections) — `api/services/email.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[load_key()]] (3 shared connections)
+- [[Community 545]] (2 shared connections)
+- [[Code Reviewer Skill]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/architecture.svg`
-- `docs/images/architecture_sl.svg`
+- `api/services/email.py`
+- `api/tests/test_evolution_service.py`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (81%)
+- INFERRED: 6 (19%)
 - AMBIGUOUS: 0 (0%)
 
 ---

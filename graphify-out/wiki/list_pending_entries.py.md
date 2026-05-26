@@ -4,38 +4,41 @@
 
 ## Key Concepts
 
-- **Design** (9 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Evolution Instance Name — AppSettings Migration Design** (5 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **AppSettings extension** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Schema** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **New config router** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Alembic migration** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **n8n workflow changes** (2 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **2026-05-25-evolution-instance-appsetting.md** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Context** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Files** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (evolution_instance_name: str)** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Admin router** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (GET /api/config/evolution-instance)** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (op.execute()** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **code:block5 (Before: "http://evolution-api:8080/message/sendText/belpro")** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Tests** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Admin UI** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- **errors.py** (6 connections) — `api/routers/errors.py`
+- **error_log.py** (4 connections) — `api/schemas/error_log.py`
+- **_require_internal_key()** (3 connections) — `api/routers/errors.py`
+- **write_error()** (3 connections) — `api/routers/errors.py`
+- **unacknowledged_count()** (3 connections) — `api/routers/errors.py`
+- **ErrorLogCreate** (3 connections) — `api/schemas/error_log.py`
+- **ErrorLogResponse** (3 connections) — `api/schemas/error_log.py`
+- **UnacknowledgedCountResponse** (3 connections) — `api/schemas/error_log.py`
+- **list_errors()** (2 connections) — `api/routers/errors.py`
+- **acknowledge_error()** (2 connections) — `api/routers/errors.py`
+- **Error log router — write endpoint for internal services, read endpoints for mana** (1 connections) — `api/routers/errors.py`
+- **Validate X-Internal-Key header against API_SECRET_KEY.** (1 connections) — `api/routers/errors.py`
+- **Record an operational failure. Called by API exception handlers, n8n, and the op** (1 connections) — `api/routers/errors.py`
+- **Return count of unacknowledged errors. Used by nav badge.** (1 connections) — `api/routers/errors.py`
+- **List error log entries, newest first. Optionally filter to unacknowledged only.** (1 connections) — `api/routers/errors.py`
+- **Mark an error as acknowledged (read by manager).** (1 connections) — `api/routers/errors.py`
+- **Pydantic schemas for the error_log endpoint.** (1 connections) — `api/schemas/error_log.py`
+- **Payload sent by internal services (API, n8n, ops sidecar).** (1 connections) — `api/schemas/error_log.py`
+- **Single error log row returned to the dashboard.** (1 connections) — `api/schemas/error_log.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_app_settings.py]] (3 shared connections)
+- [[volunteers.js]] (1 shared connections)
+- [[VolunteerUpdate]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-25-evolution-instance-appsetting.md`
+- `api/routers/errors.py`
+- `api/schemas/error_log.py`
 
 ## Audit Trail
 
-- EXTRACTED: 36 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 37 (90%)
+- INFERRED: 4 (10%)
 - AMBIGUOUS: 0 (0%)
 
 ---

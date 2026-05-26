@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **send_email()** (6 connections) — `api/services/email.py`
-- **email.py** (5 connections) — `api/services/email.py`
-- **_check_mx()** (3 connections) — `api/services/email.py`
-- **Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row** (1 connections) — `api/services/email.py`
-- **Raise ValueError if the recipient domain has no MX records.** (1 connections) — `api/services/email.py`
-- **Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port** (1 connections) — `api/services/email.py`
+- **submitAddVolunteer()** (3 connections) — `frontend/js/volunteers.js`
+- **POST /volunteers/check-emso** (3 connections) — `api/routers/volunteers.py`
+- **API.volunteers.checkEmso()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.create()** (2 connections) — `frontend/js/api.js`
+- **POST /volunteers** (2 connections) — `api/routers/volunteers.py`
+- **EmsoCheckResponse shape ({exists})** (2 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
-- [[Community 346]] (2 shared connections)
-- [[merge_semantic.py]] (2 shared connections)
-- [[Community 434]] (1 shared connections)
+- [[test_auth.py]] (2 shared connections)
 
 ## Source Files
 
-- `api/services/email.py`
+- `api/routers/volunteers.py`
+- `frontend/js/api.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (88%)
-- INFERRED: 2 (12%)
+- EXTRACTED: 14 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

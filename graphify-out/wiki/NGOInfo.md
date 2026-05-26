@@ -4,39 +4,39 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (11 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **1. ❌ Wrong: Ignoring timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Set workflow timezone** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **2. ❌ Wrong: Overlapping executions** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Add execution lock** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **3. ❌ Wrong: No error handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Add error workflow** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **4. ❌ Wrong: Processing all data at once** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Batch processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **5. ❌ Wrong: Hardcoded dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **✅ Correct: Dynamic dates** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (Schedule (9 AM)  // 9 AM in which timezone?)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// Workflow settings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block34 (Schedule (every 5 min) → Long-running task (10 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block35 (Schedule → Redis (check lock))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block36 (Schedule → API call → Process (fails silently))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block37 (Main: Schedule → Execute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block38 (Schedule → SELECT 1000000 records → Process (OOM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block39 (Schedule → SELECT with pagination → Split In Batches → Proce)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (query: "SELECT * FROM orders WHERE date = '2024-01-15'")** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (query: "SELECT * FROM orders WHERE date = CURRENT_DATE - INT)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Database Optimizer** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Common Operations & Examples** (7 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Identify Top Slow Queries (PostgreSQL)** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Capture an Execution Plan** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Create a Covering Index** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Validate Improvement** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MySQL: Find Slow Queries** (2 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Requires pg_stat_statements extension)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Use BUFFERS to expose cache hit vs. disk read ratio)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Reading EXPLAIN Output — Key Patterns to Find** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Covers the filter AND the projected columns, eliminating )** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Before optimization: save plan & timing)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **code:sql (-- Inspect slow query log candidates)** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/database-optimizer/SKILL.md`
 
 ## Relationships
 
-- [[HTTP: Upload Photo]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/database-optimizer/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 41 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Debugging Strategies** (8 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Binary Search** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Minimal Reproduction** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Git Bisect** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Time Travel Debugging** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Rubber Duck Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Delta Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **strategies.md** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:markdown (1. Comment out/disable half the code)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:typescript (// Example: Bug in data processing pipeline)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:markdown (1. Create new minimal project)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:typescript (// Instead of debugging full app)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:bash (# Start bisect)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:bash (# Automated bisect with test script)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:markdown (1. Start at the error/failure point)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:typescript (// Error: Cannot read 'name' of undefined at line 45)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:markdown (1. State what the code should do)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **code:bash (# Check what changed)** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Quick Reference** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Query Optimization** (10 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **EXPLAIN Plan Analysis** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Index Design and Optimization** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Index Maintenance** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Query Rewriting Patterns** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Partitioning Strategies** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Materialized Views** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Query Hints and Optimization** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Performance Monitoring Queries** (2 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **optimization.md** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Covering index (all columns in index))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL: Find missing indexes)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Avoid SELECT DISTINCT when possible)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Range partitioning by date (PostgreSQL))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- Create materialized view for expensive aggregations)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL: Force index usage (use sparingly))** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **code:sql (-- PostgreSQL: Find slow queries)** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
+- **Best Practices Checklist** (1 connections) — `.claude/skills/sql-pro/references/optimization.md`
 
 ## Relationships
 
@@ -30,7 +30,7 @@
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/references/strategies.md`
+- `.claude/skills/sql-pro/references/optimization.md`
 
 ## Audit Trail
 

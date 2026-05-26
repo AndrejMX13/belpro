@@ -1,35 +1,35 @@
 # n8n/workflows/volunteer_entry.json
 
-> 39 nodes
+> 41 nodes
 
 ## Key Concepts
 
-- **Task 3: Login and logout endpoints** (9 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **httpOnly Cookie Auth (ISS-005) Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Task 2: Session token helpers** (7 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Task 5: Frontend — `volunteers.js`** (7 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Task 1: Settings fields, schemas, and env examples** (6 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Task 4: Frontend — `api.js`** (5 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **Task 6: Manual browser test** (2 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **2026-05-19-httponly-cookie-auth.md** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python (# ── Session ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python ("""Schemas for the auth endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:block3 (# SESSION_DURATION_HOURS: how long a dashboard login session)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:block4 (# SESSION_DURATION_HOURS: kako dolgo traja seja upravljalca )** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:bash (git add api/core/settings.py api/schemas/auth.py .env.exampl)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python ("""Tests for auth helpers and endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:block7 (docker compose exec api pytest tests/test_auth.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python ("""Manager authentication — httpOnly session cookie with Bas)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:block9 (docker compose exec api pytest tests/test_auth.py::test_make)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:block10 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:bash (git add api/core/auth.py api/tests/test_auth.py)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python (import base64)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:block13 (docker compose exec api pytest tests/test_auth.py::test_logi)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python ("""Auth endpoints — login sets an httpOnly session cookie, l)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python (from routers.auth import router as auth_router)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- **code:python (app.include_router(auth_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
-- *... and 14 more nodes in this community*
+- **Index Strategies** (10 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **B-Tree Indexes (Default)** (4 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Specialized Index Types** (4 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Covering Indexes** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Partial Indexes** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Expression Indexes** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Index Maintenance** (3 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Index Selection Methodology** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Identify Index Candidates** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Single Column Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Multi-Column Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **Column Order Guidelines** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **PostgreSQL INCLUDE Clause** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **MySQL Covering Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **PostgreSQL Partial Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **MySQL Filtered Indexes (8.0+)** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **PostgreSQL Function Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **MySQL Generated Column Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **PostgreSQL GIN Indexes (Full-Text, Arrays, JSONB)** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **PostgreSQL GiST Indexes (Geometric, Range)** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **MySQL Full-Text Indexes** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **PostgreSQL Maintenance** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **MySQL Maintenance** (2 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **index-strategies.md** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- **code:sql (-- PostgreSQL: Find queries missing indexes)** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- `.claude/skills/database-optimizer/references/index-strategies.md`
 
 ## Audit Trail
 
-- EXTRACTED: 76 (100%)
+- EXTRACTED: 80 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

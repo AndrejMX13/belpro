@@ -1,35 +1,35 @@
 # str
 
-> 36 nodes
+> 37 nodes
 
 ## Key Concepts
 
-- **Configuration Validation Tools Guide** (14 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Handling Validation Errors** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **validate_node (UNIFIED VALIDATION)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Quick Check (mode="minimal")** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Response** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **validate_workflow (STRUCTURE VALIDATION)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Loop Pattern** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Full Validation (mode="full", DEFAULT)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validate by Workflow ID** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Auto-Sanitization System** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **n8n_autofix_workflow (AUTO-FIX TOOL)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Process** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Example: Complete Validation Workflow** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **VALIDATION_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Philosophy** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (validate_node({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Validation Profiles** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **Error Types** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (validate_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:javascript (// Validate workflow already in n8n)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- **code:block7 (1. Configure node)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
-- *... and 11 more nodes in this community*
+- **Task 5: Documentation — add upgrade.sh to both READMEs** (10 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **File Map** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 1: Script skeleton — shebang, helpers, pre-flight checks** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 3: Docker rebuild and service readiness wait** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 4: Migrations, health check, and summary** (6 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Task 2: Backup and git pull steps** (5 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **Upgrade Script Implementation Plan** (3 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **2026-05-18-upgrade-script.md** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Banner ────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (chmod +x scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Backup ────────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Git pull ──────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Rebuild images ────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Wait for PostgreSQL ───────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Wait for API ──────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (bash -n scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (git add scripts/upgrade.sh)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Alembic migrations ────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Health check ──────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- **code:bash (# ── Summary ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-18-upgrade-script.md`
+- *... and 12 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/VALIDATION_GUIDE.md`
+- `docs/superpowers/plans/2026-05-18-upgrade-script.md`
 
 ## Audit Trail
 
-- EXTRACTED: 70 (100%)
+- EXTRACTED: 72 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

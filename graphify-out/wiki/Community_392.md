@@ -4,27 +4,36 @@
 
 ## Key Concepts
 
-- **Current State (Already Applied)** (5 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Fix Image Upload — $env Access Denied in Code Node** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 1: Add HTTP: Upload Photo Node** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 3: Update Code: Slika Prejeta** (2 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **2026-05-13-fix-image-upload-env-access.md** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **code:block1 (n8n_update_partial_workflow with addNode:)** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 2: Rewire Connections** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **code:javascript (const d = $('Code: Pripravi Upload Slike').first().json;)** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
-- **Task 4: Validate and Export** (1 connections) — `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- **Webhook Processing Pattern** (14 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **webhook_processing.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block1 (Webhook → [Validate] → [Transform] → [Action] → [Response/No)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block34 (Webhook → Set → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block35 (Webhook → Verify Signature → Update Database → Send Receipt )** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block36 (Webhook → Parse Command → AI Agent → Format Response → Webho)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 307]] (1 shared connections)
+- [[load-project-memory.sh]] (1 shared connections)
+- [[Community 581]] (1 shared connections)
+- [[Community 430]] (1 shared connections)
+- [[Community 538]] (1 shared connections)
+- [[Community 345]] (1 shared connections)
+- [[Community 494]] (1 shared connections)
+- [[Community 582]] (1 shared connections)
+- [[Community 308]] (1 shared connections)
+- [[Community 537]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-13-fix-image-upload-env-access.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,14 +4,14 @@
 
 ## Key Concepts
 
-- **Pattern 9: Top N Filtering** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Pattern 4: JSON Object Comparison** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 - **Implementation** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 - **Key Techniques** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 517]] (1 shared connections)
+- [[Community 526]] (1 shared connections)
 
 ## Source Files
 

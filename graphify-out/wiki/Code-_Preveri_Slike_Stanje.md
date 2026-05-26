@@ -23,8 +23,8 @@
 
 ## Relationships
 
-- [[Community 511]] (3 shared connections)
-- [[GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)]] (1 shared connections)
+- [[Community 514]] (3 shared connections)
+- [[POST /api/log-entries/{id}/photos (upload_photo)]] (1 shared connections)
 
 ## Source Files
 

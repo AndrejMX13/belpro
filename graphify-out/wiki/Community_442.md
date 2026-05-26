@@ -4,26 +4,28 @@
 
 ## Key Concepts
 
-- **Recovery Strategies** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 3: Clean Stale Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 4: Use Auto-fix** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 1: Start Fresh** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Strategy 2: Binary Search** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (// Preview fixes (default - doesn't apply))** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Volunteer Profile Screen** (5 connections) — `docs/images/belpro-prostovoljec.png`
+- **Work Entry Detail / Review Screen** (4 connections) — `docs/images/belpro-vnos-pregled-urejanje.png`
+- **Manager Dashboard Sidebar Navigation** (2 connections) — `docs/images/belpro-prostovoljec.png`
+- **Volunteer Work Diary Table** (2 connections) — `docs/images/belpro-prostovoljec.png`
+- **Monthly Report Notification Preferences** (1 connections) — `docs/images/belpro-prostovoljec.png`
+- **Work Entry Photo Attachments** (1 connections) — `docs/images/belpro-vnos-pregled-urejanje.png`
+- **Evolution API Logo** (1 connections) — `frontend/images/evolution-api-logo.svg`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `docs/images/belpro-prostovoljec.png`
+- `docs/images/belpro-vnos-pregled-urejanje.png`
+- `frontend/images/evolution-api-logo.svg`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 8 (50%)
+- INFERRED: 8 (50%)
 - AMBIGUOUS: 0 (0%)
 
 ---

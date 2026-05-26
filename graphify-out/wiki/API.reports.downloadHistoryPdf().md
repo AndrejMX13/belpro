@@ -4,49 +4,37 @@
 
 ## Key Concepts
 
-- **AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)** (14 connections) — `SPEC.md`
-- **Ops Sidecar (backup, photo cleanup, error reporting)** (10 connections) — `SPEC.md`
-- **Auto Monthly Reports Plan** (7 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Error Log (Dnevnik napak)** (6 connections) — `SPEC.md`
-- **ops_server.py ThreadingHTTPServer Reconfigure** (6 connections) — `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- **Version 0.11.0-beta.0** (5 connections) — `CHANGELOG.md`
-- **Ops Sidecar and Error Log Plan** (5 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **Configurable Backup Retention Days Plan** (5 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **Report Auto Hour Plan** (5 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Version 0.11.1-beta.0** (3 connections) — `CHANGELOG.md`
-- **Ops Notification Server (POST /reconfigure, port 9000)** (3 connections) — `CHANGELOG.md`
-- **Settings Table Plan** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **Report Delivery Error Visibility Plan** (3 connections) — `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
-- **MAX_PHOTOS_PER_ENTRY Setting** (3 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- **Configurable Backup Retention Days** (3 connections) — `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- **report_auto_hour Configurable Cron Hour** (3 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **BelPro Changelog** (2 connections) — `CHANGELOG.md`
-- **Photo Upload Limit Plan** (2 connections) — `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
+- **Log Entry Location Edit + Auto-Refresh Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Task 2: Apply location update in the router** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Task 3: Add location field to the frontend edit form** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Task 4: Update the save handler** (4 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Task 1: Extend the API update schema** (3 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **2026-05-09-log-entry-location-edit.md** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **Files** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:python (class LogEntryUpdate(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:bash (git add api/schemas/log_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:python (async def update_log_entry()** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:bash (git add api/routers/log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:javascript (<div class=\"field\" style=\"max-width:160px\">)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:javascript (<div class=\"field\" style=\"max-width:160px\">)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:javascript (try {)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:javascript (const location = $('d-location').value.trim() || null;)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
 
 ## Relationships
 
-- [[send_monthly_reports()]] (4 shared connections)
-- [[POST /log-entries/{id}/photos]] (3 shared connections)
-- [[Code: Procesiraj Popravek]] (1 shared connections)
-- [[Community 540]] (1 shared connections)
-- [[POST /api/errors (write_error)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `CHANGELOG.md`
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-18-photo-upload-limit.md`
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
-- `docs/superpowers/plans/2026-05-21-auto-monthly-reports.md`
-- `docs/superpowers/plans/2026-05-21-backup-retention-configurable.md`
-- `docs/superpowers/plans/2026-05-21-report-delivery-error-visibility.md`
-- `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- `docs/superpowers/plans/2026-05-09-log-entry-location-edit.md`
 
 ## Audit Trail
 
-- EXTRACTED: 77 (88%)
-- INFERRED: 11 (12%)
+- EXTRACTED: 34 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

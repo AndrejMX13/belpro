@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Pattern 4: JSON Object Comparison** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Implementation** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Key Techniques** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Task 4: Write tests (TDD — write before implementing)** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:python ("""Tests for the /documents router and consent_pdf service.")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block27 (docker compose exec api pytest tests/test_documents.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block28 (git add api/tests/test_documents.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 517]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

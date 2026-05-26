@@ -4,36 +4,28 @@
 
 ## Key Concepts
 
-- **n8n Validation Expert** (15 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Auto-Fix Capabilities** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Validation Philosophy** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:javascript (// Preview all fixes)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **✅ Do** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **❌ Don't** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Detailed Guides** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Coming up — v1.0** (6 connections) — `ROADMAP.md`
+- **BelPro Roadmap** (4 connections) — `ROADMAP.md`
+- **ROADMAP.md** (1 connections) — `ROADMAP.md`
+- **Reliability** (1 connections) — `ROADMAP.md`
+- **Manager experience** (1 connections) — `ROADMAP.md`
+- **Security & data protection** (1 connections) — `ROADMAP.md`
+- **System architecture** (1 connections) — `ROADMAP.md`
+- **Polish** (1 connections) — `ROADMAP.md`
+- **Done** (1 connections) — `ROADMAP.md`
+- **On the radar (post-1.0)** (1 connections) — `ROADMAP.md`
 
 ## Relationships
 
-- [[Community 508]] (1 shared connections)
-- [[Community 546]] (1 shared connections)
-- [[Community 547]] (1 shared connections)
-- [[Code: Clear State Preklici]] (1 shared connections)
-- [[HTTP: PATCH /notify (Manual)]] (1 shared connections)
-- [[Community 352]] (1 shared connections)
-- [[PATCH /api/volunteers/{id}/deactivate (deactivate_volunteer)]] (1 shared connections)
-- [[DELETE /api/volunteers/{id} (delete_volunteer)]] (1 shared connections)
-- [[Community 442]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `ROADMAP.md`
 
 ## Audit Trail
 
-- EXTRACTED: 27 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

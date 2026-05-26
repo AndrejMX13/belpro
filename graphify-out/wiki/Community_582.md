@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Performance Testing Reference (k6)** (4 connections) — `.claude/skills/test-master/references/performance-testing.md`
-- **k6 Load Test Pattern** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
-- **k6 Stress Test Pattern** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
-- **k6 Spike Test Pattern** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
-- **k6 Thresholds Reference** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **Performance Considerations** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Large Payloads** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block31 (Webhook → Queue (Redis/DB) → Response (immediate))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **High Volume** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Retries** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/performance-testing.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

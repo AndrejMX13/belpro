@@ -1,30 +1,31 @@
 # Community 350
 
-> 9 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **WhatsApp setup** (5 connections) — `README.md`
-- **Workflow management** (4 connections) — `README.md`
-- **7. Configure n8n workflows** (2 connections) — `README.md`
-- **6. Create the Evolution API instance** (1 connections) — `README.md`
-- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README.md`
-- **8. Connect WhatsApp** (1 connections) — `README.md`
-- **code:block9 (N8N_API_KEY=<your-key>)** (1 connections) — `README.md`
-- **code:bash (./scripts/n8n_workflows.py import)** (1 connections) — `README.md`
-- **code:bash (./scripts/n8n_workflows.py export)** (1 connections) — `README.md`
+- **Design: Log Entry Location Edit + Auto-Refresh** (5 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **Solution** (5 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **2026-05-09-log-entry-location-edit-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **1. Add location field to the edit form** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **2. Include location in the save payload** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **3. Replace inline DOM updates with full re-render** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **4. API schema check** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
 
 ## Relationships
 
-- [[HTTP: GET Photo Limit]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README.md`
+- `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

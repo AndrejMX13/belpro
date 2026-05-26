@@ -4,15 +4,15 @@
 
 ## Key Concepts
 
-- **Pattern 2: Regex Filtering & Pattern Matching** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Pattern 6: Release Information Processing** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 - **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 - **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Extract and track mentions using regex patterns)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
-- **code:javascript (// Variation 1: Email extraction)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Extract and filter stable releases from GitHub API)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Version comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 409]] (1 shared connections)
+- [[Community 415]] (1 shared connections)
 
 ## Source Files
 

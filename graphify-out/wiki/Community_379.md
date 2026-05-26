@@ -4,27 +4,28 @@
 
 ## Key Concepts
 
-- **get_node Detail Levels** (5 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Standard Detail (DEFAULT - Use This!)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Full Detail (Use Sparingly)** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Search Properties Mode** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Decision Tree** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:block15 (┌─────────────────────────────────┐)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Webhook (nodes-base.webhook)** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **HTTP & API Nodes** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Basic Webhook** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Webhook with Authentication** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Webhook Returning Data** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript (// ❌ Wrong)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[list_pending_entries.sh]] (1 shared connections)
+- [[scripts/backup.sh]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 18 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

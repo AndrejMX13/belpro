@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Testing Webhooks** (5 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **1. Use Manual Trigger** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **2. Use curl** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:block29 (Manual Trigger → [set test data] → rest of workflow)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:bash (curl -X POST https://n8n.example.com/webhook/form-submit \)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **3. Use Postman/Insomnia** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **4. Webhook.site** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 1: Check Rows Affected** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 2: Constraint Violations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Pattern 3: Rollback on Error** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block34 (Database Operation (UPDATE users...))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Database operation with continueOnFail: true)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:block36 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

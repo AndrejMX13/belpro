@@ -4,36 +4,42 @@
 
 ## Key Concepts
 
-- **Type System Mastery** (9 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Basic Type Annotations** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Generic Types** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Protocol for Structural Typing** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Advanced Type Features** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Callable Types** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Mypy Configuration** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Common Type Patterns** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **Type Narrowing** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **type-system.md** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (from typing import Any)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (from typing import TypeVar, Generic, Protocol)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (from typing import Protocol, runtime_checkable)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (from typing import Literal, TypeAlias, TypedDict, NotRequire)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (from collections.abc import Callable)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:toml (# pyproject.toml)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (# Result type pattern)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **code:python (from typing import assert_type, assert_never)** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Workflow Management Tools Guide** (16 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n_deploy_template (QUICK START!)** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n_test_workflow (TRIGGER EXECUTION)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n_validate_workflow (by ID)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **n8n_get_workflow** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Workflow Lifecycle** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **WORKFLOW_GUIDE.md** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Tool Availability** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_deploy_template({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (// Deploy a webhook to Slack template)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (// Test webhook workflow)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_validate_workflow({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (// FOR LARGE WORKFLOWS — find nodes without the bloat)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:block37 (1. CREATE)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Do** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Don't** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 678]] (1 shared connections)
+- [[004_log_entry_photos.py]] (1 shared connections)
+- [[Community 298]] (1 shared connections)
+- [[PATCH /log-entries/{id}/reject]] (1 shared connections)
+- [[Community 474]] (1 shared connections)
+- [[Community 472]] (1 shared connections)
+- [[Community 473]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/python-pro/references/type-system.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 41 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

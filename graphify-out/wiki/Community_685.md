@@ -1,11 +1,12 @@
 # Community 685
 
-> 2 nodes
+> 3 nodes
 
 ## Key Concepts
 
-- **API.logo.upload()** (1 connections) — `frontend/js/api.js`
-- **POST /logo** (1 connections) — `api/routers/logo.py`
+- **unacknowledged_count** (2 connections) — `api/routers/errors.py`
+- **loadHealthWidget** (1 connections) — `frontend/js/errors.js`
+- **refreshErrorBadge** (1 connections) — `frontend/js/errors.js`
 
 ## Relationships
 
@@ -13,13 +14,13 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
-- `frontend/js/api.js`
+- `api/routers/errors.py`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 
-- EXTRACTED: 2 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 2 (50%)
+- INFERRED: 2 (50%)
 - AMBIGUOUS: 0 (0%)
 
 ---

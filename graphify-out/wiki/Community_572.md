@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Example 1: Webhook Form Submission** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block3 (New form submission! 📝)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block4 (New form submission! 📝)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Module 9: statistics - Statistical Functions** (3 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Basic Statistics** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Aggregate from Items** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

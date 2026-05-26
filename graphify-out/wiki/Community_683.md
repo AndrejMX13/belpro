@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **008_add_manager_notified_at.py** (2 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
-- **upgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
-- **downgrade()** (1 connections) — `api/db/migrations/versions/008_add_manager_notified_at.py`
+- **submitAddVolunteer** (2 connections) — `frontend/js/volunteers.js`
+- **check_emso** (1 connections) — `api/routers/volunteers.py`
+- **create_volunteer** (1 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
@@ -14,7 +14,8 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/008_add_manager_notified_at.py`
+- `api/routers/volunteers.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 

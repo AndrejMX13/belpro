@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **loadReports** (1 connections) — `frontend/js/reports.js`
-- **monthly_summary** (1 connections) — `api/routers/reports.py`
+- **project_error_reporting_pattern.md** (1 connections) — `.claude/memory/project_error_reporting_pattern.md`
+- **code:python (from models.error_log import ErrorLog)** (1 connections) — `.claude/memory/project_error_reporting_pattern.md`
 
 ## Relationships
 
@@ -13,8 +13,7 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/reports.js`
+- `.claude/memory/project_error_reporting_pattern.md`
 
 ## Audit Trail
 

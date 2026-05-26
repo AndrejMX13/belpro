@@ -1,30 +1,37 @@
 # Community 404
 
-> 8 nodes
+> 9 nodes
 
 ## Key Concepts
 
-- **Security Policy** (7 connections) — `SECURITY.md`
-- **SECURITY.md** (1 connections) — `SECURITY.md`
-- **Reporting a vulnerability** (1 connections) — `SECURITY.md`
-- **Scope** (1 connections) — `SECURITY.md`
-- **Out of scope** (1 connections) — `SECURITY.md`
-- **EMŠO encryption** (1 connections) — `SECURITY.md`
-- **Supported versions** (1 connections) — `SECURITY.md`
-- **Security model assumptions** (1 connections) — `SECURITY.md`
+- **renderAdmin()** (9 connections) — `frontend/js/admin.js`
+- **renderAdmin() — admin page** (4 connections) — `frontend/js/admin.js`
+- **GET /admin/settings** (3 connections) — `api/routers/admin.py`
+- **healthWidgetHTML()** (2 connections) — `frontend/js/errors.js`
+- **API.admin.getSettings()** (2 connections) — `frontend/js/api.js`
+- **API.admin.updateSettings()** (2 connections) — `frontend/js/api.js`
+- **PATCH /admin/settings** (2 connections) — `api/routers/admin.py`
+- **AdminSettingsResponse shape (max_photos_per_entry, photo_retention_days, session_duration_hours, report_auto_day, report_auto_period, report_auto_hour, backup_hour, photo_cleanup_hour, backup_retention_days)** (2 connections) — `api/routers/admin.py`
+- **admin.js** (1 connections) — `frontend/js/admin.js`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_auth.py]] (3 shared connections)
+- [[GET /api/log-entries (list_log_entries)]] (2 shared connections)
+- [[path]] (1 shared connections)
+- [[Community 317]] (1 shared connections)
 
 ## Source Files
 
-- `SECURITY.md`
+- `api/routers/admin.py`
+- `frontend/js/admin.js`
+- `frontend/js/api.js`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 20 (74%)
+- INFERRED: 7 (26%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,32 +4,26 @@
 
 ## Key Concepts
 
-- **Ops Sidecar & Error Logging Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **Task 8: App log page** (4 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **2026-05-20-ops-sidecar-and-error-log.md** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **File Structure** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (curl -s -X POST http://localhost:8100/api/errors \)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add frontend/index.html)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **Self-Review** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Monitoring & Logging** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 1: Execution Log Table** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 2: Metrics Collection** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 3: Summary Notifications** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:sql (CREATE TABLE workflow_executions ()** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block25 (Schedule)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block26 (Schedule → [Execute])** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block27 (Schedule (daily at 6 PM) → Query execution logs)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 584]] (1 shared connections)
-- [[Community 395]] (1 shared connections)
-- [[PATCH /api/admin/settings (update_admin_settings)]] (1 shared connections)
-- [[Community 396]] (1 shared connections)
-- [[Community 497]] (1 shared connections)
-- [[Community 498]] (1 shared connections)
-- [[Community 427]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 21 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

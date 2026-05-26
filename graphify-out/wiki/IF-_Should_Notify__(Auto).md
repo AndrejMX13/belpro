@@ -4,39 +4,33 @@
 
 ## Key Concepts
 
-- **n8n Node Configuration** (15 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Node-Specific Configuration Notes** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **SplitInBatches v3** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Surgical Field Edits with patchNodeField** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Configuration Philosophy** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Google Sheets Node** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Instead of replacing the entire jsCode field:)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Do** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **❌ Don't** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Detailed References** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Error #5: Missing Null Checks / Undefined Access** (7 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **The Problem** (5 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Safe Access Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Webhook Data Safety** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Array Safety** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Object Property Safety** (2 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: No null check - crashes if user doesn't exist)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Assumes array has items)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: Assumes nested property exists)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ WRONG: No validation before array operations)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Pattern 1: Optional chaining (modern, recommended))** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// Webhook data requires extra safety)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ RISKY: No length check)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **code:javascript (// ❌ RISKY: Direct access)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 523]] (1 shared connections)
-- [[GET /api/reports/history/{id}/pdf (download_history_pdf)]] (1 shared connections)
-- [[Community 379]] (1 shared connections)
-- [[scripts/backup.sh]] (1 shared connections)
-- [[Community 380]] (1 shared connections)
-- [[Community 296]] (1 shared connections)
-- [[Community 473]] (1 shared connections)
-- [[Community 337]] (1 shared connections)
+- [[Community 285]] (1 shared connections)
+- [[Community 525]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

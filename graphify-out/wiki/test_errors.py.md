@@ -1,35 +1,35 @@
 # test_errors.py
 
-> 39 nodes
+> 41 nodes
 
 ## Key Concepts
 
-- **Database Maintenance** (10 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **pg_stat Monitoring Views** (6 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **VACUUM Fundamentals** (4 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Bloat Detection and Removal** (4 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Autovacuum Configuration** (3 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **VACUUM Variants** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **VACUUM Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Per-Table Autovacuum Tuning** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **ANALYZE (Statistics)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Detect Table Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Detect Index Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Remove Bloat** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **pg_stat_activity (Current Queries)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **pg_stat_database (Database-wide Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **pg_stat_user_tables (Table Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **pg_stat_user_indexes (Index Usage)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **pg_statio_user_tables (I/O Stats)** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Lock Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Transaction ID Wraparound** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Helpful Maintenance Queries** (2 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **maintenance.md** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **Why VACUUM is Critical** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **code:sql (-- Standard VACUUM (non-blocking, reclaims space for reuse))** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **code:sql (-- Check when tables were last vacuumed)** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- **code:sql (-- Global settings (postgresql.conf))** (1 connections) — `.claude/skills/postgres-pro/references/maintenance.md`
-- *... and 14 more nodes in this community*
+- **n8n Code JavaScript** (15 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **What You'll Learn** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Coverage** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Critical Gotchas Highlighted** (4 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Quick Reference** (4 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **File Structure** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **#1: Webhook Data Structure** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **#2: Return Format** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **#3: Expression Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **README.md** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Purpose** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Activates On** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Quick Start** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Data Access Mastery** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Common Patterns (Production-Tested)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Error Prevention** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Built-in Functions** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **code:block1 (n8n-code-javascript/)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Mode Selection** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Data Access** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Error Prevention** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Production Patterns** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **Built-in Functions** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
+- *... and 16 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/postgres-pro/references/maintenance.md`
+- `.claude/skills/n8n-code-javascript/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 76 (100%)
+- EXTRACTED: 80 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

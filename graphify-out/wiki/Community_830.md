@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/errors/unacknowledged-count (unacknowledged_count)** (0 connections) — `api/routers/errors.py`
+- **GET /api/reports/history (get_report_history)** (0 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `api/routers/reports.py`
 
 ## Audit Trail
 

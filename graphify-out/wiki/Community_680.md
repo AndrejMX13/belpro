@@ -4,22 +4,21 @@
 
 ## Key Concepts
 
-- **renderAdmin** (2 connections) — `frontend/js/admin.js`
-- **get_admin_settings** (1 connections) — `api/routers/admin.py`
-- **update_admin_settings** (1 connections) — `api/routers/admin.py`
+- **3. Session Management** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Reusing session across requests)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Dependency injection per request)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[merge_ast_semantic.py]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/admin.py`
-- `frontend/js/admin.js`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

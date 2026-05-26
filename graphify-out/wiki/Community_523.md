@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Core Concepts** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **1. Operation-Aware Configuration** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **2. Property Dependencies** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// For operation='post')** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// When method='GET')** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **3. Progressive Discovery** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Error Prevention Checklist** (6 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Code Structure** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Return Format** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Syntax** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Data Safety** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **Testing** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[Community 285]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

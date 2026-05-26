@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 4: Evolution API service client** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import pytest)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/services/evolution.py api/tests/test_evolution_s)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Core Concepts** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **1. Operation-Aware Configuration** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **2. Property Dependencies** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// For operation='post')** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// When method='GET')** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **3. Progressive Discovery** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

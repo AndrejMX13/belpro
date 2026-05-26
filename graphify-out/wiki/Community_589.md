@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **Testing Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django/DRF Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI Tests** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# FastAPI pytest with httpx)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **ViewSet → APIRouter Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django REST Framework ViewSet** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI APIRouter with Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django DRF ViewSet)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# FastAPI APIRouter)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 

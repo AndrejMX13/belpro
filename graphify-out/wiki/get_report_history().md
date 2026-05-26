@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Feedback Examples** (7 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Good vs Bad Feedback** (5 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Feedback by Category** (4 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Major (Should Fix)** (4 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Be Specific, Not Vague** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Be Actionable, Not Just Critical** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Be Constructive, Not Demanding** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Ask Questions, Don't Assume** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Praise Examples** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Critical (Must Fix)** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Minor (Nice to Have)** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Question Format** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Summary Format** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **feedback-examples.md** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "This is confusing")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "Fix the query")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "Add tests")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (BAD: "This is wrong")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown ("Great use of early returns here - much more readable than n)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[CRITICAL] Security: SQL Injection**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[MAJOR] Performance: N+1 Query**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:block8** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:block9** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[MINOR] Naming: Unclear variable**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **code:markdown (**[QUESTION]**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Module Systems** (14 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **ES Modules (ESM)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Import Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Dynamic Imports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Package.json Configuration** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Conditional Exports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Import Maps (Browser)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **CommonJS Compatibility** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Module Resolution** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Circular Dependencies** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Tree Shaking Optimization** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Module Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **Node.js ESM Specifics** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **modules.md** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Named exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Named imports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Basic dynamic import)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:json ({)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// package.json with conditional exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:html (<!-- In HTML -->)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// ESM consuming CommonJS)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Explicit file extensions required in ESM)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// moduleA.js)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Write side-effect-free code for tree shaking)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **code:javascript (// Singleton pattern)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
 - *... and 2 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/feedback-examples.md`
+- `.claude/skills/javascript-pro/references/modules.md`
 
 ## Audit Trail
 

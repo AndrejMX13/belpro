@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Design: n8n Workflow Import/Export Script** (10 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **File Layout** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Interface** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **2026-05-16-n8n-workflow-scripts-design.md** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **code:block1 (scripts/n8n_workflows.py    ← new executable script)** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **code:bash (./scripts/n8n_workflows.py import   # load n8n/workflows/*.j)** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Configuration** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Import Flow** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Export Flow** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Error Handling** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **README / SPEC Updates** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- **Security Headers** (7 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Helmet (Express)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Manual Headers** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Rate Limiting** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **CORS Configuration** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Cookie Security** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **security-headers.md** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import helmet from 'helmet';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (app.use((req, res, next) => {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import rateLimit from 'express-rate-limit';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (import cors from 'cors';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **code:typescript (res.cookie('session', token, {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
 
 ## Relationships
 
@@ -24,7 +24,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
+- `.claude/skills/secure-code-guardian/references/security-headers.md`
 
 ## Audit Trail
 

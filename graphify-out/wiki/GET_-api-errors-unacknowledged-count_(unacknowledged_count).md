@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Python Docstrings** (7 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Google Style (Recommended)** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **NumPy Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Sphinx Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **python-docstrings.md** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **code:python (class UserService:)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Sections Available** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **GitHub Actions Pipelines** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Common Workflow Patterns** (4 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Complete CI/CD Pipeline** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Matrix Builds (Multi-version testing)** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Reusable Workflows** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Caching Dependencies** (2 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **github-actions.md** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (name: CI/CD Pipeline)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (jobs:)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (# .github/workflows/deploy.yml)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **code:yaml (- uses: actions/cache@v4)** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Quick Reference** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
 
 ## Relationships
 
@@ -23,7 +23,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/python-docstrings.md`
+- `.claude/skills/devops-engineer/references/github-actions.md`
 
 ## Audit Trail
 

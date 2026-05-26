@@ -4,25 +4,24 @@
 
 ## Key Concepts
 
-- **Python Docstrings Reference** (4 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Google Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **NumPy Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **Sphinx Style Python Docstring** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
-- **TypeScript JSDoc Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Task 1: error_log migration + ORM model** (5 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/db/migrations/versions/013_error_log_table.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:python (# api/models/error_log.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **code:bash (git add api/db/migrations/versions/013_error_log_table.py ap)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 433]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/python-docstrings.md`
-- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
 
 ## Audit Trail
 
-- EXTRACTED: 6 (75%)
-- INFERRED: 2 (25%)
+- EXTRACTED: 9 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

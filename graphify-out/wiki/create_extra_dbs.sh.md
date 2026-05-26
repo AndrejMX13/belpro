@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **HTTP Request (nodes-base.httpRequest)** (5 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **GET Request** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **POST with JSON** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **DELETE Request** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **PUT/PATCH Request** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **Example 4: Date Formatting** (7 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **ISO Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Custom Date Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Time Only** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Full Readable Format** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Date Math - Future** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Date Math - Past** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toISO()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('HH:mm:ss')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.toFormat('MMMM dd, yyyy')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.plus({days: 7}).toFormat('yyyy-MM-dd')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$now.minus({hours: 24}).toFormat('yyyy-MM-dd HH:mm')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 378]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

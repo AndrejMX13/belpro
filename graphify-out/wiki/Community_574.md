@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Unified Tool Reference** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **get_node (Unified Node Information)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **validate_node (Unified Validation)** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Standard (recommended))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Full validation with runtime profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Example 1: Webhook Form Submission** (5 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block3 (New form submission! 📝)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block4 (New form submission! 📝)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

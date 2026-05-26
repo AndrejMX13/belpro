@@ -1,35 +1,35 @@
 # Manager WhatsApp Approval Implementation Plan
 
-> 44 nodes
+> 45 nodes
 
 ## Key Concepts
 
-- **QA Methodology** (9 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Manual Testing Types** (6 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Test Design Techniques** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Defect Management** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Quality Metrics** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Continuous Testing & Shift-Left** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Quality Advocacy** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Test Planning** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Exploratory Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Usability Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Accessibility Testing (WCAG 2.1 AA)** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Localization Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Compatibility Matrix** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Pairwise Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Risk-Based Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Root Cause Analysis (5 Whys)** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Defect Report Template** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Key Calculations** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Quality Dashboard** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Shift-Left Activities** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Feedback Cycle Targets** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Quality Gates** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Team Education Program** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Test Plan Template** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- **Environment Strategy** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
-- *... and 19 more nodes in this community*
+- **Task 3: Ops server** (14 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Task 2: Schema and router** (9 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Report Auto-Hour Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Task 5: Frontend** (7 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Task 1: AppSettings unit tests + property** (6 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **Task 4: Data seed migration** (5 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **2026-05-22-report-auto-hour.md** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (def test_appsettings_report_auto_hour_default() -> None:)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:block2 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:block4 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:block5 (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (async def test_get_settings_returns_report_hour_default(clie)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:block7 (docker compose exec api pytest tests/test_admin.py::test_get)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (payload = {)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:block12 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:block13 (git add api/schemas/admin.py api/routers/admin.py api/tests/)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- *... and 20 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/qa-methodology.md`
+- `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
 
 ## Audit Trail
 
-- EXTRACTED: 86 (100%)
+- EXTRACTED: 88 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,34 +1,35 @@
 # JavaScript Async Patterns Reference
 
-> 25 nodes
+> 26 nodes
 
 ## Key Concepts
 
-- **Incident Response** (13 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Chaos Engineering** (3 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Response Metrics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Runbook Template** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Auto-Remediation Script** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Postmortem Template** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **PagerDuty Configuration** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Evidence Collection & Forensics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Communication Templates** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Security Incident Specifics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Compliance Requirements** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **incident-response.md** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Severity Levels** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:markdown (# Runbook: High API Error Rate)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:python (#!/usr/bin/env python3)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:markdown (# Postmortem: API Outage - 2024-01-15)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:yaml (schedules:)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:yaml (# chaos-mesh: Pod failure test)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:markdown (## SEV1 Initial Notification)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Incident Classification** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:bash (# Compromise investigation checklist)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **code:yaml (# Incident notification requirements)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
-- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Step 2 — Update files** (9 connections) — `.claude/skills/version-bump/SKILL.md`
+- **BelPro Version Bump** (8 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`CHANGELOG.md`** (4 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Step 3 — Pre-commit review** (3 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Step 0 — Pre-flight: test suite check** (2 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Step 4 — Tag? (optional)** (2 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (2 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Step 6 — Offer container rebuild** (2 connections) — `.claude/skills/version-bump/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:block1 (docker compose exec api pytest tests/ -v)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **Step 1 — Orient and suggest version** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`api/main.py`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:block2 (## [<version>] — <today's date YYYY-MM-DD>)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:block3 (git log <previous-version-tag>..HEAD --oneline)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:block4 (git log --since="YYYY-MM-DD" --oneline)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`SPEC.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`SPEC_SL.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`README.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`README_SL.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`ROADMAP.md`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **`graphify-out/`** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:block5 (chore: release <version>)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:bash (git add api/main.py CHANGELOG.md SPEC.md SPEC_SL.md README.m)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:block7 (git tag v<version>)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- **code:markdown (**<one-line summary of what this release is about>**)** (1 connections) — `.claude/skills/version-bump/SKILL.md`
+- *... and 1 more nodes in this community*
 
 ## Relationships
 
@@ -36,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/incident-response.md`
+- `.claude/skills/version-bump/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 48 (100%)
+- EXTRACTED: 50 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

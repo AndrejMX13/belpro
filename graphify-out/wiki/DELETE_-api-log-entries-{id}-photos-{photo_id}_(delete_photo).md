@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Evolution API — @lid JID Resolution for BelPro** (8 connections) — `docs/evolution-lid-resolution.md`
-- **Priority Fix: Upgrade to v2.3.7** (3 connections) — `docs/evolution-lid-resolution.md`
-- **Environment Variables to Add on Upgrade** (2 connections) — `docs/evolution-lid-resolution.md`
-- **evolution-lid-resolution.md** (1 connections) — `docs/evolution-lid-resolution.md`
-- **The Problem** (1 connections) — `docs/evolution-lid-resolution.md`
-- **code:json ({)** (1 connections) — `docs/evolution-lid-resolution.md`
-- **code:js (const rawJid = data.key.remoteJid;)** (1 connections) — `docs/evolution-lid-resolution.md`
-- **code:yaml (WPP_LID_MODE: "false"            # Instructs underlying WPP )** (1 connections) — `docs/evolution-lid-resolution.md`
-- **Current Workaround (v2.2.3, active in workflow)** (1 connections) — `docs/evolution-lid-resolution.md`
-- **Sendback: @lid as Direct Recipient** (1 connections) — `docs/evolution-lid-resolution.md`
-- **Future: Volunteer Registration Flow** (1 connections) — `docs/evolution-lid-resolution.md`
-- **What Does NOT Work** (1 connections) — `docs/evolution-lid-resolution.md`
+- **env.py** (6 connections) — `api/db/migrations/env.py`
+- **_get_url()** (5 connections) — `api/db/migrations/env.py`
+- **_run_async_migrations()** (4 connections) — `api/db/migrations/env.py`
+- **run_migrations_offline()** (3 connections) — `api/db/migrations/env.py`
+- **run_migrations_online()** (3 connections) — `api/db/migrations/env.py`
+- **_do_run_migrations()** (2 connections) — `api/db/migrations/env.py`
+- **Alembic environment — async SQLAlchemy / asyncpg configuration.** (1 connections) — `api/db/migrations/env.py`
+- **Read DATABASE_URL from settings (env / .env file).** (1 connections) — `api/db/migrations/env.py`
+- **Run migrations without a live DB connection (generates SQL script).** (1 connections) — `api/db/migrations/env.py`
+- **Inner helper called inside the async connection context.** (1 connections) — `api/db/migrations/env.py`
+- **Create an async engine and run migrations inside it.** (1 connections) — `api/db/migrations/env.py`
+- **Run migrations against a live database.** (1 connections) — `api/db/migrations/env.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[volunteers.js]] (1 shared connections)
 
 ## Source Files
 
-- `docs/evolution-lid-resolution.md`
+- `api/db/migrations/env.py`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 28 (97%)
+- INFERRED: 1 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

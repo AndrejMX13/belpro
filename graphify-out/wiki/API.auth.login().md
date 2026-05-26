@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Authentication** (12 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **OAuth2 Password Flow** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (import bcrypt from 'bcrypt';)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **JWT Token Creation** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (import jwt from 'jsonwebtoken';)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Get Current User** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (function authMiddleware(req: Request, res: Response, next: N)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Role-Based Access** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:typescript (const MAX_ATTEMPTS = 5;)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Refresh Token** (2 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **Password Hashing** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **JWT Implementation** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Auth Middleware** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Account Lockout** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **authentication.md** (1 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **code:python (@router.post("/refresh", response_model=Token))** (1 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **authentication.md** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
+- **JavaScript Pro** (7 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Key Patterns with Examples** (5 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Async/Await Error Handling** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Optional Chaining & Nullish Coalescing** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **ESM Module Structure** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Avoid var / Prefer const** (2 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **code:js (// ✅ Correct — always handle async errors explicitly)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **code:js (// ✅ Correct)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **code:js (// ✅ Correct — named exports, no default-only exports for li)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **code:js (// ✅ Correct)** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/javascript-pro/SKILL.md`
 
 ## Relationships
 
@@ -29,12 +29,11 @@
 
 ## Source Files
 
-- `.claude/skills/fastapi-expert/references/authentication.md`
-- `.claude/skills/secure-code-guardian/references/authentication.md`
+- `.claude/skills/javascript-pro/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 42 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

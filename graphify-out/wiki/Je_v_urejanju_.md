@@ -4,33 +4,42 @@
 
 ## Key Concepts
 
-- **API Documentation: NestJS & Express** (4 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Express (swagger-jsdoc)** (4 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **NestJS (@nestjs/swagger)** (3 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Controller Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **DTO Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Setup** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Route Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Schema Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **api-docs-nestjs-express.md** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:typescript (import { Controller, Post, Body, Get, Param } from '@nestjs/)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:typescript (import { ApiProperty, ApiPropertyOptional } from '@nestjs/sw)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:javascript (const swaggerJsdoc = require('swagger-jsdoc');)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:javascript (/**)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **code:javascript (/**)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Scheduled Tasks Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **scheduled_tasks.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block1 (Schedule Trigger → [Fetch Data] → [Process] → [Deliver] → [L)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. Schedule Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. Data Source** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. Processing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. Delivery** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **5. Logging** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block42 (Schedule (daily 8 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block43 (Schedule (nightly 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block44 (Schedule (every 5 min))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 427]] (1 shared connections)
+- [[Nalozi Stanje]] (1 shared connections)
+- [[Community 492]] (1 shared connections)
+- [[Community 429]] (1 shared connections)
+- [[Community 391]] (1 shared connections)
+- [[Community 428]] (1 shared connections)
+- [[Community 390]] (1 shared connections)
+- [[test_migrations.py]] (1 shared connections)
+- [[Community 491]] (1 shared connections)
+- [[Community 493]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 38 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

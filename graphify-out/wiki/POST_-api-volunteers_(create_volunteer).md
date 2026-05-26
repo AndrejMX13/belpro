@@ -4,31 +4,30 @@
 
 ## Key Concepts
 
-- **Installation** (8 connections) — `README.md`
-- **2. Create and configure the environment file** (3 connections) — `README.md`
-- **Quick start — setup wizard** (2 connections) — `README.md`
-- **1. Clone the repository** (2 connections) — `README.md`
-- **4. Run database migrations** (2 connections) — `README.md`
-- **code:bash (git clone https://github.com/AndrejMX13/belpro.git)** (1 connections) — `README.md`
-- **Manual installation (alternative)** (1 connections) — `README.md`
-- **code:bash (git clone https://github.com/AndrejMX13/belpro.git)** (1 connections) — `README.md`
-- **code:bash (cp .env.example .env)** (1 connections) — `README.md`
-- **code:bash (# EMSO encryption key (32 bytes, base64url))** (1 connections) — `README.md`
-- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `README.md`
-- **5. Log in to the dashboard** (1 connections) — `README.md`
+- **Contributing to BelPro** (6 connections) — `CONTRIBUTING.md`
+- **How to contribute** (5 connections) — `CONTRIBUTING.md`
+- **Development setup** (2 connections) — `CONTRIBUTING.md`
+- **CONTRIBUTING.md** (1 connections) — `CONTRIBUTING.md`
+- **Quick links** (1 connections) — `CONTRIBUTING.md`
+- **Report a bug** (1 connections) — `CONTRIBUTING.md`
+- **Suggest a feature** (1 connections) — `CONTRIBUTING.md`
+- **Submit code** (1 connections) — `CONTRIBUTING.md`
+- **First-time contributors** (1 connections) — `CONTRIBUTING.md`
+- **code:bash (git clone https://github.com/AndrejMX13/belpro.git)** (1 connections) — `CONTRIBUTING.md`
+- **Communication** (1 connections) — `CONTRIBUTING.md`
+- **What's in scope (v1)** (1 connections) — `CONTRIBUTING.md`
 
 ## Relationships
 
-- [[HTTP: GET Photo Limit]] (1 shared connections)
-- [[Community 640]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README.md`
+- `CONTRIBUTING.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

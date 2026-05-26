@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **TypeScript JSDoc** (8 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Function Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Interface Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Generic Types** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Async Functions** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Common Patterns** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **typescript-jsdoc.md** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
-- **code:typescript (// Optional parameters)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Endpoints & Routing** (8 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Router Setup** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **CRUD Endpoints** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Custom Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Query Parameters** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Include Router** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Response Models** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **endpoints-routing.md** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (from fastapi import APIRouter, Depends, HTTPException, statu)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (@router.post("/", response_model=UserOut, status_code=status)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (from fastapi import Depends)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (@router.get("/search"))** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (# main.py)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **code:python (from fastapi import Response)** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
 
 ## Relationships
 
@@ -26,7 +26,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- `.claude/skills/fastapi-expert/references/endpoints-routing.md`
 
 ## Audit Trail
 

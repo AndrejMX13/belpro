@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 1: Check Rows Affected** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 2: Constraint Violations** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 3: Rollback on Error** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block34 (Database Operation (UPDATE users...))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript (// Database operation with continueOnFail: true)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block36 (Try Operations:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Pattern 1: Tool Execution Errors** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Pattern 2: LLM API Errors** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Pattern 3: Invalid Tool Outputs** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block27 (AI Agent (continueOnFail on tool nodes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block28 (Main Workflow:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Code node - validate tool output)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
@@ -18,7 +18,7 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

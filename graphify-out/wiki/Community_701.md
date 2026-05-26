@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **rebuild_wiki.py** (1 connections) — `scripts/rebuild_wiki.py`
-- **Rebuild the graphify wiki from the current graph.json and community labels.** (1 connections) — `scripts/rebuild_wiki.py`
+- **API.logo.delete()** (1 connections) — `frontend/js/api.js`
+- **DELETE /logo** (1 connections) — `api/routers/logo.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `scripts/rebuild_wiki.py`
+- `api/routers/logo.py`
+- `frontend/js/api.js`
 
 ## Audit Trail
 

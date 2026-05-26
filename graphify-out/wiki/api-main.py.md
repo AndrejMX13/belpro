@@ -1,35 +1,35 @@
 # api/main.py
 
-> 32 nodes
+> 34 nodes
 
 ## Key Concepts
 
-- **CLAUDE.md — Belpro** (8 connections) — `CLAUDE.md`
-- **Run workflow integration tests (host Python — requires full stack running)** (8 connections) — `CLAUDE.md`
-- **Coding Standards** (6 connections) — `CLAUDE.md`
-- **Tooling & Shell Conventions** (3 connections) — `CLAUDE.md`
-- **Project Memory** (3 connections) — `CLAUDE.md`
-- **CLAUDE.md** (2 connections) — `CLAUDE.md`
-- **Project Structure** (2 connections) — `CLAUDE.md`
-- **Environment Variables** (2 connections) — `CLAUDE.md`
-- **Local Development** (2 connections) — `CLAUDE.md`
-- **Testing** (2 connections) — `CLAUDE.md`
-- **graphify & serena** (2 connections) — `CLAUDE.md`
-- **Workflow** (2 connections) — `CLAUDE.md`
-- **What is this project?** (1 connections) — `CLAUDE.md`
-- **code:block1 (belpro/)** (1 connections) — `CLAUDE.md`
-- **Technology Choices** (1 connections) — `CLAUDE.md`
-- **General** (1 connections) — `CLAUDE.md`
-- **Python** (1 connections) — `CLAUDE.md`
-- **n8n Workflows** (1 connections) — `CLAUDE.md`
-- **Frontend** (1 connections) — `CLAUDE.md`
-- **SQL / Database** (1 connections) — `CLAUDE.md`
-- **code:block2 (# PostgreSQL)** (1 connections) — `CLAUDE.md`
-- **Key Business Rules (encode these correctly)** (1 connections) — `CLAUDE.md`
-- **code:bash (# Copy and fill in environment)** (1 connections) — `CLAUDE.md`
-- **code:bash (docker compose exec api pytest tests/ -v                    )** (1 connections) — `CLAUDE.md`
-- **Known packaging pins** (1 connections) — `CLAUDE.md`
-- *... and 7 more nodes in this community*
+- **Interactive API Documentation** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Multi-Language Examples** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **SDK Reference Template** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Interactive Documentation Portals** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Multi-Protocol Documentation** (4 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **GraphQL Schema Documentation** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **SDK Documentation Strategies** (3 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **OpenAPI 3.1 Advanced Features** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Reusable Components** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Swagger UI Customization** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Redoc (Modern Alternative)** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **Stoplight Elements** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **WebSocket Protocol Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **gRPC Documentation** (2 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **interactive-api-docs.md** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:yaml (openapi: 3.1.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (// Custom Swagger UI)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:html (<!DOCTYPE html>)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (import { API } from '@stoplight/elements';)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:graphql (""")** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:javascript (const { ApolloServer } = require('apollo-server');)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:yaml (# AsyncAPI 2.0)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:protobuf (syntax = "proto3";)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:markdown (# Create User)** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- **code:block10** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
+- *... and 9 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `CLAUDE.md`
+- `.claude/skills/code-documenter/references/interactive-api-docs.md`
 
 ## Audit Trail
 
-- EXTRACTED: 62 (100%)
+- EXTRACTED: 66 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

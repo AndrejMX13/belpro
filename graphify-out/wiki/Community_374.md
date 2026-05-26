@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Common Dependency Patterns** (5 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Pattern 1: Boolean Toggle** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Pattern 2: Resource/Operation Cascade** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Pattern 3: Type-Specific Configuration** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Pattern 4: Method-Specific Fields** (2 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Field: sendBody (boolean))** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Operation: post)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// String operations)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Query parameters (all methods can have))** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Module 1: json - JSON Operations** (5 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Parse JSON String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Generate JSON String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Handle JSON Errors** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Pretty Print JSON** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 375]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

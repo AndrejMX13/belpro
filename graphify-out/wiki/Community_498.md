@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 6: Enhanced `/api/health/detailed` endpoint** (7 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (import shutil)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (@app.get("/api/health/detailed"))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block40 (httpx==0.27.2)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (curl -s http://localhost:8100/api/health/detailed | python -)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add api/main.py api/requirements.txt)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Task 4: Volunteer Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 4.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 4.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 4.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:python (# api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (cd api && pytest tests/test_volunteers.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 428]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 

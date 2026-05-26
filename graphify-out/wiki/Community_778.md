@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **switch_manager_phone.sh** (0 connections) — `scripts/switch_manager_phone.sh`
+- **load_env.ps1** (0 connections) — `scripts/load_env.ps1`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/switch_manager_phone.sh`
+- `scripts/load_env.ps1`
 
 ## Audit Trail
 

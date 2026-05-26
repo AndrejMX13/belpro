@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Design: Log Entry Location Edit + Auto-Refresh** (5 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **Solution** (5 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **2026-05-09-log-entry-location-edit-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **1. Add location field to the edit form** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **2. Include location in the save payload** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **3. Replace inline DOM updates with full re-render** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **4. API schema check** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- **Task 5: Frontend — Administracija page** (10 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js (admin: {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:html (<a href="#admin" class="nav-item" data-page="admin">)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:html (<script src="/js/admin.js"></script>)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js ('use strict';)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js (} else if (hash === '#admin') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:js (} else if (hash === '#settings') {)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block41 (docker compose up -d --build frontend)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block42 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add frontend/js/api.js frontend/index.html frontend/js/a)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 539]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-09-log-entry-location-edit-design.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 18 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

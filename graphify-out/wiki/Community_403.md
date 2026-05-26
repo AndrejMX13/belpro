@@ -1,17 +1,18 @@
 # Community 403
 
-> 8 nodes
+> 9 nodes
 
 ## Key Concepts
 
-- **Contributor Covenant Code of Conduct** (7 connections) — `CODE_OF_CONDUCT.md`
-- **CODE_OF_CONDUCT.md** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Our Pledge** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Our Standards** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Enforcement Responsibilities** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Scope** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Enforcement** (1 connections) — `CODE_OF_CONDUCT.md`
-- **Attribution** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Report Template** (6 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Full Review Report Template** (3 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **report-template.md** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **code:markdown (# Code Review: [PR Title])** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **code:block2** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Verdict Guidelines** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Severity Definitions** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Time Boxing** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
+- **Quick Checks Before Submitting** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
 
 ## Relationships
 
@@ -19,11 +20,11 @@
 
 ## Source Files
 
-- `CODE_OF_CONDUCT.md`
+- `.claude/skills/code-reviewer/references/report-template.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

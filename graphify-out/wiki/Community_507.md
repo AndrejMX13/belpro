@@ -4,12 +4,12 @@
 
 ## Key Concepts
 
-- **4. WhatsApp tok (prostovoljec)** (5 connections) — `SPEC_SL.md`
-- **4.1 Oddaja vnosa** (2 connections) — `SPEC_SL.md`
-- **code:block1 (Prostovoljec pošlje:)** (1 connections) — `SPEC_SL.md`
-- **4.2 Manjkajoča fotografija** (1 connections) — `SPEC_SL.md`
-- **4.3 Vidnost poslanih sporočil na povezanem telefonu** (1 connections) — `SPEC_SL.md`
-- **4.4 Jezik prostovoljcev** (1 connections) — `SPEC_SL.md`
+- **13. Automated Test Suite** (5 connections) — `SPEC.md`
+- **Running** (2 connections) — `SPEC.md`
+- **Infrastructure** (1 connections) — `SPEC.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `SPEC.md`
+- **Test files** (1 connections) — `SPEC.md`
+- **Backup/restore smoke test** (1 connections) — `SPEC.md`
 
 ## Relationships
 
@@ -17,7 +17,7 @@
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `SPEC.md`
 
 ## Audit Trail
 

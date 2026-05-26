@@ -4,28 +4,36 @@
 
 ## Key Concepts
 
-- **Task 5: Settings update + startup seeding** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (authentication_api_key: str = "")** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (from sqlalchemy import select, text)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (async def seed_whatsapp_phone_from_env(session: AsyncSession)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (@asynccontextmanager)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/core/settings.py api/main.py api/tests/test_mana)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **n8n Validation Expert** (15 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Best Practices** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Auto-Fix Capabilities** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Validation Philosophy** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Preview all fixes)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **✅ Do** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **❌ Don't** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Detailed Guides** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[Community 534]] (1 shared connections)
+- [[Community 579]] (1 shared connections)
+- [[Community 580]] (1 shared connections)
+- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Text Extract]] (1 shared connections)
+- [[Community 383]] (1 shared connections)
+- [[GET /api/admin/settings (get_admin_settings)]] (1 shared connections)
+- [[PATCH /api/admin/settings (update_admin_settings)]] (1 shared connections)
+- [[Community 481]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
+- EXTRACTED: 27 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

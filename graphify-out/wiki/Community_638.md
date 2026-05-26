@@ -4,10 +4,10 @@
 
 ## Key Concepts
 
-- **012_settings_table.py** (2 connections) — `api/db/migrations/versions/012_settings_table.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/012_settings_table.py`
-- **downgrade()** (1 connections) — `api/db/migrations/versions/012_settings_table.py`
-- **Create settings table and seed default values.** (1 connections) — `api/db/migrations/versions/012_settings_table.py`
+- **config.py** (2 connections) — `api/routers/config.py`
+- **get_evolution_instance()** (2 connections) — `api/routers/config.py`
+- **Config router — public read-only settings for n8n workflow consumption.** (1 connections) — `api/routers/config.py`
+- **Return the Evolution API instance name. No auth required. Used by n8n workflows.** (1 connections) — `api/routers/config.py`
 
 ## Relationships
 
@@ -15,7 +15,7 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/012_settings_table.py`
+- `api/routers/config.py`
 
 ## Audit Trail
 

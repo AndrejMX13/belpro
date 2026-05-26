@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **n8n_workflow_versions (VERSION CONTROL)** (6 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **List Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Get Specific Version** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Rollback to Previous Version** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Delete Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Prune Old Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// Delete specific version)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Common Patterns Overview** (6 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **1. Data Transformation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **2. Filtering & Aggregation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **3. String Processing with Regex** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **4. Data Validation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **5. Statistical Analysis** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (from statistics import mean, median, stdev)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

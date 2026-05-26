@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Manager WhatsApp Approval Workflow — Design Spec** (8 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Data Flow** (4 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **WhatsApp Messages** (4 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Routing Change (volunteer_entry.json)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Manager Workflow (manager_approval.json)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Execute Workflow Input (from volunteer flow)** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **2026-05-07-manager-approval-design.md** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Solution** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **code:block1 (Webhook: WhatsApp)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **code:block2 (┌─ Manual Trigger ──────────────────────┐)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Manager → "Not Registered" Fix** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Testing Without a Third Phone** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **code:json ({)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **API Endpoints Used** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **code:block4 (Vaš vnos z dne 07.05.2026 je bil odobren. ✅)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **code:block5 (Vaš vnos z dne 07.05.2026 je bil zavrnjen. ❌)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **code:block6 (Vnos za Slavko Pridni je bil odobren/zavrnjen.)** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Interaction Format** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Known Limitation: Buttons** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Files Changed** (1 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- **Python Pro** (8 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Code Examples** (6 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/python-pro/SKILL.md`
+- **mypy strict configuration (pyproject.toml)** (3 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Type-annotated function with error handling** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Dataclass with validation** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Async pattern** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **pytest fixture and parametrize** (2 connections) — `.claude/skills/python-pro/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (from pathlib import Path)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (from dataclasses import dataclass, field)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (import asyncio)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:toml ([tool.mypy])** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **code:block6 (Success: no issues found in 12 source files)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/python-pro/SKILL.md`
 
 ## Relationships
 
@@ -33,7 +33,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
+- `.claude/skills/python-pro/SKILL.md`
 
 ## Audit Trail
 

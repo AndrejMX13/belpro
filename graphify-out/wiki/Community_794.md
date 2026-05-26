@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_pydyf_pin.md** (0 connections) — `.claude/memory/feedback_pydyf_pin.md`
+- **feedback_graphify_orientation.md** (0 connections) — `.claude/memory/feedback_graphify_orientation.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_pydyf_pin.md`
+- `.claude/memory/feedback_graphify_orientation.md`
 
 ## Audit Trail
 

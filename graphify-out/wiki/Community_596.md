@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **010_monthly_reports_unique_idx.py** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **Create unique partial indexes on monthly_reports.** (1 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
-- **Drop unique partial indexes from monthly_reports.** (1 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- **007_add_ngo_davcna.py** (2 connections) — `api/db/migrations/versions/007_add_ngo_davcna.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/007_add_ngo_davcna.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/007_add_ngo_davcna.py`
+- **Add ngo_davcna column to managers.** (1 connections) — `api/db/migrations/versions/007_add_ngo_davcna.py`
+- **Drop ngo_davcna column from managers.** (1 connections) — `api/db/migrations/versions/007_add_ngo_davcna.py`
 
 ## Relationships
 
@@ -16,7 +16,7 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- `api/db/migrations/versions/007_add_ngo_davcna.py`
 
 ## Audit Trail
 

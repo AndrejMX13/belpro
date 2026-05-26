@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **load_env.ps1** (0 connections) — `scripts/load_env.ps1`
+- **Evolution API WhatsApp instance name. DB-first, env-fallback.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/load_env.ps1`
+- `api/services/app_settings.py`
 
 ## Audit Trail
 

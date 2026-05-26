@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Common Patterns Overview** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **1. Multi-Source Data Aggregation** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **2. Filtering with Regex** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **3. Data Transformation & Enrichment** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **4. Top N Filtering & Ranking** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **5. Aggregation & Reporting** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const allItems = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const pattern = /\b([A-Z]{2,5})\b/g;)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const items = $input.all();)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **settings** (11 connections) — `n8n/workflows/volunteer_entry.json`
+- **executionOrder** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **timezone** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **saveDataErrorExecution** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **saveManualExecutions** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **binaryMode** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **timeSavedMode** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **callerPolicy** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **availableInMCP** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **errorWorkflow** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[Volunteer (ORM)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 

@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Performance Optimization** (9 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Index Strategies** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Query Optimization Patterns** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **EXPLAIN ANALYZE Fundamentals** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Reading EXPLAIN Output** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **B-tree Indexes (Default)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **GIN Indexes (JSONB, arrays, full-text)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **GiST Indexes (Spatial, ranges, nearest neighbor)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **BRIN Indexes (Large, naturally ordered tables)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Statistics and Planner** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: Sequential scan on large table** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: Index not used** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: Large JOIN inefficiency** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Problem: COUNT(*) slow** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Connection Pooling** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Configuration Tuning** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **Performance Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **performance.md** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Basic EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:block2 (Seq Scan on users  (cost=0.00..1234.56 rows=10000 width=32))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Single column index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- JSONB containment)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- PostGIS spatial index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Time-series data (insert-only, sorted by time))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
-- **code:sql (-- Update statistics (do after bulk changes))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **CLAUDE.md — Belpro** (8 connections) — `CLAUDE.md`
+- **Run workflow integration tests (host Python — requires full stack running)** (8 connections) — `CLAUDE.md`
+- **Coding Standards** (6 connections) — `CLAUDE.md`
+- **Tooling & Shell Conventions** (3 connections) — `CLAUDE.md`
+- **Project Memory** (3 connections) — `CLAUDE.md`
+- **CLAUDE.md** (2 connections) — `CLAUDE.md`
+- **Project Structure** (2 connections) — `CLAUDE.md`
+- **Environment Variables** (2 connections) — `CLAUDE.md`
+- **Local Development** (2 connections) — `CLAUDE.md`
+- **Testing** (2 connections) — `CLAUDE.md`
+- **graphify & serena** (2 connections) — `CLAUDE.md`
+- **Workflow** (2 connections) — `CLAUDE.md`
+- **What is this project?** (1 connections) — `CLAUDE.md`
+- **code:block1 (belpro/)** (1 connections) — `CLAUDE.md`
+- **Technology Choices** (1 connections) — `CLAUDE.md`
+- **General** (1 connections) — `CLAUDE.md`
+- **Python** (1 connections) — `CLAUDE.md`
+- **n8n Workflows** (1 connections) — `CLAUDE.md`
+- **Frontend** (1 connections) — `CLAUDE.md`
+- **SQL / Database** (1 connections) — `CLAUDE.md`
+- **code:block2 (# PostgreSQL)** (1 connections) — `CLAUDE.md`
+- **Key Business Rules (encode these correctly)** (1 connections) — `CLAUDE.md`
+- **code:bash (# Copy and fill in environment)** (1 connections) — `CLAUDE.md`
+- **code:bash (docker compose exec api pytest tests/ -v                    )** (1 connections) — `CLAUDE.md`
+- **Known packaging pins** (1 connections) — `CLAUDE.md`
 - *... and 7 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/postgres-pro/references/performance.md`
+- `CLAUDE.md`
 
 ## Audit Trail
 

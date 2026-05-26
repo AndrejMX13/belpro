@@ -1,44 +1,45 @@
 # EMŠO Encryption (AES-256-GCM at rest)
 
-> 22 nodes
+> 23 nodes
 
 ## Key Concepts
 
-- **Volunteer Contact Inline Edit — Implementation Plan** (6 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **Task 3: Handle phone IntegrityError in update_volunteer** (6 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **Task 4: Frontend — inline edit zones on the detail page** (5 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **Task 1: Create test infrastructure and failing schema tests** (4 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **Task 2: Extend VolunteerUpdate schema** (4 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **2026-05-10-volunteer-contact-inline-edit.md** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (docker compose exec api mkdir -p tests)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:python ("""Unit tests for VolunteerUpdate schema — no DB required."")** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (docker compose exec api pytest tests/test_volunteer_update_s)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:python (class VolunteerUpdate(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (docker compose exec api pytest tests/test_volunteer_update_s)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (git add api/schemas/volunteer.py api/tests/__init__.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:python (from sqlalchemy.exc import IntegrityError)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:python (for field, value in payload.model_dump(exclude_none=True).it)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:python (for field, value in payload.model_dump(exclude_none=True).it)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (git add api/routers/volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:javascript (<div class="detail-header">)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:javascript (<div class="detail-header">)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:javascript (function wireInlineEdit({ pencilId, inputsId, textId, saveId)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- **test_logo.py** (18 connections) — `api/tests/test_logo.py`
+- **_png_1x1()** (7 connections) — `api/tests/test_logo.py`
+- **_ico_16x16()** (3 connections) — `api/tests/test_logo.py`
+- **test_open_image_rejects_disallowed_format()** (3 connections) — `api/tests/test_logo.py`
+- **_clean_logo()** (3 connections) — `api/tests/test_logo.py`
+- **test_save_creates_png_on_disk()** (2 connections) — `api/tests/test_logo.py`
+- **test_delete_removes_file()** (2 connections) — `api/tests/test_logo.py`
+- **test_upload_logo_and_retrieve()** (2 connections) — `api/tests/test_logo.py`
+- **test_upload_logo_requires_auth()** (2 connections) — `api/tests/test_logo.py`
+- **test_delete_logo()** (2 connections) — `api/tests/test_logo.py`
+- **test_logo_not_exists_initially()** (1 connections) — `api/tests/test_logo.py`
+- **test_delete_when_no_logo_is_silent()** (1 connections) — `api/tests/test_logo.py`
+- **test_open_image_rejects_corrupt_bytes()** (1 connections) — `api/tests/test_logo.py`
+- **test_save_overwrites_existing_logo()** (1 connections) — `api/tests/test_logo.py`
+- **test_get_logo_returns_404_when_absent()** (1 connections) — `api/tests/test_logo.py`
+- **test_upload_invalid_logo_returns_422()** (1 connections) — `api/tests/test_logo.py`
+- **test_delete_logo_when_absent_returns_404()** (1 connections) — `api/tests/test_logo.py`
+- **test_delete_logo_requires_auth()** (1 connections) — `api/tests/test_logo.py`
+- **Tests for NGO logo service and endpoints.** (1 connections) — `api/tests/test_logo.py`
+- **Minimal valid 1×1 PNG.** (1 connections) — `api/tests/test_logo.py`
+- **Minimal valid 16×16 ICO — openable by Pillow but not in allowed list.** (1 connections) — `api/tests/test_logo.py`
+- **ICO is openable by Pillow but excluded from the allowed set.** (1 connections) — `api/tests/test_logo.py`
+- **Redirect logo operations to a temporary directory — never touches the real logo** (1 connections) — `api/tests/test_logo.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[ops_server.py]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-10-volunteer-contact-inline-edit.md`
+- `api/tests/test_logo.py`
 
 ## Audit Trail
 
-- EXTRACTED: 42 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 56 (98%)
+- INFERRED: 1 (2%)
 - AMBIGUOUS: 0 (0%)
 
 ---

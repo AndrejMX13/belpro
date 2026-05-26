@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Best Practices** (6 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **1. Always Use .get() for Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **2. Handle None/Null Values Explicitly** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **3. Use List Comprehensions for Filtering** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **4. Return Consistent Structure** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **5. Debug with print() Statements** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ SAFE: Won't crash if field missing)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ GOOD: Default to 0 if None)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ PYTHONIC: List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ CONSISTENT: Always list with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Debug statements appear in browser console (F12))** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Quick Reference** (6 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Data Access** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Webhook Data** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Safe Dictionary Access** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Return Format** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Standard Library** (2 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (# ✅ Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (# ✅ Correct format)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **code:python (# ✅ Available)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 292]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

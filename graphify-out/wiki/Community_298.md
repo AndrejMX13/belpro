@@ -4,34 +4,29 @@
 
 ## Key Concepts
 
-- **Common False Positives** (7 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **1. Missing Error Handling** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When to Fix** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Testing workflow - failures are obvious)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Nice-to-have notification)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Manual workflow - user is watching)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: Critical workflow without error handling)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: Payment processing without error handling)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **n8n_workflow_versions (VERSION CONTROL)** (6 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **List Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Get Specific Version** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Rollback to Previous Version** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Delete Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **Prune Old Versions** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (// Delete specific version)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **code:javascript (n8n_workflow_versions({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Relationships
 
-- [[Community 419]] (1 shared connections)
-- [[Community 381]] (1 shared connections)
-- [[Community 417]] (1 shared connections)
-- [[Community 418]] (1 shared connections)
-- [[Community 475]] (1 shared connections)
-- [[Community 477]] (1 shared connections)
+- [[API.managers.setup()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

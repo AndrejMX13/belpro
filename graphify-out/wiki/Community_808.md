@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Automated Upgrade Script (upgrade.sh)** (0 connections) — `README.md`
+- **bug_report.md** (0 connections) — `.github/ISSUE_TEMPLATE/bug_report.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `README.md`
+- `.github/ISSUE_TEMPLATE/bug_report.md`
 
 ## Audit Trail
 

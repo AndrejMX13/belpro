@@ -4,35 +4,35 @@
 
 ## Key Concepts
 
-- **n8n_manage_credentials (CREDENTIAL MANAGEMENT)** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **List Credentials** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Get Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Discover Schema** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Create Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Update Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Delete Credential** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Typical Workflow: Set Up Credentials for a New Integration** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **6 Actions** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({action: "list"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({action: "get", id: "123"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (n8n_manage_credentials({action: "delete", id: "123"}))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **code:javascript (// 1. Discover what fields are needed)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
-- **Security Notes** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- **EMŠO Encryption Key Rotation — Procedure Guide** (11 connections) — `docs/emso_key_rotation.md`
+- **Step 1 — Save the current key** (2 connections) — `docs/emso_key_rotation.md`
+- **Step 2 — Generate a new key** (2 connections) — `docs/emso_key_rotation.md`
+- **Step 3 — Run the rotation script** (2 connections) — `docs/emso_key_rotation.md`
+- **Step 4 — Update `.env` and restart the API (while script is paused)** (2 connections) — `docs/emso_key_rotation.md`
+- **If something goes wrong** (2 connections) — `docs/emso_key_rotation.md`
+- **emso_key_rotation.md** (1 connections) — `docs/emso_key_rotation.md`
+- **When to use this** (1 connections) — `docs/emso_key_rotation.md`
+- **Prerequisites** (1 connections) — `docs/emso_key_rotation.md`
+- **code:bash (grep EMSO_ENCRYPTION_KEY .env)** (1 connections) — `docs/emso_key_rotation.md`
+- **code:bash (NEW_KEY=$(python3 -c "import secrets,base64; print(base64.ur)** (1 connections) — `docs/emso_key_rotation.md`
+- **code:bash (bash scripts/rotate_emso_key.sh <OLD_KEY> "$NEW_KEY")** (1 connections) — `docs/emso_key_rotation.md`
+- **code:bash (# Edit .env — change EMSO_ENCRYPTION_KEY to the new value)** (1 connections) — `docs/emso_key_rotation.md`
+- **Step 5 — Confirm cleanup in the first terminal** (1 connections) — `docs/emso_key_rotation.md`
+- **Backups taken before this rotation** (1 connections) — `docs/emso_key_rotation.md`
+- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `docs/emso_key_rotation.md`
+- **Known issues encountered during development** (1 connections) — `docs/emso_key_rotation.md`
 
 ## Relationships
 
-- [[test_health_returns_ok()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/WORKFLOW_GUIDE.md`
+- `docs/emso_key_rotation.md`
 
 ## Audit Trail
 
-- EXTRACTED: 33 (100%)
+- EXTRACTED: 32 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

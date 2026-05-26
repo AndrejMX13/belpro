@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Day of month (1–28) on which monthly reports are auto-sent.** (0 connections) — `api/services/app_settings.py`
+- **Treat empty string as absent — store None rather than ''.** (0 connections) — `api/schemas/volunteer.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 

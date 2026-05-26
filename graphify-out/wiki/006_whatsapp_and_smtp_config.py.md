@@ -4,43 +4,43 @@
 
 ## Key Concepts
 
-- **logo.py** (9 connections) — `api/services/logo.py`
-- **logo.py** (5 connections) — `api/routers/logo.py`
-- **logo_src()** (5 connections) — `api/services/logo.py`
-- **get_logo()** (4 connections) — `api/routers/logo.py`
-- **upload_logo()** (4 connections) — `api/routers/logo.py`
-- **remove_logo()** (4 connections) — `api/routers/logo.py`
-- **logo_exists()** (4 connections) — `api/services/logo.py`
-- **save_logo()** (4 connections) — `api/services/logo.py`
-- **delete_logo()** (3 connections) — `api/services/logo.py`
-- **_open_image()** (3 connections) — `api/services/logo.py`
-- **Logo router — public GET + authenticated POST and DELETE.** (1 connections) — `api/routers/logo.py`
-- **Return the NGO logo as PNG, or 404 if none has been uploaded.** (1 connections) — `api/routers/logo.py`
-- **Upload or replace the NGO logo. Accepts JPEG, PNG, WebP, GIF, BMP, TIFF.** (1 connections) — `api/routers/logo.py`
-- **Delete the current NGO logo.** (1 connections) — `api/routers/logo.py`
-- **NGO logo file management.** (1 connections) — `api/services/logo.py`
-- **Return True if a logo file is present on disk.** (1 connections) — `api/services/logo.py`
-- **Remove the logo file if it exists. Silent if absent.** (1 connections) — `api/services/logo.py`
-- **Validate, normalize to PNG, and persist logo bytes.      Accepts raster formats** (1 connections) — `api/services/logo.py`
-- **Open image bytes with Pillow. Raises ValueError for unsupported or corrupt input** (1 connections) — `api/services/logo.py`
-- **Return a data URI for the NGO logo, or None if no logo is uploaded.** (1 connections) — `api/services/logo.py`
+- **reports.js** (10 connections) — `frontend/js/reports.js`
+- **loadReports()** (7 connections) — `frontend/js/reports.js`
+- **renderReports()** (5 connections) — `frontend/js/reports.js`
+- **renderReportsTable()** (5 connections) — `frontend/js/reports.js`
+- **downloadHistoryPdf()** (4 connections) — `frontend/js/reports.js`
+- **exportReportPdf()** (3 connections) — `frontend/js/reports.js`
+- **loadReports()** (3 connections) — `frontend/js/reports.js`
+- **GET /reports/monthly** (3 connections) — `api/routers/reports.py`
+- **fmtHours()** (2 connections) — `frontend/js/reports.js`
+- **API.reports.monthly()** (2 connections) — `frontend/js/api.js`
+- **API.reports.exportPdf()** (2 connections) — `frontend/js/api.js`
+- **API.reports.downloadHistoryPdf()** (2 connections) — `frontend/js/api.js`
+- **POST /reports/monthly/pdf** (2 connections) — `api/routers/reports.py`
+- **GET /reports/history/{id}/pdf** (2 connections) — `api/routers/reports.py`
+- **MonthlyReportSummary shape (items[], total_hours, total_entries)** (2 connections) — `api/routers/reports.py`
+- **SL_MONTHS** (1 connections) — `frontend/js/reports.js`
+- **reportsState** (1 connections) — `frontend/js/reports.js`
+- **exportReportPdf()** (1 connections) — `frontend/js/reports.js`
+- **downloadHistoryPdf()** (1 connections) — `frontend/js/reports.js`
+- **renderReports() — reports page** (1 connections) — `frontend/js/reports.js`
 
 ## Relationships
 
-- [[load_key()]] (2 shared connections)
-- [[Community 434]] (2 shared connections)
-- [[Systematic Debugging Reference]] (2 shared connections)
-- [[merge_semantic.py]] (1 shared connections)
+- [[test_auth.py]] (11 shared connections)
+- [[Community 591]] (1 shared connections)
+- [[path]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/logo.py`
-- `api/services/logo.py`
+- `api/routers/reports.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (73%)
-- INFERRED: 15 (27%)
+- EXTRACTED: 48 (81%)
+- INFERRED: 11 (19%)
 - AMBIGUOUS: 0 (0%)
 
 ---

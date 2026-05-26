@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **E2E Testing** (7 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **E2E Test Strategy** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **User Flow Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Checkout Flow** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Test Data Management** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Cross-Browser Testing** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **e2e-testing.md** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (// Critical user paths to test)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (import { test, expect } from '@playwright/test';)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (test.describe('Checkout Flow', () => {)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (// fixtures/testData.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **code:typescript (// playwright.config.ts)** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/e2e-testing.md`
+- **Authentication Methods** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. Bearer Token (Most Common)** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. API Key (Header or Query)** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. None (Public APIs)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. Basic Auth** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **5. OAuth2** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/e2e-testing.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 25 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

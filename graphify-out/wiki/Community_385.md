@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Batch Processing** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 2: Paginated Queries** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 3: Cursor-Based Pagination** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern 1: Split In Batches** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block18 (Postgres (SELECT 10000 records))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block19 (Set (initialize: offset=0, limit=1000))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT * FROM large_table)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block21 (Set (initialize: last_id=0))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT * FROM table)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Security Best Practices** (5 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **1. Use Parameterized Queries (Prevent SQL Injection)** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **2. Least Privilege Access** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **3. Validate Input Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **4. Encrypt Sensitive Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// ✅ SAFE - parameterized)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:sql (-- ✅ Good - limited permissions)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Code node - validate before write)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript (// Code node - encrypt before storage)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
 
 ## Source Files
 

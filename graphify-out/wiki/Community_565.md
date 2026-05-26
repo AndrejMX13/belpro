@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Limitations and Workarounds** (5 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Limitation 1: No HTTP Requests Library** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Limitation 2: No Data Analysis Library** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Limitation 3: No Database Drivers** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Limitation 4: No Web Scraping** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Pattern 3: Markdown Parsing & Structured Data Extraction** (3 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Complete Example** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **Variations** (2 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Parse markdown and extract structured information)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
+- **code:javascript (// Variation 1: Parse HTML table to JSON)** (1 connections) — `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 288]] (1 shared connections)
+- [[Community 415]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-javascript/COMMON_PATTERNS.md`
 
 ## Audit Trail
 

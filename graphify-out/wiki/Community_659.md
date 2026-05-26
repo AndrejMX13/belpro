@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Standard Library Reference** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Most Useful Modules** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# JSON operations)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **What This Skill Teaches** (3 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Core Concepts** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Top 5 Error Prevention** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 292]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

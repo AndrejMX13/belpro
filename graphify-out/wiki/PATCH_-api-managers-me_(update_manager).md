@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Critical: Webhook Data Structure** (7 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Structure** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Wrong vs Right** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example: Full Webhook Processing** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **POST Data, Query Params, and Headers** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Common Webhook Scenarios** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **The Problem** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Webhook node output structure:)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// ❌ WRONG: Trying to access directly)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get webhook data from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const webhook = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Scenario 1: Form submission)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 7: String Manipulation** (7 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Lowercase** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Uppercase** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Trim** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Substring** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Replace** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.user.email.toLowerCase()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.user.message.toUpperCase()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.user.message.trim()}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.user.email.substring(0, 4)}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.user.message.replace('World', 'n8n')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 410]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

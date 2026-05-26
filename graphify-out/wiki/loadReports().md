@@ -1,47 +1,43 @@
 # loadReports()
 
-> 20 nodes
+> 21 nodes
 
 ## Key Concepts
 
-- **renderSettings()** (12 connections) — `frontend/js/volunteers.js`
-- **renderDocuments()** (8 connections) — `frontend/js/documents.js`
-- **renderSettings() — settings page** (6 connections) — `frontend/js/volunteers.js`
-- **API.managers.me()** (4 connections) — `frontend/js/api.js`
-- **renderDocuments() — documents page** (4 connections) — `frontend/js/documents.js`
-- **GET /managers/me** (4 connections) — `api/routers/managers.py`
-- **wireReportPrefs()** (3 connections) — `frontend/js/volunteers.js`
-- **API.managers.update()** (3 connections) — `frontend/js/api.js`
-- **PATCH /managers/me** (3 connections) — `api/routers/managers.py`
-- **GET /managers/me/config-info** (3 connections) — `api/routers/managers.py`
-- **ManagerResponse shape (first_name, last_name, email, phone, ngo_name, ngo_street, ngo_postal_code, ngo_city, ngo_davcna, ngo_whatsapp_phone, report_email, report_whatsapp, default_report_email, default_report_whatsapp, gdpr_additional_clauses)** (3 connections) — `api/routers/managers.py`
-- **_waBadge()** (2 connections) — `frontend/js/volunteers.js`
-- **API.managers.changePassword()** (2 connections) — `frontend/js/api.js`
-- **API.managers.configInfo()** (2 connections) — `frontend/js/api.js`
-- **API.documents.consentPdf()** (2 connections) — `frontend/js/api.js`
-- **POST /managers/me/change-password** (2 connections) — `api/routers/managers.py`
-- **GET /documents/consent-pdf** (2 connections) — `api/routers/documents.py`
-- **ConfigInfoResponse shape (smtp_host, smtp_port, smtp_user, smtp_configured, evolution_api_admin_url, wa_phone, wa_state, wa_synced)** (2 connections) — `api/routers/managers.py`
-- **documents.js** (1 connections) — `frontend/js/documents.js`
-- **checkManagerSetup()** (1 connections) — `frontend/js/volunteers.js`
+- **test_volunteers.py** (21 connections) — `api/tests/test_volunteers.py`
+- **test_list_volunteers_returns_created_volunteer()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_duplicate_emso_returns_409()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_update_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_deactivate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_activate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_delete_volunteer_happy_path()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_check_emso_already_registered()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_emso_stored_encrypted()** (2 connections) — `api/tests/test_volunteers.py`
+- **test_list_volunteers_empty()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_success()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_missing_required_field_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_postal_code_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_emso_length_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_create_volunteer_invalid_emso_checksum_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_get_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_update_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_deactivate_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_delete_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
+- **test_check_emso_not_registered()** (1 connections) — `api/tests/test_volunteers.py`
+- **EMŠO is stored encrypted in DB and never returned as plaintext by the API.** (1 connections) — `api/tests/test_volunteers.py`
 
 ## Relationships
 
-- [[make_text_payload()]] (10 shared connections)
-- [[test_managers.py]] (3 shared connections)
+- [[load_key()]] (9 shared connections)
 
 ## Source Files
 
-- `api/routers/documents.py`
-- `api/routers/managers.py`
-- `frontend/js/api.js`
-- `frontend/js/documents.js`
-- `frontend/js/volunteers.js`
+- `api/tests/test_volunteers.py`
 
 ## Audit Trail
 
-- EXTRACTED: 65 (94%)
-- INFERRED: 4 (6%)
+- EXTRACTED: 42 (86%)
+- INFERRED: 7 (14%)
 - AMBIGUOUS: 0 (0%)
 
 ---

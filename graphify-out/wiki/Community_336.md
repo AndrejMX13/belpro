@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **✅ Do** (5 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **❌ Don't** (4 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **Best Practices** (3 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (get_node({nodeType: "...", mode: "search_properties", proper)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// First: method, resource, operation)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Operation changed → requirements changed)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:block36 (Error: "body required when sendBody=true")** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Error: "body not visible" → Check displayOptions)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Bad: Adding fields that will be hidden)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
-- **code:javascript (// Each operation has unique requirements)** (1 connections) — `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- **Example 5: Array Operations** (6 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **First User** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Last User** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **All Emails (Join)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Array Length** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.users[0].name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.users[$json.users.length - 1].name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.users.map(u => u.email).join(', ')}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript ({{$json.users.length}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[Community 375]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/DEPENDENCIES.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

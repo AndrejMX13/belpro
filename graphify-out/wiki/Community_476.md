@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Known n8n Issues** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Issue #304: IF Node Metadata Warning** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Issue #306: Switch Branch Count** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **Issue #338: Credential Validation in Test Mode** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Handling Conditional Requirements** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Example: HTTP Request Body** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Example: IF Node singleValue** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:block33 (body is required when:)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Option 1: Read validation error)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:block35 (singleValue should be true when:)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[Community 419]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

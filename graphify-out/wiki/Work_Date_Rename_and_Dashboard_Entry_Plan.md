@@ -4,36 +4,35 @@
 
 ## Key Concepts
 
-- **Common Mistakes** (10 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 1: Wrong nodeType Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 2: Using detail="full" by Default** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 3: Using n8n_get_workflow mode="full" for Large Workflows** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 4: Not Using Validation Profiles** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 4: Ignoring Auto-Sanitization** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 7: Wrong Parameter Name for updateNode** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 8: Wrong Credential Attachment Format** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Mistake 6: Not Using intent Parameter** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - Returns 3-8K tokens, use sparingly)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG — 58-node workflow, every parameter bloated)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - Uses default profile)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// After ANY update, auto-sanitization runs on ALL nodes)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - credentials as flat object)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// WRONG - No context for response)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **DevOps Engineer** (8 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Output Templates** (4 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Minimal GitHub Actions Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Minimal Dockerfile Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Rollback Procedure Example** (2 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Role Definition** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **code:yaml (name: CI)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **code:dockerfile (FROM python:3.12-slim AS builder)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **code:bash (# Kubernetes: roll back to previous deployment revision)** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/devops-engineer/SKILL.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
-- [[Community 674]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/devops-engineer/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 34 (100%)
+- EXTRACTED: 32 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Mode Selection Guide** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Run Once for All Items (Recommended - Default)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Run Once for Each Item** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Example: Calculate total from all items)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Example: Add processing timestamp to each item)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Limitations and Workarounds** (5 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 1: No HTTP Requests Library** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 2: No Data Analysis Library** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 3: No Database Drivers** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Limitation 4: No Web Scraping** (1 connections) — `.claude/skills/n8n-code-python/README.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 292]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/README.md`
 
 ## Audit Trail
 

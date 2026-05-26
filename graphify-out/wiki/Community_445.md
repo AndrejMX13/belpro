@@ -4,25 +4,28 @@
 
 ## Key Concepts
 
-- **Task 2: ORM Model + Schemas** (7 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (Index("idx_entries_vol_work_date", "volunteer_id", "work_dat)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (work_date: Mapped[date] = mapped_column(Date))** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (__table_args__ = ()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python ("""Pydantic schemas for the LogEntry entity.""")** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add api/models/log_entry.py api/schemas/log_entry.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **renderSettings** (4 connections) — `frontend/js/volunteers.js`
+- **renderDocuments** (3 connections) — `frontend/js/documents.js`
+- **get_manager** (2 connections) — `api/routers/managers.py`
+- **update_manager** (2 connections) — `api/routers/managers.py`
+- **download_consent_pdf** (1 connections) — `api/routers/documents.py`
+- **get_config_info** (1 connections) — `api/routers/managers.py`
+- **change_password** (1 connections) — `api/routers/managers.py`
 
 ## Relationships
 
-- [[API Client (api.js)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `api/routers/documents.py`
+- `api/routers/managers.py`
+- `frontend/js/documents.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

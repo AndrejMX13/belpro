@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Critical: Webhook Data Structure** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Structure** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Wrong vs Right** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example: Full Webhook Processing** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **POST Data, Query Params, and Headers** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **The Problem** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Webhook node output structure:)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# ❌ WRONG: Trying to access directly)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get webhook data from previous node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Task 6: ConfigInfoResponse schema + enhanced get_config_info** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from unittest.mock import patch, AsyncMock)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (class ConfigInfoResponse(BaseModel):)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (logger = logging.getLogger(__name__))** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@router.get("/me/config-info", dependencies=[Depends(require)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/schemas/manager.py api/routers/managers.py api/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 411]] (1 shared connections)
+- [[Community 451]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

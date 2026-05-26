@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (5 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 1: Process Webhook Data** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 2: Filter and Transform** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 3: Aggregate Statistics** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Use Case 4: Parse JSON String** (2 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (webhook = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (all_items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **code:python (import json)** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Pattern 4: $node - Reference Other Nodes** (5 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Access Node Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const oldData = $node["Get Old Data"].json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// Get data from specific execution path)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 288]] (1 shared connections)
+- [[Community 416]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

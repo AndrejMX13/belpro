@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **Mistake 5: Not Using Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// IF node connection)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// IF node - semantic branch names)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **4. Spaces in Node Names** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block8 ({{$node.HTTP Request.json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block9 ({{$node["HTTP Request"].json.data}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Work Date Rename and Dashboard Entry Plan]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Audit Trail
 

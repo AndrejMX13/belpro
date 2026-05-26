@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **build_graph.py** (0 connections) — `scripts/graphify/build_graph.py`
+- **restore.sh** (0 connections) — `scripts/restore.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/graphify/build_graph.py`
+- `scripts/restore.sh`
 
 ## Audit Trail
 

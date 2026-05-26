@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **UnacknowledgedCountResponse (Schema)** (0 connections) — `api/schemas/error_log.py`
+- **API.health.basic()** (0 connections) — `frontend/js/api.js`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/error_log.py`
+- `frontend/js/api.js`
 
 ## Audit Trail
 

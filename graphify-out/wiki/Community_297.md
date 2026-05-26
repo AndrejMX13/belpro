@@ -4,31 +4,29 @@
 
 ## Key Concepts
 
-- **Error Catalog** (7 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Recovery Patterns** (4 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Pattern 1: Progressive Validation** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Pattern 2: Error Triage** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Pattern 3: Use get_node** (2 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **ERROR_CATALOG.md** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Error Types Overview** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (// Step 1: Minimal valid config)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (const result = validate_node({...});)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **code:javascript (// Before configuring, check requirements)** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- **Module 3: re - Regular Expressions** (6 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Pattern Matching** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Extract All Matches** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Replace Patterns** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Validate Format** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Split on Pattern** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)]] (1 shared connections)
-- [[DELETE /log-entries/{id}]] (1 shared connections)
-- [[Community 416]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/ERROR_CATALOG.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 
-- EXTRACTED: 23 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

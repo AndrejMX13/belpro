@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Webhook Data Structure** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Standard Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **Accessing Different Parts** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// Headers)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Validation Profiles** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **minimal** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **runtime (RECOMMENDED)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **ai-friendly** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **strict** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 

@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Error #4: IndexError** (6 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Error Message** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Safe First Item Access** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **Slice Instead of Index** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ❌ WRONG: Assuming items exist)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:block15 (IndexError: list index out of range)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Check length first)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Use _input.first() instead of [0])** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Use slicing (never raises IndexError))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Best Practices** (6 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **1. Use .get() for Safe Access** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **2. Handle Empty Lists** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **3. Use List Comprehensions** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **4. Return Proper Format** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **5. Use Standard Library** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ SAFE: Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ SAFE: Check before processing)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ PYTHONIC: List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Array of objects with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **code:python (# ✅ GOOD: Use standard library)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 518]] (1 shared connections)
+- [[Community 526]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Audit Trail
 

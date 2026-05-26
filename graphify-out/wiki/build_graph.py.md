@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Security Headers** (7 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Helmet (Express)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Manual Headers** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Rate Limiting** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **CORS Configuration** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Cookie Security** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **security-headers.md** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (import helmet from 'helmet';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (app.use((req, res, next) => {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (import rateLimit from 'express-rate-limit';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (import cors from 'cors';)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **code:typescript (res.cookie('session', token, {)** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **Async SQLAlchemy** (7 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Engine & Session Setup** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Model Definition** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Database Dependency** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **CRUD Operations** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Lifespan Handler** (2 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **async-sqlalchemy.md** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from sqlalchemy.ext.asyncio import create_async_engine, Asyn)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from sqlalchemy.orm import Mapped, mapped_column, relationsh)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from typing import AsyncGenerator)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from sqlalchemy import select, update, delete)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **code:python (from contextlib import asynccontextmanager)** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
 
 ## Relationships
 
@@ -24,7 +24,7 @@
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/security-headers.md`
+- `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
 
 ## Audit Trail
 

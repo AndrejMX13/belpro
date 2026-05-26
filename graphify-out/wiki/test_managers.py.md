@@ -1,57 +1,48 @@
 # test_managers.py
 
-> 32 nodes
+> 33 nodes
 
 ## Key Concepts
 
-- **renderLogEntryDetail()** (18 connections) — `frontend/js/volunteers.js`
-- **route()** (14 connections) — `frontend/js/volunteers.js`
-- **renderDetail()** (14 connections) — `frontend/js/volunteers.js`
-- **renderDetail() — volunteer detail page** (6 connections) — `frontend/js/volunteers.js`
-- **GET /volunteers/{id}** (4 connections) — `api/routers/volunteers.py`
-- **fmtHours()** (3 connections) — `frontend/js/volunteers.js`
-- **fmtDatetime()** (3 connections) — `frontend/js/volunteers.js`
-- **PATCH /log-entries/{id}/approve** (3 connections) — `api/routers/log_entries.py`
-- **PATCH /log-entries/{id}/reject** (3 connections) — `api/routers/log_entries.py`
-- **revokePhotoUrls()** (2 connections) — `frontend/js/volunteers.js`
-- **API.volunteers.get()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.update()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.delete()** (2 connections) — `frontend/js/api.js`
-- **API.logEntries.create()** (2 connections) — `frontend/js/api.js`
-- **DELETE /volunteers/{id}** (2 connections) — `api/routers/volunteers.py`
-- **PATCH /volunteers/{id}** (2 connections) — `api/routers/volunteers.py`
-- **POST /log-entries** (2 connections) — `api/routers/log_entries.py`
-- **GET /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **PATCH /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **DELETE /log-entries/{id}** (2 connections) — `api/routers/log_entries.py`
-- **POST /log-entries/{id}/photos** (2 connections) — `api/routers/log_entries.py`
-- **GET /log-entries/{id}/photos/{pid}/file** (2 connections) — `api/routers/log_entries.py`
-- **DELETE /log-entries/{id}/photos/{pid}** (2 connections) — `api/routers/log_entries.py`
-- **VolunteerDetailResponse shape (emso_masked, log_entries[], hours_this_month)** (2 connections) — `api/routers/volunteers.py`
-- **API.logEntries.get()** (1 connections) — `frontend/js/api.js`
-- *... and 7 more nodes in this community*
+- **Monitoring and Analysis** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **PostgreSQL Monitoring** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **MySQL Monitoring** (5 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Cross-Platform Monitoring** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Alert Thresholds** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Essential Extensions** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Query Performance Tracking** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Connection and Lock Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Table and Index Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Database Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Performance Schema Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **InnoDB Status Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Connection and Process Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **System Status Variables** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Resource Utilization** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **Health Check Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **PostgreSQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **MySQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **monitoring-analysis.md** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Install performance monitoring extensions)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Top queries by total time)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Current activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Table bloat and dead tuples)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Database size and activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- **code:sql (-- Top statements by total latency)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- *... and 8 more nodes in this community*
 
 ## Relationships
 
-- [[make_text_payload()]] (21 shared connections)
-- [[loadReports()]] (3 shared connections)
-- [[__init__.py]] (2 shared connections)
-- [[Community 358]] (1 shared connections)
-- [[Day of month (1–28) on which monthly reports are auto-sent.]] (1 shared connections)
-- [[001_initial_schema.py]] (1 shared connections)
-- [[API.health.basic()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `api/routers/volunteers.py`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
 
 ## Audit Trail
 
-- EXTRACTED: 99 (93%)
-- INFERRED: 7 (7%)
+- EXTRACTED: 64 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

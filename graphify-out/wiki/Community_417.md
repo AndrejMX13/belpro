@@ -4,26 +4,32 @@
 
 ## Key Concepts
 
-- **3. Missing Rate Limiting** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **When to Fix** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Internal microservice - no rate limits)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// Runs once per day)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// API returns 429 and n8n handles it)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
-- **code:javascript (// BAD: Loop hitting rate-limited API)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Data Access Patterns - Python Code Node** (11 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Choosing the Right Pattern** (3 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Decision Tree** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **DATA_ACCESS.md** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Overview** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:block24 (Do you need ALL items from previous node?)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Quick Reference Table** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 298]] (1 shared connections)
+- [[HTTP: GET Volunteer (Auto)]] (1 shared connections)
+- [[Community 287]] (1 shared connections)
+- [[Community 368]] (1 shared connections)
+- [[Community 459]] (1 shared connections)
+- [[Community 332]] (1 shared connections)
+- [[Community 288]] (1 shared connections)
+- [[Community 460]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Documentation Systems & Infrastructure** (8 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Static Site Generators** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Migration Guides** (4 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Docusaurus (Meta)** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Multi-Version Documentation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Search Implementation** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Documentation Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Code Example Testing** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Performance Optimization** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Analytics Integration** (3 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **MkDocs (Python)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **VitePress (Vue)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Version Switcher** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Algolia DocSearch** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Local Search (Lunr.js)** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Link Checking** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Build Optimization** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **CDN & Caching** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Google Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Custom Analytics** (2 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **documentation-systems.md** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:bash (# Setup)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:javascript (module.exports = {)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:yaml (# mkdocs.yml)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **code:typescript (// .vitepress/config.ts)** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
+- **Task 3: Login and logout endpoints** (9 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **httpOnly Cookie Auth (ISS-005) Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 2: Session token helpers** (7 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 5: Frontend — `volunteers.js`** (7 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 1: Settings fields, schemas, and env examples** (6 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 4: Frontend — `api.js`** (5 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **Task 6: Manual browser test** (2 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **2026-05-19-httponly-cookie-auth.md** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (# ── Session ───────────────────────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Schemas for the auth endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block3 (# SESSION_DURATION_HOURS: how long a dashboard login session)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block4 (# SESSION_DURATION_HOURS: kako dolgo traja seja upravljalca )** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:bash (git add api/core/settings.py api/schemas/auth.py .env.exampl)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Tests for auth helpers and endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block7 (docker compose exec api pytest tests/test_auth.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Manager authentication — httpOnly session cookie with Bas)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block9 (docker compose exec api pytest tests/test_auth.py::test_make)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block10 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:bash (git add api/core/auth.py api/tests/test_auth.py)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (import base64)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:block13 (docker compose exec api pytest tests/test_auth.py::test_logi)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python ("""Auth endpoints — login sets an httpOnly session cookie, l)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (from routers.auth import router as auth_router)** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
+- **code:python (app.include_router(auth_router, prefix="/api"))** (1 connections) — `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
 - *... and 14 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/documentation-systems.md`
+- `docs/superpowers/plans/2026-05-19-httponly-cookie-auth.md`
 
 ## Audit Trail
 

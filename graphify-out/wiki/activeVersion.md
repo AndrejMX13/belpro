@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Work Date Rename + Dashboard Entry Creation Design** (10 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Frontend (`frontend/js/volunteers.js`)** (5 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Data Layer** (4 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Migration** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **API Layer** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **List views — two date columns** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Entry detail edit form (`renderLogEntryDetail`)** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Router: `api/routers/log_entries.py`** (2 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **2026-05-09-work-date-and-dashboard-entry-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:sql (ALTER TABLE log_entries RENAME COLUMN entry_date TO work_dat)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:sql (ALTER INDEX idx_entries_vol_date RENAME TO idx_entries_vol_w)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **ORM model (`api/models/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Schemas (`api/schemas/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:python (if payload.work_date is not None:)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Other routers** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **Global renames** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:block4 (Dan opravljenega dela | Prostovoljec | Opis dela | Ure | Lok)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:block5 (Dan opravljenega dela | Opis dela | Ure | Lokacija | Dan vno)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:html (<div class="field">)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **code:javascript (const workDate = $('d-work-date').value || null;)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **"Dodaj vnos" button (volunteer detail page)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
-- **n8n Workflows** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Feedback Examples** (7 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Good vs Bad Feedback** (5 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Feedback by Category** (4 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Major (Should Fix)** (4 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Be Specific, Not Vague** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Be Actionable, Not Just Critical** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Be Constructive, Not Demanding** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Ask Questions, Don't Assume** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Praise Examples** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Critical (Must Fix)** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Minor (Nice to Have)** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Question Format** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **Summary Format** (2 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **feedback-examples.md** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (BAD: "This is confusing")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (BAD: "Fix the query")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (BAD: "Add tests")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (BAD: "This is wrong")** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown ("Great use of early returns here - much more readable than n)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (**[CRITICAL] Security: SQL Injection**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (**[MAJOR] Performance: N+1 Query**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:block8** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:block9** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (**[MINOR] Naming: Unclear variable**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
+- **code:markdown (**[QUESTION]**)** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
 - *... and 2 more nodes in this community*
 
 ## Relationships
@@ -37,7 +37,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- `.claude/skills/code-reviewer/references/feedback-examples.md`
 
 ## Audit Trail
 

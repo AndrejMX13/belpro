@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Task 3: log_entries Router** (10 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (f"<strong>{entry.entry_date}</strong> je bila <strong>{actio)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (f"<strong>{entry.work_date}</strong> je bila <strong>{action)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (sort_by: Literal["work_date", "hours", "created_at", "status)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (if date_from is not None:)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (entry = LogEntry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (entry = LogEntry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:python (async def update_log_entry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (# List entries — should return work_date field, not entry_da)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add api/routers/log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Production Gotchas** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Cross-Iteration Data Accumulation (CRITICAL)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **pairedItem for New Output Items** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Float Precision for Price/Currency Comparison** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// BEFORE the loop (reset accumulator):)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (const results = [];)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG - .json directly on node reference)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ Unreliable - float comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[API Client (api.js)]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 

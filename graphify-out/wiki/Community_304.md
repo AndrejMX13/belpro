@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **1. Webhook Node (Trigger)** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **2. Validation (Optional but Recommended)** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **3. Transformation** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **5. Response (If responseMode: "lastNode")** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (❌ {{$json.email}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// IF node condition)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **4. Action** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Security Considerations** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Read-Only Database Tools** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Validate Tool Inputs** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Rate Limiting** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Sanitize User Input** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Monitor Tool Usage** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:sql (-- Create limited user for AI tools)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Code node - validate before execution)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block37 (Webhook → IF (check user rate limit))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block39 (AI Agent → Log Tool Calls)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

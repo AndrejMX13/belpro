@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **3. Spaces in Field Names** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block6 ({{$json.first name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
-- **code:block7 ({{$json['first name']}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **15. Empty Expression Brackets** (3 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block31 ({{}})** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
+- **code:block32 ({{$json.field}}                 // Include expression conten)** (1 connections) — `.claude/skills/n8n-expression-syntax/COMMON_MISTAKES.md`
 
 ## Relationships
 
-- [[Community 631]] (1 shared connections)
+- [[Community 634]] (1 shared connections)
 
 ## Source Files
 

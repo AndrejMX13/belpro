@@ -4,31 +4,32 @@
 
 ## Key Concepts
 
-- **Task 1: Rename shared PDF utilities** (13 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (def test_ngo_header_html_without_logo():)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block6 (docker compose exec api pytest tests/test_reports.py::test_n)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python (<head><meta charset="utf-8"><style>{BASE_CSS}</style></head>)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block13 (docker compose exec api pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block14 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block15 (git add api/services/report_pdf.py api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Database Node Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **MongoDB** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **MySQL** (3 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **SELECT with JOIN** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Bulk INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Find Documents** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Insert Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Update Document** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[HTTP: Upload Photo]] (1 shared connections)
+- [[Community 386]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

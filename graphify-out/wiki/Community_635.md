@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Task 5: Consent PDF service** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:python ("""GDPR Article 13 consent notice PDF generation.""")** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block30 (docker compose exec api pytest tests/test_documents.py::test)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **code:block31 (git add api/services/consent_pdf.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **Detailed Guides** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Node Discovery Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Validation Tools** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Workflow Management** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 537]] (1 shared connections)
+- [[Ima Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Audit Trail
 

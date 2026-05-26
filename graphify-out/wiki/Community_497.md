@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Task 5: Photo retention cleanup job** (7 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:python (#!/usr/bin/env python3)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose up -d --build ops)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec ops /app/scripts/photo_cleanup.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:block35 ([photo_cleanup] Retention cutoff: 2024-05-20 (730 days))** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (docker compose exec -e DATABASE_URL=postgresql+asyncpg://bad)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
-- **code:bash (git add ops/scripts/photo_cleanup.py)** (1 connections) — `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- **Task 6: Report Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 6.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 6.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 6.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:python (# api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (cd api && pytest tests/test_reports.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add api/tests/test_reports.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 428]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-ops-sidecar-and-error-log.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 

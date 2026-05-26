@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **PATCH /api/volunteers/{id}/activate (activate_volunteer)** (0 connections) — `api/routers/volunteers.py`
+- **BelPro Version-Bump Skill Design** (0 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
+- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
 
 ## Audit Trail
 

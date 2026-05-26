@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Testing Scheduled Workflows** (5 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **1. Use Manual Trigger for Testing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **2. Test with Different Times** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **3. Dry Run Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **4. Shorter Interval for Testing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block28 (Manual Trigger (for testing))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// Code node - simulate different times)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block30 (Schedule → Set (dryRun: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:javascript (// Testing: every 1 minute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Postgres** (5 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **SELECT Query** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **UPDATE** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **UPSERT (INSERT ... ON CONFLICT)** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Relationships
 
-- [[HTTP: Upload Photo]] (1 shared connections)
+- [[switch_manager_phone.ps1]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-workflow-patterns/database_operations.md`
 
 ## Audit Trail
 

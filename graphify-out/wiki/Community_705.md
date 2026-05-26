@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Code: Build Msg (Manual)** (3 connections) — `n8n/workflows/volunteer_entry.json`
-- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Serena Project Configuration** (1 connections) — `.serena/project.yml`
+- **Serena Project Local Config Override** (1 connections) — `.serena/project.local.yml`
 
 ## Relationships
 
-- [[002_add_emso_hash.py]] (1 shared connections)
-- [[012_settings_table.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.serena/project.local.yml`
+- `.serena/project.yml`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 2 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

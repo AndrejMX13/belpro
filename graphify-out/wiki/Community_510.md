@@ -4,12 +4,12 @@
 
 ## Key Concepts
 
-- **Systematic Debugging Reference** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Debugging Strategies Reference** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Git Bisect Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Binary Search Debugging Strategy** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
-- **Four-Phase Systematic Debugging** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Three-Fix Threshold Rule** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Two workarounds** (3 connections) — `.claude/memory/feedback_graphify_html.md`
+- **1. Aggregated community meta-graph (recommended)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
+- **2. Raise the env-var limit (full graph, slow)** (2 connections) — `.claude/memory/feedback_graphify_html.md`
+- **feedback_graphify_html.md** (1 connections) — `.claude/memory/feedback_graphify_html.md`
+- **code:python (import json)** (1 connections) — `.claude/memory/feedback_graphify_html.md`
+- **code:powershell ($env:GRAPHIFY_VIZ_NODE_LIMIT = "10000")** (1 connections) — `.claude/memory/feedback_graphify_html.md`
 
 ## Relationships
 
@@ -17,13 +17,12 @@
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/references/strategies.md`
-- `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- `.claude/memory/feedback_graphify_html.md`
 
 ## Audit Trail
 
-- EXTRACTED: 10 (83%)
-- INFERRED: 2 (17%)
+- EXTRACTED: 10 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

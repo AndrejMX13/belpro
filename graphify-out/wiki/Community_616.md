@@ -4,10 +4,10 @@
 
 ## Key Concepts
 
-- **Coverage Baseline** (3 connections) — `docs/coverage-baseline.md`
-- **coverage-baseline.md** (1 connections) — `docs/coverage-baseline.md`
-- **Gaps by file** (1 connections) — `docs/coverage-baseline.md`
-- **Well-covered (≥89%)** (1 connections) — `docs/coverage-baseline.md`
+- **hooks** (3 connections) — `.claude/settings.json`
+- **settings.json** (1 connections) — `.claude/settings.json`
+- **SessionStart** (1 connections) — `.claude/settings.json`
+- **PreToolUse** (1 connections) — `.claude/settings.json`
 
 ## Relationships
 
@@ -15,7 +15,7 @@
 
 ## Source Files
 
-- `docs/coverage-baseline.md`
+- `.claude/settings.json`
 
 ## Audit Trail
 

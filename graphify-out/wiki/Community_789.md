@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_evolution_api_keys.md** (0 connections) — `.claude/memory/feedback_evolution_api_keys.md`
+- **feedback_commit_git_status.md** (0 connections) — `.claude/memory/feedback_commit_git_status.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_evolution_api_keys.md`
+- `.claude/memory/feedback_commit_git_status.md`
 
 ## Audit Trail
 

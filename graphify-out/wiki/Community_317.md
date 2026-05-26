@@ -1,32 +1,38 @@
 # Community 317
 
-> 10 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **Pages / Views** (9 connections) — `SPEC.md`
-- **5. Manager Dashboard (Web UI)** (2 connections) — `SPEC.md`
-- **5.1 Volunteers** (1 connections) — `SPEC.md`
-- **5.2 Pending Approvals** (1 connections) — `SPEC.md`
-- **5.3 Log / History** (1 connections) — `SPEC.md`
-- **5.4 Analytics** (1 connections) — `SPEC.md`
-- **5.5 Reports** (1 connections) — `SPEC.md`
-- **5.6 Settings** (1 connections) — `SPEC.md`
-- **5.7 Administracija (System Administration)** (1 connections) — `SPEC.md`
-- **5.8 Dnevnik napak (App Log)** (1 connections) — `SPEC.md`
+- **renderList() — volunteers page** (5 connections) — `frontend/js/volunteers.js`
+- **GET /volunteers** (4 connections) — `api/routers/volunteers.py`
+- **loadVolunteers()** (3 connections) — `frontend/js/volunteers.js`
+- **loadHealthWidget()** (3 connections) — `frontend/js/errors.js`
+- **API.volunteers.list()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.activate()** (2 connections) — `frontend/js/api.js`
+- **API.volunteers.deactivate()** (2 connections) — `frontend/js/api.js`
+- **VolunteerListResponse shape (items[], total)** (2 connections) — `api/routers/volunteers.py`
+- **API.health.detailed()** (1 connections) — `frontend/js/api.js`
+- **PATCH /volunteers/{id}/activate** (1 connections) — `api/routers/volunteers.py`
+- **PATCH /volunteers/{id}/deactivate** (1 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- [[test_auth.py]] (2 shared connections)
+- [[path]] (1 shared connections)
+- [[Community 404]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
+- `api/routers/volunteers.py`
+- `frontend/js/api.js`
+- `frontend/js/errors.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 25 (96%)
+- INFERRED: 1 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Pattern 2: _input.first() - Get First Item** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 1: Process Single API Response** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 2: Transform Single Object** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 3: Validate Single Item** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 4: Extract Nested Data** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get first item from previous node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get API response (typically single object))** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (data = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (item = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (response = _input.first()["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Common Mistakes** (6 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 1: Using $json Without Context** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 2: Forgetting .json Property** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 3: Using $input.item in All Items Mode** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 4: Not Handling Empty Arrays** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Mistake 5: Modifying Original Data** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: $json is ambiguous)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: Trying to access fields on item object)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: $input.item is undefined in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ WRONG: Crashes if no items)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// ❌ RISKY: Mutating original)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 411]] (1 shared connections)
+- [[Community 416]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Example 10: Environment Variables** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **In HTTP Request (Headers)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **In URL** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript (Authorization: Bearer {{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:javascript (https://api.example.com/data?key={{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Production Gotchas** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Cross-Iteration Data Not Available in Python** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

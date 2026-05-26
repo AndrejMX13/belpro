@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Error Prevention - Top 5 Mistakes** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **#1: Empty Code or Missing Return (Most Common)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **#2: Expression Syntax Confusion** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **#3: Incorrect Return Wrapper** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **#4: Missing Null Checks** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **#5: Webhook Body Nesting** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG: No return statement)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG: Using n8n expression syntax in code)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG: Returning object instead of array)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG: Crashes if field doesn't exist)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG: Direct access to webhook data)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **5. Standard JavaScript Globals** (6 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Math Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **JSON Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **console Object** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Object Methods** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Array Methods** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (return [{)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Parse JSON string)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// Debug logging (appears in browser console, press F12))** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const obj = {name: "John", age: 30, city: "NYC"};)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (const arr = [1, 2, 3, 4, 5];)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[Community 555]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

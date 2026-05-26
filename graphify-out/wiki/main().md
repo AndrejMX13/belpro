@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Python Pro** (8 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Code Examples** (6 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/python-pro/SKILL.md`
-- **mypy strict configuration (pyproject.toml)** (3 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Type-annotated function with error handling** (2 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Dataclass with validation** (2 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Async pattern** (2 connections) — `.claude/skills/python-pro/SKILL.md`
-- **pytest fixture and parametrize** (2 connections) — `.claude/skills/python-pro/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **When to Use This Skill** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **code:python (from pathlib import Path)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **code:python (from dataclasses import dataclass, field)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **code:python (import asyncio)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **code:toml ([tool.mypy])** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **code:block6 (Success: no issues found in 12 source files)** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Knowledge Reference** (1 connections) — `.claude/skills/python-pro/SKILL.md`
+- **Test Suite Design — BelPro API** (8 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Test Files** (7 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Fixture Architecture** (4 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Infrastructure** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Backup / Restore Smoke Test** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **2026-05-09-test-suite-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Goals** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Constraints** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Test database** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **pytest configuration** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Session-scoped (once per `pytest` run)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Function-scoped (once per test)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Data factories** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_health.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_managers.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_volunteers.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_log_entries.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_reports.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **`test_analytics.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Sequence** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Pass criteria** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **What is NOT covered (yet)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
 
 ## Relationships
 
@@ -33,7 +33,7 @@
 
 ## Source Files
 
-- `.claude/skills/python-pro/SKILL.md`
+- `docs/superpowers/specs/2026-05-09-test-suite-design.md`
 
 ## Audit Trail
 

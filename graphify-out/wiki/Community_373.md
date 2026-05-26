@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Data Type Handling** (5 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Arrays** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Objects** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Strings** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Numbers** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// First item)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Dot notation (no spaces))** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Concatenation (automatic))** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Direct use)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Module 8: random - Random Numbers** (5 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Random Numbers** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Random Choice** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Shuffle List** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Random Sample** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

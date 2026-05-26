@@ -1,63 +1,60 @@
 # test_auth.py
 
-> 47 nodes
+> 48 nodes
 
 ## Key Concepts
 
-- **path** (17 connections) — `scripts/gen_architecture_docx.js`
-- **persist_report()** (16 connections) — `api/services/report_storage.py`
-- **test_report_history.py** (14 connections) — `api/tests/test_report_history.py`
-- **main()** (6 connections) — `ops/scripts/photo_cleanup.py`
-- **test_persist_report_creates_file_and_row()** (5 connections) — `api/tests/test_report_history.py`
-- **test_persist_report_overwrites_on_resend()** (5 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_persists_volunteer_pdf()** (5 connections) — `api/tests/test_report_history.py`
-- **test_send_monthly_persists_consolidated_pdf()** (5 connections) — `api/tests/test_report_history.py`
-- **download_history_pdf()** (4 connections) — `api/routers/reports.py`
-- **report_storage.py** (4 connections) — `api/services/report_storage.py`
-- **report_path()** (4 connections) — `api/services/report_storage.py`
-- **test_persist_report_consolidated_overwrites_on_resend()** (4 connections) — `api/tests/test_report_history.py`
-- **test_get_history_returns_items()** (4 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_missing_file_returns_404()** (4 connections) — `api/tests/test_report_history.py`
-- **render()** (4 connections) — `scripts/render_diagrams.py`
-- **test_persist_report_consolidated_has_null_volunteer()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_filter_by_year_month()** (3 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_streams_file()** (3 connections) — `api/tests/test_report_history.py`
-- **photo_cleanup.py** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **report_error()** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **dsn_from_url()** (3 connections) — `ops/scripts/photo_cleanup.py`
-- **main()** (3 connections) — `scripts/render_diagrams.py`
-- **test_get_history_empty()** (2 connections) — `api/tests/test_report_history.py`
-- **test_get_history_pdf_unknown_id_returns_404()** (2 connections) — `api/tests/test_report_history.py`
-- **render_diagrams.py** (2 connections) — `scripts/render_diagrams.py`
-- *... and 22 more nodes in this community*
+- **volunteers.js** (55 connections) — `frontend/js/volunteers.js`
+- **$()** (37 connections) — `frontend/js/volunteers.js`
+- **setHtml()** (25 connections) — `frontend/js/volunteers.js`
+- **esc()** (20 connections) — `frontend/js/volunteers.js`
+- **loadVolunteers()** (11 connections) — `frontend/js/volunteers.js`
+- **loadApprovals()** (11 connections) — `frontend/js/volunteers.js`
+- **loadVolunteerLog()** (9 connections) — `frontend/js/volunteers.js`
+- **toast()** (8 connections) — `frontend/js/volunteers.js`
+- **renderList()** (8 connections) — `frontend/js/volunteers.js`
+- **renderApprovals()** (8 connections) — `frontend/js/volunteers.js`
+- **submitAddVolunteer()** (7 connections) — `frontend/js/volunteers.js`
+- **sendReports()** (6 connections) — `frontend/js/reports.js`
+- **show()** (5 connections) — `frontend/js/volunteers.js`
+- **hide()** (5 connections) — `frontend/js/volunteers.js`
+- **openManagerSetupModal()** (5 connections) — `frontend/js/volunteers.js`
+- **submitManagerSetup()** (5 connections) — `frontend/js/volunteers.js`
+- **openModal()** (5 connections) — `frontend/js/volunteers.js`
+- **closeModal()** (5 connections) — `frontend/js/volunteers.js`
+- **showLogin()** (4 connections) — `frontend/js/volunteers.js`
+- **renderThead()** (4 connections) — `frontend/js/volunteers.js`
+- **renderTable()** (4 connections) — `frontend/js/volunteers.js`
+- **renderApprovalsThead()** (4 connections) — `frontend/js/volunteers.js`
+- **renderApprovalsTable()** (4 connections) — `frontend/js/volunteers.js`
+- **renderVolunteerLogThead()** (4 connections) — `frontend/js/volunteers.js`
+- **renderVolunteerLogTable()** (4 connections) — `frontend/js/volunteers.js`
+- *... and 23 more nodes in this community*
 
 ## Relationships
 
-- [[load_key()]] (13 shared connections)
-- [[Community 434]] (2 shared connections)
-- [[merge_semantic.py]] (2 shared connections)
-- [[connections]] (2 shared connections)
-- [[BelPro System Specification]] (1 shared connections)
-- [[n8n Code Node Pattern]] (1 shared connections)
-- [[app_settings.py]] (1 shared connections)
-- [[Community 402]] (1 shared connections)
-- [[Volunteer Profile Screen]] (1 shared connections)
-- [[test_evolution_service.py]] (1 shared connections)
-- [[Community 314]] (1 shared connections)
+- [[path]] (21 shared connections)
+- [[006_whatsapp_and_smtp_config.py]] (11 shared connections)
+- [[005_report_prefs.py]] (10 shared connections)
+- [[GET /api/log-entries (list_log_entries)]] (8 shared connections)
+- [[Automated Upgrade Script (upgrade.sh)]] (6 shared connections)
+- [[Community 404]] (3 shared connections)
+- [[Community 591]] (3 shared connections)
+- [[Community 317]] (2 shared connections)
+- [[Community 543]] (2 shared connections)
+- [[Community 637]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `api/services/report_storage.py`
-- `api/tests/test_report_history.py`
-- `ops/scripts/photo_cleanup.py`
-- `scripts/gen_architecture_docx.js`
-- `scripts/render_diagrams.py`
+- `api/routers/log_entries.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 94 (63%)
-- INFERRED: 56 (37%)
+- EXTRACTED: 274 (89%)
+- INFERRED: 35 (11%)
 - AMBIGUOUS: 0 (0%)
 
 ---

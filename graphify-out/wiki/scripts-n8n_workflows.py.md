@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Deployment Strategies** (11 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Rollback Procedures** (4 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Rolling Deployment (Kubernetes)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Blue-Green with Ingress** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Canary with Istio** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Kubernetes Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **ArgoCD Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Terraform Rollback** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Post-deployment Verification** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Deployment Metrics (DORA)** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Advanced Canary with Automated Analysis** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Shadow Deployment** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **deployment-strategies.md** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Strategy Comparison** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (apiVersion: apps/v1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Blue deployment (current))** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (apiVersion: networking.istio.io/v1beta1)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (# View rollout history)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (argocd app rollback app-prod --revision=123)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (# Identify previous state)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **Pre-deployment Checklist** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:bash (# Check pod status)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Prometheus metrics for DORA tracking)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Flagger: Automated canary with rollback)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
-- **code:yaml (# Mirror traffic to shadow deployment)** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Incident Response** (13 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Chaos Engineering** (3 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Response Metrics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Runbook Template** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Auto-Remediation Script** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Postmortem Template** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **PagerDuty Configuration** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Evidence Collection & Forensics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Communication Templates** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Security Incident Specifics** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Compliance Requirements** (2 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **incident-response.md** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Severity Levels** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:markdown (# Runbook: High API Error Rate)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:python (#!/usr/bin/env python3)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:markdown (# Postmortem: API Outage - 2024-01-15)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:yaml (schedules:)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:yaml (# chaos-mesh: Pod failure test)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:markdown (## SEV1 Initial Notification)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Incident Classification** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:bash (# Compromise investigation checklist)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **code:yaml (# Incident notification requirements)** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
 
 ## Relationships
 
@@ -36,7 +36,7 @@
 
 ## Source Files
 
-- `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- `.claude/skills/devops-engineer/references/incident-response.md`
 
 ## Audit Trail
 

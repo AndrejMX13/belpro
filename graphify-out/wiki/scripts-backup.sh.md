@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Property Dependencies Deep Dive** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Common Dependency Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Finding Property Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **displayOptions Mechanism** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 1: Boolean Toggle** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 2: Operation Switch** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **Pattern 3: Type Selection** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// sendBody controls body visibility)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (// Different operations → different fields)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
-- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **HTTP Request (nodes-base.httpRequest)** (5 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **GET Request** (4 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **POST with JSON** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **DELETE Request** (3 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **PUT/PATCH Request** (2 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Relationships
 
-- [[IF: Should Notify? (Auto)]] (1 shared connections)
+- [[Community 379]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-node-configuration/SKILL.md`
+- `.claude/skills/n8n-node-configuration/OPERATION_PATTERNS.md`
 
 ## Audit Trail
 

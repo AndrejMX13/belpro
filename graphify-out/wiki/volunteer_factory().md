@@ -1,35 +1,35 @@
 # volunteer_factory()
 
-> 43 nodes
+> 44 nodes
 
 ## Key Concepts
 
-- **Systematic Debugging** (10 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Phase 1: Root Cause Investigation** (6 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Phase 2: Pattern Analysis** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Phase 3: Hypothesis Testing** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Phase 4: Implementation** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **The Three-Fix Threshold** (3 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **The Four Mandatory Phases** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 1.1: Read Error Messages Thoroughly** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 1.2: Reproduce Reliably** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 1.3: Examine Recent Changes** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 1.4: Trace Data Flow Backward** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 1.5: Add Diagnostic Instrumentation** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 2.1: Locate Similar Working Implementations** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 2.2: Study Reference Implementations Completely** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 3.1: Form Specific, Written Hypothesis** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 3.2: Test with Minimal Changes** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 3.3: One Variable at a Time** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 4.1: Create Failing Test Case First** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 4.2: Implement Single Fix** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Step 4.3: Verify No New Breakage** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **What Three Failures Means** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Decision Flowchart** (2 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **systematic-debugging.md** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **Core Principle** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- **code:block1 (┌───────────────────────────────────────────────────────────)** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
-- *... and 18 more nodes in this community*
+- **QA Methodology** (9 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Manual Testing Types** (6 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Test Design Techniques** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Defect Management** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Quality Metrics** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Continuous Testing & Shift-Left** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Quality Advocacy** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Test Planning** (3 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Exploratory Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Usability Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Accessibility Testing (WCAG 2.1 AA)** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Localization Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Compatibility Matrix** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Pairwise Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Risk-Based Testing** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Root Cause Analysis (5 Whys)** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Defect Report Template** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Key Calculations** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Quality Dashboard** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Shift-Left Activities** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Feedback Cycle Targets** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Quality Gates** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Team Education Program** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Test Plan Template** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Environment Strategy** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- *... and 19 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- `.claude/skills/test-master/references/qa-methodology.md`
 
 ## Audit Trail
 
-- EXTRACTED: 84 (100%)
+- EXTRACTED: 86 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

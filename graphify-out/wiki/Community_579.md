@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Workflow Creation Checklist** (5 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Planning Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Implementation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Validation Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Deployment Phase** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **The Validation Loop** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Pattern from Telemetry** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Example** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:block3 (1. Configure node)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Iteration 1)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[restore.sh]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 

@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Pattern 1: Multi-Source Data Aggregation** (3 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Implementation** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (from datetime import datetime)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Key Techniques** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Codebase context (read before any task)** (4 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block1 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block2 (docker compose up -d --build api)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- **code:block3 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Relationships
 
-- [[Community 517]] (1 shared connections)
+- [[Community 522]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
 
 ## Audit Trail
 

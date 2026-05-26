@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Common Patterns Overview** (6 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **1. Data Transformation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **2. Filtering & Aggregation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **3. String Processing with Regex** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **4. Data Validation** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **5. Statistical Analysis** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (import re)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (items = _input.all())** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (from statistics import mean, median, stdev)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Error #4: IndexError** (6 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Error Message** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Safe First Item Access** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Slice Instead of Index** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Assuming items exist)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:block15 (IndexError: list index out of range)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Check length first)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Use _input.first() instead of [0])** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Use slicing (never raises IndexError))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 527]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

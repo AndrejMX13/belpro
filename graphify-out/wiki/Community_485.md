@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Checklist for Scheduled Workflows** (7 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Monitoring** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Testing** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **Deployment** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Streaming Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Fallback Language Models** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **RAG (Retrieval-Augmented Generation)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Chat Trigger parameters)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Primary model (targetIndex: 0))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block26 (Documents → Text Splitter → Vector Store ← Embeddings)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[HTTP: Upload Photo]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

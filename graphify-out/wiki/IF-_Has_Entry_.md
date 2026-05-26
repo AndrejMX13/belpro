@@ -4,33 +4,43 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (8 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **1. Daily Reports** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **2. Data Synchronization** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **3. Monitoring & Health Checks** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **4. Cleanup & Maintenance** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **5. Data Enrichment** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **6. Backup Automation** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **7. Content Publishing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block6 (1. Schedule (daily at 9 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block7 (1. Schedule (every hour))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block8 (1. Schedule (every 5 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block9 (1. Schedule (weekly on Sunday at 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block10 (1. Schedule (nightly at 3 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block11 (1. Schedule (daily at 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
-- **code:block12 (1. Schedule (every 3 hours during business hours))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **HTTP API Integration Pattern** (16 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Checklist for API Integration** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **http_api_integration.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block1 (Trigger → HTTP Request → [Transform] → [Action] → [Error Han)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block55 (Schedule → HTTP Request (GitHub API) → Transform → HTTP Requ)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block56 (Schedule → HTTP Request (Weather API) → Set (format) → Slack)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block57 (Schedule → HTTP Request (CRM A) → Transform → HTTP Request ()** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Error Handling** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[HTTP: Upload Photo]] (1 shared connections)
+- [[Community 389]] (1 shared connections)
+- [[POST /api/auth/logout (logout)]] (1 shared connections)
+- [[switch_manager_phone.sh]] (1 shared connections)
+- [[IF: Manager Error?]] (1 shared connections)
+- [[Community 490]] (1 shared connections)
+- [[Community 306]] (1 shared connections)
+- [[Community 344]] (1 shared connections)
+- [[Community 489]] (1 shared connections)
+- [[Community 426]] (1 shared connections)
+- [[Community 388]] (1 shared connections)
+- [[Code: Procesiraj Popravek]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 39 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

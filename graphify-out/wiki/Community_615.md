@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **session.py** (2 connections) — `api/db/session.py`
-- **get_db()** (2 connections) — `api/db/session.py`
-- **Async SQLAlchemy engine and session factory.** (1 connections) — `api/db/session.py`
-- **FastAPI dependency — yields one async DB session per request.** (1 connections) — `api/db/session.py`
+- **[0.9.5] — 2026-05-11** (4 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Manager session cookie lifetime in hours.]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/session.py`
+- `CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 6 (100%)
+- EXTRACTED: 7 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

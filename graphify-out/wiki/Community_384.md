@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Postgres** (5 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **SELECT Query** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **INSERT** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **UPDATE** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **UPSERT (INSERT ... ON CONFLICT)** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Core Components** (7 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. AI Agent Node** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Language Model** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Tools (ANY Node Can Be a Tool!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Memory (Optional but Recommended)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **6. Output Processing** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[load_env.sh]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

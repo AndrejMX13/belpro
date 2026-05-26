@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Production Gotchas** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Cross-Iteration Data Accumulation (CRITICAL)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **pairedItem for New Output Items** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Float Precision for Price/Currency Comparison** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// BEFORE the loop (reset accumulator):)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (const results = [];)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ WRONG - .json directly on node reference)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// ❌ Unreliable - float comparison)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Task 5: Settings update + startup seeding** (10 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (authentication_api_key: str = "")** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (from sqlalchemy import select, text)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (async def seed_whatsapp_phone_from_env(session: AsyncSession)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (@asynccontextmanager)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_managers.py::test_)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/core/settings.py api/main.py api/tests/test_mana)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[Community 451]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 

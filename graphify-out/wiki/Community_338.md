@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Testing AI Agents** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **1. Start with Manual Trigger** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **2. Test Tools Independently** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **3. Test with Standard Questions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **4. Monitor Token Usage** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block40 (Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block41 (Manual Trigger → Tool Node → Verify output format)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block42 (1. "Hello" - Test basic response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Code node - log token usage)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **5. Test Edge Cases** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Template from Real Workflow** (6 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Webhook Slash Command** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **OpenStreetMap API** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Weather API (NWS)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Slack Message** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Workflow Structure** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block44 (https://nominatim.openstreetmap.org/search?q={{$json.body.te)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block45 (https://api.weather.gov/points/{{$node["OpenStreetMap"].json)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:block46 (Weather for {{$json.body.text}}:)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

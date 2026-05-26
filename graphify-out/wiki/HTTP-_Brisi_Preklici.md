@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Review Process** (6 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Review Checklist** (5 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Category Deep Dive** (5 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **review-checklist.md** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Comprehensive Review Checklist** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **1. Context (5 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **2. Structure (10 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **3. Code Details (20 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **4. Tests (10 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **5. Final Pass (5 min)** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Design Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Logic Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Security Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Performance Questions** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
+- **API Documentation: NestJS & Express** (4 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Express (swagger-jsdoc)** (4 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **NestJS (@nestjs/swagger)** (3 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Controller Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **DTO Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Setup** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Route Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Schema Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **api-docs-nestjs-express.md** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **code:typescript (import { Controller, Post, Body, Get, Param } from '@nestjs/)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **code:typescript (import { ApiProperty, ApiPropertyOptional } from '@nestjs/sw)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **code:javascript (const swaggerJsdoc = require('swagger-jsdoc');)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **code:javascript (/**)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **code:javascript (/**)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
 
 ## Relationships
 
@@ -26,7 +26,7 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/references/review-checklist.md`
+- `.claude/skills/code-documenter/references/api-docs-nestjs-express.md`
 
 ## Audit Trail
 

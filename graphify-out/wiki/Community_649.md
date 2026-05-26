@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **feedback_graphify_update.md** (2 connections) — `.claude/memory/feedback_graphify_update.md`
-- **code:block1 (feat: report delivery error visibility — graphify update)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
-- **Known version issue (2026-05-21)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
+- **[0.10.0-beta.2] — 2026-05-16** (3 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
+- **Changed** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Manager session cookie lifetime in hours.]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/memory/feedback_graphify_update.md`
+- `CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

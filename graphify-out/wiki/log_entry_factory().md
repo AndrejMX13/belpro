@@ -1,35 +1,35 @@
 # log_entry_factory()
 
-> 45 nodes
+> 46 nodes
 
 ## Key Concepts
 
-- **Task 3: Ops server** (14 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Task 2: Schema and router** (9 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Report Auto-Hour Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Task 5: Frontend** (7 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Task 1: AppSettings unit tests + property** (6 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **Task 4: Data seed migration** (5 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **2026-05-22-report-auto-hour.md** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (def test_appsettings_report_auto_hour_default() -> None:)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:block2 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (@property)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:block4 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:block5 (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (async def test_get_settings_returns_report_hour_default(clie)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:block7 (docker compose exec api pytest tests/test_admin.py::test_get)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python ("""Pydantic schemas for the admin settings endpoints.""")** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (payload = {)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:block12 (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:block13 (git add api/schemas/admin.py api/routers/admin.py api/tests/)** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (CRONTAB_TEMPLATE = ()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- **code:python (def write_crontab()** (1 connections) — `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
-- *... and 20 more nodes in this community*
+- **File Structure** (16 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 2: Add early manager lookup node (new node)** (5 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 11: Create manager_approval workflow** (5 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 15: Final validation and cleanup** (5 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 12: Link Execute Workflow node to manager_approval** (4 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 6: Add Execute Workflow node** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 10: Validate volunteer_entry workflow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 13: Manual test — approve flow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Manager WhatsApp Approval Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 1: Fix existing HTTP: Lookup Manager URL (bugfix)** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 3: Modify Filter & Route code for manager detection** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 4: Add Upravljalec branch to Razpotje switch** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 5: Add Parse Manager Action code node** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 7: Add error WhatsApp node for no-state case** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 8: Modify Code: Pripravi Obvestilo Upravljalcu (state storage + phone fix)** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **Task 9: Fix HTTP: WA Upravljalcu body parameter** (2 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **2026-05-07-manager-approval.md** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- **code:text (Tool: n8n_update_partial_workflow)** (1 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
+- *... and 21 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-22-report-auto-hour.md`
+- `docs/superpowers/plans/2026-05-07-manager-approval.md`
 
 ## Audit Trail
 
-- EXTRACTED: 88 (100%)
+- EXTRACTED: 90 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **Serializer → Pydantic V2 Migration** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **Django REST Framework Serializer** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **FastAPI Pydantic V2 Schemas** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# Django DRF)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
-- **code:python (# FastAPI with Pydantic V2)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Authentication: SimpleJWT → FastAPI JWT** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django SimpleJWT** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **FastAPI JWT Authentication** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django settings.py)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# auth.py - FastAPI JWT implementation)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 

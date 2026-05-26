@@ -1,30 +1,39 @@
 # Community 405
 
-> 8 nodes
+> 9 nodes
 
 ## Key Concepts
 
-- **3. Data Model** (8 connections) — `SPEC.md`
-- **`volunteers`** (1 connections) — `SPEC.md`
-- **`managers`** (1 connections) — `SPEC.md`
-- **`log_entries`** (1 connections) — `SPEC.md`
-- **`log_entry_photos`** (1 connections) — `SPEC.md`
-- **`monthly_reports`** (1 connections) — `SPEC.md`
-- **`settings`** (1 connections) — `SPEC.md`
-- **`error_log`** (1 connections) — `SPEC.md`
+- **__init__.py** (9 connections) — `api/routers/__init__.py`
+- **__init__.py** (1 connections) — `api/core/__init__.py`
+- **__init__.py** (1 connections) — `api/db/__init__.py`
+- **__init__.py** (1 connections) — `api/schemas/__init__.py`
+- **__init__.py** (1 connections) — `api/services/__init__.py`
+- **__init__.py** (1 connections) — `api/tests/__init__.py`
+- **__init__.py** (1 connections) — `api/utils/__init__.py`
+- **__init__.py** (1 connections) — `tests/__init__.py`
+- **__init__.py** (1 connections) — `tests/workflow/__init__.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- [[VolunteerUpdate]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
+- `api/core/__init__.py`
+- `api/db/__init__.py`
+- `api/routers/__init__.py`
+- `api/schemas/__init__.py`
+- `api/services/__init__.py`
+- `api/tests/__init__.py`
+- `api/utils/__init__.py`
+- `tests/__init__.py`
+- `tests/workflow/__init__.py`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 0 (0%)
+- INFERRED: 17 (100%)
 - AMBIGUOUS: 0 (0%)
 
 ---

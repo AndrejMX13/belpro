@@ -1,28 +1,29 @@
 # Community 438
 
-> 7 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **Digital Volunteer Diary: System Architecture & Specification** (5 connections) — `BelPro.md`
-- **3. GDPR Notes for Volunteer Agreements** (2 connections) — `BelPro.md`
-- **BelPro.md** (1 connections) — `BelPro.md`
-- **1. Project Overview** (1 connections) — `BelPro.md`
-- **2. Technical Architecture** (1 connections) — `BelPro.md`
-- **Article X: Digital Record Keeping and Privacy** (1 connections) — `BelPro.md`
-- **4. Operational Flow** (1 connections) — `BelPro.md`
+- **Django ORM → Async SQLAlchemy** (4 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Query Patterns: Django ORM vs SQLAlchemy** (3 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Django ORM Models** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **SQLAlchemy 2.0 Async Models** (2 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django models)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# SQLAlchemy 2.0 models)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# Django ORM queries)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **code:python (# SQLAlchemy 2.0 async queries)** (1 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 541]] (1 shared connections)
 
 ## Source Files
 
-- `BelPro.md`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
 
 ## Audit Trail
 
-- EXTRACTED: 12 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

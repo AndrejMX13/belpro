@@ -4,43 +4,39 @@
 
 ## Key Concepts
 
-- **upgrade.sh** (12 connections) — `scripts/upgrade.sh`
-- **rotate_emso_key.sh** (11 connections) — `scripts/rotate_emso_key.sh`
-- **backup.sh** (8 connections) — `scripts/backup.sh`
-- **.env** (5 connections)
-- **EMSO encrypted field** (4 connections)
-- **docker-compose.yml** (3 connections)
-- **api/scripts/rotate_emso_key.py** (3 connections)
-- **Alembic migrations** (2 connections)
-- **/app/photos (volume)** (2 connections)
-- **info()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **ok()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **warn()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **heading()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **die()** (1 connections) — `scripts/rotate_emso_key.sh`
-- **info()** (1 connections) — `scripts/upgrade.sh`
-- **ok()** (1 connections) — `scripts/upgrade.sh`
-- **warn()** (1 connections) — `scripts/upgrade.sh`
-- **heading()** (1 connections) — `scripts/upgrade.sh`
-- **die()** (1 connections) — `scripts/upgrade.sh`
-- **get_env()** (1 connections) — `scripts/upgrade.sh`
-- **backups/** (1 connections)
+- **The Five Anti-Patterns** (6 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Testing Anti-Patterns** (5 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 1: Testing Mock Behavior** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 2: Test-Only Methods in Production** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 3: Mocking Without Understanding** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 4: Incomplete Mocks** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern 5: Integration Tests as Afterthought** (3 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **testing-anti-patterns.md** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Core Principle** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Testing the mock, not the behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Testing actual behavior)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Production code polluted with test concerns)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Test utilities separate from production)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Mocking everything without understanding)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Strategic mocking with real components where poss)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: Incomplete mock response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Complete mock matching real API response)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ❌ BAD: "We'll add tests later")** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **code:typescript (// ✅ GOOD: Tests are part of implementation)** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Detection Checklist** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Relationships
 
-- [[005_report_prefs.py]] (10 shared connections)
-- [[merge_ast_semantic.py]] (1 shared connections)
-- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `scripts/backup.sh`
-- `scripts/rotate_emso_key.sh`
-- `scripts/upgrade.sh`
+- `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 62 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

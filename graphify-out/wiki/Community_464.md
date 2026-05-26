@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **When NOT to Use Expressions** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Code Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Webhook Paths** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **❌ Credential Fields** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// ❌ WRONG in Code node)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Module 5: hashlib - Hashing** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **MD5 Hash** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **SHA256 Hash** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Generate Unique ID** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import hashlib)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

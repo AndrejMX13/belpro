@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Testing & Debugging** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **3. Log Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **5. Use Binary Data Properly** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **1. Test with Manual Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **2. Use Postman/Insomnia First** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - log for debugging)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **4. Check Execution Data** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Contributor Covenant Code of Conduct** (7 connections) — `CODE_OF_CONDUCT.md`
+- **CODE_OF_CONDUCT.md** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Our Pledge** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Our Standards** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Enforcement Responsibilities** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Scope** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Enforcement** (1 connections) — `CODE_OF_CONDUCT.md`
+- **Attribution** (1 connections) — `CODE_OF_CONDUCT.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `CODE_OF_CONDUCT.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

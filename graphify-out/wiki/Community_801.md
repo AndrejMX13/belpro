@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **reference_graphify_infra_script.md** (0 connections) — `.claude/memory/reference_graphify_infra_script.md`
+- **project_app_settings.md** (0 connections) — `.claude/memory/project_app_settings.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/reference_graphify_infra_script.md`
+- `.claude/memory/project_app_settings.md`
 
 ## Audit Trail
 

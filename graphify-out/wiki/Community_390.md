@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Task 9: Backup / Restore Smoke Test** (5 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.1 — Verify backup.sh and restore.sh exist** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.2 — Write `scripts/test_backup_restore.sh`** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.3 — Make executable** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 9.4 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (ls scripts/backup.sh scripts/restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (chmod +x scripts/test_backup_restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add scripts/test_backup_restore.sh)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Testing Scheduled Workflows** (5 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **1. Use Manual Trigger for Testing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **2. Test with Different Times** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **3. Dry Run Mode** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **4. Shorter Interval for Testing** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block28 (Manual Trigger (for testing))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Code node - simulate different times)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block30 (Schedule → Set (dryRun: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:javascript (// Testing: every 1 minute)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 389]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

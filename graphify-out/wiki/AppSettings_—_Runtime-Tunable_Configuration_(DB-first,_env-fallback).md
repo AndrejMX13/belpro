@@ -1,50 +1,48 @@
 # AppSettings — Runtime-Tunable Configuration (DB-first, env-fallback)
 
-> 37 nodes
+> 39 nodes
 
 ## Key Concepts
 
-- **make_text_payload()** (12 connections) — `tests/workflow/helpers.py`
-- **post_to_webhook()** (11 connections) — `tests/workflow/helpers.py`
-- **poll_for_entry()** (10 connections) — `tests/workflow/helpers.py`
-- **make_response_payload()** (8 connections) — `tests/workflow/helpers.py`
-- **test_edit_path()** (8 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_volunteer_entry.py** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_happy_path_text_confirm()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_cancel_path()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_add_photos_then_confirm()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_add_photos_then_cancel()** (7 connections) — `tests/workflow/test_volunteer_entry.py`
-- **helpers.py** (6 connections) — `tests/workflow/helpers.py`
-- **poll_for_entry_status()** (5 connections) — `tests/workflow/helpers.py`
-- **poll_for_entry_gone()** (5 connections) — `tests/workflow/helpers.py`
-- **test_photo_upload.py** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_upload_photo_happy_path()** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_upload_second_photo_increments_count()** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_upload_photo_bad_extension()** (5 connections) — `tests/workflow/test_photo_upload.py`
-- **test_unknown_volunteer_creates_no_entry()** (4 connections) — `tests/workflow/test_volunteer_entry.py`
-- **test_upload_photo_unknown_entry()** (3 connections) — `tests/workflow/test_photo_upload.py`
-- **Build a WhatsApp text-message webhook body for the given bare-digit phone.** (1 connections) — `tests/workflow/helpers.py`
-- **Build a volunteer response payload. response_type must be one of:     'confirm'** (1 connections) — `tests/workflow/helpers.py`
-- **POST a WhatsApp event to the n8n webhook. Asserts 200.** (1 connections) — `tests/workflow/helpers.py`
-- **Poll GET /api/log-entries until at least one entry for volunteer_id appears.** (1 connections) — `tests/workflow/helpers.py`
-- **Poll GET /api/log-entries/{entry_id} until its status matches expected_status.** (1 connections) — `tests/workflow/helpers.py`
-- **Poll until GET /api/log-entries/{entry_id} returns 404.     Raises TimeoutError** (1 connections) — `tests/workflow/helpers.py`
-- *... and 12 more nodes in this community*
+- **Receiving Feedback** (8 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **The Six-Step Process** (7 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Avoiding Agreement Theater** (5 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Verification Before Claiming Fixed** (5 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **When to Push Back** (4 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 1: Read Completely** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 2: Restate Requirements** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 3: Check Against Codebase** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 4: Evaluate Technical Soundness** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 5: Respond with Substance** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Step 6: Implement One at a Time** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Actions Demonstrate Understanding** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **When Acknowledgment IS Appropriate** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Good Pushback Format** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Bad Pushback** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Acceptable Responses** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Unacceptable Responses** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **When You Can't Verify** (2 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **receiving-feedback.md** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **Core Mindset** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (❌ BAD: Read first sentence → start typing defense)** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (Reviewer: "This function is doing too much. It handles valid)** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:typescript (// Reviewer says: "This will throw if user is null")** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (Reviewer: "You should use useMemo here for performance")** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- **code:markdown (✅ GOOD: "Fixed. Split into validate(), transform(), persist()** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[load_key()]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `tests/workflow/helpers.py`
-- `tests/workflow/test_photo_upload.py`
-- `tests/workflow/test_volunteer_entry.py`
+- `.claude/skills/code-reviewer/references/receiving-feedback.md`
 
 ## Audit Trail
 
-- EXTRACTED: 70 (48%)
-- INFERRED: 75 (52%)
+- EXTRACTED: 76 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

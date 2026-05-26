@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Module 8: random - Random Numbers** (5 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Random Numbers** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Random Choice** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Shuffle List** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Random Sample** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import random)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Pattern 3: _input.item - Current Item (Each Item Mode)** (5 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 1: Add Processing Metadata** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 2: Per-Item Validation** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Example 3: Conditional Processing** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# In "Run Once for Each Item" mode)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (item = _input.item)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[Community 417]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 

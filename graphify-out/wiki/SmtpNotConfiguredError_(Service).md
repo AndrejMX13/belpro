@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Best Practices** (6 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **1. Use .get() for Safe Access** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **2. Handle Empty Lists** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **3. Use List Comprehensions** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **4. Return Proper Format** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **5. Use Standard Library** (2 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# ✅ SAFE: Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# ✅ SAFE: Check before processing)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# ✅ PYTHONIC: List comprehension)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# ✅ CORRECT: Array of objects with "json" key)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **code:python (# ✅ GOOD: Use standard library)** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Pattern 3: $input.item - Current Item (Each Item Mode)** (6 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 1: Add Processing Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 2: Per-Item Validation** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 3: Item-Specific API Call** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Example 4: Conditional Processing** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (// In "Run Once for Each Item" mode)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **code:javascript (const item = $input.item;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 517]] (1 shared connections)
+- [[Community 416]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
 
 ## Audit Trail
 

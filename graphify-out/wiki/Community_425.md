@@ -4,26 +4,30 @@
 
 ## Key Concepts
 
-- **Task 2: Health Endpoint** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 2.2 — Run** (3 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 2.1 — Write test** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 2.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:python (# api/tests/test_health.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest tests/test_health.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:block12 (PASSED tests/test_health.py::test_health_returns_ok)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add api/tests/test_health.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **False Positives Guide** (9 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Decision Framework** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Should I Fix This Warning?** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **Documentation Template** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **FALSE_POSITIVES.md** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **What Are False Positives?** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:block37 (┌─────────────────────────────────┐)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// workflows/customer-notifications.json)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 389]] (1 shared connections)
+- [[Community 578]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
+- [[Community 533]] (1 shared connections)
+- [[Community 479]] (1 shared connections)
+- [[Community 577]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

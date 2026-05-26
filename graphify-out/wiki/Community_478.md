@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Memory Configuration** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Buffer Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Window Buffer Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Summary Memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Missing Input Validation** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When Acceptable** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When to Fix** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Webhook from your own backend)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Webhook from Stripe (cryptographically signed))** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: Public webhook without validation)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

@@ -1,48 +1,65 @@
 # VolunteerUpdate
 
-> 33 nodes
+> 35 nodes
 
 ## Key Concepts
 
-- **Monitoring and Analysis** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **PostgreSQL Monitoring** (6 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **MySQL Monitoring** (5 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Cross-Platform Monitoring** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Alert Thresholds** (3 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Essential Extensions** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Query Performance Tracking** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Connection and Lock Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Table and Index Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Database Statistics** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Performance Schema Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **InnoDB Status Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Connection and Process Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **System Status Variables** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Resource Utilization** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Health Check Queries** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **PostgreSQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **MySQL Alerts** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **monitoring-analysis.md** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Install performance monitoring extensions)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Top queries by total time)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Current activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Table bloat and dead tuples)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Database size and activity)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **code:sql (-- Top statements by total latency)** (1 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- *... and 8 more nodes in this community*
+- **Base** (11 connections) — `api/models/base.py`
+- **base.py** (10 connections) — `api/models/base.py`
+- **__init__.py** (10 connections) — `api/models/__init__.py`
+- **Volunteer** (9 connections) — `api/models/volunteer.py`
+- **LogEntryPhoto** (8 connections) — `api/models/log_entry_photo.py`
+- **Base** (7 connections)
+- **ErrorLog** (7 connections) — `api/models/error_log.py`
+- **log_entry.py** (7 connections) — `api/models/log_entry.py`
+- **LogEntry** (7 connections) — `api/models/log_entry.py`
+- **Manager** (7 connections) — `api/models/manager.py`
+- **AppSetting** (6 connections) — `api/models/app_setting.py`
+- **MonthlyReport** (6 connections) — `api/models/monthly_report.py`
+- **volunteer.py** (6 connections) — `api/models/volunteer.py`
+- **log_entry_photo.py** (5 connections) — `api/models/log_entry_photo.py`
+- **manager.py** (5 connections) — `api/models/manager.py`
+- **monthly_report.py** (5 connections) — `api/models/monthly_report.py`
+- **app_setting.py** (4 connections) — `api/models/app_setting.py`
+- **error_log.py** (4 connections) — `api/models/error_log.py`
+- **AppSetting ORM model — runtime-tunable key-value configuration.** (1 connections) — `api/models/app_setting.py`
+- **One row per named setting. All values stored as TEXT.** (1 connections) — `api/models/app_setting.py`
+- **DeclarativeBase** (1 connections)
+- **SQLAlchemy declarative base shared by all ORM models.** (1 connections) — `api/models/base.py`
+- **Declarative base — import and subclass in every model.** (1 connections) — `api/models/base.py`
+- **ErrorLog ORM model — structured record of operational failures.** (1 connections) — `api/models/error_log.py`
+- **One row per operational failure. Written by API, n8n, and ops sidecar.** (1 connections) — `api/models/error_log.py`
+- *... and 10 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_app_settings.py]] (4 shared connections)
+- [[n8n MCP Workflow Management Guide]] (3 shared connections)
+- [[errors.py]] (3 shared connections)
+- [[list_pending_entries.py]] (1 shared connections)
+- [[n8n Set Node Pattern]] (1 shared connections)
+- [[Reject tax numbers that fail the Modulus 11 check digit.]] (1 shared connections)
+- [[Community 406]] (1 shared connections)
+- [[ops_server.py]] (1 shared connections)
+- [[log_entries.py]] (1 shared connections)
+- [[Community 405]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
+- `api/models/__init__.py`
+- `api/models/app_setting.py`
+- `api/models/base.py`
+- `api/models/error_log.py`
+- `api/models/log_entry.py`
+- `api/models/log_entry_photo.py`
+- `api/models/manager.py`
+- `api/models/monthly_report.py`
+- `api/models/volunteer.py`
 
 ## Audit Trail
 
-- EXTRACTED: 64 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 103 (73%)
+- INFERRED: 38 (27%)
 - AMBIGUOUS: 0 (0%)
 
 ---

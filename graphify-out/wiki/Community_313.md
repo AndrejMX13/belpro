@@ -4,30 +4,29 @@
 
 ## Key Concepts
 
-- **activeVersion** (12 connections) — `n8n/workflows/volunteer_entry.json`
-- **updatedAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **createdAt** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **versionId** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **workflowId** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **nodes** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **authors** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **name** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **description** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **autosaved** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **workflowPublishHistory** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Docker Patterns** (6 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Multi-stage Dockerfile (Node.js)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Multi-stage Dockerfile (Python)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Docker Compose (Development)** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **.dockerignore Template** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **docker-patterns.md** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:dockerfile (# Build stage)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:dockerfile (FROM python:3.12-slim AS builder)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:yaml (version: '3.8')** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Security Best Practices** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **code:block4 (node_modules)** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
 
 ## Relationships
 
-- [[Code Reviewer Skill]] (1 shared connections)
-- [[012_settings_table.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/devops-engineer/references/docker-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 20 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

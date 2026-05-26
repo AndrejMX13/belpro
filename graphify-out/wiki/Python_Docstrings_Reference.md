@@ -4,40 +4,40 @@
 
 ## Key Concepts
 
-- **test_volunteers.py** (21 connections) — `api/tests/test_volunteers.py`
-- **test_list_volunteers_returns_created_volunteer()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_duplicate_emso_returns_409()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_update_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_deactivate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_activate_volunteer_success()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_delete_volunteer_happy_path()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_check_emso_already_registered()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_emso_stored_encrypted()** (2 connections) — `api/tests/test_volunteers.py`
-- **test_list_volunteers_empty()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_success()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_missing_required_field_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_postal_code_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_emso_length_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_create_volunteer_invalid_emso_checksum_returns_422()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_get_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_update_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_deactivate_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_delete_volunteer_not_found()** (1 connections) — `api/tests/test_volunteers.py`
-- **test_check_emso_not_registered()** (1 connections) — `api/tests/test_volunteers.py`
-- **EMŠO is stored encrypted in DB and never returned as plaintext by the API.** (1 connections) — `api/tests/test_volunteers.py`
+- **Secure Code Guardian** (7 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Code Examples** (6 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Core Workflow** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Password Hashing (bcrypt)** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Parameterized SQL Query (Node.js / pg)** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Input Validation with Zod** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **JWT Validation** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Securing an Endpoint — Full Flow** (2 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Validation Checkpoints** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **code:typescript (import bcrypt from 'bcrypt';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **code:typescript (// NEVER: `SELECT * FROM users WHERE email = '${email}'`)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **code:typescript (import { z } from 'zod';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **code:typescript (import jwt from 'jsonwebtoken';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **code:typescript (import express from 'express';)** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
 
 ## Relationships
 
-- [[load_key()]] (9 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/tests/test_volunteers.py`
+- `.claude/skills/secure-code-guardian/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 42 (86%)
-- INFERRED: 7 (14%)
+- EXTRACTED: 40 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

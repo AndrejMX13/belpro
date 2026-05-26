@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **Security Testing** (7 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Authentication Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Authorization Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Input Validation Tests** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Security Headers Test** (2 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **security-testing.md** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Authentication Security', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Authorization', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Input Validation', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **code:typescript (describe('Security Headers', () => {)** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Security Test Checklist** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
-- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/security-testing.md`
+- **Python Docstrings** (7 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Google Style (Recommended)** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **NumPy Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sphinx Style** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **python-docstrings.md** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (def calculate_total(items: list[Item], tax_rate: float = 0.0)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **code:python (class UserService:)** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
+- **Sections Available** (1 connections) — `.claude/skills/code-documenter/references/python-docstrings.md`
 
 ## Relationships
 
@@ -23,7 +23,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/security-testing.md`
+- `.claude/skills/code-documenter/references/python-docstrings.md`
 
 ## Audit Trail
 

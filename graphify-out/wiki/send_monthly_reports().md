@@ -1,57 +1,48 @@
 # send_monthly_reports()
 
-> 27 nodes
+> 28 nodes
 
 ## Key Concepts
 
-- **BelPro System Specification** (29 connections) — `SPEC.md`
-- **Evolution API (WhatsApp Gateway)** (7 connections) — `SPEC.md`
-- **Digital Volunteer Diary Architecture & GDPR Notes** (6 connections) — `BelPro.md`
-- **DB Table: volunteers** (5 connections) — `SPEC.md`
-- **WhatsApp Volunteer Entry Flow** (4 connections) — `SPEC.md`
-- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) — `SPEC.md`
-- **CLAUDE.md — Project AI Instructions** (3 connections) — `CLAUDE.md`
-- **Monthly PDF Reports Generation and Delivery** (3 connections) — `SPEC.md`
-- **DB Table: log_entries** (3 connections) — `SPEC.md`
-- **DB Table: monthly_reports** (3 connections) — `SPEC.md`
-- **Dnevnik prostovoljskega dela (Volunteer Work Diary)** (2 connections) — `SPEC.md`
-- **Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)** (2 connections) — `SPEC.md`
-- **GDPR and ZVOP-2 Compliance** (2 connections) — `SPEC.md`
-- **DB Table: managers** (2 connections) — `SPEC.md`
-- **DB Table: log_entry_photos** (2 connections) — `SPEC.md`
-- **DB Table: settings** (2 connections) — `SPEC.md`
-- **Workflow Integration Tests Plan** (2 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
-- **WhatsApp Phone Source of Truth Plan** (2 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **BelPro System Specification (Slovenian)** (1 connections) — `SPEC_SL.md`
-- **CSD — Centre for Social Work** (1 connections) — `SPEC.md`
-- **Single-Tenant Architecture** (1 connections) — `SPEC.md`
-- **WeasyPrint (HTML to PDF)** (1 connections) — `CLAUDE.md`
-- **Graphify Knowledge Graph Tooling** (1 connections) — `CLAUDE.md`
-- **Serena MCP Server (Symbol Navigation)** (1 connections) — `CLAUDE.md`
-- **DB Table: error_log** (1 connections) — `SPEC.md`
-- *... and 2 more nodes in this community*
+- **Spec Compliance Review** (7 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **The Three Verification Categories** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Spec Compliance Checklist** (4 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Stage 1: Spec Compliance Review** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 1: Missing Requirements** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 2: Unnecessary Additions** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Why Order Matters** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Output Format** (3 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Two-Stage Review Architecture** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Category 3: Interpretation Gaps** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Compliant Result** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Issues Found** (2 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **spec-compliance-review.md** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block1 (┌─────────────────────┐)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Core Directive** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block3** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:block5** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **code:markdown (## Example Review Finding)** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Stage 1 Must Come First** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Separation of Concerns** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **Before You Start** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **During Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- **After Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
+- *... and 3 more nodes in this community*
 
 ## Relationships
 
-- [[POST /log-entries/{id}/photos]] (7 shared connections)
-- [[Code: Procesiraj Popravek]] (5 shared connections)
-- [[API.reports.downloadHistoryPdf()]] (4 shared connections)
-- [[Community 540]] (1 shared connections)
-- [[POST /api/errors (write_error)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `BelPro.md`
-- `CLAUDE.md`
-- `SPEC.md`
-- `SPEC_SL.md`
-- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/code-reviewer/references/spec-compliance-review.md`
 
 ## Audit Trail
 
-- EXTRACTED: 89 (97%)
-- INFERRED: 3 (3%)
+- EXTRACTED: 54 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

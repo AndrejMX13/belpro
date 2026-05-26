@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **main()** (5 connections) — `ops/scripts/monthly_report_send.py`
-- **monthly_report_send.py** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **report_error()** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **resolve_period()** (3 connections) — `ops/scripts/monthly_report_send.py`
-- **POST failure to the API error log.** (1 connections) — `ops/scripts/monthly_report_send.py`
-- **Return (year, month) for the given period label.      'current'  → today's year** (1 connections) — `ops/scripts/monthly_report_send.py`
-- **Resolve target month and call the send-monthly API endpoint.** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **Task 1: Alembic migration — seed `evolution_instance_name`** (7 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (async def test_settings_table_seeded_evolution_instance_name)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (# api/db/migrations/versions/015_seed_evolution_instance_nam)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/db/migrations/versions/015_seed_evolution_instan)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- [[load_key()]] (1 shared connections)
+- [[Community 401]] (1 shared connections)
 
 ## Source Files
 
-- `ops/scripts/monthly_report_send.py`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 16 (94%)
-- INFERRED: 1 (6%)
+- EXTRACTED: 13 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,51 +1,47 @@
 # report_pdf.py
 
-> 26 nodes
+> 27 nodes
 
 ## Key Concepts
 
-- **manager_approval.json** (31 connections) — `n8n/workflows/manager_approval.json`
-- **settings** (7 connections) — `n8n/workflows/manager_approval.json`
-- **pinData** (2 connections) — `n8n/workflows/manager_approval.json`
-- **updatedAt** (1 connections) — `n8n/workflows/manager_approval.json`
-- **createdAt** (1 connections) — `n8n/workflows/manager_approval.json`
-- **id** (1 connections) — `n8n/workflows/manager_approval.json`
-- **name** (1 connections) — `n8n/workflows/manager_approval.json`
-- **description** (1 connections) — `n8n/workflows/manager_approval.json`
-- **active** (1 connections) — `n8n/workflows/manager_approval.json`
-- **isArchived** (1 connections) — `n8n/workflows/manager_approval.json`
-- **nodes** (1 connections) — `n8n/workflows/manager_approval.json`
-- **executionOrder** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveDataErrorExecution** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveManualExecutions** (1 connections) — `n8n/workflows/manager_approval.json`
-- **saveExecutionProgress** (1 connections) — `n8n/workflows/manager_approval.json`
-- **binaryMode** (1 connections) — `n8n/workflows/manager_approval.json`
-- **staticData** (1 connections) — `n8n/workflows/manager_approval.json`
-- **meta** (1 connections) — `n8n/workflows/manager_approval.json`
-- **Manual Trigger** (1 connections) — `n8n/workflows/manager_approval.json`
-- **versionId** (1 connections) — `n8n/workflows/manager_approval.json`
-- **activeVersionId** (1 connections) — `n8n/workflows/manager_approval.json`
-- **versionCounter** (1 connections) — `n8n/workflows/manager_approval.json`
-- **triggerCount** (1 connections) — `n8n/workflows/manager_approval.json`
-- **shared** (1 connections) — `n8n/workflows/manager_approval.json`
-- *... and 1 more nodes in this community*
+- **Work Date Rename + Dashboard Entry Creation Design** (10 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Frontend (`frontend/js/volunteers.js`)** (5 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Data Layer** (4 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Migration** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **API Layer** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **List views — two date columns** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Entry detail edit form (`renderLogEntryDetail`)** (3 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Router: `api/routers/log_entries.py`** (2 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **2026-05-09-work-date-and-dashboard-entry-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:sql (ALTER TABLE log_entries RENAME COLUMN entry_date TO work_dat)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:sql (ALTER INDEX idx_entries_vol_date RENAME TO idx_entries_vol_w)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **ORM model (`api/models/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Schemas (`api/schemas/log_entry.py`)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:python (if payload.work_date is not None:)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Other routers** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **Global renames** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:block4 (Dan opravljenega dela | Prostovoljec | Opis dela | Ure | Lok)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:block5 (Dan opravljenega dela | Opis dela | Ure | Lokacija | Dan vno)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:html (<div class="field">)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **code:javascript (const workDate = $('d-work-date').value || null;)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **"Dodaj vnos" button (volunteer detail page)** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- **n8n Workflows** (1 connections) — `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
-- [[scripts/gen_diagrams_sl.py]] (6 shared connections)
-- [[test_admin.py]] (2 shared connections)
-- [[Code Reviewer Skill]] (2 shared connections)
-- [[005_report_prefs.py]] (2 shared connections)
-- [[merge_ast_semantic.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `n8n/workflows/manager_approval.json`
+- `docs/superpowers/specs/2026-05-09-work-date-and-dashboard-entry-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 63 (100%)
+- EXTRACTED: 52 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

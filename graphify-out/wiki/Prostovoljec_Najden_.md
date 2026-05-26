@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **Input Validation** (8 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Zod Validation** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **SQL Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Path Traversal Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Command Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **URL Validation** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **File Upload Validation** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **input-validation.md** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (import { z } from 'zod';)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (// ❌ NEVER do this)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (import path from 'path';)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (import { execFile } from 'child_process';)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (function validateUrl(input: string, allowedHosts: string[]):)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **code:typescript (const ALLOWED_TYPES = ['image/jpeg', 'image/png', 'image/gif)** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
+- **Task 5: Frontend — Renames + Two-Column Date Lists** (15 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (filter: { status: 'pending_manager', search_q: '', date_from)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (filter: { status: '', search_q: '', date_from: null, date_to)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (volunteerLogState.filter = { status: '', search_q: '', date_)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (function renderApprovalsThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="8">${msg})** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="5)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (function renderVolunteerLogThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="6">Ni vno)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="6)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<div class="detail-name">${esc(entry.entry_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:javascript (<div class="detail-name">${esc(entry.work_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 310]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/input-validation.md`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

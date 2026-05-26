@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **File Summary** (8 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 1: Infrastructure — migration test database** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 6: Base64 photo limit + `_PHOTOS_ROOT` monkeypatch** (6 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 7: Manager password change** (5 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 2: Migration roundtrip test** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 3: EMŠO encryption round-trip** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 4: Status-flow enforcement — `pending_volunteer` → 409** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Task 5: Analytics edge cases** (4 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **Test Coverage Gaps — Implementation Plan** (2 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **2026-05-24-test-coverage-gaps.md** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (#!/usr/bin/env bash)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (docker compose exec postgres psql -U belpro -c "CREATE DATAB)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:block3 (CREATE DATABASE)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:block4 (DATABASE_URL_MIGRATIONS=postgresql+asyncpg://belpro:belpro_d)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (git add db/create_extra_dbs.sh api/.env.test)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:python ("""Migration roundtrip test — runs against belpro_test_migra)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (docker compose exec api pytest tests/test_migrations.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (git add api/tests/test_migrations.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:python (async def test_emso_stored_encrypted()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (docker compose exec api pytest tests/test_volunteers.py::tes)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (git add api/tests/test_volunteers.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:python (async def test_approve_pending_volunteer_returns_409()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:bash (git add api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
-- **code:python (async def test_analytics_rejected_hours_excluded()** (1 connections) — `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- **DevOps Engineer Skill** (8 connections) — `.claude/skills/devops-engineer/SKILL.md`
+- **Deployment Strategies Reference** (6 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Release Automation Reference** (6 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **FastAPI Expert Skill** (6 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Django to FastAPI Migration Guide** (5 connections) — `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- **Incident Response Reference** (4 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Async SQLAlchemy Reference** (4 connections) — `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- **GitHub Actions Pipelines Reference** (3 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Kubernetes Manifests Reference** (3 connections) — `.claude/skills/devops-engineer/references/kubernetes.md`
+- **Platform Engineering Reference** (3 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **FastAPI Authentication Reference** (3 connections) — `.claude/skills/fastapi-expert/references/authentication.md`
+- **Async Testing Reference** (3 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Docker Patterns Reference** (2 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **Terraform IaC Reference** (2 connections) — `.claude/skills/devops-engineer/references/terraform-iac.md`
+- **FastAPI Endpoints and Routing Reference** (2 connections) — `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- **Pydantic V2 Schemas Reference** (2 connections) — `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- **Canary Deployment Strategy** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **DORA Metrics** (2 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Feature Flags Progressive Delivery** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Zero-Downtime Database Migrations** (2 connections) — `.claude/skills/devops-engineer/references/release-automation.md`
+- **Blue-Green Deployment Strategy** (1 connections) — `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- **Multi-Stage Dockerfile Pattern** (1 connections) — `.claude/skills/devops-engineer/references/docker-patterns.md`
+- **CI/CD Pipeline Pattern** (1 connections) — `.claude/skills/devops-engineer/references/github-actions.md`
+- **Incident Severity Levels** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
+- **Mean Time To Resolve MTTR** (1 connections) — `.claude/skills/devops-engineer/references/incident-response.md`
 - *... and 11 more nodes in this community*
 
 ## Relationships
@@ -37,12 +37,27 @@
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-24-test-coverage-gaps.md`
+- `.claude/skills/devops-engineer/SKILL.md`
+- `.claude/skills/devops-engineer/references/deployment-strategies.md`
+- `.claude/skills/devops-engineer/references/docker-patterns.md`
+- `.claude/skills/devops-engineer/references/github-actions.md`
+- `.claude/skills/devops-engineer/references/incident-response.md`
+- `.claude/skills/devops-engineer/references/kubernetes.md`
+- `.claude/skills/devops-engineer/references/platform-engineering.md`
+- `.claude/skills/devops-engineer/references/release-automation.md`
+- `.claude/skills/devops-engineer/references/terraform-iac.md`
+- `.claude/skills/fastapi-expert/SKILL.md`
+- `.claude/skills/fastapi-expert/references/async-sqlalchemy.md`
+- `.claude/skills/fastapi-expert/references/authentication.md`
+- `.claude/skills/fastapi-expert/references/endpoints-routing.md`
+- `.claude/skills/fastapi-expert/references/migration-from-django.md`
+- `.claude/skills/fastapi-expert/references/pydantic-v2.md`
+- `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Audit Trail
 
-- EXTRACTED: 70 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 76 (88%)
+- INFERRED: 10 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

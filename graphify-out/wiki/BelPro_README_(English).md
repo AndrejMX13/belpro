@@ -1,48 +1,49 @@
 # BelPro README (English)
 
-> 23 nodes
+> 24 nodes
 
 ## Key Concepts
 
-- **Analitika (Analytics Screen)** (9 connections) — `docs/images/belpro-analitika.png`
-- **Administracija (Administration Screen)** (7 connections) — `docs/images/belpro-administracija.png`
-- **Dnevnik Napak (Error Log Screen)** (6 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Dnevniki (Work Diary Entries Screen)** (6 connections) — `docs/images/belpro-dnevniki.png`
-- **Shared Sidebar Navigation (Prostovoljci, Dnevniki, Analitika, Porocila, Nastavitve, Dokumenti, Administracija, Dnevnik napak, Odjava)** (4 connections) — `docs/images/belpro-administracija.png`
-- **Potrdi (Acknowledge) Button on Error Entry** (3 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Stanje Sistema (System Status Panel)** (2 connections) — `docs/images/belpro-administracija.png`
-- **Shrani (Save) Button** (2 connections) — `docs/images/belpro-administracija.png`
-- **Service Health Indicators (PostgreSQL, Whisper, n8n, WhatsApp, Disk, Heartbeat)** (2 connections) — `docs/images/belpro-administracija.png`
-- **KPI Summary Cards (Ure v mesecu, Aktivni prostovoljci, Caka odobritev, Odobreno, Zavrnjeno, Brez vnosov)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Year/Month Period Filter (Leto, Mesec dropdowns)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Horizontal Bar Chart: Ure po Prostovoljcih (Hours per Volunteer)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Vertical Bar Chart: Ure po Lokacijah (Hours per Location)** (2 connections) — `docs/images/belpro-analitika.png`
-- **Error Log Entry Card (source, timestamp, message, detail)** (2 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Dnevniki Filter Bar (Volunteer dropdown, Date range pickers, Location search, Isci/Ponastavi buttons)** (2 connections) — `docs/images/belpro-dnevniki.png`
-- **Entry Status Badge (Odobreno approved status indicator)** (2 connections) — `docs/images/belpro-dnevniki.png`
-- **Sistemske Nastavitve (System Settings Form)** (1 connections) — `docs/images/belpro-administracija.png`
-- **Izvozi CSV (Export CSV) Button** (1 connections) — `docs/images/belpro-analitika.png`
-- **Line Chart: Mesecni Trend Zadnjih 6 Mesecev (Monthly 6-Month Trend)** (1 connections) — `docs/images/belpro-analitika.png`
-- **Samo Nepotrjene Filter Checkbox (Show Only Unacknowledged Errors)** (1 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Navigation Badge Counter on Dnevnik Napak Menu Item** (1 connections) — `docs/images/belpro-dnevnik-napak.png`
-- **Dnevniki Data Table (Datum dela, Prostovoljec, Opis dela, Ure, Lokacija, Dan vnosa, Status, Dejanja columns)** (1 connections) — `docs/images/belpro-dnevniki.png`
-- **Pagination Control (Prikazujem 1-20 od 44, Prejsnja/Naslednja buttons)** (1 connections) — `docs/images/belpro-dnevniki.png`
+- **test_managers.py** (14 connections) — `api/tests/test_managers.py`
+- **seed_whatsapp_phone_from_env()** (7 connections) — `api/main.py`
+- **lifespan()** (5 connections) — `api/main.py`
+- **test_seed_whatsapp_phone_populates_null_db_field()** (3 connections) — `api/tests/test_managers.py`
+- **test_seed_whatsapp_phone_does_not_overwrite_existing_value()** (3 connections) — `api/tests/test_managers.py`
+- **test_change_password_invalidates_old_credentials()** (2 connections) — `api/tests/test_managers.py`
+- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
+- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
+- **test_get_manager_returns_profile()** (1 connections) — `api/tests/test_managers.py`
+- **test_create_manager_returns_409_when_already_configured()** (1 connections) — `api/tests/test_managers.py`
+- **test_auth_wrong_password_returns_401()** (1 connections) — `api/tests/test_managers.py`
+- **test_auth_missing_credentials_returns_401()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_includes_wa_fields()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_auto_syncs_when_evolution_reports_new_phone()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_no_sync_when_phone_already_matches()** (1 connections) — `api/tests/test_managers.py`
+- **test_config_info_shows_db_phone_when_disconnected()** (1 connections) — `api/tests/test_managers.py`
+- **test_update_manager_normalizes_whatsapp_phone()** (1 connections) — `api/tests/test_managers.py`
+- **test_update_manager_rejects_too_short_phone()** (1 connections) — `api/tests/test_managers.py`
+- **test_update_manager_empty_phone_not_stored_as_empty_string()** (1 connections) — `api/tests/test_managers.py`
+- **seed_whatsapp_phone_from_env writes normalized phone to DB when DB value is null** (1 connections) — `api/tests/test_managers.py`
+- **seed_whatsapp_phone_from_env leaves existing DB value untouched.** (1 connections) — `api/tests/test_managers.py`
+- **After a password change, old credentials return 401 and new ones return 200.** (1 connections) — `api/tests/test_managers.py`
+- **Seed ngo_whatsapp_phone from .env into DB on first boot, if DB value is null.** (1 connections) — `api/main.py`
+- **Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null.** (1 connections) — `api/main.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Normalise phone to bare E.164 digits, pass through None.]] (2 shared connections)
+- [[Treat empty string as absent — store None rather than ''.]] (1 shared connections)
+- [[volunteers.js]] (1 shared connections)
 
 ## Source Files
 
-- `docs/images/belpro-administracija.png`
-- `docs/images/belpro-analitika.png`
-- `docs/images/belpro-dnevnik-napak.png`
-- `docs/images/belpro-dnevniki.png`
+- `api/main.py`
+- `api/tests/test_managers.py`
 
 ## Audit Trail
 
-- EXTRACTED: 48 (77%)
-- INFERRED: 14 (23%)
+- EXTRACTED: 46 (88%)
+- INFERRED: 6 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

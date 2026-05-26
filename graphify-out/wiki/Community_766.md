@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Hour of day (0–23) at which the daily backup runs.** (0 connections) — `api/services/app_settings.py`
+- **Number of days approved entry photos are retained on disk.** (0 connections) — `api/services/app_settings.py`
 
 ## Relationships
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/log-entries/{id}/photos/{photo_id}/file (get_photo_file)** (0 connections) — `api/routers/log_entries.py`
+- **PATCH /api/volunteers/{id}/activate (activate_volunteer)** (0 connections) — `api/routers/volunteers.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/log_entries.py`
+- `api/routers/volunteers.py`
 
 ## Audit Trail
 

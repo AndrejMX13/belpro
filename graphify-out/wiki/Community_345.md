@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **settings** (10 connections) — `n8n/workflows/volunteer_entry.json`
-- **executionOrder** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **timezone** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **saveDataErrorExecution** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **saveManualExecutions** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **binaryMode** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **timeSavedMode** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **callerPolicy** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **availableInMCP** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern 1: Try-Catch with Error Trigger** (4 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern 2: Validation Early Exit** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **Pattern 3: Continue On Fail** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block23 (Main Flow:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block26 (Webhook → IF (validate) → [True: Process])** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:block28 (Webhook → Database (critical) → Slack (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Code Reviewer Skill]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

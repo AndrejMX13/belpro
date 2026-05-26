@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **project_fastapi_lifespan.md** (1 connections) — `.claude/memory/project_fastapi_lifespan.md`
-- **code:python (from contextlib import asynccontextmanager)** (1 connections) — `.claude/memory/project_fastapi_lifespan.md`
+- **loadReports** (1 connections) — `frontend/js/reports.js`
+- **monthly_summary** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `.claude/memory/project_fastapi_lifespan.md`
+- `api/routers/reports.py`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 

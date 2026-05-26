@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Module 9: statistics - Statistical Functions** (3 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Basic Statistics** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Aggregate from Items** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import statistics)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Python Modes: Beta vs Native** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Python (Beta) - Recommended** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Python (Native) (Beta)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Python (Beta) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Python (Native) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

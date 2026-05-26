@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **project_error_reporting_pattern.md** (1 connections) — `.claude/memory/project_error_reporting_pattern.md`
-- **code:python (from models.error_log import ErrorLog)** (1 connections) — `.claude/memory/project_error_reporting_pattern.md`
+- **loadAppLog** (1 connections) — `frontend/js/errors.js`
+- **list_errors** (1 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -13,7 +13,8 @@
 
 ## Source Files
 
-- `.claude/memory/project_error_reporting_pattern.md`
+- `api/routers/errors.py`
+- `frontend/js/errors.js`
 
 ## Audit Trail
 

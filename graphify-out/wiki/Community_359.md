@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Pattern 4: $node - Reference Other Nodes** (5 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **Example 3: Access Node Metadata** (2 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (const oldData = $node["Get Old Data"].json;)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
-- **code:javascript (// Get data from specific execution path)** (1 connections) — `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- **Core Variables** (5 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$json - Current Node Output** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$node - Reference Other Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$now - Current Timestamp** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **$env - Environment Variables** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$json.fieldName}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$node["Node Name"].json.fieldName}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$now}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript ({{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 410]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/DATA_ACCESS.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

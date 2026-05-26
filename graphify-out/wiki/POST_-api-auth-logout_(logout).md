@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Task 4: Migrate call sites to get_app_settings** (12 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[Settings, Depends(get_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (settings: Annotated[AppSettings, Depends(get_app_settings)],)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Remove:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:python (# Before:)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:block33 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (git add api/routers/log_entries.py api/routers/auth.py api/r)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. Data Fetching & Storage** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. API to API Integration** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. Data Enrichment** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. Monitoring & Alerting** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **5. Batch Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block5 (1. Schedule (every hour))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - filter issues)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block7 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block8 (1. Postgres (SELECT new contacts))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block9 (1. Schedule (every 5 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block10 (1. Manual Trigger)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[Community 538]] (1 shared connections)
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 

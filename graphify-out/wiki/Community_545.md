@@ -1,27 +1,30 @@
 # Community 545
 
-> 5 nodes
+> 6 nodes
 
 ## Key Concepts
 
-- **settings.local.json** (3 connections) — `.claude/settings.local.json`
-- **permissions** (2 connections) — `.claude/settings.local.json`
-- **allow** (1 connections) — `.claude/settings.local.json`
-- **enabledMcpjsonServers** (1 connections) — `.claude/settings.local.json`
-- **enableAllProjectMcpServers** (1 connections) — `.claude/settings.local.json`
+- **send_email()** (6 connections) — `api/services/email.py`
+- **email.py** (5 connections) — `api/services/email.py`
+- **_check_mx()** (3 connections) — `api/services/email.py`
+- **Async email sender backed by aiosmtplib.  Reads SMTP config from the Manager row** (1 connections) — `api/services/email.py`
+- **Raise ValueError if the recipient domain has no MX records.** (1 connections) — `api/services/email.py`
+- **Send an email via STARTTLS SMTP.      Raises SmtpNotConfiguredError if host/port** (1 connections) — `api/services/email.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 349]] (2 shared connections)
+- [[n8n Set Node Pattern]] (2 shared connections)
+- [[Community 439]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/settings.local.json`
+- `api/services/email.py`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 15 (88%)
+- INFERRED: 2 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Common Gotchas** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **1. Webhook Data Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **2. Multiple Input Items** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript (❌ {{$json.email}})** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript ({{$json[0].field}}  // First item only)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **3. Authentication Issues** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **4. Node Execution Order** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **5. Expression Errors** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **3. Missing Rate Limiting** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When to Fix** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Internal microservice - no rate limits)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Runs once per day)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// API returns 429 and n8n handles it)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: Loop hitting rate-limited API)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[restore.sh]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

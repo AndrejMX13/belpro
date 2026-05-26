@@ -4,43 +4,32 @@
 
 ## Key Concepts
 
-- **send_monthly_reports()** (15 connections) — `api/routers/reports.py`
-- **EvolutionClient** (7 connections) — `api/services/evolution.py`
-- **n8n: POST /api/reports/send-monthly (Trigger Monthly Report Delivery)** (7 connections) — `n8n/workflows/monthly_reports.json`
-- **.send_document()** (4 connections) — `api/services/evolution.py`
-- **.get_connected_phone()** (3 connections) — `api/services/evolution.py`
-- **POST /api/reports/send-monthly (send_monthly_reports)** (3 connections) — `api/routers/reports.py`
-- **evolution.py** (2 connections) — `api/services/evolution.py`
-- **BelPro - Mesecna Porocila (Monthly Reports Workflow)** (2 connections) — `n8n/workflows/monthly_reports.json`
-- **Generate monthly PDFs and deliver them via email and/or WhatsApp.      Default** (1 connections) — `api/routers/reports.py`
-- **.__init__()** (1 connections) — `api/services/evolution.py`
-- **Async HTTP client for the Evolution API WhatsApp gateway.** (1 connections) — `api/services/evolution.py`
-- **Return (normalized_phone, state) for the configured instance.          States: "** (1 connections) — `api/services/evolution.py`
-- **Send a PDF document to a WhatsApp number via Evolution API sendMedia.** (1 connections) — `api/services/evolution.py`
+- **Performance Testing** (7 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **k6 Load Test** (2 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **Stress Test** (2 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **Spike Test** (2 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **API Testing with Auth** (2 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **Thresholds Reference** (2 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **performance-testing.md** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **code:javascript (import http from 'k6/http';)** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **code:javascript (export const options = {)** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **code:javascript (export const options = {)** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **code:javascript (import http from 'k6/http';)** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **code:javascript (thresholds: {)** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
+- **Quick Reference** (1 connections) — `.claude/skills/test-master/references/performance-testing.md`
 
 ## Relationships
 
-- [[GET /logo]] (4 shared connections)
-- [[Community 434]] (3 shared connections)
-- [[Community 543]] (2 shared connections)
-- [[Reject tax numbers that fail the Modulus 11 check digit.]] (2 shared connections)
-- [[test_auth.py]] (2 shared connections)
-- [[volunteers.js]] (1 shared connections)
-- [[BelPro System Specification]] (1 shared connections)
-- [[006_whatsapp_and_smtp_config.py]] (1 shared connections)
-- [[HTTP: Fetch Media]] (1 shared connections)
-- [[scripts/gen_diagrams_sl.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `api/services/evolution.py`
-- `n8n/workflows/monthly_reports.json`
+- `.claude/skills/test-master/references/performance-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 30 (62%)
-- INFERRED: 18 (38%)
+- EXTRACTED: 24 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

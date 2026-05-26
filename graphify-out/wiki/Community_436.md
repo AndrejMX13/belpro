@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **test_config.py** (4 connections) — `api/tests/test_config.py`
-- **test_get_evolution_instance_no_auth_required()** (2 connections) — `api/tests/test_config.py`
-- **test_get_evolution_instance_returns_instance_name()** (2 connections) — `api/tests/test_config.py`
-- **test_get_evolution_instance_reflects_db_value()** (2 connections) — `api/tests/test_config.py`
-- **Tests for the public config endpoint consumed by n8n workflows.** (1 connections) — `api/tests/test_config.py`
-- **GET /api/config/evolution-instance is publicly accessible.** (1 connections) — `api/tests/test_config.py`
-- **Response contains a non-empty instance_name string matching the seeded default.** (1 connections) — `api/tests/test_config.py`
-- **Config endpoint reflects value updated via PATCH /api/admin/settings.** (1 connections) — `api/tests/test_config.py`
+- **Task 7: n8n — manager_approval workflow** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (grep -n "evolution-api.*belpro" n8n/workflows/manager_approv)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ("Fetch Config": {)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ("={{ 'http://evolution-api:8080/message/sendText/' + $('Fetc)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:json ("={{ 'http://evolution-api:8080/chat/getBase64FromMediaMessa)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add n8n/workflows/manager_approval.json)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 401]] (1 shared connections)
 
 ## Source Files
 
-- `api/tests/test_config.py`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

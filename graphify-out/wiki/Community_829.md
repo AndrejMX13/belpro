@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/errors (list_errors)** (0 connections) — `api/routers/errors.py`
+- **POST /api/reports/monthly/pdf (generate_monthly_pdf)** (0 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
+- `api/routers/reports.py`
 
 ## Audit Trail
 

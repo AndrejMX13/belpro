@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Codebase context** (6 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **Task 1: DB migration — unique partial indexes** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:python ("""Add unique partial indexes to monthly_reports.)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block2 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block3 (docker compose exec api alembic current)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:block4 (docker compose exec postgres psql -U belpro -d belpro -c "\d)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **code:bash (git add api/db/migrations/versions/010_monthly_reports_uniqu)** (1 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 5: Log Entry Endpoints** (4 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 5.1 — Write tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 5.2 — Run** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Step 5.3 — Commit** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:python (# api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (cd api && pytest tests/test_log_entries.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **code:bash (git add api/tests/test_log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Relationships
 
-- [[Community 533]] (1 shared connections)
+- [[Community 393]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- `docs/superpowers/plans/2026-05-09-test-suite.md`
 
 ## Audit Trail
 

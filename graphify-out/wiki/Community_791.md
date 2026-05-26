@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_issue_workflow.md** (0 connections) — `.claude/memory/feedback_issue_workflow.md`
+- **feedback_docker_restart.md** (0 connections) — `.claude/memory/feedback_docker_restart.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_issue_workflow.md`
+- `.claude/memory/feedback_docker_restart.md`
 
 ## Audit Trail
 

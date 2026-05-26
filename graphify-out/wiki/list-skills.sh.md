@@ -4,32 +4,32 @@
 
 ## Key Concepts
 
-- **OWASP Top 10 Prevention** (8 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A01: Injection Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A02: Broken Authentication** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A03: Sensitive Data Exposure** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A05: Broken Access Control** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **A07: XSS Prevention** (2 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **owasp-prevention.md** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **OWASP Top 10 Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// SQL Injection - Use parameterized queries)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Use bcrypt for passwords)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Encrypt sensitive data at rest)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Always validate on server side)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **code:typescript (// Use Content Security Policy)** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **Tool Configuration** (7 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Database as Tool** (3 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Making ANY Node an AI Tool** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Pre-built Tool Nodes** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **MCP Client Tool** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **AI Agent Tool (Sub-Agents)** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Code Node as Tool** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block12 (AI Agent)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:sql (CREATE USER ai_readonly WITH PASSWORD 'secure_password';)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// Tool metadata)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 27 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

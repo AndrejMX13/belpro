@@ -4,14 +4,14 @@
 
 ## Key Concepts
 
-- **PDF Generated (Per Volunteer + Consolidated)** (3 connections) — `scripts/diagrams/fig3_porocanje.png`
-- **Email Sent to Volunteer and Manager** (3 connections) — `scripts/diagrams/fig3_porocanje.png`
-- **PDF Generated (Per Volunteer + Consolidated)** (3 connections) — `scripts/diagrams/fig3_reporting.png`
-- **Email Sent to Volunteer and Manager** (3 connections) — `scripts/diagrams/fig3_reporting.png`
-- **28th of Month — Automatic Trigger** (2 connections) — `scripts/diagrams/fig3_porocanje.png`
-- **CSD Submission — Volunteer Signs and Submits** (2 connections) — `scripts/diagrams/fig3_porocanje.png`
-- **28th of Month — Automatic Trigger** (2 connections) — `scripts/diagrams/fig3_reporting.png`
-- **CSD Submission — Volunteer Signs and Submits** (2 connections) — `scripts/diagrams/fig3_reporting.png`
+- **Security Policy** (7 connections) — `SECURITY.md`
+- **SECURITY.md** (1 connections) — `SECURITY.md`
+- **Reporting a vulnerability** (1 connections) — `SECURITY.md`
+- **Scope** (1 connections) — `SECURITY.md`
+- **Out of scope** (1 connections) — `SECURITY.md`
+- **EMŠO encryption** (1 connections) — `SECURITY.md`
+- **Supported versions** (1 connections) — `SECURITY.md`
+- **Security model assumptions** (1 connections) — `SECURITY.md`
 
 ## Relationships
 
@@ -19,12 +19,11 @@
 
 ## Source Files
 
-- `scripts/diagrams/fig3_porocanje.png`
-- `scripts/diagrams/fig3_reporting.png`
+- `SECURITY.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -1,39 +1,35 @@
 # Community 348
 
-> 9 nodes
+> 10 nodes
 
 ## Key Concepts
 
-- **__init__.py** (9 connections) — `api/routers/__init__.py`
-- **__init__.py** (1 connections) — `api/core/__init__.py`
-- **__init__.py** (1 connections) — `api/db/__init__.py`
-- **__init__.py** (1 connections) — `api/schemas/__init__.py`
-- **__init__.py** (1 connections) — `api/services/__init__.py`
-- **__init__.py** (1 connections) — `api/tests/__init__.py`
-- **__init__.py** (1 connections) — `api/utils/__init__.py`
-- **__init__.py** (1 connections) — `tests/__init__.py`
-- **__init__.py** (1 connections) — `tests/workflow/__init__.py`
+- **emso_checksum_valid()** (7 connections) — `api/utils/emso.py`
+- **test_emso.py** (4 connections) — `api/tests/test_emso.py`
+- **_validate_emso_checksum()** (2 connections) — `api/schemas/volunteer.py`
+- **test_emso_checksum_valid_accepts_valid_numbers()** (2 connections) — `api/tests/test_emso.py`
+- **test_emso_checksum_valid_rejects_bad_checksum()** (2 connections) — `api/tests/test_emso.py`
+- **test_emso_checksum_valid_rejects_malformed_input()** (2 connections) — `api/tests/test_emso.py`
+- **emso.py** (2 connections) — `api/utils/emso.py`
+- **Unit tests for the EMŠO checksum validator utility.** (1 connections) — `api/tests/test_emso.py`
+- **EMŠO (Enotna matična številka občana) validation utilities.** (1 connections) — `api/utils/emso.py`
+- **Return True if emso passes the mod-11 checksum.      Assumes the caller already** (1 connections) — `api/utils/emso.py`
 
 ## Relationships
 
+- [[test_app_settings.py]] (1 shared connections)
 - [[BelPro System Specification]] (1 shared connections)
 
 ## Source Files
 
-- `api/core/__init__.py`
-- `api/db/__init__.py`
-- `api/routers/__init__.py`
-- `api/schemas/__init__.py`
-- `api/services/__init__.py`
-- `api/tests/__init__.py`
-- `api/utils/__init__.py`
-- `tests/__init__.py`
-- `tests/workflow/__init__.py`
+- `api/schemas/volunteer.py`
+- `api/tests/test_emso.py`
+- `api/utils/emso.py`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
-- INFERRED: 17 (100%)
+- EXTRACTED: 15 (62%)
+- INFERRED: 9 (38%)
 - AMBIGUOUS: 0 (0%)
 
 ---

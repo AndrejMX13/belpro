@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **Production Gotchas** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Correct Node Reference Syntax** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **SplitInBatches Loop Semantics** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Cross-Iteration Data Not Available in Python** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Mode Selection Guide** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Run Once for All Items (Recommended - Default)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Run Once for Each Item** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Example: Calculate total from all items)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# Example: Add processing timestamp to each item)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 

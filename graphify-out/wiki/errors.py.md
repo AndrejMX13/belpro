@@ -4,45 +4,57 @@
 
 ## Key Concepts
 
-- **Automation Frameworks** (9 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Advanced Framework Patterns** (4 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Maintenance Strategies** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Scaling Strategies** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Parallel & Distributed Execution** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **CI/CD Integration** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Team Enablement** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Automation Strategy** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Screenplay Pattern** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Keyword-Driven Testing** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Model-Based Testing** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Self-Healing Locators** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Error Recovery & Smart Retry** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Resource Optimization** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Complete Pipeline** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Test Data Factories** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Training Program** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Code Review Checklist** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **ROI Calculation** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Selection Criteria** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Reporting & Metrics** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Custom Reporter** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **automation-frameworks.md** (1 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **code:typescript (// Better separation of concerns than POM)** (1 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **code:typescript (const keywords = {)** (1 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **LogEntry (ORM)** (22 connections) — `api/models/log_entry.py`
+- **log_entries.py** (17 connections) — `api/routers/log_entries.py`
+- **EntryStatus (Enum)** (15 connections) — `api/models/log_entry.py`
+- **LogEntryResponse (Schema)** (11 connections) — `api/schemas/log_entry.py`
+- **upload_photo_base64()** (10 connections) — `api/routers/log_entries.py`
+- **upload_photo()** (9 connections) — `api/routers/log_entries.py`
+- **create_log_entry()** (8 connections) — `api/routers/log_entries.py`
+- **LogEntryPhoto (ORM)** (8 connections) — `api/models/log_entry_photo.py`
+- **list_log_entries()** (7 connections) — `api/routers/log_entries.py`
+- **delete_log_entry()** (7 connections) — `api/routers/log_entries.py`
+- **approve_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **reject_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **notify_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **confirm_log_entry()** (6 connections) — `api/routers/log_entries.py`
+- **get_log_entry()** (5 connections) — `api/routers/log_entries.py`
+- **_extract_exif()** (4 connections) — `api/routers/log_entries.py`
+- **get_photo_file()** (4 connections) — `api/routers/log_entries.py`
+- **delete_photo()** (4 connections) — `api/routers/log_entries.py`
+- **PhotoResponse (Schema)** (4 connections) — `api/schemas/log_entry.py`
+- **LogEntryCreate (Schema)** (3 connections) — `api/schemas/log_entry.py`
+- **LogEntryBrief (Schema)** (3 connections) — `api/schemas/volunteer.py`
+- **get_photo_limit()** (2 connections) — `api/routers/log_entries.py`
+- **LogEntryListResponse (Schema)** (2 connections) — `api/schemas/log_entry.py`
+- **Log entries CRUD router — volunteer work diary entries.** (1 connections) — `api/routers/log_entries.py`
+- **Extract timestamp and GPS from image EXIF. All best-effort — never raises.** (1 connections) — `api/routers/log_entries.py`
 - *... and 14 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[log_entries.py]] (8 shared connections)
+- [[API.auth.logout()]] (6 shared connections)
+- [[Volunteer (ORM)]] (5 shared connections)
+- [[load_key()]] (4 shared connections)
+- [[renderDetail() — volunteer detail page]] (3 shared connections)
+- [[VolunteerUpdate]] (3 shared connections)
+- [[scripts/setup.sh]] (3 shared connections)
+- [[ops_server.py]] (2 shared connections)
+- [[test_app_settings.py]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/references/automation-frameworks.md`
+- `api/models/log_entry.py`
+- `api/models/log_entry_photo.py`
+- `api/routers/log_entries.py`
+- `api/schemas/log_entry.py`
+- `api/schemas/volunteer.py`
 
 ## Audit Trail
 
-- EXTRACTED: 76 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 162 (88%)
+- INFERRED: 23 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

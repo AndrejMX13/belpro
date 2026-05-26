@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **loadAppLog** (1 connections) — `frontend/js/errors.js`
-- **list_errors** (1 connections) — `api/routers/errors.py`
+- **exportReportPdf** (1 connections) — `frontend/js/reports.js`
+- **generate_monthly_pdf** (1 connections) — `api/routers/reports.py`
 
 ## Relationships
 
@@ -13,8 +13,8 @@
 
 ## Source Files
 
-- `api/routers/errors.py`
-- `frontend/js/errors.js`
+- `api/routers/reports.py`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 

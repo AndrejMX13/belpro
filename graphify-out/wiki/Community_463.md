@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Conditional Content** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Date Manipulation** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **String Manipulation** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Ternary operator)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Add days)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (// Substring)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Module 4: base64 - Encoding/Decoding** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Encode String to Base64** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Decode Base64 to String** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Basic Auth Header** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import base64)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import base64)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (import base64)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

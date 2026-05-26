@@ -1,28 +1,29 @@
 # Community 506
 
-> 6 nodes
+> 7 nodes
 
 ## Key Concepts
 
-- **13. Avtomatizirana testna zbirka** (5 connections) — `SPEC_SL.md`
-- **Zagon** (2 connections) — `SPEC_SL.md`
-- **Infrastruktura** (1 connections) — `SPEC_SL.md`
-- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `SPEC_SL.md`
-- **Testne datoteke** (1 connections) — `SPEC_SL.md`
-- **Dimni test varnostnega kopiranja in obnovitve** (1 connections) — `SPEC_SL.md`
+- **main()** (5 connections) — `ops/scripts/monthly_report_send.py`
+- **monthly_report_send.py** (3 connections) — `ops/scripts/monthly_report_send.py`
+- **report_error()** (3 connections) — `ops/scripts/monthly_report_send.py`
+- **resolve_period()** (3 connections) — `ops/scripts/monthly_report_send.py`
+- **POST failure to the API error log.** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **Return (year, month) for the given period label.      'current'  → today's year** (1 connections) — `ops/scripts/monthly_report_send.py`
+- **Resolve target month and call the send-monthly API endpoint.** (1 connections) — `ops/scripts/monthly_report_send.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- [[load_key()]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `ops/scripts/monthly_report_send.py`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 16 (94%)
+- INFERRED: 1 (6%)
 - AMBIGUOUS: 0 (0%)
 
 ---

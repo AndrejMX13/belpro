@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **Task 5: Frontend — Renames + Two-Column Date Lists** (15 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (filter: { status: 'pending_manager', search_q: '', date_from)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (filter: { status: '', search_q: '', date_from: null, date_to)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (volunteerLogState.filter = { status: '', search_q: '', date_)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (function renderApprovalsThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="8">${msg})** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="5)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (function renderVolunteerLogThead() {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (return `)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (setHtml(tbody, `<tr class="empty-row"><td colspan="6">Ni vno)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<tbody id="vlog-body"><tr class="loading-row"><td colspan="6)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<div class="detail-name">${esc(entry.entry_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<div class="detail-name">${esc(entry.work_date)}</div>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Query Patterns** (8 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Common Table Expressions (CTEs)** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Recursive CTEs** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Advanced JOIN Patterns** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Subquery Optimization** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **PIVOT/UNPIVOT Operations** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Set Operations** (2 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **query-patterns.md** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Basic CTE for readability)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Organizational hierarchy traversal)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Self-join for finding gaps in sequences)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- Scalar subquery in SELECT (use sparingly - can cause N+1))** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- PostgreSQL CROSSTAB (requires tablefunc extension))** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **code:sql (-- UNION for combining distinct results)** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
+- **Performance Tips** (1 connections) — `.claude/skills/sql-pro/references/query-patterns.md`
 
 ## Relationships
 
-- [[API Client (api.js)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/sql-pro/references/query-patterns.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

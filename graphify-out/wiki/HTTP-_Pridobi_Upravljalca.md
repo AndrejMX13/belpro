@@ -4,42 +4,44 @@
 
 ## Key Concepts
 
-- **Database Operations Pattern** (15 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Checklist for Database Workflows** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **database_operations.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block1 (Trigger → [Query/Read] → [Transform] → [Write/Update] → [Ver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block49 (Schedule → Postgres (SELECT new records) → Transform → MySQL)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block50 (Schedule → [Multiple DB reads] → Merge → Transform → Warehou)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block51 (Schedule → Postgres (SELECT all) → JSON → Google Drive (uplo)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Planning** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Implementation** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Performance** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Security** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Reliability** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **AI Agent Workflow Pattern** (19 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Agent Types** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Real Template Examples** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Pattern Structure** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **ai_agent_workflow.md** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block1 (Trigger → AI Agent (Model + Tools + Memory) → [Process Respo)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Core AI Connection Types** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Security: Treat Tool Output as Untrusted Input** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Conversational Agent** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. OpenAI Functions Agent** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. ReAct Agent** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block54 (Webhook → AI Agent (GPT-4 + Memory) → Webhook Response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block55 (Setup: Files → Embed → Vector Store)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block56 (Webhook → AI Agent (GPT-4 + Postgres Tool) → Format → Respon)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[Community 526]] (1 shared connections)
-- [[load_env.ps1]] (1 shared connections)
+- [[Community 384]] (1 shared connections)
 - [[load_env.sh]] (1 shared connections)
-- [[Community 385]] (1 shared connections)
+- [[list-skills.sh]] (1 shared connections)
 - [[Community 482]] (1 shared connections)
 - [[Community 483]] (1 shared connections)
-- [[Community 301]] (1 shared connections)
+- [[Community 485]] (1 shared connections)
 - [[Community 484]] (1 shared connections)
-- [[Community 383]] (1 shared connections)
-- [[PATCH /log-entries/{id}/reject]] (1 shared connections)
+- [[Community 303]] (1 shared connections)
+- [[Community 304]] (1 shared connections)
+- [[Community 343]] (1 shared connections)
+- [[scripts/rotate_emso_key.sh]] (1 shared connections)
+- [[Community 535]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 
-- EXTRACTED: 38 (100%)
+- EXTRACTED: 40 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

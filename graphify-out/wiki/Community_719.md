@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **Code: Pripravi Popravek** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **Code: Clear State Confirm** (3 connections) — `n8n/workflows/volunteer_entry.json`
 - **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- [[002_add_emso_hash.py]] (1 shared connections)
-- [[012_settings_table.py]] (1 shared connections)
+- [[API.reports.exportPdf()]] (1 shared connections)
+- [[test_health_returns_ok()]] (1 shared connections)
 
 ## Source Files
 

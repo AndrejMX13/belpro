@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Task 2: Phone normalization utility** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (from api.utils.phone import normalize_phone)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_phone_utils.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:python (import re)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:powershell (docker compose exec api pytest tests/test_phone_utils.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
-- **code:bash (git add api/utils/__init__.py api/utils/phone.py api/tests/t)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **Critical Limitation: No External Libraries** (4 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **What's NOT Available** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **What IS Available (Standard Library)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ❌ NOT AVAILABLE - Will raise ModuleNotFoundError)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ AVAILABLE - Standard library only)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Workarounds** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 
-- [[Community 495]] (1 shared connections)
+- [[HTTP: Lookup Manager]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Audit Trail
 

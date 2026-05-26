@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Validation Profiles** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **minimal** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **runtime (RECOMMENDED)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **ai-friendly** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **strict** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **settings.local.json** (3 connections) — `.claude/settings.local.json`
+- **permissions** (2 connections) — `.claude/settings.local.json`
+- **allow** (1 connections) — `.claude/settings.local.json`
+- **enabledMcpjsonServers** (1 connections) — `.claude/settings.local.json`
+- **enableAllProjectMcpServers** (1 connections) — `.claude/settings.local.json`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `.claude/settings.local.json`
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

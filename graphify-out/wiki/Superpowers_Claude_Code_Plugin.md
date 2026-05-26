@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Design: httpOnly Cookie Auth (ISS-005)** (8 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Architecture** (5 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **2026-05-19-httponly-cookie-auth-design.md** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Problem** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Dual auth in `require_manager`** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Session token** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **New settings** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **New endpoints** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **File Map** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **What does NOT change** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Behaviour changes visible to the manager** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
-- **Not in scope** (1 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Async Testing** (7 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Test Setup** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Endpoint Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Auth Helper Fixture** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Service Tests** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Mocking Dependencies** (2 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **testing-async.md** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.fixture)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (@pytest.mark.asyncio)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **code:python (from unittest.mock import AsyncMock, patch)** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
+- **Quick Reference** (1 connections) — `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Relationships
 
@@ -24,7 +24,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- `.claude/skills/fastapi-expert/references/testing-async.md`
 
 ## Audit Trail
 

@@ -1,22 +1,24 @@
 # Community 754
 
-> 1 nodes
+> 2 nodes
 
 ## Key Concepts
 
-- **load-project-memory.sh** (0 connections) — `.claude/hooks/load-project-memory.sh`
+- **Prostovoljec Najden?** (3 connections) — `n8n/workflows/volunteer_entry.json`
+- **main** (1 connections) — `n8n/workflows/volunteer_entry.json`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[API.reports.exportPdf()]] (1 shared connections)
+- [[test_health_returns_ok()]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/hooks/load-project-memory.sh`
+- `n8n/workflows/volunteer_entry.json`
 
 ## Audit Trail
 
-- EXTRACTED: 0 (0%)
+- EXTRACTED: 4 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

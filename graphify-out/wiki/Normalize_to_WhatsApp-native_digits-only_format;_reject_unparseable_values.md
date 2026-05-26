@@ -1,35 +1,37 @@
 # Normalize to WhatsApp-native digits-only format; reject unparseable values.
 
-> 13 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **12. Testing Utilities** (6 connections) — `SPEC.md`
-- **`load_env.ps1` / `load_env.sh`** (3 connections) — `SPEC.md`
-- **`switch_manager_phone.ps1` / `switch_manager_phone.sh`** (3 connections) — `SPEC.md`
-- **Typical testing workflow** (3 connections) — `SPEC.md`
-- **`list_pending_entries.py`** (2 connections) — `SPEC.md`
-- **code:block3 (. .\scripts\load_env.ps1)** (1 connections) — `SPEC.md`
-- **code:bash (source scripts/load_env.sh)** (1 connections) — `SPEC.md`
-- **code:block5 (.\scripts\switch_manager_phone.ps1 volunteer   # set manager)** (1 connections) — `SPEC.md`
-- **code:bash (bash scripts/switch_manager_phone.sh volunteer)** (1 connections) — `SPEC.md`
-- **code:block7 (python scripts/list_pending_entries.py          # entries no)** (1 connections) — `SPEC.md`
-- **code:block8 (# 0. Load environment variables (once per session):)** (1 connections) — `SPEC.md`
-- **code:bash (# 0. Load environment variables (once per session):)** (1 connections) — `SPEC.md`
-- **Manual trigger nodes in n8n** (1 connections) — `SPEC.md`
+- **VolunteerUpdate** (14 connections) — `api/schemas/volunteer.py`
+- **test_volunteer_update_schema.py** (11 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_rejects_empty_first_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_rejects_empty_last_name()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_email_string()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_coerces_empty_email_to_none()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_accepts_none_email()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_normalises_phone()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_all_none_produces_empty_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **test_first_name_included_in_dump()** (2 connections) — `api/tests/test_volunteer_update_schema.py`
+- **Fields that can be updated on an existing volunteer.** (1 connections) — `api/schemas/volunteer.py`
+- **Unit tests for VolunteerUpdate schema — no DB required.** (1 connections) — `api/tests/test_volunteer_update_schema.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id} (update_volunteer)]] (1 shared connections)
+- [[test_app_settings.py]] (3 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
+- `api/schemas/volunteer.py`
+- `api/tests/test_volunteer_update_schema.py`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 26 (55%)
+- INFERRED: 21 (45%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,33 +1,34 @@
 # Manager WhatsApp Approval Workflow Design
 
-> 24 nodes
+> 25 nodes
 
 ## Key Concepts
 
-- **Database Dialect Differences** (13 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Auto-Incrementing Primary Keys** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **String Concatenation** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Date/Time Functions** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **LIMIT/OFFSET (Pagination)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Boolean Data Type** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **JSON/JSONB Support** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **String Comparison (Case Sensitivity)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Recursive CTEs** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Window Functions - Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **UPSERT (Insert or Update)** (2 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **dialect-differences.md** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (strict - automatic casting))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- Current timestamp)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL & MySQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (native BOOLEAN))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (JSONB - binary, indexable))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (case-sensitive by default))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL - Full support)** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **code:sql (-- PostgreSQL (ON CONFLICT))** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Data Type Mapping** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
-- **Performance Tips by Database** (1 connections) — `.claude/skills/sql-pro/references/dialect-differences.md`
+- **Auto Monthly Report Delivery — Design** (11 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Section 2 — Ops HTTP Server** (4 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Section 1 — Settings Storage** (3 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Section 3 — API Notification Call** (3 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Section 4 — Monthly Report Send Script** (3 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Section 5 — Docker Compose Changes** (3 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Process model** (2 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Crontab template** (2 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **2026-05-21-auto-monthly-reports-design.md** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Goal** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Architecture** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Tech Stack** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:python (@property)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:python (# AdminSettingsResponse)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **ops_server.py** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:block4 (# m h dom mon dow command)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:block5 (POST http://ops:9000/reconfigure)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:yaml (OPS_URL: http://ops:9000)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:block7 (usage: monthly_report_send.py --period {current,previous})** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:python (today = datetime.now(timezone.utc))** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:yaml (OPS_URL: http://ops:9000)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **code:yaml (healthcheck:)** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Error Handling Summary** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
+- **Files Changed** (1 connections) — `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
 
 ## Relationships
 
@@ -35,11 +36,11 @@
 
 ## Source Files
 
-- `.claude/skills/sql-pro/references/dialect-differences.md`
+- `docs/superpowers/specs/2026-05-21-auto-monthly-reports-design.md`
 
 ## Audit Trail
 
-- EXTRACTED: 46 (100%)
+- EXTRACTED: 48 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,31 +4,31 @@
 
 ## Key Concepts
 
-- **Code Reviewer Skill** (8 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Database Optimizer Skill** (6 connections) — `.claude/skills/database-optimizer/SKILL.md`
-- **Database Index Strategies** (5 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **PostgreSQL Tuning Reference** (5 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- **Database Query Optimization** (5 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
-- **Database Monitoring and Analysis** (4 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **Debugging Wizard Skill** (4 connections) — `.claude/skills/debugging-wizard/SKILL.md`
-- **Common Bug Patterns** (4 connections) — `.claude/skills/debugging-wizard/references/common-patterns.md`
-- **N+1 Query Anti-Pattern** (3 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **MySQL Tuning Reference** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Code Review Common Issues** (2 connections) — `.claude/skills/code-reviewer/references/common-issues.md`
-- **pg_stat_statements Extension** (2 connections) — `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- **EXPLAIN ANALYZE Execution Plan Analysis** (2 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
-- **Code Review Feedback Examples** (1 connections) — `.claude/skills/code-reviewer/references/feedback-examples.md`
-- **Receiving Code Review Feedback** (1 connections) — `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- **Code Review Report Template** (1 connections) — `.claude/skills/code-reviewer/references/report-template.md`
-- **Code Review Checklist** (1 connections) — `.claude/skills/code-reviewer/references/review-checklist.md`
-- **Spec Compliance Review** (1 connections) — `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- **Covering Index Pattern** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **Partial Index Pattern** (1 connections) — `.claude/skills/database-optimizer/references/index-strategies.md`
-- **InnoDB Buffer Pool Configuration** (1 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **PostgreSQL Shared Buffers Configuration** (1 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- **PostgreSQL Autovacuum Configuration** (1 connections) — `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- **Keyset Pagination Pattern** (1 connections) — `.claude/skills/database-optimizer/references/query-optimization.md`
-- **Race Condition Bug Pattern** (1 connections) — `.claude/skills/debugging-wizard/references/common-patterns.md`
+- **Evolution API — WhatsApp QR Code Troubleshooting** (8 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Setup Steps (clean instance from scratch)** (6 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Root Causes** (4 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **1. Outdated WhatsApp client version (the real blocker)** (3 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **5. Get QR code and scan it** (3 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **1. Ensure docker-compose.yml has the correct environment variables** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **2. Restart Evolution API** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **3. Delete any existing broken instance** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **4. Create instance and connect in one shot** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Reconnecting (phone unlinked, session expired)** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Checking instance status** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **Key env vars in .env** (2 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **EVOLUTION_QR_TROUBLESHOOTING.md** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **The Problem** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:block1 (https://raw.githubusercontent.com/WhiskeySockets/Baileys/mas)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:yaml (environment:)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **2. Dashboard UI bug (separate issue)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **3. Wrong env var mapping (found during investigation)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:yaml (evolution-api:)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:bash (docker compose up -d evolution-api)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:bash (curl -X DELETE \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:bash (curl -s -X POST \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:bash (curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:python (import json, sys)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
+- **code:bash (curl -s -H "apikey: YOUR_AUTHENTICATION_API_KEY" \)** (1 connections) — `EVOLUTION_QR_TROUBLESHOOTING.md`
 - *... and 3 more nodes in this community*
 
 ## Relationships
@@ -37,28 +37,12 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/SKILL.md`
-- `.claude/skills/code-reviewer/references/common-issues.md`
-- `.claude/skills/code-reviewer/references/feedback-examples.md`
-- `.claude/skills/code-reviewer/references/receiving-feedback.md`
-- `.claude/skills/code-reviewer/references/report-template.md`
-- `.claude/skills/code-reviewer/references/review-checklist.md`
-- `.claude/skills/code-reviewer/references/spec-compliance-review.md`
-- `.claude/skills/database-optimizer/SKILL.md`
-- `.claude/skills/database-optimizer/references/index-strategies.md`
-- `.claude/skills/database-optimizer/references/monitoring-analysis.md`
-- `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- `.claude/skills/database-optimizer/references/postgresql-tuning.md`
-- `.claude/skills/database-optimizer/references/query-optimization.md`
-- `.claude/skills/debugging-wizard/SKILL.md`
-- `.claude/skills/debugging-wizard/references/common-patterns.md`
-- `.claude/skills/debugging-wizard/references/debugging-tools.md`
-- `.claude/skills/debugging-wizard/references/quick-fixes.md`
+- `EVOLUTION_QR_TROUBLESHOOTING.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (76%)
-- INFERRED: 16 (24%)
+- EXTRACTED: 54 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 4: Admin router — GET/PATCH + tests** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (async def test_get_admin_settings_includes_evolution_instanc)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api pytest tests/test_admin.py::test_get)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api pytest tests/test_admin.py::test_get)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (git add api/routers/admin.py api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Authentication & Security** (5 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **1. Query Parameter Token** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **2. Header-Based Auth** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **3. Signature Verification** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript (// IF node - validate token)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript (// IF node - check header)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **4. IP Whitelist** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 398]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 

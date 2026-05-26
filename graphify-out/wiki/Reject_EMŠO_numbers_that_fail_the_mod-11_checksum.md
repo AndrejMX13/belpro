@@ -1,34 +1,35 @@
 # Reject EMŠO numbers that fail the mod-11 checksum.
 
-> 13 nodes
+> 14 nodes
 
 ## Key Concepts
 
-- **12. Pripomočki za testiranje** (6 connections) — `SPEC_SL.md`
-- **`load_env.ps1` / `load_env.sh`** (3 connections) — `SPEC_SL.md`
-- **`switch_manager_phone.ps1` / `switch_manager_phone.sh`** (3 connections) — `SPEC_SL.md`
-- **Tipičen potek testiranja** (3 connections) — `SPEC_SL.md`
-- **`list_pending_entries.py`** (2 connections) — `SPEC_SL.md`
-- **code:block3 (. .\scripts\load_env.ps1)** (1 connections) — `SPEC_SL.md`
-- **code:bash (source scripts/load_env.sh)** (1 connections) — `SPEC_SL.md`
-- **code:block5 (.\scripts\switch_manager_phone.ps1 volunteer   # nastavi tel)** (1 connections) — `SPEC_SL.md`
-- **code:bash (bash scripts/switch_manager_phone.sh volunteer)** (1 connections) — `SPEC_SL.md`
-- **code:block7 (python scripts/list_pending_entries.py          # vnosi, ki )** (1 connections) — `SPEC_SL.md`
-- **code:block8 (# 0. Nalaganje okoljskih spremenljivk (enkrat na sejo):)** (1 connections) — `SPEC_SL.md`
-- **code:bash (# 0. Nalaganje okoljskih spremenljivk (enkrat na sejo):)** (1 connections) — `SPEC_SL.md`
-- **Vozlišča ročnega sprožilca v n8n** (1 connections) — `SPEC_SL.md`
+- **graphify_infra.py** (7 connections) — `scripts/graphify_infra.py`
+- **_extract_compose_data()** (6 connections) — `scripts/graphify_infra.py`
+- **_service_node_id()** (5 connections) — `scripts/graphify_infra.py`
+- **_extract_nginx_edges()** (5 connections) — `scripts/graphify_infra.py`
+- **_make_node()** (4 connections) — `scripts/graphify_infra.py`
+- **_make_edge()** (4 connections) — `scripts/graphify_infra.py`
+- **inject()** (4 connections) — `scripts/graphify_infra.py`
+- **graphify_infra.py — Inject Docker service topology into graphify-out/graph.json.** (1 connections) — `scripts/graphify_infra.py`
+- **Convert a Docker service name to a graph node ID.** (1 connections) — `scripts/graphify_infra.py`
+- **Build a graph node dict for a Docker service.** (1 connections) — `scripts/graphify_infra.py`
+- **Build a graph edge dict.** (1 connections) — `scripts/graphify_infra.py`
+- **Extract service nodes and edges from a parsed docker-compose structure.      Ret** (1 connections) — `scripts/graphify_infra.py`
+- **Extract proxies_to edges from nginx config.      Matches the variable-upstream p** (1 connections) — `scripts/graphify_infra.py`
+- **Inject Docker service topology nodes and edges into graph.json.      Reads the t** (1 connections) — `scripts/graphify_infra.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `scripts/graphify_infra.py`
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 42 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

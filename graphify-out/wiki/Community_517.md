@@ -4,35 +4,24 @@
 
 ## Key Concepts
 
-- **Common Patterns - Python Code Node** (17 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **COMMON_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Pattern Overview** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **When to Use Each Pattern** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Task 4: Evolution API service client** (6 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import pytest)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:python (import logging)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:powershell (docker compose exec api pytest tests/test_evolution_service.)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **code:bash (git add api/services/evolution.py api/tests/test_evolution_s)** (1 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Relationships
 
-- [[Community 619]] (1 shared connections)
-- [[Community 625]] (1 shared connections)
-- [[Community 626]] (1 shared connections)
-- [[Community 620]] (1 shared connections)
-- [[Community 621]] (1 shared connections)
-- [[Community 628]] (1 shared connections)
-- [[Community 627]] (1 shared connections)
-- [[Community 622]] (1 shared connections)
-- [[Community 623]] (1 shared connections)
-- [[Community 624]] (1 shared connections)
-- [[Community 362]] (1 shared connections)
-- [[SmtpNotConfiguredError (Service)]] (1 shared connections)
+- [[Community 451]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

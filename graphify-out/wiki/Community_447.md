@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **3. $jmespath() - JSON Querying** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Basic Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Advanced Queries** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Common Patterns** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const data = $input.first().json;)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Pattern 1: Filter and project)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Common Patterns** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Access Nested Fields** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Reference Other Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Combine Variables** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// Simple nesting)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// Node without spaces)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// Concatenation (automatic))** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 551]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

@@ -1,38 +1,40 @@
 # HTTP: GET Volunteer (Mgr)
 
-> 14 nodes
+> 15 nodes
 
 ## Key Concepts
 
-- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README_SL.md`
-- **Nadzorna plošča za vodje** (2 connections) — `README_SL.md`
-- **Struktura projekta (Project layout)** (2 connections) — `README_SL.md`
-- **README_SL.md** (1 connections) — `README_SL.md`
-- **Kako deluje** (1 connections) — `README_SL.md`
-- **Vzorčna PDF poročila** (1 connections) — `README_SL.md`
-- **Tehnološki sklad (Stack)** (1 connections) — `README_SL.md`
-- **Sistemske zahteve** (1 connections) — `README_SL.md`
-- **Dostopne točke (Access points)** (1 connections) — `README_SL.md`
-- **Varnostne opombe (Security notes)** (1 connections) — `README_SL.md`
-- **code:block22 (belpro/)** (1 connections) — `README_SL.md`
-- **Razvoj s pomočjo umetne inteligence** (1 connections) — `README_SL.md`
-- **Roadmap** (1 connections) — `README_SL.md`
-- **Izven obsega - različica v1** (1 connections) — `README_SL.md`
+- **Testing Anti-Patterns Reference** (6 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **QA Methodology Reference** (5 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **TDD Iron Laws** (4 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Quality Gates Production Release Gate** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Shift-Left Testing Strategy** (2 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Anti-Pattern Integration Tests as Afterthought** (2 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Unit Testing Reference Jest pytest Patterns** (2 connections) — `.claude/skills/test-master/references/unit-testing.md`
+- **Exploratory Testing Charter** (1 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Accessibility Testing WCAG 2.1 AA** (1 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **Defect Management and Root Cause Analysis** (1 connections) — `.claude/skills/test-master/references/qa-methodology.md`
+- **RED-GREEN-REFACTOR Cycle** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Anti-Pattern Testing Mock Behavior** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern Test-Only Methods in Production** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern Mocking Without Understanding** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
+- **Anti-Pattern Incomplete Mocks** (1 connections) — `.claude/skills/test-master/references/testing-anti-patterns.md`
 
 ## Relationships
 
-- [[POST /api/volunteers/check-emso (check_emso)]] (1 shared connections)
-- [[Community 351]] (1 shared connections)
-- [[Code: Clear State Confirm]] (1 shared connections)
+- [[API.auth.logout()]] (1 shared connections)
 
 ## Source Files
 
-- `README_SL.md`
+- `.claude/skills/test-master/references/qa-methodology.md`
+- `.claude/skills/test-master/references/tdd-iron-laws.md`
+- `.claude/skills/test-master/references/testing-anti-patterns.md`
+- `.claude/skills/test-master/references/unit-testing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 22 (71%)
+- INFERRED: 9 (29%)
 - AMBIGUOUS: 0 (0%)
 
 ---

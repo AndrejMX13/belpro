@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **🚨 CRITICAL: Webhook Data Structure** (3 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Webhook Node Output Structure** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **Correct Webhook Data Access** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
-- **code:javascript (❌ WRONG: {{$json.name}})** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Example 10: Environment Variables** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **In HTTP Request (Headers)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **In URL** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (Authorization: Bearer {{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **code:javascript (https://api.example.com/data?key={{$env.API_KEY}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Relationships
 
-- [[IF: Manager ima telefon?]] (1 shared connections)
+- [[Community 335]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/SKILL.md`
+- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
 
 ## Audit Trail
 

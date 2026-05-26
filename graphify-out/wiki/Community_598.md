@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **013_error_log_table.py** (2 connections) — `api/db/migrations/versions/013_error_log_table.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/013_error_log_table.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/013_error_log_table.py`
-- **Create error_log table.** (1 connections) — `api/db/migrations/versions/013_error_log_table.py`
-- **Drop error_log table.** (1 connections) — `api/db/migrations/versions/013_error_log_table.py`
+- **010_monthly_reports_unique_idx.py** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- **upgrade()** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- **downgrade()** (2 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- **Create unique partial indexes on monthly_reports.** (1 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
+- **Drop unique partial indexes from monthly_reports.** (1 connections) — `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
 
 ## Relationships
 
@@ -16,7 +16,7 @@
 
 ## Source Files
 
-- `api/db/migrations/versions/013_error_log_table.py`
+- `api/db/migrations/versions/010_monthly_reports_unique_idx.py`
 
 ## Audit Trail
 

@@ -4,28 +4,28 @@
 
 ## Key Concepts
 
-- **Test Suite Design — BelPro API** (8 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Test Files** (7 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Fixture Architecture** (4 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Infrastructure** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Backup / Restore Smoke Test** (3 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **2026-05-09-test-suite-design.md** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Goals** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Constraints** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Test database** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **pytest configuration** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Session-scoped (once per `pytest` run)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Function-scoped (once per test)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Data factories** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **`test_health.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **`test_managers.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **`test_volunteers.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **`test_log_entries.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **`test_reports.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **`test_analytics.py`** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Sequence** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **Pass criteria** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
-- **What is NOT covered (yet)** (1 connections) — `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- **Testing with Pytest** (11 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Basic Pytest Structure** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Fixtures for Setup/Teardown** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Parametrize for Multiple Cases** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Mocking and Patching** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Async Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Pytest Markers** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Coverage** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Property-Based Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Test Organization** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **Snapshot Testing** (2 connections) — `.claude/skills/python-pro/references/testing.md`
+- **testing.md** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# test_user.py)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# conftest.py - shared fixtures)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (from unittest.mock import Mock, MagicMock, patch, AsyncMock,)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# Run with coverage)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (from hypothesis import given, strategies as st)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (# tests/)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
+- **code:python (import pytest)** (1 connections) — `.claude/skills/python-pro/references/testing.md`
 
 ## Relationships
 
@@ -33,7 +33,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-09-test-suite-design.md`
+- `.claude/skills/python-pro/references/testing.md`
 
 ## Audit Trail
 

@@ -21,14 +21,14 @@
 
 ## Relationships
 
-- [[Community 563]] (1 shared connections)
-- [[Community 361]] (1 shared connections)
-- [[Community 562]] (1 shared connections)
-- [[PasswordChangeRequest (Schema)]] (1 shared connections)
-- [[EmsoCheckResponse (Schema)]] (1 shared connections)
-- [[Community 452]] (1 shared connections)
-- [[Hour of day (0–23) at which the daily photo cleanup runs.]] (1 shared connections)
-- [[Community 327]] (1 shared connections)
+- [[Community 549]] (1 shared connections)
+- [[Community 356]] (1 shared connections)
+- [[Community 548]] (1 shared connections)
+- [[GET /api/health/detailed (health_detailed)]] (1 shared connections)
+- [[API Client (api.js)]] (1 shared connections)
+- [[Community 446]] (1 shared connections)
+- [[Day of month (1–28) on which monthly reports are auto-sent.]] (1 shared connections)
+- [[Community 322]] (1 shared connections)
 
 ## Source Files
 

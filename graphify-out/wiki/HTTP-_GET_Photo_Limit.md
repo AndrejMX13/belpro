@@ -1,37 +1,36 @@
 # HTTP: GET Photo Limit
 
-> 14 nodes
+> 15 nodes
 
 ## Key Concepts
 
-- **BelPro — Beleženje Prostovoljstva** (14 connections) — `README.md`
-- **Manager dashboard** (2 connections) — `README.md`
-- **Project layout** (2 connections) — `README.md`
-- **README.md** (1 connections) — `README.md`
-- **How it works** (1 connections) — `README.md`
-- **Sample PDF reports** (1 connections) — `README.md`
-- **Stack** (1 connections) — `README.md`
-- **Requirements** (1 connections) — `README.md`
-- **Access points** (1 connections) — `README.md`
-- **Security notes** (1 connections) — `README.md`
-- **code:block22 (belpro/)** (1 connections) — `README.md`
-- **AI-assisted development** (1 connections) — `README.md`
-- **Roadmap** (1 connections) — `README.md`
-- **Out of scope (v1)** (1 connections) — `README.md`
+- **TypeScript JSDoc** (8 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Function Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Class Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Interface Documentation** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Generic Types** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Async Functions** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Common Patterns** (2 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **typescript-jsdoc.md** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (/**)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
+- **code:typescript (// Optional parameters)** (1 connections) — `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Relationships
 
-- [[POST /api/volunteers (create_volunteer)]] (1 shared connections)
-- [[Community 350]] (1 shared connections)
-- [[Code: Check Photo Limit]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `README.md`
+- `.claude/skills/code-documenter/references/typescript-jsdoc.md`
 
 ## Audit Trail
 
-- EXTRACTED: 29 (100%)
+- EXTRACTED: 28 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Response Transformation** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Extract Nested Data** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Flatten Arrays** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Combine Multiple API Responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - flatten nested array)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block41 (HTTP Request 1 (users))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Digital Volunteer Diary: System Architecture & Specification** (5 connections) — `BelPro.md`
+- **3. GDPR Notes for Volunteer Agreements** (2 connections) — `BelPro.md`
+- **BelPro.md** (1 connections) — `BelPro.md`
+- **1. Project Overview** (1 connections) — `BelPro.md`
+- **2. Technical Architecture** (1 connections) — `BelPro.md`
+- **Article X: Digital Record Keeping and Privacy** (1 connections) — `BelPro.md`
+- **4. Operational Flow** (1 connections) — `BelPro.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `BelPro.md`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 12 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

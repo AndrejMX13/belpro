@@ -4,17 +4,17 @@
 
 ## Key Concepts
 
-- **[0.11.1-beta.0] — 2026-05-22** (3 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Fixed** (1 connections) — `CHANGELOG.md`
+- **3. Start all services** (3 connections) — `README.md`
+- **code:bash (docker compose up -d)** (1 connections) — `README.md`
+- **code:bash (docker compose ps)** (1 connections) — `README.md`
 
 ## Relationships
 
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[POST /api/volunteers/check-emso (check_emso)]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `README.md`
 
 ## Audit Trail
 

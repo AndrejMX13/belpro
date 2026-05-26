@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **API Client (api.js)** (0 connections) — `frontend/js/api.js`
+- **POST /api/logo (upload_logo)** (0 connections) — `api/routers/logo.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `frontend/js/api.js`
+- `api/routers/logo.py`
 
 ## Audit Trail
 

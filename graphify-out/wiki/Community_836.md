@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/health (health)** (0 connections) — `api/main.py`
+- **GET /api/documents/consent-pdf (download_consent_pdf)** (0 connections) — `api/routers/documents.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/main.py`
+- `api/routers/documents.py`
 
 ## Audit Trail
 

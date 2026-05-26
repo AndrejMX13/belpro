@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_n8n_workflow_edits.md** (0 connections) — `.claude/memory/feedback_n8n_workflow_edits.md`
+- **feedback_email_validator.md** (0 connections) — `.claude/memory/feedback_email_validator.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_n8n_workflow_edits.md`
+- `.claude/memory/feedback_email_validator.md`
 
 ## Audit Trail
 

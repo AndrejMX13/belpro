@@ -4,29 +4,36 @@
 
 ## Key Concepts
 
-- **Error #1: Empty Code or Missing Return Statement** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Problem** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **The Solution** (4 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ ERROR: No code at all)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ ERROR: Code executes but doesn't return anything)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ❌ ERROR: Early return path exists, but not all paths retu)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Always return data)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: Return empty array if no items)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **code:javascript (// ✅ CORRECT: All code paths return)** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
-- **Checklist** (1 connections) — `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- **httpOnly Cookie Auth Design ISS-005** (9 connections) — `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- **Dashboard Login Screen** (2 connections) — `frontend/index.html`
+- **POST /api/auth/login (login)** (2 connections) — `api/routers/auth.py`
+- **API.auth.login()** (2 connections) — `frontend/js/api.js`
+- **API.auth.logout()** (2 connections) — `frontend/js/api.js`
+- **POST /auth/login** (2 connections) — `api/routers/auth.py`
+- **POST /auth/logout** (2 connections) — `api/routers/auth.py`
+- **POST /api/auth/logout (logout)** (1 connections) — `api/routers/auth.py`
+- **login form submit handler** (1 connections) — `frontend/js/volunteers.js`
+- **logout button handler** (1 connections) — `frontend/js/volunteers.js`
 
 ## Relationships
 
-- [[PhotoBase64Request (Schema)]] (1 shared connections)
+- [[POST /api/log-entries/{id}/photos (upload_photo)]] (3 shared connections)
+- [[n8n MCP Workflow Management Guide]] (1 shared connections)
+- [[PATCH /api/log-entries/{id} (update_log_entry)]] (1 shared connections)
+- [[Volunteer (ORM)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/ERROR_PATTERNS.md`
+- `api/routers/auth.py`
+- `docs/superpowers/specs/2026-05-19-httponly-cookie-auth-design.md`
+- `frontend/index.html`
+- `frontend/js/api.js`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 23 (96%)
+- INFERRED: 1 (4%)
 - AMBIGUOUS: 0 (0%)
 
 ---

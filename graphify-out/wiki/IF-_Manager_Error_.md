@@ -4,33 +4,33 @@
 
 ## Key Concepts
 
-- **API Documentation: FastAPI & Django** (4 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Django REST Framework (drf-spectacular)** (4 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **FastAPI (Auto-generates from types)** (3 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Endpoint Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Router with Tags** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **ViewSet Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Serializer Documentation** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Custom Schema** (2 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **api-docs-fastapi-django.md** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from fastapi import FastAPI, HTTPException, status)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from fastapi import APIRouter)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from rest_framework import viewsets, status)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from rest_framework import serializers)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **code:python (from drf_spectacular.utils import extend_schema, OpenApiExam)** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
-- **Quick Reference** (1 connections) — `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
+- **Handling API Responses** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pagination** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Error Responses (400-599)** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 1: Offset-based** (3 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Success Response (200-299)** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 2: Cursor-based** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **Pattern 3: Link Header** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Entire response)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block19 (1. Set (initialize: page=1, has_more=true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (const items = $input.first().json;)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block21 (1. HTTP Request (GET /api/items))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript (// Code node - parse Link header)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block24 (HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({{$json.error}} is empty)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/api-docs-fastapi-django.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

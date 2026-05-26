@@ -4,45 +4,54 @@
 
 ## Key Concepts
 
-- **Module Systems** (14 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **ES Modules (ESM)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Import Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Dynamic Imports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Package.json Configuration** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Conditional Exports** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Import Maps (Browser)** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **CommonJS Compatibility** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Module Resolution** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Circular Dependencies** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Tree Shaking Optimization** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Module Patterns** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **Node.js ESM Specifics** (2 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **modules.md** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Named exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Named imports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Basic dynamic import)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:json ({)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// package.json with conditional exports)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:html (<!-- In HTML -->)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// ESM consuming CommonJS)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Explicit file extensions required in ESM)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// moduleA.js)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Write side-effect-free code for tree shaking)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
-- **code:javascript (// Singleton pattern)** (1 connections) — `.claude/skills/javascript-pro/references/modules.md`
+- **BelPro System Specification** (29 connections) — `SPEC.md`
+- **Evolution API (WhatsApp Gateway)** (7 connections) — `SPEC.md`
+- **Digital Volunteer Diary Architecture & GDPR Notes** (6 connections) — `BelPro.md`
+- **DB Table: volunteers** (5 connections) — `SPEC.md`
+- **WhatsApp Volunteer Entry Flow** (4 connections) — `SPEC.md`
+- **Faster-Whisper (CPU Speech-to-Text)** (4 connections) — `SPEC.md`
+- **CLAUDE.md — Project AI Instructions** (3 connections) — `CLAUDE.md`
+- **Monthly PDF Reports Generation and Delivery** (3 connections) — `SPEC.md`
+- **DB Table: log_entries** (3 connections) — `SPEC.md`
+- **DB Table: monthly_reports** (3 connections) — `SPEC.md`
+- **Dnevnik prostovoljskega dela (Volunteer Work Diary)** (2 connections) — `SPEC.md`
+- **Entry Status Flow (pending_volunteer → pending_manager → approved/rejected)** (2 connections) — `SPEC.md`
+- **GDPR and ZVOP-2 Compliance** (2 connections) — `SPEC.md`
+- **DB Table: managers** (2 connections) — `SPEC.md`
+- **DB Table: log_entry_photos** (2 connections) — `SPEC.md`
+- **DB Table: settings** (2 connections) — `SPEC.md`
+- **Workflow Integration Tests Plan** (2 connections) — `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- **WhatsApp Phone Source of Truth Plan** (2 connections) — `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
+- **BelPro System Specification (Slovenian)** (1 connections) — `SPEC_SL.md`
+- **CSD — Centre for Social Work** (1 connections) — `SPEC.md`
+- **Single-Tenant Architecture** (1 connections) — `SPEC.md`
+- **WeasyPrint (HTML to PDF)** (1 connections) — `CLAUDE.md`
+- **Graphify Knowledge Graph Tooling** (1 connections) — `CLAUDE.md`
+- **Serena MCP Server (Symbol Navigation)** (1 connections) — `CLAUDE.md`
+- **DB Table: error_log** (1 connections) — `SPEC.md`
 - *... and 2 more nodes in this community*
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[BelPro Architecture Document EN]] (7 shared connections)
+- [[Code: Preveri Nacin]] (5 shared connections)
+- [[CLAUDE.md — Project AI Instructions]] (4 shared connections)
+- [[Community 513]] (1 shared connections)
+- [[DELETE /api/volunteers/{id} (delete_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/javascript-pro/references/modules.md`
+- `BelPro.md`
+- `CLAUDE.md`
+- `SPEC.md`
+- `SPEC_SL.md`
+- `docs/superpowers/plans/2026-05-10-workflow-integration-tests.md`
+- `docs/superpowers/plans/2026-05-11-whatsapp-phone-source-of-truth.md`
 
 ## Audit Trail
 
-- EXTRACTED: 52 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 89 (97%)
+- INFERRED: 3 (3%)
 - AMBIGUOUS: 0 (0%)
 
 ---

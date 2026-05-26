@@ -4,27 +4,26 @@
 
 ## Key Concepts
 
-- **submitAddVolunteer()** (3 connections) — `frontend/js/volunteers.js`
-- **POST /volunteers/check-emso** (3 connections) — `api/routers/volunteers.py`
-- **API.volunteers.checkEmso()** (2 connections) — `frontend/js/api.js`
-- **API.volunteers.create()** (2 connections) — `frontend/js/api.js`
-- **POST /volunteers** (2 connections) — `api/routers/volunteers.py`
-- **EmsoCheckResponse shape ({exists})** (2 connections) — `api/routers/volunteers.py`
+- **Systematic Debugging Reference** (4 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Debugging Strategies Reference** (3 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Git Bisect Debugging** (2 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Binary Search Debugging Strategy** (1 connections) — `.claude/skills/debugging-wizard/references/strategies.md`
+- **Four-Phase Systematic Debugging** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
+- **Three-Fix Threshold Rule** (1 connections) — `.claude/skills/debugging-wizard/references/systematic-debugging.md`
 
 ## Relationships
 
-- [[make_text_payload()]] (2 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/api.js`
-- `frontend/js/volunteers.js`
+- `.claude/skills/debugging-wizard/references/strategies.md`
+- `.claude/skills/debugging-wizard/references/systematic-debugging.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 10 (83%)
+- INFERRED: 2 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

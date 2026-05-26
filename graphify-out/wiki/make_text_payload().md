@@ -1,60 +1,48 @@
 # make_text_payload()
 
-> 48 nodes
+> 49 nodes
 
 ## Key Concepts
 
-- **volunteers.js** (55 connections) — `frontend/js/volunteers.js`
-- **$()** (37 connections) — `frontend/js/volunteers.js`
-- **setHtml()** (25 connections) — `frontend/js/volunteers.js`
-- **esc()** (20 connections) — `frontend/js/volunteers.js`
-- **loadVolunteers()** (11 connections) — `frontend/js/volunteers.js`
-- **loadApprovals()** (11 connections) — `frontend/js/volunteers.js`
-- **loadVolunteerLog()** (9 connections) — `frontend/js/volunteers.js`
-- **toast()** (8 connections) — `frontend/js/volunteers.js`
-- **renderList()** (8 connections) — `frontend/js/volunteers.js`
-- **renderApprovals()** (8 connections) — `frontend/js/volunteers.js`
-- **submitAddVolunteer()** (7 connections) — `frontend/js/volunteers.js`
-- **sendReports()** (6 connections) — `frontend/js/reports.js`
-- **show()** (5 connections) — `frontend/js/volunteers.js`
-- **hide()** (5 connections) — `frontend/js/volunteers.js`
-- **openManagerSetupModal()** (5 connections) — `frontend/js/volunteers.js`
-- **submitManagerSetup()** (5 connections) — `frontend/js/volunteers.js`
-- **openModal()** (5 connections) — `frontend/js/volunteers.js`
-- **closeModal()** (5 connections) — `frontend/js/volunteers.js`
-- **showLogin()** (4 connections) — `frontend/js/volunteers.js`
-- **renderThead()** (4 connections) — `frontend/js/volunteers.js`
-- **renderTable()** (4 connections) — `frontend/js/volunteers.js`
-- **renderApprovalsThead()** (4 connections) — `frontend/js/volunteers.js`
-- **renderApprovalsTable()** (4 connections) — `frontend/js/volunteers.js`
-- **renderVolunteerLogThead()** (4 connections) — `frontend/js/volunteers.js`
-- **renderVolunteerLogTable()** (4 connections) — `frontend/js/volunteers.js`
-- *... and 23 more nodes in this community*
+- **Task 1: Update Import Script** (10 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **n8n Error Handler Sub-Workflow Implementation Plan** (9 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **Task 4: Wire `errorWorkflow` in Existing Workflow Settings** (9 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **Task 5: Add Explicit Error Path to `volunteer_entry`** (9 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **Task 2: Document New Credential** (6 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **Task 3: Create "BelPro - Napake" Sub-Workflow** (6 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **Context for Implementer** (3 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **Task 6: End-to-End Tests** (3 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **2026-05-26-n8n-error-handler.md** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:python ("""Unit tests for n8n_workflows.py — resolve_workflow_refs l)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:powershell (python -m pytest tests/test_n8n_import_script.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:python (allowed_settings = {)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:python (_all = sorted(p for p in WORKFLOWS_DIR.glob("*.json") if p.n)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:python (n8n_by_name[name] = wf_id)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:python (def resolve_workflow_refs(payload: dict, n8n_by_name: dict[s)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:python (# Second pass: resolve name-based workflow references to liv)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:powershell (python -m pytest tests/test_n8n_import_script.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:powershell (git add scripts/n8n_workflows.py tests/test_n8n_import_scrip)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:markdown (| `BelPro API Internal Key` | HTTP Header Auth | Error handl)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:markdown (- **BelPro API Internal Key:** Header name `X-Internal-Key`,)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:markdown (| `BelPro API Internal Key` | HTTP Header Auth | Potek dela )** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- **code:markdown (- **BelPro API Internal Key:** Ime glave `X-Internal-Key`, v)** (1 connections) — `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
+- *... and 24 more nodes in this community*
 
 ## Relationships
 
-- [[test_managers.py]] (21 shared connections)
-- [[001_initial_schema.py]] (11 shared connections)
-- [[loadReports()]] (10 shared connections)
-- [[__init__.py]] (8 shared connections)
-- [[Day of month (1–28) on which monthly reports are auto-sent.]] (6 shared connections)
-- [[Community 358]] (3 shared connections)
-- [[Community 550]] (3 shared connections)
-- [[API.health.basic()]] (2 shared connections)
-- [[Community 512]] (2 shared connections)
-- [[Community 618]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/routers/log_entries.py`
-- `frontend/js/api.js`
-- `frontend/js/reports.js`
-- `frontend/js/volunteers.js`
+- `docs/superpowers/plans/2026-05-26-n8n-error-handler.md`
 
 ## Audit Trail
 
-- EXTRACTED: 274 (89%)
-- INFERRED: 35 (11%)
+- EXTRACTED: 96 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

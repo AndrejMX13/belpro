@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **Common Use Cases** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **1. Data Synchronization** (4 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **2. ETL (Extract, Transform, Load)** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **3. Data Validation & Cleanup** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **4. Backup & Archive** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **5. Real-time Data Updates** (2 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block2 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:sql (SELECT *)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block5 (1. Schedule (daily at 2 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block6 (1. Schedule (weekly))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block7 (1. Schedule (monthly))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **code:block8 (1. Webhook (receive status update))** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Property Dependencies Deep Dive** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Common Dependency Patterns** (4 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Finding Property Dependencies** (3 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **displayOptions Mechanism** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 1: Boolean Toggle** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 2: Operation Switch** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **Pattern 3: Type Selection** (2 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// sendBody controls body visibility)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (// Different operations → different fields)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
+- **code:javascript (get_node({)** (1 connections) — `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Manual: Poslji Obvestilo Upravljalcu]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-node-configuration/SKILL.md`
 
 ## Audit Trail
 

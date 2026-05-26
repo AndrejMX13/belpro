@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Return Format Requirements** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Correct Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Incorrect Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ✅ Single result)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# ❌ WRONG: Dictionary without list wrapper)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Bonus Error: AttributeError** (3 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: Using _input.item in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ CORRECT: Check mode or use appropriate method)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Lookup Manager]] (1 shared connections)
+- [[Community 527]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/SKILL.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

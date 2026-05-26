@@ -4,27 +4,27 @@
 
 ## Key Concepts
 
-- **TDD Iron Laws** (7 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **The Three Iron Laws** (4 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **The RED-GREEN-REFACTOR Cycle** (4 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Practical Application** (3 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **RED: Write One Minimal Failing Test** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **GREEN: Implement Simplest Passing Code** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **REFACTOR: Improve While Keeping Tests Green** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Starting a New Feature** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Fixing a Bug** (2 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **tdd-iron-laws.md** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **The Fundamental Principle** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Iron Law 1: The Fundamental Rule** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Iron Law 2: Proof Through Observation** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Iron Law 3: The Final Rule** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **code:typescript (// Start with the smallest possible failing test)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **code:typescript (// Write only enough code to pass this specific test)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **code:typescript (// Now improve the code while tests stay green)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Common Rationalizations to Reject** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **code:typescript (// 1. RED: Write failing test for simplest behavior)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **code:typescript (// 1. RED: Write test that exposes the bug)** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
-- **Verification Checklist** (1 connections) — `.claude/skills/test-master/references/tdd-iron-laws.md`
+- **Browser APIs** (11 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Fetch API** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Web Workers** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Service Workers & PWA** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Local Storage & IndexedDB** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Intersection Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Mutation Observer** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Web Notifications** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Canvas & WebGL** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Performance APIs** (2 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **browser-apis.md** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Basic GET request)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// main.js - Create and communicate with worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Register Service Worker)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// LocalStorage (synchronous, max 5-10MB))** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Lazy loading images)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Watch DOM changes)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Request permission)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Canvas 2D)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **code:javascript (// Performance timing)** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
+- **Quick Reference** (1 connections) — `.claude/skills/javascript-pro/references/browser-apis.md`
 
 ## Relationships
 
@@ -32,7 +32,7 @@
 
 ## Source Files
 
-- `.claude/skills/test-master/references/tdd-iron-laws.md`
+- `.claude/skills/javascript-pro/references/browser-apis.md`
 
 ## Audit Trail
 

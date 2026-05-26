@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feature_request.md** (0 connections) — `.github/ISSUE_TEMPLATE/feature_request.md`
+- **reference_graphify_infra_script.md** (0 connections) — `.claude/memory/reference_graphify_infra_script.md`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.github/ISSUE_TEMPLATE/feature_request.md`
+- `.claude/memory/reference_graphify_infra_script.md`
 
 ## Audit Trail
 

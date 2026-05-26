@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Module 7: math - Mathematical Operations** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Basic Math Functions** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Trigonometry** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **Logarithms** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import math)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import math)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
-- **code:python (import math)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Testing Your Code** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Test Pattern 1: Handle Empty Input** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Test Pattern 2: Test with Missing Fields** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Test Pattern 3: Test Both Modes** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Always test with empty input)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Use .get() with defaults)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Code that works in both modes)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 330]] (1 shared connections)
+- [[Community 527]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

@@ -4,29 +4,23 @@
 
 ## Key Concepts
 
-- **Built-in Functions - JavaScript Code Node** (11 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **BUILTIN_FUNCTIONS.md** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Overview** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **What's NOT Available** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Summary** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Integration-Specific Gotchas** (4 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Bidirectional Threshold Checking** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Google Sheets** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Google Drive** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:javascript (// ❌ Only catches increases)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- [[Community 446]] (1 shared connections)
-- [[settings]] (1 shared connections)
-- [[BelPro Architecture Document EN]] (1 shared connections)
-- [[Community 447]] (1 shared connections)
-- [[Community 449]] (1 shared connections)
-- [[POST /errors (internal)]] (1 shared connections)
-- [[Community 448]] (1 shared connections)
+- [[Reporting period: 'current' (this month) or 'previous' (last month).]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 9 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

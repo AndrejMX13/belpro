@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Reject EMŠO numbers that fail the mod-11 checksum.** (0 connections) — `api/schemas/volunteer.py`
+- **load-project-memory.sh** (0 connections) — `.claude/hooks/load-project-memory.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/schemas/volunteer.py`
+- `.claude/hooks/load-project-memory.sh`
 
 ## Audit Trail
 

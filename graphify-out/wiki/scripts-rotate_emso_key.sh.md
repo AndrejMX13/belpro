@@ -4,39 +4,39 @@
 
 ## Key Concepts
 
-- **Context** (9 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **Context** (7 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **Delete Non-Approved Entries Implementation Plan** (4 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **Task 1: Extend the DELETE endpoint and clean up photo files** (2 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **Task 2: Frontend — API client method and delete button** (2 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **2026-05-19-delete-non-approved-entries.md** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:python (@pytest.mark.asyncio)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:block2 (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:python (@router.delete()** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:block4 (docker compose exec api pytest tests/test_log_entries.py::te)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:block5 (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:bash (git add api/routers/log_entries.py api/tests/test_log_entrie)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js (// Before the closing `},` of the logEntries object, add:)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js (logEntries: {)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js (const editable   = entry.status !== 'approved';)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js (const editable   = entry.status !== 'approved';)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js (${canApprove ? `)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js ($('approve-btn').addEventListener('click', () => doAction('a)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:js (const delEntryBtn = $('delete-entry-btn');)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
-- **code:bash (git add frontend/js/api.js frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- **Common Gotchas** (11 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. ❌ Wrong: Connecting tools to main port** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **✅ Correct: Use ai_tool connection type** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. ❌ Wrong: Vague tool descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **✅ Correct: Specific descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. ❌ Wrong: No memory for conversations** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **✅ Correct: Add memory** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. ❌ Wrong: Giving AI write access** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **✅ Correct: Read-only access** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. ❌ Wrong: Unbounded tool responses** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **✅ Correct: Limit tool output** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block44 (HTTP Request → AI Agent  // Won't work as tool!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block45 (HTTP Request --[ai_tool]--> AI Agent)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block46 (description: "Get data"  // AI won't know when to use this)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block47 (description: "Query customer orders by email address. Return)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block48 (Every message is standalone - no context!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block49 (Window Buffer Memory --[ai_memory]--> AI Agent)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block50 (Postgres (full access) as tool  // AI could DELETE data!)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block51 (Postgres (read-only user) as tool  // Safe)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block52 (Tool returns 10MB of data → exceeds token limit)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-19-delete-non-approved-entries.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 
-- EXTRACTED: 40 (100%)
+- EXTRACTED: 41 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

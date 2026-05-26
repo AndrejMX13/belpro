@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Task 8: n8n — volunteer_entry workflow** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (grep -n "evolution-api.*belpro" n8n/workflows/volunteer_entr)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:json ({)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (grep -c "evolution-api.*belpro" n8n/workflows/volunteer_entr)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (grep -c "Fetch Config.*instance_name\|instance_name.*Fetch C)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (python scripts/n8n_workflows.py import)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
-- **code:bash (git add n8n/workflows/volunteer_entry.json)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 1: Error Trigger Workflow** (3 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 2: Retry with Backoff** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **Pattern 3: Partial Failure Handling** (2 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block16 (Schedule → Fetch → Process → Deliver)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block17 (Error Trigger (for main workflow))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block18 (Schedule → HTTP Request (continueOnFail: true))** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
+- **code:block19 (Schedule → Split In Batches)** (1 connections) — `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Relationships
 
-- [[Community 398]] (1 shared connections)
+- [[Je v urejanju?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- `.claude/skills/n8n-workflow-patterns/scheduled_tasks.md`
 
 ## Audit Trail
 

@@ -4,32 +4,29 @@
 
 ## Key Concepts
 
-- **test_evolution_service.py** (6 connections) — `api/tests/test_evolution_service.py`
-- **SmtpNotConfiguredError** (5 connections) — `api/services/email.py`
-- **Exception** (5 connections)
-- **_make_mock_http()** (5 connections) — `api/tests/test_evolution_service.py`
-- **test_connected_returns_normalized_phone_and_open_state()** (2 connections) — `api/tests/test_evolution_service.py`
-- **test_disconnected_returns_none_and_close_state()** (2 connections) — `api/tests/test_evolution_service.py`
-- **test_network_error_returns_unreachable()** (2 connections) — `api/tests/test_evolution_service.py`
-- **test_lid_jid_returns_lid_unsupported()** (2 connections) — `api/tests/test_evolution_service.py`
-- **test_instance_not_in_response_returns_close()** (2 connections) — `api/tests/test_evolution_service.py`
-- **Raised when the manager has not configured SMTP.** (1 connections) — `api/services/email.py`
+- **Task 3: log_entries Router** (10 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (f"<strong>{entry.entry_date}</strong> je bila <strong>{actio)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (f"<strong>{entry.work_date}</strong> je bila <strong>{action)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (sort_by: Literal["work_date", "hours", "created_at", "status)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (if date_from is not None:)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (entry = LogEntry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (entry = LogEntry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:python (async def update_log_entry()** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (# List entries — should return work_date field, not entry_da)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **code:bash (git add api/routers/log_entries.py)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Relationships
 
-- [[load_key()]] (3 shared connections)
-- [[Community 543]] (2 shared connections)
-- [[connections]] (1 shared connections)
+- [[Community 310]] (1 shared connections)
 
 ## Source Files
 
-- `api/services/email.py`
-- `api/tests/test_evolution_service.py`
+- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (81%)
-- INFERRED: 6 (19%)
+- EXTRACTED: 19 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

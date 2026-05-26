@@ -4,36 +4,29 @@
 
 ## Key Concepts
 
-- **Work Date Rename + Dashboard Entry Creation Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **Task 7: Frontend — "Dodaj vnos" on Volunteer Detail Page** (5 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **Task 10: Run graphify update** (3 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **2026-05-09-work-date-rename-and-dashboard-entry.md** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (<p class="section-title">Dnevnik dela</p>)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript ($('add-entry-btn').addEventListener('click', () => {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:javascript (create: (payload) => apiFetch('/log-entries', {)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add frontend/js/volunteers.js)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
-- **code:bash (git add graphify-out/)** (1 connections) — `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- **Error Prevention - Top 5 Mistakes** (6 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **#1: Empty Code or Missing Return (Most Common)** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **#2: Expression Syntax Confusion** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **#3: Incorrect Return Wrapper** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **#4: Missing Null Checks** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **#5: Webhook Body Nesting** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG: No return statement)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG: Using n8n expression syntax in code)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG: Returning object instead of array)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG: Crashes if field doesn't exist)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **code:javascript (// ❌ WRONG: Direct access to webhook data)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Relationships
 
-- [[Community 548]] (1 shared connections)
-- [[Community 445]] (1 shared connections)
-- [[Community 322]] (1 shared connections)
-- [[Community 356]] (1 shared connections)
-- [[HTTP: Fetch Image]] (1 shared connections)
-- [[Community 617]] (1 shared connections)
-- [[Community 357]] (1 shared connections)
-- [[GET /api/health/detailed (health_detailed)]] (1 shared connections)
+- [[IF: Ima Star Vnos?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-work-date-rename-and-dashboard-entry.md`
+- `.claude/skills/n8n-code-javascript/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

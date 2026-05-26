@@ -4,24 +4,35 @@
 
 ## Key Concepts
 
-- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **2. Database Read Nodes** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **3. Transform** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **4. Database Write Nodes** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
-- **5. Verification** (1 connections) — `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- **Common Patterns - Python Code Node** (17 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **COMMON_PATTERNS.md** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Pattern Overview** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **When to Use Each Pattern** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Relationships
 
-- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
+- [[Community 622]] (1 shared connections)
+- [[Community 628]] (1 shared connections)
+- [[Community 629]] (1 shared connections)
+- [[Community 623]] (1 shared connections)
+- [[Community 624]] (1 shared connections)
+- [[Community 631]] (1 shared connections)
+- [[Community 630]] (1 shared connections)
+- [[Community 625]] (1 shared connections)
+- [[Community 626]] (1 shared connections)
+- [[Community 627]] (1 shared connections)
+- [[Community 367]] (1 shared connections)
+- [[Community 286]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/database_operations.md`
+- `.claude/skills/n8n-code-python/COMMON_PATTERNS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

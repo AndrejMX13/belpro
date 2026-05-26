@@ -1,35 +1,35 @@
 # test_logo.py
 
-> 41 nodes
+> 42 nodes
 
 ## Key Concepts
 
-- **n8n Code JavaScript** (15 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **What You'll Learn** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Coverage** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Integration with Other Skills** (6 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Critical Gotchas Highlighted** (4 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Quick Reference** (4 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **File Structure** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **#1: Webhook Data Structure** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **#2: Return Format** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **#3: Expression Syntax** (2 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Purpose** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Activates On** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Quick Start** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Data Access Mastery** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Common Patterns (Production-Tested)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Error Prevention** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Built-in Functions** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **code:block1 (n8n-code-javascript/)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Mode Selection** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Data Access** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Error Prevention** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Production Patterns** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **Built-in Functions** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-code-javascript/README.md`
-- *... and 16 more nodes in this community*
+- **JSONB Operations** (10 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Indexing** (6 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Operators** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Query Patterns** (4 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Performance Best Practices** (3 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB vs JSON** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Retrieval Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Containment Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Modification Operators** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index (Default for containment)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index on Specific Path** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **GIN Index with jsonb_path_ops** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **B-tree Index on Extracted Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Expression Index for Nested Values** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Filtering** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Aggregation** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Array Operations** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Functions** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **JSONB Path Queries (Postgres 12+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **DO** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **DON'T** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Schema Validation (Postgres 15+)** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **Migration Patterns** (2 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **jsonb.md** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- **code:sql (-- Use JSONB (binary, indexed, faster))** (1 connections) — `.claude/skills/postgres-pro/references/jsonb.md`
+- *... and 17 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/README.md`
+- `.claude/skills/postgres-pro/references/jsonb.md`
 
 ## Audit Trail
 
-- EXTRACTED: 80 (100%)
+- EXTRACTED: 82 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

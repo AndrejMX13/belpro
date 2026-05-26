@@ -4,59 +4,45 @@
 
 ## Key Concepts
 
-- **BelPro - Odobritev Upravljalca (Manager Approval Workflow)** (13 connections) — `n8n/workflows/manager_approval.json`
-- **Manager WhatsApp Approval Implementation Plan** (11 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Manager WhatsApp Approval Workflow Design** (11 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **GET /api/log-entries (list_log_entries)** (10 connections) — `api/routers/log_entries.py`
-- **PATCH /api/log-entries/{id}/notify (notify_log_entry)** (8 connections) — `api/routers/log_entries.py`
-- **Shared LogEntry Data Structure (volunteer_id, work_date, hours, activity_description, location, status, raw_transcript)** (8 connections) — `api/routers/log_entries.py`
-- **PATCH /api/log-entries/{id}/approve (approve_log_entry)** (7 connections) — `api/routers/log_entries.py`
-- **PATCH /api/log-entries/{id}/reject (reject_log_entry)** (7 connections) — `api/routers/log_entries.py`
-- **manager_approval n8n Workflow** (6 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **manager_approval.json n8n Workflow** (6 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **Evolution API WhatsApp** (4 connections) — `docs/evolution-lid-resolution.md`
-- **n8n: PATCH /api/log-entries/{id}/approve** (4 connections) — `n8n/workflows/manager_approval.json`
-- **n8n: PATCH /api/log-entries/{id}/reject** (4 connections) — `n8n/workflows/manager_approval.json`
-- **volunteer_entry n8n Workflow** (3 connections) — `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- **Evolution API lid JID Resolution** (2 connections) — `docs/evolution-lid-resolution.md`
-- **Volunteer Entry Workflow Manager Routing Change** (2 connections) — `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- **n8n Workflow Import Export Script Design** (2 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **n8n: GET /api/log-entries?status=pending_manager (Post-Action Queue Check)** (2 connections) — `n8n/workflows/manager_approval.json`
-- **POST /api/log-entries/{id}/photos/base64 (upload_photo_base64)** (2 connections) — `api/routers/log_entries.py`
-- **analytics_summary** (2 connections) — `api/routers/analytics.py`
-- **scripts/n8n_workflows.py Import Export Script** (1 connections) — `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- **Evolution API and N8N Phone Identification Solutions** (1 connections) — `Evolution_API_and_N8N_phone_identification_solutions.pdf`
-- **n8n: GET /api/log-entries?status=pending_manager (Manual Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: PATCH /api/log-entries/{id}/notify (Manual Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
-- **n8n: GET /api/log-entries?status=pending_manager (Auto Notify)** (1 connections) — `n8n/workflows/volunteer_entry.json`
+- **Performance Optimization** (9 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Index Strategies** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Query Optimization Patterns** (5 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **EXPLAIN ANALYZE Fundamentals** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Reading EXPLAIN Output** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **B-tree Indexes (Default)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **GIN Indexes (JSONB, arrays, full-text)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **GiST Indexes (Spatial, ranges, nearest neighbor)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **BRIN Indexes (Large, naturally ordered tables)** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Statistics and Planner** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Sequential scan on large table** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Index not used** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: Large JOIN inefficiency** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Problem: COUNT(*) slow** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Connection Pooling** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Configuration Tuning** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **Performance Monitoring** (2 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **performance.md** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Basic EXPLAIN ANALYZE)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:block2 (Seq Scan on users  (cost=0.00..1234.56 rows=10000 width=32))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Single column index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- JSONB containment)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- PostGIS spatial index)** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Time-series data (insert-only, sorted by time))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
+- **code:sql (-- Update statistics (do after bulk changes))** (1 connections) — `.claude/skills/postgres-pro/references/performance.md`
 - *... and 7 more nodes in this community*
 
 ## Relationships
 
-- [[Code Reviewer Skill]] (8 shared connections)
-- [[report_pdf.py]] (6 shared connections)
-- [[connections]] (4 shared connections)
-- [[GET /log-entries]] (3 shared connections)
-- [[merge_semantic.py]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `Evolution_API_and_N8N_phone_identification_solutions.pdf`
-- `api/routers/analytics.py`
-- `api/routers/log_entries.py`
-- `api/routers/reports.py`
-- `docs/evolution-lid-resolution.md`
-- `docs/superpowers/plans/2026-05-07-manager-approval.md`
-- `docs/superpowers/specs/2026-05-07-manager-approval-design.md`
-- `docs/superpowers/specs/2026-05-16-n8n-workflow-scripts-design.md`
-- `frontend/js/analytics.js`
-- `n8n/workflows/manager_approval.json`
-- `n8n/workflows/volunteer_entry.json`
+- `.claude/skills/postgres-pro/references/performance.md`
 
 ## Audit Trail
 
-- EXTRACTED: 108 (86%)
-- INFERRED: 18 (14%)
+- EXTRACTED: 62 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Use Cases** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **4. $getWorkflowStaticData() - Persistent Storage** (3 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Get static data storage)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Use Case 1: Rate limiting)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Use Case 2: Tracking last processed ID)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Use Case 3: Accumulating results)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **When NOT to Use Expressions** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **❌ Code Nodes** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **❌ Webhook Paths** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **❌ Credential Fields** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// ❌ WRONG in Code node)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// ❌ WRONG)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 551]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

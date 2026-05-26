@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Authentication & Security** (5 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **1. Query Parameter Token** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **2. Header-Based Auth** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **3. Signature Verification** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// IF node - validate token)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// IF node - check header)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
-- **4. IP Whitelist** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **4. Unbounded Database Queries** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When Acceptable** (4 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **When to Fix** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Config table with ~10 rows)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// COUNT/SUM operations)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// Testing with small dataset)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:javascript (// BAD: User table could have millions of rows)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[Community 388]] (1 shared connections)
+- [[Community 302]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

@@ -4,46 +4,45 @@
 
 ## Key Concepts
 
-- **ops_server.py** (7 connections) — `ops/scripts/ops_server.py`
-- **_Handler** (7 connections) — `ops/scripts/ops_server.py`
-- **_Handler** (7 connections) — `whisper/transcribe.py`
-- **write_crontab()** (5 connections) — `ops/scripts/ops_server.py`
-- **.do_POST()** (5 connections) — `ops/scripts/ops_server.py`
-- **._respond()** (5 connections) — `whisper/transcribe.py`
-- **fetch_settings_from_db()** (4 connections) — `ops/scripts/ops_server.py`
-- **._send()** (4 connections) — `ops/scripts/ops_server.py`
-- **main()** (4 connections) — `ops/scripts/ops_server.py`
-- **_dsn()** (3 connections) — `ops/scripts/ops_server.py`
-- **report_error()** (3 connections) — `ops/scripts/ops_server.py`
-- **reload_crond()** (3 connections) — `ops/scripts/ops_server.py`
-- **.do_POST()** (3 connections) — `whisper/transcribe.py`
-- **.do_GET()** (3 connections) — `whisper/transcribe.py`
-- **BaseHTTPRequestHandler** (2 connections)
-- **.do_GET()** (2 connections) — `ops/scripts/ops_server.py`
-- **transcribe.py** (2 connections) — `whisper/transcribe.py`
-- **.log_message()** (2 connections) — `whisper/transcribe.py`
-- **.log_message()** (1 connections) — `ops/scripts/ops_server.py`
-- **Convert asyncpg DATABASE_URL to a psycopg2-compatible DSN.** (1 connections) — `ops/scripts/ops_server.py`
-- **POST failure to the API error log. Best-effort — never raises.** (1 connections) — `ops/scripts/ops_server.py`
-- **Send SIGHUP to crond so it reloads the crontab file.** (1 connections) — `ops/scripts/ops_server.py`
-- **Write a new crontab to CRONTAB_PATH and reload crond.** (1 connections) — `ops/scripts/ops_server.py`
-- **Read all runtime-tunable settings from the settings table.      Returns an empty** (1 connections) — `ops/scripts/ops_server.py`
-- **HTTP request handler for the ops notification server.** (1 connections) — `ops/scripts/ops_server.py`
+- **Platform Engineering** (17 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Self-Service with Crossplane** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Terraform Self-Service Module** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Backstage Service Template** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Service Catalog Info** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Golden Path Scaffolding** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **GitOps Repository Structure** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **ArgoCD Application** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform Metrics** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Custom Backstage Plugin** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Cost Allocation** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform APIs** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Multi-Tenant Architecture** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Adoption Strategy** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **CLI Tool Example** (2 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **platform-engineering.md** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **Platform Principles** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# Composition for self-service database)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:hcl (# modules/service/main.tf)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# templates/microservice/template.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# catalog-info.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:bash (#!/bin/bash)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:block6 (gitops/)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (apiVersion: argoproj.io/v1alpha1)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
+- **code:yaml (# prometheus/platform-metrics.yaml)** (1 connections) — `.claude/skills/devops-engineer/references/platform-engineering.md`
 - *... and 7 more nodes in this community*
 
 ## Relationships
 
-- [[load_key()]] (3 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `ops/scripts/ops_server.py`
-- `whisper/transcribe.py`
+- `.claude/skills/devops-engineer/references/platform-engineering.md`
 
 ## Audit Trail
 
-- EXTRACTED: 82 (96%)
-- INFERRED: 3 (4%)
+- EXTRACTED: 62 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

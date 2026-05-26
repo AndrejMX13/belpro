@@ -4,28 +4,34 @@
 
 ## Key Concepts
 
-- **Data Access Patterns** (5 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Pattern 1: $input.all() - Most Common** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Pattern 2: $input.first() - Very Common** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Pattern 3: $input.item - Each Item Mode Only** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **Pattern 4: $node - Reference Other Nodes** (2 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Get all items from previous node)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Get first item only)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Current item in loop (Each Item mode only))** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
-- **code:javascript (// Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-javascript/SKILL.md`
+- **Secure Code Guardian Skill** (8 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
+- **Input Validation Reference (Zod, SQL Injection)** (3 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
+- **OWASP Top 10 Prevention Reference** (3 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **Authentication Reference (bcrypt, JWT)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
+- **Security Headers Reference (Helmet, CORS, Rate Limiting)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
+- **XSS and CSRF Prevention Reference** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
+- **SQL Injection Prevention (Parameterized Queries)** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
+- **OWASP Top 10 Vulnerabilities** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- **JWT Token Authentication** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
 
 ## Relationships
 
-- [[IF: Ima Star Vnos?]] (1 shared connections)
+- [[IF: Photo Limit Reached]] (2 shared connections)
+- [[BelPro Architecture Document EN]] (2 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/SKILL.md`
+- `.claude/skills/secure-code-guardian/SKILL.md`
+- `.claude/skills/secure-code-guardian/references/authentication.md`
+- `.claude/skills/secure-code-guardian/references/input-validation.md`
+- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
+- `.claude/skills/secure-code-guardian/references/security-headers.md`
+- `.claude/skills/secure-code-guardian/references/xss-csrf.md`
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 20 (83%)
+- INFERRED: 4 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

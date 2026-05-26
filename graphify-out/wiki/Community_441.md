@@ -1,28 +1,29 @@
 # Community 441
 
-> 7 nodes
+> 8 nodes
 
 ## Key Concepts
 
-- **14. Integracijski testi delovnih procesov** (6 connections) — `SPEC_SL.md`
-- **Zagon** (2 connections) — `SPEC_SL.md`
-- **Predpogoji** (1 connections) — `SPEC_SL.md`
-- **code:powershell (# Iz korenskega imenika projekta na Windows gostitelju:)** (1 connections) — `SPEC_SL.md`
-- **Testne datoteke** (1 connections) — `SPEC_SL.md`
-- **Scenariji** (1 connections) — `SPEC_SL.md`
-- **Opombe o zasnovi** (1 connections) — `SPEC_SL.md`
+- **test_config.py** (4 connections) — `api/tests/test_config.py`
+- **test_get_evolution_instance_no_auth_required()** (2 connections) — `api/tests/test_config.py`
+- **test_get_evolution_instance_returns_instance_name()** (2 connections) — `api/tests/test_config.py`
+- **test_get_evolution_instance_reflects_db_value()** (2 connections) — `api/tests/test_config.py`
+- **Tests for the public config endpoint consumed by n8n workflows.** (1 connections) — `api/tests/test_config.py`
+- **GET /api/config/evolution-instance is publicly accessible.** (1 connections) — `api/tests/test_config.py`
+- **Response contains a non-empty instance_name string matching the seeded default.** (1 connections) — `api/tests/test_config.py`
+- **Config endpoint reflects value updated via PATCH /api/admin/settings.** (1 connections) — `api/tests/test_config.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `api/tests/test_config.py`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 14 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

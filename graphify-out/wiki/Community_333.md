@@ -4,24 +4,24 @@
 
 ## Key Concepts
 
-- **Example 3: Multi-Node Data Flow** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Node 3: Email** (4 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Node 2: HTTP Request** (3 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Node 1: Webhook** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block8 (https://api.example.com/orders/{{$json.body.order_id}})** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block10 (Order {{$node["Webhook"].json.body.order_id}} Confirmed)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block11 (Dear {{$node["HTTP Request"].json.order.customer}},)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block12 (Subject: Order ORD-12345 Confirmed)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Error #1: ModuleNotFoundError (MOST CRITICAL)** (5 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Solution** (4 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **The Problem** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Available Standard Library Modules** (2 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ❌ WRONG: External libraries not available)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:javascript (// ✅ JavaScript Code node with $helpers.httpRequest())** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Add HTTP Request node BEFORE Python Code node)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ Use urllib from standard library (limited functionality))** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **Common Library Replacements** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
+- **code:python (# ✅ THESE WORK - Standard library only)** (1 connections) — `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[Community 527]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-python/ERROR_PATTERNS.md`
 
 ## Audit Trail
 

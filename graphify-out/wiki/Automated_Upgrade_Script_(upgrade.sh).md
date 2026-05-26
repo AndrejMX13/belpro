@@ -4,34 +4,35 @@
 
 ## Key Concepts
 
-- **Documentation Systems & Infrastructure** (6 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Interactive API Documentation** (6 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **User Guides & Tutorials Reference** (2 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
-- **Docusaurus Static Site Generator** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **MkDocs Static Site Generator** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **VitePress Static Site Generator** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **Algolia DocSearch** (1 connections) — `.claude/skills/code-documenter/references/documentation-systems.md`
-- **OpenAPI 3.1 Specification** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Swagger UI** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Redoc API Documentation** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **GraphQL Schema Documentation** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **AsyncAPI WebSocket Documentation** (1 connections) — `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- **Progressive Learning Path Pattern** (1 connections) — `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- **loadAnalytics()** (8 connections) — `frontend/js/analytics.js`
+- **analytics.js** (7 connections) — `frontend/js/analytics.js`
+- **renderAnalytics()** (5 connections) — `frontend/js/analytics.js`
+- **renderAnalyticsContent()** (3 connections) — `frontend/js/analytics.js`
+- **_renderCharts()** (3 connections) — `frontend/js/analytics.js`
+- **loadAnalytics()** (3 connections) — `frontend/js/analytics.js`
+- **GET /analytics/summary** (3 connections) — `api/routers/analytics.py`
+- **_destroyCharts()** (2 connections) — `frontend/js/analytics.js`
+- **API.analytics.summary()** (2 connections) — `frontend/js/api.js`
+- **AnalyticsSummary shape (total_hours, active_volunteer_count, hours_per_volunteer[], hours_per_location[], monthly_trend[])** (2 connections) — `api/routers/analytics.py`
+- **analyticsState** (1 connections) — `frontend/js/analytics.js`
+- **exportAnalyticsCsv()** (1 connections) — `frontend/js/analytics.js`
+- **renderAnalytics() — analytics page** (1 connections) — `frontend/js/analytics.js`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_auth.py]] (6 shared connections)
+- [[path]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/code-documenter/references/documentation-systems.md`
-- `.claude/skills/code-documenter/references/interactive-api-docs.md`
-- `.claude/skills/code-documenter/references/user-guides-tutorials.md`
+- `api/routers/analytics.py`
+- `frontend/js/analytics.js`
+- `frontend/js/api.js`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (83%)
-- INFERRED: 4 (17%)
+- EXTRACTED: 34 (83%)
+- INFERRED: 7 (17%)
 - AMBIGUOUS: 0 (0%)
 
 ---

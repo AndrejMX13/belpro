@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Error Handling** (4 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Pattern 1: Tool Execution Errors** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Pattern 2: LLM API Errors** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **Pattern 3: Invalid Tool Outputs** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block27 (AI Agent (continueOnFail on tool nodes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:block28 (Main Workflow:)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
-- **code:javascript (// Code node - validate tool output)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **Recovery Strategies** (5 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 3: Clean Stale Connections** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 4: Use Auto-fix** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 1: Start Fresh** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **Strategy 2: Binary Search** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (n8n_update_partial_workflow({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript (// Preview fixes (default - doesn't apply))** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[HTTP: Potrdi Vnos]] (1 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 

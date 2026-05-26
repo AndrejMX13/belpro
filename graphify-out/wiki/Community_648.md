@@ -4,22 +4,21 @@
 
 ## Key Concepts
 
-- **submitAddVolunteer** (2 connections) — `frontend/js/volunteers.js`
-- **check_emso** (1 connections) — `api/routers/volunteers.py`
-- **create_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **[0.9.6] — 2026-05-14** (3 connections) — `CHANGELOG.md`
+- **Fixed** (1 connections) — `CHANGELOG.md`
+- **Added** (1 connections) — `CHANGELOG.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Manager session cookie lifetime in hours.]] (1 shared connections)
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/volunteers.js`
+- `CHANGELOG.md`
 
 ## Audit Trail
 
-- EXTRACTED: 4 (100%)
+- EXTRACTED: 5 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,22 +4,22 @@
 
 ## Key Concepts
 
-- **Design: BelPro Version-Bump Skill** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step-by-Step Flow** (8 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **2026-05-15-version-bump-skill-design.md** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Purpose** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Trigger** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Approach** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 0 — Pre-flight: test suite check** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 1 — Orient and suggest version** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 2 — Update files** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 3 — Pre-commit review** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 4 — Tag? (optional)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 5 — GitHub release? (optional, only if Step 4 was yes)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Step 6 — Offer container rebuild** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **BelPro-Specific Constraints** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Reminders (skill mentions, does not execute)** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
-- **Out of Scope** (1 connections) — `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- **FastAPI Expert** (9 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Minimal Complete Example** (4 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Constraints** (3 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **JWT Authentication Snippet** (2 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **SKILL.md** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **When to Use This Skill** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Core Workflow** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# schemas.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# routers/users.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# crud.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **code:python (# security.py)** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Reference Guide** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **MUST DO** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **MUST NOT DO** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Output Templates** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
+- **Knowledge Reference** (1 connections) — `.claude/skills/fastapi-expert/SKILL.md`
 
 ## Relationships
 
@@ -27,7 +27,7 @@
 
 ## Source Files
 
-- `docs/superpowers/specs/2026-05-15-version-bump-skill-design.md`
+- `.claude/skills/fastapi-expert/SKILL.md`
 
 ## Audit Trail
 

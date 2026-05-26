@@ -4,34 +4,27 @@
 
 ## Key Concepts
 
-- **Test Suite Implementation Plan** (12 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Task 8: Run Full Suite** (3 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 8.1 — Run all tests** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Step 8.2 — Commit if any fixes were needed** (2 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **2026-05-09-test-suite.md** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (cd api && pytest -v)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **code:bash (git add -p)** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
-- **Self-Review Checklist** (1 connections) — `docs/superpowers/plans/2026-05-09-test-suite.md`
+- **Core Components** (6 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **2. HTTP Request Node** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **3. Response Processing** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **5. Error Handler** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **1. Trigger** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block3 (HTTP Request → Code (parse) → Set (map fields) → Action)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. Action** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **code:block4 (Error Trigger → Log Error → Notify Admin → Retry Logic (opti)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Relationships
 
-- [[014_seed_report_auto_hour.py]] (1 shared connections)
-- [[Community 425]] (1 shared connections)
-- [[Community 489]] (1 shared connections)
-- [[Community 492]] (1 shared connections)
-- [[Community 490]] (1 shared connections)
-- [[Community 491]] (1 shared connections)
-- [[Community 493]] (1 shared connections)
-- [[Community 390]] (1 shared connections)
+- [[IF: Has Entry?]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-09-test-suite.md`
+- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
 
 ## Audit Trail
 
-- EXTRACTED: 24 (100%)
+- EXTRACTED: 17 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

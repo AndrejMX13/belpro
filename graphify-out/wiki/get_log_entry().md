@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **XSS & CSRF Prevention** (5 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **XSS Prevention** (4 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **CSRF Prevention** (4 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **Output Encoding** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **Content Security Policy** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **Input Sanitization** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **Synchronizer Token Pattern** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **Double Submit Cookie** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **SameSite Cookies** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **HTTP Headers** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **xss-csrf.md** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (// React automatically escapes by default)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (import helmet from 'helmet';)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (import DOMPurify from 'dompurify';)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (import csrf from 'csurf';)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (// Set CSRF cookie)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (// Modern CSRF protection)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **code:typescript (// Security headers)** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **Quick Reference** (1 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
+- **Window Functions** (10 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Ranking Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Aggregate Window Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **LAG and LEAD Functions** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **FIRST_VALUE and LAST_VALUE** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Frame Specifications** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Advanced Analytics** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Conditional Aggregation with Windows** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Performance Considerations** (2 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **window-functions.md** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- ROW_NUMBER: Sequential numbering within partition)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Running totals and cumulative sums)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Compare with previous/next row)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Compare each row to first/last in partition)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- ROWS vs RANGE difference)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Percentile calculations)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Filter within window function)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **code:sql (-- Avoid multiple window passes - combine into one)** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
+- **Common Patterns** (1 connections) — `.claude/skills/sql-pro/references/window-functions.md`
 
 ## Relationships
 
@@ -30,7 +30,7 @@
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/references/xss-csrf.md`
+- `.claude/skills/sql-pro/references/window-functions.md`
 
 ## Audit Trail
 

@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **6. Mesečna PDF poročila** (4 connections) — `SPEC_SL.md`
-- **6.1 PDF za prostovoljca (po osebi)** (1 connections) — `SPEC_SL.md`
-- **6.2 Zbirni PDF za vodjo** (1 connections) — `SPEC_SL.md`
-- **6.3 Dostava** (1 connections) — `SPEC_SL.md`
+- **Rotacija ključa za šifriranje EMŠO** (4 connections) — `README_SL.md`
+- **code:bash (bash scripts/rotate_emso_key.sh <STAR_KLJUC> <NOV_KLJUC>)** (1 connections) — `README_SL.md`
+- **code:bash (python3 -c "import secrets,base64; print(base64.urlsafe_b64e)** (1 connections) — `README_SL.md`
+- **code:bash (bash scripts/rotate_emso_key.sh --restore)** (1 connections) — `README_SL.md`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- [[Code: Pripravi Slike]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `README_SL.md`
 
 ## Audit Trail
 

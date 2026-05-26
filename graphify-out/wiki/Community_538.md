@@ -4,28 +4,24 @@
 
 ## Key Concepts
 
-- **ISS-026: Settings Table Implementation Plan** (8 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **Post-implementation** (3 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **2026-05-20-settings-table.md** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **File Map** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
-- **code:bash (graphify update .)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **Response Modes** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **lastNode (Custom Response)** (3 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **onReceived (Default)** (2 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Relationships
 
-- [[Community 397]] (1 shared connections)
-- [[Community 539]] (1 shared connections)
-- [[Community 308]] (1 shared connections)
-- [[POST /api/auth/logout (logout)]] (1 shared connections)
-- [[Community 344]] (1 shared connections)
+- [[Community 392]] (1 shared connections)
 
 ## Source Files
 
-- `docs/superpowers/plans/2026-05-20-settings-table.md`
+- `.claude/skills/n8n-workflow-patterns/webhook_processing.md`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
+- EXTRACTED: 11 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

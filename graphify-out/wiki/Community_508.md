@@ -4,20 +4,20 @@
 
 ## Key Concepts
 
-- **Error Severity Levels** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **1. Errors (Must Fix)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **2. Warnings (Should Fix)** (2 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
-- **3. Suggestions (Optional)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **13. Avtomatizirana testna zbirka** (5 connections) — `SPEC_SL.md`
+- **Zagon** (2 connections) — `SPEC_SL.md`
+- **Infrastruktura** (1 connections) — `SPEC_SL.md`
+- **code:bash (docker compose exec api pytest tests/ -v)** (1 connections) — `SPEC_SL.md`
+- **Testne datoteke** (1 connections) — `SPEC_SL.md`
+- **Dimni test varnostnega kopiranja in obnovitve** (1 connections) — `SPEC_SL.md`
 
 ## Relationships
 
-- [[Community 319]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/deactivate (deactivate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-validation-expert/SKILL.md`
+- `SPEC_SL.md`
 
 ## Audit Trail
 

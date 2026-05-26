@@ -4,8 +4,8 @@
 
 ## Key Concepts
 
-- **sendReports** (1 connections) — `frontend/js/reports.js`
-- **send_monthly_reports** (1 connections) — `api/routers/reports.py`
+- **API.logo.upload()** (1 connections) — `frontend/js/api.js`
+- **POST /logo** (1 connections) — `api/routers/logo.py`
 
 ## Relationships
 
@@ -13,8 +13,8 @@
 
 ## Source Files
 
-- `api/routers/reports.py`
-- `frontend/js/reports.js`
+- `api/routers/logo.py`
+- `frontend/js/api.js`
 
 ## Audit Trail
 

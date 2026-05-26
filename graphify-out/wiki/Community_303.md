@@ -4,25 +4,25 @@
 
 ## Key Concepts
 
-- **Quick Start Examples** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 1: Simple Webhook → Slack** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 2: Scheduled Report** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 3: Database Sync** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 4: AI Assistant** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Example 5: API Integration** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block13 (1. Webhook (path: "form-submit", POST))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block14 (1. Schedule (daily at 9 AM))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block15 (1. Schedule (every 15 minutes))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block16 (1. Webhook (receive chat message))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:block17 (1. Manual Trigger (for testing))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Performance Optimization** (6 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **1. Choose Right Model** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **2. Limit Context Window** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **3. Optimize Tool Descriptions** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **4. Cache Embeddings** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **5. Async Tools for Slow Operations** (2 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block30 (Fast & cheap: GPT-3.5-turbo, Claude 3 Haiku)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:javascript (// ❌ Vague)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block33 (Setup (run once):)** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
+- **code:block34 (AI Agent → [Queue slow tool request])** (1 connections) — `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Relationships
 
-- [[restore.sh]] (1 shared connections)
+- [[HTTP: Pridobi Upravljalca]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-workflow-patterns/ai_agent_workflow.md`
 
 ## Audit Trail
 

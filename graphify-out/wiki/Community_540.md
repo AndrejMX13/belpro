@@ -4,30 +4,25 @@
 
 ## Key Concepts
 
-- **GDPR Consent PDF (Dogovor o prostovoljstvu)** (5 connections) — `SPEC.md`
-- **NGO Logo Plan** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **NGO Logo Storage and PDF Embedding** (3 connections) — `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- **PDF Report History Plan** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- **GDPR Consent PDF Plan** (2 connections) — `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
-- **PDF Report History (MonthlyReport table upsert)** (2 connections) — `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
+- **Task 2: AppSettings central authority + unit tests** (6 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python (# ── Unit tests for AppSettings ────────────────────────────)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block10 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""AppSettings — central authority for all configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block12 (docker compose exec api pytest tests/test_app_settings.py -k)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/services/app_settings.py api/tests/test_app_sett)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- [[send_monthly_reports()]] (1 shared connections)
-- [[POST /log-entries/{id}/photos]] (1 shared connections)
-- [[API.reports.downloadHistoryPdf()]] (1 shared connections)
+- [[Community 539]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC.md`
-- `docs/superpowers/plans/2026-05-19-ngo-logo.md`
-- `docs/superpowers/plans/2026-05-19-pdf-report-history.md`
-- `docs/superpowers/plans/2026-05-20-gdpr-consent.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 11 (65%)
-- INFERRED: 6 (35%)
+- EXTRACTED: 11 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

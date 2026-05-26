@@ -1,58 +1,48 @@
 # connections
 
-> 38 nodes
+> 39 nodes
 
 ## Key Concepts
 
-- **Volunteer (ORM)** (25 connections) — `api/models/volunteer.py`
-- **_to_response()** (12 connections) — `api/routers/volunteers.py`
-- **create_volunteer()** (12 connections) — `api/routers/volunteers.py`
-- **volunteers.py** (11 connections) — `api/routers/volunteers.py`
-- **list_volunteers()** (10 connections) — `api/routers/volunteers.py`
-- **_to_detail_response()** (9 connections) — `api/routers/volunteers.py`
-- **VolunteerResponse (Schema)** (9 connections) — `api/schemas/volunteer.py`
-- **check_emso()** (8 connections) — `api/routers/volunteers.py`
-- **update_volunteer()** (8 connections) — `api/routers/volunteers.py`
-- **get_volunteer()** (7 connections) — `api/routers/volunteers.py`
-- **activate_volunteer()** (6 connections) — `api/routers/volunteers.py`
-- **deactivate_volunteer()** (6 connections) — `api/routers/volunteers.py`
-- **AnalyticsSummary (Schema)** (5 connections) — `api/schemas/analytics.py`
-- **VolunteerCreate (Schema)** (5 connections) — `api/schemas/volunteer.py`
-- **VolunteerDetailResponse (Schema)** (4 connections) — `api/schemas/volunteer.py`
-- **delete_volunteer()** (3 connections) — `api/routers/volunteers.py`
-- **HoursPerVolunteer (Schema)** (2 connections) — `api/schemas/analytics.py`
-- **VolunteerListResponse (Schema)** (2 connections) — `api/schemas/volunteer.py`
-- **VolunteerUpdate (Schema)** (2 connections) — `api/schemas/volunteer.py`
-- **EmsoCheckRequest (Schema)** (2 connections) — `api/schemas/volunteer.py`
-- **encrypt_emso (Service)** (2 connections) — `api/services/encryption.py`
-- **hash_emso (Service)** (2 connections) — `api/services/encryption.py`
-- **Volunteers CRUD router.** (1 connections) — `api/routers/volunteers.py`
-- **Decrypt EMŠO, mask it, and build a VolunteerResponse from an ORM object.** (1 connections) — `api/routers/volunteers.py`
-- **Same as _to_response but includes sorted log_entries and computed hours for the** (1 connections) — `api/routers/volunteers.py`
-- *... and 13 more nodes in this community*
+- **Automation Frameworks** (9 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Advanced Framework Patterns** (4 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Maintenance Strategies** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Scaling Strategies** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Parallel & Distributed Execution** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **CI/CD Integration** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Team Enablement** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Automation Strategy** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Screenplay Pattern** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Keyword-Driven Testing** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Model-Based Testing** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Self-Healing Locators** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Error Recovery & Smart Retry** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Resource Optimization** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Complete Pipeline** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Test Data Factories** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Training Program** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Code Review Checklist** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **ROI Calculation** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Selection Criteria** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Reporting & Metrics** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **Custom Reporter** (2 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **automation-frameworks.md** (1 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **code:typescript (// Better separation of concerns than POM)** (1 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- **code:typescript (const keywords = {)** (1 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
+- *... and 14 more nodes in this community*
 
 ## Relationships
 
-- [[app_settings.py]] (14 shared connections)
-- [[connections]] (8 shared connections)
-- [[scripts/setup.sh]] (6 shared connections)
-- [[renderDetail() — volunteer detail page]] (4 shared connections)
-- [[Code Reviewer Skill]] (2 shared connections)
-- [[load_key()]] (1 shared connections)
-- [[BelPro System Specification]] (1 shared connections)
+- No strong cross-community connections detected
 
 ## Source Files
 
-- `api/models/volunteer.py`
-- `api/routers/volunteers.py`
-- `api/schemas/analytics.py`
-- `api/schemas/volunteer.py`
-- `api/services/encryption.py`
+- `.claude/skills/test-master/references/automation-frameworks.md`
 
 ## Audit Trail
 
-- EXTRACTED: 124 (74%)
-- INFERRED: 44 (26%)
+- EXTRACTED: 76 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

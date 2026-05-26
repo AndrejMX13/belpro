@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Rate Limiting** (4 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 1: Wait Between Requests** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 2: Exponential Backoff** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **Pattern 3: Respect Rate Limit Headers** (2 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:block26 (Split In Batches (1 item per batch))** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
-- **code:javascript (// Code node - check rate limit)** (1 connections) — `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- **4. WhatsApp Flow (Volunteer)** (6 connections) — `SPEC.md`
+- **4.1 Submitting an entry** (2 connections) — `SPEC.md`
+- **code:block1 (Volunteer sends:)** (1 connections) — `SPEC.md`
+- **4.2 Missing photo** (1 connections) — `SPEC.md`
+- **4.3 Sent-message visibility on linked phone** (1 connections) — `SPEC.md`
+- **4.4 Volunteer language** (1 connections) — `SPEC.md`
+- **4.5 Whisper concurrency — design decision** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[Community 353]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/http_api_integration.md`
+- `SPEC.md`
 
 ## Audit Trail
 

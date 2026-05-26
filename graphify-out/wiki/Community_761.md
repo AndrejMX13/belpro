@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Maximum photos allowed per log entry.** (0 connections) — `api/services/app_settings.py`
+- **Normalize to WhatsApp-native digits-only format; reject unparseable values.** (0 connections) — `api/schemas/manager.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/services/app_settings.py`
+- `api/schemas/manager.py`
 
 ## Audit Trail
 

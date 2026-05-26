@@ -4,29 +4,28 @@
 
 ## Key Concepts
 
-- **UI obdela (AI Cleans / Whisper Transcribes)** (3 connections) — `scripts/diagrams/fig2_potek.png`
-- **Potrdi (Volunteer Confirms / Edits)** (3 connections) — `scripts/diagrams/fig2_potek.png`
-- **Vodja odobri (Manager Approves via WhatsApp)** (3 connections) — `scripts/diagrams/fig2_potek.png`
-- **AI Cleans (Whisper Transcribes, Dialect Normalised)** (3 connections) — `scripts/diagrams/fig2_workflow.png`
-- **Confirm (Volunteer Reviews, Approves / Edits)** (3 connections) — `scripts/diagrams/fig2_workflow.png`
-- **Manager OK (Manager Approves via WhatsApp)** (3 connections) — `scripts/diagrams/fig2_workflow.png`
-- **Posnami (Record Voice Note)** (2 connections) — `scripts/diagrams/fig2_potek.png`
-- **Končano (Done — Entry Saved, Volunteer Notified)** (2 connections) — `scripts/diagrams/fig2_potek.png`
-- **Record (Voice Note + Optional Photo)** (2 connections) — `scripts/diagrams/fig2_workflow.png`
-- **Done (Entry Saved, Volunteer Notified)** (2 connections) — `scripts/diagrams/fig2_workflow.png`
+- **Batch Processing Pattern** (6 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **SplitInBatches Loop** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Nested Loops** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **API Pagination** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Dry-Run / Verification Tolerance** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block6 (Prepare Items → SplitInBatches → [main[1]: Process Batch] → )** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Cross-Iteration Data** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block7 (Define Categories (N items))** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:block8 (Schedule → Set Date Window → Fetch Page → Process)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **code:javascript (// In verification Code node)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Reporting period: 'current' (this month) or 'previous' (last month).]] (1 shared connections)
 
 ## Source Files
 
-- `scripts/diagrams/fig2_potek.png`
-- `scripts/diagrams/fig2_workflow.png`
+- `.claude/skills/n8n-workflow-patterns/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 19 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

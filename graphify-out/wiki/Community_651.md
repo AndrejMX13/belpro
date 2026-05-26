@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **BelPro — Sequence Diagram** (2 connections) — `docs/images/belpro-architecture-sequence.md`
-- **belpro-architecture-sequence.md** (1 connections) — `docs/images/belpro-architecture-sequence.md`
-- **code:mermaid (sequenceDiagram)** (1 connections) — `docs/images/belpro-architecture-sequence.md`
+- **feedback_graphify_update.md** (2 connections) — `.claude/memory/feedback_graphify_update.md`
+- **code:block1 (feat: report delivery error visibility — graphify update)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
+- **Known version issue (2026-05-21)** (1 connections) — `.claude/memory/feedback_graphify_update.md`
 
 ## Relationships
 
@@ -14,7 +14,7 @@
 
 ## Source Files
 
-- `docs/images/belpro-architecture-sequence.md`
+- `.claude/memory/feedback_graphify_update.md`
 
 ## Audit Trail
 

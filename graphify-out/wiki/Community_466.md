@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Template Usage** (4 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Search Templates** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Get Template Details** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **Deploy Template Directly** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Search by keyword (default mode))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (get_template({)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Deploy template to your n8n instance)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Workarounds for Missing Libraries** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **HTTP Requests (No requests library)** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Data Processing (No pandas)** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Database Operations (No drivers)** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# ❌ Can't use requests library)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# ❌ Can't use pandas)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# ❌ Can't use database drivers)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[Community 334]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 

@@ -4,34 +4,29 @@
 
 ## Key Concepts
 
-- **n8n Code Python Skill** (16 connections) — `.claude/skills/n8n-code-python/README.md`
-- **README.md** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **⚠️ Important: JavaScript First** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Skill Activation** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Success Metrics** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Best Practices** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **When Python is the Right Choice** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Learning Path** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Support** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Version** (1 connections) — `.claude/skills/n8n-code-python/README.md`
-- **Credits** (1 connections) — `.claude/skills/n8n-code-python/README.md`
+- **Common Mistakes** (6 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Mistake 1: Using _json Without Context** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Mistake 2: Forgetting ["json"] Property** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Mistake 3: Using _input.item in All Items Mode** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Mistake 4: Not Handling Empty Lists** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **Mistake 5: Direct Dictionary Access (KeyError)** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# ❌ RISKY: _json is ambiguous)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# ❌ WRONG: Trying to access fields on item dictionary)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# ❌ WRONG: _input.item is None in "All Items" mode)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# ❌ WRONG: Crashes if no items)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **code:python (# ❌ RISKY: Crashes if key missing)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Relationships
 
-- [[Community 657]] (1 shared connections)
-- [[Community 519]] (1 shared connections)
-- [[Community 520]] (1 shared connections)
-- [[Community 287]] (1 shared connections)
-- [[Community 365]] (1 shared connections)
-- [[Community 565]] (1 shared connections)
+- [[Community 417]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/README.md`
+- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
 
 ## Audit Trail
 
-- EXTRACTED: 26 (100%)
+- EXTRACTED: 21 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

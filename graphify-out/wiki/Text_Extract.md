@@ -4,42 +4,33 @@
 
 ## Key Concepts
 
-- **Python Pro Skill** (6 connections) — `.claude/skills/python-pro/SKILL.md`
-- **Test Master Skill** (5 connections) — `.claude/skills/test-master/SKILL.md`
-- **E2E Testing Reference (Playwright, User Flows, Cross-Browser)** (4 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Python Testing Reference (pytest)** (3 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Test Automation Frameworks Reference (Screenplay, Parallel, CI/CD)** (3 connections) — `.claude/skills/test-master/references/automation-frameworks.md`
-- **Integration Testing Reference (Supertest, API Testing, pytest httpx)** (3 connections) — `.claude/skills/test-master/references/integration-testing.md`
-- **Python Async Patterns Reference** (2 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **Python Type System Reference** (2 connections) — `.claude/skills/python-pro/references/type-system.md`
-- **pytest Testing Framework** (2 connections) — `.claude/skills/python-pro/references/testing.md`
-- **Playwright E2E Testing Framework** (2 connections) — `.claude/skills/test-master/references/e2e-testing.md`
-- **Python Packaging Reference** (1 connections) — `.claude/skills/python-pro/references/packaging.md`
-- **Python Standard Library Reference** (1 connections) — `.claude/skills/python-pro/references/standard-library.md`
-- **asyncio and async-await Pattern** (1 connections) — `.claude/skills/python-pro/references/async-patterns.md`
-- **mypy Strict Type Checking** (1 connections) — `.claude/skills/python-pro/references/type-system.md`
+- **Auto-Sanitization System** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **What It Fixes** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **What It CANNOT Fix** (4 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Binary Operators (Two Values)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Unary Operators (One Value)** (3 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **What It Does** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **code:javascript ({)** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. IF/Switch Metadata** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **1. Broken Connections** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **2. Branch Count Mismatches** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
+- **3. Paradoxical Corrupt States** (1 connections) — `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Relationships
 
-- [[Community 400]] (2 shared connections)
+- [[Community 342]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/python-pro/SKILL.md`
-- `.claude/skills/python-pro/references/async-patterns.md`
-- `.claude/skills/python-pro/references/packaging.md`
-- `.claude/skills/python-pro/references/standard-library.md`
-- `.claude/skills/python-pro/references/testing.md`
-- `.claude/skills/python-pro/references/type-system.md`
-- `.claude/skills/test-master/SKILL.md`
-- `.claude/skills/test-master/references/automation-frameworks.md`
-- `.claude/skills/test-master/references/e2e-testing.md`
-- `.claude/skills/test-master/references/integration-testing.md`
+- `.claude/skills/n8n-validation-expert/SKILL.md`
 
 ## Audit Trail
 
-- EXTRACTED: 28 (78%)
-- INFERRED: 8 (22%)
+- EXTRACTED: 27 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

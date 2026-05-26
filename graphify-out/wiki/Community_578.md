@@ -4,19 +4,19 @@
 
 ## Key Concepts
 
-- **Integration-Specific Gotchas** (4 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Bidirectional Threshold Checking** (2 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Google Sheets** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **Google Drive** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
-- **code:javascript (// ❌ Only catches increases)** (1 connections) — `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- **Philosophy** (3 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **✅ Good Practice** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **❌ Bad Practice** (2 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:block1 (1. Run validation with 'runtime' profile)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
+- **code:block2 (1. Ignore all warnings blindly)** (1 connections) — `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Relationships
 
-- [[restore.sh]] (1 shared connections)
+- [[Community 425]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-workflow-patterns/SKILL.md`
+- `.claude/skills/n8n-validation-expert/FALSE_POSITIVES.md`
 
 ## Audit Trail
 

@@ -4,24 +4,27 @@
 
 ## Key Concepts
 
-- **004_log_entry_photos.py** (2 connections) — `api/db/migrations/versions/004_log_entry_photos.py`
-- **upgrade()** (2 connections) — `api/db/migrations/versions/004_log_entry_photos.py`
-- **downgrade()** (2 connections) — `api/db/migrations/versions/004_log_entry_photos.py`
-- **Create log_entry_photos; drop single-photo columns from log_entries.** (1 connections) — `api/db/migrations/versions/004_log_entry_photos.py`
-- **Drop log_entry_photos; restore single-photo columns on log_entries.** (1 connections) — `api/db/migrations/versions/004_log_entry_photos.py`
+- **loadReportArchive()** (5 connections) — `frontend/js/reports.js`
+- **GET /reports/history** (3 connections) — `api/routers/reports.py`
+- **API.reports.history()** (2 connections) — `frontend/js/api.js`
+- **loadReportArchive()** (2 connections) — `frontend/js/reports.js`
+- **ReportHistoryList shape (items[], total)** (2 connections) — `api/routers/reports.py`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[test_auth.py]] (3 shared connections)
+- [[006_whatsapp_and_smtp_config.py]] (1 shared connections)
 
 ## Source Files
 
-- `api/db/migrations/versions/004_log_entry_photos.py`
+- `api/routers/reports.py`
+- `frontend/js/api.js`
+- `frontend/js/reports.js`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 11 (79%)
+- INFERRED: 3 (21%)
 - AMBIGUOUS: 0 (0%)
 
 ---

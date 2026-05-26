@@ -4,28 +4,38 @@
 
 ## Key Concepts
 
-- **Template from Real Workflow** (6 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Webhook Slash Command** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **OpenStreetMap API** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Weather API (NWS)** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Slack Message** (2 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **Workflow Structure** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:json ({)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block44 (https://nominatim.openstreetmap.org/search?q={{$json.body.te)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block45 (https://api.weather.gov/points/{{$node["OpenStreetMap"].json)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
-- **code:block46 (Weather for {{$json.body.text}}:)** (1 connections) — `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- **Standard Library Reference - Python Code Node** (16 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Available Modules** (4 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **⚠️ Critical Limitation** (2 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **STANDARD_LIBRARY.md** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **code:python (# ❌ NOT AVAILABLE - Will cause ModuleNotFoundError)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Priority 1: Most Useful (Use These)** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Priority 2: Moderately Useful** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Priority 3: Occasionally Useful** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Complete Standard Library List** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
+- **Summary** (1 connections) — `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Relationships
 
-- [[Community 331]] (1 shared connections)
+- [[Community 374]] (1 shared connections)
+- [[Community 296]] (1 shared connections)
+- [[Community 297]] (1 shared connections)
+- [[Community 463]] (1 shared connections)
+- [[Community 464]] (1 shared connections)
+- [[Community 372]] (1 shared connections)
+- [[Community 467]] (1 shared connections)
+- [[Community 373]] (1 shared connections)
+- [[Community 572]] (1 shared connections)
+- [[Community 466]] (1 shared connections)
+- [[Community 465]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-expression-syntax/EXAMPLES.md`
+- `.claude/skills/n8n-code-python/STANDARD_LIBRARY.md`
 
 ## Audit Trail
 
-- EXTRACTED: 19 (100%)
+- EXTRACTED: 29 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

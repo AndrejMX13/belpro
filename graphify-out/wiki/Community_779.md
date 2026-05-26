@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **test_backup_restore.sh** (0 connections) — `scripts/test_backup_restore.sh`
+- **load_env.sh** (0 connections) — `scripts/load_env.sh`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `scripts/test_backup_restore.sh`
+- `scripts/load_env.sh`
 
 ## Audit Trail
 

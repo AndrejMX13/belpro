@@ -33,7 +33,8 @@
 
 ## Relationships
 
-- [[connections]] (9 shared connections)
+- [[log_entries.py]] (6 shared connections)
+- [[errors.py]] (3 shared connections)
 
 ## Source Files
 

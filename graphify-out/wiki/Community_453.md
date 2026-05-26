@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **Pattern 4: _node - Reference Other Nodes** (4 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Basic Usage** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 1: Combine Multiple Sources** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **Example 2: Compare Across Nodes** (2 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Get output from specific node)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (# Reference multiple nodes)** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
-- **code:python (old_data = _node["Get Old Data"]["json"])** (1 connections) — `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- **0. Sandbox Restrictions (Critical)** (5 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Blocked helpers** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **`require()` is gated by allowlists** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// ❌ BLOCKED — throws UnsupportedFunctionError)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **`$env` may be blocked** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **code:javascript (// May throw "Cannot find module 'crypto'" — depends on env )** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **What's always safe** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Relationships
 
-- [[Community 411]] (1 shared connections)
+- [[Community 555]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-python/DATA_ACCESS.md`
+- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
 
 ## Audit Trail
 

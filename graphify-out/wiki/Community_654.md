@@ -4,9 +4,9 @@
 
 ## Key Concepts
 
-- **list_volunteers** (2 connections) — `api/routers/volunteers.py`
-- **loadVolunteers** (1 connections) — `frontend/js/volunteers.js`
-- **renderApprovals** (1 connections) — `frontend/js/volunteers.js`
+- **BelPro — Diagram komponent** (2 connections) — `docs/images/belpro-arhitektura-komponente.md`
+- **belpro-arhitektura-komponente.md** (1 connections) — `docs/images/belpro-arhitektura-komponente.md`
+- **code:mermaid (flowchart TB)** (1 connections) — `docs/images/belpro-arhitektura-komponente.md`
 
 ## Relationships
 
@@ -14,8 +14,7 @@
 
 ## Source Files
 
-- `api/routers/volunteers.py`
-- `frontend/js/volunteers.js`
+- `docs/images/belpro-arhitektura-komponente.md`
 
 ## Audit Trail
 

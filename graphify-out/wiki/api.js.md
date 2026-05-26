@@ -4,23 +4,23 @@
 
 ## Key Concepts
 
-- **Code Reviewer** (8 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Review Patterns (Quick Reference)** (4 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Constraints** (3 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **N+1 Query — Bad vs Good** (2 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Magic Number — Bad vs Good** (2 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Security: SQL Injection — Bad vs Good** (2 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **When to Use This Skill** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **code:python (# BAD: query inside loop)** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **code:python (# BAD)** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **code:python (# BAD: string interpolation in query)** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **MUST DO** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **MUST NOT DO** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Output Template** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
-- **Knowledge Reference** (1 connections) — `.claude/skills/code-reviewer/SKILL.md`
+- **renderLogEntryDetail** (9 connections) — `frontend/js/volunteers.js`
+- **renderDetail** (4 connections) — `frontend/js/volunteers.js`
+- **loadApprovals** (3 connections) — `frontend/js/volunteers.js`
+- **get_volunteer** (2 connections) — `api/routers/volunteers.py`
+- **list_log_entries** (2 connections) — `api/routers/log_entries.py`
+- **approve_log_entry** (2 connections) — `api/routers/log_entries.py`
+- **reject_log_entry** (2 connections) — `api/routers/log_entries.py`
+- **loadVolunteerLog** (1 connections) — `frontend/js/volunteers.js`
+- **delete_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **update_volunteer** (1 connections) — `api/routers/volunteers.py`
+- **get_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **create_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **update_log_entry** (1 connections) — `api/routers/log_entries.py`
+- **upload_photo** (1 connections) — `api/routers/log_entries.py`
+- **get_photo_file** (1 connections) — `api/routers/log_entries.py`
+- **delete_photo** (1 connections) — `api/routers/log_entries.py`
+- **delete_log_entry** (1 connections) — `api/routers/log_entries.py`
 
 ## Relationships
 
@@ -28,11 +28,13 @@
 
 ## Source Files
 
-- `.claude/skills/code-reviewer/SKILL.md`
+- `api/routers/log_entries.py`
+- `api/routers/volunteers.py`
+- `frontend/js/volunteers.js`
 
 ## Audit Trail
 
-- EXTRACTED: 32 (100%)
+- EXTRACTED: 34 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -4,13 +4,13 @@
 
 ## Key Concepts
 
-- **Security & Audit** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **n8n_audit_instance** (2 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
-- **code:javascript (// Full audit (default — runs both built-in + custom scan))** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **Mistake 5: Not Using Smart Parameters** (3 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// IF node connection)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
+- **code:javascript (// IF node - semantic branch names)** (1 connections) — `.claude/skills/n8n-mcp-tools-expert/SKILL.md`
 
 ## Relationships
 
-- [[IF: Photo Limit Reached]] (1 shared connections)
+- [[GET /log-entries/{id}]] (1 shared connections)
 
 ## Source Files
 

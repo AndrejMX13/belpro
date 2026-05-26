@@ -1,35 +1,35 @@
 # persist_report()
 
-> 43 nodes
+> 45 nodes
 
 ## Key Concepts
 
-- **MySQL Tuning** (10 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **InnoDB Performance Settings** (4 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **InnoDB Memory Configuration** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Query Optimization** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Index Optimization** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Partitioning** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Replication Optimization** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Table Optimization** (3 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Buffer Pool** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Sort and Join Buffers** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Query Cache (Deprecated in 8.0)** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Log Files and Flushing** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **I/O Configuration** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Thread Configuration** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Slow Query Log** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Performance Schema** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Index Statistics** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Covering Indexes** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Range Partitioning** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **List Partitioning** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Binary Log Settings** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Replication Lag Monitoring** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Table Maintenance** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Table Compression** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- **Configuration File Example** (2 connections) — `.claude/skills/database-optimizer/references/mysql-tuning.md`
-- *... and 18 more nodes in this community*
+- **error_handler.json** (20 connections) — `n8n/workflows/error_handler.json`
+- **activeVersion** (12 connections) — `n8n/workflows/error_handler.json`
+- **settings** (6 connections) — `n8n/workflows/error_handler.json`
+- **connections** (5 connections) — `n8n/workflows/error_handler.json`
+- **connections** (5 connections) — `n8n/workflows/error_handler.json`
+- **Error Trigger** (3 connections) — `n8n/workflows/error_handler.json`
+- **When Called By Another Workflow** (3 connections) — `n8n/workflows/error_handler.json`
+- **Code: Normalize Input** (3 connections) — `n8n/workflows/error_handler.json`
+- **HTTP: POST /api/errors** (3 connections) — `n8n/workflows/error_handler.json`
+- **updatedAt** (1 connections) — `n8n/workflows/error_handler.json`
+- **createdAt** (1 connections) — `n8n/workflows/error_handler.json`
+- **id** (1 connections) — `n8n/workflows/error_handler.json`
+- **name** (1 connections) — `n8n/workflows/error_handler.json`
+- **description** (1 connections) — `n8n/workflows/error_handler.json`
+- **active** (1 connections) — `n8n/workflows/error_handler.json`
+- **isArchived** (1 connections) — `n8n/workflows/error_handler.json`
+- **nodes** (1 connections) — `n8n/workflows/error_handler.json`
+- **main** (1 connections) — `n8n/workflows/error_handler.json`
+- **main** (1 connections) — `n8n/workflows/error_handler.json`
+- **main** (1 connections) — `n8n/workflows/error_handler.json`
+- **main** (1 connections) — `n8n/workflows/error_handler.json`
+- **executionOrder** (1 connections) — `n8n/workflows/error_handler.json`
+- **timezone** (1 connections) — `n8n/workflows/error_handler.json`
+- **saveDataErrorExecution** (1 connections) — `n8n/workflows/error_handler.json`
+- **saveDataSuccessExecution** (1 connections) — `n8n/workflows/error_handler.json`
+- *... and 20 more nodes in this community*
 
 ## Relationships
 
@@ -37,11 +37,11 @@
 
 ## Source Files
 
-- `.claude/skills/database-optimizer/references/mysql-tuning.md`
+- `n8n/workflows/error_handler.json`
 
 ## Audit Trail
 
-- EXTRACTED: 84 (100%)
+- EXTRACTED: 96 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

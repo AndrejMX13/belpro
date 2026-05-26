@@ -4,26 +4,26 @@
 
 ## Key Concepts
 
-- **Test Master** (6 connections) — `.claude/skills/test-master/SKILL.md`
-- **Quick-Start Example** (2 connections) — `.claude/skills/test-master/SKILL.md`
-- **SKILL.md** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Core Workflow** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **code:js (// ✅ Good: meaningful description, specific assertion, isola)** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Reference Guide** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Constraints** (1 connections) — `.claude/skills/test-master/SKILL.md`
-- **Output Templates** (1 connections) — `.claude/skills/test-master/SKILL.md`
+- **Task 4: Admin router — GET/PATCH + tests** (8 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (async def test_get_admin_settings_includes_evolution_instanc)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_admin.py::test_get)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:python (return AdminSettingsResponse()** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_admin.py::test_get)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (docker compose exec api pytest tests/test_admin.py -v)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
+- **code:bash (git add api/routers/admin.py api/tests/test_admin.py)** (1 connections) — `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [[Community 401]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/test-master/SKILL.md`
+- `docs/superpowers/plans/2026-05-25-evolution-instance-appsetting.md`
 
 ## Audit Trail
 
-- EXTRACTED: 14 (100%)
+- EXTRACTED: 15 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

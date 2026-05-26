@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **feedback_commit_git_status.md** (0 connections) — `.claude/memory/feedback_commit_git_status.md`
+- **check_cache.py** (0 connections) — `scripts/graphify/check_cache.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `.claude/memory/feedback_commit_git_status.md`
+- `scripts/graphify/check_cache.py`
 
 ## Audit Trail
 

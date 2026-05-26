@@ -4,34 +4,28 @@
 
 ## Key Concepts
 
-- **Secure Code Guardian Skill** (8 connections) — `.claude/skills/secure-code-guardian/SKILL.md`
-- **Input Validation Reference (Zod, SQL Injection)** (3 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **OWASP Top 10 Prevention Reference** (3 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **Authentication Reference (bcrypt, JWT)** (2 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
-- **Security Headers Reference (Helmet, CORS, Rate Limiting)** (2 connections) — `.claude/skills/secure-code-guardian/references/security-headers.md`
-- **XSS and CSRF Prevention Reference** (2 connections) — `.claude/skills/secure-code-guardian/references/xss-csrf.md`
-- **SQL Injection Prevention (Parameterized Queries)** (2 connections) — `.claude/skills/secure-code-guardian/references/input-validation.md`
-- **OWASP Top 10 Vulnerabilities** (1 connections) — `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- **JWT Token Authentication** (1 connections) — `.claude/skills/secure-code-guardian/references/authentication.md`
+- **Task 1: AppSetting ORM model + Alembic migration** (9 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""Tests for AppSettings service and admin settings router.")** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block2 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""AppSetting ORM model — runtime-tunable key-value configur)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""SQLAlchemy ORM models — import all to ensure they registe)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:python ("""Add settings table for runtime-tunable configuration.)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block6 (docker compose exec api alembic upgrade head)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:block7 (docker compose exec api pytest tests/test_app_settings.py::t)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
+- **code:bash (git add api/models/app_setting.py api/models/__init__.py api)** (1 connections) — `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Relationships
 
-- [[Text Extract]] (2 shared connections)
-- [[POST /log-entries/{id}/photos]] (2 shared connections)
+- [[Community 539]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/secure-code-guardian/SKILL.md`
-- `.claude/skills/secure-code-guardian/references/authentication.md`
-- `.claude/skills/secure-code-guardian/references/input-validation.md`
-- `.claude/skills/secure-code-guardian/references/owasp-prevention.md`
-- `.claude/skills/secure-code-guardian/references/security-headers.md`
-- `.claude/skills/secure-code-guardian/references/xss-csrf.md`
+- `docs/superpowers/plans/2026-05-20-settings-table.md`
 
 ## Audit Trail
 
-- EXTRACTED: 20 (83%)
-- INFERRED: 4 (17%)
+- EXTRACTED: 17 (100%)
+- INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -1,30 +1,34 @@
 # Community 406
 
-> 8 nodes
+> 9 nodes
 
 ## Key Concepts
 
-- **3. Podatkovni model** (8 connections) — `SPEC_SL.md`
-- **`volunteers`** (1 connections) — `SPEC_SL.md`
-- **`managers`** (1 connections) — `SPEC_SL.md`
-- **`log_entries`** (1 connections) — `SPEC_SL.md`
-- **`log_entry_photos`** (1 connections) — `SPEC_SL.md`
-- **`monthly_reports`** (1 connections) — `SPEC_SL.md`
-- **`settings`** (1 connections) — `SPEC_SL.md`
-- **`error_log`** (1 connections) — `SPEC_SL.md`
+- **conftest.py** (6 connections) — `api/tests/conftest.py`
+- **engine()** (6 connections) — `api/tests/conftest.py`
+- **db_session()** (2 connections) — `api/tests/conftest.py`
+- **client()** (2 connections) — `api/tests/conftest.py`
+- **auth()** (2 connections) — `api/tests/conftest.py`
+- **Run Alembic migrations against belpro_test, seed one Manager row.     Drops all** (1 connections) — `api/tests/conftest.py`
+- **Per-test session inside a SAVEPOINT.  The app's commit() releases the     savepo** (1 connections) — `api/tests/conftest.py`
+- **AsyncClient with get_db dependency wired to the test session.** (1 connections) — `api/tests/conftest.py`
+- **HTTP Basic Auth header for the seeded manager.** (1 connections) — `api/tests/conftest.py`
 
 ## Relationships
 
-- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
+- [[load_key()]] (3 shared connections)
+- [[volunteers.js]] (1 shared connections)
+- [[VolunteerUpdate]] (1 shared connections)
+- [[ops_server.py]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `api/tests/conftest.py`
 
 ## Audit Trail
 
-- EXTRACTED: 15 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 18 (82%)
+- INFERRED: 4 (18%)
 - AMBIGUOUS: 0 (0%)
 
 ---

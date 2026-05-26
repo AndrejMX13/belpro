@@ -4,21 +4,21 @@
 
 ## Key Concepts
 
-- **6. Available Node.js Modules** (4 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **crypto Module** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **Buffer (built-in)** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **URL / URLSearchParams** (2 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (const crypto = require('crypto');)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Base64 encoding)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
-- **code:javascript (// Parse URL)** (1 connections) — `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- **Advanced Patterns** (4 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Conditional Content** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **Date Manipulation** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **String Manipulation** (2 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// Ternary operator)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// Add days)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
+- **code:javascript (// Substring)** (1 connections) — `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Relationships
 
-- [[Community 551]] (1 shared connections)
+- [[IF: Manager ima telefon?]] (1 shared connections)
 
 ## Source Files
 
-- `.claude/skills/n8n-code-javascript/BUILTIN_FUNCTIONS.md`
+- `.claude/skills/n8n-expression-syntax/SKILL.md`
 
 ## Audit Trail
 

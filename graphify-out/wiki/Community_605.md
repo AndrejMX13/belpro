@@ -4,18 +4,18 @@
 
 ## Key Concepts
 
-- **[0.10.0-beta.1] — 2026-05-15** (4 connections) — `CHANGELOG.md`
-- **Added** (1 connections) — `CHANGELOG.md`
-- **Changed** (1 connections) — `CHANGELOG.md`
-- **Fixed** (1 connections) — `CHANGELOG.md`
+- **6. Monthly PDF Reports** (4 connections) — `SPEC.md`
+- **6.1 Volunteer PDF (per person)** (1 connections) — `SPEC.md`
+- **6.2 Manager Consolidated PDF** (1 connections) — `SPEC.md`
+- **6.3 Delivery** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[Normalise phone to bare E.164 digits, pass through None.]] (1 shared connections)
+- [[PATCH /api/volunteers/{id}/activate (activate_volunteer)]] (1 shared connections)
 
 ## Source Files
 
-- `CHANGELOG.md`
+- `SPEC.md`
 
 ## Audit Trail
 

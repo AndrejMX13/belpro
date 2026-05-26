@@ -4,32 +4,32 @@
 
 ## Key Concepts
 
-- **BelPro — Specifikacija sistema** (15 connections) — `SPEC_SL.md`
-- **1. Pregled projekta** (2 connections) — `SPEC_SL.md`
-- **2. Pregled arhitekture** (2 connections) — `SPEC_SL.md`
-- **9. Struktura projekta** (2 connections) — `SPEC_SL.md`
-- **SPEC_SL.md** (1 connections) — `SPEC_SL.md`
-- **Pravni okvir** (1 connections) — `SPEC_SL.md`
-- **Komponente** (1 connections) — `SPEC_SL.md`
-- **7. E-pošta** (1 connections) — `SPEC_SL.md`
-- **8. GDPR in zasebnost** (1 connections) — `SPEC_SL.md`
-- **code:block2 (belpro/)** (1 connections) — `SPEC_SL.md`
-- **10. Namestitev** (1 connections) — `SPEC_SL.md`
-- **11. Zunaj obsega — različica v1** (1 connections) — `SPEC_SL.md`
+- **Belpro — System Specification** (15 connections) — `SPEC.md`
+- **1. Project Overview** (2 connections) — `SPEC.md`
+- **2. Architecture Overview** (2 connections) — `SPEC.md`
+- **9. Project Structure** (2 connections) — `SPEC.md`
+- **SPEC.md** (1 connections) — `SPEC.md`
+- **Legal Context** (1 connections) — `SPEC.md`
+- **Components** (1 connections) — `SPEC.md`
+- **7. Email** (1 connections) — `SPEC.md`
+- **8. GDPR & Privacy** (1 connections) — `SPEC.md`
+- **code:block2 (belpro/)** (1 connections) — `SPEC.md`
+- **10. Deployment** (1 connections) — `SPEC.md`
+- **11. Out of Scope (v1)** (1 connections) — `SPEC.md`
 
 ## Relationships
 
-- [[Community 406]] (1 shared connections)
+- [[Community 409]] (1 shared connections)
+- [[Community 444]] (1 shared connections)
+- [[Community 320]] (1 shared connections)
+- [[Community 605]] (1 shared connections)
+- [[Maximum photos allowed per log entry.]] (1 shared connections)
 - [[Community 507]] (1 shared connections)
-- [[Community 318]] (1 shared connections)
-- [[Community 604]] (1 shared connections)
-- [[Reject EMŠO numbers that fail the mod-11 checksum.]] (1 shared connections)
-- [[Community 506]] (1 shared connections)
-- [[Community 441]] (1 shared connections)
+- [[Community 354]] (1 shared connections)
 
 ## Source Files
 
-- `SPEC_SL.md`
+- `SPEC.md`
 
 ## Audit Trail
 

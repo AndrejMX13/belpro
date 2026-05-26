@@ -4,11 +4,11 @@
 
 ## Key Concepts
 
-- **Python Modes: Beta vs Native** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Python (Beta) - Recommended** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **Python (Native) (Beta)** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Python (Beta) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
-- **code:python (# Python (Native) example)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Return Format Requirements** (3 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Correct Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **Incorrect Return Formats** (2 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ✅ Single result)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
+- **code:python (# ❌ WRONG: Dictionary without list wrapper)** (1 connections) — `.claude/skills/n8n-code-python/SKILL.md`
 
 ## Relationships
 

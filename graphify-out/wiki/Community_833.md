@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **GET /api/logo (get_logo)** (0 connections) — `api/routers/logo.py`
+- **GET /api/errors (list_errors)** (0 connections) — `api/routers/errors.py`
 
 ## Relationships
 
@@ -12,7 +12,7 @@
 
 ## Source Files
 
-- `api/routers/logo.py`
+- `api/routers/errors.py`
 
 ## Audit Trail
 
