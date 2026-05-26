@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T15:08:56.853Z",
+  "updatedAt": "2026-05-26T15:41:11.017Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -3084,7 +3084,7 @@
   },
   "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
   "activeVersionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
-  "versionCounter": 1205,
+  "versionCounter": 1233,
   "triggerCount": 1,
   "shared": [
     {
@@ -6162,8 +6162,72 @@
     "autosaved": true,
     "workflowPublishHistory": [
       {
+        "createdAt": "2026-05-26T15:37:50.817Z",
+        "id": 523,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:37:50.847Z",
+        "id": 524,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:41:11.090Z",
+        "id": 537,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:41:11.118Z",
+        "id": 538,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
         "createdAt": "2026-05-26T15:10:46.718Z",
         "id": 508,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:37:50.692Z",
+        "id": 521,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:37:50.720Z",
+        "id": 522,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:41:11.193Z",
+        "id": 539,
+        "workflowId": "Lw6qRiO9ozSr6EeW",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T15:41:11.222Z",
+        "id": 540,
         "workflowId": "Lw6qRiO9ozSr6EeW",
         "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
         "event": "activated",
