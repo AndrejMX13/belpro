@@ -251,7 +251,7 @@ Odpri n8n na naslovu **http://localhost:5678** in se prijavi z uporabniškim ime
    ```bash
    ./scripts/n8n_workflows.py import
    ```
-3. Nastavi prijavne podatke (credentials), kot je opisano v datoteki `n8n/credentials/README.md`.
+3. Nastavi prijavne podatke (credentials), kot je opisano v datoteki [n8n/credentials/README.md](n8n/credentials/README.md).
 4. Aktiviraj vse delovne procese.
 
 ### 8. Poveži WhatsApp

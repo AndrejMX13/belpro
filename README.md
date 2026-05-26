@@ -250,7 +250,7 @@ Open n8n at **http://localhost:5678** and log in with `N8N_BASIC_AUTH_USER` / `N
    ```bash
    ./scripts/n8n_workflows.py import
    ```
-3. Set up credentials as documented in `n8n/credentials/README.md`.
+3. Set up credentials as documented in [n8n/credentials/README.md](n8n/credentials/README.md).
 4. Activate all workflows.
 
 ### 8. Connect WhatsApp
