@@ -27,5 +27,5 @@ http://localhost:5678 in ročno ustvari vse prijavne podatke pod
   v datoteki `.env`. Deluje z Gmail (smtp.gmail.com:587 + Geslo za aplikacijo), Yahoo, Proton
   ali katerim koli SMTP strežnikom.
 - **Evolution API:** glava `apikey: <EVOLUTION_API_KEY iz .env>`
-- **BelPro API (Basic Auth):** uporabniško ime = `admin`, geslo = `MANAGER_PASSWORD` iz datoteke `.env`.
+- **BelPro API (Basic Auth):** uporabniško ime = `manager`, geslo = `MANAGER_PASSWORD` iz datoteke `.env`.
 - **BelPro API Internal Key:** Ime glave `X-Internal-Key`, vrednost = `API_SECRET_KEY` iz datoteke `.env`.

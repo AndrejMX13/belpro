@@ -27,5 +27,5 @@ http://localhost:5678 and create each credential manually under
   in `.env`. Works with Gmail (smtp.gmail.com:587 + App Password), Yahoo, Proton,
   or any SMTP server.
 - **Evolution API:** Header `apikey: <EVOLUTION_API_KEY from .env>`
-- **BelPro API (Basic Auth):** username = `admin`, password = `MANAGER_PASSWORD` from `.env`.
+- **BelPro API (Basic Auth):** username = `manager`, password = `MANAGER_PASSWORD` from `.env`.
 - **BelPro API Internal Key:** Header name `X-Internal-Key`, value = `API_SECRET_KEY` from `.env`.
