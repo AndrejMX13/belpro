@@ -21,8 +21,6 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 ## Kako deluje
 
-![BelPro Arhitektura](docs/images/architecture_sl.svg)
-
 <table>
 <tr>
 <td><b>Glasovni zapis ali besedilni vnos</b> — Prostovoljec pošlje glasovno sporočilo ali besedilno sporočilo na WhatsApp številko NVO. BelPro pretvori zvok v besedilo s Faster-Whisper (lokalno, na procesorju, v slovenščini), izlušči datum, ure, lokacijo in aktivnost ter pošlje povzetek z možnostmi: 1&nbsp;Potrdi / 2&nbsp;Popravi / 3&nbsp;Dodaj slike / 4&nbsp;Prekliči.</td>

@@ -21,8 +21,6 @@ Volunteers log work via **WhatsApp** (voice notes, photos, or text). A manager r
 
 ## How it works
 
-![BelPro Architecture](docs/images/architecture.svg)
-
 <table>
 <tr>
 <td><b>Voice note or text entry</b> — The volunteer sends a voice note or text message to the NGO's WhatsApp number. BelPro transcribes audio via Faster-Whisper (local, CPU, Slovenian), extracts date, hours, location, and activity, then sends a confirmation summary with four options: 1&nbsp;Potrdi / 2&nbsp;Popravi / 3&nbsp;Dodaj slike / 4&nbsp;Prekliči.</td>
