@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-05-26T14:54:56.798Z",
+  "updatedAt": "2026-05-26T14:55:51.338Z",
   "createdAt": "2026-05-26T14:53:46.335Z",
   "id": "bimWdc4YvcR7yIC4",
   "name": "BelPro - Napake",
-  "description": null,
+  "description": "",
   "active": true,
   "isArchived": false,
   "nodes": [
@@ -159,7 +159,7 @@
   "pinData": null,
   "versionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
   "activeVersionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
-  "versionCounter": 4,
+  "versionCounter": 9,
   "triggerCount": 0,
   "shared": [
     {
@@ -335,6 +335,38 @@
       {
         "createdAt": "2026-05-26T14:54:56.866Z",
         "id": 474,
+        "workflowId": "bimWdc4YvcR7yIC4",
+        "versionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.428Z",
+        "id": 495,
+        "workflowId": "bimWdc4YvcR7yIC4",
+        "versionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.443Z",
+        "id": 496,
+        "workflowId": "bimWdc4YvcR7yIC4",
+        "versionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.376Z",
+        "id": 493,
+        "workflowId": "bimWdc4YvcR7yIC4",
+        "versionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.393Z",
+        "id": 494,
         "workflowId": "bimWdc4YvcR7yIC4",
         "versionId": "0d80c538-91be-4706-8d57-4bb4fe1d37cb",
         "event": "activated",

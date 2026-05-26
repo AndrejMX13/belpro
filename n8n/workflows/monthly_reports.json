@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T14:54:57.517Z",
+  "updatedAt": "2026-05-26T14:55:51.640Z",
   "createdAt": "2026-05-04T17:46:55.815Z",
   "id": "db9cibXhzSyyZJc8",
   "name": "BelPro — Mesečna Poročila",
@@ -150,7 +150,7 @@
   "pinData": {},
   "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
   "activeVersionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
-  "versionCounter": 105,
+  "versionCounter": 110,
   "triggerCount": 1,
   "shared": [
     {
@@ -357,6 +357,14 @@
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
+        "createdAt": "2026-05-26T14:55:51.791Z",
+        "id": 504,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
         "createdAt": "2026-05-26T07:33:02.462Z",
         "id": 446,
         "workflowId": "db9cibXhzSyyZJc8",
@@ -434,6 +442,14 @@
         "workflowId": "db9cibXhzSyyZJc8",
         "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
         "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.777Z",
+        "id": 503,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
@@ -543,6 +559,22 @@
       {
         "createdAt": "2026-05-25T19:07:27.968Z",
         "id": 425,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.670Z",
+        "id": 501,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:55:51.718Z",
+        "id": 502,
         "workflowId": "db9cibXhzSyyZJc8",
         "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
         "event": "activated",

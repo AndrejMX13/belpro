@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T14:54:57.606Z",
+  "updatedAt": "2026-05-26T14:55:51.899Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -2156,6 +2156,34 @@
         3680,
         -64
       ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return [{ json: { workflow_name: 'BelPro - Vnos Prostovoljcev', operation: 'manager_lookup', detail: $json.message || 'Ni aktivnega vnosa za odobritev.' } }];"
+      },
+      "id": "code_pripravi_napako",
+      "name": "Code: Pripravi Napako",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1216,
+        960
+      ]
+    },
+    {
+      "parameters": {
+        "workflowId": "bimWdc4YvcR7yIC4",
+        "mode": "each",
+        "options": {}
+      },
+      "id": "exec_wf_napake",
+      "name": "Execute Workflow: Napake",
+      "type": "n8n-nodes-base.executeWorkflow",
+      "typeVersion": 1,
+      "position": [
+        1456,
+        960
+      ]
     }
   ],
   "connections": {
@@ -2553,6 +2581,11 @@
         [
           {
             "node": "HTTP: WA Ni Aktivnega Vnosa (Mgr)",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Code: Pripravi Napako",
             "type": "main",
             "index": 0
           }
@@ -3005,6 +3038,17 @@
           }
         ]
       ]
+    },
+    "Code: Pripravi Napako": {
+      "main": [
+        [
+          {
+            "node": "Execute Workflow: Napake",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
     }
   },
   "settings": {
@@ -3038,9 +3082,9 @@
       }
     ]
   },
-  "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-  "activeVersionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-  "versionCounter": 1132,
+  "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
+  "activeVersionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
+  "versionCounter": 1136,
   "triggerCount": 1,
   "shared": [
     {
@@ -3063,9 +3107,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-26T14:09:08.938Z",
-    "createdAt": "2026-05-26T14:06:49.112Z",
-    "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
+    "updatedAt": "2026-05-26T14:55:51.902Z",
+    "createdAt": "2026-05-26T14:55:51.902Z",
+    "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -5217,6 +5261,34 @@
           3680,
           -64
         ]
+      },
+      {
+        "parameters": {
+          "jsCode": "return [{ json: { workflow_name: 'BelPro - Vnos Prostovoljcev', operation: 'manager_lookup', detail: $json.message || 'Ni aktivnega vnosa za odobritev.' } }];"
+        },
+        "id": "code_pripravi_napako",
+        "name": "Code: Pripravi Napako",
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1216,
+          960
+        ]
+      },
+      {
+        "parameters": {
+          "workflowId": "bimWdc4YvcR7yIC4",
+          "mode": "each",
+          "options": {}
+        },
+        "id": "exec_wf_napake",
+        "name": "Execute Workflow: Napake",
+        "type": "n8n-nodes-base.executeWorkflow",
+        "typeVersion": 1,
+        "position": [
+          1456,
+          960
+        ]
       }
     ],
     "connections": {
@@ -5614,6 +5686,11 @@
           [
             {
               "node": "HTTP: WA Ni Aktivnega Vnosa (Mgr)",
+              "type": "main",
+              "index": 0
+            },
+            {
+              "node": "Code: Pripravi Napako",
               "type": "main",
               "index": 0
             }
@@ -6066,66 +6143,37 @@
             }
           ]
         ]
+      },
+      "Code: Pripravi Napako": {
+        "main": [
+          [
+            {
+              "node": "Execute Workflow: Napake",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
       }
     },
     "authors": "Andrej Mejac",
-    "name": "Version 92c49b44",
-    "description": "",
-    "autosaved": true,
+    "name": null,
+    "description": null,
+    "autosaved": false,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-26T14:09:08.933Z",
-        "id": 473,
+        "createdAt": "2026-05-26T14:55:51.964Z",
+        "id": 505,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T14:54:57.364Z",
-        "id": 485,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
+        "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
         "event": "deactivated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
-        "createdAt": "2026-05-26T14:54:57.387Z",
-        "id": 486,
+        "createdAt": "2026-05-26T14:55:51.992Z",
+        "id": 506,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T14:54:57.658Z",
-        "id": 491,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T14:54:57.691Z",
-        "id": 492,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T14:54:57.280Z",
-        "id": 483,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T14:54:57.306Z",
-        "id": 484,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "92c49b44-f7bc-4ca2-935f-9daf1db263e8",
+        "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }
