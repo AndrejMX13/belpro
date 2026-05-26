@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:43:41.266Z",
+  "updatedAt": "2026-05-26T14:54:57.517Z",
   "createdAt": "2026-05-04T17:46:55.815Z",
   "id": "db9cibXhzSyyZJc8",
   "name": "BelPro — Mesečna Poročila",
@@ -138,7 +138,8 @@
     "saveDataErrorExecution": "all",
     "saveDataSuccessExecution": "none",
     "saveManualExecutions": true,
-    "binaryMode": "separate"
+    "binaryMode": "separate",
+    "errorWorkflow": "bimWdc4YvcR7yIC4"
   },
   "staticData": {
     "node:28. v mesecu ob 07:00": {
@@ -149,7 +150,7 @@
   "pinData": {},
   "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
   "activeVersionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
-  "versionCounter": 97,
+  "versionCounter": 105,
   "triggerCount": 1,
   "shared": [
     {
@@ -372,6 +373,22 @@
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       },
       {
+        "createdAt": "2026-05-26T14:54:57.159Z",
+        "id": 481,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:54:57.176Z",
+        "id": 482,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
         "createdAt": "2026-05-26T07:33:02.510Z",
         "id": 448,
         "workflowId": "db9cibXhzSyyZJc8",
@@ -382,6 +399,38 @@
       {
         "createdAt": "2026-05-26T07:33:02.524Z",
         "id": 449,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:54:57.097Z",
+        "id": 479,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:54:57.113Z",
+        "id": 480,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "activated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:54:57.542Z",
+        "id": 489,
+        "workflowId": "db9cibXhzSyyZJc8",
+        "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
+        "event": "deactivated",
+        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
+      },
+      {
+        "createdAt": "2026-05-26T14:54:57.577Z",
+        "id": 490,
         "workflowId": "db9cibXhzSyyZJc8",
         "versionId": "d1a2d184-22c1-408c-a0ea-795caff906ff",
         "event": "activated",
