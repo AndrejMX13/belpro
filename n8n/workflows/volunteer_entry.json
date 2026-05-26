@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T07:43:41.421Z",
+  "updatedAt": "2026-05-26T07:47:40.972Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -1290,8 +1290,8 @@
       "type": "n8n-nodes-base.manualTrigger",
       "typeVersion": 1,
       "position": [
-        3184,
-        128
+        3360,
+        -288
       ]
     },
     {
@@ -1306,8 +1306,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        3376,
-        128
+        3680,
+        -80
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1325,8 +1325,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3536,
-        128
+        3856,
+        -80
       ]
     },
     {
@@ -1358,8 +1358,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        3712,
-        128
+        4032,
+        -80
       ]
     },
     {
@@ -1375,8 +1375,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        3920,
-        112
+        4288,
+        -96
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1394,8 +1394,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4096,
-        112
+        4512,
+        -80
       ]
     },
     {
@@ -2119,8 +2119,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3200,
-        -80
+        3136,
+        -112
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -2139,7 +2139,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        500,
+        512,
         304
       ]
     },
@@ -2153,8 +2153,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        3280,
-        128
+        3520,
+        -80
       ]
     }
   ],
@@ -3037,9 +3037,9 @@
       }
     ]
   },
-  "versionId": "8460cf55-c608-44f9-8026-687148e66172",
-  "activeVersionId": "8460cf55-c608-44f9-8026-687148e66172",
-  "versionCounter": 947,
+  "versionId": "f7adae72-7478-4363-af5d-fa6d9b6bdeba",
+  "activeVersionId": "f7adae72-7478-4363-af5d-fa6d9b6bdeba",
+  "versionCounter": 975,
   "triggerCount": 1,
   "shared": [
     {
@@ -3062,9 +3062,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-26T07:43:41.423Z",
-    "createdAt": "2026-05-26T07:43:41.423Z",
-    "versionId": "8460cf55-c608-44f9-8026-687148e66172",
+    "updatedAt": "2026-05-26T07:47:50.905Z",
+    "createdAt": "2026-05-26T07:47:40.975Z",
+    "versionId": "f7adae72-7478-4363-af5d-fa6d9b6bdeba",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -4350,8 +4350,8 @@
         "type": "n8n-nodes-base.manualTrigger",
         "typeVersion": 1,
         "position": [
-          3184,
-          128
+          3360,
+          -288
         ]
       },
       {
@@ -4366,8 +4366,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          3376,
-          128
+          3680,
+          -80
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4385,8 +4385,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          3536,
-          128
+          3856,
+          -80
         ]
       },
       {
@@ -4418,8 +4418,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          3712,
-          128
+          4032,
+          -80
         ]
       },
       {
@@ -4435,8 +4435,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          3920,
-          112
+          4288,
+          -96
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4454,8 +4454,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          4096,
-          112
+          4512,
+          -80
         ]
       },
       {
@@ -5179,8 +5179,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          3200,
-          -80
+          3136,
+          -112
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -5199,7 +5199,7 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          500,
+          512,
           304
         ]
       },
@@ -5213,8 +5213,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          3280,
-          128
+          3520,
+          -80
         ]
       }
     ],
@@ -6068,39 +6068,15 @@
       }
     },
     "authors": "Andrej Mejac",
-    "name": null,
-    "description": null,
-    "autosaved": false,
+    "name": "Version f7adae72",
+    "description": "",
+    "autosaved": true,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-26T07:43:41.480Z",
-        "id": 462,
+        "createdAt": "2026-05-26T07:47:50.900Z",
+        "id": 467,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T07:43:41.503Z",
-        "id": 463,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
-        "event": "activated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T07:43:41.565Z",
-        "id": 464,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T07:43:41.591Z",
-        "id": 465,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "8460cf55-c608-44f9-8026-687148e66172",
+        "versionId": "f7adae72-7478-4363-af5d-fa6d9b6bdeba",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }
