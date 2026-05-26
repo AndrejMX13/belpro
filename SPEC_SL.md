@@ -177,7 +177,7 @@ Vse vrednosti so v zbirki podatkov (prednost zbirka, rezerva `.env` prek storitv
 | acknowledged | BOOLEAN | Privzeto false; vodja potrdi prek nadzorne plošče |
 | created_at | TIMESTAMPTZ | NOT NULL DEFAULT now() |
 
-Vnose piše notranja storitev (skripte operacijskega spremljevalnika) prek `POST /api/errors` z overovanjem `X-Internal-Key: {API_SECRET_KEY}`. Število nepotrjenih napak je prikazano kot oznaka v navigacijski vrstici na strani Dnevnik napak.
+Vnose pišejo notranje storitve prek `POST /api/errors` z overovanjem `X-Internal-Key: {API_SECRET_KEY}`. Vire predstavljata operacijski spremljevalnik (varnostno kopiranje, čiščenje fotografij) in podpotek n8n `BelPro - Napake` (neobravnavane izjeme vozlišč in izrecne logične napake iz vseh potekov n8n). Število nepotrjenih napak je prikazano kot oznaka v navigacijski vrstici na strani Dnevnik napak.
 
 ---
 
@@ -323,7 +323,10 @@ Stran prav tako prikazuje **živi pripomoček za stanje sistema** — povzetek s
 
 #### 5.8 Dnevnik napak
 
-Dnevnik operacijskih napak — napake, ki jih zabeležijo storitve v ozadju (varnostno kopiranje in čiščenje fotografij operacijskega spremljevalnika) in katera koli druga storitev, ki uporablja notranjo končno točko `POST /api/errors`.
+Dnevnik operacijskih napak — napake, ki jih zabeležijo storitve v ozadju in poteki n8n prek notranje končne točke `POST /api/errors`. Dva vira:
+
+- **Operacijski spremljevalnik** — napake pri varnostnem kopiranju in čiščenju fotografij
+- **Podpotek n8n `BelPro - Napake`** — vsi trije glavni poteki (`Vnos Prostovoljcev`, `Odobritev Upravljalca`, `Mesečna Poročila`) sem samodejno usmerjajo neobravnavane izjeme vozlišč prek nastavitve `errorWorkflow`; izrecne logične napake (npr. iskanje vodje brez čakajočega vnosa) se pošljejo prek klicev Execute Workflow
 
 - Privzeti prikaz: samo nepotrjene napake; preklopljivo s potrditvenim poljem za prikaz vseh
 - Gumb **Potrdi** pri vsaki vrstici označi napako kot potrjeno (`PATCH /api/errors/{id}/acknowledge`)
