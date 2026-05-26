@@ -40,7 +40,7 @@ Prostovoljci beležijo delo prek **WhatsApp** (glasovni zapiski, fotografije ali
 
 ## Nadzorna plošča za vodje
 
-Spletna nadzorna plošča (`http://localhost:80`) je vodji centralno orodje za upravljanje celotnega življenjskega cikla prostovoljcev.
+Spletna nadzorna plošča (`http://localhost:80`), dostopna na lokalni Wi-Fi mreži, je vodji centralno orodje za upravljanje celotnega življenjskega cikla prostovoljcev.
 
 <table>
 <tr>

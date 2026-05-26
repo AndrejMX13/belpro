@@ -40,7 +40,7 @@ Volunteers log work via **WhatsApp** (voice notes, photos, or text). A manager r
 
 ## Manager dashboard
 
-The web dashboard (`http://localhost:80`) is the manager's control centre for the full volunteer lifecycle.
+The web dashboard (`http://localhost:80`), accessible on the local Wi-Fi, is the manager's control centre for the full volunteer lifecycle.
 
 <table>
 <tr>
