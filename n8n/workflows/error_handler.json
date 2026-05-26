@@ -39,7 +39,7 @@
         360
       ],
       "parameters": {
-        "jsCode": "const LABEL_MAP = {\n  'BelPro - Vnos Prostovoljcev': 'Napaka pri vnosu prostovoljca',\n  'BelPro — Odobritev Upravljalca': 'Napaka pri odobritvi vnosa',\n  'BelPro — Mesečna Poročila': 'Napaka pri mesečnih poročilih',\n};\n\nlet workflowName, operation, detail;\n\nif ($json.workflow_name !== undefined) {\n  // Shape B: explicit Execute Workflow call\n  workflowName = $json.workflow_name;\n  operation = $json.operation || workflowName;\n  detail = String($json.detail || '');\n} else {\n  // Shape A: n8n errorWorkflow trigger\n  workflowName = ($json.workflow || {}).name || 'neznano';\n  operation = ($json.execution || {}).lastNodeExecuted || workflowName;\n  const err = ($json.execution || {}).error || {};\n  detail = [err.message, err.stack].filter(Boolean).join('\n');\n}\n\nconst message = LABEL_MAP[workflowName] || 'Neznana napaka n8n';\n\nreturn [{ json: { service: 'n8n', operation, message, detail } }];"
+        "jsCode": "const LABEL_MAP = {\n  'BelPro - Vnos Prostovoljcev': 'Napaka pri vnosu prostovoljca',\n  'BelPro — Odobritev Upravljalca': 'Napaka pri odobritvi vnosa',\n  'BelPro — Mesečna Poročila': 'Napaka pri mesečnih poročilih',\n};\n\nlet workflowName, operation, detail;\n\nif ($json.workflow_name !== undefined) {\n  // Shape B: explicit Execute Workflow call\n  workflowName = $json.workflow_name;\n  operation = $json.operation || workflowName;\n  detail = String($json.detail || '');\n} else {\n  // Shape A: n8n errorWorkflow trigger\n  workflowName = ($json.workflow || {}).name || 'neznano';\n  operation = ($json.execution || {}).lastNodeExecuted || workflowName;\n  const err = ($json.execution || {}).error || {};\n  detail = [err.message, err.stack].filter(Boolean).join(' | ');\n}\n\nconst message = LABEL_MAP[workflowName] || 'Neznana napaka n8n';\n\nreturn [{ json: { service: 'n8n', operation, message, detail } }];"
       }
     },
     {
@@ -57,8 +57,8 @@
         "authentication": "genericCredentialType",
         "genericAuthType": "httpHeaderAuth",
         "sendBody": true,
-        "contentType": "json",
-        "body": "={{ JSON.stringify({service: $json.service, operation: $json.operation, message: $json.message, detail: $json.detail || null}) }}"
+        "specifyBody": "json",
+        "jsonBody": "={{ {service: $json.service, operation: $json.operation, message: $json.message, detail: $json.detail || null} }}"
       },
       "credentials": {
         "httpHeaderAuth": {
@@ -219,7 +219,7 @@
           360
         ],
         "parameters": {
-          "jsCode": "const LABEL_MAP = {\n  'BelPro - Vnos Prostovoljcev': 'Napaka pri vnosu prostovoljca',\n  'BelPro — Odobritev Upravljalca': 'Napaka pri odobritvi vnosa',\n  'BelPro — Mesečna Poročila': 'Napaka pri mesečnih poročilih',\n};\n\nlet workflowName, operation, detail;\n\nif ($json.workflow_name !== undefined) {\n  // Shape B: explicit Execute Workflow call\n  workflowName = $json.workflow_name;\n  operation = $json.operation || workflowName;\n  detail = String($json.detail || '');\n} else {\n  // Shape A: n8n errorWorkflow trigger\n  workflowName = ($json.workflow || {}).name || 'neznano';\n  operation = ($json.execution || {}).lastNodeExecuted || workflowName;\n  const err = ($json.execution || {}).error || {};\n  detail = [err.message, err.stack].filter(Boolean).join('\n');\n}\n\nconst message = LABEL_MAP[workflowName] || 'Neznana napaka n8n';\n\nreturn [{ json: { service: 'n8n', operation, message, detail } }];"
+          "jsCode": "const LABEL_MAP = {\n  'BelPro - Vnos Prostovoljcev': 'Napaka pri vnosu prostovoljca',\n  'BelPro — Odobritev Upravljalca': 'Napaka pri odobritvi vnosa',\n  'BelPro — Mesečna Poročila': 'Napaka pri mesečnih poročilih',\n};\n\nlet workflowName, operation, detail;\n\nif ($json.workflow_name !== undefined) {\n  // Shape B: explicit Execute Workflow call\n  workflowName = $json.workflow_name;\n  operation = $json.operation || workflowName;\n  detail = String($json.detail || '');\n} else {\n  // Shape A: n8n errorWorkflow trigger\n  workflowName = ($json.workflow || {}).name || 'neznano';\n  operation = ($json.execution || {}).lastNodeExecuted || workflowName;\n  const err = ($json.execution || {}).error || {};\n  detail = [err.message, err.stack].filter(Boolean).join(' | ');\n}\n\nconst message = LABEL_MAP[workflowName] || 'Neznana napaka n8n';\n\nreturn [{ json: { service: 'n8n', operation, message, detail } }];"
         }
       },
       {

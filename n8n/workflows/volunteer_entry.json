@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T14:55:51.899Z",
+  "updatedAt": "2026-05-26T15:08:56.853Z",
   "createdAt": "2026-05-06T06:41:31.430Z",
   "id": "Lw6qRiO9ozSr6EeW",
   "name": "BelPro - Vnos Prostovoljcev",
@@ -200,8 +200,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1216,
-        -16
+        1488,
+        -144
       ]
     },
     {
@@ -365,7 +365,7 @@
       "typeVersion": 3.2,
       "position": [
         1472,
-        544
+        608
       ]
     },
     {
@@ -384,8 +384,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1040,
-        -240
+        1216,
+        -416
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -403,8 +403,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1216,
-        -240
+        1392,
+        -416
       ]
     },
     {
@@ -419,8 +419,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1504,
-        -240
+        1808,
+        -416
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -438,8 +438,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1680,
-        -240
+        1984,
+        -416
       ]
     },
     {
@@ -472,8 +472,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        1856,
-        -240
+        2160,
+        -416
       ]
     },
     {
@@ -502,8 +502,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2064,
-        -112
+        2368,
+        -288
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -558,8 +558,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2608,
-        -240
+        2912,
+        -416
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -577,8 +577,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2784,
-        -240
+        3088,
+        -416
       ]
     },
     {
@@ -607,8 +607,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2960,
-        -240
+        3264,
+        -416
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -643,8 +643,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1552,
-        1360
+        1472,
+        880
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -671,7 +671,7 @@
       "typeVersion": 4.2,
       "position": [
         1824,
-        496
+        528
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -689,7 +689,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2688,
+        2784,
         672
       ]
     },
@@ -719,7 +719,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2880,
+        2976,
         672
       ],
       "credentials": {
@@ -741,7 +741,7 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3072,
+        3168,
         672
       ],
       "credentials": {
@@ -781,7 +781,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        3248,
+        3344,
         672
       ]
     },
@@ -811,8 +811,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4896,
-        80
+        4880,
+        304
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -847,8 +847,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2048,
-        864
+        2032,
+        656
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -870,8 +870,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        1840,
-        1200
+        1824,
+        1008
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -889,8 +889,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2048,
-        1200
+        2032,
+        1008
       ]
     },
     {
@@ -919,8 +919,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2256,
-        1200
+        2240,
+        1008
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -938,8 +938,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        848,
-        -240
+        1024,
+        -416
       ]
     },
     {
@@ -951,8 +951,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1840,
-        864
+        1824,
+        656
       ]
     },
     {
@@ -964,8 +964,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1264,
-        272
+        1008,
+        64
       ]
     },
     {
@@ -1031,7 +1031,7 @@
       "type": "n8n-nodes-base.switch",
       "typeVersion": 3.2,
       "position": [
-        1504,
+        1216,
         64
       ]
     },
@@ -1228,8 +1228,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        1040,
-        832
+        1120,
+        1040
       ]
     },
     {
@@ -1243,8 +1243,8 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1,
       "position": [
-        672,
-        1168
+        1584,
+        1520
       ]
     },
     {
@@ -1273,8 +1273,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        1216,
-        816
+        1600,
+        1136
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1410,8 +1410,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        704,
-        720
+        272,
+        1024
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1429,8 +1429,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1024,
-        1104
+        464,
+        1024
       ]
     },
     {
@@ -1462,8 +1462,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        1536,
-        864
+        640,
+        1024
       ]
     },
     {
@@ -1478,8 +1478,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        1824,
-        624
+        800,
+        800
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1497,8 +1497,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2016,
-        624
+        976,
+        800
       ]
     },
     {
@@ -1513,8 +1513,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        3552,
-        368
+        3584,
+        656
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1532,8 +1532,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3728,
-        368
+        3776,
+        656
       ]
     },
     {
@@ -1565,8 +1565,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        3952,
-        368
+        3968,
+        656
       ]
     },
     {
@@ -1582,8 +1582,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        4192,
-        352
+        4208,
+        640
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1604,8 +1604,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4,
       "position": [
-        4352,
-        352
+        4368,
+        640
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1623,8 +1623,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        4704,
-        352
+        4720,
+        640
       ]
     },
     {
@@ -1739,8 +1739,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2592,
-        480
+        2864,
+        400
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1758,8 +1758,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2752,
-        480
+        3024,
+        400
       ]
     },
     {
@@ -1771,8 +1771,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        3088,
-        480
+        3360,
+        400
       ]
     },
     {
@@ -1801,8 +1801,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        3232,
-        480
+        3504,
+        400
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1820,8 +1820,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1840,
-        1040
+        1824,
+        832
       ]
     },
     {
@@ -1850,8 +1850,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2048,
-        1040
+        2032,
+        832
       ],
       "credentials": {
         "httpHeaderAuth": {
@@ -1872,8 +1872,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        4544,
-        192
+        4560,
+        480
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1917,8 +1917,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2928,
-        480
+        3200,
+        400
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -1936,8 +1936,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        2064,
-        -256
+        2368,
+        -432
       ]
     },
     {
@@ -1969,8 +1969,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2,
       "position": [
-        2256,
-        -256
+        2560,
+        -432
       ]
     },
     {
@@ -1986,8 +1986,8 @@
       "type": "n8n-nodes-base.httpRequest",
       "typeVersion": 4.2,
       "position": [
-        2432,
-        -384
+        2736,
+        -560
       ],
       "credentials": {
         "httpBasicAuth": {
@@ -2166,8 +2166,8 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1216,
-        960
+        1600,
+        1312
       ]
     },
     {
@@ -2181,8 +2181,8 @@
       "type": "n8n-nodes-base.executeWorkflow",
       "typeVersion": 1,
       "position": [
-        1456,
-        960
+        1792,
+        1312
       ]
     }
   ],
@@ -3082,9 +3082,9 @@
       }
     ]
   },
-  "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
-  "activeVersionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
-  "versionCounter": 1136,
+  "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+  "activeVersionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
+  "versionCounter": 1205,
   "triggerCount": 1,
   "shared": [
     {
@@ -3107,9 +3107,9 @@
   ],
   "tags": [],
   "activeVersion": {
-    "updatedAt": "2026-05-26T14:55:51.902Z",
-    "createdAt": "2026-05-26T14:55:51.902Z",
-    "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
+    "updatedAt": "2026-05-26T15:10:46.722Z",
+    "createdAt": "2026-05-26T15:08:56.856Z",
+    "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
     "workflowId": "Lw6qRiO9ozSr6EeW",
     "nodes": [
       {
@@ -3305,8 +3305,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1216,
-          -16
+          1488,
+          -144
         ]
       },
       {
@@ -3470,7 +3470,7 @@
         "typeVersion": 3.2,
         "position": [
           1472,
-          544
+          608
         ]
       },
       {
@@ -3489,8 +3489,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1040,
-          -240
+          1216,
+          -416
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3508,8 +3508,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1216,
-          -240
+          1392,
+          -416
         ]
       },
       {
@@ -3524,8 +3524,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1504,
-          -240
+          1808,
+          -416
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3543,8 +3543,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1680,
-          -240
+          1984,
+          -416
         ]
       },
       {
@@ -3577,8 +3577,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          1856,
-          -240
+          2160,
+          -416
         ]
       },
       {
@@ -3607,8 +3607,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2064,
-          -112
+          2368,
+          -288
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3663,8 +3663,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2608,
-          -240
+          2912,
+          -416
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3682,8 +3682,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2784,
-          -240
+          3088,
+          -416
         ]
       },
       {
@@ -3712,8 +3712,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2960,
-          -240
+          3264,
+          -416
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3748,8 +3748,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1552,
-          1360
+          1472,
+          880
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3776,7 +3776,7 @@
         "typeVersion": 4.2,
         "position": [
           1824,
-          496
+          528
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3794,7 +3794,7 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2688,
+          2784,
           672
         ]
       },
@@ -3824,7 +3824,7 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2880,
+          2976,
           672
         ],
         "credentials": {
@@ -3846,7 +3846,7 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          3072,
+          3168,
           672
         ],
         "credentials": {
@@ -3886,7 +3886,7 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          3248,
+          3344,
           672
         ]
       },
@@ -3916,8 +3916,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          4896,
-          80
+          4880,
+          304
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3952,8 +3952,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2048,
-          864
+          2032,
+          656
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -3975,8 +3975,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          1840,
-          1200
+          1824,
+          1008
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -3994,8 +3994,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2048,
-          1200
+          2032,
+          1008
         ]
       },
       {
@@ -4024,8 +4024,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2256,
-          1200
+          2240,
+          1008
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4043,8 +4043,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          848,
-          -240
+          1024,
+          -416
         ]
       },
       {
@@ -4056,8 +4056,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1840,
-          864
+          1824,
+          656
         ]
       },
       {
@@ -4069,8 +4069,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1264,
-          272
+          1008,
+          64
         ]
       },
       {
@@ -4136,7 +4136,7 @@
         "type": "n8n-nodes-base.switch",
         "typeVersion": 3.2,
         "position": [
-          1504,
+          1216,
           64
         ]
       },
@@ -4333,8 +4333,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          1040,
-          832
+          1120,
+          1040
         ]
       },
       {
@@ -4348,8 +4348,8 @@
         "type": "n8n-nodes-base.executeWorkflow",
         "typeVersion": 1,
         "position": [
-          672,
-          1168
+          1584,
+          1520
         ]
       },
       {
@@ -4378,8 +4378,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          1216,
-          816
+          1600,
+          1136
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4515,8 +4515,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          704,
-          720
+          272,
+          1024
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4534,8 +4534,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1024,
-          1104
+          464,
+          1024
         ]
       },
       {
@@ -4567,8 +4567,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          1536,
-          864
+          640,
+          1024
         ]
       },
       {
@@ -4583,8 +4583,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          1824,
-          624
+          800,
+          800
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4602,8 +4602,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2016,
-          624
+          976,
+          800
         ]
       },
       {
@@ -4618,8 +4618,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          3552,
-          368
+          3584,
+          656
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4637,8 +4637,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          3728,
-          368
+          3776,
+          656
         ]
       },
       {
@@ -4670,8 +4670,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          3952,
-          368
+          3968,
+          656
         ]
       },
       {
@@ -4687,8 +4687,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          4192,
-          352
+          4208,
+          640
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4709,8 +4709,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4,
         "position": [
-          4352,
-          352
+          4368,
+          640
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -4728,8 +4728,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          4704,
-          352
+          4720,
+          640
         ]
       },
       {
@@ -4844,8 +4844,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2592,
-          480
+          2864,
+          400
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4863,8 +4863,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2752,
-          480
+          3024,
+          400
         ]
       },
       {
@@ -4876,8 +4876,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          3088,
-          480
+          3360,
+          400
         ]
       },
       {
@@ -4906,8 +4906,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          3232,
-          480
+          3504,
+          400
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4925,8 +4925,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1840,
-          1040
+          1824,
+          832
         ]
       },
       {
@@ -4955,8 +4955,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2048,
-          1040
+          2032,
+          832
         ],
         "credentials": {
           "httpHeaderAuth": {
@@ -4977,8 +4977,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          4544,
-          192
+          4560,
+          480
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -5022,8 +5022,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2928,
-          480
+          3200,
+          400
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -5041,8 +5041,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          2064,
-          -256
+          2368,
+          -432
         ]
       },
       {
@@ -5074,8 +5074,8 @@
         "type": "n8n-nodes-base.if",
         "typeVersion": 2,
         "position": [
-          2256,
-          -256
+          2560,
+          -432
         ]
       },
       {
@@ -5091,8 +5091,8 @@
         "type": "n8n-nodes-base.httpRequest",
         "typeVersion": 4.2,
         "position": [
-          2432,
-          -384
+          2736,
+          -560
         ],
         "credentials": {
           "httpBasicAuth": {
@@ -5271,8 +5271,8 @@
         "type": "n8n-nodes-base.code",
         "typeVersion": 2,
         "position": [
-          1216,
-          960
+          1600,
+          1312
         ]
       },
       {
@@ -5286,8 +5286,8 @@
         "type": "n8n-nodes-base.executeWorkflow",
         "typeVersion": 1,
         "position": [
-          1456,
-          960
+          1792,
+          1312
         ]
       }
     ],
@@ -6157,23 +6157,15 @@
       }
     },
     "authors": "Andrej Mejac",
-    "name": null,
-    "description": null,
-    "autosaved": false,
+    "name": "Version fa6256ae",
+    "description": "",
+    "autosaved": true,
     "workflowPublishHistory": [
       {
-        "createdAt": "2026-05-26T14:55:51.964Z",
-        "id": 505,
+        "createdAt": "2026-05-26T15:10:46.718Z",
+        "id": 508,
         "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
-        "event": "deactivated",
-        "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
-      },
-      {
-        "createdAt": "2026-05-26T14:55:51.992Z",
-        "id": 506,
-        "workflowId": "Lw6qRiO9ozSr6EeW",
-        "versionId": "46534e99-baed-4672-b2f1-cb4152b9ab31",
+        "versionId": "fa6256ae-bd04-4bf9-9282-9bbc6a70aeba",
         "event": "activated",
         "userId": "ec2c5656-3909-4e77-96cc-47a623fd704f"
       }
