@@ -59,9 +59,31 @@ def api_request(method: str, url: str, api_key: str, payload: dict | None = None
         sys.exit(1)
 
 
+def resolve_workflow_refs(payload: dict, n8n_by_name: dict[str, str]) -> bool:
+    """Replace name-based workflow references with live n8n IDs.
+
+    Handles settings.errorWorkflow and nodes[*].parameters.workflowId.
+    Returns True if any substitution was made.
+    """
+    changed = False
+    settings = payload.get("settings", {})
+    ref = settings.get("errorWorkflow")
+    if isinstance(ref, str) and ref in n8n_by_name:
+        settings["errorWorkflow"] = n8n_by_name[ref]
+        changed = True
+    for node in payload.get("nodes", []):
+        params = node.get("parameters", {})
+        wf_id = params.get("workflowId")
+        if isinstance(wf_id, str) and wf_id in n8n_by_name:
+            params["workflowId"] = n8n_by_name[wf_id]
+            changed = True
+    return changed
+
+
 def cmd_import(base_url: str, api_key: str) -> None:
     """Load each repo workflow file into n8n (upsert + activate)."""
-    files = sorted(p for p in WORKFLOWS_DIR.glob("*.json") if p.name != ".gitkeep")
+    _all = sorted(p for p in WORKFLOWS_DIR.glob("*.json") if p.name != ".gitkeep")
+    files = sorted(_all, key=lambda p: (0 if p.name == "error_handler.json" else 1, p.name))
     if not files:
         print("No workflow JSON files found in n8n/workflows/")
         return
@@ -96,6 +118,7 @@ def cmd_import(base_url: str, api_key: str) -> None:
     # Valid settings keys (others are API-internal, read-only, or not accepted by the API)
     allowed_settings = {
         "executionOrder",
+        "errorWorkflow",
         "saveDataErrorExecution",
         "saveDataSuccessExecution",
         "saveManualExecutions",
@@ -144,6 +167,7 @@ def cmd_import(base_url: str, api_key: str) -> None:
             if not wf_id:
                 print(f"  x {name}: created but response missing 'id' field")
                 continue
+            n8n_by_name[name] = wf_id
             action = "created"
 
         if upsert_status not in (200, 201):
@@ -158,6 +182,34 @@ def cmd_import(base_url: str, api_key: str) -> None:
         else:
             print(f"  ok {name}: {action} and activated")
             ok += 1
+
+    # Second pass: resolve name-based workflow references to live n8n IDs.
+    ref_ok = 0
+    for path in files:
+        try:
+            payload = json.loads(path.read_text(encoding="utf-8"))
+        except Exception:
+            continue
+        name = payload.get("name", "")
+        if not name or name not in n8n_by_name:
+            continue
+        filtered = {k: v for k, v in payload.items() if k in allowed_top_level}
+        if "description" in filtered and filtered["description"] is None:
+            filtered["description"] = ""
+        if "settings" in filtered and isinstance(filtered["settings"], dict):
+            filtered["settings"] = {
+                k: v for k, v in filtered["settings"].items() if k in allowed_settings
+            }
+        if resolve_workflow_refs(filtered, n8n_by_name):
+            wf_id = n8n_by_name[name]
+            patch_status, _ = api_request(
+                "PUT", f"{base_url}/api/v1/workflows/{wf_id}", api_key, filtered
+            )
+            if patch_status == 200:
+                print(f"  ref {name}: workflow references resolved")
+                ref_ok += 1
+            else:
+                print(f"  ! {name}: failed to resolve workflow references (HTTP {patch_status})")
 
     print(f"\n{ok}/{len(files)} workflow(s) imported and activated successfully.")
 
