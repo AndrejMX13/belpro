@@ -1,0 +1,159 @@
+{
+  "updatedAt": "2026-05-26T14:53:46.335Z",
+  "createdAt": "2026-05-26T14:53:46.335Z",
+  "id": "bimWdc4YvcR7yIC4",
+  "name": "BelPro - Napake",
+  "active": false,
+  "nodes": [
+    {
+      "id": "error_trigger_1",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        260
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "exec_wf_trigger_1",
+      "name": "When Called By Another Workflow",
+      "type": "n8n-nodes-base.executeWorkflowTrigger",
+      "typeVersion": 1,
+      "position": [
+        240,
+        460
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "normalize_input_1",
+      "name": "Code: Normalize Input",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        480,
+        360
+      ],
+      "parameters": {
+        "jsCode": "const LABEL_MAP = {\n  'BelPro - Vnos Prostovoljcev': 'Napaka pri vnosu prostovoljca',\n  'BelPro — Odobritev Upravljalca': 'Napaka pri odobritvi vnosa',\n  'BelPro — Mesečna Poročila': 'Napaka pri mesečnih poročilih',\n};\n\nlet workflowName, operation, detail;\n\nif ($json.workflow_name !== undefined) {\n  // Shape B: explicit Execute Workflow call\n  workflowName = $json.workflow_name;\n  operation = $json.operation || workflowName;\n  detail = String($json.detail || '');\n} else {\n  // Shape A: n8n errorWorkflow trigger\n  workflowName = ($json.workflow || {}).name || 'neznano';\n  operation = ($json.execution || {}).lastNodeExecuted || workflowName;\n  const err = ($json.execution || {}).error || {};\n  detail = [err.message, err.stack].filter(Boolean).join('\n');\n}\n\nconst message = LABEL_MAP[workflowName] || 'Neznana napaka n8n';\n\nreturn [{ json: { service: 'n8n', operation, message, detail } }];"
+      }
+    },
+    {
+      "id": "post_errors_1",
+      "name": "HTTP: POST /api/errors",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        720,
+        360
+      ],
+      "parameters": {
+        "method": "POST",
+        "url": "http://api:8000/api/errors",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendBody": true,
+        "contentType": "json",
+        "body": "={{ JSON.stringify({service: $json.service, operation: $json.operation, message: $json.message, detail: $json.detail || null}) }}"
+      },
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "0e1eZ4Kwo3JeQ5ub",
+          "name": "BelPro API Internal Key"
+        }
+      }
+    },
+    {
+      "id": "if_post_failed_1",
+      "name": "IF: POST Failed?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        960,
+        360
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 1
+          },
+          "combinator": "and",
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $response.statusCode }}",
+              "rightValue": 201,
+              "operator": {
+                "type": "number",
+                "operation": "notEquals"
+              }
+            }
+          ]
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Code: Normalize Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When Called By Another Workflow": {
+      "main": [
+        [
+          {
+            "node": "Code: Normalize Input",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code: Normalize Input": {
+      "main": [
+        [
+          {
+            "node": "HTTP: POST /api/errors",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP: POST /api/errors": {
+      "main": [
+        [
+          {
+            "node": "IF: POST Failed?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Ljubljana",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "saveManualExecutions": true
+  },
+  "staticData": null,
+  "pinData": null,
+  "versionId": "dcd7b1a6-0a9e-4f0f-97f8-f930cc4666ac",
+  "tags": []
+}
