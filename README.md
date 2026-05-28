@@ -145,7 +145,8 @@ The wizard will:
 7. Run Alembic database migrations automatically.
 8. Create n8n credentials (`BelPro Postgres`, `BelPro API (Basic Auth)`, `BelPro API Internal Key`) automatically via the n8n API.
 9. Import all n8n workflows automatically.
-10. Print a checklist of the remaining manual steps (WhatsApp setup, SMTP credential).
+10. Seed the n8n and API docs console URLs into admin settings (derived from `N8N_PROTOCOL` and `N8N_HOST` in `.env`).
+11. Print a checklist of the remaining manual steps (WhatsApp setup, SMTP credential).
 
 > **Note:** The wizard prints instructions in Slovenian — this is intentional, as the primary users of BelPro are Slovenian NGOs.
 
