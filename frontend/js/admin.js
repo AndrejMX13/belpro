@@ -2,6 +2,50 @@
 
 // ===== Administracija page =====
 
+function serviceLinksHTML() {
+  const host = window.location.hostname;
+  const links = [
+    {
+      href:  `http://${host}:5678`,
+      logo:  '/images/n8n-logo.svg',
+      alt:   'n8n',
+      name:  'n8n',
+      desc:  'Delovni tokovi',
+    },
+    {
+      href:  `http://${host}:8180/manager`,
+      logo:  '/images/evolution-api-logo.svg',
+      alt:   'Evolution API',
+      name:  'Evolution API',
+      desc:  'WhatsApp prehod',
+    },
+    {
+      href:  `http://${host}:8100/docs`,
+      logo:  '/images/swagger-logo.svg',
+      alt:   'Swagger UI',
+      name:  'API dokumentacija',
+      desc:  'FastAPI Swagger UI',
+    },
+  ];
+
+  const items = links.map(({ href, logo, alt, name, desc }) => `
+    <a href="${href}" target="_blank" rel="noopener noreferrer" class="service-link">
+      <img src="${logo}" alt="${alt}" style="height:48px;width:48px;object-fit:contain">
+      <div class="service-link-text">
+        <span class="service-link-name">${name}</span>
+        <span class="service-link-desc">${desc}</span>
+      </div>
+    </a>`).join('');
+
+  return `
+    <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem 1rem;margin-bottom:1.5rem">
+      <h2 style="font-size:1rem;font-weight:600;margin:0 0 0.6rem">Storitvene konzole</h2>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+        ${items}
+      </div>
+    </div>`;
+}
+
 async function renderAdmin() {
   $('topbar-title').textContent = 'Administracija';
   document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
@@ -15,6 +59,7 @@ async function renderAdmin() {
       <h1 class="page-title">Administracija</h1>
     </div>
     ${healthWidgetHTML()}
+    ${serviceLinksHTML()}
     <div style="${card}">
       <h2 style="${h2}">Sistemske nastavitve</h2>
       <div id="admin-settings-loading" style="padding:1rem;text-align:center">

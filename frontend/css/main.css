@@ -796,6 +796,30 @@ tfoot .totals-row td {
 .health-label { min-width: 90px; font-weight: 500; }
 .health-detail { color: #666; font-size: 0.82rem; }
 
+/* Service console links */
+.service-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  text-decoration: none;
+  color: inherit;
+  background: var(--bg);
+  transition: box-shadow 0.15s, border-color 0.15s;
+}
+.service-link:hover {
+  box-shadow: var(--shadow);
+  border-color: var(--accent);
+  background: var(--surface);
+}
+.service-link img { border-radius: 8px; flex-shrink: 0; }
+.service-link-text { display: flex; flex-direction: column; gap: 0.15rem; }
+.service-link-name { font-weight: 600; font-size: 0.9rem; }
+.service-link-desc { font-size: 0.78rem; color: var(--text-muted); }
+
 /* Nav error badge */
 .nav-badge {
   margin-left: auto;

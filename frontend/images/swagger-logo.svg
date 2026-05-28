@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <rect width="80" height="80" rx="12" fill="#49cc90"/>
+  <text x="40" y="35" font-family="sans-serif" font-size="22" font-weight="800"
+        fill="white" text-anchor="middle" dominant-baseline="middle">API</text>
+  <text x="40" y="56" font-family="sans-serif" font-size="14" font-weight="400"
+        fill="rgba(255,255,255,0.85)" text-anchor="middle" dominant-baseline="middle">docs</text>
+</svg>
