@@ -300,6 +300,23 @@ info "Uvažam delovne tokove..."
 python "$PROJECT_DIR/scripts/n8n_workflows.py" import
 echo ""
 
+# ── Seed console URLs into admin settings ──────────────────────────────────
+info "Nastavljam naslove storitvenih konzol..."
+_N8N_PROTO="$(get_env N8N_PROTOCOL)"
+_N8N_HOST="$(get_env N8N_HOST)"
+_N8N_ADMIN_URL="${_N8N_PROTO:-http}://${_N8N_HOST:-localhost}:5678"
+_API_DOCS_URL="${_N8N_PROTO:-http}://${_N8N_HOST:-localhost}:8100/docs"
+_MGR_PASS="$(get_env MANAGER_PASSWORD)"
+$COMPOSE exec -T api curl -sf \
+  -X PATCH \
+  -H "Content-Type: application/json" \
+  -u "manager:${_MGR_PASS}" \
+  -d "{\"n8n_admin_url\":\"${_N8N_ADMIN_URL}\",\"api_docs_url\":\"${_API_DOCS_URL}\"}" \
+  "http://localhost:8000/api/admin/settings" > /dev/null \
+  && ok "n8n: ${_N8N_ADMIN_URL}  |  API docs: ${_API_DOCS_URL}" \
+  || warn "Nastavitev konzol ni uspela — nastavite ročno v Sistemske nastavitve."
+echo ""
+
 # ── Remaining manual steps ─────────────────────────────────────────────────
 warn "Preostalo (ročno) — WhatsApp (Evolution API):"
 echo "   Ko dobite telefonsko številko:"

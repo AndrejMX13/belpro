@@ -6,13 +6,15 @@ function serviceLinksHTML() {
   const host = window.location.hostname;
   const links = [
     {
-      href:  `http://${host}:5678`,
+      id:    'console-link-n8n',
+      href:  '#',
       logo:  '/images/n8n-logo.svg',
       alt:   'n8n',
       name:  'n8n',
       desc:  'Delovni tokovi',
     },
     {
+      id:    'console-link-evolution',
       href:  `http://${host}:8180/manager`,
       logo:  '/images/evolution-api-logo.svg',
       alt:   'Evolution API',
@@ -20,7 +22,8 @@ function serviceLinksHTML() {
       desc:  'WhatsApp prehod',
     },
     {
-      href:  `http://${host}:8100/docs`,
+      id:    'console-link-apidocs',
+      href:  '#',
       logo:  '/images/swagger-logo.svg',
       alt:   'Swagger UI',
       name:  'API dokumentacija',
@@ -28,8 +31,8 @@ function serviceLinksHTML() {
     },
   ];
 
-  const items = links.map(({ href, logo, alt, name, desc }) => `
-    <a href="${href}" target="_blank" rel="noopener noreferrer" class="service-link">
+  const items = links.map(({ id, href, logo, alt, name, desc }) => `
+    <a id="${id}" href="${href}" target="_blank" rel="noopener noreferrer" class="service-link">
       <img src="${logo}" alt="${alt}" style="height:48px;width:48px;object-fit:contain">
       <div class="service-link-text">
         <span class="service-link-name">${name}</span>
@@ -109,6 +112,14 @@ async function renderAdmin() {
           <label for="a-evolution-instance">Ime instance (WhatsApp)</label>
           <input id="a-evolution-instance" type="text" style="width:100%;max-width:24rem" />
         </div>
+        <div class="field">
+          <label for="a-n8n-admin-url">Naslov konzole n8n</label>
+          <input id="a-n8n-admin-url" type="url" style="width:100%;max-width:32rem" />
+        </div>
+        <div class="field">
+          <label for="a-api-docs-url">Naslov API dokumentacije</label>
+          <input id="a-api-docs-url" type="url" style="width:100%;max-width:32rem" />
+        </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="a-save-btn">Shrani</button>
@@ -134,6 +145,13 @@ async function renderAdmin() {
     $('a-cleanup-hour').value  = data.photo_cleanup_hour;
     $('a-backup-retention').value = data.backup_retention_days;
     $('a-evolution-instance').value = data.evolution_instance_name;
+    $('a-n8n-admin-url').value      = data.n8n_admin_url;
+    $('a-api-docs-url').value       = data.api_docs_url;
+
+    const n8nLink = $('console-link-n8n');
+    if (n8nLink) n8nLink.href = data.n8n_admin_url;
+    const docsLink = $('console-link-apidocs');
+    if (docsLink) docsLink.href = data.api_docs_url;
 
     $('admin-settings-loading').hidden = true;
     $('admin-settings-form').hidden    = false;
@@ -161,12 +179,22 @@ async function renderAdmin() {
       photo_cleanup_hour:     parseInt($('a-cleanup-hour').value, 10),
       backup_retention_days:  parseInt($('a-backup-retention').value, 10),
       evolution_instance_name: $('a-evolution-instance').value.trim(),
+      n8n_admin_url:           $('a-n8n-admin-url').value.trim(),
+      api_docs_url:            $('a-api-docs-url').value.trim(),
     };
 
     // Validate
     for (const [key, val] of Object.entries(current)) {
       if (key === 'report_auto_period') continue;
       if (key === 'evolution_instance_name') continue;
+      if (key === 'n8n_admin_url' || key === 'api_docs_url') {
+        if (!val || !val.startsWith('http')) {
+          errEl.textContent = 'Naslov konzole mora biti veljavna URL (http:// ali https://).';
+          errEl.style.display = 'block';
+          return;
+        }
+        continue;
+      }
       if (key === 'backup_hour' || key === 'photo_cleanup_hour' || key === 'report_auto_hour') {
         if (!Number.isInteger(val) || val < 0 || val > 23) {
           const labels = {
@@ -216,6 +244,14 @@ async function renderAdmin() {
     try {
       await API.admin.updateSettings(patch);
       original = { ...current };
+      if (patch.n8n_admin_url) {
+        const lnk = $('console-link-n8n');
+        if (lnk) lnk.href = patch.n8n_admin_url;
+      }
+      if (patch.api_docs_url) {
+        const lnk = $('console-link-apidocs');
+        if (lnk) lnk.href = patch.api_docs_url;
+      }
       toast('Nastavitve so bile shranjene.');
     } catch (err) {
       errEl.textContent = 'Napaka pri shranjevanju: ' + esc(err.message);

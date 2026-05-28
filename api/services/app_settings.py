@@ -105,6 +105,16 @@ class AppSettings:
         """Evolution API WhatsApp instance name. DB-first, env-fallback."""
         return self._str("evolution_instance_name", self._env.evolution_instance_name) or self._env.evolution_instance_name
 
+    @property
+    def n8n_admin_url(self) -> str:
+        """Public URL of the n8n admin UI (used for the dashboard quick-link)."""
+        return self._str("n8n_admin_url", None) or "http://localhost:5678"
+
+    @property
+    def api_docs_url(self) -> str:
+        """Public URL of the FastAPI Swagger UI (used for the dashboard quick-link)."""
+        return self._str("api_docs_url", None) or "http://localhost:8100/docs"
+
     # ── passthrough for all other env settings ─────────────────────────────────
 
     def __getattr__(self, name: str) -> object:

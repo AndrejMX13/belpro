@@ -17,6 +17,8 @@ class AdminSettingsResponse(BaseModel):
     photo_cleanup_hour: int
     backup_retention_days: int
     evolution_instance_name: str = Field(..., pattern=r"^[a-zA-Z0-9_-]+$")
+    n8n_admin_url: str
+    api_docs_url: str
 
 
 class AdminSettingsUpdate(BaseModel):
@@ -32,3 +34,5 @@ class AdminSettingsUpdate(BaseModel):
     photo_cleanup_hour: int | None = Field(None, ge=0, le=23)
     backup_retention_days: int | None = Field(None, ge=1)
     evolution_instance_name: str | None = Field(None, pattern=r"^[a-zA-Z0-9_-]+$")
+    n8n_admin_url: str | None = None
+    api_docs_url: str | None = None
