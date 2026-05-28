@@ -14,6 +14,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from core.settings import Settings, get_settings
 from db.session import AsyncSessionLocal, get_db
+from models.app_setting import AppSetting
 from models.log_entry import LogEntry
 from models.manager import Manager
 from models.monthly_report import MonthlyReport
@@ -48,15 +49,38 @@ async def seed_whatsapp_phone_from_env(
         await session.commit()
 
 
+async def seed_console_urls(session: AsyncSession) -> None:
+    """Create default console URL rows in app_settings if not already present.
+
+    Runs on every boot; skips any key that already has a row so manual edits
+    from the admin UI are never overwritten.
+    """
+    defaults = {
+        "n8n_admin_url": "http://localhost:5678",
+        "api_docs_url":  "http://localhost:8100/docs",
+    }
+    added = False
+    for name, value in defaults.items():
+        existing = (
+            await session.execute(select(AppSetting).where(AppSetting.name == name))
+        ).scalar_one_or_none()
+        if existing is None:
+            session.add(AppSetting(name=name, value_type="str", value=value))
+            added = True
+    if added:
+        await session.commit()
+
+
 @asynccontextmanager
 async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
-    """Fail fast if DB unreachable; seed WhatsApp phone from .env if DB null."""
+    """Fail fast if DB unreachable; seed settings from .env/defaults if absent."""
     async with AsyncSessionLocal() as session:
         await session.execute(text("SELECT 1"))
 
     settings = get_settings()
     async with AsyncSessionLocal() as session:
         await seed_whatsapp_phone_from_env(session, settings)
+        await seed_console_urls(session)
 
     yield
 
