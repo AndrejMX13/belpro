@@ -247,13 +247,14 @@ Do not scan the QR code yet — set up n8n first so workflows are active before 
 
 Open n8n at **http://localhost:5678** and log in with `N8N_BASIC_AUTH_USER` / `N8N_BASIC_AUTH_PASSWORD`.
 
+> **If you used `setup.sh`:** steps 1–2 and the three auto-credentials are already done. You only need to create the `BelPro Evolution API` credential (step 3) after setting up the Evolution API instance, then re-run the import.
+
 1. Generate an n8n API key under **Settings → API** and add it to `.env` as `N8N_API_KEY`.
-2. Import the workflow files from `n8n/workflows/`:
+2. Import the workflow files from `n8n/workflows/` — this also activates all workflows automatically:
    ```bash
-   ./scripts/n8n_workflows.py import
+   python scripts/n8n_workflows.py import
    ```
 3. Set up credentials as documented in [n8n/credentials/README.md](n8n/credentials/README.md).
-4. Activate all workflows.
 
 ### 8. Connect WhatsApp
 

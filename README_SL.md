@@ -248,13 +248,14 @@ QR kode še ne skeniraj — najprej nastavi n8n, da bodo delovni procesi aktivni
 
 Odpri n8n na naslovu **http://localhost:5678** in se prijavi z uporabniškim imenom `N8N_BASIC_AUTH_USER` in geslom `N8N_BASIC_AUTH_PASSWORD`.
 
+> **Če si uporabil `setup.sh`:** koraki 1–2 in trije samodejni prijavni podatki so že nastavljeni. Potrebuješ le še prijavne podatke `BelPro Evolution API` (korak 3) — ustvari jih po nastavitvi instance Evolution API in nato znova zaženi uvoz.
+
 1. V n8n vmesniku pod **Settings → API** generiraj n8n API ključ in ga dodaj v `.env` kot `N8N_API_KEY`.
-2. Uvozi datoteke delovnih procesov iz mape `n8n/workflows/`:
+2. Uvozi datoteke delovnih procesov iz mape `n8n/workflows/` — uvoz samodejno aktivira tudi vse delovne procese:
    ```bash
-   ./scripts/n8n_workflows.py import
+   python scripts/n8n_workflows.py import
    ```
 3. Nastavi prijavne podatke (credentials), kot je opisano v datoteki [n8n/credentials/README.md](n8n/credentials/README.md).
-4. Aktiviraj vse delovne procese.
 
 ### 8. Poveži WhatsApp
 
