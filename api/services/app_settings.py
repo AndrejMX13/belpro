@@ -7,7 +7,6 @@ transparently to the underlying Settings instance via __getattr__.
 from __future__ import annotations
 
 from typing import Annotated
-from urllib.parse import urlparse
 
 from fastapi import Depends
 from sqlalchemy import select
@@ -115,20 +114,6 @@ class AppSettings:
     def api_docs_url(self) -> str:
         """Public URL of the FastAPI Swagger UI (used for the dashboard quick-link)."""
         return self._str("api_docs_url", None) or "http://localhost:8100/docs"
-
-    @property
-    def adminer_url(self) -> str:
-        """URL of the Adminer DB admin UI with pre-filled PostgreSQL connection fields."""
-        stored = self._str("adminer_url", None)
-        if stored is not None:
-            return stored
-        try:
-            parsed = urlparse(self._env.database_url.replace("+asyncpg", ""))
-            user = parsed.username or ""
-            db = parsed.path.lstrip("/") or ""
-            return f"/adminer/?pgsql=postgres&username={user}&db={db}"
-        except Exception:
-            return "/adminer/"
 
     # ── passthrough for all other env settings ─────────────────────────────────
 

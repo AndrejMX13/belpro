@@ -19,7 +19,6 @@ class AdminSettingsResponse(BaseModel):
     evolution_instance_name: str = Field(..., pattern=r"^[a-zA-Z0-9_-]+$")
     n8n_admin_url: str
     api_docs_url: str
-    adminer_url: str
 
 
 class AdminSettingsUpdate(BaseModel):
@@ -37,4 +36,3 @@ class AdminSettingsUpdate(BaseModel):
     evolution_instance_name: str | None = Field(None, pattern=r"^[a-zA-Z0-9_-]+$")
     n8n_admin_url: str | None = None
     api_docs_url: str | None = None
-    adminer_url: str | None = None

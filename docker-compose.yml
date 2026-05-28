@@ -198,20 +198,6 @@ services:
         condition: service_healthy
 
   # ─────────────────────────────────────────────────────────────
-  # Adminer — lightweight DB admin UI, accessible at /adminer/ via nginx.
-  # No port exposed externally — nginx is the only entry point.
-  # ─────────────────────────────────────────────────────────────
-  adminer:
-    image: adminer:4
-    restart: unless-stopped
-    environment:
-      ADMINER_DEFAULT_SERVER: postgres
-      TZ: Europe/Ljubljana
-    depends_on:
-      postgres:
-        condition: service_healthy
-
-  # ─────────────────────────────────────────────────────────────
   # Evolution API — WhatsApp gateway (volunteer messaging)
   # API: http://localhost:8180
   # ─────────────────────────────────────────────────────────────
