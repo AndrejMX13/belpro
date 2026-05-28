@@ -145,7 +145,8 @@ bash scripts/setup.sh
 7. Samodejno izvedel Alembic migracije zbirke podatkov.
 8. Samodejno ustvaril n8n prijavne podatke (`BelPro Postgres`, `BelPro API (Basic Auth)`, `BelPro API Internal Key`) prek n8n API.
 9. Samodejno uvozil vse n8n delovne tokove.
-10. Izpisal seznam preostalih ročnih korakov (nastavitev WhatsAppa, SMTP prijavni podatki).
+10. V sistemske nastavitve shrani naslova konzol n8n in API dokumentacije (izpeljana iz `N8N_PROTOCOL` in `N8N_HOST` v `.env`).
+11. Izpisal seznam preostalih ročnih korakov (nastavitev WhatsAppa, SMTP prijavni podatki).
 
 
 Po zaključku čarovnika nadaljuj s korakom [Nastavite WhatsAppa](#nastavite-whatsappa) spodaj.
