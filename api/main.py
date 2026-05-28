@@ -49,26 +49,40 @@ async def seed_whatsapp_phone_from_env(
         await session.commit()
 
 
-async def seed_console_urls(session: AsyncSession) -> None:
+async def seed_console_urls(session: AsyncSession, settings: Settings) -> None:
     """Create default console URL rows in app_settings if not already present.
 
-    Runs on every boot; skips any key that already has a row so manual edits
-    from the admin UI are never overwritten.
+    Runs on every boot; skips any key that already has a customised row.
+    Upgrades the bare '/adminer/' placeholder to the full pre-filled URL if
+    it was written by an earlier boot before connection params were derived.
     """
+    from urllib.parse import urlparse
+    try:
+        parsed = urlparse(settings.database_url.replace("+asyncpg", ""))
+        pg_user = parsed.username or "belpro"
+        pg_db   = parsed.path.lstrip("/") or "belpro"
+    except Exception:
+        pg_user, pg_db = "belpro", "belpro"
+
+    adminer_default = f"/adminer/?pgsql=postgres&username={pg_user}&db={pg_db}"
+
     defaults = {
         "n8n_admin_url": "http://localhost:5678",
         "api_docs_url":  "http://localhost:8100/docs",
-        "adminer_url":   "/adminer/",
+        "adminer_url":   adminer_default,
     }
-    added = False
+    changed = False
     for name, value in defaults.items():
         existing = (
             await session.execute(select(AppSetting).where(AppSetting.name == name))
         ).scalar_one_or_none()
         if existing is None:
             session.add(AppSetting(name=name, value_type="str", value=value))
-            added = True
-    if added:
+            changed = True
+        elif name == "adminer_url" and existing.value == "/adminer/":
+            existing.value = value   # upgrade bare placeholder
+            changed = True
+    if changed:
         await session.commit()
 
 
@@ -81,7 +95,7 @@ async def lifespan(app: FastAPI) -> AsyncGenerator[None, None]:
     settings = get_settings()
     async with AsyncSessionLocal() as session:
         await seed_whatsapp_phone_from_env(session, settings)
-        await seed_console_urls(session)
+        await seed_console_urls(session, settings)
 
     yield
 
