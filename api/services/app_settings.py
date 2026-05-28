@@ -115,6 +115,11 @@ class AppSettings:
         """Public URL of the FastAPI Swagger UI (used for the dashboard quick-link)."""
         return self._str("api_docs_url", None) or "http://localhost:8100/docs"
 
+    @property
+    def adminer_url(self) -> str:
+        """URL of the Adminer DB admin UI (proxied through nginx at /adminer/)."""
+        return self._str("adminer_url", None) or "/adminer/"
+
     # ── passthrough for all other env settings ─────────────────────────────────
 
     def __getattr__(self, name: str) -> object:

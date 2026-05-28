@@ -29,6 +29,14 @@ function serviceLinksHTML() {
       name:  'API dokumentacija',
       desc:  'FastAPI Swagger UI',
     },
+    {
+      id:    'console-link-adminer',
+      href:  '#',
+      logo:  '/images/adminer-logo.svg',
+      alt:   'Adminer',
+      name:  'Adminer',
+      desc:  'Upravljanje zbirke podatkov',
+    },
   ];
 
   const items = links.map(({ id, href, logo, alt, name, desc }) => `
@@ -43,7 +51,7 @@ function serviceLinksHTML() {
   return `
     <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:0.75rem 1rem;margin-bottom:1.5rem">
       <h2 style="font-size:1rem;font-weight:600;margin:0 0 0.6rem">Storitvene konzole</h2>
-      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1rem">
         ${items}
       </div>
     </div>`;
@@ -120,6 +128,10 @@ async function renderAdmin() {
           <label for="a-api-docs-url">Naslov API dokumentacije</label>
           <input id="a-api-docs-url" type="url" style="width:100%;max-width:32rem" />
         </div>
+        <div class="field">
+          <label for="a-adminer-url">Naslov Adminer konzole</label>
+          <input id="a-adminer-url" type="text" style="width:100%;max-width:32rem" />
+        </div>
         <div id="admin-settings-error" class="form-error" style="display:none"></div>
         <div class="form-actions">
           <button class="btn btn-primary btn-sm" id="a-save-btn">Shrani</button>
@@ -147,11 +159,14 @@ async function renderAdmin() {
     $('a-evolution-instance').value = data.evolution_instance_name;
     $('a-n8n-admin-url').value      = data.n8n_admin_url;
     $('a-api-docs-url').value       = data.api_docs_url;
+    $('a-adminer-url').value        = data.adminer_url;
 
     const n8nLink = $('console-link-n8n');
     if (n8nLink) n8nLink.href = data.n8n_admin_url;
     const docsLink = $('console-link-apidocs');
     if (docsLink) docsLink.href = data.api_docs_url;
+    const adminerLink = $('console-link-adminer');
+    if (adminerLink) adminerLink.href = data.adminer_url;
 
     $('admin-settings-loading').hidden = true;
     $('admin-settings-form').hidden    = false;
@@ -181,15 +196,16 @@ async function renderAdmin() {
       evolution_instance_name: $('a-evolution-instance').value.trim(),
       n8n_admin_url:           $('a-n8n-admin-url').value.trim(),
       api_docs_url:            $('a-api-docs-url').value.trim(),
+      adminer_url:             $('a-adminer-url').value.trim(),
     };
 
     // Validate
     for (const [key, val] of Object.entries(current)) {
       if (key === 'report_auto_period') continue;
       if (key === 'evolution_instance_name') continue;
-      if (key === 'n8n_admin_url' || key === 'api_docs_url') {
-        if (!val || !val.startsWith('http')) {
-          errEl.textContent = 'Naslov konzole mora biti veljavna URL (http:// ali https://).';
+      if (key === 'n8n_admin_url' || key === 'api_docs_url' || key === 'adminer_url') {
+        if (!val || (!val.startsWith('http') && !val.startsWith('/'))) {
+          errEl.textContent = 'Naslov konzole mora biti veljavna URL (http://, https:// ali /pot).';
           errEl.style.display = 'block';
           return;
         }
@@ -251,6 +267,10 @@ async function renderAdmin() {
       if (patch.api_docs_url) {
         const lnk = $('console-link-apidocs');
         if (lnk) lnk.href = patch.api_docs_url;
+      }
+      if (patch.adminer_url) {
+        const lnk = $('console-link-adminer');
+        if (lnk) lnk.href = patch.adminer_url;
       }
       toast('Nastavitve so bile shranjene.');
     } catch (err) {

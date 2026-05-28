@@ -76,6 +76,7 @@ async def get_admin_settings(
         evolution_instance_name=s.evolution_instance_name,
         n8n_admin_url=s.n8n_admin_url,
         api_docs_url=s.api_docs_url,
+        adminer_url=s.adminer_url,
     )
 
 
@@ -128,4 +129,5 @@ async def update_admin_settings(
         evolution_instance_name=s.evolution_instance_name,
         n8n_admin_url=s.n8n_admin_url,
         api_docs_url=s.api_docs_url,
+        adminer_url=s.adminer_url,
     )

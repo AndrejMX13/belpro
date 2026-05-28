@@ -58,6 +58,7 @@ async def seed_console_urls(session: AsyncSession) -> None:
     defaults = {
         "n8n_admin_url": "http://localhost:5678",
         "api_docs_url":  "http://localhost:8100/docs",
+        "adminer_url":   "/adminer/",
     }
     added = False
     for name, value in defaults.items():
